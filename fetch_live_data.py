@@ -190,6 +190,19 @@ INCIDENT_FEEDS = {
         "source_url": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/",
         "agency": "CFS",
     },
+    "wa": {
+        "url": "https://www.emergency.wa.gov.au/data/incident_FCAD.json",
+        "url_rss": "https://www.emergency.wa.gov.au/data/incident_FCAD.rss",
+        "label": "WA DFES",
+        "source_url": "https://www.emergency.wa.gov.au/",
+        "agency": "DFES",
+    },
+    "tas": {
+        "url": "https://www.fire.tas.gov.au/Show?pageId=bfKml",
+        "label": "TAS TFS",
+        "source_url": "https://www.fire.tas.gov.au/Show?pageId=colCurrentBushfires",
+        "agency": "TFS",
+    },
 }
 
 # Incident types to exclude — planned/prescribed burns are not active emergencies
@@ -657,13 +670,382 @@ def parse_sa_incidents(data):
     return incidents
 
 
-def fetch_incidents(key, feed_cfg):
+def parse_wa_json(data):
+    """
+    Parse WA DFES incident_FCAD.json.
+    Schema unknown until confirmed — attempt common patterns.
+    Expected: GeoJSON FeatureCollection or flat list with lat/lng fields.
+    """
+    incidents = []
+
+    if isinstance(data, dict) and (data.get("type") == "FeatureCollection" or "features" in data):
+        records = data.get("features", [])
+        use_geojson = True
+    elif isinstance(data, dict) and "incidents" in data:
+        records = data["incidents"]
+        use_geojson = False
+    elif isinstance(data, list):
+        records = data
+        use_geojson = False
+    else:
+        print(f"  WA JSON: unexpected structure — keys: {list(data.keys()) if isinstance(data, dict) else type(data)}")
+        return incidents
+
+    print(f"  WA JSON: {len(records)} raw records")
+    if records:
+        first = records[0].get("properties", records[0]) if use_geojson else records[0]
+        print(f"  WA JSON schema keys: {list(first.keys())[:15]}")
+
+    for rec in records:
+        if use_geojson:
+            p = rec.get("properties", {})
+            geom = rec.get("geometry") or {}
+            coords = geom.get("coordinates", [])
+            if geom.get("type") == "Point" and len(coords) >= 2:
+                lng, lat = float(coords[0]), float(coords[1])
+            else:
+                lat = float(p.get("Latitude") or p.get("latitude") or p.get("lat") or 0)
+                lng = float(p.get("Longitude") or p.get("longitude") or p.get("lng") or 0)
+        else:
+            p = rec if isinstance(rec, dict) else {}
+            lat = float(p.get("Latitude") or p.get("latitude") or p.get("lat") or 0)
+            lng = float(p.get("Longitude") or p.get("longitude") or p.get("lng") or 0)
+
+        if not lat or not lng:
+            continue
+
+        inc_type   = (p.get("Type") or p.get("type") or p.get("IncidentType") or
+                      p.get("incident_type") or p.get("category") or "")
+        inc_status = (p.get("Status") or p.get("status") or p.get("IncidentStatus") or "")
+
+        if is_excluded_incident(inc_type, inc_status):
+            continue
+
+        alert_level = normalise_alert_level(
+            p.get("AlertLevel") or p.get("alert_level") or p.get("WarningLevel") or
+            p.get("Severity") or p.get("severity") or ""
+        )
+
+        title = (p.get("Name") or p.get("name") or p.get("Title") or p.get("title") or
+                 p.get("IncidentName") or p.get("Location") or p.get("location") or "WA Incident")
+        updated = (p.get("LastUpdated") or p.get("last_updated") or p.get("UpdateDateTime") or
+                   p.get("Updated") or p.get("updated") or "")
+
+        incidents.append({
+            "title":       title,
+            "alertLevel":  alert_level,
+            "status":      inc_status,
+            "type":        inc_type,
+            "size":        str(p.get("AreaBurnt") or p.get("Size") or p.get("size") or ""),
+            "agency":      "DFES",
+            "updated":     str(updated),
+            "description": str(p.get("Location") or p.get("Suburb") or p.get("suburb") or ""),
+            "lat":         lat,
+            "lng":         lng,
+            "polys":       [],
+            "state":       "WA",
+            "sourceUrl":   INCIDENT_FEEDS["wa"]["source_url"],
+        })
+
+    return incidents
+
+
+def parse_wa_rss(xml_text):
+    """
+    Parse WA DFES incident_FCAD.rss — GeoRSS format.
+    Expected: RSS 2.0 with <geo:lat>/<geo:long> or <georss:point> elements.
+    Falls back to BOM-style RSS parsing if structure differs.
+    """
+    incidents = []
+    try:
+        root = ET.fromstring(xml_text.strip())
+    except ET.ParseError as e:
+        print(f"  WA RSS: XML parse error — {e}")
+        return incidents
+
+    GEO_NS    = "http://www.w3.org/2003/01/geo/wgs84_pos#"
+    GEORSS_NS = "http://www.georss.org/georss"
+
+    items = root.findall(".//item")
+    print(f"  WA RSS: {len(items)} raw items")
+
+    if items:
+        # Log first item's child tags for schema discovery
+        tags = [child.tag for child in items[0]]
+        print(f"  WA RSS first item tags: {tags[:15]}")
+
+    for item in items:
+        def get(tag, ns=None):
+            el = item.find(f"{{{ns}}}{tag}") if ns else item.find(tag)
+            return el.text.strip() if el is not None and el.text else ""
+
+        title   = get("title")
+        link    = get("link") or get("guid")
+        desc    = get("description")
+        pub     = get("pubDate")
+
+        if not title:
+            continue
+
+        # Extract coordinates — try geo:lat/geo:long, georss:point, then description
+        lat, lng = 0.0, 0.0
+
+        lat_el = item.find(f"{{{GEO_NS}}}lat")
+        lng_el = item.find(f"{{{GEO_NS}}}long")
+        if lat_el is not None and lng_el is not None:
+            try:
+                lat = float(lat_el.text)
+                lng = float(lng_el.text)
+            except (ValueError, TypeError):
+                pass
+
+        if not lat:
+            point_el = item.find(f"{{{GEORSS_NS}}}point")
+            if point_el is not None and point_el.text:
+                parts = point_el.text.strip().split()
+                if len(parts) >= 2:
+                    try:
+                        lat, lng = float(parts[0]), float(parts[1])
+                    except ValueError:
+                        pass
+
+        if not lat or not lng:
+            continue
+
+        # Alert level from title — WA typically prefixes with warning level
+        title_l = title.lower()
+        alert_level = ("Emergency Warning" if "emergency warning" in title_l else
+                       "Watch and Act"     if "watch and act"     in title_l else
+                       "Advice"            if "advice"            in title_l else "")
+
+        # Type from title or description
+        inc_type = ""
+        if "bushfire" in title_l or "fire" in title_l:
+            inc_type = "Bush Fire"
+        elif "flood" in title_l:
+            inc_type = "Flood"
+        elif "hazard reduction" in title_l or "prescribed burn" in title_l:
+            inc_type = "hazard reduction burn"
+
+        if is_excluded_incident(inc_type, ""):
+            continue
+
+        # Strip alert level prefix from title
+        clean_title = title
+        for prefix in ["Emergency Warning - ", "Watch and Act - ", "Advice - "]:
+            if clean_title.startswith(prefix):
+                clean_title = clean_title[len(prefix):]
+                break
+
+        incidents.append({
+            "title":       clean_title or title,
+            "alertLevel":  alert_level,
+            "status":      "",
+            "type":        inc_type,
+            "size":        "",
+            "agency":      "DFES",
+            "updated":     pub,
+            "description": desc[:200] if desc else "",
+            "lat":         lat,
+            "lng":         lng,
+            "polys":       [],
+            "state":       "WA",
+            "sourceUrl":   INCIDENT_FEEDS["wa"]["source_url"],
+        })
+
+    return incidents
+
+
+def fetch_wa_incidents():
+    """
+    Fetch WA DFES incidents.
+    Strategy:
+      1. Try JSON feed with Referer + Accept headers (EmergencyWA app-style request)
+      2. If JSON redirects to HTML or fails, try RSS feed with same headers
+      3. If both fail, return empty list — BOM WA warnings (IDZ00060) cover serious events
+    Returns (list, method_used, error_or_None)
+    """
+    headers = {
+        "User-Agent": "Mozilla/5.0 (compatible; WeatherMap/1.0)",
+        "Referer":    "https://www.emergency.wa.gov.au/",
+        "Accept":     "application/json, text/javascript, */*",
+        "X-Requested-With": "XMLHttpRequest",
+    }
+
+    # ── Attempt 1: JSON feed ─────────────────────────────────────────────────
+    try:
+        r = requests.get(INCIDENT_FEEDS["wa"]["url"], timeout=20, headers=headers,
+                         allow_redirects=True)
+        content_type = r.headers.get("Content-Type", "")
+        print(f"  WA JSON: HTTP {r.status_code}, Content-Type: {content_type[:60]}")
+
+        if r.status_code == 200 and "html" not in content_type.lower():
+            text = r.text.strip().lstrip('\ufeff')
+            obj = json.loads(text)
+            incidents = parse_wa_json(obj)
+            print(f"  WA incidents (JSON): {len(incidents)} active")
+            return incidents, "json", None
+        else:
+            print("  WA JSON: redirected to HTML or wrong content-type — trying RSS")
+
+    except (requests.RequestException, json.JSONDecodeError) as e:
+        print(f"  WA JSON: failed — {e} — trying RSS")
+
+    # ── Attempt 2: RSS feed ──────────────────────────────────────────────────
+    rss_headers = {**headers, "Accept": "application/rss+xml, application/xml, text/xml, */*"}
+    try:
+        r = requests.get(INCIDENT_FEEDS["wa"]["url_rss"], timeout=20, headers=rss_headers,
+                         allow_redirects=True)
+        content_type = r.headers.get("Content-Type", "")
+        print(f"  WA RSS: HTTP {r.status_code}, Content-Type: {content_type[:60]}")
+
+        if r.status_code == 200 and "html" not in content_type.lower():
+            incidents = parse_wa_rss(r.text)
+            print(f"  WA incidents (RSS): {len(incidents)} active")
+            return incidents, "rss", None
+        else:
+            print("  WA RSS: also redirected to HTML — both feeds inaccessible")
+            return [], "none", "Both JSON and RSS feeds returned HTML (likely access-restricted)"
+
+    except requests.RequestException as e:
+        print(f"  WA RSS: failed — {e}")
+        return [], "none", str(e)
+
+
+
+def parse_tas_incidents(xml_text):
+    """
+    Parse TAS TFS KML feed (fire.tas.gov.au/Show?pageId=bfKml).
+
+    Confirmed schema from live feed:
+      <Placemark id="INCIDENT_NO">
+        <name>Address, SUBURB</name>           — incident title/location
+        <styleUrl>#noAlertLevelStyle</styleUrl> — alert level from style name
+        <description>HTML-encoded table</description>  — contains Type, Status, Last Update
+        <Point><coordinates>lat,lng</coordinates></Point>  — NOTE: lat,lng order (not GeoJSON)
+
+    Alert level style IDs:
+      #emergencyWarningStyle, #watchAndActStyle, #adviceStyle,
+      #smokeAlertStyle, #noAlertLevelStyle
+
+    Description table fields: Alert Level, Type, Last Update, First Report, Status, Agency, Incident No
+    Status values: Going, Patrol, Contained, Safe
+    """
+    import html as html_module
+    incidents = []
+
+    try:
+        root = ET.fromstring(xml_text.strip())
+    except ET.ParseError as e:
+        print(f"  TAS KML: XML parse error — {e}")
+        return incidents
+
+    KML_NS = "http://earth.google.com/kml/2.1"
+
+    # Handle both namespaced and bare KML
+    placemarks = root.findall(f".//{{{KML_NS}}}Placemark")
+    if not placemarks:
+        placemarks = root.findall(".//Placemark")
+
+    print(f"  TAS KML: {len(placemarks)} raw placemarks")
+
+    for pm in placemarks:
+        def get(tag):
+            el = pm.find(f"{{{KML_NS}}}{tag}") or pm.find(tag)
+            return el.text.strip() if el is not None and el.text else ""
+
+        title = get("name")
+        style_url = get("styleUrl")
+        raw_desc = get("description")
+
+        # Coordinates: TAS KML uses lat,lng order (opposite of GeoJSON lng,lat)
+        coords_el = (pm.find(f".//{{{KML_NS}}}coordinates") or
+                     pm.find(".//coordinates"))
+        if coords_el is None or not coords_el.text:
+            continue
+        try:
+            # TAS format: "lat,lng" (confirmed from live feed)
+            parts = coords_el.text.strip().split(",")
+            lat, lng = float(parts[0]), float(parts[1])
+        except (ValueError, IndexError):
+            continue
+
+        if not lat or not lng:
+            continue
+
+        # Alert level from styleUrl — most reliable field
+        sl = (style_url or "").lower()
+        alert_level = ("Emergency Warning" if "emergencywarning" in sl else
+                       "Watch and Act"     if "watchandact"      in sl else
+                       "Advice"            if "advice"           in sl else
+                       "Smoke Alert"       if "smoke"            in sl else "")
+
+        # Parse HTML-encoded description table to extract Type and Status
+        # Description is HTML-encoded, contains <table><tr><th>Field</th><td>Value</td></tr>...
+        inc_type   = ""
+        inc_status = ""
+        updated    = ""
+
+        if raw_desc:
+            decoded = html_module.unescape(raw_desc)
+            # Extract field values from th/td pairs using simple regex
+            pairs = re.findall(
+                r'<th[^>]*>(.*?)</th>\s*<td[^>]*>(.*?)</td>',
+                decoded, re.IGNORECASE | re.DOTALL
+            )
+            for key_raw, val_raw in pairs:
+                key_clean = re.sub(r'<[^>]+>', '', key_raw).strip()
+                val_clean = re.sub(r'<[^>]+>', '', val_raw).strip()
+                if key_clean == "Type":
+                    inc_type = val_clean
+                elif key_clean == "Status":
+                    inc_status = val_clean
+                elif key_clean == "Last Update":
+                    updated = val_clean
+
+        # TAS statuses: Going=active, Patrol=monitoring, Contained/Safe=resolved
+        # "No Alert Level" with Going/Patrol statuses — exclude like NSW "Not Applicable"
+        # Only include if there's a meaningful alert level OR status is "Going"
+        if not alert_level and inc_status.lower() not in ("going",):
+            continue
+
+        # Smoke Alerts are informational — skip (no community action required)
+        if alert_level == "Smoke Alert":
+            continue
+
+        if is_excluded_incident(inc_type, inc_status):
+            continue
+
+        incidents.append({
+            "title":       title or "TAS Incident",
+            "alertLevel":  alert_level,
+            "status":      inc_status,
+            "type":        inc_type.title() if inc_type else "",
+            "size":        "",
+            "agency":      "TFS",
+            "updated":     updated,
+            "description": "",
+            "lat":         lat,
+            "lng":         lng,
+            "polys":       [],
+            "state":       "TAS",
+            "sourceUrl":   INCIDENT_FEEDS["tas"]["source_url"],
+        })
+
+    return incidents
+
+
+
     """Fetch and parse one state's incident feed. Returns (list, error_or_None)."""
+    # WA has its own dedicated fetch function with JSON->RSS->fallback logic
+    if key == "wa":
+        return [], None
+
     url = feed_cfg["url"]
     try:
         r = requests.get(url, timeout=20, headers={
             "User-Agent": "Mozilla/5.0 (compatible; WeatherMap/1.0)",
-            "Accept": "application/json",
+            "Accept": "application/json, application/xml, text/xml, */*",
         })
         r.raise_for_status()
 
@@ -700,6 +1082,8 @@ def fetch_incidents(key, feed_cfg):
                 print(f"  QLD debug error: {e}")
         elif key == "sa":
             incidents = parse_sa_incidents(obj)
+        elif key == "tas":
+            incidents = parse_tas_incidents(r.text)  # KML — parse from raw text, not JSON
         else:
             incidents = []
 
@@ -742,11 +1126,23 @@ def main():
     total_incidents = 0
 
     for key, feed_cfg in INCIDENT_FEEDS.items():
+        if key == "wa":
+            continue  # WA handled separately below
         inc_list, inc_err = fetch_incidents(key, feed_cfg)
         incidents[key] = inc_list
         total_incidents += len(inc_list)
         if inc_err:
             incident_errors[key] = inc_err
+
+    # ── Fetch WA incidents (JSON→RSS→fallback) ────────────────────────────────
+    print("Fetching WA incidents...")
+    wa_list, wa_method, wa_err = fetch_wa_incidents()
+    incidents["wa"] = wa_list
+    total_incidents += len(wa_list)
+    if wa_err:
+        incident_errors["wa"] = wa_err
+        print(f"  WA fallback: BOM WA warnings (IDZ00060) cover serious events")
+    print(f"  WA incidents: {len(wa_list)} active (method: {wa_method})")
 
     # ── Fetch NSW RFS alert zones (CAP-AU polygons) ───────────────────────────
     print("Fetching NSW alert zones...")
@@ -763,9 +1159,10 @@ def main():
         "warning_count":    len(unique_warnings),
         "warnings":         unique_warnings,
         "fetch_errors":     errors,
-        "incidents":        incidents,       # keyed by state: "nsw","vic","qld","sa"
+        "incidents":        incidents,
         "incident_count":   total_incidents,
-        "nsw_alert_zones":  nsw_alert_zones, # CAP-AU polygons for site-risk intersection
+        "nsw_alert_zones":  nsw_alert_zones,
+        "wa_feed_method":   wa_method,   # "json", "rss", or "none" — for UI diagnostics
     }
 
     with open("live_data.json", "w") as f:
