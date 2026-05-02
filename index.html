@@ -955,6 +955,27 @@ var BOM_FTP_PRODUCTS = {
       NSW:["IDN65098"],VIC:["IDV65150"],QLD:["IDQ65298"],
       SA:["IDS65100"],WA:["IDW65200"],TAS:["IDT65200"],NT:["IDD65100"]
     }
+  },
+  flood: {
+    label:"Flood",
+    icon:"💧",
+    color:"#4dabf7",
+    zone_color:"#4dabf7",
+    ids:{}
+  },
+  wind: {
+    label:"Wind / Marine",
+    icon:"🌬",
+    color:"#74c0fc",
+    zone_color:"#74c0fc",
+    ids:{}
+  },
+  other: {
+    label:"Other Warning",
+    icon:"⚠️",
+    color:"#f0a500",
+    zone_color:"#f0a500",
+    ids:{}
   }
 };
 
@@ -1139,17 +1160,33 @@ function fetchBOMWarnings() {
 
       // Map live_data warnings into bomWarnings format
       (data.warnings || []).forEach(function(w){
+        var type = w.type || 'other';
+        var typeInfo = BOM_FTP_PRODUCTS[type] || BOM_FTP_PRODUCTS['other'];
+        var color = typeInfo.color;
+        // Format issued time
+        var issuedAt = '';
+        if(w.issued){
+          try{
+            var d = new Date(w.issued);
+            if(!isNaN(d)) issuedAt = 'Issued: '+d.toLocaleString('en-AU',{
+              day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',
+              timeZone:'Australia/Sydney'
+            })+' AEST';
+          }catch(e){}
+        }
         bomWarnings.push({
           pid:      w.pid || '',
           title:    w.title || 'BOM Warning',
-          type:     w.type || 'other',
+          type:     type,
           state:    w.state || '',
           districts: w.desc ? extractDistricts(w.desc) : '',
           hazards:  [],
           issued:   w.issued || '',
+          issuedAt: issuedAt,
           text:     w.desc || '',
           link:     w.link || 'https://www.bom.gov.au/australia/warnings/',
-          coords:   getDistrictCoords(w.desc + ' ' + w.title, w.state)
+          coords:   getDistrictCoords((w.desc||'') + ' ' + (w.title||''), w.state),
+          color:    color
         });
       });
 
@@ -1260,9 +1297,10 @@ function renderWarningsMap() {
     }).addTo(warningsLayer);
 
     // Popup content
+    var typeInfo = BOM_FTP_PRODUCTS[w.type] || BOM_FTP_PRODUCTS['other'];
     var popHtml = '<div>' +
-      '<div class="pu-title" style="color:' + w.color + '">' + w.icon + ' ' + w.title + '</div>' +
-      '<span class="pu-badge" style="background:' + w.color + ';color:#fff;opacity:0.9">' + w.label + '</span>' +
+      '<div class="pu-title" style="color:' + w.color + '">' + typeInfo.icon + ' ' + w.title + '</div>' +
+      '<span class="pu-badge" style="background:' + w.color + ';color:#fff;opacity:0.9">' + typeInfo.label + '</span>' +
       '<span class="pu-badge" style="background:#333;color:#ccc">' + w.state + '</span>' +
       '<div style="border-top:1px solid var(--border);margin:8px 0"></div>' +
       (w.districts ? '<div class="pu-row"><span class="pu-key">Districts</span><span class="pu-val">' + w.districts + '</span></div>' : '') +
