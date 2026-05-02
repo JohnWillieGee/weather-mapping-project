@@ -226,45 +226,65 @@ def is_excluded_incident(inc_type, inc_status):
 def parse_qld_incidents(data):
     """
     Parse QLD QFD bushfire JSON into normalised incident list.
-    Feed structure: {"features": [...]} where each feature has geometry + properties.
-    Falls back to flat list format {"results": [...]}.
+
+    The QLD S3 feed has been observed in these formats:
+      Format A — legacy flat:  {"Incidents": [{Longitude, Latitude, IncidentName, ...}]}
+      Format B — GeoJSON:      {"type":"FeatureCollection","features":[{geometry,properties}]}
+      Format C — bare list:    [{...}]
+
+    In Format A, all fields are top-level on each incident object (no "properties" wrapper).
+    This is the most common live format — always try it first.
     """
     incidents = []
 
-    # Determine record list — GeoJSON features or flat results array
-    if isinstance(data, dict) and "features" in data:
+    # Determine record list and whether we have a GeoJSON feature wrapper
+    use_geojson_wrapper = False
+    if isinstance(data, dict) and "Incidents" in data:
+        # Format A — legacy flat list (most common live format)
+        records = data["Incidents"]
+        use_geojson_wrapper = False
+    elif isinstance(data, dict) and data.get("type") == "FeatureCollection":
+        # Format B — GeoJSON FeatureCollection
+        records = data.get("features", [])
+        use_geojson_wrapper = True
+    elif isinstance(data, list):
+        # Format C — bare array
+        records = data
+        use_geojson_wrapper = False
+    elif isinstance(data, dict) and "features" in data:
+        # Format B variant — FeatureCollection without explicit type field
         records = data["features"]
-        use_geojson = True
+        use_geojson_wrapper = True
     elif isinstance(data, dict) and "results" in data:
         records = data["results"]
-        use_geojson = False
-    elif isinstance(data, list):
-        records = data
-        use_geojson = False
+        use_geojson_wrapper = False
     else:
-        print("  QLD: unexpected JSON structure")
+        print(f"  QLD: unexpected JSON structure — top-level keys: {list(data.keys()) if isinstance(data, dict) else type(data)}")
         return incidents
 
+    print(f"  QLD: {len(records)} raw records (format={'geojson' if use_geojson_wrapper else 'flat'})")
+
     for rec in records:
-        if use_geojson:
-            p = rec.get("properties", {})
+        if use_geojson_wrapper:
+            # GeoJSON: coords in geometry, fields in properties
+            p = rec.get("properties", {}) if isinstance(rec, dict) else {}
             geom = rec.get("geometry") or {}
             coords = geom.get("coordinates", [])
-            # Centroid from geometry if point, else from property fields
             if geom.get("type") == "Point" and len(coords) >= 2:
                 lng, lat = float(coords[0]), float(coords[1])
             else:
                 lat = float(p.get("Latitude") or p.get("latitude") or 0)
                 lng = float(p.get("Longitude") or p.get("longitude") or 0)
         else:
-            p = rec
+            # Flat format — all fields directly on the record
+            p = rec if isinstance(rec, dict) else {}
             lat = float(p.get("Latitude") or p.get("latitude") or 0)
             lng = float(p.get("Longitude") or p.get("longitude") or 0)
 
         if not lat or not lng:
             continue
 
-        inc_type = (p.get("IncidentType") or p.get("Type") or p.get("incidentType") or "")
+        inc_type   = (p.get("IncidentType") or p.get("Type") or p.get("incidentType") or "")
         inc_status = (p.get("IncidentStatus") or p.get("Status") or "")
 
         if is_excluded_incident(inc_type, inc_status):
@@ -277,19 +297,23 @@ def parse_qld_incidents(data):
             p.get("UpdateDateTime") or p.get("LastUpdate") or ""
         )
 
+        # Title: try all known QLD field names
+        title = (p.get("IncidentName") or p.get("Name") or p.get("name") or
+                 p.get("Title") or p.get("title") or "QLD Incident")
+
         incidents.append({
-            "title":      p.get("IncidentName") or p.get("Title") or p.get("title") or "QLD Incident",
-            "alertLevel": alert_level,
-            "status":     inc_status,
-            "type":       inc_type,
-            "size":       str(p.get("AreaBurnt") or p.get("areaBurnt") or ""),
-            "agency":     "QFD",
-            "updated":    updated,
-            "description": p.get("AreaDescription") or "",
-            "lat":        lat,
-            "lng":        lng,
-            "state":      "QLD",
-            "sourceUrl":  INCIDENT_FEEDS["qld"]["source_url"],
+            "title":       title,
+            "alertLevel":  alert_level,
+            "status":      inc_status,
+            "type":        inc_type,
+            "size":        str(p.get("AreaBurnt") or p.get("areaBurnt") or ""),
+            "agency":      "QFD",
+            "updated":     updated,
+            "description": (p.get("AreaDescription") or p.get("LocalGovernmentArea") or ""),
+            "lat":         lat,
+            "lng":         lng,
+            "state":       "QLD",
+            "sourceUrl":   INCIDENT_FEEDS["qld"]["source_url"],
         })
 
     return incidents
@@ -390,6 +414,22 @@ def fetch_incidents(key, feed_cfg):
 
         if key == "qld":
             incidents = parse_qld_incidents(obj)
+            # Debug: log first raw record's field names so we can verify schema in Action log
+            try:
+                raw_records = (obj.get("Incidents") or obj.get("features") or
+                               (obj if isinstance(obj, list) else []))
+                if raw_records:
+                    first = raw_records[0]
+                    # For GeoJSON, unwrap properties
+                    if "properties" in first:
+                        first = first["properties"]
+                    print(f"  QLD schema keys: {list(first.keys())[:15]}")
+                    print(f"  QLD sample — name:{first.get('IncidentName') or first.get('Name') or first.get('name')} "
+                          f"type:{first.get('IncidentType') or first.get('Type')} "
+                          f"situation:{first.get('CurrentSituation')} "
+                          f"status:{first.get('IncidentStatus') or first.get('Status')}")
+            except Exception as e:
+                print(f"  QLD debug error: {e}")
         elif key == "sa":
             incidents = parse_sa_incidents(obj)
         else:
