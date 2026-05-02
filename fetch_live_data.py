@@ -256,10 +256,22 @@ def is_excluded_incident(inc_type, inc_status):
 def parse_nsw_incidents(data):
     """
     Parse NSW RFS majorIncidents.json (GeoJSON FeatureCollection).
-    Each feature has geometry (Point or Polygon) and properties including:
-      title, category (alert level), status, type, size, updated, guid
-    Excludes: Not Applicable alert level, planned burns, resolved statuses.
+
+    IMPORTANT: The NSW RFS feed embeds ALL incident data inside the 'description'
+    property as HTML-encoded 'KEY: Value <br />' pairs. The top-level properties
+    only reliably contain: title, category (alert level), pubDate, guid, link.
+    All other fields (type, status, size, location, council, agency) must be
+    parsed from the description HTML.
+
+    Description format example:
+      ALERT LEVEL: Advice <br />LOCATION: Warialda RD, Warialda 2402 <br />
+      COUNCIL AREA: Gwydir <br />STATUS: Under control <br />
+      TYPE: Grass Fire <br />SIZE: 0 ha <br />
+      RESPONSIBLE AGENCY: Rural Fire Service <br />
+
+    Excludes: Not Applicable alert level, planned/prescribed burns, resolved statuses.
     """
+    import html as html_module
     incidents = []
     features = data.get("features", []) if isinstance(data, dict) else []
 
@@ -267,14 +279,13 @@ def parse_nsw_incidents(data):
         p = f.get("properties", {})
         geom = f.get("geometry") or {}
 
-        # Centroid: use Point geometry if available, else first coord of polygon
-        lat, lng = 0, 0
+        # Centroid: use Point geometry, else average polygon ring coordinates
+        lat, lng = 0.0, 0.0
         if geom.get("type") == "Point":
             coords = geom.get("coordinates", [])
             if len(coords) >= 2:
                 lng, lat = float(coords[0]), float(coords[1])
         elif geom.get("type") in ("Polygon", "MultiPolygon"):
-            # Use first coordinate of outer ring as centroid approximation
             try:
                 ring = geom["coordinates"][0]
                 if geom["type"] == "MultiPolygon":
@@ -289,15 +300,44 @@ def parse_nsw_incidents(data):
         if not lat or not lng:
             continue
 
-        # NSW uses "category" for alert level
+        # Alert level comes from the top-level 'category' property
         alert_level = normalise_alert_level(p.get("category") or "")
 
         # Exclude Not Applicable — non-actionable monitoring entries
         if (alert_level or "").lower() in ("not applicable", ""):
             continue
 
-        inc_type   = p.get("type") or ""
-        inc_status = p.get("status") or ""
+        # Parse description HTML — all the real incident data is here
+        # Format: "KEY: Value <br />\nKEY: Value <br />"
+        inc_type    = ""
+        inc_status  = ""
+        location    = ""
+        council     = ""
+        size        = ""
+        agency      = "RFS"
+
+        raw_desc = p.get("description") or ""
+        if raw_desc:
+            decoded = html_module.unescape(raw_desc)
+            # Split on <br /> variants and extract key:value pairs
+            for part in re.split(r'<br\s*/?>', decoded, flags=re.IGNORECASE):
+                part = re.sub(r'<[^>]+>', '', part).strip()  # strip any remaining tags
+                if ':' in part:
+                    key, _, val = part.partition(':')
+                    key = key.strip().upper()
+                    val = val.strip()
+                    if key == 'TYPE':
+                        inc_type = val
+                    elif key == 'STATUS':
+                        inc_status = val
+                    elif key == 'LOCATION':
+                        location = val
+                    elif key == 'COUNCIL AREA':
+                        council = val
+                    elif key == 'SIZE':
+                        size = val
+                    elif key == 'RESPONSIBLE AGENCY':
+                        agency = val
 
         if is_excluded_incident(inc_type, inc_status):
             continue
@@ -305,24 +345,25 @@ def parse_nsw_incidents(data):
         # Extract polygons for site-risk intersection (store as [lng,lat] pairs)
         polys = []
         if geom.get("type") == "Polygon":
-            polys = [geom["coordinates"][0]]  # outer ring only
+            polys = [geom["coordinates"][0]]
         elif geom.get("type") == "MultiPolygon":
             polys = [ring[0] for ring in geom["coordinates"]]
 
         incidents.append({
-            "title":      p.get("title") or "NSW Incident",
-            "alertLevel": alert_level,
-            "status":     inc_status,
-            "type":       inc_type,
-            "size":       str(p.get("size") or ""),
-            "agency":     p.get("respondsTo") or "RFS",
-            "updated":    p.get("updated") or "",
-            "description": p.get("location") or "",
-            "lat":        lat,
-            "lng":        lng,
-            "polys":      polys,   # [lng,lat] coordinate rings for polygon rendering
-            "state":      "NSW",
-            "sourceUrl":  INCIDENT_FEEDS["nsw"]["source_url"],
+            "title":       p.get("title") or "NSW Incident",
+            "alertLevel":  alert_level,
+            "status":      inc_status,
+            "type":        inc_type,
+            "size":        size,
+            "agency":      agency,
+            "updated":     p.get("pubDate") or "",
+            "description": location,
+            "council":     council,
+            "lat":         lat,
+            "lng":         lng,
+            "polys":       polys,
+            "state":       "NSW",
+            "sourceUrl":   INCIDENT_FEEDS["nsw"]["source_url"],
         })
 
     return incidents
