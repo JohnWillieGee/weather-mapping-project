@@ -133,6 +133,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
       <button class="map-btn on" id="btn-labels" onclick="toggleLayer('labels')">State Labels</button>
       <button class="map-btn" id="btn-fdr" onclick="toggleFDRLayer()">&#128293; Fire Danger</button>
       <button class="map-btn" id="btn-warnings" onclick="toggleWarningsLayer()">&#9889; Warnings</button>
+      <button class="map-btn" id="btn-alerts" onclick="toggleAlertsLayer()">&#128680; NSW Alerts</button>
       <button class="map-btn" id="btn-incidents" onclick="toggleIncidentsLayer()">&#9888; Incidents</button>
     </div>
     <div id="map"></div>
@@ -143,10 +144,10 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
       <div class="li"><div class="ld sq" style="background:#b71c1c"></div>Extreme</div>
       <div class="li"><div class="ld sq" style="background:#4a148c"></div>Catastrophic</div>
       <hr style="border-color:var(--border);margin:7px 0">
-      <h4>Incidents</h4>
-      <div class="li"><div class="ld" style="background:#ff2222"></div>Emergency Warning</div>
-      <div class="li"><div class="ld" style="background:#ff8800"></div>Watch and Act</div>
-      <div class="li"><div class="ld" style="background:#ffcc00"></div>Advice</div>
+      <h4>NSW Alert Zones</h4>
+      <div class="li"><div class="ld sq" style="background:#ff2222;opacity:0.5"></div>Emergency Warning</div>
+      <div class="li"><div class="ld sq" style="background:#ff8800;opacity:0.5"></div>Watch and Act</div>
+      <div class="li"><div class="ld sq" style="background:#ffcc00;opacity:0.5"></div>Advice</div>
     </div>
   </div>
   <div id="weather-panel">
@@ -231,12 +232,21 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 
       <hr style="border-color:var(--border);margin:8px 0 14px">
 
+      <!-- NSW ALERT ZONES -->
       <div class="wp-section">
-        <div class="wp-section-title"><span>&#128279; Sources</span></div>
+        <div class="wp-section-title">
+          <span>&#128680; NSW Warning Zones</span>
+          <button class="wp-toggle" id="alerts-map-toggle" onclick="toggleAlertsLayer()">Map</button>
+        </div>
+        <div id="alerts-fetch-status" class="fetch-status fetch-loading">&#8635; fetching RFS...</div>
+        <div id="nsw-alerts-content"><div class="wp-loading">Loading...</div></div>
+      </div>
+
+      <hr style="border-color:var(--border);margin:8px 0 14px">
         <div style="display:flex;flex-direction:column;gap:4px;">
           <a class="pu-link" href="https://www.esriaustraliahub.com.au/datasets/fire-danger-ratings-4-day-forecast/explore" target="_blank" rel="noopener">&#128293; FDR — ESRI AU Hub</a>
           <a class="pu-link" href="https://www.bom.gov.au/australia/warnings/" target="_blank" rel="noopener">&#9928; BOM Warnings</a>
-          <a class="pu-link" href="https://www.rfs.nsw.gov.au/fire-information/fires-near-me" target="_blank" rel="noopener">&#128293; NSW RFS</a>
+          <a class="pu-link" href="https://www.rfs.nsw.gov.au/feeds/IncidentAlerts.xml" target="_blank" rel="noopener">&#128680; NSW RFS Alert Zones</a>
           <a class="pu-link" href="https://www.emergency.vic.gov.au/respond/" target="_blank" rel="noopener">&#128293; VIC Emergency</a>
           <a class="pu-link" href="https://www.fire.qld.gov.au/Current-Incidents" target="_blank" rel="noopener">&#128293; QLD Fire Dept</a>
         </div>
@@ -362,9 +372,10 @@ var LIGHT_TILE = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png
 var ATTR = "&copy; <a href='https://carto.com/'>CARTO</a> &copy; <a href='https://www.openstreetmap.org/'>OSM</a>";
 
 // ── GLOBAL STATE ──
-var map, tileLayer, stateLayer, labelGroup, fdrLayer, warningsLayer, incidentsLayer;
+var map, tileLayer, stateLayer, labelGroup, fdrLayer, warningsLayer, incidentsLayer, alertsLayer;
 var fdrFeatures=[], fdrPeriodTimes={};
 var warningsData=[];
+var alertsData=[];   // NSW warning zone polygons from IncidentAlerts.xml
 var allIncidents={nsw:[],vic:[],qld:[]};
 var feedStatus={nsw:"pending",vic:"pending",qld:"pending"};
 var fdrVisible=false, warningsVisible=false, incidentsVisible=false;
@@ -393,6 +404,7 @@ function initMap(){
   fdrLayer=L.layerGroup();
   warningsLayer=L.layerGroup();
   incidentsLayer=L.layerGroup();
+  alertsLayer=L.layerGroup();
   document.getElementById("theme-toggle").textContent=isDark?"\u2600":"\u263D";
   document.getElementById("loading").style.display="none";
   document.getElementById("app").style.visibility="visible";
@@ -402,13 +414,14 @@ function initMap(){
 function startFetching(){
   fetchFDR();
   fetchBOMWarnings();
+  fetchNSWAlerts();
   Object.keys(INC_FEEDS).forEach(fetchIncidents);
 }
 
 function refreshAll(){
   var btn=document.getElementById("refresh-btn");
   btn.classList.add("spinning");
-  fdrFeatures=[];fdrPeriodTimes={};fdrGeoLoaded=false;warningsData=[];
+  fdrFeatures=[];fdrPeriodTimes={};fdrGeoLoaded=false;warningsData=[];alertsData=[];
   allIncidents={nsw:[],vic:[],qld:[]};
   feedStatus={nsw:"pending",vic:"pending",qld:"pending"};
   document.getElementById("h-warnings").textContent="-";
@@ -419,7 +432,7 @@ function refreshAll(){
   document.getElementById("bom-warnings-content").innerHTML="<div class='wp-loading'>Loading...</div>";
   document.getElementById("inc-content").innerHTML="<div class='wp-loading'>Fetching feeds...</div>";
   ["nsw","vic","qld"].forEach(function(k){setFeedStatus(k,"loading","fetching...");});
-  fdrLayer.clearLayers();warningsLayer.clearLayers();incidentsLayer.clearLayers();
+  fdrLayer.clearLayers();warningsLayer.clearLayers();incidentsLayer.clearLayers();alertsLayer.clearLayers();
   setTimeout(function(){btn.classList.remove("spinning");},8000);
   startFetching();
   showToast("Refreshing all live data...");
@@ -654,7 +667,148 @@ function toggleWarningsLayer(){
   else{map.removeLayer(warningsLayer);btn.classList.remove("fdr-on");if(tog)tog.classList.remove("on");}
 }
 
-// ── INCIDENT FEED STATUS UI ──
+// ── NSW ALERT ZONES (IncidentAlerts.xml — CAP-AU format) ──
+// This feed contains the official warning zone polygons (evacuation areas) for active NSW RFS warnings
+// It is blank when no warnings are current — that is expected and normal
+var alertsVisible = false;
+
+function fetchNSWAlerts(){
+  statusEl("alerts-fetch-status","fetch-loading","&#8635; fetching RFS alerts...");
+  fetchProxied("https://www.rfs.nsw.gov.au/feeds/IncidentAlerts.xml")
+    .then(function(r){return r.text();})
+    .then(function(txt){
+      alertsData = parseNSWAlerts(txt);
+      renderAlertsPanel();
+      if(alertsVisible) renderAlertsMap();
+      var n = alertsData.length;
+      if(n===0){
+        statusEl("alerts-fetch-status","fetch-ok","&#10003; No active warning zones &middot; RFS");
+      }else{
+        statusEl("alerts-fetch-status","fetch-ok","&#10003; "+n+" warning zone"+(n>1?"s":"")+" &middot; RFS");
+      }
+    })
+    .catch(function(e){
+      statusEl("alerts-fetch-status","fetch-err","&#10007; "+e.message);
+      document.getElementById("nsw-alerts-content").innerHTML="<div class='wp-none'>Failed &mdash; <a href='https://www.rfs.nsw.gov.au/feeds/IncidentAlerts.xml' target='_blank' style='color:var(--accent2)'>RFS &#8599;</a></div>";
+    });
+}
+
+function parseNSWAlerts(xmlText){
+  var out=[];
+  try{
+    var parser=new DOMParser();
+    var doc=parser.parseFromString(xmlText,"application/xml");
+    // CAP-AU structure: <feed> > <entry> > <cap:info> > <cap:area> > <cap:polygon>
+    // Also handles <alert> > <info> > <area> > <polygon> (older format)
+    var ns="urn:oasis:names:tc:emergency:cap:1.2";
+
+    function getText(el,tag,ns){
+      var els=ns?el.getElementsByTagNameNS(ns,tag):el.getElementsByTagName(tag);
+      return els.length?els[0].textContent.trim():"";
+    }
+
+    // Try Atom feed format (newer) with namespaced CAP elements
+    var entries=doc.getElementsByTagName("entry");
+    if(!entries.length) entries=doc.getElementsByTagName("alert");
+
+    Array.from(entries).forEach(function(entry){
+      var title=getText(entry,"title")||getText(entry,"cap:title")||"";
+      var updated=getText(entry,"updated")||getText(entry,"cap:sent")||"";
+
+      // Get alert level from title or event type
+      var titleL=title.toLowerCase();
+      var alertLevel=titleL.includes("emergency warning")?"Emergency Warning":
+                     titleL.includes("watch and act")?"Watch and Act":
+                     titleL.includes("advice")?"Advice":"";
+
+      // Find all polygon elements (may be in cap: namespace or direct)
+      var polyEls=Array.from(entry.getElementsByTagNameNS(ns,"polygon"));
+      if(!polyEls.length) polyEls=Array.from(entry.getElementsByTagName("cap:polygon"));
+      if(!polyEls.length) polyEls=Array.from(entry.getElementsByTagName("polygon"));
+
+      // Get area name
+      var areaEls=Array.from(entry.getElementsByTagNameNS(ns,"areaDesc"));
+      if(!areaEls.length) areaEls=Array.from(entry.getElementsByTagName("cap:areaDesc"));
+      if(!areaEls.length) areaEls=Array.from(entry.getElementsByTagName("areaDesc"));
+      var areaName=areaEls.length?areaEls[0].textContent.trim():"";
+
+      polyEls.forEach(function(polyEl){
+        var raw=polyEl.textContent.trim();
+        if(!raw) return;
+        // CAP polygon format: "lat,lng lat,lng lat,lng ..."
+        var coords=raw.split(/\s+/).map(function(pair){
+          var parts=pair.split(",");
+          if(parts.length<2) return null;
+          var lat=parseFloat(parts[0]),lng=parseFloat(parts[1]);
+          return(isNaN(lat)||isNaN(lng))?null:[lng,lat]; // convert to [lng,lat] for Leaflet
+        }).filter(Boolean);
+        if(coords.length<3) return;
+        // Close the ring if needed
+        if(coords[0][0]!==coords[coords.length-1][0]||coords[0][1]!==coords[coords.length-1][1]){
+          coords.push(coords[0]);
+        }
+        out.push({
+          title:title,
+          areaName:areaName,
+          alertLevel:alertLevel,
+          updated:updated,
+          coords:coords  // [lng,lat] pairs
+        });
+      });
+    });
+  }catch(e){
+    console.warn("NSW alert parse error:",e);
+  }
+  return out;
+}
+
+function renderAlertsPanel(){
+  if(!alertsData.length){
+    document.getElementById("nsw-alerts-content").innerHTML=
+      "<div class='wp-none' style='color:var(--accent2)'>&#10003; No active warning zones<br><span style='font-size:9px'>File is blank when no warnings are current</span></div>";
+    return;
+  }
+  var html="";
+  alertsData.forEach(function(a){
+    var col=alertColor(a.alertLevel);
+    var ac=alertClass(a.alertLevel);
+    html+="<div class='warn-row'>"
+      +(a.alertLevel?"<span class='inc-badge "+ac+"' style='background:"+col+";margin-bottom:3px;display:inline-block'>"+a.alertLevel+"</span><br>":"")
+      +"<div class='warn-title' style='color:"+col+"'>"+a.title+"</div>"
+      +(a.areaName?"<div style='font-size:9px;color:var(--text3)'>"+a.areaName+"</div>":"")
+      +(a.updated?"<div style='font-size:9px;color:var(--text3)'>"+a.updated+"</div>":"")
+      +"</div>";
+  });
+  document.getElementById("nsw-alerts-content").innerHTML=html;
+}
+
+function renderAlertsMap(){
+  alertsLayer.clearLayers();
+  alertsData.forEach(function(a){
+    var color=alertColor(a.alertLevel);
+    // Convert [lng,lat] to Leaflet [lat,lng]
+    var latlngs=a.coords.map(function(c){return[c[1],c[0]];});
+    var popHtml="<div>"
+      +"<div class='pu-title' style='color:"+color+"'>"+a.title+"</div>"
+      +(a.areaName?"<div class='pu-sub'>"+a.areaName+"</div>":"")
+      +(a.alertLevel?"<div class='pu-row'><span class='pu-key'>Alert Level</span><span class='pu-val' style='color:"+color+";font-weight:700'>"+a.alertLevel+"</span></div>":"")
+      +(a.updated?"<div class='pu-row'><span class='pu-key'>Updated</span><span class='pu-val'>"+a.updated+"</span></div>":"")
+      +"<div class='pu-links'><a class='pu-link' href='https://www.rfs.nsw.gov.au/fire-information/fires-near-me' target='_blank' rel='noopener'>&#128680; NSW RFS</a></div>"
+      +"</div>";
+    L.polygon(latlngs,{
+      color:color,weight:2,opacity:0.9,
+      fillColor:color,fillOpacity:0.2,
+      dashArray:"6 3"
+    }).bindPopup(popHtml,{className:"fire-popup",maxWidth:360}).addTo(alertsLayer);
+  });
+}
+
+function toggleAlertsLayer(){
+  alertsVisible=!alertsVisible;
+  var btn=document.getElementById("btn-alerts"),tog=document.getElementById("alerts-map-toggle");
+  if(alertsVisible){renderAlertsMap();alertsLayer.addTo(map);btn.classList.add("fire-on");if(tog)tog.classList.add("on");}
+  else{map.removeLayer(alertsLayer);btn.classList.remove("fire-on");if(tog)tog.classList.remove("on");}
+}
 function setFeedStatus(key,state,msg,count){
   var dot=document.getElementById("fdot-"+key);
   var msgEl=document.getElementById("fmsg-"+key);
