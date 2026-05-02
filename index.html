@@ -267,9 +267,10 @@ setTimeout(function(){
 
 // ── CONSTANTS ──
 // Proxy fallback chain — tried in order until one succeeds
+// allorigins first — most reliable for JSON APIs and S3 feeds
 var PROXIES = [
-  "https://corsproxy.io/?url=",
   "https://api.allorigins.win/raw?url=",
+  "https://corsproxy.io/?url=",
   "https://api.codetabs.com/v1/proxy?quest="
 ];
 
@@ -411,8 +412,15 @@ function refreshAll(){
 
 // ── FDR ──
 function fetchFDR(){
-  fetchWithFallback(FDR_ESRI_URL)
-    .then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
+  // ESRI returns Bad Request when proxies mangle query params — use allorigins which passes them cleanly
+  fetchProxied(FDR_ESRI_URL)
+    .then(function(r){return r.text();})
+    .then(function(txt){
+      // Strip any BOM or leading whitespace that breaks JSON.parse
+      var cleaned=txt.trim().replace(/^\uFEFF/,"");
+      return JSON.parse(cleaned);
+    })
+    .then(function(geojson){return geojson;})
     .then(function(geojson){
       fdrFeatures=geojson.features||[];
       if(!fdrFeatures.length)throw new Error("No features");
@@ -710,7 +718,15 @@ function fetchIncidents(key){
   setFeedStatus(key,"loading","fetching...");
 
   fetchProxied(feed.url)
-    .then(function(r){return r.json();})
+    .then(function(r){
+      // QLD S3 serves binary/octet-stream — must use text() then parse manually
+      // NSW and VIC return proper JSON content-type so json() works fine
+      if(feed.type==="geojson_qld") return r.text().then(function(t){
+        var cleaned=t.trim().replace(/^\uFEFF/,"");
+        return JSON.parse(cleaned);
+      });
+      return r.json();
+    })
     .then(function(data){
       var incidents;
       if(feed.type==="geojson")incidents=parseNSW(data);
