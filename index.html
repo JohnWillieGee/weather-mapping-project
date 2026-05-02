@@ -132,7 +132,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
       <button class="map-btn on" id="btn-states" onclick="toggleLayer('states')">State Borders</button>
       <button class="map-btn on" id="btn-labels" onclick="toggleLayer('labels')">State Labels</button>
       <button class="map-btn" id="btn-fdr" onclick="toggleFDRLayer()">&#128293; Fire Danger</button>
-      <button class="map-btn" id="btn-warnings" onclick="toggleWarningsLayer()">&#9889; Warnings</button>
+      <button class="map-btn" id="btn-warnings" onclick="toggleWarningsLayer()">&#9928; BOM Warnings</button>
       <button class="map-btn" id="btn-alerts" onclick="toggleAlertsLayer()">&#128680; NSW Alerts</button>
       <button class="map-btn" id="btn-incidents" onclick="toggleIncidentsLayer()">&#9888; Incidents</button>
     </div>
@@ -182,14 +182,22 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 
       <hr style="border-color:var(--border);margin:8px 0 14px">
 
-      <!-- BOM WARNINGS -->
+      <!-- BOM FTP WARNINGS -->
       <div class="wp-section">
         <div class="wp-section-title">
-          <span>&#9889; BOM Warnings</span>
+          <span>&#9928; BOM Warnings</span>
           <button class="wp-toggle" id="warn-map-toggle" onclick="toggleWarningsLayer()">Map</button>
         </div>
-        <div id="warn-fetch-status" class="fetch-status fetch-loading">&#8635; fetching...</div>
-        <div id="bom-warnings-content"><div class="wp-loading">Loading...</div></div>
+        <div id="warn-fetch-status" class="fetch-status fetch-loading">&#8635; checking BOM...</div>
+        <div class="wp-state-tabs" id="warn-type-tabs">
+          <button class="wp-tab on" onclick="showWarnType('all')" id="wt-all">All</button>
+          <button class="wp-tab" onclick="showWarnType('thunderstorm')" id="wt-thunderstorm">&#9928; Storm</button>
+          <button class="wp-tab" onclick="showWarnType('severe_weather')" id="wt-severe_weather">&#127755; Severe</button>
+          <button class="wp-tab" onclick="showWarnType('cyclone')" id="wt-cyclone">&#127300; Cyclone</button>
+          <button class="wp-tab" onclick="showWarnType('fire_weather')" id="wt-fire_weather">&#128293; Fire Wx</button>
+          <button class="wp-tab" onclick="showWarnType('heatwave')" id="wt-heatwave">&#127773; Heat</button>
+        </div>
+        <div id="bom-warnings-content"><div class="wp-loading">Checking BOM FTP products...</div></div>
       </div>
 
       <hr style="border-color:var(--border);margin:8px 0 14px">
@@ -246,6 +254,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
         <div style="display:flex;flex-direction:column;gap:4px;">
           <a class="pu-link" href="https://www.esriaustraliahub.com.au/datasets/fire-danger-ratings-4-day-forecast/explore" target="_blank" rel="noopener">&#128293; FDR — ESRI AU Hub</a>
           <a class="pu-link" href="https://www.bom.gov.au/australia/warnings/" target="_blank" rel="noopener">&#9928; BOM Warnings</a>
+          <a class="pu-link" href="https://www.bom.gov.au/catalogue/anon-ftp.shtml" target="_blank" rel="noopener">&#128190; BOM FTP Products</a>
           <a class="pu-link" href="https://www.rfs.nsw.gov.au/feeds/IncidentAlerts.xml" target="_blank" rel="noopener">&#128680; NSW RFS Alert Zones</a>
           <a class="pu-link" href="https://www.emergency.vic.gov.au/respond/" target="_blank" rel="noopener">&#128293; VIC Emergency</a>
           <a class="pu-link" href="https://www.fire.qld.gov.au/Current-Incidents" target="_blank" rel="noopener">&#128293; QLD Fire Dept</a>
@@ -421,7 +430,7 @@ function startFetching(){
 function refreshAll(){
   var btn=document.getElementById("refresh-btn");
   btn.classList.add("spinning");
-  fdrFeatures=[];fdrPeriodTimes={};fdrGeoLoaded=false;warningsData=[];alertsData=[];
+  fdrFeatures=[];fdrPeriodTimes={};fdrGeoLoaded=false;warningsData=[];bomWarnings=[];alertsData=[];
   allIncidents={nsw:[],vic:[],qld:[]};
   feedStatus={nsw:"pending",vic:"pending",qld:"pending"};
   document.getElementById("h-warnings").textContent="-";
@@ -604,59 +613,408 @@ function toggleFDRLayer(){
   }
 }
 
-// ── BOM WARNINGS ──
-function fetchBOMWarnings(){
-  statusEl("warn-fetch-status","fetch-loading","&#8635; fetching...");
-  // BOM API supports CORS — try direct first, then proxy fallbacks
-  fetchWithFallback(BOM_WARNINGS_API)
-    .then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
-    .then(function(json){
-      warningsData=json.data||[];
-      renderWarningsPanel();
-      if(warningsVisible)renderWarningsMap();
-      document.getElementById("h-warnings").textContent=warningsData.length||"0";
-      statusEl("warn-fetch-status","fetch-ok","&#10003; "+warningsData.length+" active &middot; api.weather.bom.gov.au");
-    })
-    .catch(function(e){
-      statusEl("warn-fetch-status","fetch-err","&#10007; "+e.message);
-      document.getElementById("bom-warnings-content").innerHTML="<div class='wp-none'>Failed &mdash; <a href='https://www.bom.gov.au/australia/warnings/' target='_blank' style='color:var(--accent2)'>BOM &#8599;</a></div>";
-    });
+// ── BOM FTP WARNINGS ──
+// Fetch BOM warning products via HTTPS (mirrored from FTP at bom.gov.au/products/)
+// Files only exist when a warning is active — 404 = no warning, 200 = active
+// We fetch the .txt version for human-readable text and district names
+
+// Product definitions — all warning types relevant to infrastructure
+var BOM_FTP_PRODUCTS = {
+  thunderstorm: {
+    label:"Severe Thunderstorm",
+    icon:"⛈",
+    color:"#9775fa",
+    zone_color:"#9775fa",
+    ids:{
+      NSW:["IDN21000","IDN21001","IDN21002"],
+      VIC:["IDV21000","IDV21001","IDV21002"],
+      QLD:["IDQ21035","IDQ21036","IDQ21037"],
+      SA:["IDS21045","IDS21046","IDS21047"],
+      WA:["IDW21000","IDW21001","IDW21002"],
+      TAS:["IDT21000"],
+      NT:["IDD21020"]
+    }
+  },
+  severe_weather: {
+    label:"Severe Weather",
+    icon:"🌬",
+    color:"#f0a500",
+    zone_color:"#f0a500",
+    ids:{
+      NSW:["IDN21010"],VIC:["IDV21010"],QLD:["IDQ21037"],
+      SA:["IDS21055"],WA:["IDW21005"],TAS:["IDT21010"],NT:["IDD21010"]
+    }
+  },
+  cyclone: {
+    label:"Tropical Cyclone",
+    icon:"🌀",
+    color:"#ff4757",
+    zone_color:"#ff4757",
+    ids:{
+      QLD:["IDQ65001"],WA:["IDW65001"],NT:["IDD65001"]
+    }
+  },
+  fire_weather: {
+    label:"Fire Weather",
+    icon:"🔥",
+    color:"#ff6b35",
+    zone_color:"#ff6b35",
+    ids:{
+      NSW:["IDN22000","IDN22001"],VIC:["IDV22000","IDV22001"],
+      QLD:["IDQ20035","IDQ20036"],SA:["IDS20290","IDS20299"],
+      WA:["IDW30000","IDW30100"],TAS:["IDT31100","IDT31200"],
+      NT:["IDD20320","IDD20330"]
+    }
+  },
+  heatwave: {
+    label:"Heatwave",
+    icon:"🌡",
+    color:"#ff6b6b",
+    zone_color:"#ff6b6b",
+    ids:{
+      NSW:["IDN65098"],VIC:["IDV65150"],QLD:["IDQ65298"],
+      SA:["IDS65100"],WA:["IDW65200"],TAS:["IDT65200"],NT:["IDD65100"]
+    }
+  }
+};
+
+// Forecast district name → [lat, lng] for map placement
+// Based on BOM Public Weather Forecast Districts
+var BOM_DISTRICTS = {
+  // NSW/ACT
+  "hunter":[-32.7,151.5],"sydney":[-33.9,151.2],"illawarra":[-34.5,150.9],
+  "south coast":[-36.0,150.1],"southern tablelands":[-34.5,149.5],
+  "snowy mountains":[-36.5,148.5],"central tablelands":[-33.5,149.6],
+  "central west":[-33.0,148.5],"new england":[-30.5,151.5],
+  "mid north coast":[-31.5,152.8],"north coast":[-30.5,153.0],
+  "far north coast":[-28.5,153.4],"northwest slopes":[-29.5,150.5],
+  "northwest":[-29.5,147.5],"riverina":[-35.1,146.9],
+  "upper western":[-30.0,143.0],"lower western":[-33.0,143.5],
+  "act":[-35.5,149.0],"canberra":[-35.3,149.1],
+  // VIC
+  "mallee":[-35.5,142.5],"wimmera":[-36.5,142.0],"central":[-37.0,144.5],
+  "gippsland":[-37.8,147.0],"east gippsland":[-37.5,148.0],
+  "north east":[-36.5,147.0],"north central":[-36.5,144.5],
+  "western district":[-37.8,143.0],"melbourne":[-37.8,145.0],
+  "south gippsland":[-38.3,146.0],"loddon mallee":[-36.0,143.5],
+  "central gippsland":[-37.8,146.5],"ovens and murray":[-36.2,146.5],
+  // QLD
+  "southeast coast":[-27.5,153.0],"darling downs":[-27.5,151.5],
+  "darling downs and granite belt":[-28.5,151.5],
+  "capricornia":[-23.5,150.5],"mackay":[-21.0,149.0],
+  "north tropical coast":[-17.0,145.8],"gulf country":[-18.0,139.5],
+  "channel country":[-26.0,142.0],"central highlands":[-23.5,147.5],
+  "peninsula":[-14.0,144.0],"far north":[-16.5,145.5],
+  "wide bay and burnett":[-25.5,152.0],"sunshine coast":[-26.5,153.0],
+  "moreton bay":[-27.2,153.0],"gold coast":[-28.0,153.4],
+  "maranoa and warrego":[-28.0,147.0],"south west":[-27.0,145.0],
+  // SA
+  "adelaide":[-34.9,138.6],"yorke peninsula":[-34.5,137.5],
+  "eyre peninsula":[-33.0,136.0],"lower south east":[-37.5,140.5],
+  "upper south east":[-36.0,140.5],"riverland":[-34.2,140.5],
+  "flinders":[-31.5,138.5],"north":[-30.0,136.5],
+  "mount lofty ranges":[-35.0,138.8],"kangaroo island":[-35.8,137.2],
+  "south east":[-36.5,140.5],"mid north":[-33.5,138.7],
+  "pastoral":[-29.0,135.0],
+  // WA
+  "perth":[-32.0,116.0],"south west":[-34.0,115.5],
+  "great southern":[-34.5,118.0],"wheatbelt":[-31.5,118.5],
+  "midwest":[-28.0,115.5],"gascoyne":[-25.0,115.0],
+  "pilbara":[-22.0,118.0],"kimberley":[-17.0,126.0],
+  "goldfields":[-30.0,121.0],"interior":[-26.0,122.0],
+  "eucla":[-32.0,126.0],
+  // TAS
+  "hobart":[-42.9,147.3],"launceston":[-41.4,147.1],
+  "northwest":[-41.0,145.5],"northeast":[-41.0,147.8],
+  "central highlands":[-42.0,146.8],"west":[-42.0,145.5],
+  "south":[-43.0,147.0],"east":[-42.0,148.0],
+  "king island":[-39.9,143.9],"furneaux":[-40.2,148.0],
+  // NT
+  "darwin":[-12.5,130.8],"top end":[-13.5,132.0],
+  "barkly":[-20.0,134.0],"central":[-23.0,133.5],
+  "victoria river":[-16.0,131.0],"katherine":[-14.5,132.3],
+  "arnhem":[-13.0,135.0]
+};
+
+var STATE_CENTRES_BOM = {
+  NSW:[-32,147],VIC:[-37,144],QLD:[-22,144],SA:[-30,135],
+  WA:[-27,121],TAS:[-42,146],NT:[-19,133],ACT:[-35.3,149.1]
+};
+
+// Active warnings store: [{type, state, productId, title, districts, text, issuedAt, color, icon}]
+var bomWarnings = [];
+var curWarnType = "all";
+var warnFetchTotal = 0;
+var warnFetchDone = 0;
+
+function getDistrictCoords(text, state) {
+  var lower = (text||"").toLowerCase();
+  var best = null, bestLen = 0;
+  Object.keys(BOM_DISTRICTS).forEach(function(d) {
+    if (lower.includes(d) && d.length > bestLen) { bestLen = d.length; best = d; }
+  });
+  if (best) return BOM_DISTRICTS[best];
+  return STATE_CENTRES_BOM[state] || [-27, 134];
 }
 
-function renderWarningsPanel(){
-  if(!warningsData.length){
-    document.getElementById("bom-warnings-content").innerHTML="<div class='wp-none' style='color:var(--accent2)'>&#10003; No active national warnings</div>";
-    return;
+function extractDistricts(text) {
+  // BOM text format: "FOR THE [DISTRICT] DISTRICT" or "for parts of [districts]"
+  // Extract district-like phrases from first 3 lines
+  var lines = text.split('\n').slice(0, 6).join(' ');
+  var m = lines.match(/for(?:\s+parts?\s+of)?\s+(?:the\s+)?([^.]{5,120})\s*district/i);
+  if (m) return m[1].trim();
+  m = lines.match(/(?:affecting|covering|includes?)\s+([^.]{5,100})/i);
+  if (m) return m[1].trim();
+  // Try lines 1-3 for district names
+  var districtLine = text.split('\n').find(function(l) {
+    return l.length > 10 && l.length < 120 && !l.match(/^(IDX|BOM|AUSTRALIAN|BUREAU)/i);
+  });
+  return districtLine ? districtLine.trim() : '';
+}
+
+function extractHazards(text) {
+  var hazards = [];
+  var lower = text.toLowerCase();
+  if (lower.includes('hail')) hazards.push('Hail');
+  if (lower.includes('damaging wind') || lower.includes('destructive wind')) hazards.push('Damaging winds');
+  if (lower.includes('heavy rainfall') || lower.includes('intense rainfall')) hazards.push('Heavy rain');
+  if (lower.includes('flash flood')) hazards.push('Flash flooding');
+  if (lower.includes('tornado')) hazards.push('Tornado');
+  if (lower.includes('giant hail')) { hazards = hazards.filter(function(h){return h!=='Hail';}); hazards.unshift('Giant hail'); }
+  // Cyclone intensity
+  var catM = text.match(/categor[y\s]+(\d)/i);
+  if (catM) hazards.push('Category '+catM[1]);
+  // Wind gusts
+  var gustM = text.match(/(\d{2,3})\s*km\/h/i);
+  if (gustM) hazards.push(gustM[1]+' km/h gusts');
+  // Heatwave intensity
+  if (lower.includes('extreme heatwave')) hazards.push('Extreme intensity');
+  else if (lower.includes('severe heatwave')) hazards.push('Severe intensity');
+  return hazards;
+}
+
+function extractIssuedAt(text) {
+  // "Issued at 2:30 pm AEST Wednesday 1 May 2026" or "ISSUED AT 1430 UTC"
+  var m = text.match(/issued at\s+([^\n]{5,50})/i);
+  return m ? m[1].trim() : '';
+}
+
+function parseBOMtxt(txt, productId, type, state) {
+  var text = txt.trim();
+  var typeInfo = BOM_FTP_PRODUCTS[type];
+  var issuedAt = extractIssuedAt(text);
+  var districts = extractDistricts(text);
+  var hazards = extractHazards(text);
+  // Title: first non-empty non-product-code line
+  var titleLine = '';
+  var lines = text.split('\n');
+  for (var i = 0; i < Math.min(8, lines.length); i++) {
+    var l = lines[i].trim();
+    if (l.length > 10 && !l.match(/^ID[A-Z]/i) && !l.match(/^ftp:\/\//i)) {
+      titleLine = l;
+      break;
+    }
   }
-  var byState={};
-  warningsData.forEach(function(w){var st=(w.state||"OTHER").toUpperCase();(byState[st]=byState[st]||[]).push(w);});
-  var html="";
-  ["NSW","VIC","QLD","SA","WA","TAS","NT","ACT","OTHER"].forEach(function(st){
-    var ws=byState[st];if(!ws||!ws.length)return;
-    html+="<div class='warn-state-hdr'>"+(STATE_NAMES[st]||st)+"</div>";
-    ws.forEach(function(w){
-      var col=warnColor(w.warning_group_type||w.type);
-      html+="<div class='warn-row'><div class='warn-title' style='color:"+col+"'>"+(w.title||w.short_title||"Warning")+"</div>"
-        +(w.short_title&&w.short_title!==(w.title||"")?"<div style='font-size:9px;color:var(--text3)'>"+w.short_title+"</div>":"")
-        +(w.phase?"<div style='font-size:9px;color:var(--text3)'>"+w.phase+"</div>":"")+"</div>";
+  // Full warning text — first 600 chars of meaningful content
+  var fullText = lines.filter(function(l) {
+    return l.trim().length > 0 && !l.match(/^(ftp:|http:|IDX|Bureau of Met)/i);
+  }).slice(0, 15).join('\n').slice(0, 600);
+
+  return {
+    type: type,
+    state: state,
+    productId: productId,
+    label: typeInfo.label,
+    icon: typeInfo.icon,
+    color: typeInfo.color,
+    title: titleLine || typeInfo.label + ' Warning (' + state + ')',
+    districts: districts,
+    hazards: hazards,
+    issuedAt: issuedAt,
+    text: fullText,
+    productUrl: 'https://www.bom.gov.au/products/' + productId + '.shtml'
+  };
+}
+
+function fetchBOMWarnings() {
+  statusEl("warn-fetch-status", "fetch-loading", "&#8635; checking BOM FTP...");
+  document.getElementById("bom-warnings-content").innerHTML = "<div class='wp-loading'>Checking BOM FTP products...</div>";
+  bomWarnings = [];
+  warnFetchTotal = 0;
+  warnFetchDone = 0;
+
+  // Build list of all product IDs to check
+  var toCheck = [];
+  Object.keys(BOM_FTP_PRODUCTS).forEach(function(type) {
+    var typeInfo = BOM_FTP_PRODUCTS[type];
+    Object.keys(typeInfo.ids).forEach(function(state) {
+      typeInfo.ids[state].forEach(function(pid) {
+        toCheck.push({ type: type, state: state, pid: pid });
+      });
     });
   });
-  document.getElementById("bom-warnings-content").innerHTML=html;
+
+  warnFetchTotal = toCheck.length;
+
+  // Fetch each product — 404 = not active, 200 = active warning
+  toCheck.forEach(function(item) {
+    var url = 'https://www.bom.gov.au/products/' + item.pid + '.txt';
+    // Use proxy since BOM .txt files may need CORS help
+    fetchWithFallback(url)
+      .then(function(r) {
+        if (!r.ok) throw new Error('not active');
+        return r.text();
+      })
+      .then(function(txt) {
+        // File exists — warning is active
+        var parsed = parseBOMtxt(txt, item.pid, item.type, item.state);
+        bomWarnings.push(parsed);
+      })
+      .catch(function() {
+        // 404 or error = no active warning for this product — expected, ignore
+      })
+      .finally(function() {
+        warnFetchDone++;
+        if (warnFetchDone === warnFetchTotal) {
+          // All checks complete
+          var n = bomWarnings.length;
+          document.getElementById("h-warnings").textContent = n > 0 ? n : "0";
+          if (n === 0) {
+            statusEl("warn-fetch-status", "fetch-ok", "&#10003; No active BOM warnings &middot; " + warnFetchTotal + " products checked");
+          } else {
+            statusEl("warn-fetch-status", "fetch-ok", "&#10003; " + n + " active &middot; " + warnFetchTotal + " products checked");
+          }
+          renderWarningsPanel();
+          if (warningsVisible) renderWarningsMap();
+        } else if (warnFetchDone % 10 === 0) {
+          // Progress update
+          statusEl("warn-fetch-status", "fetch-loading",
+            "&#8635; checking " + warnFetchDone + "/" + warnFetchTotal + "...");
+        }
+      });
+  });
 }
 
-function renderWarningsMap(){
-  warningsLayer.clearLayers();
-  var byState={};
-  warningsData.forEach(function(w){var st=(w.state||"").toUpperCase();(byState[st]=byState[st]||[]).push(w);});
-  Object.entries(byState).forEach(function(e){
-    var st=e[0],ws=e[1],ctr=STATE_CENTRES[st];if(!ctr)return;
-    ws.forEach(function(w,i){
-      var col=warnColor(w.warning_group_type||w.type);
-      var BOM_URL=({"NSW":"https://www.bom.gov.au/nsw/warnings/","VIC":"https://www.bom.gov.au/vic/warnings/","QLD":"https://www.bom.gov.au/qld/warnings/","SA":"https://www.bom.gov.au/sa/warnings/","WA":"https://www.bom.gov.au/wa/warnings/","TAS":"https://www.bom.gov.au/tas/warnings/","NT":"https://www.bom.gov.au/nt/warnings/","ACT":"https://www.bom.gov.au/act/warnings/"})[st]||"https://www.bom.gov.au/australia/warnings/";
-      L.circleMarker([ctr[0]+(i*0.9),ctr[1]],{radius:8,color:col,weight:2,opacity:0.9,fillColor:col,fillOpacity:0.7})
-        .bindPopup("<div><div class='pu-title' style='color:"+col+"'>"+(w.title||w.short_title||"Warning")+"</div>"+(w.phase?"<div class='pu-sub'>"+w.phase+"</div>":"")+"<div class='pu-links'><a class='pu-link' href='"+BOM_URL+"' target='_blank'>&#9928; BOM "+st+"</a></div></div>",{className:"ba-popup",maxWidth:280}).addTo(warningsLayer);
+function showWarnType(type) {
+  curWarnType = type;
+  document.querySelectorAll('#warn-type-tabs .wp-tab').forEach(function(t) { t.classList.remove('on'); });
+  var tab = document.getElementById('wt-' + type);
+  if (tab) tab.classList.add('on');
+  renderWarningsPanel();
+}
+
+function renderWarningsPanel() {
+  var filtered = curWarnType === 'all'
+    ? bomWarnings
+    : bomWarnings.filter(function(w) { return w.type === curWarnType; });
+
+  if (!filtered.length) {
+    var msg = bomWarnings.length > 0
+      ? '<div class="wp-none" style="color:var(--accent2)">&#10003; No ' + (curWarnType === 'all' ? '' : BOM_FTP_PRODUCTS[curWarnType].label + ' ') + 'warnings active</div>'
+      : '<div class="wp-none" style="color:var(--accent2)">&#10003; No active BOM warnings nationally</div>';
+    document.getElementById("bom-warnings-content").innerHTML = msg;
+    return;
+  }
+
+  // Group by type then state
+  var byType = {};
+  filtered.forEach(function(w) {
+    if (!byType[w.type]) byType[w.type] = [];
+    byType[w.type].push(w);
+  });
+
+  var html = '';
+  Object.keys(BOM_FTP_PRODUCTS).forEach(function(type) {
+    var ws = byType[type];
+    if (!ws || !ws.length) return;
+    var ti = BOM_FTP_PRODUCTS[type];
+    html += '<div style="font-size:9px;font-weight:700;color:' + ti.color + ';text-transform:uppercase;letter-spacing:.8px;margin:8px 0 4px">' +
+      ti.icon + ' ' + ti.label + ' (' + ws.length + ')</div>';
+
+    // Group by state within type
+    var byState = {};
+    ws.forEach(function(w) { (byState[w.state] = byState[w.state]||[]).push(w); });
+    Object.keys(byState).sort().forEach(function(st) {
+      html += '<div class="warn-state-hdr">' + (STATE_NAMES[st]||st) + '</div>';
+      byState[st].forEach(function(w) {
+        html += '<div class="warn-row">' +
+          '<div class="warn-title" style="color:' + w.color + '">' + w.title + '</div>' +
+          (w.districts ? '<div style="font-size:9px;color:var(--text2);margin-top:2px">' + w.districts + '</div>' : '') +
+          (w.hazards.length ? '<div style="font-size:9px;color:var(--text3);margin-top:2px">' + w.hazards.join(' &middot; ') + '</div>' : '') +
+          (w.issuedAt ? '<div style="font-size:9px;color:var(--text3)">' + w.issuedAt + '</div>' : '') +
+          '</div>';
+      });
     });
-    if(ws.length)L.marker(ctr,{icon:L.divIcon({html:"<div style='font-size:9px;font-weight:700;color:#f0a500;background:rgba(13,17,23,0.8);border:1px solid #f0a50066;border-radius:3px;padding:1px 5px;pointer-events:none'>"+st+" ("+ws.length+")</div>",className:"",iconSize:[1,1],iconAnchor:[0,0]}),interactive:false}).addTo(warningsLayer);
+  });
+
+  document.getElementById("bom-warnings-content").innerHTML = html;
+}
+
+function renderWarningsMap() {
+  warningsLayer.clearLayers();
+  var posUsed = {};
+
+  bomWarnings.forEach(function(w) {
+    var coords = getDistrictCoords((w.districts||'') + ' ' + w.title, w.state);
+    var key = Math.round(coords[0]) + ',' + Math.round(coords[1]);
+    var offset = (posUsed[key]||0);
+    posUsed[key] = offset + 1;
+    var lat = coords[0] + offset * 0.6;
+    var lng = coords[1] + offset * 0.6;
+
+    // Zone polygon — approximate affected area as a circle/polygon
+    // We draw a large semi-transparent zone using a circle marker with big radius
+    var zoneRadius = w.type === 'cyclone' ? 150000 :
+                     w.type === 'heatwave' ? 200000 :
+                     w.type === 'fire_weather' ? 100000 : 80000;
+
+    L.circle([lat, lng], {
+      radius: zoneRadius,
+      color: w.color,
+      weight: 1.5,
+      opacity: 0.6,
+      fillColor: w.color,
+      fillOpacity: 0.07,
+      dashArray: '8 4'
+    }).addTo(warningsLayer);
+
+    // Popup content
+    var popHtml = '<div>' +
+      '<div class="pu-title" style="color:' + w.color + '">' + w.icon + ' ' + w.title + '</div>' +
+      '<span class="pu-badge" style="background:' + w.color + ';color:#fff;opacity:0.9">' + w.label + '</span>' +
+      '<span class="pu-badge" style="background:#333;color:#ccc">' + w.state + '</span>' +
+      '<div style="border-top:1px solid var(--border);margin:8px 0"></div>' +
+      (w.districts ? '<div class="pu-row"><span class="pu-key">Districts</span><span class="pu-val">' + w.districts + '</span></div>' : '') +
+      (w.hazards.length ? '<div class="pu-row"><span class="pu-key">Hazards</span><span class="pu-val">' + w.hazards.join(', ') + '</span></div>' : '') +
+      (w.issuedAt ? '<div class="pu-row"><span class="pu-key">Issued</span><span class="pu-val">' + w.issuedAt + '</span></div>' : '') +
+      (w.text ? '<div style="font-size:10px;color:var(--text2);margin:8px 0;line-height:1.5;max-height:140px;overflow-y:auto;border-top:1px solid var(--border);padding-top:6px;white-space:pre-wrap">' +
+        w.text.slice(0, 500) + (w.text.length > 500 ? '...' : '') + '</div>' : '') +
+      '<div class="pu-links">' +
+      '<a class="pu-link" href="' + w.productUrl + '" target="_blank" rel="noopener">&#9928; ' + w.productId + '</a>' +
+      '<a class="pu-link" href="https://www.bom.gov.au/australia/warnings/" target="_blank" rel="noopener">All Warnings</a>' +
+      '</div></div>';
+
+    // Central marker pin
+    L.circleMarker([lat, lng], {
+      radius: 10,
+      color: w.color,
+      weight: 2.5,
+      opacity: 1,
+      fillColor: w.color,
+      fillOpacity: 0.85
+    }).bindPopup(popHtml, { className: 'ba-popup', maxWidth: 340 }).addTo(warningsLayer);
+
+    // Small label
+    L.marker([lat - 0.4, lng], {
+      icon: L.divIcon({
+        html: '<div style="font-size:9px;font-weight:700;color:' + w.color + ';background:rgba(13,17,23,0.85);border:1px solid ' + w.color + '44;border-radius:3px;padding:1px 5px;white-space:nowrap;pointer-events:none">' +
+          w.icon + ' ' + w.state + '</div>',
+        className: '',
+        iconSize: [1, 1],
+        iconAnchor: [0, 0]
+      }),
+      interactive: false
+    }).addTo(warningsLayer);
   });
 }
 
