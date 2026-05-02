@@ -1745,6 +1745,8 @@ function isActiveIncident(inc){
   if(inc.state==="NSW"&&!inc.alertLevel)return false;
   // NSW: exclude "Not Applicable" alert level — need Advice or above
   if(inc.state==="NSW"&&EXCLUDE_NSW_ALERT_LEVELS.some(function(x){return (inc.alertLevel||"").toLowerCase()===x;}))return false;
+  // QLD: exclude "Information" level — monitoring notices, no community action required
+  if(inc.state==="QLD"&&(inc.alertLevel||"").toLowerCase()==="information")return false;
   // VIC: exclude small incidents
   if(inc.state==="VIC"&&EXCLUDE_VIC_SIZES.some(function(x){return sz===x;}))return false;
   return true;
