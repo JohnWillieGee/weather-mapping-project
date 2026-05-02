@@ -296,6 +296,12 @@ def parse_qld_incidents(data):
 
         inc_status = ""  # QLD warnings feed doesn't have a separate status field
 
+        # Alert level from WarningLevel field
+        # Confirmed values from QFD: "Emergency Warning", "Watch and Act", "Advice", "Information"
+        alert_level = normalise_alert_level(
+            p.get("WarningLevel") or p.get("AlertLevel") or ""
+        )
+
         # Filter out burns before we do anything else
         if is_excluded_incident(inc_type, inc_status):
             continue
@@ -304,12 +310,6 @@ def parse_qld_incidents(data):
         # (equivalent to NSW "Not Applicable")
         if alert_level == "Information":
             continue
-
-        # Alert level from WarningLevel field
-        # Confirmed values from QFD: "Emergency Warning", "Watch and Act", "Advice"
-        alert_level = normalise_alert_level(
-            p.get("WarningLevel") or p.get("AlertLevel") or ""
-        )
 
         # Strip the alert level prefix from the title if present
         # "Emergency Warning - Bushfire at X" → "Bushfire at X"
