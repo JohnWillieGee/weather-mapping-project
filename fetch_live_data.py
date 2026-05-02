@@ -1035,7 +1035,7 @@ def parse_tas_incidents(xml_text):
     return incidents
 
 
-
+def fetch_incidents(key, feed_cfg):
     """Fetch and parse one state's incident feed. Returns (list, error_or_None)."""
     # WA has its own dedicated fetch function with JSON->RSS->fallback logic
     if key == "wa":
