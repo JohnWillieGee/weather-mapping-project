@@ -1191,13 +1191,14 @@ function fetchBOMWarnings() {
       });
 
       var n = bomWarnings.length;
-      document.getElementById("h-warnings").textContent = n > 0 ? n : "0";
-      if(n === 0){
+      var nRelevant = bomWarnings.filter(function(w){ return RELEVANT_WARN_TYPES.indexOf(w.type) !== -1; }).length;
+      document.getElementById("h-warnings").textContent = nRelevant > 0 ? nRelevant : "0";
+      if(nRelevant === 0){
         statusEl("warn-fetch-status","fetch-ok",
           "&#10003; No active warnings &middot; updated "+ageStr+" &middot; "+ts);
       } else {
         statusEl("warn-fetch-status","fetch-ok",
-          "&#10003; "+n+" active &middot; updated "+ageStr+" &middot; "+ts);
+          "&#10003; "+nRelevant+" active &middot; updated "+ageStr+" &middot; "+ts);
       }
       renderWarningsPanel();
       if(warningsVisible) renderWarningsMap();
@@ -1222,13 +1223,18 @@ function showWarnType(type) {
 }
 
 function renderWarningsPanel() {
+  // Only show the 5 types that have tab buttons — filter out flood, wind, other etc.
+  var relevant = bomWarnings.filter(function(w){
+    return RELEVANT_WARN_TYPES.indexOf(w.type) !== -1;
+  });
+
   var filtered = curWarnType === 'all'
-    ? bomWarnings
-    : bomWarnings.filter(function(w) { return w.type === curWarnType; });
+    ? relevant
+    : relevant.filter(function(w) { return w.type === curWarnType; });
 
   if (!filtered.length) {
-    var msg = bomWarnings.length > 0
-      ? '<div class="wp-none" style="color:var(--accent2)">&#10003; No ' + (curWarnType === 'all' ? '' : BOM_FTP_PRODUCTS[curWarnType].label + ' ') + 'warnings active</div>'
+    var msg = relevant.length > 0
+      ? '<div class="wp-none" style="color:var(--accent2)">&#10003; No ' + (curWarnType === 'all' ? '' : (BOM_FTP_PRODUCTS[curWarnType]||{label:curWarnType}).label + ' ') + 'warnings active</div>'
       : '<div class="wp-none" style="color:var(--accent2)">&#10003; No active BOM warnings nationally</div>';
     document.getElementById("bom-warnings-content").innerHTML = msg;
     return;
@@ -1268,11 +1274,21 @@ function renderWarningsPanel() {
   document.getElementById("bom-warnings-content").innerHTML = html;
 }
 
+// Only these warning types are shown in panel and map — matches the tab buttons
+var RELEVANT_WARN_TYPES = ['thunderstorm','severe_weather','cyclone','fire_weather','heatwave'];
+
 function renderWarningsMap() {
   warningsLayer.clearLayers();
   var posUsed = {};
 
-  bomWarnings.forEach(function(w) {
+  // Apply same type filter as panel, and only show relevant types
+  var toRender = bomWarnings.filter(function(w){
+    if(RELEVANT_WARN_TYPES.indexOf(w.type) === -1) return false;
+    if(curWarnType !== 'all' && w.type !== curWarnType) return false;
+    return true;
+  });
+
+  toRender.forEach(function(w) {
     var coords = getDistrictCoords((w.districts||'') + ' ' + w.title, w.state);
     var key = Math.round(coords[0]) + ',' + Math.round(coords[1]);
     var offset = (posUsed[key]||0);
@@ -1280,8 +1296,8 @@ function renderWarningsMap() {
     var lat = coords[0] + offset * 0.6;
     var lng = coords[1] + offset * 0.6;
 
-    // Zone polygon — approximate affected area as a circle/polygon
-    // We draw a large semi-transparent zone using a circle marker with big radius
+    var typeInfo = BOM_FTP_PRODUCTS[w.type] || BOM_FTP_PRODUCTS['other'];
+
     var zoneRadius = w.type === 'cyclone' ? 150000 :
                      w.type === 'heatwave' ? 200000 :
                      w.type === 'fire_weather' ? 100000 : 80000;
@@ -1297,7 +1313,9 @@ function renderWarningsMap() {
     }).addTo(warningsLayer);
 
     // Popup content
-    var typeInfo = BOM_FTP_PRODUCTS[w.type] || BOM_FTP_PRODUCTS['other'];
+    var pidLink = w.pid
+      ? '<a class="pu-link" href="https://www.bom.gov.au/products/'+w.pid+'.shtml" target="_blank" rel="noopener">&#9928; '+w.pid+'</a>'
+      : '';
     var popHtml = '<div>' +
       '<div class="pu-title" style="color:' + w.color + '">' + typeInfo.icon + ' ' + w.title + '</div>' +
       '<span class="pu-badge" style="background:' + w.color + ';color:#fff;opacity:0.9">' + typeInfo.label + '</span>' +
@@ -1308,8 +1326,8 @@ function renderWarningsMap() {
       (w.issuedAt ? '<div class="pu-row"><span class="pu-key">Issued</span><span class="pu-val">' + w.issuedAt + '</span></div>' : '') +
       (w.text ? '<div style="font-size:10px;color:var(--text2);margin:8px 0;line-height:1.5;max-height:140px;overflow-y:auto;border-top:1px solid var(--border);padding-top:6px;white-space:pre-wrap">' +
         w.text.slice(0, 500) + (w.text.length > 500 ? '...' : '') + '</div>' : '') +
-      '<div class="pu-links">' +
-      '<a class="pu-link" href="' + w.productUrl + '" target="_blank" rel="noopener">&#9928; ' + w.productId + '</a>' +
+      '<div class="pu-links">' + pidLink +
+      '<a class="pu-link" href="' + (w.link||'https://www.bom.gov.au/australia/warnings/') + '" target="_blank" rel="noopener">&#128279; BOM Warning</a>' +
       '<a class="pu-link" href="https://www.bom.gov.au/australia/warnings/" target="_blank" rel="noopener">All Warnings</a>' +
       '</div></div>';
 
@@ -1323,11 +1341,11 @@ function renderWarningsMap() {
       fillOpacity: 0.85
     }).bindPopup(popHtml, { className: 'ba-popup', maxWidth: 340 }).addTo(warningsLayer);
 
-    // Small label
+    // Small label — use typeInfo.icon not w.icon
     L.marker([lat - 0.4, lng], {
       icon: L.divIcon({
         html: '<div style="font-size:9px;font-weight:700;color:' + w.color + ';background:rgba(13,17,23,0.85);border:1px solid ' + w.color + '44;border-radius:3px;padding:1px 5px;white-space:nowrap;pointer-events:none">' +
-          w.icon + ' ' + w.state + '</div>',
+          typeInfo.icon + ' ' + w.state + '</div>',
         className: '',
         iconSize: [1, 1],
         iconAnchor: [0, 0]
