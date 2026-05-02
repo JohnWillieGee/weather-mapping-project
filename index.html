@@ -719,13 +719,20 @@ function fetchIncidents(key){
 
   fetchProxied(feed.url)
     .then(function(r){
-      // QLD S3 serves binary/octet-stream — must use text() then parse manually
-      // NSW and VIC return proper JSON content-type so json() works fine
-      if(feed.type==="geojson_qld") return r.text().then(function(t){
-        var cleaned=t.trim().replace(/^\uFEFF/,"");
-        return JSON.parse(cleaned);
-      });
-      return r.json();
+      // Always use text() then parse — avoids content-type issues with S3/proxy responses
+      return r.text();
+    })
+    .then(function(txt){
+      // Strip BOM and whitespace, then parse
+      var cleaned=txt.trim().replace(/^\uFEFF/,"");
+      // Some proxies wrap the response in a JSON envelope — detect and unwrap
+      if(cleaned.charAt(0)==="{" && cleaned.indexOf('"contents"')>-1 && cleaned.indexOf('"status"')>-1){
+        try{
+          var wrapped=JSON.parse(cleaned);
+          if(wrapped.contents) cleaned=wrapped.contents;
+        }catch(e){}
+      }
+      return JSON.parse(cleaned);
     })
     .then(function(data){
       var incidents;
@@ -756,12 +763,17 @@ function updateIncidentCount(){
 
 // Types to exclude — planned burns and hazard reductions are not active emergencies
 var EXCLUDE_TYPES=["planned burn","hazard reduction","prescribed burn","burn off","controlled burn","fuel reduction burn","back burn","hazard reduction burn"];
+// Statuses that mean the incident is resolved/routine — exclude these
+var EXCLUDE_STATUSES=["under control","out of control and contained","patrol","monitored","no longer exists"];
 
 function isActiveIncident(inc){
   var t=(inc.type||"").toLowerCase();
-  // Exclude planned/prescribed burns and hazard reductions
+  var s=(inc.status||"").toLowerCase();
+  // Exclude planned/prescribed burns and hazard reductions by type
   if(EXCLUDE_TYPES.some(function(x){return t.includes(x);}))return false;
-  // NSW: entries with no alert level are monitoring/admin — not active emergencies
+  // Exclude resolved statuses — under control, patrol etc
+  if(EXCLUDE_STATUSES.some(function(x){return s===x||s.includes(x);}))return false;
+  // NSW: entries with no alert level are monitoring/admin entries — not active emergencies
   if(inc.state==="NSW"&&!inc.alertLevel)return false;
   return true;
 }
@@ -815,7 +827,7 @@ function renderIncidentsPanel(){
   });
   if(active.length>60)html+="<div class='wp-none'>+"+(active.length-60)+" more &mdash; use state tabs to filter</div>";
   var burnCount=all.length-active.length;
-  if(burnCount>0)html+="<div class='wp-none' style='font-size:9px'>"+burnCount+" planned burns/hazard reductions not shown</div>";
+  if(burnCount>0)html+="<div class='wp-none' style='font-size:9px'>"+burnCount+" excluded (planned burns, under control, hazard reductions)</div>";
   document.getElementById("inc-content").innerHTML=html;
 }
 
