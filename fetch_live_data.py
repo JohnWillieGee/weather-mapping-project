@@ -54,13 +54,15 @@ def is_excluded(title):
     t = title.lower()
     return any(ex in t for ex in EXCLUDE_TITLES)
 
-def extract_pid_from_link(link):
-    """Extract product ID from BOM warning link URL.
-    e.g. http://www.bom.gov.au/qld/warnings/flood/diamantina-river.shtml -> no ID in URL
-    e.g. http://www.bom.gov.au/products/IDN21000.shtml -> IDN21000
+def extract_pid_from_link(text):
+    """Extract product ID from BOM warning link URL or text.
+    Handles both:
+      http://www.bom.gov.au/products/IDN21000.shtml  -> IDN21000
+      http://www.bom.gov.au/qld/warnings/flood/diamantina-river.shtml/IDQ20865 -> IDQ20865
+      https://www.bom.gov.au/warning/flood-warning/IDQ20865 -> IDQ20865
     """
-    # Try direct product ID in URL
-    m = re.search(r'\b(ID[A-Z]\d{5,6})\b', link)
+    # Match product ID pattern anywhere in the text (path segment, bare, or with extension)
+    m = re.search(r'(ID[A-Z]\d{5,6})(?:\.shtml|\.txt|/|$|\b)', text)
     if m:
         return m.group(1)
     return ""
