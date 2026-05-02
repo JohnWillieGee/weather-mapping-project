@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-05-02T10:17:58.352223+00:00",
+  "generated_utc": "2026-05-02T10:36:15.446315+00:00",
   "warning_count": 3,
   "warnings": [
     {
@@ -30,7 +30,10 @@
       "issued": "Thu, 30 Apr 2026 02:34:45 GMT"
     }
   ],
-  "fetch_errors": {},
+  "fetch_errors": {
+    "tas": "403 Client Error: Forbidden for url: https://www.fire.tas.gov.au/Show?pageId=bfKml",
+    "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
+  },
   "incidents": {
     "nsw": [
       {
@@ -217,8 +220,11 @@
       }
     ],
     "qld": [],
-    "sa": []
+    "sa": [],
+    "tas": [],
+    "wa": []
   },
   "incident_count": 12,
-  "nsw_alert_zones": []
+  "nsw_alert_zones": [],
+  "wa_feed_method": "none"
 }
