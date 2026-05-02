@@ -116,6 +116,20 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 @keyframes spin{to{transform:rotate(360deg);}}
 #loading p{font-size:14px;color:var(--text2);}
 #loading .sub{font-size:11px;color:var(--text3);margin-top:6px;}
+/* ── RADAR ANIMATION CONTROLS ─────────────────────────────── */
+#radar-controls{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:1000;
+  background:var(--panel);border:1px solid var(--border);border-radius:8px;
+  padding:6px 10px;display:flex;align-items:center;gap:8px;box-shadow:0 2px 12px var(--shadow);
+  font-size:10px;color:var(--text2);white-space:nowrap;}
+#radar-controls.hidden{display:none;}
+#radar-play-btn{background:var(--accent);border:none;color:#000;border-radius:4px;
+  width:24px;height:24px;cursor:pointer;font-size:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+#radar-timeline{display:flex;align-items:center;gap:3px;}
+.radar-tick{width:14px;height:8px;background:var(--border);border-radius:2px;cursor:pointer;transition:background .1s;}
+.radar-tick.active{background:var(--accent);}
+.radar-tick:hover{background:var(--accent2);}
+#radar-time-label{font-family:monospace;font-size:10px;color:var(--accent);min-width:40px;text-align:center;}
+#radar-age-label{font-size:9px;color:var(--text3);}
 </style>
 </head>
 <body>
@@ -140,8 +154,16 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
       <button class="map-btn" id="btn-warnings" onclick="toggleWarningsLayer()">&#9928; BOM Warnings</button>
       <button class="map-btn" id="btn-alerts" onclick="toggleAlertsLayer()">&#128680; NSW Alerts</button>
       <button class="map-btn" id="btn-incidents" onclick="toggleIncidentsLayer()">&#9888; Incidents</button>
+      <button class="map-btn" id="btn-radar" onclick="toggleRadarLayer()">&#127783; Radar</button>
     </div>
     <div id="map"></div>
+    <!-- Radar animation controls — shown when radar layer is active -->
+    <div id="radar-controls" class="hidden">
+      <button id="radar-play-btn" onclick="toggleRadarPlay()" title="Play/Pause">&#9654;</button>
+      <div id="radar-timeline"></div>
+      <span id="radar-time-label">--:--</span>
+      <span id="radar-age-label">BOM Radar</span>
+    </div>
     <div id="legend">
       <h4>Fire Danger Rating</h4>
       <div class="li"><div class="ld sq" style="background:#2e7d32"></div>Moderate</div>
@@ -579,7 +601,160 @@ function initMap(){
   document.getElementById("app").style.visibility="visible";
 }
 
-// ── FETCH ORCHESTRATION ──
+// ── RADAR LAYER (RainViewer) ──────────────────────────────────────────────
+var radarVisible = false;
+var radarFrames = [];        // array of {time, path} from RainViewer API
+var radarLayers = [];        // Leaflet TileLayers, one per frame
+var radarCurrentIdx = 0;
+var radarPlaying = false;
+var radarPlayTimer = null;
+var radarLoaded = false;
+var RADAR_HOST = '';         // set from API response
+var RADAR_OPACITY = 0.7;
+var RADAR_COLOR = 6;         // 6 = original reflectivity dBZ colour scheme
+var RADAR_SMOOTH = 0;        // 0 = sharp (meteorologists prefer this)
+var RADAR_SNOW = 0;
+
+function toggleRadarLayer(){
+  radarVisible = !radarVisible;
+  var btn = document.getElementById('btn-radar');
+  if(radarVisible){
+    btn.classList.add('on');
+    document.getElementById('radar-controls').classList.remove('hidden');
+    if(!radarLoaded) loadRadarFrames();
+    else showRadarFrame(radarCurrentIdx);
+  } else {
+    btn.classList.remove('on');
+    document.getElementById('radar-controls').classList.add('hidden');
+    radarLayers.forEach(function(l){ if(map.hasLayer(l)) map.removeLayer(l); });
+    stopRadarPlay();
+  }
+}
+
+function loadRadarFrames(){
+  document.getElementById('radar-age-label').textContent = 'Loading...';
+  fetch('https://api.rainviewer.com/public/weather-maps.json')
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      RADAR_HOST = data.host;
+      radarFrames = data.radar.past || [];
+      if(!radarFrames.length){
+        document.getElementById('radar-age-label').textContent = 'No data';
+        return;
+      }
+
+      // Pre-create all tile layers (but only add the latest to map)
+      radarLayers = radarFrames.map(function(f){
+        var url = RADAR_HOST + f.path + '/512/{z}/{x}/{y}/' + RADAR_COLOR + '/' + RADAR_SMOOTH + '_' + RADAR_SNOW + '.png';
+        return L.tileLayer(url, {
+          opacity: RADAR_OPACITY,
+          zIndex: 300,
+          tileSize: 512,
+          attribution: 'Radar &copy; <a href="https://www.bom.gov.au" target="_blank">BOM</a> via RainViewer'
+        });
+      });
+
+      radarLoaded = true;
+      buildRadarTimeline();
+
+      // Show latest frame
+      radarCurrentIdx = radarFrames.length - 1;
+      if(radarVisible) showRadarFrame(radarCurrentIdx);
+
+      // Auto-play
+      startRadarPlay();
+    })
+    .catch(function(e){
+      document.getElementById('radar-age-label').textContent = 'Failed to load';
+      console.warn('Radar load failed:', e);
+    });
+}
+
+function buildRadarTimeline(){
+  var tl = document.getElementById('radar-timeline');
+  tl.innerHTML = '';
+  radarFrames.forEach(function(f, i){
+    var tick = document.createElement('div');
+    tick.className = 'radar-tick' + (i === radarCurrentIdx ? ' active' : '');
+    tick.title = formatRadarTime(f.time);
+    tick.onclick = (function(idx){ return function(){ jumpRadarFrame(idx); }; })(i);
+    tl.appendChild(tick);
+  });
+}
+
+function showRadarFrame(idx){
+  // Remove all radar layers from map
+  radarLayers.forEach(function(l){ if(map.hasLayer(l)) map.removeLayer(l); });
+
+  // Add the selected frame
+  if(radarLayers[idx]){
+    radarLayers[idx].addTo(map);
+  }
+  radarCurrentIdx = idx;
+
+  // Update timeline ticks
+  var ticks = document.querySelectorAll('.radar-tick');
+  ticks.forEach(function(t, i){ t.classList.toggle('active', i === idx); });
+
+  // Update time label
+  if(radarFrames[idx]){
+    document.getElementById('radar-time-label').textContent = formatRadarTime(radarFrames[idx].time);
+    // Show age of latest frame
+    if(idx === radarFrames.length - 1){
+      var ageMin = Math.round((Date.now() / 1000 - radarFrames[idx].time) / 60);
+      document.getElementById('radar-age-label').textContent = 'BOM \u00b7 ' + ageMin + 'm ago';
+    } else {
+      document.getElementById('radar-age-label').textContent = 'BOM Radar';
+    }
+  }
+}
+
+function formatRadarTime(unixTs){
+  var d = new Date(unixTs * 1000);
+  return d.toLocaleTimeString('en-AU', {
+    hour: '2-digit', minute: '2-digit',
+    hour12: false, timeZone: 'Australia/Sydney'
+  });
+}
+
+function jumpRadarFrame(idx){
+  stopRadarPlay();
+  showRadarFrame(idx);
+}
+
+function startRadarPlay(){
+  if(radarPlayTimer) clearInterval(radarPlayTimer);
+  radarPlaying = true;
+  document.getElementById('radar-play-btn').innerHTML = '&#9646;&#9646;';
+  radarPlayTimer = setInterval(function(){
+    var next = (radarCurrentIdx + 1) % radarFrames.length;
+    showRadarFrame(next);
+  }, 500); // 500ms per frame = ~6 seconds for 12 frames
+}
+
+function stopRadarPlay(){
+  radarPlaying = false;
+  if(radarPlayTimer){ clearInterval(radarPlayTimer); radarPlayTimer = null; }
+  document.getElementById('radar-play-btn').innerHTML = '&#9654;';
+}
+
+function toggleRadarPlay(){
+  if(radarPlaying) stopRadarPlay();
+  else startRadarPlay();
+}
+
+// Refresh radar frames every 10 minutes while layer is visible
+setInterval(function(){
+  if(radarVisible && radarLoaded){
+    stopRadarPlay();
+    radarLayers.forEach(function(l){ if(map.hasLayer(l)) map.removeLayer(l); });
+    radarLayers = [];
+    radarLoaded = false;
+    loadRadarFrames();
+  }
+}, 10 * 60 * 1000);
+
+
 function startFetching(){
   fetchFDR();
   fetchBOMWarnings();  // also loads all state incidents + NSW alert zones from live_data.json
