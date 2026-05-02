@@ -1635,17 +1635,26 @@ function updateIncidentCount(){
 // Types to exclude — planned burns and hazard reductions are not active emergencies
 var EXCLUDE_TYPES=["planned burn","hazard reduction","prescribed burn","burn off","controlled burn","fuel reduction burn","back burn","hazard reduction burn"];
 // Statuses that mean the incident is resolved/routine — exclude these
-var EXCLUDE_STATUSES=["under control","out of control and contained","patrol","monitored","no longer exists"];
+var EXCLUDE_STATUSES=["under control","out of control and contained","patrol","monitored","no longer exists","safe"];
+// VIC sizes to exclude — small incidents are not operationally significant
+var EXCLUDE_VIC_SIZES=["small"];
+// NSW alert levels to exclude — Not Applicable and below Advice are not actionable
+var EXCLUDE_NSW_ALERT_LEVELS=["not applicable"];
 
 function isActiveIncident(inc){
   var t=(inc.type||"").toLowerCase();
   var s=(inc.status||"").toLowerCase();
+  var sz=(inc.size||"").toLowerCase();
   // Exclude planned/prescribed burns and hazard reductions by type
   if(EXCLUDE_TYPES.some(function(x){return t.includes(x);}))return false;
-  // Exclude resolved statuses — under control, patrol etc
+  // Exclude resolved/safe statuses
   if(EXCLUDE_STATUSES.some(function(x){return s===x||s.includes(x);}))return false;
-  // NSW: entries with no alert level are monitoring/admin entries — not active emergencies
+  // NSW: entries with no alert level are monitoring/admin — exclude
   if(inc.state==="NSW"&&!inc.alertLevel)return false;
+  // NSW: exclude "Not Applicable" alert level — need Advice or above
+  if(inc.state==="NSW"&&EXCLUDE_NSW_ALERT_LEVELS.some(function(x){return (inc.alertLevel||"").toLowerCase()===x;}))return false;
+  // VIC: exclude small incidents
+  if(inc.state==="VIC"&&EXCLUDE_VIC_SIZES.some(function(x){return sz===x;}))return false;
   return true;
 }
 
@@ -1662,7 +1671,7 @@ function renderIncidentsPanel(){
     var burnCount=all.length-active.length;
     document.getElementById("inc-content").innerHTML="<div class='wp-none'>No active incidents"
       +(anyLoading?" (still loading...)":"")
-      +(burnCount>0?"<br><span style='font-size:9px'>"+burnCount+" planned burns/hazard reductions excluded</span>":"")
+      +(burnCount>0?"<br><span style='font-size:9px'>"+burnCount+" excluded (burns, safe/small, not applicable)</span>":"")
       +"</div>";
     return;
   }
@@ -1698,7 +1707,7 @@ function renderIncidentsPanel(){
   });
   if(active.length>60)html+="<div class='wp-none'>+"+(active.length-60)+" more &mdash; use state tabs to filter</div>";
   var burnCount=all.length-active.length;
-  if(burnCount>0)html+="<div class='wp-none' style='font-size:9px'>"+burnCount+" excluded (planned burns, under control, hazard reductions)</div>";
+  if(burnCount>0)html+="<div class='wp-none' style='font-size:9px'>"+burnCount+" excluded (burns, safe/small, not applicable)</div>";
   document.getElementById("inc-content").innerHTML=html;
 }
 
