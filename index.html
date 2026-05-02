@@ -274,26 +274,39 @@ var PROXIES = [
   "https://api.codetabs.com/v1/proxy?quest="
 ];
 
-var FDR_ESRI_URL = "https://services.arcgis.com/HLQYs7jEb7ROGiUZ/arcgis/rest/services/Fire_Districts_4_Day_Forecast/FeatureServer/0/query"
-  + "?where=1%3D1&outFields=AAC,DIST_NAME,STATE_CODE,FireBehavIndex,FireDanger,Forecast_Period,Start_Time,End_Time,SOURCE"
-  + "&outSR=4326&f=geojson&resultRecordCount=600";
+// ESRI FDR — request all 4 periods but no geometry in first pass for panel
+// Then fetch geometry separately only when map layer is toggled on
+var FDR_ESRI_URL_ATTRS = "https://services.arcgis.com/HLQYs7jEb7ROGiUZ/arcgis/rest/services/Fire_Districts_4_Day_Forecast/FeatureServer/0/query"
+  + "?where=1%3D1"
+  + "&outFields=AAC,DIST_NAME,STATE_CODE,FireBehavIndex,FireDanger,Forecast_Period,Start_Time,End_Time,SOURCE"
+  + "&returnGeometry=false"
+  + "&f=json";
+
+var FDR_ESRI_URL_GEO = "https://services.arcgis.com/HLQYs7jEb7ROGiUZ/arcgis/rest/services/Fire_Districts_4_Day_Forecast/FeatureServer/0/query"
+  + "?where=Forecast_Period%3D1"
+  + "&outFields=AAC,DIST_NAME,STATE_CODE,FireBehavIndex,FireDanger,Forecast_Period,Start_Time,End_Time"
+  + "&outSR=4326"
+  + "&f=geojson";
+
+// QLD S3 — use corsproxy specifically, allorigins truncates large S3 responses
+var QLD_PROXIES = [
+  "https://corsproxy.io/?url=",
+  "https://api.codetabs.com/v1/proxy?quest=",
+  "https://api.allorigins.win/raw?url="
+];
 
 // BOM warnings — try direct first (BOM supports CORS), then proxies
 var BOM_WARNINGS_API = "https://api.weather.bom.gov.au/v1/warnings";
 
 // fetchWithFallback — tries direct fetch first, then each proxy in turn
 function fetchWithFallback(url, opts) {
-  // For ESRI try direct first — they allow CORS from browsers
   var attempts = [url].concat(PROXIES.map(function(p){return p+encodeURIComponent(url);}));
   var idx = 0;
   function tryNext() {
     if(idx >= attempts.length) return Promise.reject(new Error("All fetch attempts failed"));
     var attempt = attempts[idx++];
     return fetch(attempt, opts||{})
-      .then(function(r){
-        if(!r.ok) throw new Error("HTTP "+r.status);
-        return r;
-      })
+      .then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r;})
       .catch(function(){return tryNext();});
   }
   return tryNext();
@@ -301,16 +314,18 @@ function fetchWithFallback(url, opts) {
 
 // fetchProxied — skips direct fetch, starts with proxies (for feeds that block direct browser access)
 function fetchProxied(url, opts) {
-  var attempts = PROXIES.map(function(p){return p+encodeURIComponent(url);});
+  return fetchWithProxies(url, PROXIES, opts);
+}
+
+// fetchWithProxies — use a specific proxy list (e.g. for QLD which needs corsproxy not allorigins)
+function fetchWithProxies(url, proxyList, opts) {
+  var attempts = proxyList.map(function(p){return p+encodeURIComponent(url);});
   var idx = 0;
   function tryNext() {
     if(idx >= attempts.length) return Promise.reject(new Error("All proxies failed"));
     var attempt = attempts[idx++];
     return fetch(attempt, opts||{})
-      .then(function(r){
-        if(!r.ok) throw new Error("HTTP "+r.status);
-        return r;
-      })
+      .then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r;})
       .catch(function(){return tryNext();});
   }
   return tryNext();
@@ -393,7 +408,7 @@ function startFetching(){
 function refreshAll(){
   var btn=document.getElementById("refresh-btn");
   btn.classList.add("spinning");
-  fdrFeatures=[];fdrPeriodTimes={};warningsData=[];
+  fdrFeatures=[];fdrPeriodTimes={};fdrGeoLoaded=false;warningsData=[];
   allIncidents={nsw:[],vic:[],qld:[]};
   feedStatus={nsw:"pending",vic:"pending",qld:"pending"};
   document.getElementById("h-warnings").textContent="-";
@@ -411,37 +426,88 @@ function refreshAll(){
 }
 
 // ── FDR ──
+var fdrGeoLoaded = false; // track if geometry has been loaded for map
+
+function parseFDRResponse(txt){
+  var cleaned=txt.trim().replace(/^\uFEFF/,"");
+  // allorigins sometimes wraps in {contents:"...",status:{}} envelope
+  if(cleaned.charAt(0)==="{"){
+    try{
+      var obj=JSON.parse(cleaned);
+      // ESRI JSON format (returnGeometry=false) has "features" array with "attributes" not "properties"
+      if(obj.features&&obj.features[0]&&obj.features[0].attributes){
+        // Convert ESRI JSON to GeoJSON-like structure
+        return {
+          features: obj.features.map(function(f){
+            return {geometry:null, properties:f.attributes};
+          })
+        };
+      }
+      // GeoJSON format
+      if(obj.features&&obj.features[0]&&obj.features[0].properties) return obj;
+      // allorigins envelope
+      if(obj.contents) return parseFDRResponse(obj.contents);
+    }catch(e){}
+  }
+  return JSON.parse(cleaned);
+}
+
 function fetchFDR(){
-  // ESRI returns Bad Request when proxies mangle query params — use allorigins which passes them cleanly
-  fetchProxied(FDR_ESRI_URL)
+  statusEl("fdr-fetch-status","fetch-loading","&#8635; fetching ESRI AU...");
+  // Step 1: fetch attributes only (no geometry) — small payload, works through proxies
+  fetchProxied(FDR_ESRI_URL_ATTRS)
     .then(function(r){return r.text();})
     .then(function(txt){
-      // Strip any BOM or leading whitespace that breaks JSON.parse
-      var cleaned=txt.trim().replace(/^\uFEFF/,"");
-      return JSON.parse(cleaned);
-    })
-    .then(function(geojson){return geojson;})
-    .then(function(geojson){
-      fdrFeatures=geojson.features||[];
-      if(!fdrFeatures.length)throw new Error("No features");
+      var data = parseFDRResponse(txt);
+      fdrFeatures = data.features||[];
+      if(!fdrFeatures.length) throw new Error("No features returned");
+
+      // Build period time labels
       var byPeriod={};
-      fdrFeatures.forEach(function(f){if(!byPeriod[f.properties.Forecast_Period])byPeriod[f.properties.Forecast_Period]=f.properties;});
+      fdrFeatures.forEach(function(f){
+        var p=f.properties;
+        if(!byPeriod[p.Forecast_Period]) byPeriod[p.Forecast_Period]=p;
+      });
       [1,2,3,4].forEach(function(n){
         var p=byPeriod[n];
         fdrPeriodTimes[n]=p?formatDateShort(p.Start_Time):"Day "+n;
-      });
-      [1,2,3,4].forEach(function(n){
         var t=document.getElementById("fdr-day-"+n);
         if(t)t.textContent=n===1?"Today ("+fdrPeriodTimes[1]+")":fdrPeriodTimes[n];
       });
+
       var total=fdrFeatures.filter(function(f){return f.properties.Forecast_Period===1;}).length;
-      statusEl("fdr-fetch-status","fetch-ok","&#10003; "+total+" districts &middot; 4-day &middot; ESRI AU");
+      statusEl("fdr-fetch-status","fetch-ok","&#10003; "+total+" districts &middot; 4-day &middot; click Map to view polygons");
       showFDRPanel();
-      if(fdrVisible)renderFDRLayer();
     })
     .catch(function(e){
       statusEl("fdr-fetch-status","fetch-err","&#10007; "+e.message+" &mdash; <a href='https://www.esriaustraliahub.com.au/datasets/fire-danger-ratings-4-day-forecast/explore' target='_blank' style='color:#ff9999'>ESRI Hub &#8599;</a>");
       document.getElementById("fdr-content").innerHTML="<div class='wp-none'>Load failed &mdash; <a href='https://www.esriaustraliahub.com.au/datasets/fire-danger-ratings-4-day-forecast/explore' target='_blank' style='color:var(--accent2)'>View on ESRI AU &#8599;</a></div>";
+    });
+}
+
+function fetchFDRGeometry(){
+  // Only load geometry when user toggles the map layer — separate fetch for today only
+  if(fdrGeoLoaded) return Promise.resolve();
+  statusEl("fdr-fetch-status","fetch-loading","&#8635; loading map polygons...");
+  return fetchProxied(FDR_ESRI_URL_GEO)
+    .then(function(r){return r.text();})
+    .then(function(txt){
+      var data=parseFDRResponse(txt);
+      var geoFeatures=data.features||[];
+      // Merge geometry back onto fdrFeatures for period 1
+      var geoByAAC={};
+      geoFeatures.forEach(function(f){geoByAAC[f.properties.AAC]=f.geometry;});
+      fdrFeatures.forEach(function(f){
+        if(f.properties.Forecast_Period===1 && geoByAAC[f.properties.AAC]){
+          f.geometry=geoByAAC[f.properties.AAC];
+        }
+      });
+      fdrGeoLoaded=true;
+      var total=fdrFeatures.filter(function(f){return f.properties.Forecast_Period===1;}).length;
+      statusEl("fdr-fetch-status","fetch-ok","&#10003; "+total+" districts &middot; 4-day &middot; ESRI AU");
+    })
+    .catch(function(e){
+      statusEl("fdr-fetch-status","fetch-err","&#10007; Geometry load failed: "+e.message);
     });
 }
 
@@ -516,8 +582,13 @@ function renderFDRLayer(){
 function toggleFDRLayer(){
   fdrVisible=!fdrVisible;
   var btn=document.getElementById("btn-fdr"),tog=document.getElementById("fdr-map-toggle");
-  if(fdrVisible){fdrLayer.addTo(map);btn.classList.add("fdr-on");if(tog)tog.classList.add("on");renderFDRLayer();}
-  else{map.removeLayer(fdrLayer);btn.classList.remove("fdr-on");if(tog)tog.classList.remove("on");}
+  if(fdrVisible){
+    fdrLayer.addTo(map);btn.classList.add("fdr-on");if(tog)tog.classList.add("on");
+    // Fetch geometry lazily on first map toggle
+    fetchFDRGeometry().then(function(){renderFDRLayer();});
+  }else{
+    map.removeLayer(fdrLayer);btn.classList.remove("fdr-on");if(tog)tog.classList.remove("on");
+  }
 }
 
 // ── BOM WARNINGS ──
@@ -717,19 +788,18 @@ function fetchIncidents(key){
   feedStatus[key]="loading";
   setFeedStatus(key,"loading","fetching...");
 
-  fetchProxied(feed.url)
-    .then(function(r){
-      // Always use text() then parse — avoids content-type issues with S3/proxy responses
-      return r.text();
-    })
+  // QLD S3 uses its own proxy list — corsproxy handles S3 better than allorigins
+  var fetchFn = (key==="qld") ? fetchWithProxies(feed.url, QLD_PROXIES) : fetchProxied(feed.url);
+
+  fetchFn
+    .then(function(r){return r.text();})
     .then(function(txt){
-      // Strip BOM and whitespace, then parse
       var cleaned=txt.trim().replace(/^\uFEFF/,"");
-      // Some proxies wrap the response in a JSON envelope — detect and unwrap
-      if(cleaned.charAt(0)==="{" && cleaned.indexOf('"contents"')>-1 && cleaned.indexOf('"status"')>-1){
+      // Unwrap allorigins envelope if present
+      if(cleaned.charAt(0)==="{"){
         try{
-          var wrapped=JSON.parse(cleaned);
-          if(wrapped.contents) cleaned=wrapped.contents;
+          var obj=JSON.parse(cleaned);
+          if(obj.contents) cleaned=obj.contents.trim();
         }catch(e){}
       }
       return JSON.parse(cleaned);
