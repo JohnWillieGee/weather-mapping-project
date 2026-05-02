@@ -568,62 +568,88 @@ function parseBOMfdrRating(cell){
 function parseBOMfdrPage(html, stateCode){
   // Parse the HTML table from BOM FDR page
   // Table: District | Day1 | Day2 | Day3 | Day4
-  var results = {};   // AAC -> {1:{fd,fbi}, 2:{...}, 3:{...}, 4:{...}}
-  var headerDates = []; // day labels from header row
+  var results = {};
+  var headerDates = [];
   buildFDRNameIndex();
 
-  // Extract table using regex on raw HTML
-  var tableMatch = html.match(/<table[^>]*>([\s\S]*?)<\/table>/i);
-  if(!tableMatch) return { results: results, dates: headerDates };
-  var tableHtml = tableMatch[1];
+  // Find the main data table — BOM puts ratings in a table with tr/th/td structure
+  // Use indexOf to find table start after the page heading
+  var tableStart = html.indexOf('<table');
+  if(tableStart === -1) tableStart = html.indexOf('<TABLE');
+  if(tableStart === -1) return { results: results, dates: headerDates };
+
+  var tableEnd = html.indexOf('</table>', tableStart);
+  if(tableEnd === -1) tableEnd = html.indexOf('</TABLE>', tableStart);
+  if(tableEnd === -1) tableEnd = html.length;
+
+  var tableHtml = html.substring(tableStart, tableEnd + 8);
 
   // Extract all rows
   var rows = [];
-  var rowRe = /<tr[^>]*>([\s\S]*?)<\/tr>/gi;
+  var rowRe = /<tr[\s>][^>]*>([\s\S]*?)<\/tr>/gi;
   var rowM;
   while((rowM = rowRe.exec(tableHtml)) !== null) rows.push(rowM[1]);
 
-  rows.forEach(function(rowHtml, ri){
+  if(rows.length === 0){
+    // Fallback: try case-insensitive
+    rowRe = /<TR[\s>][^>]*>([\s\S]*?)<\/TR>/gi;
+    while((rowM = rowRe.exec(tableHtml)) !== null) rows.push(rowM[1]);
+  }
+
+  var headerParsed = false;
+
+  rows.forEach(function(rowHtml){
     // Extract cells (th or td)
     var cells = [];
-    var cellRe = /<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/gi;
+    var cellRe = /<t[dh][\s>][^>]*>([\s\S]*?)<\/t[dh]>/gi;
     var cellM;
     while((cellM = cellRe.exec(rowHtml)) !== null){
-      // Strip any inner HTML tags, decode entities
-      var txt = cellM[1].replace(/<[^>]+>/g,'').replace(/&amp;/g,'&')
-        .replace(/&nbsp;/g,' ').replace(/&#\d+;/g,'').trim();
+      var txt = cellM[1]
+        .replace(/<[^>]+>/g,'')
+        .replace(/&amp;/g,'&')
+        .replace(/&nbsp;/g,' ')
+        .replace(/&#\d+;/g,'')
+        .replace(/\s+/g,' ')
+        .trim();
       cells.push(txt);
     }
-    if(!cells.length) return;
+    if(cells.length < 2) return;
 
-    // Header row — capture day labels (columns 1-4)
-    if(ri === 0 || cells[0].toLowerCase().indexOf('district') !== -1){
-      for(var i=1;i<cells.length&&i<=4;i++) headerDates[i] = cells[i];
+    var first = cells[0].toLowerCase();
+
+    // Header row — has "District" or "district" in first cell
+    if(!headerParsed && (first.indexOf('district') !== -1 || first === '')){
+      for(var i=1; i<cells.length && i<=4; i++) headerDates[i] = cells[i];
+      headerParsed = true;
       return;
     }
 
+    // Skip code/legend rows
+    if(first.indexOf('fire danger') !== -1 || first.indexOf('no rating') !== -1 ||
+       first.indexOf('fbi') !== -1 || first.length < 2) return;
+
     // Data row — first cell is district name
     var distName = cells[0];
-    if(!distName || distName.toLowerCase().indexOf('fire danger') !== -1) return;
-
     var normName = normDistName(distName);
     var aac = FDR_NAME_TO_AAC[normName];
 
-    // If no exact match, try partial / alias matching
+    // Alias: BOM uses "The Australian Capital Territory"
     if(!aac){
-      // BOM uses "The Australian Capital Territory" — try without "The"
       var stripped = normName.replace(/^the\s+/,'');
       aac = FDR_NAME_TO_AAC[stripped];
     }
+    // Partial match fallback
     if(!aac){
-      // Try finding any key that contains the district name or vice versa
-      Object.keys(FDR_NAME_TO_AAC).forEach(function(k){
-        if(!aac && (k.indexOf(normName) !== -1 || normName.indexOf(k) !== -1)){
+      var keys = Object.keys(FDR_NAME_TO_AAC);
+      for(var ki=0; ki<keys.length; ki++){
+        var k = keys[ki];
+        if(k.indexOf(normName) !== -1 || normName.indexOf(k) !== -1){
           aac = FDR_NAME_TO_AAC[k];
+          break;
         }
-      });
+      }
     }
-    if(!aac) return; // couldn't match
+    if(!aac) return;
 
     results[aac] = {};
     for(var period=1; period<=4; period++){
@@ -681,22 +707,38 @@ function fetchFDR(){
 
   states.forEach(function(stateCode){
     var url = BOM_FDR_URLS[stateCode];
-    fetchProxied(url)
+    // Try direct fetch first (BOM may allow CORS on .shtml), then proxies
+    fetchWithFallback(url)
       .then(function(r){ return r.text(); })
       .then(function(html){
-        // Unwrap allorigins envelope if present
-        if(html.trim().charAt(0) === '{'){
+        // Unwrap allorigins JSON envelope if present ({contents:"..."})
+        var trimmed = html.trim();
+        if(trimmed.charAt(0) === '{'){
           try{
-            var obj = JSON.parse(html.trim());
+            var obj = JSON.parse(trimmed);
             if(obj.contents) html = obj.contents;
           }catch(e){}
         }
+        // Validate we actually got HTML — must contain a <table tag
+        if(html.indexOf('<table') === -1 && html.indexOf('<TABLE') === -1){
+          console.warn('BOM FDR '+stateCode+': response has no table — likely blocked, len='+html.length);
+          failed++;
+          return;
+        }
         var parsed = parseBOMfdrPage(html, stateCode);
+        var n = Object.keys(parsed.results).length;
+        console.log('BOM FDR '+stateCode+': parsed '+n+' districts');
+        if(n === 0){
+          console.warn('BOM FDR '+stateCode+': got table but 0 districts matched');
+          failed++;
+          return;
+        }
         Object.assign(mergedRatings, parsed.results);
         if(!firstDates && parsed.dates && parsed.dates[1]) firstDates = parsed.dates;
         fetched++;
       })
-      .catch(function(){
+      .catch(function(e){
+        console.warn('BOM FDR '+stateCode+' fetch failed:', e.message);
         failed++;
       })
       .finally(function(){
