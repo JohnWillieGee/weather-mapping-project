@@ -28,6 +28,9 @@ BOM_WARNING_FEEDS = {
     "ACT": "http://www.bom.gov.au/fwo/IDZ00054.warnings_nsw.xml",  # ACT included in NSW feed
 }
 
+# NSW RFS CAP-AU alert zones feed — polygon warning areas for active incidents
+NSW_ALERT_ZONES_URL = "https://www.rfs.nsw.gov.au/feeds/IncidentAlerts.xml"
+
 # Titles to exclude — routine summaries, not emergency warnings
 EXCLUDE_TITLES = [
     "marine wind warning summary",  # daily routine marine summaries
@@ -163,6 +166,18 @@ def fetch_state(state, url):
 # ── INCIDENT FEEDS ──────────────────────────────────────────────────────────
 
 INCIDENT_FEEDS = {
+    "nsw": {
+        "url": "https://www.rfs.nsw.gov.au/feeds/majorIncidents.json",
+        "label": "NSW RFS",
+        "source_url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "agency": "RFS",
+    },
+    "vic": {
+        "url": "https://data.emergency.vic.gov.au/Show?pageId=getIncidentJSON",
+        "label": "VIC EMV",
+        "source_url": "https://www.emergency.vic.gov.au/respond/",
+        "agency": "EMV",
+    },
     "qld": {
         "url": "https://publiccontent-gis-psba-qld-gov-au.s3.amazonaws.com/content/Feeds/BushfireCurrentIncidents/bushfireAlert.json",
         "label": "QLD QFD",
@@ -225,7 +240,236 @@ def is_excluded_incident(inc_type, inc_status):
     return False
 
 
-def parse_qld_incidents(data):
+def parse_nsw_incidents(data):
+    """
+    Parse NSW RFS majorIncidents.json (GeoJSON FeatureCollection).
+    Each feature has geometry (Point or Polygon) and properties including:
+      title, category (alert level), status, type, size, updated, guid
+    Excludes: Not Applicable alert level, planned burns, resolved statuses.
+    """
+    incidents = []
+    features = data.get("features", []) if isinstance(data, dict) else []
+
+    for f in features:
+        p = f.get("properties", {})
+        geom = f.get("geometry") or {}
+
+        # Centroid: use Point geometry if available, else first coord of polygon
+        lat, lng = 0, 0
+        if geom.get("type") == "Point":
+            coords = geom.get("coordinates", [])
+            if len(coords) >= 2:
+                lng, lat = float(coords[0]), float(coords[1])
+        elif geom.get("type") in ("Polygon", "MultiPolygon"):
+            # Use first coordinate of outer ring as centroid approximation
+            try:
+                ring = geom["coordinates"][0]
+                if geom["type"] == "MultiPolygon":
+                    ring = geom["coordinates"][0][0]
+                lngs = [c[0] for c in ring]
+                lats = [c[1] for c in ring]
+                lng = sum(lngs) / len(lngs)
+                lat = sum(lats) / len(lats)
+            except (IndexError, TypeError, ZeroDivisionError):
+                pass
+
+        if not lat or not lng:
+            continue
+
+        # NSW uses "category" for alert level
+        alert_level = normalise_alert_level(p.get("category") or "")
+
+        # Exclude Not Applicable — non-actionable monitoring entries
+        if (alert_level or "").lower() in ("not applicable", ""):
+            continue
+
+        inc_type   = p.get("type") or ""
+        inc_status = p.get("status") or ""
+
+        if is_excluded_incident(inc_type, inc_status):
+            continue
+
+        # Extract polygons for site-risk intersection (store as [lng,lat] pairs)
+        polys = []
+        if geom.get("type") == "Polygon":
+            polys = [geom["coordinates"][0]]  # outer ring only
+        elif geom.get("type") == "MultiPolygon":
+            polys = [ring[0] for ring in geom["coordinates"]]
+
+        incidents.append({
+            "title":      p.get("title") or "NSW Incident",
+            "alertLevel": alert_level,
+            "status":     inc_status,
+            "type":       inc_type,
+            "size":       str(p.get("size") or ""),
+            "agency":     p.get("respondsTo") or "RFS",
+            "updated":    p.get("updated") or "",
+            "description": p.get("location") or "",
+            "lat":        lat,
+            "lng":        lng,
+            "polys":      polys,   # [lng,lat] coordinate rings for polygon rendering
+            "state":      "NSW",
+            "sourceUrl":  INCIDENT_FEEDS["nsw"]["source_url"],
+        })
+
+    return incidents
+
+
+def parse_vic_incidents(data):
+    """
+    Parse VIC EMV incident JSON.
+    Feed structure: {"results": [...]} — flat list of incident objects.
+    Key fields: name, incidentLocation, category2 (alert level), category1 (type),
+                incidentStatus, incidentType, incidentSize, agency, lastUpdated,
+                latitude, longitude.
+    Excludes: Safe status, Small size.
+    """
+    incidents = []
+    records = data.get("results", []) if isinstance(data, dict) else []
+
+    EXCLUDE_VIC_SIZES = ["small"]
+
+    for r in records:
+        lat = float(r.get("latitude") or 0)
+        lng = float(r.get("longitude") or 0)
+        if not lat or not lng:
+            continue
+
+        inc_status = r.get("incidentStatus") or ""
+        inc_type   = r.get("incidentType") or r.get("category1") or ""
+        inc_size   = (r.get("incidentSize") or "").lower()
+
+        if is_excluded_incident(inc_type, inc_status):
+            continue
+
+        # VIC: exclude small incidents — not operationally significant
+        if inc_size in EXCLUDE_VIC_SIZES:
+            continue
+
+        # VIC uses category2 for alert level, category1 for type
+        alert_level = normalise_alert_level(r.get("category2") or r.get("category1") or "")
+
+        incidents.append({
+            "title":      r.get("name") or r.get("incidentLocation") or "VIC Incident",
+            "alertLevel": alert_level,
+            "status":     inc_status,
+            "type":       inc_type,
+            "size":       r.get("incidentSize") or "",
+            "agency":     r.get("agency") or "EMV",
+            "updated":    r.get("lastUpdated") or "",
+            "description": r.get("incidentLocation") or "",
+            "lat":        lat,
+            "lng":        lng,
+            "polys":      [],   # VIC feed is point-only, no polygon data
+            "state":      "VIC",
+            "sourceUrl":  INCIDENT_FEEDS["vic"]["source_url"],
+        })
+
+    return incidents
+
+
+def parse_nsw_alert_zones(xml_text):
+    """
+    Parse NSW RFS IncidentAlerts.xml — CAP-AU format.
+    Returns list of warning zone objects with polygon coordinates.
+    Blank file = no active warning zones (expected and normal).
+
+    Each zone object:
+      title, areaName, alertLevel, updated,
+      coords: [[lng,lat], ...] — closed polygon ring, [lng,lat] order for Leaflet
+    """
+    zones = []
+    if not xml_text or not xml_text.strip():
+        return zones  # Blank file — no active warning zones
+
+    try:
+        root = ET.fromstring(xml_text.strip())
+    except ET.ParseError as e:
+        print(f"  NSW alert zones: XML parse error — {e}")
+        return zones
+
+    CAP_NS = "urn:oasis:names:tc:emergency:cap:1.2"
+
+    def get_text(el, tag, ns=None):
+        found = el.findall(f".//{{{ns}}}{tag}") if ns else el.findall(f".//{tag}")
+        return found[0].text.strip() if found and found[0].text else ""
+
+    # Handle both Atom feed format (<feed><entry>) and direct CAP (<alert>)
+    entries = root.findall(".//entry") or root.findall(".//alert")
+
+    for entry in entries:
+        title   = get_text(entry, "title")
+        updated = get_text(entry, "updated") or get_text(entry, "sent", CAP_NS)
+
+        # Alert level from title text
+        tl = title.lower()
+        alert_level = ("Emergency Warning" if "emergency warning" in tl else
+                       "Watch and Act"      if "watch and act"      in tl else
+                       "Advice"             if "advice"             in tl else "")
+
+        # Find all polygon elements — try namespaced then bare
+        poly_els = (entry.findall(f".//{{{CAP_NS}}}polygon") or
+                    entry.findall(".//cap:polygon") or
+                    entry.findall(".//polygon"))
+
+        # Area description
+        area_els = (entry.findall(f".//{{{CAP_NS}}}areaDesc") or
+                    entry.findall(".//cap:areaDesc") or
+                    entry.findall(".//areaDesc"))
+        area_name = area_els[0].text.strip() if area_els and area_els[0].text else ""
+
+        for poly_el in poly_els:
+            raw = (poly_el.text or "").strip()
+            if not raw:
+                continue
+
+            # CAP polygon format: "lat,lng lat,lng lat,lng ..."
+            # Convert to [lng,lat] pairs for Leaflet consistency
+            coords = []
+            for pair in raw.split():
+                parts = pair.split(",")
+                if len(parts) < 2:
+                    continue
+                try:
+                    lat, lng = float(parts[0]), float(parts[1])
+                    coords.append([lng, lat])
+                except ValueError:
+                    continue
+
+            if len(coords) < 3:
+                continue
+
+            # Close the ring if not already closed
+            if coords[0] != coords[-1]:
+                coords.append(coords[0])
+
+            zones.append({
+                "title":      title,
+                "areaName":   area_name,
+                "alertLevel": alert_level,
+                "updated":    updated,
+                "coords":     coords,  # [lng,lat] pairs, closed ring
+            })
+
+    print(f"  NSW alert zones: {len(zones)} polygon zone(s)")
+    return zones
+
+
+def fetch_nsw_alert_zones():
+    """Fetch and parse NSW RFS IncidentAlerts.xml. Returns (list, error_or_None)."""
+    try:
+        r = requests.get(NSW_ALERT_ZONES_URL, timeout=20, headers={
+            "User-Agent": "Mozilla/5.0 (compatible; WeatherMap/1.0)",
+        })
+        r.raise_for_status()
+        zones = parse_nsw_alert_zones(r.text)
+        return zones, None
+    except requests.RequestException as e:
+        print(f"  NSW alert zones: fetch failed — {e}")
+        return [], str(e)
+
+
+
     """
     Parse QLD QFD bushfire GeoJSON feed into normalised incident list.
 
@@ -434,7 +678,11 @@ def fetch_incidents(key, feed_cfg):
             print(f"  {key.upper()}: JSON parse error — {e}")
             return [], str(e)
 
-        if key == "qld":
+        if key == "nsw":
+            incidents = parse_nsw_incidents(obj)
+        elif key == "vic":
+            incidents = parse_vic_incidents(obj)
+        elif key == "qld":
             incidents = parse_qld_incidents(obj)
             # Debug: log first record's field names and values to verify schema
             try:
@@ -500,23 +748,30 @@ def main():
         if inc_err:
             incident_errors[key] = inc_err
 
+    # ── Fetch NSW RFS alert zones (CAP-AU polygons) ───────────────────────────
+    print("Fetching NSW alert zones...")
+    nsw_alert_zones, zones_err = fetch_nsw_alert_zones()
+    if zones_err:
+        incident_errors["nsw_zones"] = zones_err
+
     # Merge fetch errors
     errors.update(incident_errors)
 
     # Build output
     output = {
-        "generated_utc": datetime.now(timezone.utc).isoformat(),
-        "warning_count": len(unique_warnings),
-        "warnings": unique_warnings,
-        "fetch_errors": errors,
-        "incidents": incidents,          # keyed by state code: "qld", "sa", etc.
-        "incident_count": total_incidents,
+        "generated_utc":    datetime.now(timezone.utc).isoformat(),
+        "warning_count":    len(unique_warnings),
+        "warnings":         unique_warnings,
+        "fetch_errors":     errors,
+        "incidents":        incidents,       # keyed by state: "nsw","vic","qld","sa"
+        "incident_count":   total_incidents,
+        "nsw_alert_zones":  nsw_alert_zones, # CAP-AU polygons for site-risk intersection
     }
 
     with open("live_data.json", "w") as f:
         json.dump(output, f, indent=2)
 
-    print(f"Done — {len(unique_warnings)} warnings, {total_incidents} incidents written to live_data.json")
+    print(f"Done — {len(unique_warnings)} warnings, {total_incidents} incidents, {len(nsw_alert_zones)} NSW alert zones written to live_data.json")
     if errors:
         print(f"Fetch errors: {errors}")
 
