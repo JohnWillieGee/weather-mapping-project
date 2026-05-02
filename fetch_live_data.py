@@ -198,7 +198,7 @@ INCIDENT_FEEDS = {
         "agency": "DFES",
     },
     "tas": {
-        "url": "https://www.fire.tas.gov.au/Show?pageId=bfKml",
+        "url": "http://www.fire.tas.gov.au/Show?pageId=bfKml",
         "label": "TAS TFS",
         "source_url": "https://www.fire.tas.gov.au/Show?pageId=colCurrentBushfires",
         "agency": "TFS",
