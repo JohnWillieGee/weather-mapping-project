@@ -198,9 +198,9 @@ INCIDENT_FEEDS = {
         "agency": "DFES",
     },
     "tas": {
-        "url": "http://www.fire.tas.gov.au/Show?pageId=bfKml",
-        "label": "TAS TFS",
-        "source_url": "https://www.fire.tas.gov.au/Show?pageId=colCurrentBushfires",
+        "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/72/query?where=1%3D1&outFields=*&f=geojson",
+        "label": "TAS TasALERT",
+        "source_url": "https://alert.tas.gov.au/",
         "agency": "TFS",
     },
 }
@@ -913,123 +913,96 @@ def fetch_wa_incidents():
 
 
 
-def parse_tas_incidents(xml_text):
+def parse_tas_incidents(data):
     """
-    Parse TAS TFS KML feed (fire.tas.gov.au/Show?pageId=bfKml).
+    Parse TAS TasALERT warnings from LIST Tasmania ArcGIS GeoJSON service.
+    Endpoint: services.thelist.tas.gov.au/.../EmergencyManagementPublic/MapServer/72/query
 
-    Confirmed schema from live feed:
-      <Placemark id="INCIDENT_NO">
-        <name>Address, SUBURB</name>           — incident title/location
-        <styleUrl>#noAlertLevelStyle</styleUrl> — alert level from style name
-        <description>HTML-encoded table</description>  — contains Type, Status, Last Update
-        <Point><coordinates>lat,lng</coordinates></Point>  — NOTE: lat,lng order (not GeoJSON)
+    Confirmed fields from service metadata:
+      ALERT_TYPE      — e.g. "Bushfire - Emergency Warning", "Bushfire - Watch and Act",
+                          "Bushfire - Advice", "Flood - Emergency Warning", etc.
+      SENDER_NAME     — issuing agency name
+      TASALERT_LINK   — URL to full warning details
+      EFFECTIVE_FROM_DATE, EXPIRES_DATE, REPLICATED_DATE — epoch ms timestamps
 
-    Alert level style IDs:
-      #emergencyWarningStyle, #watchAndActStyle, #adviceStyle,
-      #smokeAlertStyle, #noAlertLevelStyle
-
-    Description table fields: Alert Level, Type, Last Update, First Report, Status, Agency, Incident No
-    Status values: Going, Patrol, Contained, Safe
+    Geometry: esriGeometryPoint — [lng, lat] GeoJSON standard
     """
-    import html as html_module
     incidents = []
+    features = data.get("features", []) if isinstance(data, dict) else []
+    print(f"  TAS GeoJSON: {len(features)} raw features")
 
-    try:
-        root = ET.fromstring(xml_text.strip())
-    except ET.ParseError as e:
-        print(f"  TAS KML: XML parse error — {e}")
-        return incidents
+    if features:
+        sample_p = features[0].get("properties", {})
+        print(f"  TAS schema keys: {list(sample_p.keys())[:15]}")
+        print(f"  TAS sample — alert_type:{sample_p.get('ALERT_TYPE')} sender:{sample_p.get('SENDER_NAME')}")
 
-    KML_NS = "http://earth.google.com/kml/2.1"
+    for f in features:
+        p = f.get("properties", {})
+        geom = f.get("geometry") or {}
+        coords = geom.get("coordinates", [])
 
-    # Handle both namespaced and bare KML
-    placemarks = root.findall(f".//{{{KML_NS}}}Placemark")
-    if not placemarks:
-        placemarks = root.findall(".//Placemark")
-
-    print(f"  TAS KML: {len(placemarks)} raw placemarks")
-
-    for pm in placemarks:
-        def get(tag):
-            el = pm.find(f"{{{KML_NS}}}{tag}") or pm.find(tag)
-            return el.text.strip() if el is not None and el.text else ""
-
-        title = get("name")
-        style_url = get("styleUrl")
-        raw_desc = get("description")
-
-        # Coordinates: TAS KML uses lat,lng order (opposite of GeoJSON lng,lat)
-        coords_el = (pm.find(f".//{{{KML_NS}}}coordinates") or
-                     pm.find(".//coordinates"))
-        if coords_el is None or not coords_el.text:
-            continue
-        try:
-            # TAS format: "lat,lng" (confirmed from live feed)
-            parts = coords_el.text.strip().split(",")
-            lat, lng = float(parts[0]), float(parts[1])
-        except (ValueError, IndexError):
+        if geom.get("type") == "Point" and len(coords) >= 2:
+            lng, lat = float(coords[0]), float(coords[1])
+        else:
             continue
 
         if not lat or not lng:
             continue
 
-        # Alert level from styleUrl — most reliable field
-        sl = (style_url or "").lower()
-        alert_level = ("Emergency Warning" if "emergencywarning" in sl else
-                       "Watch and Act"     if "watchandact"      in sl else
-                       "Advice"            if "advice"           in sl else
-                       "Smoke Alert"       if "smoke"            in sl else "")
+        alert_type = p.get("ALERT_TYPE") or ""
+        alert_lower = alert_type.lower()
 
-        # Parse HTML-encoded description table to extract Type and Status
-        # Description is HTML-encoded, contains <table><tr><th>Field</th><td>Value</td></tr>...
-        inc_type   = ""
-        inc_status = ""
-        updated    = ""
+        # Parse alert level and incident type from ALERT_TYPE field
+        # Format: "Hazard Type - Alert Level" e.g. "Bushfire - Emergency Warning"
+        alert_level = ("Emergency Warning" if "emergency warning" in alert_lower else
+                       "Watch and Act"     if "watch and act"     in alert_lower else
+                       "Advice"            if "advice"            in alert_lower else "")
 
-        if raw_desc:
-            decoded = html_module.unescape(raw_desc)
-            # Extract field values from th/td pairs using simple regex
-            pairs = re.findall(
-                r'<th[^>]*>(.*?)</th>\s*<td[^>]*>(.*?)</td>',
-                decoded, re.IGNORECASE | re.DOTALL
-            )
-            for key_raw, val_raw in pairs:
-                key_clean = re.sub(r'<[^>]+>', '', key_raw).strip()
-                val_clean = re.sub(r'<[^>]+>', '', val_raw).strip()
-                if key_clean == "Type":
-                    inc_type = val_clean
-                elif key_clean == "Status":
-                    inc_status = val_clean
-                elif key_clean == "Last Update":
-                    updated = val_clean
+        inc_type = ""
+        if "bushfire" in alert_lower or "fire" in alert_lower:
+            inc_type = "Bush Fire"
+        elif "flood" in alert_lower:
+            inc_type = "Flood"
+        elif "storm" in alert_lower or "severe weather" in alert_lower:
+            inc_type = "Severe Weather"
 
-        # TAS statuses: Going=active, Patrol=monitoring, Contained/Safe=resolved
-        # "No Alert Level" with Going/Patrol statuses — exclude like NSW "Not Applicable"
-        # Only include if there's a meaningful alert level OR status is "Going"
-        if not alert_level and inc_status.lower() not in ("going",):
+        # Skip if no actionable alert level
+        if not alert_level:
             continue
 
-        # Smoke Alerts are informational — skip (no community action required)
-        if alert_level == "Smoke Alert":
+        if is_excluded_incident(inc_type, ""):
             continue
 
-        if is_excluded_incident(inc_type, inc_status):
-            continue
+        sender = p.get("SENDER_NAME") or "TFS"
+        link = p.get("TASALERT_LINK") or INCIDENT_FEEDS["tas"]["source_url"]
+
+        # Timestamps are epoch milliseconds
+        updated = ""
+        rep_date = p.get("REPLICATED_DATE") or p.get("EFFECTIVE_FROM_DATE")
+        if rep_date:
+            try:
+                from datetime import datetime, timezone
+                updated = datetime.fromtimestamp(int(rep_date) / 1000, tz=timezone.utc).isoformat()
+            except (ValueError, TypeError):
+                pass
+
+        # Title: use ALERT_TYPE as it's the most descriptive field available
+        title = alert_type or "TAS Incident"
 
         incidents.append({
-            "title":       title or "TAS Incident",
+            "title":       title,
             "alertLevel":  alert_level,
-            "status":      inc_status,
-            "type":        inc_type.title() if inc_type else "",
+            "status":      "",
+            "type":        inc_type,
             "size":        "",
-            "agency":      "TFS",
+            "agency":      sender,
             "updated":     updated,
             "description": "",
             "lat":         lat,
             "lng":         lng,
             "polys":       [],
             "state":       "TAS",
-            "sourceUrl":   INCIDENT_FEEDS["tas"]["source_url"],
+            "sourceUrl":   link or INCIDENT_FEEDS["tas"]["source_url"],
         })
 
     return incidents
@@ -1083,7 +1056,7 @@ def fetch_incidents(key, feed_cfg):
         elif key == "sa":
             incidents = parse_sa_incidents(obj)
         elif key == "tas":
-            incidents = parse_tas_incidents(r.text)  # KML — parse from raw text, not JSON
+            incidents = parse_tas_incidents(obj)
         else:
             incidents = []
 
