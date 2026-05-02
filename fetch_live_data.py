@@ -24,6 +24,13 @@ BOM_WARNING_FEEDS = {
     "ACT": "http://www.bom.gov.au/fwo/IDZ00054.warnings_nsw.xml",  # ACT included in NSW feed
 }
 
+# Titles to exclude — routine summaries, not emergency warnings
+EXCLUDE_TITLES = [
+    "marine wind warning summary",  # daily routine marine summaries
+    "wind warning summary",
+    "coastal wind warning summary",
+]
+
 # Warning type classification based on title keywords
 def classify_warning(title):
     t = title.lower()
@@ -39,9 +46,24 @@ def classify_warning(title):
         return "severe_weather"
     if "flood" in t:
         return "flood"
-    if "wind" in t or "gale" in t:
+    if "wind" in t or "gale" in t or "marine" in t:
         return "wind"
     return "other"
+
+def is_excluded(title):
+    t = title.lower()
+    return any(ex in t for ex in EXCLUDE_TITLES)
+
+def extract_pid_from_link(link):
+    """Extract product ID from BOM warning link URL.
+    e.g. http://www.bom.gov.au/qld/warnings/flood/diamantina-river.shtml -> no ID in URL
+    e.g. http://www.bom.gov.au/products/IDN21000.shtml -> IDN21000
+    """
+    # Try direct product ID in URL
+    m = re.search(r'\b(ID[A-Z]\d{5,6})\b', link)
+    if m:
+        return m.group(1)
+    return ""
 
 def parse_bom_xml(xml_text, state):
     """Parse BOM warnings XML feed — RSS 2.0 format with <item> entries."""
@@ -72,9 +94,16 @@ def parse_bom_xml(xml_text, state):
         if not title:
             continue
 
-        # Extract product ID from link or title (e.g. IDN21000, IDQ21035)
-        pid_match = re.search(r'\b(ID[A-Z]\d{5,6})\b', link + " " + title + " " + desc)
-        pid = pid_match.group(1) if pid_match else ""
+        # Skip routine summaries (marine wind summaries etc)
+        if is_excluded(title):
+            continue
+
+        # Extract product ID from link URL or text
+        pid = extract_pid_from_link(link + " " + desc)
+        if not pid:
+            # Try title text as fallback
+            m = re.search(r'\b(ID[A-Z]\d{5,6})\b', title)
+            pid = m.group(1) if m else ""
 
         # Skip non-warning items (e.g. "No warnings current" placeholder entries)
         if re.search(r'no\s+\w+\s+warning|no warnings', title.lower()):
