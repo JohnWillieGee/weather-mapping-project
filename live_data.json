@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-05-02T20:04:42.445913+00:00",
+  "generated_utc": "2026-05-02T20:45:17.288655+00:00",
   "warning_count": 3,
   "warnings": [
     {
@@ -8,6 +8,7 @@
       "type": "severe_weather",
       "state": "VIC",
       "link": "http://www.bom.gov.au/products/IDV21037.shtml",
+      "direct_url": "https://www.bom.gov.au/warning/severe-weather-warning/IDV21037",
       "desc": "",
       "issued": "Sat, 02 May 2026 19:06:46 GMT"
     },
@@ -17,6 +18,7 @@
       "type": "flood",
       "state": "QLD",
       "link": "http://www.bom.gov.au/qld/warnings/flood/diamantina-river.shtml",
+      "direct_url": "http://www.bom.gov.au/qld/warnings/flood/diamantina-river.shtml",
       "desc": "",
       "issued": "Fri, 01 May 2026 01:23:50 GMT"
     },
@@ -26,6 +28,7 @@
       "type": "flood",
       "state": "SA",
       "link": "http://www.bom.gov.au/sa/warnings/flood/inlandrivers.shtml",
+      "direct_url": "http://www.bom.gov.au/sa/warnings/flood/inlandrivers.shtml",
       "desc": "",
       "issued": "Thu, 30 Apr 2026 02:34:45 GMT"
     }
@@ -34,7 +37,24 @@
     "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
   },
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Chisholm Rd, East Maitland",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "2/05/2026 8:43:00 PM",
+        "description": "Chisholm Rd, East Maitland, NSW 2323",
+        "council": "Maitland",
+        "lat": -32.76627499899996,
+        "lng": 151.58674200000007,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [
       {
         "title": "BUFFALO CREEK - CLEMENS LANE",
@@ -72,7 +92,7 @@
     "tas": [],
     "wa": []
   },
-  "incident_count": 2,
+  "incident_count": 3,
   "nsw_alert_zones": [],
   "wa_feed_method": "none"
 }
