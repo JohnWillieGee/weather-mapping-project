@@ -644,12 +644,16 @@ function loadRadarFrames(){
       }
 
       // Pre-create all tile layers (but only add the latest to map)
+      // Use 256px tile size in URL but request 512px images with zoomOffset:-1
+      // This keeps Leaflet's internal tile grid at 256px reference while serving
+      // higher-res 512px images — fixes the geographic offset issue
       radarLayers = radarFrames.map(function(f){
         var url = RADAR_HOST + f.path + '/512/{z}/{x}/{y}/' + RADAR_COLOR + '/' + RADAR_SMOOTH + '_' + RADAR_SNOW + '.png';
         return L.tileLayer(url, {
           opacity: RADAR_OPACITY,
           zIndex: 300,
           tileSize: 512,
+          zoomOffset: -1,
           attribution: 'Radar &copy; <a href="https://www.bom.gov.au" target="_blank">BOM</a> via RainViewer'
         });
       });
