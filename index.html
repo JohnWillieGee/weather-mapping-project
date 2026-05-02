@@ -261,7 +261,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
             <div class="feed-status-row" id="fsr-tas">
               <div class="feed-dot loading" id="fdot-tas"></div>
               <span class="feed-name">TAS</span>
-              <span class="feed-msg" id="fmsg-tas">TFS — via Action...</span>
+              <span class="feed-msg" id="fmsg-tas">TasALERT — via Action...</span>
               <span class="feed-count" id="fcnt-tas"></span>
             </div>
           </div>
@@ -525,10 +525,10 @@ var INC_FEEDS = {
     sourceUrl: "https://www.emergency.wa.gov.au/"
   },
   tas: {
-    label: "TAS TFS",
+    label: "TAS TasALERT",
     url: null,  // Fetched server-side via GitHub Action — read from live_data.json
     type: "live_data",
-    sourceUrl: "https://www.fire.tas.gov.au/Show?pageId=colCurrentBushfires"
+    sourceUrl: "https://alert.tas.gov.au/"
   }
 };
 
@@ -1277,7 +1277,7 @@ function fetchBOMWarnings() {
       // TAS
       allIncidents.tas = incData.tas || [];
       feedStatus.tas = "ok";
-      setFeedStatus("tas", "ok", ageLabel + " \u00b7 TAS TFS", (incData.tas||[]).length);
+      setFeedStatus("tas", "ok", ageLabel + " \u00b7 TAS TasALERT", (incData.tas||[]).length);
 
       updateIncidentCount();
       renderIncidentsPanel();
