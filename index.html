@@ -1886,7 +1886,8 @@ function renderIncidentsMap(){
         +(inc.size&&inc.size!=="0 ha"?"<div class='pu-row'><span class='pu-key'>Size</span><span class='pu-val'>"+inc.size+"</span></div>":"")
         +(inc.agency?"<div class='pu-row'><span class='pu-key'>Agency</span><span class='pu-val'>"+inc.agency+"</span></div>":"")
         +(inc.updated?"<div class='pu-row'><span class='pu-key'>Updated</span><span class='pu-val'>"+(function(){try{return new Date(inc.updated).toLocaleString("en-AU",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit",timeZone:"Australia/Sydney",hour12:false})+" AEST";}catch(e){return inc.updated;}})()+"</span></div>":"")
-        +(inc.description?"<div class='pu-row'><span class='pu-key'>Area</span><span class='pu-val'>"+inc.description+"</span></div>":"")
+        +(inc.description?"<div class='pu-row'><span class='pu-key'>Location</span><span class='pu-val'>"+inc.description+"</span></div>":"")
+        +(inc.council?"<div class='pu-row'><span class='pu-key'>Council</span><span class='pu-val'>"+inc.council+"</span></div>":"")
         +"<div class='pu-links'><a class='pu-link' href='"+inc.sourceUrl+"' target='_blank' rel='noopener'>&#128680; "+INC_FEEDS[key].label+"</a></div>"
         +"</div>";
 
