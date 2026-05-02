@@ -603,8 +603,9 @@ function initMap(){
 
 // ── RADAR LAYER (RainViewer) ──────────────────────────────────────────────
 var radarVisible = false;
-var radarFrames = [];        // array of {time, path} from RainViewer API
-var radarLayers = [];        // Leaflet TileLayers, one per frame
+var radarFrames = [];
+var radarLayers = [];
+var radarFramesReady = [];
 var radarCurrentIdx = 0;
 var radarPlaying = false;
 var radarPlayTimer = null;
@@ -626,7 +627,8 @@ function toggleRadarLayer(){
   } else {
     btn.classList.remove('on');
     document.getElementById('radar-controls').classList.add('hidden');
-    radarLayers.forEach(function(l){ if(map.hasLayer(l)) map.removeLayer(l); });
+    // Set all layers to invisible rather than removing — avoids reload next time
+    radarLayers.forEach(function(l){ l.setOpacity(0); });
     stopRadarPlay();
   }
 }
@@ -643,30 +645,42 @@ function loadRadarFrames(){
         return;
       }
 
-      // Pre-create all tile layers (but only add the latest to map)
-      // Use 256px tile size in URL but request 512px images with zoomOffset:-1
-      // This keeps Leaflet's internal tile grid at 256px reference while serving
-      // higher-res 512px images — fixes the geographic offset issue
-      radarLayers = radarFrames.map(function(f){
+      var totalFrames = radarFrames.length;
+      var loadedCount = 0;
+      radarFramesReady = new Array(totalFrames).fill(false);
+
+      // Add ALL layers to map at opacity 0 immediately to trigger tile pre-loading
+      radarLayers = radarFrames.map(function(f, i){
         var url = RADAR_HOST + f.path + '/512/{z}/{x}/{y}/' + RADAR_COLOR + '/' + RADAR_SMOOTH + '_' + RADAR_SNOW + '.png';
-        return L.tileLayer(url, {
-          opacity: RADAR_OPACITY,
+        var layer = L.tileLayer(url, {
+          opacity: 0,
           zIndex: 300,
           tileSize: 512,
           zoomOffset: -1,
           attribution: 'Radar &copy; <a href="https://www.bom.gov.au" target="_blank">BOM</a> via RainViewer'
         });
+
+        layer.on('load', (function(idx){
+          return function(){
+            if(!radarFramesReady[idx]){
+              radarFramesReady[idx] = true;
+              loadedCount++;
+              var pct = Math.round(loadedCount / totalFrames * 100);
+              document.getElementById('radar-age-label').textContent = 'Loading ' + pct + '%';
+              if(loadedCount === totalFrames && !radarLoaded){
+                radarLoaded = true;
+                buildRadarTimeline();
+                radarCurrentIdx = totalFrames - 1;
+                showRadarFrame(radarCurrentIdx);
+                startRadarPlay();
+              }
+            }
+          };
+        })(i));
+
+        layer.addTo(map);
+        return layer;
       });
-
-      radarLoaded = true;
-      buildRadarTimeline();
-
-      // Show latest frame
-      radarCurrentIdx = radarFrames.length - 1;
-      if(radarVisible) showRadarFrame(radarCurrentIdx);
-
-      // Auto-play
-      startRadarPlay();
     })
     .catch(function(e){
       document.getElementById('radar-age-label').textContent = 'Failed to load';
@@ -687,26 +701,21 @@ function buildRadarTimeline(){
 }
 
 function showRadarFrame(idx){
-  // Remove all radar layers from map
-  radarLayers.forEach(function(l){ if(map.hasLayer(l)) map.removeLayer(l); });
-
-  // Add the selected frame
-  if(radarLayers[idx]){
-    radarLayers[idx].addTo(map);
-  }
+  // Toggle opacity — all layers stay on map, only active one is visible
+  // This is smooth because no layer add/remove happens during animation
+  radarLayers.forEach(function(l, i){
+    l.setOpacity(i === idx ? RADAR_OPACITY : 0);
+  });
   radarCurrentIdx = idx;
 
-  // Update timeline ticks
   var ticks = document.querySelectorAll('.radar-tick');
   ticks.forEach(function(t, i){ t.classList.toggle('active', i === idx); });
 
-  // Update time label
   if(radarFrames[idx]){
     document.getElementById('radar-time-label').textContent = formatRadarTime(radarFrames[idx].time);
-    // Show age of latest frame
     if(idx === radarFrames.length - 1){
       var ageMin = Math.round((Date.now() / 1000 - radarFrames[idx].time) / 60);
-      document.getElementById('radar-age-label').textContent = 'BOM \u00b7 ' + ageMin + 'm ago';
+      document.getElementById('radar-age-label').textContent = 'BOM · ' + ageMin + 'm ago';
     } else {
       document.getElementById('radar-age-label').textContent = 'BOM Radar';
     }
@@ -751,8 +760,10 @@ function toggleRadarPlay(){
 setInterval(function(){
   if(radarVisible && radarLoaded){
     stopRadarPlay();
+    // Remove all pre-loaded layers from map before reloading
     radarLayers.forEach(function(l){ if(map.hasLayer(l)) map.removeLayer(l); });
     radarLayers = [];
+    radarFramesReady = [];
     radarLoaded = false;
     loadRadarFrames();
   }
