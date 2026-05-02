@@ -472,11 +472,20 @@ function fetchFDR(){
     .then(function(r){return r.text();})
     .then(function(txt){
       var cleaned = txt.trim().replace(/^\uFEFF/,"");
-      var data = JSON.parse(cleaned);
 
-      // Handle both ESRI JSON {features:[{attributes:{}}]} and GeoJSON {features:[{properties:{}}]}
+      // Unwrap allorigins envelope if present
+      if(cleaned.charAt(0)==="{"){
+        try{
+          var obj = JSON.parse(cleaned);
+          // allorigins wraps as {contents:"...", status:{}}
+          if(obj.contents && !obj.features) cleaned = obj.contents.trim();
+          else if(obj.features) { /* already good */ }
+        }catch(e){}
+      }
+
+      var data = JSON.parse(cleaned);
       var features = data.features||[];
-      if(!features.length) throw new Error("No features");
+      if(!features.length) throw new Error("No features returned");
 
       fdrRatings = {};
       var byPeriod = {};
@@ -868,21 +877,35 @@ function fetchBOMWarnings() {
   warnFetchTotal = toCheck.length;
 
   // Fetch each product — 404 = not active, 200 = active warning
+  // BOM .txt files on bom.gov.au/products/ are publicly readable
+  // BUT: some proxies get "Access Denied" HTML back — detect and skip
   toCheck.forEach(function(item) {
+    // Use the public product page URL (always accessible)
     var url = 'https://www.bom.gov.au/products/' + item.pid + '.txt';
-    // Use proxy since BOM .txt files may need CORS help
-    fetchWithFallback(url)
+    fetchProxied(url)
       .then(function(r) {
         if (!r.ok) throw new Error('not active');
         return r.text();
       })
       .then(function(txt) {
-        // File exists — warning is active
+        // Detect access denied / error page — treat as inactive
+        var lower = txt.slice(0, 500).toLowerCase();
+        if(lower.includes('access denied') || lower.includes('<!doctype') ||
+           lower.includes('<html') || lower.includes('403 forbidden') ||
+           lower.includes('not found') || txt.trim().length < 50) {
+          throw new Error('not a valid warning text');
+        }
+        // BOM warning text files always start with the product ID (IDXnnnnn)
+        // If the content doesn't contain the product ID, it's not a real warning
+        if(txt.indexOf(item.pid) === -1) {
+          throw new Error('product not active');
+        }
+        // File has real content — warning is active
         var parsed = parseBOMtxt(txt, item.pid, item.type, item.state);
         bomWarnings.push(parsed);
       })
       .catch(function() {
-        // 404 or error = no active warning for this product — expected, ignore
+        // 404, access denied, or error = no active warning — expected, ignore
       })
       .finally(function() {
         warnFetchDone++;
