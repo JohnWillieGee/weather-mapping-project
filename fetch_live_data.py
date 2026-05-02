@@ -122,6 +122,27 @@ def parse_bom_xml(xml_text, state):
 
         warn_type = classify_warning(title)
 
+        # Build direct BOM warning page URL from product ID
+        # New URL pattern: bom.gov.au/warning/[type-slug]/[PID]
+        # Falls back to legacy bom.gov.au/products/[PID].shtml if type unknown
+        BOM_WARN_SLUGS = {
+            "severe_weather":    "severe-weather-warning",
+            "thunderstorm":      "severe-thunderstorm-warning",
+            "fire_weather":      "fire-weather-warning",
+            "flood":             "flood-warning",
+            "flood_watch":       "flood-watch",
+            "cyclone":           "tropical-cyclone-warning",
+            "heatwave":          "heatwave-warning",
+            "coastal":           "coastal-hazard-warning",
+            "tsunami":           "tsunami-warning",
+            "wind":              "marine-wind-warning",
+        }
+        slug = BOM_WARN_SLUGS.get(warn_type, "")
+        direct_url = (f"https://www.bom.gov.au/warning/{slug}/{pid}"
+                      if slug and pid
+                      else f"https://www.bom.gov.au/products/{pid}.shtml" if pid
+                      else link or "https://www.bom.gov.au/australia/warnings/")
+
         # Determine actual state from product ID prefix (ACT warnings come via NSW feed)
         actual_state = state
         if pid:
@@ -138,13 +159,14 @@ def parse_bom_xml(xml_text, state):
                 actual_state = "ACT"
 
         warnings.append({
-            "pid":     pid,
-            "title":   title,
-            "type":    warn_type,
-            "state":   actual_state,
-            "link":    link,
-            "desc":    desc[:500] if desc else "",
-            "issued":  pub,
+            "pid":        pid,
+            "title":      title,
+            "type":       warn_type,
+            "state":      actual_state,
+            "link":       link,
+            "direct_url": direct_url,
+            "desc":       desc[:500] if desc else "",
+            "issued":     pub,
         })
 
     return warnings
