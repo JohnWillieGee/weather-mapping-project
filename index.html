@@ -311,72 +311,45 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 // ── DIAGNOSTICS ──
 function runDiagnostics(){
   var el = document.getElementById('diag-result');
-  el.innerHTML = '&#8635; Running tests...';
-  var results = [];
-  // Test the BOM XML warnings summary feed for NSW
-  // This lists ALL currently active warnings — much better than checking 48 individual products
-  var testUrl = 'http://www.bom.gov.au/fwo/IDZ00054.warnings_nsw.xml';
-  var attempts = [
-    {label:'Direct',     url: testUrl},
-    {label:'corsproxy',  url: 'https://corsproxy.io/?url='+encodeURIComponent(testUrl)},
-    {label:'codetabs',   url: 'https://api.codetabs.com/v1/proxy?quest='+encodeURIComponent(testUrl)},
-    {label:'allorigins', url: 'https://api.allorigins.win/raw?url='+encodeURIComponent(testUrl)}
-  ];
-  var pending = attempts.length;
+  el.innerHTML = '&#8635; Testing live_data.json...';
 
-  attempts.forEach(function(att){
-    var start = Date.now();
-    fetch(att.url)
-      .then(function(r){
-        return r.text().then(function(txt){
-          var ms = Date.now()-start;
-          var isXml = txt.trim().indexOf('<?xml') !== -1 || txt.trim().indexOf('<feed') !== -1 || txt.indexOf('<warnings') !== -1 || txt.indexOf('IDZ') !== -1;
-          var isHtml = txt.toLowerCase().indexOf('<html') !== -1 || txt.toLowerCase().indexOf('access denied') !== -1;
-          var preview = txt.slice(0,120).replace(/</g,'&lt;').replace(/\n/g,' ').trim();
-          // Count active warning entries
-          var warnCount = (txt.match(/<item>/g)||[]).length || (txt.match(/<entry>/g)||[]).length;
+  var start = Date.now();
+  fetch('live_data.json?t=' + Date.now())
+    .then(function(r){
+      if(!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .then(function(data){
+      var ms = Date.now() - start;
+      var genUtc = data.generated_utc ? new Date(data.generated_utc) : null;
+      var ageMin = genUtc ? Math.round((Date.now() - genUtc) / 60000) : null;
+      var ageStr = ageMin !== null ? ageMin+'m ago' : 'unknown';
+      var n = (data.warnings||[]).length;
+      var errors = Object.keys(data.fetch_errors||{});
 
-          var icon, note;
-          if(isXml && !isHtml){
-            icon = '&#10003;';
-            note = 'XML feed OK — '+warnCount+' active warning'+(warnCount!==1?'s':'')+' in NSW';
-          } else if(isHtml){
-            icon = '&#9888;'; note = r.status+' — blocked / HTML response';
-          } else {
-            icon = '&#9888;'; note = 'status '+r.status+' — unexpected content';
-          }
-          results.push({label:att.label, icon:icon, ms:ms, note:note, preview:preview, isXml:isXml&&!isHtml});
-          done();
-        });
-      })
-      .catch(function(e){
-        var ms = Date.now()-start;
-        results.push({label:att.label, icon:'&#10007;', ms:ms, note:'CORS/network blocked', preview:'', isXml:false});
-        done();
-      });
-  });
-
-  function done(){
-    pending--;
-    if(pending > 0) return;
-    var html = '<b>Test: NSW XML warnings feed</b><br>';
-    html += '<span style="font-size:9px;color:var(--text3)">✓=XML feed readable &nbsp; ⚠=blocked &nbsp; ✗=CORS</span><br><br>';
-    results.forEach(function(r){
-      html += r.icon+' <b>'+r.label+'</b> ('+r.ms+'ms) — '+r.note+'<br>';
-      if(r.preview && r.isXml) html += '<span style="font-size:9px;color:var(--text3);word-break:break-all">'+r.preview+'...</span><br>';
+      var html = '<b>live_data.json</b> &mdash; <span style="color:var(--fetch-ok)">&#10003; readable</span><br>';
+      html += 'Loaded in '+ms+'ms<br>';
+      html += 'Generated: '+(genUtc ? genUtc.toLocaleString('en-AU',{timeZone:'Australia/Sydney'}) : 'n/a')+' ('+ageStr+')<br>';
+      html += 'Active warnings: <b>'+n+'</b><br>';
+      if(errors.length){
+        html += '&#9888; Fetch errors: '+errors.join(', ')+'<br>';
+      } else {
+        html += 'All state feeds fetched OK<br>';
+      }
+      html += '<br>';
+      if(ageMin !== null && ageMin > 20){
+        html += '<span style="color:orange">&#9888; Data is '+ageMin+'m old — Action may have stalled</span>';
+      } else {
+        html += '<span style="color:var(--fetch-ok)">&#10003; GitHub Action pipeline operational</span>';
+      }
+      el.innerHTML = html;
+    })
+    .catch(function(e){
+      var ms = Date.now() - start;
+      el.innerHTML = '<span style="color:var(--fetch-err)">&#10007; live_data.json not found ('+ms+'ms)<br>' +
+        e.message + '</span><br><br>' +
+        '<span style="font-size:9px">Go to your repo\'s Actions tab and manually trigger<br>"Fetch Live Weather Data" to generate the file.</span>';
     });
-    var working = results.filter(function(r){ return r.isXml; });
-    html += '<br><b>'+working.length+' method'+(working.length!==1?'s':'')+' can read XML feed</b>';
-    if(working.length > 0){
-      html += '<br><span style="color:var(--fetch-ok)">&#10003; XML approach viable — recommend switching to this</span>';
-      // Show which proxy to use
-      var best = working.sort(function(a,b){return a.ms-b.ms;})[0];
-      html += '<br><span style="font-size:9px;color:var(--text3)">Fastest: '+best.label+' ('+best.ms+'ms)</span>';
-    } else {
-      html += '<br><span style="color:var(--fetch-err)">&#10007; XML feed also blocked — same CORS issue</span>';
-    }
-    el.innerHTML = html;
-  }
 }
 
 // ── SECTION COLLAPSE ──
@@ -1144,75 +1117,63 @@ function parseBOMtxt(txt, productId, type, state) {
 }
 
 function fetchBOMWarnings() {
-  statusEl("warn-fetch-status", "fetch-loading", "&#8635; checking BOM FTP...");
-  document.getElementById("bom-warnings-content").innerHTML = "<div class='wp-loading'>Checking BOM FTP products...</div>";
+  statusEl("warn-fetch-status", "fetch-loading", "&#8635; loading warnings...");
+  document.getElementById("bom-warnings-content").innerHTML = "<div class='wp-loading'>Loading...</div>";
   bomWarnings = [];
-  warnFetchTotal = 0;
-  warnFetchDone = 0;
 
-  // Build list of all product IDs to check
-  var toCheck = [];
-  Object.keys(BOM_FTP_PRODUCTS).forEach(function(type) {
-    var typeInfo = BOM_FTP_PRODUCTS[type];
-    Object.keys(typeInfo.ids).forEach(function(state) {
-      typeInfo.ids[state].forEach(function(pid) {
-        toCheck.push({ type: type, state: state, pid: pid });
+  // Read from live_data.json — written every 15 min by GitHub Action (no CORS issues)
+  var liveUrl = 'live_data.json?t=' + Date.now(); // cache-bust
+  fetch(liveUrl)
+    .then(function(r){
+      if(!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .then(function(data){
+      var now = new Date();
+      var ts = now.toLocaleTimeString('en-AU',{hour:'2-digit',minute:'2-digit',timeZone:'Australia/Sydney'})+' AEST';
+
+      // Parse generated time from JSON
+      var genUtc = data.generated_utc ? new Date(data.generated_utc) : null;
+      var ageMin = genUtc ? Math.round((now - genUtc) / 60000) : null;
+      var ageStr = ageMin !== null ? (ageMin < 2 ? 'just now' : ageMin+'m ago') : '';
+
+      // Map live_data warnings into bomWarnings format
+      (data.warnings || []).forEach(function(w){
+        bomWarnings.push({
+          pid:      w.pid || '',
+          title:    w.title || 'BOM Warning',
+          type:     w.type || 'other',
+          state:    w.state || '',
+          districts: w.desc ? extractDistricts(w.desc) : '',
+          hazards:  [],
+          issued:   w.issued || '',
+          text:     w.desc || '',
+          link:     w.link || 'https://www.bom.gov.au/australia/warnings/',
+          coords:   getDistrictCoords(w.desc + ' ' + w.title, w.state)
+        });
       });
-    });
-  });
 
-  warnFetchTotal = toCheck.length;
-
-  // Fetch each product silently — 404/blocked = not active (expected for most products)
-  // Try direct first, then proxies. All failures are silent — not active = normal state.
-  toCheck.forEach(function(item) {
-    var url = 'https://www.bom.gov.au/products/' + item.pid + '.txt';
-    var attempts = [url].concat(PROXIES.map(function(p){ return p + encodeURIComponent(url); }));
-    var idx = 0;
-
-    function tryNext(){
-      if(idx >= attempts.length){ onDone(); return; }
-      var attempt = attempts[idx++];
-      fetch(attempt)
-        .then(function(r){
-          if(!r.ok) throw new Error('http '+r.status);
-          return r.text();
-        })
-        .then(function(txt){
-          var lower = txt.slice(0,500).toLowerCase();
-          if(lower.indexOf('access denied')!==-1 || lower.indexOf('<!doctype')!==-1 ||
-             lower.indexOf('<html')!==-1 || txt.trim().length < 50 ||
-             txt.indexOf(item.pid) === -1){
-            onDone(); return; // blocked or inactive
-          }
-          var parsed = parseBOMtxt(txt, item.pid, item.type, item.state);
-          bomWarnings.push(parsed);
-          onDone();
-        })
-        .catch(function(){ tryNext(); }); // try next proxy silently
-    }
-
-    function onDone(){
-      warnFetchDone++;
-      if(warnFetchDone === warnFetchTotal){
-        var n = bomWarnings.length;
-        var now = new Date();
-        var ts = now.toLocaleTimeString('en-AU',{hour:'2-digit',minute:'2-digit',timeZone:'Australia/Sydney'})+' AEST';
-        document.getElementById("h-warnings").textContent = n > 0 ? n : "0";
-        if(n === 0){
-          statusEl("warn-fetch-status","fetch-ok","&#10003; No active warnings &middot; "+warnFetchTotal+" checked &middot; "+ts);
-        } else {
-          statusEl("warn-fetch-status","fetch-ok","&#10003; "+n+" active &middot; "+warnFetchTotal+" checked &middot; "+ts);
-        }
-        renderWarningsPanel();
-        if(warningsVisible) renderWarningsMap();
-      } else if(warnFetchDone % 10 === 0){
-        statusEl("warn-fetch-status","fetch-loading","&#8635; checking "+warnFetchDone+"/"+warnFetchTotal+"...");
+      var n = bomWarnings.length;
+      document.getElementById("h-warnings").textContent = n > 0 ? n : "0";
+      if(n === 0){
+        statusEl("warn-fetch-status","fetch-ok",
+          "&#10003; No active warnings &middot; updated "+ageStr+" &middot; "+ts);
+      } else {
+        statusEl("warn-fetch-status","fetch-ok",
+          "&#10003; "+n+" active &middot; updated "+ageStr+" &middot; "+ts);
       }
-    }
-
-    tryNext();
-  });
+      renderWarningsPanel();
+      if(warningsVisible) renderWarningsMap();
+    })
+    .catch(function(e){
+      // live_data.json not found or unreadable — GitHub Action may not have run yet
+      statusEl("warn-fetch-status","fetch-err",
+        "&#9888; live_data.json unavailable &mdash; Action may not have run yet");
+      document.getElementById("bom-warnings-content").innerHTML =
+        "<div class='wp-none'>Warning data unavailable.<br>" +
+        "<span style='font-size:9px'>Check GitHub Actions tab — workflow must run once to generate live_data.json</span></div>";
+      console.warn('fetchBOMWarnings: live_data.json fetch failed —', e.message);
+    });
 }
 
 function showWarnType(type) {
