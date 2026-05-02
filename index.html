@@ -1224,7 +1224,8 @@ function fetchBOMWarnings() {
           issued:   w.issued || '',
           issuedAt: issuedAt,
           text:     w.desc || '',
-          link:     w.link || 'https://www.bom.gov.au/australia/warnings/',
+          link:       w.link || 'https://www.bom.gov.au/australia/warnings/',
+          direct_url: w.direct_url || '',
           coords:   getDistrictCoords((w.desc||'') + ' ' + (w.title||''), w.state),
           color:    color
         });
@@ -1359,13 +1360,14 @@ function renderWarningsPanel() {
     Object.keys(byState).sort().forEach(function(st) {
       html += '<div class="warn-state-hdr">' + (STATE_NAMES[st]||st) + '</div>';
       byState[st].forEach(function(w) {
-        html += '<div class="warn-row">' +
-          '<div class="warn-title" style="color:' + w.color + '">' + w.title + '</div>' +
-          (w.districts ? '<div style="font-size:9px;color:var(--text2);margin-top:2px">' + w.districts + '</div>' : '') +
-          (w.hazards.length ? '<div style="font-size:9px;color:var(--text3);margin-top:2px">' + w.hazards.join(' &middot; ') + '</div>' : '') +
-          (w.issuedAt ? '<div style="font-size:9px;color:var(--text3)">' + w.issuedAt + '</div>' : '') +
-          '</div>';
-      });
+          var wUrl = w.direct_url || (w.pid ? 'https://www.bom.gov.au/products/'+w.pid+'.shtml' : 'https://www.bom.gov.au/australia/warnings/');
+          html += '<div class="warn-row">' +
+            '<a class="warn-title" style="color:' + w.color + ';text-decoration:none" href="' + wUrl + '" target="_blank" rel="noopener">' + w.title + ' &#8599;</a>' +
+            (w.districts ? '<div style="font-size:9px;color:var(--text2);margin-top:2px">' + w.districts + '</div>' : '') +
+            (w.hazards.length ? '<div style="font-size:9px;color:var(--text3);margin-top:2px">' + w.hazards.join(' &middot; ') + '</div>' : '') +
+            (w.issuedAt ? '<div style="font-size:9px;color:var(--text3)">' + w.issuedAt + '</div>' : '') +
+            '</div>';
+        });
     });
   });
 
@@ -1411,9 +1413,9 @@ function renderWarningsMap() {
     }).addTo(warningsLayer);
 
     // Popup content
-    var pidLink = w.pid
-      ? '<a class="pu-link" href="https://www.bom.gov.au/products/'+w.pid+'.shtml" target="_blank" rel="noopener">&#9928; '+w.pid+'</a>'
-      : '';
+    // Build direct warning page URL — prefer direct_url (new BOM pattern), fall back to pid .shtml
+    var warningUrl = w.direct_url || (w.pid ? 'https://www.bom.gov.au/products/'+w.pid+'.shtml' : w.link || 'https://www.bom.gov.au/australia/warnings/');
+    var pidDisplay = w.pid || '';
     var popHtml = '<div>' +
       '<div class="pu-title" style="color:' + w.color + '">' + typeInfo.icon + ' ' + w.title + '</div>' +
       '<span class="pu-badge" style="background:' + w.color + ';color:#fff;opacity:0.9">' + typeInfo.label + '</span>' +
@@ -1424,8 +1426,8 @@ function renderWarningsMap() {
       (w.issuedAt ? '<div class="pu-row"><span class="pu-key">Issued</span><span class="pu-val">' + w.issuedAt + '</span></div>' : '') +
       (w.text ? '<div style="font-size:10px;color:var(--text2);margin:8px 0;line-height:1.5;max-height:140px;overflow-y:auto;border-top:1px solid var(--border);padding-top:6px;white-space:pre-wrap">' +
         w.text.slice(0, 500) + (w.text.length > 500 ? '...' : '') + '</div>' : '') +
-      '<div class="pu-links">' + pidLink +
-      '<a class="pu-link" href="' + (w.link||'https://www.bom.gov.au/australia/warnings/') + '" target="_blank" rel="noopener">&#128279; BOM Warning</a>' +
+      '<div class="pu-links">' +
+      '<a class="pu-link" href="' + warningUrl + '" target="_blank" rel="noopener">&#9928; ' + (pidDisplay || 'BOM Warning') + '</a>' +
       '<a class="pu-link" href="https://www.bom.gov.au/australia/warnings/" target="_blank" rel="noopener">All Warnings</a>' +
       '</div></div>';
 
