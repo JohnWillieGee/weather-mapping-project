@@ -469,7 +469,7 @@ def fetch_nsw_alert_zones():
         return [], str(e)
 
 
-
+def parse_qld_incidents(data):
     """
     Parse QLD QFD bushfire GeoJSON feed into normalised incident list.
 
