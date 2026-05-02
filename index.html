@@ -313,16 +313,14 @@ function runDiagnostics(){
   var el = document.getElementById('diag-result');
   el.innerHTML = '&#8635; Running tests...';
   var results = [];
-  // Test 1: a known BOM product directly (IDN21000 - NSW Severe Thunderstorm Warning 1)
-  // When inactive this returns 404 or access denied — that IS the expected result
-  // We're testing the fetch mechanism, not whether warnings are active
-  var testPid = 'IDN21000';
-  var testUrl = 'https://www.bom.gov.au/products/' + testPid + '.txt';
+  // Test the BOM XML warnings summary feed for NSW
+  // This lists ALL currently active warnings — much better than checking 48 individual products
+  var testUrl = 'http://www.bom.gov.au/fwo/IDZ00054.warnings_nsw.xml';
   var attempts = [
-    {label:'Direct', url: testUrl},
-    {label:'allorigins', url: 'https://api.allorigins.win/raw?url='+encodeURIComponent(testUrl)},
-    {label:'corsproxy', url: 'https://corsproxy.io/?url='+encodeURIComponent(testUrl)},
-    {label:'codetabs', url: 'https://api.codetabs.com/v1/proxy?quest='+encodeURIComponent(testUrl)}
+    {label:'Direct',     url: testUrl},
+    {label:'corsproxy',  url: 'https://corsproxy.io/?url='+encodeURIComponent(testUrl)},
+    {label:'codetabs',   url: 'https://api.codetabs.com/v1/proxy?quest='+encodeURIComponent(testUrl)},
+    {label:'allorigins', url: 'https://api.allorigins.win/raw?url='+encodeURIComponent(testUrl)}
   ];
   var pending = attempts.length;
 
@@ -332,19 +330,28 @@ function runDiagnostics(){
       .then(function(r){
         return r.text().then(function(txt){
           var ms = Date.now()-start;
-          var status = r.status;
-          var preview = txt.slice(0,80).replace(/</g,'&lt;').replace(/\n/g,' ');
-          var hasId = txt.indexOf(testPid) !== -1;
-          var isHtml = txt.toLowerCase().indexOf('<html') !== -1;
-          var icon = (status===200 && hasId) ? '&#10003;' : (status===404) ? '&#8709;' : '&#9888;';
-          var note = hasId ? 'product content ✓' : isHtml ? 'HTML/blocked' : (status===404?'404 — inactive':'status '+status);
-          results.push({label:att.label, icon:icon, ms:ms, note:note, preview:preview});
+          var isXml = txt.trim().indexOf('<?xml') !== -1 || txt.trim().indexOf('<feed') !== -1 || txt.indexOf('<warnings') !== -1 || txt.indexOf('IDZ') !== -1;
+          var isHtml = txt.toLowerCase().indexOf('<html') !== -1 || txt.toLowerCase().indexOf('access denied') !== -1;
+          var preview = txt.slice(0,120).replace(/</g,'&lt;').replace(/\n/g,' ').trim();
+          // Count active warning entries
+          var warnCount = (txt.match(/<item>/g)||[]).length || (txt.match(/<entry>/g)||[]).length;
+
+          var icon, note;
+          if(isXml && !isHtml){
+            icon = '&#10003;';
+            note = 'XML feed OK — '+warnCount+' active warning'+(warnCount!==1?'s':'')+' in NSW';
+          } else if(isHtml){
+            icon = '&#9888;'; note = r.status+' — blocked / HTML response';
+          } else {
+            icon = '&#9888;'; note = 'status '+r.status+' — unexpected content';
+          }
+          results.push({label:att.label, icon:icon, ms:ms, note:note, preview:preview, isXml:isXml&&!isHtml});
           done();
         });
       })
       .catch(function(e){
         var ms = Date.now()-start;
-        results.push({label:att.label, icon:'&#10007;', ms:ms, note:'CORS/network blocked', preview:''});
+        results.push({label:att.label, icon:'&#10007;', ms:ms, note:'CORS/network blocked', preview:'', isXml:false});
         done();
       });
   });
@@ -352,20 +359,21 @@ function runDiagnostics(){
   function done(){
     pending--;
     if(pending > 0) return;
-    // All done — render results
-    var html = '<b>Test product: '+testPid+'</b><br>';
-    html += '<span style="font-size:9px;color:var(--text3)">✓=got content &nbsp; ∅=404 inactive &nbsp; ⚠=blocked/error &nbsp; ✗=CORS fail</span><br><br>';
+    var html = '<b>Test: NSW XML warnings feed</b><br>';
+    html += '<span style="font-size:9px;color:var(--text3)">✓=XML feed readable &nbsp; ⚠=blocked &nbsp; ✗=CORS</span><br><br>';
     results.forEach(function(r){
       html += r.icon+' <b>'+r.label+'</b> ('+r.ms+'ms) — '+r.note+'<br>';
-      if(r.preview) html += '<span style="font-size:9px;color:var(--text3);word-break:break-all">'+r.preview+'</span><br>';
+      if(r.preview && r.isXml) html += '<span style="font-size:9px;color:var(--text3);word-break:break-all">'+r.preview+'...</span><br>';
     });
-    // Summary
-    var working = results.filter(function(r){ return r.note.indexOf('content')!==-1 || r.note.indexOf('404')!==-1; });
-    html += '<br><b>'+working.length+'/'+results.length+' methods reachable</b>';
+    var working = results.filter(function(r){ return r.isXml; });
+    html += '<br><b>'+working.length+' method'+(working.length!==1?'s':'')+' can read XML feed</b>';
     if(working.length > 0){
-      html += ' &mdash; <span style="color:var(--fetch-ok)">fetch chain operational</span>';
+      html += '<br><span style="color:var(--fetch-ok)">&#10003; XML approach viable — recommend switching to this</span>';
+      // Show which proxy to use
+      var best = working.sort(function(a,b){return a.ms-b.ms;})[0];
+      html += '<br><span style="font-size:9px;color:var(--text3)">Fastest: '+best.label+' ('+best.ms+'ms)</span>';
     } else {
-      html += ' &mdash; <span style="color:var(--fetch-err)">all methods blocked</span>';
+      html += '<br><span style="color:var(--fetch-err)">&#10007; XML feed also blocked — same CORS issue</span>';
     }
     el.innerHTML = html;
   }
@@ -1188,11 +1196,13 @@ function fetchBOMWarnings() {
       warnFetchDone++;
       if(warnFetchDone === warnFetchTotal){
         var n = bomWarnings.length;
+        var now = new Date();
+        var ts = now.toLocaleTimeString('en-AU',{hour:'2-digit',minute:'2-digit',timeZone:'Australia/Sydney'})+' AEST';
         document.getElementById("h-warnings").textContent = n > 0 ? n : "0";
         if(n === 0){
-          statusEl("warn-fetch-status","fetch-ok","&#10003; No active BOM warnings &middot; "+warnFetchTotal+" products checked");
+          statusEl("warn-fetch-status","fetch-ok","&#10003; No active warnings &middot; "+warnFetchTotal+" checked &middot; "+ts);
         } else {
-          statusEl("warn-fetch-status","fetch-ok","&#10003; "+n+" active &middot; "+warnFetchTotal+" products checked");
+          statusEl("warn-fetch-status","fetch-ok","&#10003; "+n+" active &middot; "+warnFetchTotal+" checked &middot; "+ts);
         }
         renderWarningsPanel();
         if(warningsVisible) renderWarningsMap();
