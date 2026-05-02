@@ -749,8 +749,21 @@ function fetchIncidents(key){
 }
 
 function updateIncidentCount(){
-  var t=Object.values(allIncidents).reduce(function(a,b){return a+b.length;},0);
-  document.getElementById("h-incidents").textContent=t>0?t:"-";
+  var all=Object.values(allIncidents).reduce(function(a,b){return a.concat(b);},[]); 
+  var active=all.filter(isActiveIncident);
+  document.getElementById("h-incidents").textContent=active.length>0?active.length:"-";
+}
+
+// Types to exclude — planned burns and hazard reductions are not active emergencies
+var EXCLUDE_TYPES=["planned burn","hazard reduction","prescribed burn","burn off","controlled burn","fuel reduction burn","back burn","hazard reduction burn"];
+
+function isActiveIncident(inc){
+  var t=(inc.type||"").toLowerCase();
+  // Exclude planned/prescribed burns and hazard reductions
+  if(EXCLUDE_TYPES.some(function(x){return t.includes(x);}))return false;
+  // NSW: entries with no alert level are monitoring/admin — not active emergencies
+  if(inc.state==="NSW"&&!inc.alertLevel)return false;
+  return true;
 }
 
 function renderIncidentsPanel(){
@@ -758,24 +771,34 @@ function renderIncidentsPanel(){
   if(curIncState==="all"){["nsw","vic","qld"].forEach(function(k){all=all.concat(allIncidents[k]||[]);});}
   else{all=allIncidents[curIncState]||[];}
 
-  if(!all.length){
+  // Filter to active incidents only — exclude burns, hazard reductions, no-alert entries
+  var active=all.filter(isActiveIncident);
+
+  if(!active.length){
     var anyLoading=Object.values(feedStatus).some(function(s){return s==="loading"||s==="pending";});
-    document.getElementById("inc-content").innerHTML="<div class='wp-none'>No active incidents"+(anyLoading?" (still loading...)":"")+"</div>";
+    var burnCount=all.length-active.length;
+    document.getElementById("inc-content").innerHTML="<div class='wp-none'>No active incidents"
+      +(anyLoading?" (still loading...)":"")
+      +(burnCount>0?"<br><span style='font-size:9px'>"+burnCount+" planned burns/hazard reductions excluded</span>":"")
+      +"</div>";
     return;
   }
 
-  // Sort by severity then state
+  // Sort: Emergency Warning first, then Watch and Act, then Advice, then by state+title
   var rank={"Emergency Warning":0,"Watch and Act":1,"Advice":2};
-  all.sort(function(a,b){return(rank[a.alertLevel]||3)-(rank[b.alertLevel]||3)||(a.state+a.title).localeCompare(b.state+b.title);});
+  active.sort(function(a,b){return(rank[a.alertLevel]||3)-(rank[b.alertLevel]||3)||(a.state+a.title).localeCompare(b.state+b.title);});
 
   var html="";
   var curSt="";
-  var shown=all.slice(0,50);
-  shown.forEach(function(inc){
+  // Count active per state for the state headers
+  var activeCounts={};
+  active.forEach(function(inc){activeCounts[inc.state]=(activeCounts[inc.state]||0)+1;});
+
+  active.slice(0,60).forEach(function(inc){
     if(curIncState==="all"&&inc.state!==curSt){
       curSt=inc.state;
       var stCol={"NSW":"#4dabf7","VIC":"#00d4aa","QLD":"#f0a500"}[curSt]||"#888";
-      html+="<div class='inc-state-hdr' style='color:"+stCol+"'>&#9650; "+curSt+" ("+( allIncidents[curSt.toLowerCase()]||[]).length+")</div>";
+      html+="<div class='inc-state-hdr' style='color:"+stCol+"'>&#9650; "+curSt+" ("+( activeCounts[curSt]||0)+" active)</div>";
     }
     var col=alertColor(inc.alertLevel),ac=alertClass(inc.alertLevel);
     var updStr=inc.updated?new Date(inc.updated).toLocaleTimeString("en-AU",{hour:"2-digit",minute:"2-digit",hour12:false,timeZone:"Australia/Sydney"})+" AEST":"";
@@ -790,7 +813,9 @@ function renderIncidentsPanel(){
       +"</div>"
       +"</div>";
   });
-  if(all.length>50)html+="<div class='wp-none'>+"+(all.length-50)+" more &mdash; use state tabs to filter</div>";
+  if(active.length>60)html+="<div class='wp-none'>+"+(active.length-60)+" more &mdash; use state tabs to filter</div>";
+  var burnCount=all.length-active.length;
+  if(burnCount>0)html+="<div class='wp-none' style='font-size:9px'>"+burnCount+" planned burns/hazard reductions not shown</div>";
   document.getElementById("inc-content").innerHTML=html;
 }
 
@@ -805,7 +830,7 @@ function showIncState(state){
 function renderIncidentsMap(){
   incidentsLayer.clearLayers();
   ["nsw","vic","qld"].forEach(function(key){
-    (allIncidents[key]||[]).forEach(function(inc){
+    (allIncidents[key]||[]).filter(isActiveIncident).forEach(function(inc){
       var color=alertColor(inc.alertLevel);
       var popHtml="<div>"
         +"<div class='pu-title'>"+inc.title+"</div>"
