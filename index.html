@@ -16,7 +16,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 .header-right{display:flex;align-items:center;gap:14px;}
 .hstat .val{font-size:15px;font-weight:700;color:var(--accent);}.hstat .lbl{font-size:9px;color:var(--text3);letter-spacing:.8px;text-transform:uppercase;}
 .hstat.red .val{color:var(--accent3);}
-#theme-toggle{background:var(--panel2);border:1px solid var(--border);color:var(--text2);width:32px;height:26px;border-radius:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px;transition:all .2s;flex-shrink:0;}
+#theme-toggle{background:var(--panel2);border:1px solid var(--border);color:var(--text2);width:32px;height:26px;border-radius:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px;transition:all .2s;}
 #theme-toggle:hover{border-color:var(--accent);color:var(--accent);}
 #refresh-btn{background:var(--panel2);border:1px solid var(--border);color:var(--text2);padding:4px 10px;border-radius:var(--radius);cursor:pointer;font-family:monospace;font-size:10px;transition:all .2s;}
 #refresh-btn:hover{border-color:var(--accent2);color:var(--accent2);}
@@ -52,45 +52,59 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 .day-tabs{display:flex;gap:3px;margin-bottom:7px;}
 .day-tab{font-family:monospace;font-size:9px;padding:2px 8px;border-radius:3px;border:1px solid var(--border);background:var(--panel2);color:var(--text3);cursor:pointer;transition:all .12s;flex:1;text-align:center;}
 .day-tab:hover{border-color:var(--accent);color:var(--accent);}.day-tab.on{background:var(--accent);border-color:var(--accent);color:#000;font-weight:600;}
-.wp-issued{font-size:9px;color:var(--text3);margin-bottom:5px;}
 .fetch-status{display:inline-flex;align-items:center;gap:4px;font-size:9px;padding:2px 7px;border-radius:3px;margin-bottom:6px;}
 .fetch-ok{background:#0d2818;border:1px solid #00d4aa44;color:#00d4aa;}
 .fetch-err{background:#1a0808;border:1px solid #ff6b6b44;color:#ff6b6b;}
 .fetch-loading{background:var(--panel2);border:1px solid var(--border);color:var(--text3);}
+/* feed status rows */
+.feed-status-list{display:flex;flex-direction:column;gap:4px;margin-bottom:8px;}
+.feed-status-row{display:flex;align-items:center;gap:7px;font-size:10px;padding:4px 8px;background:var(--panel2);border-radius:3px;border:1px solid var(--border);}
+.feed-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+.feed-dot.ok{background:#00d4aa;}.feed-dot.err{background:#ff6b6b;}.feed-dot.loading{background:#f0a500;animation:pulse 1.2s infinite;}
+.feed-name{font-weight:600;color:var(--text2);min-width:28px;}
+.feed-count{margin-left:auto;color:var(--accent);font-weight:700;}
+.feed-msg{color:var(--text3);font-size:9px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+/* FDR */
 .fdr-row{display:flex;align-items:center;gap:6px;padding:4px 0;border-bottom:1px solid var(--border);}
 .fdr-row:last-child{border-bottom:none;}
-.fdr-district{font-size:10px;color:var(--text2);flex:1;min-width:0;line-height:1.3;}
+.fdr-district{font-size:10px;color:var(--text2);flex:1;min-width:0;}
 .fdr-fbi{font-size:9px;color:var(--text3);white-space:nowrap;}
 .fdr-badge{font-family:monospace;font-size:9px;font-weight:700;padding:2px 7px;border-radius:3px;white-space:nowrap;flex-shrink:0;}
 .fdr-catastrophic{background:#4a148c;color:#fff;}.fdr-extreme{background:#b71c1c;color:#fff;}
 .fdr-high{background:#e65100;color:#fff;}.fdr-moderate{background:#2e7d32;color:#fff;}.fdr-norating{background:var(--panel2);color:var(--text3);border:1px solid var(--border);}
+.wp-issued{font-size:9px;color:var(--text3);margin-bottom:5px;}
 .wp-loading{font-size:11px;color:var(--text3);text-align:center;padding:16px 0;}
 .wp-none{font-size:11px;color:var(--text3);padding:6px 0;text-align:center;}
+/* warnings */
+.warn-state-hdr{font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;margin:8px 0 3px;letter-spacing:.8px;}
 .warn-row{padding:5px 0;border-bottom:1px solid var(--border);}
 .warn-row:last-child{border-bottom:none;}
 .warn-title{font-size:10px;font-weight:600;margin-bottom:2px;}
-.warn-state-hdr{font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;margin:8px 0 3px;letter-spacing:.8px;}
-.wp-inc-row{padding:5px 0;border-bottom:1px solid var(--border);}
-.wp-inc-row:last-child{border-bottom:none;}
-.wp-inc-title{color:var(--text);font-size:11px;margin-bottom:2px;line-height:1.3;}
-.wp-inc-meta{color:var(--text3);font-size:10px;}
+/* incidents */
+.inc-state-hdr{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin:8px 0 3px;display:flex;align-items:center;gap:5px;}
+.inc-row{padding:4px 0;border-bottom:1px solid var(--border);font-size:11px;cursor:pointer;}
+.inc-row:last-child{border-bottom:none;}
+.inc-row:hover{background:var(--panel2);margin:0 -4px;padding-left:4px;padding-right:4px;border-radius:3px;}
+.inc-title{color:var(--text);line-height:1.3;margin-bottom:2px;}
+.inc-meta{color:var(--text3);font-size:10px;}
 .inc-badge{display:inline-block;font-size:9px;padding:1px 5px;border-radius:10px;font-weight:600;margin-right:3px;}
-/* POPUPS */
+/* popups */
 .ba-popup .leaflet-popup-content-wrapper{background:var(--panel);border:1px solid var(--border);border-radius:8px;box-shadow:0 8px 32px var(--shadow);color:var(--text);}
 .ba-popup .leaflet-popup-tip{background:var(--panel);}.ba-popup .leaflet-popup-close-button{color:var(--text2);top:8px;right:10px;font-size:18px;}
 .ba-popup .leaflet-popup-content{margin:12px 14px;font-family:monospace;font-size:12px;}
 .fire-popup .leaflet-popup-content-wrapper{background:var(--panel);border:1px solid #ff444466;border-radius:8px;box-shadow:0 8px 32px var(--shadow);color:var(--text);}
 .fire-popup .leaflet-popup-tip{background:#1a0808;}.fire-popup .leaflet-popup-close-button{color:var(--text2);top:8px;right:10px;font-size:18px;}
 .fire-popup .leaflet-popup-content{margin:12px 14px;font-family:monospace;font-size:12px;}
-.fp-title{font-weight:800;font-size:13px;margin-bottom:6px;line-height:1.3;}
-.fp-badge{display:inline-block;font-size:9px;padding:2px 6px;border-radius:3px;font-weight:600;margin-right:4px;margin-bottom:6px;}
-.fp-row{display:flex;gap:8px;font-size:11px;margin-bottom:3px;}
-.fp-key{color:var(--text3);min-width:70px;flex-shrink:0;}.fp-val{color:var(--text2);}
+.pu-title{font-weight:800;font-size:13px;margin-bottom:3px;line-height:1.3;}
+.pu-sub{font-size:10px;color:var(--text3);margin-bottom:8px;}
+.pu-row{display:flex;gap:8px;font-size:11px;margin-bottom:3px;}
+.pu-key{color:var(--text3);min-width:70px;flex-shrink:0;}.pu-val{color:var(--text2);}
+.pu-badge{display:inline-block;font-size:9px;padding:2px 6px;border-radius:3px;font-weight:600;margin-right:4px;margin-bottom:6px;}
 .pu-links{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px;border-top:1px solid var(--border);padding-top:6px;}
 .pu-link{font-size:10px;color:var(--accent2);text-decoration:none;border:1px solid var(--border);padding:3px 8px;border-radius:3px;}
 .pu-link:hover{border-color:var(--accent2);background:var(--panel2);}
 .alert-emergency{background:#ff2222;color:#fff;}.alert-watchact{background:#ff8800;color:#fff;}.alert-advice{background:#ffcc00;color:#000;}.alert-other{background:#555;color:#fff;}
-#toast{position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--panel);border:1px solid var(--border);border-radius:6px;padding:8px 18px;font-size:12px;color:var(--text2);opacity:0;transition:all .3s;pointer-events:none;z-index:9999;max-width:400px;text-align:center;}
+#toast{position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--panel);border:1px solid var(--border);border-radius:6px;padding:8px 18px;font-size:12px;color:var(--text2);opacity:0;transition:all .3s;pointer-events:none;z-index:9999;max-width:420px;text-align:center;}
 #toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
 #loading{position:fixed;inset:0;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;}
 .spin{width:36px;height:36px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;margin-bottom:16px;}
@@ -107,13 +121,13 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
   <div class="header-right">
     <div class="hstat"><div class="val" id="h-warnings">-</div><div class="lbl">Warnings</div></div>
     <div class="hstat red"><div class="val" id="h-incidents">-</div><div class="lbl">Incidents</div></div>
-    <button id="refresh-btn" onclick="refreshAll()" title="Refresh all live data">&#8635; Refresh</button>
-    <button id="theme-toggle" onclick="toggleTheme()" title="Toggle theme">&#9728;</button>
+    <button id="refresh-btn" onclick="refreshAll()">&#8635; Refresh</button>
+    <button id="theme-toggle" onclick="toggleTheme()">&#9728;</button>
   </div>
 </header>
 <div class="layout">
   <div id="map-wrap">
-    <button id="toggle-wp" onclick="toggleWeatherPanel()" title="Toggle weather panel">&#9729;</button>
+    <button id="toggle-wp" onclick="toggleWeatherPanel()">&#9729;</button>
     <div id="map-controls">
       <button class="map-btn on" id="btn-states" onclick="toggleLayer('states')">State Borders</button>
       <button class="map-btn on" id="btn-labels" onclick="toggleLayer('labels')">State Labels</button>
@@ -128,7 +142,6 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
       <div class="li"><div class="ld sq" style="background:#e65100"></div>High</div>
       <div class="li"><div class="ld sq" style="background:#b71c1c"></div>Extreme</div>
       <div class="li"><div class="ld sq" style="background:#4a148c"></div>Catastrophic</div>
-      <div class="li"><div class="ld sq" style="background:#2d3140;border:1px solid var(--border)"></div>No Rating</div>
       <hr style="border-color:var(--border);margin:7px 0">
       <h4>Incidents</h4>
       <div class="li"><div class="ld" style="background:#ff2222"></div>Emergency Warning</div>
@@ -136,7 +149,6 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
       <div class="li"><div class="ld" style="background:#ffcc00"></div>Advice</div>
     </div>
   </div>
-  <!-- PANEL -->
   <div id="weather-panel">
     <div class="wp-head"><h3>&#9729; Live Weather &amp; Hazards</h3></div>
     <div class="wp-body">
@@ -169,13 +181,13 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 
       <hr style="border-color:var(--border);margin:8px 0 14px">
 
-      <!-- WARNINGS -->
+      <!-- BOM WARNINGS -->
       <div class="wp-section">
         <div class="wp-section-title">
-          <span>&#9889; BOM Weather Warnings</span>
+          <span>&#9889; BOM Warnings</span>
           <button class="wp-toggle" id="warn-map-toggle" onclick="toggleWarningsLayer()">Map</button>
         </div>
-        <div id="warn-fetch-status" class="fetch-status fetch-loading">&#8635; fetching BOM API...</div>
+        <div id="warn-fetch-status" class="fetch-status fetch-loading">&#8635; fetching...</div>
         <div id="bom-warnings-content"><div class="wp-loading">Loading...</div></div>
       </div>
 
@@ -184,42 +196,57 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
       <!-- INCIDENTS -->
       <div class="wp-section">
         <div class="wp-section-title">
-          <span>&#9888; Active Incidents</span>
+          <span>&#9888; Incidents — NSW / VIC / QLD</span>
           <button class="wp-toggle" id="inc-map-toggle" onclick="toggleIncidentsLayer()">Map</button>
         </div>
-        <div id="inc-fetch-status" class="fetch-status fetch-loading">&#8635; fetching feeds...</div>
+        <!-- per-feed status rows -->
+        <div class="feed-status-list" id="feed-status-list">
+          <div class="feed-status-row" id="fsr-nsw">
+            <div class="feed-dot loading" id="fdot-nsw"></div>
+            <span class="feed-name">NSW</span>
+            <span class="feed-msg" id="fmsg-nsw">RFS — fetching...</span>
+            <span class="feed-count" id="fcnt-nsw"></span>
+          </div>
+          <div class="feed-status-row" id="fsr-vic">
+            <div class="feed-dot loading" id="fdot-vic"></div>
+            <span class="feed-name">VIC</span>
+            <span class="feed-msg" id="fmsg-vic">EMV — fetching...</span>
+            <span class="feed-count" id="fcnt-vic"></span>
+          </div>
+          <div class="feed-status-row" id="fsr-qld">
+            <div class="feed-dot loading" id="fdot-qld"></div>
+            <span class="feed-name">QLD</span>
+            <span class="feed-msg" id="fmsg-qld">QFD — fetching...</span>
+            <span class="feed-count" id="fcnt-qld"></span>
+          </div>
+        </div>
         <div class="wp-state-tabs">
           <button class="wp-tab on" onclick="showIncState('all')" id="inc-tab-all">All</button>
           <button class="wp-tab" onclick="showIncState('nsw')" id="inc-tab-nsw">NSW</button>
           <button class="wp-tab" onclick="showIncState('vic')" id="inc-tab-vic">VIC</button>
-          <button class="wp-tab" onclick="showIncState('wa')" id="inc-tab-wa">WA</button>
+          <button class="wp-tab" onclick="showIncState('qld')" id="inc-tab-qld">QLD</button>
         </div>
-        <div id="inc-content"><div class="wp-loading">Fetching...</div></div>
+        <div id="inc-content"><div class="wp-loading">Fetching feeds...</div></div>
       </div>
 
       <hr style="border-color:var(--border);margin:8px 0 14px">
 
-      <!-- SOURCES -->
       <div class="wp-section">
         <div class="wp-section-title"><span>&#128279; Sources</span></div>
         <div style="display:flex;flex-direction:column;gap:4px;">
-          <a class="pu-link" href="https://www.esriaustraliahub.com.au/datasets/fire-danger-ratings-4-day-forecast/explore" target="_blank" rel="noopener">&#128293; FDR 4-Day — ESRI AU Hub</a>
-          <a class="pu-link" href="https://www.bom.gov.au/australia/warnings/" target="_blank" rel="noopener">&#9928; BOM National Warnings</a>
-          <a class="pu-link" href="https://www.bom.gov.au/australia/radar/" target="_blank" rel="noopener">&#127938; BOM Radar</a>
+          <a class="pu-link" href="https://www.esriaustraliahub.com.au/datasets/fire-danger-ratings-4-day-forecast/explore" target="_blank" rel="noopener">&#128293; FDR — ESRI AU Hub</a>
+          <a class="pu-link" href="https://www.bom.gov.au/australia/warnings/" target="_blank" rel="noopener">&#9928; BOM Warnings</a>
           <a class="pu-link" href="https://www.rfs.nsw.gov.au/fire-information/fires-near-me" target="_blank" rel="noopener">&#128293; NSW RFS</a>
           <a class="pu-link" href="https://www.emergency.vic.gov.au/respond/" target="_blank" rel="noopener">&#128293; VIC Emergency</a>
-          <a class="pu-link" href="https://www.emergency.wa.gov.au/" target="_blank" rel="noopener">&#128293; WA Emergency</a>
+          <a class="pu-link" href="https://www.fire.qld.gov.au/Current-Incidents" target="_blank" rel="noopener">&#128293; QLD Fire Dept</a>
         </div>
       </div>
-
     </div>
   </div>
 </div>
 </div>
 <div id="toast"></div>
-
 <script id="d-states" type="application/json">{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[149.976679,-37.50506],[148.194946,-36.796253],[148.211171,-36.650519],[148.217563,-36.598239],[148.13341,-36.566921],[148.124663,-36.464713],[148.037583,-36.390225],[148.037726,-36.140797],[148.002388,-36.140057],[147.999692,-36.046204],[147.912342,-35.995198],[147.708415,-35.928545],[147.591893,-35.969859],[147.549115,-35.96455],[147.584027,-35.984648],[147.551873,-36.004095],[147.494112,-35.943549],[147.404631,-35.943495],[147.319949,-36.060987],[147.127391,-36.018047],[147.123357,-35.994498],[147.052963,-36.107881],[146.956824,-36.078061],[146.943705,-36.115989],[146.731645,-36.023725],[146.685812,-36.040576],[146.61252,-35.972858],[146.549581,-35.992457],[146.502585,-35.958235],[146.421673,-35.965831],[146.368684,-36.050862],[146.299009,-36.047859],[146.185976,-36.042071],[145.97207,-36.015747],[145.953701,-35.9615],[145.902693,-35.952496],[145.811662,-35.991769],[145.673992,-35.925924],[145.535398,-35.801983],[145.3554,-35.867067],[144.992263,-35.852338],[144.923606,-35.988768],[144.981909,-36.072316],[144.86346,-36.059112],[144.80787,-36.123628],[144.726379,-36.117781],[144.725675,-36.089438],[144.683907,-36.095138],[144.689004,-36.061417],[144.61767,-36.077192],[144.615473,-36.031593],[144.51614,-35.995438],[144.521099,-35.970266],[144.407927,-35.904013],[144.349111,-35.767142],[144.105015,-35.59078],[143.989865,-35.554663],[143.970101,-35.500078],[143.751004,-35.387835],[143.620416,-35.387682],[143.562074,-35.337244],[143.570828,-35.206905],[143.394677,-35.192377],[143.322081,-35.036727],[143.347876,-34.791635],[143.276736,-34.79226],[143.25213,-34.772803],[143.274016,-34.752685],[143.224384,-34.758733],[143.213847,-34.738496],[143.112525,-34.680819],[142.923844,-34.647856],[142.868177,-34.627306],[142.787687,-34.590178],[142.791428,-34.546389],[142.748291,-34.576759],[142.618316,-34.728751],[142.51417,-34.690931],[142.467968,-34.564295],[142.451622,-34.584265],[142.367695,-34.530446],[142.394681,-34.493484],[142.359576,-34.498779],[142.353334,-34.469582],[142.350969,-34.396629],[142.235894,-34.306973],[142.08277,-34.173545],[142.075638,-34.131418],[142.027564,-34.122981],[142.012927,-34.105246],[141.67745,-34.101225],[141.60458,-34.149115],[141.603285,-34.191228],[141.510071,-34.216479],[141.324937,-34.138782],[141.247217,-34.073209],[141.241808,-34.061315],[141.089218,-34.076696],[141.002957,-34.022537],[140.999278,-28.999103],[148.958308,-28.999064],[149.032686,-28.955958],[149.080762,-28.841801],[149.387389,-28.695803],[149.502977,-28.574351],[149.587938,-28.572815],[149.703104,-28.633712],[150.15228,-28.55021],[150.212287,-28.574181],[150.289648,-28.537157],[150.445551,-28.665141],[150.632541,-28.676572],[150.752343,-28.633464],[151.01065,-28.740805],[151.045321,-28.844482],[151.102759,-28.836369],[151.274808,-28.938926],[151.279649,-29.100769],[151.33931,-29.177266],[151.393784,-29.177893],[151.502292,-29.070805],[151.49149,-29.056244],[151.545566,-28.952998],[151.706536,-28.871784],[151.73386,-28.871578],[151.777834,-28.959885],[151.832232,-28.959829],[151.849363,-28.90785],[151.900358,-28.914966],[152.009703,-28.907663],[152.038126,-28.864696],[152.015064,-28.850626],[152.076049,-28.708175],[152.010168,-28.664951],[151.955645,-28.518904],[151.982893,-28.503395],[152.016864,-28.525281],[152.217189,-28.449236],[152.309659,-28.363168],[152.38616,-28.368554],[152.463586,-28.259373],[152.525981,-28.30625],[152.579242,-28.338976],[152.614517,-28.269555],[152.624513,-28.298204],[152.751062,-28.363914],[152.880013,-28.309607],[153.108829,-28.357543],[153.476931,-28.15702],[153.586296,-28.258206],[153.608834,-28.843251],[153.344322,-29.296579],[153.333974,-29.674551],[152.988454,-30.731967],[153.088672,-30.911293],[152.937829,-31.47576],[152.508886,-32.172395],[152.539907,-32.443464],[152.172615,-32.761656],[151.801417,-32.88492],[151.317714,-33.74198],[151.249211,-34.001814],[150.928023,-34.316624],[150.784718,-34.986574],[150.67113,-35.037153],[150.150243,-35.891139],[150.148569,-36.266969],[149.919697,-36.895441],[149.976679,-37.50506]],[[149.399284,-35.319175],[149.272048,-35.273644],[149.214063,-35.219507],[149.204883,-35.229549],[149.120902,-35.124517],[148.807854,-35.309647],[148.762675,-35.495505],[148.791182,-35.703449],[148.855652,-35.760874],[148.886633,-35.719136],[148.909367,-35.853065],[149.048811,-35.92041],[149.093517,-35.824221],[149.084514,-35.580594],[149.14251,-35.59257],[149.146586,-35.414836],[149.207546,-35.345305],[149.352134,-35.351317],[149.399284,-35.319175]]]},"properties":{"STATE_CODE":"1","STATE_NAME":"New South Wales"},"id":0},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[140.965735,-38.055989],[140.963616,-33.980648],[141.00187,-34.039103],[141.089218,-34.076696],[141.241808,-34.061315],[141.247217,-34.073209],[141.324937,-34.138782],[141.510071,-34.216479],[141.603285,-34.191228],[141.60458,-34.149115],[141.67745,-34.101225],[142.012927,-34.105246],[142.027564,-34.122981],[142.075638,-34.131418],[142.08277,-34.173545],[142.235894,-34.306973],[142.350969,-34.396629],[142.353334,-34.469582],[142.359576,-34.498779],[142.394681,-34.493484],[142.367695,-34.530446],[142.451622,-34.584265],[142.467968,-34.564295],[142.51417,-34.690931],[142.618316,-34.728751],[142.748291,-34.576759],[142.791428,-34.546389],[142.787687,-34.590178],[142.868177,-34.627306],[142.923844,-34.647856],[143.112525,-34.680819],[143.213847,-34.738496],[143.224384,-34.758733],[143.274016,-34.752685],[143.25213,-34.772803],[143.276736,-34.79226],[143.347876,-34.791635],[143.322081,-35.036727],[143.394677,-35.192377],[143.570828,-35.206905],[143.562074,-35.337244],[143.620416,-35.387682],[143.751004,-35.387835],[143.970101,-35.500078],[143.989865,-35.554663],[144.105015,-35.59078],[144.349111,-35.767142],[144.407927,-35.904013],[144.521099,-35.970266],[144.51614,-35.995438],[144.615473,-36.031593],[144.61767,-36.077192],[144.689004,-36.061417],[144.683907,-36.095138],[144.725675,-36.089438],[144.726379,-36.117781],[144.80787,-36.123628],[144.86346,-36.059112],[144.981909,-36.072316],[144.923606,-35.988768],[144.992263,-35.852338],[145.3554,-35.867067],[145.535398,-35.801983],[145.673992,-35.925924],[145.811662,-35.991769],[145.902693,-35.952496],[145.953701,-35.9615],[145.97207,-36.015747],[146.185976,-36.042071],[146.299009,-36.047859],[146.368684,-36.050862],[146.421673,-35.965831],[146.502585,-35.958235],[146.549581,-35.992457],[146.61252,-35.972858],[146.685812,-36.040576],[146.731645,-36.023725],[146.943705,-36.115989],[146.956824,-36.078061],[147.052963,-36.107881],[147.123357,-35.994498],[147.127391,-36.018047],[147.319949,-36.060987],[147.404631,-35.943495],[147.494112,-35.943549],[147.551873,-36.004095],[147.584027,-35.984648],[147.549115,-35.96455],[147.591893,-35.969859],[147.708415,-35.928545],[147.912342,-35.995198],[147.999692,-36.046204],[148.002388,-36.140057],[148.037726,-36.140797],[148.037583,-36.390225],[148.124663,-36.464713],[148.13341,-36.566921],[148.217563,-36.598239],[148.211171,-36.650519],[148.194946,-36.796253],[149.976679,-37.50506],[149.484958,-37.775441],[148.289615,-37.810988],[147.788216,-37.955322],[147.476303,-38.15175],[146.883139,-38.634634],[146.410331,-38.711911],[146.42651,-39.129986],[146.083966,-38.815933],[145.606696,-38.678782],[145.433813,-38.434868],[145.488988,-38.233414],[145.118468,-38.145695],[144.970308,-37.860787],[144.397943,-38.073816],[144.428618,-38.281629],[144.036497,-38.475775],[143.554064,-38.855695],[143.232964,-38.766436],[142.372518,-38.349483],[142.1458,-38.391487],[141.88151,-38.265811],[141.542787,-38.432968],[140.965735,-38.055989]]]},"properties":{"STATE_CODE":"2","STATE_NAME":"Victoria"},"id":1},{"type":"Feature","geometry":{"type":"MultiPolygon","coordinates":[[[[153.476931,-28.15702],[153.108829,-28.357543],[152.880013,-28.309607],[152.751062,-28.363914],[152.624513,-28.298204],[152.614517,-28.269555],[152.579242,-28.338976],[152.525981,-28.30625],[152.463586,-28.259373],[152.38616,-28.368554],[152.309659,-28.363168],[152.217189,-28.449236],[152.016864,-28.525281],[151.982893,-28.503395],[151.955645,-28.518904],[152.010168,-28.664951],[152.076049,-28.708175],[152.015064,-28.850626],[152.038126,-28.864696],[152.009703,-28.907663],[151.900358,-28.914966],[151.849363,-28.90785],[151.832232,-28.959829],[151.777834,-28.959885],[151.73386,-28.871578],[151.706536,-28.871784],[151.545566,-28.952998],[151.49149,-29.056244],[151.502292,-29.070805],[151.393784,-29.177893],[151.33931,-29.177266],[151.279649,-29.100769],[151.274808,-28.938926],[151.102759,-28.836369],[151.045321,-28.844482],[151.01065,-28.740805],[150.752343,-28.633464],[150.632541,-28.676572],[150.445551,-28.665141],[150.289648,-28.537157],[150.212287,-28.574181],[150.15228,-28.55021],[149.703104,-28.633712],[149.587938,-28.572815],[149.502977,-28.574351],[149.387389,-28.695803],[149.080762,-28.841801],[149.032686,-28.955958],[148.958308,-28.999064],[140.999278,-28.999103],[140.999394,-25.996376],[137.999054,-25.996867],[138.00118,-16.544509],[138.323615,-16.750458],[138.628959,-16.767936],[139.038676,-16.912443],[139.23767,-17.319781],[140.004377,-17.714575],[140.384571,-17.677883],[140.887415,-17.382311],[140.958021,-16.998141],[141.204446,-16.69199],[141.43277,-16.074761],[141.373379,-15.916912],[141.663509,-15.003962],[141.52561,-14.487086],[141.599046,-14.101668],[141.468182,-13.923139],[141.523282,-13.572129],[141.69539,-13.270078],[141.588712,-13.017231],[141.827326,-12.64855],[141.591918,-12.558962],[141.81038,-12.048632],[141.942175,-11.945512],[142.119961,-11.368544],[142.132786,-10.948445],[142.530935,-10.687543],[142.786058,-11.074181],[142.847488,-11.823918],[143.185584,-11.990818],[143.078573,-12.337485],[143.418829,-12.615954],[143.598187,-13.42231],[143.53174,-13.754558],[143.745771,-14.333114],[143.88442,-14.482093],[144.576479,-14.247362],[144.618812,-14.47539],[145.282239,-14.955165],[145.418168,-16.338301],[145.581937,-16.687196],[145.889406,-17.057605],[146.140586,-17.639712],[146.016188,-18.245019],[146.337881,-18.526627],[146.273046,-18.860081],[146.454158,-19.073694],[147.1261,-19.422471],[147.455161,-19.395188],[147.738402,-19.847056],[148.255476,-19.986003],[148.840711,-20.351944],[148.662046,-20.585768],[148.847055,-20.855967],[149.158072,-21.000314],[149.449683,-21.578201],[149.465416,-21.92568],[149.658283,-22.354889],[150.177423,-22.360496],[150.835158,-22.684207],[150.749647,-23.128814],[150.878143,-23.552292],[151.17292,-23.815879],[151.573657,-24.035722],[151.764638,-24.015229],[152.148304,-24.626559],[152.468174,-24.816086],[152.663543,-25.244018],[152.914399,-25.293372],[152.878424,-25.683629],[153.119893,-25.933571],[153.076557,-26.224779],[153.151353,-26.802186],[153.069598,-27.313956],[153.383078,-27.708796],[153.476931,-28.15702]]],[[[152.95018,-25.573919],[152.992301,-25.220705],[153.360352,-25.006351],[153.015095,-25.769062],[152.95018,-25.573919]]]]},"properties":{"STATE_CODE":"3","STATE_NAME":"Queensland"},"id":2},{"type":"Feature","geometry":{"type":"MultiPolygon","coordinates":[[[[129.00134,-31.687068],[129.001854,-25.998613],[140.999394,-25.996376],[141.002937,-33.99851],[141.002956,-34.021892],[140.963616,-33.980648],[140.973872,-37.462093],[140.965735,-38.055989],[140.662442,-38.061474],[140.39645,-37.919006],[140.12084,-37.530865],[139.761627,-37.199707],[139.669972,-36.957431],[139.842891,-36.839575],[139.782926,-36.458816],[139.52302,-36.043505],[139.211957,-35.754559],[138.883656,-35.55729],[138.156886,-35.658167],[138.441044,-35.349994],[138.541428,-34.752951],[138.265632,-34.476802],[138.102306,-34.138883],[137.637498,-35.168201],[137.464103,-35.099218],[137.173992,-35.237359],[136.941123,-35.129111],[137.012553,-34.92048],[137.448758,-34.910318],[137.506757,-34.137625],[137.600358,-33.876794],[137.939426,-33.547918],[137.853601,-33.196834],[137.661043,-32.950959],[137.442264,-33.152177],[137.213306,-33.661082],[136.668362,-33.878689],[136.363136,-34.069349],[136.121769,-34.467421],[135.93231,-34.528521],[135.79209,-34.860956],[135.624044,-34.906359],[135.389235,-34.595065],[135.346224,-34.267559],[135.182152,-33.877771],[134.830247,-33.626318],[134.802047,-33.328782],[134.189083,-32.942369],[134.290382,-32.692865],[134.163101,-32.469053],[133.951086,-32.388513],[133.666883,-32.103832],[133.275245,-32.194901],[132.746588,-31.949342],[132.200614,-32.02728],[131.758577,-31.72026],[131.148637,-31.463654],[130.806132,-31.60563],[130.152187,-31.576538],[129.00134,-31.687068]]],[[[138.134901,-35.841399],[137.611978,-35.913111],[137.460723,-36.074971],[136.727088,-36.045071],[136.587436,-35.748857],[137.313489,-35.57924],[137.634199,-35.565733],[138.134901,-35.841399]]]]},"properties":{"STATE_CODE":"4","STATE_NAME":"South Australia"},"id":3},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[129.001242,-14.879473],[129.00134,-31.687068],[128.314269,-31.979367],[127.32596,-32.256526],[126.672789,-32.308371],[126.203139,-32.232277],[125.95101,-32.290542],[125.53206,-32.549232],[125.026186,-32.728859],[124.814039,-32.872863],[124.305384,-32.98091],[124.154307,-33.096063],[123.97602,-33.558606],[123.534286,-33.940132],[123.083117,-33.871534],[122.364201,-33.913517],[122.136743,-34.006599],[122.001002,-33.829299],[121.789874,-33.909049],[121.361874,-33.815443],[120.639,-33.891729],[120.43657,-33.971882],[120.042168,-33.923368],[119.597462,-34.134587],[119.502718,-34.411473],[118.755351,-34.545573],[118.331264,-34.898061],[117.629383,-35.127747],[117.362834,-35.01957],[116.630374,-35.060835],[116.002145,-34.842218],[115.669869,-34.480925],[115.262563,-34.306793],[114.991097,-34.098468],[114.975079,-33.698053],[115.42754,-33.608303],[115.681022,-33.275255],[115.608247,-32.666719],[115.774567,-32.193807],[115.729627,-31.765771],[115.189756,-30.82495],[114.954846,-30.048851],[114.997569,-29.493548],[114.872084,-29.116741],[114.637438,-28.87771],[114.596573,-28.611563],[114.174711,-28.110972],[114.104253,-27.503189],[113.558225,-26.574004],[113.807717,-26.610972],[114.237651,-26.312765],[114.205395,-25.85302],[114.004183,-25.618519],[113.623242,-24.746034],[113.406958,-24.484176],[113.470308,-23.898561],[113.75326,-23.528236],[113.826185,-22.956016],[113.654082,-22.578773],[114.023922,-21.851153],[114.080266,-22.154135],[114.33896,-22.492117],[114.642507,-21.909328],[114.903446,-21.705314],[115.516477,-21.483476],[115.918152,-21.078751],[116.819273,-20.606307],[117.302672,-20.726802],[117.774281,-20.66354],[118.160907,-20.357893],[118.822624,-20.276008],[119.099709,-19.959323],[119.562789,-20.078977],[120.195936,-19.913908],[120.981888,-19.621038],[121.412999,-19.237982],[121.903643,-18.464057],[122.370266,-18.116445],[122.145169,-17.560353],[122.253195,-17.11985],[122.63741,-16.800705],[122.778997,-16.584943],[123.126613,-16.711067],[123.394348,-17.280663],[123.564479,-17.405802],[123.647972,-16.999738],[123.79612,-16.911838],[123.460392,-16.524605],[123.70311,-16.153894],[124.394547,-16.33853],[124.458426,-16.102519],[124.375976,-15.680098],[124.705033,-15.253395],[124.907942,-15.245664],[125.141429,-14.747673],[125.335667,-14.555772],[125.797984,-14.44532],[126.041913,-14.53672],[126.169718,-14.146188],[126.555814,-14.151036],[126.762732,-14.050093],[126.760452,-13.808213],[126.963289,-13.741672],[127.14288,-13.982251],[127.430068,-13.942949],[127.850137,-14.484474],[128.393426,-14.80445],[129.001242,-14.879473]]]},"properties":{"STATE_CODE":"5","STATE_NAME":"Western Australia"},"id":4},{"type":"Feature","geometry":{"type":"MultiPolygon","coordinates":[[[[144.754462,-41.061823],[144.686043,-40.672218],[145.118606,-40.828989],[145.72934,-40.944952],[146.154381,-41.154331],[147.490728,-40.979349],[147.974703,-40.737601],[148.323833,-40.987847],[148.25287,-41.190939],[148.320296,-41.621392],[148.284634,-42.038985],[148.093656,-42.081067],[147.791443,-42.89262],[147.360963,-42.914127],[146.844807,-43.633052],[146.216007,-43.485565],[146.046171,-43.552375],[145.682228,-43.050468],[145.262948,-42.621623],[145.196877,-41.948587],[144.920865,-41.667596],[144.683526,-41.234829],[144.754462,-41.061823]]],[[[148.334277,-40.208333],[148.04611,-40.249506],[147.897245,-39.999015],[147.960671,-39.730132],[148.334277,-40.208333]]],[[[148.011504,-43.221681],[147.65074,-43.089445],[147.802901,-42.893233],[148.011504,-43.221681]]],[[[144.138222,-39.933819],[143.833303,-39.915546],[143.94575,-39.580467],[144.109657,-39.669979],[144.138222,-39.933819]]]]},"properties":{"STATE_CODE":"6","STATE_NAME":"Tasmania"},"id":5},{"type":"Feature","geometry":{"type":"MultiPolygon","coordinates":[[[[138.00118,-16.544509],[137.999054,-25.996867],[129.000584,-25.998613],[129.001242,-14.879473],[129.482478,-14.94106],[129.672401,-14.763468],[129.379285,-14.41941],[129.409294,-14.23594],[129.721306,-14.01343],[129.827732,-13.51814],[130.008369,-13.533339],[130.284054,-13.305756],[130.128194,-12.973699],[130.520625,-12.703496],[130.6193,-12.381373],[130.841469,-12.555322],[131.030606,-12.146439],[131.472295,-12.283712],[131.879259,-12.214551],[132.069714,-12.30354],[132.629281,-12.085415],[132.553086,-11.554926],[132.353457,-11.441274],[132.122609,-11.526422],[131.859751,-11.292782],[132.338898,-11.140365],[132.732875,-11.519077],[132.917953,-11.331725],[133.149872,-11.702237],[133.912395,-11.906891],[134.030774,-11.85497],[134.492834,-12.071605],[134.739702,-11.959872],[135.056034,-12.263609],[135.570011,-12.100746],[135.720723,-12.281165],[136.259704,-12.45644],[136.414836,-11.958678],[136.59931,-12.202296],[136.782358,-12.159094],[136.978918,-12.345442],[136.617426,-12.689846],[136.625398,-12.952945],[136.388071,-13.227066],[136.218042,-13.138268],[135.918654,-13.26843],[135.835287,-13.59083],[135.914498,-13.747239],[135.87877,-14.166827],[135.382075,-14.725738],[135.478818,-14.97606],[136.239712,-15.416088],[136.270412,-15.535779],[136.729497,-15.932397],[136.912706,-15.899684],[137.372604,-16.133349],[137.729671,-16.232252],[138.00118,-16.544509]]],[[[136.964126,-14.165254],[136.899007,-14.297104],[136.437348,-14.1963],[136.531889,-13.785022],[136.837318,-13.842907],[136.707081,-14.168987],[136.964126,-14.165254]]],[[[130.402355,-11.363409],[130.704562,-11.385318],[131.288206,-11.193865],[131.435824,-11.265902],[131.469803,-11.608099],[130.949287,-11.9401],[130.492625,-11.654929],[130.402355,-11.363409]]],[[[130.212679,-11.712187],[130.400138,-11.425023],[130.503384,-11.830348],[130.212679,-11.712187]]]]},"properties":{"STATE_CODE":"7","STATE_NAME":"Northern Territory"},"id":6},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[149.399284,-35.319175],[149.352134,-35.351317],[149.207546,-35.345305],[149.146586,-35.414836],[149.14251,-35.59257],[149.084514,-35.580594],[149.093517,-35.824221],[149.048811,-35.92041],[148.909367,-35.853065],[148.886633,-35.719136],[148.855652,-35.760874],[148.791182,-35.703449],[148.762675,-35.495505],[148.807854,-35.309647],[149.120902,-35.124517],[149.204883,-35.229549],[149.214063,-35.219507],[149.272048,-35.273644],[149.399284,-35.319175]]]},"properties":{"STATE_CODE":"8","STATE_NAME":"Australian Capital Territory"},"id":7}]}</script>
-
 <script>
 // ── BOOT ──
 var STATES_GEO = null;
@@ -233,196 +260,215 @@ function loadCSS(href){var l=document.createElement("link");l.rel="stylesheet";l
 setTimeout(function(){
   STATES_GEO = JSON.parse(document.getElementById("d-states").textContent);
   loadCSS("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
-  loadScript("https://unpkg.com/leaflet@1.9.4/dist/leaflet.js", function(){
-    setTimeout(function(){try{initMap();startFetching();}catch(e){setStatus("Error: "+e.message);console.error(e);}},20);
+  loadScript("https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",function(){
+    setTimeout(function(){try{initMap();startFetching();}catch(e){setStatus("Error: "+e.message);}},20);
   });
 },50);
 
 // ── CONSTANTS ──
-var PROXY = "https://corsproxy.io/?url=";
+// Proxy fallback chain — tried in order until one succeeds
+var PROXIES = [
+  "https://corsproxy.io/?url=",
+  "https://api.allorigins.win/raw?url=",
+  "https://api.codetabs.com/v1/proxy?quest="
+];
 
-// ESRI Australia Hub - Fire Danger Ratings 4 Day Forecast
-// Public FeatureServer - no auth required, CORS-accessible via proxy
-// Returns GeoJSON with: AAC, DIST_NAME, STATE_CODE, FireBehavIndex, FireDanger, Forecast_Period, Start_Time, End_Time
 var FDR_ESRI_URL = "https://services.arcgis.com/HLQYs7jEb7ROGiUZ/arcgis/rest/services/Fire_Districts_4_Day_Forecast/FeatureServer/0/query"
-  + "?where=1%3D1"
-  + "&outFields=AAC,DIST_NAME,STATE_CODE,FireBehavIndex,FireDanger,Forecast_Period,Start_Time,End_Time,SOURCE"
-  + "&outSR=4326"
-  + "&f=geojson"
-  + "&resultRecordCount=600";  // max, gets all 552 features
+  + "?where=1%3D1&outFields=AAC,DIST_NAME,STATE_CODE,FireBehavIndex,FireDanger,Forecast_Period,Start_Time,End_Time,SOURCE"
+  + "&outSR=4326&f=geojson&resultRecordCount=600";
 
+// BOM warnings — try direct first (BOM supports CORS), then proxies
 var BOM_WARNINGS_API = "https://api.weather.bom.gov.au/v1/warnings";
 
-var BOM_WARN_STATE_URL = {NSW:"https://www.bom.gov.au/nsw/warnings/",VIC:"https://www.bom.gov.au/vic/warnings/",QLD:"https://www.bom.gov.au/qld/warnings/",SA:"https://www.bom.gov.au/sa/warnings/",WA:"https://www.bom.gov.au/wa/warnings/",TAS:"https://www.bom.gov.au/tas/warnings/",NT:"https://www.bom.gov.au/nt/warnings/",ACT:"https://www.bom.gov.au/act/warnings/"};
-var FIRE_AGENCY = {NSW:{label:"NSW RFS",url:"https://www.rfs.nsw.gov.au/fire-information/fires-near-me"},VIC:{label:"VIC Emergency",url:"https://www.emergency.vic.gov.au/respond/"},WA:{label:"WA Emergency",url:"https://www.emergency.wa.gov.au/"}};
+// fetchWithFallback — tries direct fetch first, then each proxy in turn
+function fetchWithFallback(url, opts) {
+  // For ESRI try direct first — they allow CORS from browsers
+  var attempts = [url].concat(PROXIES.map(function(p){return p+encodeURIComponent(url);}));
+  var idx = 0;
+  function tryNext() {
+    if(idx >= attempts.length) return Promise.reject(new Error("All fetch attempts failed"));
+    var attempt = attempts[idx++];
+    return fetch(attempt, opts||{})
+      .then(function(r){
+        if(!r.ok) throw new Error("HTTP "+r.status);
+        return r;
+      })
+      .catch(function(){return tryNext();});
+  }
+  return tryNext();
+}
+
+// fetchProxied — skips direct fetch, starts with proxies (for feeds that block direct browser access)
+function fetchProxied(url, opts) {
+  var attempts = PROXIES.map(function(p){return p+encodeURIComponent(url);});
+  var idx = 0;
+  function tryNext() {
+    if(idx >= attempts.length) return Promise.reject(new Error("All proxies failed"));
+    var attempt = attempts[idx++];
+    return fetch(attempt, opts||{})
+      .then(function(r){
+        if(!r.ok) throw new Error("HTTP "+r.status);
+        return r;
+      })
+      .catch(function(){return tryNext();});
+  }
+  return tryNext();
+}
+
+// ── TIER 1 INCIDENT FEEDS ──
+var INC_FEEDS = {
+  nsw: {
+    label: "NSW RFS",
+    url: "https://www.rfs.nsw.gov.au/feeds/majorIncidents.json",
+    type: "geojson",
+    sourceUrl: "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+  },
+  vic: {
+    label: "VIC EMV",
+    url: "https://data.emergency.vic.gov.au/Show?pageId=getIncidentJSON",
+    type: "geojson_vic",
+    sourceUrl: "https://www.emergency.vic.gov.au/respond/"
+  },
+  qld: {
+    label: "QLD QFD",
+    url: "https://publiccontent-gis-psba-qld-gov-au.s3.amazonaws.com/content/Feeds/BushfireCurrentIncidents/bushfireAlert.json",
+    type: "geojson_qld",
+    sourceUrl: "https://www.fire.qld.gov.au/Current-Incidents"
+  }
+};
+
 var STATE_NAMES = {NSW:"New South Wales",VIC:"Victoria",QLD:"Queensland",SA:"South Australia",WA:"Western Australia",TAS:"Tasmania",NT:"Northern Territory",ACT:"Australian Capital Territory"};
 var STATE_CENTRES = {NSW:[-32,147],VIC:[-37,144],QLD:[-22,144],SA:[-30,135],WA:[-27,121],TAS:[-42,146],NT:[-19,133],ACT:[-35.3,149.1]};
-var WARN_COLORS = {"severe_thunderstorm":"#9775fa","thunderstorm":"#9775fa","severe_weather":"#f0a500","strong_wind":"#f0a500","wind":"#f0a500","frost":"#74c0fc","sheep_graziers":"#74c0fc","flood":"#4dabf7","coastal_flooding":"#4dabf7","cyclone":"#ff4757","tropical_cyclone":"#ff4757","fire_weather":"#ff6b6b","heat":"#ff6b6b","default":"#f0a500"};
+var WARN_COLORS = {"severe_thunderstorm":"#9775fa","thunderstorm":"#9775fa","severe_weather":"#f0a500","strong_wind":"#f0a500","frost":"#74c0fc","sheep_graziers":"#74c0fc","flood":"#4dabf7","coastal_flooding":"#4dabf7","cyclone":"#ff4757","tropical_cyclone":"#ff4757","fire_weather":"#ff6b6b","heat":"#ff6b6b","default":"#f0a500"};
 
 var DARK_TILE  = "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png";
 var LIGHT_TILE = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
 var ATTR = "&copy; <a href='https://carto.com/'>CARTO</a> &copy; <a href='https://www.openstreetmap.org/'>OSM</a>";
 
-// ── STATE ──
+// ── GLOBAL STATE ──
 var map, tileLayer, stateLayer, labelGroup, fdrLayer, warningsLayer, incidentsLayer;
-var fdrFeatures = [];      // all 552 features from ESRI API
-var fdrPeriodTimes = {};   // {1: "Fri 2 May", 2: "Sat 3 May", ...}
-var warningsData = [];
-var allIncidents = {nsw:[], vic:[], wa:[]};
-var incFetchStatus = {nsw:"pending", vic:"pending", wa:"pending"};
+var fdrFeatures=[], fdrPeriodTimes={};
+var warningsData=[];
+var allIncidents={nsw:[],vic:[],qld:[]};
+var feedStatus={nsw:"pending",vic:"pending",qld:"pending"};
 var fdrVisible=false, warningsVisible=false, incidentsVisible=false;
 var curFDRPeriod=1, curFDRState="all", curIncState="all";
 
 // ── HELPERS ──
 function fdrColor(r){var v=(r||"").toLowerCase();if(v.includes("catastrophic"))return"#4a148c";if(v.includes("extreme"))return"#b71c1c";if(v.includes("very high"))return"#d32f2f";if(v.includes("high"))return"#e65100";if(v.includes("moderate"))return"#2e7d32";return"#2d3140";}
 function fdrBadgeClass(r){var v=(r||"").toLowerCase();if(v.includes("catastrophic"))return"fdr-catastrophic";if(v.includes("extreme"))return"fdr-extreme";if(v.includes("very high"))return"fdr-extreme";if(v.includes("high"))return"fdr-high";if(v.includes("moderate"))return"fdr-moderate";return"fdr-norating";}
+function ratingRank(r){var v=(r||"").toLowerCase();if(v.includes("catastrophic"))return 0;if(v.includes("extreme"))return 1;if(v.includes("very high"))return 2;if(v.includes("high"))return 3;if(v.includes("moderate"))return 4;return 5;}
 function alertColor(l){var v=(l||"").toLowerCase();if(v.includes("emergency"))return"#ff2222";if(v.includes("watch"))return"#ff8800";if(v.includes("advice"))return"#ffcc00";return"#888";}
 function alertClass(l){var v=(l||"").toLowerCase();if(v.includes("emergency"))return"alert-emergency";if(v.includes("watch"))return"alert-watchact";if(v.includes("advice"))return"alert-advice";return"alert-other";}
 function warnColor(type){var t=(type||"").toLowerCase().replace(/[ -]/g,"_");return WARN_COLORS[t]||WARN_COLORS.default;}
+function formatDateShort(str){if(!str)return"";var d=new Date(str);if(isNaN(d.getTime()))return str;return d.toLocaleDateString("en-AU",{weekday:"short",day:"numeric",month:"short",timeZone:"Australia/Sydney"});}
+function formatDateTime(str){if(!str)return"";var d=new Date(str);if(isNaN(d.getTime()))return str;return d.toLocaleDateString("en-AU",{weekday:"short",day:"numeric",month:"short",timeZone:"Australia/Sydney"})+" "+d.toLocaleTimeString("en-AU",{hour:"2-digit",minute:"2-digit",timeZone:"Australia/Sydney",hour12:false})+" AEST";}
 function statusEl(id,cls,msg){var el=document.getElementById(id);if(el){el.className="fetch-status "+cls;el.innerHTML=msg;}}
 function showToast(msg,isError){var t=document.getElementById("toast");t.textContent=msg;t.style.borderColor=isError?"var(--accent3)":"var(--border)";t.classList.add("show");setTimeout(function(){t.classList.remove("show");},3500);}
-function formatDate(str){
-  // Parse "Fri, 02 May 2026 14:00:00 GMT" or ISO string
-  if(!str)return "";
-  var d=new Date(str);
-  if(isNaN(d.getTime()))return str;
-  return d.toLocaleDateString("en-AU",{weekday:"short",day:"numeric",month:"short",timeZone:"Australia/Sydney"})+" "+d.toLocaleTimeString("en-AU",{hour:"2-digit",minute:"2-digit",timeZone:"Australia/Sydney",hour12:false})+" AEST";
-}
 
-// ── MAP ──
+// ── MAP INIT ──
 function initMap(){
-  map = L.map("map",{center:[-27,134],zoom:5,zoomControl:true,minZoom:4,maxZoom:15});
-  tileLayer = L.tileLayer(isDark?DARK_TILE:LIGHT_TILE,{attribution:ATTR,subdomains:"abcd",maxZoom:19}).addTo(map);
-  stateLayer = L.geoJSON(STATES_GEO,{style:{fillColor:"transparent",fillOpacity:0,color:isDark?"#f0a500":"#c07800",weight:1.2,opacity:isDark?0.35:0.5,dashArray:"5 5"}}).addTo(map);
+  map=L.map("map",{center:[-27,134],zoom:5,zoomControl:true,minZoom:4,maxZoom:15});
+  tileLayer=L.tileLayer(isDark?DARK_TILE:LIGHT_TILE,{attribution:ATTR,subdomains:"abcd",maxZoom:19}).addTo(map);
+  stateLayer=L.geoJSON(STATES_GEO,{style:{fillColor:"transparent",fillOpacity:0,color:isDark?"#f0a500":"#c07800",weight:1.2,opacity:isDark?0.35:0.5,dashArray:"5 5"}}).addTo(map);
   var SC={"New South Wales":[-32.5,146.5],"Victoria":[-37,144.5],"Queensland":[-22,144],"South Australia":[-30,135.5],"Western Australia":[-27,121],"Tasmania":[-42,146.5],"Northern Territory":[-19.5,133.5],"Australian Capital Territory":[-35.47,149]};
   var AB={"New South Wales":"NSW","Victoria":"VIC","Queensland":"QLD","South Australia":"SA","Western Australia":"WA","Tasmania":"TAS","Northern Territory":"NT","Australian Capital Territory":"ACT"};
-  labelGroup = L.layerGroup(STATES_GEO.features.map(function(f){
-    var c=SC[f.properties.STATE_NAME]; if(!c)return null;
-    return L.marker(c,{icon:L.divIcon({html:"<div style='font-weight:800;font-size:13px;letter-spacing:2px;color:"+(isDark?"rgba(240,165,0,0.4)":"rgba(160,100,0,0.35)")+";pointer-events:none;white-space:nowrap;'>"+(AB[f.properties.STATE_NAME]||f.properties.STATE_NAME)+"</div>",className:"",iconSize:[80,20],iconAnchor:[40,10]}),interactive:false});
-  }).filter(Boolean)).addTo(map);
-  fdrLayer = L.layerGroup();
-  warningsLayer = L.layerGroup();
-  incidentsLayer = L.layerGroup();
-  document.getElementById("theme-toggle").textContent = isDark?"\u2600":"\u263D";
-  document.getElementById("loading").style.display = "none";
-  document.getElementById("app").style.visibility = "visible";
+  labelGroup=L.layerGroup(STATES_GEO.features.map(function(f){var c=SC[f.properties.STATE_NAME];if(!c)return null;return L.marker(c,{icon:L.divIcon({html:"<div style='font-weight:800;font-size:13px;letter-spacing:2px;color:"+(isDark?"rgba(240,165,0,0.4)":"rgba(160,100,0,0.35)")+";pointer-events:none;white-space:nowrap;'>"+(AB[f.properties.STATE_NAME]||f.properties.STATE_NAME)+"</div>",className:"",iconSize:[80,20],iconAnchor:[40,10]}),interactive:false});}).filter(Boolean)).addTo(map);
+  fdrLayer=L.layerGroup();
+  warningsLayer=L.layerGroup();
+  incidentsLayer=L.layerGroup();
+  document.getElementById("theme-toggle").textContent=isDark?"\u2600":"\u263D";
+  document.getElementById("loading").style.display="none";
+  document.getElementById("app").style.visibility="visible";
 }
 
-// ── FETCH ALL ──
+// ── FETCH ORCHESTRATION ──
 function startFetching(){
   fetchFDR();
   fetchBOMWarnings();
-  fetchIncidents("nsw");
-  fetchIncidents("vic");
-  fetchIncidents("wa");
+  Object.keys(INC_FEEDS).forEach(fetchIncidents);
 }
 
 function refreshAll(){
-  var btn = document.getElementById("refresh-btn");
+  var btn=document.getElementById("refresh-btn");
   btn.classList.add("spinning");
-  fdrFeatures=[]; fdrPeriodTimes={};
-  warningsData=[];
-  allIncidents={nsw:[],vic:[],wa:[]};
-  incFetchStatus={nsw:"pending",vic:"pending",wa:"pending"};
+  fdrFeatures=[];fdrPeriodTimes={};warningsData=[];
+  allIncidents={nsw:[],vic:[],qld:[]};
+  feedStatus={nsw:"pending",vic:"pending",qld:"pending"};
   document.getElementById("h-warnings").textContent="-";
   document.getElementById("h-incidents").textContent="-";
   statusEl("fdr-fetch-status","fetch-loading","&#8635; fetching ESRI AU...");
-  statusEl("warn-fetch-status","fetch-loading","&#8635; fetching BOM API...");
-  statusEl("inc-fetch-status","fetch-loading","&#8635; fetching feeds...");
+  statusEl("warn-fetch-status","fetch-loading","&#8635; fetching...");
   document.getElementById("fdr-content").innerHTML="<div class='wp-loading'>Loading...</div>";
   document.getElementById("bom-warnings-content").innerHTML="<div class='wp-loading'>Loading...</div>";
-  document.getElementById("inc-content").innerHTML="<div class='wp-loading'>Fetching...</div>";
-  fdrLayer.clearLayers(); warningsLayer.clearLayers(); incidentsLayer.clearLayers();
+  document.getElementById("inc-content").innerHTML="<div class='wp-loading'>Fetching feeds...</div>";
+  ["nsw","vic","qld"].forEach(function(k){setFeedStatus(k,"loading","fetching...");});
+  fdrLayer.clearLayers();warningsLayer.clearLayers();incidentsLayer.clearLayers();
   setTimeout(function(){btn.classList.remove("spinning");},8000);
   startFetching();
   showToast("Refreshing all live data...");
 }
 
-// ── FDR — ESRI AU FeatureServer ──
+// ── FDR ──
 function fetchFDR(){
-  statusEl("fdr-fetch-status","fetch-loading","&#8635; fetching ESRI AU FDR...");
-  var url = FDR_ESRI_URL;
-  fetch(PROXY+encodeURIComponent(url))
+  fetchWithFallback(FDR_ESRI_URL)
     .then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
     .then(function(geojson){
-      fdrFeatures = geojson.features||[];
-      if(!fdrFeatures.length) throw new Error("No features returned");
-      // Build period time labels
-      var byPeriod = {};
-      fdrFeatures.forEach(function(f){
-        var p = f.properties;
-        if(!byPeriod[p.Forecast_Period]) byPeriod[p.Forecast_Period]=p;
+      fdrFeatures=geojson.features||[];
+      if(!fdrFeatures.length)throw new Error("No features");
+      var byPeriod={};
+      fdrFeatures.forEach(function(f){if(!byPeriod[f.properties.Forecast_Period])byPeriod[f.properties.Forecast_Period]=f.properties;});
+      [1,2,3,4].forEach(function(n){
+        var p=byPeriod[n];
+        fdrPeriodTimes[n]=p?formatDateShort(p.Start_Time):"Day "+n;
       });
       [1,2,3,4].forEach(function(n){
-        var p = byPeriod[n];
-        if(p){
-          var d = new Date(p.Start_Time);
-          fdrPeriodTimes[n] = isNaN(d)?("Day "+n):d.toLocaleDateString("en-AU",{weekday:"short",day:"numeric",month:"short",timeZone:"Australia/Sydney"});
-        }else{fdrPeriodTimes[n]="Day "+n;}
+        var t=document.getElementById("fdr-day-"+n);
+        if(t)t.textContent=n===1?"Today ("+fdrPeriodTimes[1]+")":fdrPeriodTimes[n];
       });
-      // Update day tab labels
-      [1,2,3,4].forEach(function(n){
-        var tab = document.getElementById("fdr-day-"+n);
-        if(tab) tab.textContent = n===1?"Today ("+fdrPeriodTimes[1]+")":fdrPeriodTimes[n];
-      });
-      var total = fdrFeatures.filter(function(f){return f.properties.Forecast_Period===1;}).length;
-      statusEl("fdr-fetch-status","fetch-ok","&#10003; "+total+" districts &middot; 4-day &middot; ESRI AU Hub");
+      var total=fdrFeatures.filter(function(f){return f.properties.Forecast_Period===1;}).length;
+      statusEl("fdr-fetch-status","fetch-ok","&#10003; "+total+" districts &middot; 4-day &middot; ESRI AU");
       showFDRPanel();
-      if(fdrVisible) renderFDRLayer();
+      if(fdrVisible)renderFDRLayer();
     })
     .catch(function(e){
       statusEl("fdr-fetch-status","fetch-err","&#10007; "+e.message+" &mdash; <a href='https://www.esriaustraliahub.com.au/datasets/fire-danger-ratings-4-day-forecast/explore' target='_blank' style='color:#ff9999'>ESRI Hub &#8599;</a>");
-      document.getElementById("fdr-content").innerHTML="<div class='wp-none'>Could not load live FDR data<br><a href='https://www.esriaustraliahub.com.au/datasets/fire-danger-ratings-4-day-forecast/explore' target='_blank' style='color:var(--accent2)'>View on ESRI AU Hub &#8599;</a></div>";
+      document.getElementById("fdr-content").innerHTML="<div class='wp-none'>Load failed &mdash; <a href='https://www.esriaustraliahub.com.au/datasets/fire-danger-ratings-4-day-forecast/explore' target='_blank' style='color:var(--accent2)'>View on ESRI AU &#8599;</a></div>";
     });
 }
 
 function showFDRPanel(){
-  var features = fdrFeatures.filter(function(f){
+  var features=fdrFeatures.filter(function(f){
     return f.properties.Forecast_Period===curFDRPeriod
-      && (curFDRState==="all" || f.properties.STATE_CODE===curFDRState);
+      &&(curFDRState==="all"||f.properties.STATE_CODE===curFDRState);
   });
-  // Sort: High+ first, then by state, then by name
   features.sort(function(a,b){
-    var ra=ratingRank(a.properties.FireDanger), rb=ratingRank(b.properties.FireDanger);
-    if(ra!==rb) return ra-rb;
-    return (a.properties.STATE_CODE+a.properties.DIST_NAME).localeCompare(b.properties.STATE_CODE+b.properties.DIST_NAME);
+    var ra=ratingRank(a.properties.FireDanger),rb=ratingRank(b.properties.FireDanger);
+    if(ra!==rb)return ra-rb;
+    return(a.properties.STATE_CODE+a.properties.DIST_NAME).localeCompare(b.properties.STATE_CODE+b.properties.DIST_NAME);
   });
-  if(!features.length){
-    document.getElementById("fdr-content").innerHTML="<div class='wp-none'>No districts for this selection</div>";
-    return;
-  }
-  var html="";
-  var curState="";
+  if(!features.length){document.getElementById("fdr-content").innerHTML="<div class='wp-none'>No data for this selection</div>";return;}
+  var sample=features[0].properties;
+  var html="<div class='wp-issued'>"+formatDateTime(sample.Start_Time)+" &rarr; "+formatDateTime(sample.End_Time)+"</div>";
+  var curSt="";
   features.forEach(function(f){
     var p=f.properties;
-    // State header when showing "all"
-    if(curFDRState==="all" && p.STATE_CODE!==curState){
-      curState=p.STATE_CODE;
-      if(curState) html+="<div style='font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.8px;margin:7px 0 3px;padding-top:4px;border-top:1px solid var(--border)'>"+( STATE_NAMES[curState]||curState)+"</div>";
+    if(curFDRState==="all"&&p.STATE_CODE!==curSt){
+      curSt=p.STATE_CODE;
+      html+="<div style='font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.8px;margin:7px 0 3px;padding-top:4px;border-top:1px solid var(--border)'>"+(STATE_NAMES[curSt]||curSt)+"</div>";
     }
-    var bc=fdrBadgeClass(p.FireDanger);
     html+="<div class='fdr-row'><div class='fdr-district'>"+p.DIST_NAME+"</div>"
       +(p.FireBehavIndex>0?"<div class='fdr-fbi'>FBI "+p.FireBehavIndex+"</div>":"")
-      +"<div class='fdr-badge "+bc+"'>"+p.FireDanger+"</div></div>";
+      +"<div class='fdr-badge "+fdrBadgeClass(p.FireDanger)+"'>"+p.FireDanger+"</div></div>";
   });
-  // Period time info
-  var sample = fdrFeatures.find(function(f){return f.properties.Forecast_Period===curFDRPeriod;});
-  if(sample){
-    html = "<div class='wp-issued'>"+formatDate(sample.properties.Start_Time)+" &rarr; "+formatDate(sample.properties.End_Time)+"</div>"+html;
-  }
   document.getElementById("fdr-content").innerHTML=html;
 }
 
-function ratingRank(r){var v=(r||"").toLowerCase();if(v.includes("catastrophic"))return 0;if(v.includes("extreme"))return 1;if(v.includes("very high"))return 2;if(v.includes("high"))return 3;if(v.includes("moderate"))return 4;return 5;}
-
 function showFDRPeriod(period){
   curFDRPeriod=period;
-  [1,2,3,4].forEach(function(n){
-    var t=document.getElementById("fdr-day-"+n);
-    if(t){t.classList.toggle("on",n===period);}
-  });
+  [1,2,3,4].forEach(function(n){var t=document.getElementById("fdr-day-"+n);if(t)t.classList.toggle("on",n===period);});
   showFDRPanel();
-  if(fdrVisible) renderFDRLayer();
+  if(fdrVisible)renderFDRLayer();
 }
 
 function showFDRState(state){
@@ -432,30 +478,28 @@ function showFDRState(state){
   showFDRPanel();
 }
 
-// ── FDR MAP ──
 function renderFDRLayer(){
   fdrLayer.clearLayers();
-  var features = fdrFeatures.filter(function(f){return f.properties.Forecast_Period===curFDRPeriod;});
-  features.forEach(function(f){
-    var p=f.properties;
-    var color=fdrColor(p.FireDanger);
-    var fillOp = p.FireDanger==="No Rating"?0.04:0.25;
-    var weight = p.FireDanger==="No Rating"?0.5:1.5;
+  fdrFeatures.filter(function(f){return f.properties.Forecast_Period===curFDRPeriod;}).forEach(function(f){
+    var p=f.properties,color=fdrColor(p.FireDanger);
+    var noRating=p.FireDanger==="No Rating";
+    var style={color:color,weight:noRating?0.5:1.5,opacity:0.8,fillColor:color,fillOpacity:noRating?0.04:0.25};
     var popHtml="<div>"
-      +"<div style='font-weight:800;font-size:13px;color:"+color+";margin-bottom:3px'>"+p.DIST_NAME+"</div>"
-      +"<div style='font-size:10px;color:var(--text3);margin-bottom:6px'>"+( STATE_NAMES[p.STATE_CODE]||p.STATE_CODE)+" &middot; "+p.AAC+"</div>"
-      +"<div style='font-size:11px;color:var(--text2)'>Fire Danger: <strong style='color:"+color+"'>"+p.FireDanger+"</strong></div>"
-      +(p.FireBehavIndex>0?"<div style='font-size:11px;color:var(--text2)'>FBI: <strong>"+p.FireBehavIndex+"</strong></div>":"")
-      +"<div style='font-size:10px;color:var(--text3);margin-top:4px'>"+formatDate(p.Start_Time)+"</div>"
-      +"<div class='pu-links'><a class='pu-link' href='https://www.esriaustraliahub.com.au/datasets/fire-danger-ratings-4-day-forecast/explore' target='_blank' rel='noopener'>&#128293; ESRI FDR Data</a></div>"
+      +"<div class='pu-title' style='color:"+color+"'>"+p.DIST_NAME+"</div>"
+      +"<div class='pu-sub'>"+(STATE_NAMES[p.STATE_CODE]||p.STATE_CODE)+" &middot; "+p.AAC+"</div>"
+      +"<div class='pu-row'><span class='pu-key'>Fire Danger</span><span class='pu-val' style='color:"+color+";font-weight:700'>"+p.FireDanger+"</span></div>"
+      +(p.FireBehavIndex>0?"<div class='pu-row'><span class='pu-key'>FBI</span><span class='pu-val'>"+p.FireBehavIndex+"</span></div>":"")
+      +"<div class='pu-row'><span class='pu-key'>Period</span><span class='pu-val'>"+formatDateTime(p.Start_Time)+"</span></div>"
+      +"<div class='pu-row'><span class='pu-key'>Source</span><span class='pu-val'>"+( p.SOURCE||"BOM")+"</span></div>"
+      +"<div class='pu-links'><a class='pu-link' href='https://www.esriaustraliahub.com.au/datasets/fire-danger-ratings-4-day-forecast/explore' target='_blank'>&#128293; ESRI FDR</a></div>"
       +"</div>";
-    var style={color:color,weight:weight,opacity:0.8,fillColor:color,fillOpacity:fillOp};
+    var cls=noRating?"ba-popup":"fire-popup";
     var geom=f.geometry;
     if(geom.type==="Polygon"){
-      L.polygon(geom.coordinates.map(function(ring){return ring.map(function(c){return[c[1],c[0]];});}),style).bindPopup(popHtml,{className:p.FireDanger==="No Rating"?"ba-popup":"fire-popup"}).addTo(fdrLayer);
+      L.polygon(geom.coordinates.map(function(ring){return ring.map(function(c){return[c[1],c[0]];});}),style).bindPopup(popHtml,{className:cls}).addTo(fdrLayer);
     }else if(geom.type==="MultiPolygon"){
       geom.coordinates.forEach(function(poly){
-        L.polygon(poly.map(function(ring){return ring.map(function(c){return[c[1],c[0]];})}),style).bindPopup(popHtml,{className:p.FireDanger==="No Rating"?"ba-popup":"fire-popup"}).addTo(fdrLayer);
+        L.polygon(poly.map(function(ring){return ring.map(function(c){return[c[1],c[0]];})}),style).bindPopup(popHtml,{className:cls}).addTo(fdrLayer);
       });
     }
   });
@@ -470,19 +514,20 @@ function toggleFDRLayer(){
 
 // ── BOM WARNINGS ──
 function fetchBOMWarnings(){
-  statusEl("warn-fetch-status","fetch-loading","&#8635; fetching BOM API...");
-  fetch(PROXY+encodeURIComponent(BOM_WARNINGS_API))
+  statusEl("warn-fetch-status","fetch-loading","&#8635; fetching...");
+  // BOM API supports CORS — try direct first, then proxy fallbacks
+  fetchWithFallback(BOM_WARNINGS_API)
     .then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
     .then(function(json){
       warningsData=json.data||[];
       renderWarningsPanel();
-      if(warningsVisible) renderWarningsMap();
+      if(warningsVisible)renderWarningsMap();
       document.getElementById("h-warnings").textContent=warningsData.length||"0";
-      statusEl("warn-fetch-status","fetch-ok","&#10003; "+warningsData.length+" warnings &middot; api.weather.bom.gov.au");
+      statusEl("warn-fetch-status","fetch-ok","&#10003; "+warningsData.length+" active &middot; api.weather.bom.gov.au");
     })
     .catch(function(e){
-      statusEl("warn-fetch-status","fetch-err","&#10007; "+e.message+" &mdash; <a href='https://www.bom.gov.au/australia/warnings/' target='_blank' style='color:#ff9999'>BOM &#8599;</a>");
-      document.getElementById("bom-warnings-content").innerHTML="<div class='wp-none'>Could not load &mdash; <a href='https://www.bom.gov.au/australia/warnings/' target='_blank' style='color:var(--accent2)'>View on BOM &#8599;</a></div>";
+      statusEl("warn-fetch-status","fetch-err","&#10007; "+e.message);
+      document.getElementById("bom-warnings-content").innerHTML="<div class='wp-none'>Failed &mdash; <a href='https://www.bom.gov.au/australia/warnings/' target='_blank' style='color:var(--accent2)'>BOM &#8599;</a></div>";
     });
 }
 
@@ -499,12 +544,9 @@ function renderWarningsPanel(){
     html+="<div class='warn-state-hdr'>"+(STATE_NAMES[st]||st)+"</div>";
     ws.forEach(function(w){
       var col=warnColor(w.warning_group_type||w.type);
-      var title=w.title||w.short_title||"Weather Warning";
-      html+="<div class='warn-row'>"
-        +"<div class='warn-title' style='color:"+col+"'>"+title+"</div>"
-        +(w.short_title&&w.short_title!==title?"<div style='font-size:9px;color:var(--text3)'>"+w.short_title+"</div>":"")
-        +(w.phase?"<div style='font-size:9px;color:var(--text3);margin-top:1px'>"+w.phase+"</div>":"")
-        +"</div>";
+      html+="<div class='warn-row'><div class='warn-title' style='color:"+col+"'>"+(w.title||w.short_title||"Warning")+"</div>"
+        +(w.short_title&&w.short_title!==(w.title||"")?"<div style='font-size:9px;color:var(--text3)'>"+w.short_title+"</div>":"")
+        +(w.phase?"<div style='font-size:9px;color:var(--text3)'>"+w.phase+"</div>":"")+"</div>";
     });
   });
   document.getElementById("bom-warnings-content").innerHTML=html;
@@ -515,15 +557,14 @@ function renderWarningsMap(){
   var byState={};
   warningsData.forEach(function(w){var st=(w.state||"").toUpperCase();(byState[st]=byState[st]||[]).push(w);});
   Object.entries(byState).forEach(function(e){
-    var st=e[0],ws=e[1];
-    var ctr=STATE_CENTRES[st];if(!ctr)return;
+    var st=e[0],ws=e[1],ctr=STATE_CENTRES[st];if(!ctr)return;
     ws.forEach(function(w,i){
       var col=warnColor(w.warning_group_type||w.type);
-      var title=w.title||w.short_title||"Weather Warning";
+      var BOM_URL=({"NSW":"https://www.bom.gov.au/nsw/warnings/","VIC":"https://www.bom.gov.au/vic/warnings/","QLD":"https://www.bom.gov.au/qld/warnings/","SA":"https://www.bom.gov.au/sa/warnings/","WA":"https://www.bom.gov.au/wa/warnings/","TAS":"https://www.bom.gov.au/tas/warnings/","NT":"https://www.bom.gov.au/nt/warnings/","ACT":"https://www.bom.gov.au/act/warnings/"})[st]||"https://www.bom.gov.au/australia/warnings/";
       L.circleMarker([ctr[0]+(i*0.9),ctr[1]],{radius:8,color:col,weight:2,opacity:0.9,fillColor:col,fillOpacity:0.7})
-        .bindPopup("<div><div style='font-weight:800;color:"+col+";margin-bottom:5px'>"+title+"</div>"+(w.short_title&&w.short_title!==title?"<div style='font-size:10px;color:var(--text2)'>"+w.short_title+"</div>":"")+(w.phase?"<div style='font-size:10px;color:var(--text3)'>"+w.phase+"</div>":"")+"<div class='pu-links'><a class='pu-link' href='"+(BOM_WARN_STATE_URL[st]||"https://www.bom.gov.au/australia/warnings/")+"' target='_blank'>&#9928; BOM "+st+"</a></div></div>",{className:"ba-popup",maxWidth:280}).addTo(warningsLayer);
+        .bindPopup("<div><div class='pu-title' style='color:"+col+"'>"+(w.title||w.short_title||"Warning")+"</div>"+(w.phase?"<div class='pu-sub'>"+w.phase+"</div>":"")+"<div class='pu-links'><a class='pu-link' href='"+BOM_URL+"' target='_blank'>&#9928; BOM "+st+"</a></div></div>",{className:"ba-popup",maxWidth:280}).addTo(warningsLayer);
     });
-    if(ws.length) L.marker(ctr,{icon:L.divIcon({html:"<div style='font-size:9px;font-weight:700;color:#f0a500;background:rgba(13,17,23,0.8);border:1px solid #f0a50066;border-radius:3px;padding:1px 5px;pointer-events:none'>"+st+" ("+ws.length+")</div>",className:"",iconSize:[1,1],iconAnchor:[0,0]}),interactive:false}).addTo(warningsLayer);
+    if(ws.length)L.marker(ctr,{icon:L.divIcon({html:"<div style='font-size:9px;font-weight:700;color:#f0a500;background:rgba(13,17,23,0.8);border:1px solid #f0a50066;border-radius:3px;padding:1px 5px;pointer-events:none'>"+st+" ("+ws.length+")</div>",className:"",iconSize:[1,1],iconAnchor:[0,0]}),interactive:false}).addTo(warningsLayer);
   });
 }
 
@@ -534,30 +575,160 @@ function toggleWarningsLayer(){
   else{map.removeLayer(warningsLayer);btn.classList.remove("fdr-on");if(tog)tog.classList.remove("on");}
 }
 
-// ── INCIDENTS ──
-function parseNSW(data){var out=[];(data.features||[]).forEach(function(f){var p=f.properties,desc=p.description||"";function pd(k){var m=desc.match(new RegExp(k+":\\s*([^<]+)"));return m?m[1].trim():"";}var lat=null,lng=null,polys=[];function ex(g){if(!g)return;if(g.type==="Point"){lng=g.coordinates[0];lat=g.coordinates[1];}else if(g.type==="Polygon")polys.push(g);else if(g.type==="MultiPolygon")g.coordinates.forEach(function(c){polys.push({type:"Polygon",coordinates:c});});else if(g.type==="GeometryCollection")(g.geometries||[]).forEach(ex);}ex(f.geometry);if(lat===null&&polys.length){var c=polys[0].coordinates[0][0];lng=c[0];lat=c[1];}if(lat===null)return;out.push({lat:lat,lng:lng,polys:polys,title:p.title||"NSW Incident",alertLevel:p.category||"",status:pd("STATUS"),type:pd("TYPE"),size:pd("SIZE"),agency:pd("RESPONSIBLE AGENCY"),state:"NSW",sourceUrl:"https://www.rfs.nsw.gov.au/fire-information/fires-near-me"});});return out;}
-function parseVIC(data){return(data.results||[]).filter(function(r){return r.latitude&&r.longitude;}).map(function(r){return{lat:r.latitude,lng:r.longitude,polys:[],title:r.name||r.incidentLocation||"VIC Incident",alertLevel:r.category2||r.category1||"",status:r.incidentStatus||"",type:r.incidentType||"",size:r.incidentSize||"",agency:r.agency||"",state:"VIC",sourceUrl:"https://www.emergency.vic.gov.au/respond/"};});}
-function parseWA(text){var out=[],coordRe=/(-[0-9]{2}\.[0-9]+),(1[01][0-9]\.[0-9]+)/,titleRe=/^(A (?:Bushfire|Storm|Flood|Cyclone|Fire|Smoke)[^.\n]{0,80})/;text.split(/(?=A (?:Bushfire|Storm|Flood|Cyclone|Fire|Smoke))/g).forEach(function(block){var m=block.match(coordRe);if(!m)return;var lat=parseFloat(m[1]),lng=parseFloat(m[2]);if(isNaN(lat)||isNaN(lng))return;var tm=block.match(titleRe),title=tm?tm[1].trim():"WA Incident";var al="Advice",bl=block.toLowerCase();if(bl.includes("emergency warning"))al="Emergency Warning";else if(bl.includes("watch and act"))al="Watch and Act";out.push({lat:lat,lng:lng,polys:[],title:title,alertLevel:al,status:"Active",type:"",size:"",agency:"DFES",state:"WA",sourceUrl:"https://www.emergency.wa.gov.au/"});});return out;}
+// ── INCIDENT FEED STATUS UI ──
+function setFeedStatus(key,state,msg,count){
+  var dot=document.getElementById("fdot-"+key);
+  var msgEl=document.getElementById("fmsg-"+key);
+  var cntEl=document.getElementById("fcnt-"+key);
+  var feed=INC_FEEDS[key];
+  if(dot){dot.className="feed-dot "+(state==="ok"?"ok":state==="err"?"err":"loading");}
+  if(msgEl)msgEl.textContent=(feed?feed.label:"")+" — "+msg;
+  if(cntEl)cntEl.textContent=count!=null?count+" inc":"";
+}
 
-var INC_FEEDS={nsw:{url:"https://www.rfs.nsw.gov.au/feeds/majorIncidents.json",parser:parseNSW,type:"json"},vic:{url:"https://data.emergency.vic.gov.au/Show?pageId=getIncidentJSON",parser:parseVIC,type:"json"},wa:{url:"https://api.emergency.wa.gov.au/v1/capau",parser:parseWA,type:"text"}};
+// ── INCIDENT PARSERS ──
 
+// NSW RFS — GeoJSON FeatureCollection
+// Properties: title, category (alert level), description (HTML with TYPE/STATUS/SIZE embedded)
+// Geometry: Point or GeometryCollection with Point + Polygons
+function parseNSW(data){
+  var out=[];
+  (data.features||[]).forEach(function(f){
+    var p=f.properties,desc=p.description||"";
+    function pd(k){var m=desc.match(new RegExp(k+":\\s*([^<]+)","i"));return m?m[1].trim():"";}
+    var lat=null,lng=null,polys=[];
+    function ex(g){
+      if(!g)return;
+      if(g.type==="Point"){lng=g.coordinates[0];lat=g.coordinates[1];}
+      else if(g.type==="Polygon")polys.push(g);
+      else if(g.type==="MultiPolygon")g.coordinates.forEach(function(c){polys.push({type:"Polygon",coordinates:c});});
+      else if(g.type==="GeometryCollection")(g.geometries||[]).forEach(ex);
+    }
+    ex(f.geometry);
+    if(lat===null&&polys.length){var c=polys[0].coordinates[0][0];lng=c[0];lat=c[1];}
+    if(lat===null)return;
+    out.push({
+      lat:lat,lng:lng,polys:polys,
+      title:p.title||"NSW Incident",
+      alertLevel:p.category||"",
+      status:pd("STATUS"),
+      type:pd("TYPE"),
+      size:pd("SIZE"),
+      agency:pd("RESPONSIBLE AGENCY"),
+      updated:pd("UPDATED"),
+      state:"NSW",
+      sourceUrl:INC_FEEDS.nsw.sourceUrl
+    });
+  });
+  return out;
+}
+
+// VIC EMV — custom JSON, features array with lat/lng as root properties
+// Properties: latitude, longitude, name, incidentType, category1/2, incidentStatus, incidentSize, agency
+// Note: category2 = alert level, category1 = type; must construct geometry manually
+function parseVIC(data){
+  return(data.results||[]).filter(function(r){return r.latitude&&r.longitude;}).map(function(r){
+    return{
+      lat:r.latitude,lng:r.longitude,polys:[],
+      title:r.name||r.incidentLocation||"VIC Incident",
+      alertLevel:r.category2||r.category1||"",
+      status:r.incidentStatus||"",
+      type:r.incidentType||"",
+      size:r.incidentSize||"",
+      agency:r.agency||"",
+      updated:r.lastUpdated||"",
+      state:"VIC",
+      sourceUrl:INC_FEEDS.vic.sourceUrl
+    };
+  });
+}
+
+// QLD QFD — GeoJSON FeatureCollection (S3-hosted)
+// Properties: CurrentSituation (alert level), IncidentStatus, IncidentType, IncidentName, AreaDescription
+// Timestamp: UpdateDateTime in format YYYYMMDDHHmmss (compact UTC)
+// Geometry: Point
+function parseQLD(data){
+  // Handle both GeoJSON FeatureCollection and bare array formats
+  var features=[];
+  if(data&&data.type==="FeatureCollection")features=data.features||[];
+  else if(Array.isArray(data))features=data;
+  else if(data&&data.Incidents)features=data.Incidents; // legacy format
+
+  return features.filter(function(f){
+    var g=f.geometry||f;
+    return g&&((g.type==="Point"&&g.coordinates)||(f.Longitude&&f.Latitude));
+  }).map(function(f){
+    var p=f.properties||f;
+    // Coordinates: GeoJSON standard [lng,lat] or legacy Longitude/Latitude fields
+    var lat,lng;
+    if(f.geometry&&f.geometry.type==="Point"){
+      lng=f.geometry.coordinates[0];lat=f.geometry.coordinates[1];
+    }else{
+      lat=parseFloat(p.Latitude||p.latitude||0);
+      lng=parseFloat(p.Longitude||p.longitude||0);
+    }
+    if(!lat||!lng)return null;
+
+    // Normalise alert level from QLD naming (CurrentSituation / AlertLevel)
+    var rawLevel=(p.CurrentSituation||p.AlertLevel||p.alertLevel||"").toString();
+    var alertLevel="";
+    var rl=rawLevel.toLowerCase();
+    if(rl.includes("emergency"))alertLevel="Emergency Warning";
+    else if(rl.includes("watch"))alertLevel="Watch and Act";
+    else if(rl.includes("advice")||rl==="1")alertLevel="Advice";
+    else if(rawLevel)alertLevel=rawLevel;
+
+    // Parse compact UTC timestamp YYYYMMDDHHmmss → ISO
+    var rawTs=(p.UpdateDateTime||p.LastUpdate||"").toString();
+    var updated="";
+    if(rawTs.match(/^\d{14}$/)){
+      // YYYYMMDDHHmmss — treat as UTC
+      updated=rawTs.slice(0,4)+"-"+rawTs.slice(4,6)+"-"+rawTs.slice(6,8)
+        +"T"+rawTs.slice(8,10)+":"+rawTs.slice(10,12)+":"+rawTs.slice(12,14)+"Z";
+    }else{updated=rawTs;}
+
+    return{
+      lat:lat,lng:lng,polys:[],
+      title:p.IncidentName||p.Title||p.title||"QLD Incident",
+      alertLevel:alertLevel,
+      status:p.IncidentStatus||p.Status||"",
+      type:p.IncidentType||p.Type||p.incidentType||"",
+      size:p.AreaBurnt||p.areaBurnt||"",
+      agency:"QFD",
+      updated:updated,
+      description:p.AreaDescription||"",
+      state:"QLD",
+      sourceUrl:INC_FEEDS.qld.sourceUrl
+    };
+  }).filter(Boolean);
+}
+
+// ── FETCH INCIDENTS ──
 function fetchIncidents(key){
-  var feed=INC_FEEDS[key];if(!feed)return;
-  incFetchStatus[key]="loading";
-  fetch(PROXY+encodeURIComponent(feed.url))
-    .then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return feed.type==="json"?r.json():r.text();})
+  var feed=INC_FEEDS[key];
+  feedStatus[key]="loading";
+  setFeedStatus(key,"loading","fetching...");
+
+  fetchProxied(feed.url)
+    .then(function(r){return r.json();})
     .then(function(data){
-      var inc=feed.parser(data);
-      allIncidents[key]=inc;
-      incFetchStatus[key]="ok";
+      var incidents;
+      if(feed.type==="geojson")incidents=parseNSW(data);
+      else if(feed.type==="geojson_vic")incidents=parseVIC(data);
+      else if(feed.type==="geojson_qld")incidents=parseQLD(data);
+      else incidents=[];
+
+      allIncidents[key]=incidents;
+      feedStatus[key]="ok";
+      setFeedStatus(key,"ok","live &middot; "+feed.label,incidents.length);
       updateIncidentCount();
-      updateIncFetchStatus();
       renderIncidentsPanel();
-      if(incidentsVisible) renderIncidentsMap();
+      if(incidentsVisible)renderIncidentsMap();
     })
     .catch(function(e){
-      incFetchStatus[key]="error:"+e.message;
-      updateIncFetchStatus();
+      feedStatus[key]="error";
+      setFeedStatus(key,"err",e.message);
+      updateIncidentCount();
     });
 }
 
@@ -566,26 +737,44 @@ function updateIncidentCount(){
   document.getElementById("h-incidents").textContent=t>0?t:"-";
 }
 
-function updateIncFetchStatus(){
-  var keys=["nsw","vic","wa"];
-  var ok=keys.filter(function(k){return incFetchStatus[k]==="ok";});
-  var errors=keys.filter(function(k){return typeof incFetchStatus[k]==="string"&&incFetchStatus[k].startsWith("error");});
-  var pending=keys.filter(function(k){return incFetchStatus[k]==="loading"||incFetchStatus[k]==="pending";});
-  if(pending.length>0){statusEl("inc-fetch-status","fetch-loading","&#8635; "+pending.map(function(k){return k.toUpperCase();}).join(", ")+"...");}
-  else if(!errors.length){var t=Object.values(allIncidents).reduce(function(a,b){return a+b.length;},0);statusEl("inc-fetch-status","fetch-ok","&#10003; "+t+" incidents &middot; NSW RFS / VIC / WA DFES");}
-  else{statusEl("inc-fetch-status","fetch-err","&#10007; errors: "+errors.map(function(k){return k.toUpperCase();}).join(", ")+(ok.length?" | OK: "+ok.map(function(k){return k.toUpperCase();}).join(", "):""));}
-}
-
 function renderIncidentsPanel(){
   var all=[];
-  if(curIncState==="all"){["nsw","vic","wa"].forEach(function(k){all=all.concat(allIncidents[k]||[]);});}
+  if(curIncState==="all"){["nsw","vic","qld"].forEach(function(k){all=all.concat(allIncidents[k]||[]);});}
   else{all=allIncidents[curIncState]||[];}
-  if(!all.length){document.getElementById("inc-content").innerHTML="<div class='wp-none'>No active incidents"+(Object.values(incFetchStatus).some(function(s){return s==="loading"||s==="pending";})?" (loading...)":"")+"</div>";return;}
-  var html=all.slice(0,40).map(function(inc){
+
+  if(!all.length){
+    var anyLoading=Object.values(feedStatus).some(function(s){return s==="loading"||s==="pending";});
+    document.getElementById("inc-content").innerHTML="<div class='wp-none'>No active incidents"+(anyLoading?" (still loading...)":"")+"</div>";
+    return;
+  }
+
+  // Sort by severity then state
+  var rank={"Emergency Warning":0,"Watch and Act":1,"Advice":2};
+  all.sort(function(a,b){return(rank[a.alertLevel]||3)-(rank[b.alertLevel]||3)||(a.state+a.title).localeCompare(b.state+b.title);});
+
+  var html="";
+  var curSt="";
+  var shown=all.slice(0,50);
+  shown.forEach(function(inc){
+    if(curIncState==="all"&&inc.state!==curSt){
+      curSt=inc.state;
+      var stCol={"NSW":"#4dabf7","VIC":"#00d4aa","QLD":"#f0a500"}[curSt]||"#888";
+      html+="<div class='inc-state-hdr' style='color:"+stCol+"'>&#9650; "+curSt+" ("+( allIncidents[curSt.toLowerCase()]||[]).length+")</div>";
+    }
     var col=alertColor(inc.alertLevel),ac=alertClass(inc.alertLevel);
-    return"<div class='wp-inc-row'><div class='wp-inc-title'><span class='inc-badge "+ac+"' style='background:"+col+"'>"+inc.state+"</span>"+inc.title+"</div>"+(inc.alertLevel||inc.type?"<div class='wp-inc-meta'>"+(inc.alertLevel||"")+(inc.type?" &middot; "+inc.type:"")+"</div>":"")+"</div>";
-  }).join("");
-  if(all.length>40)html+="<div class='wp-none'>+"+(all.length-40)+" more</div>";
+    var updStr=inc.updated?new Date(inc.updated).toLocaleTimeString("en-AU",{hour:"2-digit",minute:"2-digit",hour12:false,timeZone:"Australia/Sydney"})+" AEST":"";
+    html+="<div class='inc-row'>"
+      +"<div class='inc-title'>"
+      +(inc.alertLevel?"<span class='inc-badge "+ac+"' style='background:"+col+"'>"+inc.alertLevel+"</span>":"")
+      +inc.title+"</div>"
+      +"<div class='inc-meta'>"
+      +(inc.type?inc.type+" &middot; ":"")
+      +(inc.status?inc.status+" &middot; ":"")
+      +(updStr?updStr:"")
+      +"</div>"
+      +"</div>";
+  });
+  if(all.length>50)html+="<div class='wp-none'>+"+(all.length-50)+" more &mdash; use state tabs to filter</div>";
   document.getElementById("inc-content").innerHTML=html;
 }
 
@@ -596,25 +785,38 @@ function showIncState(state){
   renderIncidentsPanel();
 }
 
+// ── INCIDENTS MAP ──
 function renderIncidentsMap(){
   incidentsLayer.clearLayers();
-  ["nsw","vic","wa"].forEach(function(key){
+  ["nsw","vic","qld"].forEach(function(key){
     (allIncidents[key]||[]).forEach(function(inc){
       var color=alertColor(inc.alertLevel);
-      var popHtml="<div><div class='fp-title'>"+inc.title+"</div>"
-        +"<span class='fp-badge "+alertClass(inc.alertLevel)+"' style='background:"+color+"'>"+(inc.alertLevel||"Active")+"</span>"
-        +"<span class='fp-badge' style='background:#444;color:#fff'>"+inc.state+"</span>"
-        +"<hr style='border:none;border-top:1px solid var(--border);margin:8px 0'>"
-        +(inc.type?"<div class='fp-row'><span class='fp-key'>Type</span><span class='fp-val'>"+inc.type+"</span></div>":"")
-        +(inc.status?"<div class='fp-row'><span class='fp-key'>Status</span><span class='fp-val'>"+inc.status+"</span></div>":"")
-        +(inc.size&&inc.size!=="0 ha"?"<div class='fp-row'><span class='fp-key'>Size</span><span class='fp-val'>"+inc.size+"</span></div>":"")
-        +(inc.agency?"<div class='fp-row'><span class='fp-key'>Agency</span><span class='fp-val'>"+inc.agency+"</span></div>":"")
-        +"<div class='pu-links'><a class='pu-link' href='"+(FIRE_AGENCY[inc.state]?FIRE_AGENCY[inc.state].url:"#")+"' target='_blank'>&#128680; "+(FIRE_AGENCY[inc.state]?FIRE_AGENCY[inc.state].label:inc.state)+"</a></div></div>";
+      var popHtml="<div>"
+        +"<div class='pu-title'>"+inc.title+"</div>"
+        +(inc.alertLevel?"<span class='pu-badge "+alertClass(inc.alertLevel)+"' style='background:"+color+"'>"+inc.alertLevel+"</span>":"")
+        +"<span class='pu-badge' style='background:#333;color:#ccc'>"+inc.state+"</span>"
+        +"<div style='border-top:1px solid var(--border);margin:8px 0'></div>"
+        +(inc.type?"<div class='pu-row'><span class='pu-key'>Type</span><span class='pu-val'>"+inc.type+"</span></div>":"")
+        +(inc.status?"<div class='pu-row'><span class='pu-key'>Status</span><span class='pu-val'>"+inc.status+"</span></div>":"")
+        +(inc.size&&inc.size!=="0 ha"?"<div class='pu-row'><span class='pu-key'>Size</span><span class='pu-val'>"+inc.size+"</span></div>":"")
+        +(inc.agency?"<div class='pu-row'><span class='pu-key'>Agency</span><span class='pu-val'>"+inc.agency+"</span></div>":"")
+        +(inc.updated?"<div class='pu-row'><span class='pu-key'>Updated</span><span class='pu-val'>"+(function(){try{return new Date(inc.updated).toLocaleString("en-AU",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit",timeZone:"Australia/Sydney",hour12:false})+" AEST";}catch(e){return inc.updated;}})()+"</span></div>":"")
+        +(inc.description?"<div class='pu-row'><span class='pu-key'>Area</span><span class='pu-val'>"+inc.description+"</span></div>":"")
+        +"<div class='pu-links'><a class='pu-link' href='"+inc.sourceUrl+"' target='_blank' rel='noopener'>&#128680; "+INC_FEEDS[key].label+"</a></div>"
+        +"</div>";
+
+      // Fire boundary polygons
       (inc.polys||[]).forEach(function(poly){
-        L.polygon(poly.coordinates[0].map(function(c){return[c[1],c[0]];}),{color:color,weight:1.5,opacity:.8,fillColor:color,fillOpacity:.25}).bindPopup(popHtml,{className:"fire-popup",maxWidth:360}).addTo(incidentsLayer);
+        L.polygon(poly.coordinates[0].map(function(c){return[c[1],c[0]];}),
+          {color:color,weight:1.5,opacity:.8,fillColor:color,fillOpacity:.2})
+          .bindPopup(popHtml,{className:"fire-popup",maxWidth:360}).addTo(incidentsLayer);
       });
+      // Point marker
       var r=inc.alertLevel&&inc.alertLevel.toLowerCase().includes("emergency")?9:inc.alertLevel&&inc.alertLevel.toLowerCase().includes("watch")?7:6;
-      L.marker([inc.lat,inc.lng],{icon:L.divIcon({html:"<svg xmlns='http://www.w3.org/2000/svg' width='"+(r*2+6)+"' height='"+(r*2+6)+"'><circle cx='"+(r+3)+"' cy='"+(r+3)+"' r='"+r+"' fill='"+color+"' fill-opacity='.85' stroke='"+(isDark?"#1a0a0a":"#ffffff")+"' stroke-width='2'/></svg>",className:"",iconSize:[r*2+6,r*2+6],iconAnchor:[r+3,r+3],popupAnchor:[0,-(r+5)]})}).bindPopup(popHtml,{className:"fire-popup",maxWidth:360}).addTo(incidentsLayer);
+      L.marker([inc.lat,inc.lng],{icon:L.divIcon({
+        html:"<svg xmlns='http://www.w3.org/2000/svg' width='"+(r*2+6)+"' height='"+(r*2+6)+"'><circle cx='"+(r+3)+"' cy='"+(r+3)+"' r='"+r+"' fill='"+color+"' fill-opacity='.85' stroke='"+(isDark?"#1a0a0a":"#ffffff")+"' stroke-width='2'/></svg>",
+        className:"",iconSize:[r*2+6,r*2+6],iconAnchor:[r+3,r+3],popupAnchor:[0,-(r+5)]
+      })}).bindPopup(popHtml,{className:"fire-popup",maxWidth:360}).addTo(incidentsLayer);
     });
   });
 }
