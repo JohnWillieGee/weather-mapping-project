@@ -24,7 +24,7 @@ BOM_WARNING_FEEDS = {
     "SA":  "http://www.bom.gov.au/fwo/IDZ00057.warnings_sa.xml",
     "WA":  "http://www.bom.gov.au/fwo/IDZ00060.warnings_wa.xml",
     "TAS": "http://www.bom.gov.au/fwo/IDZ00058.warnings_tas.xml",
-    "NT":  "http://www.bom.gov.au/fwo/IDZ00061.warnings_nt.xml",
+    "NT":  "http://www.bom.gov.au/fwo/IDZ00055.warnings_nt.xml",
     "ACT": "http://www.bom.gov.au/fwo/IDZ00054.warnings_nsw.xml",  # ACT included in NSW feed
 }
 
@@ -225,48 +225,42 @@ def is_excluded_incident(inc_type, inc_status):
 
 def parse_qld_incidents(data):
     """
-    Parse QLD QFD bushfire JSON into normalised incident list.
+    Parse QLD QFD bushfire GeoJSON feed into normalised incident list.
 
-    The QLD S3 feed has been observed in these formats:
-      Format A — legacy flat:  {"Incidents": [{Longitude, Latitude, IncidentName, ...}]}
-      Format B — GeoJSON:      {"type":"FeatureCollection","features":[{geometry,properties}]}
-      Format C — bare list:    [{...}]
+    Confirmed schema from Action log (format=geojson, fields in properties):
+      OBJECTID, UniqueID, WarningTitle, WarningLevel, CallToAction,
+      WarningText, Header, Impacts, LeaveSafely, FurtherInformation,
+      WarningLevelSort, ShouldDo, WarningArea, Latitude, Longitude
 
-    In Format A, all fields are top-level on each incident object (no "properties" wrapper).
-    This is the most common live format — always try it first.
+    Note: This feed contains QFD *warnings* (not raw incidents) — each record
+    is an active community-level warning, equivalent to NSW/VIC alert levels.
+    WarningLevel maps to alert level. WarningTitle is the incident/warning name.
+    Planned burns appear as "Advice - AVOID SMOKE (HAZARD REDUCTION BURN)" in WarningTitle.
     """
     incidents = []
 
-    # Determine record list and whether we have a GeoJSON feature wrapper
+    # Determine record list
     use_geojson_wrapper = False
-    if isinstance(data, dict) and "Incidents" in data:
-        # Format A — legacy flat list (most common live format)
-        records = data["Incidents"]
-        use_geojson_wrapper = False
-    elif isinstance(data, dict) and data.get("type") == "FeatureCollection":
-        # Format B — GeoJSON FeatureCollection
+    if isinstance(data, dict) and data.get("type") == "FeatureCollection":
         records = data.get("features", [])
         use_geojson_wrapper = True
-    elif isinstance(data, list):
-        # Format C — bare array
-        records = data
-        use_geojson_wrapper = False
     elif isinstance(data, dict) and "features" in data:
-        # Format B variant — FeatureCollection without explicit type field
         records = data["features"]
         use_geojson_wrapper = True
-    elif isinstance(data, dict) and "results" in data:
-        records = data["results"]
+    elif isinstance(data, dict) and "Incidents" in data:
+        records = data["Incidents"]
+        use_geojson_wrapper = False
+    elif isinstance(data, list):
+        records = data
         use_geojson_wrapper = False
     else:
-        print(f"  QLD: unexpected JSON structure — top-level keys: {list(data.keys()) if isinstance(data, dict) else type(data)}")
+        print(f"  QLD: unexpected structure — keys: {list(data.keys()) if isinstance(data, dict) else type(data)}")
         return incidents
 
     print(f"  QLD: {len(records)} raw records (format={'geojson' if use_geojson_wrapper else 'flat'})")
 
     for rec in records:
         if use_geojson_wrapper:
-            # GeoJSON: coords in geometry, fields in properties
             p = rec.get("properties", {}) if isinstance(rec, dict) else {}
             geom = rec.get("geometry") or {}
             coords = geom.get("coordinates", [])
@@ -276,7 +270,6 @@ def parse_qld_incidents(data):
                 lat = float(p.get("Latitude") or p.get("latitude") or 0)
                 lng = float(p.get("Longitude") or p.get("longitude") or 0)
         else:
-            # Flat format — all fields directly on the record
             p = rec if isinstance(rec, dict) else {}
             lat = float(p.get("Latitude") or p.get("latitude") or 0)
             lng = float(p.get("Longitude") or p.get("longitude") or 0)
@@ -284,32 +277,54 @@ def parse_qld_incidents(data):
         if not lat or not lng:
             continue
 
-        inc_type   = (p.get("IncidentType") or p.get("Type") or p.get("incidentType") or "")
-        inc_status = (p.get("IncidentStatus") or p.get("Status") or "")
+        # WarningTitle contains both the alert level prefix and description
+        # e.g. "Emergency Warning - Bushfire at Somewhere"
+        # e.g. "Advice - AVOID SMOKE (HAZARD REDUCTION BURN) - Blackwater..."
+        raw_title = (p.get("WarningTitle") or p.get("Header") or p.get("IncidentName") or "")
 
+        # Derive type from title — Hazard Reduction Burns are in the title text
+        title_lower = raw_title.lower()
+        inc_type = ""
+        if "hazard reduction" in title_lower or "prescribed burn" in title_lower or "avoid smoke" in title_lower:
+            inc_type = "hazard reduction burn"
+        elif "bushfire" in title_lower or "fire" in title_lower:
+            inc_type = "Bush Fire"
+        elif "flood" in title_lower:
+            inc_type = "Flood"
+
+        inc_status = ""  # QLD warnings feed doesn't have a separate status field
+
+        # Filter out burns before we do anything else
         if is_excluded_incident(inc_type, inc_status):
             continue
 
+        # Alert level from WarningLevel field
+        # Confirmed values from QFD: "Emergency Warning", "Watch and Act", "Advice"
         alert_level = normalise_alert_level(
-            p.get("CurrentSituation") or p.get("AlertLevel") or p.get("alertLevel") or ""
+            p.get("WarningLevel") or p.get("AlertLevel") or ""
         )
+
+        # Strip the alert level prefix from the title if present
+        # "Emergency Warning - Bushfire at X" → "Bushfire at X"
+        clean_title = raw_title
+        for prefix in ["Emergency Warning - ", "Watch and Act - ", "Advice - "]:
+            if clean_title.startswith(prefix):
+                clean_title = clean_title[len(prefix):]
+                break
+
         updated = parse_compact_timestamp(
             p.get("UpdateDateTime") or p.get("LastUpdate") or ""
         )
 
-        # Title: try all known QLD field names
-        title = (p.get("IncidentName") or p.get("Name") or p.get("name") or
-                 p.get("Title") or p.get("title") or "QLD Incident")
-
         incidents.append({
-            "title":       title,
+            "title":       clean_title or raw_title or "QLD Incident",
             "alertLevel":  alert_level,
             "status":      inc_status,
             "type":        inc_type,
-            "size":        str(p.get("AreaBurnt") or p.get("areaBurnt") or ""),
+            "size":        str(p.get("AreaBurnt") or ""),
             "agency":      "QFD",
             "updated":     updated,
-            "description": (p.get("AreaDescription") or p.get("LocalGovernmentArea") or ""),
+            "description": (p.get("WarningArea") or p.get("AreaDescription") or ""),
             "lat":         lat,
             "lng":         lng,
             "state":       "QLD",
