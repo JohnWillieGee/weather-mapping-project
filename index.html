@@ -220,7 +220,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
       <!-- INCIDENTS -->
       <div class="wp-section" id="sec-incidents">
         <div class="wp-section-title" onclick="toggleSection('incidents')">
-          <span>&#9888; Incidents — NSW / VIC / QLD / SA</span>
+          <span>&#9888; Incidents — NSW / VIC / QLD / SA / WA / TAS</span>
           <div style="display:flex;align-items:center;gap:6px">
             <button class="wp-toggle" id="inc-map-toggle" onclick="event.stopPropagation();toggleIncidentsLayer()">Map</button>
             <span class="sec-chevron">&#9660;</span>
@@ -252,6 +252,18 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
               <span class="feed-msg" id="fmsg-sa">CFS — via Action...</span>
               <span class="feed-count" id="fcnt-sa"></span>
             </div>
+            <div class="feed-status-row" id="fsr-wa">
+              <div class="feed-dot loading" id="fdot-wa"></div>
+              <span class="feed-name">WA</span>
+              <span class="feed-msg" id="fmsg-wa">DFES — via Action...</span>
+              <span class="feed-count" id="fcnt-wa"></span>
+            </div>
+            <div class="feed-status-row" id="fsr-tas">
+              <div class="feed-dot loading" id="fdot-tas"></div>
+              <span class="feed-name">TAS</span>
+              <span class="feed-msg" id="fmsg-tas">TFS — via Action...</span>
+              <span class="feed-count" id="fcnt-tas"></span>
+            </div>
           </div>
           <div class="wp-state-tabs">
             <button class="wp-tab on" onclick="showIncState('all')" id="inc-tab-all">All</button>
@@ -259,6 +271,8 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
             <button class="wp-tab" onclick="showIncState('vic')" id="inc-tab-vic">VIC</button>
             <button class="wp-tab" onclick="showIncState('qld')" id="inc-tab-qld">QLD</button>
             <button class="wp-tab" onclick="showIncState('sa')" id="inc-tab-sa">SA</button>
+            <button class="wp-tab" onclick="showIncState('wa')" id="inc-tab-wa">WA</button>
+            <button class="wp-tab" onclick="showIncState('tas')" id="inc-tab-tas">TAS</button>
           </div>
           <div id="inc-content"><div class="wp-loading">Fetching feeds...</div></div>
         </div>
@@ -503,6 +517,18 @@ var INC_FEEDS = {
     url: null,  // Fetched server-side via GitHub Action — read from live_data.json
     type: "live_data",
     sourceUrl: "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+  },
+  wa: {
+    label: "WA DFES",
+    url: null,  // Fetched server-side via GitHub Action — read from live_data.json
+    type: "live_data",
+    sourceUrl: "https://www.emergency.wa.gov.au/"
+  },
+  tas: {
+    label: "TAS TFS",
+    url: null,  // Fetched server-side via GitHub Action — read from live_data.json
+    type: "live_data",
+    sourceUrl: "https://www.fire.tas.gov.au/Show?pageId=colCurrentBushfires"
   }
 };
 
@@ -519,8 +545,8 @@ var map, tileLayer, stateLayer, labelGroup, fdrLayer, warningsLayer, incidentsLa
 var fdrFeatures=[], fdrPeriodTimes={}, fdrRatings={};
 var warningsData=[];
 var alertsData=[];   // NSW warning zone polygons from IncidentAlerts.xml
-var allIncidents={nsw:[],vic:[],qld:[],sa:[]};
-var feedStatus={nsw:"pending",vic:"pending",qld:"pending",sa:"pending"};
+var allIncidents={nsw:[],vic:[],qld:[],sa:[],wa:[],tas:[]};
+var feedStatus={nsw:"pending",vic:"pending",qld:"pending",sa:"pending",wa:"pending",tas:"pending"};
 var fdrVisible=false, warningsVisible=false, incidentsVisible=false;
 var curFDRPeriod=1, curFDRState="all", curIncState="all";
 
@@ -564,8 +590,8 @@ function refreshAll(){
   var btn=document.getElementById("refresh-btn");
   btn.classList.add("spinning");
   fdrFeatures=[];fdrPeriodTimes={};fdrRatings={};warningsData=[];bomWarnings=[];alertsData=[];
-  allIncidents={nsw:[],vic:[],qld:[],sa:[]};
-  feedStatus={nsw:"pending",vic:"pending",qld:"pending",sa:"pending"};
+  allIncidents={nsw:[],vic:[],qld:[],sa:[],wa:[],tas:[]};
+  feedStatus={nsw:"pending",vic:"pending",qld:"pending",sa:"pending",wa:"pending",tas:"pending"};
   document.getElementById("h-warnings").textContent="-";
   document.getElementById("h-incidents").textContent="-";
   statusEl("fdr-fetch-status","fetch-loading","&#8635; fetching BOM ratings...");
@@ -574,7 +600,7 @@ function refreshAll(){
   document.getElementById("fdr-content").innerHTML="<div class='wp-loading'>Loading...</div>";
   document.getElementById("bom-warnings-content").innerHTML="<div class='wp-loading'>Loading...</div>";
   document.getElementById("inc-content").innerHTML="<div class='wp-loading'>Fetching feeds...</div>";
-  ["nsw","vic","qld","sa"].forEach(function(k){setFeedStatus(k,"loading","fetching...");});
+  ["nsw","vic","qld","sa","wa","tas"].forEach(function(k){setFeedStatus(k,"loading","fetching...");});
   fdrLayer.clearLayers();warningsLayer.clearLayers();incidentsLayer.clearLayers();alertsLayer.clearLayers();
   setTimeout(function(){btn.classList.remove("spinning");},8000);
   startFetching();
@@ -1241,6 +1267,18 @@ function fetchBOMWarnings() {
       feedStatus.sa = "ok";
       setFeedStatus("sa", "ok", ageLabel + " \u00b7 SA CFS", (incData.sa||[]).length);
 
+      // WA
+      allIncidents.wa = incData.wa || [];
+      feedStatus.wa = "ok";
+      var waMethod = data.wa_feed_method || "";
+      var waLabel = ageLabel + " \u00b7 WA DFES" + (waMethod ? " (" + waMethod + ")" : "");
+      setFeedStatus("wa", "ok", waLabel, (incData.wa||[]).length);
+
+      // TAS
+      allIncidents.tas = incData.tas || [];
+      feedStatus.tas = "ok";
+      setFeedStatus("tas", "ok", ageLabel + " \u00b7 TAS TFS", (incData.tas||[]).length);
+
       updateIncidentCount();
       renderIncidentsPanel();
       if(incidentsVisible) renderIncidentsMap();
@@ -1266,7 +1304,7 @@ function fetchBOMWarnings() {
       console.warn('fetchBOMWarnings: live_data.json fetch failed —', e.message);
 
       // Mark all incident feeds as errored so UI shows clear status
-      ["nsw","vic","qld","sa"].forEach(function(k){
+      ["nsw","vic","qld","sa","wa","tas"].forEach(function(k){
         feedStatus[k] = "error";
         setFeedStatus(k, "err", "live_data.json unavailable");
       });
@@ -1774,7 +1812,7 @@ function isActiveIncident(inc){
 
 function renderIncidentsPanel(){
   var all=[];
-  if(curIncState==="all"){["nsw","vic","qld","sa"].forEach(function(k){all=all.concat(allIncidents[k]||[]);});}
+  if(curIncState==="all"){["nsw","vic","qld","sa","wa","tas"].forEach(function(k){all=all.concat(allIncidents[k]||[]);});}
   else{all=allIncidents[curIncState]||[];}
 
   // Filter to active incidents only — exclude burns, hazard reductions, no-alert entries
@@ -1803,7 +1841,7 @@ function renderIncidentsPanel(){
   active.slice(0,60).forEach(function(inc){
     if(curIncState==="all"&&inc.state!==curSt){
       curSt=inc.state;
-      var stCol={"NSW":"#4dabf7","VIC":"#00d4aa","QLD":"#f0a500","SA":"#ff7f50"}[curSt]||"#888";
+      var stCol={"NSW":"#4dabf7","VIC":"#00d4aa","QLD":"#f0a500","SA":"#ff7f50","WA":"#c084fc","TAS":"#34d399"}[curSt]||"#888";
       html+="<div class='inc-state-hdr' style='color:"+stCol+"'>&#9650; "+curSt+" ("+( activeCounts[curSt]||0)+" active)</div>";
     }
     var col=alertColor(inc.alertLevel),ac=alertClass(inc.alertLevel);
@@ -1835,7 +1873,7 @@ function showIncState(state){
 // ── INCIDENTS MAP ──
 function renderIncidentsMap(){
   incidentsLayer.clearLayers();
-  ["nsw","vic","qld","sa"].forEach(function(key){
+  ["nsw","vic","qld","sa","wa","tas"].forEach(function(key){
     (allIncidents[key]||[]).filter(isActiveIncident).forEach(function(inc){
       var color=alertColor(inc.alertLevel);
       var popHtml="<div>"
