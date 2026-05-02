@@ -198,6 +198,8 @@ def normalise_alert_level(raw):
         return "Watch and Act"
     if "advice" in r or r == "1":
         return "Advice"
+    if "information" in r:
+        return "Information"  # QFD monitoring notices — filtered out downstream
     if raw:
         return raw.strip()
     return ""
@@ -296,6 +298,11 @@ def parse_qld_incidents(data):
 
         # Filter out burns before we do anything else
         if is_excluded_incident(inc_type, inc_status):
+            continue
+
+        # Skip "Information" level — QFD monitoring notices, no community action required
+        # (equivalent to NSW "Not Applicable")
+        if alert_level == "Information":
             continue
 
         # Alert level from WarningLevel field
@@ -429,20 +436,18 @@ def fetch_incidents(key, feed_cfg):
 
         if key == "qld":
             incidents = parse_qld_incidents(obj)
-            # Debug: log first raw record's field names so we can verify schema in Action log
+            # Debug: log first record's field names and values to verify schema
             try:
-                raw_records = (obj.get("Incidents") or obj.get("features") or
+                raw_records = (obj.get("features") or obj.get("Incidents") or
                                (obj if isinstance(obj, list) else []))
                 if raw_records:
                     first = raw_records[0]
-                    # For GeoJSON, unwrap properties
                     if "properties" in first:
                         first = first["properties"]
                     print(f"  QLD schema keys: {list(first.keys())[:15]}")
-                    print(f"  QLD sample — name:{first.get('IncidentName') or first.get('Name') or first.get('name')} "
-                          f"type:{first.get('IncidentType') or first.get('Type')} "
-                          f"situation:{first.get('CurrentSituation')} "
-                          f"status:{first.get('IncidentStatus') or first.get('Status')}")
+                    print(f"  QLD sample — title:{first.get('WarningTitle')} "
+                          f"level:{first.get('WarningLevel')} "
+                          f"area:{first.get('WarningArea')}")
             except Exception as e:
                 print(f"  QLD debug error: {e}")
         elif key == "sa":
