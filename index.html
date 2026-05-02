@@ -482,14 +482,14 @@ function fetchWithProxies(url, proxyList, opts) {
 var INC_FEEDS = {
   nsw: {
     label: "NSW RFS",
-    url: "https://www.rfs.nsw.gov.au/feeds/majorIncidents.json",
-    type: "geojson",
+    url: null,  // Fetched server-side via GitHub Action — read from live_data.json
+    type: "live_data",
     sourceUrl: "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
   },
   vic: {
     label: "VIC EMV",
-    url: "https://data.emergency.vic.gov.au/Show?pageId=getIncidentJSON",
-    type: "geojson_vic",
+    url: null,  // Fetched server-side via GitHub Action — read from live_data.json
+    type: "live_data",
     sourceUrl: "https://www.emergency.vic.gov.au/respond/"
   },
   qld: {
@@ -556,9 +556,8 @@ function initMap(){
 // ── FETCH ORCHESTRATION ──
 function startFetching(){
   fetchFDR();
-  fetchBOMWarnings();
-  fetchNSWAlerts();
-  Object.keys(INC_FEEDS).forEach(fetchIncidents);
+  fetchBOMWarnings();  // also loads all state incidents + NSW alert zones from live_data.json
+  Object.keys(INC_FEEDS).forEach(fetchIncidents);  // skips all (all are live_data type)
 }
 
 function refreshAll(){
@@ -571,6 +570,7 @@ function refreshAll(){
   document.getElementById("h-incidents").textContent="-";
   statusEl("fdr-fetch-status","fetch-loading","&#8635; fetching BOM ratings...");
   statusEl("warn-fetch-status","fetch-loading","&#8635; fetching...");
+  statusEl("alerts-fetch-status","fetch-loading","&#8635; fetching RFS...");
   document.getElementById("fdr-content").innerHTML="<div class='wp-loading'>Loading...</div>";
   document.getElementById("bom-warnings-content").innerHTML="<div class='wp-loading'>Loading...</div>";
   document.getElementById("inc-content").innerHTML="<div class='wp-loading'>Fetching feeds...</div>";
@@ -1217,25 +1217,44 @@ function fetchBOMWarnings() {
       renderWarningsPanel();
       if(warningsVisible) renderWarningsMap();
 
-      // ── Load QLD + SA incidents from same live_data.json ─────────────────
+      // ── Load all state incidents from live_data.json ─────────────────────
       var incData = data.incidents || {};
       var ageLabel = ageStr ? "live \u00b7 " + ageStr : "live";
 
+      // NSW
+      allIncidents.nsw = incData.nsw || [];
+      feedStatus.nsw = "ok";
+      setFeedStatus("nsw", "ok", ageLabel + " \u00b7 NSW RFS", (incData.nsw||[]).length);
+
+      // VIC
+      allIncidents.vic = incData.vic || [];
+      feedStatus.vic = "ok";
+      setFeedStatus("vic", "ok", ageLabel + " \u00b7 VIC EMV", (incData.vic||[]).length);
+
       // QLD
-      var qldRaw = incData.qld || [];
-      allIncidents.qld = qldRaw;
+      allIncidents.qld = incData.qld || [];
       feedStatus.qld = "ok";
-      setFeedStatus("qld", "ok", ageLabel + " \u00b7 QLD QFD", qldRaw.length);
+      setFeedStatus("qld", "ok", ageLabel + " \u00b7 QLD QFD", (incData.qld||[]).length);
 
       // SA
-      var saRaw = incData.sa || [];
-      allIncidents.sa = saRaw;
+      allIncidents.sa = incData.sa || [];
       feedStatus.sa = "ok";
-      setFeedStatus("sa", "ok", ageLabel + " \u00b7 SA CFS", saRaw.length);
+      setFeedStatus("sa", "ok", ageLabel + " \u00b7 SA CFS", (incData.sa||[]).length);
 
       updateIncidentCount();
       renderIncidentsPanel();
       if(incidentsVisible) renderIncidentsMap();
+
+      // ── Load NSW alert zones (CAP-AU polygons) from live_data.json ────────
+      alertsData = data.nsw_alert_zones || [];
+      renderAlertsPanel();
+      if(alertsVisible) renderAlertsMap();
+      var nz = alertsData.length;
+      if(nz === 0){
+        statusEl("alerts-fetch-status","fetch-ok","&#10003; No active warning zones \u00b7 RFS");
+      } else {
+        statusEl("alerts-fetch-status","fetch-ok","&#10003; "+nz+" warning zone"+(nz>1?"s":"")+" \u00b7 RFS");
+      }
     })
     .catch(function(e){
       // live_data.json not found or unreadable — GitHub Action may not have run yet
@@ -1246,11 +1265,12 @@ function fetchBOMWarnings() {
         "<span style='font-size:9px'>Check GitHub Actions tab — workflow must run once to generate live_data.json</span></div>";
       console.warn('fetchBOMWarnings: live_data.json fetch failed —', e.message);
 
-      // Mark QLD + SA as errored so the UI shows a clear status
-      feedStatus.qld = "error";
-      setFeedStatus("qld", "err", "live_data.json unavailable");
-      feedStatus.sa = "error";
-      setFeedStatus("sa", "err", "live_data.json unavailable");
+      // Mark all incident feeds as errored so UI shows clear status
+      ["nsw","vic","qld","sa"].forEach(function(k){
+        feedStatus[k] = "error";
+        setFeedStatus(k, "err", "live_data.json unavailable");
+      });
+      statusEl("alerts-fetch-status","fetch-err","&#9888; live_data.json unavailable");
     });
 }
 
