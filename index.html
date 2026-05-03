@@ -189,7 +189,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
       </div>
       <iframe id="lightning-iframe"
         src="about:blank"
-        data-src="https://map.blitzortung.org/index.php?interactive=1&NavigationControl=0&FullScreenControl=0&Cookies=0&InfoDiv=0&MenuButtonDiv=0&ScaleControl=0&LinksCheckboxChecked=1&LinksRangeValue=10&MapStyle=3&MapStyleRangeValue=0&Advertisment=0#4/-27/134"
+        data-src="https://map.blitzortung.org/index.php?interactive=1&NavigationControl=0&FullScreenControl=0&Cookies=0&InfoDiv=0&MenuButtonDiv=0&ScaleControl=0&LinksCheckboxChecked=1&LinksRangeValue=10&MapStyle=STYLE_TOKEN&MapStyleRangeValue=0&Advertisment=0#4/-27/134"
         allowfullscreen>
       </iframe>
     </div>
@@ -2206,10 +2206,18 @@ function toggleIncidentsLayer(){
 
 // ── LAYER TOGGLES ──
 function toggleLayer(name){var lyr=name==="states"?stateLayer:labelGroup,btn=document.getElementById("btn-"+name);if(!map||!lyr)return;if(map.hasLayer(lyr)){map.removeLayer(lyr);btn.classList.remove("on");}else{map.addLayer(lyr);btn.classList.add("on");}}
-function toggleTheme(){isDark=!isDark;document.documentElement.setAttribute("data-theme",isDark?"dark":"light");document.getElementById("theme-toggle").textContent=isDark?"\u2600":"\u263D";if(tileLayer&&map){map.removeLayer(tileLayer);tileLayer=L.tileLayer(isDark?DARK_TILE:LIGHT_TILE,{attribution:ATTR,subdomains:"abcd",maxZoom:19}).addTo(map);}if(stateLayer)stateLayer.setStyle({color:isDark?"#f0a500":"#c07800",opacity:isDark?0.35:0.5});localStorage.setItem("au-wx-theme",isDark?"dark":"light");}
+function toggleTheme(){isDark=!isDark;document.documentElement.setAttribute("data-theme",isDark?"dark":"light");document.getElementById("theme-toggle").textContent=isDark?"\u2600":"\u263D";if(tileLayer&&map){map.removeLayer(tileLayer);tileLayer=L.tileLayer(isDark?DARK_TILE:LIGHT_TILE,{attribution:ATTR,subdomains:"abcd",maxZoom:19}).addTo(map);}if(stateLayer)stateLayer.setStyle({color:isDark?"#f0a500":"#c07800",opacity:isDark?0.35:0.5});localStorage.setItem("au-wx-theme",isDark?"dark":"light");updateLightningTheme();}
 
 // ── LIGHTNING PANEL (Blitzortung iframe) ──
 var lightningVisible = false;
+
+function getLightningUrl(){
+  // MapStyle: 3 = dark, 0 = light — matches Blitzortung's available styles
+  var style = isDark ? '3' : '0';
+  var iframe = document.getElementById('lightning-iframe');
+  return iframe.getAttribute('data-src').replace('STYLE_TOKEN', style);
+}
+
 function toggleLightning(){
   lightningVisible = !lightningVisible;
   var panel = document.getElementById('lightning-panel');
@@ -2220,8 +2228,16 @@ function toggleLightning(){
   if(lightningVisible){
     var iframe = document.getElementById('lightning-iframe');
     if(iframe.src === '' || iframe.src === 'about:blank'){
-      iframe.src = iframe.getAttribute('data-src');
+      iframe.src = getLightningUrl();
     }
+  }
+}
+
+function updateLightningTheme(){
+  // If panel is open, reload iframe with the correct map style for the new theme
+  if(lightningVisible){
+    var iframe = document.getElementById('lightning-iframe');
+    iframe.src = getLightningUrl();
   }
 }
 
