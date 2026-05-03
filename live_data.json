@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-05-03T16:01:21.254160+00:00",
+  "generated_utc": "2026-05-03T17:08:09.818950+00:00",
   "warning_count": 4,
   "warnings": [
     {
@@ -14,13 +14,13 @@
     },
     {
       "pid": "IDV21037",
-      "title": "03/22:51 EST \n                Severe Weather Warning\n            \nfor \n                parts of East Gippsland, North East and West and South Gippsland Forecast Districts.",
+      "title": "04/02:02 EST \n                Cancellation of Severe Weather Warning\n            \nfor \n                East Gippsland, North East and West and South Gippsland Forecast Districts.",
       "type": "severe_weather",
       "state": "VIC",
       "link": "http://www.bom.gov.au/products/IDV21037.shtml",
       "direct_url": "https://www.bom.gov.au/warning/severe-weather-warning/IDV21037",
       "desc": "",
-      "issued": "Sun, 03 May 2026 12:51:10 GMT"
+      "issued": "Sun, 03 May 2026 16:02:08 GMT"
     },
     {
       "pid": "",
@@ -47,7 +47,24 @@
     "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
   },
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Edward St, Moree",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "3/05/2026 4:57:00 PM",
+        "description": "On Riverbank Near, Edward St, Moree, NSW 2400",
+        "council": "Moree Plains",
+        "lat": -29.466839999999934,
+        "lng": 149.83567000000005,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [
       {
         "title": "RED CAP CREEK - FOSTERS RD",
@@ -70,7 +87,7 @@
     "tas": [],
     "wa": []
   },
-  "incident_count": 1,
+  "incident_count": 2,
   "nsw_alert_zones": [],
   "wa_feed_method": "none"
 }
