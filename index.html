@@ -1051,10 +1051,11 @@ function showFDRState(state){
   var tab = document.getElementById('fdr-tab-'+state);
   if(tab) tab.classList.add('on');
   showFDRPanel();
-  if(fdrVisible){
-    zoomToState(state === 'all' ? null : state);
-    renderFDRMap();
-  }
+  // Always enable FDR layer when a state tab is clicked
+  if(!fdrVisible) toggleFDRLayer();
+  // Zoom to state (or full Australia for 'all'), then re-render map filtered to state
+  zoomToState(state === 'all' ? null : state);
+  renderFDRLayer();
 }
 
 function showFDRPanel(){
@@ -1111,6 +1112,8 @@ function renderFDRLayer(){
   FDR_GEO.features.forEach(function(feat){
     var p = feat.properties;
     var aac = p.AAC;
+    // Filter by selected state — ACT is grouped with NSW
+    if(curFDRState !== 'all' && p.STATE_CODE !== curFDRState && !(curFDRState === 'NSW' && p.STATE_CODE === 'ACT')) return;
     var rating = fdrRatings[aac] && fdrRatings[aac][curFDRPeriod];
     var fireDanger = rating ? rating.FireDanger : "No Rating";
     var fbi = rating ? rating.FireBehavIndex : 0;
@@ -1592,11 +1595,13 @@ function renderWarningsPanel() {
           var wUrl = w.direct_url || (w.pid ? 'https://www.bom.gov.au/products/'+w.pid+'.shtml' : 'https://www.bom.gov.au/australia/warnings/');
           var coords = w.coords || getDistrictCoords((w.districts||'') + ' ' + w.title, w.state);
           html += '<div class="warn-row" style="cursor:pointer" onclick="flyToWarning(' + coords[0] + ',' + coords[1] + ')">' +
-            '<a class="warn-title" style="color:' + w.color + ';text-decoration:none" href="' + wUrl + '" target="_blank" rel="noopener" onclick="event.stopPropagation()">' + w.title + ' &#8599;</a>' +
+            '<div class="warn-title" style="display:flex;align-items:flex-start;justify-content:space-between;gap:4px">' +
+              '<span style="color:' + w.color + ';flex:1">' + w.title + '</span>' +
+              '<a href="' + wUrl + '" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Open BOM warning page" style="color:var(--text3);text-decoration:none;font-size:13px;flex-shrink:0;padding-left:4px">&#8599;</a>' +
+            '</div>' +
             (w.districts ? '<div style="font-size:9px;color:var(--text2);margin-top:2px">' + w.districts + '</div>' : '') +
             (w.hazards.length ? '<div style="font-size:9px;color:var(--text3);margin-top:2px">' + w.hazards.join(' &middot; ') + '</div>' : '') +
             (w.issuedAt ? '<div style="font-size:9px;color:var(--text3)">' + w.issuedAt + '</div>' : '') +
-            '<div style="font-size:8px;color:var(--text3);margin-top:1px">&#9654; Click to locate on map</div>' +
             '</div>';
         });
     });
