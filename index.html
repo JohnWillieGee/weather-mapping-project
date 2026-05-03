@@ -583,12 +583,22 @@ function flyToWarning(lat, lng){
   // Enable warnings layer if not already on, then fly
   if(!warningsVisible) toggleWarningsLayer();
   map.flyTo([lat, lng], 7, {duration:0.7});
+  map.once('moveend', function(){
+    var key = lat + ',' + lng;
+    var m = warningMarkerRegistry[key];
+    if(m) m.openPopup();
+  });
 }
 
 function flyToIncident(lat, lng){
   // Enable incidents layer if not already on, then fly
   if(!incidentsVisible) toggleIncidentsLayer();
   map.flyTo([lat, lng], 10, {duration:0.7});
+  map.once('moveend', function(){
+    var key = lat + ',' + lng;
+    var m = incidentMarkerRegistry[key];
+    if(m) m.openPopup();
+  });
 }
 var STATE_CENTRES = {NSW:[-32,147],VIC:[-37,144],QLD:[-22,144],SA:[-30,135],WA:[-27,121],TAS:[-42,146],NT:[-19,133],ACT:[-35.3,149.1]};
 var WARN_COLORS = {"severe_thunderstorm":"#9775fa","thunderstorm":"#9775fa","severe_weather":"#f0a500","strong_wind":"#f0a500","frost":"#74c0fc","sheep_graziers":"#74c0fc","flood":"#4dabf7","coastal_flooding":"#4dabf7","cyclone":"#ff4757","tropical_cyclone":"#ff4757","fire_weather":"#ff6b6b","heat":"#ff6b6b","default":"#f0a500"};
@@ -606,6 +616,9 @@ var allIncidents={nsw:[],vic:[],qld:[],sa:[],wa:[],tas:[]};
 var feedStatus={nsw:"pending",vic:"pending",qld:"pending",sa:"pending",wa:"pending",tas:"pending"};
 var fdrVisible=false, warningsVisible=false, incidentsVisible=false;
 var curFDRPeriod=1, curFDRState="all", curIncState="all";
+// Marker registries — keyed by "lat,lng" — for auto-popup on panel row click
+var warningMarkerRegistry={};
+var incidentMarkerRegistry={};
 
 // ── HELPERS ──
 function fdrColor(r){var v=(r||"").toLowerCase();if(v.includes("catastrophic"))return"#4a148c";if(v.includes("extreme"))return"#b71c1c";if(v.includes("very high"))return"#d32f2f";if(v.includes("high"))return"#e65100";if(v.includes("moderate"))return"#2e7d32";return"#2d3140";}
@@ -1615,6 +1628,7 @@ var RELEVANT_WARN_TYPES = ['thunderstorm','severe_weather','cyclone','fire_weath
 
 function renderWarningsMap() {
   warningsLayer.clearLayers();
+  warningMarkerRegistry = {};
   var posUsed = {};
 
   // Apply same type filter as panel, and only show relevant types
@@ -1668,7 +1682,7 @@ function renderWarningsMap() {
       '</div></div>';
 
     // Central marker pin
-    L.circleMarker([lat, lng], {
+    var warnMarker = L.circleMarker([lat, lng], {
       radius: 10,
       color: w.color,
       weight: 2.5,
@@ -1676,6 +1690,7 @@ function renderWarningsMap() {
       fillColor: w.color,
       fillOpacity: 0.85
     }).bindPopup(popHtml, { className: 'ba-popup', maxWidth: 340 }).addTo(warningsLayer);
+    warningMarkerRegistry[lat + ',' + lng] = warnMarker;
 
     // Small label — use typeInfo.icon not w.icon
     L.marker([lat - 0.4, lng], {
@@ -2119,6 +2134,7 @@ function showIncState(state){
 // ── INCIDENTS MAP ──
 function renderIncidentsMap(){
   incidentsLayer.clearLayers();
+  incidentMarkerRegistry = {};
   ["nsw","vic","qld","sa","wa","tas"].forEach(function(key){
     (allIncidents[key]||[]).filter(isActiveIncident).forEach(function(inc){
       var color=alertColor(inc.alertLevel);
@@ -2145,10 +2161,11 @@ function renderIncidentsMap(){
       });
       // Point marker
       var r=inc.alertLevel&&inc.alertLevel.toLowerCase().includes("emergency")?9:inc.alertLevel&&inc.alertLevel.toLowerCase().includes("watch")?7:6;
-      L.marker([inc.lat,inc.lng],{icon:L.divIcon({
+      var incMarker = L.marker([inc.lat,inc.lng],{icon:L.divIcon({
         html:"<svg xmlns='http://www.w3.org/2000/svg' width='"+(r*2+6)+"' height='"+(r*2+6)+"'><circle cx='"+(r+3)+"' cy='"+(r+3)+"' r='"+r+"' fill='"+color+"' fill-opacity='.85' stroke='"+(isDark?"#1a0a0a":"#ffffff")+"' stroke-width='2'/></svg>",
         className:"",iconSize:[r*2+6,r*2+6],iconAnchor:[r+3,r+3],popupAnchor:[0,-(r+5)]
       })}).bindPopup(popHtml,{className:"fire-popup",maxWidth:360}).addTo(incidentsLayer);
+      incidentMarkerRegistry[inc.lat+','+inc.lng] = incMarker;
     });
   });
 }
