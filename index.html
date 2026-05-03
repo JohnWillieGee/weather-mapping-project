@@ -189,7 +189,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
       </div>
       <iframe id="lightning-iframe"
         src="about:blank"
-        data-src="https://map.blitzortung.org/index.php?interactive=1&NavigationControl=0&FullScreenControl=0&Cookies=0&InfoDiv=0&MenuButtonDiv=0&ScaleControl=0&LinksCheckboxChecked=1&LinksRangeValue=10&MapStyle=STYLE_TOKEN&MapStyleRangeValue=0&Advertisment=0#3/-27/134"
+        data-src="https://map.blitzortung.org/index.php?interactive=1&NavigationControl=1&FullScreenControl=0&Cookies=0&InfoDiv=0&MenuButtonDiv=0&ScaleControl=0&LinksCheckboxChecked=1&LinksRangeValue=10&MapStyle=STYLE_TOKEN&MapStyleRangeValue=0&Advertisment=0#3/-27/134"
         allowfullscreen>
       </iframe>
     </div>
@@ -2212,8 +2212,8 @@ function toggleTheme(){isDark=!isDark;document.documentElement.setAttribute("dat
 var lightningVisible = false;
 
 function getLightningUrl(){
-  // MapStyle: 3 = dark, 0 = light — matches Blitzortung's available styles
-  var style = isDark ? '3' : '0';
+  // MapStyle: 2 = dark, 0 = light
+  var style = isDark ? '2' : '0';
   var iframe = document.getElementById('lightning-iframe');
   return iframe.getAttribute('data-src').replace('STYLE_TOKEN', style);
 }
