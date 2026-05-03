@@ -145,6 +145,10 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 #lightning-close{background:none;border:none;color:#9775fa;cursor:pointer;font-size:14px;padding:0 2px;line-height:1;}
 #lightning-close:hover{color:#fff;}
 #lightning-iframe{flex:1;border:none;width:100%;height:100%;display:block;}
+#lightning-resize{position:absolute;bottom:0;right:0;width:16px;height:16px;cursor:nwse-resize;z-index:1003;
+  background:linear-gradient(135deg,transparent 40%,#9775fa 40%,#9775fa 55%,transparent 55%,transparent 70%,#9775fa 70%,#9775fa 85%,transparent 85%);
+  opacity:0.6;}
+#lightning-resize:hover{opacity:1;}
 </style>
 </head>
 <body>
@@ -192,6 +196,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
         data-src="https://map.blitzortung.org/index.php?interactive=1&NavigationControl=1&FullScreenControl=0&Cookies=0&InfoDiv=0&MenuButtonDiv=0&ScaleControl=0&LinksCheckboxChecked=1&LinksRangeValue=10&MapStyle=STYLE_TOKEN&MapStyleRangeValue=0&Advertisment=0#3/-27/134"
         allowfullscreen>
       </iframe>
+      <div id="lightning-resize" onmousedown="startResizeLightning(event)" title="Drag to resize"></div>
     </div>
     <div id="legend">
       <h4>Fire Danger Rating</h4>
@@ -2309,6 +2314,44 @@ function onDragLightning(e){
   _dragEl.style.top=Math.max(0,e.clientY-_dragOY)+'px';
 }
 function stopDragLightning(){_dragEl=null;document.removeEventListener('mousemove',onDragLightning);document.removeEventListener('mouseup',stopDragLightning);}
+
+// Resize support for the lightning panel
+var _resizeEl=null,_resizeStartW=0,_resizeStartH=0,_resizeStartX=0,_resizeStartY=0;
+var LIGHTNING_MIN_W=300, LIGHTNING_MIN_H=220;
+function startResizeLightning(e){
+  var panel=document.getElementById('lightning-panel');
+  // Ensure panel is left-anchored before resizing
+  if(panel.style.left===''){
+    var r=panel.getBoundingClientRect();
+    panel.style.left=r.left+'px';
+    panel.style.right='auto';
+    panel.style.top=r.top+'px';
+  }
+  _resizeEl=panel;
+  _resizeStartW=panel.offsetWidth;
+  _resizeStartH=panel.offsetHeight;
+  _resizeStartX=e.clientX;
+  _resizeStartY=e.clientY;
+  // Disable iframe pointer events during resize so mouse doesn't get captured by iframe
+  document.getElementById('lightning-iframe').style.pointerEvents='none';
+  document.addEventListener('mousemove',onResizeLightning);
+  document.addEventListener('mouseup',stopResizeLightning);
+  e.preventDefault();
+  e.stopPropagation();
+}
+function onResizeLightning(e){
+  if(!_resizeEl)return;
+  var newW=Math.max(LIGHTNING_MIN_W, _resizeStartW+(e.clientX-_resizeStartX));
+  var newH=Math.max(LIGHTNING_MIN_H, _resizeStartH+(e.clientY-_resizeStartY));
+  _resizeEl.style.width=newW+'px';
+  _resizeEl.style.height=newH+'px';
+}
+function stopResizeLightning(){
+  _resizeEl=null;
+  document.getElementById('lightning-iframe').style.pointerEvents='';
+  document.removeEventListener('mousemove',onResizeLightning);
+  document.removeEventListener('mouseup',stopResizeLightning);
+}
 function toggleWeatherPanel(){document.getElementById("weather-panel").classList.toggle("collapsed");setTimeout(function(){if(map)map.invalidateSize();},260);}
 </script>
 </body>
