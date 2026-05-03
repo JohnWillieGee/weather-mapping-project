@@ -84,6 +84,8 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 .warn-state-hdr{font-size:9px;font-weight:700;color:var(--text3);text-transform:uppercase;margin:8px 0 3px;letter-spacing:.8px;}
 .warn-row{padding:5px 0;border-bottom:1px solid var(--border);}
 .warn-row:last-child{border-bottom:none;}
+.warn-row[onclick]{cursor:pointer;}
+.warn-row[onclick]:hover{background:var(--panel2);margin:0 -4px;padding-left:4px;padding-right:4px;border-radius:3px;}
 .warn-title{font-size:10px;font-weight:600;margin-bottom:2px;}
 /* incidents */
 .inc-state-hdr{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin:8px 0 3px;display:flex;align-items:center;gap:5px;}
@@ -555,6 +557,39 @@ var INC_FEEDS = {
 };
 
 var STATE_NAMES = {NSW:"New South Wales",VIC:"Victoria",QLD:"Queensland",SA:"South Australia",WA:"Western Australia",TAS:"Tasmania",NT:"Northern Territory",ACT:"Australian Capital Territory"};
+
+// Bounding boxes [sw, ne] for map zoom on state tab select
+var STATE_BOUNDS = {
+  NSW: [[-37.5, 140.9], [-28.2, 153.6]],
+  VIC: [[-39.2, 140.9], [-33.9, 149.9]],
+  QLD: [[-29.2, 137.9], [-10.0, 153.6]],
+  SA:  [[-38.1, 129.0], [-26.0, 141.0]],
+  WA:  [[-35.1, 112.9], [-13.7, 129.0]],
+  TAS: [[-43.7, 143.8], [-39.5, 148.5]],
+  NT:  [[-26.0, 129.0], [-11.0, 138.0]],
+  ACT: [[-35.9, 148.7], [-35.1, 149.4]]
+};
+
+function zoomToState(stateKey){
+  if(!stateKey || stateKey === 'all'){
+    map.flyToBounds([[-44,112],[-10,154]], {duration:0.6, padding:[10,10]});
+  } else {
+    var b = STATE_BOUNDS[(stateKey||'').toUpperCase()];
+    if(b) map.flyToBounds(b, {duration:0.6, padding:[30,30]});
+  }
+}
+
+function flyToWarning(lat, lng){
+  // Enable warnings layer if not already on, then fly
+  if(!warningsVisible) toggleWarningsLayer();
+  map.flyTo([lat, lng], 7, {duration:0.7});
+}
+
+function flyToIncident(lat, lng){
+  // Enable incidents layer if not already on, then fly
+  if(!incidentsVisible) toggleIncidentsLayer();
+  map.flyTo([lat, lng], 10, {duration:0.7});
+}
 var STATE_CENTRES = {NSW:[-32,147],VIC:[-37,144],QLD:[-22,144],SA:[-30,135],WA:[-27,121],TAS:[-42,146],NT:[-19,133],ACT:[-35.3,149.1]};
 var WARN_COLORS = {"severe_thunderstorm":"#9775fa","thunderstorm":"#9775fa","severe_weather":"#f0a500","strong_wind":"#f0a500","frost":"#74c0fc","sheep_graziers":"#74c0fc","flood":"#4dabf7","coastal_flooding":"#4dabf7","cyclone":"#ff4757","tropical_cyclone":"#ff4757","fire_weather":"#ff6b6b","heat":"#ff6b6b","default":"#f0a500"};
 
@@ -1016,6 +1051,10 @@ function showFDRState(state){
   var tab = document.getElementById('fdr-tab-'+state);
   if(tab) tab.classList.add('on');
   showFDRPanel();
+  if(fdrVisible){
+    zoomToState(state === 'all' ? null : state);
+    renderFDRMap();
+  }
 }
 
 function showFDRPanel(){
@@ -1551,11 +1590,13 @@ function renderWarningsPanel() {
       html += '<div class="warn-state-hdr">' + (STATE_NAMES[st]||st) + '</div>';
       byState[st].forEach(function(w) {
           var wUrl = w.direct_url || (w.pid ? 'https://www.bom.gov.au/products/'+w.pid+'.shtml' : 'https://www.bom.gov.au/australia/warnings/');
-          html += '<div class="warn-row">' +
-            '<a class="warn-title" style="color:' + w.color + ';text-decoration:none" href="' + wUrl + '" target="_blank" rel="noopener">' + w.title + ' &#8599;</a>' +
+          var coords = w.coords || getDistrictCoords((w.districts||'') + ' ' + w.title, w.state);
+          html += '<div class="warn-row" style="cursor:pointer" onclick="flyToWarning(' + coords[0] + ',' + coords[1] + ')">' +
+            '<a class="warn-title" style="color:' + w.color + ';text-decoration:none" href="' + wUrl + '" target="_blank" rel="noopener" onclick="event.stopPropagation()">' + w.title + ' &#8599;</a>' +
             (w.districts ? '<div style="font-size:9px;color:var(--text2);margin-top:2px">' + w.districts + '</div>' : '') +
             (w.hazards.length ? '<div style="font-size:9px;color:var(--text3);margin-top:2px">' + w.hazards.join(' &middot; ') + '</div>' : '') +
             (w.issuedAt ? '<div style="font-size:9px;color:var(--text3)">' + w.issuedAt + '</div>' : '') +
+            '<div style="font-size:8px;color:var(--text3);margin-top:1px">&#9654; Click to locate on map</div>' +
             '</div>';
         });
     });
@@ -2038,7 +2079,10 @@ function renderIncidentsPanel(){
     }
     var col=alertColor(inc.alertLevel),ac=alertClass(inc.alertLevel);
     var updStr=inc.updated?new Date(inc.updated).toLocaleTimeString("en-AU",{hour:"2-digit",minute:"2-digit",hour12:false,timeZone:"Australia/Sydney"})+" AEST":"";
-    html+="<div class='inc-row'>"
+    var clickable = (inc.lat && inc.lng)
+      ? "onclick=\"flyToIncident("+inc.lat+","+inc.lng+")\""
+      : "";
+    html+="<div class='inc-row' "+clickable+">"
       +"<div class='inc-title'>"
       +(inc.alertLevel?"<span class='inc-badge "+ac+"' style='background:"+col+"'>"+inc.alertLevel+"</span>":"")
       +inc.title+"</div>"
@@ -2047,6 +2091,7 @@ function renderIncidentsPanel(){
       +(inc.status?inc.status+" &middot; ":"")
       +(updStr?updStr:"")
       +"</div>"
+      +(clickable ? "<div style='font-size:8px;color:var(--text3);margin-top:1px'>&#9654; Click to locate on map</div>" : "")
       +"</div>";
   });
   if(active.length>60)html+="<div class='wp-none'>+"+(active.length-60)+" more &mdash; use state tabs to filter</div>";
@@ -2060,6 +2105,10 @@ function showIncState(state){
   document.querySelectorAll(".wp-tab[onclick*='showIncState']").forEach(function(t){t.classList.remove("on");});
   var tab=document.getElementById("inc-tab-"+state);if(tab)tab.classList.add("on");
   renderIncidentsPanel();
+  if(incidentsVisible){
+    zoomToState(state === 'all' ? null : state);
+    renderIncidentsMap();
+  }
 }
 
 // ── INCIDENTS MAP ──
