@@ -132,6 +132,19 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 .radar-tick:hover{background:var(--accent2);}
 #radar-time-label{font-family:monospace;font-size:10px;color:var(--accent);min-width:40px;text-align:center;}
 #radar-age-label{font-size:9px;color:var(--text3);}
+/* LIGHTNING PANEL */
+#lightning-panel{position:absolute;top:50px;right:50px;z-index:1002;
+  width:480px;height:380px;border-radius:var(--radius);overflow:hidden;
+  border:1px solid #9775fa;box-shadow:0 4px 20px rgba(0,0,0,0.7);
+  display:none;flex-direction:column;}
+#lightning-panel.visible{display:flex;}
+#lightning-panel-head{background:var(--panel);border-bottom:1px solid #9775fa;
+  padding:5px 10px;display:flex;align-items:center;justify-content:space-between;
+  font-size:10px;font-weight:700;letter-spacing:1px;color:#9775fa;flex-shrink:0;cursor:move;}
+#lightning-panel-head span{font-size:9px;color:var(--text3);font-weight:400;letter-spacing:0;}
+#lightning-close{background:none;border:none;color:#9775fa;cursor:pointer;font-size:14px;padding:0 2px;line-height:1;}
+#lightning-close:hover{color:#fff;}
+#lightning-iframe{flex:1;border:none;width:100%;height:100%;display:block;}
 </style>
 </head>
 <body>
@@ -157,6 +170,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
       <button class="map-btn" id="btn-alerts" onclick="toggleAlertsLayer()">&#128680; NSW Alerts</button>
       <button class="map-btn" id="btn-incidents" onclick="toggleIncidentsLayer()">&#9888; Incidents</button>
       <button class="map-btn" id="btn-radar" onclick="toggleRadarLayer()">&#127783; Radar</button>
+      <button class="map-btn" id="btn-lightning" onclick="toggleLightning()">&#9889; Lightning</button>
     </div>
     <div id="map"></div>
     <!-- Radar animation controls — shown when radar layer is active -->
@@ -165,6 +179,19 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
       <div id="radar-timeline"></div>
       <span id="radar-time-label">--:--</span>
       <span id="radar-age-label">BOM Radar</span>
+    </div>
+    <!-- LIGHTNING PANEL — Blitzortung iframe -->
+    <div id="lightning-panel">
+      <div id="lightning-panel-head" onmousedown="startDragLightning(event)">
+        &#9889; LIGHTNING — Live Strikes (Blitzortung.org)
+        <span>Personal/non-commercial use only &nbsp;|&nbsp; 15 min network latency</span>
+        <button id="lightning-close" onclick="toggleLightning()" title="Close">&#10005;</button>
+      </div>
+      <iframe id="lightning-iframe"
+        src="about:blank"
+        data-src="https://map.blitzortung.org/index.php?interactive=1&NavigationControl=0&FullScreenControl=0&Cookies=0&InfoDiv=0&MenuButtonDiv=0&ScaleControl=0&LinksCheckboxChecked=1&LinksRangeValue=10&MapStyle=3&MapStyleRangeValue=0&Advertisment=0#4/-27/134"
+        allowfullscreen>
+      </iframe>
     </div>
     <div id="legend">
       <h4>Fire Danger Rating</h4>
@@ -2180,6 +2207,46 @@ function toggleIncidentsLayer(){
 // ── LAYER TOGGLES ──
 function toggleLayer(name){var lyr=name==="states"?stateLayer:labelGroup,btn=document.getElementById("btn-"+name);if(!map||!lyr)return;if(map.hasLayer(lyr)){map.removeLayer(lyr);btn.classList.remove("on");}else{map.addLayer(lyr);btn.classList.add("on");}}
 function toggleTheme(){isDark=!isDark;document.documentElement.setAttribute("data-theme",isDark?"dark":"light");document.getElementById("theme-toggle").textContent=isDark?"\u2600":"\u263D";if(tileLayer&&map){map.removeLayer(tileLayer);tileLayer=L.tileLayer(isDark?DARK_TILE:LIGHT_TILE,{attribution:ATTR,subdomains:"abcd",maxZoom:19}).addTo(map);}if(stateLayer)stateLayer.setStyle({color:isDark?"#f0a500":"#c07800",opacity:isDark?0.35:0.5});localStorage.setItem("au-wx-theme",isDark?"dark":"light");}
+
+// ── LIGHTNING PANEL (Blitzortung iframe) ──
+var lightningVisible = false;
+function toggleLightning(){
+  lightningVisible = !lightningVisible;
+  var panel = document.getElementById('lightning-panel');
+  var btn   = document.getElementById('btn-lightning');
+  panel.classList.toggle('visible', lightningVisible);
+  btn.classList.toggle('on', lightningVisible);
+  // Lazy-load the iframe src on first open to avoid loading Blitzortung on page load
+  if(lightningVisible){
+    var iframe = document.getElementById('lightning-iframe');
+    if(iframe.src === '' || iframe.src === 'about:blank'){
+      iframe.src = iframe.getAttribute('data-src');
+    }
+  }
+}
+
+// Drag support for the lightning panel
+var _dragEl=null,_dragOX=0,_dragOY=0;
+function startDragLightning(e){
+  var panel=document.getElementById('lightning-panel');
+  // Switch from right-anchored to left-anchored for free dragging
+  if(panel.style.left===''){
+    var r=panel.getBoundingClientRect();
+    panel.style.left=r.left+'px';
+    panel.style.right='auto';
+    panel.style.top=r.top+'px';
+  }
+  _dragEl=panel;_dragOX=e.clientX-panel.offsetLeft;_dragOY=e.clientY-panel.offsetTop;
+  document.addEventListener('mousemove',onDragLightning);
+  document.addEventListener('mouseup',stopDragLightning);
+  e.preventDefault();
+}
+function onDragLightning(e){
+  if(!_dragEl)return;
+  _dragEl.style.left=Math.max(0,e.clientX-_dragOX)+'px';
+  _dragEl.style.top=Math.max(0,e.clientY-_dragOY)+'px';
+}
+function stopDragLightning(){_dragEl=null;document.removeEventListener('mousemove',onDragLightning);document.removeEventListener('mouseup',stopDragLightning);}
 function toggleWeatherPanel(){document.getElementById("weather-panel").classList.toggle("collapsed");setTimeout(function(){if(map)map.invalidateSize();},260);}
 </script>
 </body>
