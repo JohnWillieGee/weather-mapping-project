@@ -1,16 +1,26 @@
 {
-  "generated_utc": "2026-05-03T00:08:45.784203+00:00",
-  "warning_count": 3,
+  "generated_utc": "2026-05-03T04:11:29.576476+00:00",
+  "warning_count": 4,
   "warnings": [
     {
+      "pid": "IDN21037",
+      "title": "03/11:01 EST \n                Severe Weather Warning\n            \nfor \n                parts of South West Slopes and Snowy Mountains Forecast Districts.",
+      "type": "severe_weather",
+      "state": "NSW",
+      "link": "http://www.bom.gov.au/products/IDN21037.shtml",
+      "direct_url": "https://www.bom.gov.au/warning/severe-weather-warning/IDN21037",
+      "desc": "",
+      "issued": "Sun, 03 May 2026 01:01:54 GMT"
+    },
+    {
       "pid": "IDV21037",
-      "title": "03/05:06 EST \n                Severe Weather Warning\n            \nfor \n                parts of North East, West and South Gippsland and East Gippsland Forecast Districts.",
+      "title": "03/11:00 EST \n                Severe Weather Warning\n            \nfor \n                parts of East Gippsland, North East and West and South Gippsland Forecast Districts.",
       "type": "severe_weather",
       "state": "VIC",
       "link": "http://www.bom.gov.au/products/IDV21037.shtml",
       "direct_url": "https://www.bom.gov.au/warning/severe-weather-warning/IDV21037",
       "desc": "",
-      "issued": "Sat, 02 May 2026 19:06:46 GMT"
+      "issued": "Sun, 03 May 2026 01:00:33 GMT"
     },
     {
       "pid": "",
@@ -37,40 +47,7 @@
     "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
   },
   "incidents": {
-    "nsw": [
-      {
-        "title": "Icely St, Canowindra",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "3/05/2026 12:07:00 AM",
-        "description": "Icely St, Canowindra, NSW 2804",
-        "council": "Cabonne",
-        "lat": -33.56943899999993,
-        "lng": 148.6584570000001,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "NORTH BARHAM RD, BARHAM",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Rural Fire Service",
-        "updated": "2/05/2026 11:39:00 PM",
-        "description": "NORTH BARHAM RD, BARHAM 2732",
-        "council": "Murray River",
-        "lat": -35.60452651999998,
-        "lng": 144.116058349,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [
       {
         "title": "RED CAP CREEK - FOSTERS RD",
@@ -93,7 +70,7 @@
     "tas": [],
     "wa": []
   },
-  "incident_count": 3,
+  "incident_count": 1,
   "nsw_alert_zones": [],
   "wa_feed_method": "none"
 }
