@@ -487,7 +487,7 @@ setTimeout(function(){
   restoreSections();
   loadCSS("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
   loadScript("https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",function(){
-    setTimeout(function(){try{initMap();startFetching();}catch(e){setStatus("Error: "+e.message);}},20);
+    setTimeout(function(){try{initMap();startFetching();scheduleNextRefresh();}catch(e){setStatus("Error: "+e.message);}},20);
   });
 },50);
 
@@ -870,6 +870,51 @@ function refreshAll(){
   setTimeout(function(){btn.classList.remove("spinning");},8000);
   startFetching();
   showToast("Refreshing all live data...");
+  scheduleNextRefresh();
+}
+
+// ── AUTO-REFRESH (every 5 minutes) ──
+// Silently re-fetches live_data.json and BOM feeds in the background.
+// Shows a brief toast on completion so you know it happened — does not
+// clear or disrupt the current map view during the fetch.
+var AUTO_REFRESH_MINS = 5;
+var autoRefreshTimer = null;
+var autoRefreshNextAt = null;
+
+function silentRefresh(){
+  var btn = document.getElementById("refresh-btn");
+  btn.classList.add("spinning");
+  // Reset data stores but don't clear UI panels — they update when fetch completes
+  warningsData=[];bomWarnings=[];alertsData=[];
+  allIncidents={nsw:[],vic:[],qld:[],sa:[],wa:[],tas:[]};
+  feedStatus={nsw:"pending",vic:"pending",qld:"pending",sa:"pending",wa:"pending",tas:"pending"};
+  fdrFeatures=[];fdrPeriodTimes={};fdrRatings={};
+  // Redraw layers when data returns (existing render functions handle this)
+  startFetching();
+  setTimeout(function(){
+    btn.classList.remove("spinning");
+    var now = new Date();
+    var timeStr = now.toLocaleTimeString("en-AU",{hour:"2-digit",minute:"2-digit",timeZone:"Australia/Sydney",hour12:false});
+    showToast("Auto-refreshed at " + timeStr + " AEST");
+    scheduleNextRefresh();
+  }, 8000);
+}
+
+function scheduleNextRefresh(){
+  if(autoRefreshTimer) clearTimeout(autoRefreshTimer);
+  autoRefreshNextAt = Date.now() + AUTO_REFRESH_MINS * 60 * 1000;
+  autoRefreshTimer = setTimeout(silentRefresh, AUTO_REFRESH_MINS * 60 * 1000);
+  updateRefreshCountdown();
+}
+
+function updateRefreshCountdown(){
+  var btn = document.getElementById("refresh-btn");
+  if(!autoRefreshNextAt || !btn){ return; }
+  var secsLeft = Math.max(0, Math.round((autoRefreshNextAt - Date.now()) / 1000));
+  var mins = Math.floor(secsLeft / 60);
+  var secs = secsLeft % 60;
+  btn.title = "Auto-refresh in " + mins + "m " + (secs<10?"0":"") + secs + "s — click to refresh now";
+  if(secsLeft > 0) setTimeout(updateRefreshCountdown, 10000); // update tooltip every 10s
 }
 
 // ── FDR ──
@@ -2212,8 +2257,8 @@ function toggleTheme(){isDark=!isDark;document.documentElement.setAttribute("dat
 var lightningVisible = false;
 
 function getLightningUrl(){
-  // MapStyle: 2 = dark, 0 = light
-  var style = isDark ? '2' : '0';
+  // MapStyle: 0 = dark, 2 = light (confirmed by testing)
+  var style = isDark ? '0' : '2';
   var iframe = document.getElementById('lightning-iframe');
   return iframe.getAttribute('data-src').replace('STYLE_TOKEN', style);
 }
