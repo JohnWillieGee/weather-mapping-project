@@ -1067,19 +1067,25 @@ function parseBOMfdrPage(html, stateCode){
 }
 
 function parseLocalDateTime(s){
-  // Parse "M/D/YYYY H:MM:SS AM/PM" as local AEST — do NOT use Date() which assumes UTC
-  // Returns object {weekday, day, month} for display
+  // Parse "M/D/YYYY H:MM:SS AM/PM" — the CSV Start_Time field is UTC.
+  // Convert to AEST (UTC+10) before formatting for display.
   if(!s) return null;
   var m = s.match(/(\d+)\/(\d+)\/(\d+)\s+(\d+):(\d+):(\d+)\s*(AM|PM)/i);
   if(!m) return null;
-  var month = parseInt(m[1])-1; // 0-based
+  var mo = parseInt(m[1])-1; // 0-based month
   var day = parseInt(m[2]);
   var year = parseInt(m[3]);
+  var hr = parseInt(m[4]);
+  var min = parseInt(m[5]);
+  var ampm = m[7].toUpperCase();
+  if(ampm === 'PM' && hr !== 12) hr += 12;
+  if(ampm === 'AM' && hr === 12) hr = 0;
+  // Build a UTC Date, then shift to AEST (UTC+10)
+  var utc = new Date(Date.UTC(year, mo, day, hr, min, 0));
+  var aest = new Date(utc.getTime() + 10 * 3600 * 1000);
   var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
   var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  // Day of week: Zeller's-lite (JS Date with local noon avoids DST issues at midnight)
-  var d = new Date(year, month, day, 12, 0, 0);
-  return days[d.getDay()]+' '+day+' '+months[month];
+  return days[aest.getUTCDay()] + ' ' + aest.getUTCDate() + ' ' + months[aest.getUTCMonth()];
 }
 
 function loadFDRFromCSV(){
