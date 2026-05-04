@@ -1,17 +1,7 @@
 {
-  "generated_utc": "2026-05-04T15:20:53.893940+00:00",
-  "warning_count": 3,
+  "generated_utc": "2026-05-04T17:11:13.903726+00:00",
+  "warning_count": 2,
   "warnings": [
-    {
-      "pid": "IDV21137",
-      "title": "04/16:24 EST \n                Cancellation of Coastal Hazard Warning\n            \nfor \n                South West Forecast District.",
-      "type": "other",
-      "state": "VIC",
-      "link": "http://www.bom.gov.au/products/IDV21137.shtml",
-      "direct_url": "https://www.bom.gov.au/products/IDV21137.shtml",
-      "desc": "",
-      "issued": "Mon, 04 May 2026 06:24:43 GMT"
-    },
     {
       "pid": "",
       "title": "04/12:26 EST Final Flood Warning for the Diamantina River",
@@ -37,14 +27,31 @@
     "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
   },
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Victoria Tce, Moree",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "4/05/2026 5:07:00 PM",
+        "description": "Victoria Tce, Moree, NSW 2400",
+        "council": "Moree Plains",
+        "lat": -29.469078999999965,
+        "lng": 149.83720400000004,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": []
   },
-  "incident_count": 0,
+  "incident_count": 1,
   "nsw_alert_zones": [],
   "wa_feed_method": "none"
 }
