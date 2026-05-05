@@ -13,7 +13,85 @@ import requests
 import xml.etree.ElementTree as ET
 import json
 import re
+import csv
+import io
 from datetime import datetime, timezone
+
+# ── FDR CSV FEED ─────────────────────────────────────────────────────────────
+# CSV is committed to the repo root with a fixed filename.
+# Repo: https://github.com/JohnWillieGee/weather-mapping-project (public)
+FDR_CSV_URL = "https://raw.githubusercontent.com/JohnWillieGee/weather-mapping-project/main/fdr_ratings.csv"
+
+
+def fetch_fdr_csv():
+    """
+    Fetch the FDR CSV from the GitHub repo and return a dict ready for live_data.json.
+
+    Expected CSV columns (matching the AFAC/BOM export format):
+      AAC, DIST_NAME, State Code, Fire Behaviour Index, Fire Danger,
+      Forecast_Period, Start_Time, End_Time, Start_Time_UTC_str, End_Time_UTC_str
+
+    Returns:
+      dict  { "ratings": { <AAC>: { "1": {...}, "2": {...}, "3": {...}, "4": {...} } },
+              "times":   { "1": <Start_Time of period 1>, ... } }
+      or None on failure.
+    """
+    try:
+        r = requests.get(FDR_CSV_URL, timeout=20, headers={
+            "User-Agent": "Mozilla/5.0 (compatible; WeatherMap/1.0)",
+            "Cache-Control": "no-cache",
+        })
+        r.raise_for_status()
+        print(f"  FDR CSV: fetched {len(r.content)} bytes from GitHub")
+    except requests.RequestException as e:
+        print(f"  FDR CSV: fetch failed — {e}")
+        return None
+
+    try:
+        # Strip UTF-8 BOM if present
+        text = r.content.decode("utf-8-sig")
+        reader = csv.DictReader(io.StringIO(text))
+
+        ratings = {}
+        times = {}
+
+        for row in reader:
+            aac    = row.get("AAC", "").strip()
+            period = row.get("Forecast_Period", "").strip()
+            fd     = row.get("Fire Danger", "").strip()
+            fbi_raw = row.get("Fire Behaviour Index", "0").strip()
+            st     = row.get("Start_Time", "").strip()
+            et     = row.get("End_Time", "").strip()
+
+            if not aac or not period:
+                continue
+
+            try:
+                fbi = int(fbi_raw)
+            except ValueError:
+                fbi = 0
+
+            if aac not in ratings:
+                ratings[aac] = {}
+
+            ratings[aac][period] = {"fd": fd, "fbi": fbi, "st": st, "et": et}
+
+            # Record the first Start_Time seen for each period (used for tab labels)
+            if period not in times:
+                times[period] = st
+
+        if not ratings:
+            print("  FDR CSV: parsed OK but no rows found — check column names")
+            return None
+
+        district_count = len(ratings)
+        period_count   = len(times)
+        print(f"  FDR CSV: {district_count} districts, {period_count} periods parsed OK")
+        return {"ratings": ratings, "times": times}
+
+    except Exception as e:
+        print(f"  FDR CSV: parse error — {e}")
+        return None
 
 # BOM state XML warning summary feeds
 # Each feed lists only currently active warnings for that state
@@ -122,27 +200,6 @@ def parse_bom_xml(xml_text, state):
 
         warn_type = classify_warning(title)
 
-        # Build direct BOM warning page URL from product ID
-        # New URL pattern: bom.gov.au/warning/[type-slug]/[PID]
-        # Falls back to legacy bom.gov.au/products/[PID].shtml if type unknown
-        BOM_WARN_SLUGS = {
-            "severe_weather":    "severe-weather-warning",
-            "thunderstorm":      "severe-thunderstorm-warning",
-            "fire_weather":      "fire-weather-warning",
-            "flood":             "flood-warning",
-            "flood_watch":       "flood-watch",
-            "cyclone":           "tropical-cyclone-warning",
-            "heatwave":          "heatwave-warning",
-            "coastal":           "coastal-hazard-warning",
-            "tsunami":           "tsunami-warning",
-            "wind":              "marine-wind-warning",
-        }
-        slug = BOM_WARN_SLUGS.get(warn_type, "")
-        direct_url = (f"https://www.bom.gov.au/warning/{slug}/{pid}"
-                      if slug and pid
-                      else f"https://www.bom.gov.au/products/{pid}.shtml" if pid
-                      else link or "https://www.bom.gov.au/australia/warnings/")
-
         # Determine actual state from product ID prefix (ACT warnings come via NSW feed)
         actual_state = state
         if pid:
@@ -159,14 +216,13 @@ def parse_bom_xml(xml_text, state):
                 actual_state = "ACT"
 
         warnings.append({
-            "pid":        pid,
-            "title":      title,
-            "type":       warn_type,
-            "state":      actual_state,
-            "link":       link,
-            "direct_url": direct_url,
-            "desc":       desc[:500] if desc else "",
-            "issued":     pub,
+            "pid":     pid,
+            "title":   title,
+            "type":    warn_type,
+            "state":   actual_state,
+            "link":    link,
+            "desc":    desc[:500] if desc else "",
+            "issued":  pub,
         })
 
     return warnings
@@ -1189,6 +1245,15 @@ def main():
     # Merge fetch errors
     errors.update(incident_errors)
 
+    # ── Fetch FDR CSV from GitHub ─────────────────────────────────────────────
+    print("Fetching FDR ratings CSV from GitHub...")
+    fdr_data = fetch_fdr_csv()
+    if fdr_data:
+        print(f"  FDR: {len(fdr_data['ratings'])} districts ready")
+    else:
+        print("  FDR: fetch failed — page will use its embedded fallback data")
+        errors["fdr_csv"] = "fetch failed"
+
     # Build output
     output = {
         "generated_utc":    datetime.now(timezone.utc).isoformat(),
@@ -1199,6 +1264,7 @@ def main():
         "incident_count":   total_incidents,
         "nsw_alert_zones":  nsw_alert_zones,
         "wa_feed_method":   wa_method,   # "json", "rss", or "none" — for UI diagnostics
+        "fdr":              fdr_data,    # None if fetch failed; page falls back to embedded data
     }
 
     with open("live_data.json", "w") as f:
