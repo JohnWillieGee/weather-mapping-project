@@ -1367,7 +1367,13 @@ var BOM_DISTRICTS_BY_STATE = {
     "lower western":[-33.0,143.5],"act":[-35.5,149.0],"canberra":[-35.3,149.1],
     "greater sydney":[-33.9,151.0],"central coast":[-33.4,151.4],
     "south west slopes":[-35.2,148.0],"northern tablelands":[-30.5,151.5],
-    "western":[-32.0,146.0]
+    "western":[-32.0,146.0],
+    "northern rivers":[-28.8,153.3],"far western":[-31.5,141.5],
+    "north western":[-30.0,148.5],"south western":[-34.5,147.0],
+    "eastern":[-33.5,151.5],"southern":[-35.5,149.5],
+    "northern":[-30.0,151.0],"upper hunter":[-32.0,150.5],
+    "lower hunter":[-32.8,151.6],"port stephens":[-32.7,152.1],
+    "mid western":[-32.5,149.0],"murray":[-35.5,144.5]
   },
   ACT: {
     "act":[-35.5,149.0],"canberra":[-35.3,149.1]
@@ -1458,19 +1464,30 @@ var curWarnType = "all";
 var warnFetchTotal = 0;
 var warnFetchDone = 0;
 
+function districtMatch(lower, key) {
+  // Use word-boundary matching for short keys to prevent false substring matches
+  // e.g. "north" must not match inside "northern" or "northwest"
+  if (key.length <= 6) {
+    var re = new RegExp('\\b' + key.replace(/[-]/g, '\\-') + '\\b');
+    return re.test(lower);
+  }
+  return lower.includes(key);
+}
+
 function getDistrictCoords(text, state) {
   var lower = (text||"").toLowerCase();
   var best = null, bestLen = 0;
   // Search state-specific districts first (prevents cross-state name collisions)
   var stateDict = (state && BOM_DISTRICTS_BY_STATE[state]) ? BOM_DISTRICTS_BY_STATE[state] : BOM_DISTRICTS_FLAT;
   Object.keys(stateDict).forEach(function(d) {
-    if (lower.includes(d) && d.length > bestLen) { bestLen = d.length; best = d; }
+    if (districtMatch(lower, d) && d.length > bestLen) { bestLen = d.length; best = d; }
   });
   if (best) return stateDict[best];
   // If state dict had no match, try flat fallback before giving up
+  // Use word-boundary matching here too to avoid short keys falsely matching
   if (state && BOM_DISTRICTS_BY_STATE[state]) {
     Object.keys(BOM_DISTRICTS_FLAT).forEach(function(d) {
-      if (lower.includes(d) && d.length > bestLen) { bestLen = d.length; best = d; }
+      if (districtMatch(lower, d) && d.length > bestLen) { bestLen = d.length; best = d; }
     });
     if (best) return BOM_DISTRICTS_FLAT[best];
   }
