@@ -1373,7 +1373,13 @@ var BOM_DISTRICTS_BY_STATE = {
     "eastern":[-33.5,151.5],"southern":[-35.5,149.5],
     "northern":[-30.0,151.0],"upper hunter":[-32.0,150.5],
     "lower hunter":[-32.8,151.6],"port stephens":[-32.7,152.1],
-    "mid western":[-32.5,149.0],"murray":[-35.5,144.5]
+    "mid western":[-32.5,149.0],"murray":[-35.5,144.5],
+    "north west slopes and plains":[-30.5,149.5],"central west slopes and plains":[-32.5,147.5],
+    "australian capital territory":[-35.5,149.0],
+    "byron coast":[-28.6,153.6],"coffs coast":[-30.3,153.1],
+    "macquarie coast":[-31.5,152.8],"hunter coast":[-32.9,151.8],
+    "sydney coast":[-33.9,151.2],"illawarra coast":[-34.5,150.9],
+    "batemans coast":[-35.7,150.2],"eden coast":[-37.1,149.9]
   },
   ACT: {
     "act":[-35.5,149.0],"canberra":[-35.3,149.1]
@@ -1386,7 +1392,10 @@ var BOM_DISTRICTS_BY_STATE = {
     "south gippsland":[-38.3,146.0],"loddon mallee":[-36.0,143.5],
     "central gippsland":[-37.8,146.5],"ovens and murray":[-36.2,146.5],
     "northeast":[-36.5,147.0],"northwest":[-36.0,142.0],
-    "west and south gippsland":[-38.2,146.5],"southern ranges":[-37.2,146.0]
+    "west and south gippsland":[-38.2,146.5],"southern ranges":[-37.2,146.0],
+    "corangamite":[-38.1,143.5],"glenelg-hopkins":[-37.5,142.0],
+    "goulburn-broken":[-36.5,145.5],"port phillip and westernport":[-38.1,145.2],
+    "west gippsland":[-38.0,146.0]
   },
   QLD: {
     "southeast coast":[-27.5,153.0],"darling downs":[-27.5,151.5],
@@ -1400,7 +1409,13 @@ var BOM_DISTRICTS_BY_STATE = {
     "maranoa and warrego":[-28.0,147.0],"south west":[-27.0,145.0],
     "northwest":[-20.0,142.0],"north west":[-20.0,142.0],
     "central west":[-23.0,145.0],"herbert":[-18.5,146.2],
-    "whitsundays":[-20.5,148.5],"southeast":[-27.5,153.0]
+    "whitsundays":[-20.5,148.5],"southeast":[-27.5,153.0],
+    "burnett mary":[-25.0,152.0],"cape york":[-13.5,144.0],
+    "condamine":[-27.5,150.5],"desert channels":[-26.0,143.5],
+    "fitzroy basin":[-23.5,150.0],"northern gulf":[-17.5,139.0],
+    "burdekin":[-20.0,147.0],"reef catchments":[-21.0,148.5],
+    "south east queensland":[-27.5,153.0],"southern gulf":[-19.5,139.5],
+    "wet tropics":[-17.0,145.5],"border rivers":[-29.0,151.5]
   },
   SA: {
     "adelaide":[-34.9,138.6],"yorke peninsula":[-34.5,137.5],
@@ -1410,7 +1425,12 @@ var BOM_DISTRICTS_BY_STATE = {
     "mount lofty ranges":[-35.0,138.8],"kangaroo island":[-35.8,137.2],
     "south east":[-36.5,140.5],"mid north":[-33.5,138.7],
     "pastoral":[-29.0,135.0],"northwest":[-30.0,133.0],
-    "northeast":[-29.0,140.0],"west coast":[-33.0,134.5]
+    "northeast":[-29.0,140.0],"west coast":[-33.0,134.5],
+    "adelaide and mount lofty ranges":[-34.9,138.7],
+    "alinytjara wilurara":[-27.5,132.0],
+    "south australian arid lands":[-29.0,135.0],
+    "south australian murray-darling basin":[-34.0,140.5],
+    "northern and yorke":[-33.5,138.0]
   },
   WA: {
     "perth":[-32.0,116.0],"south west":[-34.0,115.5],
@@ -1420,7 +1440,9 @@ var BOM_DISTRICTS_BY_STATE = {
     "goldfields":[-30.0,121.0],"interior":[-26.0,122.0],
     "eucla":[-32.0,126.0],"northwest":[-22.0,114.5],
     "northeast":[-21.0,121.0],"central":[-26.0,119.0],
-    "south coast":[-34.0,120.0],"northwest coastal":[-22.0,114.5]
+    "south coast":[-34.0,120.0],"northwest coastal":[-22.0,114.5],
+    "northern agricultural":[-29.5,116.5],"peel-harvey":[-32.7,115.8],
+    "rangelands north":[-22.0,122.0],"rangelands south":[-28.0,120.0]
   },
   TAS: {
     "hobart":[-42.9,147.3],"launceston":[-41.4,147.1],
@@ -1432,7 +1454,9 @@ var BOM_DISTRICTS_BY_STATE = {
     "north west":[-41.0,145.5],"north west coast":[-41.0,145.5],
     "king island":[-39.9,143.9],"furneaux":[-40.2,148.0],
     "midlands":[-42.0,147.0],"south east":[-43.0,147.5],
-    "upper derwent":[-42.5,146.7]
+    "upper derwent":[-42.5,146.7],
+    // BOM official districts
+    "cradle coast":[-41.2,145.5]
   },
   NT: {
     "darwin":[-12.5,130.8],"top end":[-13.5,132.0],
@@ -1440,7 +1464,9 @@ var BOM_DISTRICTS_BY_STATE = {
     "victoria river":[-16.0,131.0],"katherine":[-14.5,132.3],
     "arnhem":[-13.0,135.0],"alice springs":[-23.7,133.9],
     "northwest":[-14.0,130.5],"northeast":[-13.0,136.0],
-    "north":[-13.0,132.0]
+    "north":[-13.0,132.0],
+    // BOM official - "alice" as short alias for alice springs
+    "alice":[-23.7,133.9]
   }
 };
 
