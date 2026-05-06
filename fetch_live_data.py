@@ -17,81 +17,145 @@ import csv
 import io
 from datetime import datetime, timezone
 
-# ── FDR CSV FEED ─────────────────────────────────────────────────────────────
-# CSV is committed to the repo root with a fixed filename.
-# Repo: https://github.com/JohnWillieGee/weather-mapping-project (public)
-FDR_CSV_URL = "https://raw.githubusercontent.com/JohnWillieGee/weather-mapping-project/main/fdr_ratings.csv"
+# ── FDR XML FEEDS (BOM anonymous FTP) ────────────────────────────────────────
+# Free access via BOM anonymous FTP — no credentials required.
+# Files overwritten each issue: twice daily during fire season.
+# Product IDs confirmed May 2026.
+# FTP: ftp://ftp.bom.gov.au/anon/gen/fwo/<product_id>.xml
+FDR_XML_FEEDS = {
+    "NSW": "IDN10016",
+    "VIC": "IDV18555",
+    "QLD": "IDQ13016",
+    "SA":  "IDS10070",
+    "WA":  "IDW15100",
+    "TAS": "IDT13151",
+    "NT":  "IDD10731",
+}
 
 
-def fetch_fdr_csv():
+def fetch_fdr_xml():
     """
-    Fetch the FDR CSV from the GitHub repo and return a dict ready for live_data.json.
-
-    Expected CSV columns (matching the AFAC/BOM export format):
-      AAC, DIST_NAME, State Code, Fire Behaviour Index, Fire Danger,
-      Forecast_Period, Start_Time, End_Time, Start_Time_UTC_str, End_Time_UTC_str
-
-    Returns:
-      dict  { "ratings": { <AAC>: { "1": {...}, "2": {...}, "3": {...}, "4": {...} } },
-              "times":   { "1": <Start_Time of period 1>, ... } }
-      or None on failure.
+    Fetch FDR XML from BOM anonymous FTP for all states.
+    Uses ftplib (Python stdlib) — no extra dependencies needed.
+    FTP server: ftp.bom.gov.au  path: /anon/gen/fwo/<product_id>.xml
+    Returns dict matching the live_data.json fdr structure:
+      { "ratings": { <AAC>: { "1": {fd, fbi, st, et}, ... } },
+        "times":   { "1": <start_time_local_str>, ... } }
+    or None on complete failure.
     """
+    import xml.etree.ElementTree as ET
+    from ftplib import FTP, error_perm
+    import io
+
+    FTP_HOST = "ftp.bom.gov.au"
+    FTP_DIR  = "/anon/gen/fwo"
+
+    ratings = {}
+    times   = {}
+    errors  = []
+    total   = 0
+
+    # Open a single FTP connection and reuse it for all 7 state files
     try:
-        r = requests.get(FDR_CSV_URL, timeout=20, headers={
-            "User-Agent": "Mozilla/5.0 (compatible; WeatherMap/1.0)",
-            "Cache-Control": "no-cache",
-        })
-        r.raise_for_status()
-        print(f"  FDR CSV: fetched {len(r.content)} bytes from GitHub")
-    except requests.RequestException as e:
-        print(f"  FDR CSV: fetch failed — {e}")
+        ftp = FTP(FTP_HOST, timeout=30)
+        ftp.login()           # anonymous login (user="anonymous", passwd="")
+        ftp.cwd(FTP_DIR)
+        print(f"  FDR FTP: connected to {FTP_HOST}{FTP_DIR}")
+    except Exception as e:
+        print(f"  FDR FTP: connection failed — {e}")
         return None
 
-    try:
-        # Strip UTF-8 BOM if present
-        text = r.content.decode("utf-8-sig")
-        reader = csv.DictReader(io.StringIO(text))
+    for state, product_id in FDR_XML_FEEDS.items():
+        filename = product_id + ".xml"
+        buf = io.BytesIO()
+        try:
+            ftp.retrbinary(f"RETR {filename}", buf.write)
+            buf.seek(0)
+            content = buf.read()
+            print(f"  FDR FTP [{state}]: retrieved {filename} ({len(content)} bytes)")
+        except error_perm as e:
+            print(f"  FDR FTP [{state}]: file not found — {filename} ({e})")
+            errors.append(state)
+            continue
+        except Exception as e:
+            print(f"  FDR FTP [{state}]: retrieve failed — {e}")
+            errors.append(state)
+            continue
 
-        ratings = {}
-        times = {}
-
-        for row in reader:
-            aac    = row.get("AAC", "").strip()
-            period = row.get("Forecast_Period", "").strip()
-            fd     = row.get("Fire Danger", "").strip()
-            fbi_raw = row.get("Fire Behaviour Index", "0").strip()
-            st     = row.get("Start_Time", "").strip()
-            et     = row.get("End_Time", "").strip()
-
-            if not aac or not period:
+        try:
+            root = ET.fromstring(content)
+            forecast = root.find("forecast")
+            if forecast is None:
+                print(f"  FDR XML [{state}]: no <forecast> element found")
+                errors.append(state)
                 continue
 
-            try:
-                fbi = int(fbi_raw)
-            except ValueError:
-                fbi = 0
+            state_count = 0
+            for area in forecast.findall("area"):
+                aac   = area.get("aac", "")
+                atype = area.get("type", "")
+                if atype != "fire-district" or not aac:
+                    continue
 
-            if aac not in ratings:
-                ratings[aac] = {}
+                if aac not in ratings:
+                    ratings[aac] = {}
 
-            ratings[aac][period] = {"fd": fd, "fbi": fbi, "st": st, "et": et}
+                for fp in area.findall("forecast-period"):
+                    idx = fp.get("index", "")
+                    if not idx:
+                        continue
 
-            # Record the first Start_Time seen for each period (used for tab labels)
-            if period not in times:
-                times[period] = st
+                    st_local = fp.get("start-time-local", "")
+                    et_local = fp.get("end-time-local", "")
 
-        if not ratings:
-            print("  FDR CSV: parsed OK but no rows found — check column names")
-            return None
+                    fbi_el = fp.find("element[@type='fire_behaviour_index']")
+                    fd_el  = fp.find("text[@type='fire_danger']")
 
-        district_count = len(ratings)
-        period_count   = len(times)
-        print(f"  FDR CSV: {district_count} districts, {period_count} periods parsed OK")
-        return {"ratings": ratings, "times": times}
+                    fbi = 0
+                    fd  = "No Rating"
+                    if fbi_el is not None and fbi_el.text:
+                        try:
+                            fbi = int(fbi_el.text.strip())
+                        except ValueError:
+                            pass
+                    if fd_el is not None and fd_el.text:
+                        fd = fd_el.text.strip()
 
-    except Exception as e:
-        print(f"  FDR CSV: parse error — {e}")
+                    ratings[aac][idx] = {
+                        "fd":  fd,
+                        "fbi": fbi,
+                        "st":  st_local,
+                        "et":  et_local,
+                    }
+
+                    if idx not in times and st_local:
+                        times[idx] = st_local
+
+                    state_count += 1
+
+            total += state_count
+            print(f"  FDR XML [{state}]: {state_count} district-period entries")
+
+        except ET.ParseError as e:
+            print(f"  FDR XML [{state}]: XML parse error — {e}")
+            errors.append(state)
+        except Exception as e:
+            print(f"  FDR XML [{state}]: error — {e}")
+            errors.append(state)
+
+    if not ratings:
+        print("  FDR XML: all state fetches failed")
         return None
+
+    try:
+        ftp.quit()
+    except Exception:
+        pass
+
+    print(f"  FDR FTP: {len(ratings)} districts, {len(times)} periods "
+          f"({total} entries) — failed: {errors or 'none'}")
+    return {"ratings": ratings, "times": times}
+
 
 # BOM state XML warning summary feeds
 # Each feed lists only currently active warnings for that state
@@ -1245,14 +1309,14 @@ def main():
     # Merge fetch errors
     errors.update(incident_errors)
 
-    # ── Fetch FDR CSV from GitHub ─────────────────────────────────────────────
-    print("Fetching FDR ratings CSV from GitHub...")
-    fdr_data = fetch_fdr_csv()
+    # ── Fetch FDR XML from BOM anonymous FTP ─────────────────────────────────
+    print("Fetching FDR ratings from BOM FTP XML...")
+    fdr_data = fetch_fdr_xml()
     if fdr_data:
         print(f"  FDR: {len(fdr_data['ratings'])} districts ready")
     else:
         print("  FDR: fetch failed")
-        errors["fdr_csv"] = "fetch failed"
+        errors["fdr_xml"] = "fetch failed"
 
     # Build output
     output = {
