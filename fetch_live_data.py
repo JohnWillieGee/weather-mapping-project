@@ -666,7 +666,10 @@ def fetch_nsw_alert_zones():
     """Fetch and parse NSW RFS IncidentAlerts.xml. Returns (list, error_or_None)."""
     try:
         r = requests.get(NSW_ALERT_ZONES_URL, timeout=20, headers={
-            "User-Agent": "Mozilla/5.0 (compatible; WeatherMap/1.0)",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "Accept": "application/xml, text/xml, */*",
+            "Referer": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+            "Accept-Language": "en-AU,en;q=0.9",
         })
         r.raise_for_status()
         zones = parse_nsw_alert_zones(r.text)
@@ -1211,8 +1214,10 @@ def fetch_incidents(key, feed_cfg):
     url = feed_cfg["url"]
     try:
         r = requests.get(url, timeout=20, headers={
-            "User-Agent": "Mozilla/5.0 (compatible; WeatherMap/1.0)",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
             "Accept": "application/json, application/xml, text/xml, */*",
+            "Referer": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+            "Accept-Language": "en-AU,en;q=0.9",
         })
         r.raise_for_status()
 
