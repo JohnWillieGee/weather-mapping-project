@@ -662,14 +662,32 @@ def parse_nsw_alert_zones(xml_text):
     return zones
 
 
-def fetch_nsw_alert_zones():
+NSW_BROWSER_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept-Language": "en-AU,en;q=0.9",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+}
+
+def make_rfs_session():
+    """Create a requests Session pre-loaded with RFS cookies by visiting the page first."""
+    s = requests.Session()
+    s.headers.update(NSW_BROWSER_HEADERS)
+    try:
+        s.get("https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+              timeout=15, allow_redirects=True)
+    except Exception:
+        pass  # If pre-fetch fails, still try with just headers
+    return s
+
+
+def fetch_nsw_alert_zones(session=None):
     """Fetch and parse NSW RFS IncidentAlerts.xml. Returns (list, error_or_None)."""
     try:
-        r = requests.get(NSW_ALERT_ZONES_URL, timeout=20, headers={
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+        s = session or make_rfs_session()
+        r = s.get(NSW_ALERT_ZONES_URL, timeout=20, headers={
             "Accept": "application/xml, text/xml, */*",
             "Referer": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
-            "Accept-Language": "en-AU,en;q=0.9",
         })
         r.raise_for_status()
         zones = parse_nsw_alert_zones(r.text)
@@ -1205,7 +1223,7 @@ def parse_tas_incidents(data):
     return incidents
 
 
-def fetch_incidents(key, feed_cfg):
+def fetch_incidents(key, feed_cfg, rfs_session=None):
     """Fetch and parse one state's incident feed. Returns (list, error_or_None)."""
     # WA has its own dedicated fetch function with JSON->RSS->fallback logic
     if key == "wa":
@@ -1213,12 +1231,19 @@ def fetch_incidents(key, feed_cfg):
 
     url = feed_cfg["url"]
     try:
-        r = requests.get(url, timeout=20, headers={
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-            "Accept": "application/json, application/xml, text/xml, */*",
-            "Referer": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
-            "Accept-Language": "en-AU,en;q=0.9",
-        })
+        # NSW RFS feeds require browser-like session (WAF blocks bots)
+        if key == "nsw":
+            s = rfs_session or make_rfs_session()
+            r = s.get(url, timeout=20, headers={
+                "Accept": "application/json, */*",
+                "Referer": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+            })
+        else:
+            r = requests.get(url, timeout=20, headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                "Accept": "application/json, application/xml, text/xml, */*",
+                "Accept-Language": "en-AU,en;q=0.9",
+            })
         r.raise_for_status()
 
         text = r.text.strip().lstrip('\ufeff')  # Strip BOM if present
@@ -1297,10 +1322,15 @@ def main():
     incident_errors = {}
     total_incidents = 0
 
+    # Create one shared RFS session (visits RFS page once to get cookies,
+    # reused for both majorIncidents.json and IncidentAlerts.xml)
+    print("  Establishing RFS session...")
+    rfs_session = make_rfs_session()
+
     for key, feed_cfg in INCIDENT_FEEDS.items():
         if key == "wa":
             continue  # WA handled separately below
-        inc_list, inc_err = fetch_incidents(key, feed_cfg)
+        inc_list, inc_err = fetch_incidents(key, feed_cfg, rfs_session=rfs_session if key == "nsw" else None)
         incidents[key] = inc_list
         total_incidents += len(inc_list)
         if inc_err:
@@ -1318,7 +1348,7 @@ def main():
 
     # ── Fetch NSW RFS alert zones (CAP-AU polygons) ───────────────────────────
     print("Fetching NSW alert zones...")
-    nsw_alert_zones, zones_err = fetch_nsw_alert_zones()
+    nsw_alert_zones, zones_err = fetch_nsw_alert_zones(session=rfs_session)
     if zones_err:
         incident_errors["nsw_zones"] = zones_err
 
