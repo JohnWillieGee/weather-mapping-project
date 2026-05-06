@@ -23,6 +23,15 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
+      - name: Test BOM FTP access
+        run: |
+          curl -s --ftp-pasv ftp://ftp.bom.gov.au/anon/gen/fwo/IDD10731.xml -o /tmp/ftp_test.xml
+          if [ -s /tmp/ftp_test.xml ]; then
+            echo "BOM FTP OK — $(wc -c < /tmp/ftp_test.xml) bytes retrieved"
+          else
+            echo "WARNING: BOM FTP returned empty file or failed"
+          fi
+
       - name: Fetch live data
         run: python fetch_live_data.py
 
