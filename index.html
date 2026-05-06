@@ -159,7 +159,6 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
   <div class="header-right">
     <div class="hstat"><div class="val" id="h-warnings">-</div><div class="lbl">Warnings</div></div>
     <div class="hstat red"><div class="val" id="h-incidents">-</div><div class="lbl">Incidents</div></div>
-        <div class="hstat" style="color:#f59e0b"><div class="val" id="h-outages">-</div><div class="lbl">Outages</div></div>
     <button id="refresh-btn" onclick="refreshAll()">&#8635; Refresh</button>
     <button id="theme-toggle" onclick="toggleTheme()">&#9728;</button>
   </div>
@@ -353,51 +352,6 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
       </div>
 
       <hr style="border-color:var(--border);margin:8px 0 14px">
-
-      <!-- POWER OUTAGES -->
-      <div class="wp-section" id="sec-outages">
-        <div class="wp-section-title" onclick="toggleSection('outages')">
-          <span>&#9889; Power Outages — NSW / QLD</span>
-          <div style="display:flex;align-items:center;gap:6px">
-            <button class="wp-toggle" id="out-map-toggle" onclick="event.stopPropagation();toggleOutagesLayer()">Map</button>
-            <span class="sec-chevron">&#9660;</span>
-          </div>
-        </div>
-        <div class="wp-section-body">
-          <div class="feed-status-list">
-            <div class="feed-status-row" id="fsr-ausgrid">
-              <div class="feed-dot loading" id="fdot-ausgrid"></div>
-              <span class="feed-name">NSW</span>
-              <span class="feed-msg" id="fmsg-ausgrid">Ausgrid — via Action...</span>
-              <span class="feed-count" id="fcnt-ausgrid"></span>
-            </div>
-            <div class="feed-status-row" id="fsr-endeavour">
-              <div class="feed-dot loading" id="fdot-endeavour"></div>
-              <span class="feed-name">NSW</span>
-              <span class="feed-msg" id="fmsg-endeavour">Endeavour Energy — via Action...</span>
-              <span class="feed-count" id="fcnt-endeavour"></span>
-            </div>
-            <div class="feed-status-row" id="fsr-energex">
-              <div class="feed-dot loading" id="fdot-energex"></div>
-              <span class="feed-name">QLD</span>
-              <span class="feed-msg" id="fmsg-energex">Energex — via Action...</span>
-              <span class="feed-count" id="fcnt-energex"></span>
-            </div>
-            <div class="feed-status-row" id="fsr-ergon">
-              <div class="feed-dot loading" id="fdot-ergon"></div>
-              <span class="feed-name">QLD</span>
-              <span class="feed-msg" id="fmsg-ergon">Ergon Energy — via Action...</span>
-              <span class="feed-count" id="fcnt-ergon"></span>
-            </div>
-          </div>
-          <div class="wp-state-tabs">
-            <button class="wp-tab on" onclick="showOutageState('all')" id="out-tab-all">All</button>
-            <button class="wp-tab" onclick="showOutageState('nsw')" id="out-tab-nsw">NSW</button>
-            <button class="wp-tab" onclick="showOutageState('qld')" id="out-tab-qld">QLD</button>
-          </div>
-          <div id="outages-content"><div class="wp-none">Loading outage data...</div></div>
-        </div>
-      </div>
 
       <!-- SOURCES -->
       <div class="wp-section" id="sec-sources">
@@ -1781,19 +1735,6 @@ function fetchBOMWarnings() {
       renderIncidentsPanel();
       if(incidentsVisible) renderIncidentsMap();
 
-      // ── Load power outages from live_data.json ───────────────────────────
-      if (data.outages) {
-        loadOutages(data.outages);
-      } else {
-        // Outage data not yet in live_data.json (older Action run)
-        ['ausgrid','endeavour','energex','ergon'].forEach(function(d) {
-          var dot = document.getElementById('fdot-' + d);
-          var msg = document.getElementById('fmsg-' + d);
-          if (dot) dot.className = 'feed-dot';
-          if (msg) msg.textContent = 'Not available — update fetch script';
-        });
-      }
-
       // ── Load NSW alert zones (CAP-AU polygons) from live_data.json ────────
       alertsData = data.nsw_alert_zones || [];
       renderAlertsPanel();
@@ -1820,12 +1761,6 @@ function fetchBOMWarnings() {
         setFeedStatus(k, "err", "live_data.json unavailable");
       });
       statusEl("alerts-fetch-status","fetch-err","&#9888; live_data.json unavailable");
-      ['ausgrid','endeavour','energex','ergon'].forEach(function(d) {
-        var dot = document.getElementById('fdot-' + d);
-        if (dot) dot.className = 'feed-dot error';
-        var msg = document.getElementById('fmsg-' + d);
-        if (msg) msg.textContent = 'live_data.json unavailable';
-      });
     });
 }
 
@@ -2504,185 +2439,6 @@ function toggleIncidentsLayer(){
   else{map.removeLayer(incidentsLayer);btn.classList.remove("fire-on");if(tog)tog.classList.remove("on");}
 }
 
-
-// ══════════════════════════════════════════════════════════════════════════════
-// POWER OUTAGES
-// ══════════════════════════════════════════════════════════════════════════════
-var outagesData    = { nsw: [], qld: [] };
-var outagesVisible = false;
-var outagesLayer   = L.layerGroup();
-var curOutageState = 'all';
-
-var OUTAGE_COLORS = {
-  ausgrid:   '#f59e0b',  // amber
-  endeavour: '#fb923c',  // orange
-  energex:   '#34d399',  // teal
-  ergon:     '#60a5fa',  // blue
-};
-
-function loadOutages(data) {
-  outagesData = data || { nsw: [], qld: [] };
-
-  // Update feed status rows
-  var counts = { ausgrid: 0, endeavour: 0, energex: 0, ergon: 0 };
-  ['nsw','qld'].forEach(function(st) {
-    (outagesData[st] || []).forEach(function(o) {
-      if (counts[o.distributor] !== undefined) counts[o.distributor]++;
-    });
-  });
-
-  var distributors = {
-    ausgrid:   { name: 'Ausgrid', state: 'NSW' },
-    endeavour: { name: 'Endeavour Energy', state: 'NSW' },
-    energex:   { name: 'Energex', state: 'QLD' },
-    ergon:     { name: 'Ergon Energy', state: 'QLD' },
-  };
-  Object.keys(distributors).forEach(function(d) {
-    var dot = document.getElementById('fdot-' + d);
-    var msg = document.getElementById('fmsg-' + d);
-    var cnt = document.getElementById('fcnt-' + d);
-    var n   = counts[d];
-    if (dot) dot.className = 'feed-dot ' + (n > 0 ? 'active' : 'ok');
-    if (msg) msg.textContent = distributors[d].name + ' — live';
-    if (cnt) { cnt.textContent = n + ' out'; cnt.style.color = n > 0 ? OUTAGE_COLORS[d] : 'var(--text3)'; }
-  });
-
-  var total = Object.values(counts).reduce(function(a,b){return a+b;}, 0);
-  document.getElementById('h-outages').textContent = total > 0 ? total : '-';
-
-  renderOutagesPanel();
-  if (outagesVisible) renderOutagesMap();
-}
-
-function showOutageState(st) {
-  curOutageState = st;
-  ['all','nsw','qld'].forEach(function(s) {
-    var t = document.getElementById('out-tab-' + s);
-    if (t) t.className = 'wp-tab' + (s === st ? ' on' : '');
-  });
-  renderOutagesPanel();
-}
-
-function renderOutagesPanel() {
-  var el = document.getElementById('outages-content');
-  if (!el) return;
-
-  var all = (outagesData.nsw || []).concat(outagesData.qld || []);
-  var filtered = curOutageState === 'all' ? all :
-                 (outagesData[curOutageState] || []);
-
-  if (!filtered.length) {
-    el.innerHTML = "<div class='wp-none'>&#10003; No active outages</div>";
-    return;
-  }
-
-  // Sort: unplanned first, then by customers desc
-  filtered = filtered.slice().sort(function(a, b) {
-    if (a.type !== b.type) return a.type === 'unplanned' ? -1 : 1;
-    return (b.customers || 0) - (a.customers || 0);
-  });
-
-  // Group by distributor
-  var byDist = {};
-  filtered.forEach(function(o) {
-    if (!byDist[o.distributor]) byDist[o.distributor] = [];
-    byDist[o.distributor].push(o);
-  });
-
-  var distOrder = ['ausgrid','endeavour','energex','ergon'];
-  var distLabels = { ausgrid:'Ausgrid', endeavour:'Endeavour Energy', energex:'Energex', ergon:'Ergon Energy' };
-  var html = '';
-
-  distOrder.forEach(function(d) {
-    var list = byDist[d];
-    if (!list || !list.length) return;
-    var col  = OUTAGE_COLORS[d];
-    var unp  = list.filter(function(o){return o.type==='unplanned';});
-    var pln  = list.filter(function(o){return o.type==='planned';});
-
-    html += '<div style="font-size:9px;font-weight:700;color:' + col + ';text-transform:uppercase;letter-spacing:.8px;margin:8px 0 4px">&#9889; ' +
-            distLabels[d] + ' (' + list.length + ')</div>';
-
-    function renderGroup(items, label) {
-      if (!items.length) return;
-      html += '<div style="font-size:9px;color:var(--text3);font-weight:600;letter-spacing:.5px;margin:4px 0 2px;text-transform:uppercase">' + label + ' (' + items.length + ')</div>';
-      items.forEach(function(o) {
-        var canFly = o.lat && o.lng;
-        html += '<div class="warn-row"' + (canFly ? ' style="cursor:pointer" onclick="flyToOutage(' + o.lat + ',' + o.lng + ')"' : '') + '>' +
-          '<div class="warn-title" style="color:' + col + '">' + (o.suburb || 'Unknown location') + '</div>' +
-          (o.cause ? '<div style="font-size:9px;color:var(--text2);margin-top:2px">' + o.cause + '</div>' : '') +
-          (o.customers ? '<div style="font-size:9px;color:var(--text3);margin-top:1px">' + o.customers + ' customers affected</div>' : '') +
-          (o.est_restore ? '<div style="font-size:9px;color:var(--text3)">ERT: ' + o.est_restore + '</div>' : '') +
-          '</div>';
-      });
-    }
-
-    renderGroup(unp, 'Unplanned');
-    renderGroup(pln, 'Planned');
-  });
-
-  el.innerHTML = html;
-}
-
-function flyToOutage(lat, lng) {
-  if (!map) return;
-  map.flyTo([lat, lng], 12, { duration: 1.2 });
-}
-
-function renderOutagesMap() {
-  outagesLayer.clearLayers();
-  var all = (outagesData.nsw || []).concat(outagesData.qld || []);
-  all.forEach(function(o) {
-    if (!o.lat && !o.lng && !o.polygon) return;
-    var col = OUTAGE_COLORS[o.distributor] || '#f59e0b';
-    var lat = o.lat || 0, lng = o.lng || 0;
-
-    var popHtml = '<div>' +
-      '<div class="pu-title" style="color:' + col + '">&#9889; ' + (o.suburb || 'Power Outage') + '</div>' +
-      '<span class="pu-badge" style="background:' + col + ';color:#000">' + (o.type === 'unplanned' ? 'UNPLANNED' : 'PLANNED') + '</span>' +
-      '<span class="pu-badge" style="background:#333;color:#ccc">' + o.state + ' — ' + o.distributor + '</span>' +
-      '<div style="border-top:1px solid var(--border);margin:8px 0"></div>' +
-      (o.customers ? '<div class="pu-row"><span class="pu-key">Affected</span><span class="pu-val">' + o.customers + ' customers</span></div>' : '') +
-      (o.cause ? '<div class="pu-row"><span class="pu-key">Cause</span><span class="pu-val">' + o.cause + '</span></div>' : '') +
-      (o.est_restore ? '<div class="pu-row"><span class="pu-key">ERT</span><span class="pu-val">' + o.est_restore + '</span></div>' : '') +
-      '</div>';
-
-    // Draw polygon if available
-    if (o.polygon && o.polygon.length) {
-      // polygon coords are [lng,lat] — convert to Leaflet [lat,lng]
-      var latlngs = o.polygon.map(function(c){return [c[1],c[0]];});
-      L.polygon(latlngs, {
-        color: col, weight: 1.5, opacity: 0.7,
-        fillColor: col, fillOpacity: o.type === 'unplanned' ? 0.25 : 0.12,
-        dashArray: o.type === 'planned' ? '6 4' : null
-      }).bindPopup(popHtml, { className: 'ba-popup', maxWidth: 320 })
-        .addTo(outagesLayer);
-    }
-
-    // Always draw a marker
-    if (lat && lng) {
-      L.circleMarker([lat, lng], {
-        radius: o.type === 'unplanned' ? 7 : 5,
-        color: col, weight: 2, opacity: 1,
-        fillColor: col, fillOpacity: 0.85
-      }).bindPopup(popHtml, { className: 'ba-popup', maxWidth: 320 })
-        .addTo(outagesLayer);
-    }
-  });
-}
-
-function toggleOutagesLayer() {
-  outagesVisible = !outagesVisible;
-  var tog = document.getElementById('out-map-toggle');
-  if (outagesVisible) {
-    renderOutagesMap();
-    outagesLayer.addTo(map);
-    if (tog) tog.classList.add('on');
-  } else {
-    map.removeLayer(outagesLayer);
-    if (tog) tog.classList.remove('on');
-  }
-}
 
 // ── LAYER TOGGLES ──
 function toggleLayer(name){var lyr=name==="states"?stateLayer:labelGroup,btn=document.getElementById("btn-"+name);if(!map||!lyr)return;if(map.hasLayer(lyr)){map.removeLayer(lyr);btn.classList.remove("on");}else{map.addLayer(lyr);btn.classList.add("on");}}
