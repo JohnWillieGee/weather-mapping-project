@@ -31,6 +31,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add live_data.json
-          # Only commit if the file actually changed
-          git diff --staged --quiet || git commit -m "chore: update live_data.json [skip ci]"
-          git push
+          git diff --staged --quiet && echo "No changes to commit" || git commit -m "chore: update live_data.json [skip ci]"
+          git push --set-upstream origin main || true
