@@ -320,7 +320,14 @@ def fetch_state(state, url):
 
 INCIDENT_FEEDS = {
     "nsw": {
-        "url": "https://www.rfs.nsw.gov.au/feeds/majorIncidents.json",
+        "url":      "https://www.rfs.nsw.gov.au/feeds/majorIncidents.json",
+        "url_xml":  "http://www.rfs.nsw.gov.au/feeds/majorIncidents.xml",
+        "url_rss":  "https://www.rfs.nsw.gov.au/feeds/majorIncidents.georss",
+        "url_arcgis": (
+            "https://services.arcgis.com/cEku21QqeYtjx5kU/arcgis/rest/services/"
+            "Current_Incidents/FeatureServer/0/query"
+            "?where=1%3D1&outFields=*&f=geojson"
+        ),
         "label": "NSW RFS",
         "source_url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
         "agency": "RFS",
@@ -1223,27 +1230,219 @@ def parse_tas_incidents(data):
     return incidents
 
 
+def fetch_nsw_incidents_with_fallback(feed_cfg, rfs_session=None):
+    """
+    Fetch NSW RFS incidents with a 4-tier fallback chain:
+      1. XML feed     — http://www.rfs.nsw.gov.au/feeds/majorIncidents.xml (plain HTTP, no WAF)
+      2. GeoRSS feed  — separate endpoint, often not WAF-protected
+      3. JSON feed    — full GeoJSON with polygons, may be Cloudflare-blocked
+      4. ArcGIS REST  — public ESRI endpoint, no WAF
+    Returns (incidents_list, method_used, error_or_None)
+    """
+    browser_headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+        "Accept-Language": "en-AU,en;q=0.9",
+    }
+
+    # ── Tier 1: XML (plain HTTP — no Cloudflare) ────────────────────────────
+    xml_url = feed_cfg.get("url_xml")
+    if xml_url:
+        try:
+            r = requests.get(xml_url, timeout=20, headers={
+                **browser_headers,
+                "Accept": "application/xml, text/xml, */*",
+            })
+            r.raise_for_status()
+            ct = r.headers.get("Content-Type", "")
+            if "html" in ct:
+                raise ValueError(f"XML feed returned HTML (WAF block) — Content-Type: {ct}")
+            # XML feed has same GeoRSS structure as .georss endpoint
+            incidents = parse_nsw_georss(r.text)
+            print(f"  NSW incidents: {len(incidents)} active (method: xml)")
+            return incidents, "xml", None
+        except Exception as e:
+            print(f"  NSW XML: failed — {e}")
+
+    # ── Tier 2: GeoRSS ──────────────────────────────────────────────────────
+    rss_url = feed_cfg.get("url_rss")
+    if rss_url:
+        try:
+            r = requests.get(rss_url, timeout=20, headers={
+                **browser_headers,
+                "Accept": "application/rss+xml, application/xml, text/xml, */*",
+                "Referer": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+            })
+            r.raise_for_status()
+            ct = r.headers.get("Content-Type", "")
+            if "html" in ct:
+                raise ValueError(f"GeoRSS returned HTML (WAF block) — Content-Type: {ct}")
+            incidents = parse_nsw_georss(r.text)
+            print(f"  NSW incidents: {len(incidents)} active (method: georss)")
+            return incidents, "georss", None
+        except Exception as e:
+            print(f"  NSW GeoRSS: failed — {e}")
+
+    # ── Tier 3: JSON with session ────────────────────────────────────────────
+    json_url = feed_cfg.get("url")
+    if json_url:
+        try:
+            s = rfs_session or make_rfs_session()
+            r = s.get(json_url, timeout=20, headers={
+                "Accept": "application/json, */*",
+                "Referer": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+            })
+            r.raise_for_status()
+            ct = r.headers.get("Content-Type", "")
+            if "html" in ct:
+                raise ValueError(f"JSON feed returned HTML (WAF block) — Content-Type: {ct}")
+            obj = json.loads(r.text.strip().lstrip("\ufeff"))
+            incidents = parse_nsw_incidents(obj)
+            print(f"  NSW incidents: {len(incidents)} active (method: json)")
+            return incidents, "json", None
+        except Exception as e:
+            print(f"  NSW JSON: failed — {e}")
+
+    # ── Tier 4: ArcGIS public REST ───────────────────────────────────────────
+    arcgis_url = feed_cfg.get("url_arcgis")
+    if arcgis_url:
+        try:
+            r = requests.get(arcgis_url, timeout=20, headers={
+                **browser_headers,
+                "Accept": "application/json, */*",
+            })
+            r.raise_for_status()
+            obj = json.loads(r.text.strip())
+            incidents = parse_nsw_incidents(obj)
+            print(f"  NSW incidents: {len(incidents)} active (method: arcgis)")
+            return incidents, "arcgis", None
+        except Exception as e:
+            print(f"  NSW ArcGIS: failed — {e}")
+            return [], "none", str(e)
+
+    return [], "none", "No NSW feed URLs configured"
+
+
+def parse_nsw_georss(xml_text):
+    """
+    Parse NSW RFS GeoRSS feed into the same normalised incident format as parse_nsw_incidents().
+    GeoRSS uses RSS 2.0 + georss:point/polygon extensions.
+    Fields in <description> are the same HTML key:value pairs as the JSON feed.
+    """
+    import html as html_module
+    import xml.etree.ElementTree as ET
+
+    incidents = []
+    NS = {
+        "georss": "http://www.georss.org/georss",
+        "geo":    "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    }
+
+    try:
+        root = ET.fromstring(xml_text)
+    except ET.ParseError as e:
+        print(f"  NSW GeoRSS parse error: {e}")
+        return incidents
+
+    channel = root.find("channel")
+    items = channel.findall("item") if channel is not None else root.findall(".//item")
+
+    for item in items:
+        title    = (item.findtext("title") or "").strip()
+        category = (item.findtext("category") or "").strip()
+        link     = (item.findtext("link") or "").strip()
+        pub_date = (item.findtext("pubDate") or "").strip()
+        desc_raw = item.findtext("description") or ""
+
+        # Alert level is in <category>
+        alert_level = normalise_alert_level(category)
+        if (alert_level or "").lower() in ("not applicable", ""):
+            continue
+
+        # Parse description HTML for key:value pairs
+        import re
+        decoded = html_module.unescape(desc_raw)
+        inc_type = inc_status = location = council = size = agency = ""
+        agency = "RFS"
+        for part in re.split(r'<br\s*/?>', decoded, flags=re.IGNORECASE):
+            part = re.sub(r'<[^>]+>', '', part).strip()
+            if ':' in part:
+                k, _, v = part.partition(':')
+                k, v = k.strip().upper(), v.strip()
+                if k == 'TYPE':           inc_type   = v
+                elif k == 'STATUS':       inc_status = v
+                elif k == 'LOCATION':     location   = v
+                elif k == 'COUNCIL AREA': council    = v
+                elif k == 'SIZE':         size       = v
+                elif k == 'RESPONSIBLE AGENCY': agency = v
+
+        if is_excluded_incident(inc_type, inc_status):
+            continue
+
+        # Coordinates: <georss:point>lat lng</georss:point>
+        lat = lng = None
+        polys = []
+        pt = item.find("georss:point", NS)
+        if pt is not None and pt.text:
+            parts = pt.text.strip().split()
+            if len(parts) == 2:
+                try:
+                    lat, lng = float(parts[0]), float(parts[1])
+                except ValueError:
+                    pass
+
+        poly_el = item.find("georss:polygon", NS)
+        if poly_el is not None and poly_el.text:
+            coords = poly_el.text.strip().split()
+            try:
+                ring = [[float(coords[i+1]), float(coords[i])]
+                        for i in range(0, len(coords)-1, 2)]
+                polys = [ring]
+                if lat is None and ring:
+                    lng, lat = ring[0][0], ring[0][1]
+            except (ValueError, IndexError):
+                pass
+
+        if lat is None:
+            continue
+
+        incidents.append({
+            "title":       title or "NSW Incident",
+            "alertLevel":  alert_level,
+            "status":      inc_status,
+            "type":        inc_type,
+            "size":        size,
+            "agency":      agency,
+            "updated":     pub_date,
+            "description": location,
+            "council":     council,
+            "lat":         lat,
+            "lng":         lng,
+            "polys":       polys,
+            "state":       "NSW",
+            "sourceUrl":   INCIDENT_FEEDS["nsw"]["source_url"],
+        })
+
+    return incidents
+
+
 def fetch_incidents(key, feed_cfg, rfs_session=None):
     """Fetch and parse one state's incident feed. Returns (list, error_or_None)."""
     # WA has its own dedicated fetch function with JSON->RSS->fallback logic
     if key == "wa":
         return [], None
 
+    # NSW uses its own multi-tier fallback chain
+    if key == "nsw":
+        incidents, method, err = fetch_nsw_incidents_with_fallback(feed_cfg, rfs_session)
+        return incidents, err
+
     url = feed_cfg["url"]
     try:
-        # NSW RFS feeds require browser-like session (WAF blocks bots)
-        if key == "nsw":
-            s = rfs_session or make_rfs_session()
-            r = s.get(url, timeout=20, headers={
-                "Accept": "application/json, */*",
-                "Referer": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
-            })
-        else:
-            r = requests.get(url, timeout=20, headers={
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-                "Accept": "application/json, application/xml, text/xml, */*",
-                "Accept-Language": "en-AU,en;q=0.9",
-            })
+        r = requests.get(url, timeout=20, headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "Accept": "application/json, application/xml, text/xml, */*",
+            "Accept-Language": "en-AU,en;q=0.9",
+        })
         r.raise_for_status()
 
         text = r.text.strip().lstrip('\ufeff')  # Strip BOM if present
@@ -1257,9 +1456,7 @@ def fetch_incidents(key, feed_cfg, rfs_session=None):
             print(f"  {key.upper()}: JSON parse error — {e}")
             return [], str(e)
 
-        if key == "nsw":
-            incidents = parse_nsw_incidents(obj)
-        elif key == "vic":
+        if key == "vic":
             incidents = parse_vic_incidents(obj)
         elif key == "qld":
             incidents = parse_qld_incidents(obj)
