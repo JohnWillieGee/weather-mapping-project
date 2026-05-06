@@ -1328,13 +1328,11 @@ AUSGRID_BBOX = {"blat": -35.0, "blng": 149.0, "tlat": -32.0, "tlng": 152.5}
 
 ENDEAVOUR_UNPLANNED_URL = (
     "https://data.endeavourenergy.com.au/api/explore/v2.1/catalog/datasets/"
-    "outagecustomerlive/records?limit=100&select=geo_shape,outage_type,"
-    "customers_affected,suburb,estimated_restoration_time,cause"
+    "outagecustomerlive/records?limit=100"
 )
 ENDEAVOUR_PLANNED_URL = (
     "https://data.endeavourenergy.com.au/api/explore/v2.1/catalog/datasets/"
-    "outageplannedlive/records?limit=100&select=geo_shape,suburb,"
-    "estimated_start_time,estimated_end_time,customers_affected,cause"
+    "outageplannedlive/records?limit=100"
 )
 
 ENERGEX_UNPLANNED_URL  = "https://www.energex.com.au/static/Energex/energex_po_current_unplanned.geojson"
@@ -1343,9 +1341,21 @@ ERGON_UNPLANNED_URL    = "https://www.ergon.com.au/static/Ergon/ergon_po_current
 ERGON_PLANNED_URL      = "https://www.ergon.com.au/static/Ergon/ergon_po_current_planned.geojson"
 
 OUTAGE_HEADERS = {
-    "User-Agent":    "Mozilla/5.0 (compatible; WeatherMap/1.0)",
+    "User-Agent":    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Cache-Control": "no-cache",
     "Accept":        "application/json, text/xml, */*",
+}
+
+# Energex/Ergon require a Referer header to serve their GeoJSON files
+ENERGEX_HEADERS = {
+    **OUTAGE_HEADERS,
+    "Referer": "https://www.energex.com.au/outages/",
+    "Origin":  "https://www.energex.com.au",
+}
+ERGON_HEADERS = {
+    **OUTAGE_HEADERS,
+    "Referer": "https://www.ergon.com.au/outages/",
+    "Origin":  "https://www.ergon.com.au",
 }
 
 
@@ -1400,7 +1410,7 @@ def fetch_ausgrid_outages():
             headers={
                 **OUTAGE_HEADERS,
                 "Content-Type": "text/xml; charset=utf-8",
-                "SOAPAction":   "http://www.ausgrid.com.au/services/outage/GetOutages",
+                "SOAPAction":   '"http://www.ausgrid.com.au/services/outage/GetOutages"',
             },
             timeout=25,
         )
@@ -1537,16 +1547,16 @@ def fetch_energex_ergon_outages():
     Returns (list_of_outages, error_string_or_None)
     """
     feeds = [
-        (ENERGEX_UNPLANNED_URL, "energex", "QLD", "unplanned"),
-        (ENERGEX_PLANNED_URL,   "energex", "QLD", "planned"),
-        (ERGON_UNPLANNED_URL,   "ergon",   "QLD", "unplanned"),
-        (ERGON_PLANNED_URL,     "ergon",   "QLD", "planned"),
+        (ENERGEX_UNPLANNED_URL, "energex", "QLD", "unplanned", ENERGEX_HEADERS),
+        (ENERGEX_PLANNED_URL,   "energex", "QLD", "planned",   ENERGEX_HEADERS),
+        (ERGON_UNPLANNED_URL,   "ergon",   "QLD", "unplanned", ERGON_HEADERS),
+        (ERGON_PLANNED_URL,     "ergon",   "QLD", "planned",   ERGON_HEADERS),
     ]
     outages = []
     errors  = []
-    for url, dist, state, otype in feeds:
+    for url, dist, state, otype, hdrs in feeds:
         try:
-            r = requests.get(url, headers=OUTAGE_HEADERS, timeout=20)
+            r = requests.get(url, headers=hdrs, timeout=20)
             r.raise_for_status()
             data = r.json()
             batch = _parse_energex_ergon_geojson(data, dist, state, otype)
