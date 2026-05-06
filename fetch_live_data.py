@@ -74,8 +74,8 @@ def fetch_fdr_xml():
             content = buf.read()
             print(f"  FDR FTP [{state}]: retrieved {filename} ({len(content)} bytes)")
         except error_perm as e:
-            print(f"  FDR FTP [{state}]: file not found — {filename} ({e})")
-            errors.append(state)
+            print(f"  FDR FTP [{state}]: {filename} not on FTP — likely out of fire season, skipping")
+            # Not an error — BOM only publishes FDR XML during each state's fire season
             continue
         except Exception as e:
             print(f"  FDR FTP [{state}]: retrieve failed — {e}")
@@ -153,7 +153,7 @@ def fetch_fdr_xml():
         pass
 
     print(f"  FDR FTP: {len(ratings)} districts, {len(times)} periods "
-          f"({total} entries) — failed: {errors or 'none'}")
+          f"({total} entries) — out of season/failed: {errors or 'none'}")
     return {"ratings": ratings, "times": times}
 
 
