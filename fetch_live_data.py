@@ -101,8 +101,19 @@ def fetch_fdr_xml():
                     ratings[aac] = {}
 
                 for fp in area.findall("forecast-period"):
-                    idx = fp.get("index", "")
-                    if not idx:
+                    idx_raw = fp.get("index", "")
+                    if idx_raw == "":
+                        continue
+
+                    # BOM XML uses 0-based indexes (0,1,2,3); remap to 1-based
+                    # so Day 1 = today (index 0), Day 2 = tomorrow (index 1), etc.
+                    try:
+                        idx = str(int(idx_raw) + 1)
+                    except ValueError:
+                        continue
+
+                    # Only store periods 1-4 (skip anything beyond 4 days)
+                    if int(idx) > 4:
                         continue
 
                     st_local = fp.get("start-time-local", "")
