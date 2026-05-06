@@ -1245,6 +1245,43 @@ def main():
     # Merge fetch errors
     errors.update(incident_errors)
 
+    # ── Fetch power outages ──────────────────────────────────────────────────
+    print("Fetching power outages (Ausgrid, Endeavour, Energex, Ergon)...")
+    outages_by_state, outage_errors = fetch_all_outages()
+    errors.update(outage_errors)
+    total_outages = sum(len(v) for v in outages_by_state.values())
+
+    # ── Fetch FDR CSV from GitHub ─────────────────────────────────────────────
+    print("Fetching FDR ratings CSV from GitHub...")
+    fdr_data = fetch_fdr_csv()
+    if fdr_data:
+        print(f"  FDR: {len(fdr_data['ratings'])} districts ready")
+    else:
+        print("  FDR: fetch failed")
+        errors["fdr_csv"] = "fetch failed"
+
+    # Build output
+    output = {
+        "generated_utc":  datetime.now(timezone.utc).isoformat(),
+        "warning_count":  len(unique_warnings),
+        "warnings":       unique_warnings,
+        "fetch_errors":   errors,
+        "incidents":      incidents,
+        "incident_count": total_incidents,
+        "nsw_alert_zones": nsw_alert_zones,
+        "wa_feed_method": wa_method,
+        "fdr":            fdr_data,
+        "outages":        outages_by_state,
+        "outage_count":   total_outages,
+    }
+
+    with open("live_data.json", "w") as f:
+        json.dump(output, f, indent=2)
+
+    print(f"Done — {len(unique_warnings)} warnings, {total_incidents} incidents, {len(nsw_alert_zones)} NSW alert zones, {total_outages} outages written to live_data.json")
+    if errors:
+        print(f"Fetch errors: {errors}")
+
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # POWER OUTAGE FEEDS
@@ -1560,44 +1597,6 @@ def fetch_all_outages():
     total = sum(len(v) for v in by_state.values())
     print(f"  Outages total: {total} (NSW: {len(by_state['nsw'])}, QLD: {len(by_state['qld'])})")
     return by_state, errors
-
-
-    # ── Fetch power outages ──────────────────────────────────────────────────
-    print("Fetching power outages (Ausgrid, Endeavour, Energex, Ergon)...")
-    outages_by_state, outage_errors = fetch_all_outages()
-    errors.update(outage_errors)
-    total_outages = sum(len(v) for v in outages_by_state.values())
-
-    # ── Fetch FDR CSV from GitHub ─────────────────────────────────────────────
-    print("Fetching FDR ratings CSV from GitHub...")
-    fdr_data = fetch_fdr_csv()
-    if fdr_data:
-        print(f"  FDR: {len(fdr_data['ratings'])} districts ready")
-    else:
-        print("  FDR: fetch failed — page will use its embedded fallback data")
-        errors["fdr_csv"] = "fetch failed"
-
-    # Build output
-    output = {
-        "generated_utc":    datetime.now(timezone.utc).isoformat(),
-        "warning_count":    len(unique_warnings),
-        "warnings":         unique_warnings,
-        "fetch_errors":     errors,
-        "incidents":        incidents,
-        "incident_count":   total_incidents,
-        "nsw_alert_zones":  nsw_alert_zones,
-        "wa_feed_method":   wa_method,   # "json", "rss", or "none" — for UI diagnostics
-        "fdr":              fdr_data,    # None if fetch failed; page falls back to embedded data
-        "outages":          outages_by_state,   # { "nsw": [...], "qld": [...] }
-        "outage_count":     total_outages,
-    }
-
-    with open("live_data.json", "w") as f:
-        json.dump(output, f, indent=2)
-
-    print(f"Done — {len(unique_warnings)} warnings, {total_incidents} incidents, {len(nsw_alert_zones)} NSW alert zones, {total_outages} outages written to live_data.json")
-    if errors:
-        print(f"Fetch errors: {errors}")
 
 if __name__ == "__main__":
     main()
