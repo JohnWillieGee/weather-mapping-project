@@ -1332,7 +1332,7 @@ ENDEAVOUR_UNPLANNED_URL = (
 )
 ENDEAVOUR_PLANNED_URL = (
     "https://data.endeavourenergy.com.au/api/explore/v2.1/catalog/datasets/"
-    "outageplannedlive/records?limit=100"
+    "plannedoutagecustomer/records?limit=100"
 )
 
 ENERGEX_UNPLANNED_URL  = "https://www.energex.com.au/static/Energex/energex_po_current_unplanned.geojson"
@@ -1348,14 +1348,24 @@ OUTAGE_HEADERS = {
 
 # Energex/Ergon require a Referer header to serve their GeoJSON files
 ENERGEX_HEADERS = {
-    **OUTAGE_HEADERS,
-    "Referer": "https://www.energex.com.au/outages/",
-    "Origin":  "https://www.energex.com.au",
+    "User-Agent":      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept":          "application/json, */*",
+    "Accept-Language": "en-AU,en;q=0.9",
+    "Referer":         "https://www.energex.com.au/outages/outage-finder/outage-finder-map",
+    "Origin":          "https://www.energex.com.au",
+    "sec-fetch-dest":  "empty",
+    "sec-fetch-mode":  "cors",
+    "sec-fetch-site":  "same-origin",
 }
 ERGON_HEADERS = {
-    **OUTAGE_HEADERS,
-    "Referer": "https://www.ergon.com.au/outages/",
-    "Origin":  "https://www.ergon.com.au",
+    "User-Agent":      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept":          "application/json, */*",
+    "Accept-Language": "en-AU,en;q=0.9",
+    "Referer":         "https://www.ergon.com.au/outages/outage-finder/outage-finder-map",
+    "Origin":          "https://www.ergon.com.au",
+    "sec-fetch-dest":  "empty",
+    "sec-fetch-mode":  "cors",
+    "sec-fetch-site":  "same-origin",
 }
 
 
