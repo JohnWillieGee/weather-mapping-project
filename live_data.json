@@ -1,24 +1,24 @@
 {
-  "generated_utc": "2026-05-06T12:06:33.198975+00:00",
+  "generated_utc": "2026-05-06T14:46:57.290344+00:00",
   "warning_count": 5,
   "warnings": [
     {
       "pid": "",
-      "title": "06/16:39 EST Warning to Sheep Graziers\nfor Central Tablelands, Southern Tablelands, South West Slopes and Snowy Mountains forecast districts",
+      "title": "06/23:51 EST Warning to Sheep Graziers\nfor Central Tablelands, Southern Tablelands, South West Slopes and Snowy Mountains forecast districts",
       "type": "other",
       "state": "NSW",
       "link": "http://www.bom.gov.au/nsw/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Wed, 06 May 2026 06:39:31 GMT"
+      "issued": "Wed, 06 May 2026 13:51:06 GMT"
     },
     {
       "pid": "",
-      "title": "06/16:50 EST Warning to Sheep Graziers\nfor North Central, North East, South West, Central, West and South Gippsland and East Gippsland forecast districts",
+      "title": "06/23:51 EST Warning to Sheep Graziers\nfor North Central, North East, South West, Central, West and South Gippsland and East Gippsland forecast districts",
       "type": "other",
       "state": "VIC",
       "link": "http://www.bom.gov.au/vic/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Wed, 06 May 2026 06:50:48 GMT"
+      "issued": "Wed, 06 May 2026 13:51:12 GMT"
     },
     {
       "pid": "",
@@ -40,16 +40,18 @@
     },
     {
       "pid": "",
-      "title": "06/17:15 EST Bush Walkers Weather Alert\nfor Western and Central Plateau forecast districts",
+      "title": "06/22:52 EST Bush Walkers Weather Alert\nfor Western and Central Plateau forecast districts",
       "type": "other",
       "state": "TAS",
       "link": "http://www.bom.gov.au/tas/warnings/bushwalker.shtml",
       "desc": "",
-      "issued": "Wed, 06 May 2026 07:15:41 GMT"
+      "issued": "Wed, 06 May 2026 12:52:15 GMT"
     }
   ],
   "fetch_errors": {
-    "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
+    "nsw": "403 Client Error: Forbidden for url: https://www.rfs.nsw.gov.au/feeds/majorIncidents.json",
+    "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)",
+    "nsw_zones": "403 Client Error: Forbidden for url: https://www.rfs.nsw.gov.au/feeds/IncidentAlerts.xml"
   },
   "incidents": {
     "nsw": [],
