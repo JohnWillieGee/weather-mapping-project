@@ -12,6 +12,7 @@ Incident feeds currently active:
 import requests
 import xml.etree.ElementTree as ET
 import json
+import os
 import time
 import re
 import csv
@@ -1345,6 +1346,23 @@ def fetch_nsw_incidents_with_fallback(feed_cfg, rfs_session=None):
         except Exception as e:
             last_err = str(e)
             print(f"  NSW ArcGIS: failed — {e}")
+
+    # ── Manual cache fallback (Option A) ────────────────────────────────────
+    # If all live tiers fail, try reading cached_nsw.xml from the repo.
+    # This file must be manually saved and committed — it is NOT auto-updated.
+    # Data will be stale; logged clearly so operators know it's not live.
+    cache_path = os.path.join(os.path.dirname(__file__), "cached_nsw.xml")
+    if os.path.exists(cache_path):
+        try:
+            with open(cache_path, "r", encoding="utf-8") as f:
+                cached_xml = f.read()
+            incidents = parse_nsw_georss(cached_xml)
+            cache_mtime = os.path.getmtime(cache_path)
+            cache_age_hrs = (time.time() - cache_mtime) / 3600
+            print(f"  NSW incidents: {len(incidents)} active (method: MANUAL CACHE — {cache_age_hrs:.1f}h old — NOT LIVE DATA)")
+            return incidents, "manual_cache", f"Using cached_nsw.xml ({cache_age_hrs:.1f}h old) — all live feeds blocked"
+        except Exception as e:
+            print(f"  NSW cache read failed — {e}")
 
     print(f"  NSW incidents: 0 active (all feeds unavailable — likely RFS site outage)")
     return [], "none", f"All NSW feeds unavailable: {last_err}"
