@@ -12,6 +12,7 @@ Incident feeds currently active:
 import requests
 import xml.etree.ElementTree as ET
 import json
+import time
 import re
 import csv
 import io
@@ -1256,9 +1257,15 @@ def fetch_nsw_incidents_with_fallback(feed_cfg, rfs_session=None):
     Note: If RFS has a site-wide outage or WAF block, all rfs.nsw.gov.au tiers
     will fail together. ArcGIS is the only truly independent fallback.
     """
+    import random
+    # Small jitter delay (2–6s) before hitting RFS — avoids rate limiting on shared GitHub Actions IPs
+    time.sleep(random.uniform(2, 6))
+
     browser_headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
         "Accept-Language": "en-AU,en;q=0.9",
+        "Cache-Control": "no-cache",
+        "Pragma":        "no-cache",
     }
     last_err = None
 
@@ -1279,6 +1286,7 @@ def fetch_nsw_incidents_with_fallback(feed_cfg, rfs_session=None):
         except Exception as e:
             last_err = str(e)
             print(f"  NSW XML: failed — {e}")
+            time.sleep(random.uniform(1, 3))  # brief pause before next tier
 
     # ── Tier 2: GeoRSS ──────────────────────────────────────────────────────
     rss_url = feed_cfg.get("url_rss")
@@ -1298,6 +1306,7 @@ def fetch_nsw_incidents_with_fallback(feed_cfg, rfs_session=None):
         except Exception as e:
             last_err = str(e)
             print(f"  NSW GeoRSS: failed — {e}")
+            time.sleep(random.uniform(1, 3))  # brief pause before next tier
 
     # ── Tier 3: JSON with session ────────────────────────────────────────────
     json_url = feed_cfg.get("url")
@@ -1318,6 +1327,7 @@ def fetch_nsw_incidents_with_fallback(feed_cfg, rfs_session=None):
         except Exception as e:
             last_err = str(e)
             print(f"  NSW JSON: failed — {e}")
+            time.sleep(random.uniform(1, 3))
 
     # ── Tier 4: ArcGIS public REST (separate infrastructure from rfs.nsw.gov.au) ─
     arcgis_url = feed_cfg.get("url_arcgis")
