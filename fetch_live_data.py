@@ -100,20 +100,31 @@ def fetch_fdr_xml():
                 if aac not in ratings:
                     ratings[aac] = {}
 
+                # Collect all forecast-periods for this area first,
+                # then determine the correct index offset.
+                # Some state files (e.g. QLD) omit index 0 (the current partial day)
+                # and start at index 1. We detect the minimum index present and
+                # always map it to Day 1 so no districts are left without Day 1 data.
+                fps = []
                 for fp in area.findall("forecast-period"):
                     idx_raw = fp.get("index", "")
                     if idx_raw == "":
                         continue
-
-                    # BOM XML uses 0-based indexes (0,1,2,3); remap to 1-based
-                    # so Day 1 = today (index 0), Day 2 = tomorrow (index 1), etc.
                     try:
-                        idx = str(int(idx_raw) + 1)
+                        fps.append((int(idx_raw), fp))
                     except ValueError:
                         continue
 
-                    # Only store periods 1-4 (skip anything beyond 4 days)
-                    if int(idx) > 4:
+                if not fps:
+                    continue
+
+                # Determine offset: min index present → Day 1
+                min_idx = min(i for i, _ in fps)
+                offset = 1 - min_idx  # e.g. min=0 → offset=1, min=1 → offset=0
+
+                for idx_raw_int, fp in fps:
+                    idx = idx_raw_int + offset  # remapped to 1-based
+                    if idx < 1 or idx > 4:
                         continue
 
                     st_local = fp.get("start-time-local", "")
@@ -132,15 +143,18 @@ def fetch_fdr_xml():
                     if fd_el is not None and fd_el.text:
                         fd = fd_el.text.strip()
 
-                    ratings[aac][idx] = {
+                    idx_str = str(idx)
+                    ratings[aac][idx_str] = {
                         "fd":  fd,
                         "fbi": fbi,
                         "st":  st_local,
                         "et":  et_local,
                     }
 
-                    if idx not in times and st_local:
-                        times[idx] = st_local
+                    # Only set times if not already set by an earlier state,
+                    # but prefer the entry with the earliest start time for Day 1
+                    if idx_str not in times and st_local:
+                        times[idx_str] = st_local
 
                     state_count += 1
 
@@ -323,6 +337,7 @@ INCIDENT_FEEDS = {
         "url":      "https://www.rfs.nsw.gov.au/feeds/majorIncidents.json",
         "url_xml":  "http://www.rfs.nsw.gov.au/feeds/majorIncidents.xml",
         "url_rss":  "https://www.rfs.nsw.gov.au/feeds/majorIncidents.georss",
+
         "url_arcgis": (
             "https://services.arcgis.com/cEku21QqeYtjx5kU/arcgis/rest/services/"
             "Current_Incidents/FeatureServer/0/query"
@@ -1233,18 +1248,21 @@ def parse_tas_incidents(data):
 def fetch_nsw_incidents_with_fallback(feed_cfg, rfs_session=None):
     """
     Fetch NSW RFS incidents with a 4-tier fallback chain:
-      1. XML feed     — http://www.rfs.nsw.gov.au/feeds/majorIncidents.xml (plain HTTP, no WAF)
-      2. GeoRSS feed  — separate endpoint, often not WAF-protected
-      3. JSON feed    — full GeoJSON with polygons, may be Cloudflare-blocked
-      4. ArcGIS REST  — public ESRI endpoint, no WAF
+      1. XML feed     — http://www.rfs.nsw.gov.au/feeds/majorIncidents.xml (plain HTTP)
+      2. GeoRSS feed  — https://www.rfs.nsw.gov.au/feeds/majorIncidents.georss
+      3. JSON feed    — https://www.rfs.nsw.gov.au/feeds/majorIncidents.json
+      4. ArcGIS REST  — public ESRI endpoint, completely separate infrastructure
     Returns (incidents_list, method_used, error_or_None)
+    Note: If RFS has a site-wide outage or WAF block, all rfs.nsw.gov.au tiers
+    will fail together. ArcGIS is the only truly independent fallback.
     """
     browser_headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
         "Accept-Language": "en-AU,en;q=0.9",
     }
+    last_err = None
 
-    # ── Tier 1: XML (plain HTTP — no Cloudflare) ────────────────────────────
+    # ── Tier 1: XML (plain HTTP — may bypass Cloudflare HTTPS interception) ─
     xml_url = feed_cfg.get("url_xml")
     if xml_url:
         try:
@@ -1253,14 +1271,13 @@ def fetch_nsw_incidents_with_fallback(feed_cfg, rfs_session=None):
                 "Accept": "application/xml, text/xml, */*",
             })
             r.raise_for_status()
-            ct = r.headers.get("Content-Type", "")
-            if "html" in ct:
-                raise ValueError(f"XML feed returned HTML (WAF block) — Content-Type: {ct}")
-            # XML feed has same GeoRSS structure as .georss endpoint
+            if "html" in r.headers.get("Content-Type", ""):
+                raise ValueError("WAF block — returned HTML")
             incidents = parse_nsw_georss(r.text)
             print(f"  NSW incidents: {len(incidents)} active (method: xml)")
             return incidents, "xml", None
         except Exception as e:
+            last_err = str(e)
             print(f"  NSW XML: failed — {e}")
 
     # ── Tier 2: GeoRSS ──────────────────────────────────────────────────────
@@ -1273,13 +1290,13 @@ def fetch_nsw_incidents_with_fallback(feed_cfg, rfs_session=None):
                 "Referer": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
             })
             r.raise_for_status()
-            ct = r.headers.get("Content-Type", "")
-            if "html" in ct:
-                raise ValueError(f"GeoRSS returned HTML (WAF block) — Content-Type: {ct}")
+            if "html" in r.headers.get("Content-Type", ""):
+                raise ValueError("WAF block — returned HTML")
             incidents = parse_nsw_georss(r.text)
             print(f"  NSW incidents: {len(incidents)} active (method: georss)")
             return incidents, "georss", None
         except Exception as e:
+            last_err = str(e)
             print(f"  NSW GeoRSS: failed — {e}")
 
     # ── Tier 3: JSON with session ────────────────────────────────────────────
@@ -1292,17 +1309,17 @@ def fetch_nsw_incidents_with_fallback(feed_cfg, rfs_session=None):
                 "Referer": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
             })
             r.raise_for_status()
-            ct = r.headers.get("Content-Type", "")
-            if "html" in ct:
-                raise ValueError(f"JSON feed returned HTML (WAF block) — Content-Type: {ct}")
+            if "html" in r.headers.get("Content-Type", ""):
+                raise ValueError("WAF block — returned HTML")
             obj = json.loads(r.text.strip().lstrip("\ufeff"))
             incidents = parse_nsw_incidents(obj)
             print(f"  NSW incidents: {len(incidents)} active (method: json)")
             return incidents, "json", None
         except Exception as e:
+            last_err = str(e)
             print(f"  NSW JSON: failed — {e}")
 
-    # ── Tier 4: ArcGIS public REST ───────────────────────────────────────────
+    # ── Tier 4: ArcGIS public REST (separate infrastructure from rfs.nsw.gov.au) ─
     arcgis_url = feed_cfg.get("url_arcgis")
     if arcgis_url:
         try:
@@ -1316,10 +1333,11 @@ def fetch_nsw_incidents_with_fallback(feed_cfg, rfs_session=None):
             print(f"  NSW incidents: {len(incidents)} active (method: arcgis)")
             return incidents, "arcgis", None
         except Exception as e:
+            last_err = str(e)
             print(f"  NSW ArcGIS: failed — {e}")
-            return [], "none", str(e)
 
-    return [], "none", "No NSW feed URLs configured"
+    print(f"  NSW incidents: 0 active (all feeds unavailable — likely RFS site outage)")
+    return [], "none", f"All NSW feeds unavailable: {last_err}"
 
 
 def parse_nsw_georss(xml_text):
