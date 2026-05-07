@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-07T10:23:24.491709+00:00",
-  "warning_count": 7,
+  "generated_utc": "2026-05-07T12:17:10.314590+00:00",
+  "warning_count": 8,
   "warnings": [
     {
       "pid": "IDN21037",
@@ -57,6 +57,15 @@
       "issued": "Thu, 07 May 2026 03:31:41 GMT"
     },
     {
+      "pid": "IDT21033",
+      "title": "07/22:13 EST \n                Cancellation of Severe Thunderstorm Warning\n            \nfor \n                Western Forecast District.",
+      "type": "thunderstorm",
+      "state": "TAS",
+      "link": "http://www.bom.gov.au/products/IDT21033.shtml",
+      "desc": "",
+      "issued": "Thu, 07 May 2026 12:13:28 GMT"
+    },
+    {
       "pid": "IDT21037",
       "title": "07/16:27 EST \n                Severe Weather Warning\n            \nfor \n                parts of North West Coast, Central North, Central Plateau, Midlands and Western Forecast Districts.",
       "type": "severe_weather",
@@ -67,19 +76,130 @@
     }
   ],
   "fetch_errors": {
-    "nsw": "Using cached_nsw.xml (0.0h old) \u2014 all live feeds blocked",
     "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)",
     "nsw_zones": "403 Client Error: Forbidden for url: https://www.rfs.nsw.gov.au/feeds/IncidentAlerts.xml"
   },
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "SUMMIT POINT FIRE",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "7 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Thu, 07 May 2026 12:15:59 GMT",
+        "description": "SUMMIT POINT ACCESS TRL, KILLINGWORTH 2278",
+        "council": "Cessnock",
+        "lat": -32.904841018,
+        "lng": 151.506065367,
+        "polys": [
+          [
+            [
+              151.49933,
+              -32.9068399999999
+            ],
+            [
+              151.49968,
+              -32.906890001
+            ],
+            [
+              151.499999999,
+              -32.90687
+            ],
+            [
+              151.500321351,
+              -32.9068213109999
+            ],
+            [
+              151.50045,
+              -32.9068500019999
+            ],
+            [
+              151.500610001,
+              -32.907200001
+            ],
+            [
+              151.50055,
+              -32.907590001
+            ],
+            [
+              151.50038,
+              -32.908080001
+            ],
+            [
+              151.499330001,
+              -32.908240001
+            ],
+            [
+              151.49863,
+              -32.908580001
+            ],
+            [
+              151.49799,
+              -32.9086799999999
+            ],
+            [
+              151.497780001,
+              -32.9085499999999
+            ],
+            [
+              151.49718,
+              -32.90847
+            ],
+            [
+              151.49654,
+              -32.90852
+            ],
+            [
+              151.49601,
+              -32.908460001
+            ],
+            [
+              151.495699999,
+              -32.9081199999999
+            ],
+            [
+              151.496090001,
+              -32.9077599999999
+            ],
+            [
+              151.496369999,
+              -32.9076000009999
+            ],
+            [
+              151.49633,
+              -32.907340001
+            ],
+            [
+              151.496500001,
+              -32.907140001
+            ],
+            [
+              151.49728,
+              -32.906780001
+            ],
+            [
+              151.497869999,
+              -32.906730001
+            ],
+            [
+              151.49933,
+              -32.9068399999999
+            ]
+          ]
+        ],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": []
   },
-  "incident_count": 0,
+  "incident_count": 1,
   "nsw_alert_zones": [],
   "wa_feed_method": "none",
   "fdr": {
