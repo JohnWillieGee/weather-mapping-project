@@ -1,11 +1,10 @@
 name: Fetch Live Weather Data
 
+yaml
+
 on:
-  schedule:
-    # Run every 30 minutes (UTC) — GitHub scheduler may delay up to ~15 min during peak times
-    - cron: '*/30 * * * *'
-  # Allow manual trigger from GitHub Actions tab
   workflow_dispatch:
+
 
 jobs:
   fetch-data:
