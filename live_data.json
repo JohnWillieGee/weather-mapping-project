@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-11T22:51:57.560398+00:00",
-  "last_checked_utc": "2026-05-11T22:51:57.560398+00:00",
+  "generated_utc": "2026-05-11T23:21:57.725039+00:00",
+  "last_checked_utc": "2026-05-11T23:21:57.725039+00:00",
   "warning_count": 5,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "12/03:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "12/09:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://www.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 11 May 2026 17:00:13 GMT"
+      "issued": "Mon, 11 May 2026 23:00:15 GMT"
     },
     {
       "pid": "",
@@ -32,35 +32,52 @@
     },
     {
       "pid": "",
-      "title": "12/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "12/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 11 May 2026 17:01:16 GMT"
+      "issued": "Mon, 11 May 2026 23:01:14 GMT"
     },
     {
       "pid": "",
-      "title": "12/02:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "12/08:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://www.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 11 May 2026 17:00:15 GMT"
+      "issued": "Mon, 11 May 2026 23:00:11 GMT"
     }
   ],
   "fetch_errors": {
     "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
   },
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Marsden St, Parramatta",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Mon, 11 May 2026 23:19:59 GMT",
+        "description": "Marsden St, Parramatta, NSW 2150",
+        "council": "City of Parramatta",
+        "lat": -33.822346,
+        "lng": 150.999476,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": []
   },
-  "incident_count": 0,
+  "incident_count": 1,
   "nsw_alert_zones": [],
   "wa_feed_method": "none",
   "fdr": {
