@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-13T23:21:53.900885+00:00",
-  "last_checked_utc": "2026-05-13T23:21:53.900885+00:00",
+  "generated_utc": "2026-05-13T23:52:19.312799+00:00",
+  "last_checked_utc": "2026-05-13T23:52:19.312799+00:00",
   "warning_count": 4,
   "warnings": [
     {
@@ -41,6 +41,7 @@
     }
   ],
   "fetch_errors": {
+    "NSW": "HTTPConnectionPool(host='www.bom.gov.au', port=80): Max retries exceeded with url: /fwo/IDZ00054.warnings_nsw.xml (Caused by ConnectTimeoutError(<HTTPConnection(host='www.bom.gov.au', port=80) at 0x2540fbb1010>, 'Connection to www.bom.gov.au timed out. (connect timeout=15)'))",
     "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
   },
   "incidents": {
