@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-05-15T21:51:56.733237+00:00",
-  "last_checked_utc": "2026-05-15T21:51:56.733237+00:00",
-  "warning_count": 3,
+  "generated_utc": "2026-05-15T22:21:57.731738+00:00",
+  "last_checked_utc": "2026-05-15T22:21:57.731738+00:00",
+  "warning_count": 4,
   "warnings": [
     {
       "pid": "",
@@ -29,6 +29,15 @@
       "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
       "issued": "Fri, 15 May 2026 17:01:13 GMT"
+    },
+    {
+      "pid": "",
+      "title": "16/08:10 EST Marine Wind Warning Summary for Tasmania",
+      "type": "wind",
+      "state": "TAS",
+      "link": "http://www.bom.gov.au/tas/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Fri, 15 May 2026 22:10:55 GMT"
     }
   ],
   "fetch_errors": {
@@ -3019,5 +3028,46 @@
       "4": "2026-05-19T00:00:00+10:00"
     }
   },
-  "marine_warnings": {}
+  "marine_warnings": {
+    "WA": {
+      "state": "WA",
+      "product": "IDW20100",
+      "issued_utc": "2026-05-15T17:01:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Ningaloo Coast: North West Cape to Cape Cuvier",
+            "Gascoyne Coast: Cape Cuvier to Kalbarri"
+          ],
+          "aac_codes": [
+            "WA_MW005",
+            "WA_MW006"
+          ],
+          "summary": "Ningaloo Coast and Gascoyne Coast"
+        }
+      ]
+    },
+    "TAS": {
+      "state": "TAS",
+      "product": "IDT20100",
+      "issued_utc": "2026-05-15T22:10:49Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Central West Coast: Low Rocky Point to Sandy Cape"
+          ],
+          "aac_codes": [
+            "TAS_MW008"
+          ],
+          "summary": "Central West Coast"
+        }
+      ]
+    }
+  }
 }
