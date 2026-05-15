@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-15T10:52:01.050532+00:00",
-  "last_checked_utc": "2026-05-15T10:52:01.050532+00:00",
+  "generated_utc": "2026-05-15T11:21:57.285679+00:00",
+  "last_checked_utc": "2026-05-15T11:21:57.285679+00:00",
   "warning_count": 3,
   "warnings": [
     {
       "pid": "",
-      "title": "15/15:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "15/21:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://www.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 15 May 2026 05:00:17 GMT"
+      "issued": "Fri, 15 May 2026 11:00:15 GMT"
     },
     {
       "pid": "",
@@ -3023,24 +3023,30 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-05-15T05:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Friday for Peninsula Coast and Cooktown Coast",
-        "Strong Wind Warning for Saturday for Peninsula Coast and Cooktown Coast"
-      ],
+      "issued_utc": "2026-05-15T11:00:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Peninsula Coast: Sharp Point to Cape Melville",
             "Cooktown Coast: Cape Melville to Cape Tribulation"
           ],
           "aac_codes": [
-            "QLD_MW004",
             "QLD_MW005"
           ],
-          "summary": "Peninsula Coast and Cooktown Coast"
+          "summary": "Cooktown Coast"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
+            "Peninsula Coast: Sharp Point to Cape Melville"
+          ],
+          "aac_codes": [
+            "QLD_MW004"
+          ],
+          "summary": "Peninsula Coast"
         }
       ]
     }
