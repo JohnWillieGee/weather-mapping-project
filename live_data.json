@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-15T11:21:57.285679+00:00",
-  "last_checked_utc": "2026-05-15T11:21:57.285679+00:00",
+  "generated_utc": "2026-05-15T11:51:56.323339+00:00",
+  "last_checked_utc": "2026-05-15T11:51:56.323339+00:00",
   "warning_count": 3,
   "warnings": [
     {
       "pid": "",
-      "title": "15/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "15/21:37 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://www.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 15 May 2026 11:00:15 GMT"
+      "issued": "Fri, 15 May 2026 11:37:03 GMT"
     },
     {
       "pid": "",
@@ -35,14 +35,31 @@
     "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
   },
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Heber St, Moree",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 15 May 2026 11:47:59 GMT",
+        "description": "Heber St, Moree, NSW 2400",
+        "council": "Moree Plains",
+        "lat": -29.4632349999999,
+        "lng": 149.830775,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": []
   },
-  "incident_count": 0,
+  "incident_count": 1,
   "nsw_alert_zones": [],
   "wa_feed_method": "none",
   "fdr": {
@@ -3023,7 +3040,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-05-15T11:00:00Z",
+      "issued_utc": "2026-05-15T11:36:55Z",
       "overview": [],
       "hazards": [
         {
