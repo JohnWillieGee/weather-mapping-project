@@ -1,17 +1,8 @@
 {
-  "generated_utc": "2026-05-15T08:21:55.749538+00:00",
-  "last_checked_utc": "2026-05-15T08:21:55.749538+00:00",
-  "warning_count": 4,
+  "generated_utc": "2026-05-15T08:51:56.853193+00:00",
+  "last_checked_utc": "2026-05-15T08:51:56.853193+00:00",
+  "warning_count": 3,
   "warnings": [
-    {
-      "pid": "",
-      "title": "15/09:20 EST \n                Cancellation of\n                Road Weather Alert for Sydney",
-      "type": "other",
-      "state": "NSW",
-      "link": "http://www.bom.gov.au/nsw/warnings/sydneyroad.shtml",
-      "desc": "",
-      "issued": "Thu, 14 May 2026 23:20:08 GMT"
-    },
     {
       "pid": "",
       "title": "15/15:00 EST Marine Wind Warning Summary for Queensland",
@@ -44,14 +35,31 @@
     "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
   },
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "KOSCIUSZKO RD, KOSCIUSZKO NATIONAL PARK",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Fri, 15 May 2026 08:47:59 GMT",
+        "description": "KOSCIUSZKO RD, KOSCIUSZKO NATIONAL PARK 2627",
+        "council": "Snowy Monaro",
+        "lat": -36.3478969999999,
+        "lng": 148.580638,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": []
   },
-  "incident_count": 0,
+  "incident_count": 1,
   "nsw_alert_zones": [],
   "wa_feed_method": "none",
   "fdr": {
