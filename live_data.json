@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-15T23:48:38.702757+00:00",
-  "last_checked_utc": "2026-05-15T23:48:38.702757+00:00",
+  "generated_utc": "2026-05-16T00:04:45.831294+00:00",
+  "last_checked_utc": "2026-05-16T00:04:45.831294+00:00",
   "warning_count": 4,
   "warnings": [
     {
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "16/08:10 EST Marine Wind Warning Summary for Tasmania",
+      "title": "16/10:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://www.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 15 May 2026 22:10:55 GMT"
+      "issued": "Sat, 16 May 2026 00:00:10 GMT"
     }
   ],
   "fetch_errors": {
@@ -3053,8 +3053,11 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-05-15T22:10:49Z",
-      "overview": [],
+      "issued_utc": "2026-05-16T00:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Saturday for Central West Coast",
+        "Strong Wind Warning for Sunday for South West Coast and Central West Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3066,6 +3069,18 @@
             "TAS_MW008"
           ],
           "summary": "Central West Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "South West Coast: South East Cape to Low Rocky Point",
+            "Central West Coast: Low Rocky Point to Sandy Cape"
+          ],
+          "aac_codes": [
+            "TAS_MW007"
+          ],
+          "summary": "South West Coast and Central West Coast"
         }
       ]
     }
