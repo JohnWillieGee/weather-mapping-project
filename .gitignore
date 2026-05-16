@@ -1,1 +1,7 @@
 radar/*.src
+
+# --- Radar working files (added by fetch_live_data.py) ---
+# Individual radar product PNGs — local working files only
+radar/IDR*.png
+# Radar .map files — cached locally after first FTP fetch
+radar/*.map

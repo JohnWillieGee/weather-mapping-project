@@ -35,6 +35,530 @@ FDR_XML_FEEDS = {
 }
 
 
+# ── BOM RADAR CONFIG ─────────────────────────────────────────────────────────
+# Frames to keep per product. FTP holds ~36 frames (~6hrs at 10min intervals).
+# 12 frames = ~2hrs of animation history.
+RADAR_FRAMES = 12
+
+# National mosaic removed — bounds could not be accurately derived (no .map file).
+# Replaced by full set of 512km individual radars with accurate .map file bounds.
+RADAR_NATIONAL = None
+
+# Individual radars — 512km range (suffix 1).
+# Bounds derived from each radar's .map file (Gnomonic projection corners).
+# Ordered: core BAI coverage sites first, then gap-fillers by region.
+RADAR_SITES = [
+    # ── Core sites — direct 512km equivalents of previous 128km set ──────────
+    {"id": "IDR711",  "name": "Sydney",               "map": "IDR711.map"},
+    {"id": "IDR021",  "name": "Melbourne",             "map": "IDR021.map"},
+    {"id": "IDR401",  "name": "Canberra",              "map": "IDR401.map"},
+    {"id": "IDR661",  "name": "Brisbane",              "map": "IDR661.map"},
+    {"id": "IDR041",  "name": "Newcastle",             "map": "IDR041.map"},
+    {"id": "IDR081",  "name": "Gympie",                "map": "IDR081.map"},
+    {"id": "IDR681",  "name": "Bairnsdale",            "map": "IDR681.map"},
+    {"id": "IDR331",  "name": "Ceduna",                "map": "IDR331.map"},
+    {"id": "IDR701",  "name": "Perth",                 "map": "IDR701.map"},
+    {"id": "IDR761",  "name": "Hobart",                "map": "IDR761.map"},
+    {"id": "IDR281",  "name": "Grafton",               "map": "IDR281.map"},
+    {"id": "IDR191",  "name": "Cairns",                "map": "IDR191.map"},
+    {"id": "IDR641",  "name": "Adelaide",              "map": "IDR641.map"},
+    {"id": "IDR781",  "name": "Weipa",                 "map": "IDR781.map"},
+    {"id": "IDR1061", "name": "Townsville",            "map": "IDR1061.map"},
+    # ── Gap-fillers — NSW inland / south ─────────────────────────────────────
+    {"id": "IDR531",  "name": "Moree",                 "map": "IDR531.map"},
+    {"id": "IDR551",  "name": "Wagga Wagga",           "map": "IDR551.map"},
+    {"id": "IDR691",  "name": "Namoi",                 "map": "IDR691.map"},  # Blackjack Mtn — NW NSW
+    {"id": "IDR931",  "name": "Brewarrina",            "map": "IDR931.map"},  # far NW NSW
+    {"id": "IDR941",  "name": "Hillston",              "map": "IDR941.map"},  # central NSW
+    {"id": "IDR961",  "name": "Yeoval",                "map": "IDR961.map"},  # central NSW
+    # ── Gap-fillers — VIC inland ──────────────────────────────────────────────
+    {"id": "IDR301",  "name": "Mildura",               "map": "IDR301.map"},
+    {"id": "IDR491",  "name": "Yarrawonga",            "map": "IDR491.map"},
+    {"id": "IDR951",  "name": "Rainbow",               "map": "IDR951.map"},  # NW VIC
+    # ── Gap-fillers — QLD inland ──────────────────────────────────────────────
+    {"id": "IDR721",  "name": "Emerald",               "map": "IDR721.map"},
+    {"id": "IDR561",  "name": "Longreach",             "map": "IDR561.map"},
+    {"id": "IDR751",  "name": "Mount Isa",             "map": "IDR751.map"},
+    {"id": "IDR671",  "name": "Warrego",               "map": "IDR671.map"},  # SW QLD
+    {"id": "IDR981",  "name": "Taroom",                "map": "IDR981.map"},  # central QLD
+    {"id": "IDR1071", "name": "Richmond",              "map": "IDR1071.map"}, # NW QLD
+    {"id": "IDR741",  "name": "Greenvale",             "map": "IDR741.map"},  # NQ inland
+    # ── Gap-fillers — SA / NT ─────────────────────────────────────────────────
+    {"id": "IDR271",  "name": "Woomera",               "map": "IDR271.map"},  # central SA
+    {"id": "IDR141",  "name": "Mt Gambier",            "map": "IDR141.map"},  # SE SA
+    {"id": "IDR251",  "name": "Alice Springs",         "map": "IDR251.map"},
+    {"id": "IDR631",  "name": "Darwin",                "map": "IDR631.map"},
+    {"id": "IDR421",  "name": "Katherine",             "map": "IDR421.map"},
+    {"id": "IDR771",  "name": "Warruwi (Arafura)",     "map": "IDR771.map"},  # Arnhem Land coast
+    # ── Gap-fillers — WA ─────────────────────────────────────────────────────
+    {"id": "IDR171",  "name": "Broome",                "map": "IDR171.map"},
+    {"id": "IDR161",  "name": "Port Hedland",          "map": "IDR161.map"},
+    {"id": "IDR151",  "name": "Dampier",               "map": "IDR151.map"},
+    {"id": "IDR061",  "name": "Geraldton",             "map": "IDR061.map"},
+    {"id": "IDR311",  "name": "Albany",                "map": "IDR311.map"},
+    {"id": "IDR321",  "name": "Esperance",             "map": "IDR321.map"},
+    {"id": "IDR481",  "name": "Kalgoorlie",            "map": "IDR481.map"},
+    {"id": "IDR381",  "name": "Newdegate",             "map": "IDR381.map"},  # SW WA inland
+    {"id": "IDR581",  "name": "South Doodlakine",      "map": "IDR581.map"},  # wheatbelt WA
+    {"id": "IDR441",  "name": "Giles",                 "map": "IDR441.map"},  # remote central WA
+    {"id": "IDR391",  "name": "Halls Creek",           "map": "IDR391.map"},  # Kimberley
+    {"id": "IDR1111", "name": "Karratha",              "map": "IDR1111.map"},
+    # ── TAS extra ─────────────────────────────────────────────────────────────
+    {"id": "IDR521",  "name": "NW Tasmania",           "map": "IDR521.map"},
+]
+
+FTP_RADAR_HOST = "ftp.bom.gov.au"
+FTP_RADAR_DIR  = "/anon/gen/radar"
+FTP_RADAR_MAPS = "/anon/gen/radar_transparencies/coordinates"
+
+# ── COMPOSITE CANVAS CONFIG ───────────────────────────────────────────────────
+# Full Australia geographic extent for the composite canvas.
+# These bounds are used ONLY for the composite image — individual product bounds
+# still come from their .map files.
+COMPOSITE_BOUNDS = {
+    "south": -47.0,
+    "west":  112.0,
+    "north":  -5.5,
+    "east":  158.0,
+}
+# Canvas pixel dimensions — larger = more detail but bigger files.
+# 4096×3072 gives ~7km/px resolution, adequate for weather overview.
+COMPOSITE_WIDTH  = 4096
+COMPOSITE_HEIGHT = 3072
+
+
+def composite_radar_frames(meta, map_bounds):
+    """Composite all individual radar PNGs into a single full-Australia PNG per frame.
+
+    Canvas is built in Web Mercator projection to match Leaflet's imageOverlay
+    rendering. Leaflet projects imageOverlay bounds through Mercator when
+    rendering — an equirectangular canvas causes north/south offsets at
+    mid-latitudes (~200km at Alice Springs). Building in Mercator eliminates this.
+
+    Per-radar pre-processing:
+      - Crop top 16px header (BOM copyright bar)
+      - Pad 16px transparent at bottom (restores 512x512, keeps radar centre aligned)
+      - Make black background transparent (threshold <30 per channel)
+
+    Updates meta in-place with 'composite' product. Returns composite dict or None.
+    """
+    try:
+        from PIL import Image
+        import numpy as np
+        import math
+    except ImportError:
+        print("  Composite: Pillow/numpy not installed — skipping. Run: pip install Pillow numpy")
+        return None
+
+    cb = COMPOSITE_BOUNDS
+    cw, ch = COMPOSITE_WIDTH, COMPOSITE_HEIGHT
+    HEADER_CROP_PX = 16
+    BLACK_THRESHOLD = 30
+
+    # Mercator helpers — canvas is built in Mercator space to match Leaflet
+    def merc_y(lat):
+        """WGS84 lat -> Mercator Y value (north is larger)"""
+        return math.log(math.tan(math.pi / 4 + math.radians(max(-85.0, min(85.0, lat))) / 2))
+
+    def merc_x(lon):
+        return math.radians(lon)
+
+    # Canvas Mercator extents
+    mx_w = merc_x(cb["west"]);  mx_e = merc_x(cb["east"])
+    my_n = merc_y(cb["north"]); my_s = merc_y(cb["south"])
+    mx_span = mx_e - mx_w
+    my_span = my_n - my_s  # positive
+
+    def geo_to_px(lat, lon):
+        """WGS84 lat/lon -> Mercator pixel on composite canvas."""
+        x = int((merc_x(lon) - mx_w) / mx_span * cw)
+        y = int((my_n - merc_y(lat)) / my_span * ch)
+        return x, y
+
+    def prepare_radar_image(path):
+        """Crop header, pad bottom, make black transparent. Returns RGBA Image or None."""
+        try:
+            img = Image.open(path).convert("RGB")
+        except Exception as e:
+            print(f"  Composite: could not open {path} — {e}")
+            return None
+        w, h = img.size
+        arr = np.array(img.crop((0, HEADER_CROP_PX, w, h))).astype(np.uint8)
+        pad = np.zeros((HEADER_CROP_PX, w, 3), dtype=np.uint8)
+        arr = np.concatenate([arr, pad], axis=0)  # restore to h rows
+        rgba = np.zeros((h, w, 4), dtype=np.uint8)
+        rgba[:, :, :3] = arr
+        rgba[:, :, 3] = np.where(np.all(arr < BLACK_THRESHOLD, axis=2), 0, 255).astype(np.uint8)
+        return Image.fromarray(rgba, "RGBA")
+
+    composite_frames = []
+    any_written = False
+
+    for frame_idx in range(RADAR_FRAMES):
+        canvas = Image.new("RGBA", (cw, ch), (0, 0, 0, 0))
+        pasted = 0
+
+        for pid, product in meta.items():
+            frames = product.get("frames", [])
+            if frame_idx >= len(frames):
+                continue
+            bounds = map_bounds.get(pid)
+            if not bounds:
+                continue
+            local_path = os.path.join("radar", f"{pid}_{frame_idx:02d}.png")
+            if not os.path.exists(local_path):
+                continue
+
+            radar_img = prepare_radar_image(local_path)
+            if radar_img is None:
+                continue
+
+            s, w, n, e = bounds
+            # Convert bounds to Mercator pixel positions
+            x0, y0 = geo_to_px(n, w)   # NW corner -> top-left
+            x1, y1 = geo_to_px(s, e)   # SE corner -> bottom-right
+
+            x0c = max(0, x0); y0c = max(0, y0)
+            x1c = min(cw, x1); y1c = min(ch, y1)
+            if x1c <= x0c or y1c <= y0c:
+                continue
+            dest_w = x1c - x0c
+            dest_h = y1c - y0c
+            if dest_w < 1 or dest_h < 1:
+                continue
+
+            try:
+                resized  = radar_img.resize((x1 - x0, y1 - y0), Image.LANCZOS)
+                cropped  = resized.crop((x0c - x0, y0c - y0,
+                                         x0c - x0 + dest_w, y0c - y0 + dest_h))
+                canvas.paste(cropped, (x0c, y0c), cropped)
+                pasted += 1
+            except Exception as e:
+                print(f"  Composite [{pid}] frame {frame_idx}: paste failed — {e}")
+
+        utc_str = ""
+        for pid, product in meta.items():
+            frames = product.get("frames", [])
+            if frame_idx < len(frames):
+                utc_str = frames[frame_idx].get("utc", "")
+                break
+
+        out_path = os.path.join("radar", f"composite_{frame_idx:02d}.png")
+        try:
+            canvas.save(out_path, "PNG", optimize=True, compress_level=9)
+            file_kb = os.path.getsize(out_path) // 1024
+            print(f"  Composite frame {frame_idx:02d}: {pasted} radars pasted -> "
+                  f"{file_kb}KB  [{utc_str}]")
+            any_written = True
+        except Exception as e:
+            print(f"  Composite frame {frame_idx:02d}: save failed — {e}")
+            continue
+
+        composite_frames.append({"file": f"radar/composite_{frame_idx:02d}.png", "utc": utc_str})
+
+    if not any_written:
+        return None
+
+    composite_product = {
+        "name":   "Composite (all radars)",
+        "bounds": [cb["south"], cb["west"], cb["north"], cb["east"]],
+        "frames": composite_frames,
+    }
+    meta["composite"] = composite_product
+    print(f"  Composite: {len(composite_frames)} frames written to radar/composite_NN.png")
+    return composite_product
+
+def parse_map_file(content):
+    """Parse a BOM .map file and return the correct geographic bounding box
+    [south, west, north, east] for use as a Leaflet imageOverlay bounds.
+
+    Background:
+      BOM .map files use Gnomonic projection. The four corner points (lon0/lat0
+      ..lon3/lat3) are the DIAGONAL corners of the square image, located at
+      radius*sqrt(2) from the radar centre (~724km for a 512km radar). The
+      actual radar circle only extends to 'radius' km from the centre.
+
+      Using the diagonal corners as the image bounds causes the radar data to
+      be stretched ~41% too large on the map and misregistered.
+
+      The correct approach is to use the CARDINAL extents (N/S/E/W tips of the
+      radar circle at exactly 'radius' km from the centre), which correspond to
+      the true edge of the radar sweep and correctly frame the circular image.
+
+    Strategy:
+      1. Extract centre_lat and centre_lon from the .map file
+      2. Derive radius from the corner points (distance from centre to corner
+         divided by sqrt(2) gives the cardinal radius)
+      3. Compute cardinal N/S/E/W extents from centre + radius
+    """
+    import math
+
+    centre_lat = None
+    centre_lon = None
+    corner_lats = []
+    corner_lons = []
+
+    for line in content.splitlines():
+        line = line.strip()
+        if line.startswith("center_latitude"):
+            try:
+                centre_lat = float(line.split("=")[1].strip())
+            except (IndexError, ValueError):
+                pass
+        elif line.startswith("center_longitude"):
+            try:
+                centre_lon = float(line.split("=")[1].strip())
+            except (IndexError, ValueError):
+                pass
+        else:
+            for i in range(4):
+                if line.startswith(f"lon{i}"):
+                    try:
+                        corner_lons.append(float(line.split("=")[1].strip()))
+                    except (IndexError, ValueError):
+                        pass
+                if line.startswith(f"lat{i}"):
+                    try:
+                        corner_lats.append(float(line.split("=")[1].strip()))
+                    except (IndexError, ValueError):
+                        pass
+
+    if centre_lat is None or centre_lon is None or len(corner_lats) < 4:
+        return None
+
+    # Derive radar radius (km) from diagonal corner distance / sqrt(2)
+    # Corner-to-centre distance = radius * sqrt(2) in Gnomonic projection
+    # Use haversine to measure actual corner distances
+    R_EARTH = 6371.0
+
+    def haversine_km(lat1, lon1, lat2, lon2):
+        import math
+        dlat = math.radians(lat2 - lat1)
+        dlon = math.radians(lon2 - lon1)
+        a = (math.sin(dlat/2)**2 +
+             math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) *
+             math.sin(dlon/2)**2)
+        return 2 * R_EARTH * math.asin(math.sqrt(a))
+
+    corner_dists = [
+        haversine_km(centre_lat, centre_lon, corner_lats[i], corner_lons[i])
+        for i in range(min(len(corner_lats), len(corner_lons)))
+    ]
+    if not corner_dists:
+        return None
+
+    diag_km   = sum(corner_dists) / len(corner_dists)  # avg corner distance
+    radius_km = diag_km / math.sqrt(2)
+
+    # Compute cardinal extents from centre + radius
+    deg_per_km_lat = 1.0 / 111.32
+    deg_per_km_lon = 1.0 / (111.32 * math.cos(math.radians(centre_lat)))
+
+    north = centre_lat + radius_km * deg_per_km_lat
+    south = centre_lat - radius_km * deg_per_km_lat
+    east  = centre_lon + radius_km * deg_per_km_lon
+    west  = centre_lon - radius_km * deg_per_km_lon
+
+    return [south, west, north, east]
+
+
+def fetch_radar_frames():
+    """Fetch BOM radar PNGs via anonymous FTP and save to radar/ subfolder.
+
+    For each product (national mosaic + 12 individual radars):
+      - Lists the FTP radar directory
+      - Selects the RADAR_FRAMES most recent timestamped PNGs for that product
+      - Downloads them to radar/<product_id>_NN.png (00 = newest)
+      - Fetches the .map file once (if not already cached locally) for each
+        individual radar to derive geo bounds
+
+    Writes radar/radar_meta.json with frame timestamps and bounds for all
+    products — consumed by index.html to build the animated overlay.
+
+    Returns a summary dict for inclusion in the fetcher's console output,
+    or None on complete FTP failure.
+    """
+    from ftplib import FTP, error_perm
+
+    os.makedirs("radar", exist_ok=True)
+
+    try:
+        ftp = FTP(FTP_RADAR_HOST, timeout=30)
+        ftp.login()
+        print(f"  Radar FTP: connected to {FTP_RADAR_HOST}")
+    except Exception as e:
+        print(f"  Radar FTP: connection failed — {e}")
+        return None
+
+    # ── Step 1: get full directory listing once ───────────────────────────────
+    try:
+        ftp.cwd(FTP_RADAR_DIR)
+        all_files = ftp.nlst()
+        print(f"  Radar FTP: {len(all_files)} files in {FTP_RADAR_DIR}")
+    except Exception as e:
+        print(f"  Radar FTP: listing failed — {e}")
+        try:
+            ftp.quit()
+        except Exception:
+            pass
+        return None
+
+    # Build a set for fast lookup
+    all_files_set = set(all_files)
+
+    # ── Step 2: fetch .map files for individual radars (one-time cache) ───────
+    # Only download if the local cached copy doesn't exist yet
+    map_bounds = {}  # product_id -> [S, W, N, E]
+
+    try:
+        ftp.cwd(FTP_RADAR_MAPS)
+    except Exception as e:
+        print(f"  Radar FTP: cannot access maps dir — {e}")
+
+    for site in RADAR_SITES:
+        pid   = site["id"]
+        mfile = site["map"]
+        local_map = os.path.join("radar", mfile)
+
+        if not os.path.exists(local_map):
+            buf = io.BytesIO()
+            try:
+                ftp.retrbinary(f"RETR {mfile}", buf.write)
+                buf.seek(0)
+                content = buf.read().decode("utf-8", errors="replace")
+                with open(local_map, "w") as f:
+                    f.write(content)
+                print(f"  Radar map: fetched {mfile}")
+            except error_perm:
+                print(f"  Radar map: {mfile} not found on FTP — skipping bounds")
+                content = None
+            except Exception as e:
+                print(f"  Radar map: {mfile} fetch failed — {e}")
+                content = None
+        else:
+            with open(local_map) as f:
+                content = f.read()
+
+        if content:
+            bounds = parse_map_file(content)
+            if bounds:
+                map_bounds[pid] = bounds
+            else:
+                print(f"  Radar map: could not parse bounds from {mfile}")
+
+    # National mosaic removed — no hardcoded bounds needed
+
+    # ── Step 3: fetch frames for each product ─────────────────────────────────
+    try:
+        ftp.cwd(FTP_RADAR_DIR)
+    except Exception as e:
+        print(f"  Radar FTP: cannot return to radar dir — {e}")
+
+    meta = {}   # product_id -> { "name", "bounds", "frames": [{"file", "utc"}, ...] }
+    total_downloaded = 0
+    total_skipped    = 0
+
+    # RADAR_NATIONAL is None — national mosaic removed (no accurate .map file)
+    all_products = [{"id": s["id"], "name": s["name"]} for s in RADAR_SITES]
+
+    for product in all_products:
+        pid  = product["id"]
+        name = product["name"]
+
+        # Find all timestamped PNGs for this product in the directory listing
+        # Naming: IDRnnnx.T.yyyymmddhhmm.png  (national: IDR00004.T.yyyymmddhhmm.png)
+        prefix  = pid + ".T."
+        matches = sorted(
+            [f for f in all_files_set if f.startswith(prefix) and f.endswith(".png")],
+            reverse=True   # newest first (lexicographic sort works on yyyymmddhhmm)
+        )
+
+        if not matches:
+            print(f"  Radar [{pid}]: no frames found in listing")
+            continue
+
+        selected = matches[:RADAR_FRAMES]
+        frames   = []
+        downloaded = 0
+        skipped    = 0
+
+        for i, fname in enumerate(selected):
+            local_path = os.path.join("radar", f"{pid}_{i:02d}.png")
+
+            # Parse UTC timestamp from filename: IDR00004.T.yyyymmddhhmm.png
+            utc_str = ""
+            m = re.search(r'\.T\.(\d{12})\.png$', fname)
+            if m:
+                ts = m.group(1)
+                utc_str = f"{ts[0:4]}-{ts[4:6]}-{ts[6:8]}T{ts[8:10]}:{ts[10:12]}Z"
+
+            frames.append({"file": f"radar/{pid}_{i:02d}.png", "utc": utc_str})
+
+            # Only download if we don't already have this exact frame
+            # Use a sidecar .txt file to record which source file is cached
+            stamp_path = local_path + ".src"
+            if os.path.exists(local_path) and os.path.exists(stamp_path):
+                with open(stamp_path) as sf:
+                    if sf.read().strip() == fname:
+                        skipped += 1
+                        continue
+
+            # Download
+            buf = io.BytesIO()
+            try:
+                ftp.retrbinary(f"RETR {fname}", buf.write)
+                buf.seek(0)
+                with open(local_path, "wb") as f:
+                    f.write(buf.read())
+                with open(stamp_path, "w") as sf:
+                    sf.write(fname)
+                downloaded += 1
+            except error_perm:
+                print(f"  Radar [{pid}]: {fname} not found (race condition?) — skipping")
+            except Exception as e:
+                print(f"  Radar [{pid}]: download failed for {fname} — {e}")
+
+        total_downloaded += downloaded
+        total_skipped    += skipped
+        print(f"  Radar [{pid}] {name}: {len(frames)} frames "
+              f"({downloaded} downloaded, {skipped} cached)")
+
+        meta[pid] = {
+            "name":   name,
+            "bounds": map_bounds.get(pid),
+            "frames": frames,
+        }
+
+    try:
+        ftp.quit()
+    except Exception:
+        pass
+
+    # ── Composite step — runs after FTP closes ────────────────────────────────
+    # Stitches all per-product PNGs into a single full-Australia PNG per frame.
+    # Adds 'composite' key to meta if successful.
+    # index.html will use 'composite' product if present (12 files vs 600).
+    print("  Composite: building full-Australia composite frames...")
+    composite_radar_frames(meta, map_bounds)
+
+    # Write radar_meta.json — includes composite product if it was built
+    radar_meta = {
+        "generated_utc": datetime.now(timezone.utc).isoformat(),
+        "frame_count":   RADAR_FRAMES,
+        "products":      meta,
+    }
+    with open(os.path.join("radar", "radar_meta.json"), "w") as f:
+        json.dump(radar_meta, f, indent=2)
+
+    print(f"  Radar: {total_downloaded} downloaded, {total_skipped} served from cache — "
+          f"radar_meta.json written ({len(meta)} products incl. composite)")
+    return {
+        "products":   len(meta),
+        "downloaded": total_downloaded,
+        "cached":     total_skipped,
+    }
+
+
 def fetch_fdr_xml():
     """
     Fetch FDR XML from BOM anonymous FTP for all states.
@@ -200,12 +724,25 @@ BOM_WARNING_FEEDS = {
 # NSW RFS CAP-AU alert zones feed — polygon warning areas for active incidents
 NSW_ALERT_ZONES_URL = "https://www.rfs.nsw.gov.au/feeds/IncidentAlerts.xml"
 
-# Titles to exclude — routine summaries, not emergency warnings
-EXCLUDE_TITLES = [
-    "marine wind warning summary",  # daily routine marine summaries
-    "wind warning summary",
-    "coastal wind warning summary",
-]
+# BOM marine wind warning XML products — one per state, only present on FTP when active
+# Fetched via anonymous FTP: /anon/gen/fwo/<product_id>.xml
+MARINE_WARNING_PRODUCTS = {
+    "QLD": "IDQ20085",
+    "NSW": "IDN20400",
+    "VIC": "IDV20600",
+    "SA":  "IDS20201",
+    "WA":  "IDW20100",
+    "TAS": "IDT20100",
+    "NT":  "IDD20105",
+}
+
+# Severity attribute codes -> human-readable warning level
+MARINE_SEVERITY = {
+    "STR": "Strong Wind Warning",
+    "GAL": "Gale Warning",
+    "STO": "Storm Force Warning",
+    "HUR": "Hurricane Force Warning",
+}
 
 # Warning type classification based on title keywords
 def classify_warning(title):
@@ -226,9 +763,6 @@ def classify_warning(title):
         return "wind"
     return "other"
 
-def is_excluded(title):
-    t = title.lower()
-    return any(ex in t for ex in EXCLUDE_TITLES)
 
 def extract_pid_from_link(text):
     """Extract product ID from BOM warning link URL or text.
@@ -270,10 +804,6 @@ def parse_bom_xml(xml_text, state):
         pub   = get("pubDate") or get("updated") or get("published")
 
         if not title:
-            continue
-
-        # Skip routine summaries (marine wind summaries etc)
-        if is_excluded(title):
             continue
 
         # Extract product ID from link URL or text
@@ -1535,6 +2065,186 @@ def fetch_incidents(key, feed_cfg, rfs_session=None):
         return [], str(e)
 
 
+def parse_marine_warning_xml(xml_text, state):
+    """Parse a BOM marine wind warning XML product (e.g. IDQ20085.xml).
+
+    Extracts today's hazards only (forecast-period index="0") from the
+    <warning> block. For each hazard returns:
+      - level:      human-readable warning level (e.g. "Strong Wind Warning")
+      - severity:   raw BOM severity code (e.g. "STR")
+      - zones:      list of affected zone descriptions
+      - aac_codes:  list of AAC zone identifiers
+      - summary:    single-line summary text from warning_areas element
+
+    Returns a dict with keys "state", "product", "issued_utc", "hazards",
+    or None if the XML cannot be parsed or contains no today hazards.
+    """
+    import xml.etree.ElementTree as ET
+
+    try:
+        root = ET.fromstring(xml_text)
+    except ET.ParseError as e:
+        print(f"  Marine [{state}]: XML parse error — {e}")
+        return None
+
+    # Extract issue time from amoc block
+    issued_utc = ""
+    issue_el = root.find(".//issue-time-utc")
+    if issue_el is not None and issue_el.text:
+        issued_utc = issue_el.text.strip()
+
+    product_id = ""
+    id_el = root.find(".//identifier")
+    if id_el is not None and id_el.text:
+        product_id = id_el.text.strip()
+
+    # Extract warning summary text (human-readable overview)
+    summary_lines = []
+    for p in root.findall(".//warning-summary/p"):
+        if p.text:
+            summary_lines.append(p.text.strip())
+
+    # Extract today's hazards — look for any forecast-period with an index attribute
+    # Note: BOM XML structure varies by state:
+    #   - Most states: forecast-period[@index='0'] is today, direct child of <warning>
+    #   - WA: forecast-period[@index='1'] is the first hazard day, nested inside <area>
+    #   - Use .// to search all descendants, and accept any indexed period that has MWW hazards
+    hazards = []
+    seen_aacs = set()  # deduplicate across periods
+
+    for fp in root.findall(".//forecast-period[@index]"):
+        for hazard in fp.findall("hazard"):
+            # Only process marine wind warning hazards
+            if hazard.get("type") != "MWW":
+                continue
+
+            severity_code = hazard.get("severity", "")
+            level = MARINE_SEVERITY.get(severity_code, severity_code)
+
+            # Collect affected zones
+            zones = []
+            aac_codes = []
+            for area in hazard.findall(".//area-list/area"):
+                desc = area.get("description", "").strip()
+                aac  = area.get("aac", "").strip()
+                if desc:
+                    zones.append(desc)
+                if aac and aac not in seen_aacs:
+                    aac_codes.append(aac)
+                    seen_aacs.add(aac)
+
+            # Short summary text from warning_areas element
+            areas_text = ""
+            for txt in hazard.findall("text"):
+                if txt.get("type") == "warning_areas" and txt.text:
+                    areas_text = txt.text.strip()
+
+            if zones:
+                hazards.append({
+                    "level":      level,
+                    "severity":   severity_code,
+                    "zones":      zones,
+                    "aac_codes":  aac_codes,
+                    "summary":    areas_text,
+                })
+
+    if not hazards:
+        return None
+
+    return {
+        "state":       state,
+        "product":     product_id,
+        "issued_utc":  issued_utc,
+        "overview":    summary_lines,
+        "hazards":     hazards,
+    }
+
+
+def fetch_marine_warnings():
+    """Fetch BOM marine wind warning XML products via anonymous FTP.
+
+    Files live at /anon/gen/fwo/<product_id>.xml and are only present
+    on the FTP when a warning is active for that state — a 550 error
+    means no current warning, which is normal and handled gracefully.
+
+    Returns a dict keyed by state code containing parsed warning data,
+    only for states with active warnings. Empty dict if FTP unreachable.
+    """
+    from ftplib import FTP, error_perm
+    import io
+
+    results = {}
+
+    try:
+        ftp = FTP(FTP_RADAR_HOST, timeout=30)
+        ftp.login()
+        ftp.cwd("/anon/gen/fwo")
+    except Exception as e:
+        print(f"  Marine warnings FTP: connection failed — {e}")
+        return results
+
+    for state, product_id in MARINE_WARNING_PRODUCTS.items():
+        filename = f"{product_id}.xml"
+        buf = io.BytesIO()
+        try:
+            ftp.retrbinary(f"RETR {filename}", buf.write)
+            buf.seek(0)
+            xml_text = buf.read().decode("utf-8", errors="replace")
+            parsed = parse_marine_warning_xml(xml_text, state)
+            if parsed:
+                results[state] = parsed
+                n = len(parsed["hazards"])
+                print(f"  Marine [{state}]: {n} hazard(s) — "
+                      f"{', '.join(h['level'] for h in parsed['hazards'])}")
+            else:
+                print(f"  Marine [{state}]: file present but no today hazards")
+        except error_perm:
+            # 550 = file not found = no active warning for this state — normal
+            print(f"  Marine [{state}]: no active warning")
+        except Exception as e:
+            print(f"  Marine [{state}]: fetch error — {e}")
+
+    try:
+        ftp.quit()
+    except Exception:
+        pass
+
+    print(f"  Marine warnings: {len(results)} state(s) with active warnings")
+    return results
+
+
+def _ensure_radar_gitignore():
+    """Ensure the repo-level .gitignore excludes individual radar PNGs and .map files.
+    Only composite_*.png and radar_meta.json are committed to the repo.
+    Appends missing rules only — never rewrites existing content.
+    Called once per run before fetch_radar_frames().
+    """
+    gitignore_path = ".gitignore"
+    required_rules = {
+        "radar/IDR*.png": "# Individual radar product PNGs — local working files only",
+        "radar/*.map":    "# Radar .map files — cached locally after first FTP fetch",
+        "radar/*.src":    "# Radar .src sidecar cache markers",
+    }
+    existing = ""
+    if os.path.exists(gitignore_path):
+        with open(gitignore_path, encoding='utf-8') as f:
+            existing = f.read()
+
+    lines_to_add = []
+    for rule, comment in required_rules.items():
+        if rule not in existing:
+            lines_to_add.append(comment)
+            lines_to_add.append(rule)
+
+    if lines_to_add:
+        with open(gitignore_path, "a", encoding='utf-8') as f:
+            f.write("\n# --- Radar working files (added by fetch_live_data.py) ---\n")
+            f.write("\n".join(lines_to_add) + "\n")
+        added = [l for l in lines_to_add if not l.startswith("#")]
+        print(f"  .gitignore updated — added: {added}")
+    # else: all rules already present — nothing to do
+
+
 def main():
     print(f"Fetching BOM warning feeds — {datetime.now(timezone.utc).isoformat()}")
 
@@ -1598,6 +2308,24 @@ def main():
     # Merge fetch errors
     errors.update(incident_errors)
 
+    # ── Fetch BOM marine wind warnings via FTP ───────────────────────────────
+    print("Fetching BOM marine wind warnings...")
+    marine_warnings = fetch_marine_warnings()
+
+    # ── Fetch BOM radar frames via FTP ───────────────────────────────────────
+    print("Fetching BOM radar frames...")
+
+    # Ensure individual product PNGs and .map files are gitignored —
+    # only composite_*.png and radar_meta.json are committed to the repo.
+    _ensure_radar_gitignore()
+
+    radar_result = fetch_radar_frames()
+    if radar_result:
+        print(f"  Radar: {radar_result['products']} products ready")
+    else:
+        print("  Radar: fetch failed or skipped")
+        errors["radar"] = "fetch failed"
+
     # ── Fetch FDR XML from BOM anonymous FTP ─────────────────────────────────
     print("Fetching FDR ratings from BOM FTP XML...")
     fdr_data = fetch_fdr_xml()
@@ -1608,24 +2336,83 @@ def main():
         errors["fdr_xml"] = "fetch failed"
 
     # Build output
+    now_utc = datetime.now(timezone.utc).isoformat()
     output = {
-        "generated_utc":  datetime.now(timezone.utc).isoformat(),
-        "warning_count":  len(unique_warnings),
-        "warnings":       unique_warnings,
-        "fetch_errors":   errors,
-        "incidents":      incidents,
-        "incident_count": total_incidents,
-        "nsw_alert_zones": nsw_alert_zones,
-        "wa_feed_method": wa_method,
-        "fdr":            fdr_data,
+        "generated_utc":      now_utc,
+        "last_checked_utc":   now_utc,   # Always updated — ensures git always has a change to commit
+        "warning_count":      len(unique_warnings),
+        "warnings":           unique_warnings,
+        "fetch_errors":       errors,
+        "incidents":          incidents,
+        "incident_count":     total_incidents,
+        "nsw_alert_zones":    nsw_alert_zones,
+        "wa_feed_method":     wa_method,
+        "fdr":                fdr_data,
+        "marine_warnings":    marine_warnings,
     }
 
     with open("live_data.json", "w") as f:
         json.dump(output, f, indent=2)
 
-    print(f"Done — {len(unique_warnings)} warnings, {total_incidents} incidents, {len(nsw_alert_zones)} NSW alert zones written to live_data.json")
+    print(f"Done — {len(unique_warnings)} warnings, {total_incidents} incidents, "
+          f"{len(nsw_alert_zones)} NSW alert zones, "
+          f"{len(marine_warnings)} state(s) with marine warnings written to live_data.json")
     if errors:
         print(f"Fetch errors: {errors}")
+
+    # ── Git commit and push ───────────────────────────────────────────────────
+    git_push()
+
+
+def git_push():
+    """Commit live_data.json and push to GitHub.
+    Requires git to be installed and the repo already cloned with credentials cached.
+    Safe to run repeatedly — skips commit if there are no changes.
+    """
+    import subprocess
+
+    def run(cmd, check=True):
+        result = subprocess.run(
+            cmd, shell=True, capture_output=True, text=True
+        )
+        if result.stdout.strip():
+            print(f"  git: {result.stdout.strip()}")
+        if result.stderr.strip():
+            # stderr isn't always an error for git — filter real problems
+            for line in result.stderr.strip().splitlines():
+                if any(w in line.lower() for w in ["error", "fatal", "rejected"]):
+                    print(f"  git ERROR: {line}")
+        if check and result.returncode != 0:
+            # Don't raise — just warn, so a git failure doesn't break the whole run
+            print(f"  git: command failed (exit {result.returncode}): {cmd}")
+        return result
+
+    print("Pushing live_data.json and radar composites to GitHub...")
+
+    # Make sure we're on the right branch and up to date
+    run("git pull --rebase --autostash", check=False)
+
+    # Stage live_data.json
+    run("git add live_data.json")
+
+    # Stage composite PNGs and radar_meta.json only.
+    # Individual product PNGs (IDRxxx_NN.png) and .map files stay local —
+    # they are working files used to build the composites, not served to the browser.
+    # .src sidecar files are local cache markers only — never committed.
+    run("git add radar/composite_*.png radar/radar_meta.json", check=False)
+
+    # Commit with timestamp
+    from datetime import datetime, timezone
+    ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    run(f'git commit -m "chore: update live_data + radar composites {ts} [skip ci]"')
+
+    # Push
+    result = run("git push", check=False)
+    if result.returncode == 0:
+        print("  git: pushed successfully")
+    else:
+        print("  git: push failed — check credentials or network")
+
 
 if __name__ == "__main__":
     main()
