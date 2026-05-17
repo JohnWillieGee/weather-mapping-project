@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-16T23:53:12.321320+00:00",
-  "last_checked_utc": "2026-05-16T23:53:12.321320+00:00",
+  "generated_utc": "2026-05-17T00:23:19.526906+00:00",
+  "last_checked_utc": "2026-05-17T00:23:19.526906+00:00",
   "warning_count": 6,
   "warnings": [
     {
       "pid": "",
-      "title": "17/04:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "17/10:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://www.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 16 May 2026 18:00:12 GMT"
+      "issued": "Sun, 17 May 2026 00:00:14 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "17/04:10 EST Marine Wind Warning Summary for Victoria",
+      "title": "17/10:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://www.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 16 May 2026 18:10:18 GMT"
+      "issued": "Sun, 17 May 2026 00:00:19 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "17/04:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "17/10:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://www.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 16 May 2026 18:00:12 GMT"
+      "issued": "Sun, 17 May 2026 00:00:09 GMT"
     }
   ],
   "fetch_errors": {
@@ -3050,7 +3050,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-05-16T18:00:00Z",
+      "issued_utc": "2026-05-17T00:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3075,7 +3075,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-05-16T18:10:00Z",
+      "issued_utc": "2026-05-17T00:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3143,12 +3143,12 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-05-16T18:00:00Z",
+      "issued_utc": "2026-05-17T00:00:00Z",
       "overview": [],
       "hazards": [
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "CAN",
+          "severity": "CAN",
           "zones": [
             "South West Coast: South East Cape to Low Rocky Point"
           ],
@@ -3156,17 +3156,6 @@
             "TAS_MW007"
           ],
           "summary": "South West Coast"
-        },
-        {
-          "level": "CAN",
-          "severity": "CAN",
-          "zones": [
-            "Central West Coast: Low Rocky Point to Sandy Cape"
-          ],
-          "aac_codes": [
-            "TAS_MW008"
-          ],
-          "summary": ""
         }
       ]
     }
