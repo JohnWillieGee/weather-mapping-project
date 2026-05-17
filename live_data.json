@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-17T21:23:16.282517+00:00",
-  "last_checked_utc": "2026-05-17T21:23:16.282517+00:00",
+  "generated_utc": "2026-05-17T21:53:13.693406+00:00",
+  "last_checked_utc": "2026-05-17T21:53:13.693406+00:00",
   "warning_count": 5,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "18/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "18/05:47 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 17 May 2026 17:01:12 GMT"
+      "issued": "Sun, 17 May 2026 21:47:51 GMT"
     }
   ],
   "fetch_errors": {
@@ -3134,8 +3134,11 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-17T17:01:00Z",
-      "overview": [],
+      "issued_utc": "2026-05-17T21:47:41Z",
+      "overview": [
+        "Strong Wind Warning for Monday for Ningaloo Coast, Gascoyne Coast, Pilbara Coast West and Pilbara Coast East",
+        "Strong Wind Warning for Tuesday for Pilbara Coast East, Pilbara Coast West and Ningaloo Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3153,6 +3156,17 @@
             "WA_MW006"
           ],
           "summary": "Pilbara Coast East, Pilbara Coast West, Ningaloo Coast and Gascoyne Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Pilbara Coast East: Wallal to Cape Preston",
+            "Pilbara Coast West: Cape Preston to North West Cape",
+            "Ningaloo Coast: North West Cape to Cape Cuvier"
+          ],
+          "aac_codes": [],
+          "summary": "Pilbara Coast East, Pilbara Coast West and Ningaloo Coast"
         }
       ]
     }
