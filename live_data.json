@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-05-17T08:23:16.257095+00:00",
-  "last_checked_utc": "2026-05-17T08:23:16.257095+00:00",
-  "warning_count": 7,
+  "generated_utc": "2026-05-17T08:53:18.383438+00:00",
+  "last_checked_utc": "2026-05-17T08:53:18.383438+00:00",
+  "warning_count": 6,
   "warnings": [
     {
       "pid": "",
@@ -49,15 +49,6 @@
       "issued": "Sun, 17 May 2026 05:01:16 GMT"
     },
     {
-      "pid": "",
-      "title": "17/11:10 EST Marine Wind Warning Summary for Tasmania",
-      "type": "wind",
-      "state": "TAS",
-      "link": "http://www.bom.gov.au/tas/warnings/marinewind.shtml",
-      "desc": "",
-      "issued": "Sun, 17 May 2026 01:10:56 GMT"
-    },
-    {
       "pid": "IDT21033",
       "title": "17/16:12 EST \n                Severe Thunderstorm Warning\n            \nfor \n                parts of North West Coast and Central Plateau Forecast Districts.",
       "type": "thunderstorm",
@@ -71,7 +62,24 @@
     "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
   },
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "MOLONG WAY, BIDWILL",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 17 May 2026 08:47:59 GMT",
+        "description": "MOLONG WAY, BIDWILL 2770",
+        "council": "Blacktown",
+        "lat": -33.724880218,
+        "lng": 150.821670532,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [
       {
@@ -93,7 +101,7 @@
     "tas": [],
     "wa": []
   },
-  "incident_count": 1,
+  "incident_count": 2,
   "nsw_alert_zones": [],
   "wa_feed_method": "none",
   "fdr": {
