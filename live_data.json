@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-17T04:53:17.128381+00:00",
-  "last_checked_utc": "2026-05-17T04:53:17.128381+00:00",
+  "generated_utc": "2026-05-17T05:23:15.554780+00:00",
+  "last_checked_utc": "2026-05-17T05:23:15.554780+00:00",
   "warning_count": 7,
   "warnings": [
     {
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "17/09:11 WST Marine Wind Warning Summary for Western Australia",
+      "title": "17/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 17 May 2026 01:11:00 GMT"
+      "issued": "Sun, 17 May 2026 05:01:16 GMT"
     },
     {
       "pid": "",
@@ -73,13 +73,29 @@
   "incidents": {
     "nsw": [
       {
+        "title": "George St, East Gosford",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 17 May 2026 05:19:59 GMT",
+        "description": "George St, East Gosford, NSW 2250",
+        "council": "Central Coast",
+        "lat": -33.4426089999999,
+        "lng": 151.352004,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "TUCKA TUCKA RD, BOGGABILLA",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Grass Fire",
-        "size": "30 ha",
+        "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 17 May 2026 04:47:59 GMT",
+        "updated": "Sun, 17 May 2026 05:19:59 GMT",
         "description": "TUCKA TUCKA RD, BOGGABILLA 2409",
         "council": "Moree Plains",
         "lat": -28.67475,
@@ -95,7 +111,7 @@
     "tas": [],
     "wa": []
   },
-  "incident_count": 1,
+  "incident_count": 2,
   "nsw_alert_zones": [],
   "wa_feed_method": "none",
   "fdr": {
@@ -3120,10 +3136,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-17T01:10:51Z",
+      "issued_utc": "2026-05-17T05:01:00Z",
       "overview": [
         "Strong Wind Warning for Sunday for Ningaloo Coast and Gascoyne Coast",
-        "Strong Wind Warning for Monday for Ningaloo Coast, Gascoyne Coast, Pilbara Coast West and Pilbara Coast East"
+        "Strong Wind Warning for Monday for Pilbara Coast East, Pilbara Coast West, Ningaloo Coast and Gascoyne Coast"
       ],
       "hazards": [
         {
@@ -3140,17 +3156,6 @@
           "summary": "Ningaloo Coast and Gascoyne Coast"
         },
         {
-          "level": "CAN",
-          "severity": "CAN",
-          "zones": [
-            "Pilbara Coast West: Cape Preston to North West Cape"
-          ],
-          "aac_codes": [
-            "WA_MW004"
-          ],
-          "summary": "Pilbara Coast West"
-        },
-        {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
@@ -3160,7 +3165,8 @@
             "Gascoyne Coast: Cape Cuvier to Kalbarri"
           ],
           "aac_codes": [
-            "WA_MW003"
+            "WA_MW003",
+            "WA_MW004"
           ],
           "summary": "Pilbara Coast East, Pilbara Coast West, Ningaloo Coast and Gascoyne Coast"
         }
