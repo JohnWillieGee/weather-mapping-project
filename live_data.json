@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-18T22:53:12.599493+00:00",
-  "last_checked_utc": "2026-05-18T22:53:12.599493+00:00",
+  "generated_utc": "2026-05-18T23:23:13.590848+00:00",
+  "last_checked_utc": "2026-05-18T23:23:13.590848+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "19/03:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "19/09:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://www.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 18 May 2026 17:00:16 GMT"
+      "issued": "Mon, 18 May 2026 23:00:18 GMT"
     },
     {
       "pid": "",
@@ -95,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "19/01:13 WST Marine Wind Warning Summary for Western Australia",
+      "title": "19/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 18 May 2026 17:13:01 GMT"
+      "issued": "Mon, 18 May 2026 23:01:14 GMT"
     },
     {
       "pid": "",
@@ -113,12 +113,12 @@
     },
     {
       "pid": "",
-      "title": "19/02:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "19/08:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://www.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 18 May 2026 17:00:13 GMT"
+      "issued": "Mon, 18 May 2026 23:00:12 GMT"
     }
   ],
   "fetch_errors": {
@@ -3113,9 +3113,9 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-05-18T17:00:00Z",
+      "issued_utc": "2026-05-18T23:00:00Z",
       "overview": [
-        "Strong Wind Warning for Tuesday for Sunshine Coast Waters and Gold Coast Waters",
+        "Strong Wind Warning for Tuesday for Gold Coast Waters",
         "Strong Wind Warning for Wednesday for South East Gulf of Carpentaria, Cooktown Coast, Cairns Coast, Townsville Coast, Mackay Coast and Gold Coast Waters"
       ],
       "hazards": [
@@ -3123,14 +3123,23 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Sunshine Coast Waters: Double Island Point to Cape Moreton",
             "Gold Coast Waters: Cape Moreton to Point Danger"
           ],
           "aac_codes": [
-            "QLD_MW012",
             "QLD_MW014"
           ],
-          "summary": "Sunshine Coast Waters and Gold Coast Waters"
+          "summary": "Gold Coast Waters"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
+            "Sunshine Coast Waters: Double Island Point to Cape Moreton"
+          ],
+          "aac_codes": [
+            "QLD_MW012"
+          ],
+          "summary": "Sunshine Coast Waters"
         },
         {
           "level": "Strong Wind Warning",
@@ -3262,7 +3271,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-18T17:12:48Z",
+      "issued_utc": "2026-05-18T23:01:00Z",
       "overview": [
         "Strong Wind Warning for Tuesday for West Kimberley Coast, Pilbara Coast East and Pilbara Coast West",
         "Strong Wind Warning for Wednesday for North Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
@@ -3324,7 +3333,7 @@
     "NT": {
       "state": "NT",
       "product": "IDD20105",
-      "issued_utc": "2026-05-18T17:00:00Z",
+      "issued_utc": "2026-05-18T23:00:00Z",
       "overview": [],
       "hazards": [
         {
