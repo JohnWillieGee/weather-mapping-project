@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-17T23:53:16.428866+00:00",
-  "last_checked_utc": "2026-05-17T23:53:16.428866+00:00",
+  "generated_utc": "2026-05-18T00:23:17.159013+00:00",
+  "last_checked_utc": "2026-05-18T00:23:17.159013+00:00",
   "warning_count": 5,
   "warnings": [
     {
       "pid": "",
-      "title": "18/04:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "18/10:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://www.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 17 May 2026 18:00:10 GMT"
+      "issued": "Mon, 18 May 2026 00:00:15 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "18/04:10 EST Marine Wind Warning Summary for Victoria",
+      "title": "18/10:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://www.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 17 May 2026 18:10:21 GMT"
+      "issued": "Mon, 18 May 2026 00:00:17 GMT"
     },
     {
       "pid": "",
@@ -3056,9 +3056,9 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-05-17T18:00:00Z",
+      "issued_utc": "2026-05-18T00:00:00Z",
       "overview": [
-        "Strong Wind Warning for Monday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast and Sydney Coast",
+        "Strong Wind Warning for Monday for Byron Coast, Coffs Coast, Macquarie Coast and Hunter Coast",
         "Gale Warning for Tuesday for Macquarie Coast and Hunter Coast",
         "Strong Wind Warning for Tuesday for Byron Coast, Coffs Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast"
       ],
@@ -3070,17 +3070,26 @@
             "Byron Coast: Point Danger to Wooli",
             "Coffs Coast: Wooli to Smoky Cape",
             "Macquarie Coast: Smoky Cape to Seal Rocks",
-            "Hunter Coast: Seal Rocks to Broken Bay",
-            "Sydney Coast: Broken Bay to Port Hacking"
+            "Hunter Coast: Seal Rocks to Broken Bay"
           ],
           "aac_codes": [
             "NSW_MW008",
             "NSW_MW007",
             "NSW_MW006",
-            "NSW_MW005",
+            "NSW_MW005"
+          ],
+          "summary": "Byron Coast, Coffs Coast, Macquarie Coast and Hunter Coast"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
+            "Sydney Coast: Broken Bay to Port Hacking"
+          ],
+          "aac_codes": [
             "NSW_MW004"
           ],
-          "summary": "Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast and Sydney Coast"
+          "summary": "Sydney Coast"
         },
         {
           "level": "GALE",
@@ -3115,7 +3124,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-05-17T18:10:00Z",
+      "issued_utc": "2026-05-18T00:00:00Z",
       "overview": [],
       "hazards": [
         {
