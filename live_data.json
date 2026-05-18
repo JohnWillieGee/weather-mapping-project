@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-18T11:23:16.872899+00:00",
-  "last_checked_utc": "2026-05-18T11:23:16.872899+00:00",
+  "generated_utc": "2026-05-18T11:53:17.297256+00:00",
+  "last_checked_utc": "2026-05-18T11:53:17.297256+00:00",
   "warning_count": 12,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "IDN28504",
-      "title": "18/13:19 EST Severe Weather Warning\nfor Lord Howe Island",
+      "title": "18/21:42 EST Severe Weather Warning\nfor Lord Howe Island",
       "type": "severe_weather",
       "state": "NSW",
       "link": "http://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDN28504.txt",
       "desc": "",
-      "issued": "Mon, 18 May 2026 03:19:26 GMT"
+      "issued": "Mon, 18 May 2026 11:42:05 GMT"
     },
     {
       "pid": "",
@@ -47,6 +47,15 @@
       "link": "http://www.bom.gov.au/nsw/warnings/flood/tweedriver.shtml",
       "desc": "",
       "issued": "Mon, 18 May 2026 11:12:42 GMT"
+    },
+    {
+      "pid": "",
+      "title": "18/21:24 EST Initial Minor Flood Warning for the Wilsons River",
+      "type": "flood",
+      "state": "NSW",
+      "link": "http://www.bom.gov.au/nsw/warnings/flood/wilsons.shtml",
+      "desc": "",
+      "issued": "Mon, 18 May 2026 11:24:43 GMT"
     },
     {
       "pid": "",
@@ -85,15 +94,6 @@
       "issued": "Mon, 18 May 2026 08:39:57 GMT"
     },
     {
-      "pid": "IDQ21035",
-      "title": "18/18:40 EST \n                Cancellation of Severe Thunderstorm Warning - Southeast Queensland\n            \nfor \n                Gold Coast Council Area.",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "http://www.bom.gov.au/products/IDQ21035.shtml",
-      "desc": "",
-      "issued": "Mon, 18 May 2026 08:40:43 GMT"
-    },
-    {
       "pid": "",
       "title": "18/12:13 CST Flood Warning for the Inland Rivers SA",
       "type": "flood",
@@ -116,14 +116,31 @@
     "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
   },
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Bent St, South Grafton",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Mon, 18 May 2026 11:47:58 GMT",
+        "description": "Bent St, South Grafton, NSW 2460",
+        "council": "Clarence Valley",
+        "lat": -29.700576,
+        "lng": 152.941938,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": []
   },
-  "incident_count": 0,
+  "incident_count": 1,
   "nsw_alert_zones": [],
   "wa_feed_method": "none",
   "fdr": {
