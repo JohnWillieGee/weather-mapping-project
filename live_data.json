@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-19T10:53:09.215410+00:00",
-  "last_checked_utc": "2026-05-19T10:53:09.215410+00:00",
+  "generated_utc": "2026-05-19T11:23:07.097445+00:00",
+  "last_checked_utc": "2026-05-19T11:23:07.097445+00:00",
   "warning_count": 14,
   "warnings": [
     {
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "19/15:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "19/21:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://www.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 19 May 2026 05:00:18 GMT"
+      "issued": "Tue, 19 May 2026 11:00:16 GMT"
     },
     {
       "pid": "",
@@ -104,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "19/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "19/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 19 May 2026 05:01:13 GMT"
+      "issued": "Tue, 19 May 2026 11:01:12 GMT"
     },
     {
       "pid": "",
@@ -122,12 +122,12 @@
     },
     {
       "pid": "",
-      "title": "19/14:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "19/20:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://www.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 19 May 2026 05:00:11 GMT"
+      "issued": "Tue, 19 May 2026 11:00:11 GMT"
     }
   ],
   "fetch_errors": {
@@ -3122,20 +3122,9 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-05-19T05:00:00Z",
+      "issued_utc": "2026-05-19T11:00:00Z",
       "overview": [],
       "hazards": [
-        {
-          "level": "CAN",
-          "severity": "CAN",
-          "zones": [
-            "Gold Coast Waters: Cape Moreton to Point Danger"
-          ],
-          "aac_codes": [
-            "QLD_MW014"
-          ],
-          "summary": "Gold Coast Waters"
-        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
@@ -3152,22 +3141,10 @@
             "QLD_MW002",
             "QLD_MW005",
             "QLD_MW006",
-            "QLD_MW012"
+            "QLD_MW012",
+            "QLD_MW014"
           ],
           "summary": "South East Gulf of Carpentaria, North East Gulf of Carpentaria, Cooktown Coast, Cairns Coast, Sunshine Coast Waters and Gold Coast Waters"
-        },
-        {
-          "level": "CAN",
-          "severity": "CAN",
-          "zones": [
-            "Townsville Coast: Cardwell to Bowen",
-            "Mackay Coast: Bowen to St Lawrence"
-          ],
-          "aac_codes": [
-            "QLD_MW007",
-            "QLD_MW008"
-          ],
-          "summary": "Townsville Coast and Mackay Coast"
         }
       ]
     },
@@ -3307,9 +3284,9 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-19T05:01:00Z",
+      "issued_utc": "2026-05-19T11:01:00Z",
       "overview": [
-        "Strong Wind Warning for Tuesday for Pilbara Coast East and Pilbara Coast West",
+        "Strong Wind Warning for Tuesday for Pilbara Coast East",
         "Strong Wind Warning for Wednesday for North Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
       ],
       "hazards": [
@@ -3317,25 +3294,23 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Pilbara Coast East: Wallal to Cape Preston",
-            "Pilbara Coast West: Cape Preston to North West Cape"
+            "Pilbara Coast East: Wallal to Cape Preston"
           ],
           "aac_codes": [
-            "WA_MW003",
-            "WA_MW004"
+            "WA_MW003"
           ],
-          "summary": "Pilbara Coast East and Pilbara Coast West"
+          "summary": "Pilbara Coast East"
         },
         {
           "level": "CAN",
           "severity": "CAN",
           "zones": [
-            "West Kimberley Coast: Kuri Bay to Wallal"
+            "Pilbara Coast West: Cape Preston to North West Cape"
           ],
           "aac_codes": [
-            "WA_MW002"
+            "WA_MW004"
           ],
-          "summary": "West Kimberley Coast"
+          "summary": "Pilbara Coast West"
         },
         {
           "level": "Strong Wind Warning",
@@ -3380,7 +3355,7 @@
     "NT": {
       "state": "NT",
       "product": "IDD20105",
-      "issued_utc": "2026-05-19T05:00:00Z",
+      "issued_utc": "2026-05-19T11:00:00Z",
       "overview": [],
       "hazards": [
         {
