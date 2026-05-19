@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-19T04:53:13.120015+00:00",
-  "last_checked_utc": "2026-05-19T04:53:13.120015+00:00",
+  "generated_utc": "2026-05-19T05:23:08.266980+00:00",
+  "last_checked_utc": "2026-05-19T05:23:08.266980+00:00",
   "warning_count": 14,
   "warnings": [
     {
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "19/12:23 EST Marine Wind Warning Summary for Queensland",
+      "title": "19/15:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://www.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 19 May 2026 02:23:07 GMT"
+      "issued": "Tue, 19 May 2026 05:00:18 GMT"
     },
     {
       "pid": "",
@@ -104,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "19/08:30 WST Marine Wind Warning Summary for Western Australia",
+      "title": "19/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 19 May 2026 00:30:43 GMT"
+      "issued": "Tue, 19 May 2026 05:01:13 GMT"
     },
     {
       "pid": "",
@@ -122,12 +122,12 @@
     },
     {
       "pid": "",
-      "title": "19/08:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "19/14:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://www.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 18 May 2026 23:00:12 GMT"
+      "issued": "Tue, 19 May 2026 05:00:11 GMT"
     }
   ],
   "fetch_errors": {
@@ -3122,15 +3122,12 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-05-19T02:22:53Z",
-      "overview": [
-        "Strong Wind Warning for Tuesday for Gold Coast Waters",
-        "Strong Wind Warning for Wednesday for Mackay Coast, Townsville Coast, Cooktown Coast, Gold Coast Waters, Cairns Coast and South East Gulf of Carpentaria"
-      ],
+      "issued_utc": "2026-05-19T05:00:00Z",
+      "overview": [],
       "hazards": [
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "CAN",
+          "severity": "CAN",
           "zones": [
             "Gold Coast Waters: Cape Moreton to Point Danger"
           ],
@@ -3140,35 +3137,37 @@
           "summary": "Gold Coast Waters"
         },
         {
-          "level": "CAN",
-          "severity": "CAN",
-          "zones": [
-            "Sunshine Coast Waters: Double Island Point to Cape Moreton"
-          ],
-          "aac_codes": [
-            "QLD_MW012"
-          ],
-          "summary": "Sunshine Coast Waters"
-        },
-        {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
             "South East Gulf of Carpentaria: QLD-NT Border to Cape Keerweer",
+            "North East Gulf of Carpentaria: Cape Keerweer to Crab Island",
             "Cooktown Coast: Cape Melville to Cape Tribulation",
             "Cairns Coast: Cape Tribulation to Cardwell",
-            "Townsville Coast: Cardwell to Bowen",
-            "Mackay Coast: Bowen to St Lawrence",
+            "Sunshine Coast Waters: Double Island Point to Cape Moreton",
             "Gold Coast Waters: Cape Moreton to Point Danger"
           ],
           "aac_codes": [
             "QLD_MW001",
+            "QLD_MW002",
             "QLD_MW005",
             "QLD_MW006",
+            "QLD_MW012"
+          ],
+          "summary": "South East Gulf of Carpentaria, North East Gulf of Carpentaria, Cooktown Coast, Cairns Coast, Sunshine Coast Waters and Gold Coast Waters"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
+            "Townsville Coast: Cardwell to Bowen",
+            "Mackay Coast: Bowen to St Lawrence"
+          ],
+          "aac_codes": [
             "QLD_MW007",
             "QLD_MW008"
           ],
-          "summary": "South East Gulf of Carpentaria, Cooktown Coast, Cairns Coast, Townsville Coast, Mackay Coast and Gold Coast Waters"
+          "summary": "Townsville Coast and Mackay Coast"
         }
       ]
     },
@@ -3308,26 +3307,35 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-19T00:30:33Z",
+      "issued_utc": "2026-05-19T05:01:00Z",
       "overview": [
-        "Strong Wind Warning for Tuesday for West Kimberley Coast, Pilbara Coast West and Pilbara Coast East",
-        "Strong Wind Warning for Wednesday for Pilbara Coast West, North Kimberley Coast and Pilbara Coast East"
+        "Strong Wind Warning for Tuesday for Pilbara Coast East and Pilbara Coast West",
+        "Strong Wind Warning for Wednesday for North Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "West Kimberley Coast: Kuri Bay to Wallal",
             "Pilbara Coast East: Wallal to Cape Preston",
             "Pilbara Coast West: Cape Preston to North West Cape"
           ],
           "aac_codes": [
-            "WA_MW002",
             "WA_MW003",
             "WA_MW004"
           ],
-          "summary": "West Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
+          "summary": "Pilbara Coast East and Pilbara Coast West"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
+            "West Kimberley Coast: Kuri Bay to Wallal"
+          ],
+          "aac_codes": [
+            "WA_MW002"
+          ],
+          "summary": "West Kimberley Coast"
         },
         {
           "level": "Strong Wind Warning",
@@ -3372,7 +3380,7 @@
     "NT": {
       "state": "NT",
       "product": "IDD20105",
-      "issued_utc": "2026-05-18T23:00:00Z",
+      "issued_utc": "2026-05-19T05:00:00Z",
       "overview": [],
       "hazards": [
         {
