@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-05-19T17:53:05.884382+00:00",
-  "last_checked_utc": "2026-05-19T17:53:05.884382+00:00",
+  "generated_utc": "2026-05-19T18:23:04.410839+00:00",
+  "last_checked_utc": "2026-05-19T18:23:04.410839+00:00",
   "warning_count": 14,
   "warnings": [
     {
       "pid": "",
-      "title": "19/22:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "20/04:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://www.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 19 May 2026 12:00:11 GMT"
+      "issued": "Tue, 19 May 2026 18:00:11 GMT"
     },
     {
       "pid": "IDN28504",
-      "title": "19/22:24 EST Severe Weather Warning\nfor Lord Howe Island",
+      "title": "20/04:04 EST CANCELLATION Severe Weather Warning\nfor Lord Howe Island",
       "type": "severe_weather",
       "state": "NSW",
       "link": "http://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDN28504.txt",
       "desc": "",
-      "issued": "Tue, 19 May 2026 12:24:28 GMT"
+      "issued": "Tue, 19 May 2026 18:04:39 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "19/22:00 EST Marine Wind Warning Summary for Victoria",
+      "title": "20/04:10 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://www.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 19 May 2026 12:00:16 GMT"
+      "issued": "Tue, 19 May 2026 18:10:23 GMT"
     },
     {
       "pid": "",
@@ -113,12 +113,12 @@
     },
     {
       "pid": "",
-      "title": "19/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "20/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://www.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 19 May 2026 12:00:12 GMT"
+      "issued": "Tue, 19 May 2026 18:00:13 GMT"
     },
     {
       "pid": "",
@@ -3180,53 +3180,12 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-05-19T12:00:00Z",
+      "issued_utc": "2026-05-19T18:00:00Z",
       "overview": [
-        "Gale Warning for Tuesday for Eden Coast",
-        "Strong Wind Warning for Tuesday for Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast and Batemans Coast",
-        "Gale Warning for Wednesday for Eden Coast",
-        "Strong Wind Warning for Wednesday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast and Batemans Coast"
+        "Strong Wind Warning for Wednesday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast",
+        "Strong Wind Warning for Thursday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Sydney Enclosed Waters, Illawarra Coast, Batemans Coast and Eden Coast"
       ],
       "hazards": [
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "Eden Coast: Montague Island to Gabo Island"
-          ],
-          "aac_codes": [
-            "NSW_MW001"
-          ],
-          "summary": "Eden Coast"
-        },
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Macquarie Coast: Smoky Cape to Seal Rocks",
-            "Hunter Coast: Seal Rocks to Broken Bay",
-            "Sydney Coast: Broken Bay to Port Hacking",
-            "Illawarra Coast: Port Hacking to Ulladulla",
-            "Batemans Coast: Ulladulla to Montague Island"
-          ],
-          "aac_codes": [
-            "NSW_MW006",
-            "NSW_MW005",
-            "NSW_MW004",
-            "NSW_MW003",
-            "NSW_MW002"
-          ],
-          "summary": "Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast and Batemans Coast"
-        },
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "Eden Coast: Montague Island to Gabo Island"
-          ],
-          "aac_codes": [],
-          "summary": "Eden Coast"
-        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
@@ -3237,66 +3196,60 @@
             "Hunter Coast: Seal Rocks to Broken Bay",
             "Sydney Coast: Broken Bay to Port Hacking",
             "Illawarra Coast: Port Hacking to Ulladulla",
-            "Batemans Coast: Ulladulla to Montague Island"
+            "Batemans Coast: Ulladulla to Montague Island",
+            "Eden Coast: Montague Island to Gabo Island"
           ],
           "aac_codes": [
             "NSW_MW008",
-            "NSW_MW007"
+            "NSW_MW007",
+            "NSW_MW006",
+            "NSW_MW005",
+            "NSW_MW004",
+            "NSW_MW003",
+            "NSW_MW002",
+            "NSW_MW001"
           ],
-          "summary": "Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast and Batemans Coast"
+          "summary": "Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Byron Coast: Point Danger to Wooli",
+            "Coffs Coast: Wooli to Smoky Cape",
+            "Macquarie Coast: Smoky Cape to Seal Rocks",
+            "Hunter Coast: Seal Rocks to Broken Bay",
+            "Sydney Coast: Broken Bay to Port Hacking",
+            "Sydney Enclosed Waters",
+            "Illawarra Coast: Port Hacking to Ulladulla",
+            "Batemans Coast: Ulladulla to Montague Island",
+            "Eden Coast: Montague Island to Gabo Island"
+          ],
+          "aac_codes": [
+            "NSW_MW009"
+          ],
+          "summary": "Sydney Enclosed Waters, Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast"
         }
       ]
     },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-05-19T12:00:00Z",
-      "overview": [
-        "Gale Warning for Tuesday for East Gippsland Coast",
-        "Strong Wind Warning for Tuesday for Central Gippsland Coast",
-        "Gale Warning for Wednesday for East Gippsland Coast",
-        "Strong Wind Warning for Wednesday for Central Gippsland Coast"
-      ],
+      "issued_utc": "2026-05-19T18:10:00Z",
+      "overview": [],
       "hazards": [
         {
-          "level": "Gale Warning",
-          "severity": "GALE",
+          "level": "Strong Wind Warning",
+          "severity": "STR",
           "zones": [
+            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
             "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
           ],
           "aac_codes": [
+            "VIC_MW003",
             "VIC_MW004"
           ],
-          "summary": "East Gippsland Coast"
-        },
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance"
-          ],
-          "aac_codes": [
-            "VIC_MW003"
-          ],
-          "summary": "Central Gippsland Coast"
-        },
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
-          ],
-          "aac_codes": [],
-          "summary": "East Gippsland Coast"
-        },
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance"
-          ],
-          "aac_codes": [],
-          "summary": "Central Gippsland Coast"
+          "summary": "Central Gippsland Coast and East Gippsland Coast"
         }
       ]
     },
@@ -3326,25 +3279,46 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-05-19T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-05-19T18:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Wednesday for Lower East Coast, South East Coast and South West Coast",
+        "Strong Wind Warning for Thursday for South West Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Central North Coast: Stanley to Northern Tip of Flinders Island",
             "Lower East Coast: Wineglass Bay to Tasman Island",
             "South East Coast: Tasman Island to South East Cape",
             "South West Coast: South East Cape to Low Rocky Point"
           ],
           "aac_codes": [
-            "TAS_MW002",
             "TAS_MW005",
             "TAS_MW006",
             "TAS_MW007"
           ],
-          "summary": "Central North Coast, Lower East Coast, South East Coast and South West Coast"
+          "summary": "Lower East Coast, South East Coast and South West Coast"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
+            "Central North Coast: Stanley to Northern Tip of Flinders Island"
+          ],
+          "aac_codes": [
+            "TAS_MW002"
+          ],
+          "summary": "Central North Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "South West Coast: South East Cape to Low Rocky Point"
+          ],
+          "aac_codes": [],
+          "summary": "South West Coast"
         }
       ]
     },
