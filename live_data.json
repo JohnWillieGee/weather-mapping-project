@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-05-20T11:53:06.067573+00:00",
-  "last_checked_utc": "2026-05-20T11:53:06.067573+00:00",
+  "generated_utc": "2026-05-20T12:23:07.179700+00:00",
+  "last_checked_utc": "2026-05-20T12:23:07.179700+00:00",
   "warning_count": 11,
   "warnings": [
     {
       "pid": "",
-      "title": "20/16:05 EST Marine Wind Warning Summary for New South Wales",
+      "title": "20/22:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://www.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 20 May 2026 06:05:15 GMT"
+      "issued": "Wed, 20 May 2026 12:00:12 GMT"
     },
     {
       "pid": "IDN28504",
-      "title": "20/15:22 EST Severe Weather Warning\nfor Lord Howe Island",
+      "title": "20/22:09 EST Severe Weather Warning\nfor Lord Howe Island",
       "type": "severe_weather",
       "state": "NSW",
       "link": "http://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDN28504.txt",
       "desc": "",
-      "issued": "Wed, 20 May 2026 05:22:31 GMT"
+      "issued": "Wed, 20 May 2026 12:09:08 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "20/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "20/22:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://www.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 20 May 2026 06:15:18 GMT"
+      "issued": "Wed, 20 May 2026 12:00:19 GMT"
     },
     {
       "pid": "",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "20/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "20/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://www.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 20 May 2026 06:05:11 GMT"
+      "issued": "Wed, 20 May 2026 12:00:10 GMT"
     },
     {
       "pid": "",
@@ -3164,7 +3164,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-05-20T06:05:00Z",
+      "issued_utc": "2026-05-20T12:00:00Z",
       "overview": [
         "Strong Wind Warning for Wednesday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast",
         "Strong Wind Warning for Thursday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Sydney Enclosed Waters, Illawarra Coast, Batemans Coast and Eden Coast"
@@ -3219,7 +3219,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-05-20T06:15:00Z",
+      "issued_utc": "2026-05-20T12:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3285,15 +3285,12 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-05-20T06:05:00Z",
-      "overview": [
-        "Strong Wind Warning for Wednesday for Lower East Coast and South East Coast",
-        "Strong Wind Warning for Thursday for South West Coast"
-      ],
+      "issued_utc": "2026-05-20T12:00:00Z",
+      "overview": [],
       "hazards": [
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "CAN",
+          "severity": "CAN",
           "zones": [
             "Lower East Coast: Wineglass Bay to Tasman Island",
             "South East Coast: Tasman Island to South East Cape"
@@ -3305,23 +3302,14 @@
           "summary": "Lower East Coast and South East Coast"
         },
         {
-          "level": "CAN",
-          "severity": "CAN",
+          "level": "Strong Wind Warning",
+          "severity": "STR",
           "zones": [
             "South West Coast: South East Cape to Low Rocky Point"
           ],
           "aac_codes": [
             "TAS_MW007"
           ],
-          "summary": "South West Coast"
-        },
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "South West Coast: South East Cape to Low Rocky Point"
-          ],
-          "aac_codes": [],
           "summary": "South West Coast"
         }
       ]
