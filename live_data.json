@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-20T04:53:04.056826+00:00",
-  "last_checked_utc": "2026-05-20T04:53:04.056826+00:00",
+  "generated_utc": "2026-05-20T05:23:04.997434+00:00",
+  "last_checked_utc": "2026-05-20T05:23:04.997434+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "20/10:42 EST Marine Wind Warning Summary for Queensland",
+      "title": "20/15:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://www.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 20 May 2026 00:42:28 GMT"
+      "issued": "Wed, 20 May 2026 05:00:19 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "20/12:05 WST Marine Wind Warning Summary for Western Australia",
+      "title": "20/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Wed, 20 May 2026 04:05:00 GMT"
+      "issued": "Wed, 20 May 2026 05:01:14 GMT"
     },
     {
       "pid": "",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "20/08:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "20/14:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://www.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 19 May 2026 23:00:11 GMT"
+      "issued": "Wed, 20 May 2026 05:00:13 GMT"
     }
   ],
   "fetch_errors": {
@@ -3086,17 +3086,16 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-05-20T00:42:12Z",
+      "issued_utc": "2026-05-20T05:00:00Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for Sunshine Coast Waters, Gold Coast Waters, Mackay Coast, Cooktown Coast, Cairns Coast and South East Gulf of Carpentaria",
-        "Strong Wind Warning for Thursday for Sunshine Coast Waters, Gold Coast Waters, Capricornia Coast, Mackay Coast, Townsville Coast, Peninsula Coast, Cooktown Coast, Cairns Coast, South East Gulf of Carpentaria and K'gari Coast"
+        "Strong Wind Warning for Wednesday for Cooktown Coast, Cairns Coast, Mackay Coast, Sunshine Coast Waters and Gold Coast Waters",
+        "Strong Wind Warning for Thursday for South East Gulf of Carpentaria, Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast, Mackay Coast, Capricornia Coast, K'gari Coast, Sunshine Coast Waters and Gold Coast Waters"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "South East Gulf of Carpentaria: QLD-NT Border to Cape Keerweer",
             "Cooktown Coast: Cape Melville to Cape Tribulation",
             "Cairns Coast: Cape Tribulation to Cardwell",
             "Mackay Coast: Bowen to St Lawrence",
@@ -3104,27 +3103,24 @@
             "Gold Coast Waters: Cape Moreton to Point Danger"
           ],
           "aac_codes": [
-            "QLD_MW001",
             "QLD_MW005",
             "QLD_MW006",
             "QLD_MW008",
             "QLD_MW012",
             "QLD_MW014"
           ],
-          "summary": "South East Gulf of Carpentaria, Cooktown Coast, Cairns Coast, Mackay Coast, Sunshine Coast Waters and Gold Coast Waters"
+          "summary": "Cooktown Coast, Cairns Coast, Mackay Coast, Sunshine Coast Waters and Gold Coast Waters"
         },
         {
           "level": "CAN",
           "severity": "CAN",
           "zones": [
-            "North East Gulf of Carpentaria: Cape Keerweer to Crab Island",
-            "Townsville Coast: Cardwell to Bowen"
+            "South East Gulf of Carpentaria: QLD-NT Border to Cape Keerweer"
           ],
           "aac_codes": [
-            "QLD_MW002",
-            "QLD_MW007"
+            "QLD_MW001"
           ],
-          "summary": "North East Gulf of Carpentaria and Townsville Coast"
+          "summary": "South East Gulf of Carpentaria"
         },
         {
           "level": "Strong Wind Warning",
@@ -3143,6 +3139,7 @@
           ],
           "aac_codes": [
             "QLD_MW004",
+            "QLD_MW007",
             "QLD_MW009",
             "QLD_MW011"
           ],
@@ -3238,25 +3235,56 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-20T04:04:48Z",
-      "overview": [],
+      "issued_utc": "2026-05-20T05:01:00Z",
+      "overview": [
+        "Strong Wind Warning for Wednesday for West Kimberley Coast",
+        "Strong Wind Warning for Thursday for Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Esperance Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "West Kimberley Coast: Kuri Bay to Wallal"
+          ],
+          "aac_codes": [
+            "WA_MW002"
+          ],
+          "summary": "West Kimberley Coast"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
             "North Kimberley Coast: WA-NT Border to Kuri Bay",
-            "West Kimberley Coast: Kuri Bay to Wallal",
             "Pilbara Coast East: Wallal to Cape Preston",
             "Pilbara Coast West: Cape Preston to North West Cape"
           ],
           "aac_codes": [
             "WA_MW001",
-            "WA_MW002",
             "WA_MW003",
             "WA_MW004"
           ],
-          "summary": "North Kimberley Coast, West Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
+          "summary": "North Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Perth Coast: Two Rocks to Dawesville",
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay"
+          ],
+          "aac_codes": [
+            "WA_MW009",
+            "WA_MW010",
+            "WA_MW011",
+            "WA_MW012",
+            "WA_MW013"
+          ],
+          "summary": "Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Esperance Coast"
         }
       ]
     },
@@ -3298,15 +3326,12 @@
     "NT": {
       "state": "NT",
       "product": "IDD20105",
-      "issued_utc": "2026-05-19T23:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Wednesday for Roper Groote Coast",
-        "Strong Wind Warning for Thursday for Roper Groote Coast"
-      ],
+      "issued_utc": "2026-05-20T05:00:00Z",
+      "overview": [],
       "hazards": [
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "CAN",
+          "severity": "CAN",
           "zones": [
             "Roper Groote Coast: Cape Arnhem to QLD-NT Border"
           ],
