@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-19T23:53:11.441540+00:00",
-  "last_checked_utc": "2026-05-19T23:53:11.441540+00:00",
+  "generated_utc": "2026-05-20T00:23:07.093121+00:00",
+  "last_checked_utc": "2026-05-20T00:23:07.093121+00:00",
   "warning_count": 13,
   "warnings": [
     {
       "pid": "",
-      "title": "20/07:16 EST Marine Wind Warning Summary for New South Wales",
+      "title": "20/10:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://www.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 19 May 2026 21:16:39 GMT"
+      "issued": "Wed, 20 May 2026 00:00:12 GMT"
     },
     {
       "pid": "IDN28504",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "20/07:22 EST Marine Wind Warning Summary for Victoria",
+      "title": "20/10:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://www.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 19 May 2026 21:22:17 GMT"
+      "issued": "Wed, 20 May 2026 00:00:18 GMT"
     },
     {
       "pid": "",
@@ -104,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "20/04:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "20/10:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://www.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 19 May 2026 18:00:13 GMT"
+      "issued": "Wed, 20 May 2026 00:00:14 GMT"
     },
     {
       "pid": "",
@@ -3180,10 +3180,10 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-05-19T21:16:25Z",
+      "issued_utc": "2026-05-20T00:00:00Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for Illawarra Coast, Sydney Coast, Coffs Coast, Byron Coast, Eden Coast, Macquarie Coast, Hunter Coast and Batemans Coast",
-        "Strong Wind Warning for Thursday for Illawarra Coast, Sydney Coast, Coffs Coast, Byron Coast, Eden Coast, Macquarie Coast, Hunter Coast, Sydney Enclosed Waters and Batemans Coast"
+        "Strong Wind Warning for Wednesday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast",
+        "Strong Wind Warning for Thursday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Sydney Enclosed Waters, Illawarra Coast, Batemans Coast and Eden Coast"
       ],
       "hazards": [
         {
@@ -3235,21 +3235,30 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-05-19T21:22:00Z",
+      "issued_utc": "2026-05-20T00:00:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
             "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
           ],
           "aac_codes": [
-            "VIC_MW003",
             "VIC_MW004"
           ],
-          "summary": "Central Gippsland Coast and East Gippsland Coast"
+          "summary": "East Gippsland Coast"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
+            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance"
+          ],
+          "aac_codes": [
+            "VIC_MW003"
+          ],
+          "summary": "Central Gippsland Coast"
         }
       ]
     },
@@ -3279,7 +3288,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-05-19T18:00:00Z",
+      "issued_utc": "2026-05-20T00:00:00Z",
       "overview": [
         "Strong Wind Warning for Wednesday for Lower East Coast, South East Coast and South West Coast",
         "Strong Wind Warning for Thursday for South West Coast"
@@ -3299,17 +3308,6 @@
             "TAS_MW007"
           ],
           "summary": "Lower East Coast, South East Coast and South West Coast"
-        },
-        {
-          "level": "CAN",
-          "severity": "CAN",
-          "zones": [
-            "Central North Coast: Stanley to Northern Tip of Flinders Island"
-          ],
-          "aac_codes": [
-            "TAS_MW002"
-          ],
-          "summary": "Central North Coast"
         },
         {
           "level": "Strong Wind Warning",
