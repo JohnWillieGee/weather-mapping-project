@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-20T22:53:00.584303+00:00",
-  "last_checked_utc": "2026-05-20T22:53:00.584303+00:00",
+  "generated_utc": "2026-05-20T23:23:02.125979+00:00",
+  "last_checked_utc": "2026-05-20T23:23:02.125979+00:00",
   "warning_count": 12,
   "warnings": [
     {
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "21/07:33 EST Marine Wind Warning Summary for Queensland",
+      "title": "21/09:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://www.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 20 May 2026 21:33:31 GMT"
+      "issued": "Wed, 20 May 2026 23:00:21 GMT"
     },
     {
       "pid": "IDQ21137",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "21/05:25 WST Marine Wind Warning Summary for Western Australia",
+      "title": "21/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Wed, 20 May 2026 21:25:53 GMT"
+      "issued": "Wed, 20 May 2026 23:01:13 GMT"
     },
     {
       "pid": "",
@@ -104,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "21/02:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "21/08:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://www.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 20 May 2026 17:00:14 GMT"
+      "issued": "Wed, 20 May 2026 23:00:11 GMT"
     }
   ],
   "fetch_errors": {
@@ -3104,10 +3104,10 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-05-20T21:33:09Z",
+      "issued_utc": "2026-05-20T23:00:00Z",
       "overview": [
-        "Strong Wind Warning for Thursday for Gold Coast Waters, Capricornia Coast, Mackay Coast, Townsville Coast, Peninsula Coast, Cooktown Coast, Moreton Bay, Sunshine Coast Waters, Hervey Bay, Cairns Coast, South East Gulf of Carpentaria and K'gari Coast",
-        "Gale Warning for Friday for Gold Coast Waters and Sunshine Coast Waters",
+        "Strong Wind Warning for Thursday for South East Gulf of Carpentaria, Peninsula Coast, Cooktown Coast, Cairns Coast, Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters",
+        "Gale Warning for Friday for Sunshine Coast Waters and Gold Coast Waters",
         "Strong Wind Warning for Friday for Cooktown Coast, Capricornia Coast and K'gari Coast"
       ],
       "hazards": [
@@ -3119,8 +3119,6 @@
             "Peninsula Coast: Sharp Point to Cape Melville",
             "Cooktown Coast: Cape Melville to Cape Tribulation",
             "Cairns Coast: Cape Tribulation to Cardwell",
-            "Townsville Coast: Cardwell to Bowen",
-            "Mackay Coast: Bowen to St Lawrence",
             "Capricornia Coast: St Lawrence to Burnett Heads",
             "Hervey Bay",
             "K'gari Coast: Sandy Cape to Double Island Point",
@@ -3133,8 +3131,6 @@
             "QLD_MW004",
             "QLD_MW005",
             "QLD_MW006",
-            "QLD_MW007",
-            "QLD_MW008",
             "QLD_MW009",
             "QLD_MW010",
             "QLD_MW011",
@@ -3142,7 +3138,20 @@
             "QLD_MW013",
             "QLD_MW014"
           ],
-          "summary": "South East Gulf of Carpentaria, Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast, Mackay Coast, Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
+          "summary": "South East Gulf of Carpentaria, Peninsula Coast, Cooktown Coast, Cairns Coast, Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
+            "Townsville Coast: Cardwell to Bowen",
+            "Mackay Coast: Bowen to St Lawrence"
+          ],
+          "aac_codes": [
+            "QLD_MW007",
+            "QLD_MW008"
+          ],
+          "summary": "Townsville Coast and Mackay Coast"
         },
         {
           "level": "Gale Warning",
@@ -3238,21 +3247,27 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-20T21:25:45Z",
+      "issued_utc": "2026-05-20T23:01:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Perth Coast: Two Rocks to Dawesville",
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Albany Coast: Walpole to Bremer Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay"
+            "Esperance Coast: Bremer Bay to Israelite Bay",
+            "Perth Local Waters"
           ],
           "aac_codes": [
+            "WA_MW009",
+            "WA_MW010",
             "WA_MW012",
-            "WA_MW013"
+            "WA_MW013",
+            "WA_MW015"
           ],
-          "summary": "Albany Coast and Esperance Coast"
+          "summary": "Perth Local Waters, Perth Coast, Bunbury Geographe Coast, Albany Coast and Esperance Coast"
         }
       ]
     },
@@ -3278,7 +3293,7 @@
     "NT": {
       "state": "NT",
       "product": "IDD20105",
-      "issued_utc": "2026-05-20T17:00:00Z",
+      "issued_utc": "2026-05-20T23:00:00Z",
       "overview": [],
       "hazards": [
         {
