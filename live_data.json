@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-21T03:23:00.430415+00:00",
-  "last_checked_utc": "2026-05-21T03:23:00.430415+00:00",
+  "generated_utc": "2026-05-21T03:53:21.726325+00:00",
+  "last_checked_utc": "2026-05-21T03:53:21.726325+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -122,6 +122,7 @@
     }
   ],
   "fetch_errors": {
+    "tas": "HTTPSConnectionPool(host='services.thelist.tas.gov.au', port=443): Max retries exceeded with url: /arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/72/query?where=1%3D1&outFields=*&f=geojson (Caused by ConnectTimeoutError(<HTTPSConnection(host='services.thelist.tas.gov.au', port=443) at 0x21088513250>, 'Connection to services.thelist.tas.gov.au timed out. (connect timeout=20)'))",
     "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
   },
   "incidents": {
