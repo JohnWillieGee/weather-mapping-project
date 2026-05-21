@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-21T17:53:11.282836+00:00",
-  "last_checked_utc": "2026-05-21T17:53:11.282836+00:00",
+  "generated_utc": "2026-05-21T18:23:09.398193+00:00",
+  "last_checked_utc": "2026-05-21T18:23:09.398193+00:00",
   "warning_count": 14,
   "warnings": [
     {
       "pid": "",
-      "title": "21/22:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "22/04:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://www.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 21 May 2026 12:00:20 GMT"
+      "issued": "Thu, 21 May 2026 18:00:10 GMT"
     },
     {
       "pid": "IDN21137",
@@ -113,12 +113,12 @@
     },
     {
       "pid": "",
-      "title": "21/23:21 EST Marine Wind Warning Summary for Tasmania",
+      "title": "22/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://www.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 21 May 2026 13:21:51 GMT"
+      "issued": "Thu, 21 May 2026 18:00:10 GMT"
     },
     {
       "pid": "",
@@ -3186,30 +3186,13 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-05-21T12:00:00Z",
+      "issued_utc": "2026-05-21T18:00:00Z",
       "overview": [
-        "Strong Wind Warning for Thursday for Byron Coast, Coffs Coast, Macquarie Coast and Hunter Coast",
         "Gale Warning for Friday for Byron Coast and Coffs Coast",
-        "Strong Wind Warning for Friday for Macquarie Coast, Hunter Coast and Sydney Coast"
+        "Strong Wind Warning for Friday for Macquarie Coast, Hunter Coast and Sydney Coast",
+        "Strong Wind Warning for Saturday for Byron Coast, Coffs Coast and Macquarie Coast"
       ],
       "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Byron Coast: Point Danger to Wooli",
-            "Coffs Coast: Wooli to Smoky Cape",
-            "Macquarie Coast: Smoky Cape to Seal Rocks",
-            "Hunter Coast: Seal Rocks to Broken Bay"
-          ],
-          "aac_codes": [
-            "NSW_MW008",
-            "NSW_MW007",
-            "NSW_MW006",
-            "NSW_MW005"
-          ],
-          "summary": "Byron Coast, Coffs Coast, Macquarie Coast and Hunter Coast"
-        },
         {
           "level": "Gale Warning",
           "severity": "GALE",
@@ -3217,7 +3200,10 @@
             "Byron Coast: Point Danger to Wooli",
             "Coffs Coast: Wooli to Smoky Cape"
           ],
-          "aac_codes": [],
+          "aac_codes": [
+            "NSW_MW008",
+            "NSW_MW007"
+          ],
           "summary": "Byron Coast and Coffs Coast"
         },
         {
@@ -3229,75 +3215,40 @@
             "Sydney Coast: Broken Bay to Port Hacking"
           ],
           "aac_codes": [
+            "NSW_MW006",
+            "NSW_MW005",
             "NSW_MW004"
           ],
           "summary": "Macquarie Coast, Hunter Coast and Sydney Coast"
-        }
-      ]
-    },
-    "WA": {
-      "state": "WA",
-      "product": "IDW20100",
-      "issued_utc": "2026-05-21T11:01:00Z",
-      "overview": [],
-      "hazards": [
+        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Esperance Coast: Bremer Bay to Israelite Bay"
+            "Byron Coast: Point Danger to Wooli",
+            "Coffs Coast: Wooli to Smoky Cape",
+            "Macquarie Coast: Smoky Cape to Seal Rocks"
           ],
-          "aac_codes": [
-            "WA_MW013"
-          ],
-          "summary": "Esperance Coast"
-        },
-        {
-          "level": "CAN",
-          "severity": "CAN",
-          "zones": [
-            "Perth Coast: Two Rocks to Dawesville",
-            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
-            "Albany Coast: Walpole to Bremer Bay",
-            "Perth Local Waters"
-          ],
-          "aac_codes": [
-            "WA_MW009",
-            "WA_MW010",
-            "WA_MW012",
-            "WA_MW015"
-          ],
-          "summary": "Perth Local Waters, Perth Coast, Bunbury Geographe Coast and Albany Coast"
+          "aac_codes": [],
+          "summary": "Byron Coast, Coffs Coast and Macquarie Coast"
         }
       ]
     },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-05-21T13:21:39Z",
-      "overview": [
-        "Strong Wind Warning for Thursday for South West Coast",
-        "Strong Wind Warning for Friday for South West Coast"
-      ],
+      "issued_utc": "2026-05-21T18:00:00Z",
+      "overview": [],
       "hazards": [
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "CAN",
+          "severity": "CAN",
           "zones": [
             "South West Coast: South East Cape to Low Rocky Point"
           ],
           "aac_codes": [
             "TAS_MW007"
           ],
-          "summary": "South West Coast"
-        },
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "South West Coast: South East Cape to Low Rocky Point"
-          ],
-          "aac_codes": [],
           "summary": "South West Coast"
         }
       ]
