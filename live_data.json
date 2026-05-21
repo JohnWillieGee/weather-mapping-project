@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-21T16:53:13.213435+00:00",
-  "last_checked_utc": "2026-05-21T16:53:13.213435+00:00",
+  "generated_utc": "2026-05-21T17:23:14.323551+00:00",
+  "last_checked_utc": "2026-05-21T17:23:14.323551+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "21/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "22/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://www.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 21 May 2026 11:00:16 GMT"
+      "issued": "Thu, 21 May 2026 17:00:15 GMT"
     },
     {
       "pid": "IDQ21137",
@@ -3113,47 +3113,13 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-05-21T11:00:00Z",
+      "issued_utc": "2026-05-21T17:00:00Z",
       "overview": [
-        "Strong Wind Warning for Thursday for Cooktown Coast, Capricornia Coast, K'gari Coast, Sunshine Coast Waters and Gold Coast Waters",
         "Gale Warning for Friday for K'gari Coast, Sunshine Coast Waters and Gold Coast Waters",
-        "Strong Wind Warning for Friday for Capricornia Coast and Moreton Bay"
+        "Strong Wind Warning for Friday for Capricornia Coast and Moreton Bay",
+        "Strong Wind Warning for Saturday for Capricornia Coast, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
       ],
       "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Cooktown Coast: Cape Melville to Cape Tribulation",
-            "Capricornia Coast: St Lawrence to Burnett Heads",
-            "K'gari Coast: Sandy Cape to Double Island Point",
-            "Sunshine Coast Waters: Double Island Point to Cape Moreton",
-            "Gold Coast Waters: Cape Moreton to Point Danger"
-          ],
-          "aac_codes": [
-            "QLD_MW005",
-            "QLD_MW009",
-            "QLD_MW011",
-            "QLD_MW012",
-            "QLD_MW014"
-          ],
-          "summary": "Cooktown Coast, Capricornia Coast, K'gari Coast, Sunshine Coast Waters and Gold Coast Waters"
-        },
-        {
-          "level": "CAN",
-          "severity": "CAN",
-          "zones": [
-            "Peninsula Coast: Sharp Point to Cape Melville",
-            "Hervey Bay",
-            "Moreton Bay"
-          ],
-          "aac_codes": [
-            "QLD_MW004",
-            "QLD_MW010",
-            "QLD_MW013"
-          ],
-          "summary": "Peninsula Coast, Hervey Bay and Moreton Bay"
-        },
         {
           "level": "Gale Warning",
           "severity": "GALE",
@@ -3162,7 +3128,11 @@
             "Sunshine Coast Waters: Double Island Point to Cape Moreton",
             "Gold Coast Waters: Cape Moreton to Point Danger"
           ],
-          "aac_codes": [],
+          "aac_codes": [
+            "QLD_MW011",
+            "QLD_MW012",
+            "QLD_MW014"
+          ],
           "summary": "K'gari Coast, Sunshine Coast Waters and Gold Coast Waters"
         },
         {
@@ -3172,7 +3142,10 @@
             "Capricornia Coast: St Lawrence to Burnett Heads",
             "Moreton Bay"
           ],
-          "aac_codes": [],
+          "aac_codes": [
+            "QLD_MW009",
+            "QLD_MW013"
+          ],
           "summary": "Capricornia Coast and Moreton Bay"
         },
         {
@@ -3181,8 +3154,23 @@
           "zones": [
             "Cooktown Coast: Cape Melville to Cape Tribulation"
           ],
+          "aac_codes": [
+            "QLD_MW005"
+          ],
+          "summary": ""
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Capricornia Coast: St Lawrence to Burnett Heads",
+            "K'gari Coast: Sandy Cape to Double Island Point",
+            "Sunshine Coast Waters: Double Island Point to Cape Moreton",
+            "Moreton Bay",
+            "Gold Coast Waters: Cape Moreton to Point Danger"
+          ],
           "aac_codes": [],
-          "summary": "Cooktown Coast"
+          "summary": "Capricornia Coast, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
         }
       ]
     },
