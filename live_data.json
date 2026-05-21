@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-05-21T11:53:16.587959+00:00",
-  "last_checked_utc": "2026-05-21T11:53:16.587959+00:00",
+  "generated_utc": "2026-05-21T12:23:13.110074+00:00",
+  "last_checked_utc": "2026-05-21T12:23:13.110074+00:00",
   "warning_count": 14,
   "warnings": [
     {
       "pid": "",
-      "title": "21/16:05 EST Marine Wind Warning Summary for New South Wales",
+      "title": "21/22:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://www.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 21 May 2026 06:05:14 GMT"
+      "issued": "Thu, 21 May 2026 12:00:20 GMT"
     },
     {
       "pid": "IDN21137",
-      "title": "21/16:33 EST \n                Coastal Hazard Warning\n            \nfor \n                parts of Northern Rivers and Mid North Coast Forecast Districts.",
+      "title": "21/22:06 EST \n                Coastal Hazard Warning\n            \nfor \n                parts of Northern Rivers and Mid North Coast Forecast Districts.",
       "type": "other",
       "state": "NSW",
       "link": "http://www.bom.gov.au/products/IDN21137.shtml",
       "desc": "",
-      "issued": "Thu, 21 May 2026 06:33:57 GMT"
+      "issued": "Thu, 21 May 2026 12:06:31 GMT"
     },
     {
       "pid": "IDN28503",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "IDQ21137",
-      "title": "21/16:32 EST \n                Coastal Hazard Warning\n            \nfor \n                parts of Southeast Coast Forecast District.",
+      "title": "21/22:02 EST \n                Coastal Hazard Warning\n            \nfor \n                parts of Southeast Coast Forecast District.",
       "type": "other",
       "state": "QLD",
       "link": "http://www.bom.gov.au/products/IDQ21137.shtml",
       "desc": "",
-      "issued": "Thu, 21 May 2026 06:32:36 GMT"
+      "issued": "Thu, 21 May 2026 12:02:16 GMT"
     },
     {
       "pid": "",
@@ -104,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "21/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "21/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://www.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 21 May 2026 06:05:13 GMT"
+      "issued": "Thu, 21 May 2026 12:00:13 GMT"
     },
     {
       "pid": "",
@@ -3198,7 +3198,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-05-21T06:05:00Z",
+      "issued_utc": "2026-05-21T12:00:00Z",
       "overview": [
         "Strong Wind Warning for Thursday for Byron Coast, Coffs Coast, Macquarie Coast and Hunter Coast",
         "Gale Warning for Friday for Byron Coast and Coffs Coast",
@@ -3223,21 +3223,6 @@
           "summary": "Byron Coast, Coffs Coast, Macquarie Coast and Hunter Coast"
         },
         {
-          "level": "CAN",
-          "severity": "CAN",
-          "zones": [
-            "Sydney Coast: Broken Bay to Port Hacking",
-            "Sydney Enclosed Waters",
-            "Illawarra Coast: Port Hacking to Ulladulla"
-          ],
-          "aac_codes": [
-            "NSW_MW004",
-            "NSW_MW009",
-            "NSW_MW003"
-          ],
-          "summary": "Sydney Enclosed Waters, Sydney Coast and Illawarra Coast"
-        },
-        {
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
@@ -3255,7 +3240,9 @@
             "Hunter Coast: Seal Rocks to Broken Bay",
             "Sydney Coast: Broken Bay to Port Hacking"
           ],
-          "aac_codes": [],
+          "aac_codes": [
+            "NSW_MW004"
+          ],
           "summary": "Macquarie Coast, Hunter Coast and Sydney Coast"
         }
       ]
@@ -3299,8 +3286,11 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-05-21T06:05:00Z",
-      "overview": [],
+      "issued_utc": "2026-05-21T12:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Thursday for South West Coast",
+        "Strong Wind Warning for Friday for South West Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3312,25 +3302,15 @@
             "TAS_MW007"
           ],
           "summary": "South West Coast"
-        }
-      ]
-    },
-    "NT": {
-      "state": "NT",
-      "product": "IDD20105",
-      "issued_utc": "2026-05-21T05:00:00Z",
-      "overview": [],
-      "hazards": [
+        },
         {
-          "level": "CAN",
-          "severity": "CAN",
+          "level": "Strong Wind Warning",
+          "severity": "STR",
           "zones": [
-            "Roper Groote Coast: Cape Arnhem to QLD-NT Border"
+            "South West Coast: South East Cape to Low Rocky Point"
           ],
-          "aac_codes": [
-            "NT_MW006"
-          ],
-          "summary": "Roper Groote Coast"
+          "aac_codes": [],
+          "summary": "South West Coast"
         }
       ]
     }
