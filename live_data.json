@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-21T10:53:24.396422+00:00",
-  "last_checked_utc": "2026-05-21T10:53:24.396422+00:00",
+  "generated_utc": "2026-05-21T11:23:16.220433+00:00",
+  "last_checked_utc": "2026-05-21T11:23:16.220433+00:00",
   "warning_count": 14,
   "warnings": [
     {
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "21/15:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "21/21:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://www.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 21 May 2026 05:00:19 GMT"
+      "issued": "Thu, 21 May 2026 11:00:16 GMT"
     },
     {
       "pid": "IDQ21137",
@@ -95,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "21/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "21/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 21 May 2026 05:01:15 GMT"
+      "issued": "Thu, 21 May 2026 11:01:15 GMT"
     },
     {
       "pid": "",
@@ -3122,50 +3122,46 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-05-21T05:00:00Z",
+      "issued_utc": "2026-05-21T11:00:00Z",
       "overview": [
-        "Strong Wind Warning for Thursday for Peninsula Coast, Cooktown Coast, Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters",
+        "Strong Wind Warning for Thursday for Cooktown Coast, Capricornia Coast, K'gari Coast, Sunshine Coast Waters and Gold Coast Waters",
         "Gale Warning for Friday for K'gari Coast, Sunshine Coast Waters and Gold Coast Waters",
-        "Strong Wind Warning for Friday for Cooktown Coast, Capricornia Coast and Moreton Bay"
+        "Strong Wind Warning for Friday for Capricornia Coast and Moreton Bay"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Peninsula Coast: Sharp Point to Cape Melville",
             "Cooktown Coast: Cape Melville to Cape Tribulation",
             "Capricornia Coast: St Lawrence to Burnett Heads",
-            "Hervey Bay",
             "K'gari Coast: Sandy Cape to Double Island Point",
             "Sunshine Coast Waters: Double Island Point to Cape Moreton",
-            "Moreton Bay",
             "Gold Coast Waters: Cape Moreton to Point Danger"
           ],
           "aac_codes": [
-            "QLD_MW004",
             "QLD_MW005",
             "QLD_MW009",
-            "QLD_MW010",
             "QLD_MW011",
             "QLD_MW012",
-            "QLD_MW013",
             "QLD_MW014"
           ],
-          "summary": "Peninsula Coast, Cooktown Coast, Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
+          "summary": "Cooktown Coast, Capricornia Coast, K'gari Coast, Sunshine Coast Waters and Gold Coast Waters"
         },
         {
           "level": "CAN",
           "severity": "CAN",
           "zones": [
-            "South East Gulf of Carpentaria: QLD-NT Border to Cape Keerweer",
-            "Cairns Coast: Cape Tribulation to Cardwell"
+            "Peninsula Coast: Sharp Point to Cape Melville",
+            "Hervey Bay",
+            "Moreton Bay"
           ],
           "aac_codes": [
-            "QLD_MW001",
-            "QLD_MW006"
+            "QLD_MW004",
+            "QLD_MW010",
+            "QLD_MW013"
           ],
-          "summary": "South East Gulf of Carpentaria and Cairns Coast"
+          "summary": "Peninsula Coast, Hervey Bay and Moreton Bay"
         },
         {
           "level": "Gale Warning",
@@ -3182,12 +3178,20 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Cooktown Coast: Cape Melville to Cape Tribulation",
             "Capricornia Coast: St Lawrence to Burnett Heads",
             "Moreton Bay"
           ],
           "aac_codes": [],
-          "summary": "Cooktown Coast, Capricornia Coast and Moreton Bay"
+          "summary": "Capricornia Coast and Moreton Bay"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
+            "Cooktown Coast: Cape Melville to Cape Tribulation"
+          ],
+          "aac_codes": [],
+          "summary": "Cooktown Coast"
         }
       ]
     },
@@ -3259,27 +3263,36 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-21T05:01:00Z",
+      "issued_utc": "2026-05-21T11:01:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Esperance Coast: Bremer Bay to Israelite Bay"
+          ],
+          "aac_codes": [
+            "WA_MW013"
+          ],
+          "summary": "Esperance Coast"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
             "Perth Coast: Two Rocks to Dawesville",
             "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Albany Coast: Walpole to Bremer Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay",
             "Perth Local Waters"
           ],
           "aac_codes": [
             "WA_MW009",
             "WA_MW010",
             "WA_MW012",
-            "WA_MW013",
             "WA_MW015"
           ],
-          "summary": "Perth Local Waters, Perth Coast, Bunbury Geographe Coast, Albany Coast and Esperance Coast"
+          "summary": "Perth Local Waters, Perth Coast, Bunbury Geographe Coast and Albany Coast"
         }
       ]
     },
