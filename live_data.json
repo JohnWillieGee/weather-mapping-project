@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-05-21T22:53:08.942403+00:00",
-  "last_checked_utc": "2026-05-21T22:53:08.942403+00:00",
-  "warning_count": 12,
+  "generated_utc": "2026-05-21T23:23:07.232399+00:00",
+  "last_checked_utc": "2026-05-21T23:23:07.232399+00:00",
+  "warning_count": 13,
   "warnings": [
     {
       "pid": "",
@@ -76,6 +76,15 @@
       "issued": "Thu, 21 May 2026 17:00:15 GMT"
     },
     {
+      "pid": "IDQ21037",
+      "title": "22/09:08 EST \n                Severe Weather Warning\n            \nfor \n                parts of Southeast Coast Forecast District.",
+      "type": "severe_weather",
+      "state": "QLD",
+      "link": "http://www.bom.gov.au/products/IDQ21037.shtml",
+      "desc": "",
+      "issued": "Thu, 21 May 2026 23:08:52 GMT"
+    },
+    {
       "pid": "IDQ21137",
       "title": "22/04:45 EST \n                Coastal Hazard Warning\n            \nfor \n                parts of Southeast Coast Forecast District.",
       "type": "other",
@@ -116,14 +125,31 @@
     "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
   },
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "EDGEHILL ST, PLEASANT HILLS",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Thu, 21 May 2026 23:19:59 GMT",
+        "description": "EDGEHILL ST, PLEASANT HILLS 2658",
+        "council": "Lockhart",
+        "lat": -35.464667,
+        "lng": 146.799033,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": []
   },
-  "incident_count": 0,
+  "incident_count": 1,
   "nsw_alert_zones": [],
   "wa_feed_method": "none",
   "fdr": {
