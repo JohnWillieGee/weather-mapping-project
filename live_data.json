@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-21T04:53:06.984114+00:00",
-  "last_checked_utc": "2026-05-21T04:53:06.984114+00:00",
+  "generated_utc": "2026-05-21T05:23:08.793940+00:00",
+  "last_checked_utc": "2026-05-21T05:23:08.793940+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "21/09:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "21/15:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://www.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 20 May 2026 23:00:21 GMT"
+      "issued": "Thu, 21 May 2026 05:00:19 GMT"
     },
     {
       "pid": "IDQ21137",
@@ -95,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "21/07:25 WST Marine Wind Warning Summary for Western Australia",
+      "title": "21/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Wed, 20 May 2026 23:25:48 GMT"
+      "issued": "Thu, 21 May 2026 05:01:15 GMT"
     },
     {
       "pid": "",
@@ -113,26 +113,43 @@
     },
     {
       "pid": "",
-      "title": "21/08:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "21/14:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://www.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 20 May 2026 23:00:11 GMT"
+      "issued": "Thu, 21 May 2026 05:00:13 GMT"
     }
   ],
   "fetch_errors": {
     "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
   },
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "(GWYDIR HWY), MATHESON",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Thu, 21 May 2026 05:19:58 GMT",
+        "description": "B76 (GWYDIR HWY), MATHESON 2370",
+        "council": "Glen Innes Severn",
+        "lat": -29.725748062,
+        "lng": 151.582595825,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": []
   },
-  "incident_count": 0,
+  "incident_count": 1,
   "nsw_alert_zones": [],
   "wa_feed_method": "none",
   "fdr": {
@@ -3113,21 +3130,19 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-05-20T23:00:00Z",
+      "issued_utc": "2026-05-21T05:00:00Z",
       "overview": [
-        "Strong Wind Warning for Thursday for South East Gulf of Carpentaria, Peninsula Coast, Cooktown Coast, Cairns Coast, Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters",
-        "Gale Warning for Friday for Sunshine Coast Waters and Gold Coast Waters",
-        "Strong Wind Warning for Friday for Cooktown Coast, Capricornia Coast and K'gari Coast"
+        "Strong Wind Warning for Thursday for Peninsula Coast, Cooktown Coast, Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters",
+        "Gale Warning for Friday for K'gari Coast, Sunshine Coast Waters and Gold Coast Waters",
+        "Strong Wind Warning for Friday for Cooktown Coast, Capricornia Coast and Moreton Bay"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "South East Gulf of Carpentaria: QLD-NT Border to Cape Keerweer",
             "Peninsula Coast: Sharp Point to Cape Melville",
             "Cooktown Coast: Cape Melville to Cape Tribulation",
-            "Cairns Coast: Cape Tribulation to Cardwell",
             "Capricornia Coast: St Lawrence to Burnett Heads",
             "Hervey Bay",
             "K'gari Coast: Sandy Cape to Double Island Point",
@@ -3136,10 +3151,8 @@
             "Gold Coast Waters: Cape Moreton to Point Danger"
           ],
           "aac_codes": [
-            "QLD_MW001",
             "QLD_MW004",
             "QLD_MW005",
-            "QLD_MW006",
             "QLD_MW009",
             "QLD_MW010",
             "QLD_MW011",
@@ -3147,30 +3160,31 @@
             "QLD_MW013",
             "QLD_MW014"
           ],
-          "summary": "South East Gulf of Carpentaria, Peninsula Coast, Cooktown Coast, Cairns Coast, Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
+          "summary": "Peninsula Coast, Cooktown Coast, Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
         },
         {
           "level": "CAN",
           "severity": "CAN",
           "zones": [
-            "Townsville Coast: Cardwell to Bowen",
-            "Mackay Coast: Bowen to St Lawrence"
+            "South East Gulf of Carpentaria: QLD-NT Border to Cape Keerweer",
+            "Cairns Coast: Cape Tribulation to Cardwell"
           ],
           "aac_codes": [
-            "QLD_MW007",
-            "QLD_MW008"
+            "QLD_MW001",
+            "QLD_MW006"
           ],
-          "summary": "Townsville Coast and Mackay Coast"
+          "summary": "South East Gulf of Carpentaria and Cairns Coast"
         },
         {
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
+            "K'gari Coast: Sandy Cape to Double Island Point",
             "Sunshine Coast Waters: Double Island Point to Cape Moreton",
             "Gold Coast Waters: Cape Moreton to Point Danger"
           ],
           "aac_codes": [],
-          "summary": "Sunshine Coast Waters and Gold Coast Waters"
+          "summary": "K'gari Coast, Sunshine Coast Waters and Gold Coast Waters"
         },
         {
           "level": "Strong Wind Warning",
@@ -3178,10 +3192,10 @@
           "zones": [
             "Cooktown Coast: Cape Melville to Cape Tribulation",
             "Capricornia Coast: St Lawrence to Burnett Heads",
-            "K'gari Coast: Sandy Cape to Double Island Point"
+            "Moreton Bay"
           ],
           "aac_codes": [],
-          "summary": "Cooktown Coast, Capricornia Coast and K'gari Coast"
+          "summary": "Cooktown Coast, Capricornia Coast and Moreton Bay"
         }
       ]
     },
@@ -3254,7 +3268,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-20T23:25:39Z",
+      "issued_utc": "2026-05-21T05:01:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3300,12 +3314,12 @@
     "NT": {
       "state": "NT",
       "product": "IDD20105",
-      "issued_utc": "2026-05-20T23:00:00Z",
+      "issued_utc": "2026-05-21T05:00:00Z",
       "overview": [],
       "hazards": [
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "CAN",
+          "severity": "CAN",
           "zones": [
             "Roper Groote Coast: Cape Arnhem to QLD-NT Border"
           ],
