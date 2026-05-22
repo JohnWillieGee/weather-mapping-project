@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-05-22T01:23:01.676851+00:00",
-  "last_checked_utc": "2026-05-22T01:23:01.676851+00:00",
-  "warning_count": 12,
+  "generated_utc": "2026-05-22T01:53:02.143945+00:00",
+  "last_checked_utc": "2026-05-22T01:53:02.143945+00:00",
+  "warning_count": 11,
   "warnings": [
     {
       "pid": "",
@@ -101,29 +101,37 @@
       "link": "http://www.bom.gov.au/sa/warnings/flood/inlandrivers.shtml",
       "desc": "",
       "issued": "Mon, 18 May 2026 02:43:33 GMT"
-    },
-    {
-      "pid": "",
-      "title": "22/04:00 EST Marine Wind Warning Summary for Tasmania",
-      "type": "wind",
-      "state": "TAS",
-      "link": "http://www.bom.gov.au/tas/warnings/marinewind.shtml",
-      "desc": "",
-      "issued": "Thu, 21 May 2026 18:00:10 GMT"
     }
   ],
   "fetch_errors": {
     "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
   },
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Donnelly St, Armidale",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 22 May 2026 01:47:58 GMT",
+        "description": "Donnelly St, Armidale, NSW 2350",
+        "council": "Armidale",
+        "lat": -30.5047929999999,
+        "lng": 151.656792,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": []
   },
-  "incident_count": 0,
+  "incident_count": 1,
   "nsw_alert_zones": [],
   "wa_feed_method": "none",
   "fdr": {
