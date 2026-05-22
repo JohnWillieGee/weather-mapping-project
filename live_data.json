@@ -1,8 +1,44 @@
 {
-  "generated_utc": "2026-05-22T22:23:58.299256+00:00",
-  "last_checked_utc": "2026-05-22T22:23:58.299256+00:00",
-  "warning_count": 6,
+  "generated_utc": "2026-05-22T22:53:13.312738+00:00",
+  "last_checked_utc": "2026-05-22T22:53:13.312738+00:00",
+  "warning_count": 10,
   "warnings": [
+    {
+      "pid": "",
+      "title": "23/04:00 EST Marine Wind Warning Summary for New South Wales",
+      "type": "wind",
+      "state": "NSW",
+      "link": "http://www.bom.gov.au/nsw/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Fri, 22 May 2026 18:00:21 GMT"
+    },
+    {
+      "pid": "IDN21137",
+      "title": "23/04:28 EST \n                Coastal Hazard Warning\n            \nfor \n                parts of Northern Rivers and Mid North Coast Forecast Districts.",
+      "type": "other",
+      "state": "NSW",
+      "link": "http://www.bom.gov.au/products/IDN21137.shtml",
+      "desc": "",
+      "issued": "Fri, 22 May 2026 18:28:48 GMT"
+    },
+    {
+      "pid": "IDN28504",
+      "title": "23/04:20 EST Severe Weather Warning\nfor Lord Howe Island",
+      "type": "severe_weather",
+      "state": "NSW",
+      "link": "http://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDN28504.txt",
+      "desc": "",
+      "issued": "Fri, 22 May 2026 18:20:04 GMT"
+    },
+    {
+      "pid": "",
+      "title": "23/06:20 EST Hazardous Surf Warning for New South Wales",
+      "type": "other",
+      "state": "NSW",
+      "link": "http://www.bom.gov.au/nsw/warnings/hazardoussurf.shtml",
+      "desc": "",
+      "issued": "Fri, 22 May 2026 20:20:15 GMT"
+    },
     {
       "pid": "",
       "title": "23/03:00 EST Marine Wind Warning Summary for Queensland",
@@ -59,7 +95,6 @@
     }
   ],
   "fetch_errors": {
-    "NSW": "HTTPConnectionPool(host='www.bom.gov.au', port=80): Max retries exceeded with url: /fwo/IDZ00054.warnings_nsw.xml (Caused by ConnectTimeoutError(<HTTPConnection(host='www.bom.gov.au', port=80) at 0x166275b9010>, 'Connection to www.bom.gov.au timed out. (connect timeout=15)'))",
     "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
   },
   "incidents": {
