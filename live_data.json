@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-05-22T10:53:16.692932+00:00",
-  "last_checked_utc": "2026-05-22T10:53:16.692932+00:00",
-  "warning_count": 9,
+  "generated_utc": "2026-05-22T11:23:11.781017+00:00",
+  "last_checked_utc": "2026-05-22T11:23:11.781017+00:00",
+  "warning_count": 10,
   "warnings": [
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "22/15:18 EST Marine Wind Warning Summary for Queensland",
+      "title": "22/21:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://www.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 22 May 2026 05:18:08 GMT"
+      "issued": "Fri, 22 May 2026 11:00:14 GMT"
     },
     {
       "pid": "IDQ21037",
@@ -83,6 +83,15 @@
       "link": "http://www.bom.gov.au/sa/warnings/flood/inlandrivers.shtml",
       "desc": "",
       "issued": "Mon, 18 May 2026 02:43:33 GMT"
+    },
+    {
+      "pid": "",
+      "title": "22/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "type": "wind",
+      "state": "WA",
+      "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
+      "desc": "",
+      "issued": "Fri, 22 May 2026 11:01:10 GMT"
     }
   ],
   "fetch_errors": {
@@ -3077,11 +3086,11 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-05-22T05:18:00Z",
+      "issued_utc": "2026-05-22T11:00:00Z",
       "overview": [
         "Gale Warning for Friday for K'gari Coast, Sunshine Coast Waters and Gold Coast Waters",
-        "Strong Wind Warning for Friday for Capricornia Coast and Moreton Bay",
-        "Strong Wind Warning for Saturday for Capricornia Coast, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
+        "Strong Wind Warning for Friday for Capricornia Coast",
+        "Strong Wind Warning for Saturday for Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
       ],
       "hazards": [
         {
@@ -3103,27 +3112,39 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Capricornia Coast: St Lawrence to Burnett Heads",
+            "Capricornia Coast: St Lawrence to Burnett Heads"
+          ],
+          "aac_codes": [
+            "QLD_MW009"
+          ],
+          "summary": "Capricornia Coast"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
             "Moreton Bay"
           ],
           "aac_codes": [
-            "QLD_MW009",
             "QLD_MW013"
           ],
-          "summary": "Capricornia Coast and Moreton Bay"
+          "summary": "Moreton Bay"
         },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
             "Capricornia Coast: St Lawrence to Burnett Heads",
+            "Hervey Bay",
             "K'gari Coast: Sandy Cape to Double Island Point",
             "Sunshine Coast Waters: Double Island Point to Cape Moreton",
             "Moreton Bay",
             "Gold Coast Waters: Cape Moreton to Point Danger"
           ],
-          "aac_codes": [],
-          "summary": "Capricornia Coast, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
+          "aac_codes": [
+            "QLD_MW010"
+          ],
+          "summary": "Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
         }
       ]
     },
@@ -3184,6 +3205,25 @@
           ],
           "aac_codes": [],
           "summary": "Byron Coast, Coffs Coast and Macquarie Coast"
+        }
+      ]
+    },
+    "WA": {
+      "state": "WA",
+      "product": "IDW20100",
+      "issued_utc": "2026-05-22T11:01:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "West Kimberley Coast: Kuri Bay to Wallal"
+          ],
+          "aac_codes": [
+            "WA_MW002"
+          ],
+          "summary": "West Kimberley Coast"
         }
       ]
     }
