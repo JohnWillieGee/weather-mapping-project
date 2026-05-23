@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-22T23:53:12.731216+00:00",
-  "last_checked_utc": "2026-05-22T23:53:12.731216+00:00",
+  "generated_utc": "2026-05-23T00:23:14.012333+00:00",
+  "last_checked_utc": "2026-05-23T00:23:14.012333+00:00",
   "warning_count": 10,
   "warnings": [
     {
       "pid": "",
-      "title": "23/04:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "23/10:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://www.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 22 May 2026 18:00:21 GMT"
+      "issued": "Sat, 23 May 2026 00:00:17 GMT"
     },
     {
       "pid": "IDN21137",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "IDQ21137",
-      "title": "23/04:31 EST \n                Coastal Hazard Warning\n            \nfor \n                parts of Wide Bay and Burnett and Southeast Coast Forecast Districts.",
+      "title": "23/10:18 EST \n                Coastal Hazard Warning\n            \nfor \n                parts of Southeast Coast Forecast District.",
       "type": "other",
       "state": "QLD",
       "link": "http://www.bom.gov.au/products/IDQ21137.shtml",
       "desc": "",
-      "issued": "Fri, 22 May 2026 18:31:01 GMT"
+      "issued": "Sat, 23 May 2026 00:18:42 GMT"
     },
     {
       "pid": "",
@@ -3129,9 +3129,9 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-05-22T18:00:00Z",
+      "issued_utc": "2026-05-23T00:00:00Z",
       "overview": [
-        "Strong Wind Warning for Saturday for Byron Coast, Coffs Coast and Macquarie Coast",
+        "Strong Wind Warning for Saturday for Byron Coast and Coffs Coast",
         "Strong Wind Warning for Sunday for Byron Coast"
       ],
       "hazards": [
@@ -3140,15 +3140,24 @@
           "severity": "STR",
           "zones": [
             "Byron Coast: Point Danger to Wooli",
-            "Coffs Coast: Wooli to Smoky Cape",
-            "Macquarie Coast: Smoky Cape to Seal Rocks"
+            "Coffs Coast: Wooli to Smoky Cape"
           ],
           "aac_codes": [
             "NSW_MW008",
-            "NSW_MW007",
+            "NSW_MW007"
+          ],
+          "summary": "Byron Coast and Coffs Coast"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
+            "Macquarie Coast: Smoky Cape to Seal Rocks"
+          ],
+          "aac_codes": [
             "NSW_MW006"
           ],
-          "summary": "Byron Coast, Coffs Coast and Macquarie Coast"
+          "summary": "Macquarie Coast"
         },
         {
           "level": "Strong Wind Warning",
