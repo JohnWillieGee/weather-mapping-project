@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-23T17:53:12.849498+00:00",
-  "last_checked_utc": "2026-05-23T17:53:12.849498+00:00",
-  "warning_count": 9,
+  "generated_utc": "2026-05-23T18:23:15.135047+00:00",
+  "last_checked_utc": "2026-05-23T18:23:15.135047+00:00",
+  "warning_count": 10,
   "warnings": [
     {
       "pid": "",
-      "title": "23/22:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "24/04:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://www.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 23 May 2026 12:00:16 GMT"
+      "issued": "Sat, 23 May 2026 18:00:18 GMT"
     },
     {
       "pid": "IDN28504",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "23/21:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "24/03:40 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://www.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sat, 23 May 2026 12:00:09 GMT"
+      "issued": "Sat, 23 May 2026 18:10:10 GMT"
     },
     {
       "pid": "",
@@ -83,6 +83,15 @@
       "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
       "issued": "Sat, 23 May 2026 17:08:31 GMT"
+    },
+    {
+      "pid": "",
+      "title": "24/04:00 EST Marine Wind Warning Summary for Tasmania",
+      "type": "wind",
+      "state": "TAS",
+      "link": "http://www.bom.gov.au/tas/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Sat, 23 May 2026 18:00:12 GMT"
     }
   ],
   "fetch_errors": {
@@ -97,7 +106,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 23 May 2026 17:47:58 GMT",
+        "updated": "Sat, 23 May 2026 18:19:58 GMT",
         "description": "Anne St, Moree, NSW 2400",
         "council": "Moree Plains",
         "lat": -29.474035,
@@ -113,7 +122,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 23 May 2026 17:47:58 GMT",
+        "updated": "Sat, 23 May 2026 18:19:58 GMT",
         "description": "BOUNDARY CREEK RD, NYMBOIDA 2460",
         "council": "Clarence Valley",
         "lat": -29.97649,
@@ -3144,15 +3153,12 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-05-23T12:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Saturday for Byron Coast",
-        "Strong Wind Warning for Sunday for Byron Coast"
-      ],
+      "issued_utc": "2026-05-23T18:00:00Z",
+      "overview": [],
       "hazards": [
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "CAN",
+          "severity": "CAN",
           "zones": [
             "Byron Coast: Point Danger to Wooli"
           ],
@@ -3160,34 +3166,17 @@
             "NSW_MW008"
           ],
           "summary": "Byron Coast"
-        },
-        {
-          "level": "CAN",
-          "severity": "CAN",
-          "zones": [
-            "Coffs Coast: Wooli to Smoky Cape"
-          ],
-          "aac_codes": [
-            "NSW_MW007"
-          ],
-          "summary": "Coffs Coast"
-        },
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Byron Coast: Point Danger to Wooli"
-          ],
-          "aac_codes": [],
-          "summary": "Byron Coast"
         }
       ]
     },
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-05-23T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-05-23T18:10:00Z",
+      "overview": [
+        "Strong Wind Warning for Sunday for Lower West Coast and Central Coast",
+        "Strong Wind Warning for Monday for Lower West Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3201,6 +3190,15 @@
             "SA_MW004"
           ],
           "summary": "Lower West Coast and Central Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Lower West Coast: Elliston to Cape Carnot"
+          ],
+          "aac_codes": [],
+          "summary": "Lower West Coast"
         }
       ]
     },
@@ -3238,6 +3236,27 @@
           ],
           "aac_codes": [],
           "summary": "West Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
+        }
+      ]
+    },
+    "TAS": {
+      "state": "TAS",
+      "product": "IDT20100",
+      "issued_utc": "2026-05-23T18:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "South West Coast: South East Cape to Low Rocky Point",
+            "Central West Coast: Low Rocky Point to Sandy Cape"
+          ],
+          "aac_codes": [
+            "TAS_MW007",
+            "TAS_MW008"
+          ],
+          "summary": "South West Coast and Central West Coast"
         }
       ]
     }
