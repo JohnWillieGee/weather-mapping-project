@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-05-23T06:53:17.102311+00:00",
-  "last_checked_utc": "2026-05-23T06:53:17.102311+00:00",
-  "warning_count": 9,
+  "generated_utc": "2026-05-23T07:23:15.120671+00:00",
+  "last_checked_utc": "2026-05-23T07:23:15.120671+00:00",
+  "warning_count": 10,
   "warnings": [
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "23/15:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "23/17:15 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://www.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 23 May 2026 05:00:14 GMT"
+      "issued": "Sat, 23 May 2026 07:15:50 GMT"
     },
     {
       "pid": "IDQ21137",
@@ -65,6 +65,15 @@
       "link": "http://www.bom.gov.au/qld/warnings/hazardoussurf.shtml",
       "desc": "",
       "issued": "Sat, 23 May 2026 06:24:27 GMT"
+    },
+    {
+      "pid": "",
+      "title": "23/16:39 CST Marine Wind Warning Summary for South Australia",
+      "type": "wind",
+      "state": "SA",
+      "link": "http://www.bom.gov.au/sa/warnings/marine-wind.shtml",
+      "desc": "",
+      "issued": "Sat, 23 May 2026 07:09:43 GMT"
     },
     {
       "pid": "",
@@ -3077,10 +3086,10 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-05-23T05:00:00Z",
+      "issued_utc": "2026-05-23T07:15:40Z",
       "overview": [
-        "Strong Wind Warning for Saturday for Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters",
-        "Strong Wind Warning for Sunday for K'gari Coast, Sunshine Coast Waters and Gold Coast Waters"
+        "Strong Wind Warning for Saturday for Gold Coast Waters, Moreton Bay, Capricornia Coast, K'gari Coast and Sunshine Coast Waters",
+        "Strong Wind Warning for Sunday for Gold Coast Waters, K'gari Coast and Sunshine Coast Waters"
       ],
       "hazards": [
         {
@@ -3088,7 +3097,6 @@
           "severity": "STR",
           "zones": [
             "Capricornia Coast: St Lawrence to Burnett Heads",
-            "Hervey Bay",
             "K'gari Coast: Sandy Cape to Double Island Point",
             "Sunshine Coast Waters: Double Island Point to Cape Moreton",
             "Moreton Bay",
@@ -3096,13 +3104,23 @@
           ],
           "aac_codes": [
             "QLD_MW009",
-            "QLD_MW010",
             "QLD_MW011",
             "QLD_MW012",
             "QLD_MW013",
             "QLD_MW014"
           ],
-          "summary": "Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
+          "summary": "Capricornia Coast, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
+            "Hervey Bay"
+          ],
+          "aac_codes": [
+            "QLD_MW010"
+          ],
+          "summary": "Hervey Bay"
         },
         {
           "level": "Strong Wind Warning",
@@ -3158,6 +3176,27 @@
           ],
           "aac_codes": [],
           "summary": "Byron Coast"
+        }
+      ]
+    },
+    "SA": {
+      "state": "SA",
+      "product": "IDS20201",
+      "issued_utc": "2026-05-23T07:09:34Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Lower West Coast: Elliston to Cape Carnot",
+            "Central Coast"
+          ],
+          "aac_codes": [
+            "SA_MW003",
+            "SA_MW004"
+          ],
+          "summary": "Lower West Coast and Central Coast"
         }
       ]
     },
