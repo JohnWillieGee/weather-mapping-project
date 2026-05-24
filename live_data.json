@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-05-24T07:23:19.423015+00:00",
-  "last_checked_utc": "2026-05-24T07:23:19.423015+00:00",
-  "warning_count": 8,
+  "generated_utc": "2026-05-24T07:53:20.139107+00:00",
+  "last_checked_utc": "2026-05-24T07:53:20.139107+00:00",
+  "warning_count": 7,
   "warnings": [
     {
       "pid": "",
@@ -11,15 +11,6 @@
       "link": "http://www.bom.gov.au/nsw/warnings/hazardoussurf.shtml",
       "desc": "",
       "issued": "Sun, 24 May 2026 06:06:13 GMT"
-    },
-    {
-      "pid": "",
-      "title": "24/09:08 EST \n                Cancellation of\n                Road Weather Alert for Sydney",
-      "type": "other",
-      "state": "NSW",
-      "link": "http://www.bom.gov.au/nsw/warnings/sydneyroad.shtml",
-      "desc": "",
-      "issued": "Sat, 23 May 2026 23:08:57 GMT"
     },
     {
       "pid": "IDQ21137",
@@ -41,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "24/15:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "24/17:10 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://www.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sun, 24 May 2026 06:00:10 GMT"
+      "issued": "Sun, 24 May 2026 07:40:19 GMT"
     },
     {
       "pid": "",
@@ -3068,26 +3059,36 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-05-24T06:00:00Z",
+      "issued_utc": "2026-05-24T07:40:12Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Upper West Coast, Central Coast and Lower West Coast",
+        "Gale Warning for Sunday for Lower West Coast",
+        "Strong Wind Warning for Sunday for Central Coast and Upper West Coast",
         "Strong Wind Warning for Monday for Central Coast, Upper West Coast, Far West Coast and Lower West Coast"
       ],
       "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "Lower West Coast: Elliston to Cape Carnot"
+          ],
+          "aac_codes": [
+            "SA_MW003"
+          ],
+          "summary": "Lower West Coast"
+        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
             "Upper West Coast: Fowlers Bay to Elliston",
-            "Lower West Coast: Elliston to Cape Carnot",
             "Central Coast"
           ],
           "aac_codes": [
             "SA_MW002",
-            "SA_MW003",
             "SA_MW004"
           ],
-          "summary": "Upper West Coast, Lower West Coast and Central Coast"
+          "summary": "Upper West Coast and Central Coast"
         },
         {
           "level": "Strong Wind Warning",
