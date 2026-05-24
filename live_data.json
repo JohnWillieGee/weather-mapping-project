@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-24T10:53:40.862901+00:00",
-  "last_checked_utc": "2026-05-24T10:53:40.862901+00:00",
+  "generated_utc": "2026-05-24T11:23:16.350442+00:00",
+  "last_checked_utc": "2026-05-24T11:23:16.350442+00:00",
   "warning_count": 6,
   "warnings": [
     {
       "pid": "",
-      "title": "24/16:06 EST Hazardous Surf Warning for New South Wales",
+      "title": "24/21:16 EST Hazardous Surf Warning for New South Wales",
       "type": "other",
       "state": "NSW",
       "link": "http://www.bom.gov.au/nsw/warnings/hazardoussurf.shtml",
       "desc": "",
-      "issued": "Sun, 24 May 2026 06:06:13 GMT"
+      "issued": "Sun, 24 May 2026 11:16:45 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "24/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "24/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 24 May 2026 05:01:16 GMT"
+      "issued": "Sun, 24 May 2026 11:01:11 GMT"
     },
     {
       "pid": "",
@@ -3104,9 +3104,9 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-24T05:01:00Z",
+      "issued_utc": "2026-05-24T11:01:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Pilbara Coast East and Pilbara Coast West",
+        "Strong Wind Warning for Sunday for Pilbara Coast East",
         "Strong Wind Warning for Monday for West Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
       ],
       "hazards": [
@@ -3114,25 +3114,23 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Pilbara Coast East: Wallal to Cape Preston",
-            "Pilbara Coast West: Cape Preston to North West Cape"
+            "Pilbara Coast East: Wallal to Cape Preston"
           ],
           "aac_codes": [
-            "WA_MW003",
-            "WA_MW004"
+            "WA_MW003"
           ],
-          "summary": "Pilbara Coast East and Pilbara Coast West"
+          "summary": "Pilbara Coast East"
         },
         {
           "level": "CAN",
           "severity": "CAN",
           "zones": [
-            "West Kimberley Coast: Kuri Bay to Wallal"
+            "Pilbara Coast West: Cape Preston to North West Cape"
           ],
           "aac_codes": [
-            "WA_MW002"
+            "WA_MW004"
           ],
-          "summary": "West Kimberley Coast"
+          "summary": "Pilbara Coast West"
         },
         {
           "level": "Strong Wind Warning",
@@ -3142,7 +3140,9 @@
             "Pilbara Coast East: Wallal to Cape Preston",
             "Pilbara Coast West: Cape Preston to North West Cape"
           ],
-          "aac_codes": [],
+          "aac_codes": [
+            "WA_MW002"
+          ],
           "summary": "West Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
         }
       ]
