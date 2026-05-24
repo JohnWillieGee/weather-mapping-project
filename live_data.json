@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-24T04:53:17.871221+00:00",
-  "last_checked_utc": "2026-05-24T04:53:17.871221+00:00",
+  "generated_utc": "2026-05-24T05:23:18.183860+00:00",
+  "last_checked_utc": "2026-05-24T05:23:18.183860+00:00",
   "warning_count": 9,
   "warnings": [
     {
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "24/10:45 CST Marine Wind Warning Summary for South Australia",
+      "title": "24/14:36 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://www.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sun, 24 May 2026 01:15:39 GMT"
+      "issued": "Sun, 24 May 2026 05:06:25 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "24/07:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "24/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sat, 23 May 2026 23:01:15 GMT"
+      "issued": "Sun, 24 May 2026 05:01:16 GMT"
     },
     {
       "pid": "",
@@ -3100,42 +3100,49 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-05-24T01:15:31Z",
+      "issued_utc": "2026-05-24T05:06:17Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Lower West Coast and Central Coast",
-        "Strong Wind Warning for Monday for Lower West Coast"
+        "Strong Wind Warning for Sunday for Upper West Coast, Central Coast and Lower West Coast",
+        "Strong Wind Warning for Monday for Central Coast, Upper West Coast, Far West Coast and Lower West Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Upper West Coast: Fowlers Bay to Elliston",
             "Lower West Coast: Elliston to Cape Carnot",
             "Central Coast"
           ],
           "aac_codes": [
+            "SA_MW002",
             "SA_MW003",
             "SA_MW004"
           ],
-          "summary": "Lower West Coast and Central Coast"
+          "summary": "Upper West Coast, Lower West Coast and Central Coast"
         },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Lower West Coast: Elliston to Cape Carnot"
+            "Far West Coast: WA-SA Border to Fowlers Bay",
+            "Upper West Coast: Fowlers Bay to Elliston",
+            "Lower West Coast: Elliston to Cape Carnot",
+            "Central Coast"
           ],
-          "aac_codes": [],
-          "summary": "Lower West Coast"
+          "aac_codes": [
+            "SA_MW001"
+          ],
+          "summary": "Far West Coast, Upper West Coast, Lower West Coast and Central Coast"
         }
       ]
     },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-23T23:01:00Z",
+      "issued_utc": "2026-05-24T05:01:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for West Kimberley Coast, Pilbara Coast East and Pilbara Coast West",
+        "Strong Wind Warning for Sunday for Pilbara Coast East and Pilbara Coast West",
         "Strong Wind Warning for Monday for West Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
       ],
       "hazards": [
@@ -3143,16 +3150,25 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "West Kimberley Coast: Kuri Bay to Wallal",
             "Pilbara Coast East: Wallal to Cape Preston",
             "Pilbara Coast West: Cape Preston to North West Cape"
           ],
           "aac_codes": [
-            "WA_MW002",
             "WA_MW003",
             "WA_MW004"
           ],
-          "summary": "West Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
+          "summary": "Pilbara Coast East and Pilbara Coast West"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
+            "West Kimberley Coast: Kuri Bay to Wallal"
+          ],
+          "aac_codes": [
+            "WA_MW002"
+          ],
+          "summary": "West Kimberley Coast"
         },
         {
           "level": "Strong Wind Warning",
