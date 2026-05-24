@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-24T17:53:14.669618+00:00",
-  "last_checked_utc": "2026-05-24T17:53:14.669618+00:00",
-  "warning_count": 7,
+  "generated_utc": "2026-05-24T18:23:16.255626+00:00",
+  "last_checked_utc": "2026-05-24T18:23:16.255626+00:00",
+  "warning_count": 8,
   "warnings": [
     {
       "pid": "",
-      "title": "24/22:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "25/04:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://www.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 24 May 2026 12:00:15 GMT"
+      "issued": "Sun, 24 May 2026 18:00:13 GMT"
     },
     {
       "pid": "",
@@ -23,6 +23,15 @@
     },
     {
       "pid": "",
+      "title": "25/04:10 EST Marine Wind Warning Summary for Victoria",
+      "type": "wind",
+      "state": "VIC",
+      "link": "http://www.bom.gov.au/vic/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Sun, 24 May 2026 18:10:17 GMT"
+    },
+    {
+      "pid": "",
       "title": "24/16:05 EST Hazardous Surf Warning for Queensland",
       "type": "other",
       "state": "QLD",
@@ -32,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "24/21:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "25/03:40 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://www.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sun, 24 May 2026 12:00:07 GMT"
+      "issued": "Sun, 24 May 2026 18:10:12 GMT"
     },
     {
       "pid": "",
@@ -59,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "24/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "25/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://www.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 24 May 2026 12:00:11 GMT"
+      "issued": "Sun, 24 May 2026 18:00:11 GMT"
     }
   ],
   "fetch_errors": {
@@ -3059,55 +3068,47 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-05-24T12:00:00Z",
+      "issued_utc": "2026-05-24T18:00:00Z",
       "overview": [],
       "hazards": [
         {
-          "level": "CAN",
-          "severity": "CAN",
+          "level": "Strong Wind Warning",
+          "severity": "STR",
           "zones": [
-            "Byron Coast: Point Danger to Wooli"
+            "Eden Coast: Montague Island to Gabo Island"
           ],
           "aac_codes": [
-            "NSW_MW008"
+            "NSW_MW001"
           ],
-          "summary": "Byron Coast"
+          "summary": "Eden Coast"
+        }
+      ]
+    },
+    "VIC": {
+      "state": "VIC",
+      "product": "IDV20600",
+      "issued_utc": "2026-05-24T18:10:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
+          ],
+          "aac_codes": [
+            "VIC_MW004"
+          ],
+          "summary": "East Gippsland Coast"
         }
       ]
     },
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-05-24T12:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Sunday for Upper West Coast and Lower West Coast",
-        "Strong Wind Warning for Monday for Far West Coast, Upper West Coast, Lower West Coast, Central Coast, Spencer Gulf, Gulf St Vincent and Investigator Strait"
-      ],
+      "issued_utc": "2026-05-24T18:10:00Z",
+      "overview": [],
       "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Upper West Coast: Fowlers Bay to Elliston",
-            "Lower West Coast: Elliston to Cape Carnot"
-          ],
-          "aac_codes": [
-            "SA_MW002",
-            "SA_MW003"
-          ],
-          "summary": "Upper West Coast and Lower West Coast"
-        },
-        {
-          "level": "CAN",
-          "severity": "CAN",
-          "zones": [
-            "Central Coast"
-          ],
-          "aac_codes": [
-            "SA_MW004"
-          ],
-          "summary": "Central Coast"
-        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
@@ -3122,6 +3123,9 @@
           ],
           "aac_codes": [
             "SA_MW001",
+            "SA_MW002",
+            "SA_MW003",
+            "SA_MW004",
             "SA_MW005",
             "SA_MW006",
             "SA_MW007"
@@ -3172,8 +3176,11 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-05-24T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-05-24T18:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Monday for South East Coast, South West Coast and Central West Coast",
+        "Strong Wind Warning for Tuesday for South East Coast, South West Coast and Central West Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3188,6 +3195,17 @@
             "TAS_MW007",
             "TAS_MW008"
           ],
+          "summary": "South East Coast, South West Coast and Central West Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "South East Coast: Tasman Island to South East Cape",
+            "South West Coast: South East Cape to Low Rocky Point",
+            "Central West Coast: Low Rocky Point to Sandy Cape"
+          ],
+          "aac_codes": [],
           "summary": "South East Coast, South West Coast and Central West Coast"
         }
       ]
