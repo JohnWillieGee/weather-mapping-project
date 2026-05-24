@@ -1,8 +1,17 @@
 {
-  "generated_utc": "2026-05-24T11:53:15.886649+00:00",
-  "last_checked_utc": "2026-05-24T11:53:15.886649+00:00",
-  "warning_count": 6,
+  "generated_utc": "2026-05-24T12:23:11.984567+00:00",
+  "last_checked_utc": "2026-05-24T12:23:11.984567+00:00",
+  "warning_count": 7,
   "warnings": [
+    {
+      "pid": "",
+      "title": "24/22:00 EST Marine Wind Warning Summary for New South Wales",
+      "type": "wind",
+      "state": "NSW",
+      "link": "http://www.bom.gov.au/nsw/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Sun, 24 May 2026 12:00:15 GMT"
+    },
     {
       "pid": "",
       "title": "24/21:16 EST Hazardous Surf Warning for New South Wales",
@@ -23,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "24/18:18 CST Marine Wind Warning Summary for South Australia",
+      "title": "24/21:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://www.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sun, 24 May 2026 08:48:04 GMT"
+      "issued": "Sun, 24 May 2026 12:00:07 GMT"
     },
     {
       "pid": "",
@@ -50,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "24/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "24/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://www.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 24 May 2026 06:05:11 GMT"
+      "issued": "Sun, 24 May 2026 12:00:11 GMT"
     }
   ],
   "fetch_errors": {
@@ -3047,39 +3056,57 @@
     }
   },
   "marine_warnings": {
+    "NSW": {
+      "state": "NSW",
+      "product": "IDN20400",
+      "issued_utc": "2026-05-24T12:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
+            "Byron Coast: Point Danger to Wooli"
+          ],
+          "aac_codes": [
+            "NSW_MW008"
+          ],
+          "summary": "Byron Coast"
+        }
+      ]
+    },
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-05-24T08:47:57Z",
+      "issued_utc": "2026-05-24T12:00:00Z",
       "overview": [
-        "Gale Warning for Sunday for Lower West Coast",
-        "Strong Wind Warning for Sunday for Central Coast and Upper West Coast",
-        "Strong Wind Warning for Monday for Gulf St Vincent, Investigator Strait, Central Coast, Upper West Coast, Far West Coast and Lower West Coast"
+        "Strong Wind Warning for Sunday for Upper West Coast and Lower West Coast",
+        "Strong Wind Warning for Monday for Far West Coast, Upper West Coast, Lower West Coast, Central Coast, Spencer Gulf, Gulf St Vincent and Investigator Strait"
       ],
       "hazards": [
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "Lower West Coast: Elliston to Cape Carnot"
-          ],
-          "aac_codes": [
-            "SA_MW003"
-          ],
-          "summary": "Lower West Coast"
-        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
             "Upper West Coast: Fowlers Bay to Elliston",
-            "Central Coast"
+            "Lower West Coast: Elliston to Cape Carnot"
           ],
           "aac_codes": [
             "SA_MW002",
+            "SA_MW003"
+          ],
+          "summary": "Upper West Coast and Lower West Coast"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
+            "Central Coast"
+          ],
+          "aac_codes": [
             "SA_MW004"
           ],
-          "summary": "Upper West Coast and Central Coast"
+          "summary": "Central Coast"
         },
         {
           "level": "Strong Wind Warning",
@@ -3089,15 +3116,17 @@
             "Upper West Coast: Fowlers Bay to Elliston",
             "Lower West Coast: Elliston to Cape Carnot",
             "Central Coast",
+            "Spencer Gulf",
             "Gulf St Vincent",
             "Investigator Strait"
           ],
           "aac_codes": [
             "SA_MW001",
+            "SA_MW005",
             "SA_MW006",
             "SA_MW007"
           ],
-          "summary": "Far West Coast, Upper West Coast, Lower West Coast, Central Coast, Gulf St Vincent and Investigator Strait"
+          "summary": "Far West Coast, Upper West Coast, Lower West Coast, Central Coast, Spencer Gulf, Gulf St Vincent and Investigator Strait"
         }
       ]
     },
@@ -3150,7 +3179,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-05-24T06:05:00Z",
+      "issued_utc": "2026-05-24T12:00:00Z",
       "overview": [],
       "hazards": [
         {
