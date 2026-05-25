@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-25T16:53:19.451083+00:00",
-  "last_checked_utc": "2026-05-25T16:53:19.451083+00:00",
+  "generated_utc": "2026-05-25T17:23:16.957349+00:00",
+  "last_checked_utc": "2026-05-25T17:23:16.957349+00:00",
   "warning_count": 9,
   "warnings": [
     {
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "25/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "26/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 25 May 2026 11:01:12 GMT"
+      "issued": "Mon, 25 May 2026 17:01:13 GMT"
     },
     {
       "pid": "",
@@ -97,7 +97,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 25 May 2026 16:47:58 GMT",
+        "updated": "Mon, 25 May 2026 17:19:58 GMT",
         "description": "Tooloon St, Coonamble, NSW 2829",
         "council": "Coonamble",
         "lat": -30.9521139999999,
@@ -3159,22 +3159,12 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-25T11:01:00Z",
-      "overview": [],
+      "issued_utc": "2026-05-25T17:01:00Z",
+      "overview": [
+        "Strong Wind Warning for Tuesday for Pilbara Coast East, Pilbara Coast West and Leeuwin Coast",
+        "Strong Wind Warning for Wednesday for Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Albany Coast"
+      ],
       "hazards": [
-        {
-          "level": "CAN",
-          "severity": "CAN",
-          "zones": [
-            "Pilbara Coast East: Wallal to Cape Preston",
-            "Pilbara Coast West: Cape Preston to North West Cape"
-          ],
-          "aac_codes": [
-            "WA_MW003",
-            "WA_MW004"
-          ],
-          "summary": "Pilbara Coast East and Pilbara Coast West"
-        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
@@ -3184,9 +3174,29 @@
             "Leeuwin Coast: Cape Naturaliste to Walpole"
           ],
           "aac_codes": [
+            "WA_MW003",
+            "WA_MW004",
             "WA_MW011"
           ],
           "summary": "Pilbara Coast East, Pilbara Coast West and Leeuwin Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Lancelin Coast: Jurien Bay to Two Rocks",
+            "Perth Coast: Two Rocks to Dawesville",
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay"
+          ],
+          "aac_codes": [
+            "WA_MW008",
+            "WA_MW009",
+            "WA_MW010",
+            "WA_MW012"
+          ],
+          "summary": "Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Albany Coast"
         }
       ]
     },
