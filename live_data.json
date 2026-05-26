@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-26T11:53:15.599727+00:00",
-  "last_checked_utc": "2026-05-26T11:53:15.599727+00:00",
+  "generated_utc": "2026-05-26T12:23:17.866840+00:00",
+  "last_checked_utc": "2026-05-26T12:23:17.866840+00:00",
   "warning_count": 11,
   "warnings": [
     {
       "pid": "",
-      "title": "26/16:05 EST Marine Wind Warning Summary for New South Wales",
+      "title": "26/22:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://www.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 26 May 2026 06:05:14 GMT"
+      "issued": "Tue, 26 May 2026 12:00:24 GMT"
     },
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "26/19:12 EST Marine Wind Warning Summary for Victoria",
+      "title": "26/22:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://www.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 26 May 2026 09:12:08 GMT"
+      "issued": "Tue, 26 May 2026 12:00:18 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "26/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "26/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://www.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 26 May 2026 06:05:13 GMT"
+      "issued": "Tue, 26 May 2026 12:00:12 GMT"
     },
     {
       "pid": "IDT20611",
@@ -3126,7 +3126,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-05-26T06:05:00Z",
+      "issued_utc": "2026-05-26T12:00:00Z",
       "overview": [
         "Gale Warning for Tuesday for Eden Coast",
         "Strong Wind Warning for Tuesday for Batemans Coast",
@@ -3169,7 +3169,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-05-26T09:11:44Z",
+      "issued_utc": "2026-05-26T12:00:00Z",
       "overview": [
         "Strong Wind Warning for Tuesday for West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast",
         "Gale Warning for Wednesday for East Gippsland Coast",
@@ -3259,10 +3259,10 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-05-26T06:05:00Z",
+      "issued_utc": "2026-05-26T12:00:00Z",
       "overview": [
-        "Strong Wind Warning for Tuesday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, South East Coast, South West Coast and Central West Coast",
-        "Strong Wind Warning for Wednesday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, South East Coast and South West Coast"
+        "Strong Wind Warning for Tuesday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, South East Coast and South West Coast",
+        "Strong Wind Warning for Wednesday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, South East Coast and South West Coast"
       ],
       "hazards": [
         {
@@ -3275,8 +3275,7 @@
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
             "Lower East Coast: Wineglass Bay to Tasman Island",
             "South East Coast: Tasman Island to South East Cape",
-            "South West Coast: South East Cape to Low Rocky Point",
-            "Central West Coast: Low Rocky Point to Sandy Cape"
+            "South West Coast: South East Cape to Low Rocky Point"
           ],
           "aac_codes": [
             "TAS_MW001",
@@ -3285,15 +3284,26 @@
             "TAS_MW003",
             "TAS_MW005",
             "TAS_MW006",
-            "TAS_MW007",
+            "TAS_MW007"
+          ],
+          "summary": "Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, South East Coast and South West Coast"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
+            "Central West Coast: Low Rocky Point to Sandy Cape"
+          ],
+          "aac_codes": [
             "TAS_MW008"
           ],
-          "summary": "Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, South East Coast, South West Coast and Central West Coast"
+          "summary": "Central West Coast"
         },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Far North West Coast: Sandy Cape to Stanley",
             "Central North Coast: Stanley to Northern Tip of Flinders Island",
             "Banks Strait and Franklin Sound",
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
@@ -3304,7 +3314,7 @@
           "aac_codes": [
             "TAS_MW004"
           ],
-          "summary": "Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, South East Coast and South West Coast"
+          "summary": "Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, South East Coast and South West Coast"
         }
       ]
     }
