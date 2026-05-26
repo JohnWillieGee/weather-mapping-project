@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-26T05:23:18.708452+00:00",
-  "last_checked_utc": "2026-05-26T05:23:18.708452+00:00",
+  "generated_utc": "2026-05-26T05:53:18.177234+00:00",
+  "last_checked_utc": "2026-05-26T05:53:18.177234+00:00",
   "warning_count": 11,
   "warnings": [
     {
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "26/11:06 WST Marine Wind Warning Summary for Western Australia",
+      "title": "26/13:27 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 26 May 2026 03:06:51 GMT"
+      "issued": "Tue, 26 May 2026 05:27:38 GMT"
     },
     {
       "pid": "",
@@ -3175,45 +3175,66 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-26T03:06:42Z",
+      "issued_utc": "2026-05-26T05:27:20Z",
       "overview": [
-        "Strong Wind Warning for Tuesday for Bunbury Geographe Coast, Leeuwin Coast, Pilbara Coast West and Pilbara Coast East",
-        "Strong Wind Warning for Wednesday for Bunbury Geographe Coast, Lancelin Coast, Albany Coast, Leeuwin Coast and Perth Coast"
+        "Strong Wind Warning for Tuesday for Leeuwin Coast",
+        "Strong Wind Warning for Wednesday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Perth Local Waters"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Pilbara Coast East: Wallal to Cape Preston",
-            "Pilbara Coast West: Cape Preston to North West Cape",
-            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Leeuwin Coast: Cape Naturaliste to Walpole"
           ],
           "aac_codes": [
-            "WA_MW003",
-            "WA_MW004",
-            "WA_MW010",
             "WA_MW011"
           ],
-          "summary": "Pilbara Coast East, Pilbara Coast West, Bunbury Geographe Coast and Leeuwin Coast"
+          "summary": "Leeuwin Coast"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
+            "Pilbara Coast East: Wallal to Cape Preston",
+            "Pilbara Coast West: Cape Preston to North West Cape"
+          ],
+          "aac_codes": [
+            "WA_MW003",
+            "WA_MW004"
+          ],
+          "summary": "Pilbara Coast East and Pilbara Coast West"
         },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Geraldton Coast: Kalbarri to Jurien Bay",
             "Lancelin Coast: Jurien Bay to Two Rocks",
             "Perth Coast: Two Rocks to Dawesville",
             "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Perth Local Waters"
+          ],
+          "aac_codes": [
+            "WA_MW007",
+            "WA_MW008",
+            "WA_MW009",
+            "WA_MW010",
+            "WA_MW015"
+          ],
+          "summary": "Perth Local Waters, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast and Leeuwin Coast"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
             "Albany Coast: Walpole to Bremer Bay"
           ],
           "aac_codes": [
-            "WA_MW008",
-            "WA_MW009",
             "WA_MW012"
           ],
-          "summary": "Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Albany Coast"
+          "summary": "Albany Coast"
         }
       ]
     },
