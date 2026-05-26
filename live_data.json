@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-05-26T14:23:18.103776+00:00",
-  "last_checked_utc": "2026-05-26T14:23:18.103776+00:00",
-  "warning_count": 11,
+  "generated_utc": "2026-05-26T14:53:15.256119+00:00",
+  "last_checked_utc": "2026-05-26T14:53:15.256119+00:00",
+  "warning_count": 12,
   "warnings": [
     {
       "pid": "",
@@ -29,6 +29,15 @@
       "link": "http://www.bom.gov.au/nsw/warnings/flood/floodwatch1.shtml",
       "desc": "",
       "issued": "Tue, 26 May 2026 04:05:32 GMT"
+    },
+    {
+      "pid": "",
+      "title": "27/00:49 EST Road Weather Alert for Sydney\nfor all suburbs",
+      "type": "other",
+      "state": "NSW",
+      "link": "http://www.bom.gov.au/nsw/warnings/sydneyroad.shtml",
+      "desc": "",
+      "issued": "Tue, 26 May 2026 14:49:40 GMT"
     },
     {
       "pid": "",
@@ -107,24 +116,7 @@
     "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
   },
   "incidents": {
-    "nsw": [
-      {
-        "title": "Conadilly St, Gunnedah",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Tue, 26 May 2026 14:19:58 GMT",
-        "description": "Conadilly St, Gunnedah, NSW 2380",
-        "council": "Gunnedah",
-        "lat": -30.976617,
-        "lng": 150.251135,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -136,13 +128,13 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-05-27T00:14:04+00:00",
+        "updated": "2026-05-27T00:30:04+00:00",
         "description": "",
-        "lat": -41.816590000003735,
-        "lng": 147.83219999955645,
+        "lat": -41.73537999986486,
+        "lng": 147.79906999982575,
         "polys": [],
         "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=f8aaad90-5059-49e3-816e-191ae1868d0c"
+        "sourceUrl": "https://alert.tas.gov.au/?id=bd411c61-a698-4216-b1ae-a7782c4bad44"
       },
       {
         "title": "Flood - Advice",
@@ -151,18 +143,18 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-05-27T00:14:04+00:00",
+        "updated": "2026-05-27T00:30:04+00:00",
         "description": "",
-        "lat": -41.73537999986486,
-        "lng": 147.79906999982575,
+        "lat": -41.816590000003735,
+        "lng": 147.83219999955645,
         "polys": [],
         "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=bd411c61-a698-4216-b1ae-a7782c4bad44"
+        "sourceUrl": "https://alert.tas.gov.au/?id=f8aaad90-5059-49e3-816e-191ae1868d0c"
       }
     ],
     "wa": []
   },
-  "incident_count": 3,
+  "incident_count": 2,
   "nsw_alert_zones": [],
   "wa_feed_method": "none",
   "fdr": {
@@ -3143,12 +3135,8 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-05-26T12:00:00Z",
-      "overview": [
-        "Gale Warning for Tuesday for Eden Coast",
-        "Strong Wind Warning for Tuesday for Batemans Coast",
-        "Gale Warning for Wednesday for Eden Coast"
-      ],
+      "issued_utc": "2026-05-26T14:51:14Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Gale Warning",
@@ -3162,24 +3150,15 @@
           "summary": "Eden Coast"
         },
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "CAN",
+          "severity": "CAN",
           "zones": [
             "Batemans Coast: Ulladulla to Montague Island"
           ],
           "aac_codes": [
             "NSW_MW002"
           ],
-          "summary": "Batemans Coast"
-        },
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "Eden Coast: Montague Island to Gabo Island"
-          ],
-          "aac_codes": [],
-          "summary": "Eden Coast"
+          "summary": ""
         }
       ]
     },
