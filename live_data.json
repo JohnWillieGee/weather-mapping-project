@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-27T01:23:19.081619+00:00",
-  "last_checked_utc": "2026-05-27T01:23:19.081619+00:00",
+  "generated_utc": "2026-05-27T01:53:17.083443+00:00",
+  "last_checked_utc": "2026-05-27T01:53:17.083443+00:00",
   "warning_count": 14,
   "warnings": [
     {
       "pid": "",
-      "title": "27/10:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "27/11:23 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://www.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 27 May 2026 00:00:13 GMT"
+      "issued": "Wed, 27 May 2026 01:23:49 GMT"
     },
     {
       "pid": "IDN21037",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "27/10:00 EST Marine Wind Warning Summary for Victoria",
+      "title": "27/11:23 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://www.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 27 May 2026 00:00:17 GMT"
+      "issued": "Wed, 27 May 2026 01:23:40 GMT"
     },
     {
       "pid": "",
@@ -86,21 +86,21 @@
     },
     {
       "pid": "",
-      "title": "27/07:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "27/09:23 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 26 May 2026 23:01:12 GMT"
+      "issued": "Wed, 27 May 2026 01:23:44 GMT"
     },
     {
       "pid": "",
-      "title": "27/11:03 EST Marine Wind Warning Summary for Tasmania",
+      "title": "27/11:23 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://www.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 27 May 2026 01:03:39 GMT"
+      "issued": "Wed, 27 May 2026 01:23:43 GMT"
     },
     {
       "pid": "IDT20611",
@@ -3153,7 +3153,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-05-27T00:00:00Z",
+      "issued_utc": "2026-05-27T01:23:32Z",
       "overview": [],
       "hazards": [
         {
@@ -3172,7 +3172,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-05-27T00:00:00Z",
+      "issued_utc": "2026-05-27T01:23:27Z",
       "overview": [],
       "hazards": [
         {
@@ -3204,10 +3204,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-26T23:01:00Z",
+      "issued_utc": "2026-05-27T01:23:33Z",
       "overview": [
         "Strong Wind Warning for Wednesday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Perth Local Waters",
-        "Strong Wind Warning for Thursday for Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Esperance Coast"
+        "Strong Wind Warning for Thursday for Leeuwin Coast, Bunbury Geographe Coast, Esperance Coast and Albany Coast"
       ],
       "hazards": [
         {
@@ -3251,7 +3251,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-05-27T01:03:31Z",
+      "issued_utc": "2026-05-27T01:23:36Z",
       "overview": [],
       "hazards": [
         {
@@ -3259,7 +3259,6 @@
           "severity": "STR",
           "zones": [
             "Central North Coast: Stanley to Northern Tip of Flinders Island",
-            "Banks Strait and Franklin Sound",
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
             "Upper East Coast: St Helens Point to Wineglass Bay",
             "South East Coast: Tasman Island to South East Cape",
@@ -3267,24 +3266,25 @@
           ],
           "aac_codes": [
             "TAS_MW002",
-            "TAS_MW009",
             "TAS_MW003",
             "TAS_MW004",
             "TAS_MW006",
             "TAS_MW007"
           ],
-          "summary": "Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, South East Coast and South West Coast"
+          "summary": "Central North Coast, East of Flinders Island, Upper East Coast, South East Coast and South West Coast"
         },
         {
           "level": "CAN",
           "severity": "CAN",
           "zones": [
-            "Far North West Coast: Sandy Cape to Stanley"
+            "Far North West Coast: Sandy Cape to Stanley",
+            "Banks Strait and Franklin Sound"
           ],
           "aac_codes": [
-            "TAS_MW001"
+            "TAS_MW001",
+            "TAS_MW009"
           ],
-          "summary": "Far North West Coast"
+          "summary": "Far North West Coast and Banks Strait and Franklin Sound"
         }
       ]
     }
