@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-27T10:53:22.839148+00:00",
-  "last_checked_utc": "2026-05-27T10:53:22.839148+00:00",
+  "generated_utc": "2026-05-27T11:23:18.341522+00:00",
+  "last_checked_utc": "2026-05-27T11:23:18.341522+00:00",
   "warning_count": 16,
   "warnings": [
     {
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "27/15:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "27/21:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://www.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 27 May 2026 05:00:13 GMT"
+      "issued": "Wed, 27 May 2026 11:00:12 GMT"
     },
     {
       "pid": "IDQ21033",
@@ -95,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "27/16:46 WST Marine Wind Warning Summary for Western Australia",
+      "title": "27/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Wed, 27 May 2026 08:46:33 GMT"
+      "issued": "Wed, 27 May 2026 11:01:12 GMT"
     },
     {
       "pid": "IDW21033",
@@ -3186,12 +3186,12 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-05-27T05:00:00Z",
+      "issued_utc": "2026-05-27T11:00:00Z",
       "overview": [],
       "hazards": [
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "CAN",
+          "severity": "CAN",
           "zones": [
             "Gold Coast Waters: Cape Moreton to Point Danger"
           ],
@@ -3226,10 +3226,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-27T08:46:25Z",
+      "issued_utc": "2026-05-27T11:01:00Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for Perth Local Waters, Lancelin Coast, Geraldton Coast, Leeuwin Coast, Bunbury Geographe Coast and Perth Coast",
-        "Strong Wind Warning for Thursday for Leeuwin Coast, Bunbury Geographe Coast, Esperance Coast and Albany Coast"
+        "Strong Wind Warning for Wednesday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast and Perth Local Waters",
+        "Strong Wind Warning for Thursday for Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Esperance Coast"
       ],
       "hazards": [
         {
@@ -3240,7 +3240,6 @@
             "Lancelin Coast: Jurien Bay to Two Rocks",
             "Perth Coast: Two Rocks to Dawesville",
             "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
-            "Leeuwin Coast: Cape Naturaliste to Walpole",
             "Perth Local Waters"
           ],
           "aac_codes": [
@@ -3248,10 +3247,20 @@
             "WA_MW008",
             "WA_MW009",
             "WA_MW010",
-            "WA_MW011",
             "WA_MW015"
           ],
-          "summary": "Perth Local Waters, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast and Leeuwin Coast"
+          "summary": "Perth Local Waters, Geraldton Coast, Lancelin Coast, Perth Coast and Bunbury Geographe Coast"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
+            "Leeuwin Coast: Cape Naturaliste to Walpole"
+          ],
+          "aac_codes": [
+            "WA_MW011"
+          ],
+          "summary": "Leeuwin Coast"
         },
         {
           "level": "Strong Wind Warning",
