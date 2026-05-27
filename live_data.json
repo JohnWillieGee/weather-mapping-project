@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-05-27T04:53:15.572838+00:00",
-  "last_checked_utc": "2026-05-27T04:53:15.572838+00:00",
-  "warning_count": 14,
+  "generated_utc": "2026-05-27T05:23:16.310954+00:00",
+  "last_checked_utc": "2026-05-27T05:23:16.310954+00:00",
+  "warning_count": 16,
   "warnings": [
     {
       "pid": "",
@@ -11,6 +11,15 @@
       "link": "http://www.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Wed, 27 May 2026 01:23:49 GMT"
+    },
+    {
+      "pid": "IDN21033",
+      "title": "27/15:05 EST \n                Severe Thunderstorm Warning\n            \nfor \n                parts of Mid North Coast and Hunter Forecast Districts.",
+      "type": "thunderstorm",
+      "state": "NSW",
+      "link": "http://www.bom.gov.au/products/IDN21033.shtml",
+      "desc": "",
+      "issued": "Wed, 27 May 2026 05:05:04 GMT"
     },
     {
       "pid": "IDN21037",
@@ -68,6 +77,15 @@
     },
     {
       "pid": "",
+      "title": "27/15:00 EST Marine Wind Warning Summary for Queensland",
+      "type": "wind",
+      "state": "QLD",
+      "link": "http://www.bom.gov.au/qld/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Wed, 27 May 2026 05:00:13 GMT"
+    },
+    {
+      "pid": "",
       "title": "27/04:15 EST Hazardous Surf Warning for Queensland",
       "type": "other",
       "state": "QLD",
@@ -86,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "27/12:14 WST Marine Wind Warning Summary for Western Australia",
+      "title": "27/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Wed, 27 May 2026 04:14:06 GMT"
+      "issued": "Wed, 27 May 2026 05:01:11 GMT"
     },
     {
       "pid": "",
@@ -142,27 +160,11 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Wed, 27 May 2026 04:47:58 GMT",
+        "updated": "Wed, 27 May 2026 05:19:58 GMT",
         "description": "Ramsar Rd, Kooragang, NSW 2322",
         "council": "Newcastle",
         "lat": -32.8541336059999,
         "lng": 151.708724975,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "Sea Foam Av, Thirroul",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Wed, 27 May 2026 04:47:58 GMT",
-        "description": "Sea Foam Av, Thirroul, NSW 2515",
-        "council": "Wollongong",
-        "lat": -34.311502,
-        "lng": 150.921094,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -190,7 +192,7 @@
     ],
     "wa": []
   },
-  "incident_count": 3,
+  "incident_count": 2,
   "nsw_alert_zones": [],
   "wa_feed_method": "none",
   "fdr": {
@@ -3168,6 +3170,25 @@
     }
   },
   "marine_warnings": {
+    "QLD": {
+      "state": "QLD",
+      "product": "IDQ20085",
+      "issued_utc": "2026-05-27T05:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Gold Coast Waters: Cape Moreton to Point Danger"
+          ],
+          "aac_codes": [
+            "QLD_MW014"
+          ],
+          "summary": "Gold Coast Waters"
+        }
+      ]
+    },
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
@@ -3222,10 +3243,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-27T04:13:55Z",
+      "issued_utc": "2026-05-27T05:01:00Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for Perth Local Waters, Lancelin Coast, Leeuwin Coast, Geraldton Coast, Bunbury Geographe Coast and Perth Coast",
-        "Strong Wind Warning for Thursday for Leeuwin Coast, Bunbury Geographe Coast, Esperance Coast and Albany Coast"
+        "Strong Wind Warning for Wednesday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Perth Local Waters",
+        "Strong Wind Warning for Thursday for Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Esperance Coast"
       ],
       "hazards": [
         {
