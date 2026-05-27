@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-27T08:23:24.091651+00:00",
-  "last_checked_utc": "2026-05-27T08:23:24.091651+00:00",
+  "generated_utc": "2026-05-27T08:53:23.077804+00:00",
+  "last_checked_utc": "2026-05-27T08:53:23.077804+00:00",
   "warning_count": 16,
   "warnings": [
     {
@@ -77,12 +77,12 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "27/17:33 EST \n                Severe Thunderstorm Warning\n            \nfor \n                parts of Central Highlands and Coalfields, Central West, Maranoa and Warrego, Darling Downs and Granite Belt and Southeast Coast Forecast Districts.",
+      "title": "27/18:47 EST \n                Severe Thunderstorm Warning\n            \nfor \n                parts of Central Highlands and Coalfields, Central West, Maranoa and Warrego and Darling Downs and Granite Belt Forecast Districts.",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "http://www.bom.gov.au/products/IDQ21033.shtml",
       "desc": "",
-      "issued": "Wed, 27 May 2026 07:33:24 GMT"
+      "issued": "Wed, 27 May 2026 08:47:58 GMT"
     },
     {
       "pid": "",
@@ -104,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "27/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "27/16:46 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://www.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Wed, 27 May 2026 05:01:11 GMT"
+      "issued": "Wed, 27 May 2026 08:46:33 GMT"
     },
     {
       "pid": "",
@@ -152,7 +152,24 @@
     "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
   },
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Mcleod Rd, Loxford",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Wed, 27 May 2026 08:47:58 GMT",
+        "description": "Mcleod Rd, Loxford, NSW 2326",
+        "council": "Cessnock",
+        "lat": -32.8019639999999,
+        "lng": 151.490394,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -164,13 +181,13 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-05-27T18:10:06+00:00",
+        "updated": "2026-05-27T18:48:04+00:00",
         "description": "",
-        "lat": -41.816590000003735,
-        "lng": 147.83219999955645,
+        "lat": -41.64380000023545,
+        "lng": 147.92609999968676,
         "polys": [],
         "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=f8aaad90-5059-49e3-816e-191ae1868d0c"
+        "sourceUrl": "https://alert.tas.gov.au/?id=d9e9dbd2-045d-4528-a0b2-0fb24f55393b"
       },
       {
         "title": "Flood - Advice",
@@ -179,18 +196,18 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-05-27T18:10:06+00:00",
+        "updated": "2026-05-27T18:48:04+00:00",
         "description": "",
-        "lat": -41.64380000023545,
-        "lng": 147.92609999968676,
+        "lat": -41.816590000003735,
+        "lng": 147.83219999955645,
         "polys": [],
         "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=d9e9dbd2-045d-4528-a0b2-0fb24f55393b"
+        "sourceUrl": "https://alert.tas.gov.au/?id=f8aaad90-5059-49e3-816e-191ae1868d0c"
       }
     ],
     "wa": []
   },
-  "incident_count": 2,
+  "incident_count": 3,
   "nsw_alert_zones": [],
   "wa_feed_method": "none",
   "fdr": {
@@ -3230,10 +3247,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-27T05:01:00Z",
+      "issued_utc": "2026-05-27T08:46:25Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Perth Local Waters",
-        "Strong Wind Warning for Thursday for Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Esperance Coast"
+        "Strong Wind Warning for Wednesday for Perth Local Waters, Lancelin Coast, Geraldton Coast, Leeuwin Coast, Bunbury Geographe Coast and Perth Coast",
+        "Strong Wind Warning for Thursday for Leeuwin Coast, Bunbury Geographe Coast, Esperance Coast and Albany Coast"
       ],
       "hazards": [
         {
