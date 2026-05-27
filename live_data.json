@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-05-27T08:53:23.077804+00:00",
-  "last_checked_utc": "2026-05-27T08:53:23.077804+00:00",
-  "warning_count": 16,
+  "generated_utc": "2026-05-27T09:24:16.869052+00:00",
+  "last_checked_utc": "2026-05-27T09:24:16.869052+00:00",
+  "warning_count": 17,
   "warnings": [
     {
       "pid": "",
@@ -14,12 +14,12 @@
     },
     {
       "pid": "IDN21033",
-      "title": "27/16:49 EST \n                Severe Thunderstorm Warning\n            \nfor \n                parts of Central Tablelands, North West Slopes and Plains, Northern Tablelands, Hunter and Central West Slopes and Plains Forecast Districts.",
+      "title": "27/18:51 EST \n                Severe Thunderstorm Warning\n            \nfor \n                parts of North West Slopes and Plains Forecast District.",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "http://www.bom.gov.au/products/IDN21033.shtml",
       "desc": "",
-      "issued": "Wed, 27 May 2026 06:49:35 GMT"
+      "issued": "Wed, 27 May 2026 08:51:44 GMT"
     },
     {
       "pid": "IDN21037",
@@ -112,6 +112,15 @@
       "issued": "Wed, 27 May 2026 08:46:33 GMT"
     },
     {
+      "pid": "IDW21033",
+      "title": "27/16:57 WST \n                Severe Thunderstorm Warning\n            \nfor \n                parts of South West, South Coastal and Great Southern districts.",
+      "type": "thunderstorm",
+      "state": "WA",
+      "link": "http://www.bom.gov.au/products/IDW21033.shtml",
+      "desc": "",
+      "issued": "Wed, 27 May 2026 08:57:35 GMT"
+    },
+    {
       "pid": "",
       "title": "27/16:05 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
@@ -152,24 +161,7 @@
     "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
   },
   "incidents": {
-    "nsw": [
-      {
-        "title": "Mcleod Rd, Loxford",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Wed, 27 May 2026 08:47:58 GMT",
-        "description": "Mcleod Rd, Loxford, NSW 2326",
-        "council": "Cessnock",
-        "lat": -32.8019639999999,
-        "lng": 151.490394,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -181,7 +173,22 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-05-27T18:48:04+00:00",
+        "updated": "2026-05-27T19:02:04+00:00",
+        "description": "",
+        "lat": -41.58350999991539,
+        "lng": 148.1727399996037,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=fb602395-8afb-43f1-ad26-ffdd11a910ce"
+      },
+      {
+        "title": "Flood - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Flood",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-05-27T19:02:04+00:00",
         "description": "",
         "lat": -41.64380000023545,
         "lng": 147.92609999968676,
@@ -196,7 +203,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-05-27T18:48:04+00:00",
+        "updated": "2026-05-27T19:02:04+00:00",
         "description": "",
         "lat": -41.816590000003735,
         "lng": 147.83219999955645,
@@ -3201,25 +3208,6 @@
             "QLD_MW014"
           ],
           "summary": "Gold Coast Waters"
-        }
-      ]
-    },
-    "NSW": {
-      "state": "NSW",
-      "product": "IDN20400",
-      "issued_utc": "2026-05-27T01:23:32Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "CAN",
-          "severity": "CAN",
-          "zones": [
-            "Eden Coast: Montague Island to Gabo Island"
-          ],
-          "aac_codes": [
-            "NSW_MW001"
-          ],
-          "summary": "Eden Coast"
         }
       ]
     },
