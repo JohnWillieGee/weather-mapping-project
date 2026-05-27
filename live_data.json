@@ -1,8 +1,17 @@
 {
-  "generated_utc": "2026-05-27T17:53:19.152636+00:00",
-  "last_checked_utc": "2026-05-27T17:53:19.152636+00:00",
-  "warning_count": 12,
+  "generated_utc": "2026-05-27T18:23:16.284369+00:00",
+  "last_checked_utc": "2026-05-27T18:23:16.284369+00:00",
+  "warning_count": 14,
   "warnings": [
+    {
+      "pid": "",
+      "title": "28/04:00 EST Marine Wind Warning Summary for New South Wales",
+      "type": "wind",
+      "state": "NSW",
+      "link": "http://www.bom.gov.au/nsw/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Wed, 27 May 2026 18:00:13 GMT"
+    },
     {
       "pid": "IDN21037",
       "title": "27/22:59 EST \n                Severe Weather Warning\n            \nfor \n                parts of Mid North Coast, Hunter, North West Slopes and Plains and Northern Tablelands Forecast Districts.",
@@ -41,6 +50,15 @@
     },
     {
       "pid": "",
+      "title": "28/04:10 EST Marine Wind Warning Summary for Victoria",
+      "type": "wind",
+      "state": "VIC",
+      "link": "http://www.bom.gov.au/vic/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Wed, 27 May 2026 18:10:20 GMT"
+    },
+    {
+      "pid": "",
       "title": "28/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
@@ -50,12 +68,12 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "28/03:02 EST \n                Severe Thunderstorm Warning\n            \nfor \n                parts of Central Highlands and Coalfields, Wide Bay and Burnett, Darling Downs and Granite Belt and Maranoa and Warrego Forecast Districts.",
+      "title": "28/04:13 EST \n                Severe Thunderstorm Warning\n            \nfor \n                parts of Wide Bay and Burnett, Darling Downs and Granite Belt and Central Highlands and Coalfields Forecast Districts.",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "http://www.bom.gov.au/products/IDQ21033.shtml",
       "desc": "",
-      "issued": "Wed, 27 May 2026 17:02:44 GMT"
+      "issued": "Wed, 27 May 2026 18:13:00 GMT"
     },
     {
       "pid": "",
@@ -95,12 +113,12 @@
     },
     {
       "pid": "",
-      "title": "27/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "28/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://www.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 27 May 2026 12:00:12 GMT"
+      "issued": "Wed, 27 May 2026 18:00:14 GMT"
     },
     {
       "pid": "IDT20611",
@@ -3166,6 +3184,70 @@
         }
       ]
     },
+    "NSW": {
+      "state": "NSW",
+      "product": "IDN20400",
+      "issued_utc": "2026-05-27T18:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Thursday for Batemans Coast and Eden Coast",
+        "Strong Wind Warning for Friday for Macquarie Coast, Hunter Coast, Sydney Coast, Sydney Enclosed Waters, Illawarra Coast, Batemans Coast and Eden Coast"
+      ],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Batemans Coast: Ulladulla to Montague Island",
+            "Eden Coast: Montague Island to Gabo Island"
+          ],
+          "aac_codes": [
+            "NSW_MW002",
+            "NSW_MW001"
+          ],
+          "summary": "Batemans Coast and Eden Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Macquarie Coast: Smoky Cape to Seal Rocks",
+            "Hunter Coast: Seal Rocks to Broken Bay",
+            "Sydney Coast: Broken Bay to Port Hacking",
+            "Sydney Enclosed Waters",
+            "Illawarra Coast: Port Hacking to Ulladulla",
+            "Batemans Coast: Ulladulla to Montague Island",
+            "Eden Coast: Montague Island to Gabo Island"
+          ],
+          "aac_codes": [
+            "NSW_MW006",
+            "NSW_MW005",
+            "NSW_MW004",
+            "NSW_MW009",
+            "NSW_MW003"
+          ],
+          "summary": "Sydney Enclosed Waters, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast"
+        }
+      ]
+    },
+    "VIC": {
+      "state": "VIC",
+      "product": "IDV20600",
+      "issued_utc": "2026-05-27T18:10:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
+          ],
+          "aac_codes": [
+            "VIC_MW004"
+          ],
+          "summary": "East Gippsland Coast"
+        }
+      ]
+    },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
@@ -3211,23 +3293,19 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-05-27T12:00:00Z",
+      "issued_utc": "2026-05-27T18:00:00Z",
       "overview": [],
       "hazards": [
         {
-          "level": "CAN",
-          "severity": "CAN",
+          "level": "Strong Wind Warning",
+          "severity": "STR",
           "zones": [
-            "Central North Coast: Stanley to Northern Tip of Flinders Island",
-            "Upper East Coast: St Helens Point to Wineglass Bay",
             "South West Coast: South East Cape to Low Rocky Point"
           ],
           "aac_codes": [
-            "TAS_MW002",
-            "TAS_MW004",
             "TAS_MW007"
           ],
-          "summary": "Central North Coast, Upper East Coast and South West Coast"
+          "summary": "South West Coast"
         }
       ]
     }
