@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-26T23:53:19.876599+00:00",
-  "last_checked_utc": "2026-05-26T23:53:19.876599+00:00",
+  "generated_utc": "2026-05-27T00:23:19.499983+00:00",
+  "last_checked_utc": "2026-05-27T00:23:19.499983+00:00",
   "warning_count": 13,
   "warnings": [
     {
       "pid": "",
-      "title": "27/07:27 EST Marine Wind Warning Summary for New South Wales",
+      "title": "27/10:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://www.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 26 May 2026 21:27:43 GMT"
+      "issued": "Wed, 27 May 2026 00:00:13 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "27/07:58 EST Marine Wind Warning Summary for Victoria",
+      "title": "27/10:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://www.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 26 May 2026 21:58:00 GMT"
+      "issued": "Wed, 27 May 2026 00:00:17 GMT"
     },
     {
       "pid": "",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "27/07:58 EST Marine Wind Warning Summary for Tasmania",
+      "title": "27/10:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://www.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 26 May 2026 21:58:04 GMT"
+      "issued": "Wed, 27 May 2026 00:00:09 GMT"
     },
     {
       "pid": "IDT20611",
@@ -137,7 +137,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-05-27T09:48:04+00:00",
+        "updated": "2026-05-27T10:14:04+00:00",
         "description": "",
         "lat": -41.73537999986486,
         "lng": 147.79906999982575,
@@ -152,7 +152,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-05-27T09:48:04+00:00",
+        "updated": "2026-05-27T10:14:04+00:00",
         "description": "",
         "lat": -41.816590000003735,
         "lng": 147.83219999955645,
@@ -3144,7 +3144,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-05-26T21:27:36Z",
+      "issued_utc": "2026-05-27T00:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3163,7 +3163,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-05-26T21:57:49Z",
+      "issued_utc": "2026-05-27T00:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3242,7 +3242,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-05-26T21:57:56Z",
+      "issued_utc": "2026-05-27T00:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3253,7 +3253,6 @@
             "Banks Strait and Franklin Sound",
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
             "Upper East Coast: St Helens Point to Wineglass Bay",
-            "South East Coast: Tasman Island to South East Cape",
             "South West Coast: South East Cape to Low Rocky Point"
           ],
           "aac_codes": [
@@ -3261,21 +3260,22 @@
             "TAS_MW009",
             "TAS_MW003",
             "TAS_MW004",
-            "TAS_MW006",
             "TAS_MW007"
           ],
-          "summary": "Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, South East Coast and South West Coast"
+          "summary": "Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast and South West Coast"
         },
         {
           "level": "CAN",
           "severity": "CAN",
           "zones": [
-            "Far North West Coast: Sandy Cape to Stanley"
+            "Far North West Coast: Sandy Cape to Stanley",
+            "South East Coast: Tasman Island to South East Cape"
           ],
           "aac_codes": [
-            "TAS_MW001"
+            "TAS_MW001",
+            "TAS_MW006"
           ],
-          "summary": "Far North West Coast"
+          "summary": "Far North West Coast and South East Coast"
         }
       ]
     }
