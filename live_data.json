@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-28T22:53:17.078743+00:00",
-  "last_checked_utc": "2026-05-28T22:53:17.078743+00:00",
+  "generated_utc": "2026-05-28T23:23:17.420415+00:00",
+  "last_checked_utc": "2026-05-28T23:23:17.420415+00:00",
   "warning_count": 12,
   "warnings": [
     {
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "29/03:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "29/09:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 28 May 2026 17:00:13 GMT"
+      "issued": "Thu, 28 May 2026 23:00:13 GMT"
     },
     {
       "pid": "",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "29/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "29/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 28 May 2026 17:01:11 GMT"
+      "issued": "Thu, 28 May 2026 23:01:14 GMT"
     },
     {
       "pid": "",
@@ -196,6 +196,21 @@
       }
     ],
     "wa": [
+      {
+        "title": "Fire - LESCHENAULT PDE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-05-28T23:07:14+00:00",
+        "description": "LESCHENAULT, SHIRE OF HARVEY",
+        "lat": -33.2509,
+        "lng": 115.7329,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a18c58bc0425b2de116b930?display=modal"
+      },
       {
         "title": "Bushfire - BALINGUP-NANNUP RD",
         "alertLevel": "",
@@ -516,7 +531,7 @@
     ],
     "act": []
   },
-  "incident_count": 26,
+  "incident_count": 27,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3497,7 +3512,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-05-28T17:00:00Z",
+      "issued_utc": "2026-05-28T23:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3630,7 +3645,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-28T17:01:00Z",
+      "issued_utc": "2026-05-28T23:01:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3638,15 +3653,25 @@
           "severity": "STR",
           "zones": [
             "Gascoyne Coast: Cape Cuvier to Kalbarri",
+            "Geraldton Coast: Kalbarri to Jurien Bay",
+            "Lancelin Coast: Jurien Bay to Two Rocks",
+            "Perth Coast: Two Rocks to Dawesville",
             "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Esperance Coast: Bremer Bay to Israelite Bay"
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay",
+            "Perth Local Waters"
           ],
           "aac_codes": [
             "WA_MW006",
+            "WA_MW007",
+            "WA_MW008",
+            "WA_MW009",
             "WA_MW011",
-            "WA_MW013"
+            "WA_MW012",
+            "WA_MW013",
+            "WA_MW015"
           ],
-          "summary": "Gascoyne Coast, Leeuwin Coast and Esperance Coast"
+          "summary": "Perth Local Waters, Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Leeuwin Coast, Albany Coast and Esperance Coast"
         }
       ]
     },
