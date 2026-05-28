@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-28T16:53:15.117156+00:00",
-  "last_checked_utc": "2026-05-28T16:53:15.117156+00:00",
+  "generated_utc": "2026-05-28T17:23:14.034414+00:00",
+  "last_checked_utc": "2026-05-28T17:23:14.034414+00:00",
   "warning_count": 11,
   "warnings": [
     {
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "28/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "29/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 28 May 2026 11:00:12 GMT"
+      "issued": "Thu, 28 May 2026 17:00:13 GMT"
     },
     {
       "pid": "",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "28/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "29/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 28 May 2026 11:01:14 GMT"
+      "issued": "Thu, 28 May 2026 17:01:11 GMT"
     },
     {
       "pid": "IDT20611",
@@ -3171,20 +3171,9 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-05-28T11:00:00Z",
+      "issued_utc": "2026-05-28T17:00:00Z",
       "overview": [],
       "hazards": [
-        {
-          "level": "CAN",
-          "severity": "CAN",
-          "zones": [
-            "Gold Coast Waters: Cape Moreton to Point Danger"
-          ],
-          "aac_codes": [
-            "QLD_MW014"
-          ],
-          "summary": "Gold Coast Waters"
-        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
@@ -3195,7 +3184,8 @@
           ],
           "aac_codes": [
             "QLD_MW012",
-            "QLD_MW013"
+            "QLD_MW013",
+            "QLD_MW014"
           ],
           "summary": "Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
         }
@@ -3305,30 +3295,23 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-28T11:01:00Z",
+      "issued_utc": "2026-05-28T17:01:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Gascoyne Coast: Cape Cuvier to Kalbarri",
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
             "Esperance Coast: Bremer Bay to Israelite Bay"
           ],
           "aac_codes": [
+            "WA_MW006",
+            "WA_MW011",
             "WA_MW013"
           ],
-          "summary": "Esperance Coast"
-        },
-        {
-          "level": "CAN",
-          "severity": "CAN",
-          "zones": [
-            "Albany Coast: Walpole to Bremer Bay"
-          ],
-          "aac_codes": [
-            "WA_MW012"
-          ],
-          "summary": "Albany Coast"
+          "summary": "Gascoyne Coast, Leeuwin Coast and Esperance Coast"
         }
       ]
     }
