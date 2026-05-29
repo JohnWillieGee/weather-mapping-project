@@ -356,9 +356,10 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 <div id="loading"><div class="spin"></div><p>WatchTower</p><div class="sub" id="load-status">Loading map...</div></div>
 <div class="app" id="app" style="visibility:hidden">
 <header>
-  <div style="display:flex;align-items:center;gap:10px;">
+  <div style="display:flex;align-items:center;gap:6px;">
     <a class="logo" href="https://www.youtube.com/watch?v=TLV4_xaYynY" target="_blank" rel="noopener" title="" style="text-decoration:none;cursor:default;">Watch<span>Tower</span></a>
     <button id="settings-toggle" onclick="toggleSettingsPanel()" title="Settings" style="background:var(--panel2);border:1px solid var(--border);color:var(--accent);width:28px;height:28px;border-radius:var(--radius);cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;">&#9881;</button>
+    <button onclick="toggleFilterSidebar()" title="Site Filters" style="background:var(--panel2);border:1px solid var(--border);color:var(--text2);width:28px;height:28px;border-radius:var(--radius);cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;">&#9776;</button>
   </div>
   <div class="header-right">
     <div class="hstat"><div class="val" id="h-sites">-</div><div class="lbl">Sites</div></div>
@@ -1486,7 +1487,7 @@ function showToast(msg,isError){var t=document.getElementById("toast");t.textCon
 
 // \u2500\u2500 MAP INIT \u2500\u2500
 function initMap(){
-  map=L.map("map",{center:[-27,134],zoom:5,zoomControl:true,minZoom:4,maxZoom:15});
+  map=L.map("map",{center:[-27,134],zoom:5,zoomControl:false,minZoom:4,maxZoom:15});
   var _initTheme = (typeof S !== 'undefined' ? S.theme : null) || (isDark ? 'dark' : 'light');
   var _esriOpts  = {attribution:ATTR+' \u00a9 <a href="https://www.esri.com/">Esri</a>',maxZoom:19};
   var _cartoOpts = {attribution:ATTR,subdomains:"abcd",maxZoom:19};
