@@ -4874,6 +4874,8 @@ function setTheme(theme) {
     if (el) el.classList.toggle('on', t === theme);
   });
   renderSites();
+  renderWarningsPanel();
+  if (warningsVisible) renderWarningsMap();
   markCustomIfNeeded();
   saveSettings();
 }
