@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-29T01:23:22.010804+00:00",
-  "last_checked_utc": "2026-05-29T01:23:22.010804+00:00",
+  "generated_utc": "2026-05-29T01:53:11.599599+00:00",
+  "last_checked_utc": "2026-05-29T01:53:11.599599+00:00",
   "warning_count": 12,
   "warnings": [
     {
       "pid": "",
-      "title": "29/10:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "29/11:39 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 29 May 2026 00:00:15 GMT"
+      "issued": "Fri, 29 May 2026 01:39:36 GMT"
     },
     {
       "pid": "IDN21037",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "29/09:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "29/11:09 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Fri, 29 May 2026 00:00:10 GMT"
+      "issued": "Fri, 29 May 2026 01:39:31 GMT"
     },
     {
       "pid": "",
@@ -114,7 +114,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Great Western Hwy, Blacktown",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 29 May 2026 01:50:36 GMT",
+        "description": "Great Western Hwy, Blacktown, NSW 2148",
+        "council": "Blacktown",
+        "lat": -33.800536,
+        "lng": 150.903675,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -126,7 +143,22 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-05-29T10:32:05+00:00",
+        "updated": "2026-05-29T11:30:04+00:00",
+        "description": "",
+        "lat": -41.72260999981371,
+        "lng": 147.8160300001505,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=33b476d7-ddb0-42ea-a989-7f54ee43a5fb"
+      },
+      {
+        "title": "Flood - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Flood",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-05-29T11:30:04+00:00",
         "description": "",
         "lat": -41.774630000120844,
         "lng": 147.7164700001808,
@@ -141,7 +173,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-05-29T10:32:05+00:00",
+        "updated": "2026-05-29T11:30:04+00:00",
         "description": "",
         "lat": -41.662399999787084,
         "lng": 147.89176999985685,
@@ -156,7 +188,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-05-29T10:32:05+00:00",
+        "updated": "2026-05-29T11:30:04+00:00",
         "description": "",
         "lat": -41.81616999975618,
         "lng": 147.75753000025293,
@@ -165,28 +197,13 @@
         "sourceUrl": "https://alert.tas.gov.au/?id=2750379f-4bcb-43a5-b0f3-f85e5568f93f"
       },
       {
-        "title": "Flood - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Flood",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-05-29T10:32:05+00:00",
-        "description": "",
-        "lat": -41.72260999981371,
-        "lng": 147.8160300001505,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=33b476d7-ddb0-42ea-a989-7f54ee43a5fb"
-      },
-      {
         "title": "Flood - Watch and Act",
         "alertLevel": "Watch and Act",
         "status": "",
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-05-29T10:32:05+00:00",
+        "updated": "2026-05-29T11:30:04+00:00",
         "description": "",
         "lat": -41.80374000002824,
         "lng": 147.6409399996384,
@@ -576,7 +593,7 @@
     ],
     "act": []
   },
-  "incident_count": 30,
+  "incident_count": 31,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3580,10 +3597,10 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-05-29T00:00:00Z",
+      "issued_utc": "2026-05-29T01:39:27Z",
       "overview": [
-        "Strong Wind Warning for Friday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Sydney Enclosed Waters, Illawarra Coast, Batemans Coast and Eden Coast",
-        "Strong Wind Warning for Saturday for Macquarie Coast, Hunter Coast, Illawarra Coast, Batemans Coast and Eden Coast"
+        "Strong Wind Warning for Friday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast, Eden Coast and Sydney Enclosed Waters",
+        "Strong Wind Warning for Saturday for Illawarra Coast, Batemans Coast, Eden Coast, Macquarie Coast and Hunter Coast"
       ],
       "hazards": [
         {
@@ -3669,7 +3686,7 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-05-29T00:00:00Z",
+      "issued_utc": "2026-05-29T01:39:24Z",
       "overview": [],
       "hazards": [
         {
