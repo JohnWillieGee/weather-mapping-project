@@ -402,6 +402,10 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
             </div>
           </div>
           <div class="sp-row">
+            <div><span class="sp-lbl">Site filters panel</span><span class="sp-sub">Open / close left sidebar</span></div>
+            <button class="wp-toggle" onclick="toggleFilterSidebar()">&#9776; Filters</button>
+          </div>
+          <div class="sp-row">
             <div><span class="sp-lbl">Site labels</span><span class="sp-sub">Name tags on map</span></div>
             <div class="sp-tgl on" id="sp-tgl-labels" onclick="toggleSpToggle('labels',this)"></div>
           </div>
@@ -684,7 +688,6 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
     </div>
   </div>
   <div id="map-wrap">
-    <button id="toggle-fs" onclick="toggleFilterSidebar()" title="Site Filters" style="position:absolute;left:6px;top:60px;z-index:1002;background:var(--panel);border:1px solid var(--border);color:var(--text2);width:22px;height:44px;border-radius:0 4px 4px 0;cursor:pointer;font-size:11px;display:none;align-items:center;justify-content:center;box-shadow:2px 0 6px var(--shadow);">&#9776;</button>
     <button id="toggle-wp" onclick="toggleWeatherPanel()" title="Live Weather" style="position:absolute;right:6px;top:60px;z-index:1002;background:var(--panel);border:1px solid var(--border);color:var(--text2);width:22px;height:44px;border-radius:4px 0 0 4px;cursor:pointer;font-size:11px;display:none;align-items:center;justify-content:center;box-shadow:-2px 0 6px var(--shadow);">&#9729;</button>
     <div id="map-controls">
       <button class="map-btn on" id="btn-states" onclick="toggleLayer('states')">Borders</button>
@@ -1156,11 +1159,13 @@ function toggleFilterSidebar() {
   var isOpen = !sidebar.classList.contains('collapsed');
   if (isOpen) {
     sidebar.classList.add('collapsed');
+    var dd = document.getElementById('svc-dd-panel');
+    if (dd) dd.classList.remove('open');
+    var ddBtn = document.getElementById('svc-dd-btn');
+    if (ddBtn) ddBtn.classList.remove('active');
   } else {
     sidebar.classList.remove('collapsed');
   }
-  var tab = document.getElementById('toggle-fs');
-  if (tab) tab.style.display = !isOpen ? 'none' : 'flex';
   setTimeout(function(){if(map)map.invalidateSize();},260);
 }
 
