@@ -685,7 +685,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
   </div>
   <div id="map-wrap">
     <button id="toggle-fs" onclick="toggleFilterSidebar()" title="Site Filters" style="position:absolute;left:6px;top:60px;z-index:1002;background:var(--panel);border:1px solid var(--border);color:var(--text2);width:22px;height:44px;border-radius:0 4px 4px 0;cursor:pointer;font-size:11px;display:none;align-items:center;justify-content:center;box-shadow:2px 0 6px var(--shadow);">&#9776;</button>
-    <button id="toggle-wp" onclick="toggleWeatherPanel()">&#9729;</button>
+    <button id="toggle-wp" onclick="toggleWeatherPanel()" title="Live Weather" style="position:absolute;right:6px;top:60px;z-index:1002;background:var(--panel);border:1px solid var(--border);color:var(--text2);width:22px;height:44px;border-radius:4px 0 0 4px;cursor:pointer;font-size:11px;display:none;align-items:center;justify-content:center;box-shadow:-2px 0 6px var(--shadow);">&#9729;</button>
     <div id="map-controls">
       <button class="map-btn on" id="btn-states" onclick="toggleLayer('states')">Borders</button>
       <button class="map-btn on" id="btn-labels" onclick="toggleLayer('labels')">Labels</button>
@@ -800,7 +800,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
   </div>
   <!-- Right weather panel -->
   <div id="weather-panel">
-    <div class="wp-head"><h3>&#9729; Live Weather &amp; Hazards</h3></div>
+    <div class="wp-head"><h3>&#9729; Live Weather &amp; Hazards</h3><button class="wp-toggle" onclick="toggleWeatherPanel()" title="Close">&#10005;</button></div>
     <div class="wp-body">
       <div class="wp-section" id="sec-fdr">
         <div class="wp-section-title" onclick="toggleSection('fdr')">
@@ -1153,9 +1153,14 @@ function clearFilters() {
 
 function toggleFilterSidebar() {
   var sidebar = document.getElementById('filter-sidebar');
-  sidebar.classList.toggle('collapsed');
+  var isOpen = !sidebar.classList.contains('collapsed');
+  if (isOpen) {
+    sidebar.classList.add('collapsed');
+  } else {
+    sidebar.classList.remove('collapsed');
+  }
   var tab = document.getElementById('toggle-fs');
-  if (tab) tab.style.display = sidebar.classList.contains('collapsed') ? 'flex' : 'none';
+  if (tab) tab.style.display = !isOpen ? 'none' : 'flex';
   setTimeout(function(){if(map)map.invalidateSize();},260);
 }
 
@@ -3970,7 +3975,14 @@ function openDucting(){
   window.open('https://vhf.dxview.org/map?center=' + lat + ',' + lon + ',' + zoom + '.0', '_blank');
 }
 
-function toggleWeatherPanel(){document.getElementById("weather-panel").classList.toggle("collapsed");setTimeout(function(){if(map)map.invalidateSize();},260);}
+function toggleWeatherPanel(){
+  var panel = document.getElementById('weather-panel');
+  var isOpen = !panel.classList.contains('collapsed');
+  if (isOpen) { panel.classList.add('collapsed'); } else { panel.classList.remove('collapsed'); }
+  var tab = document.getElementById('toggle-wp');
+  if (tab) tab.style.display = isOpen ? 'flex' : 'none';
+  setTimeout(function(){if(map)map.invalidateSize();},260);
+}
 
 
 // \u2500\u2500 WATCHTOWER: RISK ASSESSMENT ENGINE \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
