@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-05-29T06:53:19.005134+00:00",
-  "last_checked_utc": "2026-05-29T06:53:19.005134+00:00",
-  "warning_count": 13,
+  "generated_utc": "2026-05-29T07:23:17.580376+00:00",
+  "last_checked_utc": "2026-05-29T07:23:17.580376+00:00",
+  "warning_count": 15,
   "warnings": [
     {
       "pid": "",
@@ -103,6 +103,24 @@
       "issued": "Fri, 29 May 2026 05:01:12 GMT"
     },
     {
+      "pid": "IDW21037",
+      "title": "29/14:58 WST \n                Severe Weather Warning\n            \nfor \n                Central West, Lower West, South West, South Coastal, South East Coastal, Great Southern, Central Wheat Belt and parts of Goldfields, Gascoyne and Eucla districts.",
+      "type": "severe_weather",
+      "state": "WA",
+      "link": "http://reg.bom.gov.au/products/IDW21037.shtml",
+      "desc": "",
+      "issued": "Fri, 29 May 2026 06:58:48 GMT"
+    },
+    {
+      "pid": "IDW21137",
+      "title": "29/14:51 WST \n                Coastal Hazard Warning\n            \nfor \n                parts of Central West, Lower West, South West, South Coastal and South East Coastal districts.",
+      "type": "other",
+      "state": "WA",
+      "link": "http://reg.bom.gov.au/products/IDW21137.shtml",
+      "desc": "",
+      "issued": "Fri, 29 May 2026 06:51:57 GMT"
+    },
+    {
       "pid": "",
       "title": "29/16:05 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
@@ -113,12 +131,12 @@
     },
     {
       "pid": "IDT20611",
-      "title": "29/10:56 EST Minor Flood Warning for the South Esk River",
+      "title": "29/16:54 EST Minor Flood Warning for the South Esk River",
       "type": "flood",
       "state": "TAS",
       "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDT20611.html",
       "desc": "",
-      "issued": "Fri, 29 May 2026 00:56:38 GMT"
+      "issued": "Fri, 29 May 2026 06:54:50 GMT"
     }
   ],
   "fetch_errors": {},
@@ -205,21 +223,6 @@
       }
     ],
     "wa": [
-      {
-        "title": "Structure Fire - WITTENOOM ST",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-05-29T06:45:21+00:00",
-        "description": "BOULDER, CITY OF KALGOORLIE-BOULDER",
-        "lat": -30.7798,
-        "lng": 121.4844,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a19362783b28b7135ba7544?display=modal"
-      },
       {
         "title": "Bushfire - BULLICH RD",
         "alertLevel": "",
@@ -321,51 +324,6 @@
         "description": "",
         "lat": -17.4145,
         "lng": 122.527,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Earthquake",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Earthquake",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-05-15T00:50:43+00:00",
-        "description": "PALLINUP, GNOWANGERUP, SHIRE OF",
-        "lat": -33.837,
-        "lng": 117.9242,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Earthquake - Laverton, WA",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Earthquake",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-05-06T03:29:01.697+00:00",
-        "description": "LAVERTON, LAVERTON, SHIRE OF",
-        "lat": -28.8157,
-        "lng": 122.2182,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/69f9bfcaa925adb3e823ec20?display=modal"
-      },
-      {
-        "title": "Earthquake",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Earthquake",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-05-06T03:29:01+00:00",
-        "description": "LAVERTON, LAVERTON, SHIRE OF",
-        "lat": -28.8143,
-        "lng": 122.2182,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -495,7 +453,7 @@
     ],
     "act": []
   },
-  "incident_count": 24,
+  "incident_count": 20,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
