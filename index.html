@@ -12,8 +12,7 @@
 <style>
 [data-theme="dark"]{--bg:#0d1117;--panel:#161b22;--panel2:#1c2333;--border:#30363d;--accent:#f0a500;--accent2:#00d4aa;--accent3:#ff6b6b;--text:#e6edf3;--text2:#8b949e;--text3:#6e7681;--shadow:rgba(0,0,0,0.7);}
 [data-theme="light"]{--bg:#eef0f5;--panel:#ffffff;--panel2:#e8eaef;--border:#c8cdd8;--accent:#b36a00;--accent2:#007a58;--accent3:#cc2222;--text:#0d0f14;--text2:#2d3748;--text3:#4a5568;--shadow:rgba(0,0,0,0.15);}
-[data-theme="voyager"]{--bg:#fbf7f4;--panel:#f3ece4;--panel2:#e8ddd2;--border:#cfc0ab;--accent:#c27f43;--accent2:#a0673a;--accent3:#cc3333;--text:#181009;--text2:#4a3420;--text3:#7a6040;--shadow:rgba(24,16,9,0.15);}
-[data-theme="natural"]{--bg:#f7f7f3;--panel:#eeeee8;--panel2:#e4e4dc;--border:#c2c2b0;--accent:#7a8a52;--accent2:#5a8f5e;--accent3:#c46a4a;--text:#10100b;--text2:#3d3d2e;--text3:#6b6b50;--shadow:rgba(16,16,11,0.15);}
+[data-theme="natural"]{--bg:#c8cec4;--panel:#b8beb4;--panel2:#adb3a9;--border:#8a9486;--accent:#4a6a30;--accent2:#3a7a48;--accent3:#c46a4a;--text:#10100b;--text2:#2a2e26;--text3:#50584a;--shadow:rgba(16,16,11,0.25);}
 :root{--radius:6px;}
 /* ── SETTINGS PANEL ─────────────────────────────────────────────────────── */
 #settings-panel{width:0;min-width:0;background:var(--panel);border-right:1px solid var(--border);display:flex;flex-direction:column;overflow:hidden;transition:width .25s,min-width .25s;flex-shrink:0;z-index:10;}
@@ -264,10 +263,8 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 #windy-resize:hover{opacity:1;}
 #windy-layer-select{background:var(--panel);border:1px solid #00c8ff44;color:#00c8ff;font-family:monospace;font-size:9px;padding:2px 4px;border-radius:3px;cursor:pointer;}
 #windy-layer-select option{background:var(--panel);}
-/* Voyager theme — warm cream palette, slight warm tint on map */
-[data-theme="voyager"] .leaflet-tile-pane{filter:brightness(1.0) sepia(0.25) saturate(0.85);}
-/* Natural theme — ESRI ocean, desaturated and warm to match earthy palette */
-[data-theme="natural"] .leaflet-tile-pane{filter:brightness(0.95) saturate(0.65) sepia(0.2);}
+/* Natural theme — ESRI ocean, darkened and shifted grey-green */
+[data-theme="natural"] .leaflet-tile-pane{filter:brightness(0.78) saturate(0.6) hue-rotate(10deg);}
 /* fit-to-map button */
 .fit-map-btn{background:none;border:1px solid currentColor;color:inherit;cursor:pointer;font-size:9px;padding:2px 5px;border-radius:3px;font-family:monospace;letter-spacing:0.5px;opacity:0.7;transition:opacity .15s;}
 .fit-map-btn:hover{opacity:1;}
@@ -397,7 +394,6 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
             <span class="sp-lbl">Theme</span>
             <div class="sp-theme-seg" style="width:100%;">
               <button class="sp-th-opt" id="sp-theme-dark" onclick="setTheme('dark')">Dark</button>
-              <button class="sp-th-opt" id="sp-theme-voyager" onclick="setTheme('voyager')">Voyager</button>
               <button class="sp-th-opt" id="sp-theme-natural" onclick="setTheme('natural')">Natural</button>
               <button class="sp-th-opt" id="sp-theme-light" onclick="setTheme('light')">Light</button>
             </div>
@@ -1066,7 +1062,7 @@ function renderSites() {
     count++;
     var col=modColor(s.sv, fState.mods), r=5;
     var _theme=document.documentElement.getAttribute('data-theme');
-    var _stroke=_theme==='light'?'#ffffff':_theme==='voyager'?'#f3ece4':_theme==='natural'?'#e4e4dc':'#0d1117';
+    var _stroke=_theme==='light'?'#ffffff':_theme==='natural'?'#adb3a9':'#0d1117';
     var mk=L.marker([s.lat,s.lon],{icon:L.divIcon({
       html:"<svg xmlns='http://www.w3.org/2000/svg' width='"+(r*2+4)+"' height='"+(r*2+4)+"'><circle cx='"+(r+2)+"' cy='"+(r+2)+"' r='"+r+"' fill='"+col+"' fill-opacity='.85' stroke='"+_stroke+"' stroke-width='1.5'/></svg>",
       className:"",iconSize:[r*2+4,r*2+4],iconAnchor:[r+2,r+2],popupAnchor:[0,-(r+4)],tooltipAnchor:[r+3,0]
@@ -1436,7 +1432,6 @@ var WARN_COLORS = {"severe_thunderstorm":"#9775fa","thunderstorm":"#9775fa","sev
 
 var DARK_TILE    = "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png";
 var LIGHT_TILE   = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
-var VOYAGER_TILE = "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png";
 var NATURAL_TILE = "https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}";
 var ATTR = "&copy; <a href='https://carto.com/'>CARTO</a> &copy; <a href='https://www.openstreetmap.org/'>OSM</a>";
 
@@ -1491,14 +1486,14 @@ function initMap(){
   var _initTheme = (typeof S !== 'undefined' ? S.theme : null) || (isDark ? 'dark' : 'light');
   var _esriOpts  = {attribution:ATTR+' \u00a9 <a href="https://www.esri.com/">Esri</a>',maxZoom:19};
   var _cartoOpts = {attribution:ATTR,subdomains:"abcd",maxZoom:19};
-  var _initTile  = _initTheme==='natural'?NATURAL_TILE:_initTheme==='voyager'?VOYAGER_TILE:_initTheme==='light'?LIGHT_TILE:DARK_TILE;
+  var _initTile  = _initTheme==='natural'?NATURAL_TILE:_initTheme==='light'?LIGHT_TILE:DARK_TILE;
   var _initOpts  = _initTheme==='natural' ? _esriOpts : _cartoOpts;
   tileLayer=L.tileLayer(_initTile,_initOpts).addTo(map);
   var _iTheme    = _initTheme;
-  var _iBorderCol = _iTheme==='natural'?'#5a7a3a':_iTheme==='voyager'?'#c27f43':_iTheme==='light'?'#c07800':'#f0a500';
+  var _iBorderCol = _iTheme==='natural'?'#4a6a30':_iTheme==='light'?'#c07800':'#f0a500';
   var _iBorderOp  = _iTheme==='dark'?0.35:0.65;
   stateLayer=L.geoJSON(STATES_GEO,{style:{fillColor:"transparent",fillOpacity:0,color:_iBorderCol,weight:1.2,opacity:_iBorderOp,dashArray:"5 5"}}).addTo(map);
-  var _iLabelCol  = _iTheme==='natural'?'rgba(90,122,58,0.55)':_iTheme==='voyager'?'rgba(194,127,67,0.55)':_iTheme==='light'?'rgba(160,100,0,0.35)':'rgba(240,165,0,0.4)';
+  var _iLabelCol  = _iTheme==='natural'?'rgba(74,106,48,0.6)':_iTheme==='light'?'rgba(160,100,0,0.35)':'rgba(240,165,0,0.4)';
   var SC={"New South Wales":[-32.5,146.5],"Victoria":[-37,144.5],"Queensland":[-22,144],"South Australia":[-30,135.5],"Western Australia":[-27,121],"Tasmania":[-42,146.5],"Northern Territory":[-19.5,133.5],"Australian Capital Territory":[-35.47,149]};
   var AB={"New South Wales":"NSW","Victoria":"VIC","Queensland":"QLD","South Australia":"SA","Western Australia":"WA","Tasmania":"TAS","Northern Territory":"NT","Australian Capital Territory":"ACT"};
   labelGroup=L.layerGroup(STATES_GEO.features.map(function(f){var c=SC[f.properties.STATE_NAME];if(!c)return null;return L.marker(c,{icon:L.divIcon({html:"<div style='font-weight:800;font-size:13px;letter-spacing:2px;color:"+_iLabelCol+";pointer-events:none;white-space:nowrap;'>"+(AB[f.properties.STATE_NAME]||f.properties.STATE_NAME)+"</div>",className:"",iconSize:[80,20],iconAnchor:[40,10]}),interactive:false});}).filter(Boolean)).addTo(map);
@@ -4849,15 +4844,14 @@ function setTheme(theme) {
   var cartoOpts = {attribution: ATTR, subdomains:'abcd', maxZoom:19};
   var tileUrl, tileOpts;
   if      (theme === 'natural')  { tileUrl = NATURAL_TILE;  tileOpts = esriOpts; }
-  else if (theme === 'voyager')  { tileUrl = VOYAGER_TILE;  tileOpts = cartoOpts; }
   else if (theme === 'light')    { tileUrl = LIGHT_TILE;    tileOpts = cartoOpts; }
   else                           { tileUrl = DARK_TILE;     tileOpts = cartoOpts; }
   if (tileLayer && map) { map.removeLayer(tileLayer); tileLayer = L.tileLayer(tileUrl, tileOpts).addTo(map); }
-  var _bc = theme==='natural'?'#5a7a3a':theme==='voyager'?'#c27f43':theme==='light'?'#c07800':'#f0a500';
-  var _bo = (theme==='light'||theme==='voyager'||theme==='natural') ? 0.65 : 0.35;
+  var _bc = theme==='natural'?'#4a6a30':theme==='light'?'#c07800':'#f0a500';
+  var _bo = (theme==='light'||theme==='natural') ? 0.65 : 0.35;
   if (stateLayer) stateLayer.setStyle({color: _bc, opacity: _bo});
   updateLightningTheme();
-  ['dark','voyager','natural','light'].forEach(function(t){
+  ['dark','natural','light'].forEach(function(t){
     var el = document.getElementById('sp-theme-'+t);
     if (el) el.classList.toggle('on', t === theme);
   });
@@ -4899,7 +4893,7 @@ function applyAllSettings() {
 }
 
 function syncSettingsUI() {
-  ['dark','voyager','natural','light'].forEach(function(t){
+  ['dark','natural','light'].forEach(function(t){
     var el = document.getElementById('sp-theme-'+t);
     if (el) el.classList.toggle('on', t === S.theme);
   });
