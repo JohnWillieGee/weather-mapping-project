@@ -1062,9 +1062,9 @@ function renderSites() {
     if(!siteMatchesFilter(s)) return;
     count++;
     var col=modColor(s.sv, fState.mods), r=5;
+    var _theme=document.documentElement.getAttribute('data-theme');
+    var _stroke=_theme==='light'?'#ffffff':_theme==='vivid'?'#081208':_theme==='voyager'?'#1a0808':'#0d1117';
     var mk=L.marker([s.lat,s.lon],{icon:L.divIcon({
-      var _theme=document.documentElement.getAttribute('data-theme');
-      var _stroke=_theme==='light'?'#ffffff':_theme==='vivid'?'#0f1a0f':'#0d1117';
       html:"<svg xmlns='http://www.w3.org/2000/svg' width='"+(r*2+4)+"' height='"+(r*2+4)+"'><circle cx='"+(r+2)+"' cy='"+(r+2)+"' r='"+r+"' fill='"+col+"' fill-opacity='.85' stroke='"+_stroke+"' stroke-width='1.5'/></svg>",
       className:"",iconSize:[r*2+4,r*2+4],iconAnchor:[r+2,r+2],popupAnchor:[0,-(r+4)],tooltipAnchor:[r+3,0]
     })});
