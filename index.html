@@ -945,17 +945,6 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
       <h3>&#9888; Risk Assessment</h3>
       <button class="wp-toggle" onclick="toggleRiskPanel()" title="Close risk panel">&#10005;</button>
     </div>
-    <div class="risk-distance-bar">
-      <span title="Watch &amp; Act radius (Emergency Warning uses 2×)">Proximity</span>
-      <input type="range" min="10" max="200" step="5" value="50"
-             oninput="setRiskDistance(this.value)">
-      <span id="risk-dist-label">50 km</span>
-    </div>
-    <div class="risk-options-bar">
-      <button class="risk-opt-chip on" id="ropt-fdr" onclick="toggleRiskOption('fdr',this)" title="Include Fire Danger Ratings">&#128293; FDR</button>
-      <button class="risk-opt-chip on" id="ropt-stormMF" onclick="toggleRiskOption('stormMF',this)" title="Show thunderstorm warnings for AM/MF sites">&#9928; MF Storms</button>
-      <button class="risk-opt-chip on" id="ropt-labels" onclick="toggleRiskOption('labels',this)" title="Show site name labels on risk map markers">&#127991; Labels</button>
-    </div>
     <div id="risk-content">
       <div class="wp-none">Press Refresh or wait for data to load</div>
 
@@ -1070,7 +1059,7 @@ function renderSites() {
     count++;
     var col=modColor(s.sv, fState.mods), r=5;
     var mk=L.marker([s.lat,s.lon],{icon:L.divIcon({
-      html:"<svg xmlns='http://www.w3.org/2000/svg' width='"+(r*2+4)+"' height='"+(r*2+4)+"'><circle cx='"+(r+2)+"' cy='"+(r+2)+"' r='"+r+"' fill='"+col+"' fill-opacity='.8' stroke='"+(isDark?"#0d1117":"#ffffff")+"' stroke-width='1.5'/></svg>",
+      html:"<svg xmlns='http://www.w3.org/2000/svg' width='"+(r*2+4)+"' height='"+(r*2+4)+"'><circle cx='"+(r+2)+"' cy='"+(r+2)+"' r='"+r+"' fill='"+col+"' fill-opacity='.85'"+(document.documentElement.getAttribute('data-theme')==='light'?" stroke='#ffffff' stroke-width='1.5'":"")+"/></svg>",
       className:"",iconSize:[r*2+4,r*2+4],iconAnchor:[r+2,r+2],popupAnchor:[0,-(r+4)],tooltipAnchor:[r+3,0]
     })});
     mk.bindPopup(buildSitePopup(s),{className:"ba-popup",maxWidth:480});
@@ -1428,6 +1417,10 @@ var WARN_COLORS = {"severe_thunderstorm":"#9775fa","thunderstorm":"#9775fa","sev
 
 var DARK_TILE  = "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png";
 var LIGHT_TILE = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
+// Vivid theme tile — ESRI Ocean Base: blue ocean, warm grey land, no clutter
+// Fallback option (uncomment to try): CARTO Voyager — warm grey roads, muted colours
+// var VIVID_TILE = "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png";
+var VIVID_TILE = "https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}";
 var ATTR = "&copy; <a href='https://carto.com/'>CARTO</a> &copy; <a href='https://www.openstreetmap.org/'>OSM</a>";
 
 // \u2500\u2500 GLOBAL STATE \u2500\u2500
@@ -1478,7 +1471,10 @@ function showToast(msg,isError){var t=document.getElementById("toast");t.textCon
 // \u2500\u2500 MAP INIT \u2500\u2500
 function initMap(){
   map=L.map("map",{center:[-27,134],zoom:5,zoomControl:true,minZoom:4,maxZoom:15});
-  tileLayer=L.tileLayer(isDark?DARK_TILE:LIGHT_TILE,{attribution:ATTR,subdomains:"abcd",maxZoom:19}).addTo(map);
+  var _initTheme = (typeof S !== 'undefined' ? S.theme : null) || (isDark ? 'dark' : 'light');
+  var _initTile = _initTheme === 'vivid' ? VIVID_TILE : (_initTheme === 'light' ? LIGHT_TILE : DARK_TILE);
+  var _initOpts = _initTheme === 'vivid' ? {attribution:ATTR+' \u00a9 <a href="https://www.esri.com/">Esri</a>',maxZoom:19} : {attribution:ATTR,subdomains:"abcd",maxZoom:19};
+  tileLayer=L.tileLayer(_initTile,_initOpts).addTo(map);
   stateLayer=L.geoJSON(STATES_GEO,{style:{fillColor:"transparent",fillOpacity:0,color:isDark?"#f0a500":"#c07800",weight:1.2,opacity:isDark?0.35:0.5,dashArray:"5 5"}}).addTo(map);
   var SC={"New South Wales":[-32.5,146.5],"Victoria":[-37,144.5],"Queensland":[-22,144],"South Australia":[-30,135.5],"Western Australia":[-27,121],"Tasmania":[-42,146.5],"Northern Territory":[-19.5,133.5],"Australian Capital Territory":[-35.47,149]};
   var AB={"New South Wales":"NSW","Victoria":"VIC","Queensland":"QLD","South Australia":"SA","Western Australia":"WA","Tasmania":"TAS","Northern Territory":"NT","Australian Capital Territory":"ACT"};
@@ -4819,14 +4815,19 @@ function setTheme(theme) {
   S.theme = theme;
   isDark = (theme === 'dark' || theme === 'vivid');
   document.documentElement.setAttribute('data-theme', theme);
-  var tileUrl = (theme === 'light') ? LIGHT_TILE : DARK_TILE;
-  if (tileLayer && map) { map.removeLayer(tileLayer); tileLayer = L.tileLayer(tileUrl, {attribution:ATTR,subdomains:'abcd',maxZoom:19}).addTo(map); }
+  var tileUrl = theme === 'light' ? LIGHT_TILE : theme === 'vivid' ? VIVID_TILE : DARK_TILE;
+  var tileOpts = theme === 'vivid'
+    ? {attribution: ATTR + ' &copy; <a href="https://www.esri.com/">Esri</a>', maxZoom:19, subdomains:''}
+    : {attribution: ATTR, subdomains:'abcd', maxZoom:19};
+  if (tileLayer && map) { map.removeLayer(tileLayer); tileLayer = L.tileLayer(tileUrl, tileOpts).addTo(map); }
   if (stateLayer) stateLayer.setStyle({color:(theme==='light')?'#c07800':'#f0a500', opacity:(theme==='light')?0.5:0.35});
   updateLightningTheme();
   ['\u0064ark','\u0076ivid','\u006cight'].forEach(function(t){
     var el = document.getElementById('sp-theme-'+t);
     if (el) el.classList.toggle('on', t === theme);
   });
+  // Redraw site dots so outline rule updates
+  renderSites();
   markCustomIfNeeded();
   saveSettings();
 }
