@@ -12,13 +12,11 @@
 <style>
 [data-theme="dark"]{--bg:#0d1117;--panel:#161b22;--panel2:#1c2333;--border:#30363d;--accent:#f0a500;--accent2:#00d4aa;--accent3:#ff6b6b;--text:#e6edf3;--text2:#8b949e;--text3:#6e7681;--shadow:rgba(0,0,0,0.7);}
 [data-theme="light"]{--bg:#f5f6fa;--panel:#ffffff;--panel2:#f0f2f5;--border:#dde1e7;--accent:#d4880a;--accent2:#00956e;--accent3:#e03e3e;--text:#1a1d23;--text2:#4a5568;--text3:#718096;--shadow:rgba(0,0,0,0.15);}
-[data-theme="grey"]{--bg:#1e1e1e;--panel:#2a2a2a;--panel2:#333333;--border:#444444;--accent:#f0a500;--accent2:#00d4aa;--accent3:#ff6b6b;--text:#d4d4d4;--text2:#a0a0a0;--text3:#707070;--shadow:rgba(0,0,0,0.5);}
+[data-theme="vivid"]{--bg:#0f1a0f;--panel:#162016;--panel2:#1e2e1e;--border:#2d4a2d;--accent:#ff4444;--accent2:#00e676;--accent3:#ff9100;--text:#e0f0e0;--text2:#8ab08a;--text3:#5a7a5a;--shadow:rgba(0,0,0,0.7);}
 :root{--radius:6px;}
 /* ── SETTINGS PANEL ─────────────────────────────────────────────────────── */
 #settings-panel{width:0;min-width:0;background:var(--panel);border-right:1px solid var(--border);display:flex;flex-direction:column;overflow:hidden;transition:width .25s,min-width .25s;flex-shrink:0;z-index:10;}
 #settings-panel.open{width:240px;min-width:240px;}
-#settings-toggle{position:absolute;left:10px;top:10px;z-index:1003;background:var(--panel);border:1px solid var(--border);color:var(--accent);width:32px;height:32px;border-radius:var(--radius);cursor:pointer;font-size:15px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px var(--shadow);transition:all .2s;}
-#settings-toggle:hover{border-color:var(--accent);background:var(--panel2);}
 #settings-toggle.open{background:var(--accent);color:#000;border-color:var(--accent);}
 .sp-head{padding:10px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-shrink:0;}
 .sp-head h3{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--text3);}
@@ -56,8 +54,8 @@
 .sp-sld-val{font-size:10px;color:var(--accent);font-weight:700;min-width:36px;text-align:right;}
 .sp-sld-row input[type=range]{width:100%;accent-color:var(--accent);height:3px;cursor:pointer;display:block;}
 .sp-divlbl{font-size:8px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--text3);padding:7px 0 3px;display:block;}
-.sp-theme-seg{display:flex;border:1px solid var(--border);border-radius:3px;overflow:hidden;}
-.sp-th-opt{font-family:monospace;font-size:9px;padding:3px 0;background:var(--panel2);color:var(--text3);cursor:pointer;border:none;border-right:1px solid var(--border);flex:1;text-align:center;transition:all .12s;}
+.sp-theme-seg{display:flex;border:1px solid var(--border);border-radius:3px;overflow:hidden;width:100%;}
+.sp-th-opt{font-family:monospace;font-size:9px;padding:4px 0;background:var(--panel2);color:var(--text3);cursor:pointer;border:none;border-right:1px solid var(--border);flex:1;text-align:center;transition:all .12s;}
 .sp-th-opt:last-child{border-right:none;}
 .sp-th-opt:hover{color:var(--text);}
 .sp-th-opt.on{background:var(--accent);color:#000;font-weight:600;}
@@ -355,7 +353,10 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 <div id="loading"><div class="spin"></div><p>WatchTower</p><div class="sub" id="load-status">Loading map...</div></div>
 <div class="app" id="app" style="visibility:hidden">
 <header>
-  <a class="logo" href="https://www.youtube.com/watch?v=TLV4_xaYynY" target="_blank" rel="noopener" title="" style="text-decoration:none;cursor:default;">Watch<span>Tower</span></a>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <a class="logo" href="https://www.youtube.com/watch?v=TLV4_xaYynY" target="_blank" rel="noopener" title="" style="text-decoration:none;cursor:default;">Watch<span>Tower</span></a>
+    <button id="settings-toggle" onclick="toggleSettingsPanel()" title="Settings" style="background:var(--panel2);border:1px solid var(--border);color:var(--accent);width:28px;height:28px;border-radius:var(--radius);cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;">&#9881;</button>
+  </div>
   <div class="header-right">
     <div class="hstat"><div class="val" id="h-sites">-</div><div class="lbl">Sites</div></div>
     <div class="hstat red"><div class="val" id="h-warnings">-</div><div class="lbl">Warnings</div></div>
@@ -389,11 +390,11 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
           <span class="sp-sec-chev" id="sp-chev-display">&#9660;</span>
         </div>
         <div class="sp-sec-body" id="sp-body-display">
-          <div class="sp-row">
+          <div class="sp-row" style="flex-direction:column;align-items:flex-start;gap:5px;">
             <span class="sp-lbl">Theme</span>
-            <div class="sp-theme-seg">
+            <div class="sp-theme-seg" style="width:100%;">
               <button class="sp-th-opt" id="sp-theme-dark" onclick="setTheme('dark')">Dark</button>
-              <button class="sp-th-opt" id="sp-theme-grey" onclick="setTheme('grey')">Grey</button>
+              <button class="sp-th-opt" id="sp-theme-vivid" onclick="setTheme('vivid')">Vivid</button>
               <button class="sp-th-opt" id="sp-theme-light" onclick="setTheme('light')">Light</button>
             </div>
           </div>
@@ -975,7 +976,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
         </div>
         <div class="risk-rule-row">
           <span class="risk-rule-lbl">Advice</span>
-          <span class="risk-rule-val">5 km hard cap</span>
+          <span class="risk-rule-val" id="rr-advice">5 km hard cap</span>
         </div>
         <div class="risk-rule-row">
           <span class="risk-rule-lbl">FDR</span>
@@ -3651,10 +3652,10 @@ function renderIncidentsMap(){
       var r=inc.alertLevel&&inc.alertLevel.toLowerCase().includes("emergency")?9:inc.alertLevel&&inc.alertLevel.toLowerCase().includes("watch")?7:6;
       // Emoji icon based on incident type \u2014 fire, flood, other
       var incType = (inc.type||'').toLowerCase();
-      var incEmoji = incType.includes('flood')||incType.includes('storm') ? '\u1F4A7' :
-                     incType.includes('earthquake') ? '\u1F30B' :
-                     incType.includes('cyclone')||incType.includes('wind') ? '\u1F300' :
-                     '\u1F525'; // default fire
+      var incEmoji = incType.includes('flood')||incType.includes('storm') ? '\uD83D\uDCA7' :
+                     incType.includes('earthquake') ? '\uD83C\uDF0B' :
+                     incType.includes('cyclone')||incType.includes('wind') ? '\uD83C\uDF00' :
+                     '\uD83D\uDD25'; // default fire
       var incFontSize = r >= 8 ? 20 : r >= 6 ? 17 : 14;
       var incBoxSize = incFontSize + 8;
       var incHtml = '<div style="font-size:'+incFontSize+'px;line-height:1;width:'+incBoxSize+'px;height:'+incBoxSize+'px;'+
@@ -4171,13 +4172,13 @@ function computeRisks() {
           } else {
             lvl = RISK_LEVEL.WARNING; // Advice inside polygon \u2192 WARNING
           }
-        } else if (isEmergency || (d < 5 && !al.includes('advice'))) {
+        } else if (isEmergency || (d < S.advDist && !al.includes('advice'))) {
           lvl = RISK_LEVEL.IMPACTED;
-        } else if (al.includes('advice') && d >= 5) {
-          // Advice-level beyond 5km \u2014 skip
+        } else if (al.includes('advice') && d >= S.advDist) {
+          // Advice-level beyond advDist setting \u2014 skip
           return;
-        } else if (al.includes('advice') && d < 5) {
-          // Advice-level within 5km \u2014 WARNING only
+        } else if (al.includes('advice') && d < S.advDist) {
+          // Advice-level within advDist \u2014 WARNING only
           lvl = RISK_LEVEL.WARNING;
         } else if (al.includes('watch') || d < 20) {
           lvl = RISK_LEVEL.DIRECT;
@@ -4340,11 +4341,11 @@ function _drawSiteRing(r, col) {
     return rs.src && (rs.src.includes('RFS')||rs.src.includes('QFD')||rs.src.includes('CFS')||
            rs.src.includes('DFES')||rs.src.includes('EMV')||rs.src.includes('TasALERT')||
            rs.src.includes('NSW')||rs.src.includes('VIC')||rs.src.includes('QLD')||
-           rs.src.includes('SA')||rs.src.includes('WA')||rs.src.includes('TAS'));
+           rs.src.includes('SA')||rs.src.includes('WA')||rs.src.includes('TAS')||
+           rs.src.includes('NT')||rs.src.includes('ACT')||rs.src.includes('NTFRS')||
+           rs.src.includes('ESA')||rs.src.includes('PFES'));
   });
-  var needsPulse = (hasFire && r.level >= RISK_LEVEL.DIRECT) ||
-    r.level >= RISK_LEVEL.IMPACTED ||
-    (r.level >= RISK_LEVEL.WARNING && r.reasons.some(function(rs){ return rs.isStormAM; }));
+  var needsPulse = r.level >= RISK_LEVEL.WARNING;
   var size = [32,32,40,48][r.level-1] || 32;
   var html = '<div class="risk-ring risk-ring-' + r.level + (needsPulse?' risk-pulse':'') + '" ' +
              'style="width:'+size+'px;height:'+size+'px;border-color:'+col+'"></div>';
@@ -4666,6 +4667,8 @@ function updateRiskRulesDisplay() {
     stEl.className = 'risk-rule-val' + (riskStormMFEnabled ? '' : ' off');
     stEl.textContent = riskStormMFEnabled ? 'Storm/Severe \u2192 Warning for AM/MF sites' : 'Disabled';
   }
+  var advEl = document.getElementById('rr-advice');
+  if (advEl) advEl.textContent = (typeof S !== 'undefined' ? S.advDist : 5) + ' km cap';
 }
 
 function toggleRiskPanel() {
@@ -4814,16 +4817,13 @@ function markCustomIfNeeded() {
 
 function setTheme(theme) {
   S.theme = theme;
-  isDark = (theme === 'dark');
-  var isGrey = (theme === 'grey');
+  isDark = (theme === 'dark' || theme === 'vivid');
   document.documentElement.setAttribute('data-theme', theme);
-  // Update tile layer
-  var tileUrl = (isDark || isGrey) ? DARK_TILE : LIGHT_TILE;
+  var tileUrl = (theme === 'light') ? LIGHT_TILE : DARK_TILE;
   if (tileLayer && map) { map.removeLayer(tileLayer); tileLayer = L.tileLayer(tileUrl, {attribution:ATTR,subdomains:'abcd',maxZoom:19}).addTo(map); }
-  if (stateLayer) stateLayer.setStyle({color:(isDark||isGrey)?'#f0a500':'#c07800', opacity:(isDark||isGrey)?0.35:0.5});
+  if (stateLayer) stateLayer.setStyle({color:(theme==='light')?'#c07800':'#f0a500', opacity:(theme==='light')?0.5:0.35});
   updateLightningTheme();
-  // Sync theme buttons
-  ['dark','grey','light'].forEach(function(t){
+  ['\u0064ark','\u0076ivid','\u006cight'].forEach(function(t){
     var el = document.getElementById('sp-theme-'+t);
     if (el) el.classList.toggle('on', t === theme);
   });
@@ -4864,8 +4864,7 @@ function applyAllSettings() {
 }
 
 function syncSettingsUI() {
-  // Theme buttons
-  ['dark','grey','light'].forEach(function(t){
+  ['dark','vivid','light'].forEach(function(t){
     var el = document.getElementById('sp-theme-'+t);
     if (el) el.classList.toggle('on', t === S.theme);
   });
