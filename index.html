@@ -1457,7 +1457,17 @@ function fdrBadgeClass(r){var v=(r||"").toLowerCase();if(v.includes("catastrophi
 function ratingRank(r){var v=(r||"").toLowerCase();if(v.includes("catastrophic"))return 0;if(v.includes("extreme"))return 1;if(v.includes("very high"))return 2;if(v.includes("high"))return 3;if(v.includes("moderate"))return 4;return 5;}
 function alertColor(l){var v=(l||"").toLowerCase();if(v.includes("emergency"))return"#ff2222";if(v.includes("watch"))return"#ff8800";if(v.includes("advice"))return"#ffcc00";return"#888";}
 function alertClass(l){var v=(l||"").toLowerCase();if(v.includes("emergency"))return"alert-emergency";if(v.includes("watch"))return"alert-watchact";if(v.includes("advice"))return"alert-advice";return"alert-other";}
-function warnColor(type){var t=(type||"").toLowerCase().replace(/[ -]/g,"_");return WARN_COLORS[t]||WARN_COLORS.default;}
+function warnColor(type){
+  var t=(type||"").toLowerCase().replace(/[ -]/g,"_");
+  var c=WARN_COLORS[t]||WARN_COLORS.default;
+  // Remap yellow/gold (#f0a500) for light-background themes where it's unreadable
+  if(c==='#f0a500'){
+    var th=document.documentElement.getAttribute('data-theme');
+    if(th==='natural') return '#1e370f';
+    if(th==='light')   return '#c65c00';
+  }
+  return c;
+}
 
 function bomWarningUrl(pid, wtype, fallbackLink) {
   // Build the correct BOM warning URL using the new /warning/<type-slug>/<pid> pattern.
@@ -2913,7 +2923,7 @@ function renderWarningsPanel() {
         } else {
           out += '<div class="warn-row" style="cursor:pointer" onclick="flyToWarning(' + coords[0] + ',' + coords[1] + ')">' +
             '<div class="warn-title" style="display:flex;align-items:flex-start;justify-content:space-between;gap:4px">' +
-              '<span style="color:' + w.color + ';flex:1">' + w.title + '</span>' +
+              '<span style="color:' + (w.cancelled ? '#999' : warnColor(w.type)) + ';flex:1">' + w.title + '</span>' +
               '<a href="' + wUrl + '" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Open BOM warning page" style="color:var(--text3);text-decoration:none;font-size:13px;flex-shrink:0;padding-left:4px">&#8599;</a>' +
             '</div>' +
             (w.districts ? '<div style="font-size:9px;color:var(--text2);margin-top:2px">' + w.districts + '</div>' : '') +
@@ -2936,7 +2946,7 @@ function renderWarningsPanel() {
 
     // Active warnings block
     if (activeWs.length) {
-      html += '<div style="font-size:9px;font-weight:700;color:' + ti.color + ';text-transform:uppercase;letter-spacing:.8px;margin:8px 0 4px">' +
+      html += '<div style="font-size:9px;font-weight:700;color:' + warnColor(type) + ';text-transform:uppercase;letter-spacing:.8px;margin:8px 0 4px">' +
         ti.icon + ' ' + ti.label + ' (' + activeWs.length + ')</div>';
       html += renderWarnGroup(activeWs);
     }
@@ -2981,7 +2991,7 @@ function renderWarningsMap() {
                      w.type === 'heatwave' ? 200000 :
                      w.type === 'fire_weather' ? 100000 : 80000;
 
-    var warnColor    = w.cancelled ? '#888888' : w.color;
+    var warnFill    = w.cancelled ? '#888888' : warnColor(w.type);
     var warnOpacity  = w.cancelled ? 0.25 : 0.7;
     var warnFillOp   = w.cancelled ? 0.04 : 0.15;
     var warnDash     = w.cancelled ? '4 6' : null;
@@ -2991,9 +3001,9 @@ function renderWarningsMap() {
     var warningUrl = w.direct_url || bomWarningUrl(w.pid, w.type, w.link);
     var pidDisplay = w.pid || '';
     var popHtml = '<div>' +
-      '<div class="pu-title" style="color:' + (w.cancelled ? '#999' : w.color) + (w.cancelled ? ';text-decoration:line-through' : '') + '">' + typeInfo.icon + ' ' + w.title + '</div>' +
+      '<div class="pu-title" style="color:' + (w.cancelled ? '#999' : warnColor(w.type)) + (w.cancelled ? ';text-decoration:line-through' : '') + '">' + typeInfo.icon + ' ' + w.title + '</div>' +
       (w.cancelled ? '<span class="pu-badge" style="background:#555;color:#ccc;letter-spacing:.6px">CANCELLED</span>' : '') +
-      '<span class="pu-badge" style="background:' + (w.cancelled ? '#444' : w.color) + ';color:' + (w.cancelled ? '#999' : '#fff') + ';opacity:0.9">' + typeInfo.label + '</span>' +
+      '<span class="pu-badge" style="background:' + (w.cancelled ? '#444' : warnColor(w.type)) + ';color:' + (w.cancelled ? '#999' : '#000') + ';opacity:0.9">' + typeInfo.label + '</span>' +
       '<span class="pu-badge" style="background:#333;color:#ccc">' + w.state + '</span>' +
       '<div style="border-top:1px solid var(--border);margin:8px 0"></div>' +
       (w.districts ? '<div class="pu-row"><span class="pu-key">Districts</span><span class="pu-val">' + w.districts + '</span></div>' : '') +
@@ -3016,8 +3026,8 @@ function renderWarningsMap() {
         if (dstate === (w.state||'').toUpperCase() && dname.length > 3 && searchText.indexOf(dname) !== -1) {
           L.geoJSON(feat, {
             style: {
-              color: warnColor, weight: warnWeight, opacity: warnOpacity,
-              fillColor: warnColor, fillOpacity: warnFillOp, dashArray: warnDash
+              color: warnFill, weight: warnWeight, opacity: warnOpacity,
+              fillColor: warnFill, fillOpacity: warnFillOp, dashArray: warnDash
             }
           }).bindPopup(popHtml, { className: 'ba-popup', maxWidth: 340 })
             .addTo(warningsLayer);
@@ -3029,8 +3039,8 @@ function renderWarningsMap() {
     if (!drawnPolygon) {
       var circleRadius = w.cancelled ? zoneRadius * 0.7 : zoneRadius;
       L.circle([lat, lng], {
-        radius: circleRadius, color: warnColor, weight: warnWeight,
-        opacity: warnOpacity, fillColor: warnColor, fillOpacity: warnFillOp,
+        radius: circleRadius, color: warnFill, weight: warnWeight,
+        opacity: warnOpacity, fillColor: warnFill, fillOpacity: warnFillOp,
         dashArray: warnDash
       }).addTo(warningsLayer);
     }
@@ -3055,7 +3065,7 @@ function renderWarningsMap() {
     // Small label \u2014 use typeInfo.icon not w.icon
     L.marker([lat - 0.4, lng], {
       icon: L.divIcon({
-        html: '<div style="font-size:9px;font-weight:700;color:' + w.color + ';background:rgba(13,17,23,0.85);border:1px solid ' + w.color + '44;border-radius:3px;padding:1px 5px;white-space:nowrap;pointer-events:none">' +
+        html: '<div style="font-size:9px;font-weight:700;color:' + warnColor(w.type) + ';background:rgba(13,17,23,0.85);border:1px solid ' + warnColor(w.type) + '44;border-radius:3px;padding:1px 5px;white-space:nowrap;pointer-events:none">' +
           typeInfo.icon + ' ' + w.state + '</div>',
         className: '',
         iconSize: [1, 1],
