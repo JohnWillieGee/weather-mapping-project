@@ -1489,7 +1489,7 @@ function initMap(){
   marineLayer=L.layerGroup();
   sitesLayer = L.layerGroup().addTo(map);
   renderSites();
-  document.getElementById("theme-toggle").textContent=isDark?"\u2600":"\u263D";
+  var _tt=document.getElementById("theme-toggle");if(_tt)_tt.textContent=isDark?"\u2600":"\u263D";
   document.getElementById("loading").style.display="none";
   document.getElementById("app").style.visibility="visible";
   // Apply saved settings to UI and engine after map is ready
@@ -3679,7 +3679,7 @@ function toggleIncidentsLayer(){
 
 // \u2500\u2500 LAYER TOGGLES \u2500\u2500
 function toggleLayer(name){var lyr=name==="states"?stateLayer:labelGroup,btn=document.getElementById("btn-"+name);if(!map||!lyr)return;if(map.hasLayer(lyr)){map.removeLayer(lyr);btn.classList.remove("on");}else{map.addLayer(lyr);btn.classList.add("on");}}
-function toggleTheme(){isDark=!isDark;document.documentElement.setAttribute("data-theme",isDark?"dark":"light");document.getElementById("theme-toggle").textContent=isDark?"\u2600":"\u263D";if(tileLayer&&map){map.removeLayer(tileLayer);tileLayer=L.tileLayer(isDark?DARK_TILE:LIGHT_TILE,{attribution:ATTR,subdomains:"abcd",maxZoom:19}).addTo(map);}if(stateLayer)stateLayer.setStyle({color:isDark?"#f0a500":"#c07800",opacity:isDark?0.35:0.5});localStorage.setItem("au-wx-theme",isDark?"dark":"light");updateLightningTheme();}
+function toggleTheme(){isDark=!isDark;document.documentElement.setAttribute("data-theme",isDark?"dark":"light");var _tt=document.getElementById("theme-toggle");if(_tt)_tt.textContent=isDark?"\u2600":"\u263D";if(tileLayer&&map){map.removeLayer(tileLayer);tileLayer=L.tileLayer(isDark?DARK_TILE:LIGHT_TILE,{attribution:ATTR,subdomains:"abcd",maxZoom:19}).addTo(map);}if(stateLayer)stateLayer.setStyle({color:isDark?"#f0a500":"#c07800",opacity:isDark?0.35:0.5});localStorage.setItem("au-wx-theme",isDark?"dark":"light");updateLightningTheme();}
 
 // \u2500\u2500 LIGHTNING PANEL (Blitzortung iframe) \u2500\u2500
 var lightningVisible = false;
