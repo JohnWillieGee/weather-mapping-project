@@ -14,6 +14,7 @@
 [data-theme="light"]{--bg:#eef0f5;--panel:#ffffff;--panel2:#e8eaef;--border:#c8cdd8;--accent:#b36a00;--accent2:#007a58;--accent3:#cc2222;--text:#0d0f14;--text2:#2d3748;--text3:#4a5568;--shadow:rgba(0,0,0,0.15);}
 [data-theme="vivid"]{--bg:#081208;--panel:#0b1c0b;--panel2:#0f2410;--border:#1a3d1a;--accent:#ff3333;--accent2:#00ff80;--accent3:#ffaa00;--text:#d0f0d0;--text2:#70b070;--text3:#407040;--shadow:rgba(0,0,0,0.8);}
 [data-theme="voyager"]{--bg:#1a0808;--panel:#220c0c;--panel2:#2c1010;--border:#4a1818;--accent:#ff4444;--accent2:#00d4aa;--accent3:#f0a500;--text:#f0e0e0;--text2:#b08080;--text3:#7a5050;--shadow:rgba(0,0,0,0.7);}
+[data-theme="natural"]{--bg:#f7f7f3;--panel:#eeeee8;--panel2:#e4e4dc;--border:#c2c2b0;--accent:#7a8a52;--accent2:#5a8f5e;--accent3:#c46a4a;--text:#10100b;--text2:#3d3d2e;--text3:#6b6b50;--shadow:rgba(16,16,11,0.15);}
 :root{--radius:6px;}
 /* ── SETTINGS PANEL ─────────────────────────────────────────────────────── */
 #settings-panel{width:0;min-width:0;background:var(--panel);border-right:1px solid var(--border);display:flex;flex-direction:column;overflow:hidden;transition:width .25s,min-width .25s;flex-shrink:0;z-index:10;}
@@ -269,7 +270,11 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 /* Vivid theme — darken ESRI ocean tile so land doesn't overpower the UI */
 [data-theme="vivid"] .leaflet-tile-pane{filter:brightness(0.75) saturate(0.9);}
 /* Voyager theme — warm red tint on map */
-[data-theme="voyager"] .leaflet-tile-pane{filter:brightness(0.85) sepia(0.15);}background:none;border:1px solid currentColor;color:inherit;cursor:pointer;font-size:9px;padding:2px 5px;border-radius:3px;font-family:monospace;letter-spacing:0.5px;opacity:0.7;transition:opacity .15s;}
+[data-theme="voyager"] .leaflet-tile-pane{filter:brightness(0.85) sepia(0.15);}
+/* Natural theme — ESRI ocean, desaturated and warm to match earthy palette */
+[data-theme="natural"] .leaflet-tile-pane{filter:brightness(0.95) saturate(0.65) sepia(0.2);}
+/* fit-to-map button */
+.fit-map-btn{background:none;border:1px solid currentColor;color:inherit;cursor:pointer;font-size:9px;padding:2px 5px;border-radius:3px;font-family:monospace;letter-spacing:0.5px;opacity:0.7;transition:opacity .15s;}
 .fit-map-btn:hover{opacity:1;}
 .fit-map-btn.active{opacity:1;font-weight:700;}
 /* overlay mode — panel sits over the map */
@@ -399,6 +404,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
               <button class="sp-th-opt" id="sp-theme-dark" onclick="setTheme('dark')">Dark</button>
               <button class="sp-th-opt" id="sp-theme-vivid" onclick="setTheme('vivid')">Vivid</button>
               <button class="sp-th-opt" id="sp-theme-voyager" onclick="setTheme('voyager')">Voyager</button>
+              <button class="sp-th-opt" id="sp-theme-natural" onclick="setTheme('natural')">Natural</button>
               <button class="sp-th-opt" id="sp-theme-light" onclick="setTheme('light')">Light</button>
             </div>
           </div>
@@ -1063,7 +1069,7 @@ function renderSites() {
     count++;
     var col=modColor(s.sv, fState.mods), r=5;
     var _theme=document.documentElement.getAttribute('data-theme');
-    var _stroke=_theme==='light'?'#ffffff':_theme==='vivid'?'#081208':_theme==='voyager'?'#1a0808':'#0d1117';
+    var _stroke=_theme==='light'?'#ffffff':_theme==='natural'?'#e4e4dc':_theme==='vivid'?'#081208':_theme==='voyager'?'#1a0808':'#0d1117';
     var mk=L.marker([s.lat,s.lon],{icon:L.divIcon({
       html:"<svg xmlns='http://www.w3.org/2000/svg' width='"+(r*2+4)+"' height='"+(r*2+4)+"'><circle cx='"+(r+2)+"' cy='"+(r+2)+"' r='"+r+"' fill='"+col+"' fill-opacity='.85' stroke='"+_stroke+"' stroke-width='1.5'/></svg>",
       className:"",iconSize:[r*2+4,r*2+4],iconAnchor:[r+2,r+2],popupAnchor:[0,-(r+4)],tooltipAnchor:[r+3,0]
@@ -1425,6 +1431,7 @@ var DARK_TILE    = "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.pn
 var LIGHT_TILE   = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
 var VIVID_TILE   = "https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}";
 var VOYAGER_TILE = "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png";
+var NATURAL_TILE = "https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}";
 var ATTR = "&copy; <a href='https://carto.com/'>CARTO</a> &copy; <a href='https://www.openstreetmap.org/'>OSM</a>";
 
 // \u2500\u2500 GLOBAL STATE \u2500\u2500
@@ -1476,16 +1483,16 @@ function showToast(msg,isError){var t=document.getElementById("toast");t.textCon
 function initMap(){
   map=L.map("map",{center:[-27,134],zoom:5,zoomControl:true,minZoom:4,maxZoom:15});
   var _initTheme = (typeof S !== 'undefined' ? S.theme : null) || (isDark ? 'dark' : 'light');
-  var _initTile = _initTheme === 'vivid' ? VIVID_TILE : _initTheme === 'voyager' ? VOYAGER_TILE : _initTheme === 'light' ? LIGHT_TILE : DARK_TILE;
-  var _initOpts = _initTheme === 'vivid'
-    ? {attribution:ATTR+' \u00a9 <a href="https://www.esri.com/">Esri</a>',maxZoom:19}
-    : {attribution:ATTR,subdomains:"abcd",maxZoom:19};
+  var _esriOpts = {attribution:ATTR+' \u00a9 <a href="https://www.esri.com/">Esri</a>',maxZoom:19};
+  var _cartoOpts = {attribution:ATTR,subdomains:"abcd",maxZoom:19};
+  var _initTile = _initTheme==='vivid'?VIVID_TILE:_initTheme==='natural'?NATURAL_TILE:_initTheme==='voyager'?VOYAGER_TILE:_initTheme==='light'?LIGHT_TILE:DARK_TILE;
+  var _initOpts = (_initTheme==='vivid'||_initTheme==='natural') ? _esriOpts : _cartoOpts;
   tileLayer=L.tileLayer(_initTile,_initOpts).addTo(map);
-  var _iTheme = (typeof S !== 'undefined' ? S.theme : null) || (isDark ? 'dark' : 'light');
-  var _iBorderCol = _iTheme==='vivid'?'#00cc66':_iTheme==='voyager'?'#cc4444':_iTheme==='light'?'#c07800':'#f0a500';
-  var _iBorderOp  = _iTheme==='light'||_iTheme==='voyager'?0.6:_iTheme==='vivid'?0.7:0.35;
+  var _iTheme = _initTheme;
+  var _iBorderCol = _iTheme==='vivid'?'#00cc66':_iTheme==='natural'?'#5a7a3a':_iTheme==='voyager'?'#cc4444':_iTheme==='light'?'#c07800':'#f0a500';
+  var _iBorderOp  = (_iTheme==='light'||_iTheme==='voyager')?0.6:_iTheme==='vivid'?0.7:_iTheme==='natural'?0.65:0.35;
   stateLayer=L.geoJSON(STATES_GEO,{style:{fillColor:"transparent",fillOpacity:0,color:_iBorderCol,weight:1.2,opacity:_iBorderOp,dashArray:"5 5"}}).addTo(map);
-  var _iLabelCol = _iTheme==='vivid'?'rgba(0,204,102,0.45)':_iTheme==='voyager'?'rgba(220,80,80,0.45)':_iTheme==='light'?'rgba(160,100,0,0.35)':'rgba(240,165,0,0.4)';
+  var _iLabelCol = _iTheme==='vivid'?'rgba(0,204,102,0.45)':_iTheme==='natural'?'rgba(90,122,58,0.55)':_iTheme==='voyager'?'rgba(220,80,80,0.45)':_iTheme==='light'?'rgba(160,100,0,0.35)':'rgba(240,165,0,0.4)';
   var SC={"New South Wales":[-32.5,146.5],"Victoria":[-37,144.5],"Queensland":[-22,144],"South Australia":[-30,135.5],"Western Australia":[-27,121],"Tasmania":[-42,146.5],"Northern Territory":[-19.5,133.5],"Australian Capital Territory":[-35.47,149]};
   var AB={"New South Wales":"NSW","Victoria":"VIC","Queensland":"QLD","South Australia":"SA","Western Australia":"WA","Tasmania":"TAS","Northern Territory":"NT","Australian Capital Territory":"ACT"};
   labelGroup=L.layerGroup(STATES_GEO.features.map(function(f){var c=SC[f.properties.STATE_NAME];if(!c)return null;return L.marker(c,{icon:L.divIcon({html:"<div style='font-weight:800;font-size:13px;letter-spacing:2px;color:"+_iLabelCol+";pointer-events:none;white-space:nowrap;'>"+(AB[f.properties.STATE_NAME]||f.properties.STATE_NAME)+"</div>",className:"",iconSize:[80,20],iconAnchor:[40,10]}),interactive:false});}).filter(Boolean)).addTo(map);
@@ -4823,28 +4830,22 @@ function markCustomIfNeeded() {
 
 function setTheme(theme) {
   S.theme = theme;
-  isDark = (theme !== 'light');
+  isDark = (theme !== 'light' && theme !== 'natural');
   document.documentElement.setAttribute('data-theme', theme);
   var tileUrl, tileOpts;
-  if (theme === 'vivid') {
-    tileUrl = VIVID_TILE;
-    tileOpts = {attribution: ATTR + ' \u00a9 <a href="https://www.esri.com/">Esri</a>', maxZoom:19};
-  } else if (theme === 'voyager') {
-    tileUrl = VOYAGER_TILE;
-    tileOpts = {attribution: ATTR, subdomains:'abcd', maxZoom:19};
-  } else if (theme === 'light') {
-    tileUrl = LIGHT_TILE;
-    tileOpts = {attribution: ATTR, subdomains:'abcd', maxZoom:19};
-  } else {
-    tileUrl = DARK_TILE;
-    tileOpts = {attribution: ATTR, subdomains:'abcd', maxZoom:19};
-  }
+  var esriOpts = {attribution: ATTR + ' \u00a9 <a href="https://www.esri.com/">Esri</a>', maxZoom:19};
+  var cartoOpts = {attribution: ATTR, subdomains:'abcd', maxZoom:19};
+  if (theme === 'vivid')         { tileUrl = VIVID_TILE;   tileOpts = esriOpts; }
+  else if (theme === 'natural')  { tileUrl = NATURAL_TILE; tileOpts = esriOpts; }
+  else if (theme === 'voyager')  { tileUrl = VOYAGER_TILE; tileOpts = cartoOpts; }
+  else if (theme === 'light')    { tileUrl = LIGHT_TILE;   tileOpts = cartoOpts; }
+  else                           { tileUrl = DARK_TILE;    tileOpts = cartoOpts; }
   if (tileLayer && map) { map.removeLayer(tileLayer); tileLayer = L.tileLayer(tileUrl, tileOpts).addTo(map); }
-  var _borderColor = theme==='vivid' ? '#00cc66' : theme==='voyager' ? '#cc4444' : theme==='light' ? '#c07800' : '#f0a500';
-  var _borderOpacity = (theme==='light'||theme==='voyager') ? 0.6 : theme==='vivid' ? 0.7 : 0.35;
+  var _borderColor = theme==='vivid'?'#00cc66':theme==='natural'?'#5a7a3a':theme==='voyager'?'#cc4444':theme==='light'?'#c07800':'#f0a500';
+  var _borderOpacity = (theme==='light'||theme==='voyager')?0.6:theme==='vivid'?0.7:theme==='natural'?0.65:0.35;
   if (stateLayer) stateLayer.setStyle({color: _borderColor, opacity: _borderOpacity});
   updateLightningTheme();
-  ['dark','vivid','voyager','light'].forEach(function(t){
+  ['dark','vivid','voyager','natural','light'].forEach(function(t){
     var el = document.getElementById('sp-theme-'+t);
     if (el) el.classList.toggle('on', t === theme);
   });
@@ -4886,7 +4887,7 @@ function applyAllSettings() {
 }
 
 function syncSettingsUI() {
-  ['dark','vivid','voyager','light'].forEach(function(t){
+  ['dark','vivid','voyager','natural','light'].forEach(function(t){
     var el = document.getElementById('sp-theme-'+t);
     if (el) el.classList.toggle('on', t === S.theme);
   });
