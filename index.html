@@ -11,7 +11,7 @@
 <title>WatchTower — Broadcast Site Risk Map</title>
 <style>
 [data-theme="dark"]{--bg:#0d1117;--panel:#161b22;--panel2:#1c2333;--border:#30363d;--accent:#f0a500;--accent2:#00d4aa;--accent3:#ff6b6b;--text:#e6edf3;--text2:#8b949e;--text3:#6e7681;--shadow:rgba(0,0,0,0.7);}
-[data-theme="light"]{--bg:#f5f6fa;--panel:#ffffff;--panel2:#f0f2f5;--border:#dde1e7;--accent:#d4880a;--accent2:#00956e;--accent3:#e03e3e;--text:#1a1d23;--text2:#4a5568;--text3:#718096;--shadow:rgba(0,0,0,0.15);}
+[data-theme="light"]{--bg:#eef0f5;--panel:#ffffff;--panel2:#e8eaef;--border:#c8cdd8;--accent:#b36a00;--accent2:#007a58;--accent3:#cc2222;--text:#0d0f14;--text2:#2d3748;--text3:#4a5568;--shadow:rgba(0,0,0,0.15);}
 [data-theme="vivid"]{--bg:#081208;--panel:#0b1c0b;--panel2:#0f2410;--border:#1a3d1a;--accent:#ff3333;--accent2:#00ff80;--accent3:#ffaa00;--text:#d0f0d0;--text2:#70b070;--text3:#407040;--shadow:rgba(0,0,0,0.8);}
 [data-theme="voyager"]{--bg:#1a0808;--panel:#220c0c;--panel2:#2c1010;--border:#4a1818;--accent:#ff4444;--accent2:#00d4aa;--accent3:#f0a500;--text:#f0e0e0;--text2:#b08080;--text3:#7a5050;--shadow:rgba(0,0,0,0.7);}
 :root{--radius:6px;}
@@ -1481,10 +1481,14 @@ function initMap(){
     ? {attribution:ATTR+' \u00a9 <a href="https://www.esri.com/">Esri</a>',maxZoom:19}
     : {attribution:ATTR,subdomains:"abcd",maxZoom:19};
   tileLayer=L.tileLayer(_initTile,_initOpts).addTo(map);
-  stateLayer=L.geoJSON(STATES_GEO,{style:{fillColor:"transparent",fillOpacity:0,color:isDark?"#f0a500":"#c07800",weight:1.2,opacity:isDark?0.35:0.5,dashArray:"5 5"}}).addTo(map);
+  var _iTheme = (typeof S !== 'undefined' ? S.theme : null) || (isDark ? 'dark' : 'light');
+  var _iBorderCol = _iTheme==='vivid'?'#00cc66':_iTheme==='voyager'?'#cc4444':_iTheme==='light'?'#c07800':'#f0a500';
+  var _iBorderOp  = _iTheme==='light'||_iTheme==='voyager'?0.6:_iTheme==='vivid'?0.7:0.35;
+  stateLayer=L.geoJSON(STATES_GEO,{style:{fillColor:"transparent",fillOpacity:0,color:_iBorderCol,weight:1.2,opacity:_iBorderOp,dashArray:"5 5"}}).addTo(map);
+  var _iLabelCol = _iTheme==='vivid'?'rgba(0,204,102,0.45)':_iTheme==='voyager'?'rgba(220,80,80,0.45)':_iTheme==='light'?'rgba(160,100,0,0.35)':'rgba(240,165,0,0.4)';
   var SC={"New South Wales":[-32.5,146.5],"Victoria":[-37,144.5],"Queensland":[-22,144],"South Australia":[-30,135.5],"Western Australia":[-27,121],"Tasmania":[-42,146.5],"Northern Territory":[-19.5,133.5],"Australian Capital Territory":[-35.47,149]};
   var AB={"New South Wales":"NSW","Victoria":"VIC","Queensland":"QLD","South Australia":"SA","Western Australia":"WA","Tasmania":"TAS","Northern Territory":"NT","Australian Capital Territory":"ACT"};
-  labelGroup=L.layerGroup(STATES_GEO.features.map(function(f){var c=SC[f.properties.STATE_NAME];if(!c)return null;return L.marker(c,{icon:L.divIcon({html:"<div style='font-weight:800;font-size:13px;letter-spacing:2px;color:"+(isDark?"rgba(240,165,0,0.4)":"rgba(160,100,0,0.35)")+";pointer-events:none;white-space:nowrap;'>"+(AB[f.properties.STATE_NAME]||f.properties.STATE_NAME)+"</div>",className:"",iconSize:[80,20],iconAnchor:[40,10]}),interactive:false});}).filter(Boolean)).addTo(map);
+  labelGroup=L.layerGroup(STATES_GEO.features.map(function(f){var c=SC[f.properties.STATE_NAME];if(!c)return null;return L.marker(c,{icon:L.divIcon({html:"<div style='font-weight:800;font-size:13px;letter-spacing:2px;color:"+_iLabelCol+";pointer-events:none;white-space:nowrap;'>"+(AB[f.properties.STATE_NAME]||f.properties.STATE_NAME)+"</div>",className:"",iconSize:[80,20],iconAnchor:[40,10]}),interactive:false});}).filter(Boolean)).addTo(map);
   fdrLayer=L.layerGroup();
   warningsLayer=L.layerGroup();
   incidentsLayer=L.layerGroup();
@@ -4836,8 +4840,9 @@ function setTheme(theme) {
     tileOpts = {attribution: ATTR, subdomains:'abcd', maxZoom:19};
   }
   if (tileLayer && map) { map.removeLayer(tileLayer); tileLayer = L.tileLayer(tileUrl, tileOpts).addTo(map); }
-  var isLight = (theme === 'light' || theme === 'voyager');
-  if (stateLayer) stateLayer.setStyle({color: isLight ? '#c07800' : '#f0a500', opacity: isLight ? 0.5 : 0.35});
+  var _borderColor = theme==='vivid' ? '#00cc66' : theme==='voyager' ? '#cc4444' : theme==='light' ? '#c07800' : '#f0a500';
+  var _borderOpacity = (theme==='light'||theme==='voyager') ? 0.6 : theme==='vivid' ? 0.7 : 0.35;
+  if (stateLayer) stateLayer.setStyle({color: _borderColor, opacity: _borderOpacity});
   updateLightningTheme();
   ['dark','vivid','voyager','light'].forEach(function(t){
     var el = document.getElementById('sp-theme-'+t);
