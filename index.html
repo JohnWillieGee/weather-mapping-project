@@ -29,6 +29,8 @@
 .sp-preset.winter{border-color:var(--accent2);color:var(--accent2);background:rgba(0,212,170,0.08);}
 .sp-preset.summer{border-color:var(--accent3);color:var(--accent3);background:rgba(255,107,107,0.08);}
 .sp-preset.custom{border-color:var(--text3);color:var(--text3);}
+.sp-preset.active-preset.winter{background:var(--accent2);color:#000;font-weight:700;}
+.sp-preset.active-preset.summer{background:var(--accent3);color:#000;font-weight:700;}
 .sp-restore{font-family:monospace;font-size:9px;padding:3px;width:100%;background:transparent;border:1px solid var(--border);color:var(--text3);border-radius:3px;cursor:pointer;text-align:center;transition:all .15s;}
 .sp-restore:hover{border-color:var(--text2);color:var(--text2);}
 .sp-section{border-bottom:1px solid var(--border);}
@@ -1493,7 +1495,7 @@ function initMap(){
   var _iBorderCol = _iTheme==='natural'?'#4a6a30':_iTheme==='light'?'#c07800':'#f0a500';
   var _iBorderOp  = _iTheme==='dark'?0.35:0.65;
   stateLayer=L.geoJSON(STATES_GEO,{style:{fillColor:"transparent",fillOpacity:0,color:_iBorderCol,weight:1.2,opacity:_iBorderOp,dashArray:"5 5"}}).addTo(map);
-  var _iLabelCol  = _iTheme==='natural'?'rgba(74,106,48,0.6)':_iTheme==='light'?'rgba(160,100,0,0.35)':'rgba(240,165,0,0.4)';
+  var _iLabelCol  = _iTheme==='natural'?'rgba(30,55,15,0.75)':_iTheme==='light'?'rgba(160,100,0,0.35)':'rgba(240,165,0,0.4)';
   var SC={"New South Wales":[-32.5,146.5],"Victoria":[-37,144.5],"Queensland":[-22,144],"South Australia":[-30,135.5],"Western Australia":[-27,121],"Tasmania":[-42,146.5],"Northern Territory":[-19.5,133.5],"Australian Capital Territory":[-35.47,149]};
   var AB={"New South Wales":"NSW","Victoria":"VIC","Queensland":"QLD","South Australia":"SA","Western Australia":"WA","Tasmania":"TAS","Northern Territory":"NT","Australian Capital Territory":"ACT"};
   labelGroup=L.layerGroup(STATES_GEO.features.map(function(f){var c=SC[f.properties.STATE_NAME];if(!c)return null;return L.marker(c,{icon:L.divIcon({html:"<div style='font-weight:800;font-size:13px;letter-spacing:2px;color:"+_iLabelCol+";pointer-events:none;white-space:nowrap;'>"+(AB[f.properties.STATE_NAME]||f.properties.STATE_NAME)+"</div>",className:"",iconSize:[80,20],iconAnchor:[40,10]}),interactive:false});}).filter(Boolean)).addTo(map);
@@ -4773,12 +4775,14 @@ function detectPreset() {
 
 function applyPreset(name) {
   var src = name === 'summer' ? PRESET_SUMMER : SETTINGS_DEFAULTS;
+  var savedTheme = S.theme;  // preserve theme — presets don't override it
   Object.assign(S, src);
-  // Keep current theme \u2014 presets don't override theme
+  S.theme = savedTheme;
   currentPreset = name === 'summer' ? 'summer' : 'winter';
   saveSettings();
   syncSettingsUI();
   applyAllSettings();
+  markCustomIfNeeded();
 }
 
 function applySpSetting(key, val) {
@@ -4828,12 +4832,16 @@ function markCustomIfNeeded() {
   var customBtn = document.getElementById('sp-preset-custom');
   if (customBtn) customBtn.style.display = (currentPreset === 'custom') ? '' : 'none';
   document.querySelectorAll('.sp-preset').forEach(function(b){
-    b.classList.remove('winter','summer','custom');
+    b.classList.remove('winter','summer','custom','active-preset');
     if (b.id === 'sp-preset-custom') b.classList.add('custom');
   });
-  var wBtn = document.querySelector('.sp-preset.winter') || document.querySelector('[onclick*="winter"]');
-  var sBtn = document.querySelector('[onclick*="summer"]');
-  if (wBtn) wBtn.style.borderColor = currentPreset === 'winter' ? '' : '';
+  if (currentPreset === 'winter') {
+    var wBtn = document.querySelector('[onclick*="winter"]');
+    if (wBtn) wBtn.classList.add('winter','active-preset');
+  } else if (currentPreset === 'summer') {
+    var sBtn = document.querySelector('[onclick*="summer"]');
+    if (sBtn) sBtn.classList.add('summer','active-preset');
+  }
 }
 
 function setTheme(theme) {
@@ -4928,6 +4936,7 @@ function syncSettingsUI() {
   var customBtn = document.getElementById('sp-preset-custom');
   currentPreset = detectPreset();
   if (customBtn) customBtn.style.display = currentPreset === 'custom' ? '' : 'none';
+  markCustomIfNeeded();
 }
 
 function toggleSettingsPanel() {
