@@ -1689,7 +1689,7 @@ function toggleRadarPlay(){
 }
 
 // Refresh radar frames every 10 minutes while layer is visible
-// Radar refresh — called by refreshAll() on the main 5-minute cycle
+// Radar refresh \u2014 called by refreshAll() on the main 5-minute cycle
 function refreshRadarLayers(){
   if(radarVisible && radarLoaded){
     stopRadarPlay();
@@ -1925,7 +1925,7 @@ function toggleBomRadarPlay(){
   else startBomRadarPlay();
 }
 
-// BOM radar refresh — called by refreshAll() on the main 5-minute cycle
+// BOM radar refresh \u2014 called by refreshAll() on the main 5-minute cycle
 function refreshBomRadarLayer(){
   if(bomRadarVisible && bomRadarLoaded){
     stopBomRadarPlay();
@@ -2397,7 +2397,7 @@ var BOM_FTP_PRODUCTS = {
   },
   severe_weather: {
     label:"Severe Weather",
-    icon:"D83CDF2C",
+    icon:"\uD83C\uDF2C",
     color:"#f0a500",
     zone_color:"#f0a500",
     ids:{
@@ -2407,7 +2407,7 @@ var BOM_FTP_PRODUCTS = {
   },
   cyclone: {
     label:"Tropical Cyclone",
-    icon:"D83CDF00",
+    icon:"\uD83C\uDF00",
     color:"#ff4757",
     zone_color:"#ff4757",
     ids:{
@@ -2416,7 +2416,7 @@ var BOM_FTP_PRODUCTS = {
   },
   fire_weather: {
     label:"Fire Weather",
-    icon:"D83DDD25",
+    icon:"\uD83D\uDD25",
     color:"#ff6b35",
     zone_color:"#ff6b35",
     ids:{
@@ -2428,7 +2428,7 @@ var BOM_FTP_PRODUCTS = {
   },
   heatwave: {
     label:"Heatwave",
-    icon:"D83CDF21",
+    icon:"\uD83C\uDF21",
     color:"#ff6b6b",
     zone_color:"#ff6b6b",
     ids:{
@@ -2438,14 +2438,14 @@ var BOM_FTP_PRODUCTS = {
   },
   flood: {
     label:"Flood",
-    icon:"D83DDCA7",
+    icon:"\uD83D\uDCA7",
     color:"#4dabf7",
     zone_color:"#4dabf7",
     ids:{}
   },
   wind: {
     label:"Wind / Marine",
-    icon:"D83CDF2C",
+    icon:"\uD83C\uDF2C",
     color:"#74c0fc",
     zone_color:"#74c0fc",
     ids:{}
@@ -4516,7 +4516,7 @@ function showNextRiskAlert() {
   var col = RISK_COLOR[item.level];
 
   var isPulse = (item.level >= RISK_LEVEL.DIRECT) || item.isFireStorm;
-  var typeIcon = item.isFireStorm ? '\u26C8 STORM WARNING \u2014 AM/MF SITE' : '\u1F525 FIRE THREAT';
+  var typeIcon = item.isFireStorm ? '\u26C8 STORM WARNING \u2014 AM/MF SITE' : '\uD83D\uDD25 FIRE THREAT';
 
   var reasonHtml = item.reasons.slice(0,2).map(function(r) {
     return '<div style="font-size:10px;color:var(--text2);padding:2px 0;border-bottom:1px solid var(--border)">'+
@@ -4818,7 +4818,7 @@ function detectPreset() {
 
 function applyPreset(name) {
   var src = name === 'summer' ? PRESET_SUMMER : SETTINGS_DEFAULTS;
-  var savedTheme = S.theme;  // preserve theme — presets don't override it
+  var savedTheme = S.theme;  // preserve theme \u2014 presets don't override it
   Object.assign(S, src);
   S.theme = savedTheme;
   currentPreset = name === 'summer' ? 'summer' : 'winter';
@@ -5010,7 +5010,7 @@ isActiveIncident = function(inc) {
   // State visibility filter always applies
   var incState = (inc.state || '').toUpperCase();
   if (incState && S.activeStates.indexOf(incState) === -1) return false;
-  // 'all' = unfiltered — show everything in the JSON regardless of type/level/age
+  // 'all' = unfiltered \u2014 show everything in the JSON regardless of type/level/age
   if (S.incFloor === 'all') return true;
   // Global minimum alert level floor
   var al = (inc.alertLevel || '').toLowerCase();
