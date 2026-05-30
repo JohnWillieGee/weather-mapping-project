@@ -1534,6 +1534,7 @@ var radarCurrentIdx = 0;
 var radarPlaying = false;
 var radarPlayTimer = null;
 var radarLoaded = false;
+var radarLastLoaded = 0;   // timestamp of last successful frame load
 var RADAR_HOST = '';         // set from API response
 var RADAR_OPACITY = 0.7;
 var RADAR_COLOR = 6;         // 6 = original reflectivity dBZ colour scheme
@@ -1546,8 +1547,14 @@ function toggleRadarLayer(){
   if(radarVisible){
     btn.classList.add('on');
     document.getElementById('radar-controls').classList.remove('hidden');
-    if(!radarLoaded) loadRadarFrames();
-    else showRadarFrame(radarCurrentIdx);
+    var stale = (Date.now() - radarLastLoaded) > 5 * 60 * 1000;
+    if(!radarLoaded || stale){
+      radarLayers.forEach(function(l){ if(map.hasLayer(l)) map.removeLayer(l); });
+      radarLayers = []; radarFramesReady = []; radarLoaded = false;
+      loadRadarFrames();
+    } else {
+      showRadarFrame(radarCurrentIdx);
+    }
   } else {
     btn.classList.remove('on');
     document.getElementById('radar-controls').classList.add('hidden');
@@ -1594,6 +1601,7 @@ function loadRadarFrames(){
               document.getElementById('radar-age-label').textContent = 'Loading ' + pct + '%';
               if(loadedCount === totalFrames && !radarLoaded){
                 radarLoaded = true;
+                radarLastLoaded = Date.now();
                 buildRadarTimeline();
                 radarCurrentIdx = totalFrames - 1;
                 showRadarFrame(radarCurrentIdx);
@@ -1682,17 +1690,17 @@ function toggleRadarPlay(){
 }
 
 // Refresh radar frames every 10 minutes while layer is visible
-setInterval(function(){
+// Radar refresh — called by refreshAll() on the main 5-minute cycle
+function refreshRadarLayers(){
   if(radarVisible && radarLoaded){
     stopRadarPlay();
-    // Remove all pre-loaded layers from map before reloading
     radarLayers.forEach(function(l){ if(map.hasLayer(l)) map.removeLayer(l); });
     radarLayers = [];
     radarFramesReady = [];
     radarLoaded = false;
     loadRadarFrames();
   }
-}, 10 * 60 * 1000);
+}
 
 
 // \u2500\u2500 BOM RADAR LAYER (GitHub Pages \u2014 weather-mapping-project) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
@@ -1705,6 +1713,7 @@ var BOM_RADAR_OPACITY  = 0.75;
 
 var bomRadarVisible    = false;
 var bomRadarLoaded     = false;
+var bomRadarLastLoaded = 0;   // timestamp of last successful frame load
 var bomRadarMeta       = null;   // full parsed radar_meta.json
 var bomRadarProducts   = [];     // ordered array of {id, name, bounds, frames} built from meta.products object
 var bomRadarLayers     = [];     // L.imageOverlay layers for current product, one per frame
@@ -1719,8 +1728,16 @@ function toggleBomRadarLayer(){
   if(bomRadarVisible){
     btn.classList.add('bom-radar-on');
     document.getElementById('bom-radar-controls').classList.remove('hidden');
-    if(!bomRadarLoaded) loadBomRadarMeta();
-    else showBomRadarFrame(bomRadarCurrentIdx);
+    var stale = (Date.now() - bomRadarLastLoaded) > 5 * 60 * 1000;
+    if(!bomRadarLoaded || stale){
+      stopBomRadarPlay();
+      bomRadarLoaded = false;
+      bomRadarLayers.forEach(function(l){ if(map.hasLayer(l)) map.removeLayer(l); });
+      bomRadarLayers = [];
+      loadBomRadarMeta();
+    } else {
+      showBomRadarFrame(bomRadarCurrentIdx);
+    }
   } else {
     btn.classList.remove('bom-radar-on');
     document.getElementById('bom-radar-controls').classList.add('hidden');
@@ -1805,6 +1822,7 @@ function buildBomRadarProduct(pidx){
         var pct = Math.round(loadedCount / totalFrames * 100);
         document.getElementById('bom-radar-age-label').textContent = 'Loading ' + pct + '%';
         if(loadedCount === totalFrames){
+          bomRadarLastLoaded = Date.now();
           buildBomRadarTimeline();
           bomRadarCurrentIdx = 0; // start from most-recent (frame 00 = newest)
           showBomRadarFrame(bomRadarCurrentIdx);
@@ -1908,8 +1926,8 @@ function toggleBomRadarPlay(){
   else startBomRadarPlay();
 }
 
-// Refresh BOM radar every 10 minutes while layer is visible
-setInterval(function(){
+// BOM radar refresh — called by refreshAll() on the main 5-minute cycle
+function refreshBomRadarLayer(){
   if(bomRadarVisible && bomRadarLoaded){
     stopBomRadarPlay();
     bomRadarLoaded = false;
@@ -1917,7 +1935,7 @@ setInterval(function(){
     bomRadarLayers = [];
     loadBomRadarMeta();
   }
-}, 10 * 60 * 1000);
+}
 
 function startFetching(){
   fetchFDR();
@@ -1945,6 +1963,8 @@ function refreshAll(){
   fdrLayer.clearLayers();warningsLayer.clearLayers();incidentsLayer.clearLayers();alertsLayer.clearLayers();marineLayer.clearLayers();
   setTimeout(function(){btn.classList.remove("spinning");},8000);
   startFetching();
+  refreshRadarLayers();
+  refreshBomRadarLayer();
   showToast("Refreshing all live data...");
   scheduleNextRefresh();
 }
