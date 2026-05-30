@@ -6,6 +6,7 @@
 <script src="https://johnwilliegee.github.io/WatchTower/watchtower_geodata_fdr.js"></script>
 <script src="https://johnwilliegee.github.io/WatchTower/watchtower_geodata_pw.js"></script>
 <script src="https://johnwilliegee.github.io/WatchTower/watchtower_geodata_marine.js"></script>
+<script src="https://johnwilliegee.github.io/WatchTower/watchtower_tutorial.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>WatchTower — Broadcast Site Risk Map</title>
@@ -359,6 +360,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
     <a class="logo" href="https://www.youtube.com/watch?v=TLV4_xaYynY" target="_blank" rel="noopener" title="" style="text-decoration:none;cursor:default;">Watch<span>Tower</span></a>
     <button id="settings-toggle" onclick="toggleSettingsPanel()" title="Settings" style="background:var(--panel2);border:1px solid var(--border);color:var(--accent);width:28px;height:28px;border-radius:var(--radius);cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;">&#9881;</button>
     <button onclick="toggleFilterSidebar()" title="Site Filters" style="background:var(--panel2);border:1px solid var(--border);color:var(--text2);width:28px;height:28px;border-radius:var(--radius);cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;">&#9776;</button>
+    <button id="btn-help" onclick="startHelp()" title="Help mode — click elements to learn about them" style="background:var(--panel2);border:1px solid var(--border);color:var(--text2);width:28px;height:28px;border-radius:var(--radius);cursor:pointer;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;">?</button>
   </div>
   <div class="header-right">
     <div class="hstat"><div class="val" id="h-sites">-</div><div class="lbl">Sites</div></div>
@@ -528,9 +530,6 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
       <div class="sp-sec-body" style="border-bottom:none">
         <span class="sp-divlbl">Tutorial</span>
         <button onclick="startTutorial()" style="font-family:monospace;font-size:10px;padding:5px;width:100%;border-radius:3px;border:1px solid var(--accent2);background:rgba(0,212,170,0.08);color:var(--accent2);cursor:pointer;">&#127891; Start guided tour</button>
-        <div class="sp-tut-note">
-          <span>&#128373; Easter egg:</span> John G has hidden something in this page. Can you find it?
-        </div>
       </div>
 
     </div>
@@ -5002,10 +5001,7 @@ function toggleSpSection(id) {
   if (chev) chev.style.transform = open ? 'rotate(-90deg)' : '';
 }
 
-// Stub for tutorial \u2014 will be built in next session
-function startTutorial() {
-  showToast('&#127891; Tutorial coming soon!', false);
-}
+// startTutorial() and startHelp() are provided by watchtower_tutorial.js
 
 // \u2500\u2500 Patch isActiveIncident to use Settings \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 // Override the stale-hours check and alert floor with live S values
