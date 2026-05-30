@@ -2397,7 +2397,7 @@ var BOM_FTP_PRODUCTS = {
   },
   severe_weather: {
     label:"Severe Weather",
-    icon:"\u1F32C",
+    icon:"D83CDF2C",
     color:"#f0a500",
     zone_color:"#f0a500",
     ids:{
@@ -2407,7 +2407,7 @@ var BOM_FTP_PRODUCTS = {
   },
   cyclone: {
     label:"Tropical Cyclone",
-    icon:"\u1F300",
+    icon:"D83CDF00",
     color:"#ff4757",
     zone_color:"#ff4757",
     ids:{
@@ -2416,7 +2416,7 @@ var BOM_FTP_PRODUCTS = {
   },
   fire_weather: {
     label:"Fire Weather",
-    icon:"\u1F525",
+    icon:"D83DDD25",
     color:"#ff6b35",
     zone_color:"#ff6b35",
     ids:{
@@ -2428,7 +2428,7 @@ var BOM_FTP_PRODUCTS = {
   },
   heatwave: {
     label:"Heatwave",
-    icon:"\u1F321",
+    icon:"D83CDF21",
     color:"#ff6b6b",
     zone_color:"#ff6b6b",
     ids:{
@@ -2438,14 +2438,14 @@ var BOM_FTP_PRODUCTS = {
   },
   flood: {
     label:"Flood",
-    icon:"\u1F4A7",
+    icon:"D83DDCA7",
     color:"#4dabf7",
     zone_color:"#4dabf7",
     ids:{}
   },
   wind: {
     label:"Wind / Marine",
-    icon:"\u1F32C",
+    icon:"D83CDF2C",
     color:"#74c0fc",
     zone_color:"#74c0fc",
     ids:{}
@@ -2751,10 +2751,6 @@ function fetchBOMWarnings() {
           }catch(e){}
         }
         var wTitle = w.title || 'BOM Warning';
-        // Strip BOM product code prefixes that sometimes leak into the title
-        // e.g. "iC 30/04:38 WST Severe Weather..." → "Severe Weather..."
-        // Pattern: 2-3 char code + space + date/time stamp + space
-        wTitle = wTitle.replace(/^[a-zA-Z]{2,4}\s+\d{1,2}\/\d{2}:\d{2}\s+[A-Z]{2,4}\s+/,'').trim();
         var isCancelled = /cancell?ation|cancelled|cancel/i.test(wTitle);
         if (isCancelled) color = '#888888';
         bomWarnings.push({
