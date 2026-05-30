@@ -1986,6 +1986,8 @@ function silentRefresh(){
   feedStatus={nsw:"pending",vic:"pending",qld:"pending",sa:"pending",wa:"pending",tas:"pending",nt:"pending",act:"pending"};
   fdrFeatures=[];fdrPeriodTimes={};fdrRatings={};
   startFetching();
+  refreshRadarLayers();
+  refreshBomRadarLayer();
   setTimeout(function(){
     if(btn) btn.classList.remove("spinning");
     var now = new Date();
