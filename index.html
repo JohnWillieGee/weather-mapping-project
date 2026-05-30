@@ -385,7 +385,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
           <button class="sp-preset summer" onclick="applyPreset('summer')">&#9728; Summer</button>
           <button class="sp-preset custom" id="sp-preset-custom" style="display:none">Custom</button>
         </div>
-        <button class="sp-restore" onclick="applyPreset('winter')">&#8635; Restore defaults</button>
+        <button class="sp-restore" onclick="restoreDefaults()">&#8635; Restore defaults</button>
       </div>
 
       <div class="sp-section">
@@ -539,7 +539,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
     <div class="fs-head"><h3>&#128225; Site Filters</h3><div style="display:flex;gap:5px;"><button class="wp-toggle" onclick="clearFilters()">Clear</button><button class="wp-toggle" onclick="toggleFilterSidebar()" title="Close">&#10005;</button></div></div>
     <div class="fs-body">
       <div id="fs-site-count"></div>
-      <input id="fs-search" type="text" placeholder="Search site name or town..." oninput="applyFilters()">
+      <input id="fs-search" type="text" placeholder="Search site name..." oninput="applyFilters()">
       <div class="fs-label" id="fs-lbl-search">Service Name</div>
       <div class="svc-dd" id="svc-dd-wrap">
         <button class="svc-dd-btn" id="svc-dd-btn" onclick="toggleSvcDropdown(event)" type="button">
@@ -4790,17 +4790,25 @@ var PRESET_SUMMER = {
   stormDist:   200
 };
 
-// Live settings object \u2014 starts from localStorage or defaults
+// Returns 'summer' for Oct-Mar (Australian fire season), 'winter' for Apr-Sep
+function getSeasonalPreset() {
+  var m = new Date().getMonth(); // 0=Jan ... 11=Dec
+  return (m >= 9 || m <= 2) ? 'summer' : 'winter';
+}
+
+// Live settings object \u2014 starts from localStorage, seasonal default, or SETTINGS_DEFAULTS
 var S = (function(){
   try {
     var saved = JSON.parse(localStorage.getItem(SETTINGS_KEY) || 'null');
     if (saved) return Object.assign({}, SETTINGS_DEFAULTS, saved);
   } catch(e) {}
-  return Object.assign({}, SETTINGS_DEFAULTS);
+  // No saved settings — apply seasonally appropriate defaults
+  var seasonal = getSeasonalPreset() === 'summer' ? PRESET_SUMMER : SETTINGS_DEFAULTS;
+  return Object.assign({}, SETTINGS_DEFAULTS, seasonal);
 })();
 
-// Track current preset
-var currentPreset = 'winter';
+// Track current preset — initialise from season if no saved settings
+var currentPreset = getSeasonalPreset();
 
 function saveSettings() {
   try { localStorage.setItem(SETTINGS_KEY, JSON.stringify(S)); } catch(e) {}
@@ -4828,6 +4836,27 @@ function applyPreset(name) {
   syncSettingsUI();
   applyAllSettings();
   markCustomIfNeeded();
+}
+
+function restoreDefaults() {
+  // Apply seasonally appropriate preset (Oct-Mar = Summer, Apr-Sep = Winter)
+  var preset = getSeasonalPreset();
+  applyPreset(preset);
+  // Clear all site filters
+  clearFilters();
+  // Reset active states to all and update pills
+  S.activeStates = ['NSW','VIC','QLD','SA','WA','TAS','NT','ACT'];
+  document.querySelectorAll('#sp-state-pills .sp-pill').forEach(function(p){ p.classList.add('on'); });
+  renderSites();
+  updateIncidentCount();
+  // Close open panels
+  var filterSidebar = document.getElementById('filter-sidebar');
+  if(filterSidebar && !filterSidebar.classList.contains('collapsed')) toggleFilterSidebar();
+  var riskPanel = document.getElementById('risk-panel');
+  if(riskPanel && riskPanel.style.display !== 'none' && riskPanel.style.display !== '') toggleRiskPanel();
+  // Re-centre map on Australia
+  if(typeof map !== 'undefined' && map) map.setView([-27.5, 133.5], 5, { animate: true });
+  showToast('\u21BA Restored to ' + (preset === 'summer' ? '\u2600 Summer' : '\u2744 Winter') + ' defaults');
 }
 
 function applySpSetting(key, val) {
