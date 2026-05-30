@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Windy Panel</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; overflow: hidden; background: #0a1628; }
+  #windy { width: 100%; height: 100%; }
+  #err { display:none; position:absolute; inset:0; align-items:center; justify-content:center;
+         color:#00c8ff; font:11px monospace; background:#0a1628; text-align:center; padding:20px; }
+  #err.show { display:flex; }
+</style>
+</head>
+<body>
+<div id="windy"></div>
+<div id="err"></div>
+
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+<script src="https://api.windy.com/assets/map-forecast/libBoot.js"></script>
+<script>
+  // Read layer param from URL e.g. windy_panel.html?layer=wind
+  function getParam(name) {
+    return new URLSearchParams(window.location.search).get(name) || 'wind';
+  }
+
+  var WINDY_KEY = '2dH1cLzoQN70PBqLl81GNV4RsBBUuVdx';
+
+  var options = {
+    key:     WINDY_KEY,
+    verbose: false,
+    lat:     -27,
+    lon:     134,
+    zoom:    4,
+  };
+
+  windyInit(options, function(api) {
+    var store = api.store;
+
+    // Set initial layer from URL param
+    store.set('overlay', getParam('layer'));
+
+    // Listen for layer change messages from parent window
+    window.addEventListener('message', function(e) {
+      if (e.data && e.data.type === 'setLayer') {
+        store.set('overlay', e.data.layer);
+      }
+      if (e.data && e.data.type === 'setZoom') {
+        api.map.setView([e.data.lat, e.data.lon], e.data.zoom);
+      }
+    });
+
+    // Tell parent we're ready
+    if (window.parent !== window) {
+      window.parent.postMessage({ type: 'windyReady' }, '*');
+    }
+  });
+</script>
+</body>
+</html>
