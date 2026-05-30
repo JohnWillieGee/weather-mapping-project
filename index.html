@@ -431,6 +431,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
           <div class="sp-row">
             <div><span class="sp-lbl">Minimum alert level</span><span class="sp-sub">All states</span></div>
             <select class="sp-select" id="sp-inc-floor" onchange="applySpSetting('incFloor',this.value)">
+              <option value="all">All (unfiltered)</option>
               <option value="advice">Advice</option>
               <option value="watchact">Watch and Act</option>
               <option value="emergency">Emergency Warning</option>
@@ -3535,6 +3536,15 @@ function updateIncidentCount(){
   var all=Object.values(allIncidents).reduce(function(a,b){return a.concat(b);},[]); 
   var active=all.filter(isActiveIncident);
   document.getElementById("h-incidents").textContent=active.length>0?active.length:"-";
+  // Update per-state filtered counts in the feed status rows
+  ["nsw","vic","qld","sa","wa","tas","nt","act"].forEach(function(key){
+    var stateIncs = allIncidents[key] || [];
+    var stateActive = stateIncs.filter(isActiveIncident);
+    var cntEl = document.getElementById("fcnt-"+key);
+    var rowEl = cntEl ? cntEl.closest(".feed-status-row") : null;
+    if(cntEl) cntEl.textContent = stateActive.length > 0 ? stateActive.length+" inc" : "0 inc";
+    if(rowEl) rowEl.style.opacity = stateActive.length > 0 ? "" : "0.4";
+  });
 }
 
 // Types to exclude \u2014 planned burns and hazard reductions are not active emergencies
@@ -3629,8 +3639,12 @@ function renderIncidentsPanel(){
       +"</div>";
   });
   if(active.length>60)html+="<div class='wp-none'>+"+(active.length-60)+" more &mdash; use state tabs to filter</div>";
-  var burnCount=all.length-active.length;
-  if(burnCount>0)html+="<div class='wp-none' style='font-size:9px'>"+burnCount+" excluded (burns, safe/small, not applicable)</div>";
+  if(S.incFloor !== 'all'){
+    var burnCount=all.length-active.length;
+    if(burnCount>0)html+="<div class='wp-none' style='font-size:9px'>"+burnCount+" excluded (burns, safe/small, not applicable)</div>";
+  } else {
+    html+="<div class='wp-none' style='font-size:9px'>Showing all "+all.length+" incidents (unfiltered)</div>";
+  }
   document.getElementById("inc-content").innerHTML=html;
 }
 
@@ -4977,9 +4991,11 @@ function startTutorial() {
 // Override the stale-hours check and alert floor with live S values
 var _origIsActive = isActiveIncident;
 isActiveIncident = function(inc) {
-  // State visibility filter
+  // State visibility filter always applies
   var incState = (inc.state || '').toUpperCase();
   if (incState && S.activeStates.indexOf(incState) === -1) return false;
+  // 'all' = unfiltered — show everything in the JSON regardless of type/level/age
+  if (S.incFloor === 'all') return true;
   // Global minimum alert level floor
   var al = (inc.alertLevel || '').toLowerCase();
   if (S.incFloor === 'watchact') {
