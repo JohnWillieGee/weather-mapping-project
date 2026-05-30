@@ -540,7 +540,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
     <div class="fs-body">
       <div id="fs-site-count"></div>
       <input id="fs-search" type="text" placeholder="Search site name or town..." oninput="applyFilters()">
-      <div class="fs-label">Service Name</div>
+      <div class="fs-label" id="fs-lbl-search">Service Name</div>
       <div class="svc-dd" id="svc-dd-wrap">
         <button class="svc-dd-btn" id="svc-dd-btn" onclick="toggleSvcDropdown(event)" type="button">
           <span id="svc-dd-label">All services</span><span>&#9660;</span>
@@ -647,8 +647,8 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
           </div>
         </div>
       </div>
-      <div class="fs-label">Broadcaster</div>
-      <div class="fs-chips">
+      <div class="fs-label" id="fs-lbl-broadcaster">Broadcaster</div>
+      <div class="fs-chips" id="chip-broadcaster">
         <span class="chip state" data-v="ABC" data-g="broadcaster" onclick="toggleChip(this,'broadcaster')">ABC</span>
         <span class="chip state" data-v="SBS" data-g="broadcaster" onclick="toggleChip(this,'broadcaster')">SBS</span>
         <span class="chip state" data-v="TEN" data-g="broadcaster" onclick="toggleChip(this,'broadcaster')">TEN</span>
@@ -657,7 +657,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
         <span class="chip state" data-v="SCA" data-g="broadcaster" onclick="toggleChip(this,'broadcaster')">SCA</span>
         <span class="chip state" data-v="RPH" data-g="broadcaster" onclick="toggleChip(this,'broadcaster')">RPH</span>
       </div>
-      <div class="fs-label">State</div>
+      <div class="fs-label" id="fs-lbl-state">State</div>
       <div class="fs-chips" id="chip-state">
         <span class="chip state" data-v="NSW" onclick="toggleChip(this,'state')">NSW</span>
         <span class="chip state" data-v="VIC" onclick="toggleChip(this,'state')">VIC</span>
@@ -668,15 +668,15 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
         <span class="chip state" data-v="NT" onclick="toggleChip(this,'state')">NT</span>
         <span class="chip state" data-v="ACT" onclick="toggleChip(this,'state')">ACT</span>
       </div>
-      <div class="fs-label">Modulation</div>
-      <div class="fs-chips">
+      <div class="fs-label" id="fs-lbl-mod">Modulation</div>
+      <div class="fs-chips" id="chip-mod">
         <span class="chip am" data-v="AM" data-g="mod" onclick="toggleChip(this,'mod')">AM</span>
         <span class="chip fm" data-v="FM" data-g="mod" onclick="toggleChip(this,'mod')">FM</span>
         <span class="chip dab" data-v="DAB" data-g="mod" onclick="toggleChip(this,'mod')">DAB+</span>
         <span class="chip dtv" data-v="DTV" data-g="mod" onclick="toggleChip(this,'mod')">DTV</span>
       </div>
-      <div class="fs-label">Service Purpose</div>
-      <div class="fs-chips">
+      <div class="fs-label" id="fs-lbl-purpose">Service Purpose</div>
+      <div class="fs-chips" id="chip-purpose">
         <span class="chip state" data-v="National Broadcasting" data-g="purpose" onclick="toggleChip(this,'purpose')">ABC/SBS</span>
         <span class="chip state" data-v="Commercial Television" data-g="purpose" onclick="toggleChip(this,'purpose')">Com TV</span>
         <span class="chip state" data-v="Commercial Radio" data-g="purpose" onclick="toggleChip(this,'purpose')">Com Radio</span>
