@@ -2751,6 +2751,10 @@ function fetchBOMWarnings() {
           }catch(e){}
         }
         var wTitle = w.title || 'BOM Warning';
+        // Strip BOM product code prefixes that sometimes leak into the title
+        // e.g. "iC 30/04:38 WST Severe Weather..." → "Severe Weather..."
+        // Pattern: 2-3 char code + space + date/time stamp + space
+        wTitle = wTitle.replace(/^[a-zA-Z]{2,4}\s+\d{1,2}\/\d{2}:\d{2}\s+[A-Z]{2,4}\s+/,'').trim();
         var isCancelled = /cancell?ation|cancelled|cancel/i.test(wTitle);
         if (isCancelled) color = '#888888';
         bomWarnings.push({
