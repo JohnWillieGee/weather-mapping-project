@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-30T11:53:21.324686+00:00",
-  "last_checked_utc": "2026-05-30T11:53:21.324686+00:00",
+  "generated_utc": "2026-05-30T12:23:23.579655+00:00",
+  "last_checked_utc": "2026-05-30T12:23:23.579655+00:00",
   "warning_count": 15,
   "warnings": [
     {
       "pid": "",
-      "title": "30/16:05 EST Marine Wind Warning Summary for New South Wales",
+      "title": "30/22:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 30 May 2026 06:05:13 GMT"
+      "issued": "Sat, 30 May 2026 12:00:15 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "30/20:11 EST Marine Wind Warning Summary for Victoria",
+      "title": "30/22:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 30 May 2026 10:11:22 GMT"
+      "issued": "Sat, 30 May 2026 12:00:19 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "30/15:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "30/21:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sat, 30 May 2026 06:00:09 GMT"
+      "issued": "Sat, 30 May 2026 12:00:08 GMT"
     },
     {
       "pid": "",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "30/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "30/20:18 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sat, 30 May 2026 11:01:09 GMT"
+      "issued": "Sat, 30 May 2026 12:18:57 GMT"
     },
     {
       "pid": "IDW21037",
@@ -122,12 +122,12 @@
     },
     {
       "pid": "",
-      "title": "30/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "30/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 30 May 2026 06:05:11 GMT"
+      "issued": "Sat, 30 May 2026 12:00:09 GMT"
     },
     {
       "pid": "IDT20611",
@@ -163,21 +163,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Bushfire - GOLDFIELDS HWY",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-05-30T11:19:33+00:00",
-        "description": "SOUTH KALGOORLIE, CITY OF KALGOORLIE-BOULDER",
-        "lat": -30.7601,
-        "lng": 121.4893,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1ac6c285482b041d121d42?display=modal"
-      },
       {
         "title": "Bushfire - COWALLA RD",
         "alertLevel": "",
@@ -285,21 +270,6 @@
       }
     ],
     "nt": [
-      {
-        "title": "Grass and Scrub Fire - VANDERLIN DR, LEANYER",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-05-30T11:17:09+00:00",
-        "description": "VANDERLIN DR, LEANYER",
-        "lat": -12.3852,
-        "lng": 130.9051,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
       {
         "title": "Grass and Scrub Fire - TOWNEND RD, HUGHES",
         "alertLevel": "Advice",
@@ -499,7 +469,7 @@
       }
     ]
   },
-  "incident_count": 23,
+  "incident_count": 21,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3480,26 +3450,12 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-05-30T06:05:00Z",
-      "overview": [
-        "Strong Wind Warning for Saturday for Eden Coast",
-        "Strong Wind Warning for Sunday for Macquarie Coast, Hunter Coast, Illawarra Coast and Eden Coast"
-      ],
+      "issued_utc": "2026-05-30T12:00:00Z",
+      "overview": [],
       "hazards": [
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Eden Coast: Montague Island to Gabo Island"
-          ],
-          "aac_codes": [
-            "NSW_MW001"
-          ],
-          "summary": "Eden Coast"
-        },
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "CAN",
+          "severity": "CAN",
           "zones": [
             "Macquarie Coast: Smoky Cape to Seal Rocks",
             "Hunter Coast: Seal Rocks to Broken Bay",
@@ -3509,7 +3465,8 @@
           "aac_codes": [
             "NSW_MW006",
             "NSW_MW005",
-            "NSW_MW003"
+            "NSW_MW003",
+            "NSW_MW001"
           ],
           "summary": "Macquarie Coast, Hunter Coast, Illawarra Coast and Eden Coast"
         }
@@ -3518,7 +3475,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-05-30T10:11:08Z",
+      "issued_utc": "2026-05-30T12:00:00Z",
       "overview": [
         "Strong Wind Warning for Saturday for East Gippsland Coast, Central Coast, West Coast and Central Gippsland Coast",
         "Strong Wind Warning for Sunday for Western Port, East Gippsland Coast, Central Coast, West Coast and Central Gippsland Coast"
@@ -3561,30 +3518,39 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-05-30T06:00:00Z",
+      "issued_utc": "2026-05-30T12:00:00Z",
       "overview": [
-        "Strong Wind Warning for Saturday for Upper South East Coast, Lower South East Coast, Central Coast, Investigator Strait and South Central Coast",
-        "Strong Wind Warning for Sunday for Lower South East Coast, Upper West Coast and Far West Coast"
+        "Strong Wind Warning for Saturday for Lower South East Coast",
+        "Strong Wind Warning for Sunday for Far West Coast, Upper West Coast and Lower South East Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
+          ],
+          "aac_codes": [
+            "SA_MW010"
+          ],
+          "summary": "Lower South East Coast"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
             "Central Coast",
             "South Central Coast",
             "Investigator Strait",
-            "Upper South East Coast: Murray Mouth to Cape Jaffa",
-            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
+            "Upper South East Coast: Murray Mouth to Cape Jaffa"
           ],
           "aac_codes": [
             "SA_MW004",
             "SA_MW008",
             "SA_MW007",
-            "SA_MW009",
-            "SA_MW010"
+            "SA_MW009"
           ],
-          "summary": "Central Coast, South Central Coast, Investigator Strait, Upper South East Coast and Lower South East Coast"
+          "summary": "Central Coast, South Central Coast, Investigator Strait and Upper South East Coast"
         },
         {
           "level": "Strong Wind Warning",
@@ -3605,12 +3571,12 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-30T11:01:00Z",
+      "issued_utc": "2026-05-30T12:18:49Z",
       "overview": [
-        "Strong Wind Warning for Saturday for Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast and Perth Local Waters",
-        "Storm Force Wind Warning for Sunday for Bunbury Geographe Coast and Leeuwin Coast",
-        "Gale Warning for Sunday for Geraldton Coast, Lancelin Coast, Perth Coast, Albany Coast, Esperance Coast, Perth Local Waters and Melville Waters",
-        "Strong Wind Warning for Sunday for Gascoyne Coast and Eucla Coast"
+        "Strong Wind Warning for Saturday for Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast, Lancelin Coast, Geraldton Coast, Gascoyne Coast, Perth Local Waters and Perth Coast",
+        "Storm Force Wind Warning for Sunday for Leeuwin Coast and Bunbury Geographe Coast",
+        "Gale Warning for Sunday for Melville Waters, Perth Local Waters, Lancelin Coast, Geraldton Coast, Albany Coast, Esperance Coast and Perth Coast",
+        "Strong Wind Warning for Sunday for Eucla Coast and Gascoyne Coast"
       ],
       "hazards": [
         {
@@ -3684,10 +3650,10 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-05-30T06:05:00Z",
+      "issued_utc": "2026-05-30T12:00:00Z",
       "overview": [
         "Strong Wind Warning for Saturday for Far North West Coast, Central North Coast and East of Flinders Island",
-        "Strong Wind Warning for Sunday for Central West Coast, South West Coast, Far North West Coast, East of Flinders Island, Banks Strait and Franklin Sound, Central North Coast and South East Coast"
+        "Strong Wind Warning for Sunday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, South East Coast, South West Coast and Central West Coast"
       ],
       "hazards": [
         {
