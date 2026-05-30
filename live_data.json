@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-30T16:53:19.820539+00:00",
-  "last_checked_utc": "2026-05-30T16:53:19.820539+00:00",
+  "generated_utc": "2026-05-30T17:23:20.741991+00:00",
+  "last_checked_utc": "2026-05-30T17:23:20.741991+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "30/20:18 WST Marine Wind Warning Summary for Western Australia",
+      "title": "31/01:14 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sat, 30 May 2026 12:18:57 GMT"
+      "issued": "Sat, 30 May 2026 17:14:16 GMT"
     },
     {
       "pid": "IDW21037",
@@ -440,8 +440,8 @@
         "status": "active",
         "type": "Structure Fire",
         "size": "",
-        "agency": "Fire",
-        "updated": "2026-05-30T16:50:23+00:00",
+        "agency": "Ambulance",
+        "updated": "2026-05-30T17:18:31+00:00",
         "description": "RICHARDSON",
         "lat": -35.4252,
         "lng": 149.1055,
@@ -455,8 +455,38 @@
         "status": "active",
         "type": "Structure Fire",
         "size": "",
-        "agency": "Ambulance",
-        "updated": "2026-05-30T16:49:56+00:00",
+        "agency": "Fire",
+        "updated": "2026-05-30T17:18:25+00:00",
+        "description": "RICHARDSON",
+        "lat": -35.4252,
+        "lng": 149.1055,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - RICHARDSON",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-05-30T17:18:00+00:00",
+        "description": "RICHARDSON",
+        "lat": -35.4252,
+        "lng": 149.1055,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - RICHARDSON",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-05-30T17:18:00+00:00",
         "description": "RICHARDSON",
         "lat": -35.4252,
         "lng": 149.1055,
@@ -466,7 +496,7 @@
       }
     ]
   },
-  "incident_count": 22,
+  "incident_count": 24,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3568,50 +3598,30 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-30T12:18:49Z",
+      "issued_utc": "2026-05-30T17:14:06Z",
       "overview": [
-        "Strong Wind Warning for Saturday for Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast, Lancelin Coast, Geraldton Coast, Gascoyne Coast, Perth Local Waters and Perth Coast",
-        "Storm Force Wind Warning for Sunday for Leeuwin Coast and Bunbury Geographe Coast",
-        "Gale Warning for Sunday for Melville Waters, Perth Local Waters, Lancelin Coast, Geraldton Coast, Albany Coast, Esperance Coast and Perth Coast",
-        "Strong Wind Warning for Sunday for Eucla Coast and Gascoyne Coast"
+        "Storm Force Wind Warning for Sunday for Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Perth Local Waters",
+        "Gale Warning for Sunday for Geraldton Coast, Lancelin Coast, Albany Coast, Esperance Coast and Melville Waters",
+        "Strong Wind Warning for Sunday for Gascoyne Coast and Eucla Coast",
+        "Gale Warning for Monday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast, Eucla Coast, Perth Local Waters and Melville Waters"
       ],
       "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Gascoyne Coast: Cape Cuvier to Kalbarri",
-            "Geraldton Coast: Kalbarri to Jurien Bay",
-            "Lancelin Coast: Jurien Bay to Two Rocks",
-            "Perth Coast: Two Rocks to Dawesville",
-            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
-            "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay",
-            "Perth Local Waters"
-          ],
-          "aac_codes": [
-            "WA_MW006",
-            "WA_MW007",
-            "WA_MW008",
-            "WA_MW009",
-            "WA_MW010",
-            "WA_MW011",
-            "WA_MW012",
-            "WA_MW013",
-            "WA_MW015"
-          ],
-          "summary": "Perth Local Waters, Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Esperance Coast"
-        },
         {
           "level": "Storm Force Warning",
           "severity": "STO",
           "zones": [
+            "Perth Coast: Two Rocks to Dawesville",
             "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
-            "Leeuwin Coast: Cape Naturaliste to Walpole"
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Perth Local Waters"
           ],
-          "aac_codes": [],
-          "summary": "Bunbury Geographe Coast and Leeuwin Coast"
+          "aac_codes": [
+            "WA_MW009",
+            "WA_MW010",
+            "WA_MW011",
+            "WA_MW015"
+          ],
+          "summary": "Perth Local Waters, Perth Coast, Bunbury Geographe Coast and Leeuwin Coast"
         },
         {
           "level": "Gale Warning",
@@ -3619,16 +3629,18 @@
           "zones": [
             "Geraldton Coast: Kalbarri to Jurien Bay",
             "Lancelin Coast: Jurien Bay to Two Rocks",
-            "Perth Coast: Two Rocks to Dawesville",
             "Albany Coast: Walpole to Bremer Bay",
             "Esperance Coast: Bremer Bay to Israelite Bay",
-            "Perth Local Waters",
             "Melville Waters"
           ],
           "aac_codes": [
+            "WA_MW007",
+            "WA_MW008",
+            "WA_MW012",
+            "WA_MW013",
             "WA_MW016"
           ],
-          "summary": "Perth Local Waters, Melville Waters, Geraldton Coast, Lancelin Coast, Perth Coast, Albany Coast and Esperance Coast"
+          "summary": "Melville Waters, Geraldton Coast, Lancelin Coast, Albany Coast and Esperance Coast"
         },
         {
           "level": "Strong Wind Warning",
@@ -3638,9 +3650,28 @@
             "Eucla Coast: Israelite Bay to WA-SA Border"
           ],
           "aac_codes": [
+            "WA_MW006",
             "WA_MW014"
           ],
           "summary": "Gascoyne Coast and Eucla Coast"
+        },
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "Geraldton Coast: Kalbarri to Jurien Bay",
+            "Lancelin Coast: Jurien Bay to Two Rocks",
+            "Perth Coast: Two Rocks to Dawesville",
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay",
+            "Eucla Coast: Israelite Bay to WA-SA Border",
+            "Perth Local Waters",
+            "Melville Waters"
+          ],
+          "aac_codes": [],
+          "summary": "Perth Local Waters, Melville Waters, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
         }
       ]
     },
