@@ -3571,7 +3571,7 @@ function updateIncidentCount(){
 // Types to exclude \u2014 planned burns and hazard reductions are not active emergencies
 var EXCLUDE_TYPES=["planned burn","hazard reduction","prescribed burn","burn off","controlled burn","fuel reduction burn","back burn","hazard reduction burn"];
 // Statuses that mean the incident is resolved/routine \u2014 exclude these
-var EXCLUDE_STATUSES=["under control","out of control and contained","patrol","monitored","no longer exists","safe"];
+var EXCLUDE_STATUSES=["contained","under control","out of control and contained","patrol","monitored","no longer exists","safe"];
 // VIC sizes to exclude \u2014 small incidents are not operationally significant
 var EXCLUDE_VIC_SIZES=["small"];
 // NSW alert levels to exclude \u2014 Not Applicable and below Advice are not actionable
@@ -5049,6 +5049,9 @@ isActiveIncident = function(inc) {
     if (!al.includes('watch') && !al.includes('emergency')) return false;
   } else if (S.incFloor === 'emergency') {
     if (!al.includes('emergency')) return false;
+  } else {
+    // advice floor — exclude VIC/SA/TAS incidents with no alert level (like NSW/NT/ACT/WA)
+    if (!al && ['VIC','SA','TAS'].indexOf(incState) !== -1) return false;
   }
   // Age override from settings (replaces the hardcoded 72h)
   if (inc.updated) {
