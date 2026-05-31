@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-31T06:53:20.579356+00:00",
-  "last_checked_utc": "2026-05-31T06:53:20.579356+00:00",
+  "generated_utc": "2026-05-31T07:23:21.389443+00:00",
+  "last_checked_utc": "2026-05-31T07:23:21.389443+00:00",
   "warning_count": 14,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "31/10:24 EST Warning to Sheep Graziers\nfor South West and Central forecast districts",
+      "title": "31/17:07 EST Warning to Sheep Graziers\nfor North Central, North East, South West and Central forecast districts",
       "type": "other",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Sun, 31 May 2026 00:24:12 GMT"
+      "issued": "Sun, 31 May 2026 07:07:56 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "IDS21037",
-      "title": "31/10:17 CST \n                Severe Weather Warning\n            \nfor \n                Adelaide Metropolitan, Mount Lofty Ranges, West Coast, Lower Eyre Peninsula, Eastern Eyre Peninsula, Yorke Peninsula, Flinders, Mid North, Kangaroo Island, Upper South East, Lower South East and parts of Murraylands, North West Pastoral, North East Pastoral and Riverland districts.",
+      "title": "31/16:41 CST \n                Severe Weather Warning\n            \nfor \n                Adelaide Metropolitan, Mount Lofty Ranges, West Coast, Lower Eyre Peninsula, Eastern Eyre Peninsula, Yorke Peninsula, Flinders, Mid North, Kangaroo Island, Upper South East, Lower South East and parts of Murraylands, North West Pastoral, North East Pastoral and Riverland districts.",
       "type": "severe_weather",
       "state": "SA",
       "link": "http://reg.bom.gov.au/products/IDS21037.shtml",
       "desc": "",
-      "issued": "Sun, 31 May 2026 00:47:05 GMT"
+      "issued": "Sun, 31 May 2026 07:11:31 GMT"
     },
     {
       "pid": "",
@@ -132,7 +132,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Armour St, Bellambi",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 31 May 2026 07:18:35 GMT",
+        "description": "Armour St, Bellambi, NSW 2518",
+        "council": "Wollongong",
+        "lat": -34.369817999,
+        "lng": 150.926544,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [
       {
         "title": "GELLIONDALE - NTH BOUNDARY TK",
@@ -161,7 +178,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-05-31T06:24:34+00:00",
+        "updated": "2026-05-31T07:11:15+00:00",
         "description": "DERBY, SHIRE OF DERBY/WEST KIMBERLEY",
         "lat": -17.3105,
         "lng": 123.631,
@@ -435,22 +452,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-05-31T06:50:00+00:00",
-        "description": "WHITLAM",
-        "lat": -35.2766,
-        "lng": 149.0417,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - WHITLAM",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-05-31T06:50:00+00:00",
+        "updated": "2026-05-31T07:19:00+00:00",
         "description": "WHITLAM",
         "lat": -35.2766,
         "lng": 149.0417,
@@ -465,22 +467,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "Fire",
-        "updated": "2026-05-31T06:40:22+00:00",
-        "description": "WHITLAM",
-        "lat": -35.2766,
-        "lng": 149.0417,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - WHITLAM",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Ambulance",
-        "updated": "2026-05-31T05:54:54+00:00",
+        "updated": "2026-05-31T07:17:35+00:00",
         "description": "WHITLAM",
         "lat": -35.2766,
         "lng": 149.0417,
@@ -490,7 +477,7 @@
       }
     ]
   },
-  "incident_count": 23,
+  "incident_count": 22,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
