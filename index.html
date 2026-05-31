@@ -979,13 +979,13 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
       <button class="wp-toggle" onclick="toggleRiskPanel()" title="Close risk panel">&#10005;</button>
     </div>
     <div id="risk-content">
-      <div id="abc-alert-section" style="display:none;border-bottom:1px solid var(--border);margin-bottom:4px;padding-bottom:4px;">
+      <div id="abc-alert-section" style="border-bottom:1px solid var(--border);margin-bottom:4px;padding-bottom:4px;">
         <div style="display:flex;align-items:center;gap:6px;padding:6px 10px 4px;">
           <span style="color:#ffd700;font-size:13px;">&#9733;</span>
           <span style="color:#ffd700;font-weight:700;font-size:9px;letter-spacing:.08em;">ABC LR ALERTS</span>
-          <span id="abc-alert-count" style="color:var(--text3);font-size:9px;"></span>
+          <span id="abc-alert-count" style="color:var(--text3);font-size:9px;">(0)</span>
         </div>
-        <div id="abc-alert-content"></div>
+        <div id="abc-alert-content"><div class="wp-none" style="color:var(--accent2)">&#10003; No active ABC LR alerts</div></div>
       </div>
       <div class="wp-none">Press Refresh or wait for data to load</div>
 
@@ -1180,16 +1180,17 @@ function renderAbcPanel() {
   var el = document.getElementById('abc-alert-content');
   if(!el) return;
 
+  var section = document.getElementById('abc-alert-section');
+  if(section) section.style.display = '';
+
+  var countEl = document.getElementById('abc-alert-count');
+
   if(!abcAlerts.length){
-    el.style.display = 'none';
-    document.getElementById('abc-alert-section').style.display = 'none';
+    if(countEl) countEl.textContent = '(0)';
+    el.innerHTML = '<div class="wp-none" style="color:var(--accent2)">&#10003; No active ABC LR alerts</div>';
     return;
   }
-  document.getElementById('abc-alert-section').style.display = '';
-  el.style.display = '';
 
-  // Update count in header
-  var countEl = document.getElementById('abc-alert-count');
   if(countEl) countEl.textContent = '(' + abcAlerts.length + ')';
 
   // Group by level then by reason
