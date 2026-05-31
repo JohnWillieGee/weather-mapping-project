@@ -1,52 +1,52 @@
 {
-  "generated_utc": "2026-05-31T11:53:24.121399+00:00",
-  "last_checked_utc": "2026-05-31T11:53:24.121399+00:00",
+  "generated_utc": "2026-05-31T12:23:25.868441+00:00",
+  "last_checked_utc": "2026-05-31T12:23:25.868441+00:00",
   "warning_count": 13,
   "warnings": [
     {
       "pid": "",
-      "title": "31/16:05 EST Marine Wind Warning Summary for New South Wales",
+      "title": "31/22:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 31 May 2026 06:05:13 GMT"
+      "issued": "Sun, 31 May 2026 12:00:17 GMT"
     },
     {
       "pid": "",
-      "title": "31/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "31/22:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 31 May 2026 06:15:24 GMT"
+      "issued": "Sun, 31 May 2026 12:00:18 GMT"
     },
     {
       "pid": "IDV21037",
-      "title": "31/16:50 EST \n                Severe Weather Warning\n            \nfor \n                parts of Central, East Gippsland, North Central, North East, West and South Gippsland and South West Forecast Districts.",
+      "title": "31/22:19 EST \n                Severe Weather Warning\n            \nfor \n                parts of Central, East Gippsland, North Central, North East, West and South Gippsland and South West Forecast Districts.",
       "type": "severe_weather",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/products/IDV21037.shtml",
       "desc": "",
-      "issued": "Sun, 31 May 2026 06:50:28 GMT"
+      "issued": "Sun, 31 May 2026 12:19:02 GMT"
     },
     {
       "pid": "",
-      "title": "31/17:07 EST Warning to Sheep Graziers\nfor North Central, North East, South West and Central forecast districts",
+      "title": "31/22:15 EST Warning to Sheep Graziers\nfor North Central, North East, South West and Central forecast districts",
       "type": "other",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Sun, 31 May 2026 07:07:56 GMT"
+      "issued": "Sun, 31 May 2026 12:15:48 GMT"
     },
     {
       "pid": "",
-      "title": "31/15:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "31/21:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sun, 31 May 2026 06:00:12 GMT"
+      "issued": "Sun, 31 May 2026 12:00:10 GMT"
     },
     {
       "pid": "",
@@ -113,12 +113,12 @@
     },
     {
       "pid": "",
-      "title": "31/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "31/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 31 May 2026 06:05:13 GMT"
+      "issued": "Sun, 31 May 2026 12:00:14 GMT"
     }
   ],
   "fetch_errors": {},
@@ -145,6 +145,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire - KARELLA ST",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-05-31T12:17:05+00:00",
+        "description": "NEDLANDS, CITY OF NEDLANDS",
+        "lat": -31.973,
+        "lng": 115.8103,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1c26f585a23d859318be24?display=modal"
+      },
       {
         "title": "Bushfire - ROWAN ST",
         "alertLevel": "",
@@ -229,7 +244,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-05-31T11:41:28+00:00",
+        "updated": "2026-05-31T11:48:17+00:00",
         "description": "LEE POINT RD, LEE POINT",
         "lat": -12.3428,
         "lng": 130.8938,
@@ -420,7 +435,7 @@
     ],
     "act": []
   },
-  "incident_count": 19,
+  "incident_count": 20,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3401,7 +3416,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-05-31T06:05:00Z",
+      "issued_utc": "2026-05-31T12:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3420,7 +3435,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-05-31T06:15:00Z",
+      "issued_utc": "2026-05-31T12:00:00Z",
       "overview": [
         "Strong Wind Warning for Sunday for Central Coast, Central Gippsland Coast and East Gippsland Coast",
         "Gale Warning for Monday for Central Coast and Port Phillip",
@@ -3443,28 +3458,15 @@
           "summary": "Central Coast, Central Gippsland Coast and East Gippsland Coast"
         },
         {
-          "level": "CAN",
-          "severity": "CAN",
-          "zones": [
-            "West Coast: SA-VIC Border to Cape Otway",
-            "Port Phillip",
-            "Western Port"
-          ],
-          "aac_codes": [
-            "VIC_MW001",
-            "VIC_MW005",
-            "VIC_MW006"
-          ],
-          "summary": "Port Phillip, Western Port and West Coast"
-        },
-        {
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
             "Central Coast: Cape Otway to Wilsons Promontory",
             "Port Phillip"
           ],
-          "aac_codes": [],
+          "aac_codes": [
+            "VIC_MW005"
+          ],
           "summary": "Port Phillip and Central Coast"
         },
         {
@@ -3476,7 +3478,10 @@
             "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island",
             "Western Port"
           ],
-          "aac_codes": [],
+          "aac_codes": [
+            "VIC_MW001",
+            "VIC_MW006"
+          ],
           "summary": "Western Port, West Coast, Central Gippsland Coast and East Gippsland Coast"
         }
       ]
@@ -3484,7 +3489,7 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-05-31T06:00:00Z",
+      "issued_utc": "2026-05-31T12:00:00Z",
       "overview": [
         "Strong Wind Warning for Sunday for Far West Coast, Upper West Coast and Lower West Coast",
         "Gale Warning for Monday for Far West Coast, Upper West Coast, Lower West Coast, Central Coast and South Central Coast",
@@ -3505,17 +3510,6 @@
             "SA_MW003"
           ],
           "summary": "Far West Coast, Upper West Coast and Lower West Coast"
-        },
-        {
-          "level": "CAN",
-          "severity": "CAN",
-          "zones": [
-            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
-          ],
-          "aac_codes": [
-            "SA_MW010"
-          ],
-          "summary": "Lower South East Coast"
         },
         {
           "level": "Gale Warning",
@@ -3549,6 +3543,7 @@
             "SA_MW006",
             "SA_MW007",
             "SA_MW009",
+            "SA_MW010",
             "SA_MW011"
           ],
           "summary": "Adelaide Metropolitan Waters, Spencer Gulf, Gulf St Vincent, Investigator Strait, Upper South East Coast and Lower South East Coast"
@@ -3647,9 +3642,9 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-05-31T06:05:00Z",
+      "issued_utc": "2026-05-31T12:00:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, South West Coast and Central West Coast",
+        "Strong Wind Warning for Sunday for Central North Coast, Banks Strait and Franklin Sound and East of Flinders Island",
         "Strong Wind Warning for Monday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and South East Coast"
       ],
       "hazards": [
@@ -3657,33 +3652,31 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Far North West Coast: Sandy Cape to Stanley",
             "Central North Coast: Stanley to Northern Tip of Flinders Island",
             "Banks Strait and Franklin Sound",
-            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
-            "South West Coast: South East Cape to Low Rocky Point",
-            "Central West Coast: Low Rocky Point to Sandy Cape"
+            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point"
           ],
           "aac_codes": [
-            "TAS_MW001",
             "TAS_MW002",
             "TAS_MW009",
-            "TAS_MW003",
-            "TAS_MW007",
-            "TAS_MW008"
+            "TAS_MW003"
           ],
-          "summary": "Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, South West Coast and Central West Coast"
+          "summary": "Central North Coast, Banks Strait and Franklin Sound and East of Flinders Island"
         },
         {
           "level": "CAN",
           "severity": "CAN",
           "zones": [
-            "South East Coast: Tasman Island to South East Cape"
+            "Far North West Coast: Sandy Cape to Stanley",
+            "South West Coast: South East Cape to Low Rocky Point",
+            "Central West Coast: Low Rocky Point to Sandy Cape"
           ],
           "aac_codes": [
-            "TAS_MW006"
+            "TAS_MW001",
+            "TAS_MW007",
+            "TAS_MW008"
           ],
-          "summary": "South East Coast"
+          "summary": "Far North West Coast, South West Coast and Central West Coast"
         },
         {
           "level": "Strong Wind Warning",
@@ -3697,18 +3690,10 @@
             "South East Coast: Tasman Island to South East Cape"
           ],
           "aac_codes": [
-            "TAS_MW005"
+            "TAS_MW005",
+            "TAS_MW006"
           ],
           "summary": "Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and South East Coast"
-        },
-        {
-          "level": "CAN",
-          "severity": "CAN",
-          "zones": [
-            "South West Coast: South East Cape to Low Rocky Point"
-          ],
-          "aac_codes": [],
-          "summary": "South West Coast"
         }
       ]
     }
