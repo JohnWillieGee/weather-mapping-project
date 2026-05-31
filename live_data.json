@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-05-30T23:53:17.999935+00:00",
-  "last_checked_utc": "2026-05-30T23:53:17.999935+00:00",
+  "generated_utc": "2026-05-31T00:23:21.829719+00:00",
+  "last_checked_utc": "2026-05-31T00:23:21.829719+00:00",
   "warning_count": 13,
   "warnings": [
     {
       "pid": "",
-      "title": "31/09:24 EST Marine Wind Warning Summary for New South Wales",
+      "title": "31/10:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 30 May 2026 23:24:40 GMT"
+      "issued": "Sun, 31 May 2026 00:00:17 GMT"
     },
     {
       "pid": "",
@@ -41,21 +41,21 @@
     },
     {
       "pid": "",
-      "title": "31/09:24 EST Marine Wind Warning Summary for Victoria",
+      "title": "31/10:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 30 May 2026 23:24:43 GMT"
+      "issued": "Sun, 31 May 2026 00:00:22 GMT"
     },
     {
       "pid": "",
-      "title": "31/03:40 CST Marine Wind Warning Summary for South Australia",
+      "title": "31/09:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sat, 30 May 2026 18:10:10 GMT"
+      "issued": "Sun, 31 May 2026 00:00:12 GMT"
     },
     {
       "pid": "",
@@ -104,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "31/05:01 EST Marine Wind Warning Summary for Tasmania",
+      "title": "31/10:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 30 May 2026 19:01:12 GMT"
+      "issued": "Sun, 31 May 2026 00:00:14 GMT"
     },
     {
       "pid": "IDT20611",
@@ -123,24 +123,7 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Hampden Av, North Wagga Wagga",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 30 May 2026 23:50:35 GMT",
-        "description": "Hampden Av, North Wagga Wagga, NSW 2650",
-        "council": "Wagga Wagga",
-        "lat": -35.1014949999999,
-        "lng": 147.372082,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [
       {
         "title": "GELLIONDALE - NTH BOUNDARY TK",
@@ -450,25 +433,9 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [
-      {
-        "title": "HOUSE FIRE - RICHARDSON",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Fire",
-        "updated": "2026-05-30T23:18:15+00:00",
-        "description": "RICHARDSON",
-        "lat": -35.4252,
-        "lng": 149.1055,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      }
-    ]
+    "act": []
   },
-  "incident_count": 22,
+  "incident_count": 20,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3449,7 +3416,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-05-30T23:24:32Z",
+      "issued_utc": "2026-05-31T00:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3468,7 +3435,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-05-30T23:24:30Z",
+      "issued_utc": "2026-05-31T00:00:00Z",
       "overview": [
         "Strong Wind Warning for Sunday for East Gippsland Coast, Western Port, Central Coast, West Coast, Central Gippsland Coast and Port Phillip",
         "Gale Warning for Monday for Central Coast and Port Phillip",
@@ -3523,9 +3490,9 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-05-30T18:10:00Z",
+      "issued_utc": "2026-05-31T00:00:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Far West Coast, Upper West Coast and Lower South East Coast",
+        "Strong Wind Warning for Sunday for Far West Coast, Upper West Coast, Lower West Coast and Lower South East Coast",
         "Gale Warning for Monday for Far West Coast, Lower West Coast, Central Coast and South Central Coast",
         "Strong Wind Warning for Monday for Upper West Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait, Upper South East Coast, Lower South East Coast and Adelaide Metropolitan Waters"
       ],
@@ -3536,14 +3503,16 @@
           "zones": [
             "Far West Coast: WA-SA Border to Fowlers Bay",
             "Upper West Coast: Fowlers Bay to Elliston",
+            "Lower West Coast: Elliston to Cape Carnot",
             "Lower South East Coast: Cape Jaffa to SA-VIC Border"
           ],
           "aac_codes": [
             "SA_MW001",
             "SA_MW002",
+            "SA_MW003",
             "SA_MW010"
           ],
-          "summary": "Far West Coast, Upper West Coast and Lower South East Coast"
+          "summary": "Far West Coast, Upper West Coast, Lower West Coast and Lower South East Coast"
         },
         {
           "level": "Gale Warning",
@@ -3555,7 +3524,6 @@
             "South Central Coast"
           ],
           "aac_codes": [
-            "SA_MW003",
             "SA_MW004",
             "SA_MW008"
           ],
@@ -3667,10 +3635,10 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-05-30T19:00:58Z",
+      "issued_utc": "2026-05-31T00:00:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, Central West Coast, South East Coast, East of Flinders Island and South West Coast",
-        "Strong Wind Warning for Monday for Lower East Coast, South West Coast, Far North West Coast, East of Flinders Island, Banks Strait and Franklin Sound, Central North Coast and South East Coast"
+        "Strong Wind Warning for Sunday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, South East Coast, South West Coast and Central West Coast",
+        "Strong Wind Warning for Monday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, South East Coast and South West Coast"
       ],
       "hazards": [
         {
