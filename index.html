@@ -987,7 +987,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
         </div>
         <div id="abc-alert-content"><div class="wp-none" style="color:var(--accent2)">&#10003; No active ABC LR alerts</div></div>
       </div>
-      <div class="wp-none">Press Refresh or wait for data to load</div>
+      <div id="risk-results"><div class="wp-none">Press Refresh or wait for data to load</div></div>
 
     </div>
     <div class="risk-rules-bar" id="risk-rules-bar">
@@ -4841,7 +4841,7 @@ function flyToRiskSite(lat, lng) {
 // \u2500\u2500 Risk panel render \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 
 function renderRiskPanel() {
-  var el = document.getElementById('risk-content');
+  var el = document.getElementById('risk-results');
   if (!el) return;
 
   var total = riskResults.length;
