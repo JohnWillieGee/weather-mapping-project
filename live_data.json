@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-05-31T22:53:22.076614+00:00",
-  "last_checked_utc": "2026-05-31T22:53:22.076614+00:00",
+  "generated_utc": "2026-05-31T23:23:18.793100+00:00",
+  "last_checked_utc": "2026-05-31T23:23:18.793100+00:00",
   "warning_count": 15,
   "warnings": [
     {
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "01/03:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "01/09:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 31 May 2026 17:00:15 GMT"
+      "issued": "Sun, 31 May 2026 23:00:15 GMT"
     },
     {
       "pid": "",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "01/05:28 WST Marine Wind Warning Summary for Western Australia",
+      "title": "01/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 31 May 2026 21:28:08 GMT"
+      "issued": "Sun, 31 May 2026 23:01:15 GMT"
     },
     {
       "pid": "IDW21037",
@@ -414,7 +414,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-05-31T22:50:00+00:00",
+        "updated": "2026-05-31T23:19:00+00:00",
         "description": "RICHARDSON",
         "lat": -35.4252,
         "lng": 149.1055,
@@ -3405,7 +3405,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-05-31T17:00:00Z",
+      "issued_utc": "2026-05-31T23:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3613,11 +3613,11 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-31T21:27:59Z",
+      "issued_utc": "2026-05-31T23:01:00Z",
       "overview": [
-        "Gale Warning for Monday for Perth Local Waters, Lancelin Coast, Albany Coast, Leeuwin Coast, Bunbury Geographe Coast, Eucla Coast, Esperance Coast and Perth Coast",
-        "Strong Wind Warning for Monday for Melville Waters and Geraldton Coast",
-        "Gale Warning for Tuesday for Albany Coast, Leeuwin Coast and Eucla Coast",
+        "Gale Warning for Monday for Albany Coast, Esperance Coast and Eucla Coast",
+        "Strong Wind Warning for Monday for Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Perth Local Waters",
+        "Gale Warning for Tuesday for Leeuwin Coast, Albany Coast and Eucla Coast",
         "Strong Wind Warning for Tuesday for Bunbury Geographe Coast and Esperance Coast"
       ],
       "hazards": [
@@ -3625,13 +3625,25 @@
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay",
+            "Eucla Coast: Israelite Bay to WA-SA Border"
+          ],
+          "aac_codes": [
+            "WA_MW012",
+            "WA_MW013",
+            "WA_MW014"
+          ],
+          "summary": "Albany Coast, Esperance Coast and Eucla Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
             "Lancelin Coast: Jurien Bay to Two Rocks",
             "Perth Coast: Two Rocks to Dawesville",
             "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay",
-            "Eucla Coast: Israelite Bay to WA-SA Border",
             "Perth Local Waters"
           ],
           "aac_codes": [
@@ -3639,16 +3651,13 @@
             "WA_MW009",
             "WA_MW010",
             "WA_MW011",
-            "WA_MW012",
-            "WA_MW013",
-            "WA_MW014",
             "WA_MW015"
           ],
-          "summary": "Perth Local Waters, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
+          "summary": "Perth Local Waters, Lancelin Coast, Perth Coast, Bunbury Geographe Coast and Leeuwin Coast"
         },
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "CAN",
+          "severity": "CAN",
           "zones": [
             "Geraldton Coast: Kalbarri to Jurien Bay",
             "Melville Waters"
