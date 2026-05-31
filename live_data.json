@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-05-31T16:53:19.021597+00:00",
-  "last_checked_utc": "2026-05-31T16:53:19.021597+00:00",
-  "warning_count": 14,
+  "generated_utc": "2026-05-31T17:23:17.234743+00:00",
+  "last_checked_utc": "2026-05-31T17:23:17.234743+00:00",
+  "warning_count": 15,
   "warnings": [
     {
       "pid": "",
@@ -50,6 +50,15 @@
     },
     {
       "pid": "",
+      "title": "01/03:00 EST Marine Wind Warning Summary for Queensland",
+      "type": "wind",
+      "state": "QLD",
+      "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Sun, 31 May 2026 17:00:15 GMT"
+    },
+    {
+      "pid": "",
       "title": "31/21:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
@@ -77,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "31/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "01/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 31 May 2026 11:01:14 GMT"
+      "issued": "Sun, 31 May 2026 17:01:12 GMT"
     },
     {
       "pid": "IDW21037",
@@ -155,6 +164,36 @@
     "tas": [],
     "wa": [
       {
+        "title": "Fire - ALBANY HWY",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-05-31T17:14:11+00:00",
+        "description": "VICTORIA PARK, TOWN OF VICTORIA PARK",
+        "lat": -31.973,
+        "lng": 115.8958,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1c6c97e8e026319e1dc3ab?display=modal"
+      },
+      {
+        "title": "Fire - BRUNS DR",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-05-31T16:56:41+00:00",
+        "description": "DARLING DOWNS, SHIRE OF SERPENTINE-JARRAHDALE",
+        "lat": -32.1904,
+        "lng": 116.0144,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1c65848be8ebc25d3d9081?display=modal"
+      },
+      {
         "title": "Fire - CALINGIRI-GOOMALLING RD",
         "alertLevel": "",
         "status": "active",
@@ -168,21 +207,6 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1c552ec00fc13167dd3774?display=modal"
-      },
-      {
-        "title": "Fire - BRUNS DR",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-05-31T16:44:31+00:00",
-        "description": "DARLING DOWNS, SHIRE OF SERPENTINE-JARRAHDALE",
-        "lat": -32.1904,
-        "lng": 116.0144,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1c65848be8ebc25d3d9081?display=modal"
       },
       {
         "title": "Structure Fire - GLASSHOUSE DR",
@@ -399,7 +423,7 @@
     ],
     "act": []
   },
-  "incident_count": 17,
+  "incident_count": 18,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3377,6 +3401,25 @@
     }
   },
   "marine_warnings": {
+    "QLD": {
+      "state": "QLD",
+      "product": "IDQ20085",
+      "issued_utc": "2026-05-31T17:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Gold Coast Waters: Cape Moreton to Point Danger"
+          ],
+          "aac_codes": [
+            "QLD_MW014"
+          ],
+          "summary": "Gold Coast Waters"
+        }
+      ]
+    },
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
@@ -3519,69 +3562,18 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-05-31T11:01:00Z",
+      "issued_utc": "2026-05-31T17:01:00Z",
       "overview": [
-        "Storm Force Wind Warning for Sunday for Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Perth Local Waters",
-        "Gale Warning for Sunday for Geraldton Coast, Lancelin Coast, Albany Coast, Esperance Coast and Melville Waters",
-        "Strong Wind Warning for Sunday for Gascoyne Coast and Eucla Coast",
-        "Gale Warning for Monday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast, Eucla Coast and Perth Local Waters",
-        "Strong Wind Warning for Monday for Melville Waters"
+        "Gale Warning for Monday for Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast, Eucla Coast and Perth Local Waters",
+        "Strong Wind Warning for Monday for Geraldton Coast and Melville Waters",
+        "Gale Warning for Tuesday for Leeuwin Coast, Albany Coast and Eucla Coast",
+        "Strong Wind Warning for Tuesday for Bunbury Geographe Coast and Esperance Coast"
       ],
       "hazards": [
         {
-          "level": "Storm Force Warning",
-          "severity": "STO",
-          "zones": [
-            "Perth Coast: Two Rocks to Dawesville",
-            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
-            "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Perth Local Waters"
-          ],
-          "aac_codes": [
-            "WA_MW009",
-            "WA_MW010",
-            "WA_MW011",
-            "WA_MW015"
-          ],
-          "summary": "Perth Local Waters, Perth Coast, Bunbury Geographe Coast and Leeuwin Coast"
-        },
-        {
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
-            "Geraldton Coast: Kalbarri to Jurien Bay",
-            "Lancelin Coast: Jurien Bay to Two Rocks",
-            "Albany Coast: Walpole to Bremer Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay",
-            "Melville Waters"
-          ],
-          "aac_codes": [
-            "WA_MW007",
-            "WA_MW008",
-            "WA_MW012",
-            "WA_MW013",
-            "WA_MW016"
-          ],
-          "summary": "Melville Waters, Geraldton Coast, Lancelin Coast, Albany Coast and Esperance Coast"
-        },
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Gascoyne Coast: Cape Cuvier to Kalbarri",
-            "Eucla Coast: Israelite Bay to WA-SA Border"
-          ],
-          "aac_codes": [
-            "WA_MW006",
-            "WA_MW014"
-          ],
-          "summary": "Gascoyne Coast and Eucla Coast"
-        },
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "Geraldton Coast: Kalbarri to Jurien Bay",
             "Lancelin Coast: Jurien Bay to Two Rocks",
             "Perth Coast: Two Rocks to Dawesville",
             "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
@@ -3591,17 +3583,62 @@
             "Eucla Coast: Israelite Bay to WA-SA Border",
             "Perth Local Waters"
           ],
-          "aac_codes": [],
-          "summary": "Perth Local Waters, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
+          "aac_codes": [
+            "WA_MW008",
+            "WA_MW009",
+            "WA_MW010",
+            "WA_MW011",
+            "WA_MW012",
+            "WA_MW013",
+            "WA_MW014",
+            "WA_MW015"
+          ],
+          "summary": "Perth Local Waters, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
         },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Geraldton Coast: Kalbarri to Jurien Bay",
             "Melville Waters"
           ],
+          "aac_codes": [
+            "WA_MW007",
+            "WA_MW016"
+          ],
+          "summary": "Melville Waters and Geraldton Coast"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
+            "Gascoyne Coast: Cape Cuvier to Kalbarri"
+          ],
+          "aac_codes": [
+            "WA_MW006"
+          ],
+          "summary": ""
+        },
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay",
+            "Eucla Coast: Israelite Bay to WA-SA Border"
+          ],
           "aac_codes": [],
-          "summary": "Melville Waters"
+          "summary": "Leeuwin Coast, Albany Coast and Eucla Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
+            "Esperance Coast: Bremer Bay to Israelite Bay"
+          ],
+          "aac_codes": [],
+          "summary": "Bunbury Geographe Coast and Esperance Coast"
         }
       ]
     },
