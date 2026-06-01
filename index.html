@@ -5165,8 +5165,8 @@ function toggleSpToggle(key, el) {
   var on = !el.classList.contains('on');
   el.classList.toggle('on', on);
   if (key === 'labels') { S.labels = on; applyLabelsToggle(); }
-  else if (key === 'fdr') { S.fdrEnabled = on; riskFDREnabled = on; document.getElementById('ropt-fdr').classList.toggle('on', on); computeRisks(); }
-  else if (key === 'storm') { S.stormEnabled = on; riskStormMFEnabled = on; document.getElementById('ropt-stormMF').classList.toggle('on', on); computeRisks(); }
+  else if (key === 'fdr') { S.fdrEnabled = on; riskFDREnabled = on; var _fc=document.getElementById('ropt-fdr'); if(_fc) _fc.classList.toggle('on', on); computeRisks(); }
+  else if (key === 'storm') { S.stormEnabled = on; riskStormMFEnabled = on; var _sc=document.getElementById('ropt-stormMF'); if(_sc) _sc.classList.toggle('on', on); computeRisks(); }
   markCustomIfNeeded();
   saveSettings();
 }
