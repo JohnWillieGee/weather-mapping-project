@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-01T08:23:20.694591+00:00",
-  "last_checked_utc": "2026-06-01T08:23:20.694591+00:00",
+  "generated_utc": "2026-06-01T08:53:21.329177+00:00",
+  "last_checked_utc": "2026-06-01T08:53:21.329177+00:00",
   "warning_count": 20,
   "warnings": [
     {
       "pid": "",
-      "title": "01/16:05 EST Marine Wind Warning Summary for New South Wales",
+      "title": "01/18:24 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 01 Jun 2026 06:05:21 GMT"
+      "issued": "Mon, 01 Jun 2026 08:24:22 GMT"
     },
     {
       "pid": "IDN21037",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "01/17:54 EST Marine Wind Warning Summary for Victoria",
+      "title": "01/18:21 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 01 Jun 2026 07:54:22 GMT"
+      "issued": "Mon, 01 Jun 2026 08:21:42 GMT"
     },
     {
       "pid": "IDV21037",
@@ -131,21 +131,21 @@
     },
     {
       "pid": "IDW21037",
-      "title": "01/10:33 WST \n                Severe Weather Warning\n            \nfor \n                Eucla and parts of South East Coastal districts.",
+      "title": "01/16:24 WST \n                Cancellation of Severe Weather Warning\n            \nfor \n                Eucla and South East Coastal districts.",
       "type": "severe_weather",
       "state": "WA",
       "link": "http://reg.bom.gov.au/products/IDW21037.shtml",
       "desc": "",
-      "issued": "Mon, 01 Jun 2026 02:33:13 GMT"
+      "issued": "Mon, 01 Jun 2026 08:24:35 GMT"
     },
     {
       "pid": "IDW21137",
-      "title": "01/10:44 WST \n                Coastal Hazard Warning\n            \nfor \n                parts of South West, South Coastal and South East Coastal districts.",
+      "title": "01/16:32 WST \n                Cancellation of Coastal Hazard Warning\n            \nfor \n                South West, South Coastal and South East Coastal districts.",
       "type": "other",
       "state": "WA",
       "link": "http://reg.bom.gov.au/products/IDW21137.shtml",
       "desc": "",
-      "issued": "Mon, 01 Jun 2026 02:44:20 GMT"
+      "issued": "Mon, 01 Jun 2026 08:32:17 GMT"
     },
     {
       "pid": "",
@@ -167,12 +167,12 @@
     },
     {
       "pid": "",
-      "title": "01/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "01/18:22 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 01 Jun 2026 06:05:12 GMT"
+      "issued": "Mon, 01 Jun 2026 08:22:43 GMT"
     },
     {
       "pid": "IDT20605",
@@ -186,24 +186,7 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Wommin Bay Rd, Kingscliff",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 01 Jun 2026 08:18:45 GMT",
-        "description": "Wommin Bay Rd, Kingscliff, NSW 2487",
-        "council": "Tweed",
-        "lat": -28.256516,
-        "lng": 153.579768999,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -520,7 +503,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-06-01T08:19:00+00:00",
+        "updated": "2026-06-01T08:48:00+00:00",
         "description": "RICHARDSON",
         "lat": -35.4252,
         "lng": 149.1055,
@@ -530,7 +513,7 @@
       }
     ]
   },
-  "incident_count": 22,
+  "incident_count": 21,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3530,15 +3513,12 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-06-01T06:05:00Z",
-      "overview": [
-        "Strong Wind Warning for Monday for Eden Coast",
-        "Strong Wind Warning for Tuesday for Byron Coast, Coffs Coast, Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast"
-      ],
+      "issued_utc": "2026-06-01T08:24:08Z",
+      "overview": [],
       "hazards": [
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "CAN",
+          "severity": "CAN",
           "zones": [
             "Eden Coast: Montague Island to Gabo Island"
           ],
@@ -3574,12 +3554,12 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-06-01T07:54:08Z",
+      "issued_utc": "2026-06-01T08:21:16Z",
       "overview": [
         "Gale Warning for Monday for Central Coast and Port Phillip",
-        "Strong Wind Warning for Monday for West Coast, Western Port and East Gippsland Coast",
+        "Strong Wind Warning for Monday for West Coast and Western Port",
         "Gale Warning for Tuesday for Central Coast and Port Phillip",
-        "Strong Wind Warning for Tuesday for East Gippsland Coast, Western Port, Central Gippsland Coast and West Coast"
+        "Strong Wind Warning for Tuesday for West Coast, Central Gippsland Coast and Western Port"
       ],
       "hazards": [
         {
@@ -3600,26 +3580,24 @@
           "severity": "STR",
           "zones": [
             "West Coast: SA-VIC Border to Cape Otway",
-            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island",
             "Western Port"
           ],
           "aac_codes": [
             "VIC_MW001",
-            "VIC_MW004",
             "VIC_MW006"
           ],
-          "summary": "Western Port, West Coast and East Gippsland Coast"
+          "summary": "Western Port and West Coast"
         },
         {
           "level": "CAN",
           "severity": "CAN",
           "zones": [
-            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance"
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
           ],
           "aac_codes": [
-            "VIC_MW003"
+            "VIC_MW004"
           ],
-          "summary": "Central Gippsland Coast"
+          "summary": "East Gippsland Coast"
         },
         {
           "level": "Gale Warning",
@@ -3637,11 +3615,21 @@
           "zones": [
             "West Coast: SA-VIC Border to Cape Otway",
             "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
-            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island",
             "Western Port"
           ],
+          "aac_codes": [
+            "VIC_MW003"
+          ],
+          "summary": "Western Port, West Coast and Central Gippsland Coast"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
+          ],
           "aac_codes": [],
-          "summary": "Western Port, West Coast, Central Gippsland Coast and East Gippsland Coast"
+          "summary": "East Gippsland Coast"
         }
       ]
     },
@@ -3807,7 +3795,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-01T06:05:00Z",
+      "issued_utc": "2026-06-01T08:22:33Z",
       "overview": [
         "Strong Wind Warning for Monday for Far North West Coast and Central North Coast",
         "Strong Wind Warning for Tuesday for Far North West Coast, Central North Coast, South West Coast and Central West Coast"
