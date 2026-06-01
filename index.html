@@ -3174,6 +3174,7 @@ function showWarnType(type) {
   var tab = document.getElementById('wt-' + type);
   if (tab) tab.classList.add('on');
   renderWarningsPanel();
+  if (warningsVisible) renderWarningsMap();
 }
 
 function renderWarningsPanel() {
