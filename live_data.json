@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-01T19:53:21.022074+00:00",
-  "last_checked_utc": "2026-06-01T19:53:21.022074+00:00",
+  "generated_utc": "2026-06-01T20:23:17.451893+00:00",
+  "last_checked_utc": "2026-06-01T20:23:17.451893+00:00",
   "warning_count": 16,
   "warnings": [
     {
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "02/04:10 EST Marine Wind Warning Summary for Victoria",
+      "title": "02/06:01 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 01 Jun 2026 18:10:21 GMT"
+      "issued": "Mon, 01 Jun 2026 20:01:04 GMT"
     },
     {
       "pid": "IDV21037",
@@ -113,12 +113,12 @@
     },
     {
       "pid": "IDS21137",
-      "title": "01/22:29 CST \n                Coastal Hazard Warning\n            \nfor \n                Yorke Peninsula, Kangaroo Island and parts of Adelaide Metropolitan, Mount Lofty Ranges, West Coast, Lower Eyre Peninsula, Eastern Eyre Peninsula, Mid North, Murraylands, Upper South East, Lower South East and Flinders districts.",
+      "title": "02/05:20 CST \n                Coastal Hazard Warning\n            \nfor \n                Yorke Peninsula, Kangaroo Island and parts of Adelaide Metropolitan, Mount Lofty Ranges, West Coast, Lower Eyre Peninsula, Eastern Eyre Peninsula, Mid North, Murraylands, Upper South East, Lower South East and Flinders districts.",
       "type": "other",
       "state": "SA",
       "link": "http://reg.bom.gov.au/products/IDS21137.shtml",
       "desc": "",
-      "issued": "Mon, 01 Jun 2026 12:59:15 GMT"
+      "issued": "Mon, 01 Jun 2026 19:50:21 GMT"
     },
     {
       "pid": "",
@@ -3523,25 +3523,35 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-06-01T18:10:00Z",
+      "issued_utc": "2026-06-01T20:00:50Z",
       "overview": [
-        "Strong Wind Warning for Tuesday for Central Coast and Port Phillip",
-        "Gale Warning for Wednesday for West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast",
-        "Strong Wind Warning for Wednesday for Port Phillip and Western Port"
+        "Gale Warning for Tuesday for Port Phillip",
+        "Strong Wind Warning for Tuesday for Central Coast",
+        "Gale Warning for Wednesday for Central Coast, East Gippsland Coast, Central Gippsland Coast and West Coast",
+        "Strong Wind Warning for Wednesday for Western Port and Port Phillip"
       ],
       "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "Port Phillip"
+          ],
+          "aac_codes": [
+            "VIC_MW005"
+          ],
+          "summary": "Port Phillip"
+        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Central Coast: Cape Otway to Wilsons Promontory",
-            "Port Phillip"
+            "Central Coast: Cape Otway to Wilsons Promontory"
           ],
           "aac_codes": [
-            "VIC_MW002",
-            "VIC_MW005"
+            "VIC_MW002"
           ],
-          "summary": "Port Phillip and Central Coast"
+          "summary": "Central Coast"
         },
         {
           "level": "CAN",
