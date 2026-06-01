@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-06-01T17:53:16.226916+00:00",
-  "last_checked_utc": "2026-06-01T17:53:16.226916+00:00",
+  "generated_utc": "2026-06-01T18:23:17.716370+00:00",
+  "last_checked_utc": "2026-06-01T18:23:17.716370+00:00",
   "warning_count": 18,
   "warnings": [
     {
       "pid": "",
-      "title": "01/21:10 EST Marine Wind Warning Summary for New South Wales",
+      "title": "02/04:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 01 Jun 2026 11:10:59 GMT"
+      "issued": "Mon, 01 Jun 2026 18:00:30 GMT"
     },
     {
       "pid": "IDN21037",
-      "title": "01/22:38 EST \n                Severe Weather Warning\n            \nfor \n                parts of Mid North Coast, South Coast, Central Tablelands, Southern Tablelands, Snowy Mountains, Northern Tablelands, Hunter and South West Slopes Forecast Districts.",
+      "title": "02/04:11 EST \n                Severe Weather Warning\n            \nfor \n                parts of Mid North Coast, South Coast, Central Tablelands, Southern Tablelands, Snowy Mountains, Northern Tablelands, Hunter and South West Slopes Forecast Districts.",
       "type": "severe_weather",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/products/IDN21037.shtml",
       "desc": "",
-      "issued": "Mon, 01 Jun 2026 12:38:26 GMT"
+      "issued": "Mon, 01 Jun 2026 18:11:10 GMT"
     },
     {
       "pid": "",
@@ -32,21 +32,21 @@
     },
     {
       "pid": "",
-      "title": "01/21:13 EST Marine Wind Warning Summary for Victoria",
+      "title": "02/04:10 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 01 Jun 2026 11:13:16 GMT"
+      "issued": "Mon, 01 Jun 2026 18:10:21 GMT"
     },
     {
       "pid": "IDV21037",
-      "title": "01/22:26 EST \n                Severe Weather Warning\n            \nfor \n                parts of East Gippsland, North East, West and South Gippsland, Central and North Central Forecast Districts.",
+      "title": "02/04:03 EST \n                Severe Weather Warning\n            \nfor \n                parts of East Gippsland, North East and West and South Gippsland Forecast Districts.",
       "type": "severe_weather",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/products/IDV21037.shtml",
       "desc": "",
-      "issued": "Mon, 01 Jun 2026 12:26:35 GMT"
+      "issued": "Mon, 01 Jun 2026 18:03:51 GMT"
     },
     {
       "pid": "IDV21137",
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "01/21:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "02/03:40 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Mon, 01 Jun 2026 12:00:13 GMT"
+      "issued": "Mon, 01 Jun 2026 18:10:10 GMT"
     },
     {
       "pid": "",
@@ -149,12 +149,12 @@
     },
     {
       "pid": "",
-      "title": "01/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "02/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 01 Jun 2026 12:00:13 GMT"
+      "issued": "Mon, 01 Jun 2026 18:00:13 GMT"
     },
     {
       "pid": "IDT20605",
@@ -3479,8 +3479,11 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-06-01T11:10:48Z",
-      "overview": [],
+      "issued_utc": "2026-06-01T18:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Tuesday for Byron Coast, Coffs Coast, Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast",
+        "Strong Wind Warning for Wednesday for Byron Coast, Hunter Coast, Sydney Coast, Illawarra Coast and Batemans Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3504,23 +3507,35 @@
             "NSW_MW001"
           ],
           "summary": "Byron Coast, Coffs Coast, Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Byron Coast: Point Danger to Wooli",
+            "Hunter Coast: Seal Rocks to Broken Bay",
+            "Sydney Coast: Broken Bay to Port Hacking",
+            "Illawarra Coast: Port Hacking to Ulladulla",
+            "Batemans Coast: Ulladulla to Montague Island"
+          ],
+          "aac_codes": [],
+          "summary": "Byron Coast, Hunter Coast, Sydney Coast, Illawarra Coast and Batemans Coast"
         }
       ]
     },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-06-01T11:12:58Z",
+      "issued_utc": "2026-06-01T18:10:00Z",
       "overview": [
-        "Gale Warning for Monday for Central Coast and Port Phillip",
-        "Strong Wind Warning for Monday for West Coast and Western Port",
-        "Gale Warning for Tuesday for Central Coast and Port Phillip",
-        "Strong Wind Warning for Tuesday for West Coast, Central Gippsland Coast and Western Port"
+        "Strong Wind Warning for Tuesday for Central Coast and Port Phillip",
+        "Gale Warning for Wednesday for West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast",
+        "Strong Wind Warning for Wednesday for Port Phillip and Western Port"
       ],
       "hazards": [
         {
-          "level": "Gale Warning",
-          "severity": "GALE",
+          "level": "Strong Wind Warning",
+          "severity": "STR",
           "zones": [
             "Central Coast: Cape Otway to Wilsons Promontory",
             "Port Phillip"
@@ -3532,94 +3547,56 @@
           "summary": "Port Phillip and Central Coast"
         },
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "West Coast: SA-VIC Border to Cape Otway",
-            "Western Port"
-          ],
-          "aac_codes": [
-            "VIC_MW001",
-            "VIC_MW006"
-          ],
-          "summary": "Western Port and West Coast"
-        },
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "Central Coast: Cape Otway to Wilsons Promontory",
-            "Port Phillip"
-          ],
-          "aac_codes": [],
-          "summary": "Port Phillip and Central Coast"
-        },
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "CAN",
+          "severity": "CAN",
           "zones": [
             "West Coast: SA-VIC Border to Cape Otway",
             "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
             "Western Port"
           ],
           "aac_codes": [
-            "VIC_MW003"
+            "VIC_MW001",
+            "VIC_MW003",
+            "VIC_MW006"
           ],
           "summary": "Western Port, West Coast and Central Gippsland Coast"
+        },
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "West Coast: SA-VIC Border to Cape Otway",
+            "Central Coast: Cape Otway to Wilsons Promontory",
+            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
+          ],
+          "aac_codes": [
+            "VIC_MW004"
+          ],
+          "summary": "West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Port Phillip",
+            "Western Port"
+          ],
+          "aac_codes": [],
+          "summary": "Port Phillip and Western Port"
         }
       ]
     },
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-06-01T12:00:00Z",
+      "issued_utc": "2026-06-01T18:10:00Z",
       "overview": [
-        "Gale Warning for Monday for Far West Coast, Upper West Coast, Lower West Coast and Central Coast",
-        "Strong Wind Warning for Monday for South Central Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait, Upper South East Coast, Lower South East Coast and Adelaide Metropolitan Waters",
         "Gale Warning for Tuesday for Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast, Investigator Strait and Upper South East Coast",
-        "Strong Wind Warning for Tuesday for Spencer Gulf, Gulf St Vincent, Lower South East Coast and Adelaide Metropolitan Waters"
+        "Strong Wind Warning for Tuesday for Spencer Gulf, Gulf St Vincent, Lower South East Coast and Adelaide Metropolitan Waters",
+        "Strong Wind Warning for Wednesday for Far West Coast, Upper West Coast, Lower West Coast, South Central Coast, Upper South East Coast and Lower South East Coast"
       ],
       "hazards": [
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "Far West Coast: WA-SA Border to Fowlers Bay",
-            "Upper West Coast: Fowlers Bay to Elliston",
-            "Lower West Coast: Elliston to Cape Carnot",
-            "Central Coast"
-          ],
-          "aac_codes": [
-            "SA_MW001",
-            "SA_MW002",
-            "SA_MW003",
-            "SA_MW004"
-          ],
-          "summary": "Far West Coast, Upper West Coast, Lower West Coast and Central Coast"
-        },
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "South Central Coast",
-            "Spencer Gulf",
-            "Gulf St Vincent",
-            "Investigator Strait",
-            "Upper South East Coast: Murray Mouth to Cape Jaffa",
-            "Lower South East Coast: Cape Jaffa to SA-VIC Border",
-            "Adelaide Metropolitan Waters"
-          ],
-          "aac_codes": [
-            "SA_MW008",
-            "SA_MW005",
-            "SA_MW006",
-            "SA_MW007",
-            "SA_MW009",
-            "SA_MW010",
-            "SA_MW011"
-          ],
-          "summary": "Adelaide Metropolitan Waters, South Central Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait, Upper South East Coast and Lower South East Coast"
-        },
         {
           "level": "Gale Warning",
           "severity": "GALE",
@@ -3632,7 +3609,15 @@
             "Investigator Strait",
             "Upper South East Coast: Murray Mouth to Cape Jaffa"
           ],
-          "aac_codes": [],
+          "aac_codes": [
+            "SA_MW001",
+            "SA_MW002",
+            "SA_MW003",
+            "SA_MW004",
+            "SA_MW008",
+            "SA_MW007",
+            "SA_MW009"
+          ],
           "summary": "Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast, Investigator Strait and Upper South East Coast"
         },
         {
@@ -3644,8 +3629,27 @@
             "Lower South East Coast: Cape Jaffa to SA-VIC Border",
             "Adelaide Metropolitan Waters"
           ],
-          "aac_codes": [],
+          "aac_codes": [
+            "SA_MW005",
+            "SA_MW006",
+            "SA_MW010",
+            "SA_MW011"
+          ],
           "summary": "Adelaide Metropolitan Waters, Spencer Gulf, Gulf St Vincent and Lower South East Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Far West Coast: WA-SA Border to Fowlers Bay",
+            "Upper West Coast: Fowlers Bay to Elliston",
+            "Lower West Coast: Elliston to Cape Carnot",
+            "South Central Coast",
+            "Upper South East Coast: Murray Mouth to Cape Jaffa",
+            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
+          ],
+          "aac_codes": [],
+          "summary": "Far West Coast, Upper West Coast, Lower West Coast, South Central Coast, Upper South East Coast and Lower South East Coast"
         }
       ]
     },
@@ -3703,25 +3707,13 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-01T12:00:00Z",
+      "issued_utc": "2026-06-01T18:00:00Z",
       "overview": [
-        "Strong Wind Warning for Monday for Far North West Coast and Central North Coast",
-        "Strong Wind Warning for Tuesday for Far North West Coast, Central North Coast, South West Coast and Central West Coast"
+        "Strong Wind Warning for Tuesday for Far North West Coast, Central North Coast, South West Coast and Central West Coast",
+        "Gale Warning for Wednesday for East of Flinders Island",
+        "Strong Wind Warning for Wednesday for Far North West Coast, Central North Coast and South West Coast"
       ],
       "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Far North West Coast: Sandy Cape to Stanley",
-            "Central North Coast: Stanley to Northern Tip of Flinders Island"
-          ],
-          "aac_codes": [
-            "TAS_MW001",
-            "TAS_MW002"
-          ],
-          "summary": "Far North West Coast and Central North Coast"
-        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
@@ -3732,10 +3724,34 @@
             "Central West Coast: Low Rocky Point to Sandy Cape"
           ],
           "aac_codes": [
+            "TAS_MW001",
+            "TAS_MW002",
             "TAS_MW007",
             "TAS_MW008"
           ],
           "summary": "Far North West Coast, Central North Coast, South West Coast and Central West Coast"
+        },
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point"
+          ],
+          "aac_codes": [
+            "TAS_MW003"
+          ],
+          "summary": "East of Flinders Island"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Far North West Coast: Sandy Cape to Stanley",
+            "Central North Coast: Stanley to Northern Tip of Flinders Island",
+            "South West Coast: South East Cape to Low Rocky Point"
+          ],
+          "aac_codes": [],
+          "summary": "Far North West Coast, Central North Coast and South West Coast"
         }
       ]
     }
