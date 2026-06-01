@@ -546,7 +546,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 
       <div style="padding:10px 14px 12px;border-top:1px solid var(--border);margin-top:auto;">
         <div style="font-family:monospace;font-size:9px;color:var(--text3);letter-spacing:.5px;">
-          <span style="color:var(--text2);font-weight:700;">WatchTower</span> &nbsp;v2.35
+          <span style="color:var(--text2);font-weight:700;">WatchTower</span> &nbsp;v2.30
           <span style="float:right;opacity:0.6;">John Willie Gee</span>
         </div>
       </div>
@@ -4575,12 +4575,15 @@ function computeRisks() {
           });
         }
 
-        // Fallback: state match + rough 300km proximity (catches warnings with no district name)
+        // Fallback: state match + rough proximity (catches warnings with no district name)
         if (!inDistrict) {
           var stateMatch = !w.state || w.state.toUpperCase() === (site.state||'').toUpperCase();
           var distToWarn = haversineKm(site.lat, site.lon, w.coords[0], w.coords[1]);
           if (!stateMatch && distToWarn > 400) return;
-          if (distToWarn > 300) return;
+          // Storm/severe use the user-configured storm distance slider
+          var wtype0 = w.type;
+          var proxLimit = (wtype0 === 'thunderstorm' || wtype0 === 'severe_weather') ? S.stormDist : 300;
+          if (distToWarn > proxLimit) return;
           inDistrict = true; // fallback matched
         }
 
@@ -4606,7 +4609,6 @@ function computeRisks() {
         }
 
         if (lvl === RISK_LEVEL.NONE) return;
-        if (!inDistrict && distToWarn > 300) return;
 
         if (lvl > topLevel) topLevel = lvl;
         var isStormAM = isAM && wtype === 'thunderstorm'; // only thunderstorm triggers MF alert popup
