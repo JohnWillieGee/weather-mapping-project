@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-06-01T04:53:18.854530+00:00",
-  "last_checked_utc": "2026-06-01T04:53:18.854530+00:00",
-  "warning_count": 19,
+  "generated_utc": "2026-06-01T05:23:21.093278+00:00",
+  "last_checked_utc": "2026-06-01T05:23:21.093278+00:00",
+  "warning_count": 20,
   "warnings": [
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "01/09:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "01/15:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 31 May 2026 23:00:15 GMT"
+      "issued": "Mon, 01 Jun 2026 05:00:17 GMT"
     },
     {
       "pid": "",
@@ -122,12 +122,12 @@
     },
     {
       "pid": "",
-      "title": "01/08:29 WST Marine Wind Warning Summary for Western Australia",
+      "title": "01/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 01 Jun 2026 00:29:48 GMT"
+      "issued": "Mon, 01 Jun 2026 05:01:14 GMT"
     },
     {
       "pid": "IDW21037",
@@ -173,6 +173,15 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Mon, 01 Jun 2026 00:00:13 GMT"
+    },
+    {
+      "pid": "IDT20605",
+      "title": "01/15:09 EST Initial Minor Flood Warning for the Mersey River",
+      "type": "flood",
+      "state": "TAS",
+      "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDT20605.html",
+      "desc": "",
+      "issued": "Mon, 01 Jun 2026 05:09:53 GMT"
     }
   ],
   "fetch_errors": {},
@@ -200,19 +209,49 @@
     "tas": [],
     "wa": [
       {
-        "title": "Structure Fire - 26B WORNER CR",
+        "title": "Structure Fire - BOLGANUP RD",
         "alertLevel": "",
         "status": "active",
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-01T04:30:18+00:00",
-        "description": "KARRINYUP, CITY OF STIRLING",
-        "lat": -31.8829,
-        "lng": 115.7868,
+        "updated": "2026-06-01T05:11:18+00:00",
+        "description": "PORONGURUP, SHIRE OF PLANTAGENET",
+        "lat": -34.6608,
+        "lng": 117.8945,
         "polys": [],
         "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1d08ec7ada6a9b3ff6fb48?display=modal"
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1d14a920bf4e6c4229ebb6?display=modal"
+      },
+      {
+        "title": "Fire - SEVILLE DR",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-01T05:09:28+00:00",
+        "description": "SEVILLE GROVE, CITY OF ARMADALE",
+        "lat": -32.1423,
+        "lng": 115.9896,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1d142c20bf4e6c4229eb8c?display=modal"
+      },
+      {
+        "title": "Structure Fire - GLASSHOUSE DR",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-01T04:52:09+00:00",
+        "description": "BANKSIA GROVE, CITY OF WANNEROO",
+        "lat": -31.6899,
+        "lng": 115.7962,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1c60c78be8ebc25d3d8fe3?display=modal"
       },
       {
         "title": "Bushfire - BROOME-CAPE LEVEQUE RD",
@@ -228,21 +267,6 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1ce3c4011fa84a3c528e1d?display=modal"
-      },
-      {
-        "title": "Structure Fire - GLASSHOUSE DR",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-01T01:45:57+00:00",
-        "description": "BANKSIA GROVE, CITY OF WANNEROO",
-        "lat": -31.6899,
-        "lng": 115.7962,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1c60c78be8ebc25d3d8fe3?display=modal"
       },
       {
         "title": "Structure Fire - GREAT EASTERN HWY",
@@ -510,7 +534,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-06-01T04:49:00+00:00",
+        "updated": "2026-06-01T05:16:00+00:00",
         "description": "RICHARDSON",
         "lat": -35.4252,
         "lng": 149.1055,
@@ -520,7 +544,7 @@
       }
     ]
   },
-  "incident_count": 22,
+  "incident_count": 23,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3501,7 +3525,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-05-31T23:00:00Z",
+      "issued_utc": "2026-06-01T05:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3708,11 +3732,11 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-01T00:29:39Z",
+      "issued_utc": "2026-06-01T05:01:00Z",
       "overview": [
-        "Gale Warning for Monday for Albany Coast, Eucla Coast and Esperance Coast",
-        "Strong Wind Warning for Monday for Perth Local Waters, Lancelin Coast, Leeuwin Coast, Bunbury Geographe Coast and Perth Coast",
-        "Gale Warning for Tuesday for Albany Coast, Leeuwin Coast and Eucla Coast",
+        "Gale Warning for Monday for Albany Coast, Esperance Coast and Eucla Coast",
+        "Strong Wind Warning for Monday for Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Perth Local Waters",
+        "Gale Warning for Tuesday for Leeuwin Coast, Albany Coast and Eucla Coast",
         "Strong Wind Warning for Tuesday for Bunbury Geographe Coast and Esperance Coast"
       ],
       "hazards": [
