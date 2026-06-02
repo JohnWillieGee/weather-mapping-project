@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-02T12:23:19.251751+00:00",
-  "last_checked_utc": "2026-06-02T12:23:19.251751+00:00",
+  "generated_utc": "2026-06-02T12:53:18.366031+00:00",
+  "last_checked_utc": "2026-06-02T12:53:18.366031+00:00",
   "warning_count": 16,
   "warnings": [
     {
@@ -14,30 +14,30 @@
     },
     {
       "pid": "IDN21037-ACT",
-      "title": "02/16:45 EST \n                Severe Weather Warning\n            \nfor \n                parts of Mid North Coast, Illawarra, South Coast, Central Tablelands, Southern Tablelands, South West Slopes, Snowy Mountains, Australian Capital Territory, Northern Tablelands and Hunter Forecast Districts.",
+      "title": "02/22:49 EST \n                Severe Weather Warning\n            \nfor \n                parts of Mid North Coast, Illawarra, South Coast, Central Tablelands, Southern Tablelands, South West Slopes, Snowy Mountains, Australian Capital Territory, Northern Tablelands and Hunter Forecast Districts.",
       "type": "severe_weather",
       "state": "ACT",
       "link": "http://reg.bom.gov.au/products/IDN21037.shtml",
       "desc": "",
-      "issued": "Tue, 02 Jun 2026 06:45:01 GMT"
+      "issued": "Tue, 02 Jun 2026 12:49:40 GMT"
     },
     {
       "pid": "IDN21037",
-      "title": "02/16:45 EST \n                Severe Weather Warning\n            \nfor \n                parts of Mid North Coast, Illawarra, South Coast, Central Tablelands, Southern Tablelands, South West Slopes, Snowy Mountains, Australian Capital Territory, Northern Tablelands and Hunter Forecast Districts.",
+      "title": "02/22:49 EST \n                Severe Weather Warning\n            \nfor \n                parts of Mid North Coast, Illawarra, South Coast, Central Tablelands, Southern Tablelands, South West Slopes, Snowy Mountains, Australian Capital Territory, Northern Tablelands and Hunter Forecast Districts.",
       "type": "severe_weather",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/products/IDN21037.shtml",
       "desc": "",
-      "issued": "Tue, 02 Jun 2026 06:45:01 GMT"
+      "issued": "Tue, 02 Jun 2026 12:49:40 GMT"
     },
     {
       "pid": "",
-      "title": "02/16:55 EST Warning to Sheep Graziers\nfor Southern Tablelands, South West Slopes, Snowy Mountains and Australian Capital Territory forecast districts",
+      "title": "02/22:23 EST Warning to Sheep Graziers\nfor Southern Tablelands, South West Slopes, Snowy Mountains and Australian Capital Territory forecast districts",
       "type": "other",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Tue, 02 Jun 2026 06:55:57 GMT"
+      "issued": "Tue, 02 Jun 2026 12:23:56 GMT"
     },
     {
       "pid": "",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "IDV21137",
-      "title": "02/16:46 EST \n                Coastal Hazard Warning\n            \nfor \n                parts of Central, East Gippsland, South West and West and South Gippsland Forecast Districts.",
+      "title": "02/22:44 EST \n                Coastal Hazard Warning\n            \nfor \n                parts of Central, East Gippsland, South West and West and South Gippsland Forecast Districts.",
       "type": "other",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/products/IDV21137.shtml",
       "desc": "",
-      "issued": "Tue, 02 Jun 2026 06:46:06 GMT"
+      "issued": "Tue, 02 Jun 2026 12:44:26 GMT"
     },
     {
       "pid": "",
@@ -150,27 +150,29 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Sweethaven Rd, Edensor Park",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Tue, 02 Jun 2026 12:50:35 GMT",
+        "description": "Sweethaven Rd, Edensor Park, NSW 2176",
+        "council": "Fairfield",
+        "lat": -33.870147,
+        "lng": 150.884721,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Fire - BANKSIA ST",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-02T12:15:40+00:00",
-        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.775,
-        "lng": 128.7397,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1ec9ac98a98443421174cf?display=modal"
-      },
       {
         "title": "Fire - MELALEUCA",
         "alertLevel": "",
@@ -178,7 +180,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-02T12:12:19+00:00",
+        "updated": "2026-06-02T12:39:54+00:00",
         "description": "MELALEUCA, CITY OF SWAN",
         "lat": -31.7541,
         "lng": 115.9181,
@@ -263,6 +265,21 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - FRANCES BAY DR, DARWIN CITY",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-02T12:40:30+00:00",
+        "description": "FRANCES BAY DR, DARWIN CITY",
+        "lat": -12.4603,
+        "lng": 130.8476,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - COX PENINSULA RD, TUMBLING WATERS",
         "alertLevel": "Advice",
@@ -451,53 +468,8 @@
         "status": "active",
         "type": "Structure Fire",
         "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-06-02T12:19:00+00:00",
-        "description": "OAKS ESTATE",
-        "lat": -35.3404,
-        "lng": 149.2296,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - OAKS ESTATE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-06-02T12:19:00+00:00",
-        "description": "OAKS ESTATE",
-        "lat": -35.3404,
-        "lng": 149.2296,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - OAKS ESTATE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
         "agency": "Fire",
-        "updated": "2026-06-02T12:06:04+00:00",
-        "description": "OAKS ESTATE",
-        "lat": -35.3404,
-        "lng": 149.2296,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - OAKS ESTATE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Ambulance",
-        "updated": "2026-06-02T11:57:42+00:00",
+        "updated": "2026-06-02T12:34:07+00:00",
         "description": "OAKS ESTATE",
         "lat": -35.3404,
         "lng": 149.2296,
@@ -507,7 +479,7 @@
       }
     ]
   },
-  "incident_count": 23,
+  "incident_count": 21,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
