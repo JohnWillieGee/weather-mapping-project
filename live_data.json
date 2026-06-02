@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-02T04:53:15.027513+00:00",
-  "last_checked_utc": "2026-06-02T04:53:15.027513+00:00",
+  "generated_utc": "2026-06-02T05:23:17.272289+00:00",
+  "last_checked_utc": "2026-06-02T05:23:17.272289+00:00",
   "warning_count": 18,
   "warnings": [
     {
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "02/09:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "02/15:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 01 Jun 2026 23:00:15 GMT"
+      "issued": "Tue, 02 Jun 2026 05:00:15 GMT"
     },
     {
       "pid": "",
@@ -140,12 +140,12 @@
     },
     {
       "pid": "",
-      "title": "02/10:14 WST Marine Wind Warning Summary for Western Australia",
+      "title": "02/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 02 Jun 2026 02:14:41 GMT"
+      "issued": "Tue, 02 Jun 2026 05:01:12 GMT"
     },
     {
       "pid": "",
@@ -168,24 +168,7 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Kendall St, Byron Bay",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Tue, 02 Jun 2026 04:50:35 GMT",
-        "description": "Kendall St, Byron Bay, NSW 2481",
-        "council": "Byron",
-        "lat": -28.638347,
-        "lng": 153.603626,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -466,7 +449,7 @@
     ],
     "act": []
   },
-  "incident_count": 19,
+  "incident_count": 18,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3447,8 +3430,11 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-06-01T23:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-06-02T05:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Tuesday for Gold Coast Waters",
+        "Strong Wind Warning for Wednesday for Sunshine Coast Waters and Gold Coast Waters"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3460,6 +3446,18 @@
             "QLD_MW014"
           ],
           "summary": "Gold Coast Waters"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Sunshine Coast Waters: Double Island Point to Cape Moreton",
+            "Gold Coast Waters: Cape Moreton to Point Danger"
+          ],
+          "aac_codes": [
+            "QLD_MW012"
+          ],
+          "summary": "Sunshine Coast Waters and Gold Coast Waters"
         }
       ]
     },
@@ -3642,40 +3640,39 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-02T02:14:31Z",
+      "issued_utc": "2026-06-02T05:01:00Z",
       "overview": [
-        "Gale Warning for Tuesday for Leeuwin Coast, Albany Coast and Esperance Coast",
-        "Strong Wind Warning for Tuesday for Bunbury Geographe Coast and Eucla Coast",
+        "Strong Wind Warning for Tuesday for Albany Coast, Esperance Coast and Eucla Coast",
         "Strong Wind Warning for Wednesday for Albany Coast, Esperance Coast and Eucla Coast"
       ],
       "hazards": [
         {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay"
-          ],
-          "aac_codes": [
-            "WA_MW011",
-            "WA_MW012",
-            "WA_MW013"
-          ],
-          "summary": "Leeuwin Coast, Albany Coast and Esperance Coast"
-        },
-        {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay",
             "Eucla Coast: Israelite Bay to WA-SA Border"
           ],
           "aac_codes": [
-            "WA_MW010",
+            "WA_MW012",
+            "WA_MW013",
             "WA_MW014"
           ],
-          "summary": "Bunbury Geographe Coast and Eucla Coast"
+          "summary": "Albany Coast, Esperance Coast and Eucla Coast"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
+          "zones": [
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
+            "Leeuwin Coast: Cape Naturaliste to Walpole"
+          ],
+          "aac_codes": [
+            "WA_MW010",
+            "WA_MW011"
+          ],
+          "summary": "Bunbury Geographe Coast and Leeuwin Coast"
         },
         {
           "level": "Strong Wind Warning",
