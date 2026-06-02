@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-02T16:53:14.332352+00:00",
-  "last_checked_utc": "2026-06-02T16:53:14.332352+00:00",
+  "generated_utc": "2026-06-02T17:23:13.430740+00:00",
+  "last_checked_utc": "2026-06-02T17:23:13.430740+00:00",
   "warning_count": 15,
   "warnings": [
     {
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "02/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "03/03:03 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 02 Jun 2026 11:00:16 GMT"
+      "issued": "Tue, 02 Jun 2026 17:03:23 GMT"
     },
     {
       "pid": "",
@@ -113,12 +113,12 @@
     },
     {
       "pid": "",
-      "title": "02/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "03/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 02 Jun 2026 11:01:13 GMT"
+      "issued": "Tue, 02 Jun 2026 17:01:15 GMT"
     },
     {
       "pid": "",
@@ -3343,15 +3343,26 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-06-02T11:00:00Z",
+      "issued_utc": "2026-06-02T17:03:05Z",
       "overview": [
-        "Strong Wind Warning for Tuesday for Gold Coast Waters",
-        "Strong Wind Warning for Wednesday for Sunshine Coast Waters and Gold Coast Waters"
+        "Strong Wind Warning for Wednesday for Sunshine Coast Waters",
+        "Strong Wind Warning for Thursday for Sunshine Coast Waters and Gold Coast Waters"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
+          "zones": [
+            "Sunshine Coast Waters: Double Island Point to Cape Moreton"
+          ],
+          "aac_codes": [
+            "QLD_MW012"
+          ],
+          "summary": "Sunshine Coast Waters"
+        },
+        {
+          "level": "CAN",
+          "severity": "CAN",
           "zones": [
             "Gold Coast Waters: Cape Moreton to Point Danger"
           ],
@@ -3367,9 +3378,7 @@
             "Sunshine Coast Waters: Double Island Point to Cape Moreton",
             "Gold Coast Waters: Cape Moreton to Point Danger"
           ],
-          "aac_codes": [
-            "QLD_MW012"
-          ],
+          "aac_codes": [],
           "summary": "Sunshine Coast Waters and Gold Coast Waters"
         }
       ]
@@ -3549,11 +3558,8 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-02T11:01:00Z",
-      "overview": [
-        "Strong Wind Warning for Tuesday for Albany Coast, Esperance Coast and Eucla Coast",
-        "Strong Wind Warning for Wednesday for Albany Coast, Esperance Coast and Eucla Coast"
-      ],
+      "issued_utc": "2026-06-02T17:01:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3568,17 +3574,6 @@
             "WA_MW013",
             "WA_MW014"
           ],
-          "summary": "Albany Coast, Esperance Coast and Eucla Coast"
-        },
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Albany Coast: Walpole to Bremer Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay",
-            "Eucla Coast: Israelite Bay to WA-SA Border"
-          ],
-          "aac_codes": [],
           "summary": "Albany Coast, Esperance Coast and Eucla Coast"
         }
       ]
