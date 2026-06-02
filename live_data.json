@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-06-02T22:53:21.049833+00:00",
-  "last_checked_utc": "2026-06-02T22:53:21.049833+00:00",
-  "warning_count": 14,
+  "generated_utc": "2026-06-02T23:23:18.418572+00:00",
+  "last_checked_utc": "2026-06-02T23:23:18.418572+00:00",
+  "warning_count": 15,
   "warnings": [
     {
       "pid": "",
@@ -49,6 +49,15 @@
       "issued": "Tue, 02 Jun 2026 18:10:17 GMT"
     },
     {
+      "pid": "IDV21038",
+      "title": "03/09:00 EST \n                Severe Weather Warning\n            \nfor \n                parts of Central, East Gippsland, South West, North East, West and South Gippsland and North Central Forecast Districts.",
+      "type": "severe_weather",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/products/IDV21038.shtml",
+      "desc": "",
+      "issued": "Tue, 02 Jun 2026 23:00:43 GMT"
+    },
+    {
       "pid": "IDV21137",
       "title": "03/04:54 EST \n                Coastal Hazard Warning\n            \nfor \n                parts of Central, East Gippsland, South West and West and South Gippsland Forecast Districts.",
       "type": "other",
@@ -68,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "03/03:03 EST Marine Wind Warning Summary for Queensland",
+      "title": "03/09:03 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 02 Jun 2026 17:03:23 GMT"
+      "issued": "Tue, 02 Jun 2026 23:03:03 GMT"
     },
     {
       "pid": "",
@@ -104,12 +113,12 @@
     },
     {
       "pid": "",
-      "title": "03/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "03/07:06 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 02 Jun 2026 17:01:15 GMT"
+      "issued": "Tue, 02 Jun 2026 23:06:38 GMT"
     },
     {
       "pid": "",
@@ -138,21 +147,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Fire - JAMES ST",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-02T22:32:02+00:00",
-        "description": "GOOMALLING, SHIRE OF GOOMALLING",
-        "lat": -31.3031,
-        "lng": 116.8336,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1f59fe9bda4a5b7adfec85?display=modal"
-      },
       {
         "title": "Fire - CALINGIRI-GOOMALLING RD",
         "alertLevel": "",
@@ -231,16 +225,16 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - FRANCES BAY DR, DARWIN CITY",
+        "title": "Bushfire - Cox Peninsula Road, BERRY SPRINGS",
         "alertLevel": "Advice",
         "status": "active",
-        "type": "Grass Fire",
+        "type": "Bush Fire",
         "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-02T22:42:17+00:00",
-        "description": "FRANCES BAY DR, DARWIN CITY",
-        "lat": -12.4603,
-        "lng": 130.8476,
+        "agency": "Bushfires NT",
+        "updated": "2026-06-02T23:00:00+00:00",
+        "description": "Cox Peninsula Road, BERRY SPRINGS",
+        "lat": -12.6688,
+        "lng": 131.0254,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -306,21 +300,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Bushfire - Cox Peninsula Road, BERRY SPRINGS",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-06-02T03:40:00+00:00",
-        "description": "Cox Peninsula Road, BERRY SPRINGS",
-        "lat": -12.6688,
-        "lng": 131.0254,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - REDCLIFFE RD, NOONAMAH",
         "alertLevel": "Advice",
         "status": "active",
@@ -364,26 +343,11 @@
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Bushfire - Goode Road, LLOYD CREEK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-05-31T01:42:00+00:00",
-        "description": "Goode Road, LLOYD CREEK",
-        "lat": -12.6354,
-        "lng": 131.1492,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
     "act": []
   },
-  "incident_count": 16,
+  "incident_count": 13,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3361,28 +3325,6 @@
     }
   },
   "marine_warnings": {
-    "QLD": {
-      "state": "QLD",
-      "product": "IDQ20085",
-      "issued_utc": "2026-06-02T17:03:05Z",
-      "overview": [
-        "Strong Wind Warning for Wednesday for Sunshine Coast Waters",
-        "Strong Wind Warning for Thursday for Sunshine Coast Waters and Gold Coast Waters"
-      ],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Sunshine Coast Waters: Double Island Point to Cape Moreton"
-          ],
-          "aac_codes": [
-            "QLD_MW012"
-          ],
-          "summary": "Sunshine Coast Waters"
-        }
-      ]
-    },
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
@@ -3501,7 +3443,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-02T17:01:00Z",
+      "issued_utc": "2026-06-02T23:06:30Z",
       "overview": [],
       "hazards": [
         {
