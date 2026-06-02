@@ -422,6 +422,10 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
             <div><span class="sp-lbl">Site labels</span><span class="sp-sub">Name tags on map</span></div>
             <div class="sp-tgl on" id="sp-tgl-labels" onclick="toggleSpToggle('labels',this)"></div>
           </div>
+          <div class="sp-row">
+            <div><span class="sp-lbl">Map legend</span><span class="sp-sub">Show / hide legend</span></div>
+            <div class="sp-tgl on" id="sp-tgl-legend" onclick="toggleSpToggle('legend',this)"></div>
+          </div>
           <span class="sp-divlbl">Active states</span>
           <div class="sp-state-pills" id="sp-state-pills">
             <span class="sp-pill on" data-state="NSW" onclick="toggleSpState(this)">NSW</span>
@@ -5055,7 +5059,8 @@ var SETTINGS_DEFAULTS = {
   advDist:     5,           // km \u2014 Advice proximity hard cap
   popupLevel:  'direct',    // warning | direct | impacted
   stormEnabled: true,
-  stormDist:   300          // km \u2014 storm district proximity cap
+  stormDist:   300,          // km — storm district proximity cap
+  legendVisible: true
 };
 
 // Summer preset
@@ -5166,6 +5171,7 @@ function toggleSpToggle(key, el) {
   var on = !el.classList.contains('on');
   el.classList.toggle('on', on);
   if (key === 'labels') { S.labels = on; applyLabelsToggle(); }
+  else if (key === 'legend') { S.legendVisible = on; var lg=document.getElementById('legend'); if(lg) lg.style.display = on ? '' : 'none'; }
   else if (key === 'fdr') { S.fdrEnabled = on; riskFDREnabled = on; var _fc=document.getElementById('ropt-fdr'); if(_fc) _fc.classList.toggle('on', on); computeRisks(); }
   else if (key === 'storm') { S.stormEnabled = on; riskStormMFEnabled = on; var _sc=document.getElementById('ropt-stormMF'); if(_sc) _sc.classList.toggle('on', on); computeRisks(); }
   markCustomIfNeeded();
@@ -5268,6 +5274,10 @@ function syncSettingsUI() {
   // Toggles
   var lblTgl = document.getElementById('sp-tgl-labels');
   if (lblTgl) lblTgl.classList.toggle('on', S.labels);
+  var lgTgl = document.getElementById('sp-tgl-legend');
+  if (lgTgl) lgTgl.classList.toggle('on', S.legendVisible !== false);
+  var lg = document.getElementById('legend');
+  if (lg) lg.style.display = (S.legendVisible !== false) ? '' : 'none';
   var fdrTgl = document.getElementById('sp-tgl-fdr');
   if (fdrTgl) fdrTgl.classList.toggle('on', S.fdrEnabled);
   var stormTgl = document.getElementById('sp-tgl-storm');
