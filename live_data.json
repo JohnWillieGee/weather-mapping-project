@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-06-02T05:23:17.272289+00:00",
-  "last_checked_utc": "2026-06-02T05:23:17.272289+00:00",
-  "warning_count": 18,
+  "generated_utc": "2026-06-02T05:53:20.594597+00:00",
+  "last_checked_utc": "2026-06-02T05:53:20.594597+00:00",
+  "warning_count": 17,
   "warnings": [
     {
       "pid": "",
@@ -112,15 +112,6 @@
       "issued": "Tue, 02 Jun 2026 03:05:59 GMT"
     },
     {
-      "pid": "IDS21035",
-      "title": "02/12:36 CST \n                Cancellation of Severe Thunderstorm Warning - Adelaide Region\n            \nfor \n                Mount Barker, Adelaide Hills and Adelaide council areas.",
-      "type": "thunderstorm",
-      "state": "SA",
-      "link": "http://reg.bom.gov.au/products/IDS21035.shtml",
-      "desc": "",
-      "issued": "Tue, 02 Jun 2026 03:06:43 GMT"
-    },
-    {
       "pid": "IDS21037",
       "title": "02/10:48 CST \n                Severe Weather Warning\n            \nfor \n                parts of Mount Lofty Ranges, Flinders, Mid North, Murraylands and North East Pastoral districts.",
       "type": "severe_weather",
@@ -174,6 +165,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Report of Smoke - MINDARRA DR",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-02T05:42:41+00:00",
+        "description": "NEWMAN, SHIRE OF EAST PILBARA",
+        "lat": -23.3533,
+        "lng": 119.7316,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1e6d78973d5e007718240c?display=modal"
+      },
       {
         "title": "Earthquake - Kalgoorlie-Boulder, WA",
         "alertLevel": "",
@@ -273,7 +279,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-02T04:35:09+00:00",
+        "updated": "2026-06-02T05:28:41+00:00",
         "description": "COX PENINSULA RD, TUMBLING WATERS",
         "lat": -12.761,
         "lng": 130.9579,
@@ -288,7 +294,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-02T04:35:02+00:00",
+        "updated": "2026-06-02T05:28:38+00:00",
         "description": "COX PENINSULA RD, TUMBLING WATERS",
         "lat": -12.7616,
         "lng": 130.9554,
@@ -303,10 +309,25 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-02T04:34:55+00:00",
+        "updated": "2026-06-02T05:28:36+00:00",
         "description": "DARWIN RIVER RD, TUMBLING WATERS",
         "lat": -12.7659,
         "lng": 130.9567,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - COX PENINSULA RD, WEDDELL",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-02T05:28:33+00:00",
+        "description": "COX PENINSULA RD, WEDDELL",
+        "lat": -12.6777,
+        "lng": 131.035,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -322,21 +343,6 @@
         "description": "Cox Peninsula Road, BERRY SPRINGS",
         "lat": -12.6794,
         "lng": 131.0269,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - COX PENINSULA RD, WEDDELL",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-02T03:04:57+00:00",
-        "description": "COX PENINSULA RD, WEDDELL",
-        "lat": -12.6777,
-        "lng": 131.035,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -447,9 +453,25 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": []
+    "act": [
+      {
+        "title": "HOUSE FIRE - RICHARDSON",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Fire",
+        "updated": "2026-06-02T05:34:09+00:00",
+        "description": "RICHARDSON",
+        "lat": -35.4252,
+        "lng": 149.1055,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      }
+    ]
   },
-  "incident_count": 18,
+  "incident_count": 20,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
