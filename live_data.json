@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-03T08:53:25.311001+00:00",
-  "last_checked_utc": "2026-06-03T08:53:25.311001+00:00",
+  "generated_utc": "2026-06-03T09:23:21.557526+00:00",
+  "last_checked_utc": "2026-06-03T09:23:21.557526+00:00",
   "warning_count": 16,
   "warnings": [
     {
@@ -150,27 +150,29 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "First Av, Sawtell",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Wed, 03 Jun 2026 09:18:37 GMT",
+        "description": "First Av, Sawtell, NSW 2452",
+        "council": "Coffs Harbour",
+        "lat": -30.3564414969999,
+        "lng": 153.105529785,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Fuel Leak - REID HWY",
-        "alertLevel": "",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-03T08:39:14+00:00",
-        "description": "DIANELLA, CITY OF STIRLING",
-        "lat": -31.8678,
-        "lng": 115.8781,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1fe67d8e5ee94cbdb3baf8?display=modal"
-      },
       {
         "title": "Fire - CALINGIRI-GOOMALLING RD",
         "alertLevel": "",
@@ -248,6 +250,21 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - HODGSON DR, LEANYER",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-03T08:59:33+00:00",
+        "description": "HODGSON DR, LEANYER",
+        "lat": -12.3724,
+        "lng": 130.9051,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - BYERS RD, MANTON",
         "alertLevel": "Advice",
@@ -354,40 +371,9 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [
-      {
-        "title": "STRUCTURE FIRE - GUNGAHLIN",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-06-03T08:49:00+00:00",
-        "description": "GUNGAHLIN",
-        "lat": -35.1866,
-        "lng": 149.1332,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "STRUCTURE FIRE - GUNGAHLIN",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Ambulance",
-        "updated": "2026-06-03T08:43:15+00:00",
-        "description": "GUNGAHLIN",
-        "lat": -35.1866,
-        "lng": 149.1332,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      }
-    ]
+    "act": []
   },
-  "incident_count": 15,
+  "incident_count": 14,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
