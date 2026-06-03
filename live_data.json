@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-02T23:53:20.913963+00:00",
-  "last_checked_utc": "2026-06-02T23:53:20.913963+00:00",
+  "generated_utc": "2026-06-03T00:23:19.735525+00:00",
+  "last_checked_utc": "2026-06-03T00:23:19.735525+00:00",
   "warning_count": 14,
   "warnings": [
     {
       "pid": "",
-      "title": "03/04:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "03/10:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 02 Jun 2026 18:00:12 GMT"
+      "issued": "Wed, 03 Jun 2026 00:00:18 GMT"
     },
     {
       "pid": "IDN21037-ACT",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "03/04:10 EST Marine Wind Warning Summary for Victoria",
+      "title": "03/10:01 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 02 Jun 2026 18:10:17 GMT"
+      "issued": "Wed, 03 Jun 2026 00:01:48 GMT"
     },
     {
       "pid": "IDV21038",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "03/03:40 CST Marine Wind Warning Summary for South Australia",
+      "title": "03/09:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Tue, 02 Jun 2026 18:10:11 GMT"
+      "issued": "Wed, 03 Jun 2026 00:00:13 GMT"
     },
     {
       "pid": "",
@@ -113,12 +113,12 @@
     },
     {
       "pid": "",
-      "title": "03/04:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "03/10:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 02 Jun 2026 18:00:12 GMT"
+      "issued": "Wed, 03 Jun 2026 00:00:12 GMT"
     },
     {
       "pid": "IDT20605",
@@ -3319,7 +3319,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-06-02T18:00:00Z",
+      "issued_utc": "2026-06-03T00:00:00Z",
       "overview": [
         "Strong Wind Warning for Wednesday for Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast",
         "Strong Wind Warning for Thursday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast"
@@ -3349,11 +3349,11 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-06-02T18:10:00Z",
+      "issued_utc": "2026-06-03T00:00:00Z",
       "overview": [
-        "Gale Warning for Wednesday for Port Phillip, East Gippsland Coast, Central Coast, West Coast and Central Gippsland Coast",
+        "Gale Warning for Wednesday for West Coast, Central Coast, Central Gippsland Coast, East Gippsland Coast and Port Phillip",
         "Strong Wind Warning for Wednesday for Western Port",
-        "Gale Warning for Thursday for East Gippsland Coast, Central Coast, West Coast and Central Gippsland Coast",
+        "Gale Warning for Thursday for West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast",
         "Strong Wind Warning for Thursday for Port Phillip and Western Port"
       ],
       "hazards": [
@@ -3392,24 +3392,12 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-06-02T18:10:00Z",
+      "issued_utc": "2026-06-03T00:00:00Z",
       "overview": [
-        "Gale Warning for Wednesday for Lower South East Coast",
-        "Strong Wind Warning for Wednesday for Far West Coast, Upper West Coast, Lower West Coast, South Central Coast and Upper South East Coast",
+        "Strong Wind Warning for Wednesday for Far West Coast, Upper West Coast, Lower West Coast and Lower South East Coast",
         "Strong Wind Warning for Thursday for Far West Coast, Upper West Coast and Lower South East Coast"
       ],
       "hazards": [
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
-          ],
-          "aac_codes": [
-            "SA_MW010"
-          ],
-          "summary": "Lower South East Coast"
-        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
@@ -3417,17 +3405,15 @@
             "Far West Coast: WA-SA Border to Fowlers Bay",
             "Upper West Coast: Fowlers Bay to Elliston",
             "Lower West Coast: Elliston to Cape Carnot",
-            "South Central Coast",
-            "Upper South East Coast: Murray Mouth to Cape Jaffa"
+            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
           ],
           "aac_codes": [
             "SA_MW001",
             "SA_MW002",
             "SA_MW003",
-            "SA_MW008",
-            "SA_MW009"
+            "SA_MW010"
           ],
-          "summary": "Far West Coast, Upper West Coast, Lower West Coast, South Central Coast and Upper South East Coast"
+          "summary": "Far West Coast, Upper West Coast, Lower West Coast and Lower South East Coast"
         }
       ]
     },
@@ -3457,9 +3443,10 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-02T18:00:00Z",
+      "issued_utc": "2026-06-03T00:00:00Z",
       "overview": [
         "Gale Warning for Wednesday for Far North West Coast, Central North Coast and East of Flinders Island",
+        "Strong Wind Warning for Wednesday for South East Coast, South West Coast and Central West Coast",
         "Gale Warning for Thursday for Far North West Coast and East of Flinders Island",
         "Strong Wind Warning for Thursday for Central North Coast, Banks Strait and Franklin Sound, Upper East Coast, Lower East Coast, South East Coast, South West Coast, Central West Coast, Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay and Channel"
       ],
@@ -3478,6 +3465,21 @@
             "TAS_MW003"
           ],
           "summary": "Far North West Coast, Central North Coast and East of Flinders Island"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "South East Coast: Tasman Island to South East Cape",
+            "South West Coast: South East Cape to Low Rocky Point",
+            "Central West Coast: Low Rocky Point to Sandy Cape"
+          ],
+          "aac_codes": [
+            "TAS_MW006",
+            "TAS_MW007",
+            "TAS_MW008"
+          ],
+          "summary": "South East Coast, South West Coast and Central West Coast"
         }
       ]
     }
