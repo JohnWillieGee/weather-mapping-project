@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-03T04:53:20.292182+00:00",
-  "last_checked_utc": "2026-06-03T04:53:20.292182+00:00",
+  "generated_utc": "2026-06-03T05:23:21.880842+00:00",
+  "last_checked_utc": "2026-06-03T05:23:21.880842+00:00",
   "warning_count": 16,
   "warnings": [
     {
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "03/09:03 EST Marine Wind Warning Summary for Queensland",
+      "title": "03/15:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 02 Jun 2026 23:03:03 GMT"
+      "issued": "Wed, 03 Jun 2026 05:00:11 GMT"
     },
     {
       "pid": "",
@@ -122,12 +122,12 @@
     },
     {
       "pid": "",
-      "title": "03/07:06 WST Marine Wind Warning Summary for Western Australia",
+      "title": "03/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 02 Jun 2026 23:06:38 GMT"
+      "issued": "Wed, 03 Jun 2026 05:01:37 GMT"
     },
     {
       "pid": "",
@@ -154,15 +154,31 @@
       {
         "title": "(GWYDIR HWY), MATHESON",
         "alertLevel": "Advice",
-        "status": "Not yet controlled",
+        "status": "Being controlled",
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Wed, 03 Jun 2026 04:50:37 GMT",
+        "updated": "Wed, 03 Jun 2026 05:18:37 GMT",
         "description": "B76 (GWYDIR HWY), MATHESON 2370",
         "council": "Inverell",
         "lat": -29.769718171,
         "lng": 151.442504882,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "CAPTAIN COOK DR, WILLMOT",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Wed, 03 Jun 2026 05:18:37 GMT",
+        "description": "CAPTAIN COOK DR, WILLMOT 2770",
+        "council": "Blacktown",
+        "lat": -33.7215766899999,
+        "lng": 150.797912597,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -173,6 +189,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire - KIRKHAM ST",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-03T05:12:15+00:00",
+        "description": "PINJARRA, SHIRE OF MURRAY",
+        "lat": -32.6305,
+        "lng": 115.8771,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1fb50857aa168c058de6ad?display=modal"
+      },
       {
         "title": "Fire - CALINGIRI-GOOMALLING RD",
         "alertLevel": "",
@@ -257,7 +288,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-03T04:13:33+00:00",
+        "updated": "2026-06-03T05:12:57+00:00",
         "description": "BYERS RD, MANTON",
         "lat": -12.8238,
         "lng": 131.1715,
@@ -388,7 +419,7 @@
     ],
     "act": []
   },
-  "incident_count": 15,
+  "incident_count": 17,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3366,6 +3397,27 @@
     }
   },
   "marine_warnings": {
+    "QLD": {
+      "state": "QLD",
+      "product": "IDQ20085",
+      "issued_utc": "2026-06-03T05:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Sunshine Coast Waters: Double Island Point to Cape Moreton",
+            "Gold Coast Waters: Cape Moreton to Point Danger"
+          ],
+          "aac_codes": [
+            "QLD_MW012",
+            "QLD_MW014"
+          ],
+          "summary": "Sunshine Coast Waters and Gold Coast Waters"
+        }
+      ]
+    },
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
@@ -3470,23 +3522,21 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-02T23:06:30Z",
+      "issued_utc": "2026-06-03T05:01:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Albany Coast: Walpole to Bremer Bay",
             "Esperance Coast: Bremer Bay to Israelite Bay",
             "Eucla Coast: Israelite Bay to WA-SA Border"
           ],
           "aac_codes": [
-            "WA_MW012",
             "WA_MW013",
             "WA_MW014"
           ],
-          "summary": "Albany Coast, Esperance Coast and Eucla Coast"
+          "summary": "Esperance Coast and Eucla Coast"
         }
       ]
     },
