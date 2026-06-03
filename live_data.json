@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-03T06:53:23.276554+00:00",
-  "last_checked_utc": "2026-06-03T06:53:23.276554+00:00",
+  "generated_utc": "2026-06-03T07:23:23.295540+00:00",
+  "last_checked_utc": "2026-06-03T07:23:23.295540+00:00",
   "warning_count": 16,
   "warnings": [
     {
@@ -14,21 +14,21 @@
     },
     {
       "pid": "IDN21037-ACT",
-      "title": "03/10:51 EST \n                Severe Weather Warning\n            \nfor \n                parts of Illawarra, South Coast, Central Tablelands, Southern Tablelands, South West Slopes, Snowy Mountains and Australian Capital Territory Forecast Districts.",
+      "title": "03/16:57 EST \n                Severe Weather Warning\n            \nfor \n                parts of Illawarra, South Coast, Central Tablelands, Southern Tablelands, South West Slopes, Snowy Mountains and Australian Capital Territory Forecast Districts.",
       "type": "severe_weather",
       "state": "ACT",
       "link": "http://reg.bom.gov.au/products/IDN21037.shtml",
       "desc": "",
-      "issued": "Wed, 03 Jun 2026 00:51:45 GMT"
+      "issued": "Wed, 03 Jun 2026 06:57:26 GMT"
     },
     {
       "pid": "IDN21037",
-      "title": "03/10:51 EST \n                Severe Weather Warning\n            \nfor \n                parts of Illawarra, South Coast, Central Tablelands, Southern Tablelands, South West Slopes, Snowy Mountains and Australian Capital Territory Forecast Districts.",
+      "title": "03/16:57 EST \n                Severe Weather Warning\n            \nfor \n                parts of Illawarra, South Coast, Central Tablelands, Southern Tablelands, South West Slopes, Snowy Mountains and Australian Capital Territory Forecast Districts.",
       "type": "severe_weather",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/products/IDN21037.shtml",
       "desc": "",
-      "issued": "Wed, 03 Jun 2026 00:51:45 GMT"
+      "issued": "Wed, 03 Jun 2026 06:57:26 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "IDV21038",
-      "title": "03/09:00 EST \n                Severe Weather Warning\n            \nfor \n                parts of Central, East Gippsland, South West, North East, West and South Gippsland and North Central Forecast Districts.",
+      "title": "03/16:58 EST \n                Severe Weather Warning\n            \nfor \n                parts of Central, East Gippsland, South West, North East, West and South Gippsland and North Central Forecast Districts.",
       "type": "severe_weather",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/products/IDV21038.shtml",
       "desc": "",
-      "issued": "Tue, 02 Jun 2026 23:00:43 GMT"
+      "issued": "Wed, 03 Jun 2026 06:58:08 GMT"
     },
     {
       "pid": "IDV21137",
@@ -150,26 +150,43 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Surry St, Coraki",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Wed, 03 Jun 2026 07:18:37 GMT",
+        "description": "Surry St, Coraki, NSW 2471",
+        "council": "Richmond Valley",
+        "lat": -28.9938799999999,
+        "lng": 153.276742,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
       {
-        "title": "Fire - SUMMERSHILL GTE",
+        "title": "Bushfire - COWALLA RD",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-03T06:13:38+00:00",
-        "description": "KENWICK, CITY OF GOSNELLS",
-        "lat": -32.0411,
-        "lng": 115.9803,
+        "updated": "2026-06-03T07:15:03+00:00",
+        "description": "COWALLA, SHIRE OF GINGIN",
+        "lat": -31.0541,
+        "lng": 115.5547,
         "polys": [],
         "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1fbeed1d64b088bb14c808?display=modal"
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1fd4ab81f8c70c7f7cac5a?display=modal"
       },
       {
         "title": "Fire - CALINGIRI-GOOMALLING RD",
@@ -200,36 +217,6 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1c9ead4f61f1f0e7d4df89?display=modal"
-      },
-      {
-        "title": "Earthquake",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Earthquake",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-05-15T00:50:43+00:00",
-        "description": "PALLINUP, GNOWANGERUP, SHIRE OF",
-        "lat": -33.837,
-        "lng": 117.9242,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Earthquake - Laverton, WA",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Earthquake",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-05-06T03:29:01.697+00:00",
-        "description": "LAVERTON, LAVERTON, SHIRE OF",
-        "lat": -28.8157,
-        "lng": 122.2182,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/69f9bfcaa925adb3e823ec20?display=modal"
       }
     ],
     "nt": [
@@ -371,7 +358,7 @@
     ],
     "act": []
   },
-  "incident_count": 14,
+  "incident_count": 13,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
