@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-06-04T05:23:40.153088+00:00",
-  "last_checked_utc": "2026-06-04T05:23:40.153088+00:00",
-  "warning_count": 18,
+  "generated_utc": "2026-06-04T05:53:20.550420+00:00",
+  "last_checked_utc": "2026-06-04T05:53:20.550420+00:00",
+  "warning_count": 17,
   "warnings": [
     {
       "pid": "",
@@ -139,15 +139,6 @@
       "issued": "Thu, 04 Jun 2026 01:16:07 GMT"
     },
     {
-      "pid": "IDT20605",
-      "title": "03/11:27 EST Final Flood Warning for the Mersey River",
-      "type": "flood",
-      "state": "TAS",
-      "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDT20605.html",
-      "desc": "",
-      "issued": "Wed, 03 Jun 2026 01:27:34 GMT"
-    },
-    {
       "pid": "IDT20611",
       "title": "04/12:43 EST Initial Minor Flood Warning for St Pauls River and South Esk River",
       "type": "flood",
@@ -166,9 +157,7 @@
       "issued": "Thu, 04 Jun 2026 04:44:38 GMT"
     }
   ],
-  "fetch_errors": {
-    "tas": "HTTPSConnectionPool(host='services.thelist.tas.gov.au', port=443): Max retries exceeded with url: /arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/72/query?where=1%3D1&outFields=*&f=geojson (Caused by ConnectTimeoutError(<HTTPSConnection(host='services.thelist.tas.gov.au', port=443) at 0x239e9246ad0>, 'Connection to services.thelist.tas.gov.au timed out. (connect timeout=20)'))"
-  },
+  "fetch_errors": {},
   "incidents": {
     "nsw": [
       {
@@ -178,7 +167,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 04 Jun 2026 05:18:37 GMT",
+        "updated": "Thu, 04 Jun 2026 05:50:37 GMT",
         "description": "MARTIN RD, NYMBOIDA 2460",
         "council": "Clarence Valley",
         "lat": -29.875011,
@@ -191,8 +180,99 @@
     "vic": [],
     "qld": [],
     "sa": [],
-    "tas": [],
+    "tas": [
+      {
+        "title": "Flood - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Flood",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-06-04T15:06:04+00:00",
+        "description": "",
+        "lat": -41.80105000008397,
+        "lng": 147.66938000037354,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=b311cf10-9a0a-4003-b1d1-b4914b3eedaa"
+      },
+      {
+        "title": "Flood - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Flood",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-06-04T15:06:04+00:00",
+        "description": "",
+        "lat": -43.06470000004799,
+        "lng": 146.7852500003291,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=4de62758-fea6-4139-8193-f3b9595ab5d2"
+      },
+      {
+        "title": "Flood - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Flood",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-06-04T15:06:04+00:00",
+        "description": "",
+        "lat": -41.689849999966256,
+        "lng": 147.8613900001291,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=639aa439-ab87-49b7-825e-73c62963613c"
+      },
+      {
+        "title": "Flood - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Flood",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-06-04T15:06:04+00:00",
+        "description": "",
+        "lat": -41.8170799998241,
+        "lng": 147.8078300003706,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=93966605-bd12-4b6b-8c23-c47ea7f33c75"
+      },
+      {
+        "title": "Flood - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Flood",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-06-04T15:06:04+00:00",
+        "description": "",
+        "lat": -43.0374700000664,
+        "lng": 147.052860000049,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=25f47160-b14c-45bd-be97-87b4a0cef7b1"
+      }
+    ],
     "wa": [
+      {
+        "title": "Structure Fire Advice IN LANDSDALE IN THE CITY OF WANNEROO",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-06-04T05:11:15.99+00:00",
+        "description": "",
+        "lat": -31.7982,
+        "lng": 115.8608,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Structure Fire - BANCROFT RMBL",
         "alertLevel": "",
@@ -252,69 +332,9 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a20783870de6fe328fb968c?display=modal"
-      },
-      {
-        "title": "Earthquake - Meckering, WA",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Earthquake",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-03T23:19:23.743+00:00",
-        "description": "WARDING EAST, CUNDERDIN, SHIRE OF",
-        "lat": -31.694,
-        "lng": 117.0577,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a20b70719734d6ea656e176?display=modal"
-      },
-      {
-        "title": "Fire - CALINGIRI-GOOMALLING RD",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-03T13:23:56+00:00",
-        "description": "CALINGIRI, SHIRE OF VICTORIA PLAINS",
-        "lat": -31.1024,
-        "lng": 116.4559,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1c552ec00fc13167dd3774?display=modal"
       }
     ],
     "nt": [
-      {
-        "title": "Hazmat Incident - ANGGUNA AV, BRAITLING",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-04T04:44:47+00:00",
-        "description": "ANGGUNA AV, BRAITLING",
-        "lat": -23.6775,
-        "lng": 133.8687,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - BYERS RD, MANTON",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-03T05:12:57+00:00",
-        "description": "BYERS RD, MANTON",
-        "lat": -12.8238,
-        "lng": 131.1715,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
       {
         "title": "Bushfire - Cox Peninsula Road, BERRY SPRINGS",
         "alertLevel": "Advice",
@@ -326,51 +346,6 @@
         "description": "Cox Peninsula Road, BERRY SPRINGS",
         "lat": -12.6707,
         "lng": 131.0241,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - COX PENINSULA RD, TUMBLING WATERS",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-02T05:28:41+00:00",
-        "description": "COX PENINSULA RD, TUMBLING WATERS",
-        "lat": -12.761,
-        "lng": 130.9579,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - COX PENINSULA RD, TUMBLING WATERS",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-02T05:28:38+00:00",
-        "description": "COX PENINSULA RD, TUMBLING WATERS",
-        "lat": -12.7616,
-        "lng": 130.9554,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - DARWIN RIVER RD, TUMBLING WATERS",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-02T05:28:36+00:00",
-        "description": "DARWIN RIVER RD, TUMBLING WATERS",
-        "lat": -12.7659,
-        "lng": 130.9567,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -408,7 +383,7 @@
     ],
     "act": []
   },
-  "incident_count": 15,
+  "incident_count": 14,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
