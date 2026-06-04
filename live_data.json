@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-06-04T12:53:23.618599+00:00",
-  "last_checked_utc": "2026-06-04T12:53:23.618599+00:00",
-  "warning_count": 19,
+  "generated_utc": "2026-06-04T13:23:23.379425+00:00",
+  "last_checked_utc": "2026-06-04T13:23:23.379425+00:00",
+  "warning_count": 17,
   "warnings": [
     {
       "pid": "",
@@ -11,15 +11,6 @@
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Thu, 04 Jun 2026 12:00:15 GMT"
-    },
-    {
-      "pid": "IDN21033",
-      "title": "04/18:55 EST \n                Cancellation of Severe Thunderstorm Warning\n            \nfor \n                Mid North Coast, Hunter, North West Slopes and Plains and Northern Tablelands Forecast Districts.",
-      "type": "thunderstorm",
-      "state": "NSW",
-      "link": "http://reg.bom.gov.au/products/IDN21033.shtml",
-      "desc": "",
-      "issued": "Thu, 04 Jun 2026 08:55:29 GMT"
     },
     {
       "pid": "IDN21037",
@@ -77,12 +68,12 @@
     },
     {
       "pid": "IDV21137",
-      "title": "04/16:30 EST \n                Coastal Hazard Warning\n            \nfor \n                parts of Central, East Gippsland, West and South Gippsland and South West Forecast Districts.",
+      "title": "04/22:51 EST \n                Coastal Hazard Warning\n            \nfor \n                parts of East Gippsland and West and South Gippsland Forecast Districts.",
       "type": "other",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/products/IDV21137.shtml",
       "desc": "",
-      "issued": "Thu, 04 Jun 2026 06:30:45 GMT"
+      "issued": "Thu, 04 Jun 2026 12:51:38 GMT"
     },
     {
       "pid": "",
@@ -131,15 +122,6 @@
     },
     {
       "pid": "",
-      "title": "04/10:20 CST Cancellation of Warning to Sheep Graziers\nfor Mid North forecast district",
-      "type": "other",
-      "state": "SA",
-      "link": "http://reg.bom.gov.au/sa/warnings/sheep.shtml",
-      "desc": "",
-      "issued": "Thu, 04 Jun 2026 00:50:08 GMT"
-    },
-    {
-      "pid": "",
       "title": "01/12:07 CST Flood Warning for the Inland Rivers SA",
       "type": "flood",
       "state": "SA",
@@ -177,7 +159,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Bird Walton Av, Middleton Grange",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Thu, 04 Jun 2026 13:18:45 GMT",
+        "description": "Bird Walton Av, Middleton Grange, NSW 2171",
+        "council": "Liverpool",
+        "lat": -33.917571,
+        "lng": 150.848474001,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [
       {
@@ -274,36 +273,6 @@
       }
     ],
     "wa": [
-      {
-        "title": "Structure Fire - ERYTHRINA ST",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-04T12:31:31+00:00",
-        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.7763,
-        "lng": 128.7413,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a21704f580b2a30ca0bfa6d?display=modal"
-      },
-      {
-        "title": "Fire - PATERSON RD",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-04T12:27:21+00:00",
-        "description": "PINJARRA, SHIRE OF MURRAY",
-        "lat": -32.6269,
-        "lng": 115.879,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a216c825cf7c43c3924d190?display=modal"
-      },
       {
         "title": "Fire - PERIDOT TURN",
         "alertLevel": "",
@@ -502,9 +471,70 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": []
+    "act": [
+      {
+        "title": "HOUSE FIRE - RED HILL",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-06-04T13:20:00+00:00",
+        "description": "RED HILL",
+        "lat": -35.3406,
+        "lng": 149.1327,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - RED HILL",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-06-04T13:20:00+00:00",
+        "description": "RED HILL",
+        "lat": -35.3406,
+        "lng": 149.1327,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - RED HILL",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Fire",
+        "updated": "2026-06-04T13:19:29+00:00",
+        "description": "RED HILL",
+        "lat": -35.3406,
+        "lng": 149.1327,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - RED HILL",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Ambulance",
+        "updated": "2026-06-04T13:12:04+00:00",
+        "description": "RED HILL",
+        "lat": -35.3406,
+        "lng": 149.1327,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      }
+    ]
   },
-  "incident_count": 21,
+  "incident_count": 24,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
