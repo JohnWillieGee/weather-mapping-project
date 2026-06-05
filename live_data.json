@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-06-05T16:53:24.463280+00:00",
-  "last_checked_utc": "2026-06-05T16:53:24.463280+00:00",
-  "warning_count": 8,
+  "generated_utc": "2026-06-05T17:23:20.980436+00:00",
+  "last_checked_utc": "2026-06-05T17:23:20.980436+00:00",
+  "warning_count": 9,
   "warnings": [
     {
       "pid": "",
@@ -47,6 +47,15 @@
       "link": "http://reg.bom.gov.au/sa/warnings/flood/inlandrivers.shtml",
       "desc": "",
       "issued": "Mon, 01 Jun 2026 02:37:44 GMT"
+    },
+    {
+      "pid": "",
+      "title": "06/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "type": "wind",
+      "state": "WA",
+      "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
+      "desc": "",
+      "issued": "Fri, 05 Jun 2026 17:01:13 GMT"
     },
     {
       "pid": "",
@@ -100,21 +109,6 @@
       }
     ],
     "wa": [
-      {
-        "title": "Fire - WANDARRA CL",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-05T16:28:40+00:00",
-        "description": "KARAWARA, CITY OF SOUTH PERTH",
-        "lat": -32.0067,
-        "lng": 115.8805,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a22f7ae7c92e37a955e3619?display=modal"
-      },
       {
         "title": "Fire - CAVERSHAM AV",
         "alertLevel": "",
@@ -193,28 +187,13 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - THOMAS RD, HUMPTY DOO",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-05T11:26:18+00:00",
-        "description": "THOMAS RD, HUMPTY DOO",
-        "lat": -12.6019,
-        "lng": 131.1668,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - WHEEWALL RD, BERRY SPRINGS",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-05T10:22:31+00:00",
+        "updated": "2026-06-05T17:03:34+00:00",
         "description": "WHEEWALL RD, BERRY SPRINGS",
         "lat": -12.7207,
         "lng": 131.0419,
@@ -229,10 +208,25 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-05T10:22:28+00:00",
+        "updated": "2026-06-05T17:03:34+00:00",
         "description": "WHEEWALL RD, BERRY SPRINGS",
         "lat": -12.7221,
         "lng": 131.0411,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - THOMAS RD, HUMPTY DOO",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-05T17:03:34+00:00",
+        "description": "THOMAS RD, HUMPTY DOO",
+        "lat": -12.6019,
+        "lng": 131.1668,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -244,7 +238,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-05T03:48:23+00:00",
+        "updated": "2026-06-05T17:03:34+00:00",
         "description": "ARNHEM HWY, MARRAKAI",
         "lat": -12.7832,
         "lng": 131.5097,
@@ -330,7 +324,7 @@
     ],
     "act": []
   },
-  "incident_count": 16,
+  "incident_count": 15,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3367,6 +3361,27 @@
             "VIC_MW004"
           ],
           "summary": "Central Coast, Central Gippsland Coast and East Gippsland Coast"
+        }
+      ]
+    },
+    "WA": {
+      "state": "WA",
+      "product": "IDW20100",
+      "issued_utc": "2026-06-05T17:01:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay"
+          ],
+          "aac_codes": [
+            "WA_MW011",
+            "WA_MW012"
+          ],
+          "summary": "Leeuwin Coast and Albany Coast"
         }
       ]
     },
