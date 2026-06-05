@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-06-05T19:53:19.151869+00:00",
-  "last_checked_utc": "2026-06-05T19:53:19.151869+00:00",
-  "warning_count": 10,
+  "generated_utc": "2026-06-05T20:23:21.331769+00:00",
+  "last_checked_utc": "2026-06-05T20:23:21.331769+00:00",
+  "warning_count": 11,
   "warnings": [
     {
       "pid": "",
@@ -92,6 +92,15 @@
       "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDT20616.html",
       "desc": "",
       "issued": "Fri, 05 Jun 2026 00:47:42 GMT"
+    },
+    {
+      "pid": "",
+      "title": "06/05:45 CST Marine Wind Warning Summary for the Northern Territory",
+      "type": "wind",
+      "state": "NT",
+      "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Fri, 05 Jun 2026 20:15:54 GMT"
     }
   ],
   "fetch_errors": {},
@@ -119,19 +128,19 @@
     ],
     "wa": [
       {
-        "title": "Bushfire - GREAT SOUTHERN HWY",
+        "title": "Structure Fire - MAHLBERG AV",
         "alertLevel": "",
         "status": "active",
-        "type": "Bush Fire",
+        "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-05T19:19:00+00:00",
-        "description": "BEVERLEY, SHIRE OF BEVERLEY",
-        "lat": -32.1343,
-        "lng": 116.9305,
+        "updated": "2026-06-05T19:59:34+00:00",
+        "description": "WOODLANDS, CITY OF STIRLING",
+        "lat": -31.9011,
+        "lng": 115.7884,
         "polys": [],
         "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a231be37ceffec3110614e8?display=modal"
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2328c6a971fb5dc49b8aa8?display=modal"
       },
       {
         "title": "Fire - CAVERSHAM AV",
@@ -3429,6 +3438,25 @@
             "TAS_MW008"
           ],
           "summary": "East of Flinders Island and Central West Coast"
+        }
+      ]
+    },
+    "NT": {
+      "state": "NT",
+      "product": "IDD20105",
+      "issued_utc": "2026-06-05T20:15:45Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Roper Groote Coast: Cape Arnhem to QLD-NT Border"
+          ],
+          "aac_codes": [
+            "NT_MW006"
+          ],
+          "summary": "Roper Groote Coast"
         }
       ]
     }
