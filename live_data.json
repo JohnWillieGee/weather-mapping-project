@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-05T17:53:17.177123+00:00",
-  "last_checked_utc": "2026-06-05T17:53:17.177123+00:00",
+  "generated_utc": "2026-06-05T18:23:19.946951+00:00",
+  "last_checked_utc": "2026-06-05T18:23:19.946951+00:00",
   "warning_count": 9,
   "warnings": [
     {
       "pid": "",
-      "title": "05/22:20 EST Marine Wind Warning Summary for New South Wales",
+      "title": "06/04:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 05 Jun 2026 12:20:33 GMT"
+      "issued": "Fri, 05 Jun 2026 18:00:13 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "05/22:00 EST Marine Wind Warning Summary for Victoria",
+      "title": "06/04:10 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 05 Jun 2026 12:00:17 GMT"
+      "issued": "Fri, 05 Jun 2026 18:10:18 GMT"
     },
     {
       "pid": "",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "05/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "06/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 05 Jun 2026 12:00:14 GMT"
+      "issued": "Fri, 05 Jun 2026 18:00:13 GMT"
     },
     {
       "pid": "IDT20611",
@@ -109,6 +109,21 @@
       }
     ],
     "wa": [
+      {
+        "title": "Bushfire - COWRA DR",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-05T18:14:01+00:00",
+        "description": "NEWMAN, SHIRE OF EAST PILBARA",
+        "lat": -23.3526,
+        "lng": 119.7453,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a231217e087b377d356e27d?display=modal"
+      },
       {
         "title": "Fire - CAVERSHAM AV",
         "alertLevel": "",
@@ -324,7 +339,7 @@
     ],
     "act": []
   },
-  "incident_count": 15,
+  "incident_count": 16,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3305,11 +3320,8 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-06-05T12:20:25Z",
-      "overview": [
-        "Strong Wind Warning for Friday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast",
-        "Strong Wind Warning for Saturday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Illawarra Coast and Eden Coast"
-      ],
+      "issued_utc": "2026-06-05T18:00:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3318,49 +3330,36 @@
             "Byron Coast: Point Danger to Wooli",
             "Coffs Coast: Wooli to Smoky Cape",
             "Macquarie Coast: Smoky Cape to Seal Rocks",
-            "Hunter Coast: Seal Rocks to Broken Bay",
-            "Sydney Coast: Broken Bay to Port Hacking",
-            "Illawarra Coast: Port Hacking to Ulladulla",
-            "Batemans Coast: Ulladulla to Montague Island",
             "Eden Coast: Montague Island to Gabo Island"
           ],
           "aac_codes": [
             "NSW_MW008",
             "NSW_MW007",
             "NSW_MW006",
-            "NSW_MW005",
-            "NSW_MW004",
-            "NSW_MW003",
-            "NSW_MW002",
             "NSW_MW001"
           ],
-          "summary": "Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast"
+          "summary": "Byron Coast, Coffs Coast, Macquarie Coast and Eden Coast"
         }
       ]
     },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-06-05T12:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Friday for Central Coast, Central Gippsland Coast and East Gippsland Coast",
-        "Strong Wind Warning for Saturday for Central Coast, Central Gippsland Coast and East Gippsland Coast"
-      ],
+      "issued_utc": "2026-06-05T18:10:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Central Coast: Cape Otway to Wilsons Promontory",
             "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
             "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
           ],
           "aac_codes": [
-            "VIC_MW002",
             "VIC_MW003",
             "VIC_MW004"
           ],
-          "summary": "Central Coast, Central Gippsland Coast and East Gippsland Coast"
+          "summary": "Central Gippsland Coast and East Gippsland Coast"
         }
       ]
     },
@@ -3388,33 +3387,39 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-05T12:00:00Z",
+      "issued_utc": "2026-06-05T18:00:00Z",
       "overview": [
-        "Strong Wind Warning for Friday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, South East Coast and South West Coast",
         "Gale Warning for Saturday for South East Coast and South West Coast",
-        "Strong Wind Warning for Saturday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and Central West Coast"
+        "Strong Wind Warning for Saturday for East of Flinders Island and Central West Coast",
+        "Gale Warning for Sunday for South East Coast and South West Coast",
+        "Strong Wind Warning for Sunday for Banks Strait and Franklin Sound, East of Flinders Island and Central West Coast"
       ],
       "hazards": [
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "Gale Warning",
+          "severity": "GALE",
           "zones": [
-            "Far North West Coast: Sandy Cape to Stanley",
-            "Central North Coast: Stanley to Northern Tip of Flinders Island",
-            "Banks Strait and Franklin Sound",
-            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
             "South East Coast: Tasman Island to South East Cape",
             "South West Coast: South East Cape to Low Rocky Point"
           ],
           "aac_codes": [
-            "TAS_MW001",
-            "TAS_MW002",
-            "TAS_MW009",
-            "TAS_MW003",
             "TAS_MW006",
             "TAS_MW007"
           ],
-          "summary": "Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, South East Coast and South West Coast"
+          "summary": "South East Coast and South West Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
+            "Central West Coast: Low Rocky Point to Sandy Cape"
+          ],
+          "aac_codes": [
+            "TAS_MW003",
+            "TAS_MW008"
+          ],
+          "summary": "East of Flinders Island and Central West Coast"
         }
       ]
     }
