@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-05T04:53:17.395843+00:00",
-  "last_checked_utc": "2026-06-05T04:53:17.395843+00:00",
+  "generated_utc": "2026-06-05T05:23:18.524601+00:00",
+  "last_checked_utc": "2026-06-05T05:23:18.524601+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "05/14:23 EST Marine Wind Warning Summary for Queensland",
+      "title": "05/15:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 05 Jun 2026 04:23:09 GMT"
+      "issued": "Fri, 05 Jun 2026 05:00:12 GMT"
     },
     {
       "pid": "IDQ21037",
@@ -113,12 +113,12 @@
     },
     {
       "pid": "",
-      "title": "05/09:57 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "05/14:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 05 Jun 2026 00:27:55 GMT"
+      "issued": "Fri, 05 Jun 2026 05:00:11 GMT"
     }
   ],
   "fetch_errors": {},
@@ -135,46 +135,31 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-06-05T14:06:04+00:00",
+        "updated": "2026-06-05T15:12:04+00:00",
         "description": "",
         "lat": -41.80105000008397,
         "lng": 147.66938000037354,
         "polys": [],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=b311cf10-9a0a-4003-b1d1-b4914b3eedaa"
-      },
-      {
-        "title": "Flood - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Flood",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-06-05T14:06:04+00:00",
-        "description": "",
-        "lat": -41.689849999966256,
-        "lng": 147.8613900001291,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=639aa439-ab87-49b7-825e-73c62963613c"
-      },
-      {
-        "title": "Flood - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Flood",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-06-05T14:06:04+00:00",
-        "description": "",
-        "lat": -41.8170799998241,
-        "lng": 147.8078300003706,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=93966605-bd12-4b6b-8c23-c47ea7f33c75"
       }
     ],
     "wa": [
+      {
+        "title": "Fire - BYFORD DR",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-05T05:04:31+00:00",
+        "description": "BYFORD, SHIRE OF SERPENTINE-JARRAHDALE",
+        "lat": -32.2161,
+        "lng": 116.011,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2255d590385a98c75e15f6?display=modal"
+      },
       {
         "title": "Fire - CAVERSHAM AV",
         "alertLevel": "",
@@ -182,7 +167,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-05T04:41:37+00:00",
+        "updated": "2026-06-05T04:54:05+00:00",
         "description": "CAVERSHAM, CITY OF SWAN",
         "lat": -31.8779,
         "lng": 115.9806,
@@ -300,7 +285,7 @@
     ],
     "act": []
   },
-  "incident_count": 11,
+  "incident_count": 10,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3278,27 +3263,6 @@
     }
   },
   "marine_warnings": {
-    "QLD": {
-      "state": "QLD",
-      "product": "IDQ20085",
-      "issued_utc": "2026-06-05T04:22:58Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Sunshine Coast Waters: Double Island Point to Cape Moreton",
-            "Gold Coast Waters: Cape Moreton to Point Danger"
-          ],
-          "aac_codes": [
-            "QLD_MW012",
-            "QLD_MW014"
-          ],
-          "summary": "Sunshine Coast Waters and Gold Coast Waters"
-        }
-      ]
-    },
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
@@ -3405,25 +3369,6 @@
             "TAS_MW008"
           ],
           "summary": "Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, South East Coast, South West Coast and Central West Coast"
-        }
-      ]
-    },
-    "NT": {
-      "state": "NT",
-      "product": "IDD20105",
-      "issued_utc": "2026-06-05T00:27:45Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Roper Groote Coast: Cape Arnhem to QLD-NT Border"
-          ],
-          "aac_codes": [
-            "NT_MW006"
-          ],
-          "summary": "Roper Groote Coast"
         }
       ]
     }
