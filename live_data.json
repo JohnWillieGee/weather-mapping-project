@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-06-06T09:23:20.699611+00:00",
-  "last_checked_utc": "2026-06-06T09:23:20.699611+00:00",
-  "warning_count": 12,
+  "generated_utc": "2026-06-06T09:53:23.343136+00:00",
+  "last_checked_utc": "2026-06-06T09:53:23.343136+00:00",
+  "warning_count": 10,
   "warnings": [
     {
       "pid": "",
@@ -20,15 +20,6 @@
       "link": "http://reg.bom.gov.au/nsw/warnings/hazardoussurf.shtml",
       "desc": "",
       "issued": "Sat, 06 Jun 2026 06:55:02 GMT"
-    },
-    {
-      "pid": "",
-      "title": "06/10:42 EST \n                Cancellation of\n                Road Weather Alert for Canberra",
-      "type": "other",
-      "state": "NSW",
-      "link": "http://reg.bom.gov.au/act/warnings/canberraroad.shtml",
-      "desc": "",
-      "issued": "Sat, 06 Jun 2026 00:42:41 GMT"
     },
     {
       "pid": "",
@@ -56,15 +47,6 @@
       "link": "http://reg.bom.gov.au/qld/warnings/hazardoussurf.shtml",
       "desc": "",
       "issued": "Sat, 06 Jun 2026 06:55:35 GMT"
-    },
-    {
-      "pid": "",
-      "title": "06/10:12 CST \n                Cancellation of\n                Road Weather Alert for Adelaide",
-      "type": "other",
-      "state": "SA",
-      "link": "http://reg.bom.gov.au/sa/warnings/road.shtml",
-      "desc": "",
-      "issued": "Sat, 06 Jun 2026 00:42:00 GMT"
     },
     {
       "pid": "",
@@ -122,27 +104,11 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 06 Jun 2026 09:18:49 GMT",
+        "updated": "Sat, 06 Jun 2026 09:50:37 GMT",
         "description": "MIDDLE CREEK RD, KREMNOS 2460",
         "council": "Clarence Valley",
         "lat": -29.898767,
         "lng": 152.926415,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "Obley Rd, Dubbo",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 06 Jun 2026 09:18:49 GMT",
-        "description": "Obley Rd, Dubbo, NSW 2830",
-        "council": "Dubbo Regional",
-        "lat": -32.276038,
-        "lng": 148.582446,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -153,6 +119,36 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire - LLOYD ST",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-06T09:45:33+00:00",
+        "description": "MIDDLE SWAN, CITY OF SWAN",
+        "lat": -31.8687,
+        "lng": 116.0174,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a23eaee8b30631976e7ab93?display=modal"
+      },
+      {
+        "title": "Fire - CHATFIELD RD",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-06T09:28:49+00:00",
+        "description": "SERPENTINE, SHIRE OF SERPENTINE-JARRAHDALE",
+        "lat": -32.3761,
+        "lng": 115.9965,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a23e88d8b30631976e7aae1?display=modal"
+      },
       {
         "title": "Bushfire - YIYILI ABORIGINAL COMMUNITY",
         "alertLevel": "",
@@ -182,24 +178,24 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire - MEWETT RD",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-06T07:20:06+00:00",
-        "description": "QUINDALUP, CITY OF BUSSELTON",
-        "lat": -33.6422,
-        "lng": 115.151,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a23ba6e920d1598e32ac516?display=modal"
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - OLD BYNOE RD, LIVINGSTONE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-06T09:34:52+00:00",
+        "description": "OLD BYNOE RD, LIVINGSTONE",
+        "lat": -12.7596,
+        "lng": 131.0638,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - STUART HWY, NOONAMAH",
         "alertLevel": "Advice",
@@ -293,7 +289,7 @@
     ],
     "act": []
   },
-  "incident_count": 11,
+  "incident_count": 12,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
