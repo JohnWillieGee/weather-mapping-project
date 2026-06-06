@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-06-06T17:53:14.286684+00:00",
-  "last_checked_utc": "2026-06-06T17:53:14.286684+00:00",
-  "warning_count": 7,
+  "generated_utc": "2026-06-06T18:23:16.354939+00:00",
+  "last_checked_utc": "2026-06-06T18:23:16.354939+00:00",
+  "warning_count": 8,
   "warnings": [
     {
       "pid": "",
@@ -32,6 +32,15 @@
     },
     {
       "pid": "",
+      "title": "07/03:40 CST Marine Wind Warning Summary for South Australia",
+      "type": "wind",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
+      "desc": "",
+      "issued": "Sat, 06 Jun 2026 18:10:10 GMT"
+    },
+    {
+      "pid": "",
       "title": "01/12:07 CST Flood Warning for the Inland Rivers SA",
       "type": "flood",
       "state": "SA",
@@ -50,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "06/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "07/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 06 Jun 2026 12:00:11 GMT"
+      "issued": "Sat, 06 Jun 2026 18:00:12 GMT"
     },
     {
       "pid": "IDT20611",
@@ -75,6 +84,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire - FORREST ST",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-06T18:14:27+00:00",
+        "description": "COLLIE, SHIRE OF COLLIE",
+        "lat": -33.3592,
+        "lng": 116.1551,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a24606abbc0c437fc76b245?display=modal"
+      },
       {
         "title": "Bushfire - YIYILI ABORIGINAL COMMUNITY",
         "alertLevel": "",
@@ -290,7 +314,7 @@
     ],
     "act": []
   },
-  "incident_count": 14,
+  "incident_count": 15,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3268,6 +3292,31 @@
     }
   },
   "marine_warnings": {
+    "SA": {
+      "state": "SA",
+      "product": "IDS20201",
+      "issued_utc": "2026-06-06T18:10:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Upper West Coast: Fowlers Bay to Elliston",
+            "Lower West Coast: Elliston to Cape Carnot",
+            "Central Coast",
+            "South Central Coast"
+          ],
+          "aac_codes": [
+            "SA_MW002",
+            "SA_MW003",
+            "SA_MW004",
+            "SA_MW008"
+          ],
+          "summary": "Upper West Coast, Lower West Coast, Central Coast and South Central Coast"
+        }
+      ]
+    },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
@@ -3298,12 +3347,11 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-06T12:00:00Z",
+      "issued_utc": "2026-06-06T18:00:00Z",
       "overview": [
-        "Gale Warning for Saturday for South East Coast and South West Coast",
-        "Strong Wind Warning for Saturday for East of Flinders Island and Central West Coast",
         "Gale Warning for Sunday for South East Coast and South West Coast",
-        "Strong Wind Warning for Sunday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Central West Coast, Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel and South West Lakes"
+        "Strong Wind Warning for Sunday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Central West Coast, Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel and South West Lakes",
+        "Strong Wind Warning for Monday for South East Coast, South West Coast and Central West Coast"
       ],
       "hazards": [
         {
@@ -3323,14 +3371,30 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Central North Coast: Stanley to Northern Tip of Flinders Island",
+            "Banks Strait and Franklin Sound",
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
-            "Central West Coast: Low Rocky Point to Sandy Cape"
+            "Upper East Coast: St Helens Point to Wineglass Bay",
+            "Central West Coast: Low Rocky Point to Sandy Cape",
+            "Derwent Estuary",
+            "Frederick Henry Bay and Norfolk Bays",
+            "Storm Bay",
+            "Channel",
+            "South West Lakes"
           ],
           "aac_codes": [
+            "TAS_MW002",
+            "TAS_MW009",
             "TAS_MW003",
-            "TAS_MW008"
+            "TAS_MW004",
+            "TAS_MW008",
+            "TAS_MW012",
+            "TAS_MW013",
+            "TAS_MW014",
+            "TAS_MW011",
+            "TAS_MW015"
           ],
-          "summary": "East of Flinders Island and Central West Coast"
+          "summary": "Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel, South West Lakes, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast and Central West Coast"
         }
       ]
     }
