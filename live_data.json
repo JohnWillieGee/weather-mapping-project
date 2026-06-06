@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-06T00:53:20.227776+00:00",
-  "last_checked_utc": "2026-06-06T00:53:20.227776+00:00",
+  "generated_utc": "2026-06-06T01:23:20.240515+00:00",
+  "last_checked_utc": "2026-06-06T01:23:20.240515+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -123,7 +123,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Border St, Byron Bay",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sat, 06 Jun 2026 01:18:37 GMT",
+        "description": "Border St, Byron Bay, NSW 2481",
+        "council": "Byron",
+        "lat": -28.638347,
+        "lng": 153.603626,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -152,7 +169,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-05T04:54:05+00:00",
+        "updated": "2026-06-06T01:04:42+00:00",
         "description": "CAVERSHAM, CITY OF SWAN",
         "lat": -31.8779,
         "lng": 115.9806,
@@ -174,36 +191,6 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a1c552ec00fc13167dd3774?display=modal"
-      },
-      {
-        "title": "Earthquake",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Earthquake",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-05-15T00:50:43+00:00",
-        "description": "PALLINUP, GNOWANGERUP, SHIRE OF",
-        "lat": -33.837,
-        "lng": 117.9242,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Earthquake",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Earthquake",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-05-06T03:29:01+00:00",
-        "description": "LAVERTON, LAVERTON, SHIRE OF",
-        "lat": -28.8143,
-        "lng": 122.2182,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
       }
     ],
     "nt": [
@@ -313,21 +300,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Bushfire - Cox Peninsula Road, BERRY SPRINGS",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-06-02T23:00:00+00:00",
-        "description": "Cox Peninsula Road, BERRY SPRINGS",
-        "lat": -12.6707,
-        "lng": 131.0241,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - COX PENINSULA RD, WEDDELL",
         "alertLevel": "Advice",
         "status": "active",
@@ -360,7 +332,7 @@
     ],
     "act": []
   },
-  "incident_count": 15,
+  "incident_count": 13,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
