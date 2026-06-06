@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-06T07:23:18.461706+00:00",
-  "last_checked_utc": "2026-06-06T07:23:18.461706+00:00",
+  "generated_utc": "2026-06-06T07:54:07.205885+00:00",
+  "last_checked_utc": "2026-06-06T07:54:07.205885+00:00",
   "warning_count": 12,
   "warnings": [
     {
@@ -114,7 +114,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Zoccoli St, Coonamble",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sat, 06 Jun 2026 07:50:37 GMT",
+        "description": "Zoccoli St, Coonamble, NSW 2829",
+        "council": "Coonamble",
+        "lat": -30.956813,
+        "lng": 148.386849,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [
       {
@@ -142,7 +159,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-06T06:43:38+00:00",
+        "updated": "2026-06-06T07:20:06+00:00",
         "description": "QUINDALUP, CITY OF BUSSELTON",
         "lat": -33.6422,
         "lng": 115.151,
@@ -275,31 +292,16 @@
     ],
     "act": [
       {
-        "title": "HOUSE FIRE - KAMBAH",
+        "title": "HAZMAT INCIDENT - CITY",
         "alertLevel": "",
         "status": "active",
-        "type": "Structure Fire",
+        "type": "HazMat",
         "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-06-06T07:19:00+00:00",
-        "description": "KAMBAH",
-        "lat": -35.3846,
-        "lng": 149.0891,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - KAMBAH",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Ambulance",
-        "updated": "2026-06-06T07:09:00+00:00",
-        "description": "KAMBAH",
-        "lat": -35.3846,
-        "lng": 149.0891,
+        "agency": "Fire",
+        "updated": "2026-06-06T07:22:20+00:00",
+        "description": "CITY",
+        "lat": -35.2768,
+        "lng": 149.1322,
         "polys": [],
         "state": "ACT",
         "sourceUrl": "https://esa.act.gov.au/"
@@ -315,43 +317,13 @@
         "description": "KAMBAH",
         "lat": -35.3846,
         "lng": 149.0891,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HAZMAT INCIDENT - CITY",
-        "alertLevel": "",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "Fire",
-        "updated": "2026-06-06T06:39:48+00:00",
-        "description": "CITY",
-        "lat": -35.2768,
-        "lng": 149.1322,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HAZMAT INCIDENT - CITY",
-        "alertLevel": "",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "Ambulance",
-        "updated": "2026-06-06T06:20:37+00:00",
-        "description": "CITY",
-        "lat": -35.2768,
-        "lng": 149.1322,
         "polys": [],
         "state": "ACT",
         "sourceUrl": "https://esa.act.gov.au/"
       }
     ]
   },
-  "incident_count": 15,
+  "incident_count": 13,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
