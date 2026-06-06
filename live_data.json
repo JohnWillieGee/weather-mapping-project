@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-06T08:53:57.818911+00:00",
-  "last_checked_utc": "2026-06-06T08:53:57.818911+00:00",
+  "generated_utc": "2026-06-06T09:23:20.699611+00:00",
+  "last_checked_utc": "2026-06-06T09:23:20.699611+00:00",
   "warning_count": 12,
   "warnings": [
     {
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "06/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "06/17:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sat, 06 Jun 2026 05:01:13 GMT"
+      "issued": "Sat, 06 Jun 2026 09:01:42 GMT"
     },
     {
       "pid": "",
@@ -104,37 +104,70 @@
     },
     {
       "pid": "",
-      "title": "06/14:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "06/18:31 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 06 Jun 2026 05:00:13 GMT"
+      "issued": "Sat, 06 Jun 2026 09:01:16 GMT"
     }
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
-    "vic": [],
-    "qld": [
+    "nsw": [
       {
-        "title": "STAY INFORMED - Stuart (near Townsville) - fire as at  3:56pm Saturday,  6 June 2026",
+        "title": "MIDDLE CREEK RD, KREMNOS",
         "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "QFD",
-        "updated": "",
-        "description": "Stuart, Wulguru, Julago, Alligator Creek and surrounding areas",
-        "lat": -19.352925673652,
-        "lng": 146.87701114915,
-        "state": "QLD",
-        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Sat, 06 Jun 2026 09:18:49 GMT",
+        "description": "MIDDLE CREEK RD, KREMNOS 2460",
+        "council": "Clarence Valley",
+        "lat": -29.898767,
+        "lng": 152.926415,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Obley Rd, Dubbo",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sat, 06 Jun 2026 09:18:49 GMT",
+        "description": "Obley Rd, Dubbo, NSW 2830",
+        "council": "Dubbo Regional",
+        "lat": -32.276038,
+        "lng": 148.582446,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       }
     ],
+    "vic": [],
+    "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire - YIYILI ABORIGINAL COMMUNITY",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-06T09:13:59+00:00",
+        "description": "MUELLER RANGES, SHIRE OF HALLS CREEK",
+        "lat": -18.7189,
+        "lng": 126.7542,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a23e4b68b30631976e7a9ed?display=modal"
+      },
       {
         "title": "Structure Fire All Clear IN DALYELLUP IN THE SHIRE OF CAPEL",
         "alertLevel": "",
@@ -260,7 +293,7 @@
     ],
     "act": []
   },
-  "incident_count": 9,
+  "incident_count": 11,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3241,7 +3274,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-06T05:01:00Z",
+      "issued_utc": "2026-06-06T09:01:31Z",
       "overview": [],
       "hazards": [
         {
