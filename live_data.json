@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-06T04:53:17.520007+00:00",
-  "last_checked_utc": "2026-06-06T04:53:17.520007+00:00",
+  "generated_utc": "2026-06-06T05:23:18.737449+00:00",
+  "last_checked_utc": "2026-06-06T05:23:18.737449+00:00",
   "warning_count": 12,
   "warnings": [
     {
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "06/07:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "06/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Fri, 05 Jun 2026 23:01:11 GMT"
+      "issued": "Sat, 06 Jun 2026 05:01:13 GMT"
     },
     {
       "pid": "",
@@ -104,53 +104,24 @@
     },
     {
       "pid": "",
-      "title": "06/08:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "06/14:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 05 Jun 2026 23:00:11 GMT"
+      "issued": "Sat, 06 Jun 2026 05:00:13 GMT"
     }
   ],
-  "fetch_errors": {},
+  "fetch_errors": {
+    "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
+  },
   "incidents": {
     "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
-    "wa": [
-      {
-        "title": "Report of Smoke - GARLING ST",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-06T04:45:06+00:00",
-        "description": "OCONNOR, CITY OF FREMANTLE",
-        "lat": -32.0567,
-        "lng": 115.7936,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a23a363273bf01ef5c3dbee?display=modal"
-      },
-      {
-        "title": "Structure Fire - ORRONG RD",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-06T04:44:04+00:00",
-        "description": "LATHLAIN, TOWN OF VICTORIA PARK",
-        "lat": -31.9626,
-        "lng": 115.9086,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a23a3bd273bf01ef5c3dbff?display=modal"
-      }
-    ],
+    "wa": [],
     "nt": [
       {
         "title": "Grass and Scrub Fire - BLOODWOOD ST, ZUCCOLI",
@@ -159,40 +130,10 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-06T04:44:42+00:00",
+        "updated": "2026-06-06T05:00:55+00:00",
         "description": "BLOODWOOD ST, ZUCCOLI",
         "lat": -12.5169,
         "lng": 131.0008,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Structure Fire - BROUGHAM RD, DARWIN RIVER",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-06T04:15:14+00:00",
-        "description": "BROUGHAM RD, DARWIN RIVER",
-        "lat": -12.7901,
-        "lng": 131.0349,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - BUFFALO CREEK RD, LEE POINT",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-06T03:04:30+00:00",
-        "description": "BUFFALO CREEK RD, LEE POINT",
-        "lat": -12.3384,
-        "lng": 130.8975,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -290,9 +231,9 @@
     ],
     "act": []
   },
-  "incident_count": 11,
+  "incident_count": 7,
   "nsw_alert_zones": [],
-  "wa_feed_method": "emergencyapi",
+  "wa_feed_method": "none",
   "fdr": {
     "ratings": {
       "NSW_FW001": {
@@ -3315,21 +3256,23 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-05T23:01:00Z",
+      "issued_utc": "2026-06-06T05:01:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Leeuwin Coast: Cape Naturaliste to Walpole",
             "Albany Coast: Walpole to Bremer Bay"
           ],
           "aac_codes": [
+            "WA_MW010",
             "WA_MW011",
             "WA_MW012"
           ],
-          "summary": "Leeuwin Coast and Albany Coast"
+          "summary": "Bunbury Geographe Coast, Leeuwin Coast and Albany Coast"
         }
       ]
     },
@@ -3369,25 +3312,6 @@
             "TAS_MW008"
           ],
           "summary": "East of Flinders Island and Central West Coast"
-        }
-      ]
-    },
-    "NT": {
-      "state": "NT",
-      "product": "IDD20105",
-      "issued_utc": "2026-06-05T23:00:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Roper Groote Coast: Cape Arnhem to QLD-NT Border"
-          ],
-          "aac_codes": [
-            "NT_MW006"
-          ],
-          "summary": "Roper Groote Coast"
         }
       ]
     }
