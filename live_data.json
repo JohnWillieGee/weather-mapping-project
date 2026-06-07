@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-07T16:53:24.232307+00:00",
-  "last_checked_utc": "2026-06-07T16:53:24.232307+00:00",
+  "generated_utc": "2026-06-07T17:23:20.490465+00:00",
+  "last_checked_utc": "2026-06-07T17:23:20.490465+00:00",
   "warning_count": 6,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "07/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "08/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 07 Jun 2026 11:01:14 GMT"
+      "issued": "Sun, 07 Jun 2026 17:01:14 GMT"
     },
     {
       "pid": "",
@@ -60,43 +60,26 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Queen St, South Kempsey",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Sun, 07 Jun 2026 16:50:37 GMT",
-        "description": "Queen St, South Kempsey, NSW 2440",
-        "council": "Kempsey",
-        "lat": -31.0896279999999,
-        "lng": 152.829679,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire - ELEVEN MILE BEACH RD",
+        "title": "Bushfire - GREAT NORTHERN HWY",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-07T16:30:34+00:00",
-        "description": "PINK LAKE, SHIRE OF ESPERANCE",
-        "lat": -33.8553,
-        "lng": 121.7567,
+        "updated": "2026-06-07T17:12:09+00:00",
+        "description": "UPPER SWAN, CITY OF SWAN",
+        "lat": -31.7848,
+        "lng": 116.0227,
         "polys": [],
         "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a259b6da0dd8264626c0671?display=modal"
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a25a3ee94cd817d09f74400?display=modal"
       },
       {
         "title": "Structure Fire - KABA GR",
@@ -220,6 +203,21 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - ROYSTONEA AV, JOHNSTON",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-07T17:03:56+00:00",
+        "description": "ROYSTONEA AV, JOHNSTON",
+        "lat": -12.4893,
+        "lng": 131.0008,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Structure Fire - WADEYE",
         "alertLevel": "Advice",
@@ -3304,25 +3302,47 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-07T11:01:00Z",
+      "issued_utc": "2026-06-07T17:01:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Leeuwin Coast and Albany Coast",
         "Gale Warning for Monday for Bunbury Geographe Coast, Leeuwin Coast and Albany Coast",
-        "Strong Wind Warning for Monday for Geraldton Coast, Lancelin Coast, Perth Coast, Esperance Coast and Perth Local Waters"
+        "Strong Wind Warning for Monday for Geraldton Coast, Lancelin Coast, Perth Coast, Esperance Coast and Perth Local Waters",
+        "Gale Warning for Tuesday for Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast",
+        "Strong Wind Warning for Tuesday for Lancelin Coast, Perth Coast and Perth Local Waters"
       ],
       "hazards": [
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "Gale Warning",
+          "severity": "GALE",
           "zones": [
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Leeuwin Coast: Cape Naturaliste to Walpole",
             "Albany Coast: Walpole to Bremer Bay"
           ],
           "aac_codes": [
+            "WA_MW010",
             "WA_MW011",
             "WA_MW012"
           ],
-          "summary": "Leeuwin Coast and Albany Coast"
+          "summary": "Bunbury Geographe Coast, Leeuwin Coast and Albany Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Geraldton Coast: Kalbarri to Jurien Bay",
+            "Lancelin Coast: Jurien Bay to Two Rocks",
+            "Perth Coast: Two Rocks to Dawesville",
+            "Esperance Coast: Bremer Bay to Israelite Bay",
+            "Perth Local Waters"
+          ],
+          "aac_codes": [
+            "WA_MW007",
+            "WA_MW008",
+            "WA_MW009",
+            "WA_MW013",
+            "WA_MW015"
+          ],
+          "summary": "Perth Local Waters, Geraldton Coast, Lancelin Coast, Perth Coast and Esperance Coast"
         }
       ]
     },
