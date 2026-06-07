@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-07T11:53:23.212199+00:00",
-  "last_checked_utc": "2026-06-07T11:53:23.212199+00:00",
+  "generated_utc": "2026-06-07T12:23:21.145058+00:00",
+  "last_checked_utc": "2026-06-07T12:23:21.145058+00:00",
   "warning_count": 6,
   "warnings": [
     {
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "07/15:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "07/21:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sun, 07 Jun 2026 06:00:13 GMT"
+      "issued": "Sun, 07 Jun 2026 12:00:10 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "07/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "07/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 07 Jun 2026 06:05:11 GMT"
+      "issued": "Sun, 07 Jun 2026 12:00:13 GMT"
     }
   ],
   "fetch_errors": {},
@@ -95,6 +95,36 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a24df8aa063946e65f6f5df?display=modal"
+      },
+      {
+        "title": "Bushfire - LAKE ARGYLE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-07T01:32:15+00:00",
+        "description": "LAKE ARGYLE, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.6701,
+        "lng": 128.651,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a24c5a0ac58496b49e8bd24?display=modal"
+      },
+      {
+        "title": "Smoke Alert FOR NORTH OF BROOME IN THE SHIRE OF BROOME",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-06-07T01:29:21.389+00:00",
+        "description": "",
+        "lat": -17.7509,
+        "lng": 122.292,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
       }
     ],
     "nt": [
@@ -191,7 +221,7 @@
     ],
     "act": []
   },
-  "incident_count": 8,
+  "incident_count": 10,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3172,7 +3202,7 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-06-07T06:00:00Z",
+      "issued_utc": "2026-06-07T12:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3222,48 +3252,26 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-07T06:05:00Z",
+      "issued_utc": "2026-06-07T12:00:00Z",
       "overview": [
-        "Gale Warning for Sunday for South East Coast and South West Coast",
-        "Strong Wind Warning for Sunday for Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, Central West Coast, Derwent Estuary, Storm Bay and Channel",
+        "Strong Wind Warning for Sunday for East of Flinders Island, South East Coast and South West Coast",
         "Strong Wind Warning for Monday for East of Flinders Island, South East Coast, South West Coast and Central West Coast"
       ],
       "hazards": [
         {
-          "level": "Gale Warning",
-          "severity": "GALE",
+          "level": "Strong Wind Warning",
+          "severity": "STR",
           "zones": [
+            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
             "South East Coast: Tasman Island to South East Cape",
             "South West Coast: South East Cape to Low Rocky Point"
           ],
           "aac_codes": [
+            "TAS_MW003",
             "TAS_MW006",
             "TAS_MW007"
           ],
-          "summary": "South East Coast and South West Coast"
-        },
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Banks Strait and Franklin Sound",
-            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
-            "Lower East Coast: Wineglass Bay to Tasman Island",
-            "Central West Coast: Low Rocky Point to Sandy Cape",
-            "Derwent Estuary",
-            "Storm Bay",
-            "Channel"
-          ],
-          "aac_codes": [
-            "TAS_MW009",
-            "TAS_MW003",
-            "TAS_MW005",
-            "TAS_MW008",
-            "TAS_MW012",
-            "TAS_MW014",
-            "TAS_MW011"
-          ],
-          "summary": "Derwent Estuary, Storm Bay, Channel, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and Central West Coast"
+          "summary": "East of Flinders Island, South East Coast and South West Coast"
         }
       ]
     }
