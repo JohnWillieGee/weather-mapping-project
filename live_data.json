@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-08T16:53:22.822582+00:00",
-  "last_checked_utc": "2026-06-08T16:53:22.822582+00:00",
+  "generated_utc": "2026-06-08T17:23:23.828232+00:00",
+  "last_checked_utc": "2026-06-08T17:23:23.828232+00:00",
   "warning_count": 7,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "08/20:31 WST Marine Wind Warning Summary for Western Australia",
+      "title": "09/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 08 Jun 2026 12:31:34 GMT"
+      "issued": "Mon, 08 Jun 2026 17:01:14 GMT"
     },
     {
       "pid": "IDW21033",
@@ -75,6 +75,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire Advice IN AUGUSTA IN THE SHIRE OF AUGUSTA MARGARET RIVER",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-06-08T16:41:28.08+00:00",
+        "description": "",
+        "lat": -34.3154,
+        "lng": 115.1486,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Structure Fire - MILLAR WAY",
         "alertLevel": "",
@@ -320,7 +335,7 @@
     ],
     "act": []
   },
-  "incident_count": 16,
+  "incident_count": 17,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3355,47 +3370,49 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-08T12:31:25Z",
+      "issued_utc": "2026-06-08T17:01:00Z",
       "overview": [
-        "Gale Warning for Monday for Albany Coast, Leeuwin Coast, Bunbury Geographe Coast and Esperance Coast",
-        "Strong Wind Warning for Monday for Perth Local Waters, Lancelin Coast, Geraldton Coast and Perth Coast",
         "Gale Warning for Tuesday for Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast",
-        "Strong Wind Warning for Tuesday for Gascoyne Coast, Geraldton Coast, Lancelin Coast, Bunbury Geographe Coast, Perth Local Waters and Perth Coast"
+        "Strong Wind Warning for Tuesday for Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast and Perth Local Waters"
       ],
       "hazards": [
         {
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
-            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Leeuwin Coast: Cape Naturaliste to Walpole",
             "Albany Coast: Walpole to Bremer Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay"
+            "Esperance Coast: Bremer Bay to Israelite Bay",
+            "Eucla Coast: Israelite Bay to WA-SA Border"
           ],
           "aac_codes": [
-            "WA_MW010",
             "WA_MW011",
             "WA_MW012",
-            "WA_MW013"
+            "WA_MW013",
+            "WA_MW014"
           ],
-          "summary": "Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Esperance Coast"
+          "summary": "Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
         },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Gascoyne Coast: Cape Cuvier to Kalbarri",
             "Geraldton Coast: Kalbarri to Jurien Bay",
             "Lancelin Coast: Jurien Bay to Two Rocks",
             "Perth Coast: Two Rocks to Dawesville",
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Perth Local Waters"
           ],
           "aac_codes": [
+            "WA_MW006",
             "WA_MW007",
             "WA_MW008",
             "WA_MW009",
+            "WA_MW010",
             "WA_MW015"
           ],
-          "summary": "Perth Local Waters, Geraldton Coast, Lancelin Coast and Perth Coast"
+          "summary": "Perth Local Waters, Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast and Bunbury Geographe Coast"
         }
       ]
     },
