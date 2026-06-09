@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-09T11:53:28.282263+00:00",
-  "last_checked_utc": "2026-06-09T11:53:28.282263+00:00",
+  "generated_utc": "2026-06-09T12:23:27.850913+00:00",
+  "last_checked_utc": "2026-06-09T12:23:27.850913+00:00",
   "warning_count": 7,
   "warnings": [
     {
       "pid": "",
-      "title": "09/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "09/22:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 09 Jun 2026 06:15:20 GMT"
+      "issued": "Tue, 09 Jun 2026 12:00:17 GMT"
     },
     {
       "pid": "IDV21037",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "09/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "09/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 09 Jun 2026 06:05:12 GMT"
+      "issued": "Tue, 09 Jun 2026 12:00:13 GMT"
     }
   ],
   "fetch_errors": {},
@@ -75,21 +75,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Fire - INTERIM RD",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-09T11:40:40+00:00",
-        "description": "SPEARWOOD, CITY OF COCKBURN",
-        "lat": -32.104,
-        "lng": 115.7941,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a27f0c03ab075df2c737748?display=modal"
-      },
       {
         "title": "Earthquake - Wickepin, WA",
         "alertLevel": "",
@@ -410,7 +395,7 @@
     ],
     "act": []
   },
-  "incident_count": 22,
+  "incident_count": 21,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3391,7 +3376,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-06-09T06:15:00Z",
+      "issued_utc": "2026-06-09T12:00:00Z",
       "overview": [
         "Strong Wind Warning for Tuesday for West Coast, Central Coast, East Gippsland Coast and Port Phillip",
         "Gale Warning for Wednesday for West Coast",
@@ -3470,48 +3455,13 @@
         }
       ]
     },
-    "WA": {
-      "state": "WA",
-      "product": "IDW20100",
-      "issued_utc": "2026-06-09T05:01:00Z",
-      "overview": [
-        "Gale Warning for Tuesday for Eucla Coast",
-        "Strong Wind Warning for Tuesday for Albany Coast and Esperance Coast"
-      ],
-      "hazards": [
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "Eucla Coast: Israelite Bay to WA-SA Border"
-          ],
-          "aac_codes": [
-            "WA_MW014"
-          ],
-          "summary": "Eucla Coast"
-        },
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Albany Coast: Walpole to Bremer Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay"
-          ],
-          "aac_codes": [
-            "WA_MW012",
-            "WA_MW013"
-          ],
-          "summary": "Albany Coast and Esperance Coast"
-        }
-      ]
-    },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-09T06:05:00Z",
+      "issued_utc": "2026-06-09T12:00:00Z",
       "overview": [
         "Gale Warning for Tuesday for Central West Coast",
-        "Strong Wind Warning for Tuesday for Far North West Coast, Lower East Coast, South East Coast, South West Coast and Central Plateau Lakes",
+        "Strong Wind Warning for Tuesday for Far North West Coast, South East Coast, South West Coast and Central Plateau Lakes",
         "Gale Warning for Wednesday for Far North West Coast, South West Coast and Central West Coast",
         "Strong Wind Warning for Wednesday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast, Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel, Central Plateau Lakes and South West Lakes"
       ],
@@ -3532,19 +3482,17 @@
           "severity": "STR",
           "zones": [
             "Far North West Coast: Sandy Cape to Stanley",
-            "Lower East Coast: Wineglass Bay to Tasman Island",
             "South East Coast: Tasman Island to South East Cape",
             "South West Coast: South East Cape to Low Rocky Point",
             "Central Plateau Lakes"
           ],
           "aac_codes": [
             "TAS_MW001",
-            "TAS_MW005",
             "TAS_MW006",
             "TAS_MW007",
             "TAS_MW010"
           ],
-          "summary": "Central Plateau Lakes, Far North West Coast, Lower East Coast, South East Coast and South West Coast"
+          "summary": "Central Plateau Lakes, Far North West Coast, South East Coast and South West Coast"
         }
       ]
     }
