@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-09T04:53:26.169146+00:00",
-  "last_checked_utc": "2026-06-09T04:53:26.169146+00:00",
+  "generated_utc": "2026-06-09T05:23:26.295145+00:00",
+  "last_checked_utc": "2026-06-09T05:23:26.295145+00:00",
   "warning_count": 7,
   "warnings": [
     {
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "09/09:06 WST Marine Wind Warning Summary for Western Australia",
+      "title": "09/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 09 Jun 2026 01:06:13 GMT"
+      "issued": "Tue, 09 Jun 2026 05:01:15 GMT"
     },
     {
       "pid": "",
@@ -198,16 +198,61 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - LITCHFIELD PARK RD, CHARLOTTE",
+        "title": "Grass and Scrub Fire - CHARLOTTE",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-09T03:21:16+00:00",
-        "description": "LITCHFIELD PARK RD, CHARLOTTE",
-        "lat": -12.8648,
-        "lng": 130.8232,
+        "updated": "2026-06-09T05:16:32+00:00",
+        "description": "CHARLOTTE",
+        "lat": -12.7983,
+        "lng": 130.8544,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - KILGARIFF",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-09T05:05:45+00:00",
+        "description": "KILGARIFF",
+        "lat": -23.7438,
+        "lng": 133.8697,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - HEATH RD, KILGARIFF",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-09T05:05:16+00:00",
+        "description": "HEATH RD, KILGARIFF",
+        "lat": -23.7568,
+        "lng": 133.8721,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - Unknown",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-09T05:04:36+00:00",
+        "description": "",
+        "lat": -12.7933,
+        "lng": 130.8511,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -350,7 +395,7 @@
     ],
     "act": []
   },
-  "incident_count": 18,
+  "incident_count": 21,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3412,43 +3457,35 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-09T01:06:03Z",
+      "issued_utc": "2026-06-09T05:01:00Z",
       "overview": [
-        "Gale Warning for Tuesday for Esperance Coast and Eucla Coast",
-        "Strong Wind Warning for Tuesday for Leeuwin Coast, Albany Coast, Bunbury Geographe Coast, Perth Local Waters and Perth Coast"
+        "Gale Warning for Tuesday for Eucla Coast",
+        "Strong Wind Warning for Tuesday for Albany Coast and Esperance Coast"
       ],
       "hazards": [
         {
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
-            "Esperance Coast: Bremer Bay to Israelite Bay",
             "Eucla Coast: Israelite Bay to WA-SA Border"
           ],
           "aac_codes": [
-            "WA_MW013",
             "WA_MW014"
           ],
-          "summary": "Esperance Coast and Eucla Coast"
+          "summary": "Eucla Coast"
         },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Perth Coast: Two Rocks to Dawesville",
-            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
-            "Leeuwin Coast: Cape Naturaliste to Walpole",
             "Albany Coast: Walpole to Bremer Bay",
-            "Perth Local Waters"
+            "Esperance Coast: Bremer Bay to Israelite Bay"
           ],
           "aac_codes": [
-            "WA_MW009",
-            "WA_MW010",
-            "WA_MW011",
             "WA_MW012",
-            "WA_MW015"
+            "WA_MW013"
           ],
-          "summary": "Perth Local Waters, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Albany Coast"
+          "summary": "Albany Coast and Esperance Coast"
         }
       ]
     },
