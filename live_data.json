@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-09T12:53:25.414746+00:00",
-  "last_checked_utc": "2026-06-09T12:53:25.414746+00:00",
+  "generated_utc": "2026-06-09T13:23:28.335581+00:00",
+  "last_checked_utc": "2026-06-09T13:23:28.335581+00:00",
   "warning_count": 6,
   "warnings": [
     {
@@ -14,21 +14,21 @@
     },
     {
       "pid": "IDV21037",
-      "title": "09/16:56 EST \n                Severe Weather Warning\n            \nfor \n                parts of North East, East Gippsland, South West, West and South Gippsland and Wimmera Forecast Districts.",
+      "title": "09/22:57 EST \n                Severe Weather Warning\n            \nfor \n                parts of North East, East Gippsland, South West, West and South Gippsland and Wimmera Forecast Districts.",
       "type": "severe_weather",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/products/IDV21037.shtml",
       "desc": "",
-      "issued": "Tue, 09 Jun 2026 06:56:03 GMT"
+      "issued": "Tue, 09 Jun 2026 12:57:20 GMT"
     },
     {
       "pid": "",
-      "title": "09/16:41 EST Warning to Sheep Graziers\nfor North East forecast district",
+      "title": "09/22:54 EST Warning to Sheep Graziers\nfor North East forecast district",
       "type": "other",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Tue, 09 Jun 2026 06:41:00 GMT"
+      "issued": "Tue, 09 Jun 2026 12:54:24 GMT"
     },
     {
       "pid": "",
@@ -67,34 +67,19 @@
     "tas": [],
     "wa": [
       {
-        "title": "Fire - RATTLEPOD CL",
+        "title": "Earthquake - Goldfields, WA",
         "alertLevel": "",
         "status": "active",
-        "type": "Bush Fire",
+        "type": "Earthquake",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-09T12:44:55+00:00",
-        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.7872,
-        "lng": 128.7468,
+        "updated": "2026-06-09T12:50:23.257+00:00",
+        "description": "CASCADE, ESPERANCE, SHIRE OF",
+        "lat": -33.2846,
+        "lng": 121.0364,
         "polys": [],
         "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a280af3ee6677bdf0b28de4?display=modal"
-      },
-      {
-        "title": "Bushfire - PLUM CT",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-09T12:30:18+00:00",
-        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.7865,
-        "lng": 128.7453,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2807847aafd3510f974c1c?display=modal"
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a280ca923c7f00f9d1e9f6e?display=modal"
       },
       {
         "title": "Earthquake - Wickepin, WA",
@@ -188,6 +173,21 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - MOULDEN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-09T13:16:49+00:00",
+        "description": "MOULDEN",
+        "lat": -12.5064,
+        "lng": 130.9693,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - STUART HWY, ARUMBERA",
         "alertLevel": "Advice",
@@ -3405,59 +3405,6 @@
             "VIC_MW005"
           ],
           "summary": "Port Phillip, West Coast, Central Coast and East Gippsland Coast"
-        }
-      ]
-    },
-    "SA": {
-      "state": "SA",
-      "product": "IDS20201",
-      "issued_utc": "2026-06-09T06:00:00Z",
-      "overview": [
-        "Gale Warning for Tuesday for Lower West Coast, Central Coast, South Central Coast, Upper South East Coast and Lower South East Coast",
-        "Strong Wind Warning for Tuesday for Far West Coast, Upper West Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait and Adelaide Metropolitan Waters",
-        "Gale Warning for Wednesday for South Central Coast, Upper South East Coast and Lower South East Coast",
-        "Strong Wind Warning for Wednesday for Central Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait and Adelaide Metropolitan Waters"
-      ],
-      "hazards": [
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "Lower West Coast: Elliston to Cape Carnot",
-            "Central Coast",
-            "South Central Coast",
-            "Upper South East Coast: Murray Mouth to Cape Jaffa",
-            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
-          ],
-          "aac_codes": [
-            "SA_MW003",
-            "SA_MW004",
-            "SA_MW008",
-            "SA_MW009",
-            "SA_MW010"
-          ],
-          "summary": "Lower West Coast, Central Coast, South Central Coast, Upper South East Coast and Lower South East Coast"
-        },
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Far West Coast: WA-SA Border to Fowlers Bay",
-            "Upper West Coast: Fowlers Bay to Elliston",
-            "Spencer Gulf",
-            "Gulf St Vincent",
-            "Investigator Strait",
-            "Adelaide Metropolitan Waters"
-          ],
-          "aac_codes": [
-            "SA_MW001",
-            "SA_MW002",
-            "SA_MW005",
-            "SA_MW006",
-            "SA_MW007",
-            "SA_MW011"
-          ],
-          "summary": "Adelaide Metropolitan Waters, Far West Coast, Upper West Coast, Spencer Gulf, Gulf St Vincent and Investigator Strait"
         }
       ]
     },
