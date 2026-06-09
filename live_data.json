@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-06-09T16:53:24.462281+00:00",
-  "last_checked_utc": "2026-06-09T16:53:24.462281+00:00",
-  "warning_count": 5,
+  "generated_utc": "2026-06-09T17:23:24.698733+00:00",
+  "last_checked_utc": "2026-06-09T17:23:24.698733+00:00",
+  "warning_count": 6,
   "warnings": [
     {
       "pid": "",
@@ -29,6 +29,15 @@
       "link": "http://reg.bom.gov.au/vic/warnings/sheep.shtml",
       "desc": "",
       "issued": "Tue, 09 Jun 2026 12:54:24 GMT"
+    },
+    {
+      "pid": "",
+      "title": "10/03:00 EST Marine Wind Warning Summary for Queensland",
+      "type": "wind",
+      "state": "QLD",
+      "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Tue, 09 Jun 2026 17:00:13 GMT"
     },
     {
       "pid": "",
@@ -64,13 +73,28 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-09T16:26:42+00:00",
+        "updated": "2026-06-09T17:16:47+00:00",
         "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.7577,
         "lng": 128.7399,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a283ef9881d77a975bc637d?display=modal"
+      },
+      {
+        "title": "Report of Smoke - FURNIVAL ST",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-09T17:04:49+00:00",
+        "description": "NARROGIN, SHIRE OF NARROGIN",
+        "lat": -32.9377,
+        "lng": 117.1715,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2848199f59d3080e98cb24?display=modal"
       },
       {
         "title": "Earthquake - Goldfields, WA",
@@ -390,100 +414,9 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [
-      {
-        "title": "HOUSE FIRE - TAYLOR",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-06-09T16:47:00+00:00",
-        "description": "TAYLOR",
-        "lat": -35.1499,
-        "lng": 149.1044,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - BANKS",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-06-09T16:47:00+00:00",
-        "description": "BANKS",
-        "lat": -35.4738,
-        "lng": 149.093,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - TAYLOR",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-06-09T16:47:00+00:00",
-        "description": "TAYLOR",
-        "lat": -35.1499,
-        "lng": 149.1044,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - BANKS",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-06-09T16:47:00+00:00",
-        "description": "BANKS",
-        "lat": -35.4738,
-        "lng": 149.093,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - TAYLOR",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Fire",
-        "updated": "2026-06-09T16:46:13+00:00",
-        "description": "TAYLOR",
-        "lat": -35.1499,
-        "lng": 149.1044,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - TAYLOR",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Ambulance",
-        "updated": "2026-06-09T16:44:58+00:00",
-        "description": "TAYLOR",
-        "lat": -35.1499,
-        "lng": 149.1044,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      }
-    ]
+    "act": []
   },
-  "incident_count": 28,
+  "incident_count": 23,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3461,6 +3394,27 @@
     }
   },
   "marine_warnings": {
+    "QLD": {
+      "state": "QLD",
+      "product": "IDQ20085",
+      "issued_utc": "2026-06-09T17:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Peninsula Coast: Sharp Point to Cape Melville",
+            "Cooktown Coast: Cape Melville to Cape Tribulation"
+          ],
+          "aac_codes": [
+            "QLD_MW004",
+            "QLD_MW005"
+          ],
+          "summary": "Peninsula Coast and Cooktown Coast"
+        }
+      ]
+    },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
