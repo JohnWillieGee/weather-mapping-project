@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-10T11:53:20.681765+00:00",
-  "last_checked_utc": "2026-06-10T11:53:20.681765+00:00",
+  "generated_utc": "2026-06-10T12:23:14.814574+00:00",
+  "last_checked_utc": "2026-06-10T12:23:14.814574+00:00",
   "warning_count": 7,
   "warnings": [
     {
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "10/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "10/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 10 Jun 2026 06:05:13 GMT"
+      "issued": "Wed, 10 Jun 2026 12:00:14 GMT"
     }
   ],
   "fetch_errors": {},
@@ -75,21 +75,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Structure Fire - 3A SHANKS CT",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-10T10:29:54+00:00",
-        "description": "ARMADALE, CITY OF ARMADALE",
-        "lat": -32.1616,
-        "lng": 116.0076,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a29386cdf5a59182609fcb4?display=modal"
-      },
       {
         "title": "Smoke Alert FOR HALLS CREEK IN THE SHIRE OF HALLS CREEK",
         "alertLevel": "",
@@ -320,7 +305,7 @@
     ],
     "act": []
   },
-  "incident_count": 16,
+  "incident_count": 15,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3343,9 +3328,9 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-10T06:05:00Z",
+      "issued_utc": "2026-06-10T12:00:00Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast, South West Coast and Central West Coast",
+        "Strong Wind Warning for Wednesday for South East Coast and South West Coast",
         "Strong Wind Warning for Thursday for South East Coast and South West Coast"
       ],
       "hazards": [
@@ -3353,22 +3338,14 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
-            "Upper East Coast: St Helens Point to Wineglass Bay",
-            "Lower East Coast: Wineglass Bay to Tasman Island",
             "South East Coast: Tasman Island to South East Cape",
-            "South West Coast: South East Cape to Low Rocky Point",
-            "Central West Coast: Low Rocky Point to Sandy Cape"
+            "South West Coast: South East Cape to Low Rocky Point"
           ],
           "aac_codes": [
-            "TAS_MW003",
-            "TAS_MW004",
-            "TAS_MW005",
             "TAS_MW006",
-            "TAS_MW007",
-            "TAS_MW008"
+            "TAS_MW007"
           ],
-          "summary": "East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast, South West Coast and Central West Coast"
+          "summary": "South East Coast and South West Coast"
         }
       ]
     }
