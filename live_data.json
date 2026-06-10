@@ -1,8 +1,17 @@
 {
-  "generated_utc": "2026-06-10T17:53:22.204594+00:00",
-  "last_checked_utc": "2026-06-10T17:53:22.204594+00:00",
-  "warning_count": 5,
+  "generated_utc": "2026-06-10T18:23:22.177258+00:00",
+  "last_checked_utc": "2026-06-10T18:23:22.177258+00:00",
+  "warning_count": 7,
   "warnings": [
+    {
+      "pid": "",
+      "title": "11/04:10 EST Marine Wind Warning Summary for Victoria",
+      "type": "wind",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Wed, 10 Jun 2026 18:10:21 GMT"
+    },
     {
       "pid": "",
       "title": "11/03:00 EST Marine Wind Warning Summary for Queensland",
@@ -11,6 +20,15 @@
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Wed, 10 Jun 2026 17:00:15 GMT"
+    },
+    {
+      "pid": "",
+      "title": "11/03:40 CST Marine Wind Warning Summary for South Australia",
+      "type": "wind",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
+      "desc": "",
+      "issued": "Wed, 10 Jun 2026 18:10:13 GMT"
     },
     {
       "pid": "",
@@ -41,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "10/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "11/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 10 Jun 2026 12:00:14 GMT"
+      "issued": "Wed, 10 Jun 2026 18:00:12 GMT"
     }
   ],
   "fetch_errors": {},
@@ -231,7 +249,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-10T17:42:59+00:00",
+        "updated": "2026-06-10T18:04:04+00:00",
         "description": "STUART HWY, PINELANDS",
         "lat": -12.4582,
         "lng": 130.9685,
@@ -3304,6 +3322,64 @@
         }
       ]
     },
+    "VIC": {
+      "state": "VIC",
+      "product": "IDV20600",
+      "issued_utc": "2026-06-10T18:10:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "West Coast: SA-VIC Border to Cape Otway",
+            "Central Coast: Cape Otway to Wilsons Promontory",
+            "Port Phillip"
+          ],
+          "aac_codes": [
+            "VIC_MW001",
+            "VIC_MW002",
+            "VIC_MW005"
+          ],
+          "summary": "Port Phillip, West Coast and Central Coast"
+        }
+      ]
+    },
+    "SA": {
+      "state": "SA",
+      "product": "IDS20201",
+      "issued_utc": "2026-06-10T18:10:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Far West Coast: WA-SA Border to Fowlers Bay",
+            "Upper West Coast: Fowlers Bay to Elliston",
+            "Lower West Coast: Elliston to Cape Carnot",
+            "Central Coast",
+            "South Central Coast",
+            "Spencer Gulf",
+            "Investigator Strait",
+            "Upper South East Coast: Murray Mouth to Cape Jaffa",
+            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
+          ],
+          "aac_codes": [
+            "SA_MW001",
+            "SA_MW002",
+            "SA_MW003",
+            "SA_MW004",
+            "SA_MW008",
+            "SA_MW005",
+            "SA_MW007",
+            "SA_MW009",
+            "SA_MW010"
+          ],
+          "summary": "Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast, Spencer Gulf, Investigator Strait, Upper South East Coast and Lower South East Coast"
+        }
+      ]
+    },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
@@ -3331,10 +3407,10 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-10T12:00:00Z",
+      "issued_utc": "2026-06-10T18:00:00Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for South East Coast and South West Coast",
-        "Strong Wind Warning for Thursday for South East Coast and South West Coast"
+        "Strong Wind Warning for Thursday for South East Coast and South West Coast",
+        "Strong Wind Warning for Friday for Far North West Coast, South East Coast, South West Coast and Central West Coast"
       ],
       "hazards": [
         {
