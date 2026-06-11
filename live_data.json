@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-11T16:53:26.532426+00:00",
-  "last_checked_utc": "2026-06-11T16:53:26.532426+00:00",
+  "generated_utc": "2026-06-11T17:23:27.245342+00:00",
+  "last_checked_utc": "2026-06-11T17:23:27.245342+00:00",
   "warning_count": 7,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "11/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "12/03:13 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 11 Jun 2026 11:00:14 GMT"
+      "issued": "Thu, 11 Jun 2026 17:13:18 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "11/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "12/01:11 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 11 Jun 2026 11:01:13 GMT"
+      "issued": "Thu, 11 Jun 2026 17:11:01 GMT"
     },
     {
       "pid": "IDW39605",
@@ -3316,10 +3316,10 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-06-11T11:00:00Z",
+      "issued_utc": "2026-06-11T17:12:58Z",
       "overview": [
-        "Strong Wind Warning for Thursday for Peninsula Coast and Cooktown Coast",
-        "Strong Wind Warning for Friday for Peninsula Coast and Cooktown Coast"
+        "Strong Wind Warning for Friday for Peninsula Coast and Cooktown Coast",
+        "Strong Wind Warning for Saturday for Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast and Mackay Coast"
       ],
       "hazards": [
         {
@@ -3408,6 +3408,34 @@
             "SA_MW011"
           ],
           "summary": "Adelaide Metropolitan Waters, Far West Coast, Upper West Coast, Spencer Gulf, Gulf St Vincent and Investigator Strait"
+        }
+      ]
+    },
+    "WA": {
+      "state": "WA",
+      "product": "IDW20100",
+      "issued_utc": "2026-06-11T17:10:50Z",
+      "overview": [
+        "Strong Wind Warning for Friday for Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast",
+        "Strong Wind Warning for Saturday for Leeuwin Coast and Albany Coast"
+      ],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay",
+            "Eucla Coast: Israelite Bay to WA-SA Border"
+          ],
+          "aac_codes": [
+            "WA_MW011",
+            "WA_MW012",
+            "WA_MW013",
+            "WA_MW014"
+          ],
+          "summary": "Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
         }
       ]
     },
