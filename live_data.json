@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-11T11:53:28.602140+00:00",
-  "last_checked_utc": "2026-06-11T11:53:28.602140+00:00",
+  "generated_utc": "2026-06-11T12:23:29.611102+00:00",
+  "last_checked_utc": "2026-06-11T12:23:29.611102+00:00",
   "warning_count": 7,
   "warnings": [
     {
       "pid": "",
-      "title": "11/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "11/22:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 11 Jun 2026 06:15:17 GMT"
+      "issued": "Thu, 11 Jun 2026 12:00:17 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "11/15:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "11/21:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Thu, 11 Jun 2026 06:00:10 GMT"
+      "issued": "Thu, 11 Jun 2026 12:00:09 GMT"
     },
     {
       "pid": "",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "11/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "11/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 11 Jun 2026 06:05:14 GMT"
+      "issued": "Thu, 11 Jun 2026 12:00:14 GMT"
     }
   ],
   "fetch_errors": {},
@@ -3355,7 +3355,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-06-11T06:15:00Z",
+      "issued_utc": "2026-06-11T12:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3378,37 +3378,74 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-06-11T06:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-06-11T12:00:00Z",
+      "overview": [
+        "Gale Warning for Friday for Lower West Coast, Central Coast, South Central Coast, Upper South East Coast and Lower South East Coast",
+        "Strong Wind Warning for Friday for Far West Coast, Upper West Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait and Adelaide Metropolitan Waters"
+      ],
       "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "Lower West Coast: Elliston to Cape Carnot",
+            "Central Coast",
+            "South Central Coast",
+            "Upper South East Coast: Murray Mouth to Cape Jaffa",
+            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
+          ],
+          "aac_codes": [
+            "SA_MW003",
+            "SA_MW004",
+            "SA_MW008",
+            "SA_MW009",
+            "SA_MW010"
+          ],
+          "summary": "Lower West Coast, Central Coast, South Central Coast, Upper South East Coast and Lower South East Coast"
+        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
             "Far West Coast: WA-SA Border to Fowlers Bay",
             "Upper West Coast: Fowlers Bay to Elliston",
-            "Lower West Coast: Elliston to Cape Carnot",
-            "Central Coast",
-            "South Central Coast",
             "Spencer Gulf",
             "Gulf St Vincent",
             "Investigator Strait",
-            "Upper South East Coast: Murray Mouth to Cape Jaffa",
-            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
+            "Adelaide Metropolitan Waters"
           ],
           "aac_codes": [
             "SA_MW001",
             "SA_MW002",
-            "SA_MW003",
-            "SA_MW004",
-            "SA_MW008",
             "SA_MW005",
             "SA_MW006",
             "SA_MW007",
-            "SA_MW009",
-            "SA_MW010"
+            "SA_MW011"
           ],
-          "summary": "Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait, Upper South East Coast and Lower South East Coast"
+          "summary": "Adelaide Metropolitan Waters, Far West Coast, Upper West Coast, Spencer Gulf, Gulf St Vincent and Investigator Strait"
+        }
+      ]
+    },
+    "TAS": {
+      "state": "TAS",
+      "product": "IDT20100",
+      "issued_utc": "2026-06-11T12:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Far North West Coast: Sandy Cape to Stanley",
+            "South West Coast: South East Cape to Low Rocky Point",
+            "Central West Coast: Low Rocky Point to Sandy Cape"
+          ],
+          "aac_codes": [
+            "TAS_MW001",
+            "TAS_MW007",
+            "TAS_MW008"
+          ],
+          "summary": "Far North West Coast, South West Coast and Central West Coast"
         }
       ]
     }
