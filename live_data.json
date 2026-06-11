@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-11T17:53:25.074212+00:00",
-  "last_checked_utc": "2026-06-11T17:53:25.074212+00:00",
+  "generated_utc": "2026-06-11T18:23:25.637025+00:00",
+  "last_checked_utc": "2026-06-11T18:23:25.637025+00:00",
   "warning_count": 7,
   "warnings": [
     {
       "pid": "",
-      "title": "11/22:00 EST Marine Wind Warning Summary for Victoria",
+      "title": "12/04:10 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 11 Jun 2026 12:00:17 GMT"
+      "issued": "Thu, 11 Jun 2026 18:10:20 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "11/21:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "12/03:40 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Thu, 11 Jun 2026 12:00:09 GMT"
+      "issued": "Thu, 11 Jun 2026 18:10:11 GMT"
     },
     {
       "pid": "",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "11/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "12/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 11 Jun 2026 12:00:14 GMT"
+      "issued": "Thu, 11 Jun 2026 18:00:13 GMT"
     }
   ],
   "fetch_errors": {},
@@ -3340,8 +3340,11 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-06-11T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-06-11T18:10:00Z",
+      "overview": [
+        "Strong Wind Warning for Friday for West Coast, Central Coast and Port Phillip",
+        "Strong Wind Warning for Saturday for West Coast, Central Coast, Central Gippsland Coast and Port Phillip"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3363,10 +3366,12 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-06-11T12:00:00Z",
+      "issued_utc": "2026-06-11T18:10:00Z",
       "overview": [
         "Gale Warning for Friday for Lower West Coast, Central Coast, South Central Coast, Upper South East Coast and Lower South East Coast",
-        "Strong Wind Warning for Friday for Far West Coast, Upper West Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait and Adelaide Metropolitan Waters"
+        "Strong Wind Warning for Friday for Far West Coast, Upper West Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait and Adelaide Metropolitan Waters",
+        "Gale Warning for Saturday for Lower South East Coast",
+        "Strong Wind Warning for Saturday for Lower West Coast, Central Coast, South Central Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait, Upper South East Coast and Adelaide Metropolitan Waters"
       ],
       "hazards": [
         {
@@ -3442,8 +3447,12 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-11T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-06-11T18:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Friday for Far North West Coast, South West Coast and Central West Coast",
+        "Gale Warning for Saturday for Far North West Coast, South East Coast, South West Coast and Central West Coast",
+        "Strong Wind Warning for Saturday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, Storm Bay and South West Lakes"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
