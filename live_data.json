@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-12T17:53:25.064726+00:00",
-  "last_checked_utc": "2026-06-12T17:53:25.064726+00:00",
+  "generated_utc": "2026-06-12T18:23:26.451644+00:00",
+  "last_checked_utc": "2026-06-12T18:23:26.451644+00:00",
   "warning_count": 8,
   "warnings": [
     {
       "pid": "",
-      "title": "12/22:00 EST Marine Wind Warning Summary for Victoria",
+      "title": "13/04:10 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 12 Jun 2026 12:00:20 GMT"
+      "issued": "Fri, 12 Jun 2026 18:10:19 GMT"
     },
     {
       "pid": "IDV21037",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "12/21:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "13/03:40 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Fri, 12 Jun 2026 12:00:12 GMT"
+      "issued": "Fri, 12 Jun 2026 18:10:12 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "12/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "13/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 12 Jun 2026 12:00:12 GMT"
+      "issued": "Fri, 12 Jun 2026 18:00:14 GMT"
     }
   ],
   "fetch_errors": {},
@@ -84,6 +84,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire - WORTLEY ST",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-12T18:03:40+00:00",
+        "description": "WEST KALGOORLIE, CITY OF KALGOORLIE-BOULDER",
+        "lat": -30.7744,
+        "lng": 121.4334,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2c4a2b043788950b28772b?display=modal"
+      },
       {
         "title": "Fire - BRIDGE ST",
         "alertLevel": "",
@@ -344,7 +359,7 @@
     ],
     "act": []
   },
-  "incident_count": 17,
+  "incident_count": 18,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3355,11 +3370,8 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-06-12T12:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Friday for West Coast, Central Coast and Port Phillip",
-        "Strong Wind Warning for Saturday for West Coast, Central Coast, Central Gippsland Coast, Port Phillip and Western Port"
-      ],
+      "issued_utc": "2026-06-12T18:10:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3367,63 +3379,51 @@
           "zones": [
             "West Coast: SA-VIC Border to Cape Otway",
             "Central Coast: Cape Otway to Wilsons Promontory",
-            "Port Phillip"
+            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
+            "Port Phillip",
+            "Western Port"
           ],
           "aac_codes": [
             "VIC_MW001",
             "VIC_MW002",
-            "VIC_MW005"
+            "VIC_MW003",
+            "VIC_MW005",
+            "VIC_MW006"
           ],
-          "summary": "Port Phillip, West Coast and Central Coast"
+          "summary": "Port Phillip, Western Port, West Coast, Central Coast and Central Gippsland Coast"
         }
       ]
     },
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-06-12T12:00:00Z",
+      "issued_utc": "2026-06-12T18:10:00Z",
       "overview": [
-        "Gale Warning for Friday for Central Coast, South Central Coast, Upper South East Coast and Lower South East Coast",
-        "Strong Wind Warning for Friday for Lower West Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait and Adelaide Metropolitan Waters",
         "Gale Warning for Saturday for Lower South East Coast",
-        "Strong Wind Warning for Saturday for South Central Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait, Upper South East Coast and Adelaide Metropolitan Waters"
+        "Strong Wind Warning for Saturday for Upper South East Coast"
       ],
       "hazards": [
         {
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
-            "Central Coast",
-            "South Central Coast",
-            "Upper South East Coast: Murray Mouth to Cape Jaffa",
             "Lower South East Coast: Cape Jaffa to SA-VIC Border"
           ],
           "aac_codes": [
-            "SA_MW004",
-            "SA_MW008",
-            "SA_MW009",
             "SA_MW010"
           ],
-          "summary": "Central Coast, South Central Coast, Upper South East Coast and Lower South East Coast"
+          "summary": "Lower South East Coast"
         },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Lower West Coast: Elliston to Cape Carnot",
-            "Spencer Gulf",
-            "Gulf St Vincent",
-            "Investigator Strait",
-            "Adelaide Metropolitan Waters"
+            "Upper South East Coast: Murray Mouth to Cape Jaffa"
           ],
           "aac_codes": [
-            "SA_MW003",
-            "SA_MW005",
-            "SA_MW006",
-            "SA_MW007",
-            "SA_MW011"
+            "SA_MW009"
           ],
-          "summary": "Adelaide Metropolitan Waters, Lower West Coast, Spencer Gulf, Gulf St Vincent and Investigator Strait"
+          "summary": "Upper South East Coast"
         }
       ]
     },
@@ -3451,39 +3451,61 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-12T12:00:00Z",
+      "issued_utc": "2026-06-12T18:00:00Z",
       "overview": [
-        "Gale Warning for Friday for South West Coast and Central West Coast",
-        "Strong Wind Warning for Friday for Far North West Coast and South East Coast",
         "Gale Warning for Saturday for Far North West Coast, South East Coast, South West Coast and Central West Coast",
-        "Strong Wind Warning for Saturday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel, Central Plateau Lakes and South West Lakes"
+        "Strong Wind Warning for Saturday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel, Central Plateau Lakes and South West Lakes",
+        "Gale Warning for Sunday for South East Coast and South West Coast",
+        "Strong Wind Warning for Sunday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and Central West Coast"
       ],
       "hazards": [
         {
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
+            "Far North West Coast: Sandy Cape to Stanley",
+            "South East Coast: Tasman Island to South East Cape",
             "South West Coast: South East Cape to Low Rocky Point",
             "Central West Coast: Low Rocky Point to Sandy Cape"
           ],
           "aac_codes": [
+            "TAS_MW001",
+            "TAS_MW006",
             "TAS_MW007",
             "TAS_MW008"
           ],
-          "summary": "South West Coast and Central West Coast"
+          "summary": "Far North West Coast, South East Coast, South West Coast and Central West Coast"
         },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Far North West Coast: Sandy Cape to Stanley",
-            "South East Coast: Tasman Island to South East Cape"
+            "Central North Coast: Stanley to Northern Tip of Flinders Island",
+            "Banks Strait and Franklin Sound",
+            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
+            "Upper East Coast: St Helens Point to Wineglass Bay",
+            "Lower East Coast: Wineglass Bay to Tasman Island",
+            "Derwent Estuary",
+            "Frederick Henry Bay and Norfolk Bays",
+            "Storm Bay",
+            "Channel",
+            "Central Plateau Lakes",
+            "South West Lakes"
           ],
           "aac_codes": [
-            "TAS_MW001",
-            "TAS_MW006"
+            "TAS_MW002",
+            "TAS_MW009",
+            "TAS_MW003",
+            "TAS_MW004",
+            "TAS_MW005",
+            "TAS_MW012",
+            "TAS_MW013",
+            "TAS_MW014",
+            "TAS_MW011",
+            "TAS_MW010",
+            "TAS_MW015"
           ],
-          "summary": "Far North West Coast and South East Coast"
+          "summary": "Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel, Central Plateau Lakes, South West Lakes, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast and Lower East Coast"
         }
       ]
     }
