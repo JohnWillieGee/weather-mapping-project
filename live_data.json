@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-12T11:53:32.070194+00:00",
-  "last_checked_utc": "2026-06-12T11:53:32.070194+00:00",
+  "generated_utc": "2026-06-12T12:23:30.645391+00:00",
+  "last_checked_utc": "2026-06-12T12:23:30.645391+00:00",
   "warning_count": 7,
   "warnings": [
     {
       "pid": "",
-      "title": "12/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "12/22:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 12 Jun 2026 06:15:19 GMT"
+      "issued": "Fri, 12 Jun 2026 12:00:20 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "12/15:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "12/21:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Fri, 12 Jun 2026 06:00:09 GMT"
+      "issued": "Fri, 12 Jun 2026 12:00:12 GMT"
     },
     {
       "pid": "",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "12/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "12/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 12 Jun 2026 06:05:13 GMT"
+      "issued": "Fri, 12 Jun 2026 12:00:12 GMT"
     }
   ],
   "fetch_errors": {},
@@ -75,21 +75,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Bushfire - WARBROOK RD",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-12T11:06:12+00:00",
-        "description": "MELALEUCA, CITY OF SWAN",
-        "lat": -31.7525,
-        "lng": 115.9083,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2be0b5cb893c2356b90a3d?display=modal"
-      },
       {
         "title": "Earthquake - Wyalkatchem, WA",
         "alertLevel": "",
@@ -167,6 +152,21 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - Unknown",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-12T12:12:33+00:00",
+        "description": "",
+        "lat": -13.5428,
+        "lng": 131.4198,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - MOCATTO RD, ACACIA HILLS",
         "alertLevel": "Advice",
@@ -3323,7 +3323,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-06-12T06:15:00Z",
+      "issued_utc": "2026-06-12T12:00:00Z",
       "overview": [
         "Strong Wind Warning for Friday for West Coast, Central Coast and Port Phillip",
         "Strong Wind Warning for Saturday for West Coast, Central Coast, Central Gippsland Coast, Port Phillip and Western Port"
@@ -3349,7 +3349,7 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-06-12T06:00:00Z",
+      "issued_utc": "2026-06-12T12:00:00Z",
       "overview": [
         "Gale Warning for Friday for Central Coast, South Central Coast, Upper South East Coast and Lower South East Coast",
         "Strong Wind Warning for Friday for Lower West Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait and Adelaide Metropolitan Waters",
@@ -3398,7 +3398,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-12T06:05:00Z",
+      "issued_utc": "2026-06-12T12:00:00Z",
       "overview": [
         "Gale Warning for Friday for South West Coast and Central West Coast",
         "Strong Wind Warning for Friday for Far North West Coast and South East Coast",
