@@ -1,8 +1,17 @@
 {
-  "generated_utc": "2026-06-12T22:53:28.466585+00:00",
-  "last_checked_utc": "2026-06-12T22:53:28.466585+00:00",
-  "warning_count": 9,
+  "generated_utc": "2026-06-12T23:23:28.314203+00:00",
+  "last_checked_utc": "2026-06-12T23:23:28.314203+00:00",
+  "warning_count": 10,
   "warnings": [
+    {
+      "pid": "IDN21037",
+      "title": "13/09:13 EST \n                Severe Weather Warning\n            \nfor \n                parts of Snowy Mountains Forecast District.",
+      "type": "severe_weather",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/products/IDN21037.shtml",
+      "desc": "",
+      "issued": "Fri, 12 Jun 2026 23:13:39 GMT"
+    },
     {
       "pid": "",
       "title": "13/07:16 EST Road Weather Alert for Sydney\nfor all suburbs",
@@ -32,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "13/03:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "13/09:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 12 Jun 2026 17:00:15 GMT"
+      "issued": "Fri, 12 Jun 2026 23:00:17 GMT"
     },
     {
       "pid": "",
@@ -59,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "13/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "13/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Fri, 12 Jun 2026 17:01:11 GMT"
+      "issued": "Fri, 12 Jun 2026 23:01:17 GMT"
     },
     {
       "pid": "IDW39605",
@@ -93,21 +102,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Structure Fire - SUBIACO RD",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-12T22:42:40+00:00",
-        "description": "SUBIACO, CITY OF SUBIACO",
-        "lat": -31.9432,
-        "lng": 115.8354,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2c89a84b9e8efdcbb83600?display=modal"
-      },
       {
         "title": "Earthquake - Wyalkatchem, WA",
         "alertLevel": "",
@@ -353,7 +347,7 @@
     ],
     "act": []
   },
-  "incident_count": 17,
+  "incident_count": 16,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3334,9 +3328,9 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-06-12T17:00:00Z",
+      "issued_utc": "2026-06-12T23:00:00Z",
       "overview": [
-        "Strong Wind Warning for Saturday for Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast and Mackay Coast",
+        "Strong Wind Warning for Saturday for Peninsula Coast, Cooktown Coast, Cairns Coast and Mackay Coast",
         "Strong Wind Warning for Sunday for Peninsula Coast, Cooktown Coast, Townsville Coast and Mackay Coast"
       ],
       "hazards": [
@@ -3347,17 +3341,15 @@
             "Peninsula Coast: Sharp Point to Cape Melville",
             "Cooktown Coast: Cape Melville to Cape Tribulation",
             "Cairns Coast: Cape Tribulation to Cardwell",
-            "Townsville Coast: Cardwell to Bowen",
             "Mackay Coast: Bowen to St Lawrence"
           ],
           "aac_codes": [
             "QLD_MW004",
             "QLD_MW005",
             "QLD_MW006",
-            "QLD_MW007",
             "QLD_MW008"
           ],
-          "summary": "Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast and Mackay Coast"
+          "summary": "Peninsula Coast, Cooktown Coast, Cairns Coast and Mackay Coast"
         }
       ]
     },
@@ -3424,8 +3416,11 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-12T17:01:00Z",
-      "overview": [],
+      "issued_utc": "2026-06-12T23:01:00Z",
+      "overview": [
+        "Strong Wind Warning for Saturday for Leeuwin Coast and Albany Coast",
+        "Strong Wind Warning for Sunday for Leeuwin Coast and Albany Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
