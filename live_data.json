@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-11T23:53:23.435928+00:00",
-  "last_checked_utc": "2026-06-11T23:53:23.435928+00:00",
+  "generated_utc": "2026-06-12T00:23:20.169023+00:00",
+  "last_checked_utc": "2026-06-12T00:23:20.169023+00:00",
   "warning_count": 7,
   "warnings": [
     {
       "pid": "",
-      "title": "12/04:10 EST Marine Wind Warning Summary for Victoria",
+      "title": "12/10:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 11 Jun 2026 18:10:20 GMT"
+      "issued": "Fri, 12 Jun 2026 00:00:21 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "12/03:40 CST Marine Wind Warning Summary for South Australia",
+      "title": "12/09:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Thu, 11 Jun 2026 18:10:11 GMT"
+      "issued": "Fri, 12 Jun 2026 00:00:11 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "12/07:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "12/08:03 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 11 Jun 2026 23:01:17 GMT"
+      "issued": "Fri, 12 Jun 2026 00:03:52 GMT"
     },
     {
       "pid": "IDW39605",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "12/04:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "12/10:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 11 Jun 2026 18:00:13 GMT"
+      "issued": "Fri, 12 Jun 2026 00:00:12 GMT"
     }
   ],
   "fetch_errors": {},
@@ -75,6 +75,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire - YATES RD",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-11T23:53:29+00:00",
+        "description": "NEWMAN, SHIRE OF EAST PILBARA",
+        "lat": -23.3737,
+        "lng": 119.7228,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a29676b0bea8145d79705f4?display=modal"
+      },
       {
         "title": "Bushfire - GREAT NORTHERN HWY",
         "alertLevel": "",
@@ -89,21 +104,6 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2b04609d978942a592b696?display=modal"
-      },
-      {
-        "title": "Fire - YATES RD",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-11T20:25:53+00:00",
-        "description": "NEWMAN, SHIRE OF EAST PILBARA",
-        "lat": -23.3737,
-        "lng": 119.7228,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a29676b0bea8145d79705f4?display=modal"
       },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - MARBLE BAR",
@@ -3355,7 +3355,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-06-11T23:50:29Z",
+      "issued_utc": "2026-06-12T00:00:00Z",
       "overview": [
         "Strong Wind Warning for Friday for Central Coast, Port Phillip and West Coast",
         "Strong Wind Warning for Saturday for Central Coast, West Coast, Central Gippsland Coast and Port Phillip"
@@ -3381,7 +3381,7 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-06-11T18:10:00Z",
+      "issued_utc": "2026-06-12T00:00:00Z",
       "overview": [
         "Gale Warning for Friday for Lower West Coast, Central Coast, South Central Coast, Upper South East Coast and Lower South East Coast",
         "Strong Wind Warning for Friday for Far West Coast, Upper West Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait and Adelaide Metropolitan Waters",
@@ -3434,7 +3434,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-11T23:01:00Z",
+      "issued_utc": "2026-06-12T00:03:41Z",
       "overview": [
         "Strong Wind Warning for Friday for Albany Coast, Esperance Coast and Eucla Coast",
         "Strong Wind Warning for Saturday for Leeuwin Coast and Albany Coast"
@@ -3460,7 +3460,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-11T18:00:00Z",
+      "issued_utc": "2026-06-12T00:00:00Z",
       "overview": [
         "Strong Wind Warning for Friday for Far North West Coast, South West Coast and Central West Coast",
         "Gale Warning for Saturday for Far North West Coast, South East Coast, South West Coast and Central West Coast",
