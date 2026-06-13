@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-13T04:53:26.021111+00:00",
-  "last_checked_utc": "2026-06-13T04:53:26.021111+00:00",
+  "generated_utc": "2026-06-13T05:23:24.387943+00:00",
+  "last_checked_utc": "2026-06-13T05:23:24.387943+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "13/09:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "13/15:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 12 Jun 2026 23:00:17 GMT"
+      "issued": "Sat, 13 Jun 2026 05:00:14 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "13/08:11 WST Marine Wind Warning Summary for Western Australia",
+      "title": "13/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sat, 13 Jun 2026 00:11:37 GMT"
+      "issued": "Sat, 13 Jun 2026 05:01:13 GMT"
     },
     {
       "pid": "IDW39605",
@@ -96,41 +96,58 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "LONSDALE RD, DUBBO",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "5 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Sat, 13 Jun 2026 05:21:20 GMT",
+        "description": "LONSDALE RD, DUBBO 2830",
+        "council": "Dubbo Regional",
+        "lat": -32.2741629999999,
+        "lng": 148.518782001,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
       {
-        "title": "Report of Smoke - DALRYMPLE DR",
+        "title": "Fire - MEMORIAL DR",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-13T04:47:28+00:00",
-        "description": "LEDA, CITY OF KWINANA",
-        "lat": -32.2643,
-        "lng": 115.8092,
+        "updated": "2026-06-13T05:12:52+00:00",
+        "description": "PERON, CITY OF ROCKINGHAM",
+        "lat": -32.2805,
+        "lng": 115.7046,
         "polys": [],
         "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2cde31ed7957e6d312125b?display=modal"
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2ce70230550b274d18584b?display=modal"
       },
       {
-        "title": "Structure Fire - ESTUARY RD",
+        "title": "Structure Fire - 19B BOOKER ST",
         "alertLevel": "",
         "status": "active",
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-13T02:58:35+00:00",
-        "description": "DAWESVILLE, CITY OF MANDURAH",
-        "lat": -32.6242,
-        "lng": 115.6407,
+        "updated": "2026-06-13T05:08:29+00:00",
+        "description": "DIANELLA, CITY OF STIRLING",
+        "lat": -31.8884,
+        "lng": 115.8635,
         "polys": [],
         "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2cbfbdf49f13e1ff2a4754?display=modal"
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2ce45430550b274d185801?display=modal"
       },
       {
         "title": "Earthquake - Wyalkatchem, WA",
@@ -180,16 +197,31 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - OSGOOD DR, EATON",
+        "title": "Grass and Scrub Fire - Unknown",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-13T04:26:01+00:00",
-        "description": "OSGOOD DR, EATON",
-        "lat": -12.4012,
-        "lng": 130.858,
+        "updated": "2026-06-13T05:08:12+00:00",
+        "description": "",
+        "lat": -21.5418,
+        "lng": 133.8521,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - PARKIN RD, LIVINGSTONE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-13T04:57:15+00:00",
+        "description": "PARKIN RD, LIVINGSTONE",
+        "lat": -12.7635,
+        "lng": 131.0709,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -392,7 +424,7 @@
     ],
     "act": []
   },
-  "incident_count": 19,
+  "incident_count": 21,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3373,10 +3405,10 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-06-12T23:00:00Z",
+      "issued_utc": "2026-06-13T05:00:00Z",
       "overview": [
-        "Strong Wind Warning for Saturday for Peninsula Coast, Cooktown Coast, Cairns Coast and Mackay Coast",
-        "Strong Wind Warning for Sunday for Peninsula Coast, Cooktown Coast, Townsville Coast and Mackay Coast"
+        "Strong Wind Warning for Saturday for Peninsula Coast, Cooktown Coast and Cairns Coast",
+        "Strong Wind Warning for Sunday for Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast and Mackay Coast"
       ],
       "hazards": [
         {
@@ -3385,16 +3417,14 @@
           "zones": [
             "Peninsula Coast: Sharp Point to Cape Melville",
             "Cooktown Coast: Cape Melville to Cape Tribulation",
-            "Cairns Coast: Cape Tribulation to Cardwell",
-            "Mackay Coast: Bowen to St Lawrence"
+            "Cairns Coast: Cape Tribulation to Cardwell"
           ],
           "aac_codes": [
             "QLD_MW004",
             "QLD_MW005",
-            "QLD_MW006",
-            "QLD_MW008"
+            "QLD_MW006"
           ],
-          "summary": "Peninsula Coast, Cooktown Coast, Cairns Coast and Mackay Coast"
+          "summary": "Peninsula Coast, Cooktown Coast and Cairns Coast"
         }
       ]
     },
@@ -3426,7 +3456,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-13T00:11:19Z",
+      "issued_utc": "2026-06-13T05:01:00Z",
       "overview": [
         "Strong Wind Warning for Saturday for Leeuwin Coast and Albany Coast",
         "Strong Wind Warning for Sunday for Leeuwin Coast and Albany Coast"
