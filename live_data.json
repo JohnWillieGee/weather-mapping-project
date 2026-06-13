@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-13T11:53:27.942089+00:00",
-  "last_checked_utc": "2026-06-13T11:53:27.942089+00:00",
+  "generated_utc": "2026-06-13T12:23:27.075175+00:00",
+  "last_checked_utc": "2026-06-13T12:23:27.075175+00:00",
   "warning_count": 8,
   "warnings": [
     {
       "pid": "",
-      "title": "13/16:05 EST Marine Wind Warning Summary for New South Wales",
+      "title": "13/22:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 13 Jun 2026 06:05:13 GMT"
+      "issued": "Sat, 13 Jun 2026 12:00:13 GMT"
     },
     {
       "pid": "IDN21037",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "13/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "13/22:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 13 Jun 2026 06:15:22 GMT"
+      "issued": "Sat, 13 Jun 2026 12:00:16 GMT"
     },
     {
       "pid": "IDV21037",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "13/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "13/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 13 Jun 2026 06:05:12 GMT"
+      "issued": "Sat, 13 Jun 2026 12:00:10 GMT"
     }
   ],
   "fetch_errors": {},
@@ -86,7 +86,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 13 Jun 2026 11:49:20 GMT",
+        "updated": "Sat, 13 Jun 2026 12:17:21 GMT",
         "description": "CASSIDY ST, DENHAM COURT 2565",
         "council": "Liverpool",
         "lat": -33.95915,
@@ -102,19 +102,19 @@
     "tas": [],
     "wa": [
       {
-        "title": "Fire - RIVERLINKS PARK CLARKSON",
+        "title": "Bushfire - TOMAH RD",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-13T11:39:38+00:00",
-        "description": "CLARKSON, CITY OF WANNEROO",
-        "lat": -31.6875,
-        "lng": 115.7282,
+        "updated": "2026-06-13T12:12:56+00:00",
+        "description": "WATTLE GROVE, CITY OF KALAMUNDA",
+        "lat": -31.9956,
+        "lng": 115.9837,
         "polys": [],
         "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2d4011e127fe87feef4d3b?display=modal"
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2d4738faf04b059191da51?display=modal"
       },
       {
         "title": "Bushfire - CENTRE WAY",
@@ -123,7 +123,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-13T11:15:05+00:00",
+        "updated": "2026-06-13T11:52:46+00:00",
         "description": "LEXIA, CITY OF SWAN",
         "lat": -31.7782,
         "lng": 115.9116,
@@ -178,21 +178,6 @@
       }
     ],
     "nt": [
-      {
-        "title": "Grass and Scrub Fire - BING BONG -, MCARTHUR",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-13T08:46:40+00:00",
-        "description": "BING BONG -, MCARTHUR",
-        "lat": -16.1032,
-        "lng": 136.237,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
       {
         "title": "Grass and Scrub Fire - GOODE RD, WAK WAK",
         "alertLevel": "Advice",
@@ -436,7 +421,7 @@
     ],
     "act": []
   },
-  "incident_count": 23,
+  "incident_count": 22,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3443,7 +3428,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-06-13T06:05:00Z",
+      "issued_utc": "2026-06-13T12:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3456,27 +3441,6 @@
             "NSW_MW001"
           ],
           "summary": "Eden Coast"
-        }
-      ]
-    },
-    "VIC": {
-      "state": "VIC",
-      "product": "IDV20600",
-      "issued_utc": "2026-06-13T06:15:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Central Coast: Cape Otway to Wilsons Promontory",
-            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance"
-          ],
-          "aac_codes": [
-            "VIC_MW002",
-            "VIC_MW003"
-          ],
-          "summary": "Central Coast and Central Gippsland Coast"
         }
       ]
     },
@@ -3507,10 +3471,10 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-13T06:05:00Z",
+      "issued_utc": "2026-06-13T12:00:00Z",
       "overview": [
-        "Gale Warning for Saturday for South East Coast, South West Coast and Central West Coast",
-        "Strong Wind Warning for Saturday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast and Storm Bay",
+        "Gale Warning for Saturday for South East Coast and South West Coast",
+        "Strong Wind Warning for Saturday for Far North West Coast, Lower East Coast, Central West Coast and Storm Bay",
         "Gale Warning for Sunday for South East Coast and South West Coast",
         "Strong Wind Warning for Sunday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and Central West Coast"
       ],
@@ -3520,38 +3484,30 @@
           "severity": "GALE",
           "zones": [
             "South East Coast: Tasman Island to South East Cape",
-            "South West Coast: South East Cape to Low Rocky Point",
-            "Central West Coast: Low Rocky Point to Sandy Cape"
+            "South West Coast: South East Cape to Low Rocky Point"
           ],
           "aac_codes": [
             "TAS_MW006",
-            "TAS_MW007",
-            "TAS_MW008"
+            "TAS_MW007"
           ],
-          "summary": "South East Coast, South West Coast and Central West Coast"
+          "summary": "South East Coast and South West Coast"
         },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
             "Far North West Coast: Sandy Cape to Stanley",
-            "Central North Coast: Stanley to Northern Tip of Flinders Island",
-            "Banks Strait and Franklin Sound",
-            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
-            "Upper East Coast: St Helens Point to Wineglass Bay",
             "Lower East Coast: Wineglass Bay to Tasman Island",
+            "Central West Coast: Low Rocky Point to Sandy Cape",
             "Storm Bay"
           ],
           "aac_codes": [
             "TAS_MW001",
-            "TAS_MW002",
-            "TAS_MW009",
-            "TAS_MW003",
-            "TAS_MW004",
             "TAS_MW005",
+            "TAS_MW008",
             "TAS_MW014"
           ],
-          "summary": "Storm Bay, Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast and Lower East Coast"
+          "summary": "Storm Bay, Far North West Coast, Lower East Coast and Central West Coast"
         }
       ]
     }
