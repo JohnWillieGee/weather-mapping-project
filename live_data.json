@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-13T00:53:27.496841+00:00",
-  "last_checked_utc": "2026-06-13T00:53:27.496841+00:00",
+  "generated_utc": "2026-06-13T01:23:27.157568+00:00",
+  "last_checked_utc": "2026-06-13T01:23:27.157568+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "13/10:10 EST Marine Wind Warning Summary for Tasmania",
+      "title": "13/11:09 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 13 Jun 2026 00:10:20 GMT"
+      "issued": "Sat, 13 Jun 2026 01:09:49 GMT"
     }
   ],
   "fetch_errors": {},
@@ -3405,10 +3405,10 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-13T00:10:11Z",
+      "issued_utc": "2026-06-13T01:09:42Z",
       "overview": [
-        "Gale Warning for Saturday for South East Coast, South West Coast and Central West Coast",
-        "Strong Wind Warning for Saturday for South West Lakes, Storm Bay, Upper East Coast, Lower East Coast, Channel, Far North West Coast, Central Plateau Lakes, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island",
+        "Gale Warning for Saturday for Lower East Coast, Central West Coast, South West Coast and South East Coast",
+        "Strong Wind Warning for Saturday for Upper East Coast, South West Lakes, Channel, Far North West Coast, Storm Bay, Central Plateau Lakes, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island",
         "Gale Warning for Sunday for South West Coast and South East Coast",
         "Strong Wind Warning for Sunday for Central West Coast, Lower East Coast, Far North West Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island"
       ],
@@ -3417,16 +3417,18 @@
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
+            "Lower East Coast: Wineglass Bay to Tasman Island",
             "South East Coast: Tasman Island to South East Cape",
             "South West Coast: South East Cape to Low Rocky Point",
             "Central West Coast: Low Rocky Point to Sandy Cape"
           ],
           "aac_codes": [
+            "TAS_MW005",
             "TAS_MW006",
             "TAS_MW007",
             "TAS_MW008"
           ],
-          "summary": "South East Coast, South West Coast and Central West Coast"
+          "summary": "Lower East Coast, South East Coast, South West Coast and Central West Coast"
         },
         {
           "level": "Strong Wind Warning",
@@ -3437,7 +3439,6 @@
             "Banks Strait and Franklin Sound",
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
             "Upper East Coast: St Helens Point to Wineglass Bay",
-            "Lower East Coast: Wineglass Bay to Tasman Island",
             "Storm Bay",
             "Channel",
             "Central Plateau Lakes",
@@ -3449,13 +3450,12 @@
             "TAS_MW009",
             "TAS_MW003",
             "TAS_MW004",
-            "TAS_MW005",
             "TAS_MW014",
             "TAS_MW011",
             "TAS_MW010",
             "TAS_MW015"
           ],
-          "summary": "Storm Bay, Channel, Central Plateau Lakes, South West Lakes, Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast and Lower East Coast"
+          "summary": "Storm Bay, Channel, Central Plateau Lakes, South West Lakes, Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island and Upper East Coast"
         }
       ]
     }
