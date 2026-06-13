@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-13T17:53:22.905865+00:00",
-  "last_checked_utc": "2026-06-13T17:53:22.905865+00:00",
+  "generated_utc": "2026-06-13T18:23:28.254126+00:00",
+  "last_checked_utc": "2026-06-13T18:23:28.254126+00:00",
   "warning_count": 7,
   "warnings": [
     {
       "pid": "",
-      "title": "13/22:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "14/04:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 13 Jun 2026 12:00:13 GMT"
+      "issued": "Sat, 13 Jun 2026 18:00:13 GMT"
     },
     {
       "pid": "",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "13/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "14/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 13 Jun 2026 12:00:10 GMT"
+      "issued": "Sat, 13 Jun 2026 18:00:12 GMT"
     }
   ],
   "fetch_errors": {},
@@ -3391,7 +3391,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-06-13T12:00:00Z",
+      "issued_utc": "2026-06-13T18:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3434,12 +3434,11 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-13T12:00:00Z",
+      "issued_utc": "2026-06-13T18:00:00Z",
       "overview": [
-        "Gale Warning for Saturday for South East Coast and South West Coast",
-        "Strong Wind Warning for Saturday for Far North West Coast, Lower East Coast, Central West Coast and Storm Bay",
         "Gale Warning for Sunday for South East Coast and South West Coast",
-        "Strong Wind Warning for Sunday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and Central West Coast"
+        "Strong Wind Warning for Sunday for Lower East Coast and Central West Coast",
+        "Strong Wind Warning for Monday for South West Coast"
       ],
       "hazards": [
         {
@@ -3459,18 +3458,14 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Far North West Coast: Sandy Cape to Stanley",
             "Lower East Coast: Wineglass Bay to Tasman Island",
-            "Central West Coast: Low Rocky Point to Sandy Cape",
-            "Storm Bay"
+            "Central West Coast: Low Rocky Point to Sandy Cape"
           ],
           "aac_codes": [
-            "TAS_MW001",
             "TAS_MW005",
-            "TAS_MW008",
-            "TAS_MW014"
+            "TAS_MW008"
           ],
-          "summary": "Storm Bay, Far North West Coast, Lower East Coast and Central West Coast"
+          "summary": "Lower East Coast and Central West Coast"
         }
       ]
     }
