@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-14T11:53:24.876974+00:00",
-  "last_checked_utc": "2026-06-14T11:53:24.876974+00:00",
+  "generated_utc": "2026-06-14T12:23:21.921563+00:00",
+  "last_checked_utc": "2026-06-14T12:23:21.921563+00:00",
   "warning_count": 6,
   "warnings": [
     {
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "14/15:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "14/21:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sun, 14 Jun 2026 06:00:13 GMT"
+      "issued": "Sun, 14 Jun 2026 12:00:10 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "14/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "14/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 14 Jun 2026 06:05:12 GMT"
+      "issued": "Sun, 14 Jun 2026 12:00:11 GMT"
     }
   ],
   "fetch_errors": {},
@@ -66,6 +66,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire - PINJARRA RD",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-14T12:12:08+00:00",
+        "description": "FURNISSDALE, SHIRE OF MURRAY",
+        "lat": -32.5661,
+        "lng": 115.7964,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2e9acf8951715759374e1f?display=modal"
+      },
       {
         "title": "Bushfire - WEABER PLAIN RD",
         "alertLevel": "",
@@ -188,36 +203,6 @@
       }
     ],
     "nt": [
-      {
-        "title": "Grass and Scrub Fire - GILES ST, KATHERINE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-14T11:47:22+00:00",
-        "description": "GILES ST, KATHERINE",
-        "lat": -14.4394,
-        "lng": 132.2717,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - GILES ST, KATHERINE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-14T11:44:52+00:00",
-        "description": "GILES ST, KATHERINE",
-        "lat": -14.4464,
-        "lng": 132.2688,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
       {
         "title": "Grass and Scrub Fire - STUART HWY, MARGARET RIVER",
         "alertLevel": "Advice",
@@ -371,7 +356,7 @@
     ],
     "act": []
   },
-  "incident_count": 20,
+  "incident_count": 19,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3382,7 +3367,7 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-06-14T06:00:00Z",
+      "issued_utc": "2026-06-14T12:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3422,6 +3407,27 @@
             "WA_MW013"
           ],
           "summary": "Esperance Coast"
+        }
+      ]
+    },
+    "TAS": {
+      "state": "TAS",
+      "product": "IDT20100",
+      "issued_utc": "2026-06-14T12:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "South West Coast: South East Cape to Low Rocky Point",
+            "Central West Coast: Low Rocky Point to Sandy Cape"
+          ],
+          "aac_codes": [
+            "TAS_MW007",
+            "TAS_MW008"
+          ],
+          "summary": "South West Coast and Central West Coast"
         }
       ]
     }
