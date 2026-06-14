@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-14T17:23:24.292086+00:00",
-  "last_checked_utc": "2026-06-14T17:23:24.292086+00:00",
+  "generated_utc": "2026-06-14T17:53:22.649436+00:00",
+  "last_checked_utc": "2026-06-14T17:53:22.649436+00:00",
   "warning_count": 5,
   "warnings": [
     {
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "15/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "15/01:22 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 14 Jun 2026 17:01:13 GMT"
+      "issued": "Sun, 14 Jun 2026 17:22:31 GMT"
     },
     {
       "pid": "",
@@ -49,9 +49,7 @@
       "issued": "Sun, 14 Jun 2026 12:00:11 GMT"
     }
   ],
-  "fetch_errors": {
-    "tas": "500 Server Error:  for url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/72/query?where=1%3D1&outFields=*&f=geojson"
-  },
+  "fetch_errors": {},
   "incidents": {
     "nsw": [],
     "vic": [],
@@ -59,6 +57,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire - HIGH RD",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-14T17:33:02+00:00",
+        "description": "PARKWOOD, CITY OF CANNING",
+        "lat": -32.0465,
+        "lng": 115.9245,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2ee39a94d8dd6804f45f5a?display=modal"
+      },
       {
         "title": "Bushfire - WEABER PLAIN RD",
         "alertLevel": "",
@@ -334,7 +347,7 @@
     ],
     "act": []
   },
-  "incident_count": 18,
+  "incident_count": 19,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3372,8 +3385,11 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-14T17:01:00Z",
-      "overview": [],
+      "issued_utc": "2026-06-14T17:22:14Z",
+      "overview": [
+        "Strong Wind Warning for Monday for Esperance Coast",
+        "Strong Wind Warning for Tuesday for Albany Coast, Esperance Coast and Eucla Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
