@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-14T04:53:25.634013+00:00",
-  "last_checked_utc": "2026-06-14T04:53:25.634013+00:00",
+  "generated_utc": "2026-06-14T05:23:21.647254+00:00",
+  "last_checked_utc": "2026-06-14T05:23:21.647254+00:00",
   "warning_count": 6,
   "warnings": [
     {
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "14/10:16 EST Marine Wind Warning Summary for Queensland",
+      "title": "14/15:13 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 14 Jun 2026 00:16:56 GMT"
+      "issued": "Sun, 14 Jun 2026 05:13:27 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "14/08:04 WST Marine Wind Warning Summary for Western Australia",
+      "title": "14/13:13 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 14 Jun 2026 00:04:16 GMT"
+      "issued": "Sun, 14 Jun 2026 05:13:32 GMT"
     },
     {
       "pid": "",
@@ -67,19 +67,34 @@
     "tas": [],
     "wa": [
       {
-        "title": "Structure Fire - WODALLA PDE",
+        "title": "Bushfire - KUNUNURRA AIRPORT",
         "alertLevel": "",
         "status": "active",
-        "type": "Structure Fire",
+        "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-14T04:17:25+00:00",
-        "description": "BYFORD, SHIRE OF SERPENTINE-JARRAHDALE",
-        "lat": -32.2145,
-        "lng": 115.9805,
+        "updated": "2026-06-14T05:04:03+00:00",
+        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.784,
+        "lng": 128.7126,
         "polys": [],
         "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2e2afcd3be3771260115fb?display=modal"
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2e3669ebe33e53675cd4d7?display=modal"
+      },
+      {
+        "title": "Bushfire - SPEARGRASS RD",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-14T04:50:08+00:00",
+        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.7642,
+        "lng": 128.7376,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2e332ef2b4f91fd3557c2c?display=modal"
       },
       {
         "title": "Bushfire - WEABER PLAIN RD",
@@ -159,13 +174,28 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - HUMPTY DOO",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-14T05:18:08+00:00",
+        "description": "HUMPTY DOO",
+        "lat": -12.5688,
+        "lng": 131.0888,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - Unknown",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-14T04:46:18+00:00",
+        "updated": "2026-06-14T05:05:47+00:00",
         "description": "",
         "lat": -12.4615,
         "lng": 130.8356,
@@ -281,7 +311,7 @@
     ],
     "act": []
   },
-  "incident_count": 14,
+  "incident_count": 16,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3262,10 +3292,10 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-06-14T00:16:47Z",
+      "issued_utc": "2026-06-14T05:13:16Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Cairns Coast, Peninsula Coast, Cooktown Coast, Mackay Coast and Townsville Coast",
-        "Strong Wind Warning for Monday for Cairns Coast, Peninsula Coast, Cooktown Coast, Mackay Coast and Townsville Coast"
+        "Strong Wind Warning for Sunday for Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast and Mackay Coast",
+        "Strong Wind Warning for Monday for Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast and Mackay Coast"
       ],
       "hazards": [
         {
@@ -3286,6 +3316,25 @@
             "QLD_MW008"
           ],
           "summary": "Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast and Mackay Coast"
+        }
+      ]
+    },
+    "WA": {
+      "state": "WA",
+      "product": "IDW20100",
+      "issued_utc": "2026-06-14T05:13:23Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Esperance Coast: Bremer Bay to Israelite Bay"
+          ],
+          "aac_codes": [
+            "WA_MW013"
+          ],
+          "summary": "Esperance Coast"
         }
       ]
     },
