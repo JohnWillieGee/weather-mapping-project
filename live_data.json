@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-14T16:53:21.731697+00:00",
-  "last_checked_utc": "2026-06-14T16:53:21.731697+00:00",
+  "generated_utc": "2026-06-14T17:23:24.292086+00:00",
+  "last_checked_utc": "2026-06-14T17:23:24.292086+00:00",
   "warning_count": 5,
   "warnings": [
     {
       "pid": "",
-      "title": "14/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "15/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 14 Jun 2026 11:00:14 GMT"
+      "issued": "Sun, 14 Jun 2026 17:00:20 GMT"
     },
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "14/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "15/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 14 Jun 2026 11:01:16 GMT"
+      "issued": "Sun, 14 Jun 2026 17:01:13 GMT"
     },
     {
       "pid": "",
@@ -49,7 +49,9 @@
       "issued": "Sun, 14 Jun 2026 12:00:11 GMT"
     }
   ],
-  "fetch_errors": {},
+  "fetch_errors": {
+    "tas": "500 Server Error:  for url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/72/query?where=1%3D1&outFields=*&f=geojson"
+  },
   "incidents": {
     "nsw": [],
     "vic": [],
@@ -3313,10 +3315,10 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-06-14T11:00:00Z",
+      "issued_utc": "2026-06-14T17:00:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast and Mackay Coast",
-        "Strong Wind Warning for Monday for Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast and Mackay Coast"
+        "Strong Wind Warning for Monday for Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast and Mackay Coast",
+        "Strong Wind Warning for Tuesday for Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast and Mackay Coast"
       ],
       "hazards": [
         {
@@ -3370,7 +3372,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-14T11:01:00Z",
+      "issued_utc": "2026-06-14T17:01:00Z",
       "overview": [],
       "hazards": [
         {
