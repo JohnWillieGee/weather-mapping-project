@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-15T04:53:25.218916+00:00",
-  "last_checked_utc": "2026-06-15T04:53:25.218916+00:00",
+  "generated_utc": "2026-06-15T05:23:22.101364+00:00",
+  "last_checked_utc": "2026-06-15T05:23:22.101364+00:00",
   "warning_count": 6,
   "warnings": [
     {
       "pid": "",
-      "title": "15/09:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "15/15:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 14 Jun 2026 23:00:13 GMT"
+      "issued": "Mon, 15 Jun 2026 05:00:14 GMT"
     },
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "15/07:43 WST Marine Wind Warning Summary for Western Australia",
+      "title": "15/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 14 Jun 2026 23:43:43 GMT"
+      "issued": "Mon, 15 Jun 2026 05:01:16 GMT"
     },
     {
       "pid": "",
@@ -60,12 +60,44 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Borthwick St, Inverell",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Mon, 15 Jun 2026 05:17:20 GMT",
+        "description": "Borthwick St, Inverell, NSW 2360",
+        "council": "Inverell",
+        "lat": -29.7876909999999,
+        "lng": 151.100858,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire - PIPING LANE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-15T05:11:44+00:00",
+        "description": "WOORREE, CITY OF GREATER GERALDTON",
+        "lat": -28.7609,
+        "lng": 114.6516,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2f8827ed1f9b76a640bb2f?display=modal"
+      },
       {
         "title": "Bushfire - WEABER PLAIN RD",
         "alertLevel": "",
@@ -125,21 +157,6 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2f248ab2d8ad27e1ccc9f2?display=modal"
-      },
-      {
-        "title": "Bushfire - DE GREY",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-14T07:59:52+00:00",
-        "description": "DE GREY, TOWN OF PORT HEDLAND",
-        "lat": -20.352,
-        "lng": 119.0059,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2e5853919095dd70e78320?display=modal"
       },
       {
         "title": "Bushfire - SPEARGRASS RD",
@@ -204,6 +221,36 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - DOXAS RD, HUMPTY DOO",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-15T05:16:47+00:00",
+        "description": "DOXAS RD, HUMPTY DOO",
+        "lat": -12.6078,
+        "lng": 131.0886,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - SOUTH TCE, THE GAP",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-15T05:07:27+00:00",
+        "description": "SOUTH TCE, THE GAP",
+        "lat": -23.7168,
+        "lng": 133.8742,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - KETTLE ST, FARRAR",
         "alertLevel": "Advice",
         "status": "active",
@@ -214,21 +261,6 @@
         "description": "KETTLE ST, FARRAR",
         "lat": -12.4788,
         "lng": 130.993,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - DOXAS RD, HUMPTY DOO",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-15T04:31:50+00:00",
-        "description": "DOXAS RD, HUMPTY DOO",
-        "lat": -12.6078,
-        "lng": 131.0886,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -474,55 +506,9 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [
-      {
-        "title": "HAZMAT INCIDENT - BRADDON",
-        "alertLevel": "",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-06-15T04:46:00+00:00",
-        "description": "BRADDON",
-        "lat": -35.2709,
-        "lng": 149.1341,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HAZMAT INCIDENT - BRADDON",
-        "alertLevel": "",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "Fire",
-        "updated": "2026-06-15T03:52:16+00:00",
-        "description": "BRADDON",
-        "lat": -35.2709,
-        "lng": 149.1341,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HAZMAT INCIDENT - BRADDON",
-        "alertLevel": "",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "Ambulance",
-        "updated": "2026-06-15T03:24:24+00:00",
-        "description": "BRADDON",
-        "lat": -35.2709,
-        "lng": 149.1341,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      }
-    ]
+    "act": []
   },
-  "incident_count": 30,
+  "incident_count": 29,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3503,10 +3489,10 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-06-14T23:00:00Z",
+      "issued_utc": "2026-06-15T05:00:00Z",
       "overview": [
         "Strong Wind Warning for Monday for Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast and Mackay Coast",
-        "Strong Wind Warning for Tuesday for Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast and Mackay Coast"
+        "Strong Wind Warning for Tuesday for Peninsula Coast, Cooktown Coast, Townsville Coast and Mackay Coast"
       ],
       "hazards": [
         {
@@ -3556,7 +3542,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-14T23:43:33Z",
+      "issued_utc": "2026-06-15T05:01:00Z",
       "overview": [
         "Strong Wind Warning for Monday for Gascoyne Coast and Esperance Coast",
         "Strong Wind Warning for Tuesday for Albany Coast, Esperance Coast and Eucla Coast"
