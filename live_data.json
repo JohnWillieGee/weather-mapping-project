@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-15T21:23:27.485948+00:00",
-  "last_checked_utc": "2026-06-15T21:23:27.485948+00:00",
+  "generated_utc": "2026-06-15T21:53:28.704880+00:00",
+  "last_checked_utc": "2026-06-15T21:53:28.704880+00:00",
   "warning_count": 8,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "16/03:26 WST Marine Wind Warning Summary for Western Australia",
+      "title": "16/05:24 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 15 Jun 2026 19:26:15 GMT"
+      "issued": "Mon, 15 Jun 2026 21:24:13 GMT"
     },
     {
       "pid": "IDW21037",
@@ -84,6 +84,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire - ANEMONE WAY",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-15T21:39:04+00:00",
+        "description": "MULLALOO, CITY OF JOONDALUP",
+        "lat": -31.7812,
+        "lng": 115.7458,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3071172bbc10df0db0a2f2?display=modal"
+      },
       {
         "title": "Structure Fire - ROBERTS ST",
         "alertLevel": "",
@@ -329,7 +344,7 @@
     ],
     "act": []
   },
-  "incident_count": 16,
+  "incident_count": 17,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3379,9 +3394,9 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-15T19:26:06Z",
+      "issued_utc": "2026-06-15T21:24:02Z",
       "overview": [
-        "Strong Wind Warning for Tuesday for Albany Coast, Esperance Coast and Eucla Coast",
+        "Strong Wind Warning for Tuesday for Pilbara Coast West, Albany Coast, Esperance Coast and Eucla Coast",
         "Gale Warning for Wednesday for Esperance Coast",
         "Strong Wind Warning for Wednesday for Albany Coast and Eucla Coast"
       ],
@@ -3390,16 +3405,18 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Pilbara Coast West: Cape Preston to North West Cape",
             "Albany Coast: Walpole to Bremer Bay",
             "Esperance Coast: Bremer Bay to Israelite Bay",
             "Eucla Coast: Israelite Bay to WA-SA Border"
           ],
           "aac_codes": [
+            "WA_MW004",
             "WA_MW012",
             "WA_MW013",
             "WA_MW014"
           ],
-          "summary": "Albany Coast, Esperance Coast and Eucla Coast"
+          "summary": "Pilbara Coast West, Albany Coast, Esperance Coast and Eucla Coast"
         }
       ]
     }
