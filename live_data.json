@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-15T16:53:20.547092+00:00",
-  "last_checked_utc": "2026-06-15T16:53:20.547092+00:00",
+  "generated_utc": "2026-06-15T17:23:24.466773+00:00",
+  "last_checked_utc": "2026-06-15T17:23:24.466773+00:00",
   "warning_count": 8,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "15/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "16/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 15 Jun 2026 11:00:14 GMT"
+      "issued": "Mon, 15 Jun 2026 17:00:16 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "15/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "16/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 15 Jun 2026 11:01:14 GMT"
+      "issued": "Mon, 15 Jun 2026 17:01:13 GMT"
     },
     {
       "pid": "IDW21037",
@@ -84,21 +84,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Bushfire - TONKIN HWY",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-15T16:39:46+00:00",
-        "description": "MADDINGTON, CITY OF GOSNELLS",
-        "lat": -32.0297,
-        "lng": 116.0062,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3028fe776bd88b4de91a6e?display=modal"
-      },
       {
         "title": "Structure Fire - ROBERTS ST",
         "alertLevel": "",
@@ -344,7 +329,7 @@
     ],
     "act": []
   },
-  "incident_count": 17,
+  "incident_count": 16,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3325,10 +3310,10 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-06-15T11:00:00Z",
+      "issued_utc": "2026-06-15T17:00:00Z",
       "overview": [
-        "Strong Wind Warning for Monday for Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast and Mackay Coast",
-        "Strong Wind Warning for Tuesday for Peninsula Coast, Cooktown Coast, Townsville Coast and Mackay Coast"
+        "Strong Wind Warning for Tuesday for Peninsula Coast, Cooktown Coast, Townsville Coast and Mackay Coast",
+        "Strong Wind Warning for Wednesday for Peninsula Coast, Cooktown Coast, Townsville Coast and Mackay Coast"
       ],
       "hazards": [
         {
@@ -3337,18 +3322,16 @@
           "zones": [
             "Peninsula Coast: Sharp Point to Cape Melville",
             "Cooktown Coast: Cape Melville to Cape Tribulation",
-            "Cairns Coast: Cape Tribulation to Cardwell",
             "Townsville Coast: Cardwell to Bowen",
             "Mackay Coast: Bowen to St Lawrence"
           ],
           "aac_codes": [
             "QLD_MW004",
             "QLD_MW005",
-            "QLD_MW006",
             "QLD_MW007",
             "QLD_MW008"
           ],
-          "summary": "Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast and Mackay Coast"
+          "summary": "Peninsula Coast, Cooktown Coast, Townsville Coast and Mackay Coast"
         }
       ]
     },
@@ -3400,22 +3383,27 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-15T11:01:00Z",
+      "issued_utc": "2026-06-15T17:01:00Z",
       "overview": [
-        "Strong Wind Warning for Monday for Esperance Coast",
-        "Strong Wind Warning for Tuesday for Albany Coast, Esperance Coast and Eucla Coast"
+        "Strong Wind Warning for Tuesday for Albany Coast, Esperance Coast and Eucla Coast",
+        "Gale Warning for Wednesday for Esperance Coast",
+        "Strong Wind Warning for Wednesday for Albany Coast and Eucla Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Esperance Coast: Bremer Bay to Israelite Bay"
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay",
+            "Eucla Coast: Israelite Bay to WA-SA Border"
           ],
           "aac_codes": [
-            "WA_MW013"
+            "WA_MW012",
+            "WA_MW013",
+            "WA_MW014"
           ],
-          "summary": "Esperance Coast"
+          "summary": "Albany Coast, Esperance Coast and Eucla Coast"
         }
       ]
     },
