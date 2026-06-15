@@ -550,7 +550,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 
       <div style="padding:10px 14px 12px;border-top:1px solid var(--border);margin-top:auto;">
         <div style="font-family:monospace;font-size:9px;color:var(--text3);letter-spacing:.5px;">
-          <span style="color:var(--text2);font-weight:700;">WatchTower</span> &nbsp;v2.30
+          <span style="color:var(--text2);font-weight:700;">WatchTower</span> &nbsp;v2.34
           <span style="float:right;opacity:0.6;">John Willie Gee</span>
         </div>
       </div>
@@ -2792,7 +2792,11 @@ var BOM_DISTRICTS_BY_STATE = {
     "west and south gippsland":[-38.2,146.5],"southern ranges":[-37.2,146.0],
     "corangamite":[-38.1,143.5],"glenelg-hopkins":[-37.5,142.0],
     "goulburn-broken":[-36.5,145.5],"port phillip and westernport":[-38.1,145.2],
-    "west gippsland":[-38.0,146.0]
+    "west gippsland":[-38.0,146.0],
+    "northern country":[-36.38,144.73],"southern country":[-38.5,144.0],
+    "western port":[-38.3,145.4],"port phillip":[-38.1,144.9],
+    "west coast":[-38.5,142.5],"east gippsland coast":[-37.8,148.5],
+    "central gippsland coast":[-38.4,146.8]
   },
   QLD: {
     "southeast coast":[-27.5,153.0],"darling downs":[-27.5,151.5],
@@ -2812,7 +2816,9 @@ var BOM_DISTRICTS_BY_STATE = {
     "fitzroy basin":[-23.5,150.0],"northern gulf":[-17.5,139.0],
     "burdekin":[-20.0,147.0],"reef catchments":[-21.0,148.5],
     "south east queensland":[-27.5,153.0],"southern gulf":[-19.5,139.5],
-    "wet tropics":[-17.0,145.5],"border rivers":[-29.0,151.5]
+    "wet tropics":[-17.0,145.5],"border rivers":[-29.0,151.5],
+    "southeast queensland":[-27.5,153.0],"tropical coast and tablelands":[-17.5,145.8],
+    "inland tropical coast":[-18.5,145.0]
   },
   SA: {
     "adelaide":[-34.9,138.6],"yorke peninsula":[-34.5,137.5],
@@ -2827,7 +2833,9 @@ var BOM_DISTRICTS_BY_STATE = {
     "alinytjara wilurara":[-27.5,132.0],
     "south australian arid lands":[-29.0,135.0],
     "south australian murray-darling basin":[-34.0,140.5],
-    "northern and yorke":[-33.5,138.0]
+    "northern and yorke":[-33.5,138.0],
+    "flinders ranges":[-31.5,138.7],"far north":[-28.0,136.0],"far west":[-31.0,130.0],
+    "gulf st vincent":[-35.0,138.2],"spencer gulf":[-33.5,137.0]
   },
   WA: {
     "perth":[-32.0,116.0],"south west":[-34.0,115.5],
@@ -2839,7 +2847,14 @@ var BOM_DISTRICTS_BY_STATE = {
     "northeast":[-21.0,121.0],"central":[-26.0,119.0],
     "south coast":[-34.0,120.0],"northwest coastal":[-22.0,114.5],
     "northern agricultural":[-29.5,116.5],"peel-harvey":[-32.7,115.8],
-    "rangelands north":[-22.0,122.0],"rangelands south":[-28.0,120.0]
+    "rangelands north":[-22.0,122.0],"rangelands south":[-28.0,120.0],
+    "south east coastal":[-33.62,121.74],"south west coastal":[-34.2,115.8],
+    "central wheat belt":[-31.07,117.08],"lower west":[-31.91,116.0],
+    "south interior":[-26.13,125.73],"albany coast":[-35.0,117.9],
+    "esperance coast":[-33.9,121.9],"eucla coast":[-31.7,128.9],
+    "far west coast":[-27.0,114.2],"upper west coast":[-29.5,114.8],
+    "lower west coast":[-31.5,115.2],"central west coast":[-28.8,114.6],
+    "south central coast":[-34.8,116.0]
   },
   TAS: {
     "hobart":[-42.9,147.3],"launceston":[-41.4,147.1],
@@ -2853,7 +2868,9 @@ var BOM_DISTRICTS_BY_STATE = {
     "midlands":[-42.0,147.0],"south east":[-43.0,147.5],
     "upper derwent":[-42.5,146.7],
     // BOM official districts
-    "cradle coast":[-41.2,145.5]
+    "cradle coast":[-41.2,145.5],
+    "far north west coast":[-40.7,144.7],"south west":[-42.8,146.0],
+    "derwent valley":[-42.5,146.6],"southern ranges":[-43.0,146.5]
   },
   NT: {
     "darwin":[-12.5,130.8],"top end":[-13.5,132.0],
@@ -2863,7 +2880,11 @@ var BOM_DISTRICTS_BY_STATE = {
     "northwest":[-14.0,130.5],"northeast":[-13.0,136.0],
     "north":[-13.0,132.0],
     // BOM official - "alice" as short alias for alice springs
-    "alice":[-23.7,133.9]
+    "alice":[-23.7,133.9],
+    "darwin suburbs":[-12.5,130.9],"rural areas":[-13.0,131.2],
+    "litchfield":[-13.2,130.8],"daly":[-14.62,129.65],
+    "tiwi islands":[-11.61,130.3],"cobourg":[-11.4,132.2],
+    "gulf":[-15.0,135.5],"tableland":[-17.5,133.0]
   }
 };
 
@@ -4805,7 +4826,14 @@ function showNextRiskAlert() {
   var col = RISK_COLOR[item.level];
 
   var isPulse = (item.level >= RISK_LEVEL.DIRECT) || item.isFireStorm;
-  var typeIcon = item.isFireStorm ? '\u26C8 STORM WARNING \u2014 AM/MF SITE' : '\uD83D\uDD25 FIRE THREAT';
+  var _reasonText = (item.reasons[0] && item.reasons[0].detail) ? item.reasons[0].detail.toLowerCase() : '';
+  var typeIcon = item.isFireStorm ? '\u26C8 STORM WARNING \u2014 AM/MF SITE'
+    : _reasonText.includes('flood')   ? '\uD83D\uDCA7 FLOOD THREAT'
+    : _reasonText.includes('storm')   ? '\u26A1 STORM THREAT'
+    : _reasonText.includes('tsunami') ? '\uD83C\uDF0A TSUNAMI THREAT'
+    : _reasonText.includes('earth')   ? '\uD83C\uDF0D EARTHQUAKE THREAT'
+    : _reasonText.includes('chemical')||_reasonText.includes('hazmat') ? '\u2623 HAZMAT THREAT'
+    : '\uD83D\uDD25 FIRE THREAT';
 
   var reasonHtml = item.reasons.slice(0,2).map(function(r) {
     return '<div style="font-size:10px;color:var(--text2);padding:2px 0;border-bottom:1px solid var(--border)">'+
