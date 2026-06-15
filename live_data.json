@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-15T17:53:21.515153+00:00",
-  "last_checked_utc": "2026-06-15T17:53:21.515153+00:00",
+  "generated_utc": "2026-06-15T18:23:24.016178+00:00",
+  "last_checked_utc": "2026-06-15T18:23:24.016178+00:00",
   "warning_count": 8,
   "warnings": [
     {
       "pid": "",
-      "title": "15/22:00 EST Marine Wind Warning Summary for Victoria",
+      "title": "16/04:10 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 15 Jun 2026 12:00:21 GMT"
+      "issued": "Mon, 15 Jun 2026 18:10:16 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "15/21:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "16/03:40 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Mon, 15 Jun 2026 12:00:10 GMT"
+      "issued": "Mon, 15 Jun 2026 18:10:10 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "15/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "16/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 15 Jun 2026 12:00:12 GMT"
+      "issued": "Mon, 15 Jun 2026 18:00:11 GMT"
     }
   ],
   "fetch_errors": {},
@@ -3338,7 +3338,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-06-15T12:00:00Z",
+      "issued_utc": "2026-06-15T18:10:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3357,26 +3357,22 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-06-15T12:00:00Z",
+      "issued_utc": "2026-06-15T18:10:00Z",
       "overview": [
-        "Strong Wind Warning for Monday for Lower West Coast, Central Coast and South Central Coast",
-        "Strong Wind Warning for Tuesday for Lower South East Coast"
+        "Strong Wind Warning for Tuesday for Lower South East Coast",
+        "Strong Wind Warning for Wednesday for Far West Coast, Upper West Coast and Lower West Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Lower West Coast: Elliston to Cape Carnot",
-            "Central Coast",
-            "South Central Coast"
+            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
           ],
           "aac_codes": [
-            "SA_MW003",
-            "SA_MW004",
-            "SA_MW008"
+            "SA_MW010"
           ],
-          "summary": "Lower West Coast, Central Coast and South Central Coast"
+          "summary": "Lower South East Coast"
         }
       ]
     },
@@ -3404,28 +3400,6 @@
             "WA_MW014"
           ],
           "summary": "Albany Coast, Esperance Coast and Eucla Coast"
-        }
-      ]
-    },
-    "TAS": {
-      "state": "TAS",
-      "product": "IDT20100",
-      "issued_utc": "2026-06-15T12:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Monday for South West Coast",
-        "Strong Wind Warning for Tuesday for South West Coast"
-      ],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "South West Coast: South East Cape to Low Rocky Point"
-          ],
-          "aac_codes": [
-            "TAS_MW007"
-          ],
-          "summary": "South West Coast"
         }
       ]
     }
