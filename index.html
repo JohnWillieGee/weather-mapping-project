@@ -6,6 +6,7 @@
 <script src="https://johnwilliegee.github.io/WatchTower/watchtower_geodata_fdr.js"></script>
 <script src="https://johnwilliegee.github.io/WatchTower/watchtower_geodata_pw.js"></script>
 <script src="https://johnwilliegee.github.io/WatchTower/watchtower_geodata_marine.js"></script>
+<script src="https://johnwilliegee.github.io/WatchTower/watchtower_geodata_me.js"></script>
 <script src="https://johnwilliegee.github.io/WatchTower/watchtower_tutorial.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -3349,6 +3350,24 @@ function renderWarningsMap() {
     if (BOM_PW_DISTRICTS) {
       var searchText = (w.title + ' ' + (w.text||'')).toLowerCase().replace(/\s+&\s+/g,' and ');
       BOM_PW_DISTRICTS.features.forEach(function(feat) {
+        var dname  = (feat.properties.name || '').toLowerCase().replace(/\s+&\s+/g,' and ');
+        var dstate = (feat.properties.state || '').toUpperCase();
+        if (dstate === (w.state||'').toUpperCase() && dname.length > 3 && searchText.indexOf(dname) !== -1) {
+          L.geoJSON(feat, {
+            style: {
+              color: warnFill, weight: warnWeight, opacity: warnOpacity,
+              fillColor: warnFill, fillOpacity: warnFillOp, dashArray: warnDash
+            }
+          }).bindPopup(popHtml, { className: 'ba-popup', maxWidth: 340 })
+            .addTo(warningsLayer);
+          drawnPolygon = true;
+        }
+      });
+    }
+    // Secondary polygon pass — BOM Metropolitan and Other Forecast Areas (IDM00014)
+    // Catches districts like Sydney, Central Coast, Melbourne, Darwin etc. not in IDM00001
+    if (!drawnPolygon && typeof BOM_ME_DISTRICTS !== 'undefined' && BOM_ME_DISTRICTS) {
+      BOM_ME_DISTRICTS.features.forEach(function(feat) {
         var dname  = (feat.properties.name || '').toLowerCase().replace(/\s+&\s+/g,' and ');
         var dstate = (feat.properties.state || '').toUpperCase();
         if (dstate === (w.state||'').toUpperCase() && dname.length > 3 && searchText.indexOf(dname) !== -1) {
