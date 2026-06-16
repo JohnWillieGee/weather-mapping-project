@@ -4444,7 +4444,7 @@ function buildClockRows() {
   rows = 4 + (adelDST ? 1 : 0) + (sydDST ? 1 : 0); // base 4 + SA split + QLD split
   // Scale font: fit all rows into panel height with padding
   var rowH     = Math.floor((panelH - 32) / rows); // 32px for titlebar
-  var fontSize = Math.max(14, Math.min(56, Math.floor(Math.min(panelW * 0.115, rowH * 0.48))));
+  var fontSize = Math.max(14, Math.min(Math.floor(panelW * 0.18), Math.floor(rowH * 0.65)));
   // Write font size as a CSS custom property so it updates immediately via CSS,
   // avoiding the offsetHeight-before-repaint race when resizing.
   if(panel) panel.style.setProperty('--clock-font-size', fontSize + 'px');
