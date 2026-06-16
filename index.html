@@ -272,10 +272,10 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 #clock-panel{position:absolute;top:50px;right:50px;z-index:1002;width:300px;height:auto;border-radius:var(--radius);overflow:hidden;border:1px solid var(--accent);box-shadow:0 4px 20px rgba(0,0,0,0.7);display:none;flex-direction:column;}
 #clock-panel.visible{display:flex;}
 #clock-panel-head{background:var(--panel);border-bottom:1px solid var(--accent);padding:5px 10px;display:flex;align-items:center;justify-content:space-between;font-size:10px;font-weight:700;letter-spacing:1px;color:var(--accent);flex-shrink:0;cursor:move;user-select:none;}
-#clock-body{background:var(--bg);flex:1;overflow:hidden;padding:4px 0;}
-.clock-tz-row{padding:5px 14px 7px;border-bottom:1px solid var(--border);}
+#clock-body{background:var(--bg);flex:1;overflow:hidden;display:flex;flex-direction:column;}
+.clock-tz-row{padding:0 14px;border-bottom:1px solid var(--border);flex:1;display:flex;flex-direction:column;justify-content:center;}
 .clock-tz-row:last-child{border-bottom:none;}
-.clock-tz-row.clock-local{background:rgba(240,165,0,0.07);border-left:2px solid var(--accent);padding-left:12px;}
+.clock-tz-row.clock-local{background:rgba(240,165,0,0.07);border-left:2px solid var(--accent);padding-left:12px;padding-right:14px;}
 .clock-tz-meta{display:flex;align-items:center;gap:5px;margin-bottom:2px;flex-wrap:wrap;}
 .clock-tz-abbr{font-size:11px;font-weight:700;color:var(--accent);font-family:monospace;letter-spacing:0.05em;}
 .clock-tz-offset{font-size:10px;color:var(--text3);font-family:monospace;}
@@ -4444,7 +4444,7 @@ function buildClockRows() {
   rows = 4 + (adelDST ? 1 : 0) + (sydDST ? 1 : 0); // base 4 + SA split + QLD split
   // Scale font: fit all rows into panel height with padding
   var rowH     = Math.floor((panelH - 32) / rows); // 32px for titlebar
-  var fontSize = Math.max(16, Math.min(52, Math.floor(Math.min(panelW * 0.115, rowH * 0.65))));
+  var fontSize = Math.max(14, Math.min(60, Math.floor(Math.min(panelW * 0.12, rowH * 0.55))));
   var localIANA    = getLocalIANA();
   var resolvedLocal = LOCAL_ALIASES[localIANA] || localIANA;
 
