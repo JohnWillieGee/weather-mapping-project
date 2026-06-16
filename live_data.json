@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-06-16T05:23:32.472291+00:00",
-  "last_checked_utc": "2026-06-16T05:23:32.472291+00:00",
-  "warning_count": 9,
+  "generated_utc": "2026-06-16T05:53:23.989079+00:00",
+  "last_checked_utc": "2026-06-16T05:53:23.989079+00:00",
+  "warning_count": 10,
   "warnings": [
     {
       "pid": "",
@@ -83,23 +83,32 @@
       "link": "http://reg.bom.gov.au/wa/warnings/sheep.shtml",
       "desc": "",
       "issued": "Tue, 16 Jun 2026 02:58:05 GMT"
+    },
+    {
+      "pid": "IDT20610",
+      "title": "16/15:26 EST Initial Minor Flood Warning for the North Esk River",
+      "type": "flood",
+      "state": "TAS",
+      "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDT20610.html",
+      "desc": "",
+      "issued": "Tue, 16 Jun 2026 05:26:43 GMT"
     }
   ],
   "fetch_errors": {},
   "incidents": {
     "nsw": [
       {
-        "title": "COAST ST, THIRROUL",
+        "title": "Polwood St, West Kempsey",
         "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Bush Fire",
+        "status": "Being controlled",
+        "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Tue, 16 Jun 2026 05:17:20 GMT",
-        "description": "COAST ST, THIRROUL 2515",
-        "council": "Wollongong",
-        "lat": -34.311298371,
-        "lng": 150.921157837,
+        "updated": "Tue, 16 Jun 2026 05:49:21 GMT",
+        "description": "Polwood St, West Kempsey, NSW 2440",
+        "council": "Kempsey",
+        "lat": -31.06634,
+        "lng": 152.821394,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -111,19 +120,34 @@
     "tas": [],
     "wa": [
       {
-        "title": "Fire - AUSSAT DR",
+        "title": "Fire - 18A BUNTINE RD",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-16T05:11:01+00:00",
-        "description": "KIARA, CITY OF SWAN",
-        "lat": -31.8867,
-        "lng": 115.9378,
+        "updated": "2026-06-16T05:43:29+00:00",
+        "description": "WEMBLEY DOWNS, CITY OF STIRLING",
+        "lat": -31.9151,
+        "lng": 115.7816,
         "polys": [],
         "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a30da37b034c5224c5a18b0?display=modal"
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a30e2a71ff48b6c2ef3ecd9?display=modal"
+      },
+      {
+        "title": "Fire - GREAT NORTHERN HWY",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-16T05:37:52+00:00",
+        "description": "EIGHTY MILE BEACH, SHIRE OF BROOME",
+        "lat": -19.2324,
+        "lng": 121.6176,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a30e14f1ff48b6c2ef3ec43?display=modal"
       },
       {
         "title": "Smoke Alert FOR CENTRAL AND NORTHERN PARTS OF DAMPIER PENINSULA IN THE SHIRE OF BROOME",
@@ -263,16 +287,31 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - BAGOT RD, MILLNER",
+        "title": "Grass and Scrub Fire - SOUTH TCE, THE GAP",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-16T05:16:18+00:00",
-        "description": "BAGOT RD, MILLNER",
-        "lat": -12.3895,
-        "lng": 130.8562,
+        "updated": "2026-06-16T05:42:47+00:00",
+        "description": "SOUTH TCE, THE GAP",
+        "lat": -23.7168,
+        "lng": 133.8742,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - RAILWAY TCE, KATHERINE SOUTH",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-16T05:37:44+00:00",
+        "description": "RAILWAY TCE, KATHERINE SOUTH",
+        "lat": -14.4663,
+        "lng": 132.2634,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -445,7 +484,7 @@
     ],
     "act": []
   },
-  "incident_count": 23,
+  "incident_count": 25,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
