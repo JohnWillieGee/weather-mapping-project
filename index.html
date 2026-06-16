@@ -276,12 +276,12 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 .clock-tz-row{padding:0 14px;border-bottom:1px solid var(--border);flex:1;display:flex;flex-direction:column;justify-content:center;}
 .clock-tz-row:last-child{border-bottom:none;}
 .clock-tz-row.clock-local{background:rgba(240,165,0,0.07);border-left:2px solid var(--accent);padding-left:12px;padding-right:14px;}
-.clock-tz-meta{display:flex;align-items:center;gap:5px;margin-bottom:2px;flex-wrap:wrap;}
+.clock-tz-meta{display:flex;align-items:center;gap:5px;margin-bottom:2px;flex-wrap:nowrap;min-width:0;}
 .clock-tz-abbr{font-size:11px;font-weight:700;color:var(--accent);font-family:monospace;letter-spacing:0.05em;}
 .clock-tz-offset{font-size:10px;color:var(--text3);font-family:monospace;}
-.clock-tz-states{font-size:10px;color:var(--text3);margin-left:2px;}
-.clock-tz-date{font-size:10px;color:var(--text2);margin-left:auto;}
-.clock-tz-time{font-family:monospace;color:var(--text);line-height:1;font-weight:400;}
+.clock-tz-states{font-size:10px;color:var(--text3);margin-left:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex-shrink:1;min-width:0;}
+.clock-tz-date{font-size:10px;color:var(--text2);margin-left:auto;flex-shrink:0;white-space:nowrap;padding-left:6px;}
+.clock-tz-time{font-family:monospace;color:var(--text);line-height:1;font-weight:400;font-size:var(--clock-font-size,28px);}
 .clock-local .clock-tz-abbr,.clock-local .clock-tz-time{color:var(--accent);}
 #clock-resize{position:absolute;bottom:0;right:0;width:16px;height:16px;cursor:nwse-resize;z-index:1003;background:linear-gradient(135deg,transparent 40%,var(--accent) 40%,var(--accent) 55%,transparent 55%,transparent 70%,var(--accent) 70%,var(--accent) 85%,transparent 85%);opacity:0.6;}
 #clock-resize:hover{opacity:1;}
@@ -4444,7 +4444,10 @@ function buildClockRows() {
   rows = 4 + (adelDST ? 1 : 0) + (sydDST ? 1 : 0); // base 4 + SA split + QLD split
   // Scale font: fit all rows into panel height with padding
   var rowH     = Math.floor((panelH - 32) / rows); // 32px for titlebar
-  var fontSize = Math.max(14, Math.min(60, Math.floor(Math.min(panelW * 0.12, rowH * 0.55))));
+  var fontSize = Math.max(14, Math.min(56, Math.floor(Math.min(panelW * 0.115, rowH * 0.48))));
+  // Write font size as a CSS custom property so it updates immediately via CSS,
+  // avoiding the offsetHeight-before-repaint race when resizing.
+  if(panel) panel.style.setProperty('--clock-font-size', fontSize + 'px');
   var localIANA    = getLocalIANA();
   var resolvedLocal = LOCAL_ALIASES[localIANA] || localIANA;
 
@@ -4483,7 +4486,7 @@ function buildClockRows() {
     if(states) html += '<span class="clock-tz-states">' + states + localMark + '</span>';
     html += '<span class="clock-tz-date">' + dateStr + '</span>';
     html += '</div>';
-    html += '<div class="clock-tz-time" style="font-size:' + fontSize + 'px">' + timeStr + '</div>';
+    html += '<div class="clock-tz-time">' + timeStr + '</div>';
     html += '</div>';
   });
   body.innerHTML = html;
@@ -4540,7 +4543,9 @@ function onResizeClock(e){
   var newH=Math.max(120,        _rszClkH+(e.clientY-_rszClkY));
   _rszClk.style.width=newW+'px';
   _rszClk.style.height=newH+'px';
-  buildClockRows();
+  // Use requestAnimationFrame so the browser has painted the new dimensions
+  // before we read offsetHeight/offsetWidth to recalculate font size.
+  requestAnimationFrame(buildClockRows);
 }
 function stopResizeClock(){_rszClk=null;document.removeEventListener('mousemove',onResizeClock);document.removeEventListener('mouseup',stopResizeClock);}
 // ── END CLOCK PANEL ──────────────────────────────────────────────────────────
