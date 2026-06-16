@@ -267,6 +267,26 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 #windy-resize:hover{opacity:1;}
 #windy-layer-select{background:var(--panel);border:1px solid #00c8ff44;color:#00c8ff;font-family:monospace;font-size:9px;padding:2px 4px;border-radius:3px;cursor:pointer;}
 #windy-layer-select option{background:var(--panel);}
+
+/* ── CLOCK PANEL ── */
+#clock-panel{position:absolute;top:50px;right:50px;z-index:1002;width:300px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--accent);box-shadow:0 4px 20px rgba(0,0,0,0.7);display:none;flex-direction:column;}
+#clock-panel.visible{display:flex;}
+#clock-panel-head{background:var(--panel);border-bottom:1px solid var(--accent);padding:5px 10px;display:flex;align-items:center;justify-content:space-between;font-size:10px;font-weight:700;letter-spacing:1px;color:var(--accent);flex-shrink:0;cursor:move;user-select:none;}
+#clock-body{background:var(--bg);flex:1;overflow:hidden;padding:4px 0;}
+.clock-tz-row{padding:7px 14px 9px;border-bottom:1px solid var(--border);}
+.clock-tz-row:last-child{border-bottom:none;}
+.clock-tz-row.clock-local{background:rgba(240,165,0,0.07);border-left:2px solid var(--accent);padding-left:12px;}
+.clock-tz-meta{display:flex;align-items:center;gap:5px;margin-bottom:2px;flex-wrap:wrap;}
+.clock-tz-abbr{font-size:11px;font-weight:700;color:var(--accent);font-family:monospace;letter-spacing:0.05em;}
+.clock-tz-offset{font-size:10px;color:var(--text3);font-family:monospace;}
+.clock-tz-states{font-size:10px;color:var(--text3);margin-left:2px;}
+.clock-tz-date{font-size:10px;color:var(--text2);margin-left:auto;}
+.clock-tz-time{font-family:monospace;color:var(--text);line-height:1;font-weight:400;}
+.clock-local .clock-tz-abbr,.clock-local .clock-tz-time{color:var(--accent);}
+#clock-resize{position:absolute;bottom:0;right:0;width:16px;height:16px;cursor:nwse-resize;z-index:1003;background:linear-gradient(135deg,transparent 40%,var(--accent) 40%,var(--accent) 55%,transparent 55%,transparent 70%,var(--accent) 70%,var(--accent) 85%,transparent 85%);opacity:0.6;}
+#clock-resize:hover{opacity:1;}
+#clock-close{background:none;border:none;color:var(--accent);cursor:pointer;font-size:14px;padding:0 2px;line-height:1;}
+#clock-close:hover{color:#fff;}
 /* Natural theme — ESRI ocean, darkened and shifted grey-green */
 [data-theme="natural"] .leaflet-tile-pane{filter:brightness(0.78) saturate(0.6) hue-rotate(10deg);}
 /* fit-to-map button */
@@ -374,6 +394,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
     <button id="settings-toggle" onclick="toggleSettingsPanel()" title="Settings" style="background:var(--panel2);border:1px solid var(--border);color:var(--accent);width:28px;height:28px;border-radius:var(--radius);cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;">&#9881;</button>
     <button id="btn-hamburger" onclick="toggleFilterSidebar()" title="Site Filters" style="background:var(--panel2);border:1px solid var(--border);color:var(--text2);width:28px;height:28px;border-radius:var(--radius);cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;">&#9776;</button>
     <button id="btn-help" onclick="startHelp()" title="Help mode — click elements to learn about them" style="background:var(--panel2);border:1px solid var(--border);color:var(--text2);width:28px;height:28px;border-radius:var(--radius);cursor:pointer;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;">?</button>
+    <button id="btn-clock" onclick="toggleClock()" title="World Clock" style="background:var(--panel2);border:1px solid var(--border);color:var(--text2);width:28px;height:28px;border-radius:var(--radius);cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;">&#9200;</button>
   </div>
   <div class="header-right">
     <div class="hstat"><div class="val" id="h-sites">-</div><div class="lbl">Sites</div></div>
@@ -551,7 +572,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 
       <div style="padding:10px 14px 12px;border-top:1px solid var(--border);margin-top:auto;">
         <div style="font-family:monospace;font-size:9px;color:var(--text3);letter-spacing:.5px;">
-          <span style="color:var(--text2);font-weight:700;">WatchTower</span> &nbsp;v2.34
+          <span style="color:var(--text2);font-weight:700;">WatchTower</span> &nbsp;v2.41
           <span style="float:right;opacity:0.6;">John Willie Gee</span>
         </div>
       </div>
@@ -790,6 +811,21 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
         <div id="windy-loading">&#127788; Loading wind data...</div>
       </div>
       <div id="windy-resize" onmousedown="startResizeWindy(event)" title="Drag to resize"></div>
+    </div>
+    <div id="clock-panel">
+      <div id="clock-panel-head" onmousedown="startDragClock(event)">
+        &#9200; WORLD CLOCK
+        <div style="display:flex;gap:6px;align-items:center;">
+          <label style="font-size:9px;color:var(--text3);display:flex;align-items:center;gap:3px;">
+            &#9681;<input type="range" id="clock-opacity" min="20" max="100" value="100"
+              oninput="onClockOpacity()" onmousedown="event.stopPropagation()"
+              style="width:50px;accent-color:var(--accent);cursor:pointer;vertical-align:middle;">
+          </label>
+          <button id="clock-close" onclick="toggleClock()" title="Close">&#10005;</button>
+        </div>
+      </div>
+      <div id="clock-body"></div>
+      <div id="clock-resize" onmousedown="startResizeClock(event)" title="Drag to resize"></div>
     </div>
     <div id="legend">
       <h4>Broadcast Sites</h4>
@@ -4336,6 +4372,166 @@ function onOpacityChange(which){
     document.getElementById(which+'-panel').style.opacity = val;
   }
 }
+
+// ── CLOCK PANEL ──────────────────────────────────────────────────────────────
+var _clockVisible = false;
+var _clockTimer   = null;
+var _clockMinW    = 220;
+
+// Timezone row definitions.
+// For zones that observe DST (Adelaide, Sydney) we supply dstAbbr/dstStates
+// which replace abbr/states when DST is active. The check uses Intl so
+// transitions are automatic — no manual date tracking needed.
+var CLOCK_ZONES = [
+  { id:'tz-awst',  iana:'Australia/Perth',    abbr:'AWST', states:'WA' },
+  { id:'tz-acst',  iana:'Australia/Darwin',   abbr:'ACST', states:'NT' },
+  { id:'tz-acst2', iana:'Australia/Adelaide', abbr:'ACST', states:'SA', dstAbbr:'ACDT', dstStates:'SA' },
+  { id:'tz-aest',  iana:'Australia/Brisbane', abbr:'AEST', states:'QLD' },
+  { id:'tz-aest2', iana:'Australia/Sydney',   abbr:'AEST', states:'NSW \u00b7 VIC \u00b7 TAS', dstAbbr:'AEDT', dstStates:'NSW \u00b7 VIC \u00b7 TAS' },
+  { id:'tz-utc',   iana:'UTC',                abbr:'UTC',  states:'' },
+];
+
+function _getOffsetStr(iana, date) {
+  var parts = new Intl.DateTimeFormat('en-AU', {
+    timeZone: iana, timeZoneName: 'shortOffset'
+  }).formatToParts(date);
+  var s = '';
+  parts.forEach(function(p){ if(p.type === 'timeZoneName') s = p.value; });
+  return s;
+}
+
+function getZoneInfo(iana) {
+  var now    = new Date();
+  var winter = new Date(now.getFullYear(), 5, 15); // June = no DST in AU
+  var nowOff = _getOffsetStr(iana, now);
+  var winOff = _getOffsetStr(iana, winter);
+  var isDST  = (nowOff !== winOff);
+  // Parse "GMT+10:30" -> minutes
+  var m = nowOff.match(/GMT([+-])(\d+)(?::(\d+))?/);
+  var mins = 0;
+  if(m) {
+    mins = parseInt(m[2]) * 60 + (m[3] ? parseInt(m[3]) : 0);
+    if(m[1] === '-') mins = -mins;
+  }
+  var h = Math.floor(Math.abs(mins)/60), mn = Math.abs(mins) % 60;
+  var display = 'UTC' + (mins >= 0 ? '+' : '-') + h + (mn ? ':' + (mn < 10 ? '0' : '') + mn : '');
+  return { isDST: isDST, display: display };
+}
+
+function getLocalIANA() {
+  try { return Intl.DateTimeFormat().resolvedOptions().timeZone; } catch(e) { return ''; }
+}
+
+// Local timezone synonyms — map common aliases to the CLOCK_ZONES iana key
+var LOCAL_ALIASES = {
+  'Australia/Melbourne':  'Australia/Sydney',
+  'Australia/Hobart':     'Australia/Sydney',
+  'Australia/Lord_Howe':  'Australia/Sydney',
+  'Australia/Broken_Hill':'Australia/Adelaide',
+  'Australia/Eucla':      'Australia/Perth',
+  'Australia/Lindeman':   'Australia/Brisbane',
+  'Australia/Currie':     'Australia/Sydney',
+};
+
+function buildClockRows() {
+  var body = document.getElementById('clock-body');
+  if(!body) return;
+  var panel    = document.getElementById('clock-panel');
+  var panelW   = panel ? panel.offsetWidth : 300;
+  var fontSize = Math.max(20, Math.min(52, Math.floor(panelW * 0.115)));
+  var localIANA = getLocalIANA();
+  var resolvedLocal = LOCAL_ALIASES[localIANA] || localIANA;
+
+  // Is Adelaide observing DST? (needed to decide whether to merge NT+SA)
+  var adelaideDST = getZoneInfo('Australia/Adelaide').isDST;
+
+  var html = '';
+  CLOCK_ZONES.forEach(function(z) {
+    var info   = getZoneInfo(z.iana);
+    var abbr   = (z.dstAbbr   && info.isDST) ? z.dstAbbr   : z.abbr;
+    var states = (z.dstStates && info.isDST) ? z.dstStates : z.states;
+
+    // Merge NT + SA into one ACST row when SA is not on DST
+    if(z.id === 'tz-acst2' && !adelaideDST) return; // skip SA row
+    if(z.id === 'tz-acst'  && !adelaideDST) states = 'NT \u00b7 SA';
+
+    var isLocal = (z.iana === localIANA || z.iana === resolvedLocal);
+    var localMark = isLocal ? ' \u2605' : '';
+
+    var now = new Date();
+    var timeStr = new Intl.DateTimeFormat('en-AU', {
+      timeZone: z.iana, hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:false
+    }).format(now).replace(/^24:/, '00:');
+    var dateStr = new Intl.DateTimeFormat('en-AU', {
+      timeZone: z.iana, weekday:'short', day:'numeric', month:'short'
+    }).format(now);
+
+    html += '<div class="clock-tz-row' + (isLocal ? ' clock-local' : '') + '">';
+    html += '<div class="clock-tz-meta">';
+    html += '<span class="clock-tz-abbr">' + abbr + '</span>';
+    html += '<span class="clock-tz-offset">' + info.display + '</span>';
+    if(states) html += '<span class="clock-tz-states">' + states + localMark + '</span>';
+    html += '<span class="clock-tz-date">' + dateStr + '</span>';
+    html += '</div>';
+    html += '<div class="clock-tz-time" style="font-size:' + fontSize + 'px">' + timeStr + '</div>';
+    html += '</div>';
+  });
+  body.innerHTML = html;
+}
+
+function tickClock() {
+  if(!_clockVisible) return;
+  buildClockRows();
+}
+
+function toggleClock() {
+  _clockVisible = !_clockVisible;
+  var panel = document.getElementById('clock-panel');
+  var btn   = document.getElementById('btn-clock');
+  panel.classList.toggle('visible', _clockVisible);
+  if(btn) btn.classList.toggle('on', _clockVisible);
+  if(_clockVisible) {
+    buildClockRows();
+    _clockTimer = setInterval(tickClock, 1000);
+  } else {
+    if(_clockTimer) { clearInterval(_clockTimer); _clockTimer = null; }
+  }
+}
+
+function onClockOpacity() {
+  var s = document.getElementById('clock-opacity');
+  if(s) document.getElementById('clock-panel').style.opacity = s.value / 100;
+}
+
+// Drag
+var _drgClk=null,_drgClkOX=0,_drgClkOY=0;
+function startDragClock(e) {
+  var p = document.getElementById('clock-panel');
+  if(p.style.left===''){var r=p.getBoundingClientRect();p.style.left=r.left+'px';p.style.right='auto';p.style.top=r.top+'px';}
+  _drgClk=p;_drgClkOX=e.clientX-p.offsetLeft;_drgClkOY=e.clientY-p.offsetTop;
+  document.addEventListener('mousemove',onDragClock);document.addEventListener('mouseup',stopDragClock);
+  e.preventDefault();
+}
+function onDragClock(e){if(!_drgClk)return;_drgClk.style.left=Math.max(0,e.clientX-_drgClkOX)+'px';_drgClk.style.top=Math.max(0,e.clientY-_drgClkOY)+'px';}
+function stopDragClock(){_drgClk=null;document.removeEventListener('mousemove',onDragClock);document.removeEventListener('mouseup',stopDragClock);}
+
+// Resize
+var _rszClk=null,_rszClkW=0,_rszClkX=0;
+function startResizeClock(e) {
+  var p = document.getElementById('clock-panel');
+  if(p.style.left===''){var r=p.getBoundingClientRect();p.style.left=r.left+'px';p.style.right='auto';p.style.top=r.top+'px';}
+  _rszClk=p;_rszClkW=p.offsetWidth;_rszClkX=e.clientX;
+  document.addEventListener('mousemove',onResizeClock);document.addEventListener('mouseup',stopResizeClock);
+  e.preventDefault();e.stopPropagation();
+}
+function onResizeClock(e){
+  if(!_rszClk)return;
+  _rszClk.style.width=Math.max(_clockMinW,_rszClkW+(e.clientX-_rszClkX))+'px';
+  buildClockRows();
+}
+function stopResizeClock(){_rszClk=null;document.removeEventListener('mousemove',onResizeClock);document.removeEventListener('mouseup',stopResizeClock);}
+// ── END CLOCK PANEL ──────────────────────────────────────────────────────────
+
 // \u2500\u2500 DUCTING \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function openDucting(){
   var lat  = -30.09, lon = 139.86, zoom = 4;
