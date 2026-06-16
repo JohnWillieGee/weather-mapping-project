@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-16T10:53:22.945918+00:00",
-  "last_checked_utc": "2026-06-16T10:53:22.945918+00:00",
+  "generated_utc": "2026-06-16T11:23:22.527714+00:00",
+  "last_checked_utc": "2026-06-16T11:23:22.527714+00:00",
   "warning_count": 9,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "16/19:03 EST Marine Wind Warning Summary for Queensland",
+      "title": "16/21:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 16 Jun 2026 09:03:00 GMT"
+      "issued": "Tue, 16 Jun 2026 11:00:12 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "16/15:50 WST Marine Wind Warning Summary for Western Australia",
+      "title": "16/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 16 Jun 2026 07:50:23 GMT"
+      "issued": "Tue, 16 Jun 2026 11:01:13 GMT"
     },
     {
       "pid": "IDW21037",
@@ -3410,10 +3410,10 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-06-16T09:02:41Z",
+      "issued_utc": "2026-06-16T11:00:00Z",
       "overview": [
-        "Strong Wind Warning for Tuesday for Cairns Coast, Townsville Coast, Peninsula Coast, Cooktown Coast and Mackay Coast",
-        "Strong Wind Warning for Wednesday for Townsville Coast, Peninsula Coast, Cooktown Coast and Mackay Coast"
+        "Strong Wind Warning for Tuesday for Peninsula Coast, Cooktown Coast, Townsville Coast and Mackay Coast",
+        "Strong Wind Warning for Wednesday for Peninsula Coast, Cooktown Coast, Townsville Coast and Mackay Coast"
       ],
       "hazards": [
         {
@@ -3422,18 +3422,16 @@
           "zones": [
             "Peninsula Coast: Sharp Point to Cape Melville",
             "Cooktown Coast: Cape Melville to Cape Tribulation",
-            "Cairns Coast: Cape Tribulation to Cardwell",
             "Townsville Coast: Cardwell to Bowen",
             "Mackay Coast: Bowen to St Lawrence"
           ],
           "aac_codes": [
             "QLD_MW004",
             "QLD_MW005",
-            "QLD_MW006",
             "QLD_MW007",
             "QLD_MW008"
           ],
-          "summary": "Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast and Mackay Coast"
+          "summary": "Peninsula Coast, Cooktown Coast, Townsville Coast and Mackay Coast"
         }
       ]
     },
@@ -3469,9 +3467,9 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-16T07:50:14Z",
+      "issued_utc": "2026-06-16T11:01:00Z",
       "overview": [
-        "Strong Wind Warning for Tuesday for Pilbara Coast West, Esperance Coast and Eucla Coast",
+        "Strong Wind Warning for Tuesday for Esperance Coast",
         "Gale Warning for Wednesday for Esperance Coast",
         "Strong Wind Warning for Wednesday for Albany Coast and Eucla Coast"
       ],
@@ -3480,16 +3478,12 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Pilbara Coast West: Cape Preston to North West Cape",
-            "Esperance Coast: Bremer Bay to Israelite Bay",
-            "Eucla Coast: Israelite Bay to WA-SA Border"
+            "Esperance Coast: Bremer Bay to Israelite Bay"
           ],
           "aac_codes": [
-            "WA_MW004",
-            "WA_MW013",
-            "WA_MW014"
+            "WA_MW013"
           ],
-          "summary": "Pilbara Coast West, Esperance Coast and Eucla Coast"
+          "summary": "Esperance Coast"
         }
       ]
     }
