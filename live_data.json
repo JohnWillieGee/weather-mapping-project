@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-16T16:53:24.025304+00:00",
-  "last_checked_utc": "2026-06-16T16:53:24.025304+00:00",
+  "generated_utc": "2026-06-16T17:23:23.222734+00:00",
+  "last_checked_utc": "2026-06-16T17:23:23.222734+00:00",
   "warning_count": 9,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "16/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "17/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 16 Jun 2026 11:00:12 GMT"
+      "issued": "Tue, 16 Jun 2026 17:00:11 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "16/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "17/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 16 Jun 2026 11:01:13 GMT"
+      "issued": "Tue, 16 Jun 2026 17:01:14 GMT"
     },
     {
       "pid": "IDW21037",
@@ -99,7 +99,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-06-17T01:10:03+00:00",
+        "updated": "2026-06-17T03:18:04+00:00",
         "description": "",
         "lat": -41.455590000188856,
         "lng": 147.18657999996924,
@@ -109,36 +109,6 @@
       }
     ],
     "wa": [
-      {
-        "title": "Bushfire - COLLIE-WILLIAMS RD",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-16T16:36:14+00:00",
-        "description": "PALMER, SHIRE OF COLLIE",
-        "lat": -33.3082,
-        "lng": 116.2715,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a31705ac11a82a5c3089fba?display=modal"
-      },
-      {
-        "title": "Bushfire - JUPITER BEND",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-16T15:31:43+00:00",
-        "description": "ROCKINGHAM, CITY OF ROCKINGHAM",
-        "lat": -32.2888,
-        "lng": 115.7206,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a31652bdebcd73a15b9a5c1?display=modal"
-      },
       {
         "title": "Bushfire - WEABER PLAIN RD",
         "alertLevel": "",
@@ -246,6 +216,21 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - STUART HWY, BERRIMAH",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-16T17:04:37+00:00",
+        "description": "STUART HWY, BERRIMAH",
+        "lat": -12.4373,
+        "lng": 130.9332,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - COX PENINSULA RD, CHARLOTTE",
         "alertLevel": "Advice",
@@ -444,7 +429,7 @@
     ],
     "act": []
   },
-  "incident_count": 23,
+  "incident_count": 22,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3425,28 +3410,21 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-06-16T11:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Tuesday for Peninsula Coast, Cooktown Coast, Townsville Coast and Mackay Coast",
-        "Strong Wind Warning for Wednesday for Peninsula Coast, Cooktown Coast, Townsville Coast and Mackay Coast"
-      ],
+      "issued_utc": "2026-06-16T17:00:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Peninsula Coast: Sharp Point to Cape Melville",
-            "Cooktown Coast: Cape Melville to Cape Tribulation",
             "Townsville Coast: Cardwell to Bowen",
             "Mackay Coast: Bowen to St Lawrence"
           ],
           "aac_codes": [
-            "QLD_MW004",
-            "QLD_MW005",
             "QLD_MW007",
             "QLD_MW008"
           ],
-          "summary": "Peninsula Coast, Cooktown Coast, Townsville Coast and Mackay Coast"
+          "summary": "Townsville Coast and Mackay Coast"
         }
       ]
     },
@@ -3501,16 +3479,16 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-16T11:01:00Z",
+      "issued_utc": "2026-06-16T17:01:00Z",
       "overview": [
-        "Strong Wind Warning for Tuesday for Esperance Coast",
         "Gale Warning for Wednesday for Esperance Coast",
-        "Strong Wind Warning for Wednesday for Albany Coast and Eucla Coast"
+        "Strong Wind Warning for Wednesday for Albany Coast and Eucla Coast",
+        "Strong Wind Warning for Thursday for Esperance Coast and Eucla Coast"
       ],
       "hazards": [
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "Gale Warning",
+          "severity": "GALE",
           "zones": [
             "Esperance Coast: Bremer Bay to Israelite Bay"
           ],
@@ -3518,6 +3496,19 @@
             "WA_MW013"
           ],
           "summary": "Esperance Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Albany Coast: Walpole to Bremer Bay",
+            "Eucla Coast: Israelite Bay to WA-SA Border"
+          ],
+          "aac_codes": [
+            "WA_MW012",
+            "WA_MW014"
+          ],
+          "summary": "Albany Coast and Eucla Coast"
         }
       ]
     }
