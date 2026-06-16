@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-16T11:53:21.462691+00:00",
-  "last_checked_utc": "2026-06-16T11:53:21.462691+00:00",
+  "generated_utc": "2026-06-16T12:23:20.663438+00:00",
+  "last_checked_utc": "2026-06-16T12:23:20.663438+00:00",
   "warning_count": 9,
   "warnings": [
     {
       "pid": "",
-      "title": "16/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "16/22:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 16 Jun 2026 06:15:17 GMT"
+      "issued": "Tue, 16 Jun 2026 12:00:15 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "16/15:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "16/21:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Tue, 16 Jun 2026 06:00:21 GMT"
+      "issued": "Tue, 16 Jun 2026 12:00:09 GMT"
     },
     {
       "pid": "",
@@ -110,6 +110,21 @@
     ],
     "wa": [
       {
+        "title": "Fire - TOKUMARU BEND",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-16T12:05:55+00:00",
+        "description": "BILINGURR, SHIRE OF BROOME",
+        "lat": -17.9265,
+        "lng": 122.2341,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a313c423877a5da9e145a98?display=modal"
+      },
+      {
         "title": "Structure Fire - DAVID BRAND DR",
         "alertLevel": "",
         "status": "active",
@@ -183,21 +198,6 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a309aceaeb578f3a60ef66a?display=modal"
-      },
-      {
-        "title": "Earthquake - NW of Amata (Musgrave Park), SA",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Earthquake",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-16T00:26:02.451+00:00",
-        "description": "",
-        "lat": -25.9665,
-        "lng": 130.829,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a2fe92d948623f1fe480bfe?display=modal"
       },
       {
         "title": "Fire - YATES RD",
@@ -3450,10 +3450,29 @@
         }
       ]
     },
+    "VIC": {
+      "state": "VIC",
+      "product": "IDV20600",
+      "issued_utc": "2026-06-16T12:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Port Phillip"
+          ],
+          "aac_codes": [
+            "VIC_MW005"
+          ],
+          "summary": "Port Phillip"
+        }
+      ]
+    },
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-06-16T06:00:00Z",
+      "issued_utc": "2026-06-16T12:00:00Z",
       "overview": [],
       "hazards": [
         {
