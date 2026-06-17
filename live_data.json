@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-06-16T23:53:21.884625+00:00",
-  "last_checked_utc": "2026-06-16T23:53:21.884625+00:00",
+  "generated_utc": "2026-06-17T00:23:25.112549+00:00",
+  "last_checked_utc": "2026-06-17T00:23:25.112549+00:00",
   "warning_count": 11,
   "warnings": [
     {
       "pid": "",
-      "title": "17/04:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "17/10:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 16 Jun 2026 18:00:14 GMT"
+      "issued": "Wed, 17 Jun 2026 00:00:14 GMT"
     },
     {
       "pid": "",
-      "title": "17/04:10 EST Marine Wind Warning Summary for Victoria",
+      "title": "17/10:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 16 Jun 2026 18:10:20 GMT"
+      "issued": "Wed, 17 Jun 2026 00:00:16 GMT"
     },
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "17/03:40 CST Marine Wind Warning Summary for South Australia",
+      "title": "17/09:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Tue, 16 Jun 2026 18:10:11 GMT"
+      "issued": "Wed, 17 Jun 2026 00:00:12 GMT"
     },
     {
       "pid": "",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "17/04:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "17/10:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 16 Jun 2026 18:00:13 GMT"
+      "issued": "Wed, 17 Jun 2026 00:00:11 GMT"
     },
     {
       "pid": "IDT20610",
@@ -117,7 +117,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-06-17T09:48:03+00:00",
+        "updated": "2026-06-17T10:06:04+00:00",
         "description": "",
         "lat": -41.455590000188856,
         "lng": 147.18657999996924,
@@ -127,21 +127,6 @@
       }
     ],
     "wa": [
-      {
-        "title": "Fire - RISE CT",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-16T23:15:30+00:00",
-        "description": "MOUNT RICHON, CITY OF ARMADALE",
-        "lat": -32.1609,
-        "lng": 116.0225,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a31d7b66b6180f6830b616e?display=modal"
-      },
       {
         "title": "Bushfire - WEABER PLAIN RD",
         "alertLevel": "",
@@ -463,7 +448,7 @@
       }
     ]
   },
-  "incident_count": 23,
+  "incident_count": 22,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3444,7 +3429,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-06-16T18:00:00Z",
+      "issued_utc": "2026-06-17T00:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3463,7 +3448,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-06-16T18:10:00Z",
+      "issued_utc": "2026-06-17T00:00:00Z",
       "overview": [
         "Strong Wind Warning for Wednesday for Port Phillip",
         "Strong Wind Warning for Thursday for West Coast, Central Coast, East Gippsland Coast and Port Phillip"
@@ -3485,9 +3470,9 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-06-16T18:10:00Z",
+      "issued_utc": "2026-06-17T00:00:00Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast and Spencer Gulf",
+        "Strong Wind Warning for Wednesday for Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast, Spencer Gulf, Upper South East Coast and Lower South East Coast",
         "Strong Wind Warning for Thursday for Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait, Upper South East Coast, Lower South East Coast and Adelaide Metropolitan Waters"
       ],
       "hazards": [
@@ -3500,7 +3485,9 @@
             "Lower West Coast: Elliston to Cape Carnot",
             "Central Coast",
             "South Central Coast",
-            "Spencer Gulf"
+            "Spencer Gulf",
+            "Upper South East Coast: Murray Mouth to Cape Jaffa",
+            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
           ],
           "aac_codes": [
             "SA_MW001",
@@ -3508,9 +3495,11 @@
             "SA_MW003",
             "SA_MW004",
             "SA_MW008",
-            "SA_MW005"
+            "SA_MW005",
+            "SA_MW009",
+            "SA_MW010"
           ],
-          "summary": "Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast and Spencer Gulf"
+          "summary": "Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast, Spencer Gulf, Upper South East Coast and Lower South East Coast"
         }
       ]
     },
@@ -3553,7 +3542,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-16T18:00:00Z",
+      "issued_utc": "2026-06-17T00:00:00Z",
       "overview": [],
       "hazards": [
         {
