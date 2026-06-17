@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-17T11:53:23.228308+00:00",
-  "last_checked_utc": "2026-06-17T11:53:23.228308+00:00",
+  "generated_utc": "2026-06-17T12:23:22.576639+00:00",
+  "last_checked_utc": "2026-06-17T12:23:22.576639+00:00",
   "warning_count": 13,
   "warnings": [
     {
       "pid": "",
-      "title": "17/16:05 EST Marine Wind Warning Summary for New South Wales",
+      "title": "17/22:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 17 Jun 2026 06:05:14 GMT"
+      "issued": "Wed, 17 Jun 2026 12:00:17 GMT"
     },
     {
       "pid": "IDN21037",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "17/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "17/22:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 17 Jun 2026 06:15:18 GMT"
+      "issued": "Wed, 17 Jun 2026 12:00:20 GMT"
     },
     {
       "pid": "IDV21037",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "17/15:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "17/21:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Wed, 17 Jun 2026 06:00:12 GMT"
+      "issued": "Wed, 17 Jun 2026 12:00:11 GMT"
     },
     {
       "pid": "",
@@ -104,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "17/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "17/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 17 Jun 2026 06:05:14 GMT"
+      "issued": "Wed, 17 Jun 2026 12:00:10 GMT"
     },
     {
       "pid": "IDT20610",
@@ -145,21 +145,6 @@
       }
     ],
     "wa": [
-      {
-        "title": "Bushfire - KINGSBRIDGE BVD",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-17T11:43:15+00:00",
-        "description": "BUTLER, CITY OF WANNEROO",
-        "lat": -31.6466,
-        "lng": 115.7078,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3286c92d79b9e16a06e55e?display=modal"
-      },
       {
         "title": "Earthquake - Offshore Southern WA, Southern Ocean",
         "alertLevel": "",
@@ -375,7 +360,7 @@
     ],
     "act": []
   },
-  "incident_count": 16,
+  "incident_count": 15,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3356,7 +3341,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-06-17T06:05:00Z",
+      "issued_utc": "2026-06-17T12:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3372,13 +3357,39 @@
         }
       ]
     },
+    "VIC": {
+      "state": "VIC",
+      "product": "IDV20600",
+      "issued_utc": "2026-06-17T12:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "West Coast: SA-VIC Border to Cape Otway",
+            "Central Coast: Cape Otway to Wilsons Promontory",
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island",
+            "Port Phillip"
+          ],
+          "aac_codes": [
+            "VIC_MW001",
+            "VIC_MW002",
+            "VIC_MW004",
+            "VIC_MW005"
+          ],
+          "summary": "Port Phillip, West Coast, Central Coast and East Gippsland Coast"
+        }
+      ]
+    },
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-06-17T06:00:00Z",
+      "issued_utc": "2026-06-17T12:00:00Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for Far West Coast, Upper West Coast, Lower West Coast, South Central Coast, Upper South East Coast and Lower South East Coast",
-        "Strong Wind Warning for Thursday for Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait, Upper South East Coast, Lower South East Coast and Adelaide Metropolitan Waters"
+        "Strong Wind Warning for Wednesday for Far West Coast, Upper West Coast, Lower West Coast, Upper South East Coast and Lower South East Coast",
+        "Gale Warning for Thursday for Lower South East Coast",
+        "Strong Wind Warning for Thursday for Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait, Upper South East Coast and Adelaide Metropolitan Waters"
       ],
       "hazards": [
         {
@@ -3388,7 +3399,6 @@
             "Far West Coast: WA-SA Border to Fowlers Bay",
             "Upper West Coast: Fowlers Bay to Elliston",
             "Lower West Coast: Elliston to Cape Carnot",
-            "South Central Coast",
             "Upper South East Coast: Murray Mouth to Cape Jaffa",
             "Lower South East Coast: Cape Jaffa to SA-VIC Border"
           ],
@@ -3396,11 +3406,10 @@
             "SA_MW001",
             "SA_MW002",
             "SA_MW003",
-            "SA_MW008",
             "SA_MW009",
             "SA_MW010"
           ],
-          "summary": "Far West Coast, Upper West Coast, Lower West Coast, South Central Coast, Upper South East Coast and Lower South East Coast"
+          "summary": "Far West Coast, Upper West Coast, Lower West Coast, Upper South East Coast and Lower South East Coast"
         }
       ]
     },
@@ -3431,7 +3440,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-17T06:05:00Z",
+      "issued_utc": "2026-06-17T12:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3440,6 +3449,7 @@
           "zones": [
             "Far North West Coast: Sandy Cape to Stanley",
             "Central North Coast: Stanley to Northern Tip of Flinders Island",
+            "Banks Strait and Franklin Sound",
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
             "Upper East Coast: St Helens Point to Wineglass Bay",
             "Lower East Coast: Wineglass Bay to Tasman Island",
@@ -3449,13 +3459,14 @@
           "aac_codes": [
             "TAS_MW001",
             "TAS_MW002",
+            "TAS_MW009",
             "TAS_MW003",
             "TAS_MW004",
             "TAS_MW005",
             "TAS_MW007",
             "TAS_MW008"
           ],
-          "summary": "Far North West Coast, Central North Coast, East of Flinders Island, Upper East Coast, Lower East Coast, South West Coast and Central West Coast"
+          "summary": "Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, South West Coast and Central West Coast"
         }
       ]
     }
