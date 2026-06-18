@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-18T12:53:21.843021+00:00",
-  "last_checked_utc": "2026-06-18T12:53:21.843021+00:00",
+  "generated_utc": "2026-06-18T13:23:20.581066+00:00",
+  "last_checked_utc": "2026-06-18T13:23:20.581066+00:00",
   "warning_count": 11,
   "warnings": [
     {
@@ -128,6 +128,51 @@
     ],
     "wa": [
       {
+        "title": "Bushfire - DE GREY",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-18T13:08:24+00:00",
+        "description": "DE GREY, TOWN OF PORT HEDLAND",
+        "lat": -20.3476,
+        "lng": 119.099,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a33c76e1e3523f879cd4ec9?display=modal"
+      },
+      {
+        "title": "Fire - KOALA RD",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-18T13:07:10+00:00",
+        "description": "BANKSIA GROVE, CITY OF WANNEROO",
+        "lat": -31.689,
+        "lng": 115.818,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a33ea71f5eb54c61f99c0f8?display=modal"
+      },
+      {
+        "title": "Structure Fire Advice IN MILLBRIGDE THE SHIRE OF DARDANUP",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-06-18T13:00:22.248+00:00",
+        "description": "",
+        "lat": -33.3128,
+        "lng": 115.7327,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Structure Fire - BERKELEY VIEW",
         "alertLevel": "",
         "status": "active",
@@ -156,21 +201,6 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a33d4f9b8b7862bf85082c1?display=modal"
-      },
-      {
-        "title": "Bushfire - DE GREY",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-18T11:29:33+00:00",
-        "description": "DE GREY, TOWN OF PORT HEDLAND",
-        "lat": -20.3476,
-        "lng": 119.099,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a33c76e1e3523f879cd4ec9?display=modal"
       },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - WATERBANK",
@@ -475,25 +505,9 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [
-      {
-        "title": "STRUCTURE FIRE - BELCONNEN",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Fire",
-        "updated": "2026-06-18T12:13:57+00:00",
-        "description": "BELCONNEN",
-        "lat": -35.2353,
-        "lng": 149.0603,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      }
-    ]
+    "act": []
   },
-  "incident_count": 25,
+  "incident_count": 26,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3593,10 +3607,10 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-18T12:00:00Z",
+      "issued_utc": "2026-06-18T13:21:15Z",
       "overview": [
-        "Strong Wind Warning for Thursday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast and Lower East Coast",
-        "Strong Wind Warning for Friday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast, South West Coast, Central West Coast, Frederick Henry Bay and Norfolk Bay, Storm Bay and Channel"
+        "Strong Wind Warning for Thursday for South West Lakes, Upper East Coast, Lower East Coast, Far North West Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island",
+        "Strong Wind Warning for Friday for Central West Coast, Upper East Coast, Lower East Coast, South West Coast, Channel, Far North West Coast, Storm Bay, Frederick Henry Bay and Norfolk Bay, South East Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island"
       ],
       "hazards": [
         {
@@ -3608,7 +3622,8 @@
             "Banks Strait and Franklin Sound",
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
             "Upper East Coast: St Helens Point to Wineglass Bay",
-            "Lower East Coast: Wineglass Bay to Tasman Island"
+            "Lower East Coast: Wineglass Bay to Tasman Island",
+            "South West Lakes"
           ],
           "aac_codes": [
             "TAS_MW001",
@@ -3616,9 +3631,10 @@
             "TAS_MW009",
             "TAS_MW003",
             "TAS_MW004",
-            "TAS_MW005"
+            "TAS_MW005",
+            "TAS_MW015"
           ],
-          "summary": "Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast and Lower East Coast"
+          "summary": "South West Lakes, Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast and Lower East Coast"
         }
       ]
     }
