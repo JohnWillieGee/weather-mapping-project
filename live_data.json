@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-18T05:23:19.902259+00:00",
-  "last_checked_utc": "2026-06-18T05:23:19.902259+00:00",
+  "generated_utc": "2026-06-18T05:53:27.272358+00:00",
+  "last_checked_utc": "2026-06-18T05:53:27.272358+00:00",
   "warning_count": 12,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "18/10:42 EST Marine Wind Warning Summary for Victoria",
+      "title": "18/15:29 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 18 Jun 2026 00:42:55 GMT"
+      "issued": "Thu, 18 Jun 2026 05:29:46 GMT"
     },
     {
       "pid": "IDV21037",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "18/10:09 CST Marine Wind Warning Summary for South Australia",
+      "title": "18/14:58 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Thu, 18 Jun 2026 00:39:05 GMT"
+      "issued": "Thu, 18 Jun 2026 05:28:06 GMT"
     },
     {
       "pid": "",
@@ -95,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "18/10:41 EST Marine Wind Warning Summary for Tasmania",
+      "title": "18/15:29 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 18 Jun 2026 00:41:31 GMT"
+      "issued": "Thu, 18 Jun 2026 05:29:20 GMT"
     },
     {
       "pid": "IDT20610",
@@ -114,7 +114,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Hume Hwy, South Albury",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Thu, 18 Jun 2026 05:49:20 GMT",
+        "description": "Hume Hwy, South Albury, NSW 2640",
+        "council": "Albury",
+        "lat": -36.100456,
+        "lng": 146.909606,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -150,21 +167,6 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire - VICTORIA HWY",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-18T04:18:56+00:00",
-        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.7936,
-        "lng": 128.6904,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3368d4356a61537c7b5410?display=modal"
       },
       {
         "title": "Earthquake - Goldfields, WA",
@@ -3474,11 +3476,11 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-06-18T00:42:31Z",
+      "issued_utc": "2026-06-18T05:29:33Z",
       "overview": [
         "Strong Wind Warning for Thursday for West Coast, Central Coast, Port Phillip and East Gippsland Coast",
-        "Gale Warning for Friday for West Coast",
-        "Strong Wind Warning for Friday for Central Coast, East Gippsland Coast, Western Port, Central Gippsland Coast and Port Phillip"
+        "Gale Warning for Friday for Central Coast",
+        "Strong Wind Warning for Friday for East Gippsland Coast, Western Port, Central Gippsland Coast, West Coast and Port Phillip"
       ],
       "hazards": [
         {
@@ -3503,7 +3505,7 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-06-18T00:38:57Z",
+      "issued_utc": "2026-06-18T05:27:58Z",
       "overview": [
         "Gale Warning for Thursday for Lower South East Coast",
         "Strong Wind Warning for Thursday for Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast, Investigator Strait, Upper South East Coast, Gulf St Vincent, Spencer Gulf and Adelaide Metropolitan Waters",
@@ -3580,11 +3582,10 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-18T00:41:17Z",
+      "issued_utc": "2026-06-18T05:29:12Z",
       "overview": [
         "Strong Wind Warning for Thursday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Central West Coast, Upper East Coast, Lower East Coast and South West Coast",
-        "Gale Warning for Friday for Central West Coast and Far North West Coast",
-        "Strong Wind Warning for Friday for Upper East Coast, Lower East Coast, South West Coast, Channel, Storm Bay, Frederick Henry Bay and Norfolk Bay, South East Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island"
+        "Strong Wind Warning for Friday for Central West Coast, Upper East Coast, Lower East Coast, South West Coast, Channel, Far North West Coast, Storm Bay, Frederick Henry Bay and Norfolk Bay, South East Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island"
       ],
       "hazards": [
         {
