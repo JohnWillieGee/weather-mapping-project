@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-18T22:23:27.777887+00:00",
-  "last_checked_utc": "2026-06-18T22:23:27.777887+00:00",
+  "generated_utc": "2026-06-18T22:53:25.534642+00:00",
+  "last_checked_utc": "2026-06-18T22:53:25.534642+00:00",
   "warning_count": 11,
   "warnings": [
     {
@@ -105,7 +105,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "King St, Warrawong",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Thu, 18 Jun 2026 22:49:21 GMT",
+        "description": "King St, Warrawong, NSW 2502",
+        "council": "Wollongong",
+        "lat": -34.489547,
+        "lng": 150.888834,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -308,21 +325,6 @@
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a336fc1838acf0f48fa64c2?display=modal"
       },
       {
-        "title": "Earthquake - Goldfields, WA",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Earthquake",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-17T22:35:08.797+00:00",
-        "description": "HOWICK, ESPERANCE, SHIRE OF",
-        "lat": -33.6625,
-        "lng": 122.8182,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3321f7c44c1be222d47b00?display=modal"
-      },
-      {
         "title": "Fire - YATES RD",
         "alertLevel": "",
         "status": "active",
@@ -376,25 +378,10 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-18T22:05:53+00:00",
+        "updated": "2026-06-18T22:17:40+00:00",
         "description": "TRAVERS ST, COCONUT GROVE",
         "lat": -12.4008,
         "lng": 130.8535,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Bushfire - Peko Road, TENNANT CREEK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-18T04:24:00+00:00",
-        "description": "Peko Road, TENNANT CREEK",
-        "lat": -19.6495,
-        "lng": 134.2022,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -430,21 +417,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Bushfire - Vanderlin Drive, LEANYER",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-17T04:36:00+00:00",
-        "description": "Vanderlin Drive, LEANYER",
-        "lat": -12.3778,
-        "lng": 130.908,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Doxas Road, HUMPTY DOO",
         "alertLevel": "Advice",
         "status": "active",
@@ -470,21 +442,6 @@
         "description": "Stuart Highway, ROBIN FALLS",
         "lat": -13.2746,
         "lng": 131.143,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Bushfire - Channel Island Road, PALMERSTON",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-13T01:16:00+00:00",
-        "description": "Channel Island Road, PALMERSTON",
-        "lat": -12.5257,
-        "lng": 130.985,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -523,7 +480,7 @@
       }
     ]
   },
-  "incident_count": 27,
+  "incident_count": 24,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
