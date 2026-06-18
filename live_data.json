@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-18T16:53:16.820188+00:00",
-  "last_checked_utc": "2026-06-18T16:53:16.820188+00:00",
+  "generated_utc": "2026-06-18T17:23:20.267695+00:00",
+  "last_checked_utc": "2026-06-18T17:23:20.267695+00:00",
   "warning_count": 12,
   "warnings": [
     {
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "18/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "19/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 18 Jun 2026 11:01:16 GMT"
+      "issued": "Thu, 18 Jun 2026 17:01:13 GMT"
     },
     {
       "pid": "",
@@ -536,53 +536,23 @@
         "status": "active",
         "type": "Structure Fire",
         "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-06-18T17:19:00+00:00",
+        "description": "DOWNER",
+        "lat": -35.2486,
+        "lng": 149.1419,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - DOWNER",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
         "agency": "Fire",
-        "updated": "2026-06-18T16:50:28+00:00",
-        "description": "DOWNER",
-        "lat": -35.2486,
-        "lng": 149.1419,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - DOWNER",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-06-18T16:50:00+00:00",
-        "description": "DOWNER",
-        "lat": -35.2486,
-        "lng": 149.1419,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - DOWNER",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-06-18T16:50:00+00:00",
-        "description": "DOWNER",
-        "lat": -35.2486,
-        "lng": 149.1419,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - DOWNER",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Ambulance",
-        "updated": "2026-06-18T16:37:44+00:00",
+        "updated": "2026-06-18T17:17:44+00:00",
         "description": "DOWNER",
         "lat": -35.2486,
         "lng": 149.1419,
@@ -592,7 +562,7 @@
       }
     ]
   },
-  "incident_count": 31,
+  "incident_count": 29,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3670,22 +3640,26 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-18T11:01:00Z",
+      "issued_utc": "2026-06-18T17:01:00Z",
       "overview": [
-        "Strong Wind Warning for Thursday for Eucla Coast",
-        "Strong Wind Warning for Friday for West Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
+        "Strong Wind Warning for Friday for West Kimberley Coast, Pilbara Coast East and Pilbara Coast West",
+        "Strong Wind Warning for Saturday for North Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Eucla Coast: Israelite Bay to WA-SA Border"
+            "West Kimberley Coast: Kuri Bay to Wallal",
+            "Pilbara Coast East: Wallal to Cape Preston",
+            "Pilbara Coast West: Cape Preston to North West Cape"
           ],
           "aac_codes": [
-            "WA_MW014"
+            "WA_MW002",
+            "WA_MW003",
+            "WA_MW004"
           ],
-          "summary": "Eucla Coast"
+          "summary": "West Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
         }
       ]
     },
