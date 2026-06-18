@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-18T13:53:18.617645+00:00",
-  "last_checked_utc": "2026-06-18T13:53:18.617645+00:00",
+  "generated_utc": "2026-06-18T14:23:18.274714+00:00",
+  "last_checked_utc": "2026-06-18T14:23:18.274714+00:00",
   "warning_count": 12,
   "warnings": [
     {
@@ -114,7 +114,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Resolution Av, Willmot",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Thu, 18 Jun 2026 14:21:20 GMT",
+        "description": "Resolution Av, Willmot, NSW 2770",
+        "council": "Blacktown",
+        "lat": -33.722654,
+        "lng": 150.80066,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -136,6 +153,21 @@
       }
     ],
     "wa": [
+      {
+        "title": "Structure Fire Advice IN MILLBRIGDE THE SHIRE OF DARDANUP",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-06-18T14:08:10.263+00:00",
+        "description": "",
+        "lat": -33.3129,
+        "lng": 115.7324,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire - DERBY-GIBB RIVER RD",
         "alertLevel": "",
@@ -165,21 +197,6 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a33c76e1e3523f879cd4ec9?display=modal"
-      },
-      {
-        "title": "Structure Fire Advice IN MILLBRIGDE THE SHIRE OF DARDANUP",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-06-18T13:00:22.248+00:00",
-        "description": "",
-        "lat": -33.3128,
-        "lng": 115.7327,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
         "title": "Structure Fire - BERKELEY VIEW",
@@ -501,7 +518,7 @@
     ],
     "act": []
   },
-  "incident_count": 25,
+  "incident_count": 26,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
