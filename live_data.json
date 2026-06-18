@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-18T04:23:21.851836+00:00",
-  "last_checked_utc": "2026-06-18T04:23:21.851836+00:00",
+  "generated_utc": "2026-06-18T04:52:29.412978+00:00",
+  "last_checked_utc": "2026-06-18T04:52:29.412978+00:00",
   "warning_count": 12,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "IDN21037",
-      "title": "18/10:56 EST \n                Severe Weather Warning\n            \nfor \n                parts of Snowy Mountains Forecast District.",
+      "title": "18/14:21 EST \n                Severe Weather Warning\n            \nfor \n                parts of Snowy Mountains Forecast District.",
       "type": "severe_weather",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/products/IDN21037.shtml",
       "desc": "",
-      "issued": "Thu, 18 Jun 2026 00:56:43 GMT"
+      "issued": "Thu, 18 Jun 2026 04:21:33 GMT"
     },
     {
       "pid": "",
@@ -104,12 +104,12 @@
     },
     {
       "pid": "IDT20610",
-      "title": "17/14:48 EST Minor Flood Warning for the North Esk River",
+      "title": "18/14:36 EST Minor Flood Warning for the North Esk River",
       "type": "flood",
       "state": "TAS",
       "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDT20610.html",
       "desc": "",
-      "issued": "Wed, 17 Jun 2026 04:48:31 GMT"
+      "issued": "Thu, 18 Jun 2026 04:36:40 GMT"
     }
   ],
   "fetch_errors": {},
@@ -137,6 +137,36 @@
     ],
     "wa": [
       {
+        "title": "Bushfire Advice MONITOR CONDITIONS - KUNUNURRA",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-06-18T04:38:07.607+00:00",
+        "description": "",
+        "lat": -15.7036,
+        "lng": 128.7457,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire - VICTORIA HWY",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-18T04:18:56+00:00",
+        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.7936,
+        "lng": 128.6904,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3368d4356a61537c7b5410?display=modal"
+      },
+      {
         "title": "Earthquake - Goldfields, WA",
         "alertLevel": "",
         "status": "active",
@@ -150,36 +180,6 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a336fc1838acf0f48fa64c2?display=modal"
-      },
-      {
-        "title": "Bushfire - VICTORIA HWY",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-18T03:39:40+00:00",
-        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.7936,
-        "lng": 128.6904,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3368d4356a61537c7b5410?display=modal"
-      },
-      {
-        "title": "Bushfire Advice MONITOR CONDITIONS - KUNUNURRA",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-06-18T03:13:24.432+00:00",
-        "description": "",
-        "lat": -15.7036,
-        "lng": 128.7457,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
         "title": "Structure Fire - ROSE TCE",
@@ -303,6 +303,21 @@
       }
     ],
     "nt": [
+      {
+        "title": "Bushfire - Peko Road, TENNANT CREEK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-18T04:24:00+00:00",
+        "description": "Peko Road, TENNANT CREEK",
+        "lat": -19.6495,
+        "lng": 134.2022,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - PEKO RD, TENNANT CREEK",
         "alertLevel": "Advice",
@@ -456,7 +471,7 @@
     ],
     "act": []
   },
-  "incident_count": 22,
+  "incident_count": 23,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
