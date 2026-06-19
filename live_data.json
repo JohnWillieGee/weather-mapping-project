@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-06-19T04:23:23.337294+00:00",
-  "last_checked_utc": "2026-06-19T04:23:23.337294+00:00",
-  "warning_count": 11,
+  "generated_utc": "2026-06-19T04:53:29.705997+00:00",
+  "last_checked_utc": "2026-06-19T04:53:29.705997+00:00",
+  "warning_count": 10,
   "warnings": [
     {
       "pid": "",
@@ -47,15 +47,6 @@
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
       "issued": "Fri, 19 Jun 2026 00:00:11 GMT"
-    },
-    {
-      "pid": "",
-      "title": "18/10:03 CST Final Flood Warning for the Onkaparinga River",
-      "type": "flood",
-      "state": "SA",
-      "link": "http://reg.bom.gov.au/sa/warnings/flood/onkaparingariver.shtml",
-      "desc": "",
-      "issued": "Thu, 18 Jun 2026 00:33:45 GMT"
     },
     {
       "pid": "",
@@ -105,7 +96,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "ELIZABETH AV, RAYMOND TERRACE",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 19 Jun 2026 04:49:20 GMT",
+        "description": "ELIZABETH AV, RAYMOND TERRACE 2324",
+        "council": "Port Stephens",
+        "lat": -32.768181,
+        "lng": 151.750992,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -117,7 +125,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-06-19T14:16:03+00:00",
+        "updated": "2026-06-19T14:28:03+00:00",
         "description": "",
         "lat": -41.47515000023304,
         "lng": 146.45428000004034,
@@ -132,7 +140,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-06-19T14:16:03+00:00",
+        "updated": "2026-06-19T14:28:03+00:00",
         "description": "",
         "lat": -41.455590000188856,
         "lng": 147.18657999996924,
@@ -147,7 +155,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-06-19T14:16:03+00:00",
+        "updated": "2026-06-19T14:28:03+00:00",
         "description": "",
         "lat": -41.257230000336904,
         "lng": 146.41368000027578,
@@ -164,7 +172,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-19T04:14:11+00:00",
+        "updated": "2026-06-19T04:26:49+00:00",
         "description": "PORT KENNEDY, CITY OF ROCKINGHAM",
         "lat": -32.3631,
         "lng": 115.7608,
@@ -355,16 +363,16 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - DAMABILA DR, LYONS",
+        "title": "Grass and Scrub Fire - DARIBAH RD, TIWI",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-19T01:48:10+00:00",
-        "description": "DAMABILA DR, LYONS",
-        "lat": -12.3516,
-        "lng": 130.8862,
+        "updated": "2026-06-19T04:33:52+00:00",
+        "description": "DARIBAH RD, TIWI",
+        "lat": -12.3621,
+        "lng": 130.8672,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -432,7 +440,7 @@
     ],
     "act": []
   },
-  "incident_count": 21,
+  "incident_count": 22,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
