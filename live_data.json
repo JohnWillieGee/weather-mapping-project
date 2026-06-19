@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-19T23:23:23.115668+00:00",
-  "last_checked_utc": "2026-06-19T23:23:23.115668+00:00",
+  "generated_utc": "2026-06-19T23:53:24.258881+00:00",
+  "last_checked_utc": "2026-06-19T23:53:24.258881+00:00",
   "warning_count": 9,
   "warnings": [
     {
@@ -87,7 +87,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Metella Rd, Toongabbie",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 19 Jun 2026 23:49:20 GMT",
+        "description": "Metella Rd, Toongabbie, NSW 2146",
+        "council": "Blacktown",
+        "lat": -33.7912259999999,
+        "lng": 150.941672,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -99,13 +116,13 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-06-20T09:20:04+00:00",
+        "updated": "2026-06-20T09:24:03+00:00",
         "description": "",
-        "lat": -41.47515000023304,
-        "lng": 146.45428000004034,
+        "lat": -41.257230000336904,
+        "lng": 146.41368000027578,
         "polys": [],
         "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=5d22b22b-82da-4236-a453-0b099fb6a04a"
+        "sourceUrl": "https://alert.tas.gov.au/?id=1eb7009d-8eeb-46a5-a6f4-cd4a3cbdac95"
       },
       {
         "title": "Flood - Advice",
@@ -114,7 +131,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-06-20T09:20:04+00:00",
+        "updated": "2026-06-20T09:24:03+00:00",
         "description": "",
         "lat": -41.455590000188856,
         "lng": 147.18657999996924,
@@ -129,45 +146,30 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-06-20T09:20:04+00:00",
+        "updated": "2026-06-20T09:24:03+00:00",
         "description": "",
-        "lat": -41.257230000336904,
-        "lng": 146.41368000027578,
+        "lat": -41.47515000023304,
+        "lng": 146.45428000004034,
         "polys": [],
         "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=1eb7009d-8eeb-46a5-a6f4-cd4a3cbdac95"
+        "sourceUrl": "https://alert.tas.gov.au/?id=5d22b22b-82da-4236-a453-0b099fb6a04a"
       }
     ],
     "wa": [
       {
-        "title": "Structure Fire - ALICE ST",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-19T21:44:41+00:00",
-        "description": "BASSENDEAN, TOWN OF BASSENDEAN",
-        "lat": -31.9098,
-        "lng": 115.9311,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a35b774aebb11185a03bf07?display=modal"
-      },
-      {
-        "title": "Bushfire - GHOST GUM ST",
+        "title": "Bushfire - BUTTON DR",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-19T14:05:59+00:00",
+        "updated": "2026-06-19T23:22:21+00:00",
         "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.7899,
-        "lng": 128.7487,
+        "lat": -15.7642,
+        "lng": 128.7376,
         "polys": [],
         "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a353b749944bf428bdd92f1?display=modal"
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a33b048d895c78856ebf8a6?display=modal"
       },
       {
         "title": "Bushfire - DERBY-GIBB RIVER RD",
@@ -260,21 +262,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire - BUTTON DR",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-18T18:06:22+00:00",
-        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.7642,
-        "lng": 128.7376,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a33b048d895c78856ebf8a6?display=modal"
-      },
-      {
         "title": "Bushfire - WATERBANK",
         "alertLevel": "",
         "status": "active",
@@ -337,13 +324,58 @@
     ],
     "nt": [
       {
+        "title": "Structure Fire - CLARKE ST, ARALUEN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-19T23:46:56+00:00",
+        "description": "CLARKE ST, ARALUEN",
+        "lat": -23.6992,
+        "lng": 133.8657,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Structure Fire - CLARKE ST, ARALUEN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-19T23:45:49+00:00",
+        "description": "CLARKE ST, ARALUEN",
+        "lat": -23.6992,
+        "lng": 133.8657,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Structure Fire - CLARKE ST, ARALUEN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-19T23:45:30+00:00",
+        "description": "CLARKE ST, ARALUEN",
+        "lat": -23.6992,
+        "lng": 133.8657,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - Unknown",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-19T23:02:14+00:00",
+        "updated": "2026-06-19T23:28:32+00:00",
         "description": "",
         "lat": -14.4664,
         "lng": 132.2637,
@@ -412,9 +444,25 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": []
+    "act": [
+      {
+        "title": "HOUSE FIRE - DOWNER",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Fire",
+        "updated": "2026-06-19T23:28:35+00:00",
+        "description": "DOWNER",
+        "lat": -35.2486,
+        "lng": 149.1419,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      }
+    ]
   },
-  "incident_count": 21,
+  "incident_count": 24,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
