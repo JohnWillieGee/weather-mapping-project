@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-19T05:23:26.319014+00:00",
-  "last_checked_utc": "2026-06-19T05:23:26.319014+00:00",
+  "generated_utc": "2026-06-19T05:53:25.188204+00:00",
+  "last_checked_utc": "2026-06-19T05:53:25.188204+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -96,7 +96,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Hawthorne Street, Ramsgate Beach",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 19 Jun 2026 05:49:21 GMT",
+        "description": "Hawthorne Street, Ramsgate Beach, NSW 2217",
+        "council": "Bayside",
+        "lat": -33.978828,
+        "lng": 151.14247,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -148,6 +165,21 @@
       }
     ],
     "wa": [
+      {
+        "title": "Earthquake - Pilbara, WA",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Earthquake",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-19T05:25:21.191+00:00",
+        "description": "NULLAGINE, EAST PILBARA, SHIRE OF",
+        "lat": -22.4697,
+        "lng": 119.4179,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a34d298710a7a5438341da1?display=modal"
+      },
       {
         "title": "Fire - BAKEWELL DR",
         "alertLevel": "",
@@ -222,21 +254,6 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a33d4f9b8b7862bf85082c1?display=modal"
-      },
-      {
-        "title": "Bushfire - DE GREY",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-18T13:08:24+00:00",
-        "description": "DE GREY, TOWN OF PORT HEDLAND",
-        "lat": -20.3476,
-        "lng": 119.099,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a33c76e1e3523f879cd4ec9?display=modal"
       },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - WATERBANK",
@@ -348,7 +365,7 @@
     ],
     "act": []
   },
-  "incident_count": 16,
+  "incident_count": 17,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
