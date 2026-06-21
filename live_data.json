@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-21T21:53:20.760319+00:00",
-  "last_checked_utc": "2026-06-21T21:53:20.760319+00:00",
+  "generated_utc": "2026-06-21T22:23:23.121118+00:00",
+  "last_checked_utc": "2026-06-21T22:23:23.121118+00:00",
   "warning_count": 6,
   "warnings": [
     {
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "22/03:33 WST Marine Wind Warning Summary for Western Australia",
+      "title": "22/06:15 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 21 Jun 2026 19:33:36 GMT"
+      "issued": "Sun, 21 Jun 2026 22:15:53 GMT"
     },
     {
       "pid": "",
@@ -294,21 +294,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - VIRGINIA RD, VIRGINIA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-21T21:15:02+00:00",
-        "description": "VIRGINIA RD, VIRGINIA",
-        "lat": -12.535,
-        "lng": 131.0292,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Stuart Highway, STAPLETON",
         "alertLevel": "Advice",
         "status": "active",
@@ -431,7 +416,7 @@
     ],
     "act": []
   },
-  "incident_count": 24,
+  "incident_count": 23,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3440,19 +3425,23 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-21T19:33:25Z",
+      "issued_utc": "2026-06-21T22:15:45Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "North Kimberley Coast: WA-NT Border to Kuri Bay"
+            "North Kimberley Coast: WA-NT Border to Kuri Bay",
+            "West Kimberley Coast: Kuri Bay to Wallal",
+            "Pilbara Coast East: Wallal to Cape Preston"
           ],
           "aac_codes": [
-            "WA_MW001"
+            "WA_MW001",
+            "WA_MW002",
+            "WA_MW003"
           ],
-          "summary": "North Kimberley Coast"
+          "summary": "North Kimberley Coast, West Kimberley Coast and Pilbara Coast East"
         }
       ]
     },
