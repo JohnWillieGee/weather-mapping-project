@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-21T16:53:18.188458+00:00",
-  "last_checked_utc": "2026-06-21T16:53:18.188458+00:00",
+  "generated_utc": "2026-06-21T17:23:16.783026+00:00",
+  "last_checked_utc": "2026-06-21T17:23:16.783026+00:00",
   "warning_count": 7,
   "warnings": [
     {
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "21/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "22/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 21 Jun 2026 11:00:10 GMT"
+      "issued": "Sun, 21 Jun 2026 17:00:14 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "21/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "22/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 21 Jun 2026 11:01:12 GMT"
+      "issued": "Sun, 21 Jun 2026 17:01:11 GMT"
     },
     {
       "pid": "",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "21/20:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "22/02:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 21 Jun 2026 11:00:10 GMT"
+      "issued": "Sun, 21 Jun 2026 17:00:11 GMT"
     }
   ],
   "fetch_errors": {},
@@ -75,21 +75,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Fire - INDIANA PDE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-21T16:23:28+00:00",
-        "description": "SINGLETON, CITY OF ROCKINGHAM",
-        "lat": -32.4435,
-        "lng": 115.7527,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a380a840066343d3d8f4216?display=modal"
-      },
       {
         "title": "Bushfire - PIPPINGARRA",
         "alertLevel": "",
@@ -455,7 +440,7 @@
     ],
     "act": []
   },
-  "incident_count": 25,
+  "incident_count": 24,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3436,8 +3421,11 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-06-21T11:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-06-21T17:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Monday for South East Gulf of Carpentaria, Peninsula Coast, Cooktown Coast and Cairns Coast",
+        "Strong Wind Warning for Tuesday for Peninsula Coast and Cooktown Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3461,11 +3449,8 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-21T11:01:00Z",
-      "overview": [
-        "Strong Wind Warning for Sunday for North Kimberley Coast",
-        "Strong Wind Warning for Monday for North Kimberley Coast"
-      ],
+      "issued_utc": "2026-06-21T17:01:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3506,11 +3491,8 @@
     "NT": {
       "state": "NT",
       "product": "IDD20105",
-      "issued_utc": "2026-06-21T11:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Sunday for Beagle Bonaparte Coast, North Tiwi Coast and Arafura Coast",
-        "Strong Wind Warning for Monday for Beagle Bonaparte Coast, North Tiwi Coast, Arafura Coast and Roper Groote Coast"
-      ],
+      "issued_utc": "2026-06-21T17:00:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3518,14 +3500,16 @@
           "zones": [
             "Beagle Bonaparte Coast: WA-NT Border to Cape Fourcroy",
             "North Tiwi Coast: Cape Fourcroy to Cape Don",
-            "Arafura Coast: Cape Don to Cape Wessel"
+            "Arafura Coast: Cape Don to Cape Wessel",
+            "Roper Groote Coast: Cape Arnhem to QLD-NT Border"
           ],
           "aac_codes": [
             "NT_MW001",
             "NT_MW002",
-            "NT_MW004"
+            "NT_MW004",
+            "NT_MW006"
           ],
-          "summary": "Beagle Bonaparte Coast, North Tiwi Coast and Arafura Coast"
+          "summary": "Beagle Bonaparte Coast, North Tiwi Coast, Arafura Coast and Roper Groote Coast"
         }
       ]
     }
