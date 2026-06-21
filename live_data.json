@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-21T10:53:21.062930+00:00",
-  "last_checked_utc": "2026-06-21T10:53:21.062930+00:00",
+  "generated_utc": "2026-06-21T11:23:20.353040+00:00",
+  "last_checked_utc": "2026-06-21T11:23:20.353040+00:00",
   "warning_count": 7,
   "warnings": [
     {
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "21/18:07 EST Marine Wind Warning Summary for Queensland",
+      "title": "21/21:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 21 Jun 2026 08:07:22 GMT"
+      "issued": "Sun, 21 Jun 2026 11:00:10 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "21/16:59 WST Marine Wind Warning Summary for Western Australia",
+      "title": "21/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 21 Jun 2026 08:59:30 GMT"
+      "issued": "Sun, 21 Jun 2026 11:01:12 GMT"
     },
     {
       "pid": "",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "21/17:37 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "21/20:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 21 Jun 2026 08:07:06 GMT"
+      "issued": "Sun, 21 Jun 2026 11:00:10 GMT"
     }
   ],
   "fetch_errors": {},
@@ -75,6 +75,36 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire - BANOOL CR",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-21T11:16:54+00:00",
+        "description": "BAYONET HEAD, CITY OF ALBANY",
+        "lat": -34.9789,
+        "lng": 117.943,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a37c430fe3ef2b38c32b2af?display=modal"
+      },
+      {
+        "title": "Fire - DAMPIER RD",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-21T11:06:32+00:00",
+        "description": "PEGS CREEK, CITY OF KARRATHA",
+        "lat": -20.7403,
+        "lng": 116.8342,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a37c5d5825823767f20d001?display=modal"
+      },
       {
         "title": "Bushfire - PIPPINGARRA",
         "alertLevel": "",
@@ -410,7 +440,7 @@
     ],
     "act": []
   },
-  "incident_count": 22,
+  "incident_count": 24,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3391,7 +3421,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-06-21T08:07:05Z",
+      "issued_utc": "2026-06-21T11:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3434,6 +3464,28 @@
         }
       ]
     },
+    "WA": {
+      "state": "WA",
+      "product": "IDW20100",
+      "issued_utc": "2026-06-21T11:01:00Z",
+      "overview": [
+        "Strong Wind Warning for Sunday for North Kimberley Coast",
+        "Strong Wind Warning for Monday for North Kimberley Coast"
+      ],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "North Kimberley Coast: WA-NT Border to Kuri Bay"
+          ],
+          "aac_codes": [
+            "WA_MW001"
+          ],
+          "summary": "North Kimberley Coast"
+        }
+      ]
+    },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
@@ -3460,24 +3512,26 @@
     "NT": {
       "state": "NT",
       "product": "IDD20105",
-      "issued_utc": "2026-06-21T08:06:56Z",
+      "issued_utc": "2026-06-21T11:00:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for North Tiwi Coast and Arafura Coast",
-        "Strong Wind Warning for Monday for North Tiwi Coast, Arafura Coast and Roper Groote Coast"
+        "Strong Wind Warning for Sunday for Beagle Bonaparte Coast, North Tiwi Coast and Arafura Coast",
+        "Strong Wind Warning for Monday for Beagle Bonaparte Coast, North Tiwi Coast, Arafura Coast and Roper Groote Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Beagle Bonaparte Coast: WA-NT Border to Cape Fourcroy",
             "North Tiwi Coast: Cape Fourcroy to Cape Don",
             "Arafura Coast: Cape Don to Cape Wessel"
           ],
           "aac_codes": [
+            "NT_MW001",
             "NT_MW002",
             "NT_MW004"
           ],
-          "summary": "North Tiwi Coast and Arafura Coast"
+          "summary": "Beagle Bonaparte Coast, North Tiwi Coast and Arafura Coast"
         }
       ]
     }
