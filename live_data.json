@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-22T10:53:15.984270+00:00",
-  "last_checked_utc": "2026-06-22T10:53:15.984270+00:00",
+  "generated_utc": "2026-06-22T11:23:15.219323+00:00",
+  "last_checked_utc": "2026-06-22T11:23:15.219323+00:00",
   "warning_count": 6,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "22/15:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "22/21:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 22 Jun 2026 05:00:14 GMT"
+      "issued": "Mon, 22 Jun 2026 11:00:15 GMT"
     },
     {
       "pid": "",
@@ -50,34 +50,17 @@
     },
     {
       "pid": "",
-      "title": "22/14:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "22/20:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 22 Jun 2026 05:00:14 GMT"
+      "issued": "Mon, 22 Jun 2026 11:00:13 GMT"
     }
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Riverside Dr, South Grafton",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 22 Jun 2026 10:49:20 GMT",
-        "description": "Riverside Dr, South Grafton, NSW 2460",
-        "council": "Clarence Valley",
-        "lat": -29.699985,
-        "lng": 152.942199999,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -311,36 +294,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - CHARDON ST, KATHERINE EAST",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-22T10:31:35+00:00",
-        "description": "CHARDON ST, KATHERINE EAST",
-        "lat": -14.4734,
-        "lng": 132.2817,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - WURRUMIYANGA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-22T09:59:33+00:00",
-        "description": "WURRUMIYANGA",
-        "lat": -11.7583,
-        "lng": 130.6375,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - LITCHFIELD PARK RD, CHARLOTTE",
         "alertLevel": "Advice",
         "status": "active",
@@ -538,7 +491,7 @@
     ],
     "act": []
   },
-  "incident_count": 31,
+  "incident_count": 28,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3519,9 +3472,9 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-06-22T05:00:00Z",
+      "issued_utc": "2026-06-22T11:00:00Z",
       "overview": [
-        "Strong Wind Warning for Monday for Peninsula Coast, Cooktown Coast and Cairns Coast",
+        "Strong Wind Warning for Monday for Peninsula Coast and Cooktown Coast",
         "Strong Wind Warning for Tuesday for Peninsula Coast and Cooktown Coast"
       ],
       "hazards": [
@@ -3530,15 +3483,13 @@
           "severity": "STR",
           "zones": [
             "Peninsula Coast: Sharp Point to Cape Melville",
-            "Cooktown Coast: Cape Melville to Cape Tribulation",
-            "Cairns Coast: Cape Tribulation to Cardwell"
+            "Cooktown Coast: Cape Melville to Cape Tribulation"
           ],
           "aac_codes": [
             "QLD_MW004",
-            "QLD_MW005",
-            "QLD_MW006"
+            "QLD_MW005"
           ],
-          "summary": "Peninsula Coast, Cooktown Coast and Cairns Coast"
+          "summary": "Peninsula Coast and Cooktown Coast"
         }
       ]
     },
@@ -3565,25 +3516,6 @@
             "TAS_MW008"
           ],
           "summary": "South East Coast, South West Coast and Central West Coast"
-        }
-      ]
-    },
-    "NT": {
-      "state": "NT",
-      "product": "IDD20105",
-      "issued_utc": "2026-06-22T05:00:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Arafura Coast: Cape Don to Cape Wessel"
-          ],
-          "aac_codes": [
-            "NT_MW004"
-          ],
-          "summary": "Arafura Coast"
         }
       ]
     }
