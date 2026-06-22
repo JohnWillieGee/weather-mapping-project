@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-22T04:53:17.270191+00:00",
-  "last_checked_utc": "2026-06-22T04:53:17.270191+00:00",
+  "generated_utc": "2026-06-22T05:23:17.047467+00:00",
+  "last_checked_utc": "2026-06-22T05:23:17.047467+00:00",
   "warning_count": 6,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "22/09:04 EST Marine Wind Warning Summary for Queensland",
+      "title": "22/15:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 21 Jun 2026 23:04:59 GMT"
+      "issued": "Mon, 22 Jun 2026 05:00:14 GMT"
     },
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "22/10:02 WST Marine Wind Warning Summary for Western Australia",
+      "title": "22/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 22 Jun 2026 02:02:59 GMT"
+      "issued": "Mon, 22 Jun 2026 05:01:14 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "22/08:34 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "22/14:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 21 Jun 2026 23:04:50 GMT"
+      "issued": "Mon, 22 Jun 2026 05:00:14 GMT"
     }
   ],
   "fetch_errors": {},
@@ -66,21 +66,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Structure Fire - SOLOMON CIR",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-22T02:59:21+00:00",
-        "description": "KARLOO, CITY OF GREATER GERALDTON",
-        "lat": -28.7898,
-        "lng": 114.6418,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3897b80d5236c130ddc297?display=modal"
-      },
       {
         "title": "Bushfire - KUNUNURRA",
         "alertLevel": "",
@@ -339,6 +324,36 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - ADAMS ST, WINNELLIE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-22T05:05:38+00:00",
+        "description": "ADAMS ST, WINNELLIE",
+        "lat": -12.4305,
+        "lng": 130.8683,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Northstar Road, ACACIA HILLS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-06-22T05:00:00+00:00",
+        "description": "Northstar Road, ACACIA HILLS",
+        "lat": -12.7244,
+        "lng": 131.1684,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - NORTHSTAR RD, ACACIA HILLS",
         "alertLevel": "Advice",
         "status": "active",
@@ -506,7 +521,7 @@
     ],
     "act": []
   },
-  "incident_count": 29,
+  "incident_count": 30,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3487,9 +3502,9 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-06-21T23:04:49Z",
+      "issued_utc": "2026-06-22T05:00:00Z",
       "overview": [
-        "Strong Wind Warning for Monday for South East Gulf of Carpentaria, Peninsula Coast, Cooktown Coast and Cairns Coast",
+        "Strong Wind Warning for Monday for Peninsula Coast, Cooktown Coast and Cairns Coast",
         "Strong Wind Warning for Tuesday for Peninsula Coast and Cooktown Coast"
       ],
       "hazards": [
@@ -3497,43 +3512,16 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "South East Gulf of Carpentaria: QLD-NT Border to Cape Keerweer",
             "Peninsula Coast: Sharp Point to Cape Melville",
             "Cooktown Coast: Cape Melville to Cape Tribulation",
             "Cairns Coast: Cape Tribulation to Cardwell"
           ],
           "aac_codes": [
-            "QLD_MW001",
             "QLD_MW004",
             "QLD_MW005",
             "QLD_MW006"
           ],
-          "summary": "South East Gulf of Carpentaria, Peninsula Coast, Cooktown Coast and Cairns Coast"
-        }
-      ]
-    },
-    "WA": {
-      "state": "WA",
-      "product": "IDW20100",
-      "issued_utc": "2026-06-22T02:02:46Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "North Kimberley Coast: WA-NT Border to Kuri Bay",
-            "West Kimberley Coast: Kuri Bay to Wallal",
-            "Pilbara Coast East: Wallal to Cape Preston",
-            "Pilbara Coast West: Cape Preston to North West Cape"
-          ],
-          "aac_codes": [
-            "WA_MW001",
-            "WA_MW002",
-            "WA_MW003",
-            "WA_MW004"
-          ],
-          "summary": "North Kimberley Coast, West Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
+          "summary": "Peninsula Coast, Cooktown Coast and Cairns Coast"
         }
       ]
     },
@@ -3566,25 +3554,19 @@
     "NT": {
       "state": "NT",
       "product": "IDD20105",
-      "issued_utc": "2026-06-21T23:04:43Z",
+      "issued_utc": "2026-06-22T05:00:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Beagle Bonaparte Coast: WA-NT Border to Cape Fourcroy",
-            "North Tiwi Coast: Cape Fourcroy to Cape Don",
-            "Arafura Coast: Cape Don to Cape Wessel",
-            "Roper Groote Coast: Cape Arnhem to QLD-NT Border"
+            "Arafura Coast: Cape Don to Cape Wessel"
           ],
           "aac_codes": [
-            "NT_MW001",
-            "NT_MW002",
-            "NT_MW004",
-            "NT_MW006"
+            "NT_MW004"
           ],
-          "summary": "Beagle Bonaparte Coast, North Tiwi Coast, Arafura Coast and Roper Groote Coast"
+          "summary": "Arafura Coast"
         }
       ]
     }
