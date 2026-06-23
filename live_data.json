@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-23T06:53:15.016134+00:00",
-  "last_checked_utc": "2026-06-23T06:53:15.016134+00:00",
+  "generated_utc": "2026-06-23T07:23:15.933999+00:00",
+  "last_checked_utc": "2026-06-23T07:23:15.933999+00:00",
   "warning_count": 7,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "23/12:00 EST Frost Warning\nfor Mallee and North East forecast districts",
+      "title": "23/16:54 EST Frost Warning\nfor Mallee and North East forecast districts",
       "type": "other",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/frost.shtml",
       "desc": "",
-      "issued": "Tue, 23 Jun 2026 02:00:09 GMT"
+      "issued": "Tue, 23 Jun 2026 06:54:58 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "23/11:33 CST Frost Warning\nfor Riverland and Murraylands forecast districts",
+      "title": "23/16:40 CST Frost Warning\nfor Riverland and Murraylands forecast districts",
       "type": "other",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/frost.shtml",
       "desc": "",
-      "issued": "Tue, 23 Jun 2026 02:03:03 GMT"
+      "issued": "Tue, 23 Jun 2026 07:10:20 GMT"
     },
     {
       "pid": "",
@@ -69,27 +69,29 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Marine Parade, Maroubra",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Tue, 23 Jun 2026 07:21:21 GMT",
+        "description": "Marine Parade, Maroubra, NSW 2035",
+        "council": "Randwick",
+        "lat": -33.953592,
+        "lng": 151.258272,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Bushfire - STONEVILLE RD",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-23T06:34:50+00:00",
-        "description": "STONEVILLE, SHIRE OF MUNDARING",
-        "lat": -31.868,
-        "lng": 116.1726,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3a297e18b98be245c2ff33?display=modal"
-      },
       {
         "title": "Bushfire - NORTH WEST COASTAL HWY",
         "alertLevel": "",
@@ -97,13 +99,58 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-23T06:02:34+00:00",
+        "updated": "2026-06-23T07:18:29+00:00",
         "description": "MOUNT ANKETELL, CITY OF KARRATHA",
         "lat": -20.7521,
         "lng": 117.0357,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3a21a00ec58a5a4228984f?display=modal"
+      },
+      {
+        "title": "Fuel Leak - ROWLEY RD",
+        "alertLevel": "",
+        "status": "active",
+        "type": "HazMat",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-23T07:15:05+00:00",
+        "description": "DOOBARDA, CITY OF ARMADALE",
+        "lat": -32.1798,
+        "lng": 115.9619,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3a2c666a9e4a7e0f97fbc7?display=modal"
+      },
+      {
+        "title": "Report of Smoke - CLONTARF RD",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-23T07:12:39+00:00",
+        "description": "HAMILTON HILL, CITY OF COCKBURN",
+        "lat": -32.0754,
+        "lng": 115.7791,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3a32217b11e7636082935b?display=modal"
+      },
+      {
+        "title": "Fire - BALINGA DR",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-23T07:09:02+00:00",
+        "description": "BALINGUP, SHIRE OF DONNYBROOK-BALINGUP",
+        "lat": -33.7751,
+        "lng": 115.9751,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3a313b7b11e7636082930f?display=modal"
       },
       {
         "title": "Bushfire - FORREST RD",
@@ -284,65 +331,35 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a379b0d98fd38c2e4b06c31?display=modal"
-      },
-      {
-        "title": "Bushfire - WATERBANK",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-21T07:49:07+00:00",
-        "description": "WATERBANK, SHIRE OF BROOME",
-        "lat": -17.2003,
-        "lng": 122.6234,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3394bf2ea67940072d33a1?display=modal"
-      },
-      {
-        "title": "Bushfire - WYNDHAM",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-21T06:22:34+00:00",
-        "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.5825,
-        "lng": 128.2789,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3782fba24cb578aa0bada4?display=modal"
-      },
-      {
-        "title": "Bushfire - STURT CREEK",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-20T07:32:55+00:00",
-        "description": "STURT CREEK, SHIRE OF HALLS CREEK",
-        "lat": -19.474,
-        "lng": 127.661,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a364240e78c73eff14fd3f3?display=modal"
       }
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - KERINAUIA DR, WURRUMIYANGA",
+        "title": "Grass and Scrub Fire - LEE POINT RD, LEE POINT",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-23T06:43:50+00:00",
-        "description": "KERINAUIA DR, WURRUMIYANGA",
-        "lat": -11.7608,
-        "lng": 130.6329,
+        "updated": "2026-06-23T07:13:22+00:00",
+        "description": "LEE POINT RD, LEE POINT",
+        "lat": -12.3322,
+        "lng": 130.8952,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Structure Fire - WURRUMIYANGA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-23T07:08:48+00:00",
+        "description": "WURRUMIYANGA",
+        "lat": -11.7583,
+        "lng": 130.6375,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -358,21 +375,6 @@
         "description": "Mocatto Road, ACACIA HILLS",
         "lat": -12.7196,
         "lng": 131.1458,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - KERINAUIA DR, WURRUMIYANGA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-23T06:38:21+00:00",
-        "description": "KERINAUIA DR, WURRUMIYANGA",
-        "lat": -11.7608,
-        "lng": 130.6329,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -588,9 +590,100 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": []
+    "act": [
+      {
+        "title": "STRUCTURE FIRE - HAWKER",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Fire",
+        "updated": "2026-06-23T07:19:51+00:00",
+        "description": "HAWKER",
+        "lat": -35.2436,
+        "lng": 149.0437,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "STRUCTURE FIRE - HAWKER",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Ambulance",
+        "updated": "2026-06-23T07:19:47+00:00",
+        "description": "HAWKER",
+        "lat": -35.2436,
+        "lng": 149.0437,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - HOLDER",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-06-23T07:19:00+00:00",
+        "description": "HOLDER",
+        "lat": -35.3343,
+        "lng": 149.049,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - HOLDER",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-06-23T07:19:00+00:00",
+        "description": "HOLDER",
+        "lat": -35.3343,
+        "lng": 149.049,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - HOLDER",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Fire",
+        "updated": "2026-06-23T07:13:45+00:00",
+        "description": "HOLDER",
+        "lat": -35.3343,
+        "lng": 149.049,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - HOLDER",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Ambulance",
+        "updated": "2026-06-23T07:01:38+00:00",
+        "description": "HOLDER",
+        "lat": -35.3343,
+        "lng": 149.049,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      }
+    ]
   },
-  "incident_count": 34,
+  "incident_count": 40,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
