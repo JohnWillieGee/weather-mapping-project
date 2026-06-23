@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-22T23:53:19.182522+00:00",
-  "last_checked_utc": "2026-06-22T23:53:19.182522+00:00",
+  "generated_utc": "2026-06-23T00:23:13.418390+00:00",
+  "last_checked_utc": "2026-06-23T00:23:13.418390+00:00",
   "warning_count": 5,
   "warnings": [
     {
       "pid": "",
-      "title": "23/05:42 EST Road Weather Alert for Canberra",
+      "title": "23/10:14 EST \n                Cancellation of\n                Road Weather Alert for Canberra",
       "type": "other",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/act/warnings/canberraroad.shtml",
       "desc": "",
-      "issued": "Mon, 22 Jun 2026 19:42:33 GMT"
+      "issued": "Tue, 23 Jun 2026 00:14:48 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "23/04:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "23/10:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 22 Jun 2026 18:00:11 GMT"
+      "issued": "Tue, 23 Jun 2026 00:00:12 GMT"
     }
   ],
   "fetch_errors": {},
@@ -57,6 +57,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Earthquake - Gibson Desert, WA",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Earthquake",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-22T23:57:48.669+00:00",
+        "description": "NEALE, LAVERTON, SHIRE OF",
+        "lat": -27.0602,
+        "lng": 125.812,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a39ca8bb84b79ff286495a8?display=modal"
+      },
       {
         "title": "Earthquake - Cue, WA",
         "alertLevel": "",
@@ -71,36 +86,6 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a391fee0335b5986b0d21bb?display=modal"
-      },
-      {
-        "title": "Bushfire Advice THREAT IS REDUCED - WATERBANK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-06-22T07:29:57.92+00:00",
-        "description": "",
-        "lat": -17.2055,
-        "lng": 122.605,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice THREAT IS REDUCED - STURT CREEK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-06-22T07:26:22.73+00:00",
-        "description": "",
-        "lat": -19.462,
-        "lng": 127.6477,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
         "title": "Bushfire - KUNUNURRA",
@@ -497,7 +482,7 @@
     ],
     "act": []
   },
-  "incident_count": 29,
+  "incident_count": 28,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3496,27 +3481,6 @@
             "QLD_MW005"
           ],
           "summary": "Peninsula Coast and Cooktown Coast"
-        }
-      ]
-    },
-    "TAS": {
-      "state": "TAS",
-      "product": "IDT20100",
-      "issued_utc": "2026-06-22T18:00:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "South East Coast: Tasman Island to South East Cape",
-            "South West Coast: South East Cape to Low Rocky Point"
-          ],
-          "aac_codes": [
-            "TAS_MW006",
-            "TAS_MW007"
-          ],
-          "summary": "South East Coast and South West Coast"
         }
       ]
     }
