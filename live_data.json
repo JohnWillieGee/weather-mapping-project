@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-06-23T15:23:16.665895+00:00",
-  "last_checked_utc": "2026-06-23T15:23:16.665895+00:00",
-  "warning_count": 6,
+  "generated_utc": "2026-06-23T15:53:14.355935+00:00",
+  "last_checked_utc": "2026-06-23T15:53:14.355935+00:00",
+  "warning_count": 7,
   "warnings": [
     {
       "pid": "",
@@ -56,6 +56,15 @@
       "link": "http://reg.bom.gov.au/sa/warnings/frost.shtml",
       "desc": "",
       "issued": "Tue, 23 Jun 2026 07:10:20 GMT"
+    },
+    {
+      "pid": "",
+      "title": "23/23:48 WST Marine Wind Warning Summary for Western Australia",
+      "type": "wind",
+      "state": "WA",
+      "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
+      "desc": "",
+      "issued": "Tue, 23 Jun 2026 15:48:28 GMT"
     }
   ],
   "fetch_errors": {},
@@ -68,7 +77,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Tue, 23 Jun 2026 15:21:20 GMT",
+        "updated": "Tue, 23 Jun 2026 15:49:20 GMT",
         "description": "Imperial Av, Beresfield, NSW 2322",
         "council": "Newcastle",
         "lat": -32.816066,
@@ -326,6 +335,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - SOUTH TCE, THE GAP",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-23T15:40:24+00:00",
+        "description": "SOUTH TCE, THE GAP",
+        "lat": -23.7197,
+        "lng": 133.8738,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Mocatto Road, ACACIA HILLS",
         "alertLevel": "Advice",
         "status": "active",
@@ -493,7 +517,7 @@
     ],
     "act": []
   },
-  "incident_count": 28,
+  "incident_count": 29,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3492,6 +3516,27 @@
             "QLD_MW005"
           ],
           "summary": "Peninsula Coast and Cooktown Coast"
+        }
+      ]
+    },
+    "WA": {
+      "state": "WA",
+      "product": "IDW20100",
+      "issued_utc": "2026-06-23T15:48:19Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Pilbara Coast East: Wallal to Cape Preston",
+            "Pilbara Coast West: Cape Preston to North West Cape"
+          ],
+          "aac_codes": [
+            "WA_MW003",
+            "WA_MW004"
+          ],
+          "summary": "Pilbara Coast East and Pilbara Coast West"
         }
       ]
     }
