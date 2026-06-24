@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-24T10:53:17.652727+00:00",
-  "last_checked_utc": "2026-06-24T10:53:17.652727+00:00",
+  "generated_utc": "2026-06-24T11:23:17.250384+00:00",
+  "last_checked_utc": "2026-06-24T11:23:17.250384+00:00",
   "warning_count": 5,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "24/15:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "24/21:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 24 Jun 2026 05:00:13 GMT"
+      "issued": "Wed, 24 Jun 2026 11:00:12 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "24/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "24/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Wed, 24 Jun 2026 05:01:15 GMT"
+      "issued": "Wed, 24 Jun 2026 11:01:11 GMT"
     }
   ],
   "fetch_errors": {},
@@ -58,34 +58,19 @@
     "tas": [],
     "wa": [
       {
-        "title": "Fuel Leak - DAMPIER RD",
-        "alertLevel": "",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-24T10:40:53+00:00",
-        "description": "BAYNTON, CITY OF KARRATHA",
-        "lat": -20.7472,
-        "lng": 116.81,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3bb0700989b94ebfe6f798?display=modal"
-      },
-      {
-        "title": "Bushfire - RAYMOND RD",
+        "title": "Fire - EMERALD CT",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-24T10:29:32+00:00",
-        "description": "ROELANDS, SHIRE OF HARVEY",
-        "lat": -33.2912,
-        "lng": 115.8035,
+        "updated": "2026-06-24T11:19:26+00:00",
+        "description": "SINGLETON, CITY OF ROCKINGHAM",
+        "lat": -32.4397,
+        "lng": 115.7628,
         "polys": [],
         "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3bb0ab0989b94ebfe6f7a9?display=modal"
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3bbca99cc91b6e054f3d32?display=modal"
       },
       {
         "title": "Smoke Alert FOR LESMURDIE, KALAMUNDA, FORRESTFIELD, ORANGE GROVE AND SURROUNDING AREAS IN THE CITY OF KALAMUNDA AND THE CITY OF GOSNELLS",
@@ -375,36 +360,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Grass and Scrub Fire - STUART HWY, BIRDUM",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-21T22:23:57+00:00",
-        "description": "STUART HWY, BIRDUM",
-        "lat": -16.2325,
-        "lng": 133.4152,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - BINJARI -, BINJARI",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-21T05:36:19+00:00",
-        "description": "BINJARI -, BINJARI",
-        "lat": -14.5513,
-        "lng": 132.1824,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Doxas Road, HUMPTY DOO",
         "alertLevel": "Advice",
         "status": "active",
@@ -437,7 +392,7 @@
     ],
     "act": []
   },
-  "incident_count": 25,
+  "incident_count": 22,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3414,5 +3369,54 @@
       "4": "2026-06-28T00:00:00+10:00"
     }
   },
-  "marine_warnings": {}
+  "marine_warnings": {
+    "QLD": {
+      "state": "QLD",
+      "product": "IDQ20085",
+      "issued_utc": "2026-06-24T11:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Peninsula Coast: Sharp Point to Cape Melville",
+            "Cooktown Coast: Cape Melville to Cape Tribulation"
+          ],
+          "aac_codes": [
+            "QLD_MW004",
+            "QLD_MW005"
+          ],
+          "summary": "Peninsula Coast and Cooktown Coast"
+        }
+      ]
+    },
+    "WA": {
+      "state": "WA",
+      "product": "IDW20100",
+      "issued_utc": "2026-06-24T11:01:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Geraldton Coast: Kalbarri to Jurien Bay",
+            "Lancelin Coast: Jurien Bay to Two Rocks",
+            "Perth Coast: Two Rocks to Dawesville",
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
+            "Leeuwin Coast: Cape Naturaliste to Walpole"
+          ],
+          "aac_codes": [
+            "WA_MW007",
+            "WA_MW008",
+            "WA_MW009",
+            "WA_MW010",
+            "WA_MW011"
+          ],
+          "summary": "Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast and Leeuwin Coast"
+        }
+      ]
+    }
+  }
 }
