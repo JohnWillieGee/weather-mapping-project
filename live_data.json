@@ -1,17 +1,8 @@
 {
-  "generated_utc": "2026-06-24T08:23:17.735150+00:00",
-  "last_checked_utc": "2026-06-24T08:23:17.735150+00:00",
-  "warning_count": 6,
+  "generated_utc": "2026-06-24T08:53:14.498060+00:00",
+  "last_checked_utc": "2026-06-24T08:53:14.498060+00:00",
+  "warning_count": 5,
   "warnings": [
-    {
-      "pid": "",
-      "title": "24/10:09 EST \n                Cancellation of\n                Road Weather Alert for Canberra",
-      "type": "other",
-      "state": "NSW",
-      "link": "http://reg.bom.gov.au/act/warnings/canberraroad.shtml",
-      "desc": "",
-      "issued": "Wed, 24 Jun 2026 00:09:19 GMT"
-    },
     {
       "pid": "",
       "title": "24/10:16 EST Minor Flood Warning for the Kiewa River",
@@ -60,41 +51,43 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "BILL OBRIEN WAY, LIGHTNING RIDGE",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Wed, 24 Jun 2026 08:49:21 GMT",
+        "description": "BILL OBRIEN WAY, LIGHTNING RIDGE 2834",
+        "council": "Walgett",
+        "lat": -29.44015,
+        "lng": 147.95661,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire - LOT 200 ST DOMINICS RD",
+        "title": "Bushfire - WEST COAST HWY",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-24T07:53:39+00:00",
-        "description": "PORT DENISON, SHIRE OF IRWIN",
-        "lat": -29.2572,
-        "lng": 114.9415,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3b8a834950132b1bc72739?display=modal"
-      },
-      {
-        "title": "Hazardous Materials - JOHN ST",
-        "alertLevel": "",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-24T05:48:49+00:00",
+        "updated": "2026-06-24T08:43:16+00:00",
         "description": "COTTESLOE, TOWN OF COTTESLOE",
-        "lat": -31.9947,
-        "lng": 115.7571,
+        "lat": -31.982,
+        "lng": 115.7664,
         "polys": [],
         "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3b6d3107fcf2102f396cb0?display=modal"
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3b98d5f349cd9b49556588?display=modal"
       },
       {
         "title": "Smoke Alert FOR LESMURDIE, KALAMUNDA, FORRESTFIELD, ORANGE GROVE AND SURROUNDING AREAS IN THE CITY OF KALAMUNDA AND THE CITY OF GOSNELLS",
@@ -110,24 +103,24 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice THREAT IS REDUCED - WILLARE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-06-24T01:46:12.219+00:00",
-        "description": "",
-        "lat": -17.5763,
-        "lng": 123.6335,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - AMBROSE ST, TENNANT CREEK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-24T08:44:10+00:00",
+        "description": "AMBROSE ST, TENNANT CREEK",
+        "lat": -19.6441,
+        "lng": 134.1936,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - YARRAWONGA RD, YARRAWONGA",
         "alertLevel": "Advice",
@@ -154,21 +147,6 @@
         "description": "NAMATJIRA DR, HUGH",
         "lat": -23.8139,
         "lng": 133.4206,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - VANDERLIN DR, LEANYER",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-24T07:43:13+00:00",
-        "description": "VANDERLIN DR, LEANYER",
-        "lat": -12.3852,
-        "lng": 130.9051,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -311,7 +289,7 @@
     ],
     "act": []
   },
-  "incident_count": 16,
+  "incident_count": 15,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
