@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-24T14:53:18.247353+00:00",
-  "last_checked_utc": "2026-06-24T14:53:18.247353+00:00",
+  "generated_utc": "2026-06-24T15:23:15.759618+00:00",
+  "last_checked_utc": "2026-06-24T15:23:15.759618+00:00",
   "warning_count": 5,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "24/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "25/01:11 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 24 Jun 2026 11:00:12 GMT"
+      "issued": "Wed, 24 Jun 2026 15:11:51 GMT"
     },
     {
       "pid": "",
@@ -57,21 +57,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Structure Fire - DUCHESS ST",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-24T13:15:08+00:00",
-        "description": "BUSSELTON, CITY OF BUSSELTON",
-        "lat": -33.6495,
-        "lng": 115.3426,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3bd58c41ef49931defa1e7?display=modal"
-      },
       {
         "title": "Smoke Alert FOR LESMURDIE, KALAMUNDA, FORRESTFIELD, ORANGE GROVE AND SURROUNDING AREAS IN THE CITY OF KALAMUNDA AND THE CITY OF GOSNELLS",
         "alertLevel": "",
@@ -332,7 +317,7 @@
     ],
     "act": []
   },
-  "incident_count": 18,
+  "incident_count": 17,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3313,7 +3298,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-06-24T11:00:00Z",
+      "issued_utc": "2026-06-24T15:11:30Z",
       "overview": [],
       "hazards": [
         {
@@ -3321,13 +3306,19 @@
           "severity": "STR",
           "zones": [
             "Peninsula Coast: Sharp Point to Cape Melville",
-            "Cooktown Coast: Cape Melville to Cape Tribulation"
+            "Cooktown Coast: Cape Melville to Cape Tribulation",
+            "Cairns Coast: Cape Tribulation to Cardwell",
+            "Townsville Coast: Cardwell to Bowen",
+            "Mackay Coast: Bowen to St Lawrence"
           ],
           "aac_codes": [
             "QLD_MW004",
-            "QLD_MW005"
+            "QLD_MW005",
+            "QLD_MW006",
+            "QLD_MW007",
+            "QLD_MW008"
           ],
-          "summary": "Peninsula Coast and Cooktown Coast"
+          "summary": "Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast and Mackay Coast"
         }
       ]
     },
