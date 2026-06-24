@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-24T16:53:15.492734+00:00",
-  "last_checked_utc": "2026-06-24T16:53:15.492734+00:00",
+  "generated_utc": "2026-06-24T17:23:14.627138+00:00",
+  "last_checked_utc": "2026-06-24T17:23:14.627138+00:00",
   "warning_count": 5,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "25/01:11 EST Marine Wind Warning Summary for Queensland",
+      "title": "25/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 24 Jun 2026 15:11:51 GMT"
+      "issued": "Wed, 24 Jun 2026 17:00:13 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "24/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "25/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Wed, 24 Jun 2026 11:01:11 GMT"
+      "issued": "Wed, 24 Jun 2026 17:01:14 GMT"
     }
   ],
   "fetch_errors": {},
@@ -57,6 +57,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Earthquake - Gascoyne, WA",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Earthquake",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-24T17:06:37.506+00:00",
+        "description": "LYNDON, CARNARVON, SHIRE OF",
+        "lat": -23.0276,
+        "lng": 113.9601,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3c0edf365d9ef797dc55ab?display=modal"
+      },
       {
         "title": "Smoke Alert FOR LESMURDIE, KALAMUNDA, FORRESTFIELD, ORANGE GROVE AND SURROUNDING AREAS IN THE CITY OF KALAMUNDA AND THE CITY OF GOSNELLS",
         "alertLevel": "",
@@ -317,7 +332,7 @@
     ],
     "act": []
   },
-  "incident_count": 17,
+  "incident_count": 18,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3298,7 +3313,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-06-24T15:11:30Z",
+      "issued_utc": "2026-06-24T17:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3325,8 +3340,12 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-24T11:01:00Z",
-      "overview": [],
+      "issued_utc": "2026-06-24T17:01:00Z",
+      "overview": [
+        "Strong Wind Warning for Thursday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast and Leeuwin Coast",
+        "Gale Warning for Friday for Bunbury Geographe Coast and Leeuwin Coast",
+        "Strong Wind Warning for Friday for Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Albany Coast, Esperance Coast, Eucla Coast and Perth Local Waters"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
