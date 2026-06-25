@@ -1,8 +1,17 @@
 {
-  "generated_utc": "2026-06-25T12:53:14.567081+00:00",
-  "last_checked_utc": "2026-06-25T12:53:14.567081+00:00",
-  "warning_count": 6,
+  "generated_utc": "2026-06-25T13:23:16.350577+00:00",
+  "last_checked_utc": "2026-06-25T13:23:16.350577+00:00",
+  "warning_count": 7,
   "warnings": [
+    {
+      "pid": "",
+      "title": "25/23:02 EST Road Weather Alert for Melbourne\nfor all suburbs",
+      "type": "other",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/road.shtml",
+      "desc": "",
+      "issued": "Thu, 25 Jun 2026 13:02:23 GMT"
+    },
     {
       "pid": "",
       "title": "25/10:48 EST Minor Flood Warning for the Kiewa River",
@@ -62,29 +71,13 @@
   "incidents": {
     "nsw": [
       {
-        "title": "ORANGE GROVE RD, ORANGE GROVE",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Thu, 25 Jun 2026 12:50:14 GMT",
-        "description": "MARLOW, ORANGE GROVE RD, ORANGE GROVE 2380",
-        "council": "Gunnedah",
-        "lat": -30.935445,
-        "lng": 150.436098,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
         "title": "Rose St, Chippendale",
         "alertLevel": "Advice",
         "status": "Not yet controlled",
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Thu, 25 Jun 2026 12:50:14 GMT",
+        "updated": "Thu, 25 Jun 2026 13:18:14 GMT",
         "description": "Rose St, Chippendale, NSW 2008",
         "council": "Sydney",
         "lat": -33.8853369999999,
@@ -99,36 +92,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Bushfire - CHOPPING ST",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-25T12:47:28+00:00",
-        "description": "MANJIMUP, SHIRE OF MANJIMUP",
-        "lat": -34.2585,
-        "lng": 116.1323,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3d1fbca43a80ff16561026?display=modal"
-      },
-      {
-        "title": "Fire - TONKIN HWY",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-25T12:29:24+00:00",
-        "description": "EMBLETON, CITY OF BAYSWATER",
-        "lat": -31.8958,
-        "lng": 115.9202,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3d1f51a43a80ff16561015?display=modal"
-      },
       {
         "title": "Bushfire - SOUTH WESTERN HWY",
         "alertLevel": "",
@@ -297,6 +260,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - REDBANK GORGE RD, MOUNT ZEIL",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-25T12:59:21+00:00",
+        "description": "REDBANK GORGE RD, MOUNT ZEIL",
+        "lat": -23.5899,
+        "lng": 132.5145,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - DORAT RD, ADELAIDE RIVER",
         "alertLevel": "Advice",
         "status": "active",
@@ -419,7 +397,7 @@
     ],
     "act": []
   },
-  "incident_count": 23,
+  "incident_count": 21,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
