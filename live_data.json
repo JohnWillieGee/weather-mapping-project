@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-25T16:53:20.260024+00:00",
-  "last_checked_utc": "2026-06-25T16:53:20.260024+00:00",
+  "generated_utc": "2026-06-25T17:23:15.103009+00:00",
+  "last_checked_utc": "2026-06-25T17:23:15.103009+00:00",
   "warning_count": 7,
   "warnings": [
     {
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "25/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "26/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 25 Jun 2026 11:00:12 GMT"
+      "issued": "Thu, 25 Jun 2026 17:00:14 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "25/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "26/01:03 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 25 Jun 2026 11:01:13 GMT"
+      "issued": "Thu, 25 Jun 2026 17:03:30 GMT"
     },
     {
       "pid": "",
@@ -75,21 +75,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Report of Smoke - CHRISTIAN CIR",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-25T16:44:30+00:00",
-        "description": "QUINNS ROCKS, CITY OF WANNEROO",
-        "lat": -31.6578,
-        "lng": 115.6985,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3d5b3b193179d3de57a32e?display=modal"
-      },
       {
         "title": "Bushfire - WANNEROO RD",
         "alertLevel": "",
@@ -149,21 +134,6 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Earthquake - Gascoyne, WA",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Earthquake",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-24T22:24:05.776+00:00",
-        "description": "LYNDON, CARNARVON, SHIRE OF",
-        "lat": -23.01,
-        "lng": 113.9986,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3c0edf365d9ef797dc55ab?display=modal"
       },
       {
         "title": "Bushfire - LAKE ARGYLE",
@@ -395,7 +365,7 @@
     ],
     "act": []
   },
-  "incident_count": 21,
+  "incident_count": 19,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3373,72 +3343,56 @@
     }
   },
   "marine_warnings": {
-    "QLD": {
-      "state": "QLD",
-      "product": "IDQ20085",
-      "issued_utc": "2026-06-25T11:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Thursday for Peninsula Coast, Townsville Coast and Mackay Coast",
-        "Strong Wind Warning for Friday for Townsville Coast and Mackay Coast"
-      ],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Peninsula Coast: Sharp Point to Cape Melville",
-            "Townsville Coast: Cardwell to Bowen",
-            "Mackay Coast: Bowen to St Lawrence"
-          ],
-          "aac_codes": [
-            "QLD_MW004",
-            "QLD_MW007",
-            "QLD_MW008"
-          ],
-          "summary": "Peninsula Coast, Townsville Coast and Mackay Coast"
-        }
-      ]
-    },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-25T11:01:00Z",
+      "issued_utc": "2026-06-25T17:03:15Z",
       "overview": [
-        "Gale Warning for Thursday for Leeuwin Coast",
-        "Strong Wind Warning for Thursday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast and Albany Coast",
         "Gale Warning for Friday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Perth Local Waters",
-        "Strong Wind Warning for Friday for Gascoyne Coast, Esperance Coast, Eucla Coast and Melville Waters"
+        "Strong Wind Warning for Friday for Gascoyne Coast, Esperance Coast, Eucla Coast and Melville Waters",
+        "Gale Warning for Saturday for Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Albany Coast",
+        "Strong Wind Warning for Saturday for Geraldton Coast, Lancelin Coast, Esperance Coast and Perth Local Waters"
       ],
       "hazards": [
         {
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
-            "Leeuwin Coast: Cape Naturaliste to Walpole"
-          ],
-          "aac_codes": [
-            "WA_MW011"
-          ],
-          "summary": "Leeuwin Coast"
-        },
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
             "Geraldton Coast: Kalbarri to Jurien Bay",
             "Lancelin Coast: Jurien Bay to Two Rocks",
             "Perth Coast: Two Rocks to Dawesville",
             "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
-            "Albany Coast: Walpole to Bremer Bay"
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay",
+            "Perth Local Waters"
           ],
           "aac_codes": [
             "WA_MW007",
             "WA_MW008",
             "WA_MW009",
             "WA_MW010",
-            "WA_MW012"
+            "WA_MW011",
+            "WA_MW012",
+            "WA_MW015"
           ],
-          "summary": "Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast and Albany Coast"
+          "summary": "Perth Local Waters, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Albany Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Gascoyne Coast: Cape Cuvier to Kalbarri",
+            "Esperance Coast: Bremer Bay to Israelite Bay",
+            "Eucla Coast: Israelite Bay to WA-SA Border",
+            "Melville Waters"
+          ],
+          "aac_codes": [
+            "WA_MW006",
+            "WA_MW013",
+            "WA_MW014",
+            "WA_MW016"
+          ],
+          "summary": "Melville Waters, Gascoyne Coast, Esperance Coast and Eucla Coast"
         }
       ]
     }
