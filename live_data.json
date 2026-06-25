@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-25T06:53:11.746075+00:00",
-  "last_checked_utc": "2026-06-25T06:53:11.746075+00:00",
+  "generated_utc": "2026-06-25T07:23:13.530521+00:00",
+  "last_checked_utc": "2026-06-25T07:23:13.530521+00:00",
   "warning_count": 5,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "25/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "25/14:57 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 25 Jun 2026 05:01:13 GMT"
+      "issued": "Thu, 25 Jun 2026 06:57:35 GMT"
     }
   ],
   "fetch_errors": {},
@@ -58,19 +58,34 @@
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire - CATHEDRAL AV",
+        "title": "Report of Smoke - 17B CANOPUS LOOP",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-25T06:42:50+00:00",
-        "description": "BASKERVILLE, CITY OF SWAN",
-        "lat": -31.7932,
-        "lng": 116.0219,
+        "updated": "2026-06-25T07:14:53+00:00",
+        "description": "HAMMOND PARK, CITY OF COCKBURN",
+        "lat": -32.165,
+        "lng": 115.8545,
         "polys": [],
         "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3cca544797e7603eac935a?display=modal"
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3cd5a48a649aea5c6c230f?display=modal"
+      },
+      {
+        "title": "Fire - PEONY BVD",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-25T07:00:47+00:00",
+        "description": "YANCHEP, CITY OF WANNEROO",
+        "lat": -31.5494,
+        "lng": 115.6399,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3cd2508a649aea5c6c2237?display=modal"
       },
       {
         "title": "Bushfire - SOUTH WESTERN HWY",
@@ -210,6 +225,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - ALBRECHT DR, LARAPINTA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-25T07:16:40+00:00",
+        "description": "ALBRECHT DR, LARAPINTA",
+        "lat": -23.6934,
+        "lng": 133.8293,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - LITCHFIELD PARK",
         "alertLevel": "Advice",
         "status": "active",
@@ -220,21 +250,6 @@
         "description": "LITCHFIELD PARK",
         "lat": -13.1061,
         "lng": 130.7769,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Bushfire - Peko Road, TENNANT CREEK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-25T05:49:00+00:00",
-        "description": "Peko Road, TENNANT CREEK",
-        "lat": -19.656,
-        "lng": 134.2018,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -272,7 +287,7 @@
     ],
     "act": []
   },
-  "incident_count": 14,
+  "incident_count": 15,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3281,13 +3296,25 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-25T05:01:00Z",
+      "issued_utc": "2026-06-25T06:57:26Z",
       "overview": [
-        "Strong Wind Warning for Thursday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Albany Coast",
-        "Gale Warning for Friday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Perth Local Waters",
-        "Strong Wind Warning for Friday for Gascoyne Coast, Esperance Coast, Eucla Coast and Melville Waters"
+        "Gale Warning for Thursday for Leeuwin Coast",
+        "Strong Wind Warning for Thursday for Lancelin Coast, Albany Coast, Geraldton Coast, Bunbury Geographe Coast and Perth Coast",
+        "Gale Warning for Friday for Perth Local Waters, Lancelin Coast, Geraldton Coast, Albany Coast, Leeuwin Coast, Bunbury Geographe Coast and Perth Coast",
+        "Strong Wind Warning for Friday for Melville Waters, Eucla Coast, Gascoyne Coast and Esperance Coast"
       ],
       "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "Leeuwin Coast: Cape Naturaliste to Walpole"
+          ],
+          "aac_codes": [
+            "WA_MW011"
+          ],
+          "summary": "Leeuwin Coast"
+        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
@@ -3296,7 +3323,6 @@
             "Lancelin Coast: Jurien Bay to Two Rocks",
             "Perth Coast: Two Rocks to Dawesville",
             "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
-            "Leeuwin Coast: Cape Naturaliste to Walpole",
             "Albany Coast: Walpole to Bremer Bay"
           ],
           "aac_codes": [
@@ -3304,10 +3330,9 @@
             "WA_MW008",
             "WA_MW009",
             "WA_MW010",
-            "WA_MW011",
             "WA_MW012"
           ],
-          "summary": "Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Albany Coast"
+          "summary": "Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast and Albany Coast"
         }
       ]
     }
