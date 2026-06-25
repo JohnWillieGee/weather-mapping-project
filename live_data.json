@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-25T03:23:09.493249+00:00",
-  "last_checked_utc": "2026-06-25T03:23:09.493249+00:00",
+  "generated_utc": "2026-06-25T03:53:11.971624+00:00",
+  "last_checked_utc": "2026-06-25T03:53:11.971624+00:00",
   "warning_count": 4,
   "warnings": [
     {
@@ -42,29 +42,27 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Brissett St, Inverell",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Thu, 25 Jun 2026 03:18:16 GMT",
-        "description": "Brissett St, Inverell, NSW 2360",
-        "council": "Inverell",
-        "lat": -29.765634,
-        "lng": 151.127048,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire - SOUTH WESTERN HWY",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-25T03:34:14+00:00",
+        "description": "GLENLYNN, SHIRE OF BRIDGETOWN-GREENBUSHES",
+        "lat": -33.9912,
+        "lng": 116.1375,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3ca18a11648e92445353b9?display=modal"
+      },
       {
         "title": "Bushfire - DEXTER CH",
         "alertLevel": "",
@@ -72,7 +70,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-25T03:18:08+00:00",
+        "updated": "2026-06-25T03:23:50+00:00",
         "description": "LOWER CHITTERING, SHIRE OF CHITTERING",
         "lat": -31.5436,
         "lng": 116.0755,
@@ -81,19 +79,19 @@
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3c99737b6e01901c408ffc?display=modal"
       },
       {
-        "title": "Bushfire - GREAT NORTHERN HWY",
+        "title": "Bushfire - HARVEY RD",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-25T03:16:25+00:00",
-        "description": "MUCHEA, SHIRE OF CHITTERING",
-        "lat": -31.5767,
-        "lng": 115.9959,
+        "updated": "2026-06-25T03:23:37+00:00",
+        "description": "DENBARKER, SHIRE OF PLANTAGENET",
+        "lat": -34.6905,
+        "lng": 117.4592,
         "polys": [],
         "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3c9c9811648e9244535251?display=modal"
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3c9f6f11648e924453535a?display=modal"
       },
       {
         "title": "Smoke Alert FOR THE AVON VALLEY NATIONAL PARK AND SURROUNDING AREAS IN THE CITY OF SWAN",
@@ -248,6 +246,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - BATTEN RD, MARRARA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-25T03:29:41+00:00",
+        "description": "BATTEN RD, MARRARA",
+        "lat": -12.4046,
+        "lng": 130.9107,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Vanderlin Drive, LEANYER",
         "alertLevel": "Advice",
         "status": "active",
@@ -280,7 +293,7 @@
     ],
     "act": []
   },
-  "incident_count": 15,
+  "incident_count": 16,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
