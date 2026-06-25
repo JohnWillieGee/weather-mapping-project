@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-25T09:23:04.175174+00:00",
-  "last_checked_utc": "2026-06-25T09:23:04.175174+00:00",
+  "generated_utc": "2026-06-25T09:53:07.753741+00:00",
+  "last_checked_utc": "2026-06-25T09:53:07.753741+00:00",
   "warning_count": 5,
   "warnings": [
     {
@@ -51,26 +51,43 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Rose St, Chippendale",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Thu, 25 Jun 2026 09:50:13 GMT",
+        "description": "Rose St, Chippendale, NSW 2008",
+        "council": "Sydney",
+        "lat": -33.8853369999999,
+        "lng": 151.195457,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire - OSBORNE RD",
+        "title": "Fire - BATEMAN RD",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-25T08:57:34+00:00",
-        "description": "MOUNT BARKER, SHIRE OF PLANTAGENET",
-        "lat": -34.6276,
-        "lng": 117.665,
+        "updated": "2026-06-25T09:38:17+00:00",
+        "description": "BRENTWOOD, CITY OF MELVILLE",
+        "lat": -32.0437,
+        "lng": 115.853,
         "polys": [],
         "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3ced97713d009814fc1315?display=modal"
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3cf4d4ecbd01947f865ee4?display=modal"
       },
       {
         "title": "Bushfire - SOUTH WESTERN HWY",
@@ -79,7 +96,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-25T08:34:18+00:00",
+        "updated": "2026-06-25T09:20:49+00:00",
         "description": "GLENLYNN, SHIRE OF BRIDGETOWN-GREENBUSHES",
         "lat": -33.9912,
         "lng": 116.1375,
@@ -210,31 +227,31 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - DORAT RD, ADELAIDE RIVER",
+        "title": "Grass and Scrub Fire - BELYUEN RD, ROSEBERY",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-25T09:09:25+00:00",
-        "description": "DORAT RD, ADELAIDE RIVER",
-        "lat": -13.2426,
-        "lng": 131.1106,
+        "updated": "2026-06-25T09:46:14+00:00",
+        "description": "BELYUEN RD, ROSEBERY",
+        "lat": -12.509,
+        "lng": 130.9921,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Grass and Scrub Fire - DORAT RD, ADELAIDE RIVER",
+        "title": "Grass and Scrub Fire - FORREST PDE, ROSEBERY",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-25T09:08:45+00:00",
-        "description": "DORAT RD, ADELAIDE RIVER",
-        "lat": -13.2423,
-        "lng": 131.1107,
+        "updated": "2026-06-25T09:45:25+00:00",
+        "description": "FORREST PDE, ROSEBERY",
+        "lat": -12.5102,
+        "lng": 130.9899,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -250,21 +267,6 @@
         "description": "BIRDUM",
         "lat": -16.3068,
         "lng": 133.3849,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - GREENHIDE RD, MARLOW LAGOON",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-25T08:53:12+00:00",
-        "description": "GREENHIDE RD, MARLOW LAGOON",
-        "lat": -12.4884,
-        "lng": 130.9616,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -330,9 +332,25 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": []
+    "act": [
+      {
+        "title": "HOUSE FIRE - CAMPBELL",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Fire",
+        "updated": "2026-06-25T09:40:57+00:00",
+        "description": "CAMPBELL",
+        "lat": -35.2828,
+        "lng": 149.1577,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      }
+    ]
   },
-  "incident_count": 18,
+  "incident_count": 19,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
