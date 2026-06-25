@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-25T04:53:10.421878+00:00",
-  "last_checked_utc": "2026-06-25T04:53:10.421878+00:00",
+  "generated_utc": "2026-06-25T05:23:10.216664+00:00",
+  "last_checked_utc": "2026-06-25T05:23:10.216664+00:00",
   "warning_count": 5,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "25/09:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "25/15:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 24 Jun 2026 23:00:12 GMT"
+      "issued": "Thu, 25 Jun 2026 05:00:14 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "25/07:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "25/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Wed, 24 Jun 2026 23:01:15 GMT"
+      "issued": "Thu, 25 Jun 2026 05:01:13 GMT"
     }
   ],
   "fetch_errors": {},
@@ -58,19 +58,19 @@
     "tas": [],
     "wa": [
       {
-        "title": "Fire - TUNNEL RD",
+        "title": "Structure Fire - BLECHYNDEN ST",
         "alertLevel": "",
         "status": "active",
-        "type": "Bush Fire",
+        "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-25T04:46:52+00:00",
-        "description": "SWAN VIEW, SHIRE OF MUNDARING",
-        "lat": -31.8808,
-        "lng": 116.0556,
+        "updated": "2026-06-25T05:07:51+00:00",
+        "description": "BRIDGETOWN, SHIRE OF BRIDGETOWN-GREENBUSHES",
+        "lat": -33.9612,
+        "lng": 116.1479,
         "polys": [],
         "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3cb05ef4d7a26702e98c83?display=modal"
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3cb7cede5bc4141347c474?display=modal"
       },
       {
         "title": "Bushfire - SOUTH WESTERN HWY",
@@ -255,21 +255,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Grass and Scrub Fire - COFFEY ST, TIVENDALE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-25T04:17:50+00:00",
-        "description": "COFFEY ST, TIVENDALE",
-        "lat": -12.4748,
-        "lng": 130.9584,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Vanderlin Drive, LEANYER",
         "alertLevel": "Advice",
         "status": "active",
@@ -302,7 +287,7 @@
     ],
     "act": []
   },
-  "incident_count": 16,
+  "incident_count": 15,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3283,8 +3268,11 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-06-24T23:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-06-25T05:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Thursday for Peninsula Coast, Cooktown Coast, Townsville Coast and Mackay Coast",
+        "Strong Wind Warning for Friday for Townsville Coast and Mackay Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3308,11 +3296,11 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-24T23:01:00Z",
+      "issued_utc": "2026-06-25T05:01:00Z",
       "overview": [
         "Strong Wind Warning for Thursday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Albany Coast",
-        "Gale Warning for Friday for Bunbury Geographe Coast and Leeuwin Coast",
-        "Strong Wind Warning for Friday for Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Albany Coast, Esperance Coast, Eucla Coast and Perth Local Waters"
+        "Gale Warning for Friday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Perth Local Waters",
+        "Strong Wind Warning for Friday for Gascoyne Coast, Esperance Coast, Eucla Coast and Melville Waters"
       ],
       "hazards": [
         {
