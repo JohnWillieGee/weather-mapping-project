@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-25T22:53:16.742471+00:00",
-  "last_checked_utc": "2026-06-25T22:53:16.742471+00:00",
+  "generated_utc": "2026-06-25T23:23:18.214385+00:00",
+  "last_checked_utc": "2026-06-25T23:23:18.214385+00:00",
   "warning_count": 7,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "26/01:03 WST Marine Wind Warning Summary for Western Australia",
+      "title": "26/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 25 Jun 2026 17:03:30 GMT"
+      "issued": "Thu, 25 Jun 2026 23:01:16 GMT"
     },
     {
       "pid": "IDW21033",
@@ -75,6 +75,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire - DILLON RD",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-25T23:06:31+00:00",
+        "description": "CROOKED BROOK, SHIRE OF DARDANUP",
+        "lat": -33.4356,
+        "lng": 115.752,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3db49e4603f4133b926563?display=modal"
+      },
       {
         "title": "Bushfire - SOUTH WESTERN HWY",
         "alertLevel": "",
@@ -350,7 +365,7 @@
     ],
     "act": []
   },
-  "incident_count": 18,
+  "incident_count": 19,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3331,10 +3346,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-25T17:03:15Z",
+      "issued_utc": "2026-06-25T23:01:00Z",
       "overview": [
-        "Gale Warning for Friday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Perth Local Waters",
-        "Strong Wind Warning for Friday for Gascoyne Coast, Esperance Coast, Eucla Coast and Melville Waters",
+        "Gale Warning for Friday for Bunbury Geographe Coast, Leeuwin Coast and Albany Coast",
+        "Strong Wind Warning for Friday for Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Esperance Coast, Eucla Coast, Perth Local Waters and Melville Waters",
         "Gale Warning for Saturday for Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Albany Coast",
         "Strong Wind Warning for Saturday for Geraldton Coast, Lancelin Coast, Esperance Coast and Perth Local Waters"
       ],
@@ -3343,41 +3358,41 @@
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
-            "Geraldton Coast: Kalbarri to Jurien Bay",
-            "Lancelin Coast: Jurien Bay to Two Rocks",
-            "Perth Coast: Two Rocks to Dawesville",
             "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay",
-            "Perth Local Waters"
+            "Albany Coast: Walpole to Bremer Bay"
           ],
           "aac_codes": [
-            "WA_MW007",
-            "WA_MW008",
-            "WA_MW009",
             "WA_MW010",
             "WA_MW011",
-            "WA_MW012",
-            "WA_MW015"
+            "WA_MW012"
           ],
-          "summary": "Perth Local Waters, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Albany Coast"
+          "summary": "Bunbury Geographe Coast, Leeuwin Coast and Albany Coast"
         },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
             "Gascoyne Coast: Cape Cuvier to Kalbarri",
+            "Geraldton Coast: Kalbarri to Jurien Bay",
+            "Lancelin Coast: Jurien Bay to Two Rocks",
+            "Perth Coast: Two Rocks to Dawesville",
             "Esperance Coast: Bremer Bay to Israelite Bay",
             "Eucla Coast: Israelite Bay to WA-SA Border",
+            "Perth Local Waters",
             "Melville Waters"
           ],
           "aac_codes": [
             "WA_MW006",
+            "WA_MW007",
+            "WA_MW008",
+            "WA_MW009",
             "WA_MW013",
             "WA_MW014",
+            "WA_MW015",
             "WA_MW016"
           ],
-          "summary": "Melville Waters, Gascoyne Coast, Esperance Coast and Eucla Coast"
+          "summary": "Perth Local Waters, Melville Waters, Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Esperance Coast and Eucla Coast"
         }
       ]
     }
