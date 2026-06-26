@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-26T16:53:20.394078+00:00",
-  "last_checked_utc": "2026-06-26T16:53:20.394078+00:00",
+  "generated_utc": "2026-06-26T17:23:17.142844+00:00",
+  "last_checked_utc": "2026-06-26T17:23:17.142844+00:00",
   "warning_count": 7,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "26/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "27/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Fri, 26 Jun 2026 11:01:15 GMT"
+      "issued": "Fri, 26 Jun 2026 17:01:14 GMT"
     },
     {
       "pid": "IDW21037",
@@ -77,7 +77,7 @@
         "type": "Grass Fire",
         "size": "1506 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Fri, 26 Jun 2026 16:50:13 GMT",
+        "updated": "Fri, 26 Jun 2026 17:18:13 GMT",
         "description": "GWYDIR WETLANDS CONSERVATION AREA, WATERCOURSE RD, MOREE NSW 2400",
         "council": "Moree Plains",
         "lat": -29.3413315519999,
@@ -3799,47 +3799,50 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-26T11:01:00Z",
+      "issued_utc": "2026-06-26T17:01:00Z",
       "overview": [
-        "Gale Warning for Friday for Bunbury Geographe Coast, Leeuwin Coast and Albany Coast",
-        "Strong Wind Warning for Friday for Lancelin Coast, Perth Coast, Esperance Coast, Eucla Coast and Perth Local Waters",
         "Gale Warning for Saturday for Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Perth Local Waters",
-        "Strong Wind Warning for Saturday for Geraldton Coast, Lancelin Coast, Esperance Coast, Eucla Coast and Melville Waters"
+        "Strong Wind Warning for Saturday for Geraldton Coast, Lancelin Coast, Esperance Coast, Eucla Coast and Melville Waters",
+        "Strong Wind Warning for Sunday for Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast, Eucla Coast and Perth Local Waters"
       ],
       "hazards": [
         {
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
+            "Perth Coast: Two Rocks to Dawesville",
             "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay"
+            "Albany Coast: Walpole to Bremer Bay",
+            "Perth Local Waters"
           ],
           "aac_codes": [
+            "WA_MW009",
             "WA_MW010",
             "WA_MW011",
-            "WA_MW012"
+            "WA_MW012",
+            "WA_MW015"
           ],
-          "summary": "Bunbury Geographe Coast, Leeuwin Coast and Albany Coast"
+          "summary": "Perth Local Waters, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Albany Coast"
         },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Geraldton Coast: Kalbarri to Jurien Bay",
             "Lancelin Coast: Jurien Bay to Two Rocks",
-            "Perth Coast: Two Rocks to Dawesville",
             "Esperance Coast: Bremer Bay to Israelite Bay",
             "Eucla Coast: Israelite Bay to WA-SA Border",
-            "Perth Local Waters"
+            "Melville Waters"
           ],
           "aac_codes": [
+            "WA_MW007",
             "WA_MW008",
-            "WA_MW009",
             "WA_MW013",
             "WA_MW014",
-            "WA_MW015"
+            "WA_MW016"
           ],
-          "summary": "Perth Local Waters, Lancelin Coast, Perth Coast, Esperance Coast and Eucla Coast"
+          "summary": "Melville Waters, Geraldton Coast, Lancelin Coast, Esperance Coast and Eucla Coast"
         }
       ]
     }
