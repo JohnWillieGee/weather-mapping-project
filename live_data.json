@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-26T22:53:19.200649+00:00",
-  "last_checked_utc": "2026-06-26T22:53:19.200649+00:00",
+  "generated_utc": "2026-06-26T23:23:16.702409+00:00",
+  "last_checked_utc": "2026-06-26T23:23:16.702409+00:00",
   "warning_count": 8,
   "warnings": [
     {
@@ -41,21 +41,21 @@
     },
     {
       "pid": "",
-      "title": "27/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "27/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Fri, 26 Jun 2026 17:01:14 GMT"
+      "issued": "Fri, 26 Jun 2026 23:01:14 GMT"
     },
     {
       "pid": "IDW21037",
-      "title": "27/04:29 WST \n                Severe Weather Warning\n            \nfor \n                parts of South West district.",
+      "title": "27/07:20 WST \n                Cancellation of Severe Weather Warning\n            \nfor \n                South West district.",
       "type": "severe_weather",
       "state": "WA",
       "link": "http://reg.bom.gov.au/products/IDW21037.shtml",
       "desc": "",
-      "issued": "Fri, 26 Jun 2026 20:29:17 GMT"
+      "issued": "Fri, 26 Jun 2026 23:20:00 GMT"
     },
     {
       "pid": "",
@@ -86,7 +86,7 @@
         "type": "Grass Fire",
         "size": "1506 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Fri, 26 Jun 2026 22:50:13 GMT",
+        "updated": "Fri, 26 Jun 2026 23:18:13 GMT",
         "description": "GWYDIR WETLANDS CONSERVATION AREA, WATERCOURSE RD, MOREE NSW 2400",
         "council": "Moree Plains",
         "lat": -29.3413315519999,
@@ -493,6 +493,21 @@
     "tas": [],
     "wa": [
       {
+        "title": "Bushfire - COOMBES ST",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-26T23:05:17+00:00",
+        "description": "COLLIE, SHIRE OF COLLIE",
+        "lat": -33.3607,
+        "lng": 116.1767,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3f05d2c0dc0b5920d8ba0f?display=modal"
+      },
+      {
         "title": "Earthquake - Kambalda, WA",
         "alertLevel": "",
         "status": "active",
@@ -705,6 +720,21 @@
     ],
     "nt": [
       {
+        "title": "Structure Fire - DICK WARD DR, COCONUT GROVE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-26T22:46:53+00:00",
+        "description": "DICK WARD DR, COCONUT GROVE",
+        "lat": -12.3963,
+        "lng": 130.8523,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - ARNHEM HWY, JABIRU",
         "alertLevel": "Advice",
         "status": "active",
@@ -842,7 +872,7 @@
     ],
     "act": []
   },
-  "incident_count": 24,
+  "incident_count": 26,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3846,10 +3876,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-26T17:01:00Z",
+      "issued_utc": "2026-06-26T23:01:00Z",
       "overview": [
-        "Gale Warning for Saturday for Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Perth Local Waters",
-        "Strong Wind Warning for Saturday for Geraldton Coast, Lancelin Coast, Esperance Coast, Eucla Coast and Melville Waters",
+        "Gale Warning for Saturday for Leeuwin Coast and Albany Coast",
+        "Strong Wind Warning for Saturday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Esperance Coast, Eucla Coast and Perth Local Waters",
         "Strong Wind Warning for Sunday for Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast, Eucla Coast and Perth Local Waters"
       ],
       "hazards": [
@@ -3857,20 +3887,14 @@
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
-            "Perth Coast: Two Rocks to Dawesville",
-            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay",
-            "Perth Local Waters"
+            "Albany Coast: Walpole to Bremer Bay"
           ],
           "aac_codes": [
-            "WA_MW009",
-            "WA_MW010",
             "WA_MW011",
-            "WA_MW012",
-            "WA_MW015"
+            "WA_MW012"
           ],
-          "summary": "Perth Local Waters, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Albany Coast"
+          "summary": "Leeuwin Coast and Albany Coast"
         },
         {
           "level": "Strong Wind Warning",
@@ -3878,18 +3902,22 @@
           "zones": [
             "Geraldton Coast: Kalbarri to Jurien Bay",
             "Lancelin Coast: Jurien Bay to Two Rocks",
+            "Perth Coast: Two Rocks to Dawesville",
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Esperance Coast: Bremer Bay to Israelite Bay",
             "Eucla Coast: Israelite Bay to WA-SA Border",
-            "Melville Waters"
+            "Perth Local Waters"
           ],
           "aac_codes": [
             "WA_MW007",
             "WA_MW008",
+            "WA_MW009",
+            "WA_MW010",
             "WA_MW013",
             "WA_MW014",
-            "WA_MW016"
+            "WA_MW015"
           ],
-          "summary": "Melville Waters, Geraldton Coast, Lancelin Coast, Esperance Coast and Eucla Coast"
+          "summary": "Perth Local Waters, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Esperance Coast and Eucla Coast"
         }
       ]
     }
