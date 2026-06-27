@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-27T04:53:22.101114+00:00",
-  "last_checked_utc": "2026-06-27T04:53:22.101114+00:00",
+  "generated_utc": "2026-06-27T05:23:12.629229+00:00",
+  "last_checked_utc": "2026-06-27T05:23:12.629229+00:00",
   "warning_count": 9,
   "warnings": [
     {
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "27/07:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "27/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Fri, 26 Jun 2026 23:01:14 GMT"
+      "issued": "Sat, 27 Jun 2026 05:01:16 GMT"
     },
     {
       "pid": "IDW21037",
@@ -87,27 +87,29 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Eldon Street, Waratah West",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sat, 27 Jun 2026 05:18:13 GMT",
+        "description": "Eldon Street, Waratah West, NSW 2298",
+        "council": "Newcastle",
+        "lat": -32.902886,
+        "lng": 151.71556,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Structure Fire - ROBINSON ST",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-27T03:06:42+00:00",
-        "description": "CARNARVON, SHIRE OF CARNARVON",
-        "lat": -24.8693,
-        "lng": 113.6782,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a3f3ce80cd5850d84701231?display=modal"
-      },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - KUNUNURRA AND LAKE ARGYLE",
         "alertLevel": "Advice",
@@ -306,6 +308,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - VICTORIA HWY, GREGORY",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-27T05:11:01+00:00",
+        "description": "VICTORIA HWY, GREGORY",
+        "lat": -15.5119,
+        "lng": 131.3236,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Lee Point Road, Lee Point",
         "alertLevel": "Advice",
         "status": "active",
@@ -316,21 +333,6 @@
         "description": "Lee Point Road, Lee Point",
         "lat": -12.3469,
         "lng": 130.8917,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - NTJALKA CCT, ILPARPA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-27T04:28:30+00:00",
-        "description": "NTJALKA CCT, ILPARPA",
-        "lat": -23.7291,
-        "lng": 133.8595,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -351,21 +353,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Structure Fire - BRUNONIA RD, CONNELLAN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-27T04:26:17+00:00",
-        "description": "BRUNONIA RD, CONNELLAN",
-        "lat": -23.7802,
-        "lng": 133.9055,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - ALDENHAM RD, LEE POINT",
         "alertLevel": "Advice",
         "status": "active",
@@ -376,21 +363,6 @@
         "description": "ALDENHAM RD, LEE POINT",
         "lat": -12.3509,
         "lng": 130.8949,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - TENNANT CREEK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-27T03:54:21+00:00",
-        "description": "TENNANT CREEK",
-        "lat": -19.6585,
-        "lng": 134.19,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -518,7 +490,7 @@
     ],
     "act": []
   },
-  "incident_count": 28,
+  "incident_count": 26,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3522,11 +3494,12 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-26T23:01:00Z",
+      "issued_utc": "2026-06-27T05:01:00Z",
       "overview": [
         "Gale Warning for Saturday for Leeuwin Coast and Albany Coast",
         "Strong Wind Warning for Saturday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Esperance Coast, Eucla Coast and Perth Local Waters",
-        "Strong Wind Warning for Sunday for Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast, Eucla Coast and Perth Local Waters"
+        "Gale Warning for Sunday for Albany Coast",
+        "Strong Wind Warning for Sunday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Esperance Coast, Eucla Coast and Perth Local Waters"
       ],
       "hazards": [
         {
