@@ -1,8 +1,26 @@
 {
-  "generated_utc": "2026-06-27T17:53:23.842149+00:00",
-  "last_checked_utc": "2026-06-27T17:53:23.842149+00:00",
-  "warning_count": 7,
+  "generated_utc": "2026-06-27T18:23:18.453604+00:00",
+  "last_checked_utc": "2026-06-27T18:23:18.453604+00:00",
+  "warning_count": 10,
   "warnings": [
+    {
+      "pid": "",
+      "title": "28/04:19 EST Marine Wind Warning Summary for New South Wales",
+      "type": "wind",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Sat, 27 Jun 2026 18:19:01 GMT"
+    },
+    {
+      "pid": "",
+      "title": "28/04:10 EST Marine Wind Warning Summary for Victoria",
+      "type": "wind",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Sat, 27 Jun 2026 18:10:21 GMT"
+    },
     {
       "pid": "",
       "title": "27/17:24 EST Frost Warning\nfor North Central, North East, Central, West and South Gippsland and East Gippsland forecast districts",
@@ -32,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "27/21:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "28/03:40 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sat, 27 Jun 2026 12:00:09 GMT"
+      "issued": "Sat, 27 Jun 2026 18:10:12 GMT"
     },
     {
       "pid": "",
@@ -56,6 +74,15 @@
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
       "issued": "Sat, 27 Jun 2026 17:01:15 GMT"
+    },
+    {
+      "pid": "",
+      "title": "28/04:00 EST Marine Wind Warning Summary for Tasmania",
+      "type": "wind",
+      "state": "TAS",
+      "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Sat, 27 Jun 2026 18:00:11 GMT"
     },
     {
       "pid": "",
@@ -3313,11 +3340,52 @@
     }
   },
   "marine_warnings": {
+    "NSW": {
+      "state": "NSW",
+      "product": "IDN20400",
+      "issued_utc": "2026-06-27T18:18:52Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Eden Coast: Montague Island to Gabo Island"
+          ],
+          "aac_codes": [
+            "NSW_MW001"
+          ],
+          "summary": "Eden Coast"
+        }
+      ]
+    },
+    "VIC": {
+      "state": "VIC",
+      "product": "IDV20600",
+      "issued_utc": "2026-06-27T18:10:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
+          ],
+          "aac_codes": [
+            "VIC_MW004"
+          ],
+          "summary": "East Gippsland Coast"
+        }
+      ]
+    },
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-06-27T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-06-27T18:10:00Z",
+      "overview": [
+        "Strong Wind Warning for Sunday for Upper West Coast, Lower West Coast, Central Coast, South Central Coast and Lower South East Coast",
+        "Strong Wind Warning for Monday for Lower West Coast, Central Coast, South Central Coast and Lower South East Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3381,6 +3449,27 @@
             "WA_MW014"
           ],
           "summary": "Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Esperance Coast and Eucla Coast"
+        }
+      ]
+    },
+    "TAS": {
+      "state": "TAS",
+      "product": "IDT20100",
+      "issued_utc": "2026-06-27T18:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Far North West Coast: Sandy Cape to Stanley",
+            "Central West Coast: Low Rocky Point to Sandy Cape"
+          ],
+          "aac_codes": [
+            "TAS_MW001",
+            "TAS_MW008"
+          ],
+          "summary": "Far North West Coast and Central West Coast"
         }
       ]
     }
