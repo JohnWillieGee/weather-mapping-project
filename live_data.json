@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-06-28T17:53:21.004774+00:00",
-  "last_checked_utc": "2026-06-28T17:53:21.004774+00:00",
+  "generated_utc": "2026-06-28T18:23:20.170176+00:00",
+  "last_checked_utc": "2026-06-28T18:23:20.170176+00:00",
   "warning_count": 9,
   "warnings": [
     {
       "pid": "",
-      "title": "28/22:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "29/04:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 28 Jun 2026 12:00:12 GMT"
+      "issued": "Sun, 28 Jun 2026 18:00:16 GMT"
     },
     {
       "pid": "",
-      "title": "28/22:00 EST Marine Wind Warning Summary for Victoria",
+      "title": "29/04:10 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 28 Jun 2026 12:00:16 GMT"
+      "issued": "Sun, 28 Jun 2026 18:10:21 GMT"
     },
     {
       "pid": "IDV35010",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "28/21:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "29/03:40 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sun, 28 Jun 2026 12:00:11 GMT"
+      "issued": "Sun, 28 Jun 2026 18:10:10 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "28/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "29/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 28 Jun 2026 12:00:09 GMT"
+      "issued": "Sun, 28 Jun 2026 18:00:14 GMT"
     },
     {
       "pid": "",
@@ -93,6 +93,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire - WILUNA",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-28T18:09:34+00:00",
+        "description": "WILUNA, SHIRE OF WILUNA",
+        "lat": -26.4074,
+        "lng": 120.5645,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a4163947b63c84ff8861a34?display=modal"
+      },
       {
         "title": "Bushfire - LAKE ARGYLE",
         "alertLevel": "",
@@ -323,7 +338,7 @@
     ],
     "act": []
   },
-  "incident_count": 15,
+  "incident_count": 16,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3304,8 +3319,11 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-06-28T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-06-28T18:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Monday for Eden Coast",
+        "Strong Wind Warning for Tuesday for Eden Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3323,8 +3341,11 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-06-28T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-06-28T18:10:00Z",
+      "overview": [
+        "Strong Wind Warning for Monday for East Gippsland Coast",
+        "Strong Wind Warning for Tuesday for West Coast and East Gippsland Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3342,30 +3363,28 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-06-28T12:00:00Z",
+      "issued_utc": "2026-06-28T18:10:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Upper West Coast, Lower West Coast, Central Coast, South Central Coast and Lower South East Coast",
-        "Strong Wind Warning for Monday for Lower West Coast, Central Coast, South Central Coast and Lower South East Coast"
+        "Strong Wind Warning for Monday for Lower West Coast, Central Coast, South Central Coast and Lower South East Coast",
+        "Strong Wind Warning for Tuesday for Far West Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Upper West Coast: Fowlers Bay to Elliston",
             "Lower West Coast: Elliston to Cape Carnot",
             "Central Coast",
             "South Central Coast",
             "Lower South East Coast: Cape Jaffa to SA-VIC Border"
           ],
           "aac_codes": [
-            "SA_MW002",
             "SA_MW003",
             "SA_MW004",
             "SA_MW008",
             "SA_MW010"
           ],
-          "summary": "Upper West Coast, Lower West Coast, Central Coast, South Central Coast and Lower South East Coast"
+          "summary": "Lower West Coast, Central Coast, South Central Coast and Lower South East Coast"
         }
       ]
     },
@@ -3405,8 +3424,11 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-28T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-06-28T18:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Monday for Far North West Coast, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast and Central West Coast",
+        "Strong Wind Warning for Tuesday for Far North West Coast, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast, South West Coast and Central West Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
