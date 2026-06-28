@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-06-28T11:53:17.624716+00:00",
-  "last_checked_utc": "2026-06-28T11:53:17.624716+00:00",
+  "generated_utc": "2026-06-28T12:23:18.370657+00:00",
+  "last_checked_utc": "2026-06-28T12:23:18.370657+00:00",
   "warning_count": 9,
   "warnings": [
     {
       "pid": "",
-      "title": "28/16:05 EST Marine Wind Warning Summary for New South Wales",
+      "title": "28/22:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 28 Jun 2026 06:05:15 GMT"
+      "issued": "Sun, 28 Jun 2026 12:00:12 GMT"
     },
     {
       "pid": "",
-      "title": "28/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "28/22:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 28 Jun 2026 06:15:20 GMT"
+      "issued": "Sun, 28 Jun 2026 12:00:16 GMT"
     },
     {
       "pid": "IDV35010",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "28/15:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "28/21:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sun, 28 Jun 2026 06:00:10 GMT"
+      "issued": "Sun, 28 Jun 2026 12:00:11 GMT"
     },
     {
       "pid": "",
@@ -68,21 +68,21 @@
     },
     {
       "pid": "",
-      "title": "28/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "28/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 28 Jun 2026 06:05:13 GMT"
+      "issued": "Sun, 28 Jun 2026 12:00:09 GMT"
     },
     {
       "pid": "",
-      "title": "28/16:59 EST Road Weather Alert for Tasmania\nfor Central Plateau, Midlands and Upper Derwent Valley forecast districts",
+      "title": "28/22:18 EST Road Weather Alert for Tasmania\nfor Central Plateau, Midlands and Upper Derwent Valley forecast districts",
       "type": "other",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/road.shtml",
       "desc": "",
-      "issued": "Sun, 28 Jun 2026 06:59:29 GMT"
+      "issued": "Sun, 28 Jun 2026 12:18:54 GMT"
     }
   ],
   "fetch_errors": {},
@@ -3304,7 +3304,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-06-28T06:05:00Z",
+      "issued_utc": "2026-06-28T12:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3323,7 +3323,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-06-28T06:15:00Z",
+      "issued_utc": "2026-06-28T12:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3342,7 +3342,7 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-06-28T06:00:00Z",
+      "issued_utc": "2026-06-28T12:00:00Z",
       "overview": [
         "Strong Wind Warning for Sunday for Upper West Coast, Lower West Coast, Central Coast, South Central Coast and Lower South East Coast",
         "Strong Wind Warning for Monday for Lower West Coast, Central Coast, South Central Coast and Lower South East Coast"
@@ -3394,7 +3394,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-28T06:05:00Z",
+      "issued_utc": "2026-06-28T12:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3402,6 +3402,7 @@
           "severity": "STR",
           "zones": [
             "Far North West Coast: Sandy Cape to Stanley",
+            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
             "Upper East Coast: St Helens Point to Wineglass Bay",
             "Lower East Coast: Wineglass Bay to Tasman Island",
             "South East Coast: Tasman Island to South East Cape",
@@ -3409,12 +3410,13 @@
           ],
           "aac_codes": [
             "TAS_MW001",
+            "TAS_MW003",
             "TAS_MW004",
             "TAS_MW005",
             "TAS_MW006",
             "TAS_MW008"
           ],
-          "summary": "Far North West Coast, Upper East Coast, Lower East Coast, South East Coast and Central West Coast"
+          "summary": "Far North West Coast, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast and Central West Coast"
         }
       ]
     }
