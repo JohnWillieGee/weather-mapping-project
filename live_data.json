@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-06-27T23:53:16.071837+00:00",
-  "last_checked_utc": "2026-06-27T23:53:16.071837+00:00",
+  "generated_utc": "2026-06-28T00:23:19.052532+00:00",
+  "last_checked_utc": "2026-06-28T00:23:19.052532+00:00",
   "warning_count": 10,
   "warnings": [
     {
       "pid": "",
-      "title": "28/04:19 EST Marine Wind Warning Summary for New South Wales",
+      "title": "28/10:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 27 Jun 2026 18:19:01 GMT"
+      "issued": "Sun, 28 Jun 2026 00:00:14 GMT"
     },
     {
       "pid": "",
-      "title": "28/04:10 EST Marine Wind Warning Summary for Victoria",
+      "title": "28/10:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 27 Jun 2026 18:10:21 GMT"
+      "issued": "Sun, 28 Jun 2026 00:00:18 GMT"
     },
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "28/03:43 EST Road Weather Alert for Melbourne\nfor all suburbs",
+      "title": "28/10:10 EST \n                Cancellation of\n                Road Weather Alert for Melbourne",
       "type": "other",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/road.shtml",
       "desc": "",
-      "issued": "Sat, 27 Jun 2026 17:43:51 GMT"
+      "issued": "Sun, 28 Jun 2026 00:10:25 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "28/05:31 CST Marine Wind Warning Summary for South Australia",
+      "title": "28/09:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sat, 27 Jun 2026 20:01:23 GMT"
+      "issued": "Sun, 28 Jun 2026 00:00:09 GMT"
     },
     {
       "pid": "",
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "28/09:47 EST Marine Wind Warning Summary for Tasmania",
+      "title": "28/10:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 27 Jun 2026 23:47:40 GMT"
+      "issued": "Sun, 28 Jun 2026 00:00:12 GMT"
     },
     {
       "pid": "",
@@ -113,21 +113,6 @@
         "description": "",
         "lat": -15.8683,
         "lng": 128.9249,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice THREAT IS REDUCED - DURACK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-06-27T07:17:11.528+00:00",
-        "description": "",
-        "lat": -16.3412,
-        "lng": 128.2319,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -269,6 +254,21 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - WOODROFFE AV, WOODROFFE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-06-28T00:10:01+00:00",
+        "description": "WOODROFFE AV, WOODROFFE",
+        "lat": -12.5062,
+        "lng": 130.9824,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Bushfire - Brougham Road FLY CREEK",
         "alertLevel": "Advice",
@@ -3313,7 +3313,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-06-27T18:18:52Z",
+      "issued_utc": "2026-06-28T00:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3332,7 +3332,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-06-27T18:10:00Z",
+      "issued_utc": "2026-06-28T00:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3351,10 +3351,10 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-06-27T20:01:10Z",
+      "issued_utc": "2026-06-28T00:00:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Far West Coast, Upper West Coast, Lower West Coast, Central Coast, Lower South East Coast and South Central Coast",
-        "Strong Wind Warning for Monday for Central Coast, Lower South East Coast, Lower West Coast and South Central Coast"
+        "Strong Wind Warning for Sunday for Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast and Lower South East Coast",
+        "Strong Wind Warning for Monday for Lower West Coast, Central Coast, South Central Coast and Lower South East Coast"
       ],
       "hazards": [
         {
@@ -3413,7 +3413,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-06-27T23:51:10Z",
+      "issued_utc": "2026-06-28T00:00:00Z",
       "overview": [],
       "hazards": [
         {
