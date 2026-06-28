@@ -572,7 +572,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 
       <div style="padding:10px 14px 12px;border-top:1px solid var(--border);margin-top:auto;">
         <div style="font-family:monospace;font-size:9px;color:var(--text3);letter-spacing:.5px;">
-          <span style="color:var(--text2);font-weight:700;">WatchTower</span> &nbsp;v2.41
+          <span style="color:var(--text2);font-weight:700;">WatchTower</span> &nbsp;v2.42
           <span style="float:right;opacity:0.6;">John Willie Gee</span>
         </div>
       </div>
@@ -4579,9 +4579,9 @@ function toggleWeatherPanel(){
 // \u2500\u2500 WATCHTOWER: RISK ASSESSMENT ENGINE \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 //
 // Risk levels:
-//   IMPACTED    (4) \u2014 site inside Emergency Warning polygon / incident < 5km
-//   DIRECT      (3) \u2014 site inside Watch & Act polygon / incident < threshold
-//   WARNING     (2) \u2014 site inside Advice polygon / BOM fire-weather or cyclone in district
+//   IMPACTED    (4) \u2014 site physically inside an Emergency Warning polygon (polygon only)
+//   DIRECT      (3) \u2014 site inside Watch & Act polygon, OR Emergency Warning within waDist
+//   WARNING     (2) \u2014 site inside Advice polygon / Watch & Act within waDist / BOM fire-weather or cyclone in district
 //   ADVISORY    (1) \u2014 BOM storm/severe warning in district (all sites; MF sites elevated)
 //
 // Data sources used:
@@ -4758,45 +4758,63 @@ function computeRisks() {
     }
 
     // \u2500\u2500 2. Incident proximity (all states, point + polygon) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+    //
+    // SITE IMPACTED is only triggered when a site is physically inside a drawn
+    // incident polygon. Distance alone never triggers IMPACTED \u2014 this keeps
+    // the highest alert tier operationally meaningful.
+    //
+    // Outside-polygon proximity rules:
+    //   Emergency Warning within waDist  \u2192 DIRECT THREAT
+    //   Watch and Act within waDist      \u2192 WARNING
+    //   Advice within advDist            \u2192 WARNING
+    //   Advice beyond advDist            \u2192 skip
+    //   Any level beyond waDist          \u2192 skip
+    //
     ['nsw','vic','qld','sa','wa','tas','nt','act'].forEach(function(key) {
       (allIncidents[key] || []).filter(isActiveIncident).forEach(function(inc) {
         var d = distToIncidentKm(site, inc);
         var al = (inc.alertLevel || '').toLowerCase();
         var isEmergency = al.includes('emergency');
-        var effectiveRange = isEmergency ? riskDistanceKm * 2 : riskDistanceKm;
+        var isWatch     = al.includes('watch');
+        var isAdvice    = al.includes('advice');
 
-        // Inside polygon = always impacted, no distance check needed
+        // Check if site is inside any drawn incident polygon
         var insidePoly = inc.polys && inc.polys.length > 0 && inc.polys.some(function(poly) {
           var ring = (poly && poly.coordinates) ? poly.coordinates[0] : poly;
           return ring && pointInPolygon(site.lat, site.lon, ring);
         });
 
-        if (!insidePoly && d > effectiveRange) return;
-
         var lvl;
+
         if (insidePoly) {
-          // Inside polygon \u2014 level reflects alert level, not automatic IMPACTED
+          // Inside polygon \u2014 alert level drives the tier
+          // SITE IMPACTED is only reachable this way, never by distance alone
           if (isEmergency) {
             lvl = RISK_LEVEL.IMPACTED;
-          } else if (al.includes('watch')) {
+          } else if (isWatch) {
             lvl = RISK_LEVEL.DIRECT;
           } else {
-            lvl = RISK_LEVEL.WARNING; // Advice inside polygon \u2192 WARNING
+            lvl = RISK_LEVEL.WARNING;
           }
-        } else if (isEmergency || (d < S.advDist && !al.includes('advice'))) {
-          lvl = RISK_LEVEL.IMPACTED;
-        } else if (al.includes('advice') && d >= S.advDist) {
-          // Advice-level beyond advDist setting \u2014 skip
-          return;
-        } else if (al.includes('advice') && d < S.advDist) {
-          // Advice-level within advDist \u2014 WARNING only
-          lvl = RISK_LEVEL.WARNING;
-        } else if (al.includes('watch') || d < 20) {
-          lvl = RISK_LEVEL.DIRECT;
         } else {
-          lvl = RISK_LEVEL.WARNING;
+          // Outside polygon \u2014 distance-based rules only
+          if (isAdvice) {
+            if (d > S.advDist) return;    // beyond advice cap \u2014 skip
+            lvl = RISK_LEVEL.WARNING;
+          } else {
+            if (d > riskDistanceKm) return; // beyond waDist \u2014 skip
+            if (isEmergency) {
+              lvl = RISK_LEVEL.DIRECT;    // serious but not impacted without polygon
+            } else if (isWatch) {
+              lvl = RISK_LEVEL.WARNING;
+            } else {
+              lvl = RISK_LEVEL.WARNING;   // unknown/blank alert level within range
+            }
+          }
         }
         if (lvl > topLevel) topLevel = lvl;
+
+
         reasons.push({
           lvl: lvl,
           src: inc.state + ' ' + (inc.agency || 'RFS'),
