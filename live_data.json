@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-28T17:23:20.915123+00:00",
-  "last_checked_utc": "2026-06-28T17:23:20.915123+00:00",
+  "generated_utc": "2026-06-28T17:53:21.004774+00:00",
+  "last_checked_utc": "2026-06-28T17:53:21.004774+00:00",
   "warning_count": 9,
   "warnings": [
     {
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "28/19:35 WST Marine Wind Warning Summary for Western Australia",
+      "title": "29/01:26 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 28 Jun 2026 11:35:09 GMT"
+      "issued": "Sun, 28 Jun 2026 17:26:26 GMT"
     },
     {
       "pid": "",
@@ -93,21 +93,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Structure Fire - STEBBING RD",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-28T15:59:41+00:00",
-        "description": "MADDINGTON, CITY OF GOSNELLS",
-        "lat": -32.0421,
-        "lng": 115.9907,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a413fcd5a31dbd35b12d56c?display=modal"
-      },
       {
         "title": "Bushfire - LAKE ARGYLE",
         "alertLevel": "",
@@ -338,7 +323,7 @@
     ],
     "act": []
   },
-  "incident_count": 16,
+  "incident_count": 15,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3387,22 +3372,33 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-28T11:34:58Z",
+      "issued_utc": "2026-06-28T17:26:19Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Esperance Coast",
-        "Strong Wind Warning for Monday for Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Perth Local Waters"
+        "Strong Wind Warning for Monday for Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Perth Local Waters",
+        "Gale Warning for Tuesday for Leeuwin Coast",
+        "Strong Wind Warning for Tuesday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Albany Coast, Esperance Coast, Eucla Coast and Perth Local Waters"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Esperance Coast: Bremer Bay to Israelite Bay"
+            "Lancelin Coast: Jurien Bay to Two Rocks",
+            "Perth Coast: Two Rocks to Dawesville",
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay",
+            "Perth Local Waters"
           ],
           "aac_codes": [
-            "WA_MW013"
+            "WA_MW008",
+            "WA_MW009",
+            "WA_MW010",
+            "WA_MW011",
+            "WA_MW012",
+            "WA_MW015"
           ],
-          "summary": "Esperance Coast"
+          "summary": "Perth Local Waters, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Albany Coast"
         }
       ]
     },
