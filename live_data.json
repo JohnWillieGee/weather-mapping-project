@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-06-29T22:53:27.727270+00:00",
-  "last_checked_utc": "2026-06-29T22:53:27.727270+00:00",
+  "generated_utc": "2026-06-29T23:23:28.705616+00:00",
+  "last_checked_utc": "2026-06-29T23:23:28.705616+00:00",
   "warning_count": 11,
   "warnings": [
     {
       "pid": "",
-      "title": "30/04:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "30/09:09 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 29 Jun 2026 18:00:12 GMT"
+      "issued": "Mon, 29 Jun 2026 23:09:52 GMT"
     },
     {
       "pid": "",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "30/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "30/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 29 Jun 2026 17:01:13 GMT"
+      "issued": "Mon, 29 Jun 2026 23:01:16 GMT"
     },
     {
       "pid": "",
@@ -369,25 +369,9 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [
-      {
-        "title": "STRUCTURE FIRE - NARRABUNDAH",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Fire",
-        "updated": "2026-06-29T22:12:24+00:00",
-        "description": "NARRABUNDAH",
-        "lat": -35.3327,
-        "lng": 149.1513,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      }
-    ]
+    "act": []
   },
-  "incident_count": 18,
+  "incident_count": 17,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3368,10 +3352,10 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-06-29T18:00:00Z",
+      "issued_utc": "2026-06-29T23:09:46Z",
       "overview": [
         "Strong Wind Warning for Tuesday for Illawarra Coast, Batemans Coast and Eden Coast",
-        "Strong Wind Warning for Wednesday for Coffs Coast, Macquarie Coast, Hunter Coast, Illawarra Coast, Batemans Coast and Eden Coast"
+        "Strong Wind Warning for Wednesday for Illawarra Coast, Coffs Coast, Eden Coast, Macquarie Coast, Hunter Coast and Batemans Coast"
       ],
       "hazards": [
         {
@@ -3447,10 +3431,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-29T17:01:00Z",
+      "issued_utc": "2026-06-29T23:01:00Z",
       "overview": [
-        "Gale Warning for Tuesday for Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Esperance Coast",
-        "Strong Wind Warning for Tuesday for Gascoyne Coast, Geraldton Coast, Lancelin Coast, Eucla Coast and Perth Local Waters",
+        "Gale Warning for Tuesday for Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Esperance Coast",
+        "Strong Wind Warning for Tuesday for Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Eucla Coast and Perth Local Waters",
         "Gale Warning for Wednesday for Albany Coast and Esperance Coast",
         "Strong Wind Warning for Wednesday for Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Eucla Coast"
       ],
@@ -3459,20 +3443,18 @@
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
-            "Perth Coast: Two Rocks to Dawesville",
             "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Leeuwin Coast: Cape Naturaliste to Walpole",
             "Albany Coast: Walpole to Bremer Bay",
             "Esperance Coast: Bremer Bay to Israelite Bay"
           ],
           "aac_codes": [
-            "WA_MW009",
             "WA_MW010",
             "WA_MW011",
             "WA_MW012",
             "WA_MW013"
           ],
-          "summary": "Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Esperance Coast"
+          "summary": "Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Esperance Coast"
         },
         {
           "level": "Strong Wind Warning",
@@ -3481,6 +3463,7 @@
             "Gascoyne Coast: Cape Cuvier to Kalbarri",
             "Geraldton Coast: Kalbarri to Jurien Bay",
             "Lancelin Coast: Jurien Bay to Two Rocks",
+            "Perth Coast: Two Rocks to Dawesville",
             "Eucla Coast: Israelite Bay to WA-SA Border",
             "Perth Local Waters"
           ],
@@ -3488,10 +3471,11 @@
             "WA_MW006",
             "WA_MW007",
             "WA_MW008",
+            "WA_MW009",
             "WA_MW014",
             "WA_MW015"
           ],
-          "summary": "Perth Local Waters, Gascoyne Coast, Geraldton Coast, Lancelin Coast and Eucla Coast"
+          "summary": "Perth Local Waters, Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast and Eucla Coast"
         }
       ]
     },
