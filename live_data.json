@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-29T16:53:29.219163+00:00",
-  "last_checked_utc": "2026-06-29T16:53:29.219163+00:00",
+  "generated_utc": "2026-06-29T17:23:23.093357+00:00",
+  "last_checked_utc": "2026-06-29T17:23:23.093357+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "29/23:23 EST Warning to Sheep Graziers\nfor North East forecast district",
+      "title": "30/03:01 EST Warning to Sheep Graziers\nfor Northern Country, North Central and North East forecast districts",
       "type": "other",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Mon, 29 Jun 2026 13:23:56 GMT"
+      "issued": "Mon, 29 Jun 2026 17:01:43 GMT"
     },
     {
       "pid": "IDV35010",
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "29/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "30/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 29 Jun 2026 11:01:14 GMT"
+      "issued": "Mon, 29 Jun 2026 17:01:13 GMT"
     },
     {
       "pid": "",
@@ -102,6 +102,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire - ARAUCARIA BVD",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-29T17:16:03+00:00",
+        "description": "BYFORD, SHIRE OF SERPENTINE-JARRAHDALE",
+        "lat": -32.2055,
+        "lng": 116.0059,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a42a5eaa9e170842d66e45c?display=modal"
+      },
       {
         "title": "Bushfire - DURACK",
         "alertLevel": "",
@@ -362,7 +377,7 @@
     ],
     "act": []
   },
-  "incident_count": 17,
+  "incident_count": 18,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3409,45 +3424,51 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-29T11:01:00Z",
+      "issued_utc": "2026-06-29T17:01:00Z",
       "overview": [
-        "Gale Warning for Monday for Leeuwin Coast and Albany Coast",
-        "Strong Wind Warning for Monday for Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Esperance Coast and Perth Local Waters",
-        "Gale Warning for Tuesday for Bunbury Geographe Coast, Leeuwin Coast and Albany Coast",
-        "Strong Wind Warning for Tuesday for Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Esperance Coast, Eucla Coast and Perth Local Waters"
+        "Gale Warning for Tuesday for Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Esperance Coast",
+        "Strong Wind Warning for Tuesday for Gascoyne Coast, Geraldton Coast, Lancelin Coast, Eucla Coast and Perth Local Waters",
+        "Gale Warning for Wednesday for Albany Coast and Esperance Coast",
+        "Strong Wind Warning for Wednesday for Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Eucla Coast"
       ],
       "hazards": [
         {
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
+            "Perth Coast: Two Rocks to Dawesville",
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay"
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay"
           ],
           "aac_codes": [
+            "WA_MW009",
+            "WA_MW010",
             "WA_MW011",
-            "WA_MW012"
+            "WA_MW012",
+            "WA_MW013"
           ],
-          "summary": "Leeuwin Coast and Albany Coast"
+          "summary": "Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Esperance Coast"
         },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Gascoyne Coast: Cape Cuvier to Kalbarri",
+            "Geraldton Coast: Kalbarri to Jurien Bay",
             "Lancelin Coast: Jurien Bay to Two Rocks",
-            "Perth Coast: Two Rocks to Dawesville",
-            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
-            "Esperance Coast: Bremer Bay to Israelite Bay",
+            "Eucla Coast: Israelite Bay to WA-SA Border",
             "Perth Local Waters"
           ],
           "aac_codes": [
+            "WA_MW006",
+            "WA_MW007",
             "WA_MW008",
-            "WA_MW009",
-            "WA_MW010",
-            "WA_MW013",
+            "WA_MW014",
             "WA_MW015"
           ],
-          "summary": "Perth Local Waters, Lancelin Coast, Perth Coast, Bunbury Geographe Coast and Esperance Coast"
+          "summary": "Perth Local Waters, Gascoyne Coast, Geraldton Coast, Lancelin Coast and Eucla Coast"
         }
       ]
     },
