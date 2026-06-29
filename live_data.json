@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-29T09:53:22.721441+00:00",
-  "last_checked_utc": "2026-06-29T09:53:22.721441+00:00",
+  "generated_utc": "2026-06-29T10:23:27.864857+00:00",
+  "last_checked_utc": "2026-06-29T10:23:27.864857+00:00",
   "warning_count": 8,
   "warnings": [
     {
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "29/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "29/17:54 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 29 Jun 2026 05:01:14 GMT"
+      "issued": "Mon, 29 Jun 2026 09:54:30 GMT"
     },
     {
       "pid": "",
@@ -85,28 +85,13 @@
     "tas": [],
     "wa": [
       {
-        "title": "Fire - ROGERS WAY",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-29T09:34:08+00:00",
-        "description": "NEWMAN, SHIRE OF EAST PILBARA",
-        "lat": -23.3569,
-        "lng": 119.7323,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a423b14ebf0cfd2c28570d1?display=modal"
-      },
-      {
         "title": "Structure Fire - KNOX WAY",
         "alertLevel": "",
         "status": "active",
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-29T08:57:32+00:00",
+        "updated": "2026-06-29T10:14:02+00:00",
         "description": "NEWMAN, SHIRE OF EAST PILBARA",
         "lat": -23.3619,
         "lng": 119.7485,
@@ -207,16 +192,16 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - HOLMES JUNGLE -, HOLMES",
+        "title": "Grass and Scrub Fire - WURRUMIYANGA",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-29T09:37:56+00:00",
-        "description": "HOLMES JUNGLE -, HOLMES",
-        "lat": -12.3975,
-        "lng": 130.9257,
+        "updated": "2026-06-29T10:10:06+00:00",
+        "description": "WURRUMIYANGA",
+        "lat": -11.7583,
+        "lng": 130.6375,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -374,7 +359,7 @@
     ],
     "act": []
   },
-  "incident_count": 19,
+  "incident_count": 18,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3421,13 +3406,27 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-29T05:01:00Z",
+      "issued_utc": "2026-06-29T09:54:20Z",
       "overview": [
-        "Strong Wind Warning for Monday for Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Perth Local Waters",
-        "Gale Warning for Tuesday for Bunbury Geographe Coast and Leeuwin Coast",
-        "Strong Wind Warning for Tuesday for Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Albany Coast, Esperance Coast, Eucla Coast and Perth Local Waters"
+        "Gale Warning for Monday for Leeuwin Coast and Albany Coast",
+        "Strong Wind Warning for Monday for Lancelin Coast, Bunbury Geographe Coast, Perth Local Waters and Perth Coast",
+        "Gale Warning for Tuesday for Leeuwin Coast, Albany Coast and Bunbury Geographe Coast",
+        "Strong Wind Warning for Tuesday for Perth Local Waters, Lancelin Coast, Geraldton Coast, Perth Coast, Gascoyne Coast, Esperance Coast and Eucla Coast"
       ],
       "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay"
+          ],
+          "aac_codes": [
+            "WA_MW011",
+            "WA_MW012"
+          ],
+          "summary": "Leeuwin Coast and Albany Coast"
+        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
@@ -3435,19 +3434,15 @@
             "Lancelin Coast: Jurien Bay to Two Rocks",
             "Perth Coast: Two Rocks to Dawesville",
             "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
-            "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay",
             "Perth Local Waters"
           ],
           "aac_codes": [
             "WA_MW008",
             "WA_MW009",
             "WA_MW010",
-            "WA_MW011",
-            "WA_MW012",
             "WA_MW015"
           ],
-          "summary": "Perth Local Waters, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Albany Coast"
+          "summary": "Perth Local Waters, Lancelin Coast, Perth Coast and Bunbury Geographe Coast"
         }
       ]
     },
