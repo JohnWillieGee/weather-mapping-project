@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-06-30T04:53:26.235674+00:00",
-  "last_checked_utc": "2026-06-30T04:53:26.235674+00:00",
-  "warning_count": 14,
+  "generated_utc": "2026-06-30T05:23:23.510861+00:00",
+  "last_checked_utc": "2026-06-30T05:23:23.510861+00:00",
+  "warning_count": 15,
   "warnings": [
     {
       "pid": "",
@@ -104,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "30/08:36 WST Marine Wind Warning Summary for Western Australia",
+      "title": "30/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 30 Jun 2026 00:36:24 GMT"
+      "issued": "Tue, 30 Jun 2026 05:01:14 GMT"
     },
     {
       "pid": "",
@@ -119,6 +119,15 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Tue, 30 Jun 2026 00:00:13 GMT"
+    },
+    {
+      "pid": "IDT20610",
+      "title": "30/14:59 EST Initial Minor Flood Warning for the North Esk River",
+      "type": "flood",
+      "state": "TAS",
+      "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDT20610.html",
+      "desc": "",
+      "issued": "Tue, 30 Jun 2026 04:59:49 GMT"
     },
     {
       "pid": "IDT20625",
@@ -138,6 +147,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fuel Leak - YARDIE CREEK DAY USE AREA",
+        "alertLevel": "",
+        "status": "active",
+        "type": "HazMat",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-30T04:51:01+00:00",
+        "description": "CAPE RANGE NATIONAL PARK, SHIRE OF EXMOUTH",
+        "lat": -22.3226,
+        "lng": 113.8129,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a434b59a5669aa7d2ea5de7?display=modal"
+      },
       {
         "title": "Bushfire Advice THREAT IS REDUCED - KUNUNURRA, LAKE ARGYLE AND FOUR MILE",
         "alertLevel": "Advice",
@@ -413,7 +437,7 @@
     ],
     "act": []
   },
-  "incident_count": 18,
+  "incident_count": 19,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3473,51 +3497,49 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-30T00:36:14Z",
+      "issued_utc": "2026-06-30T05:01:00Z",
       "overview": [
-        "Gale Warning for Tuesday for Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Esperance Coast",
-        "Strong Wind Warning for Tuesday for Geraldton Coast, Lancelin Coast, Perth Coast, Eucla Coast, Perth Local Waters and Gascoyne Coast",
+        "Gale Warning for Tuesday for Albany Coast and Esperance Coast",
+        "Strong Wind Warning for Tuesday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Eucla Coast and Perth Local Waters",
         "Gale Warning for Wednesday for Albany Coast and Esperance Coast",
-        "Strong Wind Warning for Wednesday for Leeuwin Coast, Bunbury Geographe Coast and Eucla Coast"
+        "Strong Wind Warning for Wednesday for Bunbury Geographe Coast, Leeuwin Coast and Eucla Coast"
       ],
       "hazards": [
         {
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
-            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
-            "Leeuwin Coast: Cape Naturaliste to Walpole",
             "Albany Coast: Walpole to Bremer Bay",
             "Esperance Coast: Bremer Bay to Israelite Bay"
           ],
           "aac_codes": [
-            "WA_MW010",
-            "WA_MW011",
             "WA_MW012",
             "WA_MW013"
           ],
-          "summary": "Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Esperance Coast"
+          "summary": "Albany Coast and Esperance Coast"
         },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Gascoyne Coast: Cape Cuvier to Kalbarri",
             "Geraldton Coast: Kalbarri to Jurien Bay",
             "Lancelin Coast: Jurien Bay to Two Rocks",
             "Perth Coast: Two Rocks to Dawesville",
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
             "Eucla Coast: Israelite Bay to WA-SA Border",
             "Perth Local Waters"
           ],
           "aac_codes": [
-            "WA_MW006",
             "WA_MW007",
             "WA_MW008",
             "WA_MW009",
+            "WA_MW010",
+            "WA_MW011",
             "WA_MW014",
             "WA_MW015"
           ],
-          "summary": "Perth Local Waters, Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast and Eucla Coast"
+          "summary": "Perth Local Waters, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Eucla Coast"
         }
       ]
     },
