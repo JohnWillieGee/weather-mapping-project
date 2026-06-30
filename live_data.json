@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-06-30T02:53:32.585177+00:00",
-  "last_checked_utc": "2026-06-30T02:53:32.585177+00:00",
-  "warning_count": 12,
+  "generated_utc": "2026-06-30T03:23:22.992580+00:00",
+  "last_checked_utc": "2026-06-30T03:23:22.992580+00:00",
+  "warning_count": 13,
   "warnings": [
     {
       "pid": "",
@@ -110,6 +110,15 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Tue, 30 Jun 2026 00:00:13 GMT"
+    },
+    {
+      "pid": "IDT20625",
+      "title": "30/12:59 EST Initial Flood Watch for the North and North East catchments",
+      "type": "flood",
+      "state": "TAS",
+      "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDT20625.html",
+      "desc": "",
+      "issued": "Tue, 30 Jun 2026 02:59:51 GMT"
     }
   ],
   "fetch_errors": {},
@@ -121,19 +130,49 @@
     "tas": [],
     "wa": [
       {
+        "title": "Structure Fire - PICKLE ST",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-30T03:05:46+00:00",
+        "description": "MANDURAH, CITY OF MANDURAH",
+        "lat": -32.5257,
+        "lng": 115.745,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a433167c686eba71b8c144b?display=modal"
+      },
+      {
         "title": "Hazardous Materials - ANISEED RD",
         "alertLevel": "",
         "status": "active",
         "type": "HazMat",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-06-30T02:46:07+00:00",
+        "updated": "2026-06-30T02:54:12+00:00",
         "description": "TREEBY, CITY OF COCKBURN",
         "lat": -32.1286,
         "lng": 115.8746,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a432e1cc686eba71b8c135c?display=modal"
+      },
+      {
+        "title": "Bushfire Advice THREAT IS REDUCED - KUNUNURRA, LAKE ARGYLE AND FOUR MILE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-06-30T02:45:21.118+00:00",
+        "description": "",
+        "lat": -15.8688,
+        "lng": 128.9246,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
         "title": "Bushfire - COCKRAM ST",
@@ -194,21 +233,6 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a40c4dde6b9ec211e7f67c0?display=modal"
-      },
-      {
-        "title": "Bushfire Advice MONITOR CONDITIONS - KUNUNURRA, LAKE ARGYLE AND FOUR MILE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-06-28T04:20:57.857+00:00",
-        "description": "",
-        "lat": -15.8688,
-        "lng": 128.9246,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
         "title": "Bushfire - DURACK",
@@ -410,7 +434,7 @@
     ],
     "act": []
   },
-  "incident_count": 19,
+  "incident_count": 20,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
