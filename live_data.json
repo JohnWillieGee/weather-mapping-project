@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-30T10:53:21.809003+00:00",
-  "last_checked_utc": "2026-06-30T10:53:21.809003+00:00",
+  "generated_utc": "2026-06-30T11:23:22.384869+00:00",
+  "last_checked_utc": "2026-06-30T11:23:22.384869+00:00",
   "warning_count": 19,
   "warnings": [
     {
@@ -104,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "30/16:00 EST Initial Minor Flood Warning for the Goulburn River",
+      "title": "30/21:07 EST Minor Flood Warning for the Goulburn River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/goulburnriver.shtml",
       "desc": "",
-      "issued": "Tue, 30 Jun 2026 06:00:45 GMT"
+      "issued": "Tue, 30 Jun 2026 11:07:41 GMT"
     },
     {
       "pid": "",
@@ -122,12 +122,12 @@
     },
     {
       "pid": "",
-      "title": "30/16:17 WST Marine Wind Warning Summary for Western Australia",
+      "title": "30/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 30 Jun 2026 08:17:59 GMT"
+      "issued": "Tue, 30 Jun 2026 11:01:13 GMT"
     },
     {
       "pid": "",
@@ -258,21 +258,6 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a4398be797239938e1e6bdc?display=modal"
-      },
-      {
-        "title": "Report of Smoke - SUBIACO RD",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-30T10:26:39+00:00",
-        "description": "SUBIACO, CITY OF SUBIACO",
-        "lat": -31.9432,
-        "lng": 115.8336,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a43987a5bae2222f9f69308?display=modal"
       },
       {
         "title": "Bushfire - DURACK",
@@ -519,7 +504,7 @@
     ],
     "act": []
   },
-  "incident_count": 22,
+  "incident_count": 21,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3579,49 +3564,29 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-30T08:17:49Z",
+      "issued_utc": "2026-06-30T11:01:00Z",
       "overview": [
-        "Gale Warning for Tuesday for Albany Coast and Esperance Coast",
-        "Strong Wind Warning for Tuesday for Bunbury Geographe Coast, Leeuwin Coast, Eucla Coast, Perth Local Waters, Lancelin Coast, Geraldton Coast and Perth Coast",
+        "Strong Wind Warning for Tuesday for Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast",
         "Gale Warning for Wednesday for Albany Coast and Esperance Coast",
-        "Strong Wind Warning for Wednesday for Leeuwin Coast, Bunbury Geographe Coast and Eucla Coast"
+        "Strong Wind Warning for Wednesday for Bunbury Geographe Coast, Leeuwin Coast and Eucla Coast"
       ],
       "hazards": [
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "Albany Coast: Walpole to Bremer Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay"
-          ],
-          "aac_codes": [
-            "WA_MW012",
-            "WA_MW013"
-          ],
-          "summary": "Albany Coast and Esperance Coast"
-        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Geraldton Coast: Kalbarri to Jurien Bay",
-            "Lancelin Coast: Jurien Bay to Two Rocks",
-            "Perth Coast: Two Rocks to Dawesville",
-            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Eucla Coast: Israelite Bay to WA-SA Border",
-            "Perth Local Waters"
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay",
+            "Eucla Coast: Israelite Bay to WA-SA Border"
           ],
           "aac_codes": [
-            "WA_MW007",
-            "WA_MW008",
-            "WA_MW009",
-            "WA_MW010",
             "WA_MW011",
-            "WA_MW014",
-            "WA_MW015"
+            "WA_MW012",
+            "WA_MW013",
+            "WA_MW014"
           ],
-          "summary": "Perth Local Waters, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Eucla Coast"
+          "summary": "Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
         }
       ]
     }
