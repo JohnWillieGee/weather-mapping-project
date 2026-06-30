@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-06-30T16:53:26.030313+00:00",
-  "last_checked_utc": "2026-06-30T16:53:26.030313+00:00",
+  "generated_utc": "2026-06-30T17:23:21.188440+00:00",
+  "last_checked_utc": "2026-06-30T17:23:21.188440+00:00",
   "warning_count": 19,
   "warnings": [
     {
@@ -122,12 +122,12 @@
     },
     {
       "pid": "",
-      "title": "30/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "01/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 30 Jun 2026 11:01:13 GMT"
+      "issued": "Tue, 30 Jun 2026 17:01:12 GMT"
     },
     {
       "pid": "",
@@ -3609,29 +3609,40 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-06-30T11:01:00Z",
+      "issued_utc": "2026-06-30T17:01:00Z",
       "overview": [
-        "Strong Wind Warning for Tuesday for Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast",
         "Gale Warning for Wednesday for Albany Coast and Esperance Coast",
-        "Strong Wind Warning for Wednesday for Bunbury Geographe Coast, Leeuwin Coast and Eucla Coast"
+        "Strong Wind Warning for Wednesday for Bunbury Geographe Coast, Leeuwin Coast and Eucla Coast",
+        "Strong Wind Warning for Thursday for Esperance Coast and Eucla Coast"
       ],
       "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay"
+          ],
+          "aac_codes": [
+            "WA_MW012",
+            "WA_MW013"
+          ],
+          "summary": "Albany Coast and Esperance Coast"
+        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay",
             "Eucla Coast: Israelite Bay to WA-SA Border"
           ],
           "aac_codes": [
+            "WA_MW010",
             "WA_MW011",
-            "WA_MW012",
-            "WA_MW013",
             "WA_MW014"
           ],
-          "summary": "Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
+          "summary": "Bunbury Geographe Coast, Leeuwin Coast and Eucla Coast"
         }
       ]
     },
