@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-06-30T07:23:23.799682+00:00",
-  "last_checked_utc": "2026-06-30T07:23:23.799682+00:00",
-  "warning_count": 21,
+  "generated_utc": "2026-06-30T07:53:27.787707+00:00",
+  "last_checked_utc": "2026-06-30T07:53:27.787707+00:00",
+  "warning_count": 20,
   "warnings": [
     {
       "pid": "",
@@ -47,15 +47,6 @@
       "link": "http://reg.bom.gov.au/nsw/warnings/sydneyroad.shtml",
       "desc": "",
       "issued": "Tue, 30 Jun 2026 00:53:24 GMT"
-    },
-    {
-      "pid": "",
-      "title": "30/08:20 EST \n                Cancellation of\n                Road Weather Alert for Canberra",
-      "type": "other",
-      "state": "NSW",
-      "link": "http://reg.bom.gov.au/act/warnings/canberraroad.shtml",
-      "desc": "",
-      "issued": "Mon, 29 Jun 2026 22:20:39 GMT"
     },
     {
       "pid": "",
@@ -195,24 +186,7 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Waterloo Rd, Greenacre",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Tue, 30 Jun 2026 07:20:23 GMT",
-        "description": "Waterloo Rd, Greenacre, NSW 2190",
-        "council": "Canterbury-Bankstown",
-        "lat": -33.912796,
-        "lng": 151.057228999,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -224,7 +198,22 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-06-30T16:14:03+00:00",
+        "updated": "2026-06-30T17:38:15+00:00",
+        "description": "",
+        "lat": -41.4088899998325,
+        "lng": 146.4773000002374,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=58f05755-baca-40cc-9494-2d7d6f995f14"
+      },
+      {
+        "title": "Flood - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Flood",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-06-30T17:38:15+00:00",
         "description": "",
         "lat": -41.34705000013238,
         "lng": 146.42869999981122,
@@ -239,7 +228,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-06-30T16:14:03+00:00",
+        "updated": "2026-06-30T17:38:15+00:00",
         "description": "",
         "lat": -41.49052999972265,
         "lng": 147.2183000004367,
@@ -249,21 +238,6 @@
       }
     ],
     "wa": [
-      {
-        "title": "Structure Fire - ROBERTS ST W",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-30T07:12:28+00:00",
-        "description": "OSBORNE PARK, CITY OF STIRLING",
-        "lat": -31.908,
-        "lng": 115.8177,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a436a3e094767520e65e368?display=modal"
-      },
       {
         "title": "Fuel Leak - YARDIE CREEK DAY USE AREA",
         "alertLevel": "",
@@ -387,16 +361,16 @@
     ],
     "nt": [
       {
-        "title": "Structure Fire - MELASTOMA DR, MOULDEN",
+        "title": "Grass and Scrub Fire - CHALLONER CCT, HUMPTY DOO",
         "alertLevel": "Advice",
         "status": "active",
-        "type": "Structure Fire",
+        "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-30T07:10:22+00:00",
-        "description": "MELASTOMA DR, MOULDEN",
-        "lat": -12.4978,
-        "lng": 130.9724,
+        "updated": "2026-06-30T07:46:42+00:00",
+        "description": "CHALLONER CCT, HUMPTY DOO",
+        "lat": -12.5783,
+        "lng": 131.1006,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -492,21 +466,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Grass and Scrub Fire - VICTORIA HWY, TIMBER CREEK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-06-28T10:35:24+00:00",
-        "description": "VICTORIA HWY, TIMBER CREEK",
-        "lat": -15.6232,
-        "lng": 130.4442,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - UMBRAWARRA RD, PINE CREEK",
         "alertLevel": "Advice",
         "status": "active",
@@ -569,7 +528,7 @@
     ],
     "act": []
   },
-  "incident_count": 24,
+  "incident_count": 22,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
