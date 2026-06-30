@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-06-30T06:53:28.740122+00:00",
-  "last_checked_utc": "2026-06-30T06:53:28.740122+00:00",
-  "warning_count": 17,
+  "generated_utc": "2026-06-30T07:23:23.799682+00:00",
+  "last_checked_utc": "2026-06-30T07:23:23.799682+00:00",
+  "warning_count": 21,
   "warnings": [
     {
       "pid": "",
@@ -11,6 +11,24 @@
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Tue, 30 Jun 2026 06:05:18 GMT"
+    },
+    {
+      "pid": "IDN21037-ACT",
+      "title": "30/16:52 EST \n                Severe Weather Warning\n            \nfor \n                parts of South West Slopes, Snowy Mountains, Australian Capital Territory and Southern Tablelands Forecast Districts.",
+      "type": "severe_weather",
+      "state": "ACT",
+      "link": "http://reg.bom.gov.au/products/IDN21037.shtml",
+      "desc": "",
+      "issued": "Tue, 30 Jun 2026 06:52:30 GMT"
+    },
+    {
+      "pid": "IDN21037",
+      "title": "30/16:52 EST \n                Severe Weather Warning\n            \nfor \n                parts of South West Slopes, Snowy Mountains, Australian Capital Territory and Southern Tablelands Forecast Districts.",
+      "type": "severe_weather",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/products/IDN21037.shtml",
+      "desc": "",
+      "issued": "Tue, 30 Jun 2026 06:52:30 GMT"
     },
     {
       "pid": "",
@@ -139,6 +157,24 @@
       "issued": "Tue, 30 Jun 2026 06:05:12 GMT"
     },
     {
+      "pid": "IDT20605",
+      "title": "30/16:56 EST Initial Minor Flood Warning for the Mersey River",
+      "type": "flood",
+      "state": "TAS",
+      "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDT20605.html",
+      "desc": "",
+      "issued": "Tue, 30 Jun 2026 06:56:37 GMT"
+    },
+    {
+      "pid": "IDT20609",
+      "title": "30/17:11 EST Initial Minor Flood Warning for the Meander River",
+      "type": "flood",
+      "state": "TAS",
+      "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDT20609.html",
+      "desc": "",
+      "issued": "Tue, 30 Jun 2026 07:11:38 GMT"
+    },
+    {
       "pid": "IDT20610",
       "title": "30/14:59 EST Initial Minor Flood Warning for the North Esk River",
       "type": "flood",
@@ -159,7 +195,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Waterloo Rd, Greenacre",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Tue, 30 Jun 2026 07:20:23 GMT",
+        "description": "Waterloo Rd, Greenacre, NSW 2190",
+        "council": "Canterbury-Bankstown",
+        "lat": -33.912796,
+        "lng": 151.057228999,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -196,6 +249,21 @@
       }
     ],
     "wa": [
+      {
+        "title": "Structure Fire - ROBERTS ST W",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-06-30T07:12:28+00:00",
+        "description": "OSBORNE PARK, CITY OF STIRLING",
+        "lat": -31.908,
+        "lng": 115.8177,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a436a3e094767520e65e368?display=modal"
+      },
       {
         "title": "Fuel Leak - YARDIE CREEK DAY USE AREA",
         "alertLevel": "",
@@ -319,16 +387,16 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - DAMABILA DR, LYONS",
+        "title": "Structure Fire - MELASTOMA DR, MOULDEN",
         "alertLevel": "Advice",
         "status": "active",
-        "type": "Grass Fire",
+        "type": "Structure Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-06-30T06:45:37+00:00",
-        "description": "DAMABILA DR, LYONS",
-        "lat": -12.3598,
-        "lng": 130.8873,
+        "updated": "2026-06-30T07:10:22+00:00",
+        "description": "MELASTOMA DR, MOULDEN",
+        "lat": -12.4978,
+        "lng": 130.9724,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -501,7 +569,7 @@
     ],
     "act": []
   },
-  "incident_count": 22,
+  "incident_count": 24,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
