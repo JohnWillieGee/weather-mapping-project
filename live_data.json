@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-01T14:23:26.333498+00:00",
-  "last_checked_utc": "2026-07-01T14:23:26.333498+00:00",
+  "generated_utc": "2026-07-01T14:53:43.395324+00:00",
+  "last_checked_utc": "2026-07-01T14:53:43.395324+00:00",
   "warning_count": 27,
   "warnings": [
     {
@@ -247,7 +247,9 @@
       "issued": "Wed, 01 Jul 2026 02:50:39 GMT"
     }
   ],
-  "fetch_errors": {},
+  "fetch_errors": {
+    "wa": "Both JSON and RSS feeds returned HTML (likely access-restricted)"
+  },
   "incidents": {
     "nsw": [],
     "vic": [],
@@ -375,140 +377,34 @@
         "sourceUrl": "https://alert.tas.gov.au/?id=b08b2cc6-1403-4536-a6a9-74dbfa94f0a0"
       }
     ],
-    "wa": [
-      {
-        "title": "Bushfire Advice MONITOR CONDITIONS - CABLE BEACH",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-07-01T14:15:41.404+00:00",
-        "description": "",
-        "lat": -17.9356,
-        "lng": 122.2144,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire - WANBINY TRAIL",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-01T13:44:46+00:00",
-        "description": "CABLE BEACH, SHIRE OF BROOME",
-        "lat": -17.9354,
-        "lng": 122.2111,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a44eeb9a9066deeda997886?display=modal"
-      },
-      {
-        "title": "Bushfire Advice MONITOR CONDITIONS - PEEDAMULLA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-07-01T07:47:19.889+00:00",
-        "description": "",
-        "lat": -21.839,
-        "lng": 115.6702,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire - ST GEORGE RANGES",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-01T07:32:50+00:00",
-        "description": "ST GEORGE RANGES, SHIRE OF DERBY/WEST KIMBERLEY",
-        "lat": -18.6721,
-        "lng": 125.8661,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a44b884d5b2f4001e2c7127?display=modal"
-      },
-      {
-        "title": "Bushfire - PEEDAMULLA",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-01T07:32:16+00:00",
-        "description": "PEEDAMULLA, SHIRE OF ASHBURTON",
-        "lat": -21.8349,
-        "lng": 115.687,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a44c2a3d5b2f4001e2c7238?display=modal"
-      },
-      {
-        "title": "Bushfire - DURACK",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-01T06:15:58+00:00",
-        "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.93,
-        "lng": 128.344,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a41feb9a49da4207f23e7f6?display=modal"
-      },
-      {
-        "title": "Bushfire Advice MONITOR CONDITIONS - DILLON SPRINGS AND WUGGUBUN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-07-01T03:59:15.273+00:00",
-        "description": "",
-        "lat": -15.9553,
-        "lng": 128.3808,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire - GIBB",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-06-29T04:47:29+00:00",
-        "description": "GIBB, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -16.267,
-        "lng": 126.235,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a41f8fda49da4207f23e765?display=modal"
-      }
-    ],
+    "wa": [],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - JASPER RD, NHULUNBUY",
+        "title": "Grass and Scrub Fire - WEDDELL",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-01T14:10:22+00:00",
-        "description": "JASPER RD, NHULUNBUY",
-        "lat": -12.1771,
-        "lng": 136.781,
+        "updated": "2026-07-01T14:42:08+00:00",
+        "description": "WEDDELL",
+        "lat": -12.5773,
+        "lng": 130.965,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - Unknown",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-01T14:36:18+00:00",
+        "description": "",
+        "lat": -12.3558,
+        "lng": 130.8717,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -559,51 +455,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Grass and Scrub Fire - BROWN ST, TENNANT CREEK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-01T13:43:18+00:00",
-        "description": "BROWN ST, TENNANT CREEK",
-        "lat": -19.649,
-        "lng": 134.1817,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - WILLARD RD, HOLTZE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-01T13:21:46+00:00",
-        "description": "WILLARD RD, HOLTZE",
-        "lat": -12.4608,
-        "lng": 131.0337,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - WEDDELL",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-01T11:53:58+00:00",
-        "description": "WEDDELL",
-        "lat": -12.5773,
-        "lng": 130.965,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - DOUGLAS-DALY",
         "alertLevel": "Advice",
         "status": "active",
@@ -636,9 +487,9 @@
     ],
     "act": []
   },
-  "incident_count": 25,
+  "incident_count": 15,
   "nsw_alert_zones": [],
-  "wa_feed_method": "emergencyapi",
+  "wa_feed_method": "none",
   "fdr": {
     "ratings": {
       "NSW_FW001": {
