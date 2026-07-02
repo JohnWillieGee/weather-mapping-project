@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-01T23:53:24.407003+00:00",
-  "last_checked_utc": "2026-07-01T23:53:24.407003+00:00",
+  "generated_utc": "2026-07-02T00:23:25.123837+00:00",
+  "last_checked_utc": "2026-07-02T00:23:25.123837+00:00",
   "warning_count": 27,
   "warnings": [
     {
       "pid": "",
-      "title": "02/04:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "02/10:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 01 Jul 2026 18:00:14 GMT"
+      "issued": "Thu, 02 Jul 2026 00:00:13 GMT"
     },
     {
       "pid": "IDN21037-ACT",
@@ -104,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "02/00:11 EST Moderate Flood Warning for the King River and Minor Flood Warning for the Ovens River",
+      "title": "02/10:02 EST Moderate Flood Warning for the King River and Minor Flood Warning for the Ovens River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/ovensandkingrivers.shtml",
       "desc": "",
-      "issued": "Wed, 01 Jul 2026 14:11:19 GMT"
+      "issued": "Thu, 02 Jul 2026 00:02:50 GMT"
     },
     {
       "pid": "",
@@ -131,12 +131,12 @@
     },
     {
       "pid": "",
-      "title": "02/03:40 CST Marine Wind Warning Summary for South Australia",
+      "title": "02/09:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Wed, 01 Jul 2026 18:10:15 GMT"
+      "issued": "Thu, 02 Jul 2026 00:00:12 GMT"
     },
     {
       "pid": "",
@@ -176,12 +176,12 @@
     },
     {
       "pid": "",
-      "title": "02/09:34 EST Marine Wind Warning Summary for Tasmania",
+      "title": "02/10:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 01 Jul 2026 23:34:54 GMT"
+      "issued": "Thu, 02 Jul 2026 00:00:13 GMT"
     },
     {
       "pid": "IDT20605",
@@ -377,28 +377,13 @@
     ],
     "wa": [
       {
-        "title": "Fire - COOK ST",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-01T23:41:05+00:00",
-        "description": "CRAWLEY, CITY OF PERTH",
-        "lat": -31.9837,
-        "lng": 115.8178,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a45a5c10d14dd154e6dc569?display=modal"
-      },
-      {
         "title": "Bushfire - REID RD",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-01T23:27:26+00:00",
+        "updated": "2026-07-01T23:49:06+00:00",
         "description": "CABLE BEACH, SHIRE OF BROOME",
         "lat": -17.9582,
         "lng": 122.214,
@@ -604,9 +589,40 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": []
+    "act": [
+      {
+        "title": "HOUSE FIRE - HAWKER",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-07-02T00:20:00+00:00",
+        "description": "HAWKER",
+        "lat": -35.2457,
+        "lng": 149.0437,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - HAWKER",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Fire - Ambulance",
+        "updated": "2026-07-02T00:17:37+00:00",
+        "description": "HAWKER",
+        "lat": -35.2457,
+        "lng": 149.0437,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      }
+    ]
   },
-  "incident_count": 23,
+  "incident_count": 24,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3587,25 +3603,13 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-07-01T18:00:00Z",
+      "issued_utc": "2026-07-02T00:00:00Z",
       "overview": [
-        "Gale Warning for Thursday for Eden Coast",
-        "Strong Wind Warning for Thursday for Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast and Batemans Coast",
+        "Strong Wind Warning for Thursday for Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast",
         "Gale Warning for Friday for Eden Coast",
         "Strong Wind Warning for Friday for Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast and Batemans Coast"
       ],
       "hazards": [
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "Eden Coast: Montague Island to Gabo Island"
-          ],
-          "aac_codes": [
-            "NSW_MW001"
-          ],
-          "summary": "Eden Coast"
-        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
@@ -3615,7 +3619,8 @@
             "Hunter Coast: Seal Rocks to Broken Bay",
             "Sydney Coast: Broken Bay to Port Hacking",
             "Illawarra Coast: Port Hacking to Ulladulla",
-            "Batemans Coast: Ulladulla to Montague Island"
+            "Batemans Coast: Ulladulla to Montague Island",
+            "Eden Coast: Montague Island to Gabo Island"
           ],
           "aac_codes": [
             "NSW_MW007",
@@ -3623,9 +3628,10 @@
             "NSW_MW005",
             "NSW_MW004",
             "NSW_MW003",
-            "NSW_MW002"
+            "NSW_MW002",
+            "NSW_MW001"
           ],
-          "summary": "Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast and Batemans Coast"
+          "summary": "Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast"
         }
       ]
     },
@@ -3675,10 +3681,10 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-07-01T18:10:00Z",
+      "issued_utc": "2026-07-02T00:00:00Z",
       "overview": [
-        "Gale Warning for Thursday for Central Coast, South Central Coast, Gulf St Vincent, Investigator Strait, Upper South East Coast, Lower South East Coast and Adelaide Metropolitan Waters",
-        "Strong Wind Warning for Thursday for Far West Coast, Upper West Coast, Lower West Coast and Spencer Gulf",
+        "Gale Warning for Thursday for Central Coast, South Central Coast, Investigator Strait, Upper South East Coast and Lower South East Coast",
+        "Strong Wind Warning for Thursday for Far West Coast, Upper West Coast, Lower West Coast, Spencer Gulf, Gulf St Vincent and Adelaide Metropolitan Waters",
         "Gale Warning for Friday for South Central Coast, Upper South East Coast and Lower South East Coast",
         "Strong Wind Warning for Friday for Lower West Coast, Central Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait and Adelaide Metropolitan Waters"
       ],
@@ -3689,22 +3695,18 @@
           "zones": [
             "Central Coast",
             "South Central Coast",
-            "Gulf St Vincent",
             "Investigator Strait",
             "Upper South East Coast: Murray Mouth to Cape Jaffa",
-            "Lower South East Coast: Cape Jaffa to SA-VIC Border",
-            "Adelaide Metropolitan Waters"
+            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
           ],
           "aac_codes": [
             "SA_MW004",
             "SA_MW008",
-            "SA_MW006",
             "SA_MW007",
             "SA_MW009",
-            "SA_MW010",
-            "SA_MW011"
+            "SA_MW010"
           ],
-          "summary": "Adelaide Metropolitan Waters, Central Coast, South Central Coast, Gulf St Vincent, Investigator Strait, Upper South East Coast and Lower South East Coast"
+          "summary": "Central Coast, South Central Coast, Investigator Strait, Upper South East Coast and Lower South East Coast"
         },
         {
           "level": "Strong Wind Warning",
@@ -3713,15 +3715,19 @@
             "Far West Coast: WA-SA Border to Fowlers Bay",
             "Upper West Coast: Fowlers Bay to Elliston",
             "Lower West Coast: Elliston to Cape Carnot",
-            "Spencer Gulf"
+            "Spencer Gulf",
+            "Gulf St Vincent",
+            "Adelaide Metropolitan Waters"
           ],
           "aac_codes": [
             "SA_MW001",
             "SA_MW002",
             "SA_MW003",
-            "SA_MW005"
+            "SA_MW005",
+            "SA_MW006",
+            "SA_MW011"
           ],
-          "summary": "Far West Coast, Upper West Coast, Lower West Coast and Spencer Gulf"
+          "summary": "Adelaide Metropolitan Waters, Far West Coast, Upper West Coast, Lower West Coast, Spencer Gulf and Gulf St Vincent"
         }
       ]
     },
@@ -3749,7 +3755,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-07-01T23:34:47Z",
+      "issued_utc": "2026-07-02T00:00:00Z",
       "overview": [
         "Gale Warning for Thursday for Upper East Coast, Far North West Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island",
         "Strong Wind Warning for Thursday for Central West Coast, South West Lakes, Lower East Coast, South West Coast, Central Plateau Lakes and South East Coast",
