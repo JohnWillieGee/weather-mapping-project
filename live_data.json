@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-03T08:23:21.675846+00:00",
-  "last_checked_utc": "2026-07-03T08:23:21.675846+00:00",
+  "generated_utc": "2026-07-03T08:53:25.323309+00:00",
+  "last_checked_utc": "2026-07-03T08:53:25.323309+00:00",
   "warning_count": 29,
   "warnings": [
     {
@@ -113,12 +113,12 @@
     },
     {
       "pid": "",
-      "title": "03/10:37 EST Minor Flood Warning for the Upper Werribee River",
+      "title": "03/18:48 EST Final Flood Warning for the Werribee River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/werribeeriver.shtml",
       "desc": "",
-      "issued": "Fri, 03 Jul 2026 00:37:44 GMT"
+      "issued": "Fri, 03 Jul 2026 08:48:37 GMT"
     },
     {
       "pid": "",
@@ -267,24 +267,7 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Roche Gr, Shalvey",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 03 Jul 2026 08:20:23 GMT",
-        "description": "Roche Gr, Shalvey, NSW 2770",
-        "council": "Blacktown",
-        "lat": -33.725006,
-        "lng": 150.818161,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -367,6 +350,21 @@
     ],
     "wa": [
       {
+        "title": "Structure Fire - ENNIS AV",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-03T08:45:45+00:00",
+        "description": "BALDIVIS, CITY OF ROCKINGHAM",
+        "lat": -32.3829,
+        "lng": 115.7766,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a4776e9cc08e45b6bd1dd52?display=modal"
+      },
+      {
         "title": "Earthquake - Coastal, Near Margaret River, WA",
         "alertLevel": "",
         "status": "active",
@@ -380,21 +378,6 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a47381e61c14d000c18fd31?display=modal"
-      },
-      {
-        "title": "Bushfire - PEEDAMULLA",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-03T02:27:50+00:00",
-        "description": "PEEDAMULLA, SHIRE OF ASHBURTON",
-        "lat": -21.8349,
-        "lng": 115.687,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a44c2a3d5b2f4001e2c7238?display=modal"
       },
       {
         "title": "Earthquake - Offshore, 62 km S of Northcliffe, WA, Australia",
@@ -489,21 +472,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Grass and Scrub Fire - BERTRAM RD, ZUCCOLI",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-03T08:13:16+00:00",
-        "description": "BERTRAM RD, ZUCCOLI",
-        "lat": -12.5157,
-        "lng": 130.9963,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - COOMALIE CREEK",
         "alertLevel": "Advice",
         "status": "active",
@@ -514,36 +482,6 @@
         "description": "COOMALIE CREEK",
         "lat": -13.0007,
         "lng": 131.1192,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - CHAMBERS DR, KATHERINE EAST",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-03T07:48:48+00:00",
-        "description": "CHAMBERS DR, KATHERINE EAST",
-        "lat": -14.4657,
-        "lng": 132.2706,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - GUNBALANYA RD, GUNBALANYA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-03T07:41:53+00:00",
-        "description": "GUNBALANYA RD, GUNBALANYA",
-        "lat": -12.3263,
-        "lng": 133.0484,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -641,7 +579,7 @@
     ],
     "act": []
   },
-  "incident_count": 24,
+  "incident_count": 20,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
