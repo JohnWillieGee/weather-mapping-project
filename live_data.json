@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-03T17:53:22.126450+00:00",
-  "last_checked_utc": "2026-07-03T17:53:22.126450+00:00",
+  "generated_utc": "2026-07-03T18:23:21.329143+00:00",
+  "last_checked_utc": "2026-07-03T18:23:21.329143+00:00",
   "warning_count": 27,
   "warnings": [
     {
       "pid": "",
-      "title": "03/22:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "04/04:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 03 Jul 2026 12:00:16 GMT"
+      "issued": "Fri, 03 Jul 2026 18:00:10 GMT"
     },
     {
       "pid": "",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "03/22:00 EST Marine Wind Warning Summary for Victoria",
+      "title": "04/04:10 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 03 Jul 2026 12:00:20 GMT"
+      "issued": "Fri, 03 Jul 2026 18:10:24 GMT"
     },
     {
       "pid": "",
@@ -185,12 +185,12 @@
     },
     {
       "pid": "",
-      "title": "03/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "04/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 03 Jul 2026 12:00:14 GMT"
+      "issued": "Fri, 03 Jul 2026 18:00:13 GMT"
     },
     {
       "pid": "IDT20609",
@@ -257,7 +257,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 03 Jul 2026 17:48:23 GMT",
+        "updated": "Fri, 03 Jul 2026 18:20:23 GMT",
         "description": "Fullagar Rd, Wentworthville, NSW 2145",
         "council": "Cumberland",
         "lat": -33.813057,
@@ -3581,12 +3581,11 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-07-03T12:00:00Z",
+      "issued_utc": "2026-07-03T18:00:00Z",
       "overview": [
-        "Gale Warning for Friday for Eden Coast",
-        "Strong Wind Warning for Friday for Macquarie Coast, Hunter Coast and Illawarra Coast",
         "Gale Warning for Saturday for Eden Coast",
-        "Strong Wind Warning for Saturday for Illawarra Coast and Batemans Coast"
+        "Strong Wind Warning for Saturday for Illawarra Coast and Batemans Coast",
+        "Strong Wind Warning for Sunday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Sydney Enclosed Waters, Illawarra Coast, Batemans Coast and Eden Coast"
       ],
       "hazards": [
         {
@@ -3604,28 +3603,25 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Macquarie Coast: Smoky Cape to Seal Rocks",
-            "Hunter Coast: Seal Rocks to Broken Bay",
-            "Illawarra Coast: Port Hacking to Ulladulla"
+            "Illawarra Coast: Port Hacking to Ulladulla",
+            "Batemans Coast: Ulladulla to Montague Island"
           ],
           "aac_codes": [
-            "NSW_MW006",
-            "NSW_MW005",
-            "NSW_MW003"
+            "NSW_MW003",
+            "NSW_MW002"
           ],
-          "summary": "Macquarie Coast, Hunter Coast and Illawarra Coast"
+          "summary": "Illawarra Coast and Batemans Coast"
         }
       ]
     },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-07-03T12:00:00Z",
+      "issued_utc": "2026-07-03T18:10:00Z",
       "overview": [
-        "Gale Warning for Friday for East Gippsland Coast",
-        "Strong Wind Warning for Friday for Central Coast and Central Gippsland Coast",
         "Gale Warning for Saturday for East Gippsland Coast",
-        "Strong Wind Warning for Saturday for Central Coast and Central Gippsland Coast"
+        "Strong Wind Warning for Saturday for Central Coast and Central Gippsland Coast",
+        "Strong Wind Warning for Sunday for East Gippsland Coast"
       ],
       "hazards": [
         {
@@ -3676,12 +3672,11 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-07-03T12:00:00Z",
+      "issued_utc": "2026-07-03T18:00:00Z",
       "overview": [
-        "Gale Warning for Friday for Lower East Coast, South West Coast and South East Coast",
-        "Strong Wind Warning for Friday for Central West Coast, Upper East Coast, Channel, Far North West Coast, Storm Bay, Central Plateau Lakes, East of Flinders Island, Banks Strait and Franklin Sound and Central North Coast",
-        "Gale Warning for Saturday for Storm Bay, Central Plateau Lakes, Lower East Coast, South West Coast and South East Coast",
-        "Strong Wind Warning for Saturday for Derwent Estuary, Channel, Far North West Coast, Upper East Coast, East of Flinders Island, Banks Strait and Franklin Sound, Central West Coast, Central North Coast and Frederick Henry Bay and Norfolk Bay"
+        "Gale Warning for Saturday for Lower East Coast, South East Coast, South West Coast, Storm Bay and Central Plateau Lakes",
+        "Strong Wind Warning for Saturday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Central West Coast, Derwent Estuary, Frederick Henry Bay and Norfolk Bay and Channel",
+        "Strong Wind Warning for Sunday for East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast and Storm Bay"
       ],
       "hazards": [
         {
@@ -3690,14 +3685,18 @@
           "zones": [
             "Lower East Coast: Wineglass Bay to Tasman Island",
             "South East Coast: Tasman Island to South East Cape",
-            "South West Coast: South East Cape to Low Rocky Point"
+            "South West Coast: South East Cape to Low Rocky Point",
+            "Storm Bay",
+            "Central Plateau Lakes"
           ],
           "aac_codes": [
             "TAS_MW005",
             "TAS_MW006",
-            "TAS_MW007"
+            "TAS_MW007",
+            "TAS_MW014",
+            "TAS_MW010"
           ],
-          "summary": "Lower East Coast, South East Coast and South West Coast"
+          "summary": "Storm Bay, Central Plateau Lakes, Lower East Coast, South East Coast and South West Coast"
         },
         {
           "level": "Strong Wind Warning",
@@ -3709,9 +3708,9 @@
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
             "Upper East Coast: St Helens Point to Wineglass Bay",
             "Central West Coast: Low Rocky Point to Sandy Cape",
-            "Storm Bay",
-            "Channel",
-            "Central Plateau Lakes"
+            "Derwent Estuary",
+            "Frederick Henry Bay and Norfolk Bays",
+            "Channel"
           ],
           "aac_codes": [
             "TAS_MW001",
@@ -3720,11 +3719,11 @@
             "TAS_MW003",
             "TAS_MW004",
             "TAS_MW008",
-            "TAS_MW014",
-            "TAS_MW011",
-            "TAS_MW010"
+            "TAS_MW012",
+            "TAS_MW013",
+            "TAS_MW011"
           ],
-          "summary": "Storm Bay, Channel, Central Plateau Lakes, Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast and Central West Coast"
+          "summary": "Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Channel, Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast and Central West Coast"
         }
       ]
     }
