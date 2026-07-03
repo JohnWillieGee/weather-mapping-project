@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-03T16:53:22.912426+00:00",
-  "last_checked_utc": "2026-07-03T16:53:22.912426+00:00",
-  "warning_count": 26,
+  "generated_utc": "2026-07-03T17:23:23.051062+00:00",
+  "last_checked_utc": "2026-07-03T17:23:23.051062+00:00",
+  "warning_count": 27,
   "warnings": [
     {
       "pid": "",
@@ -158,12 +158,12 @@
     },
     {
       "pid": "",
-      "title": "03/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "04/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 03 Jul 2026 11:00:13 GMT"
+      "issued": "Fri, 03 Jul 2026 17:00:37 GMT"
     },
     {
       "pid": "",
@@ -173,6 +173,15 @@
       "link": "http://reg.bom.gov.au/sa/warnings/flood/onkaparingariver.shtml",
       "desc": "",
       "issued": "Fri, 03 Jul 2026 00:16:31 GMT"
+    },
+    {
+      "pid": "",
+      "title": "04/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "type": "wind",
+      "state": "WA",
+      "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
+      "desc": "",
+      "issued": "Fri, 03 Jul 2026 17:01:14 GMT"
     },
     {
       "pid": "",
@@ -248,7 +257,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 03 Jul 2026 16:48:23 GMT",
+        "updated": "Fri, 03 Jul 2026 17:20:23 GMT",
         "description": "Fullagar Rd, Wentworthville, NSW 2145",
         "council": "Cumberland",
         "lat": -33.813057,
@@ -339,36 +348,6 @@
       }
     ],
     "wa": [
-      {
-        "title": "Fire - CHAPMAN VALLEY RD",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-03T16:45:31+00:00",
-        "description": "WAGGRAKINE, CITY OF GREATER GERALDTON",
-        "lat": -28.7206,
-        "lng": 114.6359,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a47e4fb274aad25c74d2564?display=modal"
-      },
-      {
-        "title": "Bushfire - GUNYIDI-WUBIN RD",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-03T16:37:46+00:00",
-        "description": "WUBIN, SHIRE OF DALWALLINU",
-        "lat": -30.1489,
-        "lng": 116.5146,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a47d433a5ebd3111cf90fd3?display=modal"
-      },
       {
         "title": "Earthquake - Coastal, Near Margaret River, WA",
         "alertLevel": "",
@@ -599,7 +578,7 @@
     ],
     "act": []
   },
-  "incident_count": 23,
+  "incident_count": 21,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3580,8 +3559,11 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-03T11:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-07-03T17:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Saturday for Cooktown Coast",
+        "Strong Wind Warning for Sunday for Cooktown Coast, Townsville Coast and Mackay Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3669,6 +3651,25 @@
             "VIC_MW003"
           ],
           "summary": "Central Coast and Central Gippsland Coast"
+        }
+      ]
+    },
+    "WA": {
+      "state": "WA",
+      "product": "IDW20100",
+      "issued_utc": "2026-07-03T17:01:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Leeuwin Coast: Cape Naturaliste to Walpole"
+          ],
+          "aac_codes": [
+            "WA_MW011"
+          ],
+          "summary": "Leeuwin Coast"
         }
       ]
     },
