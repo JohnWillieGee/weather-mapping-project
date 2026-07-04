@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-04T01:23:14.678580+00:00",
-  "last_checked_utc": "2026-07-04T01:23:14.678580+00:00",
-  "warning_count": 26,
+  "generated_utc": "2026-07-04T01:53:25.952799+00:00",
+  "last_checked_utc": "2026-07-04T01:53:25.952799+00:00",
+  "warning_count": 30,
   "warnings": [
     {
       "pid": "",
@@ -11,6 +11,24 @@
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Sat, 04 Jul 2026 00:00:15 GMT"
+    },
+    {
+      "pid": "IDN28503",
+      "title": "04/11:23 EST Severe Weather Warning\nfor Norfolk Island",
+      "type": "severe_weather",
+      "state": "NSW",
+      "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDN28503.txt",
+      "desc": "",
+      "issued": "Sat, 04 Jul 2026 01:23:06 GMT"
+    },
+    {
+      "pid": "IDN28504",
+      "title": "04/11:23 EST Severe Weather Warning\nfor Lord Howe Island",
+      "type": "severe_weather",
+      "state": "NSW",
+      "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDN28504.txt",
+      "desc": "",
+      "issued": "Sat, 04 Jul 2026 01:23:20 GMT"
     },
     {
       "pid": "",
@@ -29,6 +47,15 @@
       "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
       "desc": "",
       "issued": "Sat, 04 Jul 2026 00:38:00 GMT"
+    },
+    {
+      "pid": "",
+      "title": "04/11:48 EST Initial Minor Flood Warning for the Bogan River",
+      "type": "flood",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/nsw/warnings/flood/boganriver.shtml",
+      "desc": "",
+      "issued": "Sat, 04 Jul 2026 01:48:46 GMT"
     },
     {
       "pid": "",
@@ -65,6 +92,15 @@
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Sat, 04 Jul 2026 00:00:18 GMT"
+    },
+    {
+      "pid": "",
+      "title": "04/11:23 EST Frost Warning\nfor North East forecast district",
+      "type": "other",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/frost.shtml",
+      "desc": "",
+      "issued": "Sat, 04 Jul 2026 01:23:57 GMT"
     },
     {
       "pid": "IDV35010",
@@ -203,12 +239,12 @@
     },
     {
       "pid": "IDT20611",
-      "title": "04/10:21 EST Minor Flood Warning for the South Esk River",
+      "title": "04/11:48 EST Final Flood Warning for the South Esk River",
       "type": "flood",
       "state": "TAS",
       "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDT20611.html",
       "desc": "",
-      "issued": "Sat, 04 Jul 2026 00:21:44 GMT"
+      "issued": "Sat, 04 Jul 2026 01:48:46 GMT"
     },
     {
       "pid": "IDT20612",
@@ -230,12 +266,12 @@
     },
     {
       "pid": "",
-      "title": "04/04:38 EST Warning to Sheep Graziers\nfor Upper Derwent Valley and South East forecast districts",
+      "title": "04/11:49 EST Cancellation of Warning to Sheep Graziers\nfor Upper Derwent Valley and South East forecast districts",
       "type": "other",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Fri, 03 Jul 2026 18:38:19 GMT"
+      "issued": "Sat, 04 Jul 2026 01:49:50 GMT"
     }
   ],
   "fetch_errors": {},
@@ -323,64 +359,34 @@
     ],
     "wa": [
       {
-        "title": "Bushfire - LESMURDIE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-04T01:14:26+00:00",
-        "description": "LESMURDIE, CITY OF KALAMUNDA",
-        "lat": -32.0179,
-        "lng": 116.0353,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a485a770e203c0327aca804?display=modal"
-      },
-      {
-        "title": "Fuel Leak - WORCESTOR BEND",
-        "alertLevel": "",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-04T01:10:14+00:00",
-        "description": "DAVENPORT, CITY OF BUNBURY",
-        "lat": -33.3686,
-        "lng": 115.6774,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a4859510e203c0327aca7d2?display=modal"
-      },
-      {
-        "title": "Bushfire - RADIO HILL LOOKOUT",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-04T01:04:58+00:00",
-        "description": "NEWMAN, SHIRE OF EAST PILBARA",
-        "lat": -23.3629,
-        "lng": 119.7257,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a485c610e203c0327aca81d?display=modal"
-      },
-      {
         "title": "Structure Fire - SHERLOCK ST",
         "alertLevel": "",
         "status": "active",
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-03T21:00:22+00:00",
+        "updated": "2026-07-04T01:38:44+00:00",
         "description": "ROEBOURNE, CITY OF KARRATHA",
         "lat": -20.7668,
         "lng": 117.1411,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a481fb4a936b482adc94c47?display=modal"
+      },
+      {
+        "title": "Bushfire - LESMURDIE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-04T01:28:58+00:00",
+        "description": "LESMURDIE, CITY OF KALAMUNDA",
+        "lat": -32.0179,
+        "lng": 116.0353,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a485a770e203c0327aca804?display=modal"
       },
       {
         "title": "Earthquake - Coastal, Near Margaret River, WA",
@@ -444,6 +450,21 @@
       }
     ],
     "nt": [
+      {
+        "title": "Bushfire - Mira Road, TUMBLING WATERS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-07-04T01:30:00+00:00",
+        "description": "Mira Road, TUMBLING WATERS",
+        "lat": -12.7655,
+        "lng": 130.9486,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - COX PENINSULA RD, BLACKMORE",
         "alertLevel": "Advice",
@@ -602,7 +623,22 @@
         "status": "active",
         "type": "Structure Fire",
         "size": "",
-        "agency": "Fire - Ambulance",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-07-04T01:51:00+00:00",
+        "description": "KINGSTON",
+        "lat": -35.3171,
+        "lng": 149.1397,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "STRUCTURE FIRE - KINGSTON",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Ambulance",
         "updated": "2026-07-04T00:33:25+00:00",
         "description": "KINGSTON",
         "lat": -35.3171,
