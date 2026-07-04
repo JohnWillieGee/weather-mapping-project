@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-04T12:23:18.984823+00:00",
-  "last_checked_utc": "2026-07-04T12:23:18.984823+00:00",
-  "warning_count": 27,
+  "generated_utc": "2026-07-04T12:53:18.818484+00:00",
+  "last_checked_utc": "2026-07-04T12:53:18.818484+00:00",
+  "warning_count": 26,
   "warnings": [
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "04/16:58 EST Warning to Sheep Graziers\nfor Snowy Mountains forecast district",
+      "title": "04/22:35 EST Warning to Sheep Graziers\nfor Snowy Mountains forecast district",
       "type": "other",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Sat, 04 Jul 2026 06:58:47 GMT"
+      "issued": "Sat, 04 Jul 2026 12:35:37 GMT"
     },
     {
       "pid": "",
@@ -110,15 +110,6 @@
       "link": "http://reg.bom.gov.au/vic/warnings/flood/mitchellriver.shtml",
       "desc": "",
       "issued": "Sat, 04 Jul 2026 02:41:15 GMT"
-    },
-    {
-      "pid": "",
-      "title": "03/18:48 EST Final Flood Warning for the Werribee River",
-      "type": "flood",
-      "state": "VIC",
-      "link": "http://reg.bom.gov.au/vic/warnings/flood/werribeeriver.shtml",
-      "desc": "",
-      "issued": "Fri, 03 Jul 2026 08:48:37 GMT"
     },
     {
       "pid": "",
@@ -249,7 +240,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Joseph St, Kingswood",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sat, 04 Jul 2026 12:48:23 GMT",
+        "description": "Joseph St, Kingswood, NSW 2747",
+        "council": "Penrith",
+        "lat": -33.756185,
+        "lng": 150.722171,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -302,21 +310,6 @@
     ],
     "wa": [
       {
-        "title": "Fire - BRUCE RD",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-04T12:14:00+00:00",
-        "description": "MAIDA VALE, CITY OF KALAMUNDA",
-        "lat": -31.9681,
-        "lng": 116.0132,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a48f934ceae7c8971f273a4?display=modal"
-      },
-      {
         "title": "Bushfire - GREAT NORTHERN HWY",
         "alertLevel": "",
         "status": "active",
@@ -334,16 +327,16 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - BERTRAM RD, ZUCCOLI",
+        "title": "Grass and Scrub Fire - STUART HWY, ELLIOTT",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-04T11:55:36+00:00",
-        "description": "BERTRAM RD, ZUCCOLI",
-        "lat": -12.5176,
-        "lng": 130.9979,
+        "updated": "2026-07-04T12:25:52+00:00",
+        "description": "STUART HWY, ELLIOTT",
+        "lat": -17.5522,
+        "lng": 133.543,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -596,33 +589,18 @@
         "status": "active",
         "type": "Structure Fire",
         "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-07-04T12:21:00+00:00",
+        "agency": "Fire",
+        "updated": "2026-07-04T12:48:31+00:00",
         "description": "MACNAMARA",
-        "lat": -35.218,
-        "lng": 148.9805,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - MACNAMARA",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Fire - Ambulance",
-        "updated": "2026-07-04T12:19:51+00:00",
-        "description": "MACNAMARA",
-        "lat": -35.218,
-        "lng": 148.9805,
+        "lat": -35.2146,
+        "lng": 148.977,
         "polys": [],
         "state": "ACT",
         "sourceUrl": "https://esa.act.gov.au/"
       }
     ]
   },
-  "incident_count": 24,
+  "incident_count": 23,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
