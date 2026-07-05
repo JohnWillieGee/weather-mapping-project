@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-04T23:53:18.235613+00:00",
-  "last_checked_utc": "2026-07-04T23:53:18.235613+00:00",
+  "generated_utc": "2026-07-05T00:23:20.840172+00:00",
+  "last_checked_utc": "2026-07-05T00:23:20.840172+00:00",
   "warning_count": 24,
   "warnings": [
     {
       "pid": "",
-      "title": "05/05:05 EST Marine Wind Warning Summary for New South Wales",
+      "title": "05/10:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 04 Jul 2026 19:05:48 GMT"
+      "issued": "Sun, 05 Jul 2026 00:00:15 GMT"
     },
     {
       "pid": "IDN28503",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "05/04:10 EST Marine Wind Warning Summary for Victoria",
+      "title": "05/10:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 04 Jul 2026 18:10:23 GMT"
+      "issued": "Sun, 05 Jul 2026 00:00:16 GMT"
     },
     {
       "pid": "",
@@ -176,12 +176,12 @@
     },
     {
       "pid": "",
-      "title": "05/04:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "05/10:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 04 Jul 2026 18:00:14 GMT"
+      "issued": "Sun, 05 Jul 2026 00:00:14 GMT"
     },
     {
       "pid": "IDT20609",
@@ -222,7 +222,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Florida Av, Woy Woy",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 05 Jul 2026 00:20:23 GMT",
+        "description": "Florida Av, Woy Woy, NSW 2256",
+        "council": "Central Coast",
+        "lat": -33.4989009999999,
+        "lng": 151.313758,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -234,13 +251,13 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-07-05T08:22:04+00:00",
+        "updated": "2026-07-05T10:18:10+00:00",
         "description": "",
-        "lat": -41.49052999972265,
-        "lng": 147.2183000004367,
+        "lat": -41.51219000011073,
+        "lng": 146.98462999966114,
         "polys": [],
         "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=f76ac673-a61f-4dca-a2c2-565597b87fab"
+        "sourceUrl": "https://alert.tas.gov.au/?id=3b75aef9-97e3-47a0-9927-62f5340abd9c"
       },
       {
         "title": "Flood - Advice",
@@ -249,7 +266,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-07-05T08:22:04+00:00",
+        "updated": "2026-07-05T10:18:10+00:00",
         "description": "",
         "lat": -41.48750999969534,
         "lng": 146.90590999979813,
@@ -264,13 +281,13 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-07-05T08:22:04+00:00",
+        "updated": "2026-07-05T10:18:10+00:00",
         "description": "",
-        "lat": -41.51219000011073,
-        "lng": 146.98462999966114,
+        "lat": -41.49052999972265,
+        "lng": 147.2183000004367,
         "polys": [],
         "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=3b75aef9-97e3-47a0-9927-62f5340abd9c"
+        "sourceUrl": "https://alert.tas.gov.au/?id=f76ac673-a61f-4dca-a2c2-565597b87fab"
       }
     ],
     "wa": [
@@ -281,7 +298,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-04T15:53:33+00:00",
+        "updated": "2026-07-04T23:46:04+00:00",
         "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.5345,
         "lng": 128.1911,
@@ -291,6 +308,21 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - TAYLOR RD, HOLTZE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-05T00:00:00+00:00",
+        "description": "TAYLOR RD, HOLTZE",
+        "lat": -12.4758,
+        "lng": 131.0071,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - STUART HWY, ELLIOTT",
         "alertLevel": "Advice",
@@ -534,7 +566,7 @@
     ],
     "act": []
   },
-  "incident_count": 20,
+  "incident_count": 22,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3537,10 +3569,10 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-07-04T19:05:40Z",
+      "issued_utc": "2026-07-05T00:00:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Sydney Coast, Illawarra Coast, Coffs Coast, Byron Coast, Eden Coast, Macquarie Coast, Hunter Coast, Sydney Enclosed Waters and Batemans Coast",
-        "Strong Wind Warning for Monday for Coffs Coast, Byron Coast and Macquarie Coast"
+        "Strong Wind Warning for Sunday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Sydney Enclosed Waters, Illawarra Coast and Batemans Coast",
+        "Strong Wind Warning for Monday for Byron Coast, Coffs Coast and Macquarie Coast"
       ],
       "hazards": [
         {
@@ -3554,8 +3586,7 @@
             "Sydney Coast: Broken Bay to Port Hacking",
             "Sydney Enclosed Waters",
             "Illawarra Coast: Port Hacking to Ulladulla",
-            "Batemans Coast: Ulladulla to Montague Island",
-            "Eden Coast: Montague Island to Gabo Island"
+            "Batemans Coast: Ulladulla to Montague Island"
           ],
           "aac_codes": [
             "NSW_MW008",
@@ -3565,29 +3596,9 @@
             "NSW_MW004",
             "NSW_MW009",
             "NSW_MW003",
-            "NSW_MW002",
-            "NSW_MW001"
+            "NSW_MW002"
           ],
-          "summary": "Sydney Enclosed Waters, Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast"
-        }
-      ]
-    },
-    "VIC": {
-      "state": "VIC",
-      "product": "IDV20600",
-      "issued_utc": "2026-07-04T18:10:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
-          ],
-          "aac_codes": [
-            "VIC_MW004"
-          ],
-          "summary": "East Gippsland Coast"
+          "summary": "Sydney Enclosed Waters, Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast and Batemans Coast"
         }
       ]
     },
@@ -3607,29 +3618,6 @@
             "WA_MW011"
           ],
           "summary": "Leeuwin Coast"
-        }
-      ]
-    },
-    "TAS": {
-      "state": "TAS",
-      "product": "IDT20100",
-      "issued_utc": "2026-07-04T18:00:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
-            "Upper East Coast: St Helens Point to Wineglass Bay",
-            "Lower East Coast: Wineglass Bay to Tasman Island"
-          ],
-          "aac_codes": [
-            "TAS_MW003",
-            "TAS_MW004",
-            "TAS_MW005"
-          ],
-          "summary": "East of Flinders Island, Upper East Coast and Lower East Coast"
         }
       ]
     }
