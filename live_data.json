@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-05T04:53:21.149840+00:00",
-  "last_checked_utc": "2026-07-05T04:53:21.149840+00:00",
+  "generated_utc": "2026-07-05T05:23:22.514929+00:00",
+  "last_checked_utc": "2026-07-05T05:23:22.514929+00:00",
   "warning_count": 24,
   "warnings": [
     {
@@ -14,21 +14,21 @@
     },
     {
       "pid": "IDN28503",
-      "title": "05/09:04 EST Severe Weather Warning\nfor Norfolk Island",
+      "title": "05/15:18 EST Severe Weather Warning\nfor Norfolk Island",
       "type": "severe_weather",
       "state": "NSW",
       "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDN28503.txt",
       "desc": "",
-      "issued": "Sat, 04 Jul 2026 23:04:24 GMT"
+      "issued": "Sun, 05 Jul 2026 05:18:15 GMT"
     },
     {
       "pid": "IDN28504",
-      "title": "05/09:05 EST Severe Weather Warning\nfor Lord Howe Island",
+      "title": "05/15:20 EST Severe Weather Warning\nfor Lord Howe Island",
       "type": "severe_weather",
       "state": "NSW",
       "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDN28504.txt",
       "desc": "",
-      "issued": "Sat, 04 Jul 2026 23:05:12 GMT"
+      "issued": "Sun, 05 Jul 2026 05:20:07 GMT"
     },
     {
       "pid": "",
@@ -140,12 +140,12 @@
     },
     {
       "pid": "",
-      "title": "05/13:43 EST Marine Wind Warning Summary for Queensland",
+      "title": "05/15:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 05 Jul 2026 03:43:13 GMT"
+      "issued": "Sun, 05 Jul 2026 05:00:13 GMT"
     },
     {
       "pid": "",
@@ -167,12 +167,12 @@
     },
     {
       "pid": "",
-      "title": "05/07:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "05/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sat, 04 Jul 2026 23:01:15 GMT"
+      "issued": "Sun, 05 Jul 2026 05:01:15 GMT"
     },
     {
       "pid": "",
@@ -235,7 +235,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-05T04:49:07+00:00",
+        "updated": "2026-07-05T05:02:29+00:00",
         "description": "GINGIN, SHIRE OF GINGIN",
         "lat": -31.3518,
         "lng": 115.9027,
@@ -250,13 +250,28 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-05T04:41:14+00:00",
+        "updated": "2026-07-05T05:01:52+00:00",
         "description": "DAGLISH, CITY OF SUBIACO",
         "lat": -31.95,
         "lng": 115.8084,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://emergency.wa.gov.au/warnings/6a49ddbd18955a4f06619701?display=modal"
+      },
+      {
+        "title": "Bushfire - FALSTAFF CL",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-05T04:52:19+00:00",
+        "description": "GREENFIELDS, CITY OF MANDURAH",
+        "lat": -32.5376,
+        "lng": 115.7612,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a49e2b91526671757b7f33a?display=modal"
       },
       {
         "title": "Bushfire - GREAT NORTHERN HWY",
@@ -548,7 +563,7 @@
     ],
     "act": []
   },
-  "incident_count": 21,
+  "incident_count": 22,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3529,10 +3544,10 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-05T03:42:46Z",
+      "issued_utc": "2026-07-05T05:00:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for K'gari Coast, Sunshine Coast Waters and Capricornia Coast",
-        "Strong Wind Warning for Monday for Capricornia Coast, Mackay Coast, Townsville Coast, Peninsula Coast, Cooktown Coast, Sunshine Coast Waters, Gold Coast Waters, Cairns Coast and K'gari Coast"
+        "Strong Wind Warning for Sunday for Capricornia Coast, K'gari Coast and Sunshine Coast Waters",
+        "Strong Wind Warning for Monday for Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast, Mackay Coast, Capricornia Coast, K'gari Coast, Sunshine Coast Waters and Gold Coast Waters"
       ],
       "hazards": [
         {
@@ -3585,25 +3600,6 @@
             "NSW_MW002"
           ],
           "summary": "Sydney Enclosed Waters, Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast and Batemans Coast"
-        }
-      ]
-    },
-    "WA": {
-      "state": "WA",
-      "product": "IDW20100",
-      "issued_utc": "2026-07-04T23:01:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Leeuwin Coast: Cape Naturaliste to Walpole"
-          ],
-          "aac_codes": [
-            "WA_MW011"
-          ],
-          "summary": "Leeuwin Coast"
         }
       ]
     }
