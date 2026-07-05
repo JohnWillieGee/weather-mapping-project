@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-05T03:23:18.589356+00:00",
-  "last_checked_utc": "2026-07-05T03:23:18.589356+00:00",
-  "warning_count": 27,
+  "generated_utc": "2026-07-05T03:53:22.477180+00:00",
+  "last_checked_utc": "2026-07-05T03:53:22.477180+00:00",
+  "warning_count": 25,
   "warnings": [
     {
       "pid": "",
@@ -77,15 +77,6 @@
     },
     {
       "pid": "",
-      "title": "04/10:01 EST Final Flood Warning for the Murray River upstream of Lake Hume",
-      "type": "flood",
-      "state": "NSW",
-      "link": "http://reg.bom.gov.au/vic/warnings/flood/murrayupstreamofhume.shtml",
-      "desc": "",
-      "issued": "Sat, 04 Jul 2026 00:01:49 GMT"
-    },
-    {
-      "pid": "",
       "title": "05/10:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
@@ -149,21 +140,12 @@
     },
     {
       "pid": "",
-      "title": "04/10:01 EST Final Flood Warning for the Murray River upstream of Lake Hume",
-      "type": "flood",
-      "state": "VIC",
-      "link": "http://reg.bom.gov.au/vic/warnings/flood/murrayupstreamofhume.shtml",
-      "desc": "",
-      "issued": "Sat, 04 Jul 2026 00:01:49 GMT"
-    },
-    {
-      "pid": "",
-      "title": "05/11:52 EST Marine Wind Warning Summary for Queensland",
+      "title": "05/13:43 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 05 Jul 2026 01:52:10 GMT"
+      "issued": "Sun, 05 Jul 2026 03:43:13 GMT"
     },
     {
       "pid": "",
@@ -249,74 +231,11 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Ellengowan Cr, Fairy Meadow",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Sun, 05 Jul 2026 03:20:23 GMT",
-        "description": "Ellengowan Cr, Fairy Meadow, NSW 2519",
-        "council": "Wollongong",
-        "lat": -34.391072,
-        "lng": 150.889121,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
-    "tas": [
-      {
-        "title": "Flood - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Flood",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-07-05T11:12:03+00:00",
-        "description": "",
-        "lat": -41.51219000011073,
-        "lng": 146.98462999966114,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=3b75aef9-97e3-47a0-9927-62f5340abd9c"
-      },
-      {
-        "title": "Flood - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Flood",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-07-05T11:12:03+00:00",
-        "description": "",
-        "lat": -41.49052999972265,
-        "lng": 147.2183000004367,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=f76ac673-a61f-4dca-a2c2-565597b87fab"
-      },
-      {
-        "title": "Flood - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Flood",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-07-05T11:12:03+00:00",
-        "description": "",
-        "lat": -41.48750999969534,
-        "lng": 146.90590999979813,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=981fd02b-5442-4991-ae22-d22c3f1ba487"
-      }
-    ],
+    "tas": [],
     "wa": [
       {
         "title": "Bushfire Advice THREAT IS REDUCED - DERBY",
@@ -365,6 +284,36 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - DRIVER AV, DRIVER",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-05T03:35:12+00:00",
+        "description": "DRIVER AV, DRIVER",
+        "lat": -12.4871,
+        "lng": 130.9731,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - STUART HWY, JOHNSTON",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-05T03:25:01+00:00",
+        "description": "STUART HWY, JOHNSTON",
+        "lat": -12.488,
+        "lng": 131.0118,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - STUART HWY, ELLIOTT",
         "alertLevel": "Advice",
@@ -608,7 +557,7 @@
     ],
     "act": []
   },
-  "incident_count": 23,
+  "incident_count": 21,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3589,22 +3538,26 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-05T01:51:53Z",
+      "issued_utc": "2026-07-05T03:42:46Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Capricornia Coast",
-        "Strong Wind Warning for Monday for K'gari Coast, Sunshine Coast Waters, Gold Coast Waters, Capricornia Coast, Mackay Coast, Townsville Coast, Peninsula Coast, Cooktown Coast and Cairns Coast"
+        "Strong Wind Warning for Sunday for K'gari Coast, Sunshine Coast Waters and Capricornia Coast",
+        "Strong Wind Warning for Monday for Capricornia Coast, Mackay Coast, Townsville Coast, Peninsula Coast, Cooktown Coast, Sunshine Coast Waters, Gold Coast Waters, Cairns Coast and K'gari Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Capricornia Coast: St Lawrence to Burnett Heads"
+            "Capricornia Coast: St Lawrence to Burnett Heads",
+            "K'gari Coast: Sandy Cape to Double Island Point",
+            "Sunshine Coast Waters: Double Island Point to Cape Moreton"
           ],
           "aac_codes": [
-            "QLD_MW009"
+            "QLD_MW009",
+            "QLD_MW011",
+            "QLD_MW012"
           ],
-          "summary": "Capricornia Coast"
+          "summary": "Capricornia Coast, K'gari Coast and Sunshine Coast Waters"
         }
       ]
     },
