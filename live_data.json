@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-06T17:53:19.321075+00:00",
-  "last_checked_utc": "2026-07-06T17:53:19.321075+00:00",
+  "generated_utc": "2026-07-06T18:23:18.460664+00:00",
+  "last_checked_utc": "2026-07-06T18:23:18.460664+00:00",
   "warning_count": 17,
   "warnings": [
     {
       "pid": "",
-      "title": "06/22:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "07/04:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 06 Jul 2026 12:00:19 GMT"
+      "issued": "Mon, 06 Jul 2026 18:00:13 GMT"
     },
     {
       "pid": "IDN28503",
@@ -149,12 +149,12 @@
     },
     {
       "pid": "",
-      "title": "06/22:49 EST Road Weather Alert for Tasmania\nfor North West Coast, Central North, North East, Central Plateau, Midlands, East Coast, Upper Derwent Valley and South East forecast districts",
+      "title": "07/04:01 EST Road Weather Alert for Tasmania\nfor North West Coast, Central North, North East, Central Plateau, Midlands, East Coast, Upper Derwent Valley and South East forecast districts",
       "type": "other",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/road.shtml",
       "desc": "",
-      "issued": "Mon, 06 Jul 2026 12:49:19 GMT"
+      "issued": "Mon, 06 Jul 2026 18:01:28 GMT"
     }
   ],
   "fetch_errors": {},
@@ -234,7 +234,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-06T17:45:37+00:00",
+        "updated": "2026-07-06T17:56:57+00:00",
         "description": "PING QUE CT, MOULDEN",
         "lat": -12.5077,
         "lng": 130.9719,
@@ -253,21 +253,6 @@
         "description": "PARMENTIER PL, MOULDEN",
         "lat": -12.5079,
         "lng": 130.9737,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - EAST ARM",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-06T16:56:22+00:00",
-        "description": "EAST ARM",
-        "lat": -12.4611,
-        "lng": 130.9239,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -410,7 +395,7 @@
     ],
     "act": []
   },
-  "incident_count": 16,
+  "incident_count": 15,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3421,6 +3406,40 @@
             "QLD_MW014"
           ],
           "summary": "Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast, Mackay Coast, K'gari Coast, Sunshine Coast Waters and Gold Coast Waters"
+        }
+      ]
+    },
+    "NSW": {
+      "state": "NSW",
+      "product": "IDN20400",
+      "issued_utc": "2026-07-06T18:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Tuesday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Sydney Enclosed Waters and Illawarra Coast",
+        "Strong Wind Warning for Wednesday for Byron Coast and Coffs Coast"
+      ],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Byron Coast: Point Danger to Wooli",
+            "Coffs Coast: Wooli to Smoky Cape",
+            "Macquarie Coast: Smoky Cape to Seal Rocks",
+            "Hunter Coast: Seal Rocks to Broken Bay",
+            "Sydney Coast: Broken Bay to Port Hacking",
+            "Sydney Enclosed Waters",
+            "Illawarra Coast: Port Hacking to Ulladulla"
+          ],
+          "aac_codes": [
+            "NSW_MW008",
+            "NSW_MW007",
+            "NSW_MW006",
+            "NSW_MW005",
+            "NSW_MW004",
+            "NSW_MW009",
+            "NSW_MW003"
+          ],
+          "summary": "Sydney Enclosed Waters, Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast and Illawarra Coast"
         }
       ]
     }
