@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-06T16:53:23.464421+00:00",
-  "last_checked_utc": "2026-07-06T16:53:23.464421+00:00",
+  "generated_utc": "2026-07-06T17:23:24.660433+00:00",
+  "last_checked_utc": "2026-07-06T17:23:24.660433+00:00",
   "warning_count": 17,
   "warnings": [
     {
@@ -113,12 +113,12 @@
     },
     {
       "pid": "",
-      "title": "06/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "07/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 06 Jul 2026 11:00:16 GMT"
+      "issued": "Mon, 06 Jul 2026 17:00:14 GMT"
     },
     {
       "pid": "",
@@ -159,27 +159,29 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Lucas Way, Ingleburn",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Mon, 06 Jul 2026 17:20:23 GMT",
+        "description": "Lucas Way, Ingleburn, NSW 2565",
+        "council": "Campbelltown",
+        "lat": -34.007719,
+        "lng": 150.856725,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Structure Fire - MAIDOS ST",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-06T16:45:40+00:00",
-        "description": "ASHFIELD, TOWN OF BASSENDEAN",
-        "lat": -31.9169,
-        "lng": 115.9338,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a4bd906c30b89437fbc2f61?display=modal"
-      },
       {
         "title": "Structure Fire - BURTON RTT",
         "alertLevel": "",
@@ -242,6 +244,21 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - EAST ARM",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-06T16:56:22+00:00",
+        "description": "EAST ARM",
+        "lat": -12.4611,
+        "lng": 130.9239,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - ROBERTS RD, BYNOE",
         "alertLevel": "Advice",
@@ -380,7 +397,7 @@
     ],
     "act": []
   },
-  "incident_count": 14,
+  "incident_count": 15,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3361,10 +3378,10 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-06T11:00:00Z",
+      "issued_utc": "2026-07-06T17:00:00Z",
       "overview": [
-        "Strong Wind Warning for Monday for Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast, Mackay Coast, Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters and Gold Coast Waters",
-        "Strong Wind Warning for Tuesday for Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast, Mackay Coast, K'gari Coast, Sunshine Coast Waters and Gold Coast Waters"
+        "Strong Wind Warning for Tuesday for Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast, Mackay Coast, K'gari Coast, Sunshine Coast Waters and Gold Coast Waters",
+        "Strong Wind Warning for Wednesday for Torres Strait, Peninsula Coast, Cooktown Coast, Cairns Coast, Sunshine Coast Waters and Gold Coast Waters"
       ],
       "hazards": [
         {
@@ -3376,8 +3393,6 @@
             "Cairns Coast: Cape Tribulation to Cardwell",
             "Townsville Coast: Cardwell to Bowen",
             "Mackay Coast: Bowen to St Lawrence",
-            "Capricornia Coast: St Lawrence to Burnett Heads",
-            "Hervey Bay",
             "K'gari Coast: Sandy Cape to Double Island Point",
             "Sunshine Coast Waters: Double Island Point to Cape Moreton",
             "Gold Coast Waters: Cape Moreton to Point Danger"
@@ -3388,13 +3403,11 @@
             "QLD_MW006",
             "QLD_MW007",
             "QLD_MW008",
-            "QLD_MW009",
-            "QLD_MW010",
             "QLD_MW011",
             "QLD_MW012",
             "QLD_MW014"
           ],
-          "summary": "Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast, Mackay Coast, Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters and Gold Coast Waters"
+          "summary": "Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast, Mackay Coast, K'gari Coast, Sunshine Coast Waters and Gold Coast Waters"
         }
       ]
     }
