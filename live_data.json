@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-07T11:53:31.848396+00:00",
-  "last_checked_utc": "2026-07-07T11:53:31.848396+00:00",
+  "generated_utc": "2026-07-07T12:23:21.089711+00:00",
+  "last_checked_utc": "2026-07-07T12:23:21.089711+00:00",
   "warning_count": 16,
   "warnings": [
     {
       "pid": "",
-      "title": "07/16:05 EST Marine Wind Warning Summary for New South Wales",
+      "title": "07/22:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 07 Jul 2026 06:05:16 GMT"
+      "issued": "Tue, 07 Jul 2026 12:00:23 GMT"
     },
     {
       "pid": "IDN28503",
@@ -140,12 +140,12 @@
     },
     {
       "pid": "",
-      "title": "07/16:03 EST Road Weather Alert for Tasmania\nfor Central North, Central Plateau, Midlands and Upper Derwent Valley forecast districts",
+      "title": "07/22:17 EST Road Weather Alert for Tasmania\nfor Central North, Central Plateau, Midlands and Upper Derwent Valley forecast districts",
       "type": "other",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/road.shtml",
       "desc": "",
-      "issued": "Tue, 07 Jul 2026 06:03:09 GMT"
+      "issued": "Tue, 07 Jul 2026 12:17:24 GMT"
     }
   ],
   "fetch_errors": {},
@@ -157,6 +157,21 @@
     "tas": [],
     "wa": [
       {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-07T12:07:03+00:00",
+        "description": "SERPENTINE, SHIRE OF SERPENTINE-JARRAHDALE",
+        "lat": -32.3576,
+        "lng": 116.0015,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Structure Fire All Clear IN SERPENTINE IN THE SHIRE OF SERPENTINE-JARRAHDALE",
         "alertLevel": "",
         "status": "active",
@@ -167,21 +182,6 @@
         "description": "",
         "lat": -32.354,
         "lng": 116.0005,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-07T05:34:21+00:00",
-        "description": "SERPENTINE, SHIRE OF SERPENTINE-JARRAHDALE",
-        "lat": -32.3576,
-        "lng": 116.0015,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -240,7 +240,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-07T11:48:42+00:00",
+        "updated": "2026-07-07T11:54:51+00:00",
         "description": "PATERSON ST, TENNANT CREEK",
         "lat": -19.6392,
         "lng": 134.1923,
@@ -259,21 +259,6 @@
         "description": "BERRIMAH RD, EAST ARM",
         "lat": -12.478,
         "lng": 130.8988,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - LILBILI ST, BRAITLING",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-07T10:58:59+00:00",
-        "description": "LILBILI ST, BRAITLING",
-        "lat": -23.6664,
-        "lng": 133.8634,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -521,7 +506,7 @@
     ],
     "act": []
   },
-  "incident_count": 24,
+  "incident_count": 23,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3538,9 +3523,9 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-07-07T06:05:00Z",
+      "issued_utc": "2026-07-07T12:00:00Z",
       "overview": [
-        "Strong Wind Warning for Tuesday for Byron Coast, Coffs Coast and Macquarie Coast",
+        "Strong Wind Warning for Tuesday for Byron Coast and Coffs Coast",
         "Strong Wind Warning for Wednesday for Byron Coast and Coffs Coast"
       ],
       "hazards": [
@@ -3549,15 +3534,13 @@
           "severity": "STR",
           "zones": [
             "Byron Coast: Point Danger to Wooli",
-            "Coffs Coast: Wooli to Smoky Cape",
-            "Macquarie Coast: Smoky Cape to Seal Rocks"
+            "Coffs Coast: Wooli to Smoky Cape"
           ],
           "aac_codes": [
             "NSW_MW008",
-            "NSW_MW007",
-            "NSW_MW006"
+            "NSW_MW007"
           ],
-          "summary": "Byron Coast, Coffs Coast and Macquarie Coast"
+          "summary": "Byron Coast and Coffs Coast"
         }
       ]
     }
