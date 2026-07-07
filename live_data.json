@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-07T06:53:19.137756+00:00",
-  "last_checked_utc": "2026-07-07T06:53:19.137756+00:00",
+  "generated_utc": "2026-07-07T07:23:19.357347+00:00",
+  "last_checked_utc": "2026-07-07T07:23:19.357347+00:00",
   "warning_count": 17,
   "warnings": [
     {
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "07/11:29 EST Frost Warning\nfor Mallee, Wimmera, Northern Country, North Central, North East, South West and Central forecast districts",
+      "title": "07/16:57 EST Frost Warning\nfor Mallee, Wimmera, Northern Country, North Central, North East, South West and Central forecast districts",
       "type": "other",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/frost.shtml",
       "desc": "",
-      "issued": "Tue, 07 Jul 2026 01:29:02 GMT"
+      "issued": "Tue, 07 Jul 2026 06:57:13 GMT"
     },
     {
       "pid": "",
@@ -140,12 +140,12 @@
     },
     {
       "pid": "",
-      "title": "07/11:37 CST Frost Warning\nfor Lower South East forecast district",
+      "title": "07/16:27 CST Frost Warning\nfor Lower South East forecast district",
       "type": "other",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/frost.shtml",
       "desc": "",
-      "issued": "Tue, 07 Jul 2026 02:07:33 GMT"
+      "issued": "Tue, 07 Jul 2026 06:57:34 GMT"
     },
     {
       "pid": "",
@@ -159,12 +159,44 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "RUSSELL ST, ALBION PARK",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Tue, 07 Jul 2026 07:20:23 GMT",
+        "description": "RUSSELL ST, ALBION PARK 2527",
+        "council": "Shellharbour",
+        "lat": -34.572638,
+        "lng": 150.775602,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire - FOSTER WAY",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-07T07:11:49+00:00",
+        "description": "JARRAHDALE, SHIRE OF SERPENTINE-JARRAHDALE",
+        "lat": -32.3348,
+        "lng": 116.0685,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a4ca1f0d85c8690cd41ac1c?display=modal"
+      },
       {
         "title": "Structure Fire - MCKAY DR",
         "alertLevel": "",
@@ -253,21 +285,6 @@
         "description": "ROYSTONEA AV, JOHNSTON",
         "lat": -12.4874,
         "lng": 131.0005,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - HENRY WRIGLEY DR, EATON",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-07T06:00:33+00:00",
-        "description": "HENRY WRIGLEY DR, EATON",
-        "lat": -12.4052,
-        "lng": 130.8793,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -506,7 +523,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-07-07T06:50:00+00:00",
+        "updated": "2026-07-07T07:20:00+00:00",
         "description": "TURNER",
         "lat": -35.2628,
         "lng": 149.1297,
@@ -521,7 +538,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "Fire - Ambulance",
-        "updated": "2026-07-07T06:49:18+00:00",
+        "updated": "2026-07-07T07:06:48+00:00",
         "description": "TURNER",
         "lat": -35.2628,
         "lng": 149.1297,
@@ -531,7 +548,7 @@
       }
     ]
   },
-  "incident_count": 24,
+  "incident_count": 25,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
