@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-07T01:23:18.649594+00:00",
-  "last_checked_utc": "2026-07-07T01:23:18.649594+00:00",
-  "warning_count": 16,
+  "generated_utc": "2026-07-07T01:53:20.657616+00:00",
+  "last_checked_utc": "2026-07-07T01:53:20.657616+00:00",
+  "warning_count": 17,
   "warnings": [
     {
       "pid": "",
@@ -56,6 +56,15 @@
       "link": "http://reg.bom.gov.au/nsw/warnings/flood/parooriver.shtml",
       "desc": "",
       "issued": "Mon, 06 Jul 2026 03:12:38 GMT"
+    },
+    {
+      "pid": "",
+      "title": "07/11:29 EST Frost Warning\nfor Mallee, Wimmera, Northern Country, North Central, North East, South West and Central forecast districts",
+      "type": "other",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/frost.shtml",
+      "desc": "",
+      "issued": "Tue, 07 Jul 2026 01:29:02 GMT"
     },
     {
       "pid": "",
@@ -154,11 +163,11 @@
       {
         "title": "Aberglasslyn Rd, Aberglasslyn",
         "alertLevel": "Advice",
-        "status": "Not yet controlled",
+        "status": "Being controlled",
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Tue, 07 Jul 2026 01:20:23 GMT",
+        "updated": "Tue, 07 Jul 2026 01:48:24 GMT",
         "description": "Aberglasslyn Rd, Aberglasslyn, NSW 2320",
         "council": "Maitland",
         "lat": -32.6958089999999,
@@ -173,6 +182,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire - MORRISON RD",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-07T01:43:09+00:00",
+        "description": "MIDVALE, CITY OF SWAN",
+        "lat": -31.8861,
+        "lng": 116.0284,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://emergency.wa.gov.au/warnings/6a4c577f4bd87a624b692a48?display=modal"
+      },
       {
         "title": "Earthquake - 66 km NE of Warmun, WA",
         "alertLevel": "",
@@ -236,16 +260,31 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - BERRIMAH RD, WISHART",
+        "title": "Grass and Scrub Fire - CASUARINA BEACH -, BRINKIN",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-07T01:12:14+00:00",
-        "description": "BERRIMAH RD, WISHART",
-        "lat": -12.458,
-        "lng": 130.9246,
+        "updated": "2026-07-07T01:40:23+00:00",
+        "description": "CASUARINA BEACH -, BRINKIN",
+        "lat": -12.3735,
+        "lng": 130.8608,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Old Rail Corridor, DARWIN RIVER DAM",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-07-07T01:30:00+00:00",
+        "description": "Old Rail Corridor, DARWIN RIVER DAM",
+        "lat": -12.8949,
+        "lng": 130.9631,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -257,7 +296,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-07T01:09:52+00:00",
+        "updated": "2026-07-07T01:17:13+00:00",
         "description": "",
         "lat": -12.8387,
         "lng": 130.9183,
@@ -433,7 +472,7 @@
     ],
     "act": []
   },
-  "incident_count": 18,
+  "incident_count": 20,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
