@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-08T16:53:25.069105+00:00",
-  "last_checked_utc": "2026-07-08T16:53:25.069105+00:00",
-  "warning_count": 12,
+  "generated_utc": "2026-07-08T17:23:19.383495+00:00",
+  "last_checked_utc": "2026-07-08T17:23:19.383495+00:00",
+  "warning_count": 13,
   "warnings": [
     {
       "pid": "IDN28503",
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "08/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "09/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 08 Jul 2026 11:00:19 GMT"
+      "issued": "Wed, 08 Jul 2026 17:00:18 GMT"
     },
     {
       "pid": "",
@@ -101,6 +101,15 @@
       "link": "http://reg.bom.gov.au/qld/warnings/hazardoussurf.shtml",
       "desc": "",
       "issued": "Wed, 08 Jul 2026 06:51:44 GMT"
+    },
+    {
+      "pid": "",
+      "title": "09/01:05 WST Marine Wind Warning Summary for Western Australia",
+      "type": "wind",
+      "state": "WA",
+      "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
+      "desc": "",
+      "issued": "Wed, 08 Jul 2026 17:05:23 GMT"
     },
     {
       "pid": "",
@@ -3526,11 +3535,8 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-08T11:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Wednesday for Torres Strait, Peninsula Coast and Cooktown Coast",
-        "Strong Wind Warning for Thursday for Torres Strait, Peninsula Coast and Cooktown Coast"
-      ],
+      "issued_utc": "2026-07-08T17:00:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3546,6 +3552,27 @@
             "QLD_MW005"
           ],
           "summary": "Torres Strait, Peninsula Coast and Cooktown Coast"
+        }
+      ]
+    },
+    "WA": {
+      "state": "WA",
+      "product": "IDW20100",
+      "issued_utc": "2026-07-08T17:05:13Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Esperance Coast: Bremer Bay to Israelite Bay",
+            "Eucla Coast: Israelite Bay to WA-SA Border"
+          ],
+          "aac_codes": [
+            "WA_MW013",
+            "WA_MW014"
+          ],
+          "summary": "Esperance Coast and Eucla Coast"
         }
       ]
     }
