@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-08T02:23:12.923966+00:00",
-  "last_checked_utc": "2026-07-08T02:23:12.923966+00:00",
-  "warning_count": 15,
+  "generated_utc": "2026-07-08T02:53:19.010493+00:00",
+  "last_checked_utc": "2026-07-08T02:53:19.010493+00:00",
+  "warning_count": 14,
   "warnings": [
     {
       "pid": "",
@@ -86,15 +86,6 @@
     },
     {
       "pid": "",
-      "title": "07/09:17 EST Final Flood Warning for the Goulburn River",
-      "type": "flood",
-      "state": "VIC",
-      "link": "http://reg.bom.gov.au/vic/warnings/flood/goulburnriver.shtml",
-      "desc": "",
-      "issued": "Mon, 06 Jul 2026 23:17:50 GMT"
-    },
-    {
-      "pid": "",
       "title": "07/09:41 EST Final Flood Warning for the Avoca River",
       "type": "flood",
       "state": "VIC",
@@ -141,12 +132,44 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "ANAMBAH RD",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Wed, 08 Jul 2026 02:48:23 GMT",
+        "description": "MAITLAND POLOCROSSE GROUNDS, ANAMBAH RD, RUTHERFORD 2320",
+        "council": "Maitland",
+        "lat": -32.699012,
+        "lng": 151.504074,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-08T02:32:48+00:00",
+        "description": "NORTH PERTH, CITY OF VINCENT",
+        "lat": -31.9324,
+        "lng": 115.8593,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Earthquake",
         "alertLevel": "",
@@ -186,10 +209,25 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-08T01:05:36+00:00",
+        "updated": "2026-07-08T02:36:56+00:00",
         "description": "BERRIMAH RD, EAST ARM",
         "lat": -12.4581,
         "lng": 130.9237,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - MARA -, BORROLOOLA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-08T02:24:10+00:00",
+        "description": "MARA -, BORROLOOLA",
+        "lat": -16.0508,
+        "lng": 136.3047,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -452,7 +490,7 @@
     ],
     "act": []
   },
-  "incident_count": 20,
+  "incident_count": 23,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
