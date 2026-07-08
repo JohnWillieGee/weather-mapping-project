@@ -1,17 +1,8 @@
 {
-  "generated_utc": "2026-07-08T07:23:19.446358+00:00",
-  "last_checked_utc": "2026-07-08T07:23:19.446358+00:00",
-  "warning_count": 13,
+  "generated_utc": "2026-07-08T07:53:21.647586+00:00",
+  "last_checked_utc": "2026-07-08T07:53:21.647586+00:00",
+  "warning_count": 12,
   "warnings": [
-    {
-      "pid": "",
-      "title": "08/10:00 EST Marine Wind Warning Summary for New South Wales",
-      "type": "wind",
-      "state": "NSW",
-      "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
-      "desc": "",
-      "issued": "Wed, 08 Jul 2026 00:00:14 GMT"
-    },
     {
       "pid": "IDN28503",
       "title": "08/15:51 EST Severe Weather Warning\nfor Norfolk Island",
@@ -123,7 +114,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Blueridge Dr, Dubbo",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Wed, 08 Jul 2026 07:48:23 GMT",
+        "description": "Blueridge Dr, Dubbo, NSW 2830",
+        "council": "Dubbo Regional",
+        "lat": -32.261592,
+        "lng": 148.649183,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -136,10 +144,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-08T07:08:02+00:00",
+        "updated": "2026-07-08T07:18:29+00:00",
         "description": "CHAMPION LAKES, CITY OF ARMADALE",
-        "lat": -32.1355,
-        "lng": 115.9681,
+        "lat": -32.1331,
+        "lng": 115.9674,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -176,6 +184,81 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - LETCHFORD RD, DARWIN RIVER",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-08T07:43:56+00:00",
+        "description": "LETCHFORD RD, DARWIN RIVER",
+        "lat": -12.8383,
+        "lng": 130.9191,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - ARNHEM HWY, MOUNT BUNDEY",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-08T07:42:41+00:00",
+        "description": "ARNHEM HWY, MOUNT BUNDEY",
+        "lat": -12.8228,
+        "lng": 131.9645,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - DUDDELL RD, DARWIN RIVER",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-08T07:42:17+00:00",
+        "description": "DUDDELL RD, DARWIN RIVER",
+        "lat": -12.7929,
+        "lng": 131.0093,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - BIRDUM",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-08T07:41:57+00:00",
+        "description": "BIRDUM",
+        "lat": -16.274,
+        "lng": 133.3908,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Gregory Road, MARRAKAI",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-07-08T07:30:00+00:00",
+        "description": "Gregory Road, MARRAKAI",
+        "lat": -12.7576,
+        "lng": 131.398,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - GREGORY RD, MARRAKAI",
         "alertLevel": "Advice",
@@ -312,21 +395,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Grass and Scrub Fire - Unknown",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-07T15:22:22+00:00",
-        "description": "",
-        "lat": -12.8387,
-        "lng": 130.9183,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Old Rail Corridor, DARWIN RIVER DAM",
         "alertLevel": "Advice",
         "status": "active",
@@ -410,38 +478,8 @@
         "agency": "NTFRS",
         "updated": "2026-07-06T09:16:14+00:00",
         "description": "",
-        "lat": -12.8235,
-        "lng": 131.9645,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - Unknown",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-06T09:16:14+00:00",
-        "description": "",
         "lat": -13.5132,
         "lng": 131.5032,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - Unknown",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-06T09:16:14+00:00",
-        "description": "",
-        "lat": -12.7935,
-        "lng": 131.0092,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -494,7 +532,7 @@
     ],
     "act": []
   },
-  "incident_count": 24,
+  "incident_count": 27,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
