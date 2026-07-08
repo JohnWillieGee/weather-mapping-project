@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-08T03:53:14.570098+00:00",
-  "last_checked_utc": "2026-07-08T03:53:14.570098+00:00",
+  "generated_utc": "2026-07-08T04:23:16.901293+00:00",
+  "last_checked_utc": "2026-07-08T04:23:16.901293+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -123,12 +123,44 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Camden Acres Dr, Elderslie",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Wed, 08 Jul 2026 04:20:23 GMT",
+        "description": "Camden Acres Dr, Elderslie, NSW 2570",
+        "council": "Camden",
+        "lat": -34.049934387,
+        "lng": 150.723190307,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Hazardous Materials",
+        "alertLevel": "",
+        "status": "active",
+        "type": "HazMat",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-08T03:58:47+00:00",
+        "description": "COLLIE, SHIRE OF COLLIE",
+        "lat": -33.3648,
+        "lng": 116.179,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Structure Fire Advice IN NORTH PERTH IN THE CITY OF VINCENT",
         "alertLevel": "Advice",
@@ -192,6 +224,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - CHARLES EATON DR, EATON",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-08T03:51:12+00:00",
+        "description": "CHARLES EATON DR, EATON",
+        "lat": -12.3984,
+        "lng": 130.8733,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - PATERSON ST, TENNANT CREEK",
         "alertLevel": "Advice",
         "status": "active",
@@ -222,21 +269,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Grass and Scrub Fire - CHARLES EATON DR, EATON",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-08T03:44:12+00:00",
-        "description": "CHARLES EATON DR, EATON",
-        "lat": -12.3984,
-        "lng": 130.8733,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - BERRIMAH RD, EAST ARM",
         "alertLevel": "Advice",
         "status": "active",
@@ -247,21 +279,6 @@
         "description": "BERRIMAH RD, EAST ARM",
         "lat": -12.4581,
         "lng": 130.9237,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - PEARCE ST, KATHERINE SOUTH",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-08T03:36:12+00:00",
-        "description": "PEARCE ST, KATHERINE SOUTH",
-        "lat": -14.4672,
-        "lng": 132.261,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -524,7 +541,7 @@
     ],
     "act": []
   },
-  "incident_count": 26,
+  "incident_count": 27,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
