@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-08T17:53:26.553090+00:00",
-  "last_checked_utc": "2026-07-08T17:53:26.553090+00:00",
-  "warning_count": 14,
+  "generated_utc": "2026-07-08T18:23:21.868098+00:00",
+  "last_checked_utc": "2026-07-08T18:23:21.868098+00:00",
+  "warning_count": 15,
   "warnings": [
     {
       "pid": "IDN28503",
@@ -119,6 +119,15 @@
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
       "issued": "Wed, 08 Jul 2026 17:05:23 GMT"
+    },
+    {
+      "pid": "",
+      "title": "09/04:00 EST Marine Wind Warning Summary for Tasmania",
+      "type": "wind",
+      "state": "TAS",
+      "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Wed, 08 Jul 2026 18:00:09 GMT"
     },
     {
       "pid": "",
@@ -3567,6 +3576,27 @@
             "WA_MW014"
           ],
           "summary": "Esperance Coast and Eucla Coast"
+        }
+      ]
+    },
+    "TAS": {
+      "state": "TAS",
+      "product": "IDT20100",
+      "issued_utc": "2026-07-08T18:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "South West Coast: South East Cape to Low Rocky Point",
+            "Central West Coast: Low Rocky Point to Sandy Cape"
+          ],
+          "aac_codes": [
+            "TAS_MW007",
+            "TAS_MW008"
+          ],
+          "summary": "South West Coast and Central West Coast"
         }
       ]
     }
