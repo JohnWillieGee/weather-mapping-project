@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-09T17:53:19.217221+00:00",
-  "last_checked_utc": "2026-07-09T17:53:19.217221+00:00",
-  "warning_count": 13,
+  "generated_utc": "2026-07-09T18:23:18.502303+00:00",
+  "last_checked_utc": "2026-07-09T18:23:18.502303+00:00",
+  "warning_count": 14,
   "warnings": [
     {
       "pid": "IDN28503",
@@ -32,12 +32,21 @@
     },
     {
       "pid": "",
-      "title": "10/01:11 EST Road Weather Alert for Canberra",
+      "title": "10/04:12 EST Road Weather Alert for Canberra",
       "type": "other",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/act/warnings/canberraroad.shtml",
       "desc": "",
-      "issued": "Thu, 09 Jul 2026 15:11:01 GMT"
+      "issued": "Thu, 09 Jul 2026 18:12:08 GMT"
+    },
+    {
+      "pid": "",
+      "title": "10/04:10 EST Marine Wind Warning Summary for Victoria",
+      "type": "wind",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Thu, 09 Jul 2026 18:10:20 GMT"
     },
     {
       "pid": "",
@@ -86,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "09/21:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "10/03:40 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Thu, 09 Jul 2026 12:00:10 GMT"
+      "issued": "Thu, 09 Jul 2026 18:10:11 GMT"
     },
     {
       "pid": "",
@@ -104,12 +113,12 @@
     },
     {
       "pid": "",
-      "title": "09/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "10/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 09 Jul 2026 12:00:11 GMT"
+      "issued": "Thu, 09 Jul 2026 18:00:15 GMT"
     },
     {
       "pid": "",
@@ -131,7 +140,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Thu, 09 Jul 2026 17:48:23 GMT",
+        "updated": "Thu, 09 Jul 2026 18:20:23 GMT",
         "description": "Racecourse Rd, Leeton, NSW 2705",
         "council": "Leeton",
         "lat": -34.5647329999999,
@@ -239,21 +248,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - FRANGIPANNI CT, KATHERINE EAST",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-09T17:42:04+00:00",
-        "description": "FRANGIPANNI CT, KATHERINE EAST",
-        "lat": -14.47,
-        "lng": 132.2817,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - DUDDELL RD, DARWIN RIVER",
         "alertLevel": "Advice",
         "status": "active",
@@ -286,7 +280,7 @@
     ],
     "act": []
   },
-  "incident_count": 10,
+  "incident_count": 9,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3264,11 +3258,38 @@
     }
   },
   "marine_warnings": {
+    "VIC": {
+      "state": "VIC",
+      "product": "IDV20600",
+      "issued_utc": "2026-07-09T18:10:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "West Coast: SA-VIC Border to Cape Otway",
+            "Central Coast: Cape Otway to Wilsons Promontory",
+            "Port Phillip"
+          ],
+          "aac_codes": [
+            "VIC_MW001",
+            "VIC_MW002",
+            "VIC_MW005"
+          ],
+          "summary": "Port Phillip, West Coast and Central Coast"
+        }
+      ]
+    },
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-07-09T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-07-09T18:10:00Z",
+      "overview": [
+        "Strong Wind Warning for Friday for South Central Coast and Lower South East Coast",
+        "Gale Warning for Saturday for Lower South East Coast",
+        "Strong Wind Warning for Saturday for Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait, Upper South East Coast and Adelaide Metropolitan Waters"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3314,8 +3335,11 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-07-09T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-07-09T18:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Friday for South West Coast and Central West Coast",
+        "Strong Wind Warning for Saturday for Far North West Coast, Central North Coast, Upper East Coast, Lower East Coast, South East Coast, South West Coast and Central West Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
