@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-09T11:53:30.936287+00:00",
-  "last_checked_utc": "2026-07-09T11:53:30.936287+00:00",
-  "warning_count": 11,
+  "generated_utc": "2026-07-09T12:23:22.645912+00:00",
+  "last_checked_utc": "2026-07-09T12:23:22.645912+00:00",
+  "warning_count": 12,
   "warnings": [
     {
       "pid": "IDN28503",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "09/19:20 EST Road Weather Alert for Melbourne\nfor Inner, Eastern and South Eastern suburbs and Dandenong Ranges",
+      "title": "09/22:15 EST Road Weather Alert for Melbourne\nfor Inner, Eastern and South Eastern suburbs and Dandenong Ranges",
       "type": "other",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/road.shtml",
       "desc": "",
-      "issued": "Thu, 09 Jul 2026 09:20:58 GMT"
+      "issued": "Thu, 09 Jul 2026 12:15:22 GMT"
     },
     {
       "pid": "",
@@ -77,6 +77,15 @@
     },
     {
       "pid": "",
+      "title": "09/21:30 CST Marine Wind Warning Summary for South Australia",
+      "type": "wind",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
+      "desc": "",
+      "issued": "Thu, 09 Jul 2026 12:00:10 GMT"
+    },
+    {
+      "pid": "",
       "title": "09/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
@@ -86,21 +95,21 @@
     },
     {
       "pid": "",
-      "title": "09/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "09/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 09 Jul 2026 06:05:10 GMT"
+      "issued": "Thu, 09 Jul 2026 12:00:11 GMT"
     },
     {
       "pid": "",
-      "title": "09/16:37 EST Road Weather Alert for Tasmania\nfor Central Plateau, Midlands and Upper Derwent Valley forecast districts",
+      "title": "09/22:14 EST Road Weather Alert for Tasmania\nfor Central Plateau, Midlands and Upper Derwent Valley forecast districts",
       "type": "other",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/road.shtml",
       "desc": "",
-      "issued": "Thu, 09 Jul 2026 06:37:05 GMT"
+      "issued": "Thu, 09 Jul 2026 12:14:26 GMT"
     }
   ],
   "fetch_errors": {},
@@ -113,7 +122,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Thu, 09 Jul 2026 11:48:23 GMT",
+        "updated": "Thu, 09 Jul 2026 12:20:23 GMT",
         "description": "Racecourse Rd, Leeton, NSW 2705",
         "council": "Leeton",
         "lat": -34.5647329999999,
@@ -144,16 +153,16 @@
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire",
+        "title": "Fire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-09T11:38:11+00:00",
-        "description": "NEWMAN, SHIRE OF EAST PILBARA",
-        "lat": -23.3543,
-        "lng": 119.7241,
+        "updated": "2026-07-09T11:58:54+00:00",
+        "description": "BELLEVUE, SHIRE OF MUNDARING",
+        "lat": -31.9028,
+        "lng": 116.0196,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -169,21 +178,6 @@
         "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.4882,
         "lng": 128.1177,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-09T11:20:53+00:00",
-        "description": "DERBY, SHIRE OF DERBY/WEST KIMBERLEY",
-        "lat": -17.3247,
-        "lng": 123.6484,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -268,7 +262,7 @@
     ],
     "act": []
   },
-  "incident_count": 10,
+  "incident_count": 9,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3246,6 +3240,27 @@
     }
   },
   "marine_warnings": {
+    "SA": {
+      "state": "SA",
+      "product": "IDS20201",
+      "issued_utc": "2026-07-09T12:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "South Central Coast",
+            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
+          ],
+          "aac_codes": [
+            "SA_MW008",
+            "SA_MW010"
+          ],
+          "summary": "South Central Coast and Lower South East Coast"
+        }
+      ]
+    },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
@@ -3271,7 +3286,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-07-09T06:05:00Z",
+      "issued_utc": "2026-07-09T12:00:00Z",
       "overview": [],
       "hazards": [
         {
