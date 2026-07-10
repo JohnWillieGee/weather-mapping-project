@@ -1,31 +1,29 @@
 // ============================================================================
 // watchtower_nearme.js
 // Mobile "Near Me" personal-risk view for WatchTower.
-// Centres on the user's GPS location and shows nearby hazards from the same
-// live_data.json feed the desktop map already uses. Does NOT touch site data,
-// allIncidents, warningsData, or any existing desktop rendering functions.
 // ============================================================================
 
 var NEARME_STATE = {
-  radiusKm: 50,          // default filter radius
+  radiusKm: 50,
   userLat: null,
   userLng: null,
-  locStatus: 'idle',     // idle | requesting | granted | denied | unsupported
-  hazards: []            // flattened, distance-sorted list for current radius
+  locStatus: 'idle',
+  hazards: [],
+  map: null,
+  markersLayer: null,
+  userMarker: null,
+  filters: null,
+  activeTab: 'nearme'
 };
 
-// ---------------------------------------------------------------------------
-// View-mode decision: auto (screen width) vs manual override (localStorage)
-// ---------------------------------------------------------------------------
 function nearMeShouldShow() {
-  var stored = localStorage.getItem('wt_view_mode'); // 'auto' | 'nearme' | 'desktop'
+  var stored = localStorage.getItem('wt_view_mode');
   if (stored === 'nearme') return true;
   if (stored === 'desktop') return false;
   return window.innerWidth <= 768;
 }
 
 function nearMeSetViewMode(mode) {
-  // mode: 'auto' | 'nearme' | 'desktop'
   if (mode === 'auto') localStorage.removeItem('wt_view_mode');
   else localStorage.setItem('wt_view_mode', mode);
   nearMeApplyViewMode();
@@ -46,20 +44,21 @@ function nearMeApplyViewMode() {
   }
 }
 
-// Re-check on resize/orientation change, but only when in 'auto' mode
 window.addEventListener('resize', function () {
   if (!localStorage.getItem('wt_view_mode')) nearMeApplyViewMode();
 });
 
-// ---------------------------------------------------------------------------
-// Init — runs once when the Near Me view becomes visible
-// ---------------------------------------------------------------------------
 var _nearMeInitDone = false;
 function nearMeInit() {
-  if (_nearMeInitDone) return;
+  if (_nearMeInitDone) {
+    if (NEARME_STATE.map) setTimeout(function () { NEARME_STATE.map.invalidateSize(); }, 50);
+    return;
+  }
   _nearMeInitDone = true;
-  nearMeRequestLocation();
+  nearMeLoadFilters();
+  nearMeInitMap();
   nearMeRenderRadiusPills();
+  nearMeRequestLocation();
 }
 
 function nearMeRequestLocation() {
@@ -81,7 +80,7 @@ function nearMeRequestLocation() {
       nearMeUpdateStatusLine();
       nearMeComputeHazards();
     },
-    function (err) {
+    function () {
       NEARME_STATE.locStatus = 'denied';
       nearMeUpdateStatusLine();
       nearMeFallbackNational();
@@ -91,18 +90,13 @@ function nearMeRequestLocation() {
 }
 
 function nearMeFallbackNational() {
-  // No location permission — show a flat list of the most severe hazards
-  // nationally rather than a distance-sorted list.
-  var list = nearMeFlattenHazards(null, null, null); // null radius = no distance filter
+  var list = nearMeFlattenHazards(null, null, null);
   list.sort(function (a, b) { return b.severityRank - a.severityRank; });
   NEARME_STATE.hazards = list.slice(0, 15);
   nearMeRenderCards();
+  nearMeUpdateMap();
 }
 
-// ---------------------------------------------------------------------------
-// Distance calc — reuses the existing haversineKm() already defined in
-// index.html. Falls back to a local copy if it's ever missing.
-// ---------------------------------------------------------------------------
 function nearMeHaversine(lat1, lng1, lat2, lng2) {
   if (typeof haversineKm === 'function') return haversineKm(lat1, lng1, lat2, lng2);
   var R = 6371;
@@ -114,63 +108,158 @@ function nearMeHaversine(lat1, lng1, lat2, lng2) {
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
 
-var NEARME_SEVERITY_RANK = {
-  'emergency warning': 4, 'emergency': 4,
-  'watch and act': 3,
-  'advice': 2,
-  'warning': 2,
-  'other': 1
-};
-
-function nearMeSeverityRank(levelText) {
-  var key = (levelText || '').toLowerCase().trim();
-  return NEARME_SEVERITY_RANK[key] || 1;
+function nearMeSeverityFromText(text) {
+  var t = (text || '').toLowerCase();
+  if (t.indexOf('emergency') !== -1) return 4;
+  if (t.indexOf('watch') !== -1) return 3;
+  if (t.indexOf('advice') !== -1) return 2;
+  if (t.indexOf('information') !== -1) return 1;
+  return 1;
 }
 
-// ---------------------------------------------------------------------------
-// Flatten allIncidents{} + bomWarnings[] into one array, computing distance
-// from the user when lat/lng is available. Reads existing globals only —
-// never mutates them.
-// ---------------------------------------------------------------------------
+function nearMeTypeList() {
+  var list = [{ key: 'incident', label: 'Fire & emergency incidents', icon: '\uD83D\uDD25', color: '#ff6b35' }];
+  if (typeof BOM_FTP_PRODUCTS === 'object' && BOM_FTP_PRODUCTS) {
+    Object.keys(BOM_FTP_PRODUCTS).forEach(function (k) {
+      list.push({ key: k, label: BOM_FTP_PRODUCTS[k].label, icon: BOM_FTP_PRODUCTS[k].icon, color: BOM_FTP_PRODUCTS[k].color });
+    });
+  }
+  return list;
+}
+
+function nearMeAllTypeKeys() { return nearMeTypeList().map(function (t) { return t.key; }); }
+
+function nearMeLoadFilters() {
+  var saved = null;
+  try { saved = JSON.parse(localStorage.getItem('wt_nearme_filters') || 'null'); } catch (e) { saved = null; }
+  if (!saved || !saved.types || !saved.severities) {
+    saved = { types: nearMeAllTypeKeys(), severities: [1, 2, 3, 4] };
+  }
+  NEARME_STATE.filters = saved;
+}
+
+function nearMeSaveFilters() {
+  localStorage.setItem('wt_nearme_filters', JSON.stringify(NEARME_STATE.filters));
+}
+
+function nearMeToggleSettings() {
+  var panel = document.getElementById('nearme-settings-panel');
+  if (!panel) return;
+  var showing = panel.style.display !== 'none';
+  if (showing) { panel.style.display = 'none'; return; }
+  nearMeRenderSettingsPanel();
+  panel.style.display = 'block';
+}
+
+function nearMeRenderSettingsPanel() {
+  var inner = document.getElementById('nearme-settings-inner');
+  if (!inner) return;
+
+  var sevList = [
+    { key: 4, label: 'Emergency Warning' },
+    { key: 3, label: 'Watch and Act' },
+    { key: 2, label: 'Advice / Warning' },
+    { key: 1, label: 'Other / routine' }
+  ];
+
+  var html = '<div class="nm-settings-title">Alert types</div>';
+  html += nearMeTypeList().map(function (t) {
+    var checked = NEARME_STATE.filters.types.indexOf(t.key) !== -1;
+    return '<label class="nm-check-row"><input type="checkbox"' + (checked ? ' checked' : '') +
+      ' onchange="nearMeToggleTypeFilter(\'' + t.key + '\', this.checked)">' +
+      '<span>' + t.icon + ' ' + nearMeEsc(t.label) + '</span></label>';
+  }).join('');
+
+  html += '<div class="nm-settings-title">Severity levels</div>';
+  html += sevList.map(function (s) {
+    var checked = NEARME_STATE.filters.severities.indexOf(s.key) !== -1;
+    return '<label class="nm-check-row"><input type="checkbox"' + (checked ? ' checked' : '') +
+      ' onchange="nearMeToggleSeverityFilter(' + s.key + ', this.checked)">' +
+      '<span>' + s.label + '</span></label>';
+  }).join('');
+
+  html += '<button class="nm-settings-done" onclick="nearMeToggleSettings()">Done</button>';
+  inner.innerHTML = html;
+}
+
+function nearMeToggleTypeFilter(key, checked) {
+  var arr = NEARME_STATE.filters.types;
+  var idx = arr.indexOf(key);
+  if (checked && idx === -1) arr.push(key);
+  if (!checked && idx !== -1) arr.splice(idx, 1);
+  nearMeSaveFilters();
+  nearMeRefreshCurrentView();
+}
+
+function nearMeToggleSeverityFilter(key, checked) {
+  key = Number(key);
+  var arr = NEARME_STATE.filters.severities;
+  var idx = arr.indexOf(key);
+  if (checked && idx === -1) arr.push(key);
+  if (!checked && idx !== -1) arr.splice(idx, 1);
+  nearMeSaveFilters();
+  nearMeRefreshCurrentView();
+}
+
+function nearMeRefreshCurrentView() {
+  if (NEARME_STATE.locStatus === 'granted') nearMeComputeHazards();
+  else nearMeFallbackNational();
+  if (NEARME_STATE.activeTab === 'alerts') nearMeRenderAlertsTab();
+}
+
 function nearMeFlattenHazards(userLat, userLng, radiusKm) {
   var out = [];
+  var filters = NEARME_STATE.filters || { types: nearMeAllTypeKeys(), severities: [1, 2, 3, 4] };
 
-  // Incidents (fire etc.) — allIncidents.{state}[] with .lat / .lng
   if (typeof allIncidents === 'object' && allIncidents) {
     Object.keys(allIncidents).forEach(function (state) {
       (allIncidents[state] || []).forEach(function (inc) {
         if (typeof inc.lat !== 'number' || typeof inc.lng !== 'number' || (!inc.lat && !inc.lng)) return;
+        if (filters.types.indexOf('incident') === -1) return;
+        var sevText = inc.alertLevel || inc.status || '';
+        var sevRank = nearMeSeverityFromText(sevText);
+        if (filters.severities.indexOf(sevRank) === -1) return;
         var dist = (userLat !== null) ? nearMeHaversine(userLat, userLng, inc.lat, inc.lng) : null;
         if (radiusKm !== null && dist !== null && dist > radiusKm) return;
         out.push({
           kind: 'incident',
+          category: 'incident',
           title: (inc.title || inc.name || 'Incident') + (inc.status ? ' \u2014 ' + inc.status : ''),
           sub: (inc.location || inc.council || state.toUpperCase()) + (inc.agency ? ', ' + inc.agency : ''),
-          level: inc.status || inc.alertLevel || '',
-          severityRank: nearMeSeverityRank(inc.status || inc.alertLevel),
+          severityRank: sevRank,
           distanceKm: dist,
-          icon: 'ti-flame'
+          lat: inc.lat,
+          lng: inc.lng,
+          icon: '\uD83D\uDD25',
+          color: '#ff6b35'
         });
       });
     });
   }
 
-  // BOM warnings — bomWarnings[] with .coords = [lat, lng]
   if (typeof bomWarnings === 'object' && bomWarnings) {
     bomWarnings.forEach(function (w) {
       if (w.cancelled) return;
       if (!w.coords || w.coords.length < 2) return;
+      var cat = w.type || 'other';
+      if (filters.types.indexOf(cat) === -1) return;
+      var sevRank = nearMeSeverityFromText(w.title);
+      if (filters.severities.indexOf(sevRank) === -1) return;
       var wLat = w.coords[0], wLng = w.coords[1];
       var dist = (userLat !== null) ? nearMeHaversine(userLat, userLng, wLat, wLng) : null;
       if (radiusKm !== null && dist !== null && dist > radiusKm) return;
+      var typeInfo = (typeof BOM_FTP_PRODUCTS === 'object' && BOM_FTP_PRODUCTS[cat]) ? BOM_FTP_PRODUCTS[cat] : null;
       out.push({
         kind: 'warning',
+        category: cat,
         title: w.title || 'BOM warning',
         sub: (w.districts || w.state || 'BOM'),
-        level: w.type || '',
-        severityRank: nearMeSeverityRank(w.type === 'fire_weather' ? 'warning' : w.type),
+        severityRank: sevRank,
         distanceKm: dist,
-        icon: w.type === 'fire_weather' ? 'ti-flame' : 'ti-cloud-storm'
+        lat: wLat,
+        lng: wLng,
+        icon: typeInfo ? typeInfo.icon : '\u26A0\uFE0F',
+        color: typeInfo ? typeInfo.color : '#f0a500'
       });
     });
   }
@@ -186,11 +275,54 @@ function nearMeComputeHazards() {
   });
   NEARME_STATE.hazards = list;
   nearMeRenderCards();
+  nearMeUpdateMap();
 }
 
-// ---------------------------------------------------------------------------
-// Rendering
-// ---------------------------------------------------------------------------
+function nearMeCurrentTile() {
+  var theme = (typeof S !== 'undefined' && S && S.theme) ? S.theme
+    : (typeof isDark !== 'undefined' && isDark ? 'dark' : 'light');
+  if (theme === 'natural' && typeof NATURAL_TILE !== 'undefined') return { url: NATURAL_TILE, subdomains: null };
+  if (theme === 'light' && typeof LIGHT_TILE !== 'undefined') return { url: LIGHT_TILE, subdomains: 'abcd' };
+  if (typeof DARK_TILE !== 'undefined') return { url: DARK_TILE, subdomains: 'abcd' };
+  return { url: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', subdomains: 'abcd' };
+}
+
+function nearMeInitMap() {
+  if (NEARME_STATE.map || typeof L === 'undefined') return;
+  var el = document.getElementById('nearme-map');
+  if (!el) return;
+  var tile = nearMeCurrentTile();
+  NEARME_STATE.map = L.map('nearme-map', { zoomControl: true, attributionControl: false })
+    .setView([-27, 134], 4);
+  var opts = { maxZoom: 19 };
+  if (tile.subdomains) opts.subdomains = tile.subdomains;
+  L.tileLayer(tile.url, opts).addTo(NEARME_STATE.map);
+  NEARME_STATE.markersLayer = L.layerGroup().addTo(NEARME_STATE.map);
+}
+
+function nearMeUpdateMap() {
+  if (!NEARME_STATE.map) return;
+
+  if (NEARME_STATE.userLat !== null) {
+    NEARME_STATE.map.setView([NEARME_STATE.userLat, NEARME_STATE.userLng], 10);
+    if (NEARME_STATE.userMarker) NEARME_STATE.map.removeLayer(NEARME_STATE.userMarker);
+    NEARME_STATE.userMarker = L.circleMarker([NEARME_STATE.userLat, NEARME_STATE.userLng], {
+      radius: 7, color: '#ffffff', weight: 2, fillColor: '#3b82f6', fillOpacity: 1
+    }).addTo(NEARME_STATE.map);
+  }
+
+  if (!NEARME_STATE.markersLayer) return;
+  NEARME_STATE.markersLayer.clearLayers();
+  NEARME_STATE.hazards.forEach(function (h) {
+    if (typeof h.lat !== 'number' || typeof h.lng !== 'number') return;
+    L.circleMarker([h.lat, h.lng], {
+      radius: 6, color: '#000', weight: 1, fillColor: h.color || '#e0a000', fillOpacity: 0.85
+    }).bindPopup('<b>' + nearMeEsc(h.title) + '</b><br>' + nearMeEsc(h.sub) +
+      (h.distanceKm !== null ? '<br>' + nearMeRound1(h.distanceKm) + ' km away' : ''))
+      .addTo(NEARME_STATE.markersLayer);
+  });
+}
+
 function nearMeUpdateStatusLine() {
   var el = document.getElementById('nearme-subtitle');
   if (!el) return;
@@ -221,39 +353,99 @@ function nearMeSetRadius(km) {
   if (NEARME_STATE.locStatus === 'granted') nearMeComputeHazards();
 }
 
+function nearMeCardHtml(h) {
+  var distStr = (h.distanceKm !== null) ? nearMeRound1(h.distanceKm) + ' km' : '';
+  var isSevere = h.severityRank >= 4;
+  return (
+    '<div class="nm-card">' +
+      '<div class="nm-card-icon ' + (isSevere ? 'nm-icon-danger' : 'nm-icon-warning') + '">' + h.icon + '</div>' +
+      '<div class="nm-card-body">' +
+        '<div class="nm-card-top">' +
+          '<span class="nm-card-title">' + nearMeEsc(h.title) + '</span>' +
+          (distStr ? '<span class="nm-card-dist' + (isSevere ? ' nm-dist-danger' : '') + '">' + distStr + '</span>' : '') +
+        '</div>' +
+        '<div class="nm-card-sub">' + nearMeEsc(h.sub) + '</div>' +
+      '</div>' +
+    '</div>'
+  );
+}
+
 function nearMeRenderCards() {
   var countEl = document.getElementById('nearme-count');
   var listEl = document.getElementById('nearme-list');
   if (!listEl) return;
 
   var n = NEARME_STATE.hazards.length;
-  if (countEl) {
-    countEl.textContent = n === 0 ? 'No hazards nearby' : (n + ' hazard' + (n > 1 ? 's' : '') + ' near you');
+  if (countEl) countEl.textContent = n === 0 ? 'No hazards nearby' : (n + ' hazard' + (n > 1 ? 's' : '') + ' near you');
+
+  listEl.innerHTML = n === 0
+    ? '<div class="nm-empty">Nothing to report in this radius right now.</div>'
+    : NEARME_STATE.hazards.map(nearMeCardHtml).join('');
+}
+
+function nearMeRenderAlertsTab() {
+  var countEl = document.getElementById('nearme-alerts-count');
+  var listEl = document.getElementById('nearme-alerts-list');
+  if (!listEl) return;
+
+  var list = nearMeFlattenHazards(null, null, null);
+  list.sort(function (a, b) { return b.severityRank - a.severityRank; });
+
+  var n = list.length;
+  if (countEl) countEl.textContent = n === 0 ? 'No active alerts' : (n + ' active alert' + (n > 1 ? 's' : '') + ' nationally');
+  listEl.innerHTML = n === 0
+    ? '<div class="nm-empty">Nothing active right now.</div>'
+    : list.map(nearMeCardHtml).join('');
+}
+
+function nearMeRenderInfoTab() {
+  var el = document.getElementById('nearme-info-content');
+  if (!el) return;
+  el.innerHTML =
+    '<div class="nm-info-block">' +
+      '<div class="nm-info-title">About this view</div>' +
+      '<p>Near Me shows hazards close to your current location, using the same live BOM warnings and state emergency incident feeds as the main WatchTower map.</p>' +
+    '</div>' +
+    '<div class="nm-info-block">' +
+      '<div class="nm-info-title">Location status</div>' +
+      '<p id="nearme-info-status"></p>' +
+    '</div>';
+  var statusText = {
+    idle: 'Waiting for location.',
+    requesting: 'Finding your location.',
+    granted: 'Using your device location.',
+    denied: 'Location permission denied \u2014 showing a national view instead.',
+    unsupported: 'Location not supported on this device \u2014 showing a national view instead.'
+  }[NEARME_STATE.locStatus] || '';
+  var statusEl2 = document.getElementById('nearme-info-status');
+  if (statusEl2) statusEl2.textContent = statusText;
+}
+
+function nearMeSetTab(tab) {
+  NEARME_STATE.activeTab = tab;
+  document.querySelectorAll('.nm-nav-item').forEach(function (el) {
+    el.classList.toggle('nm-nav-active', el.getAttribute('data-tab') === tab);
+  });
+
+  ['nearme', 'alerts', 'info'].forEach(function (t) {
+    var el = document.getElementById('nearme-tab-' + t);
+    if (el) el.style.display = (t === tab) ? '' : 'none';
+  });
+
+  var mapEl = document.getElementById('nearme-map');
+  var bodyEl = document.getElementById('nearme-body');
+  if (tab === 'map') {
+    if (bodyEl) bodyEl.style.display = 'none';
+    if (mapEl) mapEl.classList.add('nm-map-expanded');
+  } else {
+    if (bodyEl) bodyEl.style.display = '';
+    if (mapEl) mapEl.classList.remove('nm-map-expanded');
   }
 
-  if (n === 0) {
-    listEl.innerHTML = '<div class="nm-empty">Nothing to report in this radius right now.</div>';
-    return;
-  }
+  if (tab === 'alerts') nearMeRenderAlertsTab();
+  if (tab === 'info') nearMeRenderInfoTab();
 
-  listEl.innerHTML = NEARME_STATE.hazards.map(function (h) {
-    var distStr = (h.distanceKm !== null) ? nearMeRound1(h.distanceKm) + ' km' : '';
-    var isSevere = h.severityRank >= 4;
-    return (
-      '<div class="nm-card">' +
-        '<div class="nm-card-icon ' + (isSevere ? 'nm-icon-danger' : 'nm-icon-warning') + '">' +
-          '<i class="ti ' + h.icon + '" aria-hidden="true"></i>' +
-        '</div>' +
-        '<div class="nm-card-body">' +
-          '<div class="nm-card-top">' +
-            '<span class="nm-card-title">' + nearMeEsc(h.title) + '</span>' +
-            (distStr ? '<span class="nm-card-dist' + (isSevere ? ' nm-dist-danger' : '') + '">' + distStr + '</span>' : '') +
-          '</div>' +
-          '<div class="nm-card-sub">' + nearMeEsc(h.sub) + '</div>' +
-        '</div>' +
-      '</div>'
-    );
-  }).join('');
+  setTimeout(function () { if (NEARME_STATE.map) NEARME_STATE.map.invalidateSize(); }, 260);
 }
 
 function nearMeRound1(n) { return Math.round(n * 10) / 10; }
@@ -262,15 +454,4 @@ function nearMeEsc(s) {
   return String(s || '').replace(/[&<>"']/g, function (c) {
     return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
   });
-}
-
-// ---------------------------------------------------------------------------
-// Bottom nav (Near Me / Map / Alerts / Info) — Map/Alerts/Info are stubs for
-// now; Near Me is the only live tab in this first pass.
-// ---------------------------------------------------------------------------
-function nearMeSetTab(tab) {
-  document.querySelectorAll('.nm-nav-item').forEach(function (el) {
-    el.classList.toggle('nm-nav-active', el.getAttribute('data-tab') === tab);
-  });
-  // Future: swap #nearme-body content per tab. Only 'nearme' has content today.
 }
