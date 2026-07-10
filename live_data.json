@@ -1,8 +1,17 @@
 {
-  "generated_utc": "2026-07-10T04:53:17.394300+00:00",
-  "last_checked_utc": "2026-07-10T04:53:17.394300+00:00",
-  "warning_count": 15,
+  "generated_utc": "2026-07-10T05:23:22.679021+00:00",
+  "last_checked_utc": "2026-07-10T05:23:22.679021+00:00",
+  "warning_count": 17,
   "warnings": [
+    {
+      "pid": "",
+      "title": "10/15:06 EST Initial Minor Flood Warning for the Murray River",
+      "type": "flood",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/nsw/warnings/flood/murrayriver.shtml",
+      "desc": "",
+      "issued": "Fri, 10 Jul 2026 05:06:42 GMT"
+    },
     {
       "pid": "",
       "title": "10/13:43 EST Minor Flood Warning for the Paroo River (NSW)",
@@ -20,6 +29,15 @@
       "link": "http://reg.bom.gov.au/act/warnings/canberraroad.shtml",
       "desc": "",
       "issued": "Thu, 09 Jul 2026 23:53:39 GMT"
+    },
+    {
+      "pid": "",
+      "title": "10/15:06 EST Initial Minor Flood Warning for the Murray River",
+      "type": "flood",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/nsw/warnings/flood/murrayriver.shtml",
+      "desc": "",
+      "issued": "Fri, 10 Jul 2026 05:06:42 GMT"
     },
     {
       "pid": "",
@@ -104,12 +122,12 @@
     },
     {
       "pid": "",
-      "title": "10/07:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "10/13:03 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 09 Jul 2026 23:01:13 GMT"
+      "issued": "Fri, 10 Jul 2026 05:03:05 GMT"
     },
     {
       "pid": "",
@@ -141,7 +159,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Badgally Rd, Campbelltown",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 10 Jul 2026 05:20:23 GMT",
+        "description": "Badgally Rd, Campbelltown, NSW 2560",
+        "council": "Campbelltown",
+        "lat": -34.057623,
+        "lng": 150.811239,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [
       {
@@ -254,21 +289,6 @@
       }
     ],
     "nt": [
-      {
-        "title": "Structure Fire - WIESENER CT, WOODROFFE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-10T04:29:09+00:00",
-        "description": "WIESENER CT, WOODROFFE",
-        "lat": -12.505,
-        "lng": 130.9759,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
       {
         "title": "Grass and Scrub Fire - WHITE RD, RUM JUNGLE",
         "alertLevel": "Advice",
@@ -3346,7 +3366,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-07-09T23:01:00Z",
+      "issued_utc": "2026-07-10T05:02:50Z",
       "overview": [
         "Strong Wind Warning for Friday for Esperance Coast and Eucla Coast",
         "Strong Wind Warning for Saturday for Esperance Coast and Eucla Coast"
