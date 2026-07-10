@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-10T11:23:19.649835+00:00",
-  "last_checked_utc": "2026-07-10T11:23:19.649835+00:00",
-  "warning_count": 16,
+  "generated_utc": "2026-07-10T11:53:22.174068+00:00",
+  "last_checked_utc": "2026-07-10T11:53:22.174068+00:00",
+  "warning_count": 17,
   "warnings": [
     {
       "pid": "",
@@ -29,6 +29,15 @@
       "link": "http://reg.bom.gov.au/nsw/warnings/flood/parooriver.shtml",
       "desc": "",
       "issued": "Fri, 10 Jul 2026 03:43:38 GMT"
+    },
+    {
+      "pid": "",
+      "title": "10/21:25 EST Road Weather Alert for Sydney\nfor all suburbs",
+      "type": "other",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/nsw/warnings/sydneyroad.shtml",
+      "desc": "",
+      "issued": "Fri, 10 Jul 2026 11:25:50 GMT"
     },
     {
       "pid": "",
@@ -150,12 +159,44 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Aristida Cct, Mount Annan",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 10 Jul 2026 11:48:23 GMT",
+        "description": "Aristida Cct, Mount Annan, NSW 2567",
+        "council": "Camden",
+        "lat": -34.0676779999999,
+        "lng": 150.75521,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-10T11:24:40+00:00",
+        "description": "HALLS CREEK, SHIRE OF HALLS CREEK",
+        "lat": -18.2135,
+        "lng": 127.6537,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -182,21 +223,6 @@
         "description": "GNANGARA, CITY OF WANNEROO",
         "lat": -31.7659,
         "lng": 115.8791,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-10T10:14:36+00:00",
-        "description": "HALLS CREEK, SHIRE OF HALLS CREEK",
-        "lat": -18.2135,
-        "lng": 127.6537,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -326,46 +352,16 @@
     ],
     "act": [
       {
-        "title": "HAZMAT INCIDENT - TURNER",
-        "alertLevel": "",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-07-10T11:20:00+00:00",
-        "description": "TURNER",
-        "lat": -35.2628,
-        "lng": 149.1297,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
         "title": "HOUSE FIRE - YARRALUMLA",
         "alertLevel": "",
         "status": "active",
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-07-10T11:20:00+00:00",
+        "updated": "2026-07-10T11:50:00+00:00",
         "description": "YARRALUMLA",
         "lat": -35.3085,
         "lng": 149.0951,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HAZMAT INCIDENT - TURNER",
-        "alertLevel": "",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "Ambulance",
-        "updated": "2026-07-10T11:14:06+00:00",
-        "description": "TURNER",
-        "lat": -35.2628,
-        "lng": 149.1297,
         "polys": [],
         "state": "ACT",
         "sourceUrl": "https://esa.act.gov.au/"
@@ -377,7 +373,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "Fire",
-        "updated": "2026-07-10T11:04:03+00:00",
+        "updated": "2026-07-10T11:44:46+00:00",
         "description": "YARRALUMLA",
         "lat": -35.3085,
         "lng": 149.0951,
@@ -387,7 +383,7 @@
       }
     ]
   },
-  "incident_count": 15,
+  "incident_count": 14,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
