@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-10T09:53:19.850082+00:00",
-  "last_checked_utc": "2026-07-10T09:53:19.850082+00:00",
+  "generated_utc": "2026-07-10T10:23:16.423675+00:00",
+  "last_checked_utc": "2026-07-10T10:23:16.423675+00:00",
   "warning_count": 17,
   "warnings": [
     {
@@ -159,29 +159,27 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "BUSHRANGERS CREEK RD, MOUNT ARTHUR",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 10 Jul 2026 09:48:23 GMT",
-        "description": "BUSHRANGERS CREEK RD, MOUNT ARTHUR 2820",
-        "council": "Dubbo Regional",
-        "lat": -32.554039001,
-        "lng": 148.933685302,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-10T10:06:06+00:00",
+        "description": "YALLINGUP SIDING, CITY OF BUSSELTON",
+        "lat": -33.6902,
+        "lng": 115.1023,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - DAMPIER PENINSULA",
         "alertLevel": "Advice",
@@ -307,16 +305,46 @@
     ],
     "act": [
       {
+        "title": "HAZMAT INCIDENT - TURNER",
+        "alertLevel": "",
+        "status": "active",
+        "type": "HazMat",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-07-10T10:19:00+00:00",
+        "description": "TURNER",
+        "lat": -35.2628,
+        "lng": 149.1297,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
         "title": "HOUSE FIRE - YARRALUMLA",
         "alertLevel": "",
         "status": "active",
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-07-10T09:50:00+00:00",
+        "updated": "2026-07-10T10:19:00+00:00",
         "description": "YARRALUMLA",
         "lat": -35.3085,
         "lng": 149.0951,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HAZMAT INCIDENT - TURNER",
+        "alertLevel": "",
+        "status": "active",
+        "type": "HazMat",
+        "size": "",
+        "agency": "Ambulance",
+        "updated": "2026-07-10T10:16:54+00:00",
+        "description": "TURNER",
+        "lat": -35.2628,
+        "lng": 149.1297,
         "polys": [],
         "state": "ACT",
         "sourceUrl": "https://esa.act.gov.au/"
@@ -328,7 +356,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "Fire - Ambulance",
-        "updated": "2026-07-10T09:49:22+00:00",
+        "updated": "2026-07-10T10:12:26+00:00",
         "description": "YARRALUMLA",
         "lat": -35.3085,
         "lng": 149.0951,
@@ -338,7 +366,7 @@
       }
     ]
   },
-  "incident_count": 11,
+  "incident_count": 13,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
