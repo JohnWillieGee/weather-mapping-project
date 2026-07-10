@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-10T22:53:17.446133+00:00",
-  "last_checked_utc": "2026-07-10T22:53:17.446133+00:00",
+  "generated_utc": "2026-07-10T23:23:19.929098+00:00",
+  "last_checked_utc": "2026-07-10T23:23:19.929098+00:00",
   "warning_count": 18,
   "warnings": [
     {
@@ -140,12 +140,12 @@
     },
     {
       "pid": "",
-      "title": "11/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "11/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Fri, 10 Jul 2026 17:01:12 GMT"
+      "issued": "Fri, 10 Jul 2026 23:01:13 GMT"
     },
     {
       "pid": "",
@@ -175,16 +175,46 @@
     "tas": [],
     "wa": [
       {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-10T23:11:51+00:00",
+        "description": "SILVER SANDS, CITY OF MANDURAH",
+        "lat": -32.514,
+        "lng": 115.7309,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-10T22:06:56+00:00",
+        "updated": "2026-07-10T23:08:49+00:00",
         "description": "HALLS CREEK, SHIRE OF HALLS CREEK",
         "lat": -18.2271,
         "lng": 127.6704,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-10T23:08:19+00:00",
+        "description": "NORTHBRIDGE, CITY OF PERTH",
+        "lat": -31.9459,
+        "lng": 115.8532,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -404,7 +434,7 @@
     ],
     "act": []
   },
-  "incident_count": 15,
+  "incident_count": 17,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3498,27 +3528,6 @@
             "SA_MW011"
           ],
           "summary": "Adelaide Metropolitan Waters, Far West Coast, Upper West Coast, Lower West Coast, Central Coast, Spencer Gulf, Gulf St Vincent and Investigator Strait"
-        }
-      ]
-    },
-    "WA": {
-      "state": "WA",
-      "product": "IDW20100",
-      "issued_utc": "2026-07-10T17:01:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Esperance Coast: Bremer Bay to Israelite Bay",
-            "Eucla Coast: Israelite Bay to WA-SA Border"
-          ],
-          "aac_codes": [
-            "WA_MW013",
-            "WA_MW014"
-          ],
-          "summary": "Esperance Coast and Eucla Coast"
         }
       ]
     },
