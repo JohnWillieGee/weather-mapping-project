@@ -207,6 +207,15 @@ function nearMeRefreshCurrentView() {
   if (NEARME_STATE.activeTab === 'alerts') nearMeRenderAlertsTab();
 }
 
+// Called from fetchBOMWarnings() once live_data.json has actually loaded.
+// Near Me may have already rendered once against the still-empty
+// allIncidents/bomWarnings arrays (it doesn't wait for the fetch), so this
+// re-runs whatever computation matches the current location state.
+function nearMeOnDataUpdated() {
+  if (!_nearMeInitDone) return; // view never opened yet — nothing to refresh
+  nearMeRefreshCurrentView();
+}
+
 function nearMeFlattenHazards(userLat, userLng, radiusKm) {
   var out = [];
   var filters = NEARME_STATE.filters || { types: nearMeAllTypeKeys(), severities: [1, 2, 3, 4] };
