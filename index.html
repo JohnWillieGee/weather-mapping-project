@@ -383,11 +383,90 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 #btn-risk-panel.on{background:var(--accent2);color:#000;border-color:var(--accent2);font-weight:700;}
 /* wp-none reuse */
 .wp-none{padding:20px 14px;text-align:center;font-size:11px;color:var(--text2);}
+/* ── Near Me mobile view ────────────────────────────────────────── */
+#nearme-view{flex-direction:column;height:100vh;background:var(--panel);color:var(--text);}
+.nm-topbar{display:flex;justify-content:space-between;align-items:flex-start;padding:14px 16px 10px;border-bottom:1px solid var(--border);}
+.nm-title{font-size:18px;font-weight:600;}
+.nm-subtitle{font-size:12px;color:var(--text2);margin-top:2px;}
+.nm-refresh{background:var(--panel2);border:1px solid var(--border);color:var(--text2);width:32px;height:32px;border-radius:var(--radius);cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;}
+
+.nm-map-placeholder{position:relative;height:160px;flex-shrink:0;background:var(--panel2);overflow:hidden;}
+.nm-ring{position:absolute;top:50%;left:50%;border:1px solid var(--border);border-radius:50%;transform:translate(-50%,-50%);}
+.nm-ring-1{width:60px;height:60px;}
+.nm-ring-2{width:104px;height:104px;}
+.nm-ring-3{width:148px;height:148px;}
+.nm-dot{position:absolute;top:50%;left:50%;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;background:var(--accent);}
+
+.nm-body{flex:1;overflow-y:auto;padding:12px 14px;}
+.nm-count{font-size:11px;color:var(--text2);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px;}
+.nm-empty{font-size:13px;color:var(--text2);padding:20px 4px;text-align:center;}
+
+.nm-card{display:flex;gap:10px;align-items:flex-start;background:var(--panel2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:8px;}
+.nm-card-icon{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px;}
+.nm-icon-danger{background:rgba(224,64,64,0.15);color:#e04040;}
+.nm-icon-warning{background:rgba(224,160,0,0.15);color:#e0a000;}
+.nm-card-body{flex:1;min-width:0;}
+.nm-card-top{display:flex;justify-content:space-between;gap:8px;}
+.nm-card-title{font-size:13px;font-weight:600;}
+.nm-card-dist{font-size:12px;color:var(--text2);font-weight:600;white-space:nowrap;}
+.nm-dist-danger{color:#e04040;}
+.nm-card-sub{font-size:12px;color:var(--text2);margin-top:2px;}
+
+.nm-radius-row{display:flex;align-items:center;gap:8px;margin-top:6px;}
+.nm-radius-lbl{font-size:11px;color:var(--text2);}
+.nm-pill{font-size:11px;padding:4px 10px;border-radius:var(--radius);border:1px solid var(--border);background:var(--panel);color:var(--text2);cursor:pointer;}
+.nm-pill-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+
+.nm-navbar{display:flex;border-top:1px solid var(--border);padding:8px 0 10px;flex-shrink:0;}
+.nm-nav-item{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:10px;color:var(--text2);cursor:pointer;}
+.nm-nav-item span:first-child{font-size:18px;}
+.nm-nav-active{color:var(--accent);}
 </style>
 </head>
 <body>
 <div id="loading"><div class="spin"></div><p>WatchTower</p><div class="sub" id="load-status">Loading map...</div></div>
 <div class="app" id="app" style="visibility:hidden">
+<div id="nearme-view" style="display:none;">
+  <div class="nm-topbar">
+    <div>
+      <div class="nm-title">Near me</div>
+      <div class="nm-subtitle" id="nearme-subtitle">Waiting for location&hellip;</div>
+    </div>
+    <button class="nm-refresh" onclick="nearMeRequestLocation()" title="Refresh location" aria-label="Refresh location">&#8635;</button>
+  </div>
+
+  <div class="nm-map-placeholder">
+    <div class="nm-ring nm-ring-1"></div>
+    <div class="nm-ring nm-ring-2"></div>
+    <div class="nm-ring nm-ring-3"></div>
+    <div class="nm-dot"></div>
+  </div>
+
+  <div class="nm-body">
+    <div class="nm-count" id="nearme-count">Waiting for location&hellip;</div>
+    <div id="nearme-list"></div>
+
+    <div class="nm-radius-row">
+      <span class="nm-radius-lbl">Radius</span>
+      <div id="nearme-radius-pills"></div>
+    </div>
+  </div>
+
+  <div class="nm-navbar">
+    <div class="nm-nav-item nm-nav-active" data-tab="nearme" onclick="nearMeSetTab('nearme')">
+      <span>&#128205;</span><span>Near me</span>
+    </div>
+    <div class="nm-nav-item" data-tab="map" onclick="nearMeSetTab('map')">
+      <span>&#128506;</span><span>Map</span>
+    </div>
+    <div class="nm-nav-item" data-tab="alerts" onclick="nearMeSetTab('alerts')">
+      <span>&#9888;</span><span>Alerts</span>
+    </div>
+    <div class="nm-nav-item" data-tab="info" onclick="nearMeSetTab('info')">
+      <span>&#8505;</span><span>Info</span>
+    </div>
+  </div>
+</div>
 <header>
   <div style="display:flex;align-items:center;gap:6px;">
     <a class="logo" href="https://www.youtube.com/watch?v=TLV4_xaYynY" target="_blank" rel="noopener" title="" style="text-decoration:none;cursor:default;">Watch<span>Tower</span></a>
@@ -434,6 +513,14 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
               <button class="sp-th-opt" id="sp-theme-dark" onclick="setTheme('dark')">Dark</button>
               <button class="sp-th-opt" id="sp-theme-natural" onclick="setTheme('natural')">Natural</button>
               <button class="sp-th-opt" id="sp-theme-light" onclick="setTheme('light')">Light</button>
+            </div>
+          </div>
+          <div class="sp-row" style="flex-direction:column;align-items:flex-start;gap:5px;">
+            <span class="sp-lbl">Near Me view</span>
+            <div class="sp-theme-seg" style="width:100%;">
+              <button class="sp-th-opt" onclick="nearMeSetViewMode('auto')">Auto</button>
+              <button class="sp-th-opt" onclick="nearMeSetViewMode('nearme')">Always on</button>
+              <button class="sp-th-opt" onclick="nearMeSetViewMode('desktop')">Always off</button>
             </div>
           </div>
           <div class="sp-row">
@@ -1841,6 +1928,7 @@ function initMap(){
   // Apply saved settings to UI and engine after map is ready
   syncSettingsUI();
   applyAllSettings();
+  if (typeof nearMeApplyViewMode === 'function') nearMeApplyViewMode();
 }
 
 // \u2500\u2500 RADAR LAYER (RainViewer) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
@@ -5732,5 +5820,6 @@ function fdrLevelQualifies(fd) {
 
 
 </script>
+<script src="watchtower_nearme.js"></script>
 </body>
 </html>
