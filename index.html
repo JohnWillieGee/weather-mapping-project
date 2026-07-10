@@ -470,16 +470,16 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 
   <div class="nm-navbar">
     <div class="nm-nav-item nm-nav-active" data-tab="nearme" onclick="nearMeSetTab('nearme')">
-      <span>&#128205;</span><span>Near me</span>
+      <span>&#8982;</span><span>Near me</span>
     </div>
     <div class="nm-nav-item" data-tab="map" onclick="nearMeSetTab('map')">
-      <span>&#128506;</span><span>Map</span>
+      <span>&#9974;</span><span>Map</span>
     </div>
     <div class="nm-nav-item" data-tab="alerts" onclick="nearMeSetTab('alerts')">
       <span>&#9888;</span><span>Alerts</span>
     </div>
     <div class="nm-nav-item" data-tab="info" onclick="nearMeSetTab('info')">
-      <span>&#8505;</span><span>Info</span>
+      <span>&#9432;</span><span>Info</span>
     </div>
   </div>
 </div>
@@ -3315,6 +3315,10 @@ function fetchBOMWarnings() {
       }
       // Run risk assessment after all data is loaded
       computeRisks();
+      // Near Me view reads the same allIncidents/bomWarnings globals \u2014
+      // refresh it now that live data has actually arrived (it may have
+      // already rendered once against the empty starting arrays).
+      if (typeof nearMeOnDataUpdated === 'function') nearMeOnDataUpdated();
     })
     .catch(function(e){
       // Only fires if live_data.json fetch/parse itself failed \u2014 not render errors
