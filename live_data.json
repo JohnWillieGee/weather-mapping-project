@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-10T21:53:16.036425+00:00",
-  "last_checked_utc": "2026-07-10T21:53:16.036425+00:00",
+  "generated_utc": "2026-07-10T22:23:17.379338+00:00",
+  "last_checked_utc": "2026-07-10T22:23:17.379338+00:00",
   "warning_count": 18,
   "warnings": [
     {
@@ -168,12 +168,44 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Belgenny Av, Camden",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 10 Jul 2026 22:20:23 GMT",
+        "description": "Belgenny Av, Camden, NSW 2570",
+        "council": "Camden",
+        "lat": -34.069184,
+        "lng": 150.699526,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-10T22:06:56+00:00",
+        "description": "HALLS CREEK, SHIRE OF HALLS CREEK",
+        "lat": -18.2271,
+        "lng": 127.6704,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -327,21 +359,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - DARWIN SURF CLUB -, TIWI",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-10T21:29:40+00:00",
-        "description": "DARWIN SURF CLUB -, TIWI",
-        "lat": -12.361,
-        "lng": 130.8681,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - COACH RD, BATCHELOR",
         "alertLevel": "Advice",
         "status": "active",
@@ -404,7 +421,7 @@
     ],
     "act": []
   },
-  "incident_count": 15,
+  "incident_count": 16,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
