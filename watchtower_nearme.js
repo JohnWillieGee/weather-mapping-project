@@ -116,14 +116,16 @@ function nearMeSeverityFromText(text) {
   if (t.indexOf('emergency') !== -1) return 4;
   if (t.indexOf('watch') !== -1) return 3;
   if (t.indexOf('advice') !== -1) return 2;
-  if (t.indexOf('information') !== -1) return 1;
-  return 1;
+  if (t.indexOf('information') !== -1) return 1; // genuine low-priority monitoring notices only
+  if (t.indexOf('warning') !== -1) return 2; // standard BOM "Warning" products (severe weather, thunderstorm, flood, cyclone) — active hazard, not routine
+  return 2; // unclassified — default to a real warning level rather than burying it as "Other/routine"
 }
 
 function nearMeTypeList() {
   var list = [
     { key: 'incident', label: 'Fire & emergency incidents', icon: '\uD83D\uDD25', color: '#ff6b35' },
-    { key: 'fdr', label: 'Fire Danger Rating (Very High+)', icon: '\uD83D\uDD25', color: '#d32f2f' }
+    { key: 'fdr', label: 'Fire Danger Rating (Very High+)', icon: '\uD83D\uDD25', color: '#d32f2f' },
+    { key: 'marine', label: 'Marine wind warnings', icon: '\uD83C\uDF0A', color: '#f0a500' }
   ];
   if (typeof BOM_FTP_PRODUCTS === 'object' && BOM_FTP_PRODUCTS) {
     Object.keys(BOM_FTP_PRODUCTS).forEach(function (k) {
@@ -268,6 +270,31 @@ function nearMePointInAnyPoly(lat, lng, feats) {
   return feats.some(function (feat) { return pointInGeoJSONPolygon(lat, lng, feat.geometry); });
 }
 
+// Marine zones (MARINE_ZONES_GEOJSON) are keyed by AAC code — build a lookup
+// once rather than scanning the whole feature list per hazard.
+var _nearMeMarineIndex = null;
+function nearMeMarineFeatureByAAC(aac) {
+  if (!_nearMeMarineIndex) {
+    _nearMeMarineIndex = {};
+    if (typeof MARINE_ZONES_GEOJSON !== 'undefined' && MARINE_ZONES_GEOJSON && MARINE_ZONES_GEOJSON.features) {
+      MARINE_ZONES_GEOJSON.features.forEach(function (feat) {
+        if (feat.properties && feat.properties.AAC) _nearMeMarineIndex[feat.properties.AAC] = feat;
+      });
+    }
+  }
+  return _nearMeMarineIndex[aac] || null;
+}
+
+function nearMeGeomCentroid(geom) {
+  if (!geom) return { lat: 0, lng: 0 };
+  var ring = geom.type === 'Polygon' ? geom.coordinates[0]
+    : (geom.type === 'MultiPolygon' ? geom.coordinates[0][0] : null);
+  if (!ring) return { lat: 0, lng: 0 };
+  var lats = 0, lngs = 0, n = 0;
+  ring.forEach(function (c) { lngs += c[0]; lats += c[1]; n++; });
+  return n ? { lat: lats / n, lng: lngs / n } : { lat: 0, lng: 0 };
+}
+
 function nearMeFlattenHazards(userLat, userLng, radiusKm) {
   var out = [];
   var filters = NEARME_STATE.filters || { types: nearMeAllTypeKeys(), severities: [1, 2, 3, 4] };
@@ -345,6 +372,65 @@ function nearMeFlattenHazards(userLat, userLng, radiusKm) {
         polys: matchedPolys.length ? matchedPolys.map(function (f) { return f.geometry; }) : null,
         icon: typeInfo ? typeInfo.icon : '\u26A0\uFE0F',
         color: typeInfo ? typeInfo.color : '#f0a500'
+      });
+    });
+  }
+
+  // Marine wind warnings — a separate feed/dataset from bomWarnings[], keyed
+  // by state with hazards referencing marine zone AAC codes (MARINE_ZONES_GEOJSON).
+  if (filters.types.indexOf('marine') !== -1 &&
+      typeof marineWarningsData === 'object' && marineWarningsData &&
+      typeof MARINE_ZONES_GEOJSON !== 'undefined' && MARINE_ZONES_GEOJSON) {
+    var marineSevRank = { HUR: 4, STO: 3, GAL: 2, GALE: 2, STR: 1 };
+    Object.keys(marineWarningsData).forEach(function (stateKey) {
+      var stateWarning = marineWarningsData[stateKey] || {};
+      (stateWarning.hazards || []).forEach(function (hazard) {
+        var sevRank = marineSevRank[hazard.severity] !== undefined ? marineSevRank[hazard.severity] : 1;
+        if (filters.severities.indexOf(sevRank) === -1) return;
+
+        var aacCodes = hazard.aac_codes || [];
+        var matchedFeats = [];
+        aacCodes.forEach(function (aac) {
+          var feat = nearMeMarineFeatureByAAC(aac);
+          if (feat) matchedFeats.push(feat);
+        });
+        if (!matchedFeats.length) return;
+
+        var isInside = false;
+        var dist = null;
+        if (userLat !== null) {
+          isInside = nearMePointInAnyPoly(userLat, userLng, matchedFeats);
+          if (isInside) {
+            dist = 0;
+          } else {
+            var minD = Infinity;
+            matchedFeats.forEach(function (feat) {
+              var d = nearMeMinDistToGeometry(userLat, userLng, feat.geometry);
+              if (d < minD) minD = d;
+            });
+            dist = (minD === Infinity) ? null : minD;
+          }
+        }
+        if (radiusKm !== null && dist !== null && dist > radiusKm) return;
+
+        var col = (typeof marineColor === 'function') ? marineColor(hazard.severity) : '#f0a500';
+        var zoneNames = matchedFeats.map(function (f) { return f.properties.DIST_NAME || f.properties.AAC; }).join(', ');
+        var anchor = nearMeGeomCentroid(matchedFeats[0].geometry);
+
+        out.push({
+          kind: 'marine',
+          category: 'marine',
+          title: 'Marine wind warning \u2014 ' + (hazard.level || hazard.severity),
+          sub: hazard.summary || zoneNames || stateKey.toUpperCase(),
+          severityRank: sevRank,
+          distanceKm: dist,
+          isInside: isInside,
+          lat: anchor.lat,
+          lng: anchor.lng,
+          polys: matchedFeats.map(function (f) { return f.geometry; }),
+          icon: '\uD83C\uDF0A',
+          color: col
+        });
       });
     });
   }
