@@ -412,6 +412,14 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 .nm-empty{font-size:13px;color:var(--text2);padding:20px 4px;text-align:center;}
 
 .nm-card{display:flex;gap:10px;align-items:flex-start;background:var(--panel2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:8px;}
+.nm-card-link{text-decoration:none;color:inherit;}
+.nm-card-arrow{align-self:center;font-size:20px;color:var(--text3);flex-shrink:0;}
+
+#nearme-summary{font-size:13px;line-height:1.4;padding:10px 12px;border-radius:10px;margin-bottom:10px;border:1px solid var(--border);}
+#nearme-summary.nm-sum-clear{background:rgba(46,125,50,0.12);border-color:#2e7d3244;color:var(--text);}
+#nearme-summary.nm-sum-info{background:var(--panel2);color:var(--text2);}
+#nearme-summary.nm-sum-warning{background:rgba(224,160,0,0.14);border-color:#e0a00044;color:var(--text);}
+#nearme-summary.nm-sum-danger{background:rgba(224,64,64,0.16);border-color:#e0404055;color:var(--text);font-weight:600;}
 .nm-card-icon{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px;}
 .nm-info-block{margin-bottom:14px;}
 .nm-info-title{font-size:12px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px;}
@@ -448,6 +456,9 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
       <div class="nm-subtitle" id="nearme-subtitle">Waiting for location&hellip;</div>
     </div>
     <div class="nm-topbar-actions">
+      <button class="nm-refresh" onclick="nearMeShareLocation()" title="Share my location" aria-label="Share my location">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="10.6" x2="15.4" y2="6.4"/><line x1="8.6" y1="13.4" x2="15.4" y2="17.6"/></svg>
+      </button>
       <button class="nm-refresh" onclick="nearMeRequestLocation()" title="Refresh location" aria-label="Refresh location">&#8635;</button>
       <button class="nm-refresh" onclick="nearMeToggleSettings()" title="Alert filters" aria-label="Alert filters">&#9881;</button>
     </div>
@@ -466,6 +477,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 
   <div class="nm-body" id="nearme-body">
     <div id="nearme-tab-nearme">
+      <div id="nearme-summary"></div>
       <div class="nm-count" id="nearme-count">Waiting for location&hellip;</div>
       <div id="nearme-list"></div>
       <div class="nm-radius-row">
