@@ -8,10 +8,12 @@ var NEARME_STATE = {
   userLat: null,
   userLng: null,
   locStatus: 'idle',
-  hazards: [],
+  hazards: [],           // card list — filtered by radius + type/severity
+  mapHazards: [],        // map markers — filtered by type/severity ONLY, no radius cutoff
   map: null,
   markersLayer: null,
   userMarker: null,
+  radiusCircle: null,
   filters: null,
   activeTab: 'nearme'
 };
@@ -93,6 +95,7 @@ function nearMeFallbackNational() {
   var list = nearMeFlattenHazards(null, null, null);
   list.sort(function (a, b) { return b.severityRank - a.severityRank; });
   NEARME_STATE.hazards = list.slice(0, 15);
+  NEARME_STATE.mapHazards = list; // map shows everything matching filters, uncapped
   nearMeRenderCards();
   nearMeUpdateMap();
 }
@@ -118,7 +121,10 @@ function nearMeSeverityFromText(text) {
 }
 
 function nearMeTypeList() {
-  var list = [{ key: 'incident', label: 'Fire & emergency incidents', icon: '\uD83D\uDD25', color: '#ff6b35' }];
+  var list = [
+    { key: 'incident', label: 'Fire & emergency incidents', icon: '\uD83D\uDD25', color: '#ff6b35' },
+    { key: 'fdr', label: 'Fire Danger Rating (Very High+)', icon: '\uD83D\uDD25', color: '#d32f2f' }
+  ];
   if (typeof BOM_FTP_PRODUCTS === 'object' && BOM_FTP_PRODUCTS) {
     Object.keys(BOM_FTP_PRODUCTS).forEach(function (k) {
       list.push({ key: k, label: BOM_FTP_PRODUCTS[k].label, icon: BOM_FTP_PRODUCTS[k].icon, color: BOM_FTP_PRODUCTS[k].color });
@@ -216,6 +222,52 @@ function nearMeOnDataUpdated() {
   nearMeRefreshCurrentView();
 }
 
+// ---------------------------------------------------------------------------
+// District polygon matching — mirrors the exact logic desktop's
+// renderWarningsMap() uses, so mobile draws/measures against the same real
+// BOM district shapes instead of a single centroid point.
+// ---------------------------------------------------------------------------
+function nearMeMatchDistrictPolygons(w) {
+  var matches = [];
+  var searchText = ((w.title || '') + ' ' + (w.text || '')).toLowerCase().replace(/\s+&\s+/g, ' and ');
+  function scan(collection) {
+    if (!collection || !collection.features) return;
+    collection.features.forEach(function (feat) {
+      var dname = (feat.properties.name || '').toLowerCase().replace(/\s+&\s+/g, ' and ');
+      var dstate = (feat.properties.state || '').toUpperCase();
+      if (dstate === (w.state || '').toUpperCase() && dname.length > 3 && searchText.indexOf(dname) !== -1) {
+        matches.push(feat);
+      }
+    });
+  }
+  if (typeof BOM_PW_DISTRICTS !== 'undefined') scan(BOM_PW_DISTRICTS);
+  if (!matches.length && typeof BOM_ME_DISTRICTS !== 'undefined') scan(BOM_ME_DISTRICTS);
+  return matches;
+}
+
+// Distance from a point to a polygon/multipolygon boundary — reuses the
+// same vertex-based minDistToPolyKm() already defined in index.html.
+function nearMeMinDistToGeometry(lat, lng, geometry) {
+  if (!geometry || typeof minDistToPolyKm !== 'function') return Infinity;
+  if (geometry.type === 'Polygon') {
+    return minDistToPolyKm(lat, lng, geometry.coordinates[0]);
+  }
+  if (geometry.type === 'MultiPolygon') {
+    var min = Infinity;
+    geometry.coordinates.forEach(function (poly) {
+      var d = minDistToPolyKm(lat, lng, poly[0]);
+      if (d < min) min = d;
+    });
+    return min;
+  }
+  return Infinity;
+}
+
+function nearMePointInAnyPoly(lat, lng, feats) {
+  if (typeof pointInGeoJSONPolygon !== 'function') return false;
+  return feats.some(function (feat) { return pointInGeoJSONPolygon(lat, lng, feat.geometry); });
+}
+
 function nearMeFlattenHazards(userLat, userLng, radiusKm) {
   var out = [];
   var filters = NEARME_STATE.filters || { types: nearMeAllTypeKeys(), severities: [1, 2, 3, 4] };
@@ -254,9 +306,31 @@ function nearMeFlattenHazards(userLat, userLng, radiusKm) {
       if (filters.types.indexOf(cat) === -1) return;
       var sevRank = nearMeSeverityFromText(w.title);
       if (filters.severities.indexOf(sevRank) === -1) return;
+
       var wLat = w.coords[0], wLng = w.coords[1];
-      var dist = (userLat !== null) ? nearMeHaversine(userLat, userLng, wLat, wLng) : null;
+      var matchedPolys = nearMeMatchDistrictPolygons(w);
+      var isInside = false;
+      var dist = null;
+
+      if (userLat !== null) {
+        if (matchedPolys.length) {
+          isInside = nearMePointInAnyPoly(userLat, userLng, matchedPolys);
+          if (isInside) {
+            dist = 0;
+          } else {
+            var minD = Infinity;
+            matchedPolys.forEach(function (feat) {
+              var d = nearMeMinDistToGeometry(userLat, userLng, feat.geometry);
+              if (d < minD) minD = d;
+            });
+            dist = (minD === Infinity) ? nearMeHaversine(userLat, userLng, wLat, wLng) : minD;
+          }
+        } else {
+          dist = nearMeHaversine(userLat, userLng, wLat, wLng);
+        }
+      }
       if (radiusKm !== null && dist !== null && dist > radiusKm) return;
+
       var typeInfo = (typeof BOM_FTP_PRODUCTS === 'object' && BOM_FTP_PRODUCTS[cat]) ? BOM_FTP_PRODUCTS[cat] : null;
       out.push({
         kind: 'warning',
@@ -265,10 +339,45 @@ function nearMeFlattenHazards(userLat, userLng, radiusKm) {
         sub: (w.districts || w.state || 'BOM'),
         severityRank: sevRank,
         distanceKm: dist,
+        isInside: isInside,
         lat: wLat,
         lng: wLng,
+        polys: matchedPolys.length ? matchedPolys.map(function (f) { return f.geometry; }) : null,
         icon: typeInfo ? typeInfo.icon : '\u26A0\uFE0F',
         color: typeInfo ? typeInfo.color : '#f0a500'
+      });
+    });
+  }
+
+  // Fire Danger Ratings — flags if you're standing inside a district
+  // currently rated Very High or above (Very High / Extreme / Catastrophic).
+  // Area-based, so this only applies once we actually know your location.
+  if (userLat !== null && filters.types.indexOf('fdr') !== -1 &&
+      typeof FDR_GEO !== 'undefined' && FDR_GEO && typeof fdrRatings === 'object' && fdrRatings) {
+    FDR_GEO.features.forEach(function (feat) {
+      if (!pointInGeoJSONPolygon(userLat, userLng, feat.geometry)) return;
+      var aac = feat.properties.AAC;
+      var rating = fdrRatings[aac] && fdrRatings[aac][1]; // period 1 = today
+      if (!rating || !rating.FireDanger) return;
+      var fd = rating.FireDanger.toLowerCase();
+      var fdrRank = fd.indexOf('catastrophic') !== -1 ? 4 :
+                    fd.indexOf('extreme') !== -1 ? 3 :
+                    fd.indexOf('very high') !== -1 ? 2 : 0;
+      if (fdrRank === 0) return; // below Very High — not flagged here
+      if (filters.severities.indexOf(fdrRank) === -1) return;
+      out.push({
+        kind: 'fdr',
+        category: 'fdr',
+        title: 'Fire Danger Rating: ' + rating.FireDanger,
+        sub: 'You are in ' + (feat.properties.DIST_NAME || aac || 'this district') + ' today',
+        severityRank: fdrRank,
+        distanceKm: 0,
+        isInside: true,
+        lat: userLat,
+        lng: userLng,
+        polys: [feat.geometry],
+        icon: '\uD83D\uDD25',
+        color: fdrRank >= 4 ? '#4a148c' : (fdrRank >= 3 ? '#b71c1c' : '#d32f2f')
       });
     });
   }
@@ -283,6 +392,13 @@ function nearMeComputeHazards() {
     return b.severityRank - a.severityRank;
   });
   NEARME_STATE.hazards = list;
+
+  // Map shows everything matching type/severity filters, regardless of the
+  // radius chip — zooming out should reveal more, not be capped by it.
+  var mapList = nearMeFlattenHazards(NEARME_STATE.userLat, NEARME_STATE.userLng, null);
+  mapList.sort(function (a, b) { return a.distanceKm - b.distanceKm; });
+  NEARME_STATE.mapHazards = mapList;
+
   nearMeRenderCards();
   nearMeUpdateMap();
 }
@@ -318,17 +434,43 @@ function nearMeUpdateMap() {
     NEARME_STATE.userMarker = L.circleMarker([NEARME_STATE.userLat, NEARME_STATE.userLng], {
       radius: 7, color: '#ffffff', weight: 2, fillColor: '#3b82f6', fillOpacity: 1
     }).addTo(NEARME_STATE.map);
+
+    // Radius reference circle — shows what's "in range" for the Near Me card
+    // list, even though the map itself now plots everything beyond it too.
+    if (NEARME_STATE.radiusCircle) NEARME_STATE.map.removeLayer(NEARME_STATE.radiusCircle);
+    var accentCol = (typeof getComputedStyle === 'function')
+      ? getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#f0a500'
+      : '#f0a500';
+    NEARME_STATE.radiusCircle = L.circle([NEARME_STATE.userLat, NEARME_STATE.userLng], {
+      radius: NEARME_STATE.radiusKm * 1000,
+      color: accentCol, weight: 1.5, dashArray: '5 5', fillColor: accentCol, fillOpacity: 0.05
+    }).addTo(NEARME_STATE.map);
   }
 
   if (!NEARME_STATE.markersLayer) return;
   NEARME_STATE.markersLayer.clearLayers();
-  NEARME_STATE.hazards.forEach(function (h) {
+  NEARME_STATE.mapHazards.forEach(function (h) {
     if (typeof h.lat !== 'number' || typeof h.lng !== 'number') return;
-    L.circleMarker([h.lat, h.lng], {
-      radius: 6, color: '#000', weight: 1, fillColor: h.color || '#e0a000', fillOpacity: 0.85
-    }).bindPopup('<b>' + nearMeEsc(h.title) + '</b><br>' + nearMeEsc(h.sub) +
-      (h.distanceKm !== null ? '<br>' + nearMeRound1(h.distanceKm) + ' km away' : ''))
-      .addTo(NEARME_STATE.markersLayer);
+    var popupHtml = '<b>' + nearMeEsc(h.title) + '</b><br>' + nearMeEsc(h.sub) +
+      (h.isInside ? '' : (h.distanceKm !== null ? '<br>' + nearMeRound1(h.distanceKm) + ' km away' : ''));
+
+    if (h.polys && h.polys.length) {
+      h.polys.forEach(function (geom) {
+        L.geoJSON({ type: 'Feature', geometry: geom, properties: {} }, {
+          style: {
+            color: h.color || '#e0a000', weight: 1.5, opacity: 0.85,
+            fillColor: h.color || '#e0a000', fillOpacity: h.kind === 'fdr' ? 0.22 : 0.15
+          }
+        }).bindPopup(popupHtml).addTo(NEARME_STATE.markersLayer);
+      });
+    }
+    // Small marker on top even when a polygon is drawn — gives a clean,
+    // clickable anchor point regardless of how large the polygon is.
+    if (h.kind !== 'fdr') {
+      L.circleMarker([h.lat, h.lng], {
+        radius: 6, color: '#000', weight: 1, fillColor: h.color || '#e0a000', fillOpacity: 0.85
+      }).bindPopup(popupHtml).addTo(NEARME_STATE.markersLayer);
+    }
   });
 }
 
@@ -363,7 +505,7 @@ function nearMeSetRadius(km) {
 }
 
 function nearMeCardHtml(h) {
-  var distStr = (h.distanceKm !== null) ? nearMeRound1(h.distanceKm) + ' km' : '';
+  var distStr = h.isInside ? 'You are here' : ((h.distanceKm !== null) ? nearMeRound1(h.distanceKm) + ' km' : '');
   var isSevere = h.severityRank >= 4;
   return (
     '<div class="nm-card">' +
