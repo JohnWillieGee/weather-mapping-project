@@ -60,7 +60,28 @@ function nearMeInit() {
   nearMeLoadFilters();
   nearMeInitMap();
   nearMeRenderRadiusPills();
+  nearMeRestoreSplit();
   nearMeRequestLocation();
+}
+
+function nearMeSetSplit(pct) {
+  pct = Number(pct);
+  if (!pct || pct < 20) pct = 20;
+  if (pct > 80) pct = 80;
+  var mapEl = document.getElementById('nearme-map');
+  var bodyEl = document.getElementById('nearme-body');
+  if (mapEl) mapEl.style.flex = pct + ' 1 0';
+  if (bodyEl) bodyEl.style.flex = (100 - pct) + ' 1 0';
+  localStorage.setItem('wt_nearme_split', String(pct));
+  if (NEARME_STATE.map) setTimeout(function () { NEARME_STATE.map.invalidateSize(); }, 260);
+}
+
+function nearMeRestoreSplit() {
+  var saved = localStorage.getItem('wt_nearme_split');
+  var pct = saved ? Number(saved) : 66; // default 2/3 map, 1/3 list
+  var slider = document.getElementById('nearme-split-slider');
+  if (slider) slider.value = pct;
+  nearMeSetSplit(pct);
 }
 
 function nearMeRequestLocation() {
@@ -381,11 +402,11 @@ function nearMeFlattenHazards(userLat, userLng, radiusKm) {
   if (filters.types.indexOf('marine') !== -1 &&
       typeof marineWarningsData === 'object' && marineWarningsData &&
       typeof MARINE_ZONES_GEOJSON !== 'undefined' && MARINE_ZONES_GEOJSON) {
-    var marineSevRank = { HUR: 4, STO: 3, GAL: 2, GALE: 2, STR: 1 };
+    var marineSevRank = { HUR: 4, STO: 3, GAL: 2, GALE: 2, STR: 2 };
     Object.keys(marineWarningsData).forEach(function (stateKey) {
       var stateWarning = marineWarningsData[stateKey] || {};
       (stateWarning.hazards || []).forEach(function (hazard) {
-        var sevRank = marineSevRank[hazard.severity] !== undefined ? marineSevRank[hazard.severity] : 1;
+        var sevRank = marineSevRank[hazard.severity] !== undefined ? marineSevRank[hazard.severity] : 2;
         if (filters.severities.indexOf(sevRank) === -1) return;
 
         var aacCodes = hazard.aac_codes || [];
@@ -671,12 +692,15 @@ function nearMeSetTab(tab) {
 
   var mapEl = document.getElementById('nearme-map');
   var bodyEl = document.getElementById('nearme-body');
+  var splitRow = document.getElementById('nearme-split-row');
   if (tab === 'map') {
     if (bodyEl) bodyEl.style.display = 'none';
     if (mapEl) mapEl.classList.add('nm-map-expanded');
+    if (splitRow) splitRow.style.display = 'none';
   } else {
     if (bodyEl) bodyEl.style.display = '';
     if (mapEl) mapEl.classList.remove('nm-map-expanded');
+    if (splitRow) splitRow.style.display = (tab === 'nearme') ? '' : 'none';
   }
 
   if (tab === 'alerts') nearMeRenderAlertsTab();
