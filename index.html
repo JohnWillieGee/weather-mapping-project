@@ -411,7 +411,10 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 .nm-settings-done{margin-top:10px;width:100%;padding:8px;border-radius:var(--radius);border:1px solid var(--accent);background:var(--accent);color:#fff;font-size:13px;font-weight:600;cursor:pointer;}
 
 .nm-body{flex:1;overflow-y:auto;padding:12px 14px;}
-.nm-count{font-size:11px;color:var(--text2);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px;}
+.nm-count-row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;gap:8px;}
+.nm-count{font-size:11px;color:var(--text2);text-transform:uppercase;letter-spacing:.05em;}
+.nm-updated{font-size:10.5px;color:var(--text3);white-space:nowrap;flex-shrink:0;}
+.nm-badge-new{display:inline-block;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;background:var(--accent);color:#fff;border-radius:4px;padding:1px 5px;margin-left:6px;vertical-align:middle;}
 .nm-empty{font-size:13px;color:var(--text2);padding:20px 4px;text-align:center;}
 .nm-state-heading{display:flex;justify-content:space-between;align-items:baseline;font-size:12px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.04em;margin:14px 2px 6px;padding-bottom:4px;border-bottom:1px solid var(--border);}
 .nm-state-heading:first-child{margin-top:0;}
@@ -484,7 +487,10 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
   <div class="nm-body" id="nearme-body">
     <div id="nearme-tab-nearme">
       <div id="nearme-summary"></div>
-      <div class="nm-count" id="nearme-count">Waiting for location&hellip;</div>
+      <div class="nm-count-row">
+        <span class="nm-count" id="nearme-count">Waiting for location&hellip;</span>
+        <span class="nm-updated" id="nearme-updated"></span>
+      </div>
       <div id="nearme-list"></div>
       <div class="nm-radius-row">
         <span class="nm-radius-lbl">Radius</span>
