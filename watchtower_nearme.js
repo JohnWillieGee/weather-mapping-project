@@ -17,7 +17,10 @@ var NEARME_STATE = {
   userMarker: null,
   radiusCircle: null,
   filters: null,
-  activeTab: 'nearme'
+  activeTab: 'nearme',
+  lastDataUpdate: null,   // Date — when live_data.json was last successfully loaded
+  knownHazardKeys: null,  // snapshot of all hazard keys nationally, from the previous data refresh
+  newHazardKeys: null     // keys present now but not in the previous refresh — flagged with a "NEW" badge
 };
 
 function nearMeShouldShow() {
@@ -63,6 +66,10 @@ function nearMeInit() {
   nearMeInitMap();
   nearMeRenderRadiusPills();
   nearMeRestoreSplit();
+  NEARME_STATE.lastDataUpdate = new Date();
+  nearMeSnapshotHazardKeys(); // baseline — nothing flagged "new" until the next refresh
+  nearMeRenderUpdatedText();
+  setInterval(nearMeRenderUpdatedText, 30000); // keep the "X min ago" text ticking over
   nearMeRequestLocation();
 }
 
@@ -249,7 +256,61 @@ function nearMeRefreshCurrentView() {
 // re-runs whatever computation matches the current location state.
 function nearMeOnDataUpdated() {
   if (!_nearMeInitDone) return; // view never opened yet — nothing to refresh
+  NEARME_STATE.lastDataUpdate = new Date();
+  nearMeUpdateNewSet();
+  nearMeRenderUpdatedText();
   nearMeRefreshCurrentView();
+}
+
+// ---------------------------------------------------------------------------
+// Last-updated timestamp + "new since last check" tracking
+// ---------------------------------------------------------------------------
+function nearMeTimeAgo(date) {
+  if (!date) return '';
+  var mins = Math.round((Date.now() - date.getTime()) / 60000);
+  if (mins < 1) return 'just now';
+  if (mins === 1) return '1 min ago';
+  if (mins < 60) return mins + ' min ago';
+  return Math.round(mins / 60) + 'h ago';
+}
+
+function nearMeRenderUpdatedText() {
+  var el = document.getElementById('nearme-updated');
+  if (el) el.textContent = NEARME_STATE.lastDataUpdate ? ('Updated ' + nearMeTimeAgo(NEARME_STATE.lastDataUpdate)) : '';
+}
+
+// A stable-ish identity for a hazard across refreshes — no shared ID field
+// exists across the different source feeds, so title+state+category is the
+// best available fingerprint.
+function nearMeHazardKey(h) {
+  return h.kind + '|' + h.category + '|' + (h.state || '') + '|' + h.title + '|' + h.sub;
+}
+
+// Snapshot every hazard nationally (ignoring current type/severity filters,
+// so toggling a filter never looks like "new" hazards appearing) as the
+// baseline for next time's comparison.
+function nearMeSnapshotHazardKeys() {
+  var allFilters = { types: nearMeAllTypeKeys(), severities: [1, 2, 3, 4] };
+  var fullList = nearMeFlattenHazards(null, null, null, allFilters);
+  var keys = {};
+  fullList.forEach(function (h) { keys[nearMeHazardKey(h)] = true; });
+  NEARME_STATE.knownHazardKeys = keys;
+}
+
+function nearMeUpdateNewSet() {
+  var allFilters = { types: nearMeAllTypeKeys(), severities: [1, 2, 3, 4] };
+  var fullList = nearMeFlattenHazards(null, null, null, allFilters);
+  var currentKeys = {};
+  fullList.forEach(function (h) { currentKeys[nearMeHazardKey(h)] = true; });
+
+  var newKeys = {};
+  if (NEARME_STATE.knownHazardKeys) {
+    Object.keys(currentKeys).forEach(function (k) {
+      if (!NEARME_STATE.knownHazardKeys[k]) newKeys[k] = true;
+    });
+  }
+  NEARME_STATE.newHazardKeys = newKeys;
+  NEARME_STATE.knownHazardKeys = currentKeys;
 }
 
 // ---------------------------------------------------------------------------
@@ -323,9 +384,9 @@ function nearMeGeomCentroid(geom) {
   return n ? { lat: lats / n, lng: lngs / n } : { lat: 0, lng: 0 };
 }
 
-function nearMeFlattenHazards(userLat, userLng, radiusKm) {
+function nearMeFlattenHazards(userLat, userLng, radiusKm, filtersOverride) {
   var out = [];
-  var filters = NEARME_STATE.filters || { types: nearMeAllTypeKeys(), severities: [1, 2, 3, 4] };
+  var filters = filtersOverride || NEARME_STATE.filters || { types: nearMeAllTypeKeys(), severities: [1, 2, 3, 4] };
 
   if (typeof allIncidents === 'object' && allIncidents) {
     Object.keys(allIncidents).forEach(function (state) {
@@ -661,12 +722,13 @@ function nearMeCardHtml(h) {
   var isSevere = h.severityRank >= 4;
   var tag = h.url ? 'a' : 'div';
   var openAttrs = h.url ? ' href="' + nearMeEsc(h.url) + '" target="_blank" rel="noopener"' : '';
+  var isNew = NEARME_STATE.newHazardKeys && NEARME_STATE.newHazardKeys[nearMeHazardKey(h)];
   return (
     '<' + tag + ' class="nm-card' + (h.url ? ' nm-card-link' : '') + '"' + openAttrs + '>' +
       '<div class="nm-card-icon ' + (isSevere ? 'nm-icon-danger' : 'nm-icon-warning') + '">' + h.icon + '</div>' +
       '<div class="nm-card-body">' +
         '<div class="nm-card-top">' +
-          '<span class="nm-card-title">' + nearMeEsc(h.title) + '</span>' +
+          '<span class="nm-card-title">' + nearMeEsc(h.title) + (isNew ? '<span class="nm-badge-new">New</span>' : '') + '</span>' +
           (distStr ? '<span class="nm-card-dist' + (isSevere ? ' nm-dist-danger' : '') + '">' + distStr + '</span>' : '') +
         '</div>' +
         '<div class="nm-card-sub">' + nearMeEsc(h.sub) + '</div>' +
