@@ -340,6 +340,7 @@ function nearMeFlattenHazards(userLat, userLng, radiusKm) {
         out.push({
           kind: 'incident',
           category: 'incident',
+          state: state.toUpperCase(),
           title: (inc.title || inc.name || 'Incident') + (inc.status ? ' \u2014 ' + inc.status : ''),
           sub: (inc.location || inc.council || state.toUpperCase()) + (inc.agency ? ', ' + inc.agency : ''),
           severityRank: sevRank,
@@ -392,6 +393,7 @@ function nearMeFlattenHazards(userLat, userLng, radiusKm) {
       out.push({
         kind: 'warning',
         category: cat,
+        state: (w.state || '').toUpperCase(),
         title: w.title || 'BOM warning',
         sub: (w.districts || w.state || 'BOM'),
         severityRank: sevRank,
@@ -451,6 +453,7 @@ function nearMeFlattenHazards(userLat, userLng, radiusKm) {
         out.push({
           kind: 'marine',
           category: 'marine',
+          state: stateKey.toUpperCase(),
           title: 'Marine wind warning \u2014 ' + (hazard.level || hazard.severity),
           sub: hazard.summary || zoneNames || stateKey.toUpperCase(),
           severityRank: sevRank,
@@ -487,6 +490,7 @@ function nearMeFlattenHazards(userLat, userLng, radiusKm) {
       out.push({
         kind: 'fdr',
         category: 'fdr',
+        state: fdrState.toUpperCase(),
         title: 'Fire Danger Rating: ' + rating.FireDanger,
         sub: 'You are in ' + (feat.properties.DIST_NAME || aac || 'this district') + ' today',
         severityRank: fdrRank,
@@ -609,7 +613,7 @@ function nearMeUpdateStatusLine() {
 function nearMeRenderRadiusPills() {
   var wrap = document.getElementById('nearme-radius-pills');
   if (!wrap) return;
-  var options = [50, 100, 200];
+  var options = [25, 50, 100, 200];
   wrap.innerHTML = options.map(function (r) {
     var active = r === NEARME_STATE.radiusKm;
     return '<button class="nm-pill' + (active ? ' nm-pill-active' : '') +
@@ -743,9 +747,31 @@ function nearMeRenderAlertsTab() {
 
   var n = list.length;
   if (countEl) countEl.textContent = n === 0 ? 'No active alerts' : (n + ' active alert' + (n > 1 ? 's' : '') + ' nationally');
-  listEl.innerHTML = n === 0
-    ? '<div class="nm-empty">Nothing active right now.</div>'
-    : list.map(nearMeCardHtml).join('');
+
+  if (n === 0) {
+    listEl.innerHTML = '<div class="nm-empty">Nothing active right now.</div>';
+    return;
+  }
+
+  var stateOrder = ['NSW', 'VIC', 'QLD', 'SA', 'WA', 'TAS', 'NT', 'ACT'];
+  var groups = {};
+  list.forEach(function (h) {
+    var key = h.state || 'OTHER';
+    if (!groups[key]) groups[key] = [];
+    groups[key].push(h);
+  });
+
+  var orderedKeys = stateOrder.filter(function (k) { return groups[k]; });
+  Object.keys(groups).forEach(function (k) { if (orderedKeys.indexOf(k) === -1) orderedKeys.push(k); });
+
+  var html = '';
+  orderedKeys.forEach(function (key) {
+    var fullName = (typeof STATE_NAMES === 'object' && STATE_NAMES[key]) ? STATE_NAMES[key] : null;
+    var label = fullName ? (key + ' \u2014 ' + fullName) : (key === 'OTHER' ? 'Other' : key);
+    html += '<div class="nm-state-heading">' + nearMeEsc(label) + ' <span class="nm-state-count">' + groups[key].length + '</span></div>';
+    html += groups[key].map(nearMeCardHtml).join('');
+  });
+  listEl.innerHTML = html;
 }
 
 function nearMeRenderInfoTab() {
