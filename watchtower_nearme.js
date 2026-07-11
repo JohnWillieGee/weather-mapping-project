@@ -537,7 +537,6 @@ function nearMeUpdateMap() {
   if (!NEARME_STATE.map) return;
 
   if (NEARME_STATE.userLat !== null) {
-    NEARME_STATE.map.setView([NEARME_STATE.userLat, NEARME_STATE.userLng], 10);
     if (NEARME_STATE.userMarker) NEARME_STATE.map.removeLayer(NEARME_STATE.userMarker);
     NEARME_STATE.userMarker = L.circleMarker([NEARME_STATE.userLat, NEARME_STATE.userLng], {
       radius: 7, color: '#ffffff', weight: 2, fillColor: '#3b82f6', fillOpacity: 1
@@ -724,13 +723,18 @@ function nearMeSetTab(tab) {
   var bodyEl = document.getElementById('nearme-body');
   var splitRow = document.getElementById('nearme-split-row');
   if (tab === 'map') {
+    if (mapEl) { mapEl.style.display = ''; mapEl.classList.add('nm-map-expanded'); }
     if (bodyEl) bodyEl.style.display = 'none';
-    if (mapEl) mapEl.classList.add('nm-map-expanded');
     if (splitRow) splitRow.style.display = 'none';
-  } else {
+  } else if (tab === 'nearme') {
+    if (mapEl) { mapEl.style.display = ''; mapEl.classList.remove('nm-map-expanded'); }
     if (bodyEl) bodyEl.style.display = '';
-    if (mapEl) mapEl.classList.remove('nm-map-expanded');
-    if (splitRow) splitRow.style.display = (tab === 'nearme') ? '' : 'none';
+    if (splitRow) splitRow.style.display = '';
+  } else {
+    // Alerts / Info — full-height list, no map at all (Map tab already covers that view)
+    if (mapEl) { mapEl.style.display = 'none'; mapEl.classList.remove('nm-map-expanded'); }
+    if (bodyEl) bodyEl.style.display = '';
+    if (splitRow) splitRow.style.display = 'none';
   }
 
   if (tab === 'alerts') nearMeRenderAlertsTab();
