@@ -102,6 +102,7 @@ function nearMeRequestLocation() {
       NEARME_STATE.locStatus = 'granted';
       nearMeUpdateStatusLine();
       nearMeComputeHazards();
+      nearMeFitMapToRadius();
     },
     function () {
       NEARME_STATE.locStatus = 'denied';
@@ -609,6 +610,18 @@ function nearMeSetRadius(km) {
   NEARME_STATE.radiusKm = km;
   nearMeRenderRadiusPills();
   if (NEARME_STATE.locStatus === 'granted') nearMeComputeHazards();
+  nearMeFitMapToRadius();
+}
+
+// Recentres and zooms the map to comfortably fit the current radius chip —
+// called when a chip is clicked, and once after the first location fix.
+function nearMeFitMapToRadius() {
+  if (!NEARME_STATE.map || NEARME_STATE.userLat === null) return;
+  var center = L.latLng(NEARME_STATE.userLat, NEARME_STATE.userLng);
+  // toBounds() takes a size in metres for the bounding box side length —
+  // sized a bit beyond the radius itself so the circle isn't touching the edge.
+  var bounds = center.toBounds(NEARME_STATE.radiusKm * 1000 * 2.3);
+  NEARME_STATE.map.flyToBounds(bounds, { padding: [20, 20], duration: 0.5 });
 }
 
 function nearMeCardHtml(h) {
