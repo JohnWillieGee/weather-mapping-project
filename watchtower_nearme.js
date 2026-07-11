@@ -346,6 +346,7 @@ function nearMeFlattenHazards(userLat, userLng, radiusKm) {
           distanceKm: dist,
           lat: inc.lat,
           lng: inc.lng,
+          url: (typeof INC_FEEDS !== 'undefined' && INC_FEEDS[state] && INC_FEEDS[state].sourceUrl) || null,
           icon: '\uD83D\uDD25',
           color: '#ff6b35'
         });
@@ -387,6 +388,7 @@ function nearMeFlattenHazards(userLat, userLng, radiusKm) {
       if (radiusKm !== null && dist !== null && dist > radiusKm) return;
 
       var typeInfo = (typeof BOM_FTP_PRODUCTS === 'object' && BOM_FTP_PRODUCTS[cat]) ? BOM_FTP_PRODUCTS[cat] : null;
+      var warnUrl = w.direct_url || (typeof bomWarningUrl === 'function' ? bomWarningUrl(w.pid, w.type, w.link) : (w.link || null));
       out.push({
         kind: 'warning',
         category: cat,
@@ -398,6 +400,7 @@ function nearMeFlattenHazards(userLat, userLng, radiusKm) {
         lat: wLat,
         lng: wLng,
         polys: matchedPolys.length ? matchedPolys.map(function (f) { return f.geometry; }) : null,
+        url: warnUrl,
         icon: typeInfo ? typeInfo.icon : '\u26A0\uFE0F',
         color: typeInfo ? typeInfo.color : '#f0a500'
       });
@@ -456,6 +459,7 @@ function nearMeFlattenHazards(userLat, userLng, radiusKm) {
           lat: anchor.lat,
           lng: anchor.lng,
           polys: matchedFeats.map(function (f) { return f.geometry; }),
+          url: 'https://www.bom.gov.au/australia/warnings/',
           icon: '\uD83C\uDF0A',
           color: col
         });
@@ -479,6 +483,7 @@ function nearMeFlattenHazards(userLat, userLng, radiusKm) {
                     fd.indexOf('very high') !== -1 ? 2 : 0;
       if (fdrRank === 0) return; // below Very High — not flagged here
       if (filters.severities.indexOf(fdrRank) === -1) return;
+      var fdrState = (feat.properties.state || '').toLowerCase();
       out.push({
         kind: 'fdr',
         category: 'fdr',
@@ -490,6 +495,7 @@ function nearMeFlattenHazards(userLat, userLng, radiusKm) {
         lat: userLat,
         lng: userLng,
         polys: [feat.geometry],
+        url: (typeof INC_FEEDS !== 'undefined' && INC_FEEDS[fdrState] && INC_FEEDS[fdrState].sourceUrl) || 'https://www.bom.gov.au/australia/warnings/',
         icon: '\uD83D\uDD25',
         color: fdrRank >= 4 ? '#4a148c' : (fdrRank >= 3 ? '#b71c1c' : '#d32f2f')
       });
@@ -649,8 +655,10 @@ function nearMeFitMapToRadius() {
 function nearMeCardHtml(h) {
   var distStr = h.isInside ? 'You are here' : ((h.distanceKm !== null) ? nearMeRound1(h.distanceKm) + ' km' : '');
   var isSevere = h.severityRank >= 4;
+  var tag = h.url ? 'a' : 'div';
+  var openAttrs = h.url ? ' href="' + nearMeEsc(h.url) + '" target="_blank" rel="noopener"' : '';
   return (
-    '<div class="nm-card">' +
+    '<' + tag + ' class="nm-card' + (h.url ? ' nm-card-link' : '') + '"' + openAttrs + '>' +
       '<div class="nm-card-icon ' + (isSevere ? 'nm-icon-danger' : 'nm-icon-warning') + '">' + h.icon + '</div>' +
       '<div class="nm-card-body">' +
         '<div class="nm-card-top">' +
@@ -659,7 +667,8 @@ function nearMeCardHtml(h) {
         '</div>' +
         '<div class="nm-card-sub">' + nearMeEsc(h.sub) + '</div>' +
       '</div>' +
-    '</div>'
+      (h.url ? '<div class="nm-card-arrow">\u203A</div>' : '') +
+    '</' + tag + '>'
   );
 }
 
@@ -674,6 +683,54 @@ function nearMeRenderCards() {
   listEl.innerHTML = n === 0
     ? '<div class="nm-empty">Nothing to report in this radius right now.</div>'
     : NEARME_STATE.hazards.map(nearMeCardHtml).join('');
+
+  nearMeRenderSummary();
+}
+
+// Plain-language one-liner at the top of the Near Me tab — the single
+// "am I actually at risk" takeaway, before the person reads any cards.
+function nearMeCategoryPhrase(h) {
+  if (h.kind === 'fdr') return (h.title.replace('Fire Danger Rating: ', '')) + ' fire danger';
+  if (h.kind === 'marine') return 'marine wind warning';
+  if (h.kind === 'incident') return 'an emergency incident';
+  var label = (h.category && typeof BOM_FTP_PRODUCTS === 'object' && BOM_FTP_PRODUCTS[h.category])
+    ? BOM_FTP_PRODUCTS[h.category].label.toLowerCase() : 'warning';
+  return label;
+}
+
+function nearMeRenderSummary() {
+  var el = document.getElementById('nearme-summary');
+  if (!el) return;
+
+  if (NEARME_STATE.locStatus !== 'granted') {
+    el.className = 'nm-sum-info';
+    el.textContent = NEARME_STATE.locStatus === 'requesting' || NEARME_STATE.locStatus === 'idle'
+      ? 'Finding your location to check nearby risk\u2026'
+      : 'Location unavailable \u2014 showing hazards nationally instead of based on where you are.';
+    return;
+  }
+
+  var list = NEARME_STATE.hazards;
+  if (!list.length) {
+    el.className = 'nm-sum-clear';
+    el.textContent = 'All clear \u2014 no active hazards within ' + NEARME_STATE.radiusKm + 'km of your location.';
+    return;
+  }
+
+  var insideOnes = list.filter(function (h) { return h.isInside; });
+  if (insideOnes.length) {
+    var maxSev = Math.max.apply(null, insideOnes.map(function (h) { return h.severityRank; }));
+    var phrases = insideOnes.map(nearMeCategoryPhrase);
+    var uniquePhrases = phrases.filter(function (v, i) { return phrases.indexOf(v) === i; });
+    el.className = maxSev >= 4 ? 'nm-sum-danger' : 'nm-sum-warning';
+    el.textContent = 'You are currently in an area affected by ' + uniquePhrases.join(' and ') + '.';
+    return;
+  }
+
+  var nearest = list[0]; // already distance-sorted
+  el.className = nearest.severityRank >= 4 ? 'nm-sum-danger' : (nearest.severityRank >= 3 ? 'nm-sum-warning' : 'nm-sum-info');
+  var distTxt = (nearest.distanceKm !== null) ? nearMeRound1(nearest.distanceKm) + 'km away' : 'nearby';
+  el.textContent = 'Nearest: ' + nearMeCategoryPhrase(nearest) + ', ' + distTxt + '.';
 }
 
 function nearMeRenderAlertsTab() {
@@ -794,6 +851,38 @@ function nearMeSetTab(tab) {
 }
 
 function nearMeRound1(n) { return Math.round(n * 10) / 10; }
+
+function nearMeShareLocation() {
+  if (NEARME_STATE.userLat === null) {
+    alert('Location not available yet \u2014 try again once it\u2019s found.');
+    return;
+  }
+  var latStr = NEARME_STATE.userLat.toFixed(6);
+  var lngStr = NEARME_STATE.userLng.toFixed(6);
+  var mapsUrl = 'https://www.google.com/maps?q=' + latStr + ',' + lngStr;
+
+  var nearest = NEARME_STATE.hazards[0];
+  var hazardLine;
+  if (!nearest) {
+    hazardLine = 'No active hazards nearby right now.';
+  } else if (nearest.isInside) {
+    hazardLine = 'I am currently in an area affected by ' + nearMeCategoryPhrase(nearest) + '.';
+  } else if (nearest.distanceKm !== null) {
+    hazardLine = 'Nearest hazard: ' + nearMeCategoryPhrase(nearest) + ', ' + nearMeRound1(nearest.distanceKm) + 'km away.';
+  } else {
+    hazardLine = 'Nearest hazard: ' + nearMeCategoryPhrase(nearest) + '.';
+  }
+
+  var text = 'My location: ' + latStr + ', ' + lngStr + '\n' + mapsUrl + '\n' + hazardLine;
+
+  if (navigator.share) {
+    navigator.share({ title: 'My location', text: text }).catch(function () { /* user cancelled — no-op */ });
+  } else {
+    // Fallback for browsers without the Web Share API — open the SMS
+    // composer with the message prefilled, which works on most mobiles.
+    window.location.href = 'sms:?body=' + encodeURIComponent(text);
+  }
+}
 
 function nearMeEsc(s) {
   return String(s || '').replace(/[&<>"']/g, function (c) {
