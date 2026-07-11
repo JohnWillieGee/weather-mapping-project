@@ -7,6 +7,8 @@ var NEARME_STATE = {
   radiusKm: 50,
   userLat: null,
   userLng: null,
+  accuracy: null,        // GPS accuracy in metres, for the Info tab emergency-services block
+  fixTime: null,         // Date object — when the current location fix was taken
   locStatus: 'idle',
   hazards: [],           // card list — filtered by radius + type/severity
   mapHazards: [],        // map markers — filtered by type/severity ONLY, no radius cutoff
@@ -99,15 +101,19 @@ function nearMeRequestLocation() {
     function (pos) {
       NEARME_STATE.userLat = pos.coords.latitude;
       NEARME_STATE.userLng = pos.coords.longitude;
+      NEARME_STATE.accuracy = pos.coords.accuracy;
+      NEARME_STATE.fixTime = new Date(pos.timestamp);
       NEARME_STATE.locStatus = 'granted';
       nearMeUpdateStatusLine();
       nearMeComputeHazards();
       nearMeFitMapToRadius();
+      if (NEARME_STATE.activeTab === 'info') nearMeRenderInfoTab();
     },
     function () {
       NEARME_STATE.locStatus = 'denied';
       nearMeUpdateStatusLine();
       nearMeFallbackNational();
+      if (NEARME_STATE.activeTab === 'info') nearMeRenderInfoTab();
     },
     { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 }
   );
@@ -688,11 +694,41 @@ function nearMeRenderAlertsTab() {
 function nearMeRenderInfoTab() {
   var el = document.getElementById('nearme-info-content');
   if (!el) return;
+
+  var locBlockHtml;
+  if (NEARME_STATE.locStatus === 'granted' && NEARME_STATE.userLat !== null) {
+    var latStr = NEARME_STATE.userLat.toFixed(6);
+    var lngStr = NEARME_STATE.userLng.toFixed(6);
+    var accStr = (typeof NEARME_STATE.accuracy === 'number') ? '\u00B1' + Math.round(NEARME_STATE.accuracy) + ' m' : 'unknown';
+    var timeStr = NEARME_STATE.fixTime ? NEARME_STATE.fixTime.toLocaleTimeString() : '';
+    var mapsUrl = 'https://www.google.com/maps?q=' + latStr + ',' + lngStr;
+
+    locBlockHtml =
+      '<div class="nm-info-block">' +
+        '<div class="nm-info-title">Your location \u2014 for emergency services</div>' +
+        '<div class="nm-loc-coords">' + latStr + ', ' + lngStr + '</div>' +
+        '<p style="margin-top:2px">Accuracy: ' + accStr + (timeStr ? ' &middot; fixed at ' + nearMeEsc(timeStr) : '') + '</p>' +
+        '<div class="nm-loc-actions">' +
+          '<button class="nm-loc-btn" onclick="nearMeCopyCoords()">Copy coordinates</button>' +
+          '<a class="nm-loc-btn" href="' + mapsUrl + '" target="_blank" rel="noopener">Open in Maps</a>' +
+        '</div>' +
+        '<p id="nearme-copy-feedback" style="margin-top:6px;min-height:14px"></p>' +
+        '<p style="margin-top:4px;color:var(--text3)">If you call 000, read out these coordinates \u2014 emergency services can locate you directly from them, which is often faster and more precise than a street address.</p>' +
+      '</div>';
+  } else {
+    locBlockHtml =
+      '<div class="nm-info-block">' +
+        '<div class="nm-info-title">Your location \u2014 for emergency services</div>' +
+        '<p>Not available yet \u2014 location hasn\u2019t been found (see status below).</p>' +
+      '</div>';
+  }
+
   el.innerHTML =
     '<div class="nm-info-block">' +
       '<div class="nm-info-title">About this view</div>' +
       '<p>Near Me shows hazards close to your current location, using the same live BOM warnings and state emergency incident feeds as the main WatchTower map.</p>' +
     '</div>' +
+    locBlockHtml +
     '<div class="nm-info-block">' +
       '<div class="nm-info-title">Location status</div>' +
       '<p id="nearme-info-status"></p>' +
@@ -706,6 +742,20 @@ function nearMeRenderInfoTab() {
   }[NEARME_STATE.locStatus] || '';
   var statusEl2 = document.getElementById('nearme-info-status');
   if (statusEl2) statusEl2.textContent = statusText;
+}
+
+function nearMeCopyCoords() {
+  if (NEARME_STATE.userLat === null) return;
+  var text = NEARME_STATE.userLat.toFixed(6) + ', ' + NEARME_STATE.userLng.toFixed(6);
+  var feedback = document.getElementById('nearme-copy-feedback');
+  function showResult(ok) {
+    if (feedback) feedback.textContent = ok ? 'Copied.' : 'Could not copy \u2014 coordinates shown above.';
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function () { showResult(true); }, function () { showResult(false); });
+  } else {
+    showResult(false);
+  }
 }
 
 function nearMeSetTab(tab) {
