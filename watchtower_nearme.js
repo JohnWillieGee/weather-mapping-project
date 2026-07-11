@@ -617,11 +617,28 @@ function nearMeSetRadius(km) {
 // called when a chip is clicked, and once after the first location fix.
 function nearMeFitMapToRadius() {
   if (!NEARME_STATE.map || NEARME_STATE.userLat === null) return;
-  var center = L.latLng(NEARME_STATE.userLat, NEARME_STATE.userLng);
-  // toBounds() takes a size in metres for the bounding box side length —
-  // sized a bit beyond the radius itself so the circle isn't touching the edge.
-  var bounds = center.toBounds(NEARME_STATE.radiusKm * 1000 * 2.3);
-  NEARME_STATE.map.flyToBounds(bounds, { padding: [20, 20], duration: 0.5 });
+  var lat = NEARME_STATE.userLat, lng = NEARME_STATE.userLng;
+  var radiusKm = NEARME_STATE.radiusKm;
+
+  // Manual degree offsets (km per degree lat ~111.32, adjusted for longitude
+  // convergence at this latitude) rather than relying on LatLng.toBounds(),
+  // so the math is transparent and not dependent on how that helper scales.
+  var margin = 1.25; // a bit beyond the radius so the dashed circle isn't flush against the edge
+  var latDelta = (radiusKm * margin) / 111.32;
+  var lngDelta = (radiusKm * margin) / (111.32 * Math.cos(lat * Math.PI / 180));
+  var bounds = L.latLngBounds(
+    [lat - latDelta, lng - lngDelta],
+    [lat + latDelta, lng + lngDelta]
+  );
+
+  // The map container's cached size can go stale after the flexible
+  // map/list split resize — refresh it before fitBounds computes the zoom,
+  // otherwise the fit can silently compute against outdated dimensions.
+  // Small delay to let any pending layout settle before measuring.
+  setTimeout(function () {
+    NEARME_STATE.map.invalidateSize();
+    NEARME_STATE.map.fitBounds(bounds, { padding: [20, 20], animate: true, duration: 0.5 });
+  }, 50);
 }
 
 function nearMeCardHtml(h) {
