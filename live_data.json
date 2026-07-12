@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-12T01:23:18.187128+00:00",
-  "last_checked_utc": "2026-07-12T01:23:18.187128+00:00",
+  "generated_utc": "2026-07-12T01:53:16.517712+00:00",
+  "last_checked_utc": "2026-07-12T01:53:16.517712+00:00",
   "warning_count": 20,
   "warnings": [
     {
@@ -140,21 +140,21 @@
     },
     {
       "pid": "",
-      "title": "11/22:40 CST Cancellation of Warning to Sheep Graziers\nfor Mount Lofty Ranges, Kangaroo Island, Mid North, Upper South East and Lower South East forecast districts",
-      "type": "other",
-      "state": "SA",
-      "link": "http://reg.bom.gov.au/sa/warnings/sheep.shtml",
-      "desc": "",
-      "issued": "Sat, 11 Jul 2026 13:10:07 GMT"
-    },
-    {
-      "pid": "",
       "title": "12/10:16 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Sun, 12 Jul 2026 00:16:03 GMT"
+    },
+    {
+      "pid": "IDT20613",
+      "title": "12/11:47 EST Initial Flood Warning for the Styx River",
+      "type": "flood",
+      "state": "TAS",
+      "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDT20613.html",
+      "desc": "",
+      "issued": "Sun, 12 Jul 2026 01:47:41 GMT"
     },
     {
       "pid": "IDT21037",
@@ -198,13 +198,13 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-07-12T11:20:04+00:00",
+        "updated": "2026-07-12T11:50:04+00:00",
         "description": "",
-        "lat": -43.210939999823474,
-        "lng": 147.25950000025088,
+        "lat": -42.95319999998962,
+        "lng": 147.34730000032593,
         "polys": [],
         "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=fa18e54d-fa09-4a24-b09d-a8c8a09b2e88"
+        "sourceUrl": "https://alert.tas.gov.au/?id=32abaa20-d45b-496b-a1cf-57afb66a6e23"
       }
     ],
     "wa": [
@@ -215,25 +215,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-12T01:10:58+00:00",
+        "updated": "2026-07-12T01:35:55+00:00",
         "description": "ALMA, SHIRE OF NORTHAMPTON",
         "lat": -28.3117,
         "lng": 114.6483,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-11T23:33:24+00:00",
-        "description": "WILLARE, SHIRE OF DERBY/WEST KIMBERLEY",
-        "lat": -17.6276,
-        "lng": 123.2964,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -483,7 +468,7 @@
     ],
     "act": []
   },
-  "incident_count": 19,
+  "incident_count": 18,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3464,9 +3449,9 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-07-12T00:10:59Z",
+      "issued_utc": "2026-07-12T01:51:14Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Sydney Enclosed Waters, Illawarra Coast, Batemans Coast, Eden Coast and Hunter Coast",
+        "Strong Wind Warning for Sunday for Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast, Eden Coast and Sydney Enclosed Waters",
         "Strong Wind Warning for Monday for Illawarra Coast, Batemans Coast and Hunter Coast"
       ],
       "hazards": [
@@ -3475,6 +3460,7 @@
           "severity": "STR",
           "zones": [
             "Hunter Coast: Seal Rocks to Broken Bay",
+            "Sydney Coast: Broken Bay to Port Hacking",
             "Sydney Enclosed Waters",
             "Illawarra Coast: Port Hacking to Ulladulla",
             "Batemans Coast: Ulladulla to Montague Island",
@@ -3482,12 +3468,13 @@
           ],
           "aac_codes": [
             "NSW_MW005",
+            "NSW_MW004",
             "NSW_MW009",
             "NSW_MW003",
             "NSW_MW002",
             "NSW_MW001"
           ],
-          "summary": "Sydney Enclosed Waters, Hunter Coast, Illawarra Coast, Batemans Coast and Eden Coast"
+          "summary": "Sydney Enclosed Waters, Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast"
         }
       ]
     },
