@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-12T04:53:20.819726+00:00",
-  "last_checked_utc": "2026-07-12T04:53:20.819726+00:00",
+  "generated_utc": "2026-07-12T05:23:20.555332+00:00",
+  "last_checked_utc": "2026-07-12T05:23:20.555332+00:00",
   "warning_count": 19,
   "warnings": [
     {
@@ -177,26 +177,28 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "POLEY HOUSE RD, LANITZA",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Sun, 12 Jul 2026 05:20:23 GMT",
+        "description": "POLEY HOUSE RD, LANITZA 2460",
+        "council": "Clarence Valley",
+        "lat": -29.82056427,
+        "lng": 153.001190186,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [
-      {
-        "title": "Flood - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Flood",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-07-12T14:50:04+00:00",
-        "description": "",
-        "lat": -42.95319999998962,
-        "lng": 147.34730000032593,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=32abaa20-d45b-496b-a1cf-57afb66a6e23"
-      },
       {
         "title": "Flood - Advice",
         "alertLevel": "Advice",
@@ -211,9 +213,54 @@
         "polys": [],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=e5ed0886-0f35-454b-8d78-7943328fa929"
+      },
+      {
+        "title": "Flood - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Flood",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-07-12T15:20:04+00:00",
+        "description": "",
+        "lat": -42.95319999998962,
+        "lng": 147.34730000032593,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=32abaa20-d45b-496b-a1cf-57afb66a6e23"
       }
     ],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-12T05:10:36+00:00",
+        "description": "WARMUN, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -16.8815,
+        "lng": 128.2781,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-12T04:59:49+00:00",
+        "description": "NORTH BEACH, CITY OF STIRLING",
+        "lat": -31.86,
+        "lng": 115.7608,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Fire",
         "alertLevel": "",
@@ -321,6 +368,36 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - DINAH BEACH RD, DARWIN CITY",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-12T05:11:23+00:00",
+        "description": "DINAH BEACH RD, DARWIN CITY",
+        "lat": -12.4543,
+        "lng": 130.8437,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - KARGARU INTERNAL -, TENNANT CREEK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-12T05:05:25+00:00",
+        "description": "KARGARU INTERNAL -, TENNANT CREEK",
+        "lat": -19.6586,
+        "lng": 134.1981,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - WUYAL RD, NHULUNBUY",
         "alertLevel": "Advice",
@@ -534,7 +611,7 @@
     ],
     "act": []
   },
-  "incident_count": 23,
+  "incident_count": 28,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
