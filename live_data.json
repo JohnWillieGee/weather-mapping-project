@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-11T23:53:17.864891+00:00",
-  "last_checked_utc": "2026-07-11T23:53:17.864891+00:00",
-  "warning_count": 20,
+  "generated_utc": "2026-07-12T00:23:15.705399+00:00",
+  "last_checked_utc": "2026-07-12T00:23:15.705399+00:00",
+  "warning_count": 21,
   "warnings": [
     {
       "pid": "",
-      "title": "12/05:57 EST Marine Wind Warning Summary for New South Wales",
+      "title": "12/10:11 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 11 Jul 2026 19:57:19 GMT"
+      "issued": "Sun, 12 Jul 2026 00:11:10 GMT"
     },
     {
       "pid": "IDN21033",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "12/04:10 EST Marine Wind Warning Summary for Victoria",
+      "title": "12/10:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 11 Jul 2026 18:10:20 GMT"
+      "issued": "Sun, 12 Jul 2026 00:00:23 GMT"
     },
     {
       "pid": "IDV21037",
@@ -140,12 +140,12 @@
     },
     {
       "pid": "",
-      "title": "12/03:40 CST Marine Wind Warning Summary for South Australia",
+      "title": "12/09:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sat, 11 Jul 2026 18:10:11 GMT"
+      "issued": "Sun, 12 Jul 2026 00:00:11 GMT"
     },
     {
       "pid": "",
@@ -158,12 +158,21 @@
     },
     {
       "pid": "",
-      "title": "12/04:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "12/10:16 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 11 Jul 2026 18:00:12 GMT"
+      "issued": "Sun, 12 Jul 2026 00:16:03 GMT"
+    },
+    {
+      "pid": "IDT21037",
+      "title": "12/10:17 EST \n                Severe Weather Warning\n            \nfor \n                King Island, Furneaux Islands and parts of Western and North West Coast Forecast Districts.",
+      "type": "severe_weather",
+      "state": "TAS",
+      "link": "http://reg.bom.gov.au/products/IDT21037.shtml",
+      "desc": "",
+      "issued": "Sun, 12 Jul 2026 00:17:32 GMT"
     },
     {
       "pid": "IDT21137",
@@ -198,7 +207,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-07-12T07:36:05+00:00",
+        "updated": "2026-07-12T10:18:05+00:00",
         "description": "",
         "lat": -43.210939999823474,
         "lng": 147.25950000025088,
@@ -316,16 +325,16 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - ROSS SMITH AV, PARAP",
+        "title": "Structure Fire - STUART HWY, KILGARIFF",
         "alertLevel": "Advice",
         "status": "active",
-        "type": "Grass Fire",
+        "type": "Structure Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-11T23:44:34+00:00",
-        "description": "ROSS SMITH AV, PARAP",
-        "lat": -12.4283,
-        "lng": 130.8415,
+        "updated": "2026-07-12T00:18:07+00:00",
+        "description": "STUART HWY, KILGARIFF",
+        "lat": -23.744,
+        "lng": 133.8709,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -3479,9 +3488,9 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-07-11T19:57:10Z",
+      "issued_utc": "2026-07-12T00:10:59Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast",
+        "Strong Wind Warning for Sunday for Sydney Enclosed Waters, Illawarra Coast, Batemans Coast, Eden Coast and Hunter Coast",
         "Strong Wind Warning for Monday for Illawarra Coast, Batemans Coast and Hunter Coast"
       ],
       "hazards": [
@@ -3490,29 +3499,29 @@
           "severity": "STR",
           "zones": [
             "Hunter Coast: Seal Rocks to Broken Bay",
-            "Sydney Coast: Broken Bay to Port Hacking",
+            "Sydney Enclosed Waters",
             "Illawarra Coast: Port Hacking to Ulladulla",
             "Batemans Coast: Ulladulla to Montague Island",
             "Eden Coast: Montague Island to Gabo Island"
           ],
           "aac_codes": [
             "NSW_MW005",
-            "NSW_MW004",
+            "NSW_MW009",
             "NSW_MW003",
             "NSW_MW002",
             "NSW_MW001"
           ],
-          "summary": "Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast"
+          "summary": "Sydney Enclosed Waters, Hunter Coast, Illawarra Coast, Batemans Coast and Eden Coast"
         }
       ]
     },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-07-11T18:10:00Z",
+      "issued_utc": "2026-07-12T00:00:00Z",
       "overview": [
-        "Gale Warning for Sunday for West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast",
-        "Strong Wind Warning for Sunday for Port Phillip and Western Port",
+        "Gale Warning for Sunday for Central Coast, Central Gippsland Coast and East Gippsland Coast",
+        "Strong Wind Warning for Sunday for West Coast and Western Port",
         "Gale Warning for Monday for West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast"
       ],
       "hazards": [
@@ -3520,55 +3529,41 @@
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
-            "West Coast: SA-VIC Border to Cape Otway",
             "Central Coast: Cape Otway to Wilsons Promontory",
             "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
             "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
           ],
           "aac_codes": [
-            "VIC_MW001",
             "VIC_MW002",
             "VIC_MW003",
             "VIC_MW004"
           ],
-          "summary": "West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast"
+          "summary": "Central Coast, Central Gippsland Coast and East Gippsland Coast"
         },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Port Phillip",
+            "West Coast: SA-VIC Border to Cape Otway",
             "Western Port"
           ],
           "aac_codes": [
-            "VIC_MW005",
+            "VIC_MW001",
             "VIC_MW006"
           ],
-          "summary": "Port Phillip and Western Port"
+          "summary": "Western Port and West Coast"
         }
       ]
     },
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-07-11T18:10:00Z",
+      "issued_utc": "2026-07-12T00:00:00Z",
       "overview": [
-        "Gale Warning for Sunday for Lower South East Coast",
-        "Strong Wind Warning for Sunday for Central Coast, South Central Coast, Investigator Strait and Upper South East Coast",
+        "Strong Wind Warning for Sunday for Central Coast, South Central Coast, Investigator Strait, Upper South East Coast and Lower South East Coast",
         "Strong Wind Warning for Monday for South Central Coast, Upper South East Coast and Lower South East Coast"
       ],
       "hazards": [
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
-          ],
-          "aac_codes": [
-            "SA_MW010"
-          ],
-          "summary": "Lower South East Coast"
-        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
@@ -3576,26 +3571,28 @@
             "Central Coast",
             "South Central Coast",
             "Investigator Strait",
-            "Upper South East Coast: Murray Mouth to Cape Jaffa"
+            "Upper South East Coast: Murray Mouth to Cape Jaffa",
+            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
           ],
           "aac_codes": [
             "SA_MW004",
             "SA_MW008",
             "SA_MW007",
-            "SA_MW009"
+            "SA_MW009",
+            "SA_MW010"
           ],
-          "summary": "Central Coast, South Central Coast, Investigator Strait and Upper South East Coast"
+          "summary": "Central Coast, South Central Coast, Investigator Strait, Upper South East Coast and Lower South East Coast"
         }
       ]
     },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-07-11T18:00:00Z",
+      "issued_utc": "2026-07-12T00:15:55Z",
       "overview": [
-        "Gale Warning for Sunday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, South East Coast, South West Coast and Central West Coast",
-        "Strong Wind Warning for Sunday for Upper East Coast, Lower East Coast, Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay and Channel",
-        "Gale Warning for Monday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast, South West Coast and Central West Coast"
+        "Gale Warning for Sunday for East of Flinders Island, South East Coast, South West Coast, Central West Coast, Far North West Coast, Banks Strait and Franklin Sound and Central North Coast",
+        "Strong Wind Warning for Sunday for Upper East Coast, Lower East Coast, Storm Bay, Channel, Derwent Estuary and Frederick Henry Bay and Norfolk Bay",
+        "Gale Warning for Monday for Central West Coast, Upper East Coast, Lower East Coast, South West Coast, Far North West Coast, South East Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island"
       ],
       "hazards": [
         {
