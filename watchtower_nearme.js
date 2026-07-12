@@ -156,6 +156,21 @@ function nearMeSeverityFromText(text) {
   return 2; // unclassified — default to a real warning level rather than burying it as "Other/routine"
 }
 
+// Incidents use a separate, stricter classifier: only the properly
+// normalised alertLevel field (Emergency Warning / Watch and Act / Advice)
+// indicates real urgency. Raw containment status text ("Being Controlled",
+// "Patrolled", "Under Control", "Going") describes progress, not risk, and
+// must never be scanned for these words — it defaults to routine instead.
+function nearMeIncidentSeverity(inc) {
+  var text = inc.alertLevel || '';
+  if (!text) return 1;
+  var t = text.toLowerCase();
+  if (t.indexOf('emergency') !== -1) return 4;
+  if (t.indexOf('watch') !== -1) return 3;
+  if (t.indexOf('advice') !== -1) return 2;
+  return 1; // 'Information' or any unrecognised alertLevel text — routine
+}
+
 function nearMeTypeList() {
   var list = [
     { key: 'incident', label: 'Fire & emergency incidents', icon: '\uD83D\uDD25', color: '#ff6b35' },
@@ -393,8 +408,7 @@ function nearMeFlattenHazards(userLat, userLng, radiusKm, filtersOverride) {
       (allIncidents[state] || []).forEach(function (inc) {
         if (typeof inc.lat !== 'number' || typeof inc.lng !== 'number' || (!inc.lat && !inc.lng)) return;
         if (filters.types.indexOf('incident') === -1) return;
-        var sevText = inc.alertLevel || inc.status || '';
-        var sevRank = nearMeSeverityFromText(sevText);
+        var sevRank = nearMeIncidentSeverity(inc);
         if (filters.severities.indexOf(sevRank) === -1) return;
         var dist = (userLat !== null) ? nearMeHaversine(userLat, userLng, inc.lat, inc.lng) : null;
         if (radiusKm !== null && dist !== null && dist > radiusKm) return;
