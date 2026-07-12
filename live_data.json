@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-12T03:23:16.241119+00:00",
-  "last_checked_utc": "2026-07-12T03:23:16.241119+00:00",
-  "warning_count": 20,
+  "generated_utc": "2026-07-12T03:53:17.791824+00:00",
+  "last_checked_utc": "2026-07-12T03:53:17.791824+00:00",
+  "warning_count": 19,
   "warnings": [
     {
       "pid": "",
@@ -122,15 +122,6 @@
     },
     {
       "pid": "",
-      "title": "09/10:13 EST Final Flood Warning for the Bulloo River",
-      "type": "flood",
-      "state": "QLD",
-      "link": "http://reg.bom.gov.au/qld/warnings/flood/bulloo-river.shtml",
-      "desc": "",
-      "issued": "Thu, 09 Jul 2026 00:13:39 GMT"
-    },
-    {
-      "pid": "",
       "title": "12/09:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
@@ -186,26 +177,28 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "ORARA WAY, KREMNOS",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Sun, 12 Jul 2026 03:48:23 GMT",
+        "description": "ORARA WAY, KREMNOS 2460",
+        "council": "Clarence Valley",
+        "lat": -30.0060234069999,
+        "lng": 152.982238769,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [
-      {
-        "title": "Flood - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Flood",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-07-12T13:20:04+00:00",
-        "description": "",
-        "lat": -42.95319999998962,
-        "lng": 147.34730000032593,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=32abaa20-d45b-496b-a1cf-57afb66a6e23"
-      },
       {
         "title": "Flood - Advice",
         "alertLevel": "Advice",
@@ -220,20 +213,35 @@
         "polys": [],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=e5ed0886-0f35-454b-8d78-7943328fa929"
+      },
+      {
+        "title": "Flood - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Flood",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-07-12T13:50:04+00:00",
+        "description": "",
+        "lat": -42.95319999998962,
+        "lng": 147.34730000032593,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=32abaa20-d45b-496b-a1cf-57afb66a6e23"
       }
     ],
     "wa": [
       {
-        "title": "Report of Smoke",
+        "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-12T03:13:41+00:00",
-        "description": "DARLINGTON, SHIRE OF MUNDARING",
-        "lat": -31.9303,
-        "lng": 116.0873,
+        "updated": "2026-07-12T03:39:21+00:00",
+        "description": "FORRESTFIELD, CITY OF KALAMUNDA",
+        "lat": -31.9936,
+        "lng": 116.0208,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -245,7 +253,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-12T03:09:25+00:00",
+        "updated": "2026-07-12T03:31:30+00:00",
         "description": "ANKETELL, CITY OF KWINANA",
         "lat": -32.2147,
         "lng": 115.859,
@@ -346,16 +354,61 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - MARTIN TCE, KATHERINE EAST",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-12T03:41:06+00:00",
+        "description": "MARTIN TCE, KATHERINE EAST",
+        "lat": -14.4673,
+        "lng": 132.2897,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - Unknown",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-12T03:14:34+00:00",
+        "updated": "2026-07-12T03:38:26+00:00",
         "description": "",
         "lat": -12.5053,
         "lng": 131.031,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Gunn Point Road, HOWARD SPRINGS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-07-12T03:30:00+00:00",
+        "description": "Gunn Point Road, HOWARD SPRINGS",
+        "lat": -12.4567,
+        "lng": 131.0854,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Stuart Highway, COOMALIE CREEK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-07-12T03:23:00+00:00",
+        "description": "Stuart Highway, COOMALIE CREEK",
+        "lat": -12.9732,
+        "lng": 131.1408,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -511,21 +564,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Bushfire - Stuart Highway, COOMALIE CREEK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-07-11T05:47:00+00:00",
-        "description": "Stuart Highway, COOMALIE CREEK",
-        "lat": -12.9732,
-        "lng": 131.1408,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Ringwood Rd, TORTILLA FLATS",
         "alertLevel": "Advice",
         "status": "active",
@@ -558,7 +596,7 @@
     ],
     "act": []
   },
-  "incident_count": 24,
+  "incident_count": 27,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
