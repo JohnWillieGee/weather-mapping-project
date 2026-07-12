@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-12T20:53:01.966696+00:00",
-  "last_checked_utc": "2026-07-12T20:53:01.966696+00:00",
+  "generated_utc": "2026-07-12T21:23:17.841611+00:00",
+  "last_checked_utc": "2026-07-12T21:23:17.841611+00:00",
   "warning_count": 19,
   "warnings": [
     {
@@ -131,12 +131,12 @@
     },
     {
       "pid": "",
-      "title": "13/05:30 EST Marine Wind Warning Summary for Tasmania",
+      "title": "13/06:53 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 12 Jul 2026 19:30:20 GMT"
+      "issued": "Sun, 12 Jul 2026 20:53:05 GMT"
     },
     {
       "pid": "IDT20613",
@@ -189,7 +189,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-07-13T06:50:04+00:00",
+        "updated": "2026-07-13T07:20:04+00:00",
         "description": "",
         "lat": -42.95319999998962,
         "lng": 147.34730000032593,
@@ -215,28 +215,13 @@
     ],
     "wa": [
       {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-12T20:37:38+00:00",
-        "description": "GOSNELLS, CITY OF GOSNELLS",
-        "lat": -32.0687,
-        "lng": 115.9846,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-12T20:13:36+00:00",
+        "updated": "2026-07-12T21:07:17+00:00",
         "description": "COOLOONGUP, CITY OF ROCKINGHAM",
         "lat": -32.2996,
         "lng": 115.7582,
@@ -489,7 +474,7 @@
     ],
     "act": []
   },
-  "incident_count": 20,
+  "incident_count": 19,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3560,11 +3545,11 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-07-12T19:30:11Z",
+      "issued_utc": "2026-07-12T20:52:58Z",
       "overview": [
         "Storm Force Wind Warning for Monday for South West Coast",
-        "Gale Warning for Monday for South East Coast, Central West Coast, Upper East Coast, Lower East Coast, Far North West Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island",
-        "Strong Wind Warning for Monday for Storm Bay, South West Lakes, Channel, Derwent Estuary, Central Plateau Lakes and Frederick Henry Bay and Norfolk Bay",
+        "Gale Warning for Monday for South West Lakes, Central West Coast, Upper East Coast, Lower East Coast, Far North West Coast, South East Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island",
+        "Strong Wind Warning for Monday for Channel, Derwent Estuary, Storm Bay, Central Plateau Lakes and Frederick Henry Bay and Norfolk Bay",
         "Gale Warning for Tuesday for South West Coast, Far North West Coast and South East Coast",
         "Strong Wind Warning for Tuesday for Central West Coast, Upper East Coast, Lower East Coast, East of Flinders Island, Banks Strait and Franklin Sound and Central North Coast"
       ],
@@ -3591,7 +3576,8 @@
             "Upper East Coast: St Helens Point to Wineglass Bay",
             "Lower East Coast: Wineglass Bay to Tasman Island",
             "South East Coast: Tasman Island to South East Cape",
-            "Central West Coast: Low Rocky Point to Sandy Cape"
+            "Central West Coast: Low Rocky Point to Sandy Cape",
+            "South West Lakes"
           ],
           "aac_codes": [
             "TAS_MW001",
@@ -3601,9 +3587,10 @@
             "TAS_MW004",
             "TAS_MW005",
             "TAS_MW006",
-            "TAS_MW008"
+            "TAS_MW008",
+            "TAS_MW015"
           ],
-          "summary": "Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast and Central West Coast"
+          "summary": "South West Lakes, Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast and Central West Coast"
         },
         {
           "level": "Strong Wind Warning",
@@ -3613,18 +3600,16 @@
             "Frederick Henry Bay and Norfolk Bays",
             "Storm Bay",
             "Channel",
-            "Central Plateau Lakes",
-            "South West Lakes"
+            "Central Plateau Lakes"
           ],
           "aac_codes": [
             "TAS_MW012",
             "TAS_MW013",
             "TAS_MW014",
             "TAS_MW011",
-            "TAS_MW010",
-            "TAS_MW015"
+            "TAS_MW010"
           ],
-          "summary": "Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel, Central Plateau Lakes and South West Lakes"
+          "summary": "Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel and Central Plateau Lakes"
         }
       ]
     }
