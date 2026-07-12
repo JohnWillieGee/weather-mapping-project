@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-12T19:53:19.972192+00:00",
-  "last_checked_utc": "2026-07-12T19:53:19.972192+00:00",
+  "generated_utc": "2026-07-12T20:22:23.304438+00:00",
+  "last_checked_utc": "2026-07-12T20:22:23.304438+00:00",
   "warning_count": 19,
   "warnings": [
     {
@@ -175,9 +175,28 @@
       "issued": "Sun, 12 Jul 2026 18:27:32 GMT"
     }
   ],
-  "fetch_errors": {},
+  "fetch_errors": {
+    "radar": "fetch failed"
+  },
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Giinagay Way, Nambucca Heads",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 12 Jul 2026 20:20:23 GMT",
+        "description": "Giinagay Way, Nambucca Heads, NSW 2448",
+        "council": "Nambucca Valley",
+        "lat": -30.66603,
+        "lng": 152.981906,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -189,7 +208,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-07-13T05:50:04+00:00",
+        "updated": "2026-07-13T06:20:04+00:00",
         "description": "",
         "lat": -42.95319999998962,
         "lng": 147.34730000032593,
@@ -204,7 +223,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-07-13T05:08:04+00:00",
+        "updated": "2026-07-13T06:18:04+00:00",
         "description": "",
         "lat": -42.81344000006844,
         "lng": 146.65426000032028,
@@ -214,6 +233,21 @@
       }
     ],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-12T20:05:51+00:00",
+        "description": "COOLOONGUP, CITY OF ROCKINGHAM",
+        "lat": -32.2996,
+        "lng": 115.7582,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -459,7 +493,7 @@
     ],
     "act": []
   },
-  "incident_count": 18,
+  "incident_count": 20,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3436,167 +3470,5 @@
       "4": "2026-07-16T00:00:00+10:00"
     }
   },
-  "marine_warnings": {
-    "NSW": {
-      "state": "NSW",
-      "product": "IDN20400",
-      "issued_utc": "2026-07-12T18:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Monday for Illawarra Coast and Batemans Coast",
-        "Gale Warning for Tuesday for Eden Coast",
-        "Strong Wind Warning for Tuesday for Batemans Coast"
-      ],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Illawarra Coast: Port Hacking to Ulladulla",
-            "Batemans Coast: Ulladulla to Montague Island"
-          ],
-          "aac_codes": [
-            "NSW_MW003",
-            "NSW_MW002"
-          ],
-          "summary": "Illawarra Coast and Batemans Coast"
-        }
-      ]
-    },
-    "VIC": {
-      "state": "VIC",
-      "product": "IDV20600",
-      "issued_utc": "2026-07-12T18:10:00Z",
-      "overview": [
-        "Gale Warning for Monday for West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast",
-        "Gale Warning for Tuesday for East Gippsland Coast",
-        "Strong Wind Warning for Tuesday for West Coast, Central Coast, Central Gippsland Coast and Western Port"
-      ],
-      "hazards": [
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "West Coast: SA-VIC Border to Cape Otway",
-            "Central Coast: Cape Otway to Wilsons Promontory",
-            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
-            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
-          ],
-          "aac_codes": [
-            "VIC_MW001",
-            "VIC_MW002",
-            "VIC_MW003",
-            "VIC_MW004"
-          ],
-          "summary": "West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast"
-        }
-      ]
-    },
-    "SA": {
-      "state": "SA",
-      "product": "IDS20201",
-      "issued_utc": "2026-07-12T18:10:00Z",
-      "overview": [
-        "Gale Warning for Monday for Lower South East Coast",
-        "Strong Wind Warning for Monday for South Central Coast and Upper South East Coast",
-        "Strong Wind Warning for Tuesday for Lower South East Coast"
-      ],
-      "hazards": [
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
-          ],
-          "aac_codes": [
-            "SA_MW010"
-          ],
-          "summary": "Lower South East Coast"
-        },
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "South Central Coast",
-            "Upper South East Coast: Murray Mouth to Cape Jaffa"
-          ],
-          "aac_codes": [
-            "SA_MW008",
-            "SA_MW009"
-          ],
-          "summary": "South Central Coast and Upper South East Coast"
-        }
-      ]
-    },
-    "TAS": {
-      "state": "TAS",
-      "product": "IDT20100",
-      "issued_utc": "2026-07-12T19:30:11Z",
-      "overview": [
-        "Storm Force Wind Warning for Monday for South West Coast",
-        "Gale Warning for Monday for South East Coast, Central West Coast, Upper East Coast, Lower East Coast, Far North West Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island",
-        "Strong Wind Warning for Monday for Storm Bay, South West Lakes, Channel, Derwent Estuary, Central Plateau Lakes and Frederick Henry Bay and Norfolk Bay",
-        "Gale Warning for Tuesday for South West Coast, Far North West Coast and South East Coast",
-        "Strong Wind Warning for Tuesday for Central West Coast, Upper East Coast, Lower East Coast, East of Flinders Island, Banks Strait and Franklin Sound and Central North Coast"
-      ],
-      "hazards": [
-        {
-          "level": "Storm Force Warning",
-          "severity": "STO",
-          "zones": [
-            "South West Coast: South East Cape to Low Rocky Point"
-          ],
-          "aac_codes": [
-            "TAS_MW007"
-          ],
-          "summary": "South West Coast"
-        },
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "Far North West Coast: Sandy Cape to Stanley",
-            "Central North Coast: Stanley to Northern Tip of Flinders Island",
-            "Banks Strait and Franklin Sound",
-            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
-            "Upper East Coast: St Helens Point to Wineglass Bay",
-            "Lower East Coast: Wineglass Bay to Tasman Island",
-            "South East Coast: Tasman Island to South East Cape",
-            "Central West Coast: Low Rocky Point to Sandy Cape"
-          ],
-          "aac_codes": [
-            "TAS_MW001",
-            "TAS_MW002",
-            "TAS_MW009",
-            "TAS_MW003",
-            "TAS_MW004",
-            "TAS_MW005",
-            "TAS_MW006",
-            "TAS_MW008"
-          ],
-          "summary": "Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast and Central West Coast"
-        },
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Derwent Estuary",
-            "Frederick Henry Bay and Norfolk Bays",
-            "Storm Bay",
-            "Channel",
-            "Central Plateau Lakes",
-            "South West Lakes"
-          ],
-          "aac_codes": [
-            "TAS_MW012",
-            "TAS_MW013",
-            "TAS_MW014",
-            "TAS_MW011",
-            "TAS_MW010",
-            "TAS_MW015"
-          ],
-          "summary": "Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel, Central Plateau Lakes and South West Lakes"
-        }
-      ]
-    }
-  }
+  "marine_warnings": {}
 }
