@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-12T08:53:20.050607+00:00",
-  "last_checked_utc": "2026-07-12T08:53:20.050607+00:00",
+  "generated_utc": "2026-07-12T09:23:19.685506+00:00",
+  "last_checked_utc": "2026-07-12T09:23:19.685506+00:00",
   "warning_count": 19,
   "warnings": [
     {
@@ -177,28 +177,26 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Burfitt Pde, Glenbrook",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Sun, 12 Jul 2026 08:48:23 GMT",
-        "description": "Burfitt Pde, Glenbrook, NSW 2773",
-        "council": "Blue Mountains",
-        "lat": -33.769552,
-        "lng": 150.622944,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [
+      {
+        "title": "Flood - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Flood",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-07-12T19:20:04+00:00",
+        "description": "",
+        "lat": -42.95319999998962,
+        "lng": 147.34730000032593,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=32abaa20-d45b-496b-a1cf-57afb66a6e23"
+      },
       {
         "title": "Flood - Advice",
         "alertLevel": "Advice",
@@ -213,21 +211,6 @@
         "polys": [],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=e5ed0886-0f35-454b-8d78-7943328fa929"
-      },
-      {
-        "title": "Flood - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Flood",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-07-12T18:50:04+00:00",
-        "description": "",
-        "lat": -42.95319999998962,
-        "lng": 147.34730000032593,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=32abaa20-d45b-496b-a1cf-57afb66a6e23"
       }
     ],
     "wa": [
@@ -352,21 +335,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-12T03:07:16+00:00",
-        "description": "ALMA, SHIRE OF NORTHAMPTON",
-        "lat": -28.3117,
-        "lng": 114.6483,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
@@ -395,20 +363,50 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-10T10:16:00+00:00",
+        "description": "GNANGARA, CITY OF WANNEROO",
+        "lat": -31.7659,
+        "lng": 115.8791,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
       }
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - NEMARLUK DR, LUDMILLA",
+        "title": "Grass and Scrub Fire - AYAWARRA CR, ALYANGULA",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-12T08:43:37+00:00",
-        "description": "NEMARLUK DR, LUDMILLA",
-        "lat": -12.4186,
-        "lng": 130.8523,
+        "updated": "2026-07-12T09:07:13+00:00",
+        "description": "AYAWARRA CR, ALYANGULA",
+        "lat": -13.8524,
+        "lng": 136.4223,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - JENKINS RD, WEDDELL",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-12T08:56:00+00:00",
+        "description": "JENKINS RD, WEDDELL",
+        "lat": -12.5782,
+        "lng": 130.9656,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -429,21 +427,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Grass and Scrub Fire - AYAWARRA CR, ALYANGULA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-12T08:35:41+00:00",
-        "description": "AYAWARRA CR, ALYANGULA",
-        "lat": -13.8524,
-        "lng": 136.4223,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Nemarluk Drive, LUDMILLA",
         "alertLevel": "Advice",
         "status": "active",
@@ -454,21 +437,6 @@
         "description": "Nemarluk Drive, LUDMILLA",
         "lat": -12.4194,
         "lng": 130.8515,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - JENKINS RD, WEDDELL",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-12T08:15:03+00:00",
-        "description": "JENKINS RD, WEDDELL",
-        "lat": -12.5782,
-        "lng": 130.9656,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -581,7 +549,7 @@
     ],
     "act": []
   },
-  "incident_count": 26,
+  "incident_count": 24,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
