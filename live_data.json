@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-12T00:23:15.705399+00:00",
-  "last_checked_utc": "2026-07-12T00:23:15.705399+00:00",
-  "warning_count": 21,
+  "generated_utc": "2026-07-12T00:53:14.038145+00:00",
+  "last_checked_utc": "2026-07-12T00:53:14.038145+00:00",
+  "warning_count": 20,
   "warnings": [
     {
       "pid": "",
@@ -11,15 +11,6 @@
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Sun, 12 Jul 2026 00:11:10 GMT"
-    },
-    {
-      "pid": "IDN21033",
-      "title": "12/05:34 EST \n                Cancellation of Severe Thunderstorm Warning\n            \nfor \n                Hunter, Metropolitan, Illawarra, Central Tablelands and Southern Tablelands Forecast Districts.",
-      "type": "thunderstorm",
-      "state": "NSW",
-      "link": "http://reg.bom.gov.au/products/IDN21033.shtml",
-      "desc": "",
-      "issued": "Sat, 11 Jul 2026 19:34:42 GMT"
     },
     {
       "pid": "IDN21037",
@@ -195,7 +186,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Joshua St, Goulburn",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 12 Jul 2026 00:48:23 GMT",
+        "description": "Joshua St, Goulburn, NSW 2580",
+        "council": "Goulburn Mulwaree",
+        "lat": -34.742559,
+        "lng": 149.73125,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -207,7 +215,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-07-12T10:18:05+00:00",
+        "updated": "2026-07-12T10:34:04+00:00",
         "description": "",
         "lat": -43.210939999823474,
         "lng": 147.25950000025088,
@@ -243,21 +251,6 @@
         "description": "WATERBANK, SHIRE OF BROOME",
         "lat": -17.7561,
         "lng": 122.2807,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-11T08:59:30+00:00",
-        "description": "HALLS CREEK, SHIRE OF HALLS CREEK",
-        "lat": -18.2135,
-        "lng": 127.6537,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -325,16 +318,16 @@
     ],
     "nt": [
       {
-        "title": "Structure Fire - STUART HWY, KILGARIFF",
+        "title": "Grass and Scrub Fire - RIVERBANK DR, KATHERINE SOUTH",
         "alertLevel": "Advice",
         "status": "active",
-        "type": "Structure Fire",
+        "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-12T00:18:07+00:00",
-        "description": "STUART HWY, KILGARIFF",
-        "lat": -23.744,
-        "lng": 133.8709,
+        "updated": "2026-07-12T00:47:18+00:00",
+        "description": "RIVERBANK DR, KATHERINE SOUTH",
+        "lat": -14.4733,
+        "lng": 132.2547,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
