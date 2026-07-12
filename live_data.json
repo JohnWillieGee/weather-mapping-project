@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-12T12:53:20.909499+00:00",
-  "last_checked_utc": "2026-07-12T12:53:20.909499+00:00",
+  "generated_utc": "2026-07-12T13:23:19.170524+00:00",
+  "last_checked_utc": "2026-07-12T13:23:19.170524+00:00",
   "warning_count": 19,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "IDN21037",
-      "title": "12/16:16 EST \n                Severe Weather Warning\n            \nfor \n                parts of Snowy Mountains Forecast District.",
+      "title": "12/22:56 EST \n                Severe Weather Warning\n            \nfor \n                parts of Snowy Mountains Forecast District.",
       "type": "severe_weather",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/products/IDN21037.shtml",
       "desc": "",
-      "issued": "Sun, 12 Jul 2026 06:16:14 GMT"
+      "issued": "Sun, 12 Jul 2026 12:56:52 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "IDV21037",
-      "title": "12/16:30 EST \n                Severe Weather Warning\n            \nfor \n                parts of North East, East Gippsland and West and South Gippsland Forecast Districts.",
+      "title": "12/22:52 EST \n                Severe Weather Warning\n            \nfor \n                parts of North East, East Gippsland and West and South Gippsland Forecast Districts.",
       "type": "severe_weather",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/products/IDV21037.shtml",
       "desc": "",
-      "issued": "Sun, 12 Jul 2026 06:30:21 GMT"
+      "issued": "Sun, 12 Jul 2026 12:52:06 GMT"
     },
     {
       "pid": "IDV21137",
@@ -149,12 +149,12 @@
     },
     {
       "pid": "IDT21037",
-      "title": "12/16:57 EST \n                Severe Weather Warning\n            \nfor \n                King Island, Furneaux Islands and parts of Western, North East, North West Coast and Central North Forecast Districts.",
+      "title": "12/22:53 EST \n                Severe Weather Warning\n            \nfor \n                King Island, Furneaux Islands and parts of Western, North East, North West Coast and Central North Forecast Districts.",
       "type": "severe_weather",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/products/IDT21037.shtml",
       "desc": "",
-      "issued": "Sun, 12 Jul 2026 06:57:07 GMT"
+      "issued": "Sun, 12 Jul 2026 12:53:22 GMT"
     },
     {
       "pid": "IDT21137",
@@ -189,7 +189,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-07-12T22:50:04+00:00",
+        "updated": "2026-07-12T22:56:04+00:00",
         "description": "",
         "lat": -42.81344000006844,
         "lng": 146.65426000032028,
@@ -204,7 +204,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-07-12T22:50:04+00:00",
+        "updated": "2026-07-12T23:20:06+00:00",
         "description": "",
         "lat": -42.95319999998962,
         "lng": 147.34730000032593,
@@ -215,16 +215,31 @@
     ],
     "wa": [
       {
-        "title": "Fuel Leak",
+        "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
-        "type": "HazMat",
+        "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-12T12:29:05+00:00",
-        "description": "KEWDALE, CITY OF KALAMUNDA",
-        "lat": -31.9879,
-        "lng": 115.9846,
+        "updated": "2026-07-12T13:03:02+00:00",
+        "description": "LAKE ARGYLE, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.8973,
+        "lng": 128.9407,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-12T12:56:19+00:00",
+        "description": "MELALEUCA, CITY OF SWAN",
+        "lat": -31.7508,
+        "lng": 115.9005,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -240,21 +255,6 @@
         "description": "ANKETELL, CITY OF KWINANA",
         "lat": -32.2147,
         "lng": 115.859,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-12T10:36:31+00:00",
-        "description": "LAKE ARGYLE, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.8973,
-        "lng": 128.9407,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -351,6 +351,21 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - RAPID CREEK RD, RAPID CREEK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-12T13:14:42+00:00",
+        "description": "RAPID CREEK RD, RAPID CREEK",
+        "lat": -12.3845,
+        "lng": 130.8639,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Bushfire - Nemarluk Drive, LUDMILLA",
         "alertLevel": "Advice",
@@ -474,7 +489,7 @@
     ],
     "act": []
   },
-  "incident_count": 19,
+  "incident_count": 20,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
