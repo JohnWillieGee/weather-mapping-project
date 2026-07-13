@@ -664,12 +664,22 @@ function nearMeUpdateMap() {
     }
     // Small marker on top even when a polygon is drawn — gives a clean,
     // clickable anchor point regardless of how large the polygon is.
+    // Uses the same icon shown on the card, not a plain dot.
     if (h.kind !== 'fdr') {
-      L.circleMarker([h.lat, h.lng], {
-        radius: 6, color: '#000', weight: 1, fillColor: h.color || '#e0a000', fillOpacity: 0.85
-      }).bindPopup(popupHtml).addTo(NEARME_STATE.markersLayer);
+      L.marker([h.lat, h.lng], { icon: nearMeMarkerIcon(h) })
+        .bindPopup(popupHtml).addTo(NEARME_STATE.markersLayer);
     }
   });
+}
+
+// Small circular badge, matching the card icon/colour, used as the map marker.
+function nearMeMarkerIcon(h) {
+  var bg = h.color || '#e0a000';
+  var html = '<div style="width:26px;height:26px;border-radius:50%;background:' + bg +
+    ';border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,0.45);' +
+    'display:flex;align-items:center;justify-content:center;font-size:14px;line-height:1;">' +
+    h.icon + '</div>';
+  return L.divIcon({ html: html, className: 'nm-map-marker', iconSize: [26, 26], iconAnchor: [13, 13], popupAnchor: [0, -13] });
 }
 
 function nearMeUpdateStatusLine() {
