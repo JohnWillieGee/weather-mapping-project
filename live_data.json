@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-15T04:53:20.625647+00:00",
-  "last_checked_utc": "2026-07-15T04:53:20.625647+00:00",
+  "generated_utc": "2026-07-15T05:23:22.734982+00:00",
+  "last_checked_utc": "2026-07-15T05:23:22.734982+00:00",
   "warning_count": 18,
   "warnings": [
     {
@@ -95,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "15/12:31 EST Marine Wind Warning Summary for Queensland",
+      "title": "15/15:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 15 Jul 2026 02:31:50 GMT"
+      "issued": "Wed, 15 Jul 2026 05:00:14 GMT"
     },
     {
       "pid": "",
@@ -122,12 +122,12 @@
     },
     {
       "pid": "",
-      "title": "15/07:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "15/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 14 Jul 2026 23:01:12 GMT"
+      "issued": "Wed, 15 Jul 2026 05:01:13 GMT"
     },
     {
       "pid": "IDW39605",
@@ -158,12 +158,12 @@
     },
     {
       "pid": "",
-      "title": "15/08:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "15/14:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 14 Jul 2026 23:00:13 GMT"
+      "issued": "Wed, 15 Jul 2026 05:00:17 GMT"
     }
   ],
   "fetch_errors": {},
@@ -176,7 +176,7 @@
         "type": "Bush Fire",
         "size": "186 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 15 Jul 2026 04:48:23 GMT",
+        "updated": "Wed, 15 Jul 2026 05:20:23 GMT",
         "description": "CLEARVIEW RD, COUTTS CROSSING NSW 2460",
         "council": "Clarence Valley",
         "lat": -29.884076391,
@@ -1027,6 +1027,36 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - GIRRAWEEN RD, GIRRAWEEN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-15T05:19:49+00:00",
+        "description": "GIRRAWEEN RD, GIRRAWEEN",
+        "lat": -12.5287,
+        "lng": 131.1148,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - LAUNCESTON RD, DUNDEE BEACH",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-15T05:00:10+00:00",
+        "description": "LAUNCESTON RD, DUNDEE BEACH",
+        "lat": -12.7452,
+        "lng": 130.4072,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - LAGOON RD, KNUCKEY LAGOON",
         "alertLevel": "Advice",
         "status": "active",
@@ -1284,7 +1314,7 @@
     ],
     "act": []
   },
-  "incident_count": 28,
+  "incident_count": 30,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4265,17 +4295,16 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-15T02:31:31Z",
+      "issued_utc": "2026-07-15T05:00:00Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for Capricornia Coast, K'gari Coast, Sunshine Coast Waters, Moreton Bay, Gold Coast Waters, Hervey Bay, South East Gulf of Carpentaria, Cooktown Coast, Cairns Coast and Peninsula Coast",
-        "Strong Wind Warning for Thursday for Capricornia Coast, Mackay Coast, Townsville Coast, Peninsula Coast, Cooktown Coast, Moreton Bay, Sunshine Coast Waters, Gold Coast Waters, Cairns Coast and K'gari Coast"
+        "Strong Wind Warning for Wednesday for Peninsula Coast, Cooktown Coast, Cairns Coast, Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters",
+        "Strong Wind Warning for Thursday for South East Gulf of Carpentaria, Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast, Mackay Coast, Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "South East Gulf of Carpentaria: QLD-NT Border to Cape Keerweer",
             "Peninsula Coast: Sharp Point to Cape Melville",
             "Cooktown Coast: Cape Melville to Cape Tribulation",
             "Cairns Coast: Cape Tribulation to Cardwell",
@@ -4287,7 +4316,6 @@
             "Gold Coast Waters: Cape Moreton to Point Danger"
           ],
           "aac_codes": [
-            "QLD_MW001",
             "QLD_MW004",
             "QLD_MW005",
             "QLD_MW006",
@@ -4298,7 +4326,7 @@
             "QLD_MW013",
             "QLD_MW014"
           ],
-          "summary": "South East Gulf of Carpentaria, Peninsula Coast, Cooktown Coast, Cairns Coast, Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
+          "summary": "Peninsula Coast, Cooktown Coast, Cairns Coast, Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
         }
       ]
     },
@@ -4362,25 +4390,23 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-07-14T23:01:00Z",
+      "issued_utc": "2026-07-15T05:01:00Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for North Kimberley Coast and Leeuwin Coast",
+        "Strong Wind Warning for Wednesday for Leeuwin Coast",
         "Gale Warning for Thursday for Leeuwin Coast",
-        "Strong Wind Warning for Thursday for North Kimberley Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Albany Coast and Perth Local Waters"
+        "Strong Wind Warning for Thursday for Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Albany Coast and Perth Local Waters"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "North Kimberley Coast: WA-NT Border to Kuri Bay",
             "Leeuwin Coast: Cape Naturaliste to Walpole"
           ],
           "aac_codes": [
-            "WA_MW001",
             "WA_MW011"
           ],
-          "summary": "North Kimberley Coast and Leeuwin Coast"
+          "summary": "Leeuwin Coast"
         }
       ]
     },
@@ -4425,28 +4451,6 @@
             "TAS_MW008"
           ],
           "summary": "Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island and Central West Coast"
-        }
-      ]
-    },
-    "NT": {
-      "state": "NT",
-      "product": "IDD20105",
-      "issued_utc": "2026-07-14T23:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Wednesday for Roper Groote Coast",
-        "Strong Wind Warning for Thursday for Roper Groote Coast"
-      ],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Roper Groote Coast: Cape Arnhem to QLD-NT Border"
-          ],
-          "aac_codes": [
-            "NT_MW006"
-          ],
-          "summary": "Roper Groote Coast"
         }
       ]
     }
