@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-17T17:53:16.530280+00:00",
-  "last_checked_utc": "2026-07-17T17:53:16.530280+00:00",
+  "generated_utc": "2026-07-17T18:23:18.315410+00:00",
+  "last_checked_utc": "2026-07-17T18:23:18.315410+00:00",
   "warning_count": 11,
   "warnings": [
     {
       "pid": "",
-      "title": "17/22:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "18/04:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 17 Jul 2026 12:00:08 GMT"
+      "issued": "Fri, 17 Jul 2026 18:00:12 GMT"
     },
     {
       "pid": "",
@@ -95,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "17/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "18/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 17 Jul 2026 12:00:12 GMT"
+      "issued": "Fri, 17 Jul 2026 18:00:11 GMT"
     }
   ],
   "fetch_errors": {},
@@ -111,21 +111,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-17T17:08:51+00:00",
-        "description": "CRAIGIE, CITY OF JOONDALUP",
-        "lat": -31.7801,
-        "lng": 115.7731,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -263,21 +248,6 @@
       }
     ],
     "nt": [
-      {
-        "title": "Grass and Scrub Fire - ESPLANADE -, DARWIN CITY",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-17T17:46:45+00:00",
-        "description": "ESPLANADE -, DARWIN CITY",
-        "lat": -12.4645,
-        "lng": 130.8398,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
       {
         "title": "Grass and Scrub Fire - MOULDEN",
         "alertLevel": "Advice",
@@ -437,7 +407,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-07-17T17:50:00+00:00",
+        "updated": "2026-07-17T18:20:00+00:00",
         "description": "BONYTHON",
         "lat": -35.4253,
         "lng": 149.0772,
@@ -452,7 +422,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "Fire - Ambulance",
-        "updated": "2026-07-17T17:47:35+00:00",
+        "updated": "2026-07-17T18:19:55+00:00",
         "description": "BONYTHON",
         "lat": -35.4253,
         "lng": 149.0772,
@@ -462,7 +432,7 @@
       }
     ]
   },
-  "incident_count": 23,
+  "incident_count": 21,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3486,16 +3456,17 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-07-17T12:00:00Z",
+      "issued_utc": "2026-07-17T18:00:00Z",
       "overview": [
-        "Strong Wind Warning for Friday for Byron Coast",
         "Gale Warning for Saturday for Byron Coast",
-        "Strong Wind Warning for Saturday for Coffs Coast and Macquarie Coast"
+        "Strong Wind Warning for Saturday for Coffs Coast and Macquarie Coast",
+        "Gale Warning for Sunday for Byron Coast",
+        "Strong Wind Warning for Sunday for Coffs Coast and Macquarie Coast"
       ],
       "hazards": [
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "Gale Warning",
+          "severity": "GALE",
           "zones": [
             "Byron Coast: Point Danger to Wooli"
           ],
@@ -3503,6 +3474,19 @@
             "NSW_MW008"
           ],
           "summary": "Byron Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Coffs Coast: Wooli to Smoky Cape",
+            "Macquarie Coast: Smoky Cape to Seal Rocks"
+          ],
+          "aac_codes": [
+            "NSW_MW007",
+            "NSW_MW006"
+          ],
+          "summary": "Coffs Coast and Macquarie Coast"
         }
       ]
     },
@@ -3550,34 +3534,25 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-07-17T12:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Friday for East of Flinders Island, South East Coast, South West Coast, Central West Coast, Derwent Estuary, Storm Bay and Channel",
-        "Strong Wind Warning for Saturday for East of Flinders Island, South East Coast, South West Coast, Central West Coast, Derwent Estuary, Storm Bay and Channel"
-      ],
+      "issued_utc": "2026-07-17T18:00:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
             "South East Coast: Tasman Island to South East Cape",
             "South West Coast: South East Cape to Low Rocky Point",
             "Central West Coast: Low Rocky Point to Sandy Cape",
-            "Derwent Estuary",
-            "Storm Bay",
             "Channel"
           ],
           "aac_codes": [
-            "TAS_MW003",
             "TAS_MW006",
             "TAS_MW007",
             "TAS_MW008",
-            "TAS_MW012",
-            "TAS_MW014",
             "TAS_MW011"
           ],
-          "summary": "Derwent Estuary, Storm Bay, Channel, East of Flinders Island, South East Coast, South West Coast and Central West Coast"
+          "summary": "Channel, South East Coast, South West Coast and Central West Coast"
         }
       ]
     }
