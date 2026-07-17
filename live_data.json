@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-17T22:53:22.460178+00:00",
-  "last_checked_utc": "2026-07-17T22:53:22.460178+00:00",
+  "generated_utc": "2026-07-17T23:23:18.431467+00:00",
+  "last_checked_utc": "2026-07-17T23:23:18.431467+00:00",
   "warning_count": 11,
   "warnings": [
     {
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "18/03:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "18/09:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 17 Jul 2026 17:00:14 GMT"
+      "issued": "Fri, 17 Jul 2026 23:00:19 GMT"
     },
     {
       "pid": "IDQ21137",
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "18/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "18/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Fri, 17 Jul 2026 17:01:18 GMT"
+      "issued": "Fri, 17 Jul 2026 23:01:21 GMT"
     },
     {
       "pid": "IDW39605",
@@ -112,16 +112,16 @@
     "tas": [],
     "wa": [
       {
-        "title": "Fire",
+        "title": "Earthquake",
         "alertLevel": "",
         "status": "active",
-        "type": "Bush Fire",
+        "type": "Earthquake",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-17T22:13:20+00:00",
-        "description": "KARNUP, CITY OF ROCKINGHAM",
-        "lat": -32.4132,
-        "lng": 115.7949,
+        "updated": "2026-07-17T22:34:20+00:00",
+        "description": "",
+        "lat": -35.8827,
+        "lng": 123.3838,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -263,6 +263,21 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - Unknown",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-17T23:14:22+00:00",
+        "description": "",
+        "lat": -12.4647,
+        "lng": 130.839,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Bushfire - Chibnall Rd, ACACIA HILLS",
         "alertLevel": "Advice",
@@ -416,7 +431,7 @@
     ],
     "act": []
   },
-  "incident_count": 20,
+  "incident_count": 21,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3397,10 +3412,10 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-17T17:00:00Z",
+      "issued_utc": "2026-07-17T23:00:00Z",
       "overview": [
-        "Gale Warning for Saturday for Sunshine Coast Waters and Gold Coast Waters",
-        "Strong Wind Warning for Saturday for Cooktown Coast, Capricornia Coast, K'gari Coast and Moreton Bay",
+        "Gale Warning for Saturday for K'gari Coast, Sunshine Coast Waters and Gold Coast Waters",
+        "Strong Wind Warning for Saturday for Capricornia Coast and Moreton Bay",
         "Gale Warning for Sunday for Gold Coast Waters",
         "Strong Wind Warning for Sunday for Capricornia Coast, K'gari Coast, Sunshine Coast Waters and Moreton Bay"
       ],
@@ -3409,31 +3424,29 @@
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
+            "K'gari Coast: Sandy Cape to Double Island Point",
             "Sunshine Coast Waters: Double Island Point to Cape Moreton",
             "Gold Coast Waters: Cape Moreton to Point Danger"
           ],
           "aac_codes": [
+            "QLD_MW011",
             "QLD_MW012",
             "QLD_MW014"
           ],
-          "summary": "Sunshine Coast Waters and Gold Coast Waters"
+          "summary": "K'gari Coast, Sunshine Coast Waters and Gold Coast Waters"
         },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Cooktown Coast: Cape Melville to Cape Tribulation",
             "Capricornia Coast: St Lawrence to Burnett Heads",
-            "K'gari Coast: Sandy Cape to Double Island Point",
             "Moreton Bay"
           ],
           "aac_codes": [
-            "QLD_MW005",
             "QLD_MW009",
-            "QLD_MW011",
             "QLD_MW013"
           ],
-          "summary": "Cooktown Coast, Capricornia Coast, K'gari Coast and Moreton Bay"
+          "summary": "Capricornia Coast and Moreton Bay"
         }
       ]
     },
@@ -3477,7 +3490,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-07-17T17:01:00Z",
+      "issued_utc": "2026-07-17T23:01:00Z",
       "overview": [
         "Gale Warning for Saturday for Leeuwin Coast and Albany Coast",
         "Strong Wind Warning for Saturday for Perth Coast, Bunbury Geographe Coast, Esperance Coast and Perth Local Waters"
