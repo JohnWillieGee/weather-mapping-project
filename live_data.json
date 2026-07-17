@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-17T02:53:21.875399+00:00",
-  "last_checked_utc": "2026-07-17T02:53:21.875399+00:00",
+  "generated_utc": "2026-07-17T03:23:19.899017+00:00",
+  "last_checked_utc": "2026-07-17T03:23:19.899017+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -123,12 +123,44 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Adelaide St, Moree",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 17 Jul 2026 03:17:38 GMT",
+        "description": "Adelaide St, Moree, NSW 2400",
+        "council": "Moree Plains",
+        "lat": -29.477069,
+        "lng": 149.85056,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-17T02:47:06+00:00",
+        "description": "NILGEN, SHIRE OF GINGIN",
+        "lat": -30.8988,
+        "lng": 115.4721,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -185,21 +217,6 @@
         "description": "HALLS CREEK, SHIRE OF HALLS CREEK",
         "lat": -18.225,
         "lng": 127.6739,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-16T13:29:55+00:00",
-        "description": "NILGEN, SHIRE OF GINGIN",
-        "lat": -30.8988,
-        "lng": 115.4721,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -344,7 +361,7 @@
     ],
     "act": []
   },
-  "incident_count": 14,
+  "incident_count": 15,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
