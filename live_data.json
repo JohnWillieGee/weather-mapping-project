@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-17T08:23:16.717145+00:00",
-  "last_checked_utc": "2026-07-17T08:23:16.717145+00:00",
+  "generated_utc": "2026-07-17T08:53:15.812570+00:00",
+  "last_checked_utc": "2026-07-17T08:53:15.812570+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -123,12 +123,44 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "OLD GLEN INNES RD, BUCCARUMBI",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Fri, 17 Jul 2026 08:49:38 GMT",
+        "description": "OLD GLEN INNES RD, BUCCARUMBI 2460",
+        "council": "Clarence Valley",
+        "lat": -29.8484319999999,
+        "lng": 152.652864,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-17T08:18:47+00:00",
+        "description": "MILING, SHIRE OF MOORA",
+        "lat": -30.4882,
+        "lng": 116.3652,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - ROEBUCK, WATERBANK AND WILLARE",
         "alertLevel": "Advice",
@@ -185,21 +217,6 @@
         "description": "DRYSDALE RIVER, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -14.9369,
         "lng": 126.8054,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-17T04:52:16+00:00",
-        "description": "MILING, SHIRE OF MOORA",
-        "lat": -30.4882,
-        "lng": 116.3652,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -286,21 +303,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-16T07:16:13+00:00",
-        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.6464,
-        "lng": 128.7363,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-07-16T03:18:12+00:00",
         "description": "FERGUSON, SHIRE OF DARDANUP",
         "lat": -33.457,
@@ -311,21 +313,6 @@
       }
     ],
     "nt": [
-      {
-        "title": "Grass and Scrub Fire - VANDERLIN DR, KARAMA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-17T08:01:53+00:00",
-        "description": "VANDERLIN DR, KARAMA",
-        "lat": -12.4092,
-        "lng": 130.9232,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
       {
         "title": "Bushfire - Stuart Highway, BRAITLING",
         "alertLevel": "Advice",
@@ -425,7 +412,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "Fire",
-        "updated": "2026-07-17T07:36:47+00:00",
+        "updated": "2026-07-17T08:26:46+00:00",
         "description": "RED HILL",
         "lat": -35.3402,
         "lng": 149.1371,
@@ -435,7 +422,7 @@
       }
     ]
   },
-  "incident_count": 20,
+  "incident_count": 19,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
