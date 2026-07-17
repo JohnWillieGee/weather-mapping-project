@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-17T16:53:19.076495+00:00",
-  "last_checked_utc": "2026-07-17T16:53:19.076495+00:00",
+  "generated_utc": "2026-07-17T17:23:19.678607+00:00",
+  "last_checked_utc": "2026-07-17T17:23:19.678607+00:00",
   "warning_count": 12,
   "warnings": [
     {
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "17/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "18/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 17 Jul 2026 11:00:14 GMT"
+      "issued": "Fri, 17 Jul 2026 17:00:14 GMT"
     },
     {
       "pid": "IDQ21137",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "17/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "18/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Fri, 17 Jul 2026 11:01:18 GMT"
+      "issued": "Fri, 17 Jul 2026 17:01:18 GMT"
     },
     {
       "pid": "IDW39605",
@@ -120,6 +120,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-17T17:08:51+00:00",
+        "description": "CRAIGIE, CITY OF JOONDALUP",
+        "lat": -31.7801,
+        "lng": 115.7731,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -258,6 +273,36 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - MOULDEN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-17T17:10:01+00:00",
+        "description": "MOULDEN",
+        "lat": -12.5064,
+        "lng": 130.9693,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - ACACIA HILLS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-17T16:56:00+00:00",
+        "description": "ACACIA HILLS",
+        "lat": -12.8011,
+        "lng": 131.0988,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - RINGWOOD RD, TORTILLA FLATS",
         "alertLevel": "Advice",
         "status": "active",
@@ -380,7 +425,7 @@
     ],
     "act": []
   },
-  "incident_count": 17,
+  "incident_count": 20,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3361,31 +3406,43 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-17T11:00:00Z",
+      "issued_utc": "2026-07-17T17:00:00Z",
       "overview": [
-        "Strong Wind Warning for Friday for Cooktown Coast, Cairns Coast, K'gari Coast, Sunshine Coast Waters and Gold Coast Waters",
         "Gale Warning for Saturday for Sunshine Coast Waters and Gold Coast Waters",
-        "Strong Wind Warning for Saturday for Cooktown Coast, Capricornia Coast, K'gari Coast and Moreton Bay"
+        "Strong Wind Warning for Saturday for Cooktown Coast, Capricornia Coast, K'gari Coast and Moreton Bay",
+        "Gale Warning for Sunday for Gold Coast Waters",
+        "Strong Wind Warning for Sunday for Capricornia Coast, K'gari Coast, Sunshine Coast Waters and Moreton Bay"
       ],
       "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "Sunshine Coast Waters: Double Island Point to Cape Moreton",
+            "Gold Coast Waters: Cape Moreton to Point Danger"
+          ],
+          "aac_codes": [
+            "QLD_MW012",
+            "QLD_MW014"
+          ],
+          "summary": "Sunshine Coast Waters and Gold Coast Waters"
+        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
             "Cooktown Coast: Cape Melville to Cape Tribulation",
-            "Cairns Coast: Cape Tribulation to Cardwell",
+            "Capricornia Coast: St Lawrence to Burnett Heads",
             "K'gari Coast: Sandy Cape to Double Island Point",
-            "Sunshine Coast Waters: Double Island Point to Cape Moreton",
-            "Gold Coast Waters: Cape Moreton to Point Danger"
+            "Moreton Bay"
           ],
           "aac_codes": [
             "QLD_MW005",
-            "QLD_MW006",
+            "QLD_MW009",
             "QLD_MW011",
-            "QLD_MW012",
-            "QLD_MW014"
+            "QLD_MW013"
           ],
-          "summary": "Cooktown Coast, Cairns Coast, K'gari Coast, Sunshine Coast Waters and Gold Coast Waters"
+          "summary": "Cooktown Coast, Capricornia Coast, K'gari Coast and Moreton Bay"
         }
       ]
     },
@@ -3415,27 +3472,41 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-07-17T11:01:00Z",
+      "issued_utc": "2026-07-17T17:01:00Z",
       "overview": [
-        "Strong Wind Warning for Friday for Perth Coast, Bunbury Geographe Coast and Leeuwin Coast",
-        "Gale Warning for Saturday for Albany Coast and Leeuwin Coast",
-        "Strong Wind Warning for Saturday for Perth Local Waters, Bunbury Geographe Coast, Esperance Coast and Perth Coast"
+        "Gale Warning for Saturday for Leeuwin Coast and Albany Coast",
+        "Strong Wind Warning for Saturday for Perth Coast, Bunbury Geographe Coast, Esperance Coast and Perth Local Waters"
       ],
       "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay"
+          ],
+          "aac_codes": [
+            "WA_MW011",
+            "WA_MW012"
+          ],
+          "summary": "Leeuwin Coast and Albany Coast"
+        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
             "Perth Coast: Two Rocks to Dawesville",
             "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
-            "Leeuwin Coast: Cape Naturaliste to Walpole"
+            "Esperance Coast: Bremer Bay to Israelite Bay",
+            "Perth Local Waters"
           ],
           "aac_codes": [
             "WA_MW009",
             "WA_MW010",
-            "WA_MW011"
+            "WA_MW013",
+            "WA_MW015"
           ],
-          "summary": "Perth Coast, Bunbury Geographe Coast and Leeuwin Coast"
+          "summary": "Perth Local Waters, Perth Coast, Bunbury Geographe Coast and Esperance Coast"
         }
       ]
     },
