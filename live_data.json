@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-18T04:53:22.156244+00:00",
-  "last_checked_utc": "2026-07-18T04:53:22.156244+00:00",
+  "generated_utc": "2026-07-18T05:23:17.178393+00:00",
+  "last_checked_utc": "2026-07-18T05:23:17.178393+00:00",
   "warning_count": 11,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "18/11:01 EST Marine Wind Warning Summary for Queensland",
+      "title": "18/15:06 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 18 Jul 2026 01:01:00 GMT"
+      "issued": "Sat, 18 Jul 2026 05:06:12 GMT"
     },
     {
       "pid": "IDQ21137",
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "18/09:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "18/13:06 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sat, 18 Jul 2026 01:01:01 GMT"
+      "issued": "Sat, 18 Jul 2026 05:06:20 GMT"
     },
     {
       "pid": "IDW39605",
@@ -105,12 +105,59 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Macquarie Rd, Springwood",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sat, 18 Jul 2026 05:17:33 GMT",
+        "description": "Macquarie Rd, Springwood, NSW 2777",
+        "council": "Blue Mountains",
+        "lat": -33.7032019989999,
+        "lng": 150.575527999,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
-    "qld": [],
+    "qld": [
+      {
+        "title": "STAY INFORMED - Bullaburrah Creek Road and surrounding area (near Dimbulah) - fire as at 3:04pm Saturday, 18 July 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "Bullaburrah Creek Road and surrounding area (near Dimbulah)",
+        "lat": -17.1339915591747,
+        "lng": 144.98454018306097,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
+      }
+    ],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-18T05:06:36+00:00",
+        "description": "BRABHAM, CITY OF SWAN",
+        "lat": -31.8309,
+        "lng": 115.967,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -536,7 +583,7 @@
     ],
     "act": []
   },
-  "incident_count": 28,
+  "incident_count": 31,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3517,12 +3564,12 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-18T01:00:44Z",
+      "issued_utc": "2026-07-18T05:05:58Z",
       "overview": [
         "Gale Warning for Saturday for K'gari Coast, Sunshine Coast Waters and Gold Coast Waters",
         "Strong Wind Warning for Saturday for Capricornia Coast and Moreton Bay",
         "Gale Warning for Sunday for Gold Coast Waters",
-        "Strong Wind Warning for Sunday for Moreton Bay, Capricornia Coast, K'gari Coast and Sunshine Coast Waters"
+        "Strong Wind Warning for Sunday for Capricornia Coast, K'gari Coast, Sunshine Coast Waters and Moreton Bay"
       ],
       "hazards": [
         {
@@ -3595,41 +3642,23 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-07-18T01:00:46Z",
-      "overview": [
-        "Gale Warning for Saturday for Leeuwin Coast and Albany Coast",
-        "Strong Wind Warning for Saturday for Esperance Coast, Bunbury Geographe Coast, Perth Local Waters and Perth Coast"
-      ],
+      "issued_utc": "2026-07-18T05:06:10Z",
+      "overview": [],
       "hazards": [
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay"
-          ],
-          "aac_codes": [
-            "WA_MW011",
-            "WA_MW012"
-          ],
-          "summary": "Leeuwin Coast and Albany Coast"
-        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Perth Coast: Two Rocks to Dawesville",
-            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
-            "Esperance Coast: Bremer Bay to Israelite Bay",
-            "Perth Local Waters"
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay"
           ],
           "aac_codes": [
-            "WA_MW009",
-            "WA_MW010",
-            "WA_MW013",
-            "WA_MW015"
+            "WA_MW011",
+            "WA_MW012",
+            "WA_MW013"
           ],
-          "summary": "Perth Local Waters, Perth Coast, Bunbury Geographe Coast and Esperance Coast"
+          "summary": "Leeuwin Coast, Albany Coast and Esperance Coast"
         }
       ]
     },
