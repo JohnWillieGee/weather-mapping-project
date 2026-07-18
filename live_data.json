@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-18T01:23:17.825658+00:00",
-  "last_checked_utc": "2026-07-18T01:23:17.825658+00:00",
+  "generated_utc": "2026-07-18T01:53:23.006785+00:00",
+  "last_checked_utc": "2026-07-18T01:53:23.006785+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -96,27 +96,29 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Drive Inn Rd, Moree",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sat, 18 Jul 2026 01:49:33 GMT",
+        "description": "Drive Inn Rd, Moree, NSW 2400",
+        "council": "Moree Plains",
+        "lat": -29.4806129999999,
+        "lng": 149.865414,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Report of Smoke",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-18T01:00:39+00:00",
-        "description": "KARLKURLA, CITY OF KALGOORLIE-BOULDER",
-        "lat": -30.7765,
-        "lng": 121.4232,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Earthquake",
         "alertLevel": "",
@@ -255,28 +257,13 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - EEEE RD, LIVINGSTONE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-18T01:11:30+00:00",
-        "description": "EEEE RD, LIVINGSTONE",
-        "lat": -12.77,
-        "lng": 131.0829,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Chibnall Rd, ACACIA HILLS",
-        "alertLevel": "Advice",
+        "alertLevel": "Watch and Act",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "Bushfires NT",
-        "updated": "2026-07-17T21:30:00+00:00",
+        "updated": "2026-07-18T01:35:00+00:00",
         "description": "Chibnall Rd, ACACIA HILLS",
         "lat": -12.7771,
         "lng": 131.0897,
@@ -422,7 +409,7 @@
     ],
     "act": []
   },
-  "incident_count": 21,
+  "incident_count": 20,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
