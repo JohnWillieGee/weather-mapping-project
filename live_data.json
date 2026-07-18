@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-18T00:53:17.544897+00:00",
-  "last_checked_utc": "2026-07-18T00:53:17.544897+00:00",
+  "generated_utc": "2026-07-18T01:23:17.825658+00:00",
+  "last_checked_utc": "2026-07-18T01:23:17.825658+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "18/09:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "18/11:01 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 17 Jul 2026 23:00:19 GMT"
+      "issued": "Sat, 18 Jul 2026 01:01:00 GMT"
     },
     {
       "pid": "IDQ21137",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "18/07:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "18/09:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Fri, 17 Jul 2026 23:01:21 GMT"
+      "issued": "Sat, 18 Jul 2026 01:01:01 GMT"
     },
     {
       "pid": "IDW39605",
@@ -96,29 +96,27 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Drive In Rd, Moree",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 18 Jul 2026 00:49:33 GMT",
-        "description": "Drive In Rd, Moree, NSW 2400",
-        "council": "Moree Plains",
-        "lat": -29.4806129999999,
-        "lng": 149.865414,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Report of Smoke",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-18T01:00:39+00:00",
+        "description": "KARLKURLA, CITY OF KALGOORLIE-BOULDER",
+        "lat": -30.7765,
+        "lng": 121.4232,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Earthquake",
         "alertLevel": "",
@@ -256,6 +254,21 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - EEEE RD, LIVINGSTONE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-18T01:11:30+00:00",
+        "description": "EEEE RD, LIVINGSTONE",
+        "lat": -12.77,
+        "lng": 131.0829,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Bushfire - Chibnall Rd, ACACIA HILLS",
         "alertLevel": "Advice",
@@ -409,7 +422,7 @@
     ],
     "act": []
   },
-  "incident_count": 20,
+  "incident_count": 21,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3390,12 +3403,12 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-17T23:00:00Z",
+      "issued_utc": "2026-07-18T01:00:44Z",
       "overview": [
         "Gale Warning for Saturday for K'gari Coast, Sunshine Coast Waters and Gold Coast Waters",
         "Strong Wind Warning for Saturday for Capricornia Coast and Moreton Bay",
         "Gale Warning for Sunday for Gold Coast Waters",
-        "Strong Wind Warning for Sunday for Capricornia Coast, K'gari Coast, Sunshine Coast Waters and Moreton Bay"
+        "Strong Wind Warning for Sunday for Moreton Bay, Capricornia Coast, K'gari Coast and Sunshine Coast Waters"
       ],
       "hazards": [
         {
@@ -3468,10 +3481,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-07-17T23:01:00Z",
+      "issued_utc": "2026-07-18T01:00:46Z",
       "overview": [
         "Gale Warning for Saturday for Leeuwin Coast and Albany Coast",
-        "Strong Wind Warning for Saturday for Perth Coast, Bunbury Geographe Coast, Esperance Coast and Perth Local Waters"
+        "Strong Wind Warning for Saturday for Esperance Coast, Bunbury Geographe Coast, Perth Local Waters and Perth Coast"
       ],
       "hazards": [
         {
