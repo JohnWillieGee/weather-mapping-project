@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-18T01:53:23.006785+00:00",
-  "last_checked_utc": "2026-07-18T01:53:23.006785+00:00",
-  "warning_count": 10,
+  "generated_utc": "2026-07-18T02:23:21.789164+00:00",
+  "last_checked_utc": "2026-07-18T02:23:21.789164+00:00",
+  "warning_count": 12,
   "warnings": [
     {
       "pid": "",
@@ -29,6 +29,15 @@
       "link": "http://reg.bom.gov.au/nsw/warnings/flood/parooriver.shtml",
       "desc": "",
       "issued": "Tue, 14 Jul 2026 23:47:38 GMT"
+    },
+    {
+      "pid": "",
+      "title": "18/12:17 EST Frost Warning\nfor Mallee, Northern Country, North Central, North East, Central, West and South Gippsland and East Gippsland forecast districts",
+      "type": "other",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/frost.shtml",
+      "desc": "",
+      "issued": "Sat, 18 Jul 2026 02:17:27 GMT"
     },
     {
       "pid": "",
@@ -68,6 +77,15 @@
     },
     {
       "pid": "",
+      "title": "18/11:47 CST Frost Warning\nfor Mid North and Riverland forecast districts",
+      "type": "other",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/frost.shtml",
+      "desc": "",
+      "issued": "Sat, 18 Jul 2026 02:17:16 GMT"
+    },
+    {
+      "pid": "",
       "title": "18/09:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
@@ -77,12 +95,12 @@
     },
     {
       "pid": "IDW39605",
-      "title": "17/11:33 WST Flood Watch for the Moore and Hill River Catchments",
+      "title": "18/10:19 WST Flood Watch for the Moore and Hill River Catchments",
       "type": "flood",
       "state": "WA",
       "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDW39605.html",
       "desc": "",
-      "issued": "Fri, 17 Jul 2026 03:33:42 GMT"
+      "issued": "Sat, 18 Jul 2026 02:19:49 GMT"
     },
     {
       "pid": "",
@@ -96,40 +114,23 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Drive Inn Rd, Moree",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 18 Jul 2026 01:49:33 GMT",
-        "description": "Drive Inn Rd, Moree, NSW 2400",
-        "council": "Moree Plains",
-        "lat": -29.4806129999999,
-        "lng": 149.865414,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
       {
-        "title": "Earthquake",
+        "title": "Fire",
         "alertLevel": "",
         "status": "active",
-        "type": "Earthquake",
+        "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-17T22:34:20+00:00",
-        "description": "",
-        "lat": -35.8827,
-        "lng": 123.3838,
+        "updated": "2026-07-18T02:12:34+00:00",
+        "description": "COOGEE, CITY OF COCKBURN",
+        "lat": -32.11,
+        "lng": 115.7719,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -141,10 +142,25 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-17T10:00:23+00:00",
+        "updated": "2026-07-18T01:52:08+00:00",
         "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.5336,
         "lng": 128.1923,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Earthquake",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Earthquake",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-17T22:34:20+00:00",
+        "description": "",
+        "lat": -35.8827,
+        "lng": 123.3838,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -257,6 +273,51 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - DUDDELL RD, DARWIN RIVER",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-18T02:07:53+00:00",
+        "description": "DUDDELL RD, DARWIN RIVER",
+        "lat": -12.8229,
+        "lng": 131.0091,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Darwin River Dam, LABASHEEDA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-07-18T02:00:00+00:00",
+        "description": "Darwin River Dam, LABASHEEDA",
+        "lat": -12.8391,
+        "lng": 131.0266,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - PARKIN RD, LIVINGSTONE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-18T01:58:10+00:00",
+        "description": "PARKIN RD, LIVINGSTONE",
+        "lat": -12.7682,
+        "lng": 131.0613,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Chibnall Rd, ACACIA HILLS",
         "alertLevel": "Watch and Act",
         "status": "active",
@@ -265,8 +326,8 @@
         "agency": "Bushfires NT",
         "updated": "2026-07-18T01:35:00+00:00",
         "description": "Chibnall Rd, ACACIA HILLS",
-        "lat": -12.7771,
-        "lng": 131.0897,
+        "lat": -12.7737,
+        "lng": 131.0815,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -409,7 +470,7 @@
     ],
     "act": []
   },
-  "incident_count": 20,
+  "incident_count": 23,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
