@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-17T23:53:21.011514+00:00",
-  "last_checked_utc": "2026-07-17T23:53:21.011514+00:00",
+  "generated_utc": "2026-07-18T00:23:13.970530+00:00",
+  "last_checked_utc": "2026-07-18T00:23:13.970530+00:00",
   "warning_count": 10,
   "warnings": [
     {
       "pid": "",
-      "title": "18/04:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "18/10:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 17 Jul 2026 18:00:12 GMT"
+      "issued": "Sat, 18 Jul 2026 00:00:13 GMT"
     },
     {
       "pid": "",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "18/04:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "18/10:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 17 Jul 2026 18:00:11 GMT"
+      "issued": "Sat, 18 Jul 2026 00:00:10 GMT"
     }
   ],
   "fetch_errors": {},
@@ -239,21 +239,6 @@
       }
     ],
     "nt": [
-      {
-        "title": "Grass and Scrub Fire - Unknown",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-17T23:19:19+00:00",
-        "description": "",
-        "lat": -12.4647,
-        "lng": 130.839,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
       {
         "title": "Bushfire - Chibnall Rd, ACACIA HILLS",
         "alertLevel": "Advice",
@@ -407,7 +392,7 @@
     ],
     "act": []
   },
-  "incident_count": 20,
+  "incident_count": 19,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3429,7 +3414,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-07-17T18:00:00Z",
+      "issued_utc": "2026-07-18T00:00:00Z",
       "overview": [
         "Gale Warning for Saturday for Byron Coast",
         "Strong Wind Warning for Saturday for Coffs Coast and Macquarie Coast",
@@ -3507,7 +3492,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-07-17T18:00:00Z",
+      "issued_utc": "2026-07-18T00:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3515,17 +3500,13 @@
           "severity": "STR",
           "zones": [
             "South East Coast: Tasman Island to South East Cape",
-            "South West Coast: South East Cape to Low Rocky Point",
-            "Central West Coast: Low Rocky Point to Sandy Cape",
-            "Channel"
+            "South West Coast: South East Cape to Low Rocky Point"
           ],
           "aac_codes": [
             "TAS_MW006",
-            "TAS_MW007",
-            "TAS_MW008",
-            "TAS_MW011"
+            "TAS_MW007"
           ],
-          "summary": "Channel, South East Coast, South West Coast and Central West Coast"
+          "summary": "South East Coast and South West Coast"
         }
       ]
     }
