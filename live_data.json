@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-18T10:53:22.114714+00:00",
-  "last_checked_utc": "2026-07-18T10:53:22.114714+00:00",
+  "generated_utc": "2026-07-18T11:23:18.271909+00:00",
+  "last_checked_utc": "2026-07-18T11:23:18.271909+00:00",
   "warning_count": 11,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "18/15:06 EST Marine Wind Warning Summary for Queensland",
+      "title": "18/21:03 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 18 Jul 2026 05:06:12 GMT"
+      "issued": "Sat, 18 Jul 2026 11:03:59 GMT"
     },
     {
       "pid": "IDQ21137",
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "18/14:12 WST Marine Wind Warning Summary for Western Australia",
+      "title": "18/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sat, 18 Jul 2026 06:12:53 GMT"
+      "issued": "Sat, 18 Jul 2026 11:01:12 GMT"
     },
     {
       "pid": "IDW39605",
@@ -111,6 +111,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-18T11:09:12+00:00",
+        "description": "WUNDOWIE, SHIRE OF NORTHAM",
+        "lat": -31.7679,
+        "lng": 116.4237,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -279,16 +294,16 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - LAKEVIEW BVD, GUNN",
+        "title": "Grass and Scrub Fire - EWYENPER ST, SADADEEN",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-18T10:43:14+00:00",
-        "description": "LAKEVIEW BVD, GUNN",
-        "lat": -12.4899,
-        "lng": 130.9965,
+        "updated": "2026-07-18T11:11:31+00:00",
+        "description": "EWYENPER ST, SADADEEN",
+        "lat": -23.7094,
+        "lng": 133.8986,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -521,7 +536,7 @@
     ],
     "act": []
   },
-  "incident_count": 27,
+  "incident_count": 28,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3502,12 +3517,12 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-18T05:05:58Z",
+      "issued_utc": "2026-07-18T11:03:39Z",
       "overview": [
         "Gale Warning for Saturday for K'gari Coast, Sunshine Coast Waters and Gold Coast Waters",
         "Strong Wind Warning for Saturday for Capricornia Coast and Moreton Bay",
-        "Gale Warning for Sunday for Gold Coast Waters",
-        "Strong Wind Warning for Sunday for Capricornia Coast, K'gari Coast, Sunshine Coast Waters and Moreton Bay"
+        "Gale Warning for Sunday for Sunshine Coast Waters and Gold Coast Waters",
+        "Strong Wind Warning for Sunday for Capricornia Coast, K'gari Coast and Moreton Bay"
       ],
       "hazards": [
         {
@@ -3580,23 +3595,19 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-07-18T06:12:38Z",
+      "issued_utc": "2026-07-18T11:01:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay"
+            "Albany Coast: Walpole to Bremer Bay"
           ],
           "aac_codes": [
-            "WA_MW011",
-            "WA_MW012",
-            "WA_MW013"
+            "WA_MW012"
           ],
-          "summary": "Leeuwin Coast, Albany Coast and Esperance Coast"
+          "summary": "Albany Coast"
         }
       ]
     },
