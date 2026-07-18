@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-18T22:53:18.467400+00:00",
-  "last_checked_utc": "2026-07-18T22:53:18.467400+00:00",
+  "generated_utc": "2026-07-18T23:23:22.691937+00:00",
+  "last_checked_utc": "2026-07-18T23:23:22.691937+00:00",
   "warning_count": 9,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "19/03:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "19/09:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 18 Jul 2026 17:00:13 GMT"
+      "issued": "Sat, 18 Jul 2026 23:00:14 GMT"
     },
     {
       "pid": "IDQ21137",
@@ -93,6 +93,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-18T23:13:07+00:00",
+        "description": "WILLAGEE, CITY OF MELVILLE",
+        "lat": -32.0525,
+        "lng": 115.8037,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -169,21 +184,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Earthquake",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Earthquake",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-17T22:34:20+00:00",
-        "description": "",
-        "lat": -35.8827,
-        "lng": 123.3838,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire Advice MONITOR CONDITIONS - ROEBUCK, WATERBANK AND WILLARE",
         "alertLevel": "Advice",
         "status": "active",
@@ -224,21 +224,6 @@
         "description": "DRYSDALE RIVER, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -14.9369,
         "lng": 126.8054,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-17T00:31:12+00:00",
-        "description": "SOUTH HEDLAND, TOWN OF PORT HEDLAND",
-        "lat": -20.4214,
-        "lng": 118.6293,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -503,7 +488,7 @@
     ],
     "act": []
   },
-  "incident_count": 27,
+  "incident_count": 26,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3484,10 +3469,10 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-18T17:00:00Z",
+      "issued_utc": "2026-07-18T23:00:00Z",
       "overview": [
         "Gale Warning for Sunday for Sunshine Coast Waters and Gold Coast Waters",
-        "Strong Wind Warning for Sunday for Capricornia Coast, K'gari Coast and Moreton Bay",
+        "Strong Wind Warning for Sunday for Mackay Coast, Capricornia Coast, K'gari Coast and Moreton Bay",
         "Strong Wind Warning for Monday for Townsville Coast, Mackay Coast, Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
       ],
       "hazards": [
@@ -3508,16 +3493,18 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Mackay Coast: Bowen to St Lawrence",
             "Capricornia Coast: St Lawrence to Burnett Heads",
             "K'gari Coast: Sandy Cape to Double Island Point",
             "Moreton Bay"
           ],
           "aac_codes": [
+            "QLD_MW008",
             "QLD_MW009",
             "QLD_MW011",
             "QLD_MW013"
           ],
-          "summary": "Capricornia Coast, K'gari Coast and Moreton Bay"
+          "summary": "Mackay Coast, Capricornia Coast, K'gari Coast and Moreton Bay"
         }
       ]
     },
