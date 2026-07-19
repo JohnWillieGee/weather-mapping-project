@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-19T09:23:18.813363+00:00",
-  "last_checked_utc": "2026-07-19T09:23:18.813363+00:00",
+  "generated_utc": "2026-07-19T09:53:06.110687+00:00",
+  "last_checked_utc": "2026-07-19T09:53:06.110687+00:00",
   "warning_count": 9,
   "warnings": [
     {
@@ -87,12 +87,44 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Templeton Way, Airds",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 19 Jul 2026 09:49:33 GMT",
+        "description": "Templeton Way, Airds, NSW 2560",
+        "council": "Campbelltown",
+        "lat": -34.0866189989999,
+        "lng": 150.833491,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire Advice STAY INFORMED - KUNUNURRA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-07-19T09:23:23.106+00:00",
+        "description": "",
+        "lat": -15.7801,
+        "lng": 128.747,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -593,7 +625,7 @@
     ],
     "act": []
   },
-  "incident_count": 33,
+  "incident_count": 35,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
