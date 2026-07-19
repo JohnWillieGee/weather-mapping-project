@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-19T07:23:15.992626+00:00",
-  "last_checked_utc": "2026-07-19T07:23:15.992626+00:00",
+  "generated_utc": "2026-07-19T07:53:17.490200+00:00",
+  "last_checked_utc": "2026-07-19T07:53:17.490200+00:00",
   "warning_count": 9,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "19/15:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "19/17:29 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 19 Jul 2026 05:00:15 GMT"
+      "issued": "Sun, 19 Jul 2026 07:29:45 GMT"
     },
     {
       "pid": "IDQ21137",
@@ -94,28 +94,13 @@
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-19T07:03:27+00:00",
-        "description": "BROOME, SHIRE OF BROOME",
-        "lat": -17.9616,
-        "lng": 122.2285,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Structure Fire",
         "alertLevel": "",
         "status": "active",
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-19T06:49:02+00:00",
+        "updated": "2026-07-19T07:28:27+00:00",
         "description": "LAGRANGE, SHIRE OF BROOME",
         "lat": -18.6868,
         "lng": 121.7752,
@@ -321,16 +306,16 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - NGALPA NGALPA -, TENNANT CREEK",
+        "title": "Grass and Scrub Fire - HOLMES JUNGLE -, HOLMES",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-19T07:10:48+00:00",
-        "description": "NGALPA NGALPA -, TENNANT CREEK",
-        "lat": -19.6353,
-        "lng": 134.1936,
+        "updated": "2026-07-19T07:30:12+00:00",
+        "description": "HOLMES JUNGLE -, HOLMES",
+        "lat": -12.3975,
+        "lng": 130.9257,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -342,7 +327,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-19T07:08:29+00:00",
+        "updated": "2026-07-19T07:19:28+00:00",
         "description": "LAKESIDE DR, BRINKIN",
         "lat": -12.3774,
         "lng": 130.8714,
@@ -351,16 +336,16 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Grass and Scrub Fire - HOLMES JUNGLE -, HOLMES",
+        "title": "Grass and Scrub Fire - NGALPA NGALPA -, TENNANT CREEK",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-19T06:58:55+00:00",
-        "description": "HOLMES JUNGLE -, HOLMES",
-        "lat": -12.3975,
-        "lng": 130.9257,
+        "updated": "2026-07-19T07:17:48+00:00",
+        "description": "NGALPA NGALPA -, TENNANT CREEK",
+        "lat": -19.6353,
+        "lng": 134.1936,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -683,7 +668,7 @@
     ],
     "act": []
   },
-  "incident_count": 39,
+  "incident_count": 38,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3664,25 +3649,27 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-19T05:00:00Z",
+      "issued_utc": "2026-07-19T07:29:36Z",
       "overview": [
-        "Gale Warning for Sunday for Sunshine Coast Waters and Gold Coast Waters",
-        "Strong Wind Warning for Sunday for Mackay Coast, Capricornia Coast, K'gari Coast and Moreton Bay",
-        "Strong Wind Warning for Monday for Townsville Coast, Mackay Coast, Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
+        "Gale Warning for Sunday for K'gari Coast, Gold Coast Waters and Sunshine Coast Waters",
+        "Strong Wind Warning for Sunday for Hervey Bay, Moreton Bay, Capricornia Coast and Mackay Coast",
+        "Strong Wind Warning for Monday for Capricornia Coast, Mackay Coast, Townsville Coast, Moreton Bay, Sunshine Coast Waters, Hervey Bay, Gold Coast Waters and K'gari Coast"
       ],
       "hazards": [
         {
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
+            "K'gari Coast: Sandy Cape to Double Island Point",
             "Sunshine Coast Waters: Double Island Point to Cape Moreton",
             "Gold Coast Waters: Cape Moreton to Point Danger"
           ],
           "aac_codes": [
+            "QLD_MW011",
             "QLD_MW012",
             "QLD_MW014"
           ],
-          "summary": "Sunshine Coast Waters and Gold Coast Waters"
+          "summary": "K'gari Coast, Sunshine Coast Waters and Gold Coast Waters"
         },
         {
           "level": "Strong Wind Warning",
@@ -3690,16 +3677,16 @@
           "zones": [
             "Mackay Coast: Bowen to St Lawrence",
             "Capricornia Coast: St Lawrence to Burnett Heads",
-            "K'gari Coast: Sandy Cape to Double Island Point",
+            "Hervey Bay",
             "Moreton Bay"
           ],
           "aac_codes": [
             "QLD_MW008",
             "QLD_MW009",
-            "QLD_MW011",
+            "QLD_MW010",
             "QLD_MW013"
           ],
-          "summary": "Mackay Coast, Capricornia Coast, K'gari Coast and Moreton Bay"
+          "summary": "Mackay Coast, Capricornia Coast, Hervey Bay and Moreton Bay"
         }
       ]
     },
