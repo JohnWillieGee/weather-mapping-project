@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-20T04:23:12.836228+00:00",
-  "last_checked_utc": "2026-07-20T04:23:12.836228+00:00",
+  "generated_utc": "2026-07-20T04:53:12.291897+00:00",
+  "last_checked_utc": "2026-07-20T04:53:12.291897+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -96,29 +96,42 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Bainbridge Cr, Rooty Hill",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 20 Jul 2026 04:17:33 GMT",
-        "description": "Bainbridge Cr, Rooty Hill, NSW 2766",
-        "council": "Blacktown",
-        "lat": -33.7765039999999,
-        "lng": 150.82925,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-20T04:30:17+00:00",
+        "description": "HILLMAN, CITY OF ROCKINGHAM",
+        "lat": -32.2793,
+        "lng": 115.7633,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - HALLS CREEK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-07-20T04:10:47.726+00:00",
+        "description": "",
+        "lat": -18.2265,
+        "lng": 127.6541,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -353,7 +366,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-20T04:08:49+00:00",
+        "updated": "2026-07-20T04:16:35+00:00",
         "description": "DARWIN RIVER DAM",
         "lat": -12.8769,
         "lng": 131.1409,
@@ -559,7 +572,7 @@
     ],
     "act": []
   },
-  "incident_count": 30,
+  "incident_count": 31,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
