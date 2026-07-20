@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-20T17:53:09.623180+00:00",
-  "last_checked_utc": "2026-07-20T17:53:09.623180+00:00",
-  "warning_count": 8,
+  "generated_utc": "2026-07-20T18:23:11.348019+00:00",
+  "last_checked_utc": "2026-07-20T18:23:11.348019+00:00",
+  "warning_count": 9,
   "warnings": [
     {
       "pid": "",
@@ -11,6 +11,15 @@
       "link": "http://reg.bom.gov.au/nsw/warnings/hazardoussurf.shtml",
       "desc": "",
       "issued": "Mon, 20 Jul 2026 06:47:04 GMT"
+    },
+    {
+      "pid": "",
+      "title": "21/04:10 EST Marine Wind Warning Summary for Victoria",
+      "type": "wind",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Mon, 20 Jul 2026 18:10:19 GMT"
     },
     {
       "pid": "",
@@ -68,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "20/22:32 EST Marine Wind Warning Summary for Tasmania",
+      "title": "21/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 20 Jul 2026 12:32:10 GMT"
+      "issued": "Mon, 20 Jul 2026 18:00:11 GMT"
     }
   ],
   "fetch_errors": {},
@@ -432,21 +441,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - LILY LANE, McMINNS LAGOON",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-20T17:26:14+00:00",
-        "description": "LILY LANE, McMINNS LAGOON",
-        "lat": -12.5501,
-        "lng": 131.0794,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - LEONINO RD, DARWIN RIVER",
         "alertLevel": "Advice",
         "status": "active",
@@ -569,7 +563,7 @@
     ],
     "act": []
   },
-  "incident_count": 32,
+  "incident_count": 31,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3581,6 +3575,29 @@
         }
       ]
     },
+    "VIC": {
+      "state": "VIC",
+      "product": "IDV20600",
+      "issued_utc": "2026-07-20T18:10:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Central Coast: Cape Otway to Wilsons Promontory",
+            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
+          ],
+          "aac_codes": [
+            "VIC_MW002",
+            "VIC_MW003",
+            "VIC_MW004"
+          ],
+          "summary": "Central Coast, Central Gippsland Coast and East Gippsland Coast"
+        }
+      ]
+    },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
@@ -3602,6 +3619,32 @@
             "WA_MW006"
           ],
           "summary": "Ningaloo Coast and Gascoyne Coast"
+        }
+      ]
+    },
+    "TAS": {
+      "state": "TAS",
+      "product": "IDT20100",
+      "issued_utc": "2026-07-20T18:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Tuesday for Far North West Coast, South West Coast and Central West Coast",
+        "Strong Wind Warning for Wednesday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast, South West Coast and Central West Coast"
+      ],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Far North West Coast: Sandy Cape to Stanley",
+            "South West Coast: South East Cape to Low Rocky Point",
+            "Central West Coast: Low Rocky Point to Sandy Cape"
+          ],
+          "aac_codes": [
+            "TAS_MW001",
+            "TAS_MW007",
+            "TAS_MW008"
+          ],
+          "summary": "Far North West Coast, South West Coast and Central West Coast"
         }
       ]
     }
