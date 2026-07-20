@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-20T16:23:10.285373+00:00",
-  "last_checked_utc": "2026-07-20T16:23:10.285373+00:00",
+  "generated_utc": "2026-07-20T16:53:12.548140+00:00",
+  "last_checked_utc": "2026-07-20T16:53:12.548140+00:00",
   "warning_count": 8,
   "warnings": [
     {
@@ -78,12 +78,44 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Butters Lane, South Grafton",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Mon, 20 Jul 2026 16:49:33 GMT",
+        "description": "Butters Lane, South Grafton, NSW 2460",
+        "council": "Clarence Valley",
+        "lat": -29.70375,
+        "lng": 152.94419,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-20T16:19:19+00:00",
+        "description": "NEWMAN, SHIRE OF EAST PILBARA",
+        "lat": -23.3732,
+        "lng": 119.7781,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -539,7 +571,7 @@
     ],
     "act": []
   },
-  "incident_count": 30,
+  "incident_count": 32,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
