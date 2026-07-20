@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-20T12:23:11.249668+00:00",
-  "last_checked_utc": "2026-07-20T12:23:11.249668+00:00",
+  "generated_utc": "2026-07-20T12:53:14.429111+00:00",
+  "last_checked_utc": "2026-07-20T12:53:14.429111+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "20/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "20/22:32 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 20 Jul 2026 06:05:11 GMT"
+      "issued": "Mon, 20 Jul 2026 12:32:10 GMT"
     }
   ],
   "fetch_errors": {},
@@ -109,10 +109,40 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-20T11:33:56+00:00",
+        "updated": "2026-07-20T12:21:57+00:00",
         "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.7784,
         "lng": 128.7439,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-20T12:21:26+00:00",
+        "description": "ORD RIVER, SHIRE OF HALLS CREEK",
+        "lat": -18.4686,
+        "lng": 127.9762,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-20T12:20:50+00:00",
+        "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
+        "lat": -16.9748,
+        "lng": 122.6347,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -319,21 +349,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-20T04:08:30+00:00",
-        "description": "ORD RIVER, SHIRE OF HALLS CREEK",
-        "lat": -18.4686,
-        "lng": 127.9762,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-07-20T03:08:38+00:00",
         "description": "ROEBUCK, SHIRE OF DERBY/WEST KIMBERLEY",
         "lat": -17.6412,
@@ -353,21 +368,6 @@
         "description": "PALLINUP, GNOWANGERUP, SHIRE OF",
         "lat": -33.8261,
         "lng": 117.916,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-19T11:17:11+00:00",
-        "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
-        "lat": -16.9748,
-        "lng": 122.6347,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -3616,30 +3616,6 @@
             "WA_MW005"
           ],
           "summary": "Ningaloo Coast"
-        }
-      ]
-    },
-    "TAS": {
-      "state": "TAS",
-      "product": "IDT20100",
-      "issued_utc": "2026-07-20T06:05:00Z",
-      "overview": [
-        "Strong Wind Warning for Monday for South East Coast and South West Coast",
-        "Strong Wind Warning for Tuesday for Far North West Coast, South West Coast and Central West Coast"
-      ],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "South East Coast: Tasman Island to South East Cape",
-            "South West Coast: South East Cape to Low Rocky Point"
-          ],
-          "aac_codes": [
-            "TAS_MW006",
-            "TAS_MW007"
-          ],
-          "summary": "South East Coast and South West Coast"
         }
       ]
     }
