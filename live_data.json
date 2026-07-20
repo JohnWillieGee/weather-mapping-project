@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-20T10:53:17.547097+00:00",
-  "last_checked_utc": "2026-07-20T10:53:17.547097+00:00",
-  "warning_count": 9,
+  "generated_utc": "2026-07-20T11:23:12.652964+00:00",
+  "last_checked_utc": "2026-07-20T11:23:12.652964+00:00",
+  "warning_count": 10,
   "warnings": [
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "20/16:49 EST Marine Wind Warning Summary for Queensland",
+      "title": "20/21:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 20 Jul 2026 06:49:40 GMT"
+      "issued": "Mon, 20 Jul 2026 11:00:10 GMT"
     },
     {
       "pid": "IDQ21137",
@@ -65,6 +65,15 @@
       "link": "http://reg.bom.gov.au/qld/warnings/hazardoussurf.shtml",
       "desc": "",
       "issued": "Mon, 20 Jul 2026 06:47:33 GMT"
+    },
+    {
+      "pid": "",
+      "title": "20/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "type": "wind",
+      "state": "WA",
+      "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
+      "desc": "",
+      "issued": "Mon, 20 Jul 2026 11:01:13 GMT"
     },
     {
       "pid": "IDW39605",
@@ -100,10 +109,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-20T10:35:59+00:00",
-        "description": "SHELLEY, CITY OF CANNING",
-        "lat": -32.0276,
-        "lng": 115.8931,
+        "updated": "2026-07-20T11:08:11+00:00",
+        "description": "COOLOONGUP, CITY OF ROCKINGHAM",
+        "lat": -32.2999,
+        "lng": 115.7463,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -115,25 +124,10 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-20T10:35:54+00:00",
+        "updated": "2026-07-20T10:56:17+00:00",
         "description": "MUNDARING, SHIRE OF MUNDARING",
         "lat": -31.8857,
         "lng": 116.1715,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-20T10:21:31+00:00",
-        "description": "TREETON, SHIRE OF AUGUSTA MARGARET RIVER",
-        "lat": -33.8375,
-        "lng": 115.1807,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -606,7 +600,23 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": []
+    "act": [
+      {
+        "title": "HOUSE FIRE - MAWSON",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Fire",
+        "updated": "2026-07-20T11:18:49+00:00",
+        "description": "MAWSON",
+        "lat": -35.3663,
+        "lng": 149.0977,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      }
+    ]
   },
   "incident_count": 34,
   "nsw_alert_zones": [],
@@ -3589,10 +3599,10 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-20T06:49:30Z",
+      "issued_utc": "2026-07-20T11:00:00Z",
       "overview": [
-        "Strong Wind Warning for Monday for Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay, Gold Coast Waters, Townsville Coast, Capricornia Coast and Mackay Coast",
-        "Strong Wind Warning for Tuesday for Capricornia Coast, Mackay Coast, Townsville Coast, Cooktown Coast, Sunshine Coast Waters, Cairns Coast and K'gari Coast"
+        "Strong Wind Warning for Monday for Townsville Coast, Mackay Coast, Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters and Gold Coast Waters",
+        "Strong Wind Warning for Tuesday for Cooktown Coast, Cairns Coast, Townsville Coast, Mackay Coast, Capricornia Coast, Hervey Bay, K'gari Coast and Sunshine Coast Waters"
       ],
       "hazards": [
         {
@@ -3605,7 +3615,6 @@
             "Hervey Bay",
             "K'gari Coast: Sandy Cape to Double Island Point",
             "Sunshine Coast Waters: Double Island Point to Cape Moreton",
-            "Moreton Bay",
             "Gold Coast Waters: Cape Moreton to Point Danger"
           ],
           "aac_codes": [
@@ -3615,10 +3624,28 @@
             "QLD_MW010",
             "QLD_MW011",
             "QLD_MW012",
-            "QLD_MW013",
             "QLD_MW014"
           ],
-          "summary": "Townsville Coast, Mackay Coast, Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
+          "summary": "Townsville Coast, Mackay Coast, Capricornia Coast, Hervey Bay, K'gari Coast, Sunshine Coast Waters and Gold Coast Waters"
+        }
+      ]
+    },
+    "WA": {
+      "state": "WA",
+      "product": "IDW20100",
+      "issued_utc": "2026-07-20T11:01:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Ningaloo Coast: North West Cape to Cape Cuvier"
+          ],
+          "aac_codes": [
+            "WA_MW005"
+          ],
+          "summary": "Ningaloo Coast"
         }
       ]
     },
