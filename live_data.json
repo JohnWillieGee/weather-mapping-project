@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-21T22:53:10.811611+00:00",
-  "last_checked_utc": "2026-07-21T22:53:10.811611+00:00",
+  "generated_utc": "2026-07-21T23:23:06.745182+00:00",
+  "last_checked_utc": "2026-07-21T23:23:06.745182+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "22/03:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "22/09:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 21 Jul 2026 17:00:14 GMT"
+      "issued": "Tue, 21 Jul 2026 23:00:12 GMT"
     },
     {
       "pid": "",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "22/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "22/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 21 Jul 2026 17:01:15 GMT"
+      "issued": "Tue, 21 Jul 2026 23:01:12 GMT"
     },
     {
       "pid": "IDW39605",
@@ -103,28 +103,13 @@
     "tas": [],
     "wa": [
       {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-21T22:21:28+00:00",
-        "description": "CHADWICK, SHIRE OF ESPERANCE",
-        "lat": -33.8398,
-        "lng": 121.8884,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-21T11:37:19+00:00",
+        "updated": "2026-07-21T22:59:29+00:00",
         "description": "MUELLER RANGES, SHIRE OF HALLS CREEK",
         "lat": -18.19,
         "lng": 127.73,
@@ -512,7 +497,7 @@
     ],
     "act": []
   },
-  "incident_count": 27,
+  "incident_count": 26,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3490,29 +3475,6 @@
     }
   },
   "marine_warnings": {
-    "QLD": {
-      "state": "QLD",
-      "product": "IDQ20085",
-      "issued_utc": "2026-07-21T17:00:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Cooktown Coast: Cape Melville to Cape Tribulation",
-            "Townsville Coast: Cardwell to Bowen",
-            "Mackay Coast: Bowen to St Lawrence"
-          ],
-          "aac_codes": [
-            "QLD_MW005",
-            "QLD_MW007",
-            "QLD_MW008"
-          ],
-          "summary": "Cooktown Coast, Townsville Coast and Mackay Coast"
-        }
-      ]
-    },
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
@@ -3577,30 +3539,6 @@
             "SA_MW010"
           ],
           "summary": "Lower South East Coast"
-        }
-      ]
-    },
-    "WA": {
-      "state": "WA",
-      "product": "IDW20100",
-      "issued_utc": "2026-07-21T17:01:00Z",
-      "overview": [
-        "Strong Wind Warning for Wednesday for Ningaloo Coast and Gascoyne Coast",
-        "Strong Wind Warning for Thursday for West Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
-      ],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Ningaloo Coast: North West Cape to Cape Cuvier",
-            "Gascoyne Coast: Cape Cuvier to Kalbarri"
-          ],
-          "aac_codes": [
-            "WA_MW005",
-            "WA_MW006"
-          ],
-          "summary": "Ningaloo Coast and Gascoyne Coast"
         }
       ]
     },
