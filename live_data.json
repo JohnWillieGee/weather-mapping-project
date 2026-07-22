@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-22T07:23:05.433307+00:00",
-  "last_checked_utc": "2026-07-22T07:23:05.433307+00:00",
+  "generated_utc": "2026-07-22T07:53:10.184555+00:00",
+  "last_checked_utc": "2026-07-22T07:53:10.184555+00:00",
   "warning_count": 12,
   "warnings": [
     {
@@ -127,10 +127,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-22T07:10:15+00:00",
-        "description": "CASUARINA, CITY OF KWINANA",
-        "lat": -32.2461,
-        "lng": 115.8585,
+        "updated": "2026-07-22T07:26:39+00:00",
+        "description": "LAKE ARGYLE, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -16.68,
+        "lng": 128.28,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -142,7 +142,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-22T07:09:17+00:00",
+        "updated": "2026-07-22T07:22:47+00:00",
         "description": "CHIDLOW, SHIRE OF MUNDARING",
         "lat": -31.8657,
         "lng": 116.2713,
@@ -322,21 +322,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-20T08:30:14+00:00",
-        "description": "LAKE ARGYLE, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -16.68,
-        "lng": 128.28,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-07-20T08:29:51+00:00",
         "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
         "lat": -16.99,
@@ -408,6 +393,36 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - Unknown",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-22T07:44:49+00:00",
+        "description": "",
+        "lat": -14.4664,
+        "lng": 132.2723,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Blyth Road, LIVINGSTONE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-07-22T07:18:00+00:00",
+        "description": "Blyth Road, LIVINGSTONE",
+        "lat": -12.7209,
+        "lng": 131.0513,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - NULL",
         "alertLevel": "Advice",
         "status": "active",
@@ -433,21 +448,6 @@
         "description": "ARNHEM HWY, JABIRU",
         "lat": -12.6607,
         "lng": 132.8409,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Bushfire - Blyth Road, LIVINGSTONE",
-        "alertLevel": "Watch and Act",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-07-22T05:56:00+00:00",
-        "description": "Blyth Road, LIVINGSTONE",
-        "lat": -12.7209,
-        "lng": 131.0513,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -573,9 +573,40 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": []
+    "act": [
+      {
+        "title": "HOUSE FIRE - FLOREY",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-07-22T07:50:00+00:00",
+        "description": "FLOREY",
+        "lat": -35.2253,
+        "lng": 149.0477,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - FLOREY",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Fire - Ambulance",
+        "updated": "2026-07-22T07:48:02+00:00",
+        "description": "FLOREY",
+        "lat": -35.2253,
+        "lng": 149.0477,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      }
+    ]
   },
-  "incident_count": 30,
+  "incident_count": 32,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
