@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-22T12:22:48.478759+00:00",
-  "last_checked_utc": "2026-07-22T12:22:48.478759+00:00",
+  "generated_utc": "2026-07-22T12:52:47.833187+00:00",
+  "last_checked_utc": "2026-07-22T12:52:47.833187+00:00",
   "warning_count": 12,
   "warnings": [
     {
@@ -77,39 +77,39 @@
     },
     {
       "pid": "IDT21037",
-      "title": "22/16:40 EST \n                Severe Weather Warning\n            \nfor \n                parts of Western and South East Forecast Districts.",
+      "title": "22/22:47 EST \n                Severe Weather Warning\n            \nfor \n                parts of Western and South East Forecast Districts.",
       "type": "severe_weather",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/products/IDT21037.shtml",
       "desc": "",
-      "issued": "Wed, 22 Jul 2026 06:40:15 GMT"
+      "issued": "Wed, 22 Jul 2026 12:47:09 GMT"
     },
     {
       "pid": "",
-      "title": "22/16:38 EST Warning to Sheep Graziers\nfor Midlands, Upper Derwent Valley and South East forecast districts",
+      "title": "22/22:44 EST Warning to Sheep Graziers\nfor Midlands, Upper Derwent Valley and South East forecast districts",
       "type": "other",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Wed, 22 Jul 2026 06:38:51 GMT"
+      "issued": "Wed, 22 Jul 2026 12:44:31 GMT"
     },
     {
       "pid": "",
-      "title": "22/18:51 EST Road Weather Alert for Tasmania\nfor Western and Central Plateau forecast districts",
+      "title": "22/22:45 EST Road Weather Alert for Tasmania\nfor Western and Central Plateau forecast districts",
       "type": "other",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/road.shtml",
       "desc": "",
-      "issued": "Wed, 22 Jul 2026 08:51:40 GMT"
+      "issued": "Wed, 22 Jul 2026 12:45:46 GMT"
     },
     {
       "pid": "",
-      "title": "22/16:11 EST Bush Walkers Weather Alert\nfor Western and Central Plateau forecast districts",
+      "title": "22/22:45 EST Bush Walkers Weather Alert\nfor Western and Central Plateau forecast districts",
       "type": "other",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/bushwalker.shtml",
       "desc": "",
-      "issued": "Wed, 22 Jul 2026 06:11:18 GMT"
+      "issued": "Wed, 22 Jul 2026 12:45:02 GMT"
     }
   ],
   "fetch_errors": {},
@@ -120,6 +120,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-22T12:28:39+00:00",
+        "description": "WATERBANK, SHIRE OF BROOME",
+        "lat": -17.682,
+        "lng": 122.952,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - DURACK AND LAKE ARGYLE",
         "alertLevel": "Advice",
@@ -191,21 +206,6 @@
         "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.5336,
         "lng": 128.1927,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-22T04:57:05+00:00",
-        "description": "WATERBANK, SHIRE OF BROOME",
-        "lat": -17.682,
-        "lng": 122.952,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -362,6 +362,21 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - BIRDUM",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-22T12:21:28+00:00",
+        "description": "BIRDUM",
+        "lat": -16.3068,
+        "lng": 133.3849,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - BEES CREEK RD, WEDDELL",
         "alertLevel": "Advice",
@@ -545,7 +560,7 @@
     ],
     "act": []
   },
-  "incident_count": 28,
+  "incident_count": 29,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
