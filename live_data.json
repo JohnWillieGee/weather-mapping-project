@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-23T00:52:48.686556+00:00",
-  "last_checked_utc": "2026-07-23T00:52:48.686556+00:00",
-  "warning_count": 14,
+  "generated_utc": "2026-07-23T01:22:49.577637+00:00",
+  "last_checked_utc": "2026-07-23T01:22:49.577637+00:00",
+  "warning_count": 16,
   "warnings": [
     {
       "pid": "",
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "23/05:18 EST Warning to Sheep Graziers\nfor Snowy Mountains forecast district",
+      "title": "23/10:52 EST Warning to Sheep Graziers\nfor Central Tablelands, Southern Tablelands and Snowy Mountains forecast districts",
       "type": "other",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Wed, 22 Jul 2026 19:18:38 GMT"
+      "issued": "Thu, 23 Jul 2026 00:52:44 GMT"
     },
     {
       "pid": "",
@@ -29,6 +29,15 @@
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Thu, 23 Jul 2026 00:00:19 GMT"
+    },
+    {
+      "pid": "",
+      "title": "23/10:58 EST Frost Warning\nfor Northern Country, North East and East Gippsland forecast districts",
+      "type": "other",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/frost.shtml",
+      "desc": "",
+      "issued": "Thu, 23 Jul 2026 00:58:57 GMT"
     },
     {
       "pid": "",
@@ -68,6 +77,15 @@
     },
     {
       "pid": "",
+      "title": "23/10:28 CST Frost Warning\nfor Mid North forecast district",
+      "type": "other",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/frost.shtml",
+      "desc": "",
+      "issued": "Thu, 23 Jul 2026 00:58:57 GMT"
+    },
+    {
+      "pid": "",
       "title": "23/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
@@ -104,35 +122,52 @@
     },
     {
       "pid": "",
-      "title": "23/04:39 EST Warning to Sheep Graziers\nfor Midlands, Upper Derwent Valley and South East forecast districts",
+      "title": "23/10:52 EST Warning to Sheep Graziers\nfor Midlands, Upper Derwent Valley and South East forecast districts",
       "type": "other",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Wed, 22 Jul 2026 18:39:43 GMT"
+      "issued": "Thu, 23 Jul 2026 00:52:21 GMT"
     },
     {
       "pid": "",
-      "title": "23/04:39 EST Road Weather Alert for Tasmania\nfor Western and Central Plateau forecast districts",
+      "title": "23/11:12 EST Road Weather Alert for Tasmania\nfor Western and Central Plateau forecast districts",
       "type": "other",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/road.shtml",
       "desc": "",
-      "issued": "Wed, 22 Jul 2026 18:39:39 GMT"
+      "issued": "Thu, 23 Jul 2026 01:12:02 GMT"
     },
     {
       "pid": "",
-      "title": "23/04:39 EST Bush Walkers Weather Alert\nfor Western and Central Plateau forecast districts",
+      "title": "23/11:12 EST Bush Walkers Weather Alert\nfor Western and Central Plateau forecast districts",
       "type": "other",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/bushwalker.shtml",
       "desc": "",
-      "issued": "Wed, 22 Jul 2026 18:39:33 GMT"
+      "issued": "Thu, 23 Jul 2026 01:12:32 GMT"
     }
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Watervale Cl, Blacksmiths",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Thu, 23 Jul 2026 01:18:58 GMT",
+        "description": "Watervale Cl, Blacksmiths, NSW 2281",
+        "council": "Lake Macquarie",
+        "lat": -33.0723889999999,
+        "lng": 151.651998,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -381,6 +416,66 @@
     ],
     "nt": [
       {
+        "title": "Bushfire - Mount Bundey Training Ground, MOUNT BUNDEY",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-07-23T01:15:00+00:00",
+        "description": "Mount Bundey Training Ground, MOUNT BUNDEY",
+        "lat": -12.9687,
+        "lng": 131.7561,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - TENNANT CREEK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-23T01:04:00+00:00",
+        "description": "TENNANT CREEK",
+        "lat": -19.6575,
+        "lng": 134.1828,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Wildman Road, POINT STUART",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-07-23T01:03:00+00:00",
+        "description": "Wildman Road, POINT STUART",
+        "lat": -12.6411,
+        "lng": 131.7501,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Blyth Road, LIVINGSTONE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-07-23T00:50:00+00:00",
+        "description": "Blyth Road, LIVINGSTONE",
+        "lat": -12.7209,
+        "lng": 131.0513,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - Unknown",
         "alertLevel": "Advice",
         "status": "active",
@@ -421,36 +516,6 @@
         "description": "BIRDUM",
         "lat": -16.3068,
         "lng": 133.3849,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Bushfire - Mount Bundey Training Ground, MOUNT BUNDEY",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-07-22T07:50:00+00:00",
-        "description": "Mount Bundey Training Ground, MOUNT BUNDEY",
-        "lat": -12.9687,
-        "lng": 131.7561,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Bushfire - Blyth Road, LIVINGSTONE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-07-22T07:18:00+00:00",
-        "description": "Blyth Road, LIVINGSTONE",
-        "lat": -12.7209,
-        "lng": 131.0513,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -531,21 +596,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Bushfire - Wildman Road, POINT STUART",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-07-22T00:10:00+00:00",
-        "description": "Wildman Road, POINT STUART",
-        "lat": -12.6411,
-        "lng": 131.7501,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Brandt Road, HOLMES ",
         "alertLevel": "Advice",
         "status": "active",
@@ -563,7 +613,7 @@
     ],
     "act": []
   },
-  "incident_count": 28,
+  "incident_count": 30,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
