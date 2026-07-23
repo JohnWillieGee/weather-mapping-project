@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-23T01:22:49.577637+00:00",
-  "last_checked_utc": "2026-07-23T01:22:49.577637+00:00",
+  "generated_utc": "2026-07-23T01:52:47.766771+00:00",
+  "last_checked_utc": "2026-07-23T01:52:47.766771+00:00",
   "warning_count": 16,
   "warnings": [
     {
@@ -150,40 +150,23 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Watervale Cl, Blacksmiths",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Thu, 23 Jul 2026 01:18:58 GMT",
-        "description": "Watervale Cl, Blacksmiths, NSW 2281",
-        "council": "Lake Macquarie",
-        "lat": -33.0723889999999,
-        "lng": 151.651998,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
       {
-        "title": "Fire",
+        "title": "Structure Fire",
         "alertLevel": "",
         "status": "active",
-        "type": "Bush Fire",
+        "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-23T00:25:19+00:00",
-        "description": "NORTHAMPTON, SHIRE OF NORTHAMPTON",
-        "lat": -28.3543,
-        "lng": 114.6056,
+        "updated": "2026-07-23T01:35:46+00:00",
+        "description": "WEMBLEY, TOWN OF CAMBRIDGE",
+        "lat": -31.9356,
+        "lng": 115.8149,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -195,10 +178,25 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-23T00:03:15+00:00",
+        "updated": "2026-07-23T01:14:19+00:00",
         "description": "MANDURAH, CITY OF MANDURAH",
         "lat": -32.5282,
         "lng": 115.7273,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-23T00:25:19+00:00",
+        "description": "NORTHAMPTON, SHIRE OF NORTHAMPTON",
+        "lat": -28.3543,
+        "lng": 114.6056,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -416,6 +414,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - MCGORRIE RD, MARRAKAI",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-23T01:35:36+00:00",
+        "description": "MCGORRIE RD, MARRAKAI",
+        "lat": -12.7288,
+        "lng": 131.4411,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Mount Bundey Training Ground, MOUNT BUNDEY",
         "alertLevel": "Advice",
         "status": "active",
@@ -426,21 +439,6 @@
         "description": "Mount Bundey Training Ground, MOUNT BUNDEY",
         "lat": -12.9687,
         "lng": 131.7561,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - TENNANT CREEK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-23T01:04:00+00:00",
-        "description": "TENNANT CREEK",
-        "lat": -19.6575,
-        "lng": 134.1828,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -516,21 +514,6 @@
         "description": "BIRDUM",
         "lat": -16.3068,
         "lng": 133.3849,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Bushfire - Fog Bay Road, DUNDEE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-07-22T04:12:00+00:00",
-        "description": "Fog Bay Road, DUNDEE",
-        "lat": -12.8145,
-        "lng": 130.4591,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -613,7 +596,7 @@
     ],
     "act": []
   },
-  "incident_count": 30,
+  "incident_count": 29,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
