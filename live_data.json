@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-23T10:52:59.060836+00:00",
-  "last_checked_utc": "2026-07-23T10:52:59.060836+00:00",
+  "generated_utc": "2026-07-23T11:22:57.759825+00:00",
+  "last_checked_utc": "2026-07-23T11:22:57.759825+00:00",
   "warning_count": 14,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "23/15:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "23/21:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 23 Jul 2026 05:00:29 GMT"
+      "issued": "Thu, 23 Jul 2026 11:00:14 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "23/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "23/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 23 Jul 2026 05:01:16 GMT"
+      "issued": "Thu, 23 Jul 2026 11:01:16 GMT"
     },
     {
       "pid": "",
@@ -122,12 +122,12 @@
     },
     {
       "pid": "",
-      "title": "23/14:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "23/20:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 23 Jul 2026 05:00:25 GMT"
+      "issued": "Thu, 23 Jul 2026 11:00:11 GMT"
     }
   ],
   "fetch_errors": {},
@@ -139,31 +139,16 @@
     "tas": [],
     "wa": [
       {
-        "title": "Structure Fire",
+        "title": "Fire",
         "alertLevel": "",
         "status": "active",
-        "type": "Structure Fire",
+        "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-23T10:17:41+00:00",
-        "description": "WAGIN, SHIRE OF WAGIN",
-        "lat": -33.3128,
-        "lng": 117.3418,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-23T10:05:25+00:00",
-        "description": "ASCOT, CITY OF BELMONT",
-        "lat": -31.9368,
-        "lng": 115.9307,
+        "updated": "2026-07-23T11:01:55+00:00",
+        "description": "YILKARI, CITY OF KALGOORLIE-BOULDER",
+        "lat": -30.7887,
+        "lng": 121.4318,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -432,10 +417,25 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-23T10:38:46+00:00",
+        "updated": "2026-07-23T11:14:08+00:00",
         "description": "PRUEN RD, BERRIMAH",
         "lat": -12.4358,
         "lng": 130.9264,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - MISTLETOE CCT, KARAMA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-23T11:11:40+00:00",
+        "description": "MISTLETOE CCT, KARAMA",
+        "lat": -12.3933,
+        "lng": 130.9164,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -3649,7 +3649,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-23T05:00:19Z",
+      "issued_utc": "2026-07-23T11:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3758,6 +3758,31 @@
         }
       ]
     },
+    "WA": {
+      "state": "WA",
+      "product": "IDW20100",
+      "issued_utc": "2026-07-23T11:01:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "North Kimberley Coast: WA-NT Border to Kuri Bay",
+            "West Kimberley Coast: Kuri Bay to Wallal",
+            "Pilbara Coast East: Wallal to Cape Preston",
+            "Pilbara Coast West: Cape Preston to North West Cape"
+          ],
+          "aac_codes": [
+            "WA_MW001",
+            "WA_MW002",
+            "WA_MW003",
+            "WA_MW004"
+          ],
+          "summary": "North Kimberley Coast, West Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
+        }
+      ]
+    },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
@@ -3822,7 +3847,7 @@
     "NT": {
       "state": "NT",
       "product": "IDD20105",
-      "issued_utc": "2026-07-23T05:00:16Z",
+      "issued_utc": "2026-07-23T11:00:00Z",
       "overview": [],
       "hazards": [
         {
