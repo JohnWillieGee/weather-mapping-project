@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-23T04:22:49.996838+00:00",
-  "last_checked_utc": "2026-07-23T04:22:49.996838+00:00",
-  "warning_count": 15,
+  "generated_utc": "2026-07-23T04:52:48.984270+00:00",
+  "last_checked_utc": "2026-07-23T04:52:48.984270+00:00",
+  "warning_count": 14,
   "warnings": [
     {
       "pid": "",
@@ -38,15 +38,6 @@
       "link": "http://reg.bom.gov.au/vic/warnings/frost.shtml",
       "desc": "",
       "issued": "Thu, 23 Jul 2026 00:58:57 GMT"
-    },
-    {
-      "pid": "",
-      "title": "20/10:54 EST Final Flood Warning for the Kiewa River",
-      "type": "flood",
-      "state": "VIC",
-      "link": "http://reg.bom.gov.au/vic/warnings/flood/kiewariver.shtml",
-      "desc": "",
-      "issued": "Mon, 20 Jul 2026 00:54:39 GMT"
     },
     {
       "pid": "",
@@ -141,7 +132,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Reginald Ward St, South Kempsey",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Thu, 23 Jul 2026 04:50:58 GMT",
+        "description": "Reginald Ward St, South Kempsey, NSW 2440",
+        "council": "Kempsey",
+        "lat": -31.096236,
+        "lng": 152.827416,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -188,21 +196,6 @@
         "description": "WATERBANK, SHIRE OF BROOME",
         "lat": -17.776,
         "lng": 122.325,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-23T02:38:59+00:00",
-        "description": "SOUTH HEDLAND, TOWN OF PORT HEDLAND",
-        "lat": -20.4216,
-        "lng": 118.6056,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -390,16 +383,31 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - VERNIER CCT, WOODROFFE",
+        "title": "Grass and Scrub Fire - Unknown",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-23T04:12:59+00:00",
-        "description": "VERNIER CCT, WOODROFFE",
+        "updated": "2026-07-23T04:43:16+00:00",
+        "description": "",
         "lat": -12.4998,
-        "lng": 130.9817,
+        "lng": 131.0001,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - McGorrie Road, MARRAKAI",
+        "alertLevel": "Watch and Act",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-07-23T04:30:00+00:00",
+        "description": "McGorrie Road, MARRAKAI",
+        "lat": -12.7455,
+        "lng": 131.4496,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -415,21 +423,6 @@
         "description": "BING BONG -, MCARTHUR",
         "lat": -15.7621,
         "lng": 136.3429,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Bushfire - McGorrie Road, MARRAKAI",
-        "alertLevel": "Watch and Act",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-07-23T02:26:00+00:00",
-        "description": "McGorrie Road, MARRAKAI",
-        "lat": -12.7455,
-        "lng": 131.4496,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
