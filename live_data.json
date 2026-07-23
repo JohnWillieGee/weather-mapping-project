@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-23T16:52:47.997003+00:00",
-  "last_checked_utc": "2026-07-23T16:52:47.997003+00:00",
+  "generated_utc": "2026-07-23T17:22:50.092862+00:00",
+  "last_checked_utc": "2026-07-23T17:22:50.092862+00:00",
   "warning_count": 14,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "23/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "24/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 23 Jul 2026 11:00:14 GMT"
+      "issued": "Thu, 23 Jul 2026 17:00:14 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "23/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "24/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 23 Jul 2026 11:01:16 GMT"
+      "issued": "Thu, 23 Jul 2026 17:01:15 GMT"
     },
     {
       "pid": "",
@@ -122,12 +122,12 @@
     },
     {
       "pid": "",
-      "title": "23/20:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "24/02:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 23 Jul 2026 11:00:11 GMT"
+      "issued": "Thu, 23 Jul 2026 17:00:16 GMT"
     }
   ],
   "fetch_errors": {},
@@ -138,6 +138,36 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fuel Leak",
+        "alertLevel": "",
+        "status": "active",
+        "type": "HazMat",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-23T17:08:32+00:00",
+        "description": "MALABAINE, SHIRE OF NORTHAM",
+        "lat": -31.6367,
+        "lng": 116.7075,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-23T17:00:40+00:00",
+        "description": "BROOME, SHIRE OF BROOME",
+        "lat": -17.9553,
+        "lng": 122.2352,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -638,7 +668,7 @@
     ],
     "act": []
   },
-  "incident_count": 33,
+  "incident_count": 35,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3619,8 +3649,11 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-23T11:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-07-23T17:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Friday for South East Gulf of Carpentaria, Peninsula Coast and Cooktown Coast",
+        "Strong Wind Warning for Saturday for Cooktown Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3729,8 +3762,11 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-07-23T11:01:00Z",
-      "overview": [],
+      "issued_utc": "2026-07-23T17:01:00Z",
+      "overview": [
+        "Strong Wind Warning for Friday for North Kimberley Coast, West Kimberley Coast, Pilbara Coast East and Pilbara Coast West",
+        "Strong Wind Warning for Saturday for North Kimberley Coast, West Kimberley Coast, Pilbara Coast East, Pilbara Coast West and Leeuwin Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3813,7 +3849,7 @@
     "NT": {
       "state": "NT",
       "product": "IDD20105",
-      "issued_utc": "2026-07-23T11:00:00Z",
+      "issued_utc": "2026-07-23T17:00:00Z",
       "overview": [],
       "hazards": [
         {
