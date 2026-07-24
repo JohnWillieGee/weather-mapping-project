@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-24T17:53:18.240882+00:00",
-  "last_checked_utc": "2026-07-24T17:53:18.240882+00:00",
+  "generated_utc": "2026-07-24T18:23:13.775177+00:00",
+  "last_checked_utc": "2026-07-24T18:23:13.775177+00:00",
   "warning_count": 10,
   "warnings": [
     {
       "pid": "",
-      "title": "24/22:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "25/04:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 24 Jul 2026 12:00:24 GMT"
+      "issued": "Fri, 24 Jul 2026 18:00:27 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "24/22:00 EST Marine Wind Warning Summary for Victoria",
+      "title": "25/04:10 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 24 Jul 2026 12:00:38 GMT"
+      "issued": "Fri, 24 Jul 2026 18:10:24 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "24/21:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "25/03:40 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Fri, 24 Jul 2026 12:00:10 GMT"
+      "issued": "Fri, 24 Jul 2026 18:10:16 GMT"
     },
     {
       "pid": "",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "25/00:32 EST Marine Wind Warning Summary for Tasmania",
+      "title": "25/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 24 Jul 2026 14:32:10 GMT"
+      "issued": "Fri, 24 Jul 2026 18:00:22 GMT"
     },
     {
       "pid": "IDT20613",
@@ -104,7 +104,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 24 Jul 2026 17:50:58 GMT",
+        "updated": "Fri, 24 Jul 2026 18:18:57 GMT",
         "description": "Mars Place, Lansvale, NSW 2166",
         "council": "Fairfield",
         "lat": -33.8986859999999,
@@ -3725,15 +3725,38 @@
         }
       ]
     },
+    "NSW": {
+      "state": "NSW",
+      "product": "IDN20400",
+      "issued_utc": "2026-07-24T18:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Saturday for Batemans Coast and Eden Coast",
+        "Strong Wind Warning for Sunday for Eden Coast"
+      ],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Batemans Coast: Ulladulla to Montague Island",
+            "Eden Coast: Montague Island to Gabo Island"
+          ],
+          "aac_codes": [
+            "NSW_MW002",
+            "NSW_MW001"
+          ],
+          "summary": "Batemans Coast and Eden Coast"
+        }
+      ]
+    },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-07-24T12:00:00Z",
+      "issued_utc": "2026-07-24T18:10:00Z",
       "overview": [
-        "Gale Warning for Friday for East Gippsland Coast",
-        "Strong Wind Warning for Friday for West Coast, Central Coast and Central Gippsland Coast",
         "Gale Warning for Saturday for East Gippsland Coast",
-        "Strong Wind Warning for Saturday for West Coast, Central Coast and Central Gippsland Coast"
+        "Strong Wind Warning for Saturday for West Coast, Central Coast and Central Gippsland Coast",
+        "Strong Wind Warning for Sunday for East Gippsland Coast"
       ],
       "hazards": [
         {
@@ -3767,19 +3790,21 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-07-24T12:00:00Z",
+      "issued_utc": "2026-07-24T18:10:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
+            "Central Coast",
+            "South Central Coast"
           ],
           "aac_codes": [
-            "SA_MW010"
+            "SA_MW004",
+            "SA_MW008"
           ],
-          "summary": "Lower South East Coast"
+          "summary": "Central Coast and South Central Coast"
         }
       ]
     },
@@ -3819,10 +3844,11 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-07-24T14:31:49Z",
+      "issued_utc": "2026-07-24T18:00:00Z",
       "overview": [
         "Gale Warning for Saturday for Lower East Coast and South East Coast",
-        "Strong Wind Warning for Saturday for Central West Coast, Central Plateau Lakes, South West Coast, Far North West Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island"
+        "Strong Wind Warning for Saturday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island and South West Coast",
+        "Strong Wind Warning for Sunday for South East Coast, South West Coast and Central West Coast"
       ],
       "hazards": [
         {
@@ -3846,20 +3872,16 @@
             "Central North Coast: Stanley to Northern Tip of Flinders Island",
             "Banks Strait and Franklin Sound",
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
-            "South West Coast: South East Cape to Low Rocky Point",
-            "Central West Coast: Low Rocky Point to Sandy Cape",
-            "Central Plateau Lakes"
+            "South West Coast: South East Cape to Low Rocky Point"
           ],
           "aac_codes": [
             "TAS_MW001",
             "TAS_MW002",
             "TAS_MW009",
             "TAS_MW003",
-            "TAS_MW007",
-            "TAS_MW008",
-            "TAS_MW010"
+            "TAS_MW007"
           ],
-          "summary": "Central Plateau Lakes, Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, South West Coast and Central West Coast"
+          "summary": "Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island and South West Coast"
         }
       ]
     },
