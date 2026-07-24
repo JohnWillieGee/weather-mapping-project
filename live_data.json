@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-24T16:53:14.946206+00:00",
-  "last_checked_utc": "2026-07-24T16:53:14.946206+00:00",
+  "generated_utc": "2026-07-24T17:23:15.949867+00:00",
+  "last_checked_utc": "2026-07-24T17:23:15.949867+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "24/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "25/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 24 Jul 2026 11:00:13 GMT"
+      "issued": "Fri, 24 Jul 2026 17:00:15 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "24/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "25/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Fri, 24 Jul 2026 11:01:13 GMT"
+      "issued": "Fri, 24 Jul 2026 17:01:14 GMT"
     },
     {
       "pid": "",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "24/20:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "25/02:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 24 Jul 2026 11:00:11 GMT"
+      "issued": "Fri, 24 Jul 2026 17:00:14 GMT"
     }
   ],
   "fetch_errors": {},
@@ -104,27 +104,11 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 24 Jul 2026 16:50:57 GMT",
+        "updated": "Fri, 24 Jul 2026 17:18:58 GMT",
         "description": "Mars Place, Lansvale, NSW 2166",
         "council": "Fairfield",
         "lat": -33.8986859999999,
         "lng": 150.962361,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "Portland Dr, Cameron Park",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 24 Jul 2026 16:50:57 GMT",
-        "description": "Portland Dr, Cameron Park, NSW 2285",
-        "council": "Lake Macquarie",
-        "lat": -32.917179,
-        "lng": 151.597453,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -181,21 +165,6 @@
       }
     ],
     "wa": [
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-24T16:40:56+00:00",
-        "description": "DERBY, SHIRE OF DERBY/WEST KIMBERLEY",
-        "lat": -17.3183,
-        "lng": 123.6354,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Fire",
         "alertLevel": "",
@@ -528,6 +497,36 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - Unknown",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-24T17:15:06+00:00",
+        "description": "",
+        "lat": -12.7187,
+        "lng": 130.3575,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - COBURG DR, LEANYER",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-24T17:10:48+00:00",
+        "description": "COBURG DR, LEANYER",
+        "lat": -12.3731,
+        "lng": 130.8965,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Bushfire - Stuart Highway, ACACIA HILLS",
         "alertLevel": "Advice",
@@ -3692,24 +3691,22 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-24T11:00:00Z",
+      "issued_utc": "2026-07-24T17:00:00Z",
       "overview": [
-        "Strong Wind Warning for Friday for Peninsula Coast and Cooktown Coast",
-        "Strong Wind Warning for Saturday for Cooktown Coast"
+        "Strong Wind Warning for Saturday for Cooktown Coast",
+        "Strong Wind Warning for Sunday for South East Gulf of Carpentaria"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Peninsula Coast: Sharp Point to Cape Melville",
             "Cooktown Coast: Cape Melville to Cape Tribulation"
           ],
           "aac_codes": [
-            "QLD_MW004",
             "QLD_MW005"
           ],
-          "summary": "Peninsula Coast and Cooktown Coast"
+          "summary": "Cooktown Coast"
         }
       ]
     },
@@ -3774,10 +3771,11 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-07-24T11:01:00Z",
+      "issued_utc": "2026-07-24T17:01:00Z",
       "overview": [
-        "Strong Wind Warning for Friday for North Kimberley Coast, West Kimberley Coast and Pilbara Coast East",
-        "Strong Wind Warning for Saturday for North Kimberley Coast, West Kimberley Coast, Pilbara Coast East, Pilbara Coast West, Leeuwin Coast and Albany Coast"
+        "Strong Wind Warning for Saturday for North Kimberley Coast, West Kimberley Coast, Pilbara Coast East, Pilbara Coast West, Leeuwin Coast and Albany Coast",
+        "Gale Warning for Sunday for Leeuwin Coast, Albany Coast and Esperance Coast",
+        "Strong Wind Warning for Sunday for North Kimberley Coast, West Kimberley Coast, Pilbara Coast East, Bunbury Geographe Coast and Eucla Coast"
       ],
       "hazards": [
         {
@@ -3786,14 +3784,20 @@
           "zones": [
             "North Kimberley Coast: WA-NT Border to Kuri Bay",
             "West Kimberley Coast: Kuri Bay to Wallal",
-            "Pilbara Coast East: Wallal to Cape Preston"
+            "Pilbara Coast East: Wallal to Cape Preston",
+            "Pilbara Coast West: Cape Preston to North West Cape",
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay"
           ],
           "aac_codes": [
             "WA_MW001",
             "WA_MW002",
-            "WA_MW003"
+            "WA_MW003",
+            "WA_MW004",
+            "WA_MW011",
+            "WA_MW012"
           ],
-          "summary": "North Kimberley Coast, West Kimberley Coast and Pilbara Coast East"
+          "summary": "North Kimberley Coast, West Kimberley Coast, Pilbara Coast East, Pilbara Coast West, Leeuwin Coast and Albany Coast"
         }
       ]
     },
@@ -3847,10 +3851,10 @@
     "NT": {
       "state": "NT",
       "product": "IDD20105",
-      "issued_utc": "2026-07-24T11:00:00Z",
+      "issued_utc": "2026-07-24T17:00:00Z",
       "overview": [
-        "Strong Wind Warning for Friday for Beagle Bonaparte Coast and Arafura Coast",
-        "Strong Wind Warning for Saturday for Beagle Bonaparte Coast and Arafura Coast"
+        "Strong Wind Warning for Saturday for Beagle Bonaparte Coast, North Tiwi Coast and Arafura Coast",
+        "Strong Wind Warning for Sunday for Beagle Bonaparte Coast and Roper Groote Coast"
       ],
       "hazards": [
         {
@@ -3858,13 +3862,15 @@
           "severity": "STR",
           "zones": [
             "Beagle Bonaparte Coast: WA-NT Border to Cape Fourcroy",
+            "North Tiwi Coast: Cape Fourcroy to Cape Don",
             "Arafura Coast: Cape Don to Cape Wessel"
           ],
           "aac_codes": [
             "NT_MW001",
+            "NT_MW002",
             "NT_MW004"
           ],
-          "summary": "Beagle Bonaparte Coast and Arafura Coast"
+          "summary": "Beagle Bonaparte Coast, North Tiwi Coast and Arafura Coast"
         }
       ]
     }
