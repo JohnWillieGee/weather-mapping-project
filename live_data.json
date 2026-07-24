@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-24T03:52:51.677334+00:00",
-  "last_checked_utc": "2026-07-24T03:52:51.677334+00:00",
+  "generated_utc": "2026-07-24T04:22:50.574519+00:00",
+  "last_checked_utc": "2026-07-24T04:22:50.574519+00:00",
   "warning_count": 11,
   "warnings": [
     {
@@ -105,7 +105,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Mars Place, Lansvale",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 24 Jul 2026 04:18:58 GMT",
+        "description": "Mars Place, Lansvale, NSW 2166",
+        "council": "Fairfield",
+        "lat": -33.8986859999999,
+        "lng": 150.962361,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [
       {
@@ -429,16 +446,61 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - STUART HWY, ACACIA HILLS",
+        "title": "Structure Fire - PRUEN RD, BERRIMAH",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-24T04:11:02+00:00",
+        "description": "PRUEN RD, BERRIMAH",
+        "lat": -12.4358,
+        "lng": 130.9264,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - CASUARINA",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-24T03:38:47+00:00",
-        "description": "STUART HWY, ACACIA HILLS",
-        "lat": -12.7993,
-        "lng": 131.1199,
+        "updated": "2026-07-24T04:02:47+00:00",
+        "description": "CASUARINA",
+        "lat": -12.3758,
+        "lng": 130.8791,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Stuart Highway, ACACIA HILLS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-07-24T03:50:00+00:00",
+        "description": "Stuart Highway, ACACIA HILLS",
+        "lat": -12.8014,
+        "lng": 131.1227,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - ACACIA HILLS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-24T03:48:45+00:00",
+        "description": "ACACIA HILLS",
+        "lat": -12.7956,
+        "lng": 131.123,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -469,21 +531,6 @@
         "description": "LIVINGSTONE",
         "lat": -12.6732,
         "lng": 131.0802,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Structure Fire - PRUEN RD, BERRIMAH",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-24T03:03:27+00:00",
-        "description": "PRUEN RD, BERRIMAH",
-        "lat": -12.4358,
-        "lng": 130.9264,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -662,7 +709,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-07-24T03:50:00+00:00",
+        "updated": "2026-07-24T04:20:00+00:00",
         "description": "GIRALANG",
         "lat": -35.2103,
         "lng": 149.0886,
@@ -676,8 +723,8 @@
         "status": "active",
         "type": "Structure Fire",
         "size": "",
-        "agency": "Fire - Ambulance",
-        "updated": "2026-07-24T03:49:47+00:00",
+        "agency": "Fire",
+        "updated": "2026-07-24T04:15:36+00:00",
         "description": "GIRALANG",
         "lat": -35.2103,
         "lng": 149.0886,
@@ -687,7 +734,7 @@
       }
     ]
   },
-  "incident_count": 38,
+  "incident_count": 41,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
