@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-24T07:22:50.499020+00:00",
-  "last_checked_utc": "2026-07-24T07:22:50.499020+00:00",
+  "generated_utc": "2026-07-24T07:52:51.376605+00:00",
+  "last_checked_utc": "2026-07-24T07:52:51.376605+00:00",
   "warning_count": 11,
   "warnings": [
     {
@@ -107,13 +107,29 @@
   "incidents": {
     "nsw": [
       {
+        "title": "Adelaide St, Moree",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 24 Jul 2026 07:50:58 GMT",
+        "description": "Adelaide St, Moree, NSW 2400",
+        "council": "Moree Plains",
+        "lat": -29.4761179999999,
+        "lng": 149.843399,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "Mars Place, Lansvale",
         "alertLevel": "Advice",
         "status": "Not yet controlled",
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 24 Jul 2026 07:18:57 GMT",
+        "updated": "Fri, 24 Jul 2026 07:50:58 GMT",
         "description": "Mars Place, Lansvale, NSW 2166",
         "council": "Fairfield",
         "lat": -33.8986859999999,
@@ -144,6 +160,21 @@
       }
     ],
     "wa": [
+      {
+        "title": "Smoke Alert FOR THE WESTERN PARTS OF KUNUNURRA IN THE SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-07-24T07:03:39.029+00:00",
+        "description": "",
+        "lat": -15.7937,
+        "lng": 128.6902,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - LAKE ARGYLE",
         "alertLevel": "Advice",
@@ -462,6 +493,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - DRIPSTONE RD, CASUARINA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-24T07:41:53+00:00",
+        "description": "DRIPSTONE RD, CASUARINA",
+        "lat": -12.3761,
+        "lng": 130.8787,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - CENTRAL ARNHEM RD, FLYING FOX",
         "alertLevel": "Advice",
         "status": "active",
@@ -674,7 +720,7 @@
     ],
     "act": []
   },
-  "incident_count": 37,
+  "incident_count": 40,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
