@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-24T04:52:51.614453+00:00",
-  "last_checked_utc": "2026-07-24T04:52:51.614453+00:00",
-  "warning_count": 10,
+  "generated_utc": "2026-07-24T05:22:52.882232+00:00",
+  "last_checked_utc": "2026-07-24T05:22:52.882232+00:00",
+  "warning_count": 11,
   "warnings": [
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "24/09:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "24/15:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 23 Jul 2026 23:00:12 GMT"
+      "issued": "Fri, 24 Jul 2026 05:00:13 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "24/07:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "24/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 23 Jul 2026 23:01:21 GMT"
+      "issued": "Fri, 24 Jul 2026 05:01:15 GMT"
     },
     {
       "pid": "",
@@ -65,6 +65,15 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Fri, 24 Jul 2026 00:00:13 GMT"
+    },
+    {
+      "pid": "IDT20616",
+      "title": "24/15:02 EST Initial Minor Flood Warning for the Huon River",
+      "type": "flood",
+      "state": "TAS",
+      "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDT20616.html",
+      "desc": "",
+      "issued": "Fri, 24 Jul 2026 05:02:50 GMT"
     },
     {
       "pid": "",
@@ -86,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "24/08:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "24/14:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 23 Jul 2026 23:00:11 GMT"
+      "issued": "Fri, 24 Jul 2026 05:00:11 GMT"
     }
   ],
   "fetch_errors": {},
@@ -104,7 +113,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 24 Jul 2026 04:50:58 GMT",
+        "updated": "Fri, 24 Jul 2026 05:18:58 GMT",
         "description": "Mars Place, Lansvale, NSW 2166",
         "council": "Fairfield",
         "lat": -33.8986859999999,
@@ -134,6 +143,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - DAMPIER PENINSULA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-07-24T05:00:34.681+00:00",
+        "description": "",
+        "lat": -16.5125,
+        "lng": 122.9649,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - ROEBUCK, WATERBANK AND WILLARE",
         "alertLevel": "Advice",
@@ -300,21 +324,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire Advice MONITOR CONDITIONS - DAMPIER PENINSULA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-07-23T06:45:06.398+00:00",
-        "description": "",
-        "lat": -16.534,
-        "lng": 122.9492,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
@@ -437,6 +446,36 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - ROYSTONEA AV, ZUCCOLI",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-24T05:08:49+00:00",
+        "description": "ROYSTONEA AV, ZUCCOLI",
+        "lat": -12.5203,
+        "lng": 131.0016,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - RADFORD RD, ZUCCOLI",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-24T04:56:36+00:00",
+        "description": "RADFORD RD, ZUCCOLI",
+        "lat": -12.5228,
+        "lng": 131.0133,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Stuart Highway, ACACIA HILLS",
         "alertLevel": "Advice",
         "status": "active",
@@ -477,21 +516,6 @@
         "description": "LIVINGSTONE",
         "lat": -12.6732,
         "lng": 131.0802,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - BERTRAM RD, ZUCCOLI",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-24T02:33:23+00:00",
-        "description": "BERTRAM RD, ZUCCOLI",
-        "lat": -12.518,
-        "lng": 130.9982,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -655,7 +679,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "Fire",
-        "updated": "2026-07-24T04:43:47+00:00",
+        "updated": "2026-07-24T05:00:53+00:00",
         "description": "GIRALANG",
         "lat": -35.2103,
         "lng": 149.0886,
@@ -665,7 +689,7 @@
       }
     ]
   },
-  "incident_count": 37,
+  "incident_count": 38,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3646,9 +3670,9 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-23T23:00:00Z",
+      "issued_utc": "2026-07-24T05:00:00Z",
       "overview": [
-        "Strong Wind Warning for Friday for South East Gulf of Carpentaria, Peninsula Coast and Cooktown Coast",
+        "Strong Wind Warning for Friday for Peninsula Coast and Cooktown Coast",
         "Strong Wind Warning for Saturday for Cooktown Coast"
       ],
       "hazards": [
@@ -3656,16 +3680,14 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "South East Gulf of Carpentaria: QLD-NT Border to Cape Keerweer",
             "Peninsula Coast: Sharp Point to Cape Melville",
             "Cooktown Coast: Cape Melville to Cape Tribulation"
           ],
           "aac_codes": [
-            "QLD_MW001",
             "QLD_MW004",
             "QLD_MW005"
           ],
-          "summary": "South East Gulf of Carpentaria, Peninsula Coast and Cooktown Coast"
+          "summary": "Peninsula Coast and Cooktown Coast"
         }
       ]
     },
@@ -3752,9 +3774,9 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-07-23T23:01:00Z",
+      "issued_utc": "2026-07-24T05:01:00Z",
       "overview": [
-        "Strong Wind Warning for Friday for North Kimberley Coast, West Kimberley Coast, Pilbara Coast East and Pilbara Coast West",
+        "Strong Wind Warning for Friday for North Kimberley Coast, Pilbara Coast East and Pilbara Coast West",
         "Strong Wind Warning for Saturday for North Kimberley Coast, West Kimberley Coast, Pilbara Coast East, Pilbara Coast West and Leeuwin Coast"
       ],
       "hazards": [
@@ -3763,17 +3785,15 @@
           "severity": "STR",
           "zones": [
             "North Kimberley Coast: WA-NT Border to Kuri Bay",
-            "West Kimberley Coast: Kuri Bay to Wallal",
             "Pilbara Coast East: Wallal to Cape Preston",
             "Pilbara Coast West: Cape Preston to North West Cape"
           ],
           "aac_codes": [
             "WA_MW001",
-            "WA_MW002",
             "WA_MW003",
             "WA_MW004"
           ],
-          "summary": "North Kimberley Coast, West Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
+          "summary": "North Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
         }
       ]
     },
@@ -3833,23 +3853,24 @@
     "NT": {
       "state": "NT",
       "product": "IDD20105",
-      "issued_utc": "2026-07-23T23:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-07-24T05:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Friday for Beagle Bonaparte Coast and Arafura Coast",
+        "Strong Wind Warning for Saturday for Beagle Bonaparte Coast and Arafura Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
             "Beagle Bonaparte Coast: WA-NT Border to Cape Fourcroy",
-            "Arafura Coast: Cape Don to Cape Wessel",
-            "Roper Groote Coast: Cape Arnhem to QLD-NT Border"
+            "Arafura Coast: Cape Don to Cape Wessel"
           ],
           "aac_codes": [
             "NT_MW001",
-            "NT_MW004",
-            "NT_MW006"
+            "NT_MW004"
           ],
-          "summary": "Beagle Bonaparte Coast, Arafura Coast and Roper Groote Coast"
+          "summary": "Beagle Bonaparte Coast and Arafura Coast"
         }
       ]
     }
