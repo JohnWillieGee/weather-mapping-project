@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-24T14:23:05.064057+00:00",
-  "last_checked_utc": "2026-07-24T14:23:05.064057+00:00",
+  "generated_utc": "2026-07-24T14:53:03.091940+00:00",
+  "last_checked_utc": "2026-07-24T14:53:03.091940+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "24/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "25/00:32 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 24 Jul 2026 12:00:20 GMT"
+      "issued": "Fri, 24 Jul 2026 14:32:10 GMT"
     },
     {
       "pid": "IDT20613",
@@ -104,7 +104,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 24 Jul 2026 14:18:58 GMT",
+        "updated": "Fri, 24 Jul 2026 14:51:00 GMT",
         "description": "Mars Place, Lansvale, NSW 2166",
         "council": "Fairfield",
         "lat": -33.8986859999999,
@@ -166,16 +166,16 @@
     ],
     "wa": [
       {
-        "title": "Structure Fire",
+        "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
-        "type": "Structure Fire",
+        "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-24T14:13:03+00:00",
-        "description": "CAREY PARK, CITY OF BUNBURY",
-        "lat": -33.3487,
-        "lng": 115.6486,
+        "updated": "2026-07-24T14:35:36+00:00",
+        "description": "LEXIA, CITY OF SWAN",
+        "lat": -31.7952,
+        "lng": 115.9464,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -221,36 +221,6 @@
         "description": "LAKE ARGYLE, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -16.015,
         "lng": 128.907,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-24T13:39:21+00:00",
-        "description": "DJUGUN, SHIRE OF BROOME",
-        "lat": -17.9545,
-        "lng": 122.2308,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-24T13:25:56+00:00",
-        "description": "NICKOL, CITY OF KARRATHA",
-        "lat": -20.7307,
-        "lng": 116.8014,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -549,7 +519,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-24T14:14:29+00:00",
+        "updated": "2026-07-24T14:29:43+00:00",
         "description": "MORGAN RD, VIRGINIA",
         "lat": -12.5182,
         "lng": 131.017,
@@ -740,7 +710,7 @@
     ],
     "act": []
   },
-  "incident_count": 42,
+  "incident_count": 40,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3829,28 +3799,24 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-07-24T12:00:00Z",
+      "issued_utc": "2026-07-24T14:31:49Z",
       "overview": [
-        "Gale Warning for Friday for East of Flinders Island, Lower East Coast and South East Coast",
-        "Strong Wind Warning for Friday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, South West Coast, Central West Coast and Central Plateau Lakes",
-        "Gale Warning for Saturday for South East Coast",
-        "Strong Wind Warning for Saturday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, South West Coast, Central West Coast and Central Plateau Lakes"
+        "Gale Warning for Saturday for Lower East Coast and South East Coast",
+        "Strong Wind Warning for Saturday for Central West Coast, Central Plateau Lakes, South West Coast, Far North West Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island"
       ],
       "hazards": [
         {
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
-            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
             "Lower East Coast: Wineglass Bay to Tasman Island",
             "South East Coast: Tasman Island to South East Cape"
           ],
           "aac_codes": [
-            "TAS_MW003",
             "TAS_MW005",
             "TAS_MW006"
           ],
-          "summary": "East of Flinders Island, Lower East Coast and South East Coast"
+          "summary": "Lower East Coast and South East Coast"
         },
         {
           "level": "Strong Wind Warning",
@@ -3859,6 +3825,7 @@
             "Far North West Coast: Sandy Cape to Stanley",
             "Central North Coast: Stanley to Northern Tip of Flinders Island",
             "Banks Strait and Franklin Sound",
+            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
             "South West Coast: South East Cape to Low Rocky Point",
             "Central West Coast: Low Rocky Point to Sandy Cape",
             "Central Plateau Lakes"
@@ -3867,11 +3834,12 @@
             "TAS_MW001",
             "TAS_MW002",
             "TAS_MW009",
+            "TAS_MW003",
             "TAS_MW007",
             "TAS_MW008",
             "TAS_MW010"
           ],
-          "summary": "Central Plateau Lakes, Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, South West Coast and Central West Coast"
+          "summary": "Central Plateau Lakes, Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, South West Coast and Central West Coast"
         }
       ]
     },
