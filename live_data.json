@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-24T10:53:17.625500+00:00",
-  "last_checked_utc": "2026-07-24T10:53:17.625500+00:00",
-  "warning_count": 10,
+  "generated_utc": "2026-07-24T11:23:16.632744+00:00",
+  "last_checked_utc": "2026-07-24T11:23:16.632744+00:00",
+  "warning_count": 11,
   "warnings": [
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "24/15:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "24/21:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 24 Jul 2026 05:00:13 GMT"
+      "issued": "Fri, 24 Jul 2026 11:00:13 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "24/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "24/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Fri, 24 Jul 2026 05:01:15 GMT"
+      "issued": "Fri, 24 Jul 2026 11:01:13 GMT"
     },
     {
       "pid": "",
@@ -65,6 +65,15 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Fri, 24 Jul 2026 06:05:17 GMT"
+    },
+    {
+      "pid": "IDT20613",
+      "title": "24/21:04 EST Initial Flood Warning for the Styx River",
+      "type": "flood",
+      "state": "TAS",
+      "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDT20613.html",
+      "desc": "",
+      "issued": "Fri, 24 Jul 2026 11:04:40 GMT"
     },
     {
       "pid": "IDT20616",
@@ -86,17 +95,33 @@
     },
     {
       "pid": "",
-      "title": "24/14:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "24/20:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 24 Jul 2026 05:00:11 GMT"
+      "issued": "Fri, 24 Jul 2026 11:00:11 GMT"
     }
   ],
   "fetch_errors": {},
   "incidents": {
     "nsw": [
+      {
+        "title": "GWYDIR HWY, MOREE",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Fri, 24 Jul 2026 11:19:03 GMT",
+        "description": "GWYDIR HWY, MOREE 2400",
+        "council": "Moree Plains",
+        "lat": -29.5459499359999,
+        "lng": 149.633193969,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
       {
         "title": "Mars Place, Lansvale",
         "alertLevel": "Advice",
@@ -104,7 +129,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 24 Jul 2026 10:50:58 GMT",
+        "updated": "Fri, 24 Jul 2026 11:19:03 GMT",
         "description": "Mars Place, Lansvale, NSW 2166",
         "council": "Fairfield",
         "lat": -33.8986859999999,
@@ -140,7 +165,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-07-24T20:50:13+00:00",
+        "updated": "2026-07-24T20:54:14+00:00",
         "description": "",
         "lat": -42.998649999755074,
         "lng": 146.91193000038584,
@@ -423,16 +448,46 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - SCHWARZ CR, STUART",
+        "title": "Grass and Scrub Fire - WURRUMIYANGA",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-24T10:05:54+00:00",
-        "description": "SCHWARZ CR, STUART",
-        "lat": -23.6916,
-        "lng": 133.8812,
+        "updated": "2026-07-24T11:18:23+00:00",
+        "description": "WURRUMIYANGA",
+        "lat": -11.7583,
+        "lng": 130.6375,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - BURDENS CREEK RD, VIRGINIA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-24T11:11:27+00:00",
+        "description": "BURDENS CREEK RD, VIRGINIA",
+        "lat": -12.5621,
+        "lng": 131.0418,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - Unknown",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-24T11:01:41+00:00",
+        "description": "",
+        "lat": -11.7622,
+        "lng": 130.6317,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -620,7 +675,7 @@
     ],
     "act": []
   },
-  "incident_count": 34,
+  "incident_count": 37,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3601,7 +3656,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-24T05:00:00Z",
+      "issued_utc": "2026-07-24T11:00:00Z",
       "overview": [
         "Strong Wind Warning for Friday for Peninsula Coast and Cooktown Coast",
         "Strong Wind Warning for Saturday for Cooktown Coast"
@@ -3705,10 +3760,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-07-24T05:01:00Z",
+      "issued_utc": "2026-07-24T11:01:00Z",
       "overview": [
-        "Strong Wind Warning for Friday for North Kimberley Coast, Pilbara Coast East and Pilbara Coast West",
-        "Strong Wind Warning for Saturday for North Kimberley Coast, West Kimberley Coast, Pilbara Coast East, Pilbara Coast West and Leeuwin Coast"
+        "Strong Wind Warning for Friday for North Kimberley Coast, West Kimberley Coast and Pilbara Coast East",
+        "Strong Wind Warning for Saturday for North Kimberley Coast, West Kimberley Coast, Pilbara Coast East, Pilbara Coast West, Leeuwin Coast and Albany Coast"
       ],
       "hazards": [
         {
@@ -3716,15 +3771,15 @@
           "severity": "STR",
           "zones": [
             "North Kimberley Coast: WA-NT Border to Kuri Bay",
-            "Pilbara Coast East: Wallal to Cape Preston",
-            "Pilbara Coast West: Cape Preston to North West Cape"
+            "West Kimberley Coast: Kuri Bay to Wallal",
+            "Pilbara Coast East: Wallal to Cape Preston"
           ],
           "aac_codes": [
             "WA_MW001",
-            "WA_MW003",
-            "WA_MW004"
+            "WA_MW002",
+            "WA_MW003"
           ],
-          "summary": "North Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
+          "summary": "North Kimberley Coast, West Kimberley Coast and Pilbara Coast East"
         }
       ]
     },
@@ -3784,7 +3839,7 @@
     "NT": {
       "state": "NT",
       "product": "IDD20105",
-      "issued_utc": "2026-07-24T05:00:00Z",
+      "issued_utc": "2026-07-24T11:00:00Z",
       "overview": [
         "Strong Wind Warning for Friday for Beagle Bonaparte Coast and Arafura Coast",
         "Strong Wind Warning for Saturday for Beagle Bonaparte Coast and Arafura Coast"
