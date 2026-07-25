@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-25T16:53:10.610426+00:00",
-  "last_checked_utc": "2026-07-25T16:53:10.610426+00:00",
+  "generated_utc": "2026-07-25T17:23:10.759898+00:00",
+  "last_checked_utc": "2026-07-25T17:23:10.759898+00:00",
   "warning_count": 8,
   "warnings": [
     {
@@ -23,21 +23,21 @@
     },
     {
       "pid": "",
-      "title": "25/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "26/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 25 Jul 2026 11:00:10 GMT"
+      "issued": "Sat, 25 Jul 2026 17:00:11 GMT"
     },
     {
       "pid": "",
-      "title": "25/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "26/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sat, 25 Jul 2026 11:01:14 GMT"
+      "issued": "Sat, 25 Jul 2026 17:01:12 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "25/20:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "26/02:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 25 Jul 2026 11:00:12 GMT"
+      "issued": "Sat, 25 Jul 2026 17:00:11 GMT"
     }
   ],
   "fetch_errors": {},
@@ -86,7 +86,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 25 Jul 2026 16:50:58 GMT",
+        "updated": "Sat, 25 Jul 2026 17:18:58 GMT",
         "description": "Mars Place, Lansvale, NSW 2166",
         "council": "Fairfield",
         "lat": -33.8986859999999,
@@ -147,6 +147,21 @@
       }
     ],
     "wa": [
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-25T17:09:24+00:00",
+        "description": "BICTON, CITY OF MELVILLE",
+        "lat": -32.03,
+        "lng": 115.778,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -465,6 +480,36 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - NARROWS RD, THE NARROWS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-25T17:17:11+00:00",
+        "description": "NARROWS RD, THE NARROWS",
+        "lat": -12.4248,
+        "lng": 130.8568,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - GILRUTH AV, THE GARDENS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-25T17:00:29+00:00",
+        "description": "GILRUTH AV, THE GARDENS",
+        "lat": -12.4495,
+        "lng": 130.8292,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Galbraith Road, Bees Creek",
         "alertLevel": "",
         "status": "active",
@@ -550,21 +595,6 @@
         "description": "BYERS RD, MANTON",
         "lat": -12.8246,
         "lng": 131.1391,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - GUNN POINT RD, HOWARD SPRINGS",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-25T08:34:10+00:00",
-        "description": "GUNN POINT RD, HOWARD SPRINGS",
-        "lat": -12.4506,
-        "lng": 131.0834,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -767,7 +797,7 @@
     ],
     "act": []
   },
-  "incident_count": 45,
+  "incident_count": 47,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3820,7 +3850,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-25T11:00:00Z",
+      "issued_utc": "2026-07-25T17:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3885,27 +3915,46 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-07-25T11:01:00Z",
+      "issued_utc": "2026-07-25T17:01:00Z",
       "overview": [
-        "Strong Wind Warning for Saturday for Bunbury Geographe Coast, Leeuwin Coast and Albany Coast",
         "Gale Warning for Sunday for Leeuwin Coast, Albany Coast and Esperance Coast",
-        "Strong Wind Warning for Sunday for North Kimberley Coast, West Kimberley Coast, Pilbara Coast East, Bunbury Geographe Coast and Eucla Coast"
+        "Strong Wind Warning for Sunday for North Kimberley Coast, West Kimberley Coast, Pilbara Coast East, Bunbury Geographe Coast and Eucla Coast",
+        "Strong Wind Warning for Monday for Albany Coast, Esperance Coast and Eucla Coast"
       ],
       "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay"
+          ],
+          "aac_codes": [
+            "WA_MW011",
+            "WA_MW012",
+            "WA_MW013"
+          ],
+          "summary": "Leeuwin Coast, Albany Coast and Esperance Coast"
+        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "North Kimberley Coast: WA-NT Border to Kuri Bay",
+            "West Kimberley Coast: Kuri Bay to Wallal",
+            "Pilbara Coast East: Wallal to Cape Preston",
             "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
-            "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay"
+            "Eucla Coast: Israelite Bay to WA-SA Border"
           ],
           "aac_codes": [
+            "WA_MW001",
+            "WA_MW002",
+            "WA_MW003",
             "WA_MW010",
-            "WA_MW011",
-            "WA_MW012"
+            "WA_MW014"
           ],
-          "summary": "Bunbury Geographe Coast, Leeuwin Coast and Albany Coast"
+          "summary": "North Kimberley Coast, West Kimberley Coast, Pilbara Coast East, Bunbury Geographe Coast and Eucla Coast"
         }
       ]
     },
@@ -3938,22 +3987,21 @@
     "NT": {
       "state": "NT",
       "product": "IDD20105",
-      "issued_utc": "2026-07-25T11:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Saturday for Arafura Coast",
-        "Strong Wind Warning for Sunday for Beagle Bonaparte Coast and Roper Groote Coast"
-      ],
+      "issued_utc": "2026-07-25T17:00:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Arafura Coast: Cape Don to Cape Wessel"
+            "Beagle Bonaparte Coast: WA-NT Border to Cape Fourcroy",
+            "Roper Groote Coast: Cape Arnhem to QLD-NT Border"
           ],
           "aac_codes": [
-            "NT_MW004"
+            "NT_MW001",
+            "NT_MW006"
           ],
-          "summary": "Arafura Coast"
+          "summary": "Beagle Bonaparte Coast and Roper Groote Coast"
         }
       ]
     }
