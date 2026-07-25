@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-07-25T11:53:11.160724+00:00",
-  "last_checked_utc": "2026-07-25T11:53:11.160724+00:00",
+  "generated_utc": "2026-07-25T12:23:11.813010+00:00",
+  "last_checked_utc": "2026-07-25T12:23:11.813010+00:00",
   "warning_count": 9,
   "warnings": [
     {
       "pid": "",
-      "title": "25/16:05 EST Marine Wind Warning Summary for New South Wales",
+      "title": "25/22:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 25 Jul 2026 06:05:17 GMT"
+      "issued": "Sat, 25 Jul 2026 12:00:29 GMT"
     },
     {
       "pid": "",
-      "title": "25/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "25/22:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 25 Jul 2026 06:15:22 GMT"
+      "issued": "Sat, 25 Jul 2026 12:00:19 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "25/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "25/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 25 Jul 2026 06:05:15 GMT"
+      "issued": "Sat, 25 Jul 2026 12:00:16 GMT"
     },
     {
       "pid": "IDT20613",
@@ -95,7 +95,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 25 Jul 2026 11:50:58 GMT",
+        "updated": "Sat, 25 Jul 2026 12:19:03 GMT",
         "description": "Mars Place, Lansvale, NSW 2166",
         "council": "Fairfield",
         "lat": -33.8986859999999,
@@ -110,13 +110,28 @@
     "sa": [],
     "tas": [
       {
+        "title": "Flood - Watch and Act",
+        "alertLevel": "Watch and Act",
+        "status": "",
+        "type": "Flood",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-07-25T22:20:13+00:00",
+        "description": "",
+        "lat": -42.998649999755074,
+        "lng": 146.91193000038584,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=05889cad-c531-423a-ba34-59fde6c9d707"
+      },
+      {
         "title": "Flood - Advice",
         "alertLevel": "Advice",
         "status": "",
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-07-25T21:50:13+00:00",
+        "updated": "2026-07-25T22:20:13+00:00",
         "description": "",
         "lat": -43.035770000070215,
         "lng": 147.0460000001104,
@@ -131,31 +146,46 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-07-25T21:50:13+00:00",
+        "updated": "2026-07-25T22:20:13+00:00",
         "description": "",
         "lat": -42.80023999996218,
         "lng": 146.7243500002331,
         "polys": [],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=5e16e0c5-f781-4379-ac33-89eb292d50c5"
-      },
-      {
-        "title": "Flood - Watch and Act",
-        "alertLevel": "Watch and Act",
-        "status": "",
-        "type": "Flood",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-07-25T21:50:13+00:00",
-        "description": "",
-        "lat": -42.998649999755074,
-        "lng": 146.91193000038584,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=05889cad-c531-423a-ba34-59fde6c9d707"
       }
     ],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-25T12:05:44+00:00",
+        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.7582,
+        "lng": 128.7393,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-25T12:03:22+00:00",
+        "description": "WATERBANK, SHIRE OF BROOME",
+        "lat": -17.776,
+        "lng": 122.325,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -264,16 +294,31 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - GUNN POINT RD, HOWARD SPRINGS",
+        "title": "Grass and Scrub Fire - Unknown",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-25T11:31:10+00:00",
-        "description": "GUNN POINT RD, HOWARD SPRINGS",
-        "lat": -12.475,
-        "lng": 131.0776,
+        "updated": "2026-07-25T12:11:20+00:00",
+        "description": "",
+        "lat": -15.7714,
+        "lng": 130.0239,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - CHARLES POINT RD, COX PENINSULA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-25T11:52:53+00:00",
+        "description": "CHARLES POINT RD, COX PENINSULA",
+        "lat": -12.4314,
+        "lng": 130.6532,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -581,7 +626,7 @@
     ],
     "act": []
   },
-  "incident_count": 32,
+  "incident_count": 35,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3653,7 +3698,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-07-25T06:05:00Z",
+      "issued_utc": "2026-07-25T12:00:00Z",
       "overview": [
         "Strong Wind Warning for Saturday for Batemans Coast and Eden Coast",
         "Strong Wind Warning for Sunday for Eden Coast"
@@ -3677,9 +3722,9 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-07-25T06:15:00Z",
+      "issued_utc": "2026-07-25T12:00:00Z",
       "overview": [
-        "Strong Wind Warning for Saturday for Central Gippsland Coast and East Gippsland Coast",
+        "Strong Wind Warning for Saturday for East Gippsland Coast",
         "Strong Wind Warning for Sunday for Central Gippsland Coast and East Gippsland Coast"
       ],
       "hazards": [
@@ -3687,14 +3732,12 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
             "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
           ],
           "aac_codes": [
-            "VIC_MW003",
             "VIC_MW004"
           ],
-          "summary": "Central Gippsland Coast and East Gippsland Coast"
+          "summary": "East Gippsland Coast"
         }
       ]
     },
@@ -3728,7 +3771,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-07-25T06:05:00Z",
+      "issued_utc": "2026-07-25T12:00:00Z",
       "overview": [
         "Strong Wind Warning for Saturday for East of Flinders Island, South East Coast and South West Coast",
         "Strong Wind Warning for Sunday for Banks Strait and Franklin Sound, East of Flinders Island, South East Coast, South West Coast and Central West Coast"
