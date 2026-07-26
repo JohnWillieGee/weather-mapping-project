@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-26T02:53:10.406843+00:00",
-  "last_checked_utc": "2026-07-26T02:53:10.406843+00:00",
+  "generated_utc": "2026-07-26T03:23:11.369057+00:00",
+  "last_checked_utc": "2026-07-26T03:23:11.369057+00:00",
   "warning_count": 11,
   "warnings": [
     {
@@ -105,26 +105,44 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Larra Ct, Wattle Grove",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 26 Jul 2026 03:18:58 GMT",
+        "description": "Larra Ct, Wattle Grove, NSW 2173",
+        "council": "Liverpool",
+        "lat": -33.95694,
+        "lng": 150.936474,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Malpas St, Guyra",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 26 Jul 2026 03:18:58 GMT",
+        "description": "Malpas St, Guyra, NSW 2365",
+        "council": "Armidale",
+        "lat": -30.2127839999999,
+        "lng": 151.674248,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [
-      {
-        "title": "Flood - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Flood",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-07-26T12:36:23+00:00",
-        "description": "",
-        "lat": -43.035770000070215,
-        "lng": 147.0460000001104,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=f6fd45e2-ec6f-4376-a023-d8ee8081a057"
-      },
       {
         "title": "Flood - Watch and Act",
         "alertLevel": "Watch and Act",
@@ -132,7 +150,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-07-26T12:36:23+00:00",
+        "updated": "2026-07-26T13:10:13+00:00",
         "description": "",
         "lat": -42.998649999755074,
         "lng": 146.91193000038584,
@@ -147,13 +165,28 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-07-26T12:36:23+00:00",
+        "updated": "2026-07-26T13:10:13+00:00",
         "description": "",
         "lat": -42.80023999996218,
         "lng": 146.7243500002331,
         "polys": [],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=5e16e0c5-f781-4379-ac33-89eb292d50c5"
+      },
+      {
+        "title": "Flood - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Flood",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-07-26T13:10:13+00:00",
+        "description": "",
+        "lat": -43.035770000070215,
+        "lng": 147.0460000001104,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=f6fd45e2-ec6f-4376-a023-d8ee8081a057"
       }
     ],
     "wa": [
@@ -490,16 +523,16 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - KARNTE RD, ARUMBERA",
+        "title": "Bushfire - Wildman Road, POINT STUART",
         "alertLevel": "Advice",
         "status": "active",
-        "type": "Grass Fire",
+        "type": "Bush Fire",
         "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-26T02:33:25+00:00",
-        "description": "KARNTE RD, ARUMBERA",
-        "lat": -23.7609,
-        "lng": 133.8661,
+        "agency": "Bushfires NT",
+        "updated": "2026-07-26T03:10:00+00:00",
+        "description": "Wildman Road, POINT STUART",
+        "lat": -12.6409,
+        "lng": 131.6961,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -700,21 +733,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Bushfire - Wildman Road, POINT STUART",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-07-25T00:35:00+00:00",
-        "description": "Wildman Road, POINT STUART",
-        "lat": -12.6409,
-        "lng": 131.6961,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Stuart Highway, ACACIA HILLS",
         "alertLevel": "Advice",
         "status": "active",
@@ -807,7 +825,7 @@
     ],
     "act": []
   },
-  "incident_count": 46,
+  "incident_count": 47,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
