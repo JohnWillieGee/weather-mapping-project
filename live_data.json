@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-26T11:53:11.945452+00:00",
-  "last_checked_utc": "2026-07-26T11:53:11.945452+00:00",
+  "generated_utc": "2026-07-26T12:23:07.783749+00:00",
+  "last_checked_utc": "2026-07-26T12:23:07.783749+00:00",
   "warning_count": 9,
   "warnings": [
     {
       "pid": "",
-      "title": "26/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "26/22:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 26 Jul 2026 06:15:19 GMT"
+      "issued": "Sun, 26 Jul 2026 12:00:24 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "26/15:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "26/21:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sun, 26 Jul 2026 06:00:11 GMT"
+      "issued": "Sun, 26 Jul 2026 12:00:07 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "26/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "26/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 26 Jul 2026 06:05:18 GMT"
+      "issued": "Sun, 26 Jul 2026 12:00:17 GMT"
     },
     {
       "pid": "IDT20613",
@@ -95,7 +95,7 @@
         "type": "Bush Fire",
         "size": "13 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 26 Jul 2026 11:50:58 GMT",
+        "updated": "Sun, 26 Jul 2026 12:18:58 GMT",
         "description": "HORSESHOE RD, ARGENTS HILL 2449",
         "council": "Nambucca Valley",
         "lat": -30.6233139029999,
@@ -496,6 +496,21 @@
     ],
     "nt": [
       {
+        "title": "Structure Fire - GUMATJ RD, YIRRKALA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-26T12:11:41+00:00",
+        "description": "GUMATJ RD, YIRRKALA",
+        "lat": -12.2528,
+        "lng": 136.8917,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - GUMATJ RD, YIRRKALA",
         "alertLevel": "Advice",
         "status": "active",
@@ -818,23 +833,8 @@
         "status": "active",
         "type": "Structure Fire",
         "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-07-26T11:50:00+00:00",
-        "description": "BELCONNEN",
-        "lat": -35.2432,
-        "lng": 149.0695,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "STRUCTURE FIRE - BELCONNEN",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
         "agency": "Fire - Ambulance",
-        "updated": "2026-07-26T11:48:10+00:00",
+        "updated": "2026-07-26T11:57:04+00:00",
         "description": "BELCONNEN",
         "lat": -35.2432,
         "lng": 149.0695,
@@ -3825,7 +3825,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-07-26T06:15:00Z",
+      "issued_utc": "2026-07-26T12:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3848,13 +3848,14 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-07-26T06:00:00Z",
+      "issued_utc": "2026-07-26T12:00:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Far West Coast: WA-SA Border to Fowlers Bay",
             "Upper West Coast: Fowlers Bay to Elliston",
             "Lower West Coast: Elliston to Cape Carnot",
             "Central Coast",
@@ -3864,6 +3865,7 @@
             "Lower South East Coast: Cape Jaffa to SA-VIC Border"
           ],
           "aac_codes": [
+            "SA_MW001",
             "SA_MW002",
             "SA_MW003",
             "SA_MW004",
@@ -3872,7 +3874,7 @@
             "SA_MW009",
             "SA_MW010"
           ],
-          "summary": "Upper West Coast, Lower West Coast, Central Coast, South Central Coast, Investigator Strait, Upper South East Coast and Lower South East Coast"
+          "summary": "Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast, Investigator Strait, Upper South East Coast and Lower South East Coast"
         }
       ]
     },
@@ -3915,9 +3917,9 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-07-26T06:05:00Z",
+      "issued_utc": "2026-07-26T12:00:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for East of Flinders Island, South East Coast, South West Coast and Central West Coast",
+        "Strong Wind Warning for Sunday for South East Coast, South West Coast and Central West Coast",
         "Strong Wind Warning for Monday for Far North West Coast, Central North Coast, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast, South West Coast, Central West Coast and South West Lakes"
       ],
       "hazards": [
@@ -3925,18 +3927,16 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
             "South East Coast: Tasman Island to South East Cape",
             "South West Coast: South East Cape to Low Rocky Point",
             "Central West Coast: Low Rocky Point to Sandy Cape"
           ],
           "aac_codes": [
-            "TAS_MW003",
             "TAS_MW006",
             "TAS_MW007",
             "TAS_MW008"
           ],
-          "summary": "East of Flinders Island, South East Coast, South West Coast and Central West Coast"
+          "summary": "South East Coast, South West Coast and Central West Coast"
         }
       ]
     }
