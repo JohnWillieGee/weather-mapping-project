@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-26T10:53:16.288945+00:00",
-  "last_checked_utc": "2026-07-26T10:53:16.288945+00:00",
+  "generated_utc": "2026-07-26T11:23:18.855380+00:00",
+  "last_checked_utc": "2026-07-26T11:23:18.855380+00:00",
   "warning_count": 9,
   "warnings": [
     {
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "26/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "26/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 26 Jul 2026 05:01:13 GMT"
+      "issued": "Sun, 26 Jul 2026 11:01:15 GMT"
     },
     {
       "pid": "IDW21033",
@@ -95,7 +95,7 @@
         "type": "Bush Fire",
         "size": "13 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 26 Jul 2026 10:50:58 GMT",
+        "updated": "Sun, 26 Jul 2026 11:19:06 GMT",
         "description": "HORSESHOE RD, ARGENTS HILL 2449",
         "council": "Nambucca Valley",
         "lat": -30.6233139029999,
@@ -194,31 +194,16 @@
     "tas": [],
     "wa": [
       {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-26T10:37:16+00:00",
-        "description": "COLLIE, SHIRE OF COLLIE",
-        "lat": -33.3608,
-        "lng": 116.1485,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Fire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-26T10:28:51+00:00",
-        "description": "SPALDING, CITY OF GREATER GERALDTON",
-        "lat": -28.7394,
-        "lng": 114.6297,
+        "updated": "2026-07-26T11:02:43+00:00",
+        "description": "MULLALOO, CITY OF JOONDALUP",
+        "lat": -31.7787,
+        "lng": 115.7496,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -541,21 +526,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Grass and Scrub Fire - ANYULA ST, BORROLOOLA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-26T10:19:56+00:00",
-        "description": "ANYULA ST, BORROLOOLA",
-        "lat": -16.0622,
-        "lng": 136.3043,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - NOONAMAH",
         "alertLevel": "Advice",
         "status": "active",
@@ -843,7 +813,7 @@
     ],
     "act": []
   },
-  "incident_count": 44,
+  "incident_count": 42,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3878,10 +3848,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-07-26T05:01:00Z",
+      "issued_utc": "2026-07-26T11:01:00Z",
       "overview": [
-        "Gale Warning for Sunday for Leeuwin Coast, Albany Coast and Esperance Coast",
-        "Strong Wind Warning for Sunday for Eucla Coast",
+        "Gale Warning for Sunday for Esperance Coast",
+        "Strong Wind Warning for Sunday for Albany Coast and Eucla Coast",
         "Strong Wind Warning for Monday for Albany Coast, Esperance Coast and Eucla Coast"
       ],
       "hazards": [
@@ -3889,27 +3859,25 @@
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
-            "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay",
             "Esperance Coast: Bremer Bay to Israelite Bay"
           ],
           "aac_codes": [
-            "WA_MW011",
-            "WA_MW012",
             "WA_MW013"
           ],
-          "summary": "Leeuwin Coast, Albany Coast and Esperance Coast"
+          "summary": "Esperance Coast"
         },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Albany Coast: Walpole to Bremer Bay",
             "Eucla Coast: Israelite Bay to WA-SA Border"
           ],
           "aac_codes": [
+            "WA_MW012",
             "WA_MW014"
           ],
-          "summary": "Eucla Coast"
+          "summary": "Albany Coast and Eucla Coast"
         }
       ]
     },
