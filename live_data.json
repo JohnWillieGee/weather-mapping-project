@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-26T04:53:01.307325+00:00",
-  "last_checked_utc": "2026-07-26T04:53:01.307325+00:00",
+  "generated_utc": "2026-07-26T05:23:02.325521+00:00",
+  "last_checked_utc": "2026-07-26T05:23:02.325521+00:00",
   "warning_count": 11,
   "warnings": [
     {
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "26/07:27 WST Marine Wind Warning Summary for Western Australia",
+      "title": "26/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sat, 25 Jul 2026 23:27:38 GMT"
+      "issued": "Sun, 26 Jul 2026 05:01:13 GMT"
     },
     {
       "pid": "",
@@ -95,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "26/08:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "26/14:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 25 Jul 2026 23:00:11 GMT"
+      "issued": "Sun, 26 Jul 2026 05:00:12 GMT"
     }
   ],
   "fetch_errors": {},
@@ -117,7 +117,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-07-26T13:38:15+00:00",
+        "updated": "2026-07-26T15:10:13+00:00",
         "description": "",
         "lat": -43.035770000070215,
         "lng": 147.0460000001104,
@@ -126,34 +126,34 @@
         "sourceUrl": "https://alert.tas.gov.au/?id=f6fd45e2-ec6f-4376-a023-d8ee8081a057"
       },
       {
-        "title": "Flood - Watch and Act",
-        "alertLevel": "Watch and Act",
-        "status": "",
-        "type": "Flood",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-07-26T13:38:15+00:00",
-        "description": "",
-        "lat": -42.998649999755074,
-        "lng": 146.91193000038584,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=05889cad-c531-423a-ba34-59fde6c9d707"
-      },
-      {
         "title": "Flood - Advice",
         "alertLevel": "Advice",
         "status": "",
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-07-26T13:38:15+00:00",
+        "updated": "2026-07-26T15:10:13+00:00",
         "description": "",
         "lat": -42.80023999996218,
         "lng": 146.7243500002331,
         "polys": [],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=5e16e0c5-f781-4379-ac33-89eb292d50c5"
+      },
+      {
+        "title": "Flood - Watch and Act",
+        "alertLevel": "Watch and Act",
+        "status": "",
+        "type": "Flood",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-07-26T15:10:13+00:00",
+        "description": "",
+        "lat": -42.998649999755074,
+        "lng": 146.91193000038584,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=05889cad-c531-423a-ba34-59fde6c9d707"
       }
     ],
     "wa": [
@@ -3928,10 +3928,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-07-25T23:27:28Z",
+      "issued_utc": "2026-07-26T05:01:00Z",
       "overview": [
         "Gale Warning for Sunday for Leeuwin Coast, Albany Coast and Esperance Coast",
-        "Strong Wind Warning for Sunday for West Kimberley Coast, Pilbara Coast East, Bunbury Geographe Coast, North Kimberley Coast and Eucla Coast",
+        "Strong Wind Warning for Sunday for Eucla Coast",
         "Strong Wind Warning for Monday for Albany Coast, Esperance Coast and Eucla Coast"
       ],
       "hazards": [
@@ -3954,20 +3954,12 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "North Kimberley Coast: WA-NT Border to Kuri Bay",
-            "West Kimberley Coast: Kuri Bay to Wallal",
-            "Pilbara Coast East: Wallal to Cape Preston",
-            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Eucla Coast: Israelite Bay to WA-SA Border"
           ],
           "aac_codes": [
-            "WA_MW001",
-            "WA_MW002",
-            "WA_MW003",
-            "WA_MW010",
             "WA_MW014"
           ],
-          "summary": "North Kimberley Coast, West Kimberley Coast, Pilbara Coast East, Bunbury Geographe Coast and Eucla Coast"
+          "summary": "Eucla Coast"
         }
       ]
     },
@@ -3998,27 +3990,6 @@
             "TAS_MW008"
           ],
           "summary": "Banks Strait and Franklin Sound, East of Flinders Island, South East Coast, South West Coast and Central West Coast"
-        }
-      ]
-    },
-    "NT": {
-      "state": "NT",
-      "product": "IDD20105",
-      "issued_utc": "2026-07-25T23:00:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Beagle Bonaparte Coast: WA-NT Border to Cape Fourcroy",
-            "Roper Groote Coast: Cape Arnhem to QLD-NT Border"
-          ],
-          "aac_codes": [
-            "NT_MW001",
-            "NT_MW006"
-          ],
-          "summary": "Beagle Bonaparte Coast and Roper Groote Coast"
         }
       ]
     }
