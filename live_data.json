@@ -1,8 +1,17 @@
 {
-  "generated_utc": "2026-07-27T00:23:06.204075+00:00",
-  "last_checked_utc": "2026-07-27T00:23:06.204075+00:00",
+  "generated_utc": "2026-07-27T00:53:06.990974+00:00",
+  "last_checked_utc": "2026-07-27T00:53:06.990974+00:00",
   "warning_count": 9,
   "warnings": [
+    {
+      "pid": "IDN21037",
+      "title": "27/10:43 EST \n                Severe Weather Warning\n            \nfor \n                parts of Snowy Mountains Forecast District.",
+      "type": "severe_weather",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/products/IDN21037.shtml",
+      "desc": "",
+      "issued": "Mon, 27 Jul 2026 00:43:01 GMT"
+    },
     {
       "pid": "",
       "title": "27/03:27 EST Warning to Sheep Graziers\nfor Snowy Mountains forecast district",
@@ -20,15 +29,6 @@
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Mon, 27 Jul 2026 00:00:21 GMT"
-    },
-    {
-      "pid": "",
-      "title": "26/17:22 EST Frost Warning\nfor Northern Country, North East and East Gippsland forecast districts",
-      "type": "other",
-      "state": "VIC",
-      "link": "http://reg.bom.gov.au/vic/warnings/frost.shtml",
-      "desc": "",
-      "issued": "Sun, 26 Jul 2026 07:22:27 GMT"
     },
     {
       "pid": "",
@@ -93,6 +93,36 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-27T00:43:40+00:00",
+        "description": "KELMSCOTT, CITY OF ARMADALE",
+        "lat": -32.1126,
+        "lng": 116.021,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-27T00:39:58+00:00",
+        "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.5123,
+        "lng": 128.1716,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Structure Fire",
         "alertLevel": "",
@@ -179,21 +209,6 @@
         "description": "",
         "lat": -15.5138,
         "lng": 128.1691,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-26T11:30:41+00:00",
-        "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.5123,
-        "lng": 128.1716,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -396,6 +411,21 @@
     ],
     "nt": [
       {
+        "title": "Bushfire - Finniss River Station, DUNDEE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-07-27T00:30:00+00:00",
+        "description": "Finniss River Station, DUNDEE",
+        "lat": -12.8254,
+        "lng": 130.5267,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - GORGE RD, NITMILUK",
         "alertLevel": "Advice",
         "status": "active",
@@ -546,21 +576,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Bushfire - Finniss River Station, DUNDEE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-07-26T03:30:00+00:00",
-        "description": "Finniss River Station, DUNDEE",
-        "lat": -12.8254,
-        "lng": 130.5267,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Wildman Road, POINT STUART",
         "alertLevel": "Advice",
         "status": "active",
@@ -668,7 +683,7 @@
     ],
     "act": []
   },
-  "incident_count": 38,
+  "incident_count": 39,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
