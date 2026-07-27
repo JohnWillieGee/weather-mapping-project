@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-27T04:23:10.719253+00:00",
-  "last_checked_utc": "2026-07-27T04:23:10.719253+00:00",
-  "warning_count": 10,
+  "generated_utc": "2026-07-27T04:53:08.353932+00:00",
+  "last_checked_utc": "2026-07-27T04:53:08.353932+00:00",
+  "warning_count": 9,
   "warnings": [
     {
       "pid": "IDN21037",
@@ -83,39 +83,45 @@
       "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDT20613.html",
       "desc": "",
       "issued": "Sun, 26 Jul 2026 01:40:43 GMT"
-    },
-    {
-      "pid": "IDT20616",
-      "title": "26/10:25 EST Final Flood Warning for the Huon River",
-      "type": "flood",
-      "state": "TAS",
-      "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDT20616.html",
-      "desc": "",
-      "issued": "Sun, 26 Jul 2026 00:25:41 GMT"
     }
   ],
   "fetch_errors": {},
   "incidents": {
     "nsw": [
       {
-        "title": "PLANTATION LANE, CEDAR PARTY",
+        "title": "BULGA RD, MARLEE",
         "alertLevel": "Advice",
         "status": "Not yet controlled",
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 27 Jul 2026 04:18:58 GMT",
-        "description": "HIGHFIELD, PLANTATION LANE, CEDAR PARTY 2429",
+        "updated": "Mon, 27 Jul 2026 04:50:58 GMT",
+        "description": "BULGA RD, MARLEE 2429",
         "council": "Mid-Coast",
-        "lat": -31.8181499999999,
-        "lng": 152.362462,
+        "lat": -31.811157226,
+        "lng": 152.361434936,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       }
     ],
     "vic": [],
-    "qld": [],
+    "qld": [
+      {
+        "title": "STAY INFORMED - Garbutt and Belgian Gardens - fire as at 2:17pm Monday, 27 July 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "Garbutt and Belgian Gardens",
+        "lat": -19.2536188248068,
+        "lng": 146.78127231041123,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
+      }
+    ],
     "sa": [],
     "tas": [],
     "wa": [
@@ -422,28 +428,13 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - STANDLEY ST, TENNANT CREEK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-27T04:07:04+00:00",
-        "description": "STANDLEY ST, TENNANT CREEK",
-        "lat": -19.6534,
-        "lng": 134.1817,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - CHARLES DARWIN",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-27T04:03:47+00:00",
+        "updated": "2026-07-27T04:30:33+00:00",
         "description": "CHARLES DARWIN",
         "lat": -12.4329,
         "lng": 130.8601,
@@ -458,7 +449,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-27T03:55:29+00:00",
+        "updated": "2026-07-27T04:19:42+00:00",
         "description": "STUART HWY, NOONAMAH",
         "lat": -12.6353,
         "lng": 131.0739,
@@ -660,11 +651,26 @@
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Jenkins Road, WEDDELL",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-07-25T11:10:00+00:00",
+        "description": "Jenkins Road, WEDDELL",
+        "lat": -12.6264,
+        "lng": 131.0471,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
     "act": []
   },
-  "incident_count": 37,
+  "incident_count": 38,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
