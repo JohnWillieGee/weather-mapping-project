@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-27T08:23:44.829352+00:00",
-  "last_checked_utc": "2026-07-27T08:23:44.829352+00:00",
-  "warning_count": 7,
+  "generated_utc": "2026-07-27T08:53:11.338740+00:00",
+  "last_checked_utc": "2026-07-27T08:53:11.338740+00:00",
+  "warning_count": 8,
   "warnings": [
     {
       "pid": "IDN21037",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "27/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "27/18:23 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 27 Jul 2026 06:15:18 GMT"
+      "issued": "Mon, 27 Jul 2026 08:23:30 GMT"
     },
     {
       "pid": "IDV21037",
@@ -50,26 +50,33 @@
     },
     {
       "pid": "",
-      "title": "27/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "27/17:53 CST Marine Wind Warning Summary for South Australia",
+      "type": "wind",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
+      "desc": "",
+      "issued": "Mon, 27 Jul 2026 08:23:17 GMT"
+    },
+    {
+      "pid": "",
+      "title": "27/16:23 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 27 Jul 2026 05:01:13 GMT"
+      "issued": "Mon, 27 Jul 2026 08:23:38 GMT"
     },
     {
       "pid": "",
-      "title": "27/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "27/18:23 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 27 Jul 2026 06:05:11 GMT"
+      "issued": "Mon, 27 Jul 2026 08:23:20 GMT"
     }
   ],
-  "fetch_errors": {
-    "SA": "HTTPSConnectionPool(host='www.bom.gov.au', port=443): Read timed out. (read timeout=15)"
-  },
+  "fetch_errors": {},
   "incidents": {
     "nsw": [],
     "vic": [],
@@ -93,6 +100,36 @@
     "tas": [],
     "wa": [
       {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-27T08:33:22+00:00",
+        "description": "APPLECROSS, CITY OF MELVILLE",
+        "lat": -32.0124,
+        "lng": 115.8437,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-27T08:26:18+00:00",
+        "description": "VICTORIA PARK, TOWN OF VICTORIA PARK",
+        "lat": -31.9731,
+        "lng": 115.894,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Bushfire Advice THREAT IS REDUCED - MARBLE BAR",
         "alertLevel": "Advice",
         "status": "active",
@@ -103,21 +140,6 @@
         "description": "",
         "lat": -21.1912,
         "lng": 120.1278,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-27T07:06:52+00:00",
-        "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.5123,
-        "lng": 128.1716,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -395,6 +417,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - LILBILI ST, BRAITLING",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-27T08:42:16+00:00",
+        "description": "LILBILI ST, BRAITLING",
+        "lat": -23.6664,
+        "lng": 133.8634,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - EAST POINT RD, FANNIE BAY",
         "alertLevel": "Advice",
         "status": "active",
@@ -405,21 +442,6 @@
         "description": "EAST POINT RD, FANNIE BAY",
         "lat": -12.4239,
         "lng": 130.8349,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - DAVE BALDOCK DR, ARUMBERA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-27T07:27:16+00:00",
-        "description": "DAVE BALDOCK DR, ARUMBERA",
-        "lat": -23.7753,
-        "lng": 133.8658,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -697,7 +719,7 @@
     ],
     "act": []
   },
-  "incident_count": 41,
+  "incident_count": 42,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3678,7 +3700,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-07-27T06:15:00Z",
+      "issued_utc": "2026-07-27T08:23:17Z",
       "overview": [
         "Strong Wind Warning for Monday for West Coast, Central Coast and Port Phillip",
         "Gale Warning for Tuesday for West Coast and Central Coast",
@@ -3705,7 +3727,7 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-07-27T06:00:00Z",
+      "issued_utc": "2026-07-27T08:23:11Z",
       "overview": [
         "Strong Wind Warning for Monday for Lower West Coast, Central Coast, South Central Coast, Investigator Strait, Upper South East Coast and Lower South East Coast",
         "Gale Warning for Tuesday for Lower South East Coast",
@@ -3738,7 +3760,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-07-27T06:05:00Z",
+      "issued_utc": "2026-07-27T08:23:13Z",
       "overview": [
         "Strong Wind Warning for Monday for Far North West Coast, Central North Coast, Upper East Coast, Lower East Coast, South East Coast, South West Coast, Central West Coast and South West Lakes",
         "Gale Warning for Tuesday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, South West Coast and Central West Coast",
