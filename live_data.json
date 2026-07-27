@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-27T04:53:08.353932+00:00",
-  "last_checked_utc": "2026-07-27T04:53:08.353932+00:00",
+  "generated_utc": "2026-07-27T05:23:08.917469+00:00",
+  "last_checked_utc": "2026-07-27T05:23:08.917469+00:00",
   "warning_count": 9,
   "warnings": [
     {
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "27/10:44 WST Marine Wind Warning Summary for Western Australia",
+      "title": "27/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 27 Jul 2026 02:44:41 GMT"
+      "issued": "Mon, 27 Jul 2026 05:01:13 GMT"
     },
     {
       "pid": "",
@@ -89,17 +89,17 @@
   "incidents": {
     "nsw": [
       {
-        "title": "BULGA RD, MARLEE",
+        "title": "PENOLA LANE, AUBURN VALE",
         "alertLevel": "Advice",
         "status": "Not yet controlled",
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 27 Jul 2026 04:50:58 GMT",
-        "description": "BULGA RD, MARLEE 2429",
-        "council": "Mid-Coast",
-        "lat": -31.811157226,
-        "lng": 152.361434936,
+        "updated": "Mon, 27 Jul 2026 05:18:58 GMT",
+        "description": "PENOLA LANE, AUBURN VALE 2360",
+        "council": "Inverell",
+        "lat": -29.7955969999999,
+        "lng": 151.068655,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -428,16 +428,61 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - CHARLES DARWIN",
+        "title": "Bushfire - Poett Road, RUM JUNGLE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-07-27T05:10:00+00:00",
+        "description": "Poett Road, RUM JUNGLE",
+        "lat": -13.0321,
+        "lng": 130.9742,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - TOTEM RD, LUDMILLA",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-27T04:30:33+00:00",
-        "description": "CHARLES DARWIN",
-        "lat": -12.4329,
-        "lng": 130.8601,
+        "updated": "2026-07-27T05:06:36+00:00",
+        "description": "TOTEM RD, LUDMILLA",
+        "lat": -12.4034,
+        "lng": 130.8548,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - AMBROSE ST, TENNANT CREEK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-27T05:04:34+00:00",
+        "description": "AMBROSE ST, TENNANT CREEK",
+        "lat": -19.6437,
+        "lng": 134.1926,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - POETT RD, RUM JUNGLE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-27T04:51:12+00:00",
+        "description": "POETT RD, RUM JUNGLE",
+        "lat": -13.0318,
+        "lng": 130.9792,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -449,7 +494,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-27T04:19:42+00:00",
+        "updated": "2026-07-27T04:51:02+00:00",
         "description": "STUART HWY, NOONAMAH",
         "lat": -12.6353,
         "lng": 131.0739,
@@ -670,7 +715,7 @@
     ],
     "act": []
   },
-  "incident_count": 38,
+  "incident_count": 41,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3709,25 +3754,6 @@
             "SA_MW010"
           ],
           "summary": "Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast, Investigator Strait, Upper South East Coast and Lower South East Coast"
-        }
-      ]
-    },
-    "WA": {
-      "state": "WA",
-      "product": "IDW20100",
-      "issued_utc": "2026-07-27T02:44:30Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Esperance Coast: Bremer Bay to Israelite Bay"
-          ],
-          "aac_codes": [
-            "WA_MW013"
-          ],
-          "summary": "Esperance Coast"
         }
       ]
     },
