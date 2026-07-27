@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-27T01:23:08.272024+00:00",
-  "last_checked_utc": "2026-07-27T01:23:08.272024+00:00",
+  "generated_utc": "2026-07-27T01:53:08.497674+00:00",
+  "last_checked_utc": "2026-07-27T01:53:08.497674+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -96,23 +96,40 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "MOCKINGBIRD RD, PHEASANTS NEST",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Mon, 27 Jul 2026 01:50:58 GMT",
+        "description": "MOCKINGBIRD RD, PHEASANTS NEST 2574",
+        "council": "Wollondilly",
+        "lat": -34.2761399999999,
+        "lng": 150.63777,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire",
+        "title": "Fire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-27T01:07:47+00:00",
-        "description": "MOORINE ROCK, SHIRE OF YILGARN",
-        "lat": -31.3122,
-        "lng": 119.1279,
+        "updated": "2026-07-27T01:38:19+00:00",
+        "description": "BUNBURY, CITY OF BUNBURY",
+        "lat": -33.3292,
+        "lng": 115.6296,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -128,21 +145,6 @@
         "description": "HILBERT, CITY OF ARMADALE",
         "lat": -32.1939,
         "lng": 115.97,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-27T00:39:58+00:00",
-        "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.5123,
-        "lng": 128.1716,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -435,6 +437,21 @@
     ],
     "nt": [
       {
+        "title": "Structure Fire - WURRUMIYANGA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-27T01:45:51+00:00",
+        "description": "WURRUMIYANGA",
+        "lat": -11.7583,
+        "lng": 130.6375,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Fog Bay Road , BYNOE",
         "alertLevel": "Advice",
         "status": "active",
@@ -647,7 +664,7 @@
     ],
     "act": []
   },
-  "incident_count": 36,
+  "incident_count": 37,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
