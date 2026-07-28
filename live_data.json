@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-28T16:53:16.061936+00:00",
-  "last_checked_utc": "2026-07-28T16:53:16.061936+00:00",
-  "warning_count": 8,
+  "generated_utc": "2026-07-28T17:23:09.230988+00:00",
+  "last_checked_utc": "2026-07-28T17:23:09.230988+00:00",
+  "warning_count": 9,
   "warnings": [
     {
       "pid": "",
@@ -59,6 +59,15 @@
     },
     {
       "pid": "",
+      "title": "29/03:00 EST Marine Wind Warning Summary for Queensland",
+      "type": "wind",
+      "state": "QLD",
+      "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Tue, 28 Jul 2026 17:00:18 GMT"
+    },
+    {
+      "pid": "",
       "title": "28/21:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
@@ -84,6 +93,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-28T17:10:53+00:00",
+        "description": "PERTH, CITY OF PERTH",
+        "lat": -31.9487,
+        "lng": 115.8504,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -794,7 +818,7 @@
     ],
     "act": []
   },
-  "incident_count": 47,
+  "incident_count": 48,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3772,6 +3796,27 @@
     }
   },
   "marine_warnings": {
+    "QLD": {
+      "state": "QLD",
+      "product": "IDQ20085",
+      "issued_utc": "2026-07-28T17:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Peninsula Coast: Sharp Point to Cape Melville",
+            "Cooktown Coast: Cape Melville to Cape Tribulation"
+          ],
+          "aac_codes": [
+            "QLD_MW004",
+            "QLD_MW005"
+          ],
+          "summary": "Peninsula Coast and Cooktown Coast"
+        }
+      ]
+    },
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
