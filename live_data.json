@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-28T07:23:09.341158+00:00",
-  "last_checked_utc": "2026-07-28T07:23:09.341158+00:00",
+  "generated_utc": "2026-07-28T07:53:11.926733+00:00",
+  "last_checked_utc": "2026-07-28T07:53:11.926733+00:00",
   "warning_count": 8,
   "warnings": [
     {
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "28/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "28/17:28 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 28 Jul 2026 06:15:19 GMT"
+      "issued": "Tue, 28 Jul 2026 07:28:01 GMT"
     },
     {
       "pid": "IDV21037",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "28/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "28/17:27 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 28 Jul 2026 06:05:11 GMT"
+      "issued": "Tue, 28 Jul 2026 07:27:49 GMT"
     }
   ],
   "fetch_errors": {},
@@ -84,6 +84,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-28T07:16:15+00:00",
+        "description": "MUCHEA, SHIRE OF CHITTERING",
+        "lat": -31.578,
+        "lng": 115.9702,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -401,6 +416,21 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - KRAEGEN ST, THE GAP",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-28T07:40:30+00:00",
+        "description": "KRAEGEN ST, THE GAP",
+        "lat": -23.7185,
+        "lng": 133.8701,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Bushfire - Elsey Cemetery Road, ELSEY",
         "alertLevel": "Advice",
@@ -764,7 +794,7 @@
     ],
     "act": []
   },
-  "incident_count": 45,
+  "incident_count": 47,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3780,12 +3810,12 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-07-28T06:15:00Z",
+      "issued_utc": "2026-07-28T07:27:50Z",
       "overview": [
         "Gale Warning for Tuesday for West Coast and Central Coast",
-        "Strong Wind Warning for Tuesday for Central Gippsland Coast, East Gippsland Coast, Port Phillip and Western Port",
-        "Gale Warning for Wednesday for West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast",
-        "Strong Wind Warning for Wednesday for Port Phillip, Western Port and Gippsland Lakes"
+        "Strong Wind Warning for Tuesday for Central Gippsland Coast, Port Phillip, Western Port and East Gippsland Coast",
+        "Gale Warning for Wednesday for Central Coast, East Gippsland Coast, Central Gippsland Coast and West Coast",
+        "Strong Wind Warning for Wednesday for Western Port, Gippsland Lakes and Port Phillip"
       ],
       "hazards": [
         {
@@ -3863,12 +3893,12 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-07-28T06:05:00Z",
+      "issued_utc": "2026-07-28T07:27:40Z",
       "overview": [
         "Gale Warning for Tuesday for Banks Strait and Franklin Sound",
-        "Strong Wind Warning for Tuesday for Far North West Coast, Central North Coast, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast, South West Coast and Central West Coast",
-        "Gale Warning for Wednesday for Far North West Coast, Upper East Coast, Lower East Coast, South East Coast, South West Coast and Central West Coast",
-        "Strong Wind Warning for Wednesday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay and Channel"
+        "Strong Wind Warning for Tuesday for Far North West Coast, Central North Coast, Central West Coast, Upper East Coast, Lower East Coast, South West Coast, East of Flinders Island and South East Coast",
+        "Gale Warning for Wednesday for Central West Coast, Upper East Coast, Lower East Coast, South West Coast, Far North West Coast and South East Coast",
+        "Strong Wind Warning for Wednesday for Channel, Derwent Estuary, Storm Bay, Frederick Henry Bay and Norfolk Bay, East of Flinders Island, Banks Strait and Franklin Sound and Central North Coast"
       ],
       "hazards": [
         {
