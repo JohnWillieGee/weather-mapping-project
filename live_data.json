@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-07-28T23:53:12.294895+00:00",
-  "last_checked_utc": "2026-07-28T23:53:12.294895+00:00",
+  "generated_utc": "2026-07-29T00:23:06.349729+00:00",
+  "last_checked_utc": "2026-07-29T00:23:06.349729+00:00",
   "warning_count": 9,
   "warnings": [
     {
       "pid": "",
-      "title": "29/09:06 EST Marine Wind Warning Summary for New South Wales",
+      "title": "29/10:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 28 Jul 2026 23:06:08 GMT"
+      "issued": "Wed, 29 Jul 2026 00:00:15 GMT"
     },
     {
       "pid": "IDN21037",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "29/09:06 EST Marine Wind Warning Summary for Victoria",
+      "title": "29/10:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 28 Jul 2026 23:06:15 GMT"
+      "issued": "Wed, 29 Jul 2026 00:00:20 GMT"
     },
     {
       "pid": "IDV21037",
@@ -68,21 +68,21 @@
     },
     {
       "pid": "",
-      "title": "29/03:40 CST Marine Wind Warning Summary for South Australia",
+      "title": "29/09:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Tue, 28 Jul 2026 18:10:10 GMT"
+      "issued": "Wed, 29 Jul 2026 00:00:11 GMT"
     },
     {
       "pid": "",
-      "title": "29/09:06 EST Marine Wind Warning Summary for Tasmania",
+      "title": "29/10:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 28 Jul 2026 23:06:10 GMT"
+      "issued": "Wed, 29 Jul 2026 00:00:11 GMT"
     }
   ],
   "fetch_errors": {},
@@ -93,6 +93,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Earthquake",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Earthquake",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-28T23:51:32+00:00",
+        "description": "GABBIN, MOUNT MARSHALL, SHIRE OF",
+        "lat": -30.912,
+        "lng": 117.7362,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Fire",
         "alertLevel": "",
@@ -149,21 +164,6 @@
         "description": "LAGRANGE, SHIRE OF BROOME",
         "lat": -18.576,
         "lng": 121.796,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice THREAT IS REDUCED - LAGRANGE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-07-28T08:26:43.059+00:00",
-        "description": "",
-        "lat": -18.5211,
-        "lng": 121.8794,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -351,6 +351,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - ARALUEN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-29T00:16:55+00:00",
+        "description": "ARALUEN",
+        "lat": -23.703,
+        "lng": 133.8488,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - CHARLES POINT RD, MANDORAH",
         "alertLevel": "Advice",
         "status": "active",
@@ -531,21 +546,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Bushfire - Poett Road, RUM JUNGLE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-07-27T05:10:00+00:00",
-        "description": "Poett Road, RUM JUNGLE",
-        "lat": -13.0327,
-        "lng": 130.9748,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Fog Bay Road , BYNOE",
         "alertLevel": "Advice",
         "status": "active",
@@ -571,21 +571,6 @@
         "description": "Namarada Drive, DUNDEE BEACH",
         "lat": -12.7205,
         "lng": 130.3627,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Bushfire - Finniss River Station, DUNDEE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-07-27T00:30:00+00:00",
-        "description": "Finniss River Station, DUNDEE",
-        "lat": -12.8254,
-        "lng": 130.5267,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -739,26 +724,11 @@
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Bushfire - Jenkins Road, WEDDELL",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-07-25T11:10:00+00:00",
-        "description": "Jenkins Road, WEDDELL",
-        "lat": -12.6264,
-        "lng": 131.0471,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
     "act": []
   },
-  "incident_count": 44,
+  "incident_count": 42,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3760,7 +3730,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-07-28T23:06:00Z",
+      "issued_utc": "2026-07-29T00:00:00Z",
       "overview": [
         "Gale Warning for Wednesday for Eden Coast",
         "Strong Wind Warning for Wednesday for Illawarra Coast and Batemans Coast",
@@ -3796,74 +3766,55 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-07-28T23:06:02Z",
+      "issued_utc": "2026-07-29T00:00:00Z",
       "overview": [
-        "Gale Warning for Wednesday for Central Coast, Central Gippsland Coast, East Gippsland Coast and West Coast",
-        "Strong Wind Warning for Wednesday for Western Port, Port Phillip and Gippsland Lakes",
-        "Strong Wind Warning for Thursday for East Gippsland Coast and Central Gippsland Coast"
+        "Gale Warning for Wednesday for Central Coast, Central Gippsland Coast and East Gippsland Coast",
+        "Strong Wind Warning for Wednesday for West Coast, Port Phillip, Western Port and Gippsland Lakes",
+        "Strong Wind Warning for Thursday for Central Gippsland Coast and East Gippsland Coast"
       ],
       "hazards": [
         {
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
-            "West Coast: SA-VIC Border to Cape Otway",
             "Central Coast: Cape Otway to Wilsons Promontory",
             "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
             "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
           ],
           "aac_codes": [
-            "VIC_MW001",
             "VIC_MW002",
             "VIC_MW003",
             "VIC_MW004"
           ],
-          "summary": "West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast"
+          "summary": "Central Coast, Central Gippsland Coast and East Gippsland Coast"
         },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "West Coast: SA-VIC Border to Cape Otway",
             "Port Phillip",
             "Western Port",
             "Gippsland Lakes"
           ],
           "aac_codes": [
+            "VIC_MW001",
             "VIC_MW005",
             "VIC_MW006",
             "VIC_MW007"
           ],
-          "summary": "Port Phillip, Western Port and Gippsland Lakes"
-        }
-      ]
-    },
-    "SA": {
-      "state": "SA",
-      "product": "IDS20201",
-      "issued_utc": "2026-07-28T18:10:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
-          ],
-          "aac_codes": [
-            "SA_MW010"
-          ],
-          "summary": "Lower South East Coast"
+          "summary": "Port Phillip, Western Port, Gippsland Lakes and West Coast"
         }
       ]
     },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-07-28T23:06:02Z",
+      "issued_utc": "2026-07-29T00:00:00Z",
       "overview": [
-        "Gale Warning for Wednesday for Far North West Coast, Central West Coast, Upper East Coast, Lower East Coast, Channel, South West Coast, Storm Bay, Frederick Henry Bay and Norfolk Bay and South East Coast",
-        "Strong Wind Warning for Wednesday for Central North Coast, East of Flinders Island, Derwent Estuary, Central Plateau Lakes and Banks Strait and Franklin Sound",
-        "Strong Wind Warning for Thursday for Upper East Coast, South East Coast, Lower East Coast and South West Coast"
+        "Gale Warning for Wednesday for Far North West Coast, Upper East Coast, Lower East Coast, South East Coast, South West Coast, Frederick Henry Bay and Norfolk Bay, Storm Bay and Channel",
+        "Strong Wind Warning for Wednesday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Central West Coast, Derwent Estuary and Central Plateau Lakes",
+        "Strong Wind Warning for Thursday for Upper East Coast, Lower East Coast, South East Coast and South West Coast"
       ],
       "hazards": [
         {
@@ -3875,7 +3826,6 @@
             "Lower East Coast: Wineglass Bay to Tasman Island",
             "South East Coast: Tasman Island to South East Cape",
             "South West Coast: South East Cape to Low Rocky Point",
-            "Central West Coast: Low Rocky Point to Sandy Cape",
             "Frederick Henry Bay and Norfolk Bays",
             "Storm Bay",
             "Channel"
@@ -3886,12 +3836,11 @@
             "TAS_MW005",
             "TAS_MW006",
             "TAS_MW007",
-            "TAS_MW008",
             "TAS_MW013",
             "TAS_MW014",
             "TAS_MW011"
           ],
-          "summary": "Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel, Far North West Coast, Upper East Coast, Lower East Coast, South East Coast, South West Coast and Central West Coast"
+          "summary": "Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel, Far North West Coast, Upper East Coast, Lower East Coast, South East Coast and South West Coast"
         },
         {
           "level": "Strong Wind Warning",
@@ -3900,6 +3849,7 @@
             "Central North Coast: Stanley to Northern Tip of Flinders Island",
             "Banks Strait and Franklin Sound",
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
+            "Central West Coast: Low Rocky Point to Sandy Cape",
             "Derwent Estuary",
             "Central Plateau Lakes"
           ],
@@ -3907,10 +3857,11 @@
             "TAS_MW002",
             "TAS_MW009",
             "TAS_MW003",
+            "TAS_MW008",
             "TAS_MW012",
             "TAS_MW010"
           ],
-          "summary": "Derwent Estuary, Central Plateau Lakes, Central North Coast, Banks Strait and Franklin Sound and East of Flinders Island"
+          "summary": "Derwent Estuary, Central Plateau Lakes, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island and Central West Coast"
         }
       ]
     }
