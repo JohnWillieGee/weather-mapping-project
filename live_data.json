@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-29T04:23:09.901409+00:00",
-  "last_checked_utc": "2026-07-29T04:23:09.901409+00:00",
+  "generated_utc": "2026-07-29T04:53:11.005710+00:00",
+  "last_checked_utc": "2026-07-29T04:53:11.005710+00:00",
   "warning_count": 8,
   "warnings": [
     {
@@ -80,13 +80,92 @@
   "incidents": {
     "nsw": [
       {
+        "title": "HEATHCOTE RD, HOLSWORTHY",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Wed, 29 Jul 2026 04:50:58 GMT",
+        "description": "HEATHCOTE RD, HOLSWORTHY 2173",
+        "council": "Sutherland",
+        "lat": -33.9999618529999,
+        "lng": 150.995819092,
+        "polys": [
+          [
+            [
+              150.996185896,
+              -33.998287896
+            ],
+            [
+              150.996328664,
+              -33.9982403069999
+            ],
+            [
+              150.996328664,
+              -33.998287896
+            ],
+            [
+              150.996542815,
+              -33.998287896
+            ],
+            [
+              150.996519021,
+              -33.9983235879999
+            ],
+            [
+              150.996519021,
+              -33.998454457
+            ],
+            [
+              150.99656661,
+              -33.9986091229999
+            ],
+            [
+              150.996590405,
+              -33.9987518899999
+            ],
+            [
+              150.996626097,
+              -33.998870863
+            ],
+            [
+              150.996602302,
+              -33.999073118
+            ],
+            [
+              150.99656661,
+              -33.999346756
+            ],
+            [
+              150.996221588,
+              -33.999322962
+            ],
+            [
+              150.99607882,
+              -33.9992991669999
+            ],
+            [
+              150.996066923,
+              -33.999132604
+            ],
+            [
+              150.996185896,
+              -33.998287896
+            ]
+          ]
+        ],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "ORARA WAY, GLENREAGH",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 29 Jul 2026 04:18:58 GMT",
+        "updated": "Wed, 29 Jul 2026 04:50:58 GMT",
         "description": "ORARA WAY, GLENREAGH 2450",
         "council": "Clarence Valley",
         "lat": -30.036239625,
@@ -101,6 +180,51 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-29T04:38:02+00:00",
+        "description": "PALMYRA, CITY OF MELVILLE",
+        "lat": -32.0443,
+        "lng": 115.7895,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-29T04:11:54+00:00",
+        "description": "WATERBANK, SHIRE OF BROOME",
+        "lat": -17.776,
+        "lng": 122.325,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - WYNDHAM",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-07-29T04:11:15.537+00:00",
+        "description": "",
+        "lat": -15.5919,
+        "lng": 128.1373,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -372,21 +496,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-28T00:40:13+00:00",
-        "description": "WATERBANK, SHIRE OF BROOME",
-        "lat": -17.776,
-        "lng": 122.325,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Hazardous Materials",
         "alertLevel": "",
         "status": "active",
@@ -631,7 +740,7 @@
     ],
     "act": []
   },
-  "incident_count": 36,
+  "incident_count": 39,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
