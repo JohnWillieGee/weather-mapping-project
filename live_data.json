@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-29T03:53:08.752491+00:00",
-  "last_checked_utc": "2026-07-29T03:53:08.752491+00:00",
-  "warning_count": 10,
+  "generated_utc": "2026-07-29T04:23:09.901409+00:00",
+  "last_checked_utc": "2026-07-29T04:23:09.901409+00:00",
+  "warning_count": 8,
   "warnings": [
     {
       "pid": "",
@@ -11,15 +11,6 @@
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Wed, 29 Jul 2026 00:00:15 GMT"
-    },
-    {
-      "pid": "IDN21037",
-      "title": "29/04:50 EST \n                Cancellation of Severe Weather Warning\n            \nfor \n                Snowy Mountains Forecast District.",
-      "type": "severe_weather",
-      "state": "NSW",
-      "link": "http://reg.bom.gov.au/products/IDN21037.shtml",
-      "desc": "",
-      "issued": "Tue, 28 Jul 2026 18:50:40 GMT"
     },
     {
       "pid": "",
@@ -38,15 +29,6 @@
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Wed, 29 Jul 2026 00:00:20 GMT"
-    },
-    {
-      "pid": "IDV21037",
-      "title": "29/04:53 EST \n                Cancellation of Severe Weather Warning\n            \nfor \n                East Gippsland, South West, North East and West and South Gippsland Forecast Districts.",
-      "type": "severe_weather",
-      "state": "VIC",
-      "link": "http://reg.bom.gov.au/products/IDV21037.shtml",
-      "desc": "",
-      "issued": "Tue, 28 Jul 2026 18:53:41 GMT"
     },
     {
       "pid": "",
@@ -96,12 +78,44 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "ORARA WAY, GLENREAGH",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Wed, 29 Jul 2026 04:18:58 GMT",
+        "description": "ORARA WAY, GLENREAGH 2450",
+        "council": "Clarence Valley",
+        "lat": -30.036239625,
+        "lng": 152.989318848,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-07-29T04:01:40+00:00",
+        "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.587,
+        "lng": 128.159,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Fire",
         "alertLevel": "",
@@ -420,16 +434,16 @@
     ],
     "nt": [
       {
-        "title": "Bushfire - Leonino Road, FLY CREEK",
+        "title": "Grass and Scrub Fire - STRANGWAYS RD, HUMPTY DOO",
         "alertLevel": "Advice",
         "status": "active",
-        "type": "Bush Fire",
+        "type": "Grass Fire",
         "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-07-29T03:30:00+00:00",
-        "description": "Leonino Road, FLY CREEK",
-        "lat": -12.8045,
-        "lng": 131.0613,
+        "agency": "NTFRS",
+        "updated": "2026-07-29T04:15:42+00:00",
+        "description": "STRANGWAYS RD, HUMPTY DOO",
+        "lat": -12.5831,
+        "lng": 131.0882,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -441,7 +455,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-29T03:18:40+00:00",
+        "updated": "2026-07-29T04:11:21+00:00",
         "description": "LEONINO RD, FLY CREEK",
         "lat": -12.8049,
         "lng": 131.0677,
@@ -450,16 +464,31 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Grass and Scrub Fire - MUELLER RD, KARAMA",
+        "title": "Grass and Scrub Fire - BLAIN ST, TENNANT CREEK",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-07-29T03:01:14+00:00",
-        "description": "MUELLER RD, KARAMA",
-        "lat": -12.3964,
-        "lng": 130.9108,
+        "updated": "2026-07-29T03:54:43+00:00",
+        "description": "BLAIN ST, TENNANT CREEK",
+        "lat": -19.6391,
+        "lng": 134.1937,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Leonino Road, FLY CREEK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-07-29T03:30:00+00:00",
+        "description": "Leonino Road, FLY CREEK",
+        "lat": -12.8057,
+        "lng": 131.0642,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -602,7 +631,7 @@
     ],
     "act": []
   },
-  "incident_count": 33,
+  "incident_count": 36,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
