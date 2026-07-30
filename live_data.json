@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-30T16:53:13.637984+00:00",
-  "last_checked_utc": "2026-07-30T16:53:13.637984+00:00",
+  "generated_utc": "2026-07-30T17:23:10.156437+00:00",
+  "last_checked_utc": "2026-07-30T17:23:10.156437+00:00",
   "warning_count": 8,
   "warnings": [
     {
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "30/21:08 EST Marine Wind Warning Summary for Queensland",
+      "title": "31/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 30 Jul 2026 11:08:59 GMT"
+      "issued": "Thu, 30 Jul 2026 17:00:23 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "30/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "31/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 30 Jul 2026 11:01:14 GMT"
+      "issued": "Thu, 30 Jul 2026 17:01:15 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "30/20:38 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "31/02:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 30 Jul 2026 11:08:43 GMT"
+      "issued": "Thu, 30 Jul 2026 17:00:14 GMT"
     }
   ],
   "fetch_errors": {},
@@ -86,7 +86,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 30 Jul 2026 16:50:59 GMT",
+        "updated": "Thu, 30 Jul 2026 17:18:58 GMT",
         "description": "BOUNDARY CREEK RD, NYMBOIDA NSW 2460",
         "council": "Clarence Valley",
         "lat": -29.973620791,
@@ -102,7 +102,7 @@
         "type": "Grass Fire",
         "size": "9 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 30 Jul 2026 16:50:59 GMT",
+        "updated": "Thu, 30 Jul 2026 17:18:58 GMT",
         "description": "SEERY RD, WYAN 2469",
         "council": "Richmond Valley",
         "lat": -29.119634628,
@@ -3649,31 +3649,35 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-30T11:08:50Z",
+      "issued_utc": "2026-07-30T17:00:00Z",
       "overview": [
-        "Strong Wind Warning for Thursday for Peninsula Coast and Cooktown Coast",
-        "Strong Wind Warning for Friday for South East Gulf of Carpentaria, Peninsula Coast, Cooktown Coast and Cairns Coast"
+        "Strong Wind Warning for Friday for South East Gulf of Carpentaria, Peninsula Coast, Cooktown Coast and Cairns Coast",
+        "Strong Wind Warning for Saturday for Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast and Mackay Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "South East Gulf of Carpentaria: QLD-NT Border to Cape Keerweer",
             "Peninsula Coast: Sharp Point to Cape Melville",
-            "Cooktown Coast: Cape Melville to Cape Tribulation"
+            "Cooktown Coast: Cape Melville to Cape Tribulation",
+            "Cairns Coast: Cape Tribulation to Cardwell"
           ],
           "aac_codes": [
+            "QLD_MW001",
             "QLD_MW004",
-            "QLD_MW005"
+            "QLD_MW005",
+            "QLD_MW006"
           ],
-          "summary": "Peninsula Coast and Cooktown Coast"
+          "summary": "South East Gulf of Carpentaria, Peninsula Coast, Cooktown Coast and Cairns Coast"
         }
       ]
     },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-07-30T11:01:00Z",
+      "issued_utc": "2026-07-30T17:01:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3694,7 +3698,7 @@
     "NT": {
       "state": "NT",
       "product": "IDD20105",
-      "issued_utc": "2026-07-30T11:08:34Z",
+      "issued_utc": "2026-07-30T17:00:00Z",
       "overview": [],
       "hazards": [
         {
