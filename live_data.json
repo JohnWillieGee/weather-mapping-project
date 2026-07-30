@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-30T10:53:20.760150+00:00",
-  "last_checked_utc": "2026-07-30T10:53:20.760150+00:00",
-  "warning_count": 8,
+  "generated_utc": "2026-07-30T11:23:28.920264+00:00",
+  "last_checked_utc": "2026-07-30T11:23:28.920264+00:00",
+  "warning_count": 9,
   "warnings": [
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "30/15:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "30/21:08 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 30 Jul 2026 05:00:15 GMT"
+      "issued": "Thu, 30 Jul 2026 11:08:59 GMT"
     },
     {
       "pid": "",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "30/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "30/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 30 Jul 2026 05:01:13 GMT"
+      "issued": "Thu, 30 Jul 2026 11:01:14 GMT"
     },
     {
       "pid": "",
@@ -74,6 +74,15 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Thu, 30 Jul 2026 06:05:14 GMT"
+    },
+    {
+      "pid": "",
+      "title": "30/20:38 CST Marine Wind Warning Summary for the Northern Territory",
+      "type": "wind",
+      "state": "NT",
+      "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Thu, 30 Jul 2026 11:08:43 GMT"
     }
   ],
   "fetch_errors": {},
@@ -86,11 +95,27 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 30 Jul 2026 10:50:58 GMT",
+        "updated": "Thu, 30 Jul 2026 11:18:58 GMT",
         "description": "BOUNDARY CREEK RD, NYMBOIDA NSW 2460",
         "council": "Clarence Valley",
         "lat": -29.973620791,
         "lng": 152.7160635,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Castlereagh St, Coonamble",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Thu, 30 Jul 2026 11:18:58 GMT",
+        "description": "Castlereagh St, Coonamble, NSW 2829",
+        "council": "Coonamble",
+        "lat": -30.958747,
+        "lng": 148.390253,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -102,7 +127,7 @@
         "type": "Grass Fire",
         "size": "9 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 30 Jul 2026 10:50:58 GMT",
+        "updated": "Thu, 30 Jul 2026 11:18:58 GMT",
         "description": "SEERY RD, WYAN 2469",
         "council": "Richmond Valley",
         "lat": -29.119634628,
@@ -190,36 +215,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-30T10:32:13+00:00",
-        "description": "COLLIE, SHIRE OF COLLIE",
-        "lat": -33.3538,
-        "lng": 116.1465,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-30T10:32:03+00:00",
-        "description": "GAP RIDGE, CITY OF KARRATHA",
-        "lat": -20.7337,
-        "lng": 116.8106,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-07-30T09:02:39+00:00",
         "description": "HALLS CREEK, SHIRE OF HALLS CREEK",
         "lat": -18.2222,
@@ -284,21 +279,6 @@
         "description": "",
         "lat": -17.0625,
         "lng": 122.5427,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Hazardous Materials",
-        "alertLevel": "",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-30T03:28:10+00:00",
-        "description": "GAP RIDGE, CITY OF KARRATHA",
-        "lat": -20.7382,
-        "lng": 116.773,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -719,7 +699,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-07-30T10:49:00+00:00",
+        "updated": "2026-07-30T11:20:00+00:00",
         "description": "KALEEN",
         "lat": -35.2162,
         "lng": 149.1038,
@@ -734,7 +714,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "Fire - Ambulance",
-        "updated": "2026-07-30T10:30:14+00:00",
+        "updated": "2026-07-30T11:16:37+00:00",
         "description": "KALEEN",
         "lat": -35.2162,
         "lng": 149.1038,
@@ -744,7 +724,7 @@
       }
     ]
   },
-  "incident_count": 40,
+  "incident_count": 38,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3725,10 +3705,10 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-30T05:00:00Z",
+      "issued_utc": "2026-07-30T11:08:50Z",
       "overview": [
         "Strong Wind Warning for Thursday for Peninsula Coast and Cooktown Coast",
-        "Strong Wind Warning for Friday for Peninsula Coast, Cooktown Coast and Cairns Coast"
+        "Strong Wind Warning for Friday for South East Gulf of Carpentaria, Peninsula Coast, Cooktown Coast and Cairns Coast"
       ],
       "hazards": [
         {
@@ -3771,7 +3751,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-07-30T05:01:00Z",
+      "issued_utc": "2026-07-30T11:01:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3807,6 +3787,25 @@
             "TAS_MW006"
           ],
           "summary": "Lower East Coast and South East Coast"
+        }
+      ]
+    },
+    "NT": {
+      "state": "NT",
+      "product": "IDD20105",
+      "issued_utc": "2026-07-30T11:08:34Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Roper Groote Coast: Cape Arnhem to QLD-NT Border"
+          ],
+          "aac_codes": [
+            "NT_MW006"
+          ],
+          "summary": "Roper Groote Coast"
         }
       ]
     }
