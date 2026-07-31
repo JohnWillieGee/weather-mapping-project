@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-07-31T11:53:13.181391+00:00",
-  "last_checked_utc": "2026-07-31T11:53:13.181391+00:00",
-  "warning_count": 7,
+  "generated_utc": "2026-07-31T12:23:10.869444+00:00",
+  "last_checked_utc": "2026-07-31T12:23:10.869444+00:00",
+  "warning_count": 8,
   "warnings": [
     {
       "pid": "",
@@ -32,6 +32,15 @@
     },
     {
       "pid": "",
+      "title": "31/21:30 CST Marine Wind Warning Summary for South Australia",
+      "type": "wind",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
+      "desc": "",
+      "issued": "Fri, 31 Jul 2026 12:00:11 GMT"
+    },
+    {
+      "pid": "",
       "title": "31/16:02 CST Frost Warning\nfor Mid North, Riverland, Murraylands and Lower South East forecast districts",
       "type": "other",
       "state": "SA",
@@ -50,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "31/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "31/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 31 Jul 2026 06:05:15 GMT"
+      "issued": "Fri, 31 Jul 2026 12:00:12 GMT"
     },
     {
       "pid": "",
@@ -77,7 +86,7 @@
         "type": "Bush Fire",
         "size": "107 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 31 Jul 2026 11:50:59 GMT",
+        "updated": "Fri, 31 Jul 2026 12:18:58 GMT",
         "description": "DOBOY RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.800248,
@@ -744,36 +753,6 @@
     "tas": [],
     "wa": [
       {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-31T11:35:34+00:00",
-        "description": "ESPERANCE, SHIRE OF ESPERANCE",
-        "lat": -33.859,
-        "lng": 121.8948,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-31T11:27:52+00:00",
-        "description": "GIDGEGANNUP, CITY OF SWAN",
-        "lat": -31.7824,
-        "lng": 116.2261,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
@@ -1151,21 +1130,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - MARTIN TCE, KATHERINE EAST",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-31T11:47:36+00:00",
-        "description": "MARTIN TCE, KATHERINE EAST",
-        "lat": -14.4673,
-        "lng": 132.2897,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Marrakai Road, LAKE BENNETT",
         "alertLevel": "Advice",
         "status": "active",
@@ -1273,7 +1237,7 @@
     ],
     "act": []
   },
-  "incident_count": 36,
+  "incident_count": 33,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4469,6 +4433,25 @@
         }
       ]
     },
+    "SA": {
+      "state": "SA",
+      "product": "IDS20201",
+      "issued_utc": "2026-07-31T12:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "South Central Coast"
+          ],
+          "aac_codes": [
+            "SA_MW008"
+          ],
+          "summary": "South Central Coast"
+        }
+      ]
+    },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
@@ -4496,7 +4479,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-07-31T06:05:00Z",
+      "issued_utc": "2026-07-31T12:00:00Z",
       "overview": [],
       "hazards": [
         {
