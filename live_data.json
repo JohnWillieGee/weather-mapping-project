@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-31T04:53:18.401416+00:00",
-  "last_checked_utc": "2026-07-31T04:53:18.401416+00:00",
+  "generated_utc": "2026-07-31T05:23:15.911270+00:00",
+  "last_checked_utc": "2026-07-31T05:23:15.911270+00:00",
   "warning_count": 8,
   "warnings": [
     {
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "31/09:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "31/15:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 30 Jul 2026 23:00:13 GMT"
+      "issued": "Fri, 31 Jul 2026 05:00:15 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "31/08:24 WST Marine Wind Warning Summary for Western Australia",
+      "title": "31/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Fri, 31 Jul 2026 00:24:53 GMT"
+      "issued": "Fri, 31 Jul 2026 05:01:11 GMT"
     },
     {
       "pid": "",
@@ -68,17 +68,33 @@
     },
     {
       "pid": "",
-      "title": "31/08:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "31/14:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 30 Jul 2026 23:00:11 GMT"
+      "issued": "Fri, 31 Jul 2026 05:00:11 GMT"
     }
   ],
   "fetch_errors": {},
   "incidents": {
     "nsw": [
+      {
+        "title": "Chichester Dam Rd, Bendolba",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 31 Jul 2026 05:18:59 GMT",
+        "description": "Chichester Dam Rd, Bendolba, NSW 2420",
+        "council": "Dungog",
+        "lat": -32.390815001,
+        "lng": 151.74458,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
       {
         "title": "DOBOY RD, BUCCARUMBI",
         "alertLevel": "Advice",
@@ -86,11 +102,27 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 31 Jul 2026 04:50:59 GMT",
+        "updated": "Fri, 31 Jul 2026 05:18:59 GMT",
         "description": "DOBOY RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.800248,
         "lng": 152.685762,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "TENTH AV, AUSTRAL",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Fri, 31 Jul 2026 05:18:59 GMT",
+        "description": "TENTH AV, AUSTRAL 2179",
+        "council": "Liverpool",
+        "lat": -33.9312899999999,
+        "lng": 150.79742,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -449,21 +481,6 @@
     ],
     "nt": [
       {
-        "title": "Structure Fire - WURRUMIYANGA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-07-31T04:49:32+00:00",
-        "description": "WURRUMIYANGA",
-        "lat": -11.76,
-        "lng": 130.6387,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - COX PENINSULA RD, BLACKMORE",
         "alertLevel": "Advice",
         "status": "active",
@@ -616,7 +633,7 @@
     ],
     "act": []
   },
-  "incident_count": 35,
+  "incident_count": 36,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3789,40 +3806,38 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-30T23:00:00Z",
+      "issued_utc": "2026-07-31T05:00:00Z",
       "overview": [
-        "Strong Wind Warning for Friday for South East Gulf of Carpentaria, Peninsula Coast, Cooktown Coast, Cairns Coast and Townsville Coast",
-        "Strong Wind Warning for Saturday for Peninsula Coast, Cooktown Coast, Cairns Coast, Townsville Coast and Mackay Coast"
+        "Strong Wind Warning for Friday for Peninsula Coast, Cooktown Coast, Cairns Coast and Townsville Coast",
+        "Strong Wind Warning for Saturday for Peninsula Coast, Cooktown Coast, Cairns Coast and Townsville Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "South East Gulf of Carpentaria: QLD-NT Border to Cape Keerweer",
             "Peninsula Coast: Sharp Point to Cape Melville",
             "Cooktown Coast: Cape Melville to Cape Tribulation",
             "Cairns Coast: Cape Tribulation to Cardwell",
             "Townsville Coast: Cardwell to Bowen"
           ],
           "aac_codes": [
-            "QLD_MW001",
             "QLD_MW004",
             "QLD_MW005",
             "QLD_MW006",
             "QLD_MW007"
           ],
-          "summary": "South East Gulf of Carpentaria, Peninsula Coast, Cooktown Coast, Cairns Coast and Townsville Coast"
+          "summary": "Peninsula Coast, Cooktown Coast, Cairns Coast and Townsville Coast"
         }
       ]
     },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-07-31T00:24:44Z",
+      "issued_utc": "2026-07-31T05:01:00Z",
       "overview": [
         "Strong Wind Warning for Friday for Leeuwin Coast and Albany Coast",
-        "Strong Wind Warning for Saturday for Esperance Coast and Albany Coast"
+        "Strong Wind Warning for Saturday for Leeuwin Coast, Albany Coast and Esperance Coast"
       ],
       "hazards": [
         {
@@ -3856,25 +3871,6 @@
             "TAS_MW007"
           ],
           "summary": "South West Coast"
-        }
-      ]
-    },
-    "NT": {
-      "state": "NT",
-      "product": "IDD20105",
-      "issued_utc": "2026-07-30T23:00:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Roper Groote Coast: Cape Arnhem to QLD-NT Border"
-          ],
-          "aac_codes": [
-            "NT_MW006"
-          ],
-          "summary": "Roper Groote Coast"
         }
       ]
     }
