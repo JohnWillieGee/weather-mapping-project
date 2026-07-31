@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-31T10:53:15.937359+00:00",
-  "last_checked_utc": "2026-07-31T10:53:15.937359+00:00",
+  "generated_utc": "2026-07-31T11:23:12.205711+00:00",
+  "last_checked_utc": "2026-07-31T11:23:12.205711+00:00",
   "warning_count": 7,
   "warnings": [
     {
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "31/15:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "31/21:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 31 Jul 2026 05:00:15 GMT"
+      "issued": "Fri, 31 Jul 2026 11:00:12 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "31/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "31/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Fri, 31 Jul 2026 05:01:11 GMT"
+      "issued": "Fri, 31 Jul 2026 11:01:12 GMT"
     },
     {
       "pid": "",
@@ -77,7 +77,7 @@
         "type": "Bush Fire",
         "size": "107 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 31 Jul 2026 10:50:58 GMT",
+        "updated": "Fri, 31 Jul 2026 11:18:58 GMT",
         "description": "DOBOY RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.800248,
@@ -750,6 +750,21 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
+        "updated": "2026-07-31T10:58:14+00:00",
+        "description": "HALLS CREEK, SHIRE OF HALLS CREEK",
+        "lat": -18.2314,
+        "lng": 127.6683,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
         "updated": "2026-07-31T10:20:46+00:00",
         "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.7239,
@@ -784,21 +799,6 @@
         "description": "",
         "lat": -17.123,
         "lng": 122.327,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-31T09:52:54+00:00",
-        "description": "HALLS CREEK, SHIRE OF HALLS CREEK",
-        "lat": -18.2314,
-        "lng": 127.6683,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1121,6 +1121,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - Unknown",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-07-31T11:13:00+00:00",
+        "description": "",
+        "lat": -23.6735,
+        "lng": 133.8729,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - WRIGHT RD, MARRAKAI",
         "alertLevel": "Advice",
         "status": "active",
@@ -1213,7 +1228,7 @@
     ],
     "act": []
   },
-  "incident_count": 32,
+  "incident_count": 33,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4386,9 +4401,9 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-31T05:00:00Z",
+      "issued_utc": "2026-07-31T11:00:00Z",
       "overview": [
-        "Strong Wind Warning for Friday for Peninsula Coast, Cooktown Coast, Cairns Coast and Townsville Coast",
+        "Strong Wind Warning for Friday for Peninsula Coast, Cooktown Coast and Cairns Coast",
         "Strong Wind Warning for Saturday for Peninsula Coast, Cooktown Coast, Cairns Coast and Townsville Coast"
       ],
       "hazards": [
@@ -4398,23 +4413,21 @@
           "zones": [
             "Peninsula Coast: Sharp Point to Cape Melville",
             "Cooktown Coast: Cape Melville to Cape Tribulation",
-            "Cairns Coast: Cape Tribulation to Cardwell",
-            "Townsville Coast: Cardwell to Bowen"
+            "Cairns Coast: Cape Tribulation to Cardwell"
           ],
           "aac_codes": [
             "QLD_MW004",
             "QLD_MW005",
-            "QLD_MW006",
-            "QLD_MW007"
+            "QLD_MW006"
           ],
-          "summary": "Peninsula Coast, Cooktown Coast, Cairns Coast and Townsville Coast"
+          "summary": "Peninsula Coast, Cooktown Coast and Cairns Coast"
         }
       ]
     },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-07-31T05:01:00Z",
+      "issued_utc": "2026-07-31T11:01:00Z",
       "overview": [
         "Strong Wind Warning for Friday for Leeuwin Coast and Albany Coast",
         "Strong Wind Warning for Saturday for Leeuwin Coast, Albany Coast and Esperance Coast"
