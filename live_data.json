@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-31T16:53:13.355316+00:00",
-  "last_checked_utc": "2026-07-31T16:53:13.355316+00:00",
+  "generated_utc": "2026-07-31T17:23:11.625217+00:00",
+  "last_checked_utc": "2026-07-31T17:23:11.625217+00:00",
   "warning_count": 7,
   "warnings": [
     {
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "31/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "01/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 31 Jul 2026 11:00:12 GMT"
+      "issued": "Fri, 31 Jul 2026 17:00:13 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "31/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "01/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Fri, 31 Jul 2026 11:01:12 GMT"
+      "issued": "Fri, 31 Jul 2026 17:01:16 GMT"
     },
     {
       "pid": "",
@@ -77,7 +77,7 @@
         "type": "Bush Fire",
         "size": "107 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 31 Jul 2026 16:50:59 GMT",
+        "updated": "Fri, 31 Jul 2026 17:18:58 GMT",
         "description": "DOBOY RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.800248,
@@ -750,7 +750,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-07-31T16:31:42+00:00",
+        "updated": "2026-07-31T16:42:18+00:00",
         "description": "BUTLER, CITY OF WANNEROO",
         "lat": -31.6463,
         "lng": 115.7052,
@@ -4431,10 +4431,10 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-07-31T11:00:00Z",
+      "issued_utc": "2026-07-31T17:00:00Z",
       "overview": [
-        "Strong Wind Warning for Friday for Peninsula Coast, Cooktown Coast and Cairns Coast",
-        "Strong Wind Warning for Saturday for Peninsula Coast, Cooktown Coast, Cairns Coast and Townsville Coast"
+        "Strong Wind Warning for Saturday for Peninsula Coast, Cooktown Coast, Cairns Coast and Townsville Coast",
+        "Strong Wind Warning for Sunday for Torres Strait, Peninsula Coast, Cooktown Coast and Cairns Coast"
       ],
       "hazards": [
         {
@@ -4443,14 +4443,16 @@
           "zones": [
             "Peninsula Coast: Sharp Point to Cape Melville",
             "Cooktown Coast: Cape Melville to Cape Tribulation",
-            "Cairns Coast: Cape Tribulation to Cardwell"
+            "Cairns Coast: Cape Tribulation to Cardwell",
+            "Townsville Coast: Cardwell to Bowen"
           ],
           "aac_codes": [
             "QLD_MW004",
             "QLD_MW005",
-            "QLD_MW006"
+            "QLD_MW006",
+            "QLD_MW007"
           ],
-          "summary": "Peninsula Coast, Cooktown Coast and Cairns Coast"
+          "summary": "Peninsula Coast, Cooktown Coast, Cairns Coast and Townsville Coast"
         }
       ]
     },
@@ -4476,24 +4478,23 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-07-31T11:01:00Z",
-      "overview": [
-        "Strong Wind Warning for Friday for Leeuwin Coast and Albany Coast",
-        "Strong Wind Warning for Saturday for Leeuwin Coast, Albany Coast and Esperance Coast"
-      ],
+      "issued_utc": "2026-07-31T17:01:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
             "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay"
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay"
           ],
           "aac_codes": [
             "WA_MW011",
-            "WA_MW012"
+            "WA_MW012",
+            "WA_MW013"
           ],
-          "summary": "Leeuwin Coast and Albany Coast"
+          "summary": "Leeuwin Coast, Albany Coast and Esperance Coast"
         }
       ]
     },
