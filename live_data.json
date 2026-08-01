@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-01T22:53:15.175361+00:00",
-  "last_checked_utc": "2026-08-01T22:53:15.175361+00:00",
-  "warning_count": 10,
+  "generated_utc": "2026-08-01T23:23:24.283251+00:00",
+  "last_checked_utc": "2026-08-01T23:23:24.283251+00:00",
+  "warning_count": 11,
   "warnings": [
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "02/03:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "02/09:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 01 Aug 2026 17:00:15 GMT"
+      "issued": "Sat, 01 Aug 2026 23:00:15 GMT"
     },
     {
       "pid": "",
@@ -86,6 +86,15 @@
     },
     {
       "pid": "",
+      "title": "02/07:01 WST Marine Wind Warning Summary for Western Australia",
+      "type": "wind",
+      "state": "WA",
+      "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
+      "desc": "",
+      "issued": "Sat, 01 Aug 2026 23:01:15 GMT"
+    },
+    {
+      "pid": "",
       "title": "02/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
@@ -94,7 +103,9 @@
       "issued": "Sat, 01 Aug 2026 18:00:10 GMT"
     }
   ],
-  "fetch_errors": {},
+  "fetch_errors": {
+    "tas": "HTTPSConnectionPool(host='services.thelist.tas.gov.au', port=443): Read timed out. (read timeout=20)"
+  },
   "incidents": {
     "nsw": [
       {
@@ -104,7 +115,7 @@
         "type": "Bush Fire",
         "size": "107 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 01 Aug 2026 22:50:59 GMT",
+        "updated": "Sat, 01 Aug 2026 23:18:59 GMT",
         "description": "DOBOY RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.800248,
@@ -771,7 +782,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 01 Aug 2026 22:50:59 GMT",
+        "updated": "Sat, 01 Aug 2026 23:18:59 GMT",
         "description": "Pioneer Rd, Fairy Meadow, NSW 2519",
         "council": "Wollongong",
         "lat": -34.390091,
@@ -1133,6 +1144,21 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - COBURG DR, LEANYER",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-01T23:05:48+00:00",
+        "description": "COBURG DR, LEANYER",
+        "lat": -12.3731,
+        "lng": 130.8965,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - COBURG DR, LEANYER",
         "alertLevel": "Advice",
@@ -1556,7 +1582,7 @@
     ],
     "act": []
   },
-  "incident_count": 53,
+  "incident_count": 54,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4537,7 +4563,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-08-01T17:00:00Z",
+      "issued_utc": "2026-08-01T23:00:00Z",
       "overview": [
         "Strong Wind Warning for Sunday for Torres Strait, Peninsula Coast, Cooktown Coast and Cairns Coast",
         "Strong Wind Warning for Monday for Torres Strait, Peninsula Coast and Cooktown Coast"
@@ -4610,6 +4636,25 @@
             "SA_MW010"
           ],
           "summary": "Lower West Coast, Central Coast, South Central Coast, Investigator Strait, Upper South East Coast and Lower South East Coast"
+        }
+      ]
+    },
+    "WA": {
+      "state": "WA",
+      "product": "IDW20100",
+      "issued_utc": "2026-08-01T23:01:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Esperance Coast: Bremer Bay to Israelite Bay"
+          ],
+          "aac_codes": [
+            "WA_MW013"
+          ],
+          "summary": "Esperance Coast"
         }
       ]
     },
