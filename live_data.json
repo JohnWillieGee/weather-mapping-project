@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-01T13:53:12.513755+00:00",
-  "last_checked_utc": "2026-08-01T13:53:12.513755+00:00",
+  "generated_utc": "2026-08-01T14:23:10.233217+00:00",
+  "last_checked_utc": "2026-08-01T14:23:10.233217+00:00",
   "warning_count": 9,
   "warnings": [
     {
@@ -89,13 +89,29 @@
   "incidents": {
     "nsw": [
       {
+        "title": "Bourne St, West Tamworth",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sat, 01 Aug 2026 14:18:59 GMT",
+        "description": "Bourne St, West Tamworth, NSW 2340",
+        "council": "Tamworth",
+        "lat": -31.107502,
+        "lng": 150.894849,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "DOBOY RD, BUCCARUMBI",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "107 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 01 Aug 2026 13:51:11 GMT",
+        "updated": "Sat, 01 Aug 2026 14:18:59 GMT",
         "description": "DOBOY RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.800248,
@@ -762,6 +778,21 @@
     "tas": [],
     "wa": [
       {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-01T14:06:48+00:00",
+        "description": "DERBY, SHIRE OF DERBY/WEST KIMBERLEY",
+        "lat": -17.3025,
+        "lng": 123.6251,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Bushfire Advice AVOID THE AREA - DAMPIER PENINSULA AND WATERBANK",
         "alertLevel": "Advice",
         "status": "active",
@@ -1075,39 +1106,24 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-28T00:44:27+00:00",
-        "description": "DRYSDALE RIVER, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -14.394,
-        "lng": 126.949,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-07-28T00:41:47+00:00",
-        "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.7286,
-        "lng": 128.2656,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - DARWIN RIVER",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-01T14:03:04+00:00",
+        "description": "DARWIN RIVER",
+        "lat": -12.8303,
+        "lng": 130.9379,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Bushfire - Litchfield Park Road, CHARLOTTE ",
         "alertLevel": "Advice",
@@ -1486,7 +1502,7 @@
     ],
     "act": []
   },
-  "incident_count": 49,
+  "incident_count": 50,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
