@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-01T17:53:09.582782+00:00",
-  "last_checked_utc": "2026-08-01T17:53:09.582782+00:00",
+  "generated_utc": "2026-08-01T18:23:28.839053+00:00",
+  "last_checked_utc": "2026-08-01T18:23:28.839053+00:00",
   "warning_count": 9,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "01/22:00 EST Marine Wind Warning Summary for Victoria",
+      "title": "02/04:10 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 01 Aug 2026 12:00:19 GMT"
+      "issued": "Sat, 01 Aug 2026 18:10:14 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "01/23:13 CST Marine Wind Warning Summary for South Australia",
+      "title": "02/03:40 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sat, 01 Aug 2026 13:43:19 GMT"
+      "issued": "Sat, 01 Aug 2026 18:10:11 GMT"
     },
     {
       "pid": "",
@@ -77,15 +77,17 @@
     },
     {
       "pid": "",
-      "title": "01/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "02/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 01 Aug 2026 12:00:12 GMT"
+      "issued": "Sat, 01 Aug 2026 18:00:10 GMT"
     }
   ],
-  "fetch_errors": {},
+  "fetch_errors": {
+    "tas": "HTTPSConnectionPool(host='services.thelist.tas.gov.au', port=443): Read timed out. (read timeout=20)"
+  },
   "incidents": {
     "nsw": [
       {
@@ -95,7 +97,7 @@
         "type": "Bush Fire",
         "size": "107 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 01 Aug 2026 17:50:58 GMT",
+        "updated": "Sat, 01 Aug 2026 18:14:59 GMT",
         "description": "DOBOY RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.800248,
@@ -768,7 +770,22 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-01T16:10:43+00:00",
+        "updated": "2026-08-01T17:55:01+00:00",
+        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.7802,
+        "lng": 128.7503,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-01T17:32:21+00:00",
         "description": "LOWDEN, SHIRE OF DONNYBROOK-BALINGUP",
         "lat": -33.5352,
         "lng": 115.9726,
@@ -802,21 +819,6 @@
         "description": "MARBLE BAR, SHIRE OF EAST PILBARA",
         "lat": -21.2513,
         "lng": 120.3252,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-01T09:23:36+00:00",
-        "description": "WESTMINSTER, CITY OF STIRLING",
-        "lat": -31.8682,
-        "lng": 115.8544,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -4540,8 +4542,11 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-08-01T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-08-01T18:10:00Z",
+      "overview": [
+        "Strong Wind Warning for Sunday for West Coast",
+        "Strong Wind Warning for Monday for West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -4559,65 +4564,55 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-08-01T13:43:13Z",
-      "overview": [
-        "Strong Wind Warning for Saturday for South Central Coast",
-        "Strong Wind Warning for Sunday for South Central Coast, Investigator Strait, Upper South East Coast, Central Coast, Lower South East Coast and Lower West Coast"
-      ],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "South Central Coast"
-          ],
-          "aac_codes": [
-            "SA_MW008"
-          ],
-          "summary": "South Central Coast"
-        }
-      ]
-    },
-    "WA": {
-      "state": "WA",
-      "product": "IDW20100",
-      "issued_utc": "2026-08-01T11:01:00Z",
+      "issued_utc": "2026-08-01T18:10:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Esperance Coast: Bremer Bay to Israelite Bay"
+            "Lower West Coast: Elliston to Cape Carnot",
+            "Central Coast",
+            "South Central Coast",
+            "Investigator Strait",
+            "Upper South East Coast: Murray Mouth to Cape Jaffa",
+            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
           ],
           "aac_codes": [
-            "WA_MW013"
+            "SA_MW003",
+            "SA_MW004",
+            "SA_MW008",
+            "SA_MW007",
+            "SA_MW009",
+            "SA_MW010"
           ],
-          "summary": "Esperance Coast"
+          "summary": "Lower West Coast, Central Coast, South Central Coast, Investigator Strait, Upper South East Coast and Lower South East Coast"
         }
       ]
     },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-08-01T12:00:00Z",
+      "issued_utc": "2026-08-01T18:00:00Z",
       "overview": [
-        "Strong Wind Warning for Saturday for South West Coast and Central West Coast",
-        "Strong Wind Warning for Sunday for Far North West Coast, South West Coast and Central West Coast"
+        "Strong Wind Warning for Sunday for Far North West Coast, South West Coast and Central West Coast",
+        "Strong Wind Warning for Monday for Far North West Coast, Central North Coast and East of Flinders Island"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Far North West Coast: Sandy Cape to Stanley",
             "South West Coast: South East Cape to Low Rocky Point",
             "Central West Coast: Low Rocky Point to Sandy Cape"
           ],
           "aac_codes": [
+            "TAS_MW001",
             "TAS_MW007",
             "TAS_MW008"
           ],
-          "summary": "South West Coast and Central West Coast"
+          "summary": "Far North West Coast, South West Coast and Central West Coast"
         }
       ]
     }
