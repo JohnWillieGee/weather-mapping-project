@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-02T02:53:09.597376+00:00",
-  "last_checked_utc": "2026-08-02T02:53:09.597376+00:00",
+  "generated_utc": "2026-08-02T03:23:33.026103+00:00",
+  "last_checked_utc": "2026-08-02T03:23:33.026103+00:00",
   "warning_count": 9,
   "warnings": [
     {
@@ -85,9 +85,27 @@
       "issued": "Sun, 02 Aug 2026 00:00:16 GMT"
     }
   ],
-  "fetch_errors": {},
+  "fetch_errors": {
+    "tas": "HTTPSConnectionPool(host='services.thelist.tas.gov.au', port=443): Read timed out. (read timeout=20)"
+  },
   "incidents": {
     "nsw": [
+      {
+        "title": "Clifton St, Blacktown",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 02 Aug 2026 03:18:59 GMT",
+        "description": "Clifton St, Blacktown, NSW 2148",
+        "council": "Blacktown",
+        "lat": -33.76794,
+        "lng": 150.913086,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
       {
         "title": "DOBOY RD, BUCCARUMBI",
         "alertLevel": "Advice",
@@ -95,7 +113,7 @@
         "type": "Bush Fire",
         "size": "107 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 02 Aug 2026 02:50:59 GMT",
+        "updated": "Sun, 02 Aug 2026 03:18:59 GMT",
         "description": "DOBOY RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.800248,
@@ -103,44 +121,48 @@
         "polys": [
           [
             [
-              152.667804364,
-              -29.8339893149999
+              152.667179755,
+              -29.822172317
             ],
             [
-              152.66866097,
-              -29.8339893149999
+              152.668060155,
+              -29.8206018719999
             ],
             [
-              152.671801858,
-              -29.83555976
+              152.670844126,
+              -29.819673883
             ],
             [
-              152.67227775,
-              -29.836797079
+              152.673175997,
+              -29.818579331
             ],
             [
-              152.672991588,
-              -29.837844042
+              152.674770235,
+              -29.8184603569999
             ],
             [
-              152.672587081,
-              -29.838319934
+              152.676102733,
+              -29.820720846
             ],
             [
-              152.672039804,
-              -29.837344355
+              152.676197912,
+              -29.822386469
             ],
             [
-              152.670850074,
-              -29.835845295
+              152.681147192,
+              -29.82807338
             ],
             [
-              152.669731727,
-              -29.835226635
+              152.680742683,
+              -29.831095295
             ],
             [
-              152.667804364,
-              -29.8339893149999
+              152.675484074,
+              -29.832285026
+            ],
+            [
+              152.667179755,
+              -29.822172317
             ]
           ]
         ],
@@ -152,9 +174,9 @@
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Grass Fire",
-        "size": "0 ha",
+        "size": "4 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 02 Aug 2026 02:50:59 GMT",
+        "updated": "Sun, 02 Aug 2026 03:18:59 GMT",
         "description": "MONARO HWY, BUNYAN 2630",
         "council": "Snowy Monaro",
         "lat": -36.161239625,
@@ -169,21 +191,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-02T02:34:04+00:00",
-        "description": "NEDLANDS, CITY OF NEDLANDS",
-        "lat": -31.9679,
-        "lng": 115.807,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -471,6 +478,36 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - HOWARD SPRINGS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-02T03:15:08+00:00",
+        "description": "HOWARD SPRINGS",
+        "lat": -12.4669,
+        "lng": 131.072,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - TIGER BRENNAN DR, BERRIMAH",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-02T03:13:16+00:00",
+        "description": "TIGER BRENNAN DR, BERRIMAH",
+        "lat": -12.45,
+        "lng": 130.9237,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - PEACOCK RD, DARWIN RIVER",
         "alertLevel": "Advice",
@@ -922,9 +959,40 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": []
+    "act": [
+      {
+        "title": "HOUSE FIRE - THEODORE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-08-02T03:21:00+00:00",
+        "description": "THEODORE",
+        "lat": -35.4475,
+        "lng": 149.1289,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - THEODORE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Fire - Ambulance",
+        "updated": "2026-08-02T03:17:54+00:00",
+        "description": "THEODORE",
+        "lat": -35.4475,
+        "lng": 149.1289,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      }
+    ]
   },
-  "incident_count": 52,
+  "incident_count": 56,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
