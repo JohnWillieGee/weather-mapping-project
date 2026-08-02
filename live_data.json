@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-02T17:53:15.071933+00:00",
-  "last_checked_utc": "2026-08-02T17:53:15.071933+00:00",
-  "warning_count": 10,
+  "generated_utc": "2026-08-02T18:23:33.966985+00:00",
+  "last_checked_utc": "2026-08-02T18:23:33.966985+00:00",
+  "warning_count": 11,
   "warnings": [
     {
       "pid": "IDN21037",
@@ -23,12 +23,21 @@
     },
     {
       "pid": "",
-      "title": "02/22:00 EST Marine Wind Warning Summary for Victoria",
+      "title": "03/04:07 EST Warning to Sheep Graziers\nfor Snowy Mountains forecast district",
+      "type": "other",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
+      "desc": "",
+      "issued": "Sun, 02 Aug 2026 18:07:00 GMT"
+    },
+    {
+      "pid": "",
+      "title": "03/04:10 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 02 Aug 2026 12:00:23 GMT"
+      "issued": "Sun, 02 Aug 2026 18:10:17 GMT"
     },
     {
       "pid": "IDV21037",
@@ -59,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "02/21:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "03/03:40 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sun, 02 Aug 2026 12:00:12 GMT"
+      "issued": "Sun, 02 Aug 2026 18:10:12 GMT"
     },
     {
       "pid": "",
@@ -77,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "02/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "03/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 02 Aug 2026 12:00:12 GMT"
+      "issued": "Sun, 02 Aug 2026 18:00:14 GMT"
     },
     {
       "pid": "",
@@ -94,7 +103,9 @@
       "issued": "Sun, 02 Aug 2026 17:00:13 GMT"
     }
   ],
-  "fetch_errors": {},
+  "fetch_errors": {
+    "tas": "HTTPSConnectionPool(host='services.thelist.tas.gov.au', port=443): Read timed out. (read timeout=20)"
+  },
   "incidents": {
     "nsw": [
       {
@@ -104,7 +115,7 @@
         "type": "Bush Fire",
         "size": "236 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 02 Aug 2026 17:50:59 GMT",
+        "updated": "Sun, 02 Aug 2026 18:18:59 GMT",
         "description": "DOBOY RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.800248,
@@ -159,6 +170,22 @@
         ],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Victoria Rd, Minto",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 02 Aug 2026 18:18:59 GMT",
+        "description": "Victoria Rd, Minto, NSW 2566",
+        "council": "Campbelltown",
+        "lat": -34.017725001,
+        "lng": 150.846604,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       }
     ],
     "vic": [],
@@ -167,16 +194,16 @@
     "tas": [],
     "wa": [
       {
-        "title": "Fire",
+        "title": "Earthquake",
         "alertLevel": "",
         "status": "active",
-        "type": "Bush Fire",
+        "type": "Earthquake",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-02T17:20:15+00:00",
-        "description": "CARRAMAR, CITY OF WANNEROO",
-        "lat": -31.7045,
-        "lng": 115.7981,
+        "updated": "2026-08-02T17:58:14+00:00",
+        "description": "DURACK, WYNDHAM-EAST KIMBERLEY, SHIRE OF",
+        "lat": -15.9144,
+        "lng": 127.6274,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -576,7 +603,7 @@
     ],
     "act": []
   },
-  "incident_count": 28,
+  "incident_count": 29,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3578,33 +3605,50 @@
         }
       ]
     },
-    "SA": {
-      "state": "SA",
-      "product": "IDS20201",
-      "issued_utc": "2026-08-02T12:00:00Z",
+    "VIC": {
+      "state": "VIC",
+      "product": "IDV20600",
+      "issued_utc": "2026-08-02T18:10:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Central Coast, South Central Coast, Investigator Strait, Upper South East Coast and Lower South East Coast",
-        "Strong Wind Warning for Monday for Lower South East Coast"
+        "Strong Wind Warning for Monday for West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast",
+        "Strong Wind Warning for Tuesday for West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Central Coast",
-            "South Central Coast",
-            "Investigator Strait",
-            "Upper South East Coast: Murray Mouth to Cape Jaffa",
+            "West Coast: SA-VIC Border to Cape Otway",
+            "Central Coast: Cape Otway to Wilsons Promontory",
+            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
+          ],
+          "aac_codes": [
+            "VIC_MW001",
+            "VIC_MW002",
+            "VIC_MW003",
+            "VIC_MW004"
+          ],
+          "summary": "West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast"
+        }
+      ]
+    },
+    "SA": {
+      "state": "SA",
+      "product": "IDS20201",
+      "issued_utc": "2026-08-02T18:10:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
             "Lower South East Coast: Cape Jaffa to SA-VIC Border"
           ],
           "aac_codes": [
-            "SA_MW004",
-            "SA_MW008",
-            "SA_MW007",
-            "SA_MW009",
             "SA_MW010"
           ],
-          "summary": "Central Coast, South Central Coast, Investigator Strait, Upper South East Coast and Lower South East Coast"
+          "summary": "Lower South East Coast"
         }
       ]
     },
@@ -3633,22 +3677,26 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-08-02T12:00:00Z",
+      "issued_utc": "2026-08-02T18:00:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Far North West Coast",
-        "Strong Wind Warning for Monday for Far North West Coast, Central North Coast, East of Flinders Island and Central West Coast"
+        "Strong Wind Warning for Monday for Far North West Coast, Central North Coast and East of Flinders Island",
+        "Strong Wind Warning for Tuesday for Far North West Coast and East of Flinders Island"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Far North West Coast: Sandy Cape to Stanley"
+            "Far North West Coast: Sandy Cape to Stanley",
+            "Central North Coast: Stanley to Northern Tip of Flinders Island",
+            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point"
           ],
           "aac_codes": [
-            "TAS_MW001"
+            "TAS_MW001",
+            "TAS_MW002",
+            "TAS_MW003"
           ],
-          "summary": "Far North West Coast"
+          "summary": "Far North West Coast, Central North Coast and East of Flinders Island"
         }
       ]
     },
