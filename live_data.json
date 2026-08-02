@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-02T00:53:11.621587+00:00",
-  "last_checked_utc": "2026-08-02T00:53:11.621587+00:00",
+  "generated_utc": "2026-08-02T01:23:49.229215+00:00",
+  "last_checked_utc": "2026-08-02T01:23:49.229215+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -94,7 +94,9 @@
       "issued": "Sun, 02 Aug 2026 00:00:16 GMT"
     }
   ],
-  "fetch_errors": {},
+  "fetch_errors": {
+    "tas": "HTTPSConnectionPool(host='services.thelist.tas.gov.au', port=443): Read timed out. (read timeout=20)"
+  },
   "incidents": {
     "nsw": [
       {
@@ -104,7 +106,7 @@
         "type": "Bush Fire",
         "size": "107 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 02 Aug 2026 00:50:59 GMT",
+        "updated": "Sun, 02 Aug 2026 01:18:59 GMT",
         "description": "DOBOY RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.800248,
@@ -777,21 +779,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-02T00:29:53+00:00",
-        "description": "GLEN FORREST, SHIRE OF MUNDARING",
-        "lat": -31.9215,
-        "lng": 116.1242,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-08-01T22:29:36+00:00",
         "description": "MARBLE BAR, SHIRE OF EAST PILBARA",
         "lat": -21.2513,
@@ -1102,6 +1089,36 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - DARIBAH RD, TIWI",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-02T01:12:13+00:00",
+        "description": "DARIBAH RD, TIWI",
+        "lat": -12.3621,
+        "lng": 130.8672,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Parkin Road, FLY CREEK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-08-02T01:10:00+00:00",
+        "description": "Parkin Road, FLY CREEK",
+        "lat": -12.7681,
+        "lng": 131.046,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - JABIRU DR, JABIRU",
         "alertLevel": "Advice",
@@ -1525,7 +1542,7 @@
     ],
     "act": []
   },
-  "incident_count": 51,
+  "incident_count": 52,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
