@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-02T19:53:10.780059+00:00",
-  "last_checked_utc": "2026-08-02T19:53:10.780059+00:00",
+  "generated_utc": "2026-08-02T20:23:34.163293+00:00",
+  "last_checked_utc": "2026-08-02T20:23:34.163293+00:00",
   "warning_count": 11,
   "warnings": [
     {
       "pid": "IDN21037",
-      "title": "03/04:37 EST \n                Severe Weather Warning\n            \nfor \n                parts of Snowy Mountains Forecast District.",
+      "title": "03/06:07 EST \n                Cancellation of Severe Weather Warning\n            \nfor \n                Snowy Mountains Forecast District.",
       "type": "severe_weather",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/products/IDN21037.shtml",
       "desc": "",
-      "issued": "Sun, 02 Aug 2026 18:37:39 GMT"
+      "issued": "Sun, 02 Aug 2026 20:07:22 GMT"
     },
     {
       "pid": "",
@@ -103,7 +103,9 @@
       "issued": "Sun, 02 Aug 2026 17:00:13 GMT"
     }
   ],
-  "fetch_errors": {},
+  "fetch_errors": {
+    "tas": "HTTPSConnectionPool(host='services.thelist.tas.gov.au', port=443): Read timed out. (read timeout=20)"
+  },
   "incidents": {
     "nsw": [
       {
@@ -113,7 +115,7 @@
         "type": "Bush Fire",
         "size": "236 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 02 Aug 2026 19:50:58 GMT",
+        "updated": "Sun, 02 Aug 2026 20:18:59 GMT",
         "description": "DOBOY RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.800248,
@@ -772,6 +774,22 @@
         ],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Reid St, South Grafton",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 02 Aug 2026 20:18:59 GMT",
+        "description": "Reid St, South Grafton, NSW 2460",
+        "council": "Clarence Valley",
+        "lat": -29.709375,
+        "lng": 152.943069,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       }
     ],
     "vic": [],
@@ -779,6 +797,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-02T20:05:11+00:00",
+        "description": "BALLAJURA, CITY OF SWAN",
+        "lat": -31.8388,
+        "lng": 115.8777,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Earthquake",
         "alertLevel": "",
@@ -1189,7 +1222,7 @@
     ],
     "act": []
   },
-  "incident_count": 28,
+  "incident_count": 30,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
