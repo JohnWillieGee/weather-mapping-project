@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-02T16:53:15.327036+00:00",
-  "last_checked_utc": "2026-08-02T16:53:15.327036+00:00",
+  "generated_utc": "2026-08-02T17:23:32.814551+00:00",
+  "last_checked_utc": "2026-08-02T17:23:32.814551+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "02/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "03/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 02 Aug 2026 11:00:12 GMT"
+      "issued": "Sun, 02 Aug 2026 17:00:16 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "02/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "03/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 02 Aug 2026 11:01:12 GMT"
+      "issued": "Sun, 02 Aug 2026 17:01:14 GMT"
     },
     {
       "pid": "",
@@ -86,15 +86,17 @@
     },
     {
       "pid": "",
-      "title": "02/21:22 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "03/02:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 02 Aug 2026 11:52:28 GMT"
+      "issued": "Sun, 02 Aug 2026 17:00:13 GMT"
     }
   ],
-  "fetch_errors": {},
+  "fetch_errors": {
+    "tas": "HTTPSConnectionPool(host='services.thelist.tas.gov.au', port=443): Read timed out. (read timeout=20)"
+  },
   "incidents": {
     "nsw": [
       {
@@ -104,7 +106,7 @@
         "type": "Bush Fire",
         "size": "236 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 02 Aug 2026 16:50:59 GMT",
+        "updated": "Sun, 02 Aug 2026 17:18:59 GMT",
         "description": "DOBOY RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.800248,
@@ -166,6 +168,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-02T16:58:44+00:00",
+        "description": "CARRAMAR, CITY OF WANNEROO",
+        "lat": -31.7045,
+        "lng": 115.7981,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -561,7 +578,7 @@
     ],
     "act": []
   },
-  "incident_count": 27,
+  "incident_count": 28,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3542,26 +3559,24 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-08-02T11:00:00Z",
+      "issued_utc": "2026-08-02T17:00:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Torres Strait, Peninsula Coast and Cooktown Coast",
-        "Strong Wind Warning for Monday for Torres Strait, Peninsula Coast and Cooktown Coast"
+        "Strong Wind Warning for Monday for Peninsula Coast and Cooktown Coast",
+        "Strong Wind Warning for Tuesday for Peninsula Coast and Cooktown Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Torres Strait",
             "Peninsula Coast: Sharp Point to Cape Melville",
             "Cooktown Coast: Cape Melville to Cape Tribulation"
           ],
           "aac_codes": [
-            "QLD_MW003",
             "QLD_MW004",
             "QLD_MW005"
           ],
-          "summary": "Torres Strait, Peninsula Coast and Cooktown Coast"
+          "summary": "Peninsula Coast and Cooktown Coast"
         }
       ]
     },
@@ -3598,8 +3613,11 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-08-02T11:01:00Z",
-      "overview": [],
+      "issued_utc": "2026-08-02T17:01:00Z",
+      "overview": [
+        "Strong Wind Warning for Monday for Esperance Coast",
+        "Strong Wind Warning for Tuesday for Esperance Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3639,11 +3657,8 @@
     "NT": {
       "state": "NT",
       "product": "IDD20105",
-      "issued_utc": "2026-08-02T11:52:19Z",
-      "overview": [
-        "Strong Wind Warning for Sunday for Gove Peninsula Coast",
-        "Strong Wind Warning for Monday for Gove Peninsula Coast"
-      ],
+      "issued_utc": "2026-08-02T17:00:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
