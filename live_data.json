@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-02T22:53:36.395578+00:00",
-  "last_checked_utc": "2026-08-02T22:53:36.395578+00:00",
+  "generated_utc": "2026-08-02T23:23:35.342259+00:00",
+  "last_checked_utc": "2026-08-02T23:23:35.342259+00:00",
   "warning_count": 11,
   "warnings": [
     {
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "03/03:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "03/09:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 02 Aug 2026 17:00:16 GMT"
+      "issued": "Sun, 02 Aug 2026 23:00:14 GMT"
     },
     {
       "pid": "",
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "03/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "03/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 02 Aug 2026 17:01:14 GMT"
+      "issued": "Sun, 02 Aug 2026 23:01:14 GMT"
     },
     {
       "pid": "",
@@ -95,15 +95,17 @@
     },
     {
       "pid": "",
-      "title": "03/02:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "title": "03/08:30 CST Marine Wind Warning Summary for the Northern Territory",
       "type": "wind",
       "state": "NT",
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 02 Aug 2026 17:00:13 GMT"
+      "issued": "Sun, 02 Aug 2026 23:00:10 GMT"
     }
   ],
-  "fetch_errors": {},
+  "fetch_errors": {
+    "tas": "HTTPSConnectionPool(host='services.thelist.tas.gov.au', port=443): Max retries exceeded with url: /arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/72/query?where=1%3D1&outFields=*&f=geojson (Caused by ConnectTimeoutError(<HTTPSConnection(host='services.thelist.tas.gov.au', port=443) at 0x24596f27c50>, 'Connection to services.thelist.tas.gov.au timed out. (connect timeout=20)'))"
+  },
   "incidents": {
     "nsw": [
       {
@@ -113,7 +115,7 @@
         "type": "Bush Fire",
         "size": "236 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 02 Aug 2026 22:50:58 GMT",
+        "updated": "Sun, 02 Aug 2026 23:18:59 GMT",
         "description": "DOBOY RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.800248,
@@ -176,43 +178,13 @@
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-02T22:38:26+00:00",
-        "description": "FITZROY CROSSING, SHIRE OF DERBY/WEST KIMBERLEY",
-        "lat": -18.1954,
-        "lng": 125.566,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Report of Smoke",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-02T22:30:36+00:00",
-        "description": "JANDAKOT, CITY OF COCKBURN",
-        "lat": -32.1065,
-        "lng": 115.8611,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Structure Fire",
         "alertLevel": "",
         "status": "active",
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-02T20:05:11+00:00",
+        "updated": "2026-08-02T23:04:58+00:00",
         "description": "BALLAJURA, CITY OF SWAN",
         "lat": -31.8388,
         "lng": 115.8777,
@@ -630,7 +602,7 @@
     ],
     "act": []
   },
-  "incident_count": 31,
+  "incident_count": 29,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3683,7 +3655,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-08-02T17:00:00Z",
+      "issued_utc": "2026-08-02T23:00:00Z",
       "overview": [
         "Strong Wind Warning for Monday for Peninsula Coast and Cooktown Coast",
         "Strong Wind Warning for Tuesday for Peninsula Coast and Cooktown Coast"
@@ -3754,7 +3726,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-08-02T17:01:00Z",
+      "issued_utc": "2026-08-02T23:01:00Z",
       "overview": [
         "Strong Wind Warning for Monday for Esperance Coast",
         "Strong Wind Warning for Tuesday for Esperance Coast"
@@ -3796,25 +3768,6 @@
             "TAS_MW003"
           ],
           "summary": "Far North West Coast, Central North Coast and East of Flinders Island"
-        }
-      ]
-    },
-    "NT": {
-      "state": "NT",
-      "product": "IDD20105",
-      "issued_utc": "2026-08-02T17:00:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Gove Peninsula Coast: Cape Wessel to Cape Arnhem"
-          ],
-          "aac_codes": [
-            "NT_MW005"
-          ],
-          "summary": "Gove Peninsula Coast"
         }
       ]
     }
