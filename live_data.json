@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-02T13:23:14.510592+00:00",
-  "last_checked_utc": "2026-08-02T13:23:14.510592+00:00",
+  "generated_utc": "2026-08-02T13:53:33.942785+00:00",
+  "last_checked_utc": "2026-08-02T13:53:33.942785+00:00",
   "warning_count": 11,
   "warnings": [
     {
@@ -103,7 +103,9 @@
       "issued": "Sun, 02 Aug 2026 11:52:28 GMT"
     }
   ],
-  "fetch_errors": {},
+  "fetch_errors": {
+    "tas": "HTTPSConnectionPool(host='services.thelist.tas.gov.au', port=443): Read timed out. (read timeout=20)"
+  },
   "incidents": {
     "nsw": [
       {
@@ -113,7 +115,7 @@
         "type": "Bush Fire",
         "size": "236 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 02 Aug 2026 13:19:09 GMT",
+        "updated": "Sun, 02 Aug 2026 13:51:06 GMT",
         "description": "DOBOY RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.800248,
@@ -786,6 +788,21 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
+        "updated": "2026-08-02T13:39:07+00:00",
+        "description": "BANKSIA GROVE, CITY OF WANNEROO",
+        "lat": -31.7013,
+        "lng": 115.8003,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
         "updated": "2026-08-02T11:31:22+00:00",
         "description": "THORNLIE, CITY OF GOSNELLS",
         "lat": -32.055,
@@ -1142,6 +1159,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - STUART HWY, STUART PARK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-02T13:47:21+00:00",
+        "description": "STUART HWY, STUART PARK",
+        "lat": -12.4446,
+        "lng": 130.8411,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Victoria Highway, DELAMERE",
         "alertLevel": "Advice",
         "status": "active",
@@ -1189,7 +1221,7 @@
     ],
     "act": []
   },
-  "incident_count": 28,
+  "incident_count": 30,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
