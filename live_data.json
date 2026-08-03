@@ -1,25 +1,34 @@
 {
-  "generated_utc": "2026-08-03T17:53:17.184570+00:00",
-  "last_checked_utc": "2026-08-03T17:53:17.184570+00:00",
-  "warning_count": 7,
+  "generated_utc": "2026-08-03T18:23:17.127210+00:00",
+  "last_checked_utc": "2026-08-03T18:23:17.127210+00:00",
+  "warning_count": 8,
   "warnings": [
     {
       "pid": "",
-      "title": "03/22:48 EST Warning to Sheep Graziers\nfor Snowy Mountains forecast district",
+      "title": "04/04:00 EST Marine Wind Warning Summary for New South Wales",
+      "type": "wind",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Mon, 03 Aug 2026 18:00:12 GMT"
+    },
+    {
+      "pid": "",
+      "title": "04/04:18 EST Warning to Sheep Graziers\nfor Snowy Mountains forecast district",
       "type": "other",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Mon, 03 Aug 2026 12:48:15 GMT"
+      "issued": "Mon, 03 Aug 2026 18:18:47 GMT"
     },
     {
       "pid": "",
-      "title": "03/22:00 EST Marine Wind Warning Summary for Victoria",
+      "title": "04/04:10 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 03 Aug 2026 12:00:19 GMT"
+      "issued": "Mon, 03 Aug 2026 18:10:22 GMT"
     },
     {
       "pid": "",
@@ -59,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "03/22:37 EST Marine Wind Warning Summary for Tasmania",
+      "title": "04/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 03 Aug 2026 12:37:19 GMT"
+      "issued": "Mon, 03 Aug 2026 18:00:10 GMT"
     }
   ],
   "fetch_errors": {},
@@ -77,7 +86,7 @@
         "type": "Bush Fire",
         "size": "236 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 03 Aug 2026 17:50:58 GMT",
+        "updated": "Mon, 03 Aug 2026 18:18:58 GMT",
         "description": "DOBOY RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.800248,
@@ -300,21 +309,6 @@
         "description": "",
         "lat": -16.001,
         "lng": 128.8169,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Earthquake",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Earthquake",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-03T00:06:58+00:00",
-        "description": "DURACK, WYNDHAM-EAST KIMBERLEY, SHIRE OF",
-        "lat": -15.9135,
-        "lng": 127.5829,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -609,7 +603,7 @@
     ],
     "act": []
   },
-  "incident_count": 32,
+  "incident_count": 31,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3680,13 +3674,32 @@
         }
       ]
     },
+    "NSW": {
+      "state": "NSW",
+      "product": "IDN20400",
+      "issued_utc": "2026-08-03T18:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Eden Coast: Montague Island to Gabo Island"
+          ],
+          "aac_codes": [
+            "NSW_MW001"
+          ],
+          "summary": "Eden Coast"
+        }
+      ]
+    },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-08-03T12:00:00Z",
+      "issued_utc": "2026-08-03T18:10:00Z",
       "overview": [
-        "Strong Wind Warning for Monday for West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast",
-        "Strong Wind Warning for Tuesday for West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast"
+        "Strong Wind Warning for Tuesday for West Coast, Central Coast and Central Gippsland Coast",
+        "Strong Wind Warning for Wednesday for East Gippsland Coast"
       ],
       "hazards": [
         {
@@ -3695,16 +3708,14 @@
           "zones": [
             "West Coast: SA-VIC Border to Cape Otway",
             "Central Coast: Cape Otway to Wilsons Promontory",
-            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
-            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
+            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance"
           ],
           "aac_codes": [
             "VIC_MW001",
             "VIC_MW002",
-            "VIC_MW003",
-            "VIC_MW004"
+            "VIC_MW003"
           ],
-          "summary": "West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast"
+          "summary": "West Coast, Central Coast and Central Gippsland Coast"
         }
       ]
     },
@@ -3743,28 +3754,6 @@
             "WA_MW013"
           ],
           "summary": "Esperance Coast"
-        }
-      ]
-    },
-    "TAS": {
-      "state": "TAS",
-      "product": "IDT20100",
-      "issued_utc": "2026-08-03T12:37:12Z",
-      "overview": [
-        "Strong Wind Warning for Monday for East of Flinders Island",
-        "Strong Wind Warning for Tuesday for East of Flinders Island"
-      ],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point"
-          ],
-          "aac_codes": [
-            "TAS_MW003"
-          ],
-          "summary": "East of Flinders Island"
         }
       ]
     }
