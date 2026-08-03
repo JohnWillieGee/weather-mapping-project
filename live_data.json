@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-03T03:53:12.761144+00:00",
-  "last_checked_utc": "2026-08-03T03:53:12.761144+00:00",
+  "generated_utc": "2026-08-03T04:23:33.366412+00:00",
+  "last_checked_utc": "2026-08-03T04:23:33.366412+00:00",
   "warning_count": 12,
   "warnings": [
     {
@@ -112,7 +112,9 @@
       "issued": "Sun, 02 Aug 2026 23:00:10 GMT"
     }
   ],
-  "fetch_errors": {},
+  "fetch_errors": {
+    "tas": "HTTPSConnectionPool(host='services.thelist.tas.gov.au', port=443): Max retries exceeded with url: /arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/72/query?where=1%3D1&outFields=*&f=geojson (Caused by ConnectTimeoutError(<HTTPSConnection(host='services.thelist.tas.gov.au', port=443) at 0x1ecddd56990>, 'Connection to services.thelist.tas.gov.au timed out. (connect timeout=20)'))"
+  },
   "incidents": {
     "nsw": [
       {
@@ -122,7 +124,7 @@
         "type": "Bush Fire",
         "size": "236 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 03 Aug 2026 03:51:15 GMT",
+        "updated": "Mon, 03 Aug 2026 04:18:58 GMT",
         "description": "DOBOY RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.800248,
@@ -1219,7 +1221,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-08-03T03:47:00+00:00",
+        "updated": "2026-08-03T04:20:00+00:00",
         "description": "PHILLIP",
         "lat": -35.3391,
         "lng": 149.0845,
@@ -1234,7 +1236,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "Fire",
-        "updated": "2026-08-03T03:29:45+00:00",
+        "updated": "2026-08-03T04:00:17+00:00",
         "description": "PHILLIP",
         "lat": -35.3391,
         "lng": 149.0845,
