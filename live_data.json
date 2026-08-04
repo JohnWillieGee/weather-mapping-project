@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-04T02:23:15.109035+00:00",
-  "last_checked_utc": "2026-08-04T02:23:15.109035+00:00",
-  "warning_count": 7,
+  "generated_utc": "2026-08-04T02:53:13.880273+00:00",
+  "last_checked_utc": "2026-08-04T02:53:13.880273+00:00",
+  "warning_count": 8,
   "warnings": [
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "04/10:00 EST Marine Wind Warning Summary for Victoria",
+      "title": "04/12:49 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 04 Aug 2026 00:00:21 GMT"
+      "issued": "Tue, 04 Aug 2026 02:49:44 GMT"
     },
     {
       "pid": "",
@@ -65,6 +65,15 @@
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
       "issued": "Tue, 04 Aug 2026 01:09:28 GMT"
+    },
+    {
+      "pid": "",
+      "title": "04/12:49 EST Marine Wind Warning Summary for Tasmania",
+      "type": "wind",
+      "state": "TAS",
+      "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Tue, 04 Aug 2026 02:49:41 GMT"
     }
   ],
   "fetch_errors": {},
@@ -77,7 +86,7 @@
         "type": "Bush Fire",
         "size": "236 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 04 Aug 2026 02:18:58 GMT",
+        "updated": "Tue, 04 Aug 2026 02:50:58 GMT",
         "description": "DOBOY RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.800248,
@@ -140,31 +149,31 @@
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-04T02:08:08+00:00",
-        "description": "MCKAIL, CITY OF ALBANY",
-        "lat": -34.9981,
-        "lng": 117.814,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Hazardous Materials",
         "alertLevel": "",
         "status": "active",
         "type": "HazMat",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-04T01:51:28+00:00",
-        "description": "YORK, SHIRE OF YORK",
-        "lat": -31.8928,
-        "lng": 116.7753,
+        "updated": "2026-08-04T02:42:32+00:00",
+        "description": "CLARKSON, CITY OF WANNEROO",
+        "lat": -31.6767,
+        "lng": 115.7215,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-04T02:29:15+00:00",
+        "description": "KOONGAMIA, CITY OF SWAN",
+        "lat": -31.9045,
+        "lng": 116.044,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -371,21 +380,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-02T04:18:13+00:00",
-        "description": "ORD RIVER, SHIRE OF HALLS CREEK",
-        "lat": -17.259,
-        "lng": 128.066,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-08-01T22:29:36+00:00",
         "description": "MARBLE BAR, SHIRE OF EAST PILBARA",
         "lat": -21.2513,
@@ -487,31 +481,76 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - CARRUTH RD, GIRRAWEEN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-04T02:45:05+00:00",
+        "description": "CARRUTH RD, GIRRAWEEN",
+        "lat": -12.5222,
+        "lng": 131.1025,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - Unknown",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-04T02:43:00+00:00",
+        "description": "",
+        "lat": -12.5262,
+        "lng": 131.104,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - GUNN POINT RD, HOWARD SPRINGS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-04T02:32:01+00:00",
+        "description": "GUNN POINT RD, HOWARD SPRINGS",
+        "lat": -12.4669,
+        "lng": 131.0793,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Hicks Road, GIRRAWEEN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-04T02:30:00+00:00",
+        "description": "Hicks Road, GIRRAWEEN",
+        "lat": -12.5179,
+        "lng": 131.0997,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - HICKS RD, GIRRAWEEN",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-08-04T02:08:50+00:00",
+        "updated": "2026-08-04T02:19:08+00:00",
         "description": "HICKS RD, GIRRAWEEN",
         "lat": -12.5169,
         "lng": 131.1009,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - GRANT RD, LARAPINTA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-04T01:56:23+00:00",
-        "description": "GRANT RD, LARAPINTA",
-        "lat": -23.6925,
-        "lng": 133.8394,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -534,7 +573,7 @@
     ],
     "act": []
   },
-  "incident_count": 27,
+  "incident_count": 29,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3627,7 +3666,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-08-04T00:00:00Z",
+      "issued_utc": "2026-08-04T02:49:33Z",
       "overview": [
         "Strong Wind Warning for Tuesday for Central Coast and West Coast",
         "Strong Wind Warning for Wednesday for East Gippsland Coast"
