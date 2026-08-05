@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-08-05T11:53:14.004747+00:00",
-  "last_checked_utc": "2026-08-05T11:53:14.004747+00:00",
+  "generated_utc": "2026-08-05T12:23:16.891378+00:00",
+  "last_checked_utc": "2026-08-05T12:23:16.891378+00:00",
   "warning_count": 5,
   "warnings": [
     {
       "pid": "",
-      "title": "05/16:05 EST Marine Wind Warning Summary for New South Wales",
+      "title": "05/22:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 05 Aug 2026 06:05:14 GMT"
+      "issued": "Wed, 05 Aug 2026 12:00:08 GMT"
     },
     {
       "pid": "",
-      "title": "05/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "05/22:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 05 Aug 2026 06:15:19 GMT"
+      "issued": "Wed, 05 Aug 2026 12:00:18 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "05/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "05/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 05 Aug 2026 06:05:12 GMT"
+      "issued": "Wed, 05 Aug 2026 12:00:10 GMT"
     }
   ],
   "fetch_errors": {},
@@ -59,7 +59,7 @@
         "type": "Bush Fire",
         "size": "318 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 05 Aug 2026 11:51:16 GMT",
+        "updated": "Wed, 05 Aug 2026 12:18:58 GMT",
         "description": "DOBOY RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.813689137,
@@ -460,16 +460,31 @@
     ],
     "nt": [
       {
-        "title": "Hazmat Incident - GAP RD, THE GAP",
+        "title": "Grass and Scrub Fire - STUART HWY, FLYNN",
         "alertLevel": "Advice",
         "status": "active",
-        "type": "HazMat",
+        "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-08-05T11:42:41+00:00",
-        "description": "GAP RD, THE GAP",
-        "lat": -23.7218,
-        "lng": 133.8695,
+        "updated": "2026-08-05T12:04:18+00:00",
+        "description": "STUART HWY, FLYNN",
+        "lat": -23.7273,
+        "lng": 133.8649,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - WATLING RD, GIRRAWEEN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-05T11:56:33+00:00",
+        "description": "WATLING RD, GIRRAWEEN",
+        "lat": -12.4987,
+        "lng": 131.0866,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -500,21 +515,6 @@
         "description": "STUART HWY, NOONAMAH",
         "lat": -12.6733,
         "lng": 131.076,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - WATLING RD, GIRRAWEEN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-05T09:21:06+00:00",
-        "description": "WATLING RD, GIRRAWEEN",
-        "lat": -12.4987,
-        "lng": 131.0866,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -3578,7 +3578,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-08-05T06:05:00Z",
+      "issued_utc": "2026-08-05T12:00:00Z",
       "overview": [
         "Strong Wind Warning for Wednesday for Eden Coast",
         "Strong Wind Warning for Thursday for Eden Coast"
@@ -3594,25 +3594,6 @@
             "NSW_MW001"
           ],
           "summary": "Eden Coast"
-        }
-      ]
-    },
-    "VIC": {
-      "state": "VIC",
-      "product": "IDV20600",
-      "issued_utc": "2026-08-05T06:15:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
-          ],
-          "aac_codes": [
-            "VIC_MW004"
-          ],
-          "summary": "East Gippsland Coast"
         }
       ]
     },
@@ -3640,7 +3621,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-08-05T06:05:00Z",
+      "issued_utc": "2026-08-05T12:00:00Z",
       "overview": [],
       "hazards": [
         {
