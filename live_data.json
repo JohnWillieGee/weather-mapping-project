@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-05T04:53:12.278382+00:00",
-  "last_checked_utc": "2026-08-05T04:53:12.278382+00:00",
-  "warning_count": 5,
+  "generated_utc": "2026-08-05T05:23:09.874031+00:00",
+  "last_checked_utc": "2026-08-05T05:23:09.874031+00:00",
+  "warning_count": 6,
   "warnings": [
     {
       "pid": "",
@@ -41,6 +41,15 @@
     },
     {
       "pid": "",
+      "title": "05/13:17 WST Marine Wind Warning Summary for Western Australia",
+      "type": "wind",
+      "state": "WA",
+      "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
+      "desc": "",
+      "issued": "Wed, 05 Aug 2026 05:17:18 GMT"
+    },
+    {
+      "pid": "",
       "title": "05/10:05 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
@@ -57,9 +66,9 @@
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
-        "size": "310 ha",
+        "size": "318 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 05 Aug 2026 04:50:59 GMT",
+        "updated": "Wed, 05 Aug 2026 05:18:59 GMT",
         "description": "DOBOY RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.813689137,
@@ -445,21 +454,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Grass and Scrub Fire - RAMIREZ RD, STUART PARK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-05T04:13:22+00:00",
-        "description": "RAMIREZ RD, STUART PARK",
-        "lat": -12.4482,
-        "lng": 130.8404,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - BLAIN ST, FLYNN",
         "alertLevel": "Advice",
         "status": "active",
@@ -567,7 +561,7 @@
     ],
     "act": []
   },
-  "incident_count": 32,
+  "incident_count": 31,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3583,6 +3577,27 @@
             "VIC_MW004"
           ],
           "summary": "East Gippsland Coast"
+        }
+      ]
+    },
+    "WA": {
+      "state": "WA",
+      "product": "IDW20100",
+      "issued_utc": "2026-08-05T05:17:08Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay"
+          ],
+          "aac_codes": [
+            "WA_MW011",
+            "WA_MW012"
+          ],
+          "summary": "Leeuwin Coast and Albany Coast"
         }
       ]
     },
