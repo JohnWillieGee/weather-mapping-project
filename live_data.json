@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-07T02:23:07.106740+00:00",
-  "last_checked_utc": "2026-08-07T02:23:07.106740+00:00",
-  "warning_count": 7,
+  "generated_utc": "2026-08-07T02:53:10.299856+00:00",
+  "last_checked_utc": "2026-08-07T02:53:10.299856+00:00",
+  "warning_count": 8,
   "warnings": [
     {
       "pid": "",
@@ -31,6 +31,15 @@
       "issued": "Fri, 07 Aug 2026 01:28:50 GMT"
     },
     {
+      "pid": "IDV35010",
+      "title": "07/12:42 EST Initial Flood Watch for parts of North East, Gippsland and Central Victoria",
+      "type": "flood",
+      "state": "VIC",
+      "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDV35010.html",
+      "desc": "",
+      "issued": "Fri, 07 Aug 2026 02:42:45 GMT"
+    },
+    {
       "pid": "",
       "title": "07/09:31 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
@@ -50,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "07/04:25 WST Warning to Sheep Graziers\nfor South West, South Coastal, South East Coastal and Great Southern forecast districts",
+      "title": "07/10:45 WST Warning to Sheep Graziers\nfor Lower West, South West, South Coastal, South East Coastal, Great Southern and Central Wheat Belt forecast districts",
       "type": "other",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Thu, 06 Aug 2026 20:25:35 GMT"
+      "issued": "Fri, 07 Aug 2026 02:45:01 GMT"
     },
     {
       "pid": "",
@@ -77,7 +86,7 @@
         "type": "Bush Fire",
         "size": "453 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 07 Aug 2026 02:18:59 GMT",
+        "updated": "Fri, 07 Aug 2026 02:50:59 GMT",
         "description": "DOBOY RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.820280301,
@@ -85,44 +94,80 @@
         "polys": [
           [
             [
-              152.667804364,
-              -29.8339893149999
+              152.683810607,
+              -29.8177521229999
             ],
             [
-              152.66866097,
-              -29.8339893149999
+              152.683917683,
+              -29.817894891
             ],
             [
-              152.671801858,
-              -29.83555976
+              152.684274603,
+              -29.818573037
             ],
             [
-              152.67227775,
-              -29.836797079
+              152.684560138,
+              -29.8191084159999
             ],
             [
-              152.672991588,
-              -29.837844042
+              152.68459583,
+              -29.81922739
             ],
             [
-              152.672587081,
-              -29.838319934
+              152.684714803,
+              -29.8204766059999
             ],
             [
-              152.672039804,
-              -29.837344355
+              152.684667214,
+              -29.820785937
             ],
             [
-              152.670850074,
-              -29.835845295
+              152.683870095,
+              -29.821975666
             ],
             [
-              152.669731727,
-              -29.835226635
+              152.683810607,
+              -29.8219518719999
             ],
             [
-              152.667804364,
-              -29.8339893149999
+              152.684583933,
+              -29.820750244
+            ],
+            [
+              152.684583933,
+              -29.82028625
+            ],
+            [
+              152.684548241,
+              -29.8198103569999
+            ],
+            [
+              152.684488754,
+              -29.819191697
+            ],
+            [
+              152.68441737,
+              -29.8190251349999
+            ],
+            [
+              152.684310294,
+              -29.818810984
+            ],
+            [
+              152.684179425,
+              -29.8185611389999
+            ],
+            [
+              152.684036657,
+              -29.818358885
+            ],
+            [
+              152.6838463,
+              -29.817930583
+            ],
+            [
+              152.683810607,
+              -29.8177521229999
             ]
           ]
         ],
@@ -136,7 +181,7 @@
         "type": "Bush Fire",
         "size": "357 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 07 Aug 2026 02:18:59 GMT",
+        "updated": "Fri, 07 Aug 2026 02:50:59 GMT",
         "description": "GLEN ELGIN RD, GLEN ELGIN 2370",
         "council": "Glen Innes Severn",
         "lat": -29.6128862579999,
@@ -1065,6 +1110,21 @@
     ],
     "nt": [
       {
+        "title": "Structure Fire - LAJAMIN ST, LAJAMANU",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-07T02:40:22+00:00",
+        "description": "LAJAMIN ST, LAJAMANU",
+        "lat": -18.3358,
+        "lng": 130.6383,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - DARWIN RIVER RD, DARWIN RIVER",
         "alertLevel": "Advice",
         "status": "active",
@@ -1172,7 +1232,7 @@
     ],
     "act": []
   },
-  "incident_count": 29,
+  "incident_count": 30,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
