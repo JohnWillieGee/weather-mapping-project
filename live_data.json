@@ -1,8 +1,17 @@
 {
-  "generated_utc": "2026-08-07T16:53:17.516433+00:00",
-  "last_checked_utc": "2026-08-07T16:53:17.516433+00:00",
-  "warning_count": 8,
+  "generated_utc": "2026-08-07T17:23:16.806764+00:00",
+  "last_checked_utc": "2026-08-07T17:23:16.806764+00:00",
+  "warning_count": 9,
   "warnings": [
+    {
+      "pid": "",
+      "title": "08/03:09 EST Warning to Sheep Graziers\nfor Central West Slopes & Plains, South West Slopes, Riverina, Lower Western, Snowy Mountains and Australian Capital Territory forecast districts",
+      "type": "other",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
+      "desc": "",
+      "issued": "Fri, 07 Aug 2026 17:09:34 GMT"
+    },
     {
       "pid": "",
       "title": "07/22:00 EST Marine Wind Warning Summary for Victoria",
@@ -41,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "07/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "08/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Fri, 07 Aug 2026 11:01:14 GMT"
+      "issued": "Fri, 07 Aug 2026 17:01:14 GMT"
     },
     {
       "pid": "IDW21037",
@@ -86,7 +95,7 @@
         "type": "Bush Fire",
         "size": "432 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 07 Aug 2026 16:51:00 GMT",
+        "updated": "Fri, 07 Aug 2026 17:18:59 GMT",
         "description": "GLEN ELGIN RD, GLEN ELGIN 2370",
         "council": "Glen Innes Severn",
         "lat": -29.6128862579999,
@@ -763,29 +772,13 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
-        "title": "Railway Pde, Canley Vale",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 07 Aug 2026 16:51:00 GMT",
-        "description": "Railway Pde, Canley Vale, NSW 2166",
-        "council": "Fairfield",
-        "lat": -33.8864980009999,
-        "lng": 150.944001,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
         "title": "South Head Rd, Moruya",
         "alertLevel": "Advice",
         "status": "Not yet controlled",
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 07 Aug 2026 16:51:00 GMT",
+        "updated": "Fri, 07 Aug 2026 17:18:59 GMT",
         "description": "South Head Rd, Moruya, NSW 2537",
         "council": "Eurobodalla",
         "lat": -35.9155989999999,
@@ -1133,40 +1126,9 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [
-      {
-        "title": "STRUCTURE FIRE - PARKES",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-08-07T16:49:00+00:00",
-        "description": "PARKES",
-        "lat": -35.2906,
-        "lng": 149.1426,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "STRUCTURE FIRE - PARKES",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Ambulance",
-        "updated": "2026-08-07T15:43:27+00:00",
-        "description": "PARKES",
-        "lat": -35.2906,
-        "lng": 149.1426,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      }
-    ]
+    "act": []
   },
-  "incident_count": 27,
+  "incident_count": 24,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4193,45 +4155,55 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-08-07T11:01:00Z",
+      "issued_utc": "2026-08-07T17:01:00Z",
       "overview": [
-        "Gale Warning for Friday for Leeuwin Coast",
-        "Strong Wind Warning for Friday for Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Albany Coast, Esperance Coast and Perth Local Waters",
         "Gale Warning for Saturday for Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast, Eucla Coast and Perth Local Waters",
-        "Strong Wind Warning for Saturday for Ningaloo Coast, Gascoyne Coast, Geraldton Coast, Lancelin Coast and Melville Waters"
+        "Strong Wind Warning for Saturday for Ningaloo Coast, Gascoyne Coast, Geraldton Coast, Lancelin Coast and Melville Waters",
+        "Gale Warning for Sunday for Esperance Coast and Eucla Coast",
+        "Strong Wind Warning for Sunday for Pilbara Coast East, Ningaloo Coast, Leeuwin Coast and Albany Coast"
       ],
       "hazards": [
         {
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
-            "Leeuwin Coast: Cape Naturaliste to Walpole"
+            "Perth Coast: Two Rocks to Dawesville",
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay",
+            "Eucla Coast: Israelite Bay to WA-SA Border",
+            "Perth Local Waters"
           ],
           "aac_codes": [
-            "WA_MW011"
+            "WA_MW009",
+            "WA_MW010",
+            "WA_MW011",
+            "WA_MW012",
+            "WA_MW013",
+            "WA_MW014",
+            "WA_MW015"
           ],
-          "summary": "Leeuwin Coast"
+          "summary": "Perth Local Waters, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
         },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Ningaloo Coast: North West Cape to Cape Cuvier",
+            "Gascoyne Coast: Cape Cuvier to Kalbarri",
+            "Geraldton Coast: Kalbarri to Jurien Bay",
             "Lancelin Coast: Jurien Bay to Two Rocks",
-            "Perth Coast: Two Rocks to Dawesville",
-            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
-            "Albany Coast: Walpole to Bremer Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay",
-            "Perth Local Waters"
+            "Melville Waters"
           ],
           "aac_codes": [
+            "WA_MW005",
+            "WA_MW006",
+            "WA_MW007",
             "WA_MW008",
-            "WA_MW009",
-            "WA_MW010",
-            "WA_MW012",
-            "WA_MW013",
-            "WA_MW015"
+            "WA_MW016"
           ],
-          "summary": "Perth Local Waters, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Albany Coast and Esperance Coast"
+          "summary": "Melville Waters, Ningaloo Coast, Gascoyne Coast, Geraldton Coast and Lancelin Coast"
         }
       ]
     },
