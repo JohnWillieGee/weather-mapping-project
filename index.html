@@ -712,6 +712,19 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
         </div>
       </div>
 
+      <div class="sp-section">
+        <div class="sp-sec-hd" onclick="toggleSpSection('fire')">
+          <span class="sp-sec-title">Fire weather warnings</span>
+          <span class="sp-sec-chev" id="sp-chev-fire">&#9660;</span>
+        </div>
+        <div class="sp-sec-body" id="sp-body-fire">
+          <div class="sp-row">
+            <div><span class="sp-lbl">Fire weather warnings</span><span class="sp-sub">ABC Local Radio sites only</span></div>
+            <div class="sp-tgl on" id="sp-tgl-fire" onclick="toggleSpToggle('fire',this)"></div>
+          </div>
+        </div>
+      </div>
+
       <div class="sp-sec-body" style="border-bottom:none">
         <span class="sp-divlbl">Tutorial</span>
         <button onclick="startTutorial()" style="font-family:monospace;font-size:10px;padding:5px;width:100%;border-radius:3px;border:1px solid var(--accent2);background:rgba(0,212,170,0.08);color:var(--accent2);cursor:pointer;">&#127891; Start guided tour</button>
@@ -1203,6 +1216,10 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
         <div class="risk-rule-row">
           <span class="risk-rule-lbl">MF Storms</span>
           <span class="risk-rule-val" id="rr-storm">Storm/Severe → Warning for AM/MF sites</span>
+        </div>
+        <div class="risk-rule-row">
+          <span class="risk-rule-lbl">Fire Weather</span>
+          <span class="risk-rule-val" id="rr-fire">Fire Weather → Warning for ABC Local Radio sites</span>
         </div>
         <div class="risk-rule-row" style="border:none">
           <span class="risk-rule-lbl">Popups</span>
@@ -4762,6 +4779,7 @@ var RISK_COLOR = { 0:'', 1:'#f0c040', 2:'#f0a500', 3:'#ff6b3d', 4:'#ff2222' };
 var riskDistanceKm = 50;
 var riskFDREnabled = true;    // include FDR in risk assessment
 var riskStormMFEnabled = true; // elevate storm warnings for AM/MF sites
+var riskFireEnabled = true;    // elevate fire weather warnings for ABC Local Radio sites only
 var riskLabelsEnabled = true;  // show site name labels on risk map markers
 
 // Current computed risks: array of {site, level, reasons:[]}
@@ -4868,6 +4886,13 @@ function distToIncidentKm(site, inc) {
 
 function siteHasAM(site) {
   return site.sv && site.sv.some(function(sv) { return sv.mod === 'AM'; });
+}
+
+function siteHasABCLR(site) {
+  // ABC Local Radio is the designated emergency broadcaster during bushfires -
+  // fire weather risk is scoped to sites carrying this service, not every site
+  // in the affected state.
+  return !!(site.bai_svc_names && site.bai_svc_names.indexOf('ABC Local Radio') !== -1);
 }
 
 // \u2500\u2500 BOM district point-in-polygon \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
@@ -5038,6 +5063,8 @@ function computeRisks() {
         var wtype = w.type;
 
         if (wtype === 'fire_weather') {
+          // Fire weather: ABC Local Radio sites only. Toggle off = skip entirely.
+          if (!riskFireEnabled || !siteHasABCLR(site)) return;
           lvl = RISK_LEVEL.WARNING;
         } else if (wtype === 'cyclone') {
           lvl = RISK_LEVEL.DIRECT;
@@ -5459,6 +5486,7 @@ function updateRiskRulesDisplay() {
   var waEl = document.getElementById('rr-watch');
   var fdrEl = document.getElementById('rr-fdr');
   var stEl = document.getElementById('rr-storm');
+  var fireEl = document.getElementById('rr-fire');
   if (emEl) emEl.textContent = (riskDistanceKm*2) + ' km \u00B7 always if inside polygon';
   if (waEl) waEl.textContent = riskDistanceKm + ' km';
   if (fdrEl) {
@@ -5468,6 +5496,10 @@ function updateRiskRulesDisplay() {
   if (stEl) {
     stEl.className = 'risk-rule-val' + (riskStormMFEnabled ? '' : ' off');
     stEl.textContent = riskStormMFEnabled ? 'Storm/Severe \u2192 Warning for AM/MF sites' : 'Disabled';
+  }
+  if (fireEl) {
+    fireEl.className = 'risk-rule-val' + (riskFireEnabled ? '' : ' off');
+    fireEl.textContent = riskFireEnabled ? 'Fire Weather \u2192 Warning for ABC Local Radio sites' : 'Disabled';
   }
   var advEl = document.getElementById('rr-advice');
   if (advEl) advEl.textContent = (typeof S !== 'undefined' ? S.advDist : 5) + ' km cap';
@@ -5507,6 +5539,7 @@ var SETTINGS_DEFAULTS = {
   popupLevel:  'direct',    // warning | direct | impacted
   stormEnabled: true,
   stormDist:   300,          // km — storm district proximity cap
+  fireEnabled: true,        // elevate fire weather warnings — ABC Local Radio sites only
   legendVisible: true
 };
 
@@ -5523,7 +5556,8 @@ var PRESET_SUMMER = {
   advDist:     10,
   popupLevel:  'warning',
   stormEnabled: true,
-  stormDist:   200
+  stormDist:   200,
+  fireEnabled: true
 };
 
 // Returns 'summer' for Oct-Mar (Australian fire season), 'winter' for Apr-Sep
@@ -5552,7 +5586,7 @@ function saveSettings() {
 
 function settingsMatch(preset) {
   var ref = preset === 'winter' ? SETTINGS_DEFAULTS : PRESET_SUMMER;
-  var keys = ['incFloor','incAgeSoft','fdrEnabled','fdrLevel','waDist','advDist','popupLevel','stormEnabled','stormDist'];
+  var keys = ['incFloor','incAgeSoft','fdrEnabled','fdrLevel','waDist','advDist','popupLevel','stormEnabled','stormDist','fireEnabled'];
   return keys.every(function(k){ return S[k] === ref[k]; });
 }
 
@@ -5621,6 +5655,7 @@ function toggleSpToggle(key, el) {
   else if (key === 'legend') { S.legendVisible = on; var lg=document.getElementById('legend'); if(lg) lg.style.display = on ? '' : 'none'; }
   else if (key === 'fdr') { S.fdrEnabled = on; riskFDREnabled = on; var _fc=document.getElementById('ropt-fdr'); if(_fc) _fc.classList.toggle('on', on); computeRisks(); }
   else if (key === 'storm') { S.stormEnabled = on; riskStormMFEnabled = on; var _sc=document.getElementById('ropt-stormMF'); if(_sc) _sc.classList.toggle('on', on); computeRisks(); }
+  else if (key === 'fire') { S.fireEnabled = on; riskFireEnabled = on; computeRisks(); }
   markCustomIfNeeded();
   saveSettings();
 }
@@ -5702,6 +5737,10 @@ function applyAllSettings() {
   riskStormMFEnabled = S.stormEnabled;
   var stormChip = document.getElementById('ropt-stormMF');
   if (stormChip) stormChip.classList.toggle('on', S.stormEnabled);
+  // Fire
+  riskFireEnabled = S.fireEnabled;
+  var fireTgl = document.getElementById('sp-tgl-fire');
+  if (fireTgl) fireTgl.classList.toggle('on', S.fireEnabled);
   // Labels
   riskLabelsEnabled = S.labels;
   var labelsChip = document.getElementById('ropt-labels');
@@ -5729,6 +5768,8 @@ function syncSettingsUI() {
   if (fdrTgl) fdrTgl.classList.toggle('on', S.fdrEnabled);
   var stormTgl = document.getElementById('sp-tgl-storm');
   if (stormTgl) stormTgl.classList.toggle('on', S.stormEnabled);
+  var fireTgl = document.getElementById('sp-tgl-fire');
+  if (fireTgl) fireTgl.classList.toggle('on', S.fireEnabled);
   // Selects
   var incFloor = document.getElementById('sp-inc-floor');
   if (incFloor) incFloor.value = S.incFloor;
@@ -5830,6 +5871,7 @@ computeRisks = function() {
   riskDistanceKm = S.waDist;
   riskFDREnabled = S.fdrEnabled;
   riskStormMFEnabled = S.stormEnabled;
+  riskFireEnabled = S.fireEnabled;
   _origComputeRisks();
 };
 
