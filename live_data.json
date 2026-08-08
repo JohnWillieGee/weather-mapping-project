@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-08T22:53:12.600050+00:00",
-  "last_checked_utc": "2026-08-08T22:53:12.600050+00:00",
+  "generated_utc": "2026-08-08T23:23:19.923542+00:00",
+  "last_checked_utc": "2026-08-08T23:23:19.923542+00:00",
   "warning_count": 16,
   "warnings": [
     {
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "09/03:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "09/09:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 08 Aug 2026 17:00:15 GMT"
+      "issued": "Sat, 08 Aug 2026 23:00:46 GMT"
     },
     {
       "pid": "",
@@ -104,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "09/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "09/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sat, 08 Aug 2026 17:01:15 GMT"
+      "issued": "Sat, 08 Aug 2026 23:01:18 GMT"
     },
     {
       "pid": "IDW21037",
@@ -158,7 +158,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 08 Aug 2026 22:51:00 GMT",
+        "updated": "Sat, 08 Aug 2026 23:19:00 GMT",
         "description": "BOTTLE CREEK RD, ARGENTS HILL 2449",
         "council": "Nambucca Valley",
         "lat": -30.604877357,
@@ -217,6 +217,21 @@
     "tas": [],
     "wa": [
       {
+        "title": "Bushfire Advice THREAT IS REDUCED - LAKE ARGYLE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-08-08T23:04:14.973+00:00",
+        "description": "",
+        "lat": -16.7348,
+        "lng": 128.315,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Bushfire Advice MONITOR CONDITIONS - GIBB RIVER ROAD IN DURACK",
         "alertLevel": "Advice",
         "status": "active",
@@ -242,21 +257,6 @@
         "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.798,
         "lng": 127.563,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice MONITOR CONDITIONS - LAKE ARGYLE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-08-08T07:13:20.981+00:00",
-        "description": "",
-        "lat": -16.7348,
-        "lng": 128.315,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -465,7 +465,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-08-08T22:44:58+00:00",
+        "updated": "2026-08-08T23:01:39+00:00",
         "description": "GREATOREX RD, ILPARPA",
         "lat": -23.7511,
         "lng": 133.8224,
@@ -3592,7 +3592,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-08-08T17:00:00Z",
+      "issued_utc": "2026-08-08T23:00:36Z",
       "overview": [],
       "hazards": [
         {
@@ -3726,10 +3726,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-08-08T17:01:00Z",
+      "issued_utc": "2026-08-08T23:01:00Z",
       "overview": [
-        "Gale Warning for Sunday for Esperance Coast and Eucla Coast",
-        "Strong Wind Warning for Sunday for Pilbara Coast East, Ningaloo Coast, Leeuwin Coast and Albany Coast",
+        "Gale Warning for Sunday for Eucla Coast",
+        "Strong Wind Warning for Sunday for Pilbara Coast East, Leeuwin Coast, Albany Coast and Esperance Coast",
         "Strong Wind Warning for Monday for Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast, Eucla Coast, Perth Local Waters and Melville Waters"
       ],
       "hazards": [
@@ -3737,31 +3737,29 @@
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
-            "Esperance Coast: Bremer Bay to Israelite Bay",
             "Eucla Coast: Israelite Bay to WA-SA Border"
           ],
           "aac_codes": [
-            "WA_MW013",
             "WA_MW014"
           ],
-          "summary": "Esperance Coast and Eucla Coast"
+          "summary": "Eucla Coast"
         },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
             "Pilbara Coast East: Wallal to Cape Preston",
-            "Ningaloo Coast: North West Cape to Cape Cuvier",
             "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay"
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay"
           ],
           "aac_codes": [
             "WA_MW003",
-            "WA_MW005",
             "WA_MW011",
-            "WA_MW012"
+            "WA_MW012",
+            "WA_MW013"
           ],
-          "summary": "Pilbara Coast East, Ningaloo Coast, Leeuwin Coast and Albany Coast"
+          "summary": "Pilbara Coast East, Leeuwin Coast, Albany Coast and Esperance Coast"
         }
       ]
     },
