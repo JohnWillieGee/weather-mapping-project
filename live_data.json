@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-08T02:53:18.934805+00:00",
-  "last_checked_utc": "2026-08-08T02:53:18.934805+00:00",
+  "generated_utc": "2026-08-08T03:23:15.319688+00:00",
+  "last_checked_utc": "2026-08-08T03:23:15.319688+00:00",
   "warning_count": 14,
   "warnings": [
     {
@@ -95,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "08/08:14 WST Marine Wind Warning Summary for Western Australia",
+      "title": "08/11:05 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sat, 08 Aug 2026 00:14:40 GMT"
+      "issued": "Sat, 08 Aug 2026 03:05:30 GMT"
     },
     {
       "pid": "IDW21037",
@@ -140,11 +140,27 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 08 Aug 2026 02:51:00 GMT",
+        "updated": "Sat, 08 Aug 2026 03:19:00 GMT",
         "description": "Burton Street, Warren, NSW 2824",
         "council": "Warren",
         "lat": -31.700678,
         "lng": 147.835314,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "CHRISTOPHERS RD, COBARGO",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Sat, 08 Aug 2026 03:19:00 GMT",
+        "description": "CHRISTOPHERS RD, COBARGO 2550",
+        "council": "Bega Valley",
+        "lat": -36.434494999,
+        "lng": 149.879787001,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -156,7 +172,7 @@
         "type": "Bush Fire",
         "size": "432 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 08 Aug 2026 02:51:00 GMT",
+        "updated": "Sat, 08 Aug 2026 03:19:00 GMT",
         "description": "GLEN ELGIN RD, GLEN ELGIN 2370",
         "council": "Glen Innes Severn",
         "lat": -29.6128862579999,
@@ -843,27 +859,11 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 08 Aug 2026 02:51:00 GMT",
+        "updated": "Sat, 08 Aug 2026 03:19:00 GMT",
         "description": "South Head Rd, Moruya, NSW 2537",
         "council": "Eurobodalla",
         "lat": -35.9155989999999,
         "lng": 150.090277,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "Warringah Rd, Middle Harbour",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 08 Aug 2026 02:51:00 GMT",
-        "description": "Warringah Rd, Middle Harbour, NSW 2069",
-        "council": "Ku-Ring-Gai",
-        "lat": -33.7737740009999,
-        "lng": 151.202473,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -875,16 +875,16 @@
     "tas": [],
     "wa": [
       {
-        "title": "Fire",
+        "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-08T02:38:10+00:00",
-        "description": "SOUTH BOULDER, unknown LGA",
-        "lat": -30.8166,
-        "lng": 121.4954,
+        "updated": "2026-08-08T03:11:57+00:00",
+        "description": "ALKIMOS, CITY OF WANNEROO",
+        "lat": -31.603,
+        "lng": 115.6756,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1117,6 +1117,21 @@
     ],
     "nt": [
       {
+        "title": "Structure Fire - CYCAS CT, MOULDEN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-08T03:09:01+00:00",
+        "description": "CYCAS CT, MOULDEN",
+        "lat": -12.5033,
+        "lng": 130.9744,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - DARWIN RIVER RD, DARWIN RIVER",
         "alertLevel": "Advice",
         "status": "active",
@@ -1194,7 +1209,7 @@
     ],
     "act": []
   },
-  "incident_count": 25,
+  "incident_count": 26,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4229,10 +4244,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-08-08T00:14:29Z",
+      "issued_utc": "2026-08-08T03:05:20Z",
       "overview": [
-        "Gale Warning for Saturday for Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast, Eucla Coast and Perth Local Waters",
-        "Strong Wind Warning for Saturday for Lancelin Coast, Melville Waters, Ningaloo Coast, Geraldton Coast and Gascoyne Coast",
+        "Gale Warning for Saturday for Eucla Coast, Perth Local Waters, Albany Coast, Leeuwin Coast, Bunbury Geographe Coast, Esperance Coast and Perth Coast",
+        "Strong Wind Warning for Saturday for Melville Waters, Ningaloo Coast, Geraldton Coast, Lancelin Coast and Gascoyne Coast",
         "Gale Warning for Sunday for Esperance Coast and Eucla Coast",
         "Strong Wind Warning for Sunday for Pilbara Coast East, Ningaloo Coast, Albany Coast and Leeuwin Coast"
       ],
