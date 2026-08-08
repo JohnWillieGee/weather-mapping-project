@@ -3073,13 +3073,25 @@ var BOM_DISTRICTS_BY_STATE = {
   }
 };
 
-// Fallback flat lookup for cases where state is unknown
+// Fallback flat lookup for cases where state is unknown or has no district match.
+// Bare compass-direction words are excluded: they repeat across almost every
+// state's district list, and even where one happens to be unique to a single
+// state (e.g. TAS's "east"), they are too generic to trust as a cross-state
+// match. Without this guard, an NT "Simpson East" fire weather warning
+// matches TAS's "east" district on the word "east" and the marker renders
+// in Tasmania instead of at the NT state centre.
+var AMBIGUOUS_DISTRICT_WORDS = ["north","south","east","west","central","northern","southern","eastern","western"];
 var BOM_DISTRICTS_FLAT = {};
+var _districtKeyCounts = {};
 Object.keys(BOM_DISTRICTS_BY_STATE).forEach(function(st) {
   var d = BOM_DISTRICTS_BY_STATE[st];
   Object.keys(d).forEach(function(k) {
+    _districtKeyCounts[k] = (_districtKeyCounts[k] || 0) + 1;
     if (!BOM_DISTRICTS_FLAT[k]) BOM_DISTRICTS_FLAT[k] = d[k]; // first-defined wins
   });
+});
+Object.keys(_districtKeyCounts).forEach(function(k) {
+  if (_districtKeyCounts[k] > 1 || AMBIGUOUS_DISTRICT_WORDS.indexOf(k) !== -1) delete BOM_DISTRICTS_FLAT[k];
 });
 
 var STATE_CENTRES_BOM = {
