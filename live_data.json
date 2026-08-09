@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-09T04:53:48.772004+00:00",
-  "last_checked_utc": "2026-08-09T04:53:48.772004+00:00",
+  "generated_utc": "2026-08-09T05:23:30.465798+00:00",
+  "last_checked_utc": "2026-08-09T05:23:30.465798+00:00",
   "warning_count": 16,
   "warnings": [
     {
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "09/09:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "09/15:01 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 08 Aug 2026 23:00:46 GMT"
+      "issued": "Sun, 09 Aug 2026 05:01:34 GMT"
     },
     {
       "pid": "",
@@ -77,21 +77,21 @@
     },
     {
       "pid": "",
-      "title": "09/08:56 WST Marine Wind Warning Summary for Western Australia",
+      "title": "09/13:02 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 09 Aug 2026 00:56:54 GMT"
+      "issued": "Sun, 09 Aug 2026 05:02:03 GMT"
     },
     {
       "pid": "",
-      "title": "09/04:51 WST Warning to Sheep Graziers\nfor South Coastal, South East Coastal and Great Southern forecast districts",
+      "title": "09/13:18 WST Warning to Sheep Graziers\nfor South Coastal, South East Coastal and Great Southern forecast districts",
       "type": "other",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Sat, 08 Aug 2026 20:51:17 GMT"
+      "issued": "Sun, 09 Aug 2026 05:18:51 GMT"
     },
     {
       "pid": "",
@@ -266,12 +266,12 @@
     },
     {
       "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for Mid North, Mount Lofty Ranges, Adelaide Metropolitan",
+      "title": "Severe Thunderstorm Warning for Mid North, Mount Lofty Ranges, Murraylands, Upper South East, Adelaide Metropolitan",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Clare and Gawler.",
-      "issued": "2026-08-09T13:59:40+09:30",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Clare, Gawler and Victor Harbor.",
+      "issued": "2026-08-09T14:51:07+09:30",
       "cancelled": false,
       "areas": [
         {
@@ -282,6 +282,16 @@
         {
           "aac": "SA_PW015",
           "description": "Mount Lofty Ranges",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW007",
+          "description": "Murraylands",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW004",
+          "description": "Upper South East",
           "phase": "NEW"
         },
         {
@@ -328,25 +338,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-09T04:43:20+00:00",
+        "updated": "2026-08-09T05:03:06+00:00",
         "description": "EAST CANNINGTON, CITY OF CANNING",
         "lat": -32.0174,
         "lng": 115.9509,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-09T04:24:15+00:00",
-        "description": "ROEBOURNE, CITY OF KARRATHA",
-        "lat": -20.7773,
-        "lng": 117.1451,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -654,9 +649,40 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": []
+    "act": [
+      {
+        "title": "STRUCTURE FIRE - TURNER",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-08-09T05:20:00+00:00",
+        "description": "TURNER",
+        "lat": -35.2739,
+        "lng": 149.1263,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "STRUCTURE FIRE - TURNER",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Fire - Ambulance",
+        "updated": "2026-08-09T05:17:27+00:00",
+        "description": "TURNER",
+        "lat": -35.2739,
+        "lng": 149.1263,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      }
+    ]
   },
-  "incident_count": 22,
+  "incident_count": 23,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3637,7 +3663,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-08-08T23:00:36Z",
+      "issued_utc": "2026-08-09T05:01:12Z",
       "overview": [],
       "hazards": [
         {
@@ -3645,13 +3671,15 @@
           "severity": "STR",
           "zones": [
             "Sunshine Coast Waters: Double Island Point to Cape Moreton",
+            "Moreton Bay",
             "Gold Coast Waters: Cape Moreton to Point Danger"
           ],
           "aac_codes": [
             "QLD_MW012",
+            "QLD_MW013",
             "QLD_MW014"
           ],
-          "summary": "Sunshine Coast Waters and Gold Coast Waters"
+          "summary": "Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
         }
       ]
     },
@@ -3771,40 +3799,26 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-08-09T00:56:43Z",
+      "issued_utc": "2026-08-09T05:01:48Z",
       "overview": [
-        "Gale Warning for Sunday for Eucla Coast",
-        "Strong Wind Warning for Sunday for Esperance Coast, Albany Coast, Leeuwin Coast and Pilbara Coast East",
-        "Strong Wind Warning for Monday for Melville Waters, Perth Local Waters, Lancelin Coast, Albany Coast, Geraldton Coast, Bunbury Geographe Coast, Leeuwin Coast, Eucla Coast, Gascoyne Coast, Esperance Coast and Perth Coast"
+        "Strong Wind Warning for Sunday for Leeuwin Coast, Albany Coast and Eucla Coast",
+        "Strong Wind Warning for Monday for Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast, Eucla Coast, Perth Local Waters and Melville Waters"
       ],
       "hazards": [
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "Eucla Coast: Israelite Bay to WA-SA Border"
-          ],
-          "aac_codes": [
-            "WA_MW014"
-          ],
-          "summary": "Eucla Coast"
-        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Pilbara Coast East: Wallal to Cape Preston",
             "Leeuwin Coast: Cape Naturaliste to Walpole",
             "Albany Coast: Walpole to Bremer Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay"
+            "Eucla Coast: Israelite Bay to WA-SA Border"
           ],
           "aac_codes": [
-            "WA_MW003",
             "WA_MW011",
             "WA_MW012",
-            "WA_MW013"
+            "WA_MW014"
           ],
-          "summary": "Pilbara Coast East, Leeuwin Coast, Albany Coast and Esperance Coast"
+          "summary": "Leeuwin Coast, Albany Coast and Eucla Coast"
         }
       ]
     },
