@@ -179,6 +179,10 @@ function nearMeTypeList() {
   ];
   if (typeof BOM_FTP_PRODUCTS === 'object' && BOM_FTP_PRODUCTS) {
     Object.keys(BOM_FTP_PRODUCTS).forEach(function (k) {
+      // Fire weather is deliberately excluded — FDR (above) is the primary,
+      // more targeted fire-risk signal (desktop decision: same underlying
+      // district data, showing both would just duplicate the same warning).
+      if (k === 'fire_weather') return;
       list.push({ key: k, label: BOM_FTP_PRODUCTS[k].label, icon: BOM_FTP_PRODUCTS[k].icon, color: BOM_FTP_PRODUCTS[k].color });
     });
   }
@@ -329,12 +333,45 @@ function nearMeUpdateNewSet() {
 }
 
 // ---------------------------------------------------------------------------
-// District polygon matching — mirrors the exact logic desktop's
-// renderWarningsMap() uses, so mobile draws/measures against the same real
-// BOM district shapes instead of a single centroid point.
+// District polygon matching — AAC-first, mirrors the desktop fix (see
+// index.html's renderWarningsMap()/drawAacMatches()): warnings from the
+// dedicated per-type fetches (severe_weather, thunderstorm, coastal_hazard,
+// heatwave) carry a precise w.areas AAC list, matched directly against each
+// district's own "aac" property — no text/name guessing, and no same-state
+// requirement, so a warning filed under one state that legitimately includes
+// a district tagged with a different state (e.g. ACT's NSW_PW017 inside an
+// NSW-filed Severe Weather Warning) resolves correctly. BOM_PW_DISTRICTS uses
+// lowercase "aac"; FDR_GEO (fire districts) uses uppercase "AAC" — checking
+// both covers either casing regardless of dataset.
+// Legacy text-matching (state-gated name search) is kept ONLY as a fallback
+// for warnings with no w.areas — currently none, since fire_weather is
+// excluded from this view entirely and cyclone now has its own dedicated
+// section below, but kept for safety if a new type is ever added to
+// bomWarnings without a matching dedicated fetch yet.
 // ---------------------------------------------------------------------------
 function nearMeMatchDistrictPolygons(w) {
   var matches = [];
+
+  if (w.areas && w.areas.length) {
+    var wantedAacs = w.areas.map(function (a) { return a.aac; });
+    function scanAac(collection) {
+      if (!collection || !collection.features) return;
+      collection.features.forEach(function (feat) {
+        var faac = feat.properties && (feat.properties.aac || feat.properties.AAC);
+        if (faac && wantedAacs.indexOf(faac) !== -1) matches.push(feat);
+      });
+    }
+    if (typeof BOM_PW_DISTRICTS !== 'undefined') scanAac(BOM_PW_DISTRICTS);
+    if (typeof BOM_ME_DISTRICTS !== 'undefined') scanAac(BOM_ME_DISTRICTS);
+    // Fire Weather Warning AAC codes (NSW_FW0xx etc) live only in FDR_GEO —
+    // included here for robustness even though fire_weather itself is
+    // filtered out of this view's hazard list further down.
+    if (typeof FDR_GEO !== 'undefined') scanAac(FDR_GEO);
+    return matches;
+  }
+
+  // Legacy fallback — unchanged text-matching, only reached for a type with
+  // no AAC area list at all.
   var searchText = ((w.title || '') + ' ' + (w.text || '')).toLowerCase().replace(/\s+&\s+/g, ' and ');
   function scan(collection) {
     if (!collection || !collection.features) return;
@@ -435,6 +472,12 @@ function nearMeFlattenHazards(userLat, userLng, radiusKm, filtersOverride) {
       if (w.cancelled) return;
       if (!w.coords || w.coords.length < 2) return;
       var cat = w.type || 'other';
+      // Fire weather: superseded by the FDR section below (same underlying
+      // data, FDR is more targeted — desktop decision, mirrored here).
+      // Cyclone: superseded by the dedicated tracking-data section below,
+      // which uses the real Warning/Watch polygons instead of this feed's
+      // flat single-point representation.
+      if (cat === 'fire_weather' || cat === 'cyclone') return;
       if (filters.types.indexOf(cat) === -1) return;
       var sevRank = nearMeSeverityFromText(w.title);
       if (filters.severities.indexOf(sevRank) === -1) return;
@@ -577,6 +620,93 @@ function nearMeFlattenHazards(userLat, userLng, radiusKm, filtersOverride) {
         url: (typeof INC_FEEDS !== 'undefined' && INC_FEEDS[fdrState] && INC_FEEDS[fdrState].sourceUrl) || 'https://www.bom.gov.au/australia/warnings/',
         icon: '\uD83D\uDD25',
         color: fdrRank >= 4 ? '#4a148c' : (fdrRank >= 3 ? '#b71c1c' : '#d32f2f')
+      });
+    });
+  }
+
+  // Tropical cyclones — real-time GML/CXML tracking data (cycloneSystems,
+  // a global populated by desktop's fetchBOMWarnings and shared across this
+  // file's global scope). Matched against the real Warning/Watch threat-area
+  // polygons rather than a single point, mirroring desktop's own polygon-
+  // first risk tiering exactly (Warning area -> severity 4, Watch area ->
+  // severity 3, no distance fallback into either tier — you're either in
+  // the declared area or you're not). This replaces the old flat bomWarnings
+  // entry for 'cyclone' (skipped above), which only had a single point and
+  // no real threat-area awareness.
+  if (filters.types.indexOf('cyclone') !== -1 &&
+      typeof cycloneSystems !== 'undefined' && cycloneSystems && cycloneSystems.length &&
+      typeof pointInAnyLatLonPolygon === 'function') {
+    cycloneSystems.forEach(function (system) {
+      var warningPolys = (system.areas && system.areas.warning) || [];
+      var watchPolys = (system.areas && system.areas.watch) || [];
+      var fix = (typeof cxmlLatestFix === 'function') ? cxmlLatestFix(system) : null;
+      var fixLat = fix ? fix.lat : null, fixLng = fix ? fix.lon : null;
+      var catNum = fix && fix.category ? parseInt(fix.category, 10) : NaN;
+
+      var sevRank, isInside = false, dist = null;
+
+      if (userLat !== null) {
+        if (pointInAnyLatLonPolygon(userLat, userLng, warningPolys)) {
+          sevRank = 4; isInside = true; dist = 0;
+        } else if (pointInAnyLatLonPolygon(userLat, userLng, watchPolys)) {
+          sevRank = 3; isInside = true; dist = 0;
+        } else {
+          // Outside both declared threat areas — still worth surfacing as a
+          // "tracked nearby" card if within radius, using a rough nearest-
+          // vertex distance across every ring (good enough for a proximity
+          // read; not used for the isInside/tier decision above).
+          var minD = Infinity;
+          warningPolys.concat(watchPolys).forEach(function (ring) {
+            ring.forEach(function (pt) {
+              var d = nearMeHaversine(userLat, userLng, pt[0], pt[1]);
+              if (d < minD) minD = d;
+            });
+          });
+          if (minD === Infinity && fixLat !== null && fixLng !== null) {
+            minD = nearMeHaversine(userLat, userLng, fixLat, fixLng);
+          }
+          dist = (minD === Infinity) ? null : minD;
+          sevRank = 2;
+        }
+      } else {
+        // No location yet (e.g. national fallback view) — rank by the
+        // system's own reported category instead of proximity, so a major
+        // cyclone still surfaces near the top nationally.
+        sevRank = (catNum >= 3) ? 4 : (catNum >= 1) ? 3 : 2;
+      }
+
+      if (filters.severities.indexOf(sevRank) === -1) return;
+      if (radiusKm !== null && dist !== null && dist > radiusKm) return;
+      // Nothing to anchor this card to (no location, no fix, no areas) — skip
+      // rather than guess at a position.
+      if (fixLat === null && !warningPolys.length && !watchPolys.length) return;
+
+      var anchorLat = (fixLat !== null) ? fixLat : userLat;
+      var anchorLng = (fixLng !== null) ? fixLng : userLng;
+
+      var toLngLat = function (ring) { return ring.map(function (pt) { return [pt[1], pt[0]]; }); };
+      var polys = warningPolys.concat(watchPolys).map(function (ring) {
+        return { type: 'Polygon', coordinates: [toLngLat(ring)] };
+      });
+
+      var color = (!isNaN(catNum) && typeof cycloneCatColor === 'function') ? cycloneCatColor(fix.category) : '#ff4757';
+      var catLabel = !isNaN(catNum) ? ('Category ' + fix.category) : 'Tropical Low';
+
+      out.push({
+        kind: 'cyclone',
+        category: 'cyclone',
+        state: (system.region || '').toUpperCase(),
+        title: (system.distName || 'Tropical Cyclone') + ' — ' + catLabel,
+        sub: isInside ? (sevRank === 4 ? 'You are in the Warning area' : 'You are in the Watch area') : 'Tracking — ' + (system.region || 'monitor for updates'),
+        severityRank: sevRank,
+        distanceKm: dist,
+        isInside: isInside,
+        lat: anchorLat,
+        lng: anchorLng,
+        polys: polys.length ? polys : null,
+        url: 'https://www.bom.gov.au/australia/warnings/',
+        icon: '\uD83C\uDF00',
+        color: color
       });
     });
   }
