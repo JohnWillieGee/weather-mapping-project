@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-09T12:53:31.157657+00:00",
-  "last_checked_utc": "2026-08-09T12:53:31.157657+00:00",
+  "generated_utc": "2026-08-09T13:23:32.122562+00:00",
+  "last_checked_utc": "2026-08-09T13:23:32.122562+00:00",
   "warning_count": 22,
   "warnings": [
     {
@@ -104,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "09/17:17 CST Warning to Sheep Graziers\nfor Mount Lofty Ranges, West Coast, Lower Eyre Peninsula, Eastern Eyre Peninsula, Yorke Peninsula, Flinders, Mid North, Riverland, Murraylands, Upper South East, North West Pastoral and North East Pastoral forecast districts",
+      "title": "09/22:46 CST Warning to Sheep Graziers\nfor Mount Lofty Ranges, West Coast, Lower Eyre Peninsula, Eastern Eyre Peninsula, Yorke Peninsula, Flinders, Mid North, Riverland, Murraylands, Upper South East, North West Pastoral and North East Pastoral forecast districts",
       "type": "other",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Sun, 09 Aug 2026 07:47:46 GMT"
+      "issued": "Sun, 09 Aug 2026 13:16:01 GMT"
     },
     {
       "pid": "",
@@ -257,32 +257,17 @@
     },
     {
       "pid": "IDS21037",
-      "title": "Severe Weather Warning for North West Pastoral, North East Pastoral, West Coast, Eastern Eyre Peninsula, Flinders, Mid North, Yorke Peninsula",
+      "title": "Severe Weather Warning for North East Pastoral, Flinders, Mid North",
       "type": "severe_weather",
       "state": "SA",
       "link": "",
-      "desc": "DAMAGING WINDS averaging 55 to 65 km/h with peak gusts of around 90 km/h are possible about coastal parts of western Eyre Peninsula. DAMAGING WIND GUSTS of around 90 km/h are also possible for the northern Yorke Peninsula and further inland in the North West Pastoral. Conditions are forecast to ease below warning thresholds by late Sunday evening. DAMAGING WINDS averaging 60 to 75 km/h with peak gusts of around 110 km/h are likely about the higher parts of the Flinders Ranges from late Sunday af",
-      "issued": "2026-08-09T16:38:07+09:30",
+      "desc": "DAMAGING WINDS averaging 60 to 75 km/h with peak gusts of around 110 km/h are likely about the higher parts of the Flinders Ranges. Conditions are forecast to ease by around sunrise on Monday morning. Locations which may be affected include Hawker, Arkaroola and Peterborough. Severe weather is no longer occurring in the West Coast, Eastern Eyre Peninsula, Yorke Peninsula and North West Pastoral districts and the warning for these districts is CANCELLED.",
+      "issued": "2026-08-09T22:37:36+09:30",
       "cancelled": false,
       "areas": [
         {
-          "aac": "SA_PW013",
-          "description": "North West Pastoral",
-          "phase": "REN"
-        },
-        {
           "aac": "SA_PW014",
           "description": "North East Pastoral",
-          "phase": "REN"
-        },
-        {
-          "aac": "SA_PW010",
-          "description": "West Coast",
-          "phase": "REN"
-        },
-        {
-          "aac": "SA_PW011",
-          "description": "Eastern Eyre Peninsula",
           "phase": "REN"
         },
         {
@@ -294,11 +279,6 @@
           "aac": "SA_PW008",
           "description": "Mid North",
           "phase": "REN"
-        },
-        {
-          "aac": "SA_PW002",
-          "description": "Yorke Peninsula",
-          "phase": "REN"
         }
       ],
       "severityCode": "STD",
@@ -306,17 +286,32 @@
     },
     {
       "pid": "IDS21037",
-      "title": "Severe Weather Warning for Lower Eyre Peninsula",
+      "title": "Severe Weather Warning for Yorke Peninsula, West Coast, Eastern Eyre Peninsula, North West Pastoral",
       "type": "severe_weather",
       "state": "SA",
       "link": "",
       "desc": "",
-      "issued": "2026-08-09T16:38:07+09:30",
+      "issued": "2026-08-09T22:37:36+09:30",
       "cancelled": true,
       "areas": [
         {
-          "aac": "SA_PW012",
-          "description": "Lower Eyre Peninsula",
+          "aac": "SA_PW002",
+          "description": "Yorke Peninsula",
+          "phase": "CAN"
+        },
+        {
+          "aac": "SA_PW010",
+          "description": "West Coast",
+          "phase": "CAN"
+        },
+        {
+          "aac": "SA_PW011",
+          "description": "Eastern Eyre Peninsula",
+          "phase": "CAN"
+        },
+        {
+          "aac": "SA_PW013",
+          "description": "North West Pastoral",
           "phase": "CAN"
         }
       ],
@@ -366,29 +361,13 @@
   "incidents": {
     "nsw": [
       {
-        "title": "Charles St, South Grafton",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Sun, 09 Aug 2026 12:50:59 GMT",
-        "description": "Charles St, South Grafton, NSW 2460",
-        "council": "Clarence Valley",
-        "lat": -29.707084,
-        "lng": 152.942403999,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
         "title": "SHAWS RD, DEEPWATER",
         "alertLevel": "Advice",
         "status": "Not yet controlled",
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 09 Aug 2026 12:50:59 GMT",
+        "updated": "Sun, 09 Aug 2026 13:19:00 GMT",
         "description": "SHAWS RD, DEEPWATER 2371",
         "council": "Glen Innes Severn",
         "lat": -29.4774459999999,
@@ -418,21 +397,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-09T12:10:10+00:00",
-        "description": "PERTH, CITY OF VINCENT",
-        "lat": -31.9464,
-        "lng": 115.8648,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -798,7 +762,7 @@
     ],
     "act": []
   },
-  "incident_count": 28,
+  "incident_count": 26,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
