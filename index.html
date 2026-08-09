@@ -3640,7 +3640,11 @@ function renderWarningsMap() {
       var drawAacMatches = function(geo) {
         if (!geo) return;
         geo.features.forEach(function(feat) {
-          var faac = feat.properties && feat.properties.AAC;
+          // BOM_PW_DISTRICTS/BOM_ME_DISTRICTS use lowercase "aac" (confirmed via
+          // the pre-existing getBOMDistrictsForSite() helper) — NOT uppercase
+          // "AAC" like FDR_GEO/MARINE_ZONES_GEOJSON use. Mixing these up silently
+          // breaks every AAC match (found & fixed after a live-test report).
+          var faac = feat.properties && (feat.properties.aac || feat.properties.AAC);
           if (!faac || warnAacs.indexOf(faac) === -1) return;
           L.geoJSON(feat, {
             style: {
@@ -3654,6 +3658,9 @@ function renderWarningsMap() {
       };
       if (BOM_PW_DISTRICTS) drawAacMatches(BOM_PW_DISTRICTS);
       if (typeof BOM_ME_DISTRICTS !== 'undefined') drawAacMatches(BOM_ME_DISTRICTS);
+      // Fire Weather Warnings use the IDM00007 fire-district AAC scheme (NSW_FW0xx
+      // etc), which lives only in FDR_GEO — never in BOM_PW_DISTRICTS/BOM_ME_DISTRICTS.
+      if (typeof FDR_GEO !== 'undefined') drawAacMatches(FDR_GEO);
     } else {
       // Legacy text-matching path \u2014 unchanged, still used by warnings without an
       // AAC area list (currently just cyclone, still on the generic feed).
@@ -5083,7 +5090,8 @@ function coordsForAacAreas(areas) {
   function scan(geo) {
     if (!geo || !geo.features) return;
     geo.features.forEach(function(feat) {
-      var faac = feat.properties && feat.properties.AAC;
+      // lowercase "aac" — see drawAacMatches() comment for why this matters.
+      var faac = feat.properties && (feat.properties.aac || feat.properties.AAC);
       if (!faac || wanted.indexOf(faac) === -1) return;
       var c = geometryCentroid(feat.geometry);
       if (c) { lats += c[0]; lngs += c[1]; n++; }
@@ -5091,6 +5099,9 @@ function coordsForAacAreas(areas) {
   }
   scan(BOM_PW_DISTRICTS);
   if (typeof BOM_ME_DISTRICTS !== 'undefined') scan(BOM_ME_DISTRICTS);
+  // Fire Weather Warnings use the IDM00007 fire-district AAC scheme (NSW_FW0xx
+  // etc), which lives only in FDR_GEO — never in BOM_PW_DISTRICTS/BOM_ME_DISTRICTS.
+  if (typeof FDR_GEO !== 'undefined') scan(FDR_GEO);
   return n ? [lats / n, lngs / n] : null;
 }
 
@@ -5322,7 +5333,8 @@ function computeRisks() {
             if (inDistrict || !geo) return;
             geo.features.forEach(function(feat) {
               if (inDistrict) return;
-              var faac = feat.properties && feat.properties.AAC;
+              // lowercase "aac" — see drawAacMatches() comment for why this matters.
+              var faac = feat.properties && (feat.properties.aac || feat.properties.AAC);
               if (!faac || warnAacs.indexOf(faac) === -1) return;
               if (pointInGeoJSONPolygon(site.lat, site.lon, feat.geometry)) inDistrict = true;
             });
