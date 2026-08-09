@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-09T09:23:25.728239+00:00",
-  "last_checked_utc": "2026-08-09T09:23:25.728239+00:00",
+  "generated_utc": "2026-08-09T09:53:26.843866+00:00",
+  "last_checked_utc": "2026-08-09T09:53:26.843866+00:00",
   "warning_count": 23,
   "warnings": [
     {
@@ -325,27 +325,17 @@
     },
     {
       "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for Mount Lofty Ranges, Murraylands, Upper South East",
+      "title": "Severe Thunderstorm Warning for Mount Lofty Ranges",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Murray Bridge, Victor Harbor, Mannum and Tailem Bend. Severe thunderstorms are no longer occurring in the Adelaide Metropolitan, Mid North and Riverland districts and the warning for these districts is CANCELLED.",
-      "issued": "2026-08-09T16:48:11+09:30",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Coromandel East and Stirling. 50.8 mm of rainfall recorded at Coromandel East in the 3 hours to 6:50 pm.",
+      "issued": "2026-08-09T19:11:42+09:30",
       "cancelled": false,
       "areas": [
         {
           "aac": "SA_PW015",
           "description": "Mount Lofty Ranges",
-          "phase": "REN"
-        },
-        {
-          "aac": "SA_PW007",
-          "description": "Murraylands",
-          "phase": "REN"
-        },
-        {
-          "aac": "SA_PW004",
-          "description": "Upper South East",
           "phase": "REN"
         }
       ],
@@ -354,27 +344,22 @@
     },
     {
       "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for Riverland, Mid North, Adelaide Metropolitan",
+      "title": "Severe Thunderstorm Warning for Upper South East, Murraylands",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
       "desc": "",
-      "issued": "2026-08-09T16:48:11+09:30",
+      "issued": "2026-08-09T19:11:42+09:30",
       "cancelled": true,
       "areas": [
         {
-          "aac": "SA_PW006",
-          "description": "Riverland",
+          "aac": "SA_PW004",
+          "description": "Upper South East",
           "phase": "CAN"
         },
         {
-          "aac": "SA_PW008",
-          "description": "Mid North",
-          "phase": "CAN"
-        },
-        {
-          "aac": "SA_PW001",
-          "description": "Adelaide Metropolitan",
+          "aac": "SA_PW007",
+          "description": "Murraylands",
           "phase": "CAN"
         }
       ],
@@ -411,12 +396,83 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 09 Aug 2026 09:18:59 GMT",
+        "updated": "Sun, 09 Aug 2026 09:50:59 GMT",
         "description": "LEEVILLE STATION RD, LEEVILLE 2470",
         "council": "Richmond Valley",
         "lat": -28.9428639999999,
         "lng": 152.99967,
-        "polys": [],
+        "polys": [
+          [
+            [
+              152.998148769,
+              -28.941391804
+            ],
+            [
+              152.998700804,
+              -28.9413775259999
+            ],
+            [
+              152.998696045,
+              -28.941368009
+            ],
+            [
+              152.999635932,
+              -28.941260933
+            ],
+            [
+              153.000623408,
+              -28.941344214
+            ],
+            [
+              153.002693539,
+              -28.9412966249999
+            ],
+            [
+              153.00277682,
+              -28.9413323159999
+            ],
+            [
+              153.002729232,
+              -28.941796312
+            ],
+            [
+              153.002586463,
+              -28.9422722039999
+            ],
+            [
+              153.002170057,
+              -28.942878966
+            ],
+            [
+              153.001694165,
+              -28.943354859
+            ],
+            [
+              153.000813765,
+              -28.9433667559999
+            ],
+            [
+              152.999814392,
+              -28.9432477829999
+            ],
+            [
+              152.999386088,
+              -28.9428908629999
+            ],
+            [
+              152.998933991,
+              -28.942355485
+            ],
+            [
+              152.998553278,
+              -28.941653544
+            ],
+            [
+              152.998148769,
+              -28.941391804
+            ]
+          ]
+        ],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
@@ -427,7 +483,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 09 Aug 2026 09:18:59 GMT",
+        "updated": "Sun, 09 Aug 2026 09:50:59 GMT",
         "description": "SHAWS RD, DEEPWATER 2371",
         "council": "Glen Innes Severn",
         "lat": -29.4774459999999,
@@ -464,10 +520,25 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-09T09:06:01+00:00",
+        "updated": "2026-08-09T09:41:41+00:00",
+        "description": "KUENDER, SHIRE OF LAKE GRACE",
+        "lat": -32.7828,
+        "lng": 118.5968,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-09T09:30:57+00:00",
         "description": "SOUTH HEDLAND, TOWN OF PORT HEDLAND",
-        "lat": -20.409,
-        "lng": 118.603,
+        "lat": -20.4024,
+        "lng": 118.607,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -670,28 +741,13 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - KARGARU INTERNAL -, TENNANT CREEK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-09T09:15:12+00:00",
-        "description": "KARGARU INTERNAL -, TENNANT CREEK",
-        "lat": -19.6586,
-        "lng": 134.1981,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - FAZALDEEN RD, TENNANT CREEK",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-08-09T09:15:08+00:00",
+        "updated": "2026-08-09T09:27:17+00:00",
         "description": "FAZALDEEN RD, TENNANT CREEK",
         "lat": -19.66,
         "lng": 134.1812,
