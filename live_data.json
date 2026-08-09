@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-09T13:53:28.517234+00:00",
-  "last_checked_utc": "2026-08-09T13:53:28.517234+00:00",
-  "warning_count": 23,
+  "generated_utc": "2026-08-09T14:23:30.001204+00:00",
+  "last_checked_utc": "2026-08-09T14:23:30.001204+00:00",
+  "warning_count": 22,
   "warnings": [
     {
       "pid": "",
@@ -345,25 +345,6 @@
       ],
       "severityCode": "CAN",
       "hazardPhase": "CAN"
-    },
-    {
-      "pid": "IDD20320",
-      "title": "Extreme Fire Weather Warning for Simpson East",
-      "type": "fire_weather",
-      "state": "NT",
-      "link": "",
-      "desc": "Extreme Fire Danger",
-      "issued": "2026-08-09T03:56:10+09:30",
-      "cancelled": false,
-      "areas": [
-        {
-          "aac": "NT_FW016",
-          "description": "Simpson East",
-          "phase": "REN"
-        }
-      ],
-      "severityCode": "EXT",
-      "hazardPhase": "REN"
     }
   ],
   "fetch_errors": {},
@@ -376,7 +357,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 09 Aug 2026 13:50:59 GMT",
+        "updated": "Sun, 09 Aug 2026 14:19:03 GMT",
         "description": "SHAWS RD, DEEPWATER 2371",
         "council": "Glen Innes Severn",
         "lat": -29.4774459999999,
@@ -407,16 +388,46 @@
     "tas": [],
     "wa": [
       {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-09T14:07:37+00:00",
+        "description": "MIRRABOOKA, CITY OF STIRLING",
+        "lat": -31.86,
+        "lng": 115.8646,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - CAMBALLIN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-08-09T14:00:06.366+00:00",
+        "description": "",
+        "lat": -18.0416,
+        "lng": 124.1453,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-09T11:36:36+00:00",
-        "description": "ORD RIVER, SHIRE OF HALLS CREEK",
-        "lat": -17.4769,
-        "lng": 127.9492,
+        "updated": "2026-08-09T13:41:54+00:00",
+        "description": "CAMBALLIN, SHIRE OF DERBY/WEST KIMBERLEY",
+        "lat": -18.0403,
+        "lng": 124.1492,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -756,7 +767,7 @@
     ],
     "act": []
   },
-  "incident_count": 25,
+  "incident_count": 27,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
