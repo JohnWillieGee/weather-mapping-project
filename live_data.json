@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-09T16:53:28.111836+00:00",
-  "last_checked_utc": "2026-08-09T16:53:28.111836+00:00",
-  "warning_count": 21,
+  "generated_utc": "2026-08-09T17:23:25.496917+00:00",
+  "last_checked_utc": "2026-08-09T17:23:25.496917+00:00",
+  "warning_count": 22,
   "warnings": [
     {
       "pid": "",
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "09/22:25 EST Warning to Sheep Graziers\nfor Hunter, Northern Tablelands, Central Tablelands, Southern Tablelands, North West Slopes & Plains, Central West Slopes & Plains, South West Slopes, Riverina, Upper Western, Lower Western, Snowy Mountains and Australian Capital Territory forecast districts",
+      "title": "10/02:53 EST Warning to Sheep Graziers\nfor Hunter, Northern Tablelands, Central Tablelands, Southern Tablelands, North West Slopes & Plains, Central West Slopes & Plains, South West Slopes, Riverina, Upper Western, Lower Western, Snowy Mountains and Australian Capital Territory forecast districts",
       "type": "other",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Sun, 09 Aug 2026 12:25:13 GMT"
+      "issued": "Sun, 09 Aug 2026 16:53:28 GMT"
     },
     {
       "pid": "",
@@ -77,6 +77,15 @@
     },
     {
       "pid": "",
+      "title": "10/02:56 EST Initial Minor Flood Warning for the Broken River",
+      "type": "flood",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/flood/brokenriver.shtml",
+      "desc": "",
+      "issued": "Sun, 09 Aug 2026 16:56:46 GMT"
+    },
+    {
+      "pid": "",
       "title": "10/02:25 EST Moderate Flood Warning for the Seven Creeks and Minor Flood Warning for Castle Creek",
       "type": "flood",
       "state": "VIC",
@@ -95,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "09/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "10/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 09 Aug 2026 11:00:16 GMT"
+      "issued": "Sun, 09 Aug 2026 17:00:11 GMT"
     },
     {
       "pid": "",
@@ -131,12 +140,12 @@
     },
     {
       "pid": "",
-      "title": "09/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "10/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 09 Aug 2026 11:01:17 GMT"
+      "issued": "Sun, 09 Aug 2026 17:01:16 GMT"
     },
     {
       "pid": "",
@@ -338,7 +347,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 09 Aug 2026 16:50:59 GMT",
+        "updated": "Sun, 09 Aug 2026 17:18:59 GMT",
         "description": "SHAWS RD, DEEPWATER 2371",
         "council": "Glen Innes Severn",
         "lat": -29.4774459999999,
@@ -368,6 +377,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-09T17:09:35+00:00",
+        "description": "WANNEROO, CITY OF WANNEROO",
+        "lat": -31.7434,
+        "lng": 115.7946,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - CAMBALLIN",
         "alertLevel": "Advice",
@@ -733,7 +757,7 @@
     ],
     "act": []
   },
-  "incident_count": 26,
+  "incident_count": 27,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3714,7 +3738,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-08-09T11:00:00Z",
+      "issued_utc": "2026-08-09T17:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3844,24 +3868,42 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-08-09T11:01:00Z",
+      "issued_utc": "2026-08-09T17:01:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Leeuwin Coast and Albany Coast",
-        "Strong Wind Warning for Monday for Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast, Eucla Coast, Perth Local Waters and Melville Waters"
+        "Strong Wind Warning for Monday for Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast, Eucla Coast, Perth Local Waters and Melville Waters",
+        "Strong Wind Warning for Tuesday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Gascoyne Coast: Cape Cuvier to Kalbarri",
+            "Geraldton Coast: Kalbarri to Jurien Bay",
+            "Lancelin Coast: Jurien Bay to Two Rocks",
+            "Perth Coast: Two Rocks to Dawesville",
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay"
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay",
+            "Eucla Coast: Israelite Bay to WA-SA Border",
+            "Perth Local Waters",
+            "Melville Waters"
           ],
           "aac_codes": [
+            "WA_MW006",
+            "WA_MW007",
+            "WA_MW008",
+            "WA_MW009",
+            "WA_MW010",
             "WA_MW011",
-            "WA_MW012"
+            "WA_MW012",
+            "WA_MW013",
+            "WA_MW014",
+            "WA_MW015",
+            "WA_MW016"
           ],
-          "summary": "Leeuwin Coast and Albany Coast"
+          "summary": "Perth Local Waters, Melville Waters, Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
         }
       ]
     },
