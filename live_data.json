@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-09T02:27:27.435325+00:00",
-  "last_checked_utc": "2026-08-09T02:27:27.435325+00:00",
+  "generated_utc": "2026-08-09T04:20:46.732800+00:00",
+  "last_checked_utc": "2026-08-09T04:20:46.732800+00:00",
   "warning_count": 15,
   "warnings": [
     {
@@ -101,15 +101,6 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Sun, 09 Aug 2026 00:00:13 GMT"
-    },
-    {
-      "pid": "",
-      "title": "09/03:56 CST Fire Weather Warning\nfor Simpson East fire weather district",
-      "type": "fire_weather",
-      "state": "NT",
-      "link": "http://reg.bom.gov.au/nt/warnings/fire.shtml",
-      "desc": "",
-      "issued": "Sat, 08 Aug 2026 18:26:21 GMT"
     },
     {
       "pid": "IDN21037",
@@ -272,23 +263,42 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDD20320",
+      "title": "Extreme Fire Weather Warning for Simpson East",
+      "type": "fire_weather",
+      "state": "NT",
+      "link": "",
+      "desc": "Extreme Fire Danger",
+      "issued": "2026-08-09T03:56:10+09:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NT_FW016",
+          "description": "Simpson East",
+          "phase": "REN"
+        }
+      ],
+      "severityCode": "EXT",
+      "hazardPhase": "REN"
     }
   ],
   "fetch_errors": {},
   "incidents": {
     "nsw": [
       {
-        "title": "Murwillumbah Rail Trail/Smith St, South Murwillumb",
+        "title": "Opp Toronto Golf Course/Wangi Rd, Rathmines",
         "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Grass Fire",
+        "status": "Being controlled",
+        "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sun, 09 Aug 2026 02:23:00 GMT",
-        "description": "Murwillumbah Rail Trail Smith St, South Murwillumbah, NSW 2484",
-        "council": "Tweed",
-        "lat": -28.3380339999999,
-        "lng": 153.400427,
+        "updated": "Sun, 09 Aug 2026 04:14:59 GMT",
+        "description": "Opp Toronto Golf Course Wangi Rd, Rathmines, NSW 2283",
+        "council": "Lake Macquarie",
+        "lat": -33.031775,
+        "lng": 151.561761001,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -299,21 +309,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-09T01:55:22+00:00",
-        "description": "YARLOOP, SHIRE OF HARVEY",
-        "lat": -32.9537,
-        "lng": 115.9036,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire Advice THREAT IS REDUCED - ORD RIVER REGENERATION RESERVE",
         "alertLevel": "Advice",
@@ -526,6 +521,21 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - KARGARU INTERNAL -, TENNANT CREEK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-09T04:06:58+00:00",
+        "description": "KARGARU INTERNAL -, TENNANT CREEK",
+        "lat": -19.6586,
+        "lng": 134.1981,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - MURRUMUJUK DR, MURRUMUJUK",
         "alertLevel": "Advice",
@@ -3780,5 +3790,6 @@
         }
       ]
     }
-  }
+  },
+  "cyclones": []
 }
