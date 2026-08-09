@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-09T11:23:35.784631+00:00",
-  "last_checked_utc": "2026-08-09T11:23:35.784631+00:00",
-  "warning_count": 23,
+  "generated_utc": "2026-08-09T11:53:29.973945+00:00",
+  "last_checked_utc": "2026-08-09T11:53:29.973945+00:00",
+  "warning_count": 22,
   "warnings": [
     {
       "pid": "",
@@ -222,38 +222,38 @@
       "type": "severe_weather",
       "state": "VIC",
       "link": "",
-      "desc": "For the MACEDON and CENTRAL RANGES: DAMAGING WINDS averaging 60 to 70 km/h with peak gusts of around 90 km/h are possible during Sunday, and are forecast to ease during Sunday evening. For the NORTHEAST RANGES and ALPINE AREAS: DAMAGING WINDS averaging 60 to 70 km/h with peak gusts of around 100 km/h are likely during Sunday, and are forecast to ease early Monday morning. Locations which may be affected include Falls Creek, Dargo, Mt Baw Baw, Mt Hotham, Mt Buller and Omeo. Significant wind obser",
-      "issued": "2026-08-09T16:32:54+10:00",
+      "desc": "For the NORTHEAST RANGES and ALPINE AREAS: DAMAGING WINDS averaging 60 to 70 km/h with peak gusts of around 100 km/h are likely. Winds may gust to 110 km/h about higher peaks. HEAVY RAINFALL which may lead to FLASH FLOODING is also expected. Six-hourly rainfall totals between 60 to 80mm are likely. Conditions are expected to ease by around sunrise on Monday morning. Conditions have eased over the Macedon and Central Ranges. The warning has been cancelled for these areas, but conditions will be m",
+      "issued": "2026-08-09T21:41:29+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "VIC_PW008",
           "description": "North Central",
-          "phase": "REN"
+          "phase": "UPD"
         },
         {
           "aac": "VIC_PW004",
           "description": "North East",
-          "phase": "REN"
+          "phase": "UPD"
         },
         {
           "aac": "VIC_PW007",
           "description": "Central",
-          "phase": "REN"
+          "phase": "UPD"
         },
         {
           "aac": "VIC_PW006",
           "description": "West and South Gippsland",
-          "phase": "REN"
+          "phase": "UPD"
         },
         {
           "aac": "VIC_PW005",
           "description": "East Gippsland",
-          "phase": "REN"
+          "phase": "UPD"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "REN"
+      "hazardPhase": "UPD"
     },
     {
       "pid": "IDS21037",
@@ -325,41 +325,17 @@
     },
     {
       "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for Mount Lofty Ranges",
+      "title": "Cancellation of Severe Thunderstorm Warning for Mount Lofty Ranges",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Coromandel East and Stirling. 50.8 mm of rainfall recorded at Coromandel East in the 3 hours to 6:50 pm.",
-      "issued": "2026-08-09T19:11:42+09:30",
-      "cancelled": false,
+      "desc": "This warning is now cancelled. 63.2 mm of rainfall recorded at Coromandel East in the 6 hours to 8:23 pm.",
+      "issued": "2026-08-09T21:15:58+09:30",
+      "cancelled": true,
       "areas": [
         {
           "aac": "SA_PW015",
           "description": "Mount Lofty Ranges",
-          "phase": "REN"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
-    },
-    {
-      "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for Upper South East, Murraylands",
-      "type": "thunderstorm",
-      "state": "SA",
-      "link": "",
-      "desc": "",
-      "issued": "2026-08-09T19:11:42+09:30",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "SA_PW004",
-          "description": "Upper South East",
-          "phase": "CAN"
-        },
-        {
-          "aac": "SA_PW007",
-          "description": "Murraylands",
           "phase": "CAN"
         }
       ],
@@ -396,7 +372,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 09 Aug 2026 11:18:59 GMT",
+        "updated": "Sun, 09 Aug 2026 11:50:59 GMT",
         "description": "SHAWS RD, DEEPWATER 2371",
         "council": "Glen Innes Severn",
         "lat": -29.4774459999999,
@@ -427,31 +403,16 @@
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire",
+        "title": "Report of Smoke",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-09T11:01:59+00:00",
-        "description": "ROEBOURNE, CITY OF KARRATHA",
-        "lat": -20.7668,
-        "lng": 117.1454,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-09T11:00:12+00:00",
-        "description": "GUILDFORD, CITY OF SWAN",
-        "lat": -31.9002,
-        "lng": 115.9784,
+        "updated": "2026-08-09T11:37:57+00:00",
+        "description": "GOSNELLS, CITY OF GOSNELLS",
+        "lat": -32.09,
+        "lng": 115.9796,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -463,10 +424,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-09T10:44:14+00:00",
-        "description": "KUENDER, SHIRE OF LAKE GRACE",
-        "lat": -32.7828,
-        "lng": 118.5968,
+        "updated": "2026-08-09T11:36:36+00:00",
+        "description": "ORD RIVER, SHIRE OF HALLS CREEK",
+        "lat": -17.4769,
+        "lng": 127.9492,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -669,6 +630,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - CAIN RD, LAMBELLS LAGOON",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-09T11:27:05+00:00",
+        "description": "CAIN RD, LAMBELLS LAGOON",
+        "lat": -12.6008,
+        "lng": 131.2269,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - DORAT RD, ADELAIDE RIVER",
         "alertLevel": "Advice",
         "status": "active",
@@ -724,21 +700,6 @@
         "description": "",
         "lat": -13.5543,
         "lng": 132.2737,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - BERTRAM RD, ZUCCOLI",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-09T08:57:49+00:00",
-        "description": "BERTRAM RD, ZUCCOLI",
-        "lat": -12.5166,
-        "lng": 130.9973,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -836,7 +797,7 @@
     ],
     "act": []
   },
-  "incident_count": 29,
+  "incident_count": 28,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
