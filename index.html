@@ -96,6 +96,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 .map-btn.fire-on{background:#ff4444;border-color:#ff4444;color:#fff;font-weight:500;}
 .map-btn.fdr-on{background:#f57c00;border-color:#f57c00;color:#fff;font-weight:500;}
 .map-btn.marine-on{background:#0077cc;border-color:#0077cc;color:#fff;font-weight:500;}
+.map-btn.cyclone-on{background:#ff4757;border-color:#ff4757;color:#fff;font-weight:500;}
 #legend{position:absolute;bottom:28px;left:10px;z-index:1001;background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:10px 12px;font-size:11px;box-shadow:0 2px 8px var(--shadow);}
 #legend h4{font-size:9px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--text3);margin-bottom:8px;}
 .li{display:flex;align-items:center;gap:8px;margin-bottom:5px;color:var(--text2);font-size:10px;}
@@ -713,17 +714,18 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
       </div>
 
       <div class="sp-section">
-        <div class="sp-sec-hd" onclick="toggleSpSection('fire')">
-          <span class="sp-sec-title">Fire weather warnings</span>
-          <span class="sp-sec-chev" id="sp-chev-fire">&#9660;</span>
+        <div class="sp-sec-hd" onclick="toggleSpSection('cyclone')">
+          <span class="sp-sec-title">Cyclone tracking</span>
+          <span class="sp-sec-chev" id="sp-chev-cyclone">&#9660;</span>
         </div>
-        <div class="sp-sec-body" id="sp-body-fire">
+        <div class="sp-sec-body" id="sp-body-cyclone">
           <div class="sp-row">
-            <div><span class="sp-lbl">Fire weather warnings</span><span class="sp-sub">ABC Local Radio sites only</span></div>
-            <div class="sp-tgl on" id="sp-tgl-fire" onclick="toggleSpToggle('fire',this)"></div>
+            <div><span class="sp-lbl">Cyclone tracking</span><span class="sp-sub">Warning polygon &#8594; Direct &middot; Watch polygon &#8594; Warning</span></div>
+            <div class="sp-tgl on" id="sp-tgl-cyclone" onclick="toggleSpToggle('cyclone',this)"></div>
           </div>
         </div>
       </div>
+
 
       <div class="sp-sec-body" style="border-bottom:none">
         <span class="sp-divlbl">Tutorial</span>
@@ -900,6 +902,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
       <button class="map-btn" id="btn-fdr" onclick="toggleFDRLayer()">&#128293; Fire Danger</button>
       <button class="map-btn" id="btn-warnings" onclick="toggleWarningsLayer()">&#9928; BOM Warnings</button>
       <button class="map-btn" id="btn-marine" onclick="toggleMarineLayer()">&#127754; Marine Warnings</button>
+      <button class="map-btn" id="btn-cyclone" onclick="toggleCycloneLayer()">&#127300; Cyclone Tracking</button>
       <button class="map-btn" id="btn-alerts" onclick="toggleAlertsLayer()">&#128680; NSW Alerts</button>
       <button class="map-btn" id="btn-incidents" onclick="toggleIncidentsLayer()">&#9888; Incidents</button>
       <button class="map-btn" id="btn-radar" onclick="toggleRadarLayer()">&#127783; Radar</button>
@@ -1077,11 +1080,24 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
             <button class="wp-tab on" onclick="showWarnType('all')" id="wt-all">All</button>
             <button class="wp-tab" onclick="showWarnType('thunderstorm')" id="wt-thunderstorm">&#9928; Storm</button>
             <button class="wp-tab" onclick="showWarnType('severe_weather')" id="wt-severe_weather">&#127755; Severe</button>
-            <button class="wp-tab" onclick="showWarnType('cyclone')" id="wt-cyclone">&#127300; Cyclone</button>
             <button class="wp-tab" onclick="showWarnType('fire_weather')" id="wt-fire_weather">&#128293; Fire Wx</button>
             <button class="wp-tab" onclick="showWarnType('heatwave')" id="wt-heatwave">&#127773; Heat</button>
           </div>
           <div id="bom-warnings-content"><div class="wp-loading">Loading...</div></div>
+        </div>
+      </div>
+      <hr style="border-color:var(--border);margin:8px 0 14px">
+      <div class="wp-section" id="sec-cyclone">
+        <div class="wp-section-title" onclick="toggleSection('cyclone')">
+          <span>&#127300; Cyclone Tracking</span>
+          <div style="display:flex;align-items:center;gap:6px">
+            <button class="wp-toggle" id="cyclone-map-toggle" onclick="event.stopPropagation();toggleCycloneLayer()">Map</button>
+            <span class="sec-chevron">&#9660;</span>
+          </div>
+        </div>
+        <div class="wp-section-body">
+          <div id="cyclone-fetch-status" class="fetch-status fetch-loading">&#8635; checking BOM...</div>
+          <div id="cyclone-content"><div class="wp-loading">Loading...</div></div>
         </div>
       </div>
       <hr style="border-color:var(--border);margin:8px 0 14px">
@@ -1218,8 +1234,12 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
           <span class="risk-rule-val" id="rr-storm">Storm/Severe → Warning for AM/MF sites</span>
         </div>
         <div class="risk-rule-row">
-          <span class="risk-rule-lbl">Fire Weather</span>
-          <span class="risk-rule-val" id="rr-fire">Fire Weather → Warning for ABC Local Radio sites</span>
+          <span class="risk-rule-lbl">Heatwave</span>
+          <span class="risk-rule-val" id="rr-heatwave">Extreme → Warning · Severe → Advisory</span>
+        </div>
+        <div class="risk-rule-row">
+          <span class="risk-rule-lbl">Cyclone</span>
+          <span class="risk-rule-val" id="rr-cyclone">Warning polygon → Direct · Watch polygon → Warning</span>
         </div>
         <div class="risk-rule-row" style="border:none">
           <span class="risk-rule-lbl">Popups</span>
@@ -1927,7 +1947,9 @@ var warningsData=[];
 var alertsData=[];   // NSW warning zone polygons from IncidentAlerts.xml
 var allIncidents={nsw:[],vic:[],qld:[],sa:[],wa:[],tas:[],nt:[],act:[]};
 var feedStatus={nsw:"pending",vic:"pending",qld:"pending",sa:"pending",wa:"pending",tas:"pending",nt:"pending",act:"pending"};
-var fdrVisible=false, warningsVisible=false, incidentsVisible=false, marineVisible=false;
+var fdrVisible=false, warningsVisible=false, incidentsVisible=false, marineVisible=false, cycloneVisible=false;
+var cycloneSystems = [];
+var riskCycloneEnabled = true; // elevate cyclone Warning/Watch polygon risk
 var marineWarningsData = {};
 var curFDRPeriod=1, curFDRState="all", curIncState="all";
 // Marker registries \u2014 keyed by "lat,lng" \u2014 for auto-popup on panel row click
@@ -1997,6 +2019,7 @@ function initMap(){
   incidentsLayer=L.layerGroup();
   alertsLayer=L.layerGroup();
   marineLayer=L.layerGroup();
+  cycloneLayer=L.layerGroup();
   sitesLayer = L.layerGroup().addTo(map);
   renderSites();
   var _tt=document.getElementById("theme-toggle");if(_tt)_tt.textContent=isDark?"\u2600":"\u263D";
@@ -2914,6 +2937,16 @@ var BOM_FTP_PRODUCTS = {
       NT:["IDD20320","IDD20330"]
     }
   },
+  coastal_hazard: {
+    label:"Coastal Hazard",
+    icon:"\uD83C\uDF0A",
+    color:"#4dabf7",
+    zone_color:"#4dabf7",
+    ids:{
+      NSW:["IDN21137"],VIC:["IDV21137"],QLD:["IDQ21137"],
+      SA:["IDS21137"],WA:["IDW21137"],TAS:["IDT21137"],NT:["IDD21137"]
+    }
+  },
   heatwave: {
     label:"Heatwave",
     icon:"\uD83C\uDF21",
@@ -3294,6 +3327,7 @@ function fetchBOMWarnings() {
           state:     w.state || '',
           districts: wDistricts,
           areas:     wAreas,
+          severityCode: w.severityCode || '',
           hazards:   [],
           issued:    w.issued || '',
           issuedAt:  issuedAt,
@@ -3390,6 +3424,16 @@ function fetchBOMWarnings() {
 
       // \u2500\u2500 Load marine warnings from live_data.json \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
       marineWarningsData = data.marine_warnings || {};
+
+      // ── Load cyclone tracking data from live_data.json ───────────────
+      cycloneSystems = data.cyclones || [];
+      renderCyclonePanel();
+      if(cycloneVisible) renderCycloneMap();
+      if(cycloneSystems.length === 0){
+        statusEl("cyclone-fetch-status","fetch-ok","&#10003; No active systems");
+      } else {
+        statusEl("cyclone-fetch-status","fetch-ok","&#10003; "+cycloneSystems.length+" active system"+(cycloneSystems.length>1?"s":""));
+      }
       renderMarinePanel();
       if(marineVisible) renderMarineLayer();
       var nStates = Object.keys(marineWarningsData).length;
@@ -3522,7 +3566,7 @@ function renderWarningsPanel() {
 }
 
 // Only these warning types are shown in panel and map \u2014 matches the tab buttons
-var RELEVANT_WARN_TYPES = ['thunderstorm','severe_weather','cyclone','fire_weather','heatwave'];
+var RELEVANT_WARN_TYPES = ['thunderstorm','severe_weather','fire_weather','heatwave','coastal_hazard'];
 
 function renderWarningsMap() {
   warningsLayer.clearLayers();
@@ -3538,7 +3582,11 @@ function renderWarningsMap() {
   });
 
   toRender.forEach(function(w) {
-    var coords = getDistrictCoords((w.districts||'') + ' ' + w.title, w.state);
+    // Prefer the AAC-computed coords already resolved at load time (see
+    // fetchBOMWarnings()) for warnings from a dedicated fetch — same fallback
+    // pattern already used in renderWarningsPanel(). Only legacy generic-feed
+    // items (no w.areas) fall back to the old text-search lookup.
+    var coords = w.coords || getDistrictCoords((w.districts||'') + ' ' + w.title, w.state);
     var key = Math.round(coords[0]) + ',' + Math.round(coords[1]);
     var offset = (posUsed[key]||0);
     posUsed[key] = offset + 1;
@@ -3578,42 +3626,74 @@ function renderWarningsMap() {
 
     // Draw district polygon(s) from BOM PW GeoJSON \u2014 match all named districts in the warning
     var drawnPolygon = false;
-    if (BOM_PW_DISTRICTS) {
+    if (w.areas && w.areas.length) {
+      // Dedicated AAC-accurate fetch (severe_weather, thunderstorm, coastal_hazard,
+      // heatwave, fire_weather) \u2014 draw every district whose AAC code is in this
+      // warning's own area list, regardless of that district's own state property.
+      // FIXES: a warning filed under one state's product (e.g. NSW's Severe Weather
+      // Warning) can legitimately include a district tagged with a different state
+      // (e.g. ACT's NSW_PW017) \u2014 the old text-search below required the district's
+      // state to equal the warning's state, so ACT never drew even though it was
+      // correctly listed in the warning's district text. AAC matching has no such
+      // requirement, since the AAC code itself is the source of truth.
+      var warnAacs = w.areas.map(function(a) { return a.aac; });
+      var drawAacMatches = function(geo) {
+        if (!geo) return;
+        geo.features.forEach(function(feat) {
+          var faac = feat.properties && feat.properties.AAC;
+          if (!faac || warnAacs.indexOf(faac) === -1) return;
+          L.geoJSON(feat, {
+            style: {
+              color: warnFill, weight: warnWeight, opacity: warnOpacity,
+              fillColor: warnFill, fillOpacity: warnFillOp, dashArray: warnDash
+            }
+          }).bindPopup(popHtml, { className: 'ba-popup', maxWidth: 340 })
+            .addTo(warningsLayer);
+          drawnPolygon = true;
+        });
+      };
+      if (BOM_PW_DISTRICTS) drawAacMatches(BOM_PW_DISTRICTS);
+      if (typeof BOM_ME_DISTRICTS !== 'undefined') drawAacMatches(BOM_ME_DISTRICTS);
+    } else {
+      // Legacy text-matching path \u2014 unchanged, still used by warnings without an
+      // AAC area list (currently just cyclone, still on the generic feed).
       var searchText = (w.title + ' ' + (w.text||'')).toLowerCase().replace(/\s+&\s+/g,' and ');
-      BOM_PW_DISTRICTS.features.forEach(function(feat) {
-        var dname  = (feat.properties.name || '').toLowerCase().replace(/\s+&\s+/g,' and ');
-        var dstate = (feat.properties.state || '').toUpperCase();
-        if (dstate === (w.state||'').toUpperCase() && dname.length > 3 && searchText.indexOf(dname) !== -1) {
-          L.geoJSON(feat, {
-            style: {
-              color: warnFill, weight: warnWeight, opacity: warnOpacity,
-              fillColor: warnFill, fillOpacity: warnFillOp, dashArray: warnDash
-            }
-          }).bindPopup(popHtml, { className: 'ba-popup', maxWidth: 340 })
-            .addTo(warningsLayer);
-          drawnPolygon = true;
-        }
-      });
+      if (BOM_PW_DISTRICTS) {
+        BOM_PW_DISTRICTS.features.forEach(function(feat) {
+          var dname  = (feat.properties.name || '').toLowerCase().replace(/\s+&\s+/g,' and ');
+          var dstate = (feat.properties.state || '').toUpperCase();
+          if (dstate === (w.state||'').toUpperCase() && dname.length > 3 && searchText.indexOf(dname) !== -1) {
+            L.geoJSON(feat, {
+              style: {
+                color: warnFill, weight: warnWeight, opacity: warnOpacity,
+                fillColor: warnFill, fillOpacity: warnFillOp, dashArray: warnDash
+              }
+            }).bindPopup(popHtml, { className: 'ba-popup', maxWidth: 340 })
+              .addTo(warningsLayer);
+            drawnPolygon = true;
+          }
+        });
+      }
+      // Secondary polygon pass \u2014 BOM Metropolitan and Other Forecast Areas (IDM00014)
+      // Catches districts like Sydney, Central Coast, Melbourne, Darwin etc. not in IDM00001
+      if (!drawnPolygon && typeof BOM_ME_DISTRICTS !== 'undefined' && BOM_ME_DISTRICTS) {
+        BOM_ME_DISTRICTS.features.forEach(function(feat) {
+          var dname  = (feat.properties.name || '').toLowerCase().replace(/\s+&\s+/g,' and ');
+          var dstate = (feat.properties.state || '').toUpperCase();
+          if (dstate === (w.state||'').toUpperCase() && dname.length > 3 && searchText.indexOf(dname) !== -1) {
+            L.geoJSON(feat, {
+              style: {
+                color: warnFill, weight: warnWeight, opacity: warnOpacity,
+                fillColor: warnFill, fillOpacity: warnFillOp, dashArray: warnDash
+              }
+            }).bindPopup(popHtml, { className: 'ba-popup', maxWidth: 340 })
+              .addTo(warningsLayer);
+            drawnPolygon = true;
+          }
+        });
+      }
     }
-    // Secondary polygon pass — BOM Metropolitan and Other Forecast Areas (IDM00014)
-    // Catches districts like Sydney, Central Coast, Melbourne, Darwin etc. not in IDM00001
-    if (!drawnPolygon && typeof BOM_ME_DISTRICTS !== 'undefined' && BOM_ME_DISTRICTS) {
-      BOM_ME_DISTRICTS.features.forEach(function(feat) {
-        var dname  = (feat.properties.name || '').toLowerCase().replace(/\s+&\s+/g,' and ');
-        var dstate = (feat.properties.state || '').toUpperCase();
-        if (dstate === (w.state||'').toUpperCase() && dname.length > 3 && searchText.indexOf(dname) !== -1) {
-          L.geoJSON(feat, {
-            style: {
-              color: warnFill, weight: warnWeight, opacity: warnOpacity,
-              fillColor: warnFill, fillOpacity: warnFillOp, dashArray: warnDash
-            }
-          }).bindPopup(popHtml, { className: 'ba-popup', maxWidth: 340 })
-            .addTo(warningsLayer);
-          drawnPolygon = true;
-        }
-      });
-    }
-    // Fallback to circle if no polygon matched
+// Fallback to circle if no polygon matched
     if (!drawnPolygon) {
       var circleRadius = w.cancelled ? zoneRadius * 0.7 : zoneRadius;
       L.circle([lat, lng], {
@@ -3662,6 +3742,136 @@ function toggleWarningsLayer(){
 }
 
 // \u2500\u2500 MARINE WARNINGS LAYER \u2500\u2500
+// \u2500\u2500 CYCLONE TRACKING LAYER \u2500\u2500
+// Own map layer + toggle, own side-panel section, own risk block \u2500 mirrors the
+// Marine Warnings pattern exactly (separate top-level "cyclones" JSON key, not
+// folded into bomWarnings/RELEVANT_WARN_TYPES). See build queue Phase 5.
+function toggleCycloneLayer(){
+  cycloneVisible=!cycloneVisible;
+  var btn=document.getElementById("btn-cyclone"),tog=document.getElementById("cyclone-map-toggle");
+  if(cycloneVisible){
+    renderCycloneMap();
+    cycloneLayer.addTo(map);
+    if(btn) btn.classList.add("cyclone-on");
+    if(tog) tog.classList.add("on");
+  } else {
+    map.removeLayer(cycloneLayer);
+    if(btn) btn.classList.remove("cyclone-on");
+    if(tog) tog.classList.remove("on");
+  }
+}
+
+function cycloneCatColor(cat){
+  var c = parseInt(cat, 10);
+  if(c>=5) return '#9c27b0';
+  if(c===4) return '#e91e63';
+  if(c===3) return '#ff5722';
+  if(c===2) return '#ff9800';
+  if(c===1) return '#ffc107';
+  return '#888888'; // tropical low / category unknown
+}
+
+function cxmlLatestFix(system){
+  // CXML fixes are ordered by forecast hour; hour "0" is the current position.
+  // Fall back to the first fix if hour 0 isn't present for some reason.
+  if(!system.cxml || !system.cxml.fixes || !system.cxml.fixes.length) return null;
+  var zero = system.cxml.fixes.find(function(f){ return String(f.hour) === '0'; });
+  return zero || system.cxml.fixes[0];
+}
+
+function cyclonePopupHtml(system){
+  var fix = cxmlLatestFix(system);
+  var color = fix && fix.category ? cycloneCatColor(fix.category) : '#ff4757';
+  var catLabel = fix && fix.category ? ('Category ' + fix.category) : 'Tropical Low';
+  var html = '<div>' +
+    '<div class="pu-title" style="color:'+color+'">&#127300; ' + (system.distName || 'Tropical Cyclone') + '</div>' +
+    '<span class="pu-badge" style="background:'+color+';color:#fff">' + catLabel + '</span>' +
+    '<span class="pu-badge" style="background:#333;color:#ccc">' + (system.region||'') + '</span>' +
+    '<div style="border-top:1px solid var(--border);margin:8px 0"></div>';
+  if(fix){
+    html += (fix.pressureHPa ? '<div class="pu-row"><span class="pu-key">Central pressure</span><span class="pu-val">'+fix.pressureHPa+' hPa</span></div>' : '') +
+      (fix.windSpeedKt ? '<div class="pu-row"><span class="pu-key">Max wind</span><span class="pu-val">'+fix.windSpeedKt+' kt'+(fix.windGustsKt?(' gusting '+fix.windGustsKt+' kt'):'')+'</span></div>' : '') +
+      (fix.motionSpeedKt!=null ? '<div class="pu-row"><span class="pu-key">Motion</span><span class="pu-val">'+fix.motionSpeedKt+' kt @ '+(fix.motionDirDeg!=null?fix.motionDirDeg+'\u00B0':'?')+'</span></div>' : '');
+  }
+  html += (system.issueTime ? '<div class="pu-row"><span class="pu-key">Issued</span><span class="pu-val">'+system.issueTime+'</span></div>' : '') +
+    '</div>';
+  return html;
+}
+
+function renderCycloneMap(){
+  cycloneLayer.clearLayers();
+  cycloneSystems.forEach(function(system){
+    var popHtml = cyclonePopupHtml(system);
+
+    // Threat-area polygons \u2014 Warning tier uses the DIRECT risk colour, Watch
+    // tier uses the WARNING risk colour, keeping this visually consistent with
+    // the rest of the app's risk vocabulary (matches the confirmed tier mapping:
+    // Warning polygon -> DIRECT, Watch polygon -> WARNING).
+    (system.areas && system.areas.warning || []).forEach(function(poly){
+      L.polygon(poly, {
+        color: RISK_COLOR[3], weight: 1.5, opacity: 0.8,
+        fillColor: RISK_COLOR[3], fillOpacity: 0.12
+      }).bindPopup(popHtml, {className:'ba-popup', maxWidth:320}).addTo(cycloneLayer);
+    });
+    (system.areas && system.areas.watch || []).forEach(function(poly){
+      L.polygon(poly, {
+        color: RISK_COLOR[2], weight: 1.5, opacity: 0.7,
+        fillColor: RISK_COLOR[2], fillOpacity: 0.08
+      }).bindPopup(popHtml, {className:'ba-popup', maxWidth:320}).addTo(cycloneLayer);
+    });
+
+    // Track lines \u2014 solid for Observed, dashed for Forecast (matches BOM's own
+    // two-tone track convention, confirmed against the real reference graphic).
+    (system.tracks || []).forEach(function(track){
+      L.polyline(track.points, {
+        color: '#ff4757', weight: track.trackType === 'Forecast' ? 2 : 2.5,
+        opacity: 0.9, dashArray: track.trackType === 'Forecast' ? '6 5' : null
+      }).addTo(cycloneLayer);
+    });
+
+    // Fix markers along the track, coloured by category
+    (system.fixes || []).forEach(function(fix){
+      var color = cycloneCatColor(fix.category);
+      L.circleMarker([fix.lat, fix.lon], {
+        radius: fix.fixType === 'Forecast' ? 4 : 5,
+        color: '#fff', weight: 1, fillColor: color, fillOpacity: 0.9
+      }).bindPopup(popHtml, {className:'ba-popup', maxWidth:320}).addTo(cycloneLayer);
+    });
+  });
+}
+
+function renderCyclonePanel(){
+  var el = document.getElementById("cyclone-content");
+  if(!el) return;
+  if(!cycloneSystems || !cycloneSystems.length){
+    el.innerHTML = "<div class='wp-none'>No active tropical cyclones</div>";
+    return;
+  }
+  var html = '';
+  cycloneSystems.forEach(function(system, i){
+    var fix = cxmlLatestFix(system);
+    var color = fix && fix.category ? cycloneCatColor(fix.category) : '#ff4757';
+    var catLabel = fix && fix.category ? ('Category ' + fix.category) : 'Tropical Low';
+    var rowId = 'cyclone-row-' + i;
+    html += '<div class="warn-row" style="cursor:pointer" id="'+rowId+'">' +
+      '<div class="warn-title" style="color:'+color+'">&#127300; ' + (system.distName||'Unnamed System') + ' \u2014 ' + catLabel + '</div>' +
+      '<div style="font-size:9px;color:var(--text3);margin-top:2px">' + (system.region||'') + '</div>' +
+      '</div>';
+  });
+  el.innerHTML = html;
+
+  cycloneSystems.forEach(function(system, i){
+    var row = document.getElementById('cyclone-row-' + i);
+    if(row) row.addEventListener('click', (function(sys){
+      return function(){
+        if(!cycloneVisible) toggleCycloneLayer();
+        var fix = cxmlLatestFix(sys);
+        if(fix) map.setView([fix.lat, fix.lon], 6);
+      };
+    })(system));
+  });
+}
+
 function toggleMarineLayer(){
   marineVisible=!marineVisible;
   var btn=document.getElementById("btn-marine"),tog=document.getElementById("marine-map-toggle");
@@ -4793,7 +5003,6 @@ var RISK_COLOR = { 0:'', 1:'#f0c040', 2:'#f0a500', 3:'#ff6b3d', 4:'#ff2222' };
 var riskDistanceKm = 50;
 var riskFDREnabled = true;    // include FDR in risk assessment
 var riskStormMFEnabled = true; // elevate storm warnings for AM/MF sites
-var riskFireEnabled = true;    // elevate fire weather warnings for ABC Local Radio sites only
 var riskLabelsEnabled = true;  // show site name labels on risk map markers
 
 // Current computed risks: array of {site, level, reasons:[]}
@@ -4818,6 +5027,32 @@ function pointInPolygon(lat, lng, ring) {
     }
   }
   return inside;
+}
+
+function pointInLatLonPolygon(lat, lon, ring) {
+  // ring: array of [lat, lon] pairs — NOT GeoJSON order, matches this codebase's
+  // own [lat,lon] convention (site.lat/site.lon etc). Used only for cyclone
+  // tcWarningArea/tcWatchArea polygons, which are stored this way by design
+  // (see fetch_live_data.py's parse_cyclone_gml/_parse_gml_coords).
+  var inside = false;
+  for (var i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    var lati = ring[i][0], loni = ring[i][1];
+    var latj = ring[j][0], lonj = ring[j][1];
+    if (((lati > lat) !== (latj > lat)) && (lon < (lonj - loni) * (lat - lati) / (latj - lati) + loni)) {
+      inside = !inside;
+    }
+  }
+  return inside;
+}
+
+function pointInAnyLatLonPolygon(lat, lon, polygons) {
+  // polygons: list of rings (each a list of [lat,lon] points) — cyclone threat
+  // areas are frequently multi-part/disjoint, so every ring must be checked.
+  if (!polygons) return false;
+  for (var i = 0; i < polygons.length; i++) {
+    if (pointInLatLonPolygon(lat, lon, polygons[i])) return true;
+  }
+  return false;
 }
 
 // Average-vertex centroid of a GeoJSON polygon/multipolygon (first ring only) —
@@ -5140,13 +5375,7 @@ function computeRisks() {
         var lvl = RISK_LEVEL.NONE;
         var wtype = w.type;
 
-        if (wtype === 'fire_weather') {
-          // Fire weather: ABC Local Radio sites only. Toggle off = skip entirely.
-          if (!riskFireEnabled || !siteHasABCLR(site)) return;
-          lvl = RISK_LEVEL.WARNING;
-        } else if (wtype === 'cyclone') {
-          lvl = RISK_LEVEL.DIRECT;
-        } else if (wtype === 'thunderstorm') {
+        if (wtype === 'thunderstorm') {
           // Storm warnings: AM/MF sites only. Toggle off = skip entirely.
           if (!riskStormMFEnabled || !isAM) return;
           lvl = RISK_LEVEL.WARNING;
@@ -5155,7 +5384,12 @@ function computeRisks() {
           if (!riskStormMFEnabled || !isAM) return;
           lvl = RISK_LEVEL.ADVISORY;
         } else if (wtype === 'heatwave') {
-          lvl = RISK_LEVEL.ADVISORY;
+          // Real severity tiers (from the dedicated fetch's severityCode) replace
+          // the old flat ADVISORY-for-everything behaviour: Extreme Heatwave escalates
+          // to WARNING, Severe Heatwave stays at ADVISORY. Legacy items with no
+          // severityCode (shouldn't occur once the dedicated fetch is live, kept as a
+          // safe fallback) default to the old ADVISORY behaviour.
+          lvl = (w.severityCode === 'EXT') ? RISK_LEVEL.WARNING : RISK_LEVEL.ADVISORY;
         }
 
         if (lvl === RISK_LEVEL.NONE) return;
@@ -5201,6 +5435,32 @@ function computeRisks() {
           detail: feat.properties.DIST_NAME + ' \u2014 ' + rating.FireDanger + ' (FBI ' + rating.FireBehavIndex + ')',
           type: 'fdr',
           lat: fCentroid.lat, lng: fCentroid.lng
+        });
+      });
+    }
+
+    // \u2500\u2500 5. Cyclone \u2014 polygon-first (Warning polygon -> DIRECT, Watch polygon -> WARNING) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+    // Own top-level data source (cycloneSystems), not part of bomWarnings \u2014 same
+    // separation already used for FDR above. Polygon-first principle preserved:
+    // no distance-based fallback, a site outside both polygons gets no cyclone risk
+    // at all, consistent with every other polygon-based risk in this engine.
+    if (riskCycloneEnabled && cycloneSystems && cycloneSystems.length) {
+      cycloneSystems.forEach(function(system) {
+        var lvl = RISK_LEVEL.NONE;
+        if (pointInAnyLatLonPolygon(site.lat, site.lon, system.areas && system.areas.warning)) {
+          lvl = RISK_LEVEL.DIRECT;
+        } else if (pointInAnyLatLonPolygon(site.lat, site.lon, system.areas && system.areas.watch)) {
+          lvl = RISK_LEVEL.WARNING;
+        }
+        if (lvl === RISK_LEVEL.NONE) return;
+        if (lvl > topLevel) topLevel = lvl;
+        var fix = cxmlLatestFix(system);
+        reasons.push({
+          lvl: lvl,
+          src: 'Cyclone',
+          detail: (system.distName || 'Tropical Cyclone') + (lvl === RISK_LEVEL.DIRECT ? ' \u2014 Warning area' : ' \u2014 Watch area'),
+          type: 'cyclone',
+          lat: fix ? fix.lat : site.lat, lng: fix ? fix.lon : site.lon
         });
       });
     }
@@ -5562,22 +5822,22 @@ function updateRiskRulesDisplay() {
   // Update rule labels to reflect current toggle state and slider value
   var emEl = document.getElementById('rr-emergency');
   var waEl = document.getElementById('rr-watch');
-  var fdrEl = document.getElementById('rr-fdr');
+  var cycloneEl = document.getElementById('rr-cyclone');
+    var fdrEl = document.getElementById('rr-fdr');
   var stEl = document.getElementById('rr-storm');
-  var fireEl = document.getElementById('rr-fire');
   if (emEl) emEl.textContent = (riskDistanceKm*2) + ' km \u00B7 always if inside polygon';
   if (waEl) waEl.textContent = riskDistanceKm + ' km';
   if (fdrEl) {
     fdrEl.className = 'risk-rule-val' + (riskFDREnabled ? '' : ' off');
     fdrEl.textContent = riskFDREnabled ? 'Extreme/Very High \u2192 Warning \u00B7 Catastrophic \u2192 Direct' : 'Disabled';
   }
+  if (cycloneEl) {
+    cycloneEl.className = 'risk-rule-val' + (riskCycloneEnabled ? '' : ' off');
+    cycloneEl.textContent = riskCycloneEnabled ? 'Warning polygon \u2192 Direct \u00B7 Watch polygon \u2192 Warning' : 'Disabled';
+  }
   if (stEl) {
     stEl.className = 'risk-rule-val' + (riskStormMFEnabled ? '' : ' off');
     stEl.textContent = riskStormMFEnabled ? 'Storm/Severe \u2192 Warning for AM/MF sites' : 'Disabled';
-  }
-  if (fireEl) {
-    fireEl.className = 'risk-rule-val' + (riskFireEnabled ? '' : ' off');
-    fireEl.textContent = riskFireEnabled ? 'Fire Weather \u2192 Warning for ABC Local Radio sites' : 'Disabled';
   }
   var advEl = document.getElementById('rr-advice');
   if (advEl) advEl.textContent = (typeof S !== 'undefined' ? S.advDist : 5) + ' km cap';
@@ -5612,12 +5872,12 @@ var SETTINGS_DEFAULTS = {
   incAgeSoft:  48,          // hours
   fdrEnabled:  true,
   fdrLevel:    'extreme',   // veryhigh | extreme | catastrophic
+  cycloneEnabled: true,     // elevate cyclone Warning/Watch polygon risk
   waDist:      50,          // km \u2014 Watch and Act / EW proximity (EW uses 2x)
   advDist:     5,           // km \u2014 Advice proximity hard cap
   popupLevel:  'direct',    // warning | direct | impacted
   stormEnabled: true,
   stormDist:   300,          // km — storm district proximity cap
-  fireEnabled: true,        // elevate fire weather warnings — ABC Local Radio sites only
   legendVisible: true
 };
 
@@ -5630,12 +5890,12 @@ var PRESET_SUMMER = {
   incAgeSoft:  24,
   fdrEnabled:  true,
   fdrLevel:    'veryhigh',
+  cycloneEnabled: true,
   waDist:      30,
   advDist:     10,
   popupLevel:  'warning',
   stormEnabled: true,
-  stormDist:   200,
-  fireEnabled: true
+  stormDist:   200
 };
 
 // Returns 'summer' for Oct-Mar (Australian fire season), 'winter' for Apr-Sep
@@ -5664,7 +5924,7 @@ function saveSettings() {
 
 function settingsMatch(preset) {
   var ref = preset === 'winter' ? SETTINGS_DEFAULTS : PRESET_SUMMER;
-  var keys = ['incFloor','incAgeSoft','fdrEnabled','fdrLevel','waDist','advDist','popupLevel','stormEnabled','stormDist','fireEnabled'];
+  var keys = ['incFloor','incAgeSoft','fdrEnabled','fdrLevel','waDist','advDist','popupLevel','stormEnabled','stormDist','cycloneEnabled'];
   return keys.every(function(k){ return S[k] === ref[k]; });
 }
 
@@ -5733,7 +5993,7 @@ function toggleSpToggle(key, el) {
   else if (key === 'legend') { S.legendVisible = on; var lg=document.getElementById('legend'); if(lg) lg.style.display = on ? '' : 'none'; }
   else if (key === 'fdr') { S.fdrEnabled = on; riskFDREnabled = on; var _fc=document.getElementById('ropt-fdr'); if(_fc) _fc.classList.toggle('on', on); computeRisks(); }
   else if (key === 'storm') { S.stormEnabled = on; riskStormMFEnabled = on; var _sc=document.getElementById('ropt-stormMF'); if(_sc) _sc.classList.toggle('on', on); computeRisks(); }
-  else if (key === 'fire') { S.fireEnabled = on; riskFireEnabled = on; computeRisks(); }
+  else if (key === 'cyclone') { S.cycloneEnabled = on; riskCycloneEnabled = on; computeRisks(); }
   markCustomIfNeeded();
   saveSettings();
 }
@@ -5812,13 +6072,12 @@ function applyAllSettings() {
   var fdrChip = document.getElementById('ropt-fdr');
   if (fdrChip) fdrChip.classList.toggle('on', S.fdrEnabled);
   // Storm
-  riskStormMFEnabled = S.stormEnabled;
+  riskCycloneEnabled = S.cycloneEnabled;
+  var cycloneTgl = document.getElementById('sp-tgl-cyclone');
+  if (cycloneTgl) cycloneTgl.classList.toggle('on', S.cycloneEnabled);
+    riskStormMFEnabled = S.stormEnabled;
   var stormChip = document.getElementById('ropt-stormMF');
   if (stormChip) stormChip.classList.toggle('on', S.stormEnabled);
-  // Fire
-  riskFireEnabled = S.fireEnabled;
-  var fireTgl = document.getElementById('sp-tgl-fire');
-  if (fireTgl) fireTgl.classList.toggle('on', S.fireEnabled);
   // Labels
   riskLabelsEnabled = S.labels;
   var labelsChip = document.getElementById('ropt-labels');
@@ -5846,8 +6105,8 @@ function syncSettingsUI() {
   if (fdrTgl) fdrTgl.classList.toggle('on', S.fdrEnabled);
   var stormTgl = document.getElementById('sp-tgl-storm');
   if (stormTgl) stormTgl.classList.toggle('on', S.stormEnabled);
-  var fireTgl = document.getElementById('sp-tgl-fire');
-  if (fireTgl) fireTgl.classList.toggle('on', S.fireEnabled);
+  var cycloneTgl2 = document.getElementById('sp-tgl-cyclone');
+  if (cycloneTgl2) cycloneTgl2.classList.toggle('on', S.cycloneEnabled);
   // Selects
   var incFloor = document.getElementById('sp-inc-floor');
   if (incFloor) incFloor.value = S.incFloor;
@@ -5949,7 +6208,7 @@ computeRisks = function() {
   riskDistanceKm = S.waDist;
   riskFDREnabled = S.fdrEnabled;
   riskStormMFEnabled = S.stormEnabled;
-  riskFireEnabled = S.fireEnabled;
+  riskCycloneEnabled = S.cycloneEnabled;
   _origComputeRisks();
 };
 
