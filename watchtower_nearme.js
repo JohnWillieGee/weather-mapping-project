@@ -179,10 +179,8 @@ function nearMeTypeList() {
   ];
   if (typeof BOM_FTP_PRODUCTS === 'object' && BOM_FTP_PRODUCTS) {
     Object.keys(BOM_FTP_PRODUCTS).forEach(function (k) {
-      // Fire weather is deliberately excluded — FDR (above) is the primary,
-      // more targeted fire-risk signal (desktop decision: same underlying
-      // district data, showing both would just duplicate the same warning).
-      if (k === 'fire_weather') return;
+      // Fire weather is shown, matching desktop: it's informational only here
+      // (FDR above is still the primary fire-risk signal), not excluded.
       list.push({ key: k, label: BOM_FTP_PRODUCTS[k].label, icon: BOM_FTP_PRODUCTS[k].icon, color: BOM_FTP_PRODUCTS[k].color });
     });
   }
@@ -472,12 +470,13 @@ function nearMeFlattenHazards(userLat, userLng, radiusKm, filtersOverride) {
       if (w.cancelled) return;
       if (!w.coords || w.coords.length < 2) return;
       var cat = w.type || 'other';
-      // Fire weather: superseded by the FDR section below (same underlying
-      // data, FDR is more targeted — desktop decision, mirrored here).
-      // Cyclone: superseded by the dedicated tracking-data section below,
+      // Cyclone is superseded by the dedicated tracking-data section below,
       // which uses the real Warning/Watch polygons instead of this feed's
-      // flat single-point representation.
-      if (cat === 'fire_weather' || cat === 'cyclone') return;
+      // flat single-point representation — skip the old flat entry here to
+      // avoid a duplicate card. Fire weather is shown as informational only
+      // (matches desktop): FDR is still the primary fire-risk signal, but
+      // the warning itself is visible here, not hidden.
+      if (cat === 'cyclone') return;
       if (filters.types.indexOf(cat) === -1) return;
       var sevRank = nearMeSeverityFromText(w.title);
       if (filters.severities.indexOf(sevRank) === -1) return;
