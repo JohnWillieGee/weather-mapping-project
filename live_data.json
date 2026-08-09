@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-09T04:20:46.732800+00:00",
-  "last_checked_utc": "2026-08-09T04:20:46.732800+00:00",
-  "warning_count": 15,
+  "generated_utc": "2026-08-09T04:53:48.772004+00:00",
+  "last_checked_utc": "2026-08-09T04:53:48.772004+00:00",
+  "warning_count": 16,
   "warnings": [
     {
       "pid": "",
@@ -265,6 +265,35 @@
       "hazardPhase": "UPD"
     },
     {
+      "pid": "IDS21033",
+      "title": "Severe Thunderstorm Warning for Mid North, Mount Lofty Ranges, Adelaide Metropolitan",
+      "type": "thunderstorm",
+      "state": "SA",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Clare and Gawler.",
+      "issued": "2026-08-09T13:59:40+09:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "SA_PW008",
+          "description": "Mid North",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW015",
+          "description": "Mount Lofty Ranges",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW001",
+          "description": "Adelaide Metropolitan",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
+    },
+    {
       "pid": "IDD20320",
       "title": "Extreme Fire Weather Warning for Simpson East",
       "type": "fire_weather",
@@ -286,29 +315,42 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Opp Toronto Golf Course/Wangi Rd, Rathmines",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Sun, 09 Aug 2026 04:14:59 GMT",
-        "description": "Opp Toronto Golf Course Wangi Rd, Rathmines, NSW 2283",
-        "council": "Lake Macquarie",
-        "lat": -33.031775,
-        "lng": 151.561761001,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-09T04:43:20+00:00",
+        "description": "EAST CANNINGTON, CITY OF CANNING",
+        "lat": -32.0174,
+        "lng": 115.9509,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-09T04:24:15+00:00",
+        "description": "ROEBOURNE, CITY OF KARRATHA",
+        "lat": -20.7773,
+        "lng": 117.1451,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice THREAT IS REDUCED - ORD RIVER REGENERATION RESERVE",
         "alertLevel": "Advice",
@@ -614,7 +656,7 @@
     ],
     "act": []
   },
-  "incident_count": 21,
+  "incident_count": 22,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
