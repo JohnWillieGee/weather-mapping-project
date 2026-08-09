@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-09T06:53:27.347260+00:00",
-  "last_checked_utc": "2026-08-09T06:53:27.347260+00:00",
-  "warning_count": 19,
+  "generated_utc": "2026-08-09T07:23:25.200817+00:00",
+  "last_checked_utc": "2026-08-09T07:23:25.200817+00:00",
+  "warning_count": 23,
   "warnings": [
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "09/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "09/16:57 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 09 Aug 2026 06:15:15 GMT"
+      "issued": "Sun, 09 Aug 2026 06:57:11 GMT"
     },
     {
       "pid": "",
@@ -77,6 +77,15 @@
     },
     {
       "pid": "",
+      "title": "09/16:50 EST Initial Minor Flood Warning for the Goulburn River",
+      "type": "flood",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/flood/goulburnriver.shtml",
+      "desc": "",
+      "issued": "Sun, 09 Aug 2026 06:50:43 GMT"
+    },
+    {
+      "pid": "",
       "title": "09/15:01 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
@@ -104,6 +113,15 @@
     },
     {
       "pid": "",
+      "title": "09/16:30 CST Initial Minor Flood Warning for the Onkaparinga River",
+      "type": "flood",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/flood/onkaparingariver.shtml",
+      "desc": "",
+      "issued": "Sun, 09 Aug 2026 07:00:54 GMT"
+    },
+    {
+      "pid": "",
       "title": "09/13:02 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
@@ -113,12 +131,12 @@
     },
     {
       "pid": "",
-      "title": "09/13:18 WST Warning to Sheep Graziers\nfor South Coastal, South East Coastal and Great Southern forecast districts",
+      "title": "09/15:19 WST Warning to Sheep Graziers\nfor South Coastal, South East Coastal and Great Southern forecast districts",
       "type": "other",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Sun, 09 Aug 2026 05:18:51 GMT"
+      "issued": "Sun, 09 Aug 2026 07:19:32 GMT"
     },
     {
       "pid": "",
@@ -239,18 +257,18 @@
     },
     {
       "pid": "IDS21037",
-      "title": "Severe Weather Warning for North West Pastoral, North East Pastoral, West Coast, Eastern Eyre Peninsula, Lower Eyre Peninsula, Flinders, Mid North, Yorke Peninsula",
+      "title": "Severe Weather Warning for North West Pastoral, North East Pastoral, West Coast, Eastern Eyre Peninsula, Flinders, Mid North, Yorke Peninsula",
       "type": "severe_weather",
       "state": "SA",
       "link": "",
-      "desc": "DAMAGING WINDS averaging 55 to 65 km/h with peak gusts of around 90 km/h are possible about the western and southern Eyre Peninsula from late Sunday morning. DAMAGING WIND GUSTS of around 90 km/h are also possible further inland from Sunday afternoon, particularly over the eastern Eyre Peninsula and northern Yorke Peninsula. Conditions are forecast to ease below warning thresholds by late Sunday evening. DAMAGING WINDS averaging 60 to 70 km/h with peak gusts of around 100 km/h are likely about t",
-      "issued": "2026-08-09T10:22:21+09:30",
+      "desc": "DAMAGING WINDS averaging 55 to 65 km/h with peak gusts of around 90 km/h are possible about coastal parts of western Eyre Peninsula. DAMAGING WIND GUSTS of around 90 km/h are also possible for the northern Yorke Peninsula and further inland in the North West Pastoral. Conditions are forecast to ease below warning thresholds by late Sunday evening. DAMAGING WINDS averaging 60 to 75 km/h with peak gusts of around 110 km/h are likely about the higher parts of the Flinders Ranges from late Sunday af",
+      "issued": "2026-08-09T16:38:07+09:30",
       "cancelled": false,
       "areas": [
         {
           "aac": "SA_PW013",
           "description": "North West Pastoral",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "SA_PW014",
@@ -265,11 +283,6 @@
         {
           "aac": "SA_PW011",
           "description": "Eastern Eyre Peninsula",
-          "phase": "NEW"
-        },
-        {
-          "aac": "SA_PW012",
-          "description": "Lower Eyre Peninsula",
           "phase": "REN"
         },
         {
@@ -289,51 +302,84 @@
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDS21037",
+      "title": "Severe Weather Warning for Lower Eyre Peninsula",
+      "type": "severe_weather",
+      "state": "SA",
+      "link": "",
+      "desc": "",
+      "issued": "2026-08-09T16:38:07+09:30",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "SA_PW012",
+          "description": "Lower Eyre Peninsula",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for Mid North, Mount Lofty Ranges, Riverland, Murraylands, Upper South East, Adelaide Metropolitan",
+      "title": "Severe Thunderstorm Warning for Mount Lofty Ranges, Murraylands, Upper South East",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Murray Bridge, Gawler, Victor Harbor, Blanchetown, Mannum and Tailem Bend.",
-      "issued": "2026-08-09T15:20:30+09:30",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Murray Bridge, Victor Harbor, Mannum and Tailem Bend. Severe thunderstorms are no longer occurring in the Adelaide Metropolitan, Mid North and Riverland districts and the warning for these districts is CANCELLED.",
+      "issued": "2026-08-09T16:48:11+09:30",
       "cancelled": false,
       "areas": [
         {
-          "aac": "SA_PW008",
-          "description": "Mid North",
-          "phase": "NEW"
-        },
-        {
           "aac": "SA_PW015",
           "description": "Mount Lofty Ranges",
-          "phase": "NEW"
-        },
-        {
-          "aac": "SA_PW006",
-          "description": "Riverland",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "SA_PW007",
           "description": "Murraylands",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "SA_PW004",
           "description": "Upper South East",
-          "phase": "NEW"
+          "phase": "REN"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDS21033",
+      "title": "Severe Thunderstorm Warning for Riverland, Mid North, Adelaide Metropolitan",
+      "type": "thunderstorm",
+      "state": "SA",
+      "link": "",
+      "desc": "",
+      "issued": "2026-08-09T16:48:11+09:30",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "SA_PW006",
+          "description": "Riverland",
+          "phase": "CAN"
+        },
+        {
+          "aac": "SA_PW008",
+          "description": "Mid North",
+          "phase": "CAN"
         },
         {
           "aac": "SA_PW001",
           "description": "Adelaide Metropolitan",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDD20320",
@@ -394,21 +440,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-09T06:22:19+00:00",
-        "description": "KANOWNA, CITY OF KALGOORLIE-BOULDER",
-        "lat": -30.5813,
-        "lng": 121.4347,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire Advice THREAT IS REDUCED - DURACK",
         "alertLevel": "Advice",
         "status": "active",
@@ -434,21 +465,6 @@
         "description": "",
         "lat": -16.3166,
         "lng": 128.2577,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-09T06:07:51+00:00",
-        "description": "KAMBALDA WEST, SHIRE OF COOLGARDIE",
-        "lat": -31.2061,
-        "lng": 121.6255,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -636,6 +652,51 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - SOUTH TCE, THE GAP",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-09T07:03:02+00:00",
+        "description": "SOUTH TCE, THE GAP",
+        "lat": -23.7065,
+        "lng": 133.8802,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - DESERT SPRINGS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-09T07:00:27+00:00",
+        "description": "DESERT SPRINGS",
+        "lat": -23.7063,
+        "lng": 133.8804,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - DESERT SPRINGS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-09T07:00:18+00:00",
+        "description": "DESERT SPRINGS",
+        "lat": -23.7063,
+        "lng": 133.8804,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - Unknown",
         "alertLevel": "Advice",
         "status": "active",
@@ -741,23 +802,7 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [
-      {
-        "title": "STRUCTURE FIRE - TURNER",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Fire",
-        "updated": "2026-08-09T05:50:44+00:00",
-        "description": "TURNER",
-        "lat": -35.2739,
-        "lng": 149.1263,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      }
-    ]
+    "act": []
   },
   "incident_count": 26,
   "nsw_alert_zones": [],
@@ -3798,11 +3843,11 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-08-09T06:15:00Z",
+      "issued_utc": "2026-08-09T06:56:59Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Central Coast, East Gippsland Coast and Port Phillip",
+        "Strong Wind Warning for Sunday for Port Phillip, Central Coast and East Gippsland Coast",
         "Gale Warning for Monday for East Gippsland Coast",
-        "Strong Wind Warning for Monday for West Coast, Central Coast, Central Gippsland Coast, Port Phillip and Western Port"
+        "Strong Wind Warning for Monday for West Coast, Central Coast and Central Gippsland Coast"
       ],
       "hazards": [
         {
