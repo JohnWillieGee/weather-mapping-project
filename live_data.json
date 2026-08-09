@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-09T05:23:30.465798+00:00",
-  "last_checked_utc": "2026-08-09T05:23:30.465798+00:00",
+  "generated_utc": "2026-08-09T05:53:26.392649+00:00",
+  "last_checked_utc": "2026-08-09T05:53:26.392649+00:00",
   "warning_count": 16,
   "warnings": [
     {
@@ -266,12 +266,12 @@
     },
     {
       "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for Mid North, Mount Lofty Ranges, Murraylands, Upper South East, Adelaide Metropolitan",
+      "title": "Severe Thunderstorm Warning for Mid North, Mount Lofty Ranges, Riverland, Murraylands, Upper South East, Adelaide Metropolitan",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Clare, Gawler and Victor Harbor.",
-      "issued": "2026-08-09T14:51:07+09:30",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Murray Bridge, Gawler, Victor Harbor, Blanchetown, Mannum and Tailem Bend.",
+      "issued": "2026-08-09T15:20:30+09:30",
       "cancelled": false,
       "areas": [
         {
@@ -282,6 +282,11 @@
         {
           "aac": "SA_PW015",
           "description": "Mount Lofty Ranges",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW006",
+          "description": "Riverland",
           "phase": "NEW"
         },
         {
@@ -325,12 +330,60 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Blackwood Cct, Cameron Park",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 09 Aug 2026 05:50:59 GMT",
+        "description": "Opp, Blackwood Cct, Cameron Park, NSW 2285",
+        "council": "Lake Macquarie",
+        "lat": -32.901715,
+        "lng": 151.604661,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Edward St, Moree",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 09 Aug 2026 05:50:59 GMT",
+        "description": "Edward St, Moree, NSW 2400",
+        "council": "Moree Plains",
+        "lat": -29.466641,
+        "lng": 149.835672,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-09T05:17:59+00:00",
+        "description": "PIPPINGARRA, TOWN OF PORT HEDLAND",
+        "lat": -20.3728,
+        "lng": 118.8278,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Fire",
         "alertLevel": "",
@@ -559,6 +612,36 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - COOLALINGA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-09T05:44:54+00:00",
+        "description": "COOLALINGA",
+        "lat": -12.5258,
+        "lng": 131.0495,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - BERTRAM RD, ZUCCOLI",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-09T05:27:52+00:00",
+        "description": "BERTRAM RD, ZUCCOLI",
+        "lat": -12.5166,
+        "lng": 130.9973,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - KARGARU INTERNAL -, TENNANT CREEK",
         "alertLevel": "Advice",
         "status": "active",
@@ -657,7 +740,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-08-09T05:20:00+00:00",
+        "updated": "2026-08-09T05:49:00+00:00",
         "description": "TURNER",
         "lat": -35.2739,
         "lng": 149.1263,
@@ -671,8 +754,8 @@
         "status": "active",
         "type": "Structure Fire",
         "size": "",
-        "agency": "Fire - Ambulance",
-        "updated": "2026-08-09T05:17:27+00:00",
+        "agency": "Fire",
+        "updated": "2026-08-09T05:46:44+00:00",
         "description": "TURNER",
         "lat": -35.2739,
         "lng": 149.1263,
@@ -682,7 +765,7 @@
       }
     ]
   },
-  "incident_count": 23,
+  "incident_count": 28,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
