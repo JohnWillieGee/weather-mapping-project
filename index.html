@@ -3272,21 +3272,35 @@ function fetchBOMWarnings() {
           }catch(e){}
         }
         var wTitle = w.title || 'BOM Warning';
-        var isCancelled = /cancell?ation|cancelled|cancel/i.test(wTitle);
+        // Warnings from the dedicated AAC-accurate fetch (e.g. severe_weather, see
+        // fetch_live_data.py's parse_bom_hazard_xml()) carry a precise "areas" list
+        // and an explicit "cancelled" flag — prefer both over the legacy text
+        // heuristics, which stay in place unchanged for warnings still coming from
+        // the generic feed (no "areas" field).
+        var wAreas = Array.isArray(w.areas) ? w.areas : [];
+        var isCancelled = (typeof w.cancelled === 'boolean')
+          ? w.cancelled
+          : /cancell?ation|cancelled|cancel/i.test(wTitle);
         if (isCancelled) color = '#888888';
+        var wCoords = wAreas.length ? coordsForAacAreas(wAreas) : null;
+        if (!wCoords) wCoords = getDistrictCoords((w.desc||'') + ' ' + wTitle, w.state);
+        var wDistricts = wAreas.length
+          ? wAreas.map(function(a){ return a.description; }).filter(Boolean).join(', ')
+          : (w.desc ? extractDistricts(w.desc) : '');
         bomWarnings.push({
           pid:       w.pid || '',
           title:     wTitle,
           type:      type,
           state:     w.state || '',
-          districts: w.desc ? extractDistricts(w.desc) : '',
+          districts: wDistricts,
+          areas:     wAreas,
           hazards:   [],
           issued:    w.issued || '',
           issuedAt:  issuedAt,
           text:      w.desc || '',
           link:       w.link || 'https://www.bom.gov.au/australia/warnings/',
           direct_url: w.direct_url || '',
-          coords:    getDistrictCoords((w.desc||'') + ' ' + wTitle, w.state),
+          coords:    wCoords,
           color:     color,
           cancelled: isCancelled
         });
@@ -4806,6 +4820,45 @@ function pointInPolygon(lat, lng, ring) {
   return inside;
 }
 
+// Average-vertex centroid of a GeoJSON polygon/multipolygon (first ring only) —
+// same approximation already used inline for FDR district markers; factored out
+// here so the AAC-based BOM-warning coordinate lookup below can reuse it.
+function geometryCentroid(geometry) {
+  if (!geometry) return null;
+  var ring = geometry.type === 'Polygon' ? geometry.coordinates[0] :
+             geometry.type === 'MultiPolygon' ? geometry.coordinates[0][0] : null;
+  if (!ring || !ring.length) return null;
+  var lats = 0, lngs = 0, n = 0;
+  ring.forEach(function(c) { lngs += c[0]; lats += c[1]; n++; });
+  return n ? [lats / n, lngs / n] : null;
+}
+
+// Direct AAC-code coordinate lookup for warnings from the dedicated hazard-schema
+// fetch (w.areas present — see fetch_live_data.py's parse_bom_hazard_xml()).
+// Matches BOM's own district AAC codes exactly against BOM_PW_DISTRICTS / BOM_ME_DISTRICTS
+// — no text/name guessing, so this can't repeat the Tasmania/NT district mismatch bug.
+// Returns the average centroid across every matched district (marker sits in the
+// middle of the warned area when multiple districts are covered), or null if no
+// AAC in the list matches a known district (caller should fall back to text search).
+function coordsForAacAreas(areas) {
+  if (!areas || !areas.length) return null;
+  var wanted = areas.map(function(a) { return a.aac; }).filter(Boolean);
+  if (!wanted.length) return null;
+  var lats = 0, lngs = 0, n = 0;
+  function scan(geo) {
+    if (!geo || !geo.features) return;
+    geo.features.forEach(function(feat) {
+      var faac = feat.properties && feat.properties.AAC;
+      if (!faac || wanted.indexOf(faac) === -1) return;
+      var c = geometryCentroid(feat.geometry);
+      if (c) { lats += c[0]; lngs += c[1]; n++; }
+    });
+  }
+  scan(BOM_PW_DISTRICTS);
+  if (typeof BOM_ME_DISTRICTS !== 'undefined') scan(BOM_ME_DISTRICTS);
+  return n ? [lats / n, lngs / n] : null;
+}
+
 function pointInGeoJSONPolygon(lat, lng, geometry) {
   if (!geometry) return false;
   if (geometry.type === 'Polygon') {
@@ -5021,40 +5074,65 @@ function computeRisks() {
       bomWarnings.filter(function(w) {
         return !w.cancelled && RELEVANT_WARN_TYPES.indexOf(w.type) !== -1;
       }).forEach(function(w) {
-        // Primary match: check if the warning's BOM district polygon contains this site
-        // Uses same BOM_PW_DISTRICTS GeoJSON as FDR for consistency
         var inDistrict = false;
-        if (BOM_PW_DISTRICTS && w.state) {
-          BOM_PW_DISTRICTS.features.forEach(function(feat) {
-            if (inDistrict) return;
-            var dstate = (feat.properties.state || '').toUpperCase();
-            var dname  = (feat.properties.name  || '').toLowerCase();
-            var wstate = w.state.toUpperCase();
-            // District must be in same state as warning
-            if (dstate !== wstate) return;
-            // District name must appear in warning title or districts field
-            // Normalise & vs and so "North West Slopes & Plains" matches "North West Slopes and Plains"
-            var dnorm  = dname.replace(/\s+&\s+/g,' and ');
-            var searchText = ((w.districts || '') + ' ' + (w.title || '')).toLowerCase().replace(/\s+&\s+/g,' and ');
-            if (dnorm.length > 3 && searchText.indexOf(dnorm) !== -1) {
-              // Check if site is inside this district polygon
-              if (pointInGeoJSONPolygon(site.lat, site.lon, feat.geometry)) {
-                inDistrict = true;
-              }
-            }
-          });
-        }
 
-        // Fallback: state match + rough proximity (catches warnings with no district name)
-        if (!inDistrict) {
-          var stateMatch = !w.state || w.state.toUpperCase() === (site.state||'').toUpperCase();
-          var distToWarn = haversineKm(site.lat, site.lon, w.coords[0], w.coords[1]);
-          if (!stateMatch && distToWarn > 400) return;
-          // Storm/severe use the user-configured storm distance slider
-          var wtype0 = w.type;
-          var proxLimit = (wtype0 === 'thunderstorm' || wtype0 === 'severe_weather') ? S.stormDist : 300;
-          if (distToWarn > proxLimit) return;
-          inDistrict = true; // fallback matched
+        if (w.areas && w.areas.length) {
+          // Dedicated AAC-accurate fetch (e.g. severe_weather) — match directly on
+          // the AAC codes BOM itself assigned to this warning. No text/name guessing,
+          // and no proximity fallback: these are BOM's own precise district codes for
+          // this exact warning, so a site outside every matched polygon genuinely
+          // isn't in the warned area.
+          var warnAacs = w.areas.map(function(a) { return a.aac; });
+          function scanAac(geo) {
+            if (inDistrict || !geo) return;
+            geo.features.forEach(function(feat) {
+              if (inDistrict) return;
+              var faac = feat.properties && feat.properties.AAC;
+              if (!faac || warnAacs.indexOf(faac) === -1) return;
+              if (pointInGeoJSONPolygon(site.lat, site.lon, feat.geometry)) inDistrict = true;
+            });
+          }
+          if (BOM_PW_DISTRICTS) scanAac(BOM_PW_DISTRICTS);
+          if (typeof BOM_ME_DISTRICTS !== 'undefined') scanAac(BOM_ME_DISTRICTS);
+        } else {
+          // Legacy text-matching path — unchanged, still used by every warning type
+          // that doesn't yet have a dedicated AAC fetch (thunderstorm, cyclone, heatwave,
+          // fire_weather all still come from the generic feed at this point).
+
+          // Primary match: check if the warning's BOM district polygon contains this site
+          // Uses same BOM_PW_DISTRICTS GeoJSON as FDR for consistency
+          if (BOM_PW_DISTRICTS && w.state) {
+            BOM_PW_DISTRICTS.features.forEach(function(feat) {
+              if (inDistrict) return;
+              var dstate = (feat.properties.state || '').toUpperCase();
+              var dname  = (feat.properties.name  || '').toLowerCase();
+              var wstate = w.state.toUpperCase();
+              // District must be in same state as warning
+              if (dstate !== wstate) return;
+              // District name must appear in warning title or districts field
+              // Normalise & vs and so "North West Slopes & Plains" matches "North West Slopes and Plains"
+              var dnorm  = dname.replace(/\s+&\s+/g,' and ');
+              var searchText = ((w.districts || '') + ' ' + (w.title || '')).toLowerCase().replace(/\s+&\s+/g,' and ');
+              if (dnorm.length > 3 && searchText.indexOf(dnorm) !== -1) {
+                // Check if site is inside this district polygon
+                if (pointInGeoJSONPolygon(site.lat, site.lon, feat.geometry)) {
+                  inDistrict = true;
+                }
+              }
+            });
+          }
+
+          // Fallback: state match + rough proximity (catches warnings with no district name)
+          if (!inDistrict) {
+            var stateMatch = !w.state || w.state.toUpperCase() === (site.state||'').toUpperCase();
+            var distToWarn = haversineKm(site.lat, site.lon, w.coords[0], w.coords[1]);
+            if (!stateMatch && distToWarn > 400) return;
+            // Storm/severe use the user-configured storm distance slider
+            var wtype0 = w.type;
+            var proxLimit = (wtype0 === 'thunderstorm' || wtype0 === 'severe_weather') ? S.stormDist : 300;
+            if (distToWarn > proxLimit) return;
+            inDistrict = true; // fallback matched
+          }
         }
 
         if (!inDistrict) return;
