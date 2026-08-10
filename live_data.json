@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-10T10:53:26.163319+00:00",
-  "last_checked_utc": "2026-08-10T10:53:26.163319+00:00",
+  "generated_utc": "2026-08-10T11:23:29.714085+00:00",
+  "last_checked_utc": "2026-08-10T11:23:29.714085+00:00",
   "warning_count": 24,
   "warnings": [
     {
@@ -131,12 +131,12 @@
     },
     {
       "pid": "",
-      "title": "10/16:04 EST Marine Wind Warning Summary for Queensland",
+      "title": "10/21:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 10 Aug 2026 06:04:45 GMT"
+      "issued": "Mon, 10 Aug 2026 11:00:15 GMT"
     },
     {
       "pid": "",
@@ -176,12 +176,12 @@
     },
     {
       "pid": "",
-      "title": "10/14:04 WST Marine Wind Warning Summary for Western Australia",
+      "title": "10/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 10 Aug 2026 06:04:46 GMT"
+      "issued": "Mon, 10 Aug 2026 11:01:18 GMT"
     },
     {
       "pid": "",
@@ -287,24 +287,7 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Buchan St, Ulladulla",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 10 Aug 2026 10:50:59 GMT",
-        "description": "Buchan St, Ulladulla, NSW 2539",
-        "council": "Shoalhaven",
-        "lat": -35.34905,
-        "lng": 150.47865,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [
       {
@@ -326,16 +309,16 @@
     "tas": [],
     "wa": [
       {
-        "title": "Fire",
-        "alertLevel": "",
+        "title": "Structure Fire Advice IN WILLETTON IN THE CITY OF CANNING",
+        "alertLevel": "Advice",
         "status": "active",
-        "type": "Bush Fire",
+        "type": "Structure Fire",
         "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-10T10:25:07+00:00",
-        "description": "ALBANY, CITY OF ALBANY",
-        "lat": -35.0257,
-        "lng": 117.8781,
+        "agency": "DFES-WARN",
+        "updated": "2026-08-10T10:37:49.165+00:00",
+        "description": "",
+        "lat": -32.0514,
+        "lng": 115.8806,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -347,7 +330,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-10T10:11:42+00:00",
+        "updated": "2026-08-10T10:30:22+00:00",
         "description": "GNANGARA, CITY OF WANNEROO",
         "lat": -31.7655,
         "lng": 115.8629,
@@ -765,7 +748,7 @@
     ],
     "act": []
   },
-  "incident_count": 31,
+  "incident_count": 30,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3743,25 +3726,6 @@
     }
   },
   "marine_warnings": {
-    "QLD": {
-      "state": "QLD",
-      "product": "IDQ20085",
-      "issued_utc": "2026-08-10T06:04:34Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Sunshine Coast Waters: Double Island Point to Cape Moreton"
-          ],
-          "aac_codes": [
-            "QLD_MW012"
-          ],
-          "summary": "Sunshine Coast Waters"
-        }
-      ]
-    },
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
@@ -3851,10 +3815,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-08-10T06:04:36Z",
+      "issued_utc": "2026-08-10T11:01:00Z",
       "overview": [
-        "Strong Wind Warning for Monday for Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast, Eucla Coast, Perth Local Waters, Melville Waters and Gascoyne Coast",
-        "Strong Wind Warning for Tuesday for Pilbara Coast West, Ningaloo Coast, Albany Coast, Geraldton Coast, Bunbury Geographe Coast, Leeuwin Coast, Gascoyne Coast, Esperance Coast and Eucla Coast"
+        "Strong Wind Warning for Monday for Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast, Eucla Coast and Perth Local Waters",
+        "Strong Wind Warning for Tuesday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
       ],
       "hazards": [
         {
@@ -3870,8 +3834,7 @@
             "Albany Coast: Walpole to Bremer Bay",
             "Esperance Coast: Bremer Bay to Israelite Bay",
             "Eucla Coast: Israelite Bay to WA-SA Border",
-            "Perth Local Waters",
-            "Melville Waters"
+            "Perth Local Waters"
           ],
           "aac_codes": [
             "WA_MW006",
@@ -3883,10 +3846,9 @@
             "WA_MW012",
             "WA_MW013",
             "WA_MW014",
-            "WA_MW015",
-            "WA_MW016"
+            "WA_MW015"
           ],
-          "summary": "Perth Local Waters, Melville Waters, Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
+          "summary": "Perth Local Waters, Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
         }
       ]
     },
