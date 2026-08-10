@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-10T15:23:23.975544+00:00",
-  "last_checked_utc": "2026-08-10T15:23:23.975544+00:00",
-  "warning_count": 22,
+  "generated_utc": "2026-08-10T15:53:20.070888+00:00",
+  "last_checked_utc": "2026-08-10T15:53:20.070888+00:00",
+  "warning_count": 23,
   "warnings": [
     {
       "pid": "",
@@ -140,6 +140,15 @@
     },
     {
       "pid": "",
+      "title": "11/01:15 CST Marine Wind Warning Summary for South Australia",
+      "type": "wind",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
+      "desc": "",
+      "issued": "Mon, 10 Aug 2026 15:45:57 GMT"
+    },
+    {
+      "pid": "",
       "title": "10/10:59 CST Final Flood Warning for the Onkaparinga River",
       "type": "flood",
       "state": "SA",
@@ -269,24 +278,7 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Throsby Dr, Gwynneville",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 10 Aug 2026 15:18:58 GMT",
-        "description": "Throsby Dr, Gwynneville, NSW 2500",
-        "council": "Wollongong",
-        "lat": -34.420022,
-        "lng": 150.888510001,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [
       {
@@ -307,21 +299,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-10T10:11:23+00:00",
-        "description": "WILLETTON, CITY OF CANNING",
-        "lat": -32.0523,
-        "lng": 115.8797,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -717,7 +694,7 @@
     ],
     "act": []
   },
-  "incident_count": 29,
+  "incident_count": 27,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3772,6 +3749,39 @@
             "VIC_MW003"
           ],
           "summary": "Central Coast and Central Gippsland Coast"
+        }
+      ]
+    },
+    "SA": {
+      "state": "SA",
+      "product": "IDS20201",
+      "issued_utc": "2026-08-10T15:45:50Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Far West Coast: WA-SA Border to Fowlers Bay",
+            "Upper West Coast: Fowlers Bay to Elliston",
+            "Lower West Coast: Elliston to Cape Carnot",
+            "Central Coast",
+            "South Central Coast",
+            "Spencer Gulf",
+            "Upper South East Coast: Murray Mouth to Cape Jaffa",
+            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
+          ],
+          "aac_codes": [
+            "SA_MW001",
+            "SA_MW002",
+            "SA_MW003",
+            "SA_MW004",
+            "SA_MW008",
+            "SA_MW005",
+            "SA_MW009",
+            "SA_MW010"
+          ],
+          "summary": "Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast, Spencer Gulf, Upper South East Coast and Lower South East Coast"
         }
       ]
     },
