@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-10T00:23:21.043396+00:00",
-  "last_checked_utc": "2026-08-10T00:23:21.043396+00:00",
-  "warning_count": 23,
+  "generated_utc": "2026-08-10T00:53:23.696556+00:00",
+  "last_checked_utc": "2026-08-10T00:53:23.696556+00:00",
+  "warning_count": 24,
   "warnings": [
     {
       "pid": "",
@@ -176,14 +176,19 @@
     },
     {
       "pid": "IDN21037",
-      "title": "Severe Weather Warning for Mid North Coast, Hunter, Northern Tablelands, Illawarra, South Coast, Central Tablelands, Southern Tablelands, North West Slopes and Plains, South West Slopes, Snowy Mountains, Australian Capital Territory",
+      "title": "Severe Weather Warning for Northern Rivers, Mid North Coast, Hunter, Northern Tablelands, Illawarra, South Coast, Central Tablelands, Southern Tablelands, North West Slopes and Plains, Snowy Mountains",
       "type": "severe_weather",
       "state": "NSW",
       "link": "",
-      "desc": "For SNOWY MOUNTAINS above 1500 metres: DAMAGING WINDS averaging 60 to 70 km/h with peak gusts in excess of 90 km/h are likley today, easing towards the evening. For ALPINE AREAS above 1900 metres: DAMAGING WINDS averaging 80 to 90 km/h with peak gusts in excess of 125 km/h are possible however the risk is expected to easing by late morning. For the GREAT DIVIDING RANGE broadly: DAMAGING WINDS averaging 60 to 70 km/h with peak gusts in excess of 90 km/h are possible this morning, becoming more li",
-      "issued": "2026-08-10T04:19:48+10:00",
+      "desc": "For the HUNTER VALLEY, including NEWCASTLE: DAMAGING WINDS averaging 55 to 65 km/h with peak gusts around 90 km/h are likely this afternoon, easing into the evening. For the ILLAWARRA COAST, including WOLLONGONG: DAMAGING WINDS averaging 55 to 65 km/h with peak gusts around 90 km/h are possible this morning and afternoon, however are more likely from late this evening into early Tuesday morning. For ALPINE AREAS above 1800 metres: DAMAGING WINDS averaging 90 to 100 km/h with peak gusts around 12",
+      "issued": "2026-08-10T10:21:43+10:00",
       "cancelled": false,
       "areas": [
+        {
+          "aac": "NSW_PW001",
+          "description": "Northern Rivers",
+          "phase": "NEW"
+        },
         {
           "aac": "NSW_PW002",
           "description": "Mid North Coast",
@@ -225,18 +230,51 @@
           "phase": "REN"
         },
         {
-          "aac": "NSW_PW013",
-          "description": "South West Slopes",
-          "phase": "REN"
-        },
-        {
           "aac": "NSW_PW010",
           "description": "Snowy Mountains",
           "phase": "REN"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDN21037",
+      "title": "Severe Weather Warning for South West Slopes, Australian Capital Territory",
+      "type": "severe_weather",
+      "state": "NSW",
+      "link": "",
+      "desc": "",
+      "issued": "2026-08-10T10:21:43+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "NSW_PW013",
+          "description": "South West Slopes",
+          "phase": "CAN"
         },
         {
           "aac": "NSW_PW017",
           "description": "Australian Capital Territory",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
+    },
+    {
+      "pid": "IDV21037",
+      "title": "Severe Weather Warning for East Gippsland",
+      "type": "severe_weather",
+      "state": "VIC",
+      "link": "",
+      "desc": "DAMAGING WINDS averaging 60 to 70 km/h with peak gusts of around 100 km/h are likely to develop this evening about the Gippsland coastline east of Orbost. Winds are expected to ease by sunrise tomorrow morning. Several Flood Watches and Warnings are current for Victoria. Please refer to https://www.bom.gov.au/weather-and-climate/warnings-and-alerts Locations which may be affected include Mallacoota. Severe weather is no longer occurring in the North East district and the warning for this distric",
+      "issued": "2026-08-10T10:42:49+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "VIC_PW005",
+          "description": "East Gippsland",
           "phase": "REN"
         }
       ],
@@ -245,51 +283,17 @@
     },
     {
       "pid": "IDV21037",
-      "title": "Severe Weather Warning for North East, East Gippsland",
-      "type": "severe_weather",
-      "state": "VIC",
-      "link": "",
-      "desc": "DAMAGING WINDS averaging 60 to 70 km/h with peak gusts of around 100 km/h are possible about far eastern Alpine areas. Conditions are expected to ease by late morning. Several Flood Watches and Warnings are current for Victoria. Please refer to https://www.bom.gov.au/weather-and-climate/warnings-and-alerts Significant observations to 4:00 am AEST Monday include: 161 mm of rainfall recorded at Mount Buffalo Chalet since 9:00 am on Sunday. 128 mm of rainfall recorded at Strathbogie North since 9:0",
-      "issued": "2026-08-10T04:28:38+10:00",
-      "cancelled": false,
-      "areas": [
-        {
-          "aac": "VIC_PW004",
-          "description": "North East",
-          "phase": "UPD"
-        },
-        {
-          "aac": "VIC_PW005",
-          "description": "East Gippsland",
-          "phase": "UPD"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "UPD"
-    },
-    {
-      "pid": "IDV21037",
-      "title": "Severe Weather Warning for North Central, Central, West and South Gippsland",
+      "title": "Severe Weather Warning for North East",
       "type": "severe_weather",
       "state": "VIC",
       "link": "",
       "desc": "",
-      "issued": "2026-08-10T04:28:38+10:00",
+      "issued": "2026-08-10T10:42:49+10:00",
       "cancelled": true,
       "areas": [
         {
-          "aac": "VIC_PW008",
-          "description": "North Central",
-          "phase": "CAN"
-        },
-        {
-          "aac": "VIC_PW007",
-          "description": "Central",
-          "phase": "CAN"
-        },
-        {
-          "aac": "VIC_PW006",
-          "description": "West and South Gippsland",
+          "aac": "VIC_PW004",
+          "description": "North East",
           "phase": "CAN"
         }
       ],
@@ -331,27 +335,11 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 10 Aug 2026 00:18:59 GMT",
+        "updated": "Mon, 10 Aug 2026 00:50:59 GMT",
         "description": "LINGS RD, BUTTAI 2323",
         "council": "Cessnock",
         "lat": -32.82875,
         "lng": 151.563338,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "SHAWS RD, DEEPWATER",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Mon, 10 Aug 2026 00:18:59 GMT",
-        "description": "SHAWS RD, DEEPWATER 2371",
-        "council": "Glen Innes Severn",
-        "lat": -29.4774459999999,
-        "lng": 152.022998999,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -377,6 +365,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-10T00:24:28+00:00",
+        "description": "BROOME, SHIRE OF BROOME",
+        "lat": -17.9638,
+        "lng": 122.231,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - WUNAAMIN CONSERVATION PARK",
         "alertLevel": "Advice",
@@ -646,21 +649,6 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-01T00:37:44+00:00",
-        "description": "ORD RIVER, SHIRE OF HALLS CREEK",
-        "lat": -17.6029,
-        "lng": 128.8184,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
       }
     ],
     "nt": [
@@ -688,8 +676,8 @@
         "agency": "Bushfires NT",
         "updated": "2026-08-09T00:30:00+00:00",
         "description": "Barkly Highway, WARUMUNGU",
-        "lat": -19.3217,
-        "lng": 134.4178,
+        "lat": -19.258,
+        "lng": 134.3879,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -703,8 +691,8 @@
         "agency": "Bushfires NT",
         "updated": "2026-08-09T00:16:00+00:00",
         "description": "Barkly Highway, TABLELANDS",
-        "lat": -19.5277,
-        "lng": 135.5094,
+        "lat": -19.5237,
+        "lng": 135.5168,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -727,7 +715,7 @@
     ],
     "act": []
   },
-  "incident_count": 26,
+  "incident_count": 25,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
