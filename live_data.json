@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-10T01:53:28.014727+00:00",
-  "last_checked_utc": "2026-08-10T01:53:28.014727+00:00",
+  "generated_utc": "2026-08-10T02:23:22.567136+00:00",
+  "last_checked_utc": "2026-08-10T02:23:22.567136+00:00",
   "warning_count": 24,
   "warnings": [
     {
       "pid": "",
-      "title": "10/11:49 EST Marine Wind Warning Summary for New South Wales",
+      "title": "10/11:50 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 10 Aug 2026 01:49:23 GMT"
+      "issued": "Mon, 10 Aug 2026 01:50:31 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "IDV35010",
-      "title": "09/11:29 EST Flood Watch for parts of North East, Gippsland and Central Victoria",
+      "title": "10/12:10 EST Flood Watch for parts of the North East and Central Victoria",
       "type": "flood",
       "state": "VIC",
       "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDV35010.html",
       "desc": "",
-      "issued": "Sun, 09 Aug 2026 01:29:50 GMT"
+      "issued": "Mon, 10 Aug 2026 02:10:45 GMT"
     },
     {
       "pid": "",
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "10/02:56 EST Initial Minor Flood Warning for the Broken River",
+      "title": "10/12:09 EST Minor to Moderate Flood Warning for the Broken River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/brokenriver.shtml",
       "desc": "",
-      "issued": "Sun, 09 Aug 2026 16:56:46 GMT"
+      "issued": "Mon, 10 Aug 2026 02:09:41 GMT"
     },
     {
       "pid": "",
@@ -149,12 +149,12 @@
     },
     {
       "pid": "",
-      "title": "10/08:53 WST Marine Wind Warning Summary for Western Australia",
+      "title": "10/09:58 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 10 Aug 2026 00:53:49 GMT"
+      "issued": "Mon, 10 Aug 2026 01:58:18 GMT"
     },
     {
       "pid": "",
@@ -349,16 +349,16 @@
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire",
-        "alertLevel": "",
+        "title": "Bushfire Advice MONITOR CONDITIONS - ORD RIVER",
+        "alertLevel": "Advice",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-10T01:38:48+00:00",
-        "description": "HAMILTON HILL, CITY OF COCKBURN",
-        "lat": -32.0864,
-        "lng": 115.7873,
+        "agency": "DFES-WARN",
+        "updated": "2026-08-10T01:59:36.096+00:00",
+        "description": "",
+        "lat": -17.432,
+        "lng": 127.9925,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -370,10 +370,25 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-10T01:36:07+00:00",
+        "updated": "2026-08-10T01:40:23+00:00",
         "description": "ORD RIVER, SHIRE OF HALLS CREEK",
         "lat": -17.4769,
         "lng": 127.9492,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-10T01:38:48+00:00",
+        "description": "HAMILTON HILL, CITY OF COCKBURN",
+        "lat": -32.0864,
+        "lng": 115.7873,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -651,13 +666,28 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - NAMATJIRA DR, NAMATJIRA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-10T01:49:54+00:00",
+        "description": "NAMATJIRA DR, NAMATJIRA",
+        "lat": -23.8023,
+        "lng": 132.3771,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - ILPARPA RD, ILPARPA",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-08-10T01:38:08+00:00",
+        "updated": "2026-08-10T01:44:10+00:00",
         "description": "ILPARPA RD, ILPARPA",
         "lat": -23.746,
         "lng": 133.8668,
@@ -743,7 +773,7 @@
     ],
     "act": []
   },
-  "incident_count": 27,
+  "incident_count": 29,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3861,9 +3891,9 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-08-10T00:53:35Z",
+      "issued_utc": "2026-08-10T01:58:09Z",
       "overview": [
-        "Strong Wind Warning for Monday for Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast, Perth Local Waters, Melville Waters, Geraldton Coast, Gascoyne Coast and Eucla Coast",
+        "Strong Wind Warning for Monday for Esperance Coast, Melville Waters, Perth Local Waters, Lancelin Coast, Albany Coast, Geraldton Coast, Bunbury Geographe Coast, Leeuwin Coast, Eucla Coast, Gascoyne Coast and Perth Coast",
         "Strong Wind Warning for Tuesday for Pilbara Coast West, Ningaloo Coast, Albany Coast, Geraldton Coast, Bunbury Geographe Coast, Leeuwin Coast, Gascoyne Coast, Esperance Coast and Eucla Coast"
       ],
       "hazards": [
