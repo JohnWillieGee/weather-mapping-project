@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-10T17:23:21.514347+00:00",
-  "last_checked_utc": "2026-08-10T17:23:21.514347+00:00",
+  "generated_utc": "2026-08-10T17:53:22.307147+00:00",
+  "last_checked_utc": "2026-08-10T17:53:22.307147+00:00",
   "warning_count": 23,
   "warnings": [
     {
@@ -104,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "10/23:45 EST Minor Flood Warning for the Goulburn River",
+      "title": "11/03:26 EST Moderate Flood Warning for Sunday Creek and Minor Flood Warning for the Goulburn River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/goulburnriver.shtml",
       "desc": "",
-      "issued": "Mon, 10 Aug 2026 13:45:52 GMT"
+      "issued": "Mon, 10 Aug 2026 17:26:32 GMT"
     },
     {
       "pid": "",
@@ -167,12 +167,12 @@
     },
     {
       "pid": "",
-      "title": "10/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "11/01:23 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 10 Aug 2026 11:01:18 GMT"
+      "issued": "Mon, 10 Aug 2026 17:23:45 GMT"
     },
     {
       "pid": "",
@@ -306,7 +306,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-10T17:04:11+00:00",
+        "updated": "2026-08-10T17:36:17+00:00",
         "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.7655,
         "lng": 128.7375,
@@ -321,25 +321,10 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-10T16:56:16+00:00",
+        "updated": "2026-08-10T17:33:57+00:00",
         "description": "DEWARS POOL, SHIRE OF TOODYAY",
         "lat": -31.4369,
         "lng": 116.3855,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-10T16:55:40+00:00",
-        "description": "JOONDALUP, CITY OF JOONDALUP",
-        "lat": -31.7527,
-        "lng": 115.7772,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -739,7 +724,7 @@
     ],
     "act": []
   },
-  "incident_count": 30,
+  "incident_count": 29,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3833,40 +3818,38 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-08-10T11:01:00Z",
+      "issued_utc": "2026-08-10T17:23:32Z",
       "overview": [
-        "Strong Wind Warning for Monday for Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast, Eucla Coast and Perth Local Waters",
-        "Strong Wind Warning for Tuesday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
+        "Strong Wind Warning for Tuesday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast",
+        "Strong Wind Warning for Wednesday for West Kimberley Coast, Pilbara Coast East and Pilbara Coast West"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Pilbara Coast West: Cape Preston to North West Cape",
+            "Ningaloo Coast: North West Cape to Cape Cuvier",
             "Gascoyne Coast: Cape Cuvier to Kalbarri",
             "Geraldton Coast: Kalbarri to Jurien Bay",
-            "Lancelin Coast: Jurien Bay to Two Rocks",
-            "Perth Coast: Two Rocks to Dawesville",
             "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Leeuwin Coast: Cape Naturaliste to Walpole",
             "Albany Coast: Walpole to Bremer Bay",
             "Esperance Coast: Bremer Bay to Israelite Bay",
-            "Eucla Coast: Israelite Bay to WA-SA Border",
-            "Perth Local Waters"
+            "Eucla Coast: Israelite Bay to WA-SA Border"
           ],
           "aac_codes": [
+            "WA_MW004",
+            "WA_MW005",
             "WA_MW006",
             "WA_MW007",
-            "WA_MW008",
-            "WA_MW009",
             "WA_MW010",
             "WA_MW011",
             "WA_MW012",
             "WA_MW013",
-            "WA_MW014",
-            "WA_MW015"
+            "WA_MW014"
           ],
-          "summary": "Perth Local Waters, Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
+          "summary": "Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
         }
       ]
     },
