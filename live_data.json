@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-10T04:53:23.169299+00:00",
-  "last_checked_utc": "2026-08-10T04:53:23.169299+00:00",
+  "generated_utc": "2026-08-10T05:23:18.655987+00:00",
+  "last_checked_utc": "2026-08-10T05:23:18.655987+00:00",
   "warning_count": 26,
   "warnings": [
     {
@@ -68,21 +68,21 @@
     },
     {
       "pid": "",
-      "title": "10/06:32 EST Moderate Flood Warning for the Kiewa River",
+      "title": "10/14:52 EST Moderate Flood Warning for the Kiewa River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/kiewariver.shtml",
       "desc": "",
-      "issued": "Sun, 09 Aug 2026 20:32:42 GMT"
+      "issued": "Mon, 10 Aug 2026 04:52:42 GMT"
     },
     {
       "pid": "",
-      "title": "10/11:43 EST Major Flood Warning for the Ovens and King Rivers and Minor Flood Warning for the Fifteen Mile Creek",
+      "title": "10/14:59 EST Major Flood Warning for the Ovens and King Rivers and Minor Flood Warning for the Fifteen Mile Creek",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/ovensandkingrivers.shtml",
       "desc": "",
-      "issued": "Mon, 10 Aug 2026 01:43:38 GMT"
+      "issued": "Mon, 10 Aug 2026 04:59:44 GMT"
     },
     {
       "pid": "",
@@ -122,12 +122,12 @@
     },
     {
       "pid": "",
-      "title": "10/09:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "10/15:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 09 Aug 2026 23:00:12 GMT"
+      "issued": "Mon, 10 Aug 2026 05:00:16 GMT"
     },
     {
       "pid": "",
@@ -167,12 +167,12 @@
     },
     {
       "pid": "",
-      "title": "10/09:58 WST Marine Wind Warning Summary for Western Australia",
+      "title": "10/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 10 Aug 2026 01:58:18 GMT"
+      "issued": "Mon, 10 Aug 2026 05:01:16 GMT"
     },
     {
       "pid": "",
@@ -345,24 +345,7 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Alice St, Moree",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 10 Aug 2026 04:50:59 GMT",
-        "description": "Alice St, Moree, NSW 2400",
-        "council": "Moree Plains",
-        "lat": -29.471285,
-        "lng": 149.834192,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [
       {
@@ -390,10 +373,25 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-10T04:30:24+00:00",
+        "updated": "2026-08-10T05:02:54+00:00",
         "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.8486,
-        "lng": 128.7705,
+        "lat": -15.8459,
+        "lng": 128.779,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-10T04:41:51+00:00",
+        "description": "WARMUN, SHIRE OF HALLS CREEK",
+        "lat": -17.0248,
+        "lng": 128.2167,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -469,21 +467,6 @@
         "description": "",
         "lat": -16.3107,
         "lng": 128.2523,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-10T02:59:05+00:00",
-        "description": "WARMUN, SHIRE OF HALLS CREEK",
-        "lat": -17.0248,
-        "lng": 128.2167,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -731,21 +714,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Grass and Scrub Fire - RIRRATJINGU CT, YIRRKALA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-10T03:48:58+00:00",
-        "description": "RIRRATJINGU CT, YIRRKALA",
-        "lat": -12.2559,
-        "lng": 136.8892,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - BRADSHAW DR, GILLEN",
         "alertLevel": "Advice",
         "status": "active",
@@ -853,7 +821,7 @@
     ],
     "act": []
   },
-  "incident_count": 33,
+  "incident_count": 31,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3834,23 +3802,19 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-08-09T23:00:00Z",
+      "issued_utc": "2026-08-10T05:00:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Sunshine Coast Waters: Double Island Point to Cape Moreton",
-            "Moreton Bay",
-            "Gold Coast Waters: Cape Moreton to Point Danger"
+            "Sunshine Coast Waters: Double Island Point to Cape Moreton"
           ],
           "aac_codes": [
-            "QLD_MW012",
-            "QLD_MW013",
-            "QLD_MW014"
+            "QLD_MW012"
           ],
-          "summary": "Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
+          "summary": "Sunshine Coast Waters"
         }
       ]
     },
@@ -3971,10 +3935,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-08-10T01:58:09Z",
+      "issued_utc": "2026-08-10T05:01:00Z",
       "overview": [
-        "Strong Wind Warning for Monday for Esperance Coast, Melville Waters, Perth Local Waters, Lancelin Coast, Albany Coast, Geraldton Coast, Bunbury Geographe Coast, Leeuwin Coast, Eucla Coast, Gascoyne Coast and Perth Coast",
-        "Strong Wind Warning for Tuesday for Pilbara Coast West, Ningaloo Coast, Albany Coast, Geraldton Coast, Bunbury Geographe Coast, Leeuwin Coast, Gascoyne Coast, Esperance Coast and Eucla Coast"
+        "Strong Wind Warning for Monday for Gascoyne Coast, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast, Eucla Coast, Perth Local Waters and Melville Waters",
+        "Strong Wind Warning for Tuesday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
       ],
       "hazards": [
         {
