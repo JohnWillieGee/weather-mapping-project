@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-10T07:23:24.940673+00:00",
-  "last_checked_utc": "2026-08-10T07:23:24.940673+00:00",
+  "generated_utc": "2026-08-10T07:53:23.296314+00:00",
+  "last_checked_utc": "2026-08-10T07:53:23.296314+00:00",
   "warning_count": 24,
   "warnings": [
     {
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "10/17:05 EST Warning to Sheep Graziers\nfor North East, West and South Gippsland and East Gippsland forecast districts",
+      "title": "10/17:45 EST Warning to Sheep Graziers\nfor North East, West and South Gippsland and East Gippsland forecast districts",
       "type": "other",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Mon, 10 Aug 2026 07:05:25 GMT"
+      "issued": "Mon, 10 Aug 2026 07:45:36 GMT"
     },
     {
       "pid": "IDV35010",
@@ -207,8 +207,8 @@
       "type": "severe_weather",
       "state": "NSW",
       "link": "",
-      "desc": "For the HUNTER VALLEY, including NEWCASTLE: DAMAGING WINDS averaging 55 to 65 km/h with peak gusts around 90 km/h are possible, easing into the evening. For the ILLAWARRA COAST, including WOLLONGONG: DAMAGING WINDS averaging 55 to 65 km/h with peak gusts around 90 km/h are possible from later this evening into early Tuesday morning. For the remainder of the GREAT DIVIDING RANGE: DAMAGING WINDS averaging 60 to 70 km/h with peak gusts around 100 km/h are likely, gradually easing below warning thre",
-      "issued": "2026-08-10T16:31:08+10:00",
+      "desc": "For the ILLAWARRA COAST, including WOLLONGONG: DAMAGING WINDS averaging 55 to 65 km/h with peak gusts around 90 km/h are possible from later this evening into early Tuesday morning. For the remainder of the GREAT DIVIDING RANGE: DAMAGING WINDS averaging 60 to 70 km/h with peak gusts around 100 km/h are likely, gradually easing below warning thresholds during Tuesday morning. Locations which may be affected include Wollongong, Armidale, Goulburn, Nowra, Katoomba, Bowral, Braidwood, Dorrigo, Drake",
+      "issued": "2026-08-10T17:38:31+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -289,17 +289,33 @@
   "incidents": {
     "nsw": [
       {
-        "title": "KENDALL SHOWGROUND BATAR CREEK RD, KENDALL",
+        "title": "Koomooloo Cr, Shalvey",
         "alertLevel": "Advice",
-        "status": "Being controlled",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Mon, 10 Aug 2026 07:50:59 GMT",
+        "description": "Koomooloo Cr, Shalvey, NSW 2770",
+        "council": "Blacktown",
+        "lat": -33.726874999,
+        "lng": 150.802511,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Maitland Rd, Mayfield",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
         "type": "Bush Fire",
         "size": "0 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Mon, 10 Aug 2026 07:18:59 GMT",
-        "description": "KENDALL SHOWGROUND BATAR CREEK RD, KENDALL 2439",
-        "council": "Port Macquarie-Hastings",
-        "lat": -31.6374069999999,
-        "lng": 152.702659,
+        "agency": "Fire and Rescue NSW",
+        "updated": "Mon, 10 Aug 2026 07:50:59 GMT",
+        "description": "Maitland Rd, Mayfield, NSW 2304",
+        "council": "Newcastle",
+        "lat": -32.903335,
+        "lng": 151.744664001,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -326,16 +342,16 @@
     "tas": [],
     "wa": [
       {
-        "title": "Structure Fire",
-        "alertLevel": "",
+        "title": "Bushfire Advice MONITOR CONDITIONS - DURACK, ORD RIVER AND WARMUN",
+        "alertLevel": "Advice",
         "status": "active",
-        "type": "Structure Fire",
+        "type": "Bush Fire",
         "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-10T07:03:40+00:00",
-        "description": "MANJIMUP, SHIRE OF MANJIMUP",
-        "lat": -34.2397,
-        "lng": 116.1433,
+        "agency": "DFES-WARN",
+        "updated": "2026-08-10T07:20:43.663+00:00",
+        "description": "",
+        "lat": -17.2024,
+        "lng": 128.1387,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -347,10 +363,10 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-10T06:51:18+00:00",
-        "description": "WILLAGEE, CITY OF MELVILLE",
-        "lat": -32.0546,
-        "lng": 115.8028,
+        "updated": "2026-08-10T07:19:11+00:00",
+        "description": "MANJIMUP, SHIRE OF MANJIMUP",
+        "lat": -34.2397,
+        "lng": 116.1433,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -461,21 +477,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire Advice MONITOR CONDITIONS - WARMUN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-08-10T03:39:50.479+00:00",
-        "description": "",
-        "lat": -17.0263,
-        "lng": 128.215,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire Advice MONITOR CONDITIONS - DURACK",
         "alertLevel": "Advice",
         "status": "active",
@@ -486,21 +487,6 @@
         "description": "",
         "lat": -16.3107,
         "lng": 128.2523,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice MONITOR CONDITIONS - ORD RIVER",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-08-10T01:59:36.096+00:00",
-        "description": "",
-        "lat": -17.432,
-        "lng": 127.9925,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -626,21 +612,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire Advice MONITOR CONDITIONS - ORD RIVER AND WARMUN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-08-06T07:47:40.831+00:00",
-        "description": "",
-        "lat": -17.0802,
-        "lng": 128.2317,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
@@ -713,21 +684,6 @@
         "description": "FAZALDEEN RD, TENNANT CREEK",
         "lat": -19.6612,
         "lng": 134.1853,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - ILPARPA RD, ILPARPA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-10T06:47:56+00:00",
-        "description": "ILPARPA RD, ILPARPA",
-        "lat": -23.7448,
-        "lng": 133.8682,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -840,7 +796,7 @@
     ],
     "act": []
   },
-  "incident_count": 36,
+  "incident_count": 33,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
