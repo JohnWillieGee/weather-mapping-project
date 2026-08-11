@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-11T16:53:21.614324+00:00",
-  "last_checked_utc": "2026-08-11T16:53:21.614324+00:00",
-  "warning_count": 22,
+  "generated_utc": "2026-08-11T17:23:19.278058+00:00",
+  "last_checked_utc": "2026-08-11T17:23:19.278058+00:00",
+  "warning_count": 24,
   "warnings": [
     {
       "pid": "",
@@ -149,6 +149,15 @@
     },
     {
       "pid": "",
+      "title": "12/03:18 EST Marine Wind Warning Summary for Queensland",
+      "type": "wind",
+      "state": "QLD",
+      "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Tue, 11 Aug 2026 17:18:29 GMT"
+    },
+    {
+      "pid": "",
       "title": "11/21:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
@@ -176,12 +185,12 @@
     },
     {
       "pid": "",
-      "title": "11/20:00 WST Marine Wind Warning Summary for Western Australia",
+      "title": "12/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 11 Aug 2026 12:00:02 GMT"
+      "issued": "Tue, 11 Aug 2026 17:01:13 GMT"
     },
     {
       "pid": "",
@@ -191,6 +200,15 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Tue, 11 Aug 2026 12:00:14 GMT"
+    },
+    {
+      "pid": "",
+      "title": "12/02:30 CST Marine Wind Warning Summary for the Northern Territory",
+      "type": "wind",
+      "state": "NT",
+      "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Tue, 11 Aug 2026 17:00:10 GMT"
     },
     {
       "pid": "IDW30000",
@@ -3508,6 +3526,34 @@
     }
   },
   "marine_warnings": {
+    "QLD": {
+      "state": "QLD",
+      "product": "IDQ20085",
+      "issued_utc": "2026-08-11T17:18:21Z",
+      "overview": [
+        "Strong Wind Warning for Wednesday for Capricornia Coast, K'gari Coast, Sunshine Coast Waters and Gold Coast Waters",
+        "Strong Wind Warning for Thursday for South East Gulf of Carpentaria, Cairns Coast, Townsville Coast, Mackay Coast, Capricornia Coast, K'gari Coast and Sunshine Coast Waters"
+      ],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Capricornia Coast: St Lawrence to Burnett Heads",
+            "K'gari Coast: Sandy Cape to Double Island Point",
+            "Sunshine Coast Waters: Double Island Point to Cape Moreton",
+            "Gold Coast Waters: Cape Moreton to Point Danger"
+          ],
+          "aac_codes": [
+            "QLD_MW009",
+            "QLD_MW011",
+            "QLD_MW012",
+            "QLD_MW014"
+          ],
+          "summary": "Capricornia Coast, K'gari Coast, Sunshine Coast Waters and Gold Coast Waters"
+        }
+      ]
+    },
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
@@ -3593,28 +3639,25 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-08-11T11:59:51Z",
-      "overview": [
-        "Strong Wind Warning for Tuesday for Pilbara Coast West, Ningaloo Coast, Esperance Coast and Eucla Coast",
-        "Strong Wind Warning for Wednesday for West Kimberley Coast, Pilbara Coast East, Pilbara Coast West and Ningaloo Coast"
-      ],
+      "issued_utc": "2026-08-11T17:01:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "West Kimberley Coast: Kuri Bay to Wallal",
+            "Pilbara Coast East: Wallal to Cape Preston",
             "Pilbara Coast West: Cape Preston to North West Cape",
-            "Ningaloo Coast: North West Cape to Cape Cuvier",
-            "Esperance Coast: Bremer Bay to Israelite Bay",
-            "Eucla Coast: Israelite Bay to WA-SA Border"
+            "Ningaloo Coast: North West Cape to Cape Cuvier"
           ],
           "aac_codes": [
+            "WA_MW002",
+            "WA_MW003",
             "WA_MW004",
-            "WA_MW005",
-            "WA_MW013",
-            "WA_MW014"
+            "WA_MW005"
           ],
-          "summary": "Pilbara Coast West, Ningaloo Coast, Esperance Coast and Eucla Coast"
+          "summary": "West Kimberley Coast, Pilbara Coast East, Pilbara Coast West and Ningaloo Coast"
         }
       ]
     },
@@ -3642,6 +3685,25 @@
             "TAS_MW008"
           ],
           "summary": "Far North West Coast, South West Coast and Central West Coast"
+        }
+      ]
+    },
+    "NT": {
+      "state": "NT",
+      "product": "IDD20105",
+      "issued_utc": "2026-08-11T17:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Roper Groote Coast: Cape Arnhem to QLD-NT Border"
+          ],
+          "aac_codes": [
+            "NT_MW006"
+          ],
+          "summary": "Roper Groote Coast"
         }
       ]
     }
