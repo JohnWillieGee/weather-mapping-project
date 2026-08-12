@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-12T12:23:22.816339+00:00",
-  "last_checked_utc": "2026-08-12T12:23:22.816339+00:00",
-  "warning_count": 18,
+  "generated_utc": "2026-08-12T12:53:19.808067+00:00",
+  "last_checked_utc": "2026-08-12T12:53:19.808067+00:00",
+  "warning_count": 17,
   "warnings": [
     {
       "pid": "",
@@ -122,15 +122,6 @@
     },
     {
       "pid": "",
-      "title": "12/13:01 WST Marine Wind Warning Summary for Western Australia",
-      "type": "wind",
-      "state": "WA",
-      "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
-      "desc": "",
-      "issued": "Wed, 12 Aug 2026 05:01:13 GMT"
-    },
-    {
-      "pid": "",
       "title": "12/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
@@ -149,27 +140,27 @@
     },
     {
       "pid": "IDV21137",
-      "title": "Coastal Hazard Warning for West and South Gippsland, East Gippsland",
+      "title": "Cancellation of Coastal Hazard Warning for West and South Gippsland, East Gippsland",
       "type": "coastal_hazard",
       "state": "VIC",
       "link": "",
-      "desc": "ABNORMALLY HIGH TIDES which may lead to sea water flooding of low-lying coastal areas is possible along parts of the Gippsland coast, including the Gippsland Lakes and Lakes Entrance. Tides are likely to rise above the normal high tide mark during Wednesday evening high tide.",
-      "issued": "2026-08-12T16:33:22+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-08-12T22:37:30+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "VIC_PW006",
           "description": "West and South Gippsland",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "VIC_PW005",
           "description": "East Gippsland",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDW30000",
@@ -602,25 +593,10 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-08-12T11:30:54+00:00",
+        "updated": "2026-08-12T12:37:23+00:00",
         "description": "BEES CREEK RD, WEDDELL",
         "lat": -12.6072,
         "lng": 131.0503,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - JABIRU DR, JABIRU",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-12T11:30:52+00:00",
-        "description": "JABIRU DR, JABIRU",
-        "lat": -12.6847,
-        "lng": 132.8354,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -778,7 +754,7 @@
     ],
     "act": []
   },
-  "incident_count": 38,
+  "incident_count": 37,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
