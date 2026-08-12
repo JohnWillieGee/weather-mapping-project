@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-11T23:53:15.019173+00:00",
-  "last_checked_utc": "2026-08-11T23:53:15.019173+00:00",
-  "warning_count": 24,
+  "generated_utc": "2026-08-12T00:23:19.392790+00:00",
+  "last_checked_utc": "2026-08-12T00:23:19.392790+00:00",
+  "warning_count": 25,
   "warnings": [
     {
       "pid": "",
-      "title": "12/04:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "12/10:11 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 11 Aug 2026 18:00:10 GMT"
+      "issued": "Wed, 12 Aug 2026 00:11:00 GMT"
     },
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "12/04:10 EST Marine Wind Warning Summary for Victoria",
+      "title": "12/10:11 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 11 Aug 2026 18:10:30 GMT"
+      "issued": "Wed, 12 Aug 2026 00:11:10 GMT"
     },
     {
       "pid": "IDV35010",
@@ -113,12 +113,12 @@
     },
     {
       "pid": "",
-      "title": "11/13:43 EST Minor Flood Warning for the Goulburn and Yea River",
+      "title": "12/09:53 EST Minor Flood Warning for the Goulburn River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/goulburnriver.shtml",
       "desc": "",
-      "issued": "Tue, 11 Aug 2026 03:43:48 GMT"
+      "issued": "Tue, 11 Aug 2026 23:53:50 GMT"
     },
     {
       "pid": "",
@@ -158,12 +158,12 @@
     },
     {
       "pid": "",
-      "title": "12/03:40 CST Marine Wind Warning Summary for South Australia",
+      "title": "12/09:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Tue, 11 Aug 2026 18:10:11 GMT"
+      "issued": "Wed, 12 Aug 2026 00:00:14 GMT"
     },
     {
       "pid": "",
@@ -194,12 +194,12 @@
     },
     {
       "pid": "",
-      "title": "12/04:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "12/10:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 11 Aug 2026 18:00:10 GMT"
+      "issued": "Wed, 12 Aug 2026 00:00:15 GMT"
     },
     {
       "pid": "",
@@ -209,6 +209,30 @@
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Tue, 11 Aug 2026 23:00:15 GMT"
+    },
+    {
+      "pid": "IDV21137",
+      "title": "Coastal Hazard Warning for West and South Gippsland, East Gippsland",
+      "type": "coastal_hazard",
+      "state": "VIC",
+      "link": "",
+      "desc": "ABNORMALLY HIGH TIDES which may lead to sea water flooding of low-lying coastal areas is possible along parts of the Gippsland coast, including the Gippsland Lakes and Lakes Entrance. Tides are likely to rise above the normal high tide mark during Wednesday evening high tide.",
+      "issued": "2026-08-12T10:14:03+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "VIC_PW006",
+          "description": "West and South Gippsland",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW005",
+          "description": "East Gippsland",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     },
     {
       "pid": "IDW30000",
@@ -258,6 +282,36 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-12T00:03:41+00:00",
+        "description": "BALDIVIS, CITY OF ROCKINGHAM",
+        "lat": -32.3588,
+        "lng": 115.8079,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-11T23:47:08+00:00",
+        "description": "ROEBUCK, SHIRE OF BROOME",
+        "lat": -18.4201,
+        "lng": 122.1135,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Earthquake",
         "alertLevel": "",
@@ -486,6 +540,51 @@
     ],
     "nt": [
       {
+        "title": "Bushfire - Barkly Highway, WARUMUNGU",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-08-12T00:30:00+00:00",
+        "description": "Barkly Highway, WARUMUNGU",
+        "lat": -19.2087,
+        "lng": 134.3717,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Barkly Highway, TABLELANDS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-08-12T00:30:00+00:00",
+        "description": "Barkly Highway, TABLELANDS",
+        "lat": -19.6442,
+        "lng": 135.5505,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Dorat Road (Anniversary Creek), ROBIN FALLS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-08-12T00:00:00+00:00",
+        "description": "Dorat Road (Anniversary Creek), ROBIN FALLS",
+        "lat": -13.3144,
+        "lng": 131.1416,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - ARNHEM HWY, LAMBELLS LAGOON",
         "alertLevel": "Advice",
         "status": "active",
@@ -531,36 +630,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Bushfire - Barkly Highway, WARUMUNGU",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-08-10T00:30:00+00:00",
-        "description": "Barkly Highway, WARUMUNGU",
-        "lat": -19.2087,
-        "lng": 134.3717,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Bushfire - Barkly Highway, TABLELANDS",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-08-10T00:30:00+00:00",
-        "description": "Barkly Highway, TABLELANDS",
-        "lat": -19.6442,
-        "lng": 135.5505,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Ilparpa Rd, Stuart Highway",
         "alertLevel": "",
         "status": "active",
@@ -578,7 +647,7 @@
     ],
     "act": []
   },
-  "incident_count": 22,
+  "incident_count": 25,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3587,10 +3656,10 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-08-11T18:00:00Z",
+      "issued_utc": "2026-08-12T00:10:52Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Illawarra Coast and Eden Coast",
-        "Strong Wind Warning for Thursday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Illawarra Coast and Eden Coast"
+        "Strong Wind Warning for Wednesday for Coffs Coast, Macquarie Coast, Hunter Coast, Illawarra Coast, Eden Coast and Byron Coast",
+        "Strong Wind Warning for Thursday for Illawarra Coast, Coffs Coast, Byron Coast, Eden Coast, Macquarie Coast and Hunter Coast"
       ],
       "hazards": [
         {
@@ -3619,10 +3688,10 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-08-11T18:10:00Z",
+      "issued_utc": "2026-08-12T00:10:54Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast",
-        "Strong Wind Warning for Thursday for Central Gippsland Coast and East Gippsland Coast"
+        "Strong Wind Warning for Wednesday for East Gippsland Coast, Central Coast, West Coast and Central Gippsland Coast",
+        "Strong Wind Warning for Thursday for East Gippsland Coast and Central Gippsland Coast"
       ],
       "hazards": [
         {
@@ -3641,29 +3710,6 @@
             "VIC_MW004"
           ],
           "summary": "West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast"
-        }
-      ]
-    },
-    "SA": {
-      "state": "SA",
-      "product": "IDS20201",
-      "issued_utc": "2026-08-11T18:10:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "South Central Coast",
-            "Upper South East Coast: Murray Mouth to Cape Jaffa",
-            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
-          ],
-          "aac_codes": [
-            "SA_MW008",
-            "SA_MW009",
-            "SA_MW010"
-          ],
-          "summary": "South Central Coast, Upper South East Coast and Lower South East Coast"
         }
       ]
     },
@@ -3693,7 +3739,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-08-11T18:00:00Z",
+      "issued_utc": "2026-08-12T00:00:00Z",
       "overview": [
         "Gale Warning for Wednesday for South East Coast and South West Coast",
         "Strong Wind Warning for Wednesday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast and Central West Coast",
