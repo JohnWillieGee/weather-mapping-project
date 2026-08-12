@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-12T03:53:20.527424+00:00",
-  "last_checked_utc": "2026-08-12T03:53:20.527424+00:00",
+  "generated_utc": "2026-08-12T04:23:17.800204+00:00",
+  "last_checked_utc": "2026-08-12T04:23:17.800204+00:00",
   "warning_count": 24,
   "warnings": [
     {
@@ -252,7 +252,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Magellan Street, Lismore",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Wed, 12 Aug 2026 04:18:58 GMT",
+        "description": "Magellan Street, Lismore, NSW 2480",
+        "council": "Lismore",
+        "lat": -28.8086499999999,
+        "lng": 153.274923,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [
       {
@@ -273,6 +290,36 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire Watch and Act MONITOR CONDITIONS - ROEBUCK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-08-12T03:39:49.246+00:00",
+        "description": "",
+        "lat": -18.3691,
+        "lng": 122.0415,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice STAY INFORMED - ROEBUCK AND LAGRANGE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-08-12T03:39:49.246+00:00",
+        "description": "",
+        "lat": -18.367,
+        "lng": 122.1051,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -314,21 +361,6 @@
         "description": "",
         "lat": -17.7034,
         "lng": 123.5279,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice STAY INFORMED - ROEBUCK AND LAGRANGE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-08-12T02:21:07.274+00:00",
-        "description": "",
-        "lat": -18.3678,
-        "lng": 122.1121,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -561,6 +593,36 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - COFFEY ST, TIVENDALE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-12T03:59:22+00:00",
+        "description": "COFFEY ST, TIVENDALE",
+        "lat": -12.467,
+        "lng": 130.9535,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - Unknown",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-12T03:49:05+00:00",
+        "description": "",
+        "lat": -13.2604,
+        "lng": 131.1451,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Barkly Highway, WARUMUNGU",
         "alertLevel": "Advice",
         "status": "active",
@@ -623,7 +685,7 @@
     ],
     "act": []
   },
-  "incident_count": 24,
+  "incident_count": 28,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
