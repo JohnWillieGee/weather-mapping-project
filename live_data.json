@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-12T22:23:20.254709+00:00",
-  "last_checked_utc": "2026-08-12T22:23:20.254709+00:00",
+  "generated_utc": "2026-08-12T22:53:12.327232+00:00",
+  "last_checked_utc": "2026-08-12T22:53:12.327232+00:00",
   "warning_count": 15,
   "warnings": [
     {
@@ -141,7 +141,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Redbill Dr, Woodberry",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Wed, 12 Aug 2026 22:50:59 GMT",
+        "description": "Redbill Dr, Woodberry, NSW 2322",
+        "council": "Maitland",
+        "lat": -32.7966269999999,
+        "lng": 151.665039,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [
       {
@@ -177,16 +194,16 @@
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire",
+        "title": "Fire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-12T22:07:36+00:00",
-        "description": "ROEBUCK, SHIRE OF BROOME",
-        "lat": -18.4201,
-        "lng": 122.1135,
+        "updated": "2026-08-12T22:43:09+00:00",
+        "description": "ELLENBROOK, CITY OF SWAN",
+        "lat": -31.764,
+        "lng": 115.9905,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -198,10 +215,55 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-12T21:56:05+00:00",
+        "updated": "2026-08-12T22:40:57+00:00",
+        "description": "CERVANTES, SHIRE OF DANDARAGAN",
+        "lat": -30.5071,
+        "lng": 115.0635,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-12T22:37:30+00:00",
+        "description": "DARDANUP, SHIRE OF DARDANUP",
+        "lat": -33.3988,
+        "lng": 115.792,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-12T22:17:03+00:00",
         "description": "RAVENSWOOD, SHIRE OF MURRAY",
         "lat": -32.5767,
         "lng": 115.8366,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-12T22:07:36+00:00",
+        "description": "ROEBUCK, SHIRE OF BROOME",
+        "lat": -18.4201,
+        "lng": 122.1135,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -706,7 +768,7 @@
     ],
     "act": []
   },
-  "incident_count": 37,
+  "incident_count": 41,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
