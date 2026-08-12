@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-12T05:23:20.166073+00:00",
-  "last_checked_utc": "2026-08-12T05:23:20.166073+00:00",
+  "generated_utc": "2026-08-12T05:53:19.602156+00:00",
+  "last_checked_utc": "2026-08-12T05:53:19.602156+00:00",
   "warning_count": 21,
   "warnings": [
     {
       "pid": "",
-      "title": "12/14:35 EST Marine Wind Warning Summary for New South Wales",
+      "title": "12/15:20 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 12 Aug 2026 04:35:50 GMT"
+      "issued": "Wed, 12 Aug 2026 05:20:28 GMT"
     },
     {
       "pid": "",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "12/09:53 EST Minor Flood Warning for the Goulburn River",
+      "title": "12/15:40 EST Minor Flood Warning for the Goulburn River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/goulburnriver.shtml",
       "desc": "",
-      "issued": "Tue, 11 Aug 2026 23:53:50 GMT"
+      "issued": "Wed, 12 Aug 2026 05:40:41 GMT"
     },
     {
       "pid": "",
@@ -104,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "12/09:41 EST Moderate Flood Warning for the Avoca River",
+      "title": "12/15:36 EST Moderate Flood Warning for the Avoca River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/avocariver.shtml",
       "desc": "",
-      "issued": "Tue, 11 Aug 2026 23:41:36 GMT"
+      "issued": "Wed, 12 Aug 2026 05:36:41 GMT"
     },
     {
       "pid": "",
@@ -225,40 +225,7 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Bridge St, North Lismore",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Wed, 12 Aug 2026 05:18:58 GMT",
-        "description": "Bridge St, North Lismore, NSW 2480",
-        "council": "Lismore",
-        "lat": -28.804392,
-        "lng": 153.275879,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "LANSDOWNE RD, CUNDLETOWN",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Wed, 12 Aug 2026 05:18:58 GMT",
-        "description": "LANSDOWNE RD, CUNDLETOWN 2430",
-        "council": "Mid-Coast",
-        "lat": -31.8661529999999,
-        "lng": 152.503078,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [
       {
@@ -279,6 +246,51 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire Watch and Act MONITOR CONDITIONS - BARN HILL",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-08-12T05:34:31.976+00:00",
+        "description": "",
+        "lat": -18.3667,
+        "lng": 122.0407,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice STAY INFORMED - ROEBUCK AND LAGRANGE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-08-12T05:34:31.976+00:00",
+        "description": "",
+        "lat": -18.3695,
+        "lng": 122.0764,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Earthquake",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Earthquake",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-12T05:20:01+00:00",
+        "description": "TRAFALGAR, KALGOORLIE-BOULDER, CITY OF",
+        "lat": -30.7902,
+        "lng": 121.5148,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Structure Fire",
         "alertLevel": "",
@@ -305,36 +317,6 @@
         "description": "EIGHTY MILE BEACH, SHIRE OF BROOME",
         "lat": -19.114,
         "lng": 121.616,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Watch and Act MONITOR CONDITIONS - ROEBUCK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-08-12T03:39:49.246+00:00",
-        "description": "",
-        "lat": -18.3691,
-        "lng": 122.0415,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice STAY INFORMED - ROEBUCK AND LAGRANGE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-08-12T03:39:49.246+00:00",
-        "description": "",
-        "lat": -18.367,
-        "lng": 122.1051,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -612,13 +594,43 @@
     ],
     "nt": [
       {
+        "title": "Bushfire - Mocatto Road, ACACIA HILLS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-08-12T05:30:00+00:00",
+        "description": "Mocatto Road, ACACIA HILLS",
+        "lat": -12.7337,
+        "lng": 131.1564,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Charles Darwin National Park, CHARLES DARWIN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-12T05:30:00+00:00",
+        "description": "Charles Darwin National Park, CHARLES DARWIN",
+        "lat": -12.4429,
+        "lng": 130.8805,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - Unknown",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-08-12T05:09:09+00:00",
+        "updated": "2026-08-12T05:24:29+00:00",
         "description": "",
         "lat": -13.2604,
         "lng": 131.1451,
@@ -734,7 +746,7 @@
     ],
     "act": []
   },
-  "incident_count": 33,
+  "incident_count": 34,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
