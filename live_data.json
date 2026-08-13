@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-13T01:23:30.523314+00:00",
-  "last_checked_utc": "2026-08-13T01:23:30.523314+00:00",
+  "generated_utc": "2026-08-13T01:53:16.344520+00:00",
+  "last_checked_utc": "2026-08-13T01:53:16.344520+00:00",
   "warning_count": 16,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "12/13:34 EST Minor Flood Warning for the Kiewa River",
+      "title": "13/11:34 EST Minor Flood Warning for the Kiewa River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/kiewariver.shtml",
       "desc": "",
-      "issued": "Wed, 12 Aug 2026 03:34:42 GMT"
+      "issued": "Thu, 13 Aug 2026 01:34:41 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "12/11:54 EST Moderate Flood Warning for the Seven Creeks",
+      "title": "13/11:27 EST Moderate Flood Warning for the Seven Creeks",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/sevencreeks-castlecreek.shtml",
       "desc": "",
-      "issued": "Wed, 12 Aug 2026 01:54:52 GMT"
+      "issued": "Thu, 13 Aug 2026 01:27:41 GMT"
     },
     {
       "pid": "",
@@ -95,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "12/15:36 EST Moderate Flood Warning for the Avoca River",
+      "title": "13/11:32 EST Moderate Flood Warning for the Avoca River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/avocariver.shtml",
       "desc": "",
-      "issued": "Wed, 12 Aug 2026 05:36:41 GMT"
+      "issued": "Thu, 13 Aug 2026 01:32:41 GMT"
     },
     {
       "pid": "",
@@ -148,9 +148,7 @@
       "issued": "Wed, 12 Aug 2026 23:00:12 GMT"
     }
   ],
-  "fetch_errors": {
-    "tas": "503 Server Error: Service Unavailable for url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/72/query?where=1%3D1&outFields=*&f=geojson"
-  },
+  "fetch_errors": {},
   "incidents": {
     "nsw": [],
     "vic": [],
@@ -188,6 +186,21 @@
     "tas": [],
     "wa": [
       {
+        "title": "Smoke Alert FOR TWO ROCKS AND SURROUNDING AREAS IN THE CITY OF WANNEROO",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-08-13T01:38:05.821+00:00",
+        "description": "",
+        "lat": -31.4956,
+        "lng": 115.5856,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
@@ -198,6 +211,21 @@
         "description": "ST GEORGE RANGES, SHIRE OF DERBY/WEST KIMBERLEY",
         "lat": -18.162,
         "lng": 125.748,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - MULUDJA IN ST GEORGE RANGES",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-08-13T01:12:41.87+00:00",
+        "description": "",
+        "lat": -18.1601,
+        "lng": 125.7464,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -550,6 +578,36 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - Unknown",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-13T01:45:59+00:00",
+        "description": "",
+        "lat": -12.525,
+        "lng": 131.1055,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - CARRUTH RD, GIRRAWEEN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-13T01:45:25+00:00",
+        "description": "CARRUTH RD, GIRRAWEEN",
+        "lat": -12.5222,
+        "lng": 131.1025,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - DORAT RD, ROBIN FALLS",
         "alertLevel": "Advice",
         "status": "active",
@@ -580,21 +638,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Bushfire - Victoria Highway, GREGORY",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-08-12T07:45:00+00:00",
-        "description": "Victoria Highway, GREGORY",
-        "lat": -15.7458,
-        "lng": 130.5414,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - Unknown",
         "alertLevel": "Advice",
         "status": "active",
@@ -605,21 +648,6 @@
         "description": "",
         "lat": -15.7462,
         "lng": 130.533,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Bushfire - Mocatto Road, ACACIA HILLS",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-08-12T05:30:00+00:00",
-        "description": "Mocatto Road, ACACIA HILLS",
-        "lat": -12.7337,
-        "lng": 131.1564,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -733,7 +761,7 @@
       }
     ]
   },
-  "incident_count": 38,
+  "incident_count": 40,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
