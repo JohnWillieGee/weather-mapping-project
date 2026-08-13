@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-13T00:23:17.050709+00:00",
-  "last_checked_utc": "2026-08-13T00:23:17.050709+00:00",
+  "generated_utc": "2026-08-13T00:53:06.431422+00:00",
+  "last_checked_utc": "2026-08-13T00:53:06.431422+00:00",
   "warning_count": 15,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "12/10:41 EST Minor Flood Warning for the Belubula River",
+      "title": "13/10:30 EST Final Flood Warning for the Belubula River",
       "type": "flood",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/flood/belubulariver.shtml",
       "desc": "",
-      "issued": "Wed, 12 Aug 2026 00:41:41 GMT"
+      "issued": "Thu, 13 Aug 2026 00:30:37 GMT"
     },
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "12/10:34 EST Minor Flood Warning for the Latrobe River",
+      "title": "13/10:42 EST Minor Flood Warning for the Latrobe River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/latroberiver.shtml",
       "desc": "",
-      "issued": "Wed, 12 Aug 2026 00:34:40 GMT"
+      "issued": "Thu, 13 Aug 2026 00:42:52 GMT"
     },
     {
       "pid": "",
@@ -141,23 +141,26 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "North St, West Kempsey",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Thu, 13 Aug 2026 00:50:59 GMT",
+        "description": "North St, West Kempsey, NSW 2440",
+        "council": "Kempsey",
+        "lat": -31.0584529999999,
+        "lng": 152.825576,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [
-      {
-        "title": "STAY INFORMED - Kilkivan - fire as at 6:03pm Tuesday, 11 August 2026",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "QFD",
-        "updated": "",
-        "description": "Kilkivan, Black Snake and surrounding areas",
-        "lat": -26.11056810851664,
-        "lng": 152.24855440659292,
-        "state": "QLD",
-        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
-      },
       {
         "title": "STAY INFORMED - Mount Morgan - fire as at 5:57pm Wednesday, 12 August 2026",
         "alertLevel": "Advice",
@@ -171,37 +174,36 @@
         "lng": 150.38892008157575,
         "state": "QLD",
         "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
+      },
+      {
+        "title": "STAY INFORMED - Kilkivan - fire as at 6:03pm Tuesday, 11 August 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "Kilkivan, Black Snake and surrounding areas",
+        "lat": -26.11056810851664,
+        "lng": 152.24855440659292,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
       }
     ],
     "sa": [],
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire",
+        "title": "Fire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-13T00:09:54+00:00",
-        "description": "COLLIE, SHIRE OF COLLIE",
-        "lat": -33.363,
-        "lng": 116.1638,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-12T23:54:58+00:00",
-        "description": "RIDGEWOOD, CITY OF WANNEROO",
-        "lat": -31.667,
-        "lng": 115.7256,
+        "updated": "2026-08-13T00:39:03+00:00",
+        "description": "ST GEORGE RANGES, SHIRE OF DERBY/WEST KIMBERLEY",
+        "lat": -18.162,
+        "lng": 125.748,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -213,10 +215,25 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-12T22:48:21+00:00",
-        "description": "ST GEORGE RANGES, SHIRE OF DERBY/WEST KIMBERLEY",
-        "lat": -18.162,
-        "lng": 125.748,
+        "updated": "2026-08-13T00:34:37+00:00",
+        "description": "YOKINE, CITY OF STIRLING",
+        "lat": -31.9082,
+        "lng": 115.8485,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-13T00:26:19+00:00",
+        "description": "RIDGEWOOD, CITY OF WANNEROO",
+        "lat": -31.667,
+        "lng": 115.7256,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -412,21 +429,6 @@
         "description": "",
         "lat": -17.7034,
         "lng": 123.5279,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Earthquake",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Earthquake",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-12T00:33:12+00:00",
-        "description": "SOUTH YELBENI, TRAYNING, SHIRE OF",
-        "lat": -31.281,
-        "lng": 117.6062,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -742,7 +744,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-08-13T00:19:00+00:00",
+        "updated": "2026-08-13T00:50:00+00:00",
         "description": "WRIGHT",
         "lat": -35.3257,
         "lng": 149.0429,
@@ -757,7 +759,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "Fire - Ambulance",
-        "updated": "2026-08-13T00:17:20+00:00",
+        "updated": "2026-08-13T00:29:56+00:00",
         "description": "WRIGHT",
         "lat": -35.3257,
         "lng": 149.0429,
