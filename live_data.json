@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-15T16:53:21.517752+00:00",
-  "last_checked_utc": "2026-08-15T16:53:21.517752+00:00",
-  "warning_count": 8,
+  "generated_utc": "2026-08-15T17:23:18.275679+00:00",
+  "last_checked_utc": "2026-08-15T17:23:18.275679+00:00",
+  "warning_count": 9,
   "warnings": [
     {
       "pid": "",
@@ -68,12 +68,21 @@
     },
     {
       "pid": "",
-      "title": "15/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "16/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 15 Aug 2026 11:00:19 GMT"
+      "issued": "Sat, 15 Aug 2026 17:00:11 GMT"
+    },
+    {
+      "pid": "",
+      "title": "16/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "type": "wind",
+      "state": "WA",
+      "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
+      "desc": "",
+      "issued": "Sat, 15 Aug 2026 17:01:14 GMT"
     }
   ],
   "fetch_errors": {},
@@ -86,7 +95,7 @@
         "type": "Bush Fire",
         "size": "2 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sat, 15 Aug 2026 16:50:59 GMT",
+        "updated": "Sat, 15 Aug 2026 17:18:59 GMT",
         "description": "BOTTLE CREEK RD, ARGENTS HILL 2449",
         "council": "Nambucca Valley",
         "lat": -30.604877357,
@@ -253,7 +262,7 @@
         "type": "Bush Fire",
         "size": "62 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 15 Aug 2026 16:50:59 GMT",
+        "updated": "Sat, 15 Aug 2026 17:18:59 GMT",
         "description": "MORANS RD, MISSABOTTI 2449",
         "council": "Nambucca Valley",
         "lat": -30.5561136069999,
@@ -466,21 +475,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-15T16:16:29+00:00",
-        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.7621,
-        "lng": 128.7377,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Structure Fire",
         "alertLevel": "",
@@ -769,40 +763,9 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [
-      {
-        "title": "HOUSE FIRE - AMAROO",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Fire",
-        "updated": "2026-08-15T16:13:19+00:00",
-        "description": "AMAROO",
-        "lat": -35.1735,
-        "lng": 149.1284,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - WATSON",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Fire",
-        "updated": "2026-08-15T15:59:26+00:00",
-        "description": "WATSON",
-        "lat": -35.2355,
-        "lng": 149.1549,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      }
-    ]
+    "act": []
   },
-  "incident_count": 25,
+  "incident_count": 22,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3783,7 +3746,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-08-15T11:00:00Z",
+      "issued_utc": "2026-08-15T17:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3796,6 +3759,39 @@
             "QLD_MW007"
           ],
           "summary": "Townsville Coast"
+        }
+      ]
+    },
+    "WA": {
+      "state": "WA",
+      "product": "IDW20100",
+      "issued_utc": "2026-08-15T17:01:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Geraldton Coast: Kalbarri to Jurien Bay",
+            "Lancelin Coast: Jurien Bay to Two Rocks",
+            "Perth Coast: Two Rocks to Dawesville",
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay",
+            "Perth Local Waters"
+          ],
+          "aac_codes": [
+            "WA_MW007",
+            "WA_MW008",
+            "WA_MW009",
+            "WA_MW010",
+            "WA_MW011",
+            "WA_MW012",
+            "WA_MW013",
+            "WA_MW015"
+          ],
+          "summary": "Perth Local Waters, Geraldton Coast, Lancelin Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Esperance Coast"
         }
       ]
     }
