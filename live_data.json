@@ -1,8 +1,26 @@
 {
-  "generated_utc": "2026-08-17T17:53:19.224841+00:00",
-  "last_checked_utc": "2026-08-17T17:53:19.224841+00:00",
-  "warning_count": 8,
+  "generated_utc": "2026-08-17T18:23:20.558357+00:00",
+  "last_checked_utc": "2026-08-17T18:23:20.558357+00:00",
+  "warning_count": 11,
   "warnings": [
+    {
+      "pid": "",
+      "title": "18/04:00 EST Marine Wind Warning Summary for New South Wales",
+      "type": "wind",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Mon, 17 Aug 2026 18:00:17 GMT"
+    },
+    {
+      "pid": "",
+      "title": "18/04:10 EST Marine Wind Warning Summary for Victoria",
+      "type": "wind",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Mon, 17 Aug 2026 18:10:24 GMT"
+    },
     {
       "pid": "",
       "title": "17/12:32 EST Minor Flood Warning for the Kiewa River",
@@ -59,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "17/21:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "18/03:40 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Mon, 17 Aug 2026 12:00:13 GMT"
+      "issued": "Mon, 17 Aug 2026 18:10:17 GMT"
     },
     {
       "pid": "",
@@ -74,6 +92,15 @@
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
       "issued": "Mon, 17 Aug 2026 17:08:09 GMT"
+    },
+    {
+      "pid": "",
+      "title": "18/04:00 EST Marine Wind Warning Summary for Tasmania",
+      "type": "wind",
+      "state": "TAS",
+      "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Mon, 17 Aug 2026 18:00:21 GMT"
     }
   ],
   "fetch_errors": {},
@@ -106,10 +133,25 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-17T17:36:54+00:00",
+        "updated": "2026-08-17T17:58:40+00:00",
         "description": "HALLS CREEK, SHIRE OF HALLS CREEK",
         "lat": -18.2229,
         "lng": 127.6701,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-17T17:39:58+00:00",
+        "description": "BOYANUP, SHIRE OF CAPEL",
+        "lat": -33.484,
+        "lng": 115.7192,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -251,21 +293,6 @@
       }
     ],
     "nt": [
-      {
-        "title": "Grass and Scrub Fire - MANABADURMA -, JABIRU",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-17T17:25:51+00:00",
-        "description": "MANABADURMA -, JABIRU",
-        "lat": -12.6682,
-        "lng": 132.841,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
       {
         "title": "Grass and Scrub Fire - WHEEWALL RD, BERRY SPRINGS",
         "alertLevel": "Advice",
@@ -3463,11 +3490,60 @@
         }
       ]
     },
+    "NSW": {
+      "state": "NSW",
+      "product": "IDN20400",
+      "issued_utc": "2026-08-17T18:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Batemans Coast: Ulladulla to Montague Island",
+            "Eden Coast: Montague Island to Gabo Island"
+          ],
+          "aac_codes": [
+            "NSW_MW002",
+            "NSW_MW001"
+          ],
+          "summary": "Batemans Coast and Eden Coast"
+        }
+      ]
+    },
+    "VIC": {
+      "state": "VIC",
+      "product": "IDV20600",
+      "issued_utc": "2026-08-17T18:10:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "West Coast: SA-VIC Border to Cape Otway",
+            "Central Coast: Cape Otway to Wilsons Promontory",
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island",
+            "Port Phillip"
+          ],
+          "aac_codes": [
+            "VIC_MW001",
+            "VIC_MW002",
+            "VIC_MW004",
+            "VIC_MW005"
+          ],
+          "summary": "Port Phillip, West Coast, Central Coast and East Gippsland Coast"
+        }
+      ]
+    },
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-08-17T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-08-17T18:10:00Z",
+      "overview": [
+        "Strong Wind Warning for Tuesday for South Central Coast",
+        "Strong Wind Warning for Wednesday for South Central Coast, Upper South East Coast and Lower South East Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3507,6 +3583,35 @@
             "WA_MW014"
           ],
           "summary": "Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
+        }
+      ]
+    },
+    "TAS": {
+      "state": "TAS",
+      "product": "IDT20100",
+      "issued_utc": "2026-08-17T18:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Far North West Coast: Sandy Cape to Stanley",
+            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
+            "Upper East Coast: St Helens Point to Wineglass Bay",
+            "Lower East Coast: Wineglass Bay to Tasman Island",
+            "South East Coast: Tasman Island to South East Cape",
+            "Central West Coast: Low Rocky Point to Sandy Cape"
+          ],
+          "aac_codes": [
+            "TAS_MW001",
+            "TAS_MW003",
+            "TAS_MW004",
+            "TAS_MW005",
+            "TAS_MW006",
+            "TAS_MW008"
+          ],
+          "summary": "Far North West Coast, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast and Central West Coast"
         }
       ]
     }
