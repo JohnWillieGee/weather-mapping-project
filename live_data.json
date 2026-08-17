@@ -1,17 +1,8 @@
 {
-  "generated_utc": "2026-08-17T15:23:20.532469+00:00",
-  "last_checked_utc": "2026-08-17T15:23:20.532469+00:00",
-  "warning_count": 9,
+  "generated_utc": "2026-08-17T15:53:22.346862+00:00",
+  "last_checked_utc": "2026-08-17T15:53:22.346862+00:00",
+  "warning_count": 8,
   "warnings": [
-    {
-      "pid": "",
-      "title": "17/11:59 EST Cancellation of Hazardous Surf Warning for New South Wales",
-      "type": "other",
-      "state": "NSW",
-      "link": "http://reg.bom.gov.au/nsw/warnings/hazardoussurf.shtml",
-      "desc": "",
-      "issued": "Mon, 17 Aug 2026 01:59:23 GMT"
-    },
     {
       "pid": "",
       "title": "17/12:32 EST Minor Flood Warning for the Kiewa River",
@@ -87,7 +78,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Reginald Ward St, South Kempsey",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Mon, 17 Aug 2026 15:34:58 GMT",
+        "description": "Reginald Ward St, South Kempsey, NSW 2440",
+        "council": "Kempsey",
+        "lat": -31.0951969999999,
+        "lng": 152.825614,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [
       {
@@ -443,7 +451,7 @@
     ],
     "act": []
   },
-  "incident_count": 23,
+  "incident_count": 24,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
