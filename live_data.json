@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-17T16:53:23.945067+00:00",
-  "last_checked_utc": "2026-08-17T16:53:23.945067+00:00",
+  "generated_utc": "2026-08-17T17:23:21.759679+00:00",
+  "last_checked_utc": "2026-08-17T17:23:21.759679+00:00",
   "warning_count": 8,
   "warnings": [
     {
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "17/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "18/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 17 Aug 2026 11:00:16 GMT"
+      "issued": "Mon, 17 Aug 2026 17:00:16 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "17/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "18/01:08 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 17 Aug 2026 11:01:22 GMT"
+      "issued": "Mon, 17 Aug 2026 17:08:09 GMT"
     }
   ],
   "fetch_errors": {},
@@ -99,21 +99,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-17T16:34:20+00:00",
-        "description": "SOUTH HEDLAND, TOWN OF PORT HEDLAND",
-        "lat": -20.4073,
-        "lng": 118.5941,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -464,7 +449,7 @@
     ],
     "act": []
   },
-  "incident_count": 25,
+  "incident_count": 24,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3445,7 +3430,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-08-17T11:00:00Z",
+      "issued_utc": "2026-08-17T17:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3485,10 +3470,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-08-17T11:01:00Z",
+      "issued_utc": "2026-08-17T17:07:54Z",
       "overview": [
-        "Strong Wind Warning for Monday for Leeuwin Coast, Albany Coast and Esperance Coast",
-        "Strong Wind Warning for Tuesday for Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
+        "Strong Wind Warning for Tuesday for Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast",
+        "Strong Wind Warning for Wednesday for Leeuwin Coast and Albany Coast"
       ],
       "hazards": [
         {
@@ -3497,14 +3482,16 @@
           "zones": [
             "Leeuwin Coast: Cape Naturaliste to Walpole",
             "Albany Coast: Walpole to Bremer Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay"
+            "Esperance Coast: Bremer Bay to Israelite Bay",
+            "Eucla Coast: Israelite Bay to WA-SA Border"
           ],
           "aac_codes": [
             "WA_MW011",
             "WA_MW012",
-            "WA_MW013"
+            "WA_MW013",
+            "WA_MW014"
           ],
-          "summary": "Leeuwin Coast, Albany Coast and Esperance Coast"
+          "summary": "Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
         }
       ]
     }
