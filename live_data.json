@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-18T04:53:19.391420+00:00",
-  "last_checked_utc": "2026-08-18T04:53:19.391420+00:00",
+  "generated_utc": "2026-08-18T05:23:17.195710+00:00",
+  "last_checked_utc": "2026-08-18T05:23:17.195710+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "18/11:43 EST Marine Wind Warning Summary for Queensland",
+      "title": "18/15:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 18 Aug 2026 01:43:41 GMT"
+      "issued": "Tue, 18 Aug 2026 05:00:18 GMT"
     },
     {
       "pid": "",
@@ -95,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "18/07:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "18/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 17 Aug 2026 23:01:18 GMT"
+      "issued": "Tue, 18 Aug 2026 05:01:24 GMT"
     },
     {
       "pid": "",
@@ -156,7 +156,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Tue, 18 Aug 2026 04:50:58 GMT",
+        "updated": "Tue, 18 Aug 2026 05:18:58 GMT",
         "description": "Breen St, Lavington, NSW 2641",
         "council": "Albury",
         "lat": -36.047073,
@@ -309,16 +309,16 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - COMPIGNE RD, GIRRAWEEN",
+        "title": "Grass and Scrub Fire - MCINTYRE RD, HOWARD SPRINGS",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-08-18T04:21:36+00:00",
-        "description": "COMPIGNE RD, GIRRAWEEN",
-        "lat": -12.5075,
-        "lng": 131.0998,
+        "updated": "2026-08-18T04:55:25+00:00",
+        "description": "MCINTYRE RD, HOWARD SPRINGS",
+        "lat": -12.5142,
+        "lng": 131.0494,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -3502,21 +3502,19 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-08-18T01:43:28Z",
+      "issued_utc": "2026-08-18T05:00:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Townsville Coast: Cardwell to Bowen",
-            "Mackay Coast: Bowen to St Lawrence"
+            "Townsville Coast: Cardwell to Bowen"
           ],
           "aac_codes": [
-            "QLD_MW007",
-            "QLD_MW008"
+            "QLD_MW007"
           ],
-          "summary": "Townsville Coast and Mackay Coast"
+          "summary": "Townsville Coast"
         }
       ]
     },
@@ -3593,9 +3591,9 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-08-17T23:01:00Z",
+      "issued_utc": "2026-08-18T05:01:00Z",
       "overview": [
-        "Strong Wind Warning for Tuesday for Leeuwin Coast, Esperance Coast and Eucla Coast",
+        "Strong Wind Warning for Tuesday for Leeuwin Coast and Eucla Coast",
         "Strong Wind Warning for Wednesday for Leeuwin Coast and Albany Coast"
       ],
       "hazards": [
@@ -3604,15 +3602,13 @@
           "severity": "STR",
           "zones": [
             "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Esperance Coast: Bremer Bay to Israelite Bay",
             "Eucla Coast: Israelite Bay to WA-SA Border"
           ],
           "aac_codes": [
             "WA_MW011",
-            "WA_MW013",
             "WA_MW014"
           ],
-          "summary": "Leeuwin Coast, Esperance Coast and Eucla Coast"
+          "summary": "Leeuwin Coast and Eucla Coast"
         }
       ]
     },
