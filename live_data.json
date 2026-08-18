@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-18T17:53:21.945907+00:00",
-  "last_checked_utc": "2026-08-18T17:53:21.945907+00:00",
+  "generated_utc": "2026-08-18T18:23:24.344306+00:00",
+  "last_checked_utc": "2026-08-18T18:23:24.344306+00:00",
   "warning_count": 14,
   "warnings": [
     {
       "pid": "",
-      "title": "18/22:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "19/04:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 18 Aug 2026 12:00:15 GMT"
+      "issued": "Tue, 18 Aug 2026 18:00:17 GMT"
     },
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "18/22:00 EST Marine Wind Warning Summary for Victoria",
+      "title": "19/04:10 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 18 Aug 2026 12:00:32 GMT"
+      "issued": "Tue, 18 Aug 2026 18:10:27 GMT"
     },
     {
       "pid": "",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "18/21:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "19/03:40 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Tue, 18 Aug 2026 12:00:16 GMT"
+      "issued": "Tue, 18 Aug 2026 18:10:12 GMT"
     },
     {
       "pid": "",
@@ -104,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "18/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "19/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 18 Aug 2026 12:00:17 GMT"
+      "issued": "Tue, 18 Aug 2026 18:00:16 GMT"
     },
     {
       "pid": "IDV21037",
@@ -173,6 +173,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-18T18:06:29+00:00",
+        "description": "WANDERING, SHIRE OF WANDERING",
+        "lat": -32.609,
+        "lng": 116.5984,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Structure Fire",
         "alertLevel": "",
@@ -493,7 +508,7 @@
     ],
     "act": []
   },
-  "incident_count": 21,
+  "incident_count": 22,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3471,30 +3486,14 @@
     }
   },
   "marine_warnings": {
-    "QLD": {
-      "state": "QLD",
-      "product": "IDQ20085",
-      "issued_utc": "2026-08-18T11:17:43Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Townsville Coast: Cardwell to Bowen"
-          ],
-          "aac_codes": [
-            "QLD_MW007"
-          ],
-          "summary": "Townsville Coast"
-        }
-      ]
-    },
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-08-18T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-08-18T18:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Wednesday for Batemans Coast and Eden Coast",
+        "Strong Wind Warning for Thursday for Eden Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3514,10 +3513,11 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-08-18T12:00:00Z",
+      "issued_utc": "2026-08-18T18:10:00Z",
       "overview": [
         "Gale Warning for Wednesday for Port Phillip",
-        "Strong Wind Warning for Wednesday for West Coast, Central Coast and East Gippsland Coast"
+        "Strong Wind Warning for Wednesday for West Coast, Central Coast and East Gippsland Coast",
+        "Strong Wind Warning for Thursday for West Coast, Central Coast and East Gippsland Coast"
       ],
       "hazards": [
         {
@@ -3551,22 +3551,25 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-08-18T12:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Tuesday for South Central Coast",
-        "Strong Wind Warning for Wednesday for Central Coast, South Central Coast, Upper South East Coast and Lower South East Coast"
-      ],
+      "issued_utc": "2026-08-18T18:10:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "South Central Coast"
+            "Central Coast",
+            "South Central Coast",
+            "Upper South East Coast: Murray Mouth to Cape Jaffa",
+            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
           ],
           "aac_codes": [
-            "SA_MW008"
+            "SA_MW004",
+            "SA_MW008",
+            "SA_MW009",
+            "SA_MW010"
           ],
-          "summary": "South Central Coast"
+          "summary": "Central Coast, South Central Coast, Upper South East Coast and Lower South East Coast"
         }
       ]
     },
@@ -3596,8 +3599,11 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-08-18T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-08-18T18:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Wednesday for Far North West Coast, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast, South West Coast and Central West Coast",
+        "Strong Wind Warning for Thursday for Far North West Coast, South West Coast and Central West Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
