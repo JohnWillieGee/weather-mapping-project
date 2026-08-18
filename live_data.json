@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-18T07:23:18.227925+00:00",
-  "last_checked_utc": "2026-08-18T07:23:18.227925+00:00",
+  "generated_utc": "2026-08-18T07:53:25.447450+00:00",
+  "last_checked_utc": "2026-08-18T07:53:25.447450+00:00",
   "warning_count": 14,
   "warnings": [
     {
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "18/15:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "18/17:40 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 18 Aug 2026 05:00:18 GMT"
+      "issued": "Tue, 18 Aug 2026 07:40:59 GMT"
     },
     {
       "pid": "",
@@ -95,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "18/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "18/15:20 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 18 Aug 2026 05:01:24 GMT"
+      "issued": "Tue, 18 Aug 2026 07:20:36 GMT"
     },
     {
       "pid": "",
@@ -167,60 +167,27 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Breen St, Lavington",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Tue, 18 Aug 2026 07:18:58 GMT",
-        "description": "Breen St, Lavington, NSW 2641",
-        "council": "Albury",
-        "lat": -36.047073,
-        "lng": 146.931748,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "Park Av, Kotara",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Tue, 18 Aug 2026 07:18:58 GMT",
-        "description": "Park Av, Kotara, NSW 2289",
-        "council": "Newcastle",
-        "lat": -32.942530001,
-        "lng": 151.698884999,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
-    "qld": [
-      {
-        "title": "STAY INFORMED - Bajool - fire as at 4:26pm Tuesday, 18 August 2026",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "QFD",
-        "updated": "",
-        "description": "Bajool",
-        "lat": -23.657457648794225,
-        "lng": 150.6331250644999,
-        "state": "QLD",
-        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
-      }
-    ],
+    "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-18T07:27:30+00:00",
+        "description": "NORTH WEST CAPE, SHIRE OF EXMOUTH",
+        "lat": -22.0173,
+        "lng": 114.109,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -232,21 +199,6 @@
         "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
         "lat": -16.605,
         "lng": 122.958,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-18T04:27:29+00:00",
-        "description": "NORTH WEST CAPE, SHIRE OF EXMOUTH",
-        "lat": -22.0173,
-        "lng": 114.109,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -359,13 +311,43 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - NULL",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-18T07:46:51+00:00",
+        "description": "NULL",
+        "lat": -21.0028,
+        "lng": 134.403,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - WURRUMIYANGA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-18T07:35:34+00:00",
+        "description": "WURRUMIYANGA",
+        "lat": -11.7583,
+        "lng": 130.6375,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - BATH ST, ALICE SPRINGS",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-08-18T07:11:25+00:00",
+        "updated": "2026-08-18T07:25:34+00:00",
         "description": "BATH ST, ALICE SPRINGS",
         "lat": -23.6976,
         "lng": 133.8812,
@@ -571,7 +553,7 @@
     ],
     "act": []
   },
-  "incident_count": 26,
+  "incident_count": 25,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3552,7 +3534,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-08-18T05:00:00Z",
+      "issued_utc": "2026-08-18T07:40:47Z",
       "overview": [],
       "hazards": [
         {
