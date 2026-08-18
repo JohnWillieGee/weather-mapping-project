@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-18T16:53:22.948763+00:00",
-  "last_checked_utc": "2026-08-18T16:53:22.948763+00:00",
+  "generated_utc": "2026-08-18T17:23:24.119340+00:00",
+  "last_checked_utc": "2026-08-18T17:23:24.119340+00:00",
   "warning_count": 14,
   "warnings": [
     {
@@ -95,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "18/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "19/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 18 Aug 2026 11:01:19 GMT"
+      "issued": "Tue, 18 Aug 2026 17:01:21 GMT"
     },
     {
       "pid": "",
@@ -3573,22 +3573,23 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-08-18T11:01:00Z",
-      "overview": [
-        "Strong Wind Warning for Tuesday for Leeuwin Coast",
-        "Strong Wind Warning for Wednesday for Leeuwin Coast, Albany Coast and Esperance Coast"
-      ],
+      "issued_utc": "2026-08-18T17:01:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Leeuwin Coast: Cape Naturaliste to Walpole"
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay"
           ],
           "aac_codes": [
-            "WA_MW011"
+            "WA_MW011",
+            "WA_MW012",
+            "WA_MW013"
           ],
-          "summary": "Leeuwin Coast"
+          "summary": "Leeuwin Coast, Albany Coast and Esperance Coast"
         }
       ]
     },
