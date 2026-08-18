@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-08-17T23:53:22.388874+00:00",
-  "last_checked_utc": "2026-08-17T23:53:22.388874+00:00",
+  "generated_utc": "2026-08-18T00:23:21.886909+00:00",
+  "last_checked_utc": "2026-08-18T00:23:21.886909+00:00",
   "warning_count": 11,
   "warnings": [
     {
       "pid": "",
-      "title": "18/04:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "18/10:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 17 Aug 2026 18:00:17 GMT"
+      "issued": "Tue, 18 Aug 2026 00:00:20 GMT"
     },
     {
       "pid": "",
-      "title": "18/04:10 EST Marine Wind Warning Summary for Victoria",
+      "title": "18/10:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 17 Aug 2026 18:10:24 GMT"
+      "issued": "Tue, 18 Aug 2026 00:00:24 GMT"
     },
     {
       "pid": "",
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "18/03:40 CST Marine Wind Warning Summary for South Australia",
+      "title": "18/09:34 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Mon, 17 Aug 2026 18:10:17 GMT"
+      "issued": "Tue, 18 Aug 2026 00:04:46 GMT"
     },
     {
       "pid": "",
@@ -95,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "18/04:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "18/10:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 17 Aug 2026 18:00:21 GMT"
+      "issued": "Tue, 18 Aug 2026 00:00:20 GMT"
     }
   ],
   "fetch_errors": {},
@@ -133,7 +133,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-17T23:31:49+00:00",
+        "updated": "2026-08-17T23:38:57+00:00",
         "description": "FREMANTLE, CITY OF FREMANTLE",
         "lat": -32.0465,
         "lng": 115.7535,
@@ -248,6 +248,21 @@
       }
     ],
     "nt": [
+      {
+        "title": "Bushfire - Leonino Road, FLY CREEK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-08-18T02:30:00+00:00",
+        "description": "Leonino Road, FLY CREEK",
+        "lat": -12.7794,
+        "lng": 131.0589,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Bushfire - Kakadu Highway, BURRUNDIE",
         "alertLevel": "Advice",
@@ -369,9 +384,40 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": []
+    "act": [
+      {
+        "title": "HAZMAT INCIDENT - KENNY",
+        "alertLevel": "",
+        "status": "active",
+        "type": "HazMat",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-08-18T00:20:00+00:00",
+        "description": "KENNY",
+        "lat": -35.2099,
+        "lng": 149.1527,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HAZMAT INCIDENT - KENNY",
+        "alertLevel": "",
+        "status": "active",
+        "type": "HazMat",
+        "size": "",
+        "agency": "Fire - Ambulance",
+        "updated": "2026-08-18T00:18:23+00:00",
+        "description": "KENNY",
+        "lat": -35.2099,
+        "lng": 149.1527,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      }
+    ]
   },
-  "incident_count": 17,
+  "incident_count": 20,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3373,7 +3419,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-08-17T18:00:00Z",
+      "issued_utc": "2026-08-18T00:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3394,7 +3440,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-08-17T18:10:00Z",
+      "issued_utc": "2026-08-18T00:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3419,22 +3465,24 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-08-17T18:10:00Z",
+      "issued_utc": "2026-08-18T00:04:36Z",
       "overview": [
-        "Strong Wind Warning for Tuesday for South Central Coast",
-        "Strong Wind Warning for Wednesday for South Central Coast, Upper South East Coast and Lower South East Coast"
+        "Strong Wind Warning for Tuesday for Central Coast and South Central Coast",
+        "Strong Wind Warning for Wednesday for Upper South East Coast, Lower South East Coast and South Central Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Central Coast",
             "South Central Coast"
           ],
           "aac_codes": [
+            "SA_MW004",
             "SA_MW008"
           ],
-          "summary": "South Central Coast"
+          "summary": "Central Coast and South Central Coast"
         }
       ]
     },
@@ -3467,7 +3515,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-08-17T18:00:00Z",
+      "issued_utc": "2026-08-18T00:00:00Z",
       "overview": [],
       "hazards": [
         {
