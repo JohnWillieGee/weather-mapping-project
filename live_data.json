@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-18T10:53:19.398497+00:00",
-  "last_checked_utc": "2026-08-18T10:53:19.398497+00:00",
+  "generated_utc": "2026-08-18T11:23:23.058445+00:00",
+  "last_checked_utc": "2026-08-18T11:23:23.058445+00:00",
   "warning_count": 14,
   "warnings": [
     {
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "18/17:40 EST Marine Wind Warning Summary for Queensland",
+      "title": "18/21:17 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 18 Aug 2026 07:40:59 GMT"
+      "issued": "Tue, 18 Aug 2026 11:17:55 GMT"
     },
     {
       "pid": "",
@@ -95,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "18/15:20 WST Marine Wind Warning Summary for Western Australia",
+      "title": "18/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 18 Aug 2026 07:20:36 GMT"
+      "issued": "Tue, 18 Aug 2026 11:01:19 GMT"
     },
     {
       "pid": "",
@@ -180,7 +180,22 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-18T09:22:29+00:00",
+        "updated": "2026-08-18T11:12:13+00:00",
+        "description": "REDCLIFFE, CITY OF BELMONT",
+        "lat": -31.937,
+        "lng": 115.9449,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-18T10:58:15+00:00",
         "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
         "lat": -16.605,
         "lng": 122.958,
@@ -538,7 +553,7 @@
     ],
     "act": []
   },
-  "incident_count": 24,
+  "incident_count": 25,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3519,7 +3534,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-08-18T07:40:47Z",
+      "issued_utc": "2026-08-18T11:17:43Z",
       "overview": [],
       "hazards": [
         {
@@ -3620,24 +3635,22 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-08-18T07:20:26Z",
+      "issued_utc": "2026-08-18T11:01:00Z",
       "overview": [
-        "Strong Wind Warning for Tuesday for Leeuwin Coast and Eucla Coast",
-        "Strong Wind Warning for Wednesday for Albany Coast, Esperance Coast and Leeuwin Coast"
+        "Strong Wind Warning for Tuesday for Leeuwin Coast",
+        "Strong Wind Warning for Wednesday for Leeuwin Coast, Albany Coast and Esperance Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Eucla Coast: Israelite Bay to WA-SA Border"
+            "Leeuwin Coast: Cape Naturaliste to Walpole"
           ],
           "aac_codes": [
-            "WA_MW011",
-            "WA_MW014"
+            "WA_MW011"
           ],
-          "summary": "Leeuwin Coast and Eucla Coast"
+          "summary": "Leeuwin Coast"
         }
       ]
     },
