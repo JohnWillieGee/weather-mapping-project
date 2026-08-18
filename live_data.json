@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-18T22:53:25.834835+00:00",
-  "last_checked_utc": "2026-08-18T22:53:25.834835+00:00",
+  "generated_utc": "2026-08-18T23:23:26.400471+00:00",
+  "last_checked_utc": "2026-08-18T23:23:26.400471+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "19/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "19/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 18 Aug 2026 17:01:21 GMT"
+      "issued": "Tue, 18 Aug 2026 23:01:18 GMT"
     },
     {
       "pid": "",
@@ -165,6 +165,36 @@
     "tas": [],
     "wa": [
       {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-18T23:01:53+00:00",
+        "description": "EDGEWATER, CITY OF JOONDALUP",
+        "lat": -31.7749,
+        "lng": 115.7806,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-18T22:55:43+00:00",
+        "description": "NORTH WEST CAPE, SHIRE OF EXMOUTH",
+        "lat": -22.0173,
+        "lng": 114.109,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Structure Fire",
         "alertLevel": "",
         "status": "active",
@@ -190,21 +220,6 @@
         "description": "HOVEA, SHIRE OF MUNDARING",
         "lat": -31.8879,
         "lng": 116.1132,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-18T11:38:31+00:00",
-        "description": "NORTH WEST CAPE, SHIRE OF EXMOUTH",
-        "lat": -22.0173,
-        "lng": 114.109,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -505,7 +520,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-08-18T22:49:00+00:00",
+        "updated": "2026-08-18T23:20:00+00:00",
         "description": "DUNLOP",
         "lat": -35.1933,
         "lng": 149.0219,
@@ -520,7 +535,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "Fire",
-        "updated": "2026-08-18T22:47:45+00:00",
+        "updated": "2026-08-18T23:16:30+00:00",
         "description": "DUNLOP",
         "lat": -35.1933,
         "lng": 149.0219,
@@ -530,7 +545,7 @@
       }
     ]
   },
-  "incident_count": 24,
+  "incident_count": 25,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3598,23 +3613,21 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-08-18T17:01:00Z",
+      "issued_utc": "2026-08-18T23:01:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Leeuwin Coast: Cape Naturaliste to Walpole",
             "Albany Coast: Walpole to Bremer Bay",
             "Esperance Coast: Bremer Bay to Israelite Bay"
           ],
           "aac_codes": [
-            "WA_MW011",
             "WA_MW012",
             "WA_MW013"
           ],
-          "summary": "Leeuwin Coast, Albany Coast and Esperance Coast"
+          "summary": "Albany Coast and Esperance Coast"
         }
       ]
     },
