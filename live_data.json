@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-18T00:23:21.886909+00:00",
-  "last_checked_utc": "2026-08-18T00:23:21.886909+00:00",
-  "warning_count": 11,
+  "generated_utc": "2026-08-18T00:53:22.404118+00:00",
+  "last_checked_utc": "2026-08-18T00:53:22.404118+00:00",
+  "warning_count": 12,
   "warnings": [
     {
       "pid": "",
@@ -101,6 +101,40 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Tue, 18 Aug 2026 00:00:20 GMT"
+    },
+    {
+      "pid": "IDV21037",
+      "title": "Severe Weather Warning for North Central, North East, Central, West and South Gippsland",
+      "type": "severe_weather",
+      "state": "VIC",
+      "link": "",
+      "desc": "DAMAGING WINDS averaging 60 to 70 km/h with peak gusts of around 90 km/h are possible throughout the central ranges from early Wednesday morning. After sunrise these winds may extend into Melbourne and parts of the Mornington and Bellarine Peninsulas. Winds are expected to ease during the afternoon. Locations which may be affected include Melbourne, Yarra Glen, Mt Baw Baw and Rosebud.",
+      "issued": "2026-08-18T10:41:12+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "VIC_PW008",
+          "description": "North Central",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW004",
+          "description": "North East",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW007",
+          "description": "Central",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW006",
+          "description": "West and South Gippsland",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -127,16 +161,16 @@
     "tas": [],
     "wa": [
       {
-        "title": "Structure Fire",
+        "title": "Earthquake",
         "alertLevel": "",
         "status": "active",
-        "type": "Structure Fire",
+        "type": "Earthquake",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-17T23:38:57+00:00",
-        "description": "FREMANTLE, CITY OF FREMANTLE",
-        "lat": -32.0465,
-        "lng": 115.7535,
+        "updated": "2026-08-18T00:29:10+00:00",
+        "description": "ZANTHUS, KALGOORLIE-BOULDER, CITY OF",
+        "lat": -30.2406,
+        "lng": 123.9146,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -264,6 +298,21 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
+        "title": "Bushfire - Tanami Road, TANAMI",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-08-17T23:30:00+00:00",
+        "description": "Tanami Road, TANAMI",
+        "lat": -20.8579,
+        "lng": 130.3618,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Kakadu Highway, BURRUNDIE",
         "alertLevel": "Advice",
         "status": "active",
@@ -354,21 +403,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Bushfire - Tanami Road, TANAMI",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-08-15T00:30:00+00:00",
-        "description": "Tanami Road, TANAMI",
-        "lat": -20.8579,
-        "lng": 130.3618,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Farrar Bouldevard, FARRAR",
         "alertLevel": "Advice",
         "status": "active",
@@ -391,23 +425,8 @@
         "status": "active",
         "type": "HazMat",
         "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-08-18T00:20:00+00:00",
-        "description": "KENNY",
-        "lat": -35.2099,
-        "lng": 149.1527,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HAZMAT INCIDENT - KENNY",
-        "alertLevel": "",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "Fire - Ambulance",
-        "updated": "2026-08-18T00:18:23+00:00",
+        "agency": "Fire",
+        "updated": "2026-08-18T00:48:23+00:00",
         "description": "KENNY",
         "lat": -35.2099,
         "lng": 149.1527,
@@ -417,7 +436,7 @@
       }
     ]
   },
-  "incident_count": 20,
+  "incident_count": 19,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
