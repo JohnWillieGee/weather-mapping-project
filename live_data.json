@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-19T04:53:27.095531+00:00",
-  "last_checked_utc": "2026-08-19T04:53:27.095531+00:00",
+  "generated_utc": "2026-08-19T05:23:24.274820+00:00",
+  "last_checked_utc": "2026-08-19T05:23:24.274820+00:00",
   "warning_count": 14,
   "warnings": [
     {
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "19/07:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "19/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 18 Aug 2026 23:01:18 GMT"
+      "issued": "Wed, 19 Aug 2026 05:01:24 GMT"
     },
     {
       "pid": "",
@@ -117,8 +117,8 @@
       "type": "severe_weather",
       "state": "VIC",
       "link": "",
-      "desc": "DAMAGING WINDS averaging 60 to 70 km/h with peak gusts of around 90 km/h are likely about the central and eastern ranges today, and may possibly extend into Melbourne and parts of the Mornington and Bellarine Peninsulas. Winds are expected to ease during the afternoon over Melbourne, and then ease over the ranges by early evening. Locations which may be affected include Melbourne, Falls Creek, Yarra Glen, Mt Baw Baw, Rosebud, Mt Hotham and Mt Buller. Significant wind observations to 10:30 am Wed",
-      "issued": "2026-08-19T10:39:09+10:00",
+      "desc": "DAMAGING WINDS averaging 60 to 70 km/h with peak gusts of around 90 km/h are likely about the eastern ranges this afternoon, easing by early evening. Locations which may be affected include Falls Creek, Mt Baw Baw, Mt Hotham and Mt Buller. Significant wind observations to 10:30 am Wednesday include: 94 km/h wind gust was recorded at Mt Hotham at 9:57 am Sustained 67 km/h winds were recorded at Mt Hotham at 9:00 am",
+      "issued": "2026-08-19T14:53:56+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -144,11 +144,11 @@
         {
           "aac": "VIC_PW005",
           "description": "East Gippsland",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "hazardPhase": "REN"
     },
     {
       "pid": "IDD20320",
@@ -213,7 +213,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-08-19T14:46:22+00:00",
+        "updated": "2026-08-19T15:16:23+00:00",
         "description": "",
         "lat": -41.39927999979665,
         "lng": 146.48482999964747,
@@ -223,6 +223,66 @@
       }
     ],
     "wa": [
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-19T05:07:59+00:00",
+        "description": "PICCADILLY, CITY OF KALGOORLIE-BOULDER",
+        "lat": -30.7405,
+        "lng": 121.4695,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - LOOMA COMMUNITY",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-08-19T05:07:45.538+00:00",
+        "description": "",
+        "lat": -18.0434,
+        "lng": 124.1454,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-19T05:01:59+00:00",
+        "description": "CAMBALLIN, SHIRE OF DERBY/WEST KIMBERLEY",
+        "lat": -18.051,
+        "lng": 124.153,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-19T05:00:01+00:00",
+        "description": "BEDFORDALE, CITY OF ARMADALE",
+        "lat": -32.2,
+        "lng": 116.038,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Fire",
         "alertLevel": "",
@@ -469,7 +529,7 @@
       }
     ]
   },
-  "incident_count": 19,
+  "incident_count": 23,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3533,27 +3593,6 @@
             "SA_MW010"
           ],
           "summary": "Central Coast, South Central Coast, Investigator Strait, Upper South East Coast and Lower South East Coast"
-        }
-      ]
-    },
-    "WA": {
-      "state": "WA",
-      "product": "IDW20100",
-      "issued_utc": "2026-08-18T23:01:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Albany Coast: Walpole to Bremer Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay"
-          ],
-          "aac_codes": [
-            "WA_MW012",
-            "WA_MW013"
-          ],
-          "summary": "Albany Coast and Esperance Coast"
         }
       ]
     },
