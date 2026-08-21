@@ -1,42 +1,3813 @@
 {
-  "generated_utc": "2026-08-21T22:51:29.476815+00:00",
-  "last_checked_utc": "2026-08-21T22:51:29.476815+00:00",
-  "warning_count": 0,
-  "warnings": [],
-  "fetch_errors": {
-    "NSW": "HTTPConnectionPool(host='www.bom.gov.au', port=80): Max retries exceeded with url: /fwo/IDZ00054.warnings_nsw.xml (Caused by NameResolutionError(\"HTTPConnection(host='www.bom.gov.au', port=80): Failed to resolve 'www.bom.gov.au' ([Errno 11001] getaddrinfo failed)\"))",
-    "VIC": "HTTPConnectionPool(host='www.bom.gov.au', port=80): Max retries exceeded with url: /fwo/IDZ00059.warnings_vic.xml (Caused by NameResolutionError(\"HTTPConnection(host='www.bom.gov.au', port=80): Failed to resolve 'www.bom.gov.au' ([Errno 11001] getaddrinfo failed)\"))",
-    "QLD": "HTTPConnectionPool(host='www.bom.gov.au', port=80): Max retries exceeded with url: /fwo/IDZ00056.warnings_qld.xml (Caused by NameResolutionError(\"HTTPConnection(host='www.bom.gov.au', port=80): Failed to resolve 'www.bom.gov.au' ([Errno 11001] getaddrinfo failed)\"))",
-    "SA": "HTTPConnectionPool(host='www.bom.gov.au', port=80): Max retries exceeded with url: /fwo/IDZ00057.warnings_sa.xml (Caused by NameResolutionError(\"HTTPConnection(host='www.bom.gov.au', port=80): Failed to resolve 'www.bom.gov.au' ([Errno 11001] getaddrinfo failed)\"))",
-    "WA": "HTTPConnectionPool(host='www.bom.gov.au', port=80): Max retries exceeded with url: /fwo/IDZ00060.warnings_wa.xml (Caused by NameResolutionError(\"HTTPConnection(host='www.bom.gov.au', port=80): Failed to resolve 'www.bom.gov.au' ([Errno 11001] getaddrinfo failed)\"))",
-    "TAS": "HTTPConnectionPool(host='www.bom.gov.au', port=80): Max retries exceeded with url: /fwo/IDZ00058.warnings_tas.xml (Caused by NameResolutionError(\"HTTPConnection(host='www.bom.gov.au', port=80): Failed to resolve 'www.bom.gov.au' ([Errno 11001] getaddrinfo failed)\"))",
-    "NT": "HTTPConnectionPool(host='www.bom.gov.au', port=80): Max retries exceeded with url: /fwo/IDZ00055.warnings_nt.xml (Caused by NameResolutionError(\"HTTPConnection(host='www.bom.gov.au', port=80): Failed to resolve 'www.bom.gov.au' ([Errno 11001] getaddrinfo failed)\"))",
-    "nsw": "All NSW feeds unavailable: HTTPSConnectionPool(host='services.arcgis.com', port=443): Max retries exceeded with url: /cEku21QqeYtjx5kU/arcgis/rest/services/Current_Incidents/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson (Caused by NameResolutionError(\"HTTPSConnection(host='services.arcgis.com', port=443): Failed to resolve 'services.arcgis.com' ([Errno 11001] getaddrinfo failed)\"))",
-    "vic": "HTTPSConnectionPool(host='data.emergency.vic.gov.au', port=443): Max retries exceeded with url: /Show?pageId=getIncidentJSON (Caused by NameResolutionError(\"HTTPSConnection(host='data.emergency.vic.gov.au', port=443): Failed to resolve 'data.emergency.vic.gov.au' ([Errno 11001] getaddrinfo failed)\"))",
-    "qld": "HTTPSConnectionPool(host='publiccontent-gis-psba-qld-gov-au.s3.amazonaws.com', port=443): Max retries exceeded with url: /content/Feeds/BushfireCurrentIncidents/bushfireAlert.json (Caused by NameResolutionError(\"HTTPSConnection(host='publiccontent-gis-psba-qld-gov-au.s3.amazonaws.com', port=443): Failed to resolve 'publiccontent-gis-psba-qld-gov-au.s3.amazonaws.com' ([Errno 11001] getaddrinfo failed)\"))",
-    "sa": "HTTPSConnectionPool(host='data.eso.sa.gov.au', port=443): Max retries exceeded with url: /prod/cfs/criimson/cfs_current_incidents.json (Caused by NameResolutionError(\"HTTPSConnection(host='data.eso.sa.gov.au', port=443): Failed to resolve 'data.eso.sa.gov.au' ([Errno 11001] getaddrinfo failed)\"))",
-    "tas": "HTTPSConnectionPool(host='services.thelist.tas.gov.au', port=443): Max retries exceeded with url: /arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/72/query?where=1%3D1&outFields=*&f=geojson (Caused by NameResolutionError(\"HTTPSConnection(host='services.thelist.tas.gov.au', port=443): Failed to resolve 'services.thelist.tas.gov.au' ([Errno 11001] getaddrinfo failed)\"))",
-    "wa": "HTTPSConnectionPool(host='www.emergency.wa.gov.au', port=443): Max retries exceeded with url: /data/incident_FCAD.rss (Caused by NameResolutionError(\"HTTPSConnection(host='www.emergency.wa.gov.au', port=443): Failed to resolve 'www.emergency.wa.gov.au' ([Errno 11001] getaddrinfo failed)\"))",
-    "nt": "HTTPSConnectionPool(host='emergencyapi.com', port=443): Max retries exceeded with url: /api/v1/incidents?state=nt (Caused by NameResolutionError(\"HTTPSConnection(host='emergencyapi.com', port=443): Failed to resolve 'emergencyapi.com' ([Errno 11001] getaddrinfo failed)\"))",
-    "act": "HTTPSConnectionPool(host='emergencyapi.com', port=443): Max retries exceeded with url: /api/v1/incidents?state=act (Caused by NameResolutionError(\"HTTPSConnection(host='emergencyapi.com', port=443): Failed to resolve 'emergencyapi.com' ([Errno 11001] getaddrinfo failed)\"))",
-    "nsw_zones": "HTTPSConnectionPool(host='www.rfs.nsw.gov.au', port=443): Max retries exceeded with url: /feeds/IncidentAlerts.xml (Caused by NameResolutionError(\"HTTPSConnection(host='www.rfs.nsw.gov.au', port=443): Failed to resolve 'www.rfs.nsw.gov.au' ([Errno 11001] getaddrinfo failed)\"))",
-    "radar": "fetch failed",
-    "fdr_xml": "fetch failed"
-  },
+  "generated_utc": "2026-08-21T23:23:02.258725+00:00",
+  "last_checked_utc": "2026-08-21T23:23:02.258725+00:00",
+  "warning_count": 17,
+  "warnings": [
+    {
+      "pid": "",
+      "title": "22/04:00 EST Marine Wind Warning Summary for New South Wales",
+      "type": "wind",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Fri, 21 Aug 2026 18:00:10 GMT"
+    },
+    {
+      "pid": "",
+      "title": "21/13:58 EST Minor Flood Warning for the Murray River",
+      "type": "flood",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/nsw/warnings/flood/murrayriver.shtml",
+      "desc": "",
+      "issued": "Fri, 21 Aug 2026 03:58:36 GMT"
+    },
+    {
+      "pid": "",
+      "title": "21/13:58 EST Minor Flood Warning for the Murray River",
+      "type": "flood",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/nsw/warnings/flood/murrayriver.shtml",
+      "desc": "",
+      "issued": "Fri, 21 Aug 2026 03:58:36 GMT"
+    },
+    {
+      "pid": "",
+      "title": "22/04:10 EST Marine Wind Warning Summary for Victoria",
+      "type": "wind",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Fri, 21 Aug 2026 18:10:21 GMT"
+    },
+    {
+      "pid": "",
+      "title": "21/12:45 EST Minor Flood Warning for the Kiewa River",
+      "type": "flood",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/flood/kiewariver.shtml",
+      "desc": "",
+      "issued": "Fri, 21 Aug 2026 02:45:35 GMT"
+    },
+    {
+      "pid": "",
+      "title": "21/11:02 EST Minor Flood Warning for the Ovens and King Rivers",
+      "type": "flood",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/flood/ovensandkingrivers.shtml",
+      "desc": "",
+      "issued": "Fri, 21 Aug 2026 01:02:41 GMT"
+    },
+    {
+      "pid": "",
+      "title": "21/09:50 EST Final Flood Warning for the Seven Creeks",
+      "type": "flood",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/flood/sevencreeks-castlecreek.shtml",
+      "desc": "",
+      "issued": "Thu, 20 Aug 2026 23:50:56 GMT"
+    },
+    {
+      "pid": "",
+      "title": "21/11:12 EST Final Flood Warning for the Yea River and Hughes Creek",
+      "type": "flood",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/flood/goulburnriver.shtml",
+      "desc": "",
+      "issued": "Fri, 21 Aug 2026 01:12:41 GMT"
+    },
+    {
+      "pid": "",
+      "title": "22/09:00 EST Moderate Flood Warning for the Loddon River",
+      "type": "flood",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/flood/loddonriver.shtml",
+      "desc": "",
+      "issued": "Fri, 21 Aug 2026 23:00:40 GMT"
+    },
+    {
+      "pid": "",
+      "title": "21/17:50 EST Moderate Flood Warning for the Avoca River",
+      "type": "flood",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/flood/avocariver.shtml",
+      "desc": "",
+      "issued": "Fri, 21 Aug 2026 07:50:56 GMT"
+    },
+    {
+      "pid": "",
+      "title": "22/03:40 CST Marine Wind Warning Summary for South Australia",
+      "type": "wind",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
+      "desc": "",
+      "issued": "Fri, 21 Aug 2026 18:10:11 GMT"
+    },
+    {
+      "pid": "",
+      "title": "22/07:01 WST Marine Wind Warning Summary for Western Australia",
+      "type": "wind",
+      "state": "WA",
+      "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
+      "desc": "",
+      "issued": "Fri, 21 Aug 2026 23:01:14 GMT"
+    },
+    {
+      "pid": "",
+      "title": "22/05:07 EST Marine Wind Warning Summary for Tasmania",
+      "type": "wind",
+      "state": "TAS",
+      "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Fri, 21 Aug 2026 19:07:03 GMT"
+    },
+    {
+      "pid": "IDT20605",
+      "title": "21/10:41 EST Final Flood Warning for the Mersey River",
+      "type": "flood",
+      "state": "TAS",
+      "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDT20605.html",
+      "desc": "",
+      "issued": "Fri, 21 Aug 2026 00:41:57 GMT"
+    },
+    {
+      "pid": "IDT20609",
+      "title": "21/11:34 EST Final Flood Warning for the Meander River",
+      "type": "flood",
+      "state": "TAS",
+      "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDT20609.html",
+      "desc": "",
+      "issued": "Fri, 21 Aug 2026 01:34:40 GMT"
+    },
+    {
+      "pid": "",
+      "title": "22/04:58 EST Warning to Sheep Graziers\nfor Upper Derwent Valley and South East forecast districts",
+      "type": "other",
+      "state": "TAS",
+      "link": "http://reg.bom.gov.au/tas/warnings/sheep.shtml",
+      "desc": "",
+      "issued": "Fri, 21 Aug 2026 18:58:31 GMT"
+    },
+    {
+      "pid": "IDT21037",
+      "title": "Severe Weather Warning for Furneaux Islands, North West Coast, Central North, North East, Midlands, South East, Central Plateau, Western",
+      "type": "severe_weather",
+      "state": "TAS",
+      "link": "",
+      "desc": "DAMAGING WINDS averaging 60 to 70 km/h with peak gusts in excess of 100 km/h are occurring in the southwest and northeast (including the Furneaux Islands) this morning, extending to parts of the Midlands, Western Tiers and exposed southeast by mid to late morning. Conditions ease across the southwest, northeast and Furneaux Islands around lunch time, and the remainder of the warning area by late afternoon. Locations which may be affected include Strahan, Oatlands, Whitemark, Bridport and Strathg",
+      "issued": "2026-08-22T04:57:42+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "TAS_PW001",
+          "description": "Furneaux Islands",
+          "phase": "REN"
+        },
+        {
+          "aac": "TAS_PW010",
+          "description": "North West Coast",
+          "phase": "REN"
+        },
+        {
+          "aac": "TAS_PW004",
+          "description": "Central North",
+          "phase": "REN"
+        },
+        {
+          "aac": "TAS_PW002",
+          "description": "North East",
+          "phase": "REN"
+        },
+        {
+          "aac": "TAS_PW005",
+          "description": "Midlands",
+          "phase": "REN"
+        },
+        {
+          "aac": "TAS_PW006",
+          "description": "South East",
+          "phase": "REN"
+        },
+        {
+          "aac": "TAS_PW008",
+          "description": "Central Plateau",
+          "phase": "REN"
+        },
+        {
+          "aac": "TAS_PW009",
+          "description": "Western",
+          "phase": "REN"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "REN"
+    }
+  ],
+  "fetch_errors": {},
   "incidents": {
     "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
-    "wa": [],
-    "nt": [],
+    "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-21T22:21:38+00:00",
+        "description": "ROELANDS, SHIRE OF HARVEY",
+        "lat": -33.3021,
+        "lng": 115.8282,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - BULGARA, KARRATHA AND MULATAGA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-08-21T21:08:24.175+00:00",
+        "description": "",
+        "lat": -20.7344,
+        "lng": 116.8573,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-21T18:38:59+00:00",
+        "description": "BULGARRA, CITY OF KARRATHA",
+        "lat": -20.7353,
+        "lng": 116.8544,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-21T11:34:59+00:00",
+        "description": "NORTH WEST CAPE, SHIRE OF EXMOUTH",
+        "lat": -22.0183,
+        "lng": 114.1089,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-21T10:27:44+00:00",
+        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.7768,
+        "lng": 128.749,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice STAY INFORMED - DAMPIER PENINSULA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-08-21T08:09:45.463+00:00",
+        "description": "",
+        "lat": -16.8186,
+        "lng": 122.5915,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-21T01:13:34+00:00",
+        "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
+        "lat": -16.82,
+        "lng": 122.575,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-21T01:12:50+00:00",
+        "description": "LAGRANGE, SHIRE OF BROOME",
+        "lat": -18.661,
+        "lng": 121.837,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - DAMPIER PENINSULA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-08-20T08:12:41.189+00:00",
+        "description": "",
+        "lat": -16.3848,
+        "lng": 123.0186,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - DAMPIER PENINSULA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-08-20T02:27:45.27+00:00",
+        "description": "",
+        "lat": -16.5877,
+        "lng": 122.9699,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Smoke Alert FOR WILBINGA AND SURROUNDS IN THE SHIRE OF GINGIN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-08-20T01:08:20.007+00:00",
+        "description": "",
+        "lat": -31.4181,
+        "lng": 115.6584,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-19T13:01:25+00:00",
+        "description": "CAMBALLIN, SHIRE OF DERBY/WEST KIMBERLEY",
+        "lat": -18.051,
+        "lng": 124.153,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-19T06:13:31+00:00",
+        "description": "STURT CREEK, SHIRE OF HALLS CREEK",
+        "lat": -18.451,
+        "lng": 127.758,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-19T06:00:29+00:00",
+        "description": "CAMBALLIN, SHIRE OF DERBY/WEST KIMBERLEY",
+        "lat": -18.074,
+        "lng": 124.218,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-18T10:58:15+00:00",
+        "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
+        "lat": -16.605,
+        "lng": 122.958,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-17T05:32:29+00:00",
+        "description": "ROEBUCK, SHIRE OF BROOME",
+        "lat": -18.4201,
+        "lng": 122.1135,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-16T08:33:52+00:00",
+        "description": "GINGERAH, SHIRE OF BROOME",
+        "lat": -19.112,
+        "lng": 123.365,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-16T07:35:13+00:00",
+        "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
+        "lat": -16.39,
+        "lng": 122.99,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      }
+    ],
+    "nt": [
+      {
+        "title": "Grass and Scrub Fire - TUMBLING WATERS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-21T08:34:06+00:00",
+        "description": "TUMBLING WATERS",
+        "lat": -12.7656,
+        "lng": 130.9563,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - BLACKMORE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-21T08:34:03+00:00",
+        "description": "BLACKMORE",
+        "lat": -12.7519,
+        "lng": 130.9205,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - GUNN POINT RD, HOWARD SPRINGS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-21T07:51:45+00:00",
+        "description": "GUNN POINT RD, HOWARD SPRINGS",
+        "lat": -12.4629,
+        "lng": 131.0836,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Whitewood Road, Howard Springs",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-21T05:26:00+00:00",
+        "description": "Whitewood Road, Howard Springs",
+        "lat": -12.4964,
+        "lng": 131.0209,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - ARNHEM HWY, MARRAKAI",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-21T03:14:48+00:00",
+        "description": "ARNHEM HWY, MARRAKAI",
+        "lat": -12.832,
+        "lng": 131.5759,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Tanami Road, TANAMI",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-08-21T01:00:00+00:00",
+        "description": "Tanami Road, TANAMI",
+        "lat": -20.8579,
+        "lng": 130.3618,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Barkly Highway, TABLELANDS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-08-21T00:20:00+00:00",
+        "description": "Barkly Highway, TABLELANDS",
+        "lat": -19.7319,
+        "lng": 135.3002,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Arnhem Highway (Djukbinj National Park), MARRAKAI ",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-08-21T00:15:00+00:00",
+        "description": "Arnhem Highway (Djukbinj National Park), MARRAKAI ",
+        "lat": -12.7009,
+        "lng": 131.4915,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - PASTORAL RD, BURRUNDIE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-20T08:12:20+00:00",
+        "description": "PASTORAL RD, BURRUNDIE",
+        "lat": -13.3887,
+        "lng": 131.5077,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Stuart Highway, BIRDUM",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-08-20T04:30:00+00:00",
+        "description": "Stuart Highway, BIRDUM",
+        "lat": -16.2931,
+        "lng": 133.4448,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Victoria Highway, GREGORY",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-08-20T03:30:00+00:00",
+        "description": "Victoria Highway, GREGORY",
+        "lat": -15.6101,
+        "lng": 130.2587,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      }
+    ],
     "act": []
   },
-  "incident_count": 0,
+  "incident_count": 29,
   "nsw_alert_zones": [],
-  "wa_feed_method": "none",
-  "fdr": null,
-  "marine_warnings": {},
+  "wa_feed_method": "emergencyapi",
+  "fdr": {
+    "ratings": {
+      "NSW_FW001": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NSW_FW002": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NSW_FW003": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NSW_FW004": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NSW_FW005": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 10,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NSW_FW006": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NSW_FW007": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NSW_FW008": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NSW_FW009": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NSW_FW010": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 10,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NSW_FW011": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NSW_FW012": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NSW_FW013": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NSW_FW014": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 10,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NSW_FW015": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NSW_FW016": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 5,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NSW_FW017": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 2,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 1,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 2,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 1,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NSW_FW018": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 3,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 3,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 5,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 4,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NSW_FW019": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NSW_FW020": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 4,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 4,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 5,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NSW_FW021": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-22T05:26:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "QLD_FW001": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "QLD_FW002": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "QLD_FW003": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 18,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 18,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "QLD_FW004": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "QLD_FW006": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "QLD_FW007": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "QLD_FW008": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "QLD_FW009": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 20,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "High",
+          "fbi": 25,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 18,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "QLD_FW010": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 19,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 20,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "QLD_FW011": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 23,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "QLD_FW012": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "QLD_FW013": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 10,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "QLD_FW014": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "QLD_FW015": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 10,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "WA_FW041": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW042": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 18,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 20,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 21,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW043": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 10,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW089": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 19,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 22,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 20,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 23,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW090": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW083": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 19,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 19,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 18,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW047": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 19,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 21,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 20,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW044": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 20,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "High",
+          "fbi": 26,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 22,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 21,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW045": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 22,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "High",
+          "fbi": 27,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 19,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 23,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW080": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 23,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 20,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 20,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW046": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 21,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 21,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 19,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW081": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW051": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 19,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW049": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 21,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW050": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 10,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW048": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW053": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW054": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW055": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 5,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW056": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW052": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 20,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 20,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW062": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 18,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 18,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW082": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW060": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW061": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 3,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW058": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 4,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW059": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW057": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW088": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW064": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW063": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW091": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW067": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW066": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW092": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 10,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 4,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 10,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW068": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW084": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW071": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW069": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW070": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW086": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW072": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW087": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 10,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW074": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW073": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW085": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 10,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW075": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW077": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "WA_FW078": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-22T05:18:00+08:00",
+          "et": "2026-08-23T00:00:00+08:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-23T00:00:00+08:00",
+          "et": "2026-08-24T00:00:00+08:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 4,
+          "st": "2026-08-24T00:00:00+08:00",
+          "et": "2026-08-25T00:00:00+08:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-25T00:00:00+08:00",
+          "et": "2026-08-26T00:00:00+08:00"
+        }
+      },
+      "TAS_FW011": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "TAS_FW001": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 10,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "TAS_FW010": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "TAS_FW004": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 10,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "TAS_FW002": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 10,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "TAS_FW003": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 20,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "TAS_FW005": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 18,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "TAS_FW007": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "TAS_FW006": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 18,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "TAS_FW008": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "TAS_FW009": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-22T00:00:00+10:00",
+          "et": "2026-08-23T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-23T00:00:00+10:00",
+          "et": "2026-08-24T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-25T00:00:00+10:00",
+          "et": "2026-08-26T00:00:00+10:00"
+        }
+      },
+      "NT_FW001": {
+        "1": {
+          "fd": "High",
+          "fbi": 33,
+          "st": "2026-08-22T05:48:00+09:30",
+          "et": "2026-08-23T00:00:00+09:30"
+        },
+        "2": {
+          "fd": "High",
+          "fbi": 29,
+          "st": "2026-08-23T00:00:00+09:30",
+          "et": "2026-08-24T00:00:00+09:30"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 22,
+          "st": "2026-08-24T00:00:00+09:30",
+          "et": "2026-08-25T00:00:00+09:30"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 23,
+          "st": "2026-08-25T00:00:00+09:30",
+          "et": "2026-08-26T00:00:00+09:30"
+        }
+      },
+      "NT_FW002": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-22T05:48:00+09:30",
+          "et": "2026-08-23T00:00:00+09:30"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-23T00:00:00+09:30",
+          "et": "2026-08-24T00:00:00+09:30"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-24T00:00:00+09:30",
+          "et": "2026-08-25T00:00:00+09:30"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-25T00:00:00+09:30",
+          "et": "2026-08-26T00:00:00+09:30"
+        }
+      },
+      "NT_FW003": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-22T05:48:00+09:30",
+          "et": "2026-08-23T00:00:00+09:30"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-23T00:00:00+09:30",
+          "et": "2026-08-24T00:00:00+09:30"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-24T00:00:00+09:30",
+          "et": "2026-08-25T00:00:00+09:30"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-25T00:00:00+09:30",
+          "et": "2026-08-26T00:00:00+09:30"
+        }
+      },
+      "NT_FW004": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 10,
+          "st": "2026-08-22T05:48:00+09:30",
+          "et": "2026-08-23T00:00:00+09:30"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-23T00:00:00+09:30",
+          "et": "2026-08-24T00:00:00+09:30"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-24T00:00:00+09:30",
+          "et": "2026-08-25T00:00:00+09:30"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-08-25T00:00:00+09:30",
+          "et": "2026-08-26T00:00:00+09:30"
+        }
+      },
+      "NT_FW005": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-22T05:48:00+09:30",
+          "et": "2026-08-23T00:00:00+09:30"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-23T00:00:00+09:30",
+          "et": "2026-08-24T00:00:00+09:30"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-24T00:00:00+09:30",
+          "et": "2026-08-25T00:00:00+09:30"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-25T00:00:00+09:30",
+          "et": "2026-08-26T00:00:00+09:30"
+        }
+      },
+      "NT_FW006": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-22T05:48:00+09:30",
+          "et": "2026-08-23T00:00:00+09:30"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-23T00:00:00+09:30",
+          "et": "2026-08-24T00:00:00+09:30"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-24T00:00:00+09:30",
+          "et": "2026-08-25T00:00:00+09:30"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-25T00:00:00+09:30",
+          "et": "2026-08-26T00:00:00+09:30"
+        }
+      },
+      "NT_FW007": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 20,
+          "st": "2026-08-22T05:48:00+09:30",
+          "et": "2026-08-23T00:00:00+09:30"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 20,
+          "st": "2026-08-23T00:00:00+09:30",
+          "et": "2026-08-24T00:00:00+09:30"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-08-24T00:00:00+09:30",
+          "et": "2026-08-25T00:00:00+09:30"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 20,
+          "st": "2026-08-25T00:00:00+09:30",
+          "et": "2026-08-26T00:00:00+09:30"
+        }
+      },
+      "NT_FW008": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-22T05:48:00+09:30",
+          "et": "2026-08-23T00:00:00+09:30"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-23T00:00:00+09:30",
+          "et": "2026-08-24T00:00:00+09:30"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-24T00:00:00+09:30",
+          "et": "2026-08-25T00:00:00+09:30"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-25T00:00:00+09:30",
+          "et": "2026-08-26T00:00:00+09:30"
+        }
+      },
+      "NT_FW009": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-22T05:48:00+09:30",
+          "et": "2026-08-23T00:00:00+09:30"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-23T00:00:00+09:30",
+          "et": "2026-08-24T00:00:00+09:30"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-24T00:00:00+09:30",
+          "et": "2026-08-25T00:00:00+09:30"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-25T00:00:00+09:30",
+          "et": "2026-08-26T00:00:00+09:30"
+        }
+      },
+      "NT_FW010": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-22T05:48:00+09:30",
+          "et": "2026-08-23T00:00:00+09:30"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-23T00:00:00+09:30",
+          "et": "2026-08-24T00:00:00+09:30"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-24T00:00:00+09:30",
+          "et": "2026-08-25T00:00:00+09:30"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-25T00:00:00+09:30",
+          "et": "2026-08-26T00:00:00+09:30"
+        }
+      },
+      "NT_FW011": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-22T05:48:00+09:30",
+          "et": "2026-08-23T00:00:00+09:30"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-23T00:00:00+09:30",
+          "et": "2026-08-24T00:00:00+09:30"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-24T00:00:00+09:30",
+          "et": "2026-08-25T00:00:00+09:30"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-25T00:00:00+09:30",
+          "et": "2026-08-26T00:00:00+09:30"
+        }
+      },
+      "NT_FW012": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 18,
+          "st": "2026-08-22T05:48:00+09:30",
+          "et": "2026-08-23T00:00:00+09:30"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-08-23T00:00:00+09:30",
+          "et": "2026-08-24T00:00:00+09:30"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-08-24T00:00:00+09:30",
+          "et": "2026-08-25T00:00:00+09:30"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-25T00:00:00+09:30",
+          "et": "2026-08-26T00:00:00+09:30"
+        }
+      },
+      "NT_FW013": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-22T05:48:00+09:30",
+          "et": "2026-08-23T00:00:00+09:30"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-23T00:00:00+09:30",
+          "et": "2026-08-24T00:00:00+09:30"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-24T00:00:00+09:30",
+          "et": "2026-08-25T00:00:00+09:30"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-25T00:00:00+09:30",
+          "et": "2026-08-26T00:00:00+09:30"
+        }
+      },
+      "NT_FW014": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-22T05:48:00+09:30",
+          "et": "2026-08-23T00:00:00+09:30"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 10,
+          "st": "2026-08-23T00:00:00+09:30",
+          "et": "2026-08-24T00:00:00+09:30"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-24T00:00:00+09:30",
+          "et": "2026-08-25T00:00:00+09:30"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-25T00:00:00+09:30",
+          "et": "2026-08-26T00:00:00+09:30"
+        }
+      },
+      "NT_FW015": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-22T05:48:00+09:30",
+          "et": "2026-08-23T00:00:00+09:30"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-08-23T00:00:00+09:30",
+          "et": "2026-08-24T00:00:00+09:30"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-24T00:00:00+09:30",
+          "et": "2026-08-25T00:00:00+09:30"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-25T00:00:00+09:30",
+          "et": "2026-08-26T00:00:00+09:30"
+        }
+      },
+      "NT_FW016": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 18,
+          "st": "2026-08-22T05:48:00+09:30",
+          "et": "2026-08-23T00:00:00+09:30"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-23T00:00:00+09:30",
+          "et": "2026-08-24T00:00:00+09:30"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 21,
+          "st": "2026-08-24T00:00:00+09:30",
+          "et": "2026-08-25T00:00:00+09:30"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 23,
+          "st": "2026-08-25T00:00:00+09:30",
+          "et": "2026-08-26T00:00:00+09:30"
+        }
+      },
+      "NT_FW017": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-22T05:48:00+09:30",
+          "et": "2026-08-23T00:00:00+09:30"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-23T00:00:00+09:30",
+          "et": "2026-08-24T00:00:00+09:30"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-24T00:00:00+09:30",
+          "et": "2026-08-25T00:00:00+09:30"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-25T00:00:00+09:30",
+          "et": "2026-08-26T00:00:00+09:30"
+        }
+      },
+      "NT_FW018": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-22T05:48:00+09:30",
+          "et": "2026-08-23T00:00:00+09:30"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-23T00:00:00+09:30",
+          "et": "2026-08-24T00:00:00+09:30"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 16,
+          "st": "2026-08-24T00:00:00+09:30",
+          "et": "2026-08-25T00:00:00+09:30"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-25T00:00:00+09:30",
+          "et": "2026-08-26T00:00:00+09:30"
+        }
+      },
+      "NT_FW019": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 0,
+          "st": "2026-08-22T05:48:00+09:30",
+          "et": "2026-08-23T00:00:00+09:30"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 0,
+          "st": "2026-08-23T00:00:00+09:30",
+          "et": "2026-08-24T00:00:00+09:30"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 0,
+          "st": "2026-08-24T00:00:00+09:30",
+          "et": "2026-08-25T00:00:00+09:30"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 0,
+          "st": "2026-08-25T00:00:00+09:30",
+          "et": "2026-08-26T00:00:00+09:30"
+        }
+      },
+      "NT_FW020": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-22T05:48:00+09:30",
+          "et": "2026-08-23T00:00:00+09:30"
+        },
+        "2": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-23T00:00:00+09:30",
+          "et": "2026-08-24T00:00:00+09:30"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 10,
+          "st": "2026-08-24T00:00:00+09:30",
+          "et": "2026-08-25T00:00:00+09:30"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 10,
+          "st": "2026-08-25T00:00:00+09:30",
+          "et": "2026-08-26T00:00:00+09:30"
+        }
+      }
+    },
+    "times": {
+      "1": "2026-08-22T05:26:00+10:00",
+      "2": "2026-08-23T00:00:00+10:00",
+      "3": "2026-08-24T00:00:00+10:00",
+      "4": "2026-08-25T00:00:00+10:00"
+    }
+  },
+  "marine_warnings": {
+    "NSW": {
+      "state": "NSW",
+      "product": "IDN20400",
+      "issued_utc": "2026-08-21T18:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "Eden Coast: Montague Island to Gabo Island"
+          ],
+          "aac_codes": [
+            "NSW_MW001"
+          ],
+          "summary": "Eden Coast"
+        }
+      ]
+    },
+    "VIC": {
+      "state": "VIC",
+      "product": "IDV20600",
+      "issued_utc": "2026-08-21T18:10:00Z",
+      "overview": [
+        "Gale Warning for Saturday for Central Coast, Central Gippsland Coast and East Gippsland Coast",
+        "Strong Wind Warning for Saturday for West Coast"
+      ],
+      "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "Central Coast: Cape Otway to Wilsons Promontory",
+            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
+          ],
+          "aac_codes": [
+            "VIC_MW002",
+            "VIC_MW003",
+            "VIC_MW004"
+          ],
+          "summary": "Central Coast, Central Gippsland Coast and East Gippsland Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "West Coast: SA-VIC Border to Cape Otway"
+          ],
+          "aac_codes": [
+            "VIC_MW001"
+          ],
+          "summary": "West Coast"
+        }
+      ]
+    },
+    "SA": {
+      "state": "SA",
+      "product": "IDS20201",
+      "issued_utc": "2026-08-21T18:10:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
+          ],
+          "aac_codes": [
+            "SA_MW010"
+          ],
+          "summary": "Lower South East Coast"
+        }
+      ]
+    },
+    "WA": {
+      "state": "WA",
+      "product": "IDW20100",
+      "issued_utc": "2026-08-21T23:01:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Lancelin Coast: Jurien Bay to Two Rocks"
+          ],
+          "aac_codes": [
+            "WA_MW008"
+          ],
+          "summary": "Lancelin Coast"
+        }
+      ]
+    },
+    "TAS": {
+      "state": "TAS",
+      "product": "IDT20100",
+      "issued_utc": "2026-08-21T19:06:55Z",
+      "overview": [
+        "Gale Warning for Saturday for South East Coast, South West Coast, Central West Coast, Storm Bay, Upper East Coast, Lower East Coast, Far North West Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island",
+        "Strong Wind Warning for Saturday for South West Lakes, Channel, Derwent Estuary, Central Plateau Lakes and Frederick Henry Bay and Norfolk Bay",
+        "Strong Wind Warning for Sunday for Central West Coast, Upper East Coast, South East Coast, East of Flinders Island and South West Coast"
+      ],
+      "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "Far North West Coast: Sandy Cape to Stanley",
+            "Central North Coast: Stanley to Northern Tip of Flinders Island",
+            "Banks Strait and Franklin Sound",
+            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
+            "Upper East Coast: St Helens Point to Wineglass Bay",
+            "Lower East Coast: Wineglass Bay to Tasman Island",
+            "South East Coast: Tasman Island to South East Cape",
+            "South West Coast: South East Cape to Low Rocky Point",
+            "Central West Coast: Low Rocky Point to Sandy Cape",
+            "Storm Bay"
+          ],
+          "aac_codes": [
+            "TAS_MW001",
+            "TAS_MW002",
+            "TAS_MW009",
+            "TAS_MW003",
+            "TAS_MW004",
+            "TAS_MW005",
+            "TAS_MW006",
+            "TAS_MW007",
+            "TAS_MW008",
+            "TAS_MW014"
+          ],
+          "summary": "Storm Bay, Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast, South West Coast and Central West Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Derwent Estuary",
+            "Frederick Henry Bay and Norfolk Bays",
+            "Channel",
+            "Central Plateau Lakes",
+            "South West Lakes"
+          ],
+          "aac_codes": [
+            "TAS_MW012",
+            "TAS_MW013",
+            "TAS_MW011",
+            "TAS_MW010",
+            "TAS_MW015"
+          ],
+          "summary": "Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Channel, Central Plateau Lakes and South West Lakes"
+        }
+      ]
+    }
+  },
   "cyclones": []
 }
