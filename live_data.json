@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-21T00:32:49.204553+00:00",
-  "last_checked_utc": "2026-08-21T00:32:49.204553+00:00",
-  "warning_count": 14,
+  "generated_utc": "2026-08-21T00:52:59.609778+00:00",
+  "last_checked_utc": "2026-08-21T00:52:59.609778+00:00",
+  "warning_count": 16,
   "warnings": [
     {
       "pid": "",
@@ -113,12 +113,12 @@
     },
     {
       "pid": "IDT20605",
-      "title": "20/10:17 EST Minor Flood Warning for the Mersey River",
+      "title": "21/10:41 EST Final Flood Warning for the Mersey River",
       "type": "flood",
       "state": "TAS",
       "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDT20605.html",
       "desc": "",
-      "issued": "Thu, 20 Aug 2026 00:17:40 GMT"
+      "issued": "Fri, 21 Aug 2026 00:41:57 GMT"
     },
     {
       "pid": "IDT20609",
@@ -128,6 +128,69 @@
       "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDT20609.html",
       "desc": "",
       "issued": "Wed, 19 Aug 2026 23:51:39 GMT"
+    },
+    {
+      "pid": "",
+      "title": "21/10:32 EST Warning to Sheep Graziers\nfor Upper Derwent Valley and South East forecast districts",
+      "type": "other",
+      "state": "TAS",
+      "link": "http://reg.bom.gov.au/tas/warnings/sheep.shtml",
+      "desc": "",
+      "issued": "Fri, 21 Aug 2026 00:32:53 GMT"
+    },
+    {
+      "pid": "IDT21037",
+      "title": "Severe Weather Warning for Furneaux Islands, North West Coast, Central North, North East, Midlands, South East, Central Plateau, Western",
+      "type": "severe_weather",
+      "state": "TAS",
+      "link": "",
+      "desc": "DAMAGING WINDS averaging 60 to 70 km/h with peak gusts in excess of 100 km/h are forecast in the southwest and northeast (including the Furneaux Islands) from early Saturday morning, extending to parts of the Midlands, Western Tiers and exposed southeast Saturday mid to late morning. Conditions ease across the southwest, northeast and Furneaux Islands around lunch time, and the remainder of the warning area by Saturday late afternoon. Locations which may be affected include Strahan, Oatlands, Wh",
+      "issued": "2026-08-21T10:42:33+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "TAS_PW001",
+          "description": "Furneaux Islands",
+          "phase": "NEW"
+        },
+        {
+          "aac": "TAS_PW010",
+          "description": "North West Coast",
+          "phase": "NEW"
+        },
+        {
+          "aac": "TAS_PW004",
+          "description": "Central North",
+          "phase": "NEW"
+        },
+        {
+          "aac": "TAS_PW002",
+          "description": "North East",
+          "phase": "NEW"
+        },
+        {
+          "aac": "TAS_PW005",
+          "description": "Midlands",
+          "phase": "NEW"
+        },
+        {
+          "aac": "TAS_PW006",
+          "description": "South East",
+          "phase": "NEW"
+        },
+        {
+          "aac": "TAS_PW008",
+          "description": "Central Plateau",
+          "phase": "NEW"
+        },
+        {
+          "aac": "TAS_PW009",
+          "description": "Western",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -140,7 +203,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 21 Aug 2026 00:28:44 GMT",
+        "updated": "Fri, 21 Aug 2026 00:48:43 GMT",
         "description": "Guess Av, Wolli Creek, NSW 2205",
         "council": "Bayside",
         "lat": -33.929772,
@@ -161,7 +224,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-08-21T10:08:12+00:00",
+        "updated": "2026-08-21T10:48:13+00:00",
         "description": "",
         "lat": -41.6128800000463,
         "lng": 146.61014999977132,
@@ -176,7 +239,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-08-21T10:08:12+00:00",
+        "updated": "2026-08-21T10:48:13+00:00",
         "description": "",
         "lat": -41.39927999979665,
         "lng": 146.48482999964747,
@@ -186,6 +249,21 @@
       }
     ],
     "wa": [
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-21T00:37:10+00:00",
+        "description": "CONNOLLY, CITY OF JOONDALUP",
+        "lat": -31.7396,
+        "lng": 115.7578,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Structure Fire",
         "alertLevel": "",
@@ -399,6 +477,21 @@
     ],
     "nt": [
       {
+        "title": "Bushfire - Stuart Highway, MANTON DAM",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-08-21T00:30:00+00:00",
+        "description": "Stuart Highway, MANTON DAM",
+        "lat": -12.8311,
+        "lng": 131.0958,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Barkly Highway, TABLELANDS",
         "alertLevel": "Advice",
         "status": "active",
@@ -489,21 +582,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Bushfire - Stuart Highway, MANTON DAM",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-08-20T00:50:00+00:00",
-        "description": "Stuart Highway, MANTON DAM",
-        "lat": -12.8311,
-        "lng": 131.0958,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Tanami Road, TANAMI",
         "alertLevel": "Advice",
         "status": "active",
@@ -521,7 +599,7 @@
     ],
     "act": []
   },
-  "incident_count": 25,
+  "incident_count": 26,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
