@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-21T07:23:00.681885+00:00",
-  "last_checked_utc": "2026-08-21T07:23:00.681885+00:00",
+  "generated_utc": "2026-08-21T07:32:50.676910+00:00",
+  "last_checked_utc": "2026-08-21T07:32:50.676910+00:00",
   "warning_count": 16,
   "warnings": [
     {
@@ -195,7 +195,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Hillcrest St, Wiley Park",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 21 Aug 2026 07:28:43 GMT",
+        "description": "Hillcrest St, Wiley Park, NSW 2195",
+        "council": "Canterbury-Bankstown",
+        "lat": -33.9255239999999,
+        "lng": 151.066353,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -212,21 +229,6 @@
         "description": "KARLKURLA, CITY OF KALGOORLIE-BOULDER",
         "lat": -30.7323,
         "lng": 121.4552,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-21T06:54:02+00:00",
-        "description": "NORTH COOGEE, CITY OF COCKBURN",
-        "lat": -32.0985,
-        "lng": 115.7661,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -444,21 +446,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - WHITEWOOD RD, HOWARD SPRINGS",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-21T07:13:24+00:00",
-        "description": "WHITEWOOD RD, HOWARD SPRINGS",
-        "lat": -12.4923,
-        "lng": 131.0193,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Whitewood Road, Howard Springs",
         "alertLevel": "Advice",
         "status": "active",
@@ -596,7 +583,7 @@
     ],
     "act": []
   },
-  "incident_count": 26,
+  "incident_count": 25,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
