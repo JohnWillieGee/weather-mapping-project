@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-21T11:32:50.226806+00:00",
-  "last_checked_utc": "2026-08-21T11:32:50.226806+00:00",
+  "generated_utc": "2026-08-21T11:53:01.426802+00:00",
+  "last_checked_utc": "2026-08-21T11:53:01.426802+00:00",
   "warning_count": 16,
   "warnings": [
     {
@@ -195,12 +195,59 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Triten Av, Greenfield Park",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 21 Aug 2026 11:48:43 GMT",
+        "description": "Triten Av, Greenfield Park, NSW 2176",
+        "council": "Fairfield",
+        "lat": -33.8775219999999,
+        "lng": 150.895763,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-21T11:37:01+00:00",
+        "description": "PORT KENNEDY, CITY OF ROCKINGHAM",
+        "lat": -32.3634,
+        "lng": 115.7383,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Fuel Leak",
+        "alertLevel": "",
+        "status": "active",
+        "type": "HazMat",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-21T11:36:35+00:00",
+        "description": "KINGSFORD, SHIRE OF CARNARVON",
+        "lat": -24.8618,
+        "lng": 113.7004,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -208,10 +255,25 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-21T11:18:25+00:00",
-        "description": "OAKFORD, SHIRE OF SERPENTINE-JARRAHDALE",
-        "lat": -32.1864,
-        "lng": 115.9529,
+        "updated": "2026-08-21T11:34:59+00:00",
+        "description": "NORTH WEST CAPE, SHIRE OF EXMOUTH",
+        "lat": -22.0183,
+        "lng": 114.1089,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-21T11:33:31+00:00",
+        "description": "JANDAKOT, CITY OF COCKBURN",
+        "lat": -32.1279,
+        "lng": 115.8691,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -227,21 +289,6 @@
         "description": "MOONYOONOOKA, CITY OF GREATER GERALDTON",
         "lat": -28.7826,
         "lng": 114.721,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-21T11:14:53+00:00",
-        "description": "JANDAKOT, CITY OF COCKBURN",
-        "lat": -32.1279,
-        "lng": 115.8691,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -287,21 +334,6 @@
         "description": "BROADWATER, CITY OF BUSSELTON",
         "lat": -33.6579,
         "lng": 115.2859,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-21T10:48:18+00:00",
-        "description": "NORTH WEST CAPE, SHIRE OF EXMOUTH",
-        "lat": -22.0094,
-        "lng": 114.1156,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -701,7 +733,7 @@
     ],
     "act": []
   },
-  "incident_count": 33,
+  "incident_count": 35,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
