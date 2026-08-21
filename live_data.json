@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-21T18:02:51.374350+00:00",
-  "last_checked_utc": "2026-08-21T18:02:51.374350+00:00",
+  "generated_utc": "2026-08-21T18:23:03.563657+00:00",
+  "last_checked_utc": "2026-08-21T18:23:03.563657+00:00",
   "warning_count": 17,
   "warnings": [
     {
       "pid": "",
-      "title": "22/00:50 EST Marine Wind Warning Summary for New South Wales",
+      "title": "22/04:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 21 Aug 2026 14:50:21 GMT"
+      "issued": "Fri, 21 Aug 2026 18:00:10 GMT"
     },
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "21/22:00 EST Marine Wind Warning Summary for Victoria",
+      "title": "22/04:10 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 21 Aug 2026 12:00:21 GMT"
+      "issued": "Fri, 21 Aug 2026 18:10:21 GMT"
     },
     {
       "pid": "",
@@ -95,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "21/21:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "22/03:40 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Fri, 21 Aug 2026 12:00:13 GMT"
+      "issued": "Fri, 21 Aug 2026 18:10:11 GMT"
     },
     {
       "pid": "",
@@ -625,10 +625,10 @@
         "status": "active",
         "type": "Structure Fire",
         "size": "",
-        "agency": "Fire - Ambulance",
-        "updated": "2026-08-21T17:58:15+00:00",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-08-21T18:19:00+00:00",
         "description": "AINSLIE",
-        "lat": -35.2617,
+        "lat": -35.2613,
         "lng": 149.1453,
         "polys": [],
         "state": "ACT",
@@ -640,10 +640,10 @@
         "status": "active",
         "type": "Structure Fire",
         "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-08-21T17:58:00+00:00",
+        "agency": "Ambulance",
+        "updated": "2026-08-21T18:17:03+00:00",
         "description": "AINSLIE",
-        "lat": -35.2617,
+        "lat": -35.2613,
         "lng": 149.1453,
         "polys": [],
         "state": "ACT",
@@ -3677,40 +3677,45 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-08-21T12:00:00Z",
+      "issued_utc": "2026-08-21T18:10:00Z",
       "overview": [
-        "Strong Wind Warning for Friday for West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast",
         "Gale Warning for Saturday for Central Coast, Central Gippsland Coast and East Gippsland Coast",
         "Strong Wind Warning for Saturday for West Coast"
       ],
       "hazards": [
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "Gale Warning",
+          "severity": "GALE",
           "zones": [
-            "West Coast: SA-VIC Border to Cape Otway",
             "Central Coast: Cape Otway to Wilsons Promontory",
             "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
             "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
           ],
           "aac_codes": [
-            "VIC_MW001",
             "VIC_MW002",
             "VIC_MW003",
             "VIC_MW004"
           ],
-          "summary": "West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast"
+          "summary": "Central Coast, Central Gippsland Coast and East Gippsland Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "West Coast: SA-VIC Border to Cape Otway"
+          ],
+          "aac_codes": [
+            "VIC_MW001"
+          ],
+          "summary": "West Coast"
         }
       ]
     },
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-08-21T12:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Friday for Lower South East Coast",
-        "Strong Wind Warning for Saturday for Lower South East Coast"
-      ],
+      "issued_utc": "2026-08-21T18:10:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
