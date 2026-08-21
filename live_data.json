@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-21T17:53:00.207310+00:00",
-  "last_checked_utc": "2026-08-21T17:53:00.207310+00:00",
+  "generated_utc": "2026-08-21T18:02:51.374350+00:00",
+  "last_checked_utc": "2026-08-21T18:02:51.374350+00:00",
   "warning_count": 17,
   "warnings": [
     {
@@ -113,12 +113,12 @@
     },
     {
       "pid": "",
-      "title": "21/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "22/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 21 Aug 2026 12:00:14 GMT"
+      "issued": "Fri, 21 Aug 2026 18:00:12 GMT"
     },
     {
       "pid": "IDT20605",
@@ -618,9 +618,40 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": []
+    "act": [
+      {
+        "title": "HOUSE FIRE - AINSLIE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Fire - Ambulance",
+        "updated": "2026-08-21T17:58:15+00:00",
+        "description": "AINSLIE",
+        "lat": -35.2617,
+        "lng": 149.1453,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - AINSLIE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-08-21T17:58:00+00:00",
+        "description": "AINSLIE",
+        "lat": -35.2617,
+        "lng": 149.1453,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      }
+    ]
   },
-  "incident_count": 27,
+  "incident_count": 29,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3627,7 +3658,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-08-21T14:50:15Z",
+      "issued_utc": "2026-08-21T18:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3716,25 +3747,27 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-08-21T12:00:00Z",
+      "issued_utc": "2026-08-21T18:00:00Z",
       "overview": [
-        "Strong Wind Warning for Friday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, South East Coast, South West Coast and Central West Coast",
         "Gale Warning for Saturday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast, South West Coast, Central West Coast and Storm Bay",
-        "Strong Wind Warning for Saturday for Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Channel, Central Plateau Lakes and South West Lakes"
+        "Strong Wind Warning for Saturday for Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Channel, Central Plateau Lakes and South West Lakes",
+        "Strong Wind Warning for Sunday for East of Flinders Island, Upper East Coast, South East Coast, South West Coast and Central West Coast"
       ],
       "hazards": [
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "Gale Warning",
+          "severity": "GALE",
           "zones": [
             "Far North West Coast: Sandy Cape to Stanley",
             "Central North Coast: Stanley to Northern Tip of Flinders Island",
             "Banks Strait and Franklin Sound",
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
             "Upper East Coast: St Helens Point to Wineglass Bay",
+            "Lower East Coast: Wineglass Bay to Tasman Island",
             "South East Coast: Tasman Island to South East Cape",
             "South West Coast: South East Cape to Low Rocky Point",
-            "Central West Coast: Low Rocky Point to Sandy Cape"
+            "Central West Coast: Low Rocky Point to Sandy Cape",
+            "Storm Bay"
           ],
           "aac_codes": [
             "TAS_MW001",
@@ -3742,11 +3775,32 @@
             "TAS_MW009",
             "TAS_MW003",
             "TAS_MW004",
+            "TAS_MW005",
             "TAS_MW006",
             "TAS_MW007",
-            "TAS_MW008"
+            "TAS_MW008",
+            "TAS_MW014"
           ],
-          "summary": "Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, South East Coast, South West Coast and Central West Coast"
+          "summary": "Storm Bay, Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast, South West Coast and Central West Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Derwent Estuary",
+            "Frederick Henry Bay and Norfolk Bays",
+            "Channel",
+            "Central Plateau Lakes",
+            "South West Lakes"
+          ],
+          "aac_codes": [
+            "TAS_MW012",
+            "TAS_MW013",
+            "TAS_MW011",
+            "TAS_MW010",
+            "TAS_MW015"
+          ],
+          "summary": "Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Channel, Central Plateau Lakes and South West Lakes"
         }
       ]
     }
