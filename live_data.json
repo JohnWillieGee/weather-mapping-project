@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-21T02:22:59.212509+00:00",
-  "last_checked_utc": "2026-08-21T02:22:59.212509+00:00",
+  "generated_utc": "2026-08-21T02:32:48.065430+00:00",
+  "last_checked_utc": "2026-08-21T02:32:48.065430+00:00",
   "warning_count": 16,
   "warnings": [
     {
@@ -195,7 +195,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Court St, Windsor",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 21 Aug 2026 02:28:43 GMT",
+        "description": "Court St, Windsor, NSW 2756",
+        "council": "Hawkesbury",
+        "lat": -33.605924999,
+        "lng": 150.82471,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -242,21 +259,6 @@
         "description": "",
         "lat": -33.3491,
         "lng": 116.2136,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-20T23:58:30+00:00",
-        "description": "WILSON, CITY OF CANNING",
-        "lat": -32.0144,
-        "lng": 115.9076,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -519,21 +521,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Grass and Scrub Fire - STAUNTON ST, TENNANT CREEK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-20T22:11:40+00:00",
-        "description": "STAUNTON ST, TENNANT CREEK",
-        "lat": -19.6525,
-        "lng": 134.1956,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - PASTORAL RD, BURRUNDIE",
         "alertLevel": "Advice",
         "status": "active",
@@ -581,7 +568,7 @@
     ],
     "act": []
   },
-  "incident_count": 25,
+  "incident_count": 24,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
