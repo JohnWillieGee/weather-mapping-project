@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-22T07:23:02.254483+00:00",
-  "last_checked_utc": "2026-08-22T07:23:02.254483+00:00",
+  "generated_utc": "2026-08-22T07:53:03.977246+00:00",
+  "last_checked_utc": "2026-08-22T07:53:03.977246+00:00",
   "warning_count": 14,
   "warnings": [
     {
@@ -86,15 +86,6 @@
     },
     {
       "pid": "",
-      "title": "22/09:30 CST Marine Wind Warning Summary for South Australia",
-      "type": "wind",
-      "state": "SA",
-      "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
-      "desc": "",
-      "issued": "Sat, 22 Aug 2026 00:00:11 GMT"
-    },
-    {
-      "pid": "",
       "title": "22/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
@@ -158,11 +149,68 @@
       ],
       "severityCode": "CAN",
       "hazardPhase": "CAN"
+    },
+    {
+      "pid": "IDW21033",
+      "title": "Severe Thunderstorm Warning for Central West, Central Wheat Belt",
+      "type": "thunderstorm",
+      "state": "WA",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Dalwallinu and Wongan Hills. 19.2 mm of rainfall was recorded at Barberton East in the 30 minutes to 3:15 pm.",
+      "issued": "2026-08-22T15:29:18+08:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "WA_PW008",
+          "description": "Central West",
+          "phase": "NEW"
+        },
+        {
+          "aac": "WA_PW014",
+          "description": "Central Wheat Belt",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Debrincat Av, Tregear",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sat, 22 Aug 2026 07:48:43 GMT",
+        "description": "Debrincat Av, Tregear, NSW 2770",
+        "council": "Penrith",
+        "lat": -33.753025055,
+        "lng": 150.792129516,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "REST AREA PUTTY RD, MELLONG",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Sat, 22 Aug 2026 07:48:43 GMT",
+        "description": "REST AREA PUTTY RD, MELLONG 2756",
+        "council": "Hawkesbury",
+        "lat": -33.1267089999999,
+        "lng": 150.690816,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
@@ -179,36 +227,6 @@
         "description": "BOODARIE, TOWN OF PORT HEDLAND",
         "lat": -20.6494,
         "lng": 118.5218,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-22T07:07:41+00:00",
-        "description": "GOSNELLS, CITY OF GOSNELLS",
-        "lat": -32.0845,
-        "lng": 115.9837,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-22T06:54:55+00:00",
-        "description": "BROADWATER, CITY OF BUSSELTON",
-        "lat": -33.6609,
-        "lng": 115.2951,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -272,36 +290,6 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice THREAT IS REDUCED - DAMPIER PENINSULA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-08-22T03:04:11.051+00:00",
-        "description": "",
-        "lat": -16.3848,
-        "lng": 123.0186,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice THREAT IS REDUCED - DAMPIER PENINSULA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-08-22T03:01:53.451+00:00",
-        "description": "",
-        "lat": -16.5877,
-        "lng": 122.9699,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
       }
     ],
     "nt": [
@@ -346,21 +334,6 @@
         "description": "Darwin River Road DARWIN RIVER",
         "lat": -12.8005,
         "lng": 130.9499,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - FLYNN CCT, BELLAMACK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-22T05:24:46+00:00",
-        "description": "FLYNN CCT, BELLAMACK",
-        "lat": -12.5155,
-        "lng": 130.9871,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -548,7 +521,7 @@
     ],
     "act": []
   },
-  "incident_count": 25,
+  "incident_count": 22,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
