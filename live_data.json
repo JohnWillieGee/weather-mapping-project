@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-22T01:53:01.071945+00:00",
-  "last_checked_utc": "2026-08-22T01:53:01.071945+00:00",
+  "generated_utc": "2026-08-22T02:23:05.520112+00:00",
+  "last_checked_utc": "2026-08-22T02:23:05.520112+00:00",
   "warning_count": 19,
   "warnings": [
     {
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "21/12:45 EST Minor Flood Warning for the Kiewa River",
+      "title": "22/12:06 EST Minor Flood Warning for the Kiewa River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/kiewariver.shtml",
       "desc": "",
-      "issued": "Fri, 21 Aug 2026 02:45:35 GMT"
+      "issued": "Sat, 22 Aug 2026 02:06:47 GMT"
     },
     {
       "pid": "",
@@ -227,29 +227,27 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Keys Pde, Milperra",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 22 Aug 2026 01:48:43 GMT",
-        "description": "Keys Pde, Milperra, NSW 2214",
-        "council": "Canterbury-Bankstown",
-        "lat": -33.9343069999999,
-        "lng": 150.974704,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Report of Smoke",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-22T02:12:23+00:00",
+        "description": "HARRISDALE, CITY OF ARMADALE",
+        "lat": -32.108,
+        "lng": 115.9369,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -257,7 +255,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-22T00:59:29+00:00",
+        "updated": "2026-08-22T02:05:40+00:00",
         "description": "ROELANDS, SHIRE OF HARVEY",
         "lat": -33.2949,
         "lng": 115.7621,
@@ -266,13 +264,28 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire Advice MONITOR CONDITIONS - BULGARA, KARRATHA AND MULATAGA",
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-22T02:02:32+00:00",
+        "description": "WANDI, CITY OF KWINANA",
+        "lat": -32.2054,
+        "lng": 115.8591,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - BULGARRA, KARRATHA AND MULATAGA",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES-WARN",
-        "updated": "2026-08-21T21:08:24.175+00:00",
+        "updated": "2026-08-22T01:44:52.696+00:00",
         "description": "",
         "lat": -20.7344,
         "lng": 116.8573,
@@ -493,6 +506,21 @@
     ],
     "nt": [
       {
+        "title": "Bushfire - Barkly Highway, TABLELANDS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-08-22T00:40:00+00:00",
+        "description": "Barkly Highway, TABLELANDS",
+        "lat": -19.7319,
+        "lng": 135.3002,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - TUMBLING WATERS",
         "alertLevel": "Advice",
         "status": "active",
@@ -583,21 +611,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Bushfire - Barkly Highway, TABLELANDS",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-08-21T00:20:00+00:00",
-        "description": "Barkly Highway, TABLELANDS",
-        "lat": -19.7319,
-        "lng": 135.3002,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Arnhem Highway (Djukbinj National Park), MARRAKAI ",
         "alertLevel": "Advice",
         "status": "active",
@@ -660,7 +673,7 @@
     ],
     "act": []
   },
-  "incident_count": 28,
+  "incident_count": 29,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
