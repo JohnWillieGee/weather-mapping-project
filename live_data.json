@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-22T00:23:01.733069+00:00",
-  "last_checked_utc": "2026-08-22T00:23:01.733069+00:00",
-  "warning_count": 17,
+  "generated_utc": "2026-08-22T00:53:01.338223+00:00",
+  "last_checked_utc": "2026-08-22T00:53:01.338223+00:00",
+  "warning_count": 18,
   "warnings": [
     {
       "pid": "",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "21/17:50 EST Moderate Flood Warning for the Avoca River",
+      "title": "22/10:44 EST Moderate Flood Warning for the Avoca River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/avocariver.shtml",
       "desc": "",
-      "issued": "Fri, 21 Aug 2026 07:50:56 GMT"
+      "issued": "Sat, 22 Aug 2026 00:44:38 GMT"
     },
     {
       "pid": "",
@@ -149,19 +149,14 @@
     },
     {
       "pid": "IDT21037",
-      "title": "Severe Weather Warning for Furneaux Islands, North West Coast, Central North, North East, Midlands, South East, Central Plateau, Western",
+      "title": "Severe Weather Warning for North West Coast, Central North, Midlands, South East, Central Plateau",
       "type": "severe_weather",
       "state": "TAS",
       "link": "",
-      "desc": "DAMAGING WINDS averaging 60 to 70 km/h with peak gusts in excess of 100 km/h are occurring in the southwest and northeast (including the Furneaux Islands) this morning, extending to parts of the Midlands, Western Tiers and exposed southeast by mid to late morning. Conditions ease across the southwest, northeast and Furneaux Islands around lunch time, and the remainder of the warning area by late afternoon. Locations which may be affected include Strahan, Oatlands, Whitemark, Bridport and Strathg",
-      "issued": "2026-08-22T04:57:42+10:00",
+      "desc": "DAMAGING WINDS averaging 60 to 70 km/h with peak gusts in excess of 100 km/h are occurring in parts of the Midlands, Western Tiers and exposed southeast. Conditions have eased across the southwest, northeast and Furneaux Islands and will ease for the remainder of the warning area by late afternoon. Locations which may be affected include Oatlands. Severe weather is no longer occurring in the Furneaux Islands, Western and North East districts and the warning for these districts is CANCELLED. Cape",
+      "issued": "2026-08-22T10:42:56+10:00",
       "cancelled": false,
       "areas": [
-        {
-          "aac": "TAS_PW001",
-          "description": "Furneaux Islands",
-          "phase": "REN"
-        },
         {
           "aac": "TAS_PW010",
           "description": "North West Coast",
@@ -170,11 +165,6 @@
         {
           "aac": "TAS_PW004",
           "description": "Central North",
-          "phase": "REN"
-        },
-        {
-          "aac": "TAS_PW002",
-          "description": "North East",
           "phase": "REN"
         },
         {
@@ -191,15 +181,39 @@
           "aac": "TAS_PW008",
           "description": "Central Plateau",
           "phase": "REN"
-        },
-        {
-          "aac": "TAS_PW009",
-          "description": "Western",
-          "phase": "REN"
         }
       ],
       "severityCode": "STD",
       "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDT21037",
+      "title": "Severe Weather Warning for Furneaux Islands, North East, Western",
+      "type": "severe_weather",
+      "state": "TAS",
+      "link": "",
+      "desc": "",
+      "issued": "2026-08-22T10:42:56+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "TAS_PW001",
+          "description": "Furneaux Islands",
+          "phase": "CAN"
+        },
+        {
+          "aac": "TAS_PW002",
+          "description": "North East",
+          "phase": "CAN"
+        },
+        {
+          "aac": "TAS_PW009",
+          "description": "Western",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -210,6 +224,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-22T00:29:47+00:00",
+        "description": "MIDVALE, CITY OF SWAN",
+        "lat": -31.8726,
+        "lng": 116.0305,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - BULGARA, KARRATHA AND MULATAGA",
         "alertLevel": "Advice",
@@ -605,7 +634,7 @@
     ],
     "act": []
   },
-  "incident_count": 26,
+  "incident_count": 27,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
