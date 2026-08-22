@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-22T02:23:05.520112+00:00",
-  "last_checked_utc": "2026-08-22T02:23:05.520112+00:00",
+  "generated_utc": "2026-08-22T02:53:00.856146+00:00",
+  "last_checked_utc": "2026-08-22T02:53:00.856146+00:00",
   "warning_count": 19,
   "warnings": [
     {
@@ -14,21 +14,21 @@
     },
     {
       "pid": "",
-      "title": "21/13:58 EST Minor Flood Warning for the Murray River",
+      "title": "22/12:25 EST Minor Flood Warning for the Murray River",
       "type": "flood",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/flood/murrayriver.shtml",
       "desc": "",
-      "issued": "Fri, 21 Aug 2026 03:58:36 GMT"
+      "issued": "Sat, 22 Aug 2026 02:25:36 GMT"
     },
     {
       "pid": "",
-      "title": "21/13:58 EST Minor Flood Warning for the Murray River",
+      "title": "22/12:25 EST Minor Flood Warning for the Murray River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/nsw/warnings/flood/murrayriver.shtml",
       "desc": "",
-      "issued": "Fri, 21 Aug 2026 03:58:36 GMT"
+      "issued": "Sat, 22 Aug 2026 02:25:36 GMT"
     },
     {
       "pid": "",
@@ -122,12 +122,12 @@
     },
     {
       "pid": "",
-      "title": "22/10:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "22/12:48 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 22 Aug 2026 00:00:13 GMT"
+      "issued": "Sat, 22 Aug 2026 02:48:42 GMT"
     },
     {
       "pid": "IDT20605",
@@ -227,57 +227,29 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "BOYDTOWN PARK RD, BOYDTOWN",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Sat, 22 Aug 2026 02:48:43 GMT",
+        "description": "BOYDTOWN PARK RD, BOYDTOWN 2551",
+        "council": "Bega Valley",
+        "lat": -37.1050099999999,
+        "lng": 149.87876,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Report of Smoke",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-22T02:12:23+00:00",
-        "description": "HARRISDALE, CITY OF ARMADALE",
-        "lat": -32.108,
-        "lng": 115.9369,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-22T02:05:40+00:00",
-        "description": "ROELANDS, SHIRE OF HARVEY",
-        "lat": -33.2949,
-        "lng": 115.7621,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-22T02:02:32+00:00",
-        "description": "WANDI, CITY OF KWINANA",
-        "lat": -32.2054,
-        "lng": 115.8591,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - BULGARRA, KARRATHA AND MULATAGA",
         "alertLevel": "Advice",
@@ -673,7 +645,7 @@
     ],
     "act": []
   },
-  "incident_count": 29,
+  "incident_count": 27,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3753,11 +3725,11 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-08-22T00:00:00Z",
+      "issued_utc": "2026-08-22T02:48:35Z",
       "overview": [
-        "Gale Warning for Saturday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast, South West Coast and Storm Bay",
-        "Strong Wind Warning for Saturday for Far North West Coast, Central West Coast, Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Channel and Central Plateau Lakes",
-        "Strong Wind Warning for Sunday for East of Flinders Island, Upper East Coast, South East Coast, South West Coast and Central West Coast"
+        "Gale Warning for Saturday for Storm Bay, Upper East Coast, Lower East Coast, South West Coast, East of Flinders Island, Banks Strait and Franklin Sound, Central North Coast and South East Coast",
+        "Strong Wind Warning for Saturday for Central Plateau Lakes, Channel, Derwent Estuary, Far North West Coast, Frederick Henry Bay and Norfolk Bay and Central West Coast",
+        "Strong Wind Warning for Sunday for Central West Coast, Upper East Coast, South East Coast, East of Flinders Island and South West Coast"
       ],
       "hazards": [
         {
