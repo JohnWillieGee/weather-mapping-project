@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-22T10:23:02.222290+00:00",
-  "last_checked_utc": "2026-08-22T10:23:02.222290+00:00",
-  "warning_count": 15,
+  "generated_utc": "2026-08-22T10:53:00.359914+00:00",
+  "last_checked_utc": "2026-08-22T10:53:00.359914+00:00",
+  "warning_count": 16,
   "warnings": [
     {
       "pid": "",
@@ -86,12 +86,21 @@
     },
     {
       "pid": "",
-      "title": "22/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "22/20:15 CST Marine Wind Warning Summary for South Australia",
+      "type": "wind",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
+      "desc": "",
+      "issued": "Sat, 22 Aug 2026 10:45:09 GMT"
+    },
+    {
+      "pid": "",
+      "title": "22/18:45 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sat, 22 Aug 2026 05:01:12 GMT"
+      "issued": "Sat, 22 Aug 2026 10:45:18 GMT"
     },
     {
       "pid": "",
@@ -213,31 +222,46 @@
     "tas": [],
     "wa": [
       {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-22T10:34:26+00:00",
+        "description": "WILYABRUP, CITY OF BUSSELTON",
+        "lat": -33.7472,
+        "lng": 115.0437,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice STAY INFORMED - DAMPIER PENINSULA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-08-22T10:27:53.377+00:00",
+        "description": "",
+        "lat": -16.8444,
+        "lng": 122.5899,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Bushfire Advice PREPARE NOW - DAMPIER PENINSULA",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES-WARN",
-        "updated": "2026-08-22T10:14:13.574+00:00",
+        "updated": "2026-08-22T10:23:21.808+00:00",
         "description": "",
         "lat": -16.776,
         "lng": 122.5962,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-22T10:03:40+00:00",
-        "description": "HILBERT, CITY OF ARMADALE",
-        "lat": -32.1696,
-        "lng": 115.9849,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -356,7 +380,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-08-22T09:45:22+00:00",
+        "updated": "2026-08-22T10:36:34+00:00",
         "description": "HICKS RD, GIRRAWEEN",
         "lat": -12.4962,
         "lng": 131.0698,
@@ -562,7 +586,7 @@
     ],
     "act": []
   },
-  "incident_count": 23,
+  "incident_count": 24,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
