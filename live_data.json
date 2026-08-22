@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-22T09:53:00.606897+00:00",
-  "last_checked_utc": "2026-08-22T09:53:00.606897+00:00",
-  "warning_count": 14,
+  "generated_utc": "2026-08-22T10:23:02.222290+00:00",
+  "last_checked_utc": "2026-08-22T10:23:02.222290+00:00",
+  "warning_count": 15,
   "warnings": [
     {
       "pid": "",
@@ -152,59 +152,96 @@
     },
     {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for Central West, Lower West, Central Wheat Belt",
+      "title": "Severe Thunderstorm Warning for South West, Great Southern",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Dalwallinu and Wongan Hills. 27.4 mm of rainfall was recorded at Canterbury in the 30 minutes to 4:45 pm. 19.2 mm of rainfall was recorded at Barberton East in the 30 minutes to 3:15 pm.",
-      "issued": "2026-08-22T16:59:31+08:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours.",
+      "issued": "2026-08-22T18:08:42+08:00",
       "cancelled": false,
       "areas": [
         {
+          "aac": "WA_PW010",
+          "description": "South West",
+          "phase": "NEW"
+        },
+        {
+          "aac": "WA_PW013",
+          "description": "Great Southern",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
+    },
+    {
+      "pid": "IDW21033",
+      "title": "Severe Thunderstorm Warning for Central Wheat Belt, Central West, Lower West",
+      "type": "thunderstorm",
+      "state": "WA",
+      "link": "",
+      "desc": "",
+      "issued": "2026-08-22T18:08:42+08:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "WA_PW014",
+          "description": "Central Wheat Belt",
+          "phase": "CAN"
+        },
+        {
           "aac": "WA_PW008",
           "description": "Central West",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "WA_PW009",
           "description": "Lower West",
-          "phase": "NEW"
-        },
-        {
-          "aac": "WA_PW014",
-          "description": "Central Wheat Belt",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "COMARA",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Sat, 22 Aug 2026 09:48:43 GMT",
-        "description": "COMARA 2440",
-        "council": "Kempsey",
-        "lat": -30.7799499999999,
-        "lng": 152.4247,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire Advice PREPARE NOW - DAMPIER PENINSULA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-08-22T10:14:13.574+00:00",
+        "description": "",
+        "lat": -16.776,
+        "lng": 122.5962,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-22T10:03:40+00:00",
+        "description": "HILBERT, CITY OF ARMADALE",
+        "lat": -32.1696,
+        "lng": 115.9849,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -212,7 +249,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-22T09:33:37+00:00",
+        "updated": "2026-08-22T09:41:37+00:00",
         "description": "BULGARRA, CITY OF KARRATHA",
         "lat": -20.7353,
         "lng": 116.8544,
@@ -319,7 +356,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-08-22T09:35:12+00:00",
+        "updated": "2026-08-22T09:45:22+00:00",
         "description": "HICKS RD, GIRRAWEEN",
         "lat": -12.4962,
         "lng": 131.0698,
@@ -525,7 +562,7 @@
     ],
     "act": []
   },
-  "incident_count": 22,
+  "incident_count": 23,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
