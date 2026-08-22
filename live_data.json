@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-22T08:52:59.987191+00:00",
-  "last_checked_utc": "2026-08-22T08:52:59.987191+00:00",
+  "generated_utc": "2026-08-22T09:23:18.599270+00:00",
+  "last_checked_utc": "2026-08-22T09:23:18.599270+00:00",
   "warning_count": 14,
   "warnings": [
     {
@@ -152,27 +152,32 @@
     },
     {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for Central West, Central Wheat Belt",
+      "title": "Severe Thunderstorm Warning for Central West, Lower West, Central Wheat Belt",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Dalwallinu and Wongan Hills. 19.2 mm of rainfall was recorded at Barberton East in the 30 minutes to 3:15 pm.",
-      "issued": "2026-08-22T15:29:18+08:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Dalwallinu and Wongan Hills. 27.4 mm of rainfall was recorded at Canterbury in the 30 minutes to 4:45 pm. 19.2 mm of rainfall was recorded at Barberton East in the 30 minutes to 3:15 pm.",
+      "issued": "2026-08-22T16:59:31+08:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "WA_PW008",
           "description": "Central West",
+          "phase": "REN"
+        },
+        {
+          "aac": "WA_PW009",
+          "description": "Lower West",
           "phase": "NEW"
         },
         {
           "aac": "WA_PW014",
           "description": "Central Wheat Belt",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "UPD"
     }
   ],
   "fetch_errors": {},
@@ -190,10 +195,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-22T08:27:18+00:00",
-        "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
-        "lat": -16.7754,
-        "lng": 122.6105,
+        "updated": "2026-08-22T09:06:30+00:00",
+        "description": "COOYA POOYA, CITY OF KARRATHA",
+        "lat": -20.7896,
+        "lng": 116.9508,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -205,10 +210,55 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-22T08:17:59+00:00",
+        "updated": "2026-08-22T09:04:59+00:00",
         "description": "GLENORAN, SHIRE OF MANJIMUP",
         "lat": -34.215,
         "lng": 115.9384,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-22T08:49:00+00:00",
+        "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.4845,
+        "lng": 128.1221,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-22T08:46:37+00:00",
+        "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
+        "lat": -16.82,
+        "lng": 122.575,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-22T08:27:18+00:00",
+        "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
+        "lat": -16.7754,
+        "lng": 122.6105,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -224,21 +274,6 @@
         "description": "",
         "lat": -16.7435,
         "lng": 122.8655,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-22T08:00:22+00:00",
-        "description": "BOODARIE, TOWN OF PORT HEDLAND",
-        "lat": -20.6494,
-        "lng": 118.5218,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -280,21 +315,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-22T04:59:28+00:00",
-        "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.4845,
-        "lng": 128.1221,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-08-22T04:03:01+00:00",
         "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.4853,
@@ -306,13 +326,28 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - HICKS RD, GIRRAWEEN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-22T09:14:00+00:00",
+        "description": "HICKS RD, GIRRAWEEN",
+        "lat": -12.4962,
+        "lng": 131.0698,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - YUNUPINGU DR, GUNYANGARA",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-08-22T08:41:07+00:00",
+        "updated": "2026-08-22T09:05:48+00:00",
         "description": "YUNUPINGU DR, GUNYANGARA",
         "lat": -12.2154,
         "lng": 136.7057,
@@ -331,36 +366,6 @@
         "description": "Darwin River Road DARWIN RIVER",
         "lat": -12.8045,
         "lng": 130.9552,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - HICKS RD, GIRRAWEEN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-22T07:14:19+00:00",
-        "description": "HICKS RD, GIRRAWEEN",
-        "lat": -12.4962,
-        "lng": 131.0698,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - GRICE CR, COOLALINGA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-22T06:32:11+00:00",
-        "description": "GRICE CR, COOLALINGA",
-        "lat": -12.5194,
-        "lng": 131.0431,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
