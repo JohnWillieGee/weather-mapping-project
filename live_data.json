@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-22T11:22:58.925689+00:00",
-  "last_checked_utc": "2026-08-22T11:22:58.925689+00:00",
-  "warning_count": 16,
+  "generated_utc": "2026-08-22T11:53:04.479121+00:00",
+  "last_checked_utc": "2026-08-22T11:53:04.479121+00:00",
+  "warning_count": 15,
   "warnings": [
     {
       "pid": "",
@@ -161,51 +161,22 @@
     },
     {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for South West, Great Southern",
+      "title": "Cancellation of Severe Thunderstorm Warning for South West, Great Southern",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours.",
-      "issued": "2026-08-22T18:08:42+08:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-08-22T19:33:03+08:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "WA_PW010",
           "description": "South West",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "WA_PW013",
           "description": "Great Southern",
-          "phase": "NEW"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
-    },
-    {
-      "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for Central Wheat Belt, Central West, Lower West",
-      "type": "thunderstorm",
-      "state": "WA",
-      "link": "",
-      "desc": "",
-      "issued": "2026-08-22T18:08:42+08:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "WA_PW014",
-          "description": "Central Wheat Belt",
-          "phase": "CAN"
-        },
-        {
-          "aac": "WA_PW008",
-          "description": "Central West",
-          "phase": "CAN"
-        },
-        {
-          "aac": "WA_PW009",
-          "description": "Lower West",
           "phase": "CAN"
         }
       ],
@@ -228,10 +199,40 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-22T10:34:26+00:00",
-        "description": "WILYABRUP, CITY OF BUSSELTON",
-        "lat": -33.7472,
-        "lng": 115.0437,
+        "updated": "2026-08-22T11:38:59+00:00",
+        "description": "METRICUP, CITY OF BUSSELTON",
+        "lat": -33.7801,
+        "lng": 115.1316,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-22T11:35:04+00:00",
+        "description": "WANNEROO, CITY OF WANNEROO",
+        "lat": -31.7546,
+        "lng": 115.8117,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-22T11:22:10+00:00",
+        "description": "GLENORAN, SHIRE OF MANJIMUP",
+        "lat": -34.215,
+        "lng": 115.9384,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -292,21 +293,6 @@
         "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
         "lat": -16.793,
         "lng": 122.591,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-22T09:04:59+00:00",
-        "description": "GLENORAN, SHIRE OF MANJIMUP",
-        "lat": -34.215,
-        "lng": 115.9384,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -384,21 +370,6 @@
         "description": "",
         "lat": -12.9017,
         "lng": 131.0001,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - HICKS RD, GIRRAWEEN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-22T10:36:34+00:00",
-        "description": "HICKS RD, GIRRAWEEN",
-        "lat": -12.4962,
-        "lng": 131.0698,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
