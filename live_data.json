@@ -1,16 +1,25 @@
 {
-  "generated_utc": "2026-08-23T17:52:59.936612+00:00",
-  "last_checked_utc": "2026-08-23T17:52:59.936612+00:00",
-  "warning_count": 10,
+  "generated_utc": "2026-08-23T18:22:58.701469+00:00",
+  "last_checked_utc": "2026-08-23T18:22:58.701469+00:00",
+  "warning_count": 12,
   "warnings": [
     {
       "pid": "",
-      "title": "23/22:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "24/04:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 23 Aug 2026 12:00:13 GMT"
+      "issued": "Sun, 23 Aug 2026 18:00:12 GMT"
+    },
+    {
+      "pid": "",
+      "title": "24/04:15 EST Warning to Sheep Graziers\nfor South West Slopes and Snowy Mountains forecast districts",
+      "type": "other",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
+      "desc": "",
+      "issued": "Sun, 23 Aug 2026 18:15:56 GMT"
     },
     {
       "pid": "",
@@ -29,6 +38,15 @@
       "link": "http://reg.bom.gov.au/nsw/warnings/flood/murrayriver.shtml",
       "desc": "",
       "issued": "Sun, 23 Aug 2026 02:23:45 GMT"
+    },
+    {
+      "pid": "",
+      "title": "24/04:10 EST Marine Wind Warning Summary for Victoria",
+      "type": "wind",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Sun, 23 Aug 2026 18:10:28 GMT"
     },
     {
       "pid": "IDV35010",
@@ -68,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "23/21:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "24/03:40 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sun, 23 Aug 2026 12:00:10 GMT"
+      "issued": "Sun, 23 Aug 2026 18:10:10 GMT"
     },
     {
       "pid": "",
@@ -86,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "23/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "24/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 23 Aug 2026 12:00:15 GMT"
+      "issued": "Sun, 23 Aug 2026 18:00:14 GMT"
     }
   ],
   "fetch_errors": {},
@@ -118,13 +136,28 @@
     "tas": [],
     "wa": [
       {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-23T17:59:07+00:00",
+        "description": "HERNE HILL, CITY OF SWAN",
+        "lat": -31.8452,
+        "lng": 116.0198,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Structure Fire",
         "alertLevel": "",
         "status": "active",
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-23T17:06:44+00:00",
+        "updated": "2026-08-23T17:45:57+00:00",
         "description": "HALLS CREEK, SHIRE OF HALLS CREEK",
         "lat": -18.2091,
         "lng": 127.6543,
@@ -572,7 +605,7 @@
     ],
     "act": []
   },
-  "incident_count": 31,
+  "incident_count": 32,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3579,8 +3612,11 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-08-23T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-08-23T18:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Monday for Eden Coast",
+        "Strong Wind Warning for Tuesday for Macquarie Coast and Eden Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3595,11 +3631,33 @@
         }
       ]
     },
+    "VIC": {
+      "state": "VIC",
+      "product": "IDV20600",
+      "issued_utc": "2026-08-23T18:10:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
+          ],
+          "aac_codes": [
+            "VIC_MW004"
+          ],
+          "summary": "East Gippsland Coast"
+        }
+      ]
+    },
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-08-23T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-08-23T18:10:00Z",
+      "overview": [
+        "Strong Wind Warning for Monday for Far West Coast, Upper West Coast, Lower West Coast, Central Coast and Spencer Gulf",
+        "Strong Wind Warning for Tuesday for Central Coast, South Central Coast, Spencer Gulf, Gulf St Vincent, Upper South East Coast and Adelaide Metropolitan Waters"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3646,31 +3704,37 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-08-23T12:00:00Z",
+      "issued_utc": "2026-08-23T18:00:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for East of Flinders Island, Upper East Coast, South East Coast, South West Coast and Central West Coast",
         "Gale Warning for Monday for South West Coast",
-        "Strong Wind Warning for Monday for East of Flinders Island, Upper East Coast, South East Coast and Central West Coast"
+        "Strong Wind Warning for Monday for Upper East Coast, South East Coast and Central West Coast"
       ],
       "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "South West Coast: South East Cape to Low Rocky Point"
+          ],
+          "aac_codes": [
+            "TAS_MW007"
+          ],
+          "summary": "South West Coast"
+        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
             "Upper East Coast: St Helens Point to Wineglass Bay",
             "South East Coast: Tasman Island to South East Cape",
-            "South West Coast: South East Cape to Low Rocky Point",
             "Central West Coast: Low Rocky Point to Sandy Cape"
           ],
           "aac_codes": [
-            "TAS_MW003",
             "TAS_MW004",
             "TAS_MW006",
-            "TAS_MW007",
             "TAS_MW008"
           ],
-          "summary": "East of Flinders Island, Upper East Coast, South East Coast, South West Coast and Central West Coast"
+          "summary": "Upper East Coast, South East Coast and Central West Coast"
         }
       ]
     }
