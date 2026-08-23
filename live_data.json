@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-23T01:52:59.423217+00:00",
-  "last_checked_utc": "2026-08-23T01:52:59.423217+00:00",
+  "generated_utc": "2026-08-23T02:22:58.809082+00:00",
+  "last_checked_utc": "2026-08-23T02:22:58.809082+00:00",
   "warning_count": 8,
   "warnings": [
     {
@@ -78,27 +78,29 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Second Av, Blacktown",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 23 Aug 2026 02:20:43 GMT",
+        "description": "Second Av, Blacktown, NSW 2148",
+        "council": "Blacktown",
+        "lat": -33.767236,
+        "lng": 150.912522,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-23T01:38:05+00:00",
-        "description": "GOLDEN BAY, CITY OF ROCKINGHAM",
-        "lat": -32.4211,
-        "lng": 115.7542,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -393,6 +395,21 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
+        "updated": "2026-08-23T02:09:18+00:00",
+        "description": "WHITE RD, RUM JUNGLE",
+        "lat": -12.9658,
+        "lng": 130.9566,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - WHITE RD, RUM JUNGLE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
         "updated": "2026-08-23T00:32:35+00:00",
         "description": "WHITE RD, RUM JUNGLE",
         "lat": -12.9659,
@@ -554,7 +571,7 @@
     ],
     "act": []
   },
-  "incident_count": 31,
+  "incident_count": 32,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
