@@ -1,8 +1,17 @@
 {
-  "generated_utc": "2026-08-23T05:52:58.932364+00:00",
-  "last_checked_utc": "2026-08-23T05:52:58.932364+00:00",
-  "warning_count": 8,
+  "generated_utc": "2026-08-23T06:22:58.959596+00:00",
+  "last_checked_utc": "2026-08-23T06:22:58.959596+00:00",
+  "warning_count": 9,
   "warnings": [
+    {
+      "pid": "",
+      "title": "23/16:05 EST Marine Wind Warning Summary for New South Wales",
+      "type": "wind",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Sun, 23 Aug 2026 06:05:16 GMT"
+    },
     {
       "pid": "",
       "title": "23/12:23 EST Minor Flood Warning for the Murray River",
@@ -59,42 +68,26 @@
     },
     {
       "pid": "",
-      "title": "23/10:17 CST Marine Wind Warning Summary for South Australia",
+      "title": "23/15:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sun, 23 Aug 2026 00:47:20 GMT"
+      "issued": "Sun, 23 Aug 2026 06:00:10 GMT"
     },
     {
       "pid": "",
-      "title": "23/10:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "23/16:05 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 23 Aug 2026 00:00:11 GMT"
+      "issued": "Sun, 23 Aug 2026 06:05:14 GMT"
     }
   ],
   "fetch_errors": {},
   "incidents": {
     "nsw": [
-      {
-        "title": "BROBENAH RD, LEETON",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Sun, 23 Aug 2026 05:48:43 GMT",
-        "description": "BROBENAH RD, LEETON 2705",
-        "council": "Leeton",
-        "lat": -34.5042079999999,
-        "lng": 146.424222,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
       {
         "title": "Second Av, Blacktown",
         "alertLevel": "Advice",
@@ -102,7 +95,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sun, 23 Aug 2026 05:48:43 GMT",
+        "updated": "Sun, 23 Aug 2026 06:20:43 GMT",
         "description": "Second Av, Blacktown, NSW 2148",
         "council": "Blacktown",
         "lat": -33.767236,
@@ -115,7 +108,7 @@
     "vic": [],
     "qld": [
       {
-        "title": "PREPARE TO LEAVE - Mareeba - fire as at 1:49pm Sunday, 23 August 2026",
+        "title": "PREPARE TO LEAVE - Mareeba - fire as at 3:57pm Sunday, 23 August 2026",
         "alertLevel": "Watch and Act",
         "status": "",
         "type": "Bush Fire",
@@ -132,6 +125,51 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-23T06:11:49+00:00",
+        "description": "DERBY, SHIRE OF DERBY/WEST KIMBERLEY",
+        "lat": -17.3098,
+        "lng": 123.6537,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-23T05:58:57+00:00",
+        "description": "METRICUP, CITY OF BUSSELTON",
+        "lat": -33.7801,
+        "lng": 115.1316,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-23T05:58:41+00:00",
+        "description": "DALWALLINU, SHIRE OF DALWALLINU",
+        "lat": -30.279,
+        "lng": 116.6601,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -218,36 +256,6 @@
         "description": "",
         "lat": -20.739,
         "lng": 116.8574,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-22T14:44:12+00:00",
-        "description": "DALWALLINU, SHIRE OF DALWALLINU",
-        "lat": -30.279,
-        "lng": 116.6601,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-22T12:47:11+00:00",
-        "description": "METRICUP, CITY OF BUSSELTON",
-        "lat": -33.7801,
-        "lng": 115.1316,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -420,16 +428,91 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - SHEARWATER DR, BAKEWELL",
+        "title": "Grass and Scrub Fire - Unknown",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-08-23T05:20:39+00:00",
-        "description": "SHEARWATER DR, BAKEWELL",
-        "lat": -12.4967,
-        "lng": 130.9894,
+        "updated": "2026-08-23T06:06:04+00:00",
+        "description": "",
+        "lat": -23.7447,
+        "lng": 133.7097,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - LARAPINTA DR, BURT PLAIN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-23T06:00:18+00:00",
+        "description": "LARAPINTA DR, BURT PLAIN",
+        "lat": -23.7245,
+        "lng": 133.7481,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - MIRA RD, SOUTHPORT",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-23T05:58:16+00:00",
+        "description": "MIRA RD, SOUTHPORT",
+        "lat": -12.729,
+        "lng": 130.9494,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Grice Crescent, Coolalinga",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-23T05:56:00+00:00",
+        "description": "Grice Crescent, Coolalinga",
+        "lat": -12.5207,
+        "lng": 131.0421,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - DILI CT, COOLALINGA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-23T05:48:25+00:00",
+        "description": "DILI CT, COOLALINGA",
+        "lat": -12.516,
+        "lng": 131.0402,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Hutchison Road HERBERT",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-08-23T05:45:00+00:00",
+        "description": "Hutchison Road HERBERT",
+        "lat": -12.5196,
+        "lng": 131.1583,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -445,21 +528,6 @@
         "description": "Livingstone Road, LIVINGSTONE",
         "lat": -12.7333,
         "lng": 131.0418,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - DILI CT, COOLALINGA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-23T04:46:46+00:00",
-        "description": "DILI CT, COOLALINGA",
-        "lat": -12.516,
-        "lng": 131.0402,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -678,7 +746,7 @@
       }
     ]
   },
-  "incident_count": 39,
+  "incident_count": 43,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -1233,364 +1301,364 @@
         "1": {
           "fd": "No Rating",
           "fbi": 9,
-          "st": "2026-08-23T00:00:00+10:00",
-          "et": "2026-08-24T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "No Rating",
-          "fbi": 9,
           "st": "2026-08-24T00:00:00+10:00",
           "et": "2026-08-25T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "No Rating",
           "fbi": 8,
           "st": "2026-08-25T00:00:00+10:00",
           "et": "2026-08-26T00:00:00+10:00"
         },
-        "4": {
+        "3": {
           "fd": "No Rating",
           "fbi": 9,
           "st": "2026-08-26T00:00:00+10:00",
           "et": "2026-08-27T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-08-27T00:00:00+10:00",
+          "et": "2026-08-28T00:00:00+10:00"
         }
       },
       "QLD_FW002": {
         "1": {
           "fd": "Moderate",
-          "fbi": 14,
-          "st": "2026-08-23T00:00:00+10:00",
-          "et": "2026-08-24T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "Moderate",
           "fbi": 15,
           "st": "2026-08-24T00:00:00+10:00",
           "et": "2026-08-25T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "Moderate",
           "fbi": 13,
           "st": "2026-08-25T00:00:00+10:00",
           "et": "2026-08-26T00:00:00+10:00"
         },
-        "4": {
+        "3": {
           "fd": "Moderate",
-          "fbi": 19,
+          "fbi": 20,
           "st": "2026-08-26T00:00:00+10:00",
           "et": "2026-08-27T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 18,
+          "st": "2026-08-27T00:00:00+10:00",
+          "et": "2026-08-28T00:00:00+10:00"
         }
       },
       "QLD_FW003": {
         "1": {
           "fd": "Moderate",
-          "fbi": 17,
-          "st": "2026-08-23T00:00:00+10:00",
-          "et": "2026-08-24T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "Moderate",
           "fbi": 18,
           "st": "2026-08-24T00:00:00+10:00",
           "et": "2026-08-25T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "Moderate",
-          "fbi": 17,
+          "fbi": 18,
           "st": "2026-08-25T00:00:00+10:00",
           "et": "2026-08-26T00:00:00+10:00"
         },
-        "4": {
+        "3": {
           "fd": "Moderate",
-          "fbi": 18,
+          "fbi": 21,
           "st": "2026-08-26T00:00:00+10:00",
           "et": "2026-08-27T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 19,
+          "st": "2026-08-27T00:00:00+10:00",
+          "et": "2026-08-28T00:00:00+10:00"
         }
       },
       "QLD_FW004": {
         "1": {
           "fd": "Moderate",
           "fbi": 13,
-          "st": "2026-08-23T00:00:00+10:00",
-          "et": "2026-08-24T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "Moderate",
-          "fbi": 13,
           "st": "2026-08-24T00:00:00+10:00",
           "et": "2026-08-25T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "Moderate",
           "fbi": 12,
           "st": "2026-08-25T00:00:00+10:00",
           "et": "2026-08-26T00:00:00+10:00"
         },
-        "4": {
+        "3": {
           "fd": "Moderate",
           "fbi": 13,
           "st": "2026-08-26T00:00:00+10:00",
           "et": "2026-08-27T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-27T00:00:00+10:00",
+          "et": "2026-08-28T00:00:00+10:00"
         }
       },
       "QLD_FW006": {
         "1": {
           "fd": "Moderate",
-          "fbi": 14,
-          "st": "2026-08-23T00:00:00+10:00",
-          "et": "2026-08-24T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "Moderate",
           "fbi": 13,
           "st": "2026-08-24T00:00:00+10:00",
           "et": "2026-08-25T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "Moderate",
           "fbi": 12,
           "st": "2026-08-25T00:00:00+10:00",
           "et": "2026-08-26T00:00:00+10:00"
         },
-        "4": {
+        "3": {
           "fd": "Moderate",
-          "fbi": 12,
+          "fbi": 13,
           "st": "2026-08-26T00:00:00+10:00",
           "et": "2026-08-27T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-27T00:00:00+10:00",
+          "et": "2026-08-28T00:00:00+10:00"
         }
       },
       "QLD_FW007": {
         "1": {
           "fd": "Moderate",
-          "fbi": 14,
-          "st": "2026-08-23T00:00:00+10:00",
-          "et": "2026-08-24T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "Moderate",
           "fbi": 12,
           "st": "2026-08-24T00:00:00+10:00",
           "et": "2026-08-25T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "Moderate",
           "fbi": 12,
           "st": "2026-08-25T00:00:00+10:00",
           "et": "2026-08-26T00:00:00+10:00"
         },
-        "4": {
+        "3": {
           "fd": "Moderate",
           "fbi": 12,
           "st": "2026-08-26T00:00:00+10:00",
           "et": "2026-08-27T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-27T00:00:00+10:00",
+          "et": "2026-08-28T00:00:00+10:00"
         }
       },
       "QLD_FW008": {
         "1": {
           "fd": "Moderate",
-          "fbi": 15,
-          "st": "2026-08-23T00:00:00+10:00",
-          "et": "2026-08-24T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "Moderate",
-          "fbi": 15,
+          "fbi": 16,
           "st": "2026-08-24T00:00:00+10:00",
           "et": "2026-08-25T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "Moderate",
           "fbi": 14,
           "st": "2026-08-25T00:00:00+10:00",
           "et": "2026-08-26T00:00:00+10:00"
         },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-08-26T00:00:00+10:00",
+          "et": "2026-08-27T00:00:00+10:00"
+        },
         "4": {
           "fd": "Moderate",
           "fbi": 15,
-          "st": "2026-08-26T00:00:00+10:00",
-          "et": "2026-08-27T00:00:00+10:00"
+          "st": "2026-08-27T00:00:00+10:00",
+          "et": "2026-08-28T00:00:00+10:00"
         }
       },
       "QLD_FW009": {
         "1": {
-          "fd": "Moderate",
-          "fbi": 21,
-          "st": "2026-08-23T00:00:00+10:00",
-          "et": "2026-08-24T00:00:00+10:00"
-        },
-        "2": {
           "fd": "High",
-          "fbi": 25,
+          "fbi": 26,
           "st": "2026-08-24T00:00:00+10:00",
           "et": "2026-08-25T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "Moderate",
-          "fbi": 19,
+          "fbi": 18,
           "st": "2026-08-25T00:00:00+10:00",
           "et": "2026-08-26T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 21,
+          "st": "2026-08-26T00:00:00+10:00",
+          "et": "2026-08-27T00:00:00+10:00"
         },
         "4": {
           "fd": "Moderate",
           "fbi": 20,
-          "st": "2026-08-26T00:00:00+10:00",
-          "et": "2026-08-27T00:00:00+10:00"
+          "st": "2026-08-27T00:00:00+10:00",
+          "et": "2026-08-28T00:00:00+10:00"
         }
       },
       "QLD_FW010": {
         "1": {
           "fd": "Moderate",
-          "fbi": 15,
-          "st": "2026-08-23T00:00:00+10:00",
-          "et": "2026-08-24T00:00:00+10:00"
+          "fbi": 19,
+          "st": "2026-08-24T00:00:00+10:00",
+          "et": "2026-08-25T00:00:00+10:00"
         },
         "2": {
           "fd": "Moderate",
           "fbi": 18,
-          "st": "2026-08-24T00:00:00+10:00",
-          "et": "2026-08-25T00:00:00+10:00"
-        },
-        "3": {
-          "fd": "Moderate",
-          "fbi": 17,
           "st": "2026-08-25T00:00:00+10:00",
           "et": "2026-08-26T00:00:00+10:00"
         },
-        "4": {
+        "3": {
           "fd": "Moderate",
-          "fbi": 21,
+          "fbi": 23,
           "st": "2026-08-26T00:00:00+10:00",
           "et": "2026-08-27T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 19,
+          "st": "2026-08-27T00:00:00+10:00",
+          "et": "2026-08-28T00:00:00+10:00"
         }
       },
       "QLD_FW011": {
         "1": {
-          "fd": "Moderate",
-          "fbi": 17,
-          "st": "2026-08-23T00:00:00+10:00",
-          "et": "2026-08-24T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "Moderate",
-          "fbi": 23,
+          "fd": "High",
+          "fbi": 25,
           "st": "2026-08-24T00:00:00+10:00",
           "et": "2026-08-25T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "Moderate",
           "fbi": 17,
           "st": "2026-08-25T00:00:00+10:00",
           "et": "2026-08-26T00:00:00+10:00"
         },
-        "4": {
+        "3": {
           "fd": "Moderate",
-          "fbi": 14,
+          "fbi": 15,
           "st": "2026-08-26T00:00:00+10:00",
           "et": "2026-08-27T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 15,
+          "st": "2026-08-27T00:00:00+10:00",
+          "et": "2026-08-28T00:00:00+10:00"
         }
       },
       "QLD_FW012": {
         "1": {
           "fd": "Moderate",
-          "fbi": 13,
-          "st": "2026-08-23T00:00:00+10:00",
-          "et": "2026-08-24T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "Moderate",
           "fbi": 17,
           "st": "2026-08-24T00:00:00+10:00",
           "et": "2026-08-25T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "Moderate",
-          "fbi": 15,
+          "fbi": 13,
           "st": "2026-08-25T00:00:00+10:00",
           "et": "2026-08-26T00:00:00+10:00"
         },
-        "4": {
+        "3": {
           "fd": "Moderate",
           "fbi": 13,
           "st": "2026-08-26T00:00:00+10:00",
           "et": "2026-08-27T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-08-27T00:00:00+10:00",
+          "et": "2026-08-28T00:00:00+10:00"
         }
       },
       "QLD_FW013": {
         "1": {
           "fd": "Moderate",
-          "fbi": 12,
-          "st": "2026-08-23T00:00:00+10:00",
-          "et": "2026-08-24T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "Moderate",
-          "fbi": 14,
+          "fbi": 15,
           "st": "2026-08-24T00:00:00+10:00",
           "et": "2026-08-25T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "Moderate",
           "fbi": 15,
           "st": "2026-08-25T00:00:00+10:00",
           "et": "2026-08-26T00:00:00+10:00"
         },
-        "4": {
+        "3": {
           "fd": "Moderate",
-          "fbi": 14,
+          "fbi": 15,
           "st": "2026-08-26T00:00:00+10:00",
           "et": "2026-08-27T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-27T00:00:00+10:00",
+          "et": "2026-08-28T00:00:00+10:00"
         }
       },
       "QLD_FW014": {
         "1": {
           "fd": "Moderate",
-          "fbi": 13,
-          "st": "2026-08-23T00:00:00+10:00",
-          "et": "2026-08-24T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "Moderate",
           "fbi": 12,
           "st": "2026-08-24T00:00:00+10:00",
           "et": "2026-08-25T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "Moderate",
           "fbi": 12,
           "st": "2026-08-25T00:00:00+10:00",
           "et": "2026-08-26T00:00:00+10:00"
         },
-        "4": {
+        "3": {
           "fd": "Moderate",
-          "fbi": 12,
+          "fbi": 13,
           "st": "2026-08-26T00:00:00+10:00",
           "et": "2026-08-27T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-08-27T00:00:00+10:00",
+          "et": "2026-08-28T00:00:00+10:00"
         }
       },
       "QLD_FW015": {
         "1": {
           "fd": "Moderate",
           "fbi": 12,
-          "st": "2026-08-23T00:00:00+10:00",
-          "et": "2026-08-24T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "Moderate",
-          "fbi": 12,
           "st": "2026-08-24T00:00:00+10:00",
           "et": "2026-08-25T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "Moderate",
           "fbi": 12,
           "st": "2026-08-25T00:00:00+10:00",
           "et": "2026-08-26T00:00:00+10:00"
         },
-        "4": {
+        "3": {
           "fd": "Moderate",
-          "fbi": 12,
+          "fbi": 13,
           "st": "2026-08-26T00:00:00+10:00",
           "et": "2026-08-27T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-08-27T00:00:00+10:00",
+          "et": "2026-08-28T00:00:00+10:00"
         }
       },
       "WA_FW041": {
@@ -3682,10 +3750,29 @@
     }
   },
   "marine_warnings": {
+    "NSW": {
+      "state": "NSW",
+      "product": "IDN20400",
+      "issued_utc": "2026-08-23T06:05:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Eden Coast: Montague Island to Gabo Island"
+          ],
+          "aac_codes": [
+            "NSW_MW001"
+          ],
+          "summary": "Eden Coast"
+        }
+      ]
+    },
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-08-23T00:47:13Z",
+      "issued_utc": "2026-08-23T06:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3693,20 +3780,26 @@
           "severity": "STR",
           "zones": [
             "Far West Coast: WA-SA Border to Fowlers Bay",
-            "Upper West Coast: Fowlers Bay to Elliston"
+            "Upper West Coast: Fowlers Bay to Elliston",
+            "Lower West Coast: Elliston to Cape Carnot",
+            "Central Coast",
+            "Spencer Gulf"
           ],
           "aac_codes": [
             "SA_MW001",
-            "SA_MW002"
+            "SA_MW002",
+            "SA_MW003",
+            "SA_MW004",
+            "SA_MW005"
           ],
-          "summary": "Far West Coast and Upper West Coast"
+          "summary": "Far West Coast, Upper West Coast, Lower West Coast, Central Coast and Spencer Gulf"
         }
       ]
     },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-08-23T00:00:00Z",
+      "issued_utc": "2026-08-23T06:05:00Z",
       "overview": [
         "Strong Wind Warning for Sunday for East of Flinders Island, Upper East Coast, South East Coast, South West Coast and Central West Coast",
         "Gale Warning for Monday for South West Coast",
