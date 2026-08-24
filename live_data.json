@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-24T17:53:08.177223+00:00",
-  "last_checked_utc": "2026-08-24T17:53:08.177223+00:00",
+  "generated_utc": "2026-08-24T18:23:09.344806+00:00",
+  "last_checked_utc": "2026-08-24T18:23:09.344806+00:00",
   "warning_count": 20,
   "warnings": [
     {
       "pid": "",
-      "title": "24/22:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "25/04:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 24 Aug 2026 12:00:11 GMT"
+      "issued": "Mon, 24 Aug 2026 18:00:10 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "24/22:00 EST Marine Wind Warning Summary for Victoria",
+      "title": "25/04:10 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 24 Aug 2026 12:00:22 GMT"
+      "issued": "Mon, 24 Aug 2026 18:10:18 GMT"
     },
     {
       "pid": "",
@@ -113,12 +113,12 @@
     },
     {
       "pid": "",
-      "title": "24/21:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "25/03:40 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Mon, 24 Aug 2026 12:00:12 GMT"
+      "issued": "Mon, 24 Aug 2026 18:10:12 GMT"
     },
     {
       "pid": "",
@@ -158,12 +158,12 @@
     },
     {
       "pid": "",
-      "title": "24/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "25/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 24 Aug 2026 12:00:10 GMT"
+      "issued": "Mon, 24 Aug 2026 18:00:15 GMT"
     },
     {
       "pid": "IDN21037",
@@ -229,7 +229,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 24 Aug 2026 17:48:44 GMT",
+        "updated": "Mon, 24 Aug 2026 18:20:43 GMT",
         "description": "BEECROFT PENINSULA 2540",
         "council": "Shoalhaven",
         "lat": -35.057262421,
@@ -3646,8 +3646,11 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-08-24T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-08-24T18:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Tuesday for Macquarie Coast, Hunter Coast and Eden Coast",
+        "Strong Wind Warning for Wednesday for Eden Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3655,24 +3658,25 @@
           "zones": [
             "Macquarie Coast: Smoky Cape to Seal Rocks",
             "Hunter Coast: Seal Rocks to Broken Bay",
-            "Batemans Coast: Ulladulla to Montague Island",
             "Eden Coast: Montague Island to Gabo Island"
           ],
           "aac_codes": [
             "NSW_MW006",
             "NSW_MW005",
-            "NSW_MW002",
             "NSW_MW001"
           ],
-          "summary": "Macquarie Coast, Hunter Coast, Batemans Coast and Eden Coast"
+          "summary": "Macquarie Coast, Hunter Coast and Eden Coast"
         }
       ]
     },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-08-24T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-08-24T18:10:00Z",
+      "overview": [
+        "Strong Wind Warning for Tuesday for East Gippsland Coast",
+        "Strong Wind Warning for Wednesday for East Gippsland Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3690,26 +3694,29 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-08-24T12:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Monday for Lower West Coast, Central Coast and Spencer Gulf",
-        "Strong Wind Warning for Tuesday for Central Coast, South Central Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait and Adelaide Metropolitan Waters"
-      ],
+      "issued_utc": "2026-08-24T18:10:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Lower West Coast: Elliston to Cape Carnot",
             "Central Coast",
-            "Spencer Gulf"
+            "South Central Coast",
+            "Spencer Gulf",
+            "Gulf St Vincent",
+            "Investigator Strait",
+            "Adelaide Metropolitan Waters"
           ],
           "aac_codes": [
-            "SA_MW003",
             "SA_MW004",
-            "SA_MW005"
+            "SA_MW008",
+            "SA_MW005",
+            "SA_MW006",
+            "SA_MW007",
+            "SA_MW011"
           ],
-          "summary": "Lower West Coast, Central Coast and Spencer Gulf"
+          "summary": "Adelaide Metropolitan Waters, Central Coast, South Central Coast, Spencer Gulf, Gulf St Vincent and Investigator Strait"
         }
       ]
     },
@@ -3737,8 +3744,11 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-08-24T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-08-24T18:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Tuesday for South West Coast",
+        "Strong Wind Warning for Wednesday for East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast, South West Coast, Frederick Henry Bay and Norfolk Bay, Storm Bay and Channel"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
