@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-24T12:53:05.912972+00:00",
-  "last_checked_utc": "2026-08-24T12:53:05.912972+00:00",
-  "warning_count": 21,
+  "generated_utc": "2026-08-24T13:23:05.020055+00:00",
+  "last_checked_utc": "2026-08-24T13:23:05.020055+00:00",
+  "warning_count": 20,
   "warnings": [
     {
       "pid": "",
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "24/17:24 EST Warning to Sheep Graziers\nfor South West Slopes, Snowy Mountains and Australian Capital Territory forecast districts",
+      "title": "24/23:08 EST Warning to Sheep Graziers\nfor South West Slopes, Snowy Mountains and Australian Capital Territory forecast districts",
       "type": "other",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Mon, 24 Aug 2026 07:24:11 GMT"
+      "issued": "Mon, 24 Aug 2026 13:08:22 GMT"
     },
     {
       "pid": "",
@@ -171,8 +171,8 @@
       "type": "severe_weather",
       "state": "NSW",
       "link": "",
-      "desc": "HEAVY RAINFALL which may lead to FLASH FLOODING is forecast for the Snowy Mountains and South West Slopes during early Tuesday morning. Six-hour rainfall totals between 50 to 60 mm are possible. The broader area of heavy rainfall is forecast to ease by Tuesday afternoon. However, severe thunderstorms may also develop and bring localised heavy falls to southern parts of the state during Tuesday afternoon and evening. Should severe thunderstorms develop, a Severe Thunderstorm Warning will be issue",
-      "issued": "2026-08-24T16:54:50+10:00",
+      "desc": "HEAVY RAINFALL which may lead to FLASH FLOODING is possible for the Snowy Mountains and South West Slopes during early Tuesday morning. Six-hour rainfall totals between 50 to 60 mm are possible. The broader area of possible heavy rainfall is forecast to ease by Tuesday afternoon. However, severe thunderstorms may also develop and bring localised heavy falls to southern parts of the state during Tuesday afternoon and evening. Should severe thunderstorms develop, a Severe Thunderstorm Warning will",
+      "issued": "2026-08-24T23:07:16+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -217,30 +217,6 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "REN"
-    },
-    {
-      "pid": "IDD21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for Simpson, Tanami",
-      "type": "thunderstorm",
-      "state": "NT",
-      "link": "",
-      "desc": "This warning is now cancelled.",
-      "issued": "2026-08-24T18:27:02+09:30",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "NT_PW007",
-          "description": "Simpson",
-          "phase": "CAN"
-        },
-        {
-          "aac": "NT_PW009",
-          "description": "Tanami",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -253,7 +229,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 24 Aug 2026 12:48:43 GMT",
+        "updated": "Mon, 24 Aug 2026 13:20:51 GMT",
         "description": "BEECROFT PENINSULA 2540",
         "council": "Shoalhaven",
         "lat": -35.057262421,
@@ -283,6 +259,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-24T13:02:45+00:00",
+        "description": "JOONDANNA, CITY OF STIRLING",
+        "lat": -31.9127,
+        "lng": 115.8443,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice PREPARE NOW - DAMPIER PENINSULA",
         "alertLevel": "Advice",
@@ -526,36 +517,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - MATTHEW FLINDERS WAY, NHULUNBUY",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-24T12:45:09+00:00",
-        "description": "MATTHEW FLINDERS WAY, NHULUNBUY",
-        "lat": -12.1855,
-        "lng": 136.7827,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - THORNGATE RD, HOLTZE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-24T12:35:58+00:00",
-        "description": "THORNGATE RD, HOLTZE",
-        "lat": -12.4647,
-        "lng": 130.9888,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - GUNN POINT RD, HOWARD SPRINGS",
         "alertLevel": "Advice",
         "status": "active",
@@ -693,7 +654,7 @@
     ],
     "act": []
   },
-  "incident_count": 29,
+  "incident_count": 28,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
