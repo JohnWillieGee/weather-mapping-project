@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-24T01:53:10.528908+00:00",
-  "last_checked_utc": "2026-08-24T01:53:10.528908+00:00",
-  "warning_count": 14,
+  "generated_utc": "2026-08-24T02:23:05.971670+00:00",
+  "last_checked_utc": "2026-08-24T02:23:05.971670+00:00",
+  "warning_count": 17,
   "warnings": [
     {
       "pid": "",
@@ -20,6 +20,15 @@
       "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
       "desc": "",
       "issued": "Mon, 24 Aug 2026 00:30:13 GMT"
+    },
+    {
+      "pid": "",
+      "title": "24/12:06 EST Initial Minor Flood Warning for the Tumut River",
+      "type": "flood",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/nsw/warnings/flood/murrumbidgeeriver.shtml",
+      "desc": "",
+      "issued": "Mon, 24 Aug 2026 02:06:44 GMT"
     },
     {
       "pid": "",
@@ -128,6 +137,59 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Mon, 24 Aug 2026 00:00:13 GMT"
+    },
+    {
+      "pid": "IDN21037",
+      "title": "Severe Weather Warning for South West Slopes, Snowy Mountains",
+      "type": "severe_weather",
+      "state": "NSW",
+      "link": "",
+      "desc": "HEAVY RAINFALL which may lead to FLASH FLOODING may develop about the Snowy Mountains and South West Slopes during early Tuesday morning. Six-hour rainfall totals between 50 to 60 mm are possible. The broader area of heavy rainfall is forecast to ease by Tuesday afternoon. However, severe thunderstorms may also develop and bring localised heavy falls to southern parts of the state during Tuesday afternoon and evening. Should severe thunderstorms develop, a Severe Thunderstorm Warning will be iss",
+      "issued": "2026-08-24T11:54:37+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NSW_PW013",
+          "description": "South West Slopes",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_PW010",
+          "description": "Snowy Mountains",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
+    },
+    {
+      "pid": "IDV21037",
+      "title": "Severe Weather Warning for North East, West and South Gippsland, East Gippsland",
+      "type": "severe_weather",
+      "state": "VIC",
+      "link": "",
+      "desc": "HEAVY RAINFALL which may lead to FLASH FLOODING may develop about the northeast ranges during early Tuesday morning. Six-hour rainfall totals between 50 to 60 mm are possible. The broader area of heavy rainfall is forecast to ease by Tuesday afternoon. However, severe thunderstorms may also develop and bring localised heavy falls to northern parts of the state during Tuesday afternoon and evening. Should severe thunderstorms develop, a Severe Thunderstorm Warning will be issued. A FLOOD WATCH is",
+      "issued": "2026-08-24T11:53:36+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "VIC_PW004",
+          "description": "North East",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW006",
+          "description": "West and South Gippsland",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW005",
+          "description": "East Gippsland",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -411,6 +473,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - LITCHFIELD PARK RD, CHARLOTTE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-24T02:12:30+00:00",
+        "description": "LITCHFIELD PARK RD, CHARLOTTE",
+        "lat": -12.8723,
+        "lng": 130.8211,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Livingstone Road, LIVINGSTONE",
         "alertLevel": "Advice",
         "status": "active",
@@ -503,7 +580,7 @@
     ],
     "act": []
   },
-  "incident_count": 24,
+  "incident_count": 25,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
