@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-24T03:53:01.987145+00:00",
-  "last_checked_utc": "2026-08-24T03:53:01.987145+00:00",
-  "warning_count": 17,
+  "generated_utc": "2026-08-24T04:23:04.324847+00:00",
+  "last_checked_utc": "2026-08-24T04:23:04.324847+00:00",
+  "warning_count": 18,
   "warnings": [
     {
       "pid": "",
@@ -122,6 +122,15 @@
     },
     {
       "pid": "",
+      "title": "24/13:46 CST Initial Minor Flood Warning for the Onkaparinga River",
+      "type": "flood",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/flood/onkaparingariver.shtml",
+      "desc": "",
+      "issued": "Mon, 24 Aug 2026 04:16:48 GMT"
+    },
+    {
+      "pid": "",
       "title": "24/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
@@ -194,7 +203,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "CITRIS DR, WELLS CROSSING",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Mon, 24 Aug 2026 04:20:43 GMT",
+        "description": "CITRIS DR, WELLS CROSSING 2460",
+        "council": "Clarence Valley",
+        "lat": -29.902540207,
+        "lng": 153.014221191,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [
       {
@@ -215,6 +241,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-24T04:00:52+00:00",
+        "description": "MIDVALE, CITY OF SWAN",
+        "lat": -31.8875,
+        "lng": 116.0223,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -271,21 +312,6 @@
         "description": "",
         "lat": -16.7435,
         "lng": 122.8655,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-24T00:12:39+00:00",
-        "description": "BUTLER, CITY OF WANNEROO",
-        "lat": -31.6333,
-        "lng": 115.7027,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -610,7 +636,7 @@
     ],
     "act": []
   },
-  "incident_count": 27,
+  "incident_count": 28,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
