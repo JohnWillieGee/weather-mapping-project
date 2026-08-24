@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-23T23:52:59.997389+00:00",
-  "last_checked_utc": "2026-08-23T23:52:59.997389+00:00",
+  "generated_utc": "2026-08-24T00:23:01.618551+00:00",
+  "last_checked_utc": "2026-08-24T00:23:01.618551+00:00",
   "warning_count": 14,
   "warnings": [
     {
       "pid": "",
-      "title": "24/04:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "24/10:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 23 Aug 2026 18:00:12 GMT"
+      "issued": "Mon, 24 Aug 2026 00:00:13 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "24/04:10 EST Marine Wind Warning Summary for Victoria",
+      "title": "24/10:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 23 Aug 2026 18:10:28 GMT"
+      "issued": "Mon, 24 Aug 2026 00:00:19 GMT"
     },
     {
       "pid": "",
@@ -95,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "24/03:40 CST Marine Wind Warning Summary for South Australia",
+      "title": "24/09:42 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sun, 23 Aug 2026 18:10:10 GMT"
+      "issued": "Mon, 24 Aug 2026 00:12:07 GMT"
     },
     {
       "pid": "",
@@ -122,17 +122,34 @@
     },
     {
       "pid": "",
-      "title": "24/08:18 EST Marine Wind Warning Summary for Tasmania",
+      "title": "24/10:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 23 Aug 2026 22:18:01 GMT"
+      "issued": "Mon, 24 Aug 2026 00:00:13 GMT"
     }
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Lambton Rd, New Lambton",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Mon, 24 Aug 2026 00:20:43 GMT",
+        "description": "Lambton Rd, New Lambton, NSW 2305",
+        "council": "Newcastle",
+        "lat": -32.9232039999999,
+        "lng": 151.722693,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [
       {
@@ -153,6 +170,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-24T00:01:31+00:00",
+        "description": "BUTLER, CITY OF WANNEROO",
+        "lat": -31.6333,
+        "lng": 115.7027,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -464,8 +496,8 @@
         "agency": "Bushfires NT",
         "updated": "2026-08-23T05:45:00+00:00",
         "description": "Hutchison Road HERBERT",
-        "lat": -12.5196,
-        "lng": 131.1583,
+        "lat": -12.5021,
+        "lng": 131.1607,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -563,7 +595,7 @@
     ],
     "act": []
   },
-  "incident_count": 28,
+  "incident_count": 30,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3567,32 +3599,10 @@
     }
   },
   "marine_warnings": {
-    "NSW": {
-      "state": "NSW",
-      "product": "IDN20400",
-      "issued_utc": "2026-08-23T18:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Monday for Eden Coast",
-        "Strong Wind Warning for Tuesday for Macquarie Coast and Eden Coast"
-      ],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Eden Coast: Montague Island to Gabo Island"
-          ],
-          "aac_codes": [
-            "NSW_MW001"
-          ],
-          "summary": "Eden Coast"
-        }
-      ]
-    },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-08-23T18:10:00Z",
+      "issued_utc": "2026-08-24T00:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3611,10 +3621,10 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-08-23T18:10:00Z",
+      "issued_utc": "2026-08-24T00:11:59Z",
       "overview": [
-        "Strong Wind Warning for Monday for Far West Coast, Upper West Coast, Lower West Coast, Central Coast and Spencer Gulf",
-        "Strong Wind Warning for Tuesday for Central Coast, South Central Coast, Spencer Gulf, Gulf St Vincent, Upper South East Coast and Adelaide Metropolitan Waters"
+        "Strong Wind Warning for Monday for Far West Coast, Upper West Coast, Spencer Gulf, Central Coast and Lower West Coast",
+        "Strong Wind Warning for Tuesday for Central Coast, Adelaide Metropolitan Waters, Upper South East Coast, Gulf St Vincent, South Central Coast and Spencer Gulf"
       ],
       "hazards": [
         {
@@ -3662,39 +3672,23 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-08-23T22:17:53Z",
-      "overview": [
-        "Gale Warning for Monday for South West Coast",
-        "Strong Wind Warning for Monday for Storm Bay, Central West Coast, Upper East Coast and South East Coast"
-      ],
+      "issued_utc": "2026-08-24T00:00:00Z",
+      "overview": [],
       "hazards": [
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "South West Coast: South East Cape to Low Rocky Point"
-          ],
-          "aac_codes": [
-            "TAS_MW007"
-          ],
-          "summary": "South West Coast"
-        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Upper East Coast: St Helens Point to Wineglass Bay",
             "South East Coast: Tasman Island to South East Cape",
-            "Central West Coast: Low Rocky Point to Sandy Cape",
+            "South West Coast: South East Cape to Low Rocky Point",
             "Storm Bay"
           ],
           "aac_codes": [
-            "TAS_MW004",
             "TAS_MW006",
-            "TAS_MW008",
+            "TAS_MW007",
             "TAS_MW014"
           ],
-          "summary": "Storm Bay, Upper East Coast, South East Coast and Central West Coast"
+          "summary": "Storm Bay, South East Coast and South West Coast"
         }
       ]
     }
