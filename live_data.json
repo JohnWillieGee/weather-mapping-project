@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-24T22:23:09.921875+00:00",
-  "last_checked_utc": "2026-08-24T22:23:09.921875+00:00",
+  "generated_utc": "2026-08-24T22:53:07.125109+00:00",
+  "last_checked_utc": "2026-08-24T22:53:07.125109+00:00",
   "warning_count": 21,
   "warnings": [
     {
@@ -176,56 +176,56 @@
     },
     {
       "pid": "IDN21037",
-      "title": "Severe Weather Warning for South West Slopes, Snowy Mountains",
+      "title": "Cancellation of Severe Weather Warning for South West Slopes, Snowy Mountains",
       "type": "severe_weather",
       "state": "NSW",
       "link": "",
-      "desc": "HEAVY RAINFALL which may lead to FLASH FLOODING is possible for the Snowy Mountains and South West Slopes during early Tuesday morning. Six-hour rainfall totals between 50 to 60 mm are possible. The broader area of possible heavy rainfall is forecast to ease by Tuesday afternoon. However, severe thunderstorms may also develop and bring localised heavy falls to southern parts of the state during Tuesday afternoon and evening. Should severe thunderstorms develop, a Severe Thunderstorm Warning will",
-      "issued": "2026-08-25T04:43:49+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled. The broader area of heavy rainfall has eased. However, severe thunderstorms may also develop and bring localised heavy falls to inland parts of the state during Tuesday afternoon and evening. Should severe thunderstorms develop, a Severe Thunderstorm Warning will be issued. A FLOOD WATCH and FLOOD WARNING are also current over parts of the South West Slopes and Snowy Mountains catchments. For more details, please see https://www.bom.gov.au/weather-and-climate/warni",
+      "issued": "2026-08-25T08:23:15+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "NSW_PW013",
           "description": "South West Slopes",
-          "phase": "UPD"
+          "phase": "CAN"
         },
         {
           "aac": "NSW_PW010",
           "description": "Snowy Mountains",
-          "phase": "UPD"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDV21037",
-      "title": "Severe Weather Warning for North East, West and South Gippsland, East Gippsland",
+      "title": "Cancellation of Severe Weather Warning for North East, West and South Gippsland, East Gippsland",
       "type": "severe_weather",
       "state": "VIC",
       "link": "",
-      "desc": "HEAVY RAINFALL which may lead to FLASH FLOODING is possible for the northeast ranges during this morning. Six-hour rainfall totals between 50 to 60 mm are possible. DAMAGING WINDS of 60 to 65 km/h and DAMAGING WIND GUSTS exceeding 90 km/h are occurring about the exposed peaks above 1600m east of Mount Buffalo. Winds are expected to ease during the day. The broader area of possible heavy rainfall is forecast to ease by this afternoon. However, severe thunderstorms may also develop and bring local",
-      "issued": "2026-08-25T03:36:32+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled. The broader area of heavy rainfall has eased. However, severe thunderstorms may also develop and bring localised heavy falls to northern parts of the state during the afternoon and evening. Should severe thunderstorms develop, a Severe Thunderstorm Warning will be issued. A FLOOD WATCH and various FLOOD WARNINGS are also current over many northern catchments. For more details, please see https://www.bom.gov.au/weather-and-climate/warnings-and-alerts 94 km/h wind gu",
+      "issued": "2026-08-25T08:23:28+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "VIC_PW004",
           "description": "North East",
-          "phase": "UPD"
+          "phase": "CAN"
         },
         {
           "aac": "VIC_PW006",
           "description": "West and South Gippsland",
-          "phase": "UPD"
+          "phase": "CAN"
         },
         {
           "aac": "VIC_PW005",
           "description": "East Gippsland",
-          "phase": "UPD"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -238,7 +238,7 @@
         "type": "Bush Fire",
         "size": "2 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 24 Aug 2026 22:20:44 GMT",
+        "updated": "Mon, 24 Aug 2026 22:48:44 GMT",
         "description": "BEECROFT PENINSULA 2540",
         "council": "Shoalhaven",
         "lat": -35.0565009929999,
@@ -351,6 +351,36 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-24T22:40:50+00:00",
+        "description": "SPALDING, CITY OF GREATER GERALDTON",
+        "lat": -28.7398,
+        "lng": 114.6274,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-24T22:28:15+00:00",
+        "description": "COLLIE, SHIRE OF COLLIE",
+        "lat": -33.3587,
+        "lng": 116.1573,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice PREPARE NOW - DAMPIER PENINSULA",
         "alertLevel": "Advice",
@@ -731,7 +761,7 @@
     ],
     "act": []
   },
-  "incident_count": 27,
+  "incident_count": 29,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
