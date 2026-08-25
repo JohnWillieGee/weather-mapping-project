@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-25T02:23:02.940031+00:00",
-  "last_checked_utc": "2026-08-25T02:23:02.940031+00:00",
-  "warning_count": 22,
+  "generated_utc": "2026-08-25T02:52:59.918361+00:00",
+  "last_checked_utc": "2026-08-25T02:52:59.918361+00:00",
+  "warning_count": 23,
   "warnings": [
     {
       "pid": "",
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "24/12:33 EST Minor Flood Warning for the Kiewa River",
+      "title": "25/12:31 EST Minor Flood Warning for the Kiewa River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/kiewariver.shtml",
       "desc": "",
-      "issued": "Mon, 24 Aug 2026 02:33:43 GMT"
+      "issued": "Tue, 25 Aug 2026 02:31:46 GMT"
     },
     {
       "pid": "",
@@ -140,12 +140,12 @@
     },
     {
       "pid": "",
-      "title": "24/21:41 CST Initial Minor Flood Warning for the Torrens River",
+      "title": "25/12:17 CST Final Flood Warning for the Torrens River",
       "type": "flood",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/flood/torrensriver.shtml",
       "desc": "",
-      "issued": "Mon, 24 Aug 2026 12:11:47 GMT"
+      "issued": "Tue, 25 Aug 2026 02:47:02 GMT"
     },
     {
       "pid": "",
@@ -235,6 +235,30 @@
       ],
       "severityCode": "CAN",
       "hazardPhase": "CAN"
+    },
+    {
+      "pid": "IDW21037",
+      "title": "Severe Weather Warning for Lower West, South West",
+      "type": "severe_weather",
+      "state": "WA",
+      "link": "",
+      "desc": "HEAVY RAINFALL which may lead to FLASH FLOODING is possible about parts of the South West and Lower West districts early on Wednesday morning. Six-hourly rainfall totals between 30 and 60 mm are expected, with possible localised falls up to 70 mm. Heavy falls are expected to ease during the early evening. Locations which may be affected include Bunbury, Mandurah, Collie, Harvey, Dwellingup and Pinjarra.",
+      "issued": "2026-08-25T10:50:45+08:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "WA_PW009",
+          "description": "Lower West",
+          "phase": "NEW"
+        },
+        {
+          "aac": "WA_PW010",
+          "description": "South West",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -247,7 +271,7 @@
         "type": "Bush Fire",
         "size": "2 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 25 Aug 2026 02:20:44 GMT",
+        "updated": "Tue, 25 Aug 2026 02:48:45 GMT",
         "description": "BEECROFT PENINSULA 2540",
         "council": "Shoalhaven",
         "lat": -35.0565009929999,
@@ -346,11 +370,27 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 25 Aug 2026 02:20:44 GMT",
+        "updated": "Tue, 25 Aug 2026 02:48:45 GMT",
         "description": "NOWENDOC RD, CAFFREYS FLAT 2424",
         "council": "Mid-Coast",
         "lat": -31.794094086,
         "lng": 152.063613892,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "THE BUCKETTS WAY, BURRELL CREEK",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "2 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Tue, 25 Aug 2026 02:48:45 GMT",
+        "description": "THE BUCKETTS WAY, BURRELL CREEK 2429",
+        "council": "Mid-Coast",
+        "lat": -31.948005677,
+        "lng": 152.323883057,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -417,21 +457,6 @@
         "description": "",
         "lat": -16.7816,
         "lng": 122.6027,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-25T00:50:13+00:00",
-        "description": "CANNING VALE, CITY OF CANNING",
-        "lat": -32.0607,
-        "lng": 115.9327,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -649,21 +674,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - YARRAWONGA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-25T02:13:50+00:00",
-        "description": "YARRAWONGA",
-        "lat": -12.4685,
-        "lng": 130.9903,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - GUNN POINT RD, HOWARD SPRINGS",
         "alertLevel": "Advice",
         "status": "active",
@@ -792,7 +802,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-08-25T02:20:00+00:00",
+        "updated": "2026-08-25T02:50:00+00:00",
         "description": "COOMBS",
         "lat": -35.3203,
         "lng": 149.0406,
@@ -807,7 +817,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "Fire - Ambulance",
-        "updated": "2026-08-25T02:17:23+00:00",
+        "updated": "2026-08-25T02:48:49+00:00",
         "description": "COOMBS",
         "lat": -35.3203,
         "lng": 149.0406,
@@ -817,7 +827,7 @@
       }
     ]
   },
-  "incident_count": 32,
+  "incident_count": 31,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
