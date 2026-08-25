@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-25T09:53:04.049382+00:00",
-  "last_checked_utc": "2026-08-25T09:53:04.049382+00:00",
+  "generated_utc": "2026-08-25T10:23:03.241020+00:00",
+  "last_checked_utc": "2026-08-25T10:23:03.241020+00:00",
   "warning_count": 24,
   "warnings": [
     {
@@ -149,6 +149,15 @@
     },
     {
       "pid": "",
+      "title": "25/19:31 CST Marine Wind Warning Summary for South Australia",
+      "type": "wind",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
+      "desc": "",
+      "issued": "Tue, 25 Aug 2026 10:01:28 GMT"
+    },
+    {
+      "pid": "",
       "title": "25/10:29 CST Cancellation of Warning to Sheep Graziers\nfor Yorke Peninsula forecast district",
       "type": "other",
       "state": "SA",
@@ -224,25 +233,6 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "REN"
-    },
-    {
-      "pid": "IDN21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for Riverina",
-      "type": "thunderstorm",
-      "state": "NSW",
-      "link": "",
-      "desc": "This warning is now cancelled. Further development of severe thunderstorms is possible across western NSW during this afternoon and early evening. If this occurs, Severe Thunderstorm Warnings will be reissued.",
-      "issued": "2026-08-25T15:39:59+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "NSW_PW014",
-          "description": "Riverina",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -282,36 +272,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Fuel Leak",
-        "alertLevel": "",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-25T09:41:02+00:00",
-        "description": "WILLAGEE, CITY OF MELVILLE",
-        "lat": -32.0466,
-        "lng": 115.8131,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Report of Smoke",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-25T09:33:35+00:00",
-        "description": "MILLARS WELL, CITY OF KARRATHA",
-        "lat": -20.744,
-        "lng": 116.8164,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire Watch and Act MONITOR CONDITIONS AS THEY ARE CHANGING - MERCEDES COVE RETREAT AND MIDDLE LAGOON",
         "alertLevel": "Advice",
@@ -692,7 +652,7 @@
     ],
     "act": []
   },
-  "incident_count": 29,
+  "incident_count": 27,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
