@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-25T17:52:59.805304+00:00",
-  "last_checked_utc": "2026-08-25T17:52:59.805304+00:00",
+  "generated_utc": "2026-08-25T18:23:00.415962+00:00",
+  "last_checked_utc": "2026-08-25T18:23:00.415962+00:00",
   "warning_count": 21,
   "warnings": [
     {
       "pid": "",
-      "title": "25/22:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "26/04:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 25 Aug 2026 12:00:15 GMT"
+      "issued": "Tue, 25 Aug 2026 18:00:11 GMT"
     },
     {
       "pid": "",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "25/22:00 EST Marine Wind Warning Summary for Victoria",
+      "title": "26/04:10 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 25 Aug 2026 12:00:18 GMT"
+      "issued": "Tue, 25 Aug 2026 18:10:20 GMT"
     },
     {
       "pid": "IDV35010",
@@ -176,12 +176,12 @@
     },
     {
       "pid": "",
-      "title": "25/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "26/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 25 Aug 2026 12:00:16 GMT"
+      "issued": "Tue, 25 Aug 2026 18:00:12 GMT"
     },
     {
       "pid": "IDW21037",
@@ -3617,8 +3617,11 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-08-25T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-08-25T18:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Wednesday for Batemans Coast and Eden Coast",
+        "Strong Wind Warning for Thursday for Batemans Coast and Eden Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3638,7 +3641,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-08-25T12:00:00Z",
+      "issued_utc": "2026-08-25T18:10:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3676,23 +3679,48 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-08-25T12:00:00Z",
+      "issued_utc": "2026-08-25T18:00:00Z",
       "overview": [
-        "Strong Wind Warning for Tuesday for South West Coast",
-        "Gale Warning for Wednesday for Upper East Coast, Lower East Coast, South East Coast, South West Coast, Storm Bay and Channel",
-        "Strong Wind Warning for Wednesday for East of Flinders Island, Derwent Estuary and Frederick Henry Bay and Norfolk Bay"
+        "Gale Warning for Wednesday for Upper East Coast, Lower East Coast, South East Coast, Storm Bay and Channel",
+        "Strong Wind Warning for Wednesday for East of Flinders Island, South West Coast, Derwent Estuary and Frederick Henry Bay and Norfolk Bay",
+        "Strong Wind Warning for Thursday for South East Coast, South West Coast and Central West Coast"
       ],
       "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "Upper East Coast: St Helens Point to Wineglass Bay",
+            "Lower East Coast: Wineglass Bay to Tasman Island",
+            "South East Coast: Tasman Island to South East Cape",
+            "Storm Bay",
+            "Channel"
+          ],
+          "aac_codes": [
+            "TAS_MW004",
+            "TAS_MW005",
+            "TAS_MW006",
+            "TAS_MW014",
+            "TAS_MW011"
+          ],
+          "summary": "Storm Bay, Channel, Upper East Coast, Lower East Coast and South East Coast"
+        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "South West Coast: South East Cape to Low Rocky Point"
+            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
+            "South West Coast: South East Cape to Low Rocky Point",
+            "Derwent Estuary",
+            "Frederick Henry Bay and Norfolk Bays"
           ],
           "aac_codes": [
-            "TAS_MW007"
+            "TAS_MW003",
+            "TAS_MW007",
+            "TAS_MW012",
+            "TAS_MW013"
           ],
-          "summary": "South West Coast"
+          "summary": "Derwent Estuary, Frederick Henry Bay and Norfolk Bay, East of Flinders Island and South West Coast"
         }
       ]
     }
