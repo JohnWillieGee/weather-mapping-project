@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-25T08:23:04.715157+00:00",
-  "last_checked_utc": "2026-08-25T08:23:04.715157+00:00",
+  "generated_utc": "2026-08-25T08:53:04.129904+00:00",
+  "last_checked_utc": "2026-08-25T08:53:04.129904+00:00",
   "warning_count": 24,
   "warnings": [
     {
@@ -208,22 +208,22 @@
       "state": "WA",
       "link": "",
       "desc": "HEAVY RAINFALL which may lead to FLASH FLOODING is possible about parts of the South West and Lower West districts early on Wednesday morning. Six-hourly rainfall totals between 30 and 60 mm are expected, with possible localised falls up to 70 mm. Heavy falls are expected to ease during the early evening. Locations which may be affected include Bunbury, Mandurah, Collie, Harvey, Dwellingup and Pinjarra.",
-      "issued": "2026-08-25T10:50:45+08:00",
+      "issued": "2026-08-25T16:37:01+08:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "WA_PW009",
           "description": "Lower West",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "WA_PW010",
           "description": "South West",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "REN"
     },
     {
       "pid": "IDN21033",
@@ -282,6 +282,36 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-25T08:35:13+00:00",
+        "description": "BUSSELTON, CITY OF BUSSELTON",
+        "lat": -33.6509,
+        "lng": 115.3427,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-25T08:27:44+00:00",
+        "description": "COLLIE, SHIRE OF COLLIE",
+        "lat": -33.361,
+        "lng": 116.1489,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Watch and Act MONITOR CONDITIONS AS THEY ARE CHANGING - MERCEDES COVE RETREAT AND MIDDLE LAGOON",
         "alertLevel": "Advice",
@@ -555,6 +585,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - LEE POINT RD, LEE POINT",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-25T08:38:21+00:00",
+        "description": "LEE POINT RD, LEE POINT",
+        "lat": -12.336,
+        "lng": 130.8973,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - NAMATJIRA DR, MOUNT ZEIL",
         "alertLevel": "Advice",
         "status": "active",
@@ -662,7 +707,7 @@
     ],
     "act": []
   },
-  "incident_count": 27,
+  "incident_count": 30,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
