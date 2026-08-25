@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-25T03:23:03.145368+00:00",
-  "last_checked_utc": "2026-08-25T03:23:03.145368+00:00",
-  "warning_count": 23,
+  "generated_utc": "2026-08-25T03:53:01.593996+00:00",
+  "last_checked_utc": "2026-08-25T03:53:01.593996+00:00",
+  "warning_count": 24,
   "warnings": [
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "IDV35010",
-      "title": "24/13:48 EST Flood Watch for part of North West, Central and North East Victoria",
+      "title": "25/13:46 EST Flood Watch for part of North West and North East Victoria",
       "type": "flood",
       "state": "VIC",
       "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDV35010.html",
       "desc": "",
-      "issued": "Mon, 24 Aug 2026 03:48:53 GMT"
+      "issued": "Tue, 25 Aug 2026 03:46:53 GMT"
     },
     {
       "pid": "",
@@ -259,6 +259,25 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "NEW"
+    },
+    {
+      "pid": "IDN21033",
+      "title": "Severe Thunderstorm Warning for Riverina",
+      "type": "thunderstorm",
+      "state": "NSW",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce large hailstones, damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours.",
+      "issued": "2026-08-25T13:32:19+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NSW_PW014",
+          "description": "Riverina",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -271,7 +290,7 @@
         "type": "Bush Fire",
         "size": "2 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 25 Aug 2026 03:20:44 GMT",
+        "updated": "Tue, 25 Aug 2026 03:48:44 GMT",
         "description": "BEECROFT PENINSULA 2540",
         "council": "Shoalhaven",
         "lat": -35.0565009929999,
@@ -364,17 +383,17 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
-        "title": "Minorie Dr, Toormina",
+        "title": "River St, Greenhill",
         "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Grass Fire",
+        "status": "Being controlled",
+        "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Tue, 25 Aug 2026 03:20:44 GMT",
-        "description": "Minorie Dr, Toormina, NSW 2452",
-        "council": "Coffs Harbour",
-        "lat": -30.3553172699999,
-        "lng": 153.095166934,
+        "updated": "Tue, 25 Aug 2026 03:48:44 GMT",
+        "description": "River St, Greenhill, NSW 2440",
+        "council": "Kempsey",
+        "lat": -31.0590809999999,
+        "lng": 152.801772,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -382,15 +401,15 @@
       {
         "title": "THE BUCKETTS WAY, BURRELL CREEK",
         "alertLevel": "Advice",
-        "status": "Not yet controlled",
+        "status": "Being controlled",
         "type": "Grass Fire",
-        "size": "2 ha",
+        "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 25 Aug 2026 03:20:44 GMT",
+        "updated": "Tue, 25 Aug 2026 03:48:44 GMT",
         "description": "THE BUCKETTS WAY, BURRELL CREEK 2429",
         "council": "Mid-Coast",
-        "lat": -31.9458261139999,
-        "lng": 152.326812744,
+        "lat": -31.94575119,
+        "lng": 152.327056885,
         "polys": [
           [
             [
@@ -523,21 +542,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Report of Smoke",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-25T02:59:47+00:00",
-        "description": "PAULLS VALLEY, CITY OF KALAMUNDA",
-        "lat": -31.9669,
-        "lng": 116.1151,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -949,7 +953,7 @@
       }
     ]
   },
-  "incident_count": 32,
+  "incident_count": 31,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
