@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-25T11:53:02.689798+00:00",
-  "last_checked_utc": "2026-08-25T11:53:02.689798+00:00",
+  "generated_utc": "2026-08-25T12:23:03.558556+00:00",
+  "last_checked_utc": "2026-08-25T12:23:03.558556+00:00",
   "warning_count": 25,
   "warnings": [
     {
       "pid": "",
-      "title": "25/18:14 EST Marine Wind Warning Summary for New South Wales",
+      "title": "25/22:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 25 Aug 2026 08:14:01 GMT"
+      "issued": "Tue, 25 Aug 2026 12:00:15 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "25/18:14 EST Marine Wind Warning Summary for Victoria",
+      "title": "25/22:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 25 Aug 2026 08:14:07 GMT"
+      "issued": "Tue, 25 Aug 2026 12:00:18 GMT"
     },
     {
       "pid": "",
@@ -212,12 +212,12 @@
     },
     {
       "pid": "",
-      "title": "25/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "25/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 25 Aug 2026 06:05:14 GMT"
+      "issued": "Tue, 25 Aug 2026 12:00:16 GMT"
     },
     {
       "pid": "IDW21037",
@@ -281,36 +281,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-25T11:33:22+00:00",
-        "description": "SOUTH LAKE, CITY OF COCKBURN",
-        "lat": -32.1056,
-        "lng": 115.8367,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-25T10:57:17+00:00",
-        "description": "TWO ROCKS, CITY OF WANNEROO",
-        "lat": -31.4788,
-        "lng": 115.6064,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -691,7 +661,7 @@
     ],
     "act": []
   },
-  "incident_count": 29,
+  "incident_count": 27,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3695,10 +3665,50 @@
     }
   },
   "marine_warnings": {
+    "NSW": {
+      "state": "NSW",
+      "product": "IDN20400",
+      "issued_utc": "2026-08-25T12:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Batemans Coast: Ulladulla to Montague Island",
+            "Eden Coast: Montague Island to Gabo Island"
+          ],
+          "aac_codes": [
+            "NSW_MW002",
+            "NSW_MW001"
+          ],
+          "summary": "Batemans Coast and Eden Coast"
+        }
+      ]
+    },
+    "VIC": {
+      "state": "VIC",
+      "product": "IDV20600",
+      "issued_utc": "2026-08-25T12:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
+          ],
+          "aac_codes": [
+            "VIC_MW004"
+          ],
+          "summary": "East Gippsland Coast"
+        }
+      ]
+    },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-08-25T06:05:00Z",
+      "issued_utc": "2026-08-25T12:00:00Z",
       "overview": [
         "Strong Wind Warning for Tuesday for South West Coast",
         "Gale Warning for Wednesday for Upper East Coast, Lower East Coast, South East Coast, South West Coast, Storm Bay and Channel",
