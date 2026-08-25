@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-25T07:23:13.495838+00:00",
-  "last_checked_utc": "2026-08-25T07:23:13.495838+00:00",
-  "warning_count": 27,
+  "generated_utc": "2026-08-25T07:53:06.792862+00:00",
+  "last_checked_utc": "2026-08-25T07:53:06.792862+00:00",
+  "warning_count": 26,
   "warnings": [
     {
       "pid": "",
-      "title": "25/16:05 EST Marine Wind Warning Summary for New South Wales",
+      "title": "25/17:24 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 25 Aug 2026 06:05:15 GMT"
+      "issued": "Tue, 25 Aug 2026 07:24:47 GMT"
     },
     {
       "pid": "",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "25/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "25/17:23 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 25 Aug 2026 06:15:16 GMT"
+      "issued": "Tue, 25 Aug 2026 07:23:56 GMT"
     },
     {
       "pid": "",
@@ -146,15 +146,6 @@
       "link": "http://reg.bom.gov.au/vic/warnings/flood/murrayupstreamofhume.shtml",
       "desc": "",
       "issued": "Tue, 25 Aug 2026 06:56:45 GMT"
-    },
-    {
-      "pid": "",
-      "title": "25/09:30 CST Marine Wind Warning Summary for South Australia",
-      "type": "wind",
-      "state": "SA",
-      "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
-      "desc": "",
-      "issued": "Tue, 25 Aug 2026 00:00:13 GMT"
     },
     {
       "pid": "",
@@ -317,7 +308,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 25 Aug 2026 07:20:44 GMT",
+        "updated": "Tue, 25 Aug 2026 07:48:44 GMT",
         "description": "TORRYBURN RD, YARROWYCK 2358",
         "council": "Uralla",
         "lat": -30.395523071,
@@ -361,6 +352,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-25T07:34:24+00:00",
+        "description": "FORRESTFIELD, CITY OF KALAMUNDA",
+        "lat": -31.9743,
+        "lng": 116.0032,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Watch and Act MONITOR CONDITIONS AS THEY ARE CHANGING - MERCEDES COVE RETREAT AND MIDDLE LAGOON",
         "alertLevel": "Advice",
@@ -734,21 +740,6 @@
         "description": "ARNHEM HWY, MIDDLE POINT",
         "lat": -12.61,
         "lng": 131.2778,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Bushfire - Grice Crescent, Coolalinga",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-23T05:56:00+00:00",
-        "description": "Grice Crescent, Coolalinga",
-        "lat": -12.5207,
-        "lng": 131.0421,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -3760,46 +3751,6 @@
     }
   },
   "marine_warnings": {
-    "NSW": {
-      "state": "NSW",
-      "product": "IDN20400",
-      "issued_utc": "2026-08-25T06:05:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Batemans Coast: Ulladulla to Montague Island",
-            "Eden Coast: Montague Island to Gabo Island"
-          ],
-          "aac_codes": [
-            "NSW_MW002",
-            "NSW_MW001"
-          ],
-          "summary": "Batemans Coast and Eden Coast"
-        }
-      ]
-    },
-    "VIC": {
-      "state": "VIC",
-      "product": "IDV20600",
-      "issued_utc": "2026-08-25T06:15:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
-          ],
-          "aac_codes": [
-            "VIC_MW004"
-          ],
-          "summary": "East Gippsland Coast"
-        }
-      ]
-    },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
