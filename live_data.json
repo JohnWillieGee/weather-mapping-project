@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-26T17:53:14.561116+00:00",
-  "last_checked_utc": "2026-08-26T17:53:14.561116+00:00",
+  "generated_utc": "2026-08-26T18:22:58.965301+00:00",
+  "last_checked_utc": "2026-08-26T18:22:58.965301+00:00",
   "warning_count": 22,
   "warnings": [
     {
       "pid": "",
-      "title": "26/22:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "27/04:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 26 Aug 2026 12:00:10 GMT"
+      "issued": "Wed, 26 Aug 2026 18:00:13 GMT"
     },
     {
       "pid": "",
@@ -194,12 +194,12 @@
     },
     {
       "pid": "",
-      "title": "26/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "27/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 26 Aug 2026 12:00:13 GMT"
+      "issued": "Wed, 26 Aug 2026 18:00:12 GMT"
     }
   ],
   "fetch_errors": {},
@@ -3631,30 +3631,6 @@
         }
       ]
     },
-    "NSW": {
-      "state": "NSW",
-      "product": "IDN20400",
-      "issued_utc": "2026-08-26T12:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Wednesday for Batemans Coast and Eden Coast",
-        "Strong Wind Warning for Thursday for Batemans Coast and Eden Coast"
-      ],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Batemans Coast: Ulladulla to Montague Island",
-            "Eden Coast: Montague Island to Gabo Island"
-          ],
-          "aac_codes": [
-            "NSW_MW002",
-            "NSW_MW001"
-          ],
-          "summary": "Batemans Coast and Eden Coast"
-        }
-      ]
-    },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
@@ -3682,6 +3658,32 @@
             "WA_MW015"
           ],
           "summary": "Perth Local Waters, Geraldton Coast, Lancelin Coast, Perth Coast and Esperance Coast"
+        }
+      ]
+    },
+    "TAS": {
+      "state": "TAS",
+      "product": "IDT20100",
+      "issued_utc": "2026-08-26T18:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Thursday for South East Coast, South West Coast and Central West Coast",
+        "Strong Wind Warning for Friday for East of Flinders Island, Lower East Coast, South East Coast and South West Coast"
+      ],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "South East Coast: Tasman Island to South East Cape",
+            "South West Coast: South East Cape to Low Rocky Point",
+            "Central West Coast: Low Rocky Point to Sandy Cape"
+          ],
+          "aac_codes": [
+            "TAS_MW006",
+            "TAS_MW007",
+            "TAS_MW008"
+          ],
+          "summary": "South East Coast, South West Coast and Central West Coast"
         }
       ]
     }
