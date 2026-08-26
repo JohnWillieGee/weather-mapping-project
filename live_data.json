@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-26T06:53:07.863185+00:00",
-  "last_checked_utc": "2026-08-26T06:53:07.863185+00:00",
+  "generated_utc": "2026-08-26T07:23:01.380586+00:00",
+  "last_checked_utc": "2026-08-26T07:23:01.380586+00:00",
   "warning_count": 24,
   "warnings": [
     {
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "26/11:09 EST Frost Warning\nfor Northern Country, North East, Central and East Gippsland forecast districts",
+      "title": "26/16:55 EST Frost Warning\nfor Northern Country, North East, Central and East Gippsland forecast districts",
       "type": "other",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/frost.shtml",
       "desc": "",
-      "issued": "Wed, 26 Aug 2026 01:09:51 GMT"
+      "issued": "Wed, 26 Aug 2026 06:55:24 GMT"
     },
     {
       "pid": "IDV35010",
@@ -203,27 +203,27 @@
     },
     {
       "pid": "IDW21037",
-      "title": "Severe Weather Warning for Lower West, South West",
+      "title": "Cancellation of Severe Weather Warning for Lower West, South West",
       "type": "severe_weather",
       "state": "WA",
       "link": "",
-      "desc": "HEAVY RAINFALL which may lead to FLASH FLOODING is possible about parts of the South West and Lower West districts today. Six-hourly rainfall totals between 30 and 60 mm are expected, with possible localised falls up to 70 mm. Heavy falls are expected to ease about the southwest early this evening. Locations which may be affected include Bunbury, Mandurah, Collie, Harvey, Dwellingup, Pinjarra and Rockingham. 50.8 mm was recorded at Ravenscliffe in the 5 hours to 12:30am.",
-      "issued": "2026-08-26T10:23:10+08:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-08-26T15:10:32+08:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "WA_PW009",
           "description": "Lower West",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "WA_PW010",
           "description": "South West",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDN21033",
@@ -268,6 +268,36 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Report of Smoke",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-26T07:07:03+00:00",
+        "description": "PALMYRA, CITY OF MELVILLE",
+        "lat": -32.0413,
+        "lng": 115.7767,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-26T06:57:35+00:00",
+        "description": "BAKERS HILL, SHIRE OF NORTHAM",
+        "lat": -31.7696,
+        "lng": 116.4653,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - DAMPIER PENINSULA",
         "alertLevel": "Advice",
@@ -496,6 +526,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - MELVILLE BAY RD, NHULUNBUY",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-26T07:15:21+00:00",
+        "description": "MELVILLE BAY RD, NHULUNBUY",
+        "lat": -12.1897,
+        "lng": 136.7637,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - HOLMES JUNGLE -, HOLMES",
         "alertLevel": "Advice",
         "status": "active",
@@ -506,21 +551,6 @@
         "description": "HOLMES JUNGLE -, HOLMES",
         "lat": -12.3975,
         "lng": 130.9257,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - TROWER RD, BRINKIN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-26T03:51:51+00:00",
-        "description": "TROWER RD, BRINKIN",
-        "lat": -12.3674,
-        "lng": 130.8656,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -633,7 +663,7 @@
     ],
     "act": []
   },
-  "incident_count": 25,
+  "incident_count": 27,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
