@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-26T04:52:54.628993+00:00",
-  "last_checked_utc": "2026-08-26T04:52:54.628993+00:00",
-  "warning_count": 24,
+  "generated_utc": "2026-08-26T05:22:54.015960+00:00",
+  "last_checked_utc": "2026-08-26T05:22:54.015960+00:00",
+  "warning_count": 26,
   "warnings": [
     {
       "pid": "",
@@ -38,6 +38,15 @@
       "link": "http://reg.bom.gov.au/nsw/warnings/flood/murrayriver.shtml",
       "desc": "",
       "issued": "Wed, 26 Aug 2026 01:48:48 GMT"
+    },
+    {
+      "pid": "",
+      "title": "26/15:16 EST Initial Minor Flood Warning for the Belubula River",
+      "type": "flood",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/nsw/warnings/flood/belubulariver.shtml",
+      "desc": "",
+      "issued": "Wed, 26 Aug 2026 05:16:33 GMT"
     },
     {
       "pid": "",
@@ -158,6 +167,15 @@
     },
     {
       "pid": "",
+      "title": "26/15:00 EST Marine Wind Warning Summary for Queensland",
+      "type": "wind",
+      "state": "QLD",
+      "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Wed, 26 Aug 2026 05:00:11 GMT"
+    },
+    {
+      "pid": "",
       "title": "25/12:17 CST Final Flood Warning for the Torrens River",
       "type": "flood",
       "state": "SA",
@@ -185,12 +203,12 @@
     },
     {
       "pid": "",
-      "title": "26/09:35 WST Marine Wind Warning Summary for Western Australia",
+      "title": "26/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Wed, 26 Aug 2026 01:35:14 GMT"
+      "issued": "Wed, 26 Aug 2026 05:01:13 GMT"
     },
     {
       "pid": "",
@@ -227,22 +245,22 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Northern Rivers",
+      "title": "Cancellation of Severe Thunderstorm Warning for Northern Rivers",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Grafton, Maclean, Whiporie, Copmanhurst and Ulmarra.",
-      "issued": "2026-08-26T14:18:34+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-08-26T14:55:07+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "NSW_PW001",
           "description": "Northern Rivers",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -268,21 +286,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Report of Smoke",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-26T04:32:22+00:00",
-        "description": "BENTLEY, CITY OF CANNING",
-        "lat": -32.0051,
-        "lng": 115.9136,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -541,21 +544,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - BRINKIN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-26T04:33:26+00:00",
-        "description": "BRINKIN",
-        "lat": -12.3655,
-        "lng": 130.865,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - HOLMES JUNGLE -, HOLMES",
         "alertLevel": "Advice",
         "status": "active",
@@ -693,7 +681,7 @@
     ],
     "act": []
   },
-  "incident_count": 29,
+  "incident_count": 27,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3697,6 +3685,25 @@
     }
   },
   "marine_warnings": {
+    "QLD": {
+      "state": "QLD",
+      "product": "IDQ20085",
+      "issued_utc": "2026-08-26T05:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Peninsula Coast: Sharp Point to Cape Melville"
+          ],
+          "aac_codes": [
+            "QLD_MW004"
+          ],
+          "summary": "Peninsula Coast"
+        }
+      ]
+    },
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
@@ -3743,19 +3750,25 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-08-26T01:35:05Z",
+      "issued_utc": "2026-08-26T05:01:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Geraldton Coast: Kalbarri to Jurien Bay",
+            "Lancelin Coast: Jurien Bay to Two Rocks",
+            "Perth Coast: Two Rocks to Dawesville",
             "Esperance Coast: Bremer Bay to Israelite Bay"
           ],
           "aac_codes": [
+            "WA_MW007",
+            "WA_MW008",
+            "WA_MW009",
             "WA_MW013"
           ],
-          "summary": "Esperance Coast"
+          "summary": "Geraldton Coast, Lancelin Coast, Perth Coast and Esperance Coast"
         }
       ]
     },
