@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-26T10:23:00.819388+00:00",
-  "last_checked_utc": "2026-08-26T10:23:00.819388+00:00",
+  "generated_utc": "2026-08-26T10:53:07.708345+00:00",
+  "last_checked_utc": "2026-08-26T10:53:07.708345+00:00",
   "warning_count": 24,
   "warnings": [
     {
@@ -247,57 +247,29 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Canal Rd, Ballina",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Wed, 26 Aug 2026 10:48:43 GMT",
+        "description": "Canal Rd, Ballina, NSW 2478",
+        "council": "Ballina",
+        "lat": -28.858919,
+        "lng": 153.550036,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-26T10:01:37+00:00",
-        "description": "WARNBRO, CITY OF ROCKINGHAM",
-        "lat": -32.3446,
-        "lng": 115.7487,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-26T09:42:12+00:00",
-        "description": "MUNDARING, SHIRE OF MUNDARING",
-        "lat": -31.9039,
-        "lng": 116.1651,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-26T09:33:40+00:00",
-        "description": "FORRESTFIELD, CITY OF KALAMUNDA",
-        "lat": -31.9818,
-        "lng": 116.0108,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -496,16 +468,46 @@
     ],
     "nt": [
       {
-        "title": "Hazmat Incident - SALONIKA ST, PARAP",
+        "title": "Grass and Scrub Fire - ALEC FONG LIM DR, EAST POINT",
         "alertLevel": "Advice",
         "status": "active",
-        "type": "HazMat",
+        "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-08-26T10:17:47+00:00",
-        "description": "SALONIKA ST, PARAP",
-        "lat": -12.4391,
-        "lng": 130.8384,
+        "updated": "2026-08-26T10:45:15+00:00",
+        "description": "ALEC FONG LIM DR, EAST POINT",
+        "lat": -12.4121,
+        "lng": 130.8295,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - ROBIN FALLS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-26T10:43:10+00:00",
+        "description": "ROBIN FALLS",
+        "lat": -13.4799,
+        "lng": 131.1866,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Produce Road, Humpty Doo",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-26T10:43:00+00:00",
+        "description": "Produce Road, Humpty Doo",
+        "lat": -12.5721,
+        "lng": 131.116,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -521,21 +523,6 @@
         "description": "WOODLAKE BVD, DURACK",
         "lat": -12.4794,
         "lng": 130.9649,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - DRIVER",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-26T10:03:28+00:00",
-        "description": "DRIVER",
-        "lat": -12.478,
-        "lng": 130.9816,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -708,7 +695,7 @@
     ],
     "act": []
   },
-  "incident_count": 30,
+  "incident_count": 29,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
