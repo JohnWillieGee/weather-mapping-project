@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-26T12:53:00.751037+00:00",
-  "last_checked_utc": "2026-08-26T12:53:00.751037+00:00",
-  "warning_count": 24,
+  "generated_utc": "2026-08-26T13:23:09.270185+00:00",
+  "last_checked_utc": "2026-08-26T13:23:09.270185+00:00",
+  "warning_count": 23,
   "warnings": [
     {
       "pid": "",
@@ -224,25 +224,6 @@
       ],
       "severityCode": "CAN",
       "hazardPhase": "CAN"
-    },
-    {
-      "pid": "IDN21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for Mid North Coast",
-      "type": "thunderstorm",
-      "state": "NSW",
-      "link": "",
-      "desc": "This warning is now cancelled.",
-      "issued": "2026-08-26T18:47:31+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "NSW_PW002",
-          "description": "Mid North Coast",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -253,6 +234,36 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-26T13:08:33+00:00",
+        "description": "SCARBOROUGH, CITY OF STIRLING",
+        "lat": -31.8993,
+        "lng": 115.7733,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-26T12:55:44+00:00",
+        "description": "WILYABRUP, CITY OF BUSSELTON",
+        "lat": -33.762,
+        "lng": 115.0313,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Hazardous Materials",
         "alertLevel": "",
@@ -465,36 +476,6 @@
       }
     ],
     "nt": [
-      {
-        "title": "Grass and Scrub Fire - WOODLAKE BVD, DURACK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-26T12:19:15+00:00",
-        "description": "WOODLAKE BVD, DURACK",
-        "lat": -12.4794,
-        "lng": 130.9649,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - FREDS PASS RD, HUMPTY DOO",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-26T11:52:49+00:00",
-        "description": "FREDS PASS RD, HUMPTY DOO",
-        "lat": -12.5801,
-        "lng": 131.1105,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
       {
         "title": "Grass and Scrub Fire - ROBIN FALLS",
         "alertLevel": "Advice",
