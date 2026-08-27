@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-27T02:22:57.371553+00:00",
-  "last_checked_utc": "2026-08-27T02:22:57.371553+00:00",
+  "generated_utc": "2026-08-27T02:52:55.277746+00:00",
+  "last_checked_utc": "2026-08-27T02:52:55.277746+00:00",
   "warning_count": 21,
   "warnings": [
     {
@@ -189,18 +189,18 @@
       "type": "severe_weather",
       "state": "WA",
       "link": "",
-      "desc": "HEAVY RAINFALL which may lead to FLASH FLOODING is forecast for parts of the South East Coastal district this morning. 3-hour rainfall totals between 15 and 30 mm are possible, with localised falls up to 45 mm, particularly with thunderstorms. Heavy falls may persist into this afternoon. Locations which may be affected include Hopetoun. Hopetoun North recorded 39mm in the 3 hours to 6am.",
-      "issued": "2026-08-27T06:37:27+08:00",
+      "desc": "HEAVY RAINFALL which may lead to FLASH FLOODING is forecast for parts of the South East Coastal district into this afternoon. 3-hour rainfall totals between 25 and 40 mm are possible, with localised falls up to 50 mm, particularly with thunderstorms. Heavy falls are expected to ease into the late afternoon and evening. Heavy falls also remain possible over a broader area of the inland South West Land Division east of Cunderdin. Further warnings will be issued if necessary. 30 mm was recorded at ",
+      "issued": "2026-08-27T10:41:11+08:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "WA_PW012",
           "description": "South East Coastal",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "REN"
     }
   ],
   "fetch_errors": {},
@@ -221,11 +221,40 @@
         "lng": 141.03658674995197,
         "state": "QLD",
         "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
+      },
+      {
+        "title": "STAY INFORMED - Doughboy (near Gin Gin) - fire as at 12:43pm Thursday, 27 August 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "Doughboy",
+        "lat": -25.14698183290054,
+        "lng": 151.83948738266548,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
       }
     ],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire Advice THREAT IS REDUCED - DAMPIER PENINSULA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-08-27T02:36:01.734+00:00",
+        "description": "",
+        "lat": -17.0105,
+        "lng": 122.7789,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -317,21 +346,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire Advice STAY INFORMED - DAMPIER PENINSULA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-08-25T03:51:58.101+00:00",
-        "description": "",
-        "lat": -17.0105,
-        "lng": 122.7789,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
@@ -342,51 +356,6 @@
         "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
         "lat": -17.024,
         "lng": 122.799,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-23T07:49:25+00:00",
-        "description": "MEDA, SHIRE OF DERBY/WEST KIMBERLEY",
-        "lat": -17.281,
-        "lng": 123.924,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-23T07:45:06+00:00",
-        "description": "LAKE ARGYLE, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -16.838,
-        "lng": 128.301,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-22T07:46:04+00:00",
-        "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
-        "lat": -16.772,
-        "lng": 122.885,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -607,7 +576,7 @@
       }
     ]
   },
-  "incident_count": 26,
+  "incident_count": 24,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
