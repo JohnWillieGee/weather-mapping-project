@@ -734,7 +734,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 
       <div style="padding:10px 14px 12px;border-top:1px solid var(--border);margin-top:auto;">
         <div style="font-family:monospace;font-size:9px;color:var(--text3);letter-spacing:.5px;">
-          <span style="color:var(--text2);font-weight:700;">WatchTower</span> &nbsp;v3.16
+          <span style="color:var(--text2);font-weight:700;">WatchTower</span> &nbsp;v4.1
           <span style="float:right;opacity:0.6;">John Willie Gee</span>
         </div>
       </div>
@@ -1935,8 +1935,9 @@ function flyToIncident(lat, lng){
 var STATE_CENTRES = {NSW:[-32,147],VIC:[-37,144],QLD:[-22,144],SA:[-30,135],WA:[-27,121],TAS:[-42,146],NT:[-19,133],ACT:[-35.3,149.1]};
 var WARN_COLORS = {"severe_thunderstorm":"#9775fa","thunderstorm":"#9775fa","severe_weather":"#f0a500","strong_wind":"#f0a500","frost":"#74c0fc","sheep_graziers":"#74c0fc","flood":"#4dabf7","coastal_flooding":"#4dabf7","cyclone":"#ff4757","tropical_cyclone":"#ff4757","fire_weather":"#ff6b6b","heat":"#ff6b6b","default":"#f0a500"};
 
-var DARK_TILE    = "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png";
-var LIGHT_TILE   = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
+var CARTO_KEY    = "cb1_2bcw_1_aef0a712f8bb49b72cab3cb3";
+var DARK_TILE    = "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png?key=" + CARTO_KEY;
+var LIGHT_TILE   = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=" + CARTO_KEY;
 var NATURAL_TILE = "https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}";
 var ATTR = "&copy; <a href='https://carto.com/'>CARTO</a> &copy; <a href='https://www.openstreetmap.org/'>OSM</a>";
 
