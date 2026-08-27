@@ -1,17 +1,8 @@
 {
-  "generated_utc": "2026-08-27T01:22:54.599080+00:00",
-  "last_checked_utc": "2026-08-27T01:22:54.599080+00:00",
+  "generated_utc": "2026-08-27T01:52:59.296189+00:00",
+  "last_checked_utc": "2026-08-27T01:52:59.296189+00:00",
   "warning_count": 21,
   "warnings": [
-    {
-      "pid": "",
-      "title": "27/04:00 EST Marine Wind Warning Summary for New South Wales",
-      "type": "wind",
-      "state": "NSW",
-      "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
-      "desc": "",
-      "issued": "Wed, 26 Aug 2026 18:00:13 GMT"
-    },
     {
       "pid": "",
       "title": "27/09:36 EST Final Flood Warning for the Bell River",
@@ -67,6 +58,15 @@
       "issued": "Wed, 26 Aug 2026 01:48:48 GMT"
     },
     {
+      "pid": "",
+      "title": "27/11:24 EST Frost Warning\nfor Wimmera, North East and East Gippsland forecast districts",
+      "type": "other",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/frost.shtml",
+      "desc": "",
+      "issued": "Thu, 27 Aug 2026 01:24:19 GMT"
+    },
+    {
       "pid": "IDV35010",
       "title": "26/12:53 EST Final Flood Watch for parts of North West and North East Victoria",
       "type": "flood",
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "26/12:10 EST Minor Flood Warning for the Kiewa River",
+      "title": "27/11:21 EST Minor Flood Warning for the Kiewa River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/kiewariver.shtml",
       "desc": "",
-      "issued": "Wed, 26 Aug 2026 02:10:50 GMT"
+      "issued": "Thu, 27 Aug 2026 01:21:44 GMT"
     },
     {
       "pid": "",
@@ -113,12 +113,12 @@
     },
     {
       "pid": "",
-      "title": "26/11:54 EST Moderate Flood Warning for the Loddon River",
+      "title": "27/11:26 EST Moderate Flood Warning for the Loddon River and Final Flood Warning for the Bet Bet Creek",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/loddonriver.shtml",
       "desc": "",
-      "issued": "Wed, 26 Aug 2026 01:54:49 GMT"
+      "issued": "Thu, 27 Aug 2026 01:26:45 GMT"
     },
     {
       "pid": "",
@@ -589,9 +589,40 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": []
+    "act": [
+      {
+        "title": "HOUSE FIRE - SPENCE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-08-27T01:49:00+00:00",
+        "description": "SPENCE",
+        "lat": -35.2004,
+        "lng": 149.0597,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - SPENCE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Fire - Ambulance",
+        "updated": "2026-08-27T01:46:08+00:00",
+        "description": "SPENCE",
+        "lat": -35.2004,
+        "lng": 149.0597,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      }
+    ]
   },
-  "incident_count": 25,
+  "incident_count": 27,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
