@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-27T10:52:54.825518+00:00",
-  "last_checked_utc": "2026-08-27T10:52:54.825518+00:00",
+  "generated_utc": "2026-08-27T11:23:00.260237+00:00",
+  "last_checked_utc": "2026-08-27T11:23:00.260237+00:00",
   "warning_count": 16,
   "warnings": [
     {
@@ -113,21 +113,21 @@
     },
     {
       "pid": "",
-      "title": "27/15:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "27/21:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 27 Aug 2026 05:00:11 GMT"
+      "issued": "Thu, 27 Aug 2026 11:00:13 GMT"
     },
     {
       "pid": "",
-      "title": "27/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "27/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 27 Aug 2026 05:01:14 GMT"
+      "issued": "Thu, 27 Aug 2026 11:01:15 GMT"
     },
     {
       "pid": "",
@@ -195,6 +195,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-27T11:02:59+00:00",
+        "description": "GERALDTON, CITY OF GREATER GERALDTON",
+        "lat": -28.7668,
+        "lng": 114.6129,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -318,6 +333,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - Unknown",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-27T11:04:31+00:00",
+        "description": "",
+        "lat": -12.4194,
+        "lng": 130.8562,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Produce Road, Humpty Doo",
         "alertLevel": "Advice",
         "status": "active",
@@ -380,7 +410,7 @@
     ],
     "act": []
   },
-  "incident_count": 14,
+  "incident_count": 16,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3387,7 +3417,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-08-27T05:00:00Z",
+      "issued_utc": "2026-08-27T11:00:00Z",
       "overview": [
         "Strong Wind Warning for Thursday for Peninsula Coast",
         "Strong Wind Warning for Friday for Torres Strait, Peninsula Coast and Cooktown Coast"
@@ -3409,9 +3439,9 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-08-27T05:01:00Z",
+      "issued_utc": "2026-08-27T11:01:00Z",
       "overview": [
-        "Strong Wind Warning for Thursday for Geraldton Coast, Lancelin Coast, Perth Coast, Esperance Coast and Perth Local Waters",
+        "Strong Wind Warning for Thursday for Geraldton Coast, Lancelin Coast and Perth Coast",
         "Strong Wind Warning for Friday for Esperance Coast"
       ],
       "hazards": [
@@ -3421,18 +3451,14 @@
           "zones": [
             "Geraldton Coast: Kalbarri to Jurien Bay",
             "Lancelin Coast: Jurien Bay to Two Rocks",
-            "Perth Coast: Two Rocks to Dawesville",
-            "Esperance Coast: Bremer Bay to Israelite Bay",
-            "Perth Local Waters"
+            "Perth Coast: Two Rocks to Dawesville"
           ],
           "aac_codes": [
             "WA_MW007",
             "WA_MW008",
-            "WA_MW009",
-            "WA_MW013",
-            "WA_MW015"
+            "WA_MW009"
           ],
-          "summary": "Perth Local Waters, Geraldton Coast, Lancelin Coast, Perth Coast and Esperance Coast"
+          "summary": "Geraldton Coast, Lancelin Coast and Perth Coast"
         }
       ]
     },
