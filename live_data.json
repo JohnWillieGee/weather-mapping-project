@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-27T14:52:56.653678+00:00",
-  "last_checked_utc": "2026-08-27T14:52:56.653678+00:00",
-  "warning_count": 16,
+  "generated_utc": "2026-08-27T15:22:59.923998+00:00",
+  "last_checked_utc": "2026-08-27T15:22:59.923998+00:00",
+  "warning_count": 15,
   "warnings": [
     {
       "pid": "",
@@ -137,25 +137,6 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Thu, 27 Aug 2026 12:00:12 GMT"
-    },
-    {
-      "pid": "IDW21037",
-      "title": "Cancellation of Severe Weather Warning for South East Coastal",
-      "type": "severe_weather",
-      "state": "WA",
-      "link": "",
-      "desc": "This warning is now cancelled. Heavy rainfall remains possible this afternoon with heavy showers and thunderstorms over a broader area of the inland South West Land Division east of Cunderdin. Further warnings will be issued if necessary. 47 mm was recorded at Jerdacuttup in the 6 hours to 12:35 pm 52 mm was recorded at Hopetoun Airport in the 6 hours to 10:00 am",
-      "issued": "2026-08-27T13:47:41+08:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "WA_PW012",
-          "description": "South East Coastal",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -195,6 +176,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-27T15:08:02+00:00",
+        "description": "GERALDTON, CITY OF GREATER GERALDTON",
+        "lat": -28.767,
+        "lng": 114.6133,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -378,23 +374,7 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [
-      {
-        "title": "STRUCTURE FIRE - PHILLIP",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Fire",
-        "updated": "2026-08-27T14:02:34+00:00",
-        "description": "PHILLIP",
-        "lat": -35.3456,
-        "lng": 149.0835,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      }
-    ]
+    "act": []
   },
   "incident_count": 15,
   "nsw_alert_zones": [],
