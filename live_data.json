@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-28T17:53:08.119183+00:00",
-  "last_checked_utc": "2026-08-28T17:53:08.119183+00:00",
+  "generated_utc": "2026-08-28T18:22:59.589061+00:00",
+  "last_checked_utc": "2026-08-28T18:22:59.589061+00:00",
   "warning_count": 13,
   "warnings": [
     {
       "pid": "",
-      "title": "28/22:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "29/04:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 28 Aug 2026 12:00:13 GMT"
+      "issued": "Fri, 28 Aug 2026 18:00:12 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "28/22:00 EST Marine Wind Warning Summary for Victoria",
+      "title": "29/04:10 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 28 Aug 2026 12:00:20 GMT"
+      "issued": "Fri, 28 Aug 2026 18:10:19 GMT"
     },
     {
       "pid": "",
@@ -113,12 +113,12 @@
     },
     {
       "pid": "",
-      "title": "28/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "29/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 28 Aug 2026 12:00:11 GMT"
+      "issued": "Fri, 28 Aug 2026 18:00:14 GMT"
     }
   ],
   "fetch_errors": {},
@@ -145,13 +145,43 @@
     "tas": [],
     "wa": [
       {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-28T18:07:17+00:00",
+        "description": "KELMSCOTT, CITY OF ARMADALE",
+        "lat": -32.1184,
+        "lng": 116.009,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Earthquake",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Earthquake",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-28T18:03:33+00:00",
+        "description": "DE GREY, PORT HEDLAND, TOWN OF",
+        "lat": -20.2131,
+        "lng": 118.9916,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-28T15:52:48+00:00",
+        "updated": "2026-08-28T17:57:39+00:00",
         "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.7649,
         "lng": 128.7426,
@@ -329,7 +359,7 @@
     ],
     "act": []
   },
-  "incident_count": 13,
+  "incident_count": 15,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3364,8 +3394,11 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-08-28T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-08-28T18:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Saturday for Eden Coast",
+        "Strong Wind Warning for Sunday for Eden Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3383,8 +3416,11 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-08-28T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-08-28T18:10:00Z",
+      "overview": [
+        "Strong Wind Warning for Saturday for Central Gippsland Coast and East Gippsland Coast",
+        "Strong Wind Warning for Sunday for Central Gippsland Coast and East Gippsland Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -3404,11 +3440,12 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-08-28T12:00:00Z",
+      "issued_utc": "2026-08-28T18:00:00Z",
       "overview": [
-        "Gale Warning for Friday for South East Coast and South West Coast",
         "Gale Warning for Saturday for South East Coast and South West Coast",
-        "Strong Wind Warning for Saturday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and Central West Coast"
+        "Strong Wind Warning for Saturday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, Central West Coast, Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay and Channel",
+        "Gale Warning for Sunday for South East Coast and South West Coast",
+        "Strong Wind Warning for Sunday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay and Channel"
       ],
       "hazards": [
         {
@@ -3423,6 +3460,33 @@
             "TAS_MW007"
           ],
           "summary": "South East Coast and South West Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Central North Coast: Stanley to Northern Tip of Flinders Island",
+            "Banks Strait and Franklin Sound",
+            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
+            "Lower East Coast: Wineglass Bay to Tasman Island",
+            "Central West Coast: Low Rocky Point to Sandy Cape",
+            "Derwent Estuary",
+            "Frederick Henry Bay and Norfolk Bays",
+            "Storm Bay",
+            "Channel"
+          ],
+          "aac_codes": [
+            "TAS_MW002",
+            "TAS_MW009",
+            "TAS_MW003",
+            "TAS_MW005",
+            "TAS_MW008",
+            "TAS_MW012",
+            "TAS_MW013",
+            "TAS_MW014",
+            "TAS_MW011"
+          ],
+          "summary": "Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and Central West Coast"
         }
       ]
     }
