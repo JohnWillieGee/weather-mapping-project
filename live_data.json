@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-28T06:53:06.970042+00:00",
-  "last_checked_utc": "2026-08-28T06:53:06.970042+00:00",
-  "warning_count": 14,
+  "generated_utc": "2026-08-28T07:22:59.390853+00:00",
+  "last_checked_utc": "2026-08-28T07:22:59.390853+00:00",
+  "warning_count": 15,
   "warnings": [
     {
       "pid": "",
@@ -95,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "28/11:23 EST Minor Flood Warning for the Avoca River",
+      "title": "28/16:52 EST Minor Flood Warning for the Avoca River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/avocariver.shtml",
       "desc": "",
-      "issued": "Fri, 28 Aug 2026 01:23:45 GMT"
+      "issued": "Fri, 28 Aug 2026 06:52:38 GMT"
     },
     {
       "pid": "",
@@ -128,11 +128,51 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Fri, 28 Aug 2026 06:05:11 GMT"
+    },
+    {
+      "pid": "IDW21033",
+      "title": "Severe Thunderstorm Warning for Eucla, South Interior",
+      "type": "thunderstorm",
+      "state": "WA",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, heavy rainfall that may lead to flash flooding and large hailstones in the warning area over the next several hours. Locations which may be affected include Forrest.",
+      "issued": "2026-08-28T15:09:23+08:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "WA_PW005",
+          "description": "Eucla",
+          "phase": "NEW"
+        },
+        {
+          "aac": "WA_PW007",
+          "description": "South Interior",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
   "incidents": {
     "nsw": [
+      {
+        "title": "George St, Coonabarabran",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 28 Aug 2026 07:20:43 GMT",
+        "description": "George St, Coonabarabran, NSW 2357",
+        "council": "Warrumbungle",
+        "lat": -31.2800769999999,
+        "lng": 149.288314,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
       {
         "title": "ROCK VALLEY RD, ROCK VALLEY",
         "alertLevel": "Advice",
@@ -140,11 +180,11 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 28 Aug 2026 06:48:43 GMT",
-        "description": "ROCK VALLEY RD, ROCK VALLEY 2480",
+        "updated": "Fri, 28 Aug 2026 07:20:43 GMT",
+        "description": "PALIMA, ROCK VALLEY RD, ROCK VALLEY 2480",
         "council": "Lismore",
-        "lat": -28.7705539999999,
-        "lng": 153.20514,
+        "lat": -28.7731679999999,
+        "lng": 153.205568,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -152,20 +192,6 @@
     ],
     "vic": [],
     "qld": [
-      {
-        "title": "STAY INFORMED - Doughboy (near Gin Gin) - fire as at 4:25pm Friday, 28 August 2026",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "QFD",
-        "updated": "",
-        "description": "Doughboy",
-        "lat": -25.14698183290054,
-        "lng": 151.83948738266548,
-        "state": "QLD",
-        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
-      },
       {
         "title": "STAY INFORMED - Byrnestown - fire as at 12:55pm Friday, 28 August 2026",
         "alertLevel": "Advice",
@@ -177,6 +203,20 @@
         "description": "Byrnestown and surrounding areas",
         "lat": -25.53707512561092,
         "lng": 151.76362682974042,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
+      },
+      {
+        "title": "STAY INFORMED - Doughboy (near Gin Gin) - fire as at 4:25pm Friday, 28 August 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "Doughboy",
+        "lat": -25.14698183290054,
+        "lng": 151.83948738266548,
         "state": "QLD",
         "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
       }
@@ -307,16 +347,16 @@
     ],
     "nt": [
       {
-        "title": "Bushfire - Produce Road, Humpty Doo",
+        "title": "Grass and Scrub Fire - TUMBLING WATERS",
         "alertLevel": "Advice",
         "status": "active",
-        "type": "Bush Fire",
+        "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-08-27T00:13:00+00:00",
-        "description": "Produce Road, Humpty Doo",
-        "lat": -12.5721,
-        "lng": 131.116,
+        "updated": "2026-08-28T07:07:30+00:00",
+        "description": "TUMBLING WATERS",
+        "lat": -12.7656,
+        "lng": 130.9563,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -324,7 +364,7 @@
     ],
     "act": []
   },
-  "incident_count": 12,
+  "incident_count": 13,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
