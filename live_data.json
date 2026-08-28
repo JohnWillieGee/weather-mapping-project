@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-28T09:23:05.478159+00:00",
-  "last_checked_utc": "2026-08-28T09:23:05.478159+00:00",
-  "warning_count": 14,
+  "generated_utc": "2026-08-28T09:53:04.578018+00:00",
+  "last_checked_utc": "2026-08-28T09:53:04.578018+00:00",
+  "warning_count": 15,
   "warnings": [
     {
       "pid": "",
@@ -100,7 +100,7 @@
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 28 Aug 2026 09:20:07 GMT"
+      "issued": "Fri, 28 Aug 2026 09:20:54 GMT"
     },
     {
       "pid": "",
@@ -113,31 +113,26 @@
     },
     {
       "pid": "",
-      "title": "28/19:18 EST Marine Wind Warning Summary for Tasmania",
+      "title": "28/19:22 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 28 Aug 2026 09:18:48 GMT"
+      "issued": "Fri, 28 Aug 2026 09:22:00 GMT"
     },
     {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for Goldfields, Eucla, South Interior",
+      "title": "Severe Thunderstorm Warning for Goldfields, South Interior",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, heavy rainfall that may lead to flash flooding and large hailstones in the warning area over the next several hours.",
-      "issued": "2026-08-28T16:17:16+08:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, heavy rainfall that may lead to flash flooding and large hailstones in the warning area over the next several hours. Locations which may be affected include Laverton. Severe thunderstorms are no longer occurring in the Eucla district and the warning for this district is CANCELLED.",
+      "issued": "2026-08-28T17:31:57+08:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "WA_PW004",
           "description": "Goldfields",
-          "phase": "NEW"
-        },
-        {
-          "aac": "WA_PW005",
-          "description": "Eucla",
           "phase": "REN"
         },
         {
@@ -147,7 +142,26 @@
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDW21033",
+      "title": "Severe Thunderstorm Warning for Eucla",
+      "type": "thunderstorm",
+      "state": "WA",
+      "link": "",
+      "desc": "",
+      "issued": "2026-08-28T17:31:57+08:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "WA_PW005",
+          "description": "Eucla",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -173,6 +187,51 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-28T09:37:01+00:00",
+        "description": "KARDINYA, CITY OF MELVILLE",
+        "lat": -32.0686,
+        "lng": 115.8194,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-28T09:32:25+00:00",
+        "description": "BULGARRA, CITY OF KARRATHA",
+        "lat": -20.7353,
+        "lng": 116.8544,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-28T09:24:04+00:00",
+        "description": "KALGOORLIE, CITY OF KALGOORLIE-BOULDER",
+        "lat": -30.7572,
+        "lng": 121.4625,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Report of Smoke",
         "alertLevel": "",
@@ -285,21 +344,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-27T07:41:16+00:00",
-        "description": "BULGARRA, CITY OF KARRATHA",
-        "lat": -20.7353,
-        "lng": 116.8544,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-08-27T07:39:09+00:00",
         "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
         "lat": -17.11,
@@ -342,7 +386,7 @@
     "nt": [],
     "act": []
   },
-  "incident_count": 12,
+  "incident_count": 14,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3415,12 +3459,12 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-08-28T09:18:41Z",
+      "issued_utc": "2026-08-28T09:21:51Z",
       "overview": [
         "Gale Warning for Friday for South East Coast and South West Coast",
         "Strong Wind Warning for Friday for Lower East Coast",
-        "Gale Warning for Saturday for South East Coast and South West Coast",
-        "Strong Wind Warning for Saturday for Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and Central North Coast"
+        "Gale Warning for Saturday for South West Coast and South East Coast",
+        "Strong Wind Warning for Saturday for Central West Coast, Lower East Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island"
       ],
       "hazards": [
         {
