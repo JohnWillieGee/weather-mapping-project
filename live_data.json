@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-28T11:53:00.765355+00:00",
-  "last_checked_utc": "2026-08-28T11:53:00.765355+00:00",
+  "generated_utc": "2026-08-28T12:23:03.073538+00:00",
+  "last_checked_utc": "2026-08-28T12:23:03.073538+00:00",
   "warning_count": 15,
   "warnings": [
     {
       "pid": "",
-      "title": "28/16:05 EST Marine Wind Warning Summary for New South Wales",
+      "title": "28/22:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 28 Aug 2026 06:05:14 GMT"
+      "issued": "Fri, 28 Aug 2026 12:00:13 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "28/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "28/22:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 28 Aug 2026 06:15:19 GMT"
+      "issued": "Fri, 28 Aug 2026 12:00:20 GMT"
     },
     {
       "pid": "",
@@ -113,12 +113,12 @@
     },
     {
       "pid": "",
-      "title": "28/19:22 EST Marine Wind Warning Summary for Tasmania",
+      "title": "28/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 28 Aug 2026 09:22:00 GMT"
+      "issued": "Fri, 28 Aug 2026 12:00:11 GMT"
     },
     {
       "pid": "IDW21033",
@@ -187,6 +187,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-28T11:59:20+00:00",
+        "description": "PORT KENNEDY, CITY OF ROCKINGHAM",
+        "lat": -32.3632,
+        "lng": 115.7389,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -340,16 +355,31 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - WUPPA TOWN CAMP INTERNAL -, TENNANT CREEK",
+        "title": "Grass and Scrub Fire - ACCESS -, TENNANT CREEK",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-08-28T11:46:55+00:00",
-        "description": "WUPPA TOWN CAMP INTERNAL -, TENNANT CREEK",
-        "lat": -19.637,
-        "lng": 134.1992,
+        "updated": "2026-08-28T12:00:21+00:00",
+        "description": "ACCESS -, TENNANT CREEK",
+        "lat": -19.6383,
+        "lng": 134.2001,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - STUART HWY, EDITH",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-28T11:57:35+00:00",
+        "description": "STUART HWY, EDITH",
+        "lat": -14.1916,
+        "lng": 132.0364,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -372,7 +402,7 @@
     ],
     "act": []
   },
-  "incident_count": 13,
+  "incident_count": 15,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3405,7 +3435,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-08-28T06:05:00Z",
+      "issued_utc": "2026-08-28T12:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3424,7 +3454,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-08-28T06:15:00Z",
+      "issued_utc": "2026-08-28T12:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3445,12 +3475,11 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-08-28T09:21:51Z",
+      "issued_utc": "2026-08-28T12:00:00Z",
       "overview": [
         "Gale Warning for Friday for South East Coast and South West Coast",
-        "Strong Wind Warning for Friday for Lower East Coast",
-        "Gale Warning for Saturday for South West Coast and South East Coast",
-        "Strong Wind Warning for Saturday for Central West Coast, Lower East Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island"
+        "Gale Warning for Saturday for South East Coast and South West Coast",
+        "Strong Wind Warning for Saturday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and Central West Coast"
       ],
       "hazards": [
         {
@@ -3465,17 +3494,6 @@
             "TAS_MW007"
           ],
           "summary": "South East Coast and South West Coast"
-        },
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Lower East Coast: Wineglass Bay to Tasman Island"
-          ],
-          "aac_codes": [
-            "TAS_MW005"
-          ],
-          "summary": "Lower East Coast"
         }
       ]
     }
