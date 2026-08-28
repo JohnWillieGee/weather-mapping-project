@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-28T16:53:00.681561+00:00",
-  "last_checked_utc": "2026-08-28T16:53:00.681561+00:00",
-  "warning_count": 14,
+  "generated_utc": "2026-08-28T17:22:58.416563+00:00",
+  "last_checked_utc": "2026-08-28T17:22:58.416563+00:00",
+  "warning_count": 13,
   "warnings": [
     {
       "pid": "",
@@ -104,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "28/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "29/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 28 Aug 2026 11:00:14 GMT"
+      "issued": "Fri, 28 Aug 2026 17:00:15 GMT"
     },
     {
       "pid": "",
@@ -119,30 +119,6 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Fri, 28 Aug 2026 12:00:11 GMT"
-    },
-    {
-      "pid": "IDW21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for Goldfields, South Interior",
-      "type": "thunderstorm",
-      "state": "WA",
-      "link": "",
-      "desc": "This warning is now cancelled.",
-      "issued": "2026-08-28T20:28:14+08:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "WA_PW004",
-          "description": "Goldfields",
-          "phase": "CAN"
-        },
-        {
-          "aac": "WA_PW007",
-          "description": "South Interior",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -3360,10 +3336,10 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-08-28T11:00:00Z",
+      "issued_utc": "2026-08-28T17:00:00Z",
       "overview": [
-        "Strong Wind Warning for Friday for Torres Strait, Peninsula Coast and Cooktown Coast",
-        "Strong Wind Warning for Saturday for Torres Strait, Peninsula Coast, Cooktown Coast and Townsville Coast"
+        "Strong Wind Warning for Saturday for Torres Strait, Peninsula Coast, Cooktown Coast and Townsville Coast",
+        "Strong Wind Warning for Sunday for Peninsula Coast and Cooktown Coast"
       ],
       "hazards": [
         {
@@ -3372,14 +3348,16 @@
           "zones": [
             "Torres Strait",
             "Peninsula Coast: Sharp Point to Cape Melville",
-            "Cooktown Coast: Cape Melville to Cape Tribulation"
+            "Cooktown Coast: Cape Melville to Cape Tribulation",
+            "Townsville Coast: Cardwell to Bowen"
           ],
           "aac_codes": [
             "QLD_MW003",
             "QLD_MW004",
-            "QLD_MW005"
+            "QLD_MW005",
+            "QLD_MW007"
           ],
-          "summary": "Torres Strait, Peninsula Coast and Cooktown Coast"
+          "summary": "Torres Strait, Peninsula Coast, Cooktown Coast and Townsville Coast"
         }
       ]
     },
