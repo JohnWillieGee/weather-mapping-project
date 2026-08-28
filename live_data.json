@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-27T23:53:02.895565+00:00",
-  "last_checked_utc": "2026-08-27T23:53:02.895565+00:00",
+  "generated_utc": "2026-08-28T00:23:07.460293+00:00",
+  "last_checked_utc": "2026-08-28T00:23:07.460293+00:00",
   "warning_count": 17,
   "warnings": [
     {
       "pid": "",
-      "title": "28/04:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "28/10:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 27 Aug 2026 18:00:11 GMT"
+      "issued": "Fri, 28 Aug 2026 00:00:12 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "28/07:34 EST Road Weather Alert for Sydney\nfor Western suburbs",
+      "title": "28/10:02 EST \n                Cancellation of\n                Road Weather Alert for Sydney",
       "type": "other",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/sydneyroad.shtml",
       "desc": "",
-      "issued": "Thu, 27 Aug 2026 21:34:11 GMT"
+      "issued": "Fri, 28 Aug 2026 00:02:05 GMT"
     },
     {
       "pid": "",
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "28/04:10 EST Marine Wind Warning Summary for Victoria",
+      "title": "28/10:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 27 Aug 2026 18:10:18 GMT"
+      "issued": "Fri, 28 Aug 2026 00:00:20 GMT"
     },
     {
       "pid": "",
@@ -95,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "27/15:58 EST Minor Flood Warning for the Ovens River and Final Flood Warning for the King River",
+      "title": "28/09:54 EST Final Flood Warning for the Ovens and King Rivers",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/ovensandkingrivers.shtml",
       "desc": "",
-      "issued": "Thu, 27 Aug 2026 05:58:43 GMT"
+      "issued": "Thu, 27 Aug 2026 23:54:35 GMT"
     },
     {
       "pid": "",
@@ -149,12 +149,12 @@
     },
     {
       "pid": "",
-      "title": "28/04:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "28/10:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 27 Aug 2026 18:00:14 GMT"
+      "issued": "Fri, 28 Aug 2026 00:00:16 GMT"
     }
   ],
   "fetch_errors": {},
@@ -360,26 +360,11 @@
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Bushfire - Livingstone Road, LIVINGSTONE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-08-23T02:54:00+00:00",
-        "description": "Livingstone Road, LIVINGSTONE",
-        "lat": -12.7319,
-        "lng": 131.0247,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
     "act": []
   },
-  "incident_count": 14,
+  "incident_count": 13,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3412,7 +3397,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-08-27T18:00:00Z",
+      "issued_utc": "2026-08-28T00:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3431,7 +3416,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-08-27T18:10:00Z",
+      "issued_utc": "2026-08-28T00:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -3471,27 +3456,37 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-08-27T18:00:00Z",
+      "issued_utc": "2026-08-28T00:00:00Z",
       "overview": [
-        "Strong Wind Warning for Friday for Lower East Coast, South East Coast and South West Coast",
+        "Gale Warning for Friday for South East Coast and South West Coast",
+        "Strong Wind Warning for Friday for Lower East Coast",
         "Gale Warning for Saturday for South East Coast and South West Coast",
         "Strong Wind Warning for Saturday for Central North Coast and Lower East Coast"
       ],
       "hazards": [
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "Gale Warning",
+          "severity": "GALE",
           "zones": [
-            "Lower East Coast: Wineglass Bay to Tasman Island",
             "South East Coast: Tasman Island to South East Cape",
             "South West Coast: South East Cape to Low Rocky Point"
           ],
           "aac_codes": [
-            "TAS_MW005",
             "TAS_MW006",
             "TAS_MW007"
           ],
-          "summary": "Lower East Coast, South East Coast and South West Coast"
+          "summary": "South East Coast and South West Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Lower East Coast: Wineglass Bay to Tasman Island"
+          ],
+          "aac_codes": [
+            "TAS_MW005"
+          ],
+          "summary": "Lower East Coast"
         }
       ]
     }
