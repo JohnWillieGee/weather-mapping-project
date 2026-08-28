@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-28T12:23:03.073538+00:00",
-  "last_checked_utc": "2026-08-28T12:23:03.073538+00:00",
-  "warning_count": 15,
+  "generated_utc": "2026-08-28T12:52:56.547910+00:00",
+  "last_checked_utc": "2026-08-28T12:52:56.547910+00:00",
+  "warning_count": 14,
   "warnings": [
     {
       "pid": "",
@@ -122,41 +122,22 @@
     },
     {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for Goldfields, South Interior",
+      "title": "Cancellation of Severe Thunderstorm Warning for Goldfields, South Interior",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, heavy rainfall that may lead to flash flooding and large hailstones in the warning area over the next several hours. Locations which may be affected include Laverton. Severe thunderstorms are no longer occurring in the Eucla district and the warning for this district is CANCELLED.",
-      "issued": "2026-08-28T17:31:57+08:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-08-28T20:28:14+08:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "WA_PW004",
           "description": "Goldfields",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "WA_PW007",
           "description": "South Interior",
-          "phase": "REN"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
-    },
-    {
-      "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for Eucla",
-      "type": "thunderstorm",
-      "state": "WA",
-      "link": "",
-      "desc": "",
-      "issued": "2026-08-28T17:31:57+08:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "WA_PW005",
-          "description": "Eucla",
           "phase": "CAN"
         }
       ],
@@ -194,25 +175,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-28T11:59:20+00:00",
-        "description": "PORT KENNEDY, CITY OF ROCKINGHAM",
-        "lat": -32.3632,
-        "lng": 115.7389,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-28T11:32:12+00:00",
-        "description": "NEWMAN, SHIRE OF EAST PILBARA",
-        "lat": -23.3634,
-        "lng": 119.7461,
+        "updated": "2026-08-28T12:30:23+00:00",
+        "description": "PERTH, CITY OF PERTH",
+        "lat": -31.9517,
+        "lng": 115.8572,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -402,7 +368,7 @@
     ],
     "act": []
   },
-  "incident_count": 15,
+  "incident_count": 14,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
