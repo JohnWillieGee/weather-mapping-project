@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-29T16:53:02.138474+00:00",
-  "last_checked_utc": "2026-08-29T16:53:02.138474+00:00",
-  "warning_count": 10,
+  "generated_utc": "2026-08-29T17:23:01.278875+00:00",
+  "last_checked_utc": "2026-08-29T17:23:01.278875+00:00",
+  "warning_count": 11,
   "warnings": [
     {
       "pid": "",
@@ -77,12 +77,21 @@
     },
     {
       "pid": "",
-      "title": "29/21:20 EST Marine Wind Warning Summary for Queensland",
+      "title": "30/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 29 Aug 2026 11:20:58 GMT"
+      "issued": "Sat, 29 Aug 2026 17:00:15 GMT"
+    },
+    {
+      "pid": "",
+      "title": "30/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "type": "wind",
+      "state": "WA",
+      "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
+      "desc": "",
+      "issued": "Sat, 29 Aug 2026 17:01:12 GMT"
     },
     {
       "pid": "",
@@ -3413,26 +3422,21 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-08-29T11:20:50Z",
-      "overview": [
-        "Strong Wind Warning for Saturday for Peninsula Coast, Cooktown Coast and Townsville Coast",
-        "Strong Wind Warning for Sunday for Peninsula Coast and Cooktown Coast"
-      ],
+      "issued_utc": "2026-08-29T17:00:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
             "Peninsula Coast: Sharp Point to Cape Melville",
-            "Cooktown Coast: Cape Melville to Cape Tribulation",
-            "Townsville Coast: Cardwell to Bowen"
+            "Cooktown Coast: Cape Melville to Cape Tribulation"
           ],
           "aac_codes": [
             "QLD_MW004",
-            "QLD_MW005",
-            "QLD_MW007"
+            "QLD_MW005"
           ],
-          "summary": "Peninsula Coast, Cooktown Coast and Townsville Coast"
+          "summary": "Peninsula Coast and Cooktown Coast"
         }
       ]
     },
@@ -3479,6 +3483,27 @@
             "VIC_MW004"
           ],
           "summary": "Central Gippsland Coast and East Gippsland Coast"
+        }
+      ]
+    },
+    "WA": {
+      "state": "WA",
+      "product": "IDW20100",
+      "issued_utc": "2026-08-29T17:01:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay"
+          ],
+          "aac_codes": [
+            "WA_MW011",
+            "WA_MW012"
+          ],
+          "summary": "Leeuwin Coast and Albany Coast"
         }
       ]
     },
