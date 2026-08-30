@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-30T07:22:57.560052+00:00",
-  "last_checked_utc": "2026-08-30T07:22:57.560052+00:00",
+  "generated_utc": "2026-08-30T07:53:04.572658+00:00",
+  "last_checked_utc": "2026-08-30T07:53:04.572658+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -98,13 +98,29 @@
   "incidents": {
     "nsw": [
       {
+        "title": "Bougainville Rd, Lethbridge Park",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 30 Aug 2026 07:48:44 GMT",
+        "description": "Bougainville Rd, Lethbridge Park, NSW 2770",
+        "council": "Blacktown",
+        "lat": -33.735132,
+        "lng": 150.805949,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "MOUNT LINDESAY RD, TENTERFIELD",
         "alertLevel": "Advice",
         "status": "Not yet controlled",
         "type": "Bush Fire",
         "size": "2 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 30 Aug 2026 07:20:44 GMT",
+        "updated": "Sun, 30 Aug 2026 07:48:44 GMT",
         "description": "MOUNT LINDESAY RD, TENTERFIELD 2372",
         "council": "Tenterfield",
         "lat": -28.957913,
@@ -120,7 +136,7 @@
         "type": "Bush Fire",
         "size": "235 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 30 Aug 2026 07:20:44 GMT",
+        "updated": "Sun, 30 Aug 2026 07:48:44 GMT",
         "description": "OLD TENTERFIELD RD, WYAN 2469",
         "council": "Richmond Valley",
         "lat": -29.1092519649999,
@@ -303,38 +319,6 @@
         ],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "PADDYS FLAT RD, TABULAM",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Sun, 30 Aug 2026 07:20:44 GMT",
-        "description": "PADDYS FLAT RD, TABULAM 2469",
-        "council": "Tenterfield",
-        "lat": -28.78961,
-        "lng": 152.459326,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "The Esplanade, Thirroul",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Sun, 30 Aug 2026 07:20:44 GMT",
-        "description": "The Esplanade, Thirroul, NSW 2515",
-        "council": "Wollongong",
-        "lat": -34.3152949999999,
-        "lng": 150.927457,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       }
     ],
     "vic": [],
@@ -372,16 +356,31 @@
     "tas": [],
     "wa": [
       {
-        "title": "Fire",
+        "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-30T07:00:21+00:00",
-        "description": "KARDINYA, CITY OF MELVILLE",
-        "lat": -32.0703,
-        "lng": 115.8067,
+        "updated": "2026-08-30T07:34:48+00:00",
+        "description": "MUELLER RANGES, SHIRE OF HALLS CREEK",
+        "lat": -18.282,
+        "lng": 127.407,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - DURACK AND GIBB",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-08-30T07:34:05.191+00:00",
+        "description": "",
+        "lat": -15.9926,
+        "lng": 127.0313,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -417,42 +416,10 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       }
     ],
-    "nt": [
-      {
-        "title": "Grass and Scrub Fire - CUNNINGHAM CR, GUNN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-30T07:00:37+00:00",
-        "description": "CUNNINGHAM CR, GUNN",
-        "lat": -12.4834,
-        "lng": 130.987,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      }
-    ],
-    "act": [
-      {
-        "title": "HAZMAT INCIDENT - CAMPBELL",
-        "alertLevel": "",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "Fire",
-        "updated": "2026-08-30T06:38:58+00:00",
-        "description": "CAMPBELL",
-        "lat": -35.2823,
-        "lng": 149.1475,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      }
-    ]
+    "nt": [],
+    "act": []
   },
-  "incident_count": 11,
+  "incident_count": 9,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
