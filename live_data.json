@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-30T01:22:56.428441+00:00",
-  "last_checked_utc": "2026-08-30T01:22:56.428441+00:00",
+  "generated_utc": "2026-08-30T01:52:59.298205+00:00",
+  "last_checked_utc": "2026-08-30T01:52:59.298205+00:00",
   "warning_count": 11,
   "warnings": [
     {
@@ -105,9 +105,56 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "MULGRAVE RD, MULGRAVE",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "1 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Sun, 30 Aug 2026 01:48:44 GMT",
+        "description": "MULGRAVE RD, MULGRAVE 2756",
+        "council": "Hawkesbury",
+        "lat": -33.63078,
+        "lng": 150.82662,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "SMITHS CREEK RD, SMITHS CREEK",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Sun, 30 Aug 2026 01:48:44 GMT",
+        "description": "SMITHS CREEK RD, SMITHS CREEK 2460",
+        "council": "Clarence Valley",
+        "lat": -29.525637,
+        "lng": 152.735284,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [
+      {
+        "title": "PREPARE TO LEAVE - Douglas McInnes Drive (Laidley) - fire as at 11:39am Sunday, 30 August 2026",
+        "alertLevel": "Watch and Act",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "Between Goodwin Street, Douglas McInnes Drive and Tyrrell Court",
+        "lat": -27.641183810536887,
+        "lng": 152.4114164708712,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
+      },
       {
         "title": "STAY INFORMED - Doughboy (near Gin Gin) - fire as at 8:31pm Saturday, 29 August 2026",
         "alertLevel": "Advice",
@@ -149,11 +196,40 @@
         "lng": 150.56492164435102,
         "state": "QLD",
         "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
+      },
+      {
+        "title": "STAY INFORMED - Laidley - fire as at 11:43am Sunday, 30 August 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "Laidley and surrounding areas",
+        "lat": -27.634835350723424,
+        "lng": 152.39937826695444,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
       }
     ],
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-08-30T01:15:28+00:00",
+        "description": "CABLE BEACH, SHIRE OF BROOME",
+        "lat": -17.9675,
+        "lng": 122.2146,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Smoke Alert FOR PARTS OF MUNDARING AND SAWYERS VALLEY IN THE SHIRE OF MUNDARING",
         "alertLevel": "Advice",
@@ -165,21 +241,6 @@
         "description": "",
         "lat": -31.9019,
         "lng": 116.1664,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-30T01:08:55+00:00",
-        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.7649,
-        "lng": 128.7426,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -444,7 +505,7 @@
     ],
     "act": []
   },
-  "incident_count": 22,
+  "incident_count": 26,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
