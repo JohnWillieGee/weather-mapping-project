@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-08-30T11:52:56.043625+00:00",
-  "last_checked_utc": "2026-08-30T11:52:56.043625+00:00",
+  "generated_utc": "2026-08-30T12:22:55.814193+00:00",
+  "last_checked_utc": "2026-08-30T12:22:55.814193+00:00",
   "warning_count": 10,
   "warnings": [
     {
       "pid": "",
-      "title": "30/16:05 EST Marine Wind Warning Summary for New South Wales",
+      "title": "30/22:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 30 Aug 2026 06:05:14 GMT"
+      "issued": "Sun, 30 Aug 2026 12:00:11 GMT"
     },
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "30/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "30/22:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 30 Aug 2026 06:15:21 GMT"
+      "issued": "Sun, 30 Aug 2026 12:00:16 GMT"
     },
     {
       "pid": "",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "30/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "30/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 30 Aug 2026 06:05:14 GMT"
+      "issued": "Sun, 30 Aug 2026 12:00:12 GMT"
     }
   ],
   "fetch_errors": {},
@@ -104,7 +104,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 30 Aug 2026 11:48:50 GMT",
+        "updated": "Sun, 30 Aug 2026 12:20:46 GMT",
         "description": "BOWMAN FARM RD, BARRINGTON 2422",
         "council": "Mid-Coast",
         "lat": -31.9571599999999,
@@ -120,7 +120,7 @@
         "type": "Grass Fire",
         "size": "17 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 30 Aug 2026 11:48:50 GMT",
+        "updated": "Sun, 30 Aug 2026 12:20:46 GMT",
         "description": "BRUXNER HWY, TABULAM 2469",
         "council": "Tenterfield",
         "lat": -28.9001941679999,
@@ -231,7 +231,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 30 Aug 2026 11:48:50 GMT",
+        "updated": "Sun, 30 Aug 2026 12:20:46 GMT",
         "description": "MOUNT LINDESAY RD, TENTERFIELD 2372",
         "council": "Tenterfield",
         "lat": -28.957913,
@@ -247,7 +247,7 @@
         "type": "Bush Fire",
         "size": "240 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 30 Aug 2026 11:48:50 GMT",
+        "updated": "Sun, 30 Aug 2026 12:20:46 GMT",
         "description": "OLD TENTERFIELD RD, WYAN 2469",
         "council": "Richmond Valley",
         "lat": -29.106721508,
@@ -760,10 +760,26 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       }
     ],
-    "nt": [],
+    "nt": [
+      {
+        "title": "Grass and Scrub Fire - STUART HWY, STUART",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-30T12:14:57+00:00",
+        "description": "STUART HWY, STUART",
+        "lat": -23.6721,
+        "lng": 133.8722,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      }
+    ],
     "act": []
   },
-  "incident_count": 21,
+  "incident_count": 22,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -3793,31 +3809,12 @@
         }
       ]
     },
-    "NSW": {
-      "state": "NSW",
-      "product": "IDN20400",
-      "issued_utc": "2026-08-30T06:05:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Eden Coast: Montague Island to Gabo Island"
-          ],
-          "aac_codes": [
-            "NSW_MW001"
-          ],
-          "summary": "Eden Coast"
-        }
-      ]
-    },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-08-30T06:15:00Z",
+      "issued_utc": "2026-08-30T12:00:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Central Gippsland Coast and East Gippsland Coast",
+        "Strong Wind Warning for Sunday for East Gippsland Coast",
         "Strong Wind Warning for Monday for East Gippsland Coast"
       ],
       "hazards": [
@@ -3825,14 +3822,12 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
             "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
           ],
           "aac_codes": [
-            "VIC_MW003",
             "VIC_MW004"
           ],
-          "summary": "Central Gippsland Coast and East Gippsland Coast"
+          "summary": "East Gippsland Coast"
         }
       ]
     },
@@ -3862,26 +3857,12 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-08-30T06:05:00Z",
+      "issued_utc": "2026-08-30T12:00:00Z",
       "overview": [
-        "Gale Warning for Sunday for South East Coast and South West Coast",
-        "Strong Wind Warning for Sunday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast and Derwent Estuary",
+        "Strong Wind Warning for Sunday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, South East Coast and South West Coast",
         "Strong Wind Warning for Monday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, South East Coast and South West Coast"
       ],
       "hazards": [
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "South East Coast: Tasman Island to South East Cape",
-            "South West Coast: South East Cape to Low Rocky Point"
-          ],
-          "aac_codes": [
-            "TAS_MW006",
-            "TAS_MW007"
-          ],
-          "summary": "South East Coast and South West Coast"
-        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
@@ -3889,19 +3870,19 @@
             "Central North Coast: Stanley to Northern Tip of Flinders Island",
             "Banks Strait and Franklin Sound",
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
-            "Upper East Coast: St Helens Point to Wineglass Bay",
             "Lower East Coast: Wineglass Bay to Tasman Island",
-            "Derwent Estuary"
+            "South East Coast: Tasman Island to South East Cape",
+            "South West Coast: South East Cape to Low Rocky Point"
           ],
           "aac_codes": [
             "TAS_MW002",
             "TAS_MW009",
             "TAS_MW003",
-            "TAS_MW004",
             "TAS_MW005",
-            "TAS_MW012"
+            "TAS_MW006",
+            "TAS_MW007"
           ],
-          "summary": "Derwent Estuary, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast and Lower East Coast"
+          "summary": "Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, South East Coast and South West Coast"
         }
       ]
     }
