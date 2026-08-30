@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-30T16:52:56.577611+00:00",
-  "last_checked_utc": "2026-08-30T16:52:56.577611+00:00",
+  "generated_utc": "2026-08-30T17:22:54.892381+00:00",
+  "last_checked_utc": "2026-08-30T17:22:54.892381+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -68,21 +68,21 @@
     },
     {
       "pid": "",
-      "title": "30/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "31/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 30 Aug 2026 11:00:13 GMT"
+      "issued": "Sun, 30 Aug 2026 17:00:11 GMT"
     },
     {
       "pid": "",
-      "title": "30/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "31/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 30 Aug 2026 11:01:12 GMT"
+      "issued": "Sun, 30 Aug 2026 17:01:15 GMT"
     },
     {
       "pid": "",
@@ -104,7 +104,7 @@
         "type": "Grass Fire",
         "size": "17 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 30 Aug 2026 16:48:43 GMT",
+        "updated": "Sun, 30 Aug 2026 17:20:44 GMT",
         "description": "BRUXNER HWY, TABULAM 2469",
         "council": "Tenterfield",
         "lat": -28.9001941679999,
@@ -215,7 +215,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 30 Aug 2026 16:48:43 GMT",
+        "updated": "Sun, 30 Aug 2026 17:20:44 GMT",
         "description": "MOUNT LINDESAY RD, TENTERFIELD 2372",
         "council": "Tenterfield",
         "lat": -28.957913,
@@ -278,7 +278,7 @@
         "type": "Bush Fire",
         "size": "240 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 30 Aug 2026 16:48:43 GMT",
+        "updated": "Sun, 30 Aug 2026 17:20:44 GMT",
         "description": "OLD TENTERFIELD RD, WYAN 2469",
         "council": "Richmond Valley",
         "lat": -29.106721508,
@@ -572,10 +572,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-30T16:37:52+00:00",
-        "description": "JANDABUP, CITY OF WANNEROO",
-        "lat": -31.7573,
-        "lng": 115.857,
+        "updated": "2026-08-30T17:01:51+00:00",
+        "description": "PERTH, CITY OF PERTH",
+        "lat": -31.9555,
+        "lng": 115.8481,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -587,10 +587,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-30T16:37:31+00:00",
-        "description": "PERTH, CITY OF PERTH",
-        "lat": -31.9555,
-        "lng": 115.8481,
+        "updated": "2026-08-30T16:37:52+00:00",
+        "description": "JANDABUP, CITY OF WANNEROO",
+        "lat": -31.7573,
+        "lng": 115.857,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -3861,26 +3861,21 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-08-30T11:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Sunday for Peninsula Coast, Cooktown Coast and Cairns Coast",
-        "Strong Wind Warning for Monday for Peninsula Coast and Cooktown Coast"
-      ],
+      "issued_utc": "2026-08-30T17:00:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
             "Peninsula Coast: Sharp Point to Cape Melville",
-            "Cooktown Coast: Cape Melville to Cape Tribulation",
-            "Cairns Coast: Cape Tribulation to Cardwell"
+            "Cooktown Coast: Cape Melville to Cape Tribulation"
           ],
           "aac_codes": [
             "QLD_MW004",
-            "QLD_MW005",
-            "QLD_MW006"
+            "QLD_MW005"
           ],
-          "summary": "Peninsula Coast, Cooktown Coast and Cairns Coast"
+          "summary": "Peninsula Coast and Cooktown Coast"
         }
       ]
     },
@@ -3909,23 +3904,25 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-08-30T11:01:00Z",
+      "issued_utc": "2026-08-30T17:01:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Leeuwin Coast: Cape Naturaliste to Walpole",
             "Albany Coast: Walpole to Bremer Bay",
             "Esperance Coast: Bremer Bay to Israelite Bay"
           ],
           "aac_codes": [
+            "WA_MW010",
             "WA_MW011",
             "WA_MW012",
             "WA_MW013"
           ],
-          "summary": "Leeuwin Coast, Albany Coast and Esperance Coast"
+          "summary": "Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Esperance Coast"
         }
       ]
     },
