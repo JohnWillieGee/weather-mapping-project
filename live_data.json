@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-31T03:52:57.575828+00:00",
-  "last_checked_utc": "2026-08-31T03:52:57.575828+00:00",
-  "warning_count": 10,
+  "generated_utc": "2026-08-31T04:22:55.164459+00:00",
+  "last_checked_utc": "2026-08-31T04:22:55.164459+00:00",
+  "warning_count": 11,
   "warnings": [
     {
       "pid": "",
@@ -11,6 +11,15 @@
       "link": "http://reg.bom.gov.au/nsw/warnings/flood/murrayriver.shtml",
       "desc": "",
       "issued": "Mon, 31 Aug 2026 01:18:37 GMT"
+    },
+    {
+      "pid": "",
+      "title": "31/14:06 EST Initial Minor Flood Warning for the Mirrool Creek",
+      "type": "flood",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/nsw/warnings/flood/mirroolcreek.shtml",
+      "desc": "",
+      "issued": "Mon, 31 Aug 2026 04:06:48 GMT"
     },
     {
       "pid": "",
@@ -104,27 +113,11 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 31 Aug 2026 03:48:44 GMT",
+        "updated": "Mon, 31 Aug 2026 04:20:43 GMT",
         "description": "Bernie Av, Forestville, NSW 2087",
         "council": "Northern Beaches",
         "lat": -33.765478,
         "lng": 151.212353,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "Bushland Dr, Yarravel",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 31 Aug 2026 03:48:44 GMT",
-        "description": "Bushland Dr, Yarravel, NSW 2440",
-        "council": "Kempsey",
-        "lat": -31.039778,
-        "lng": 152.782778999,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -136,7 +129,7 @@
         "type": "Bush Fire",
         "size": "241 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 31 Aug 2026 03:48:44 GMT",
+        "updated": "Mon, 31 Aug 2026 04:20:43 GMT",
         "description": "OLD TENTERFIELD RD, WYAN 2469",
         "council": "Richmond Valley",
         "lat": -29.106721508,
@@ -395,7 +388,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 31 Aug 2026 03:48:44 GMT",
+        "updated": "Mon, 31 Aug 2026 04:20:43 GMT",
         "description": "Second Av, Canley Vale, NSW 2166",
         "council": "Fairfield",
         "lat": -33.886337,
@@ -411,7 +404,7 @@
         "type": "Bush Fire",
         "size": "4 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Mon, 31 Aug 2026 03:48:44 GMT",
+        "updated": "Mon, 31 Aug 2026 04:20:43 GMT",
         "description": "TULLOCK RD, YARRANBELLA 2447",
         "council": "Nambucca Valley",
         "lat": -30.70088,
@@ -419,8 +412,16 @@
         "polys": [
           [
             [
-              152.75873891,
-              -30.7005452459999
+              152.758453375,
+              -30.700854576
+            ],
+            [
+              152.758007226,
+              -30.700848628
+            ],
+            [
+              152.757873382,
+              -30.700542271
             ],
             [
               152.75860804,
@@ -483,8 +484,8 @@
               -30.7004262729999
             ],
             [
-              152.75873891,
-              -30.7005452459999
+              152.758453375,
+              -30.700854576
             ]
           ]
         ],
@@ -797,16 +798,76 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - AUSTIN ST, SOUTHPORT",
+        "title": "Structure Fire - Unknown",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-31T04:12:07+00:00",
+        "description": "",
+        "lat": -12.3826,
+        "lng": 130.8836,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Bushfire - Coen street, WAGAMAN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-31T04:12:00+00:00",
+        "description": "Coen street, WAGAMAN",
+        "lat": -12.3823,
+        "lng": 130.8825,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - DELORAINE RD, SHOAL BAY",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-08-31T02:49:27+00:00",
-        "description": "AUSTIN ST, SOUTHPORT",
-        "lat": -12.7217,
-        "lng": 130.9508,
+        "updated": "2026-08-31T04:10:05+00:00",
+        "description": "DELORAINE RD, SHOAL BAY",
+        "lat": -12.3759,
+        "lng": 130.9798,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - CAMPBELL RD, HOLTZE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-31T03:54:23+00:00",
+        "description": "CAMPBELL RD, HOLTZE",
+        "lat": -12.424,
+        "lng": 130.9704,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Structure Fire - CARSTENS CR, WAGAMAN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-08-31T03:52:57+00:00",
+        "description": "CARSTENS CR, WAGAMAN",
+        "lat": -12.3825,
+        "lng": 130.8836,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -825,41 +886,11 @@
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - Unknown",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-31T02:22:45+00:00",
-        "description": "",
-        "lat": -12.585,
-        "lng": 131.3309,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - ANZAC PDE, MIDDLE POINT",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-08-31T02:22:06+00:00",
-        "description": "ANZAC PDE, MIDDLE POINT",
-        "lat": -12.5761,
-        "lng": 131.3149,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
     "act": []
   },
-  "incident_count": 29,
+  "incident_count": 30,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
