@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-01T00:22:58.103531+00:00",
-  "last_checked_utc": "2026-09-01T00:22:58.103531+00:00",
+  "generated_utc": "2026-09-01T00:52:57.735851+00:00",
+  "last_checked_utc": "2026-09-01T00:52:57.735851+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "31/10:29 EST Minor Flood Warning for the Loddon River",
+      "title": "01/10:48 EST Minor Flood Warning for the Loddon River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/loddonriver.shtml",
       "desc": "",
-      "issued": "Mon, 31 Aug 2026 00:29:45 GMT"
+      "issued": "Tue, 01 Sep 2026 00:48:39 GMT"
     },
     {
       "pid": "",
@@ -99,8 +99,8 @@
       "type": "severe_weather",
       "state": "NSW",
       "link": "",
-      "desc": "DAMAGING WINDS averaging 80 to 90 km/h are possible across alpine above 1900 metres from this morning, peaking late this evening. Winds are forecast to ease below warning thresholds before dawn on Wednesday. Locations which may be affected include Thredbo Top Station.",
-      "issued": "2026-09-01T04:39:13+10:00",
+      "desc": "DAMAGING WINDS averaging 80 to 90 km/h are possible across alpine areas above 1900 metres today, peaking later this evening. Winds are forecast to ease below warning thresholds during Wednesday morning. Locations which may be affected include Thredbo Top Station. 84 km/h mean winds were observed at Thredbo Top Station at 4:50am and 10:30am Tuesday.",
+      "issued": "2026-09-01T10:41:28+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -118,8 +118,8 @@
       "type": "severe_weather",
       "state": "VIC",
       "link": "",
-      "desc": "DAMAGING WIND GUSTS of up to 100 km/h are possible about the alpine ranges from this afternoon, peaking later in the evening. Winds are forecast to ease below warning thresholds before dawn on Wednesday. Locations which may be affected include Falls Creek, Mt Hotham and Mt Buller.",
-      "issued": "2026-09-01T04:09:08+10:00",
+      "desc": "DAMAGING WIND GUSTS of up to 100 km/h are possible about the alpine ranges from late this afternoon, peaking later in the evening. Winds are forecast to ease below warning thresholds before dawn on Wednesday. Locations which may be affected include Falls Creek, Mt Hotham and Mt Buller.",
+      "issued": "2026-09-01T10:41:51+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -143,12 +143,12 @@
     },
     {
       "pid": "IDT21037",
-      "title": "Severe Weather Warning for North East, East Coast, Upper Derwent Valley, South East, Western",
+      "title": "Severe Weather Warning for North East, East Coast, Midlands, Upper Derwent Valley, South East, Western",
       "type": "severe_weather",
       "state": "TAS",
       "link": "",
-      "desc": "DAMAGING WIND GUSTS of about 100 km/h are possible over elevated parts of southern and eastern Tasmania from late this morning, peaking during the afternoon. Winds are forecast to ease below warning thresholds in the evening. Locations which may be affected include Strathgordon.",
-      "issued": "2026-09-01T04:07:12+10:00",
+      "desc": "DAMAGING WIND GUSTS of about 100 km/h are possible over elevated parts of southern and eastern Tasmania from late this morning, peaking during the afternoon. Winds are forecast to ease below warning thresholds in the evening. Locations which may be affected include Fingal and Strathgordon.",
+      "issued": "2026-09-01T10:25:28+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -160,6 +160,11 @@
           "aac": "TAS_PW003",
           "description": "East Coast",
           "phase": "REN"
+        },
+        {
+          "aac": "TAS_PW005",
+          "description": "Midlands",
+          "phase": "NEW"
         },
         {
           "aac": "TAS_PW007",
@@ -178,7 +183,7 @@
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "REN"
+      "hazardPhase": "UPD"
     }
   ],
   "fetch_errors": {},
@@ -189,9 +194,9 @@
         "alertLevel": "Advice",
         "status": "Not yet controlled",
         "type": "Grass Fire",
-        "size": "0 ha",
+        "size": "75 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 01 Sep 2026 00:20:43 GMT",
+        "updated": "Tue, 01 Sep 2026 00:48:43 GMT",
         "description": "BILLIRIMBA RD, ROCKY RIVER 2372",
         "council": "Tenterfield",
         "lat": -29.171168982,
@@ -321,21 +326,6 @@
         "description": "MUELLER RANGES, SHIRE OF HALLS CREEK",
         "lat": -18.282,
         "lng": 127.407,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-31T13:23:43+00:00",
-        "description": "BALDIVIS, CITY OF ROCKINGHAM",
-        "lat": -32.3581,
-        "lng": 115.8246,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -553,16 +543,31 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - LARAPINTA DR, ARALUEN",
+        "title": "Bushfire - Anzac Parade, MIDDLE POINT (HARRISON DAM)",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-09-01T00:30:00+00:00",
+        "description": "Anzac Parade, MIDDLE POINT (HARRISON DAM)",
+        "lat": -12.5777,
+        "lng": 131.3383,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - GLENEAGLES CR, MARRARA",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-08-31T23:46:00+00:00",
-        "description": "LARAPINTA DR, ARALUEN",
-        "lat": -23.6977,
-        "lng": 133.8424,
+        "updated": "2026-09-01T00:23:14+00:00",
+        "description": "GLENEAGLES CR, MARRARA",
+        "lat": -12.3993,
+        "lng": 130.9015,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -611,26 +616,11 @@
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Bushfire - Anzac Parade, MIDDLE POINT (HARRISON DAM)",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-08-31T02:45:00+00:00",
-        "description": "Anzac Parade, MIDDLE POINT (HARRISON DAM)",
-        "lat": -12.5777,
-        "lng": 131.3383,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
     "act": []
   },
-  "incident_count": 24,
+  "incident_count": 23,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
