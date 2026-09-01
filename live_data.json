@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-01T09:53:04.886291+00:00",
-  "last_checked_utc": "2026-09-01T09:53:04.886291+00:00",
+  "generated_utc": "2026-09-01T10:23:06.261842+00:00",
+  "last_checked_utc": "2026-09-01T10:23:06.261842+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -143,47 +143,47 @@
     },
     {
       "pid": "IDT21037",
-      "title": "Severe Weather Warning for North East, East Coast, Midlands, Upper Derwent Valley, South East, Western",
+      "title": "Cancellation of Severe Weather Warning for North East, East Coast, Midlands, Upper Derwent Valley, South East, Western",
       "type": "severe_weather",
       "state": "TAS",
       "link": "",
-      "desc": "DAMAGING WIND GUSTS of about 100 km/h remain possible over elevated parts of southern and eastern Tasmania. Winds are forecast to ease below warning thresholds in the evening. Locations which may be affected include Fingal and Strathgordon.",
-      "issued": "2026-09-01T16:52:58+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-09-01T20:09:26+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "TAS_PW002",
           "description": "North East",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "TAS_PW003",
           "description": "East Coast",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "TAS_PW005",
           "description": "Midlands",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "TAS_PW007",
           "description": "Upper Derwent Valley",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "TAS_PW006",
           "description": "South East",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "TAS_PW009",
           "description": "Western",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -196,7 +196,7 @@
         "type": "Grass Fire",
         "size": "257 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 01 Sep 2026 09:48:44 GMT",
+        "updated": "Tue, 01 Sep 2026 10:20:44 GMT",
         "description": "BILLIRIMBA RD, ROCKY RIVER 2372",
         "council": "Tenterfield",
         "lat": -29.171168982,
@@ -565,13 +565,29 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
+        "title": "Copland St, East Wagga Wagga",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Tue, 01 Sep 2026 10:20:44 GMT",
+        "description": "Copland St, East Wagga Wagga, NSW 2650",
+        "council": "Wagga Wagga",
+        "lat": -35.128441,
+        "lng": 147.402439,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "DONNYBROOK FIRETRAIL, BACK CREEK",
         "alertLevel": "Advice",
         "status": "Not yet controlled",
         "type": "Bush Fire",
         "size": "102 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 01 Sep 2026 09:48:44 GMT",
+        "updated": "Tue, 01 Sep 2026 10:20:44 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.94356577,
@@ -734,7 +750,7 @@
         "type": "Bush Fire",
         "size": "21 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 01 Sep 2026 09:48:44 GMT",
+        "updated": "Tue, 01 Sep 2026 10:20:44 GMT",
         "description": "HOGARTH RANGE RD, HOGARTH RANGE 2469",
         "council": "Richmond Valley",
         "lat": -28.9091089999999,
@@ -829,7 +845,7 @@
         "type": "Bush Fire",
         "size": "59 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 01 Sep 2026 09:48:44 GMT",
+        "updated": "Tue, 01 Sep 2026 10:20:44 GMT",
         "description": "MCCOYS CREEK RD, MOPARRABAH 2440",
         "council": "Kempsey",
         "lat": -30.968672,
@@ -969,6 +985,36 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
+        "updated": "2026-09-01T10:00:43+00:00",
+        "description": "ANKETELL, CITY OF KWINANA",
+        "lat": -32.2292,
+        "lng": 115.8572,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-09-01T09:55:37+00:00",
+        "description": "HALLS HEAD, CITY OF MANDURAH",
+        "lat": -32.5555,
+        "lng": 115.6758,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
         "updated": "2026-09-01T09:03:39+00:00",
         "description": "CAMBALLIN, SHIRE OF DERBY/WEST KIMBERLEY",
         "lat": -18.0392,
@@ -1059,36 +1105,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-31T11:58:26+00:00",
-        "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
-        "lat": -16.722,
-        "lng": 122.881,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-08-31T11:57:40+00:00",
-        "description": "GIBB, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.949,
-        "lng": 126.854,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-08-31T11:56:47+00:00",
         "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.98,
@@ -1149,21 +1165,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-08-30T11:17:26+00:00",
-        "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.914,
-        "lng": 127.409,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-08-28T03:35:24+00:00",
         "description": "STRELLEY, TOWN OF PORT HEDLAND",
         "lat": -20.4782,
@@ -1190,16 +1191,16 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - STUART HWY, STUART",
+        "title": "Grass and Scrub Fire - COX PENINSULA RD, CHARLOTTE",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-09-01T09:46:32+00:00",
-        "description": "STUART HWY, STUART",
-        "lat": -23.6712,
-        "lng": 133.8715,
+        "updated": "2026-09-01T09:59:47+00:00",
+        "description": "COX PENINSULA RD, CHARLOTTE",
+        "lat": -12.7261,
+        "lng": 130.8536,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
