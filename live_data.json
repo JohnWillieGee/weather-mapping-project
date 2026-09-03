@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-09-03T00:22:58.197731+00:00",
-  "last_checked_utc": "2026-09-03T00:22:58.197731+00:00",
-  "warning_count": 14,
+  "generated_utc": "2026-09-03T00:52:56.500438+00:00",
+  "last_checked_utc": "2026-09-03T00:52:56.500438+00:00",
+  "warning_count": 15,
   "warnings": [
     {
       "pid": "",
-      "title": "03/10:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "03/10:49 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 03 Sep 2026 00:00:09 GMT"
+      "issued": "Thu, 03 Sep 2026 00:49:24 GMT"
     },
     {
       "pid": "",
@@ -59,21 +59,21 @@
     },
     {
       "pid": "",
-      "title": "02/10:23 EST Minor Flood Warning for the Loddon River",
+      "title": "03/10:25 EST Minor Flood Warning for the Loddon River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/loddonriver.shtml",
       "desc": "",
-      "issued": "Wed, 02 Sep 2026 00:23:49 GMT"
+      "issued": "Thu, 03 Sep 2026 00:25:39 GMT"
     },
     {
       "pid": "",
-      "title": "03/09:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "03/10:19 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Thu, 03 Sep 2026 00:00:11 GMT"
+      "issued": "Thu, 03 Sep 2026 00:49:38 GMT"
     },
     {
       "pid": "",
@@ -132,24 +132,14 @@
     },
     {
       "pid": "IDT21037",
-      "title": "Severe Weather Warning for King Island, Furneaux Islands, North West Coast, Central North, North East, East Coast, Midlands, Upper Derwent Valley, South East, Central Plateau, Western",
+      "title": "Severe Weather Warning for North West Coast, Central North, North East, East Coast, Midlands, Upper Derwent Valley, South East, Central Plateau, Western",
       "type": "severe_weather",
       "state": "TAS",
       "link": "",
-      "desc": "For King Island, the west coast, and adjacent southern and central parts of the state: DAMAGING WESTERLY WINDS of 55 to 65 km/h with peak gusts around 120 km/h about the exposed coasts, King Island and elevated terrain. DAMAGING WIND GUSTS around 100 km/h in the remainder of the western area. DAMAGING GUSTS are more likely with showers and thunderstorms. For the northeast and Furneaux Islands: DAMAGING WIND GUSTS of around 100km/h are forecast to develop during this morning, more likely with sho",
-      "issued": "2026-09-03T04:44:27+10:00",
+      "desc": "For the west coast and adjacent southern and central parts of the state: DAMAGING WESTERLY WINDS of 60 to 70 km/h with gusts around 100 km/h are likely throughout the region today, with gusts around 120km/h possible for elevated locations. DAMAGING WINDS are expected to ease along the west coast, north of and including Strahan, later this afternoon. For the northeast of the state: DAMAGING WESTERLY WINDS of 55 to 65 km/h are forecast to develop about the coast during the afternoon with isolated ",
+      "issued": "2026-09-03T10:42:50+10:00",
       "cancelled": false,
       "areas": [
-        {
-          "aac": "TAS_PW011",
-          "description": "King Island",
-          "phase": "REN"
-        },
-        {
-          "aac": "TAS_PW001",
-          "description": "Furneaux Islands",
-          "phase": "REN"
-        },
         {
           "aac": "TAS_PW010",
           "description": "North West Coast",
@@ -198,6 +188,30 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDT21037",
+      "title": "Severe Weather Warning for Furneaux Islands, King Island",
+      "type": "severe_weather",
+      "state": "TAS",
+      "link": "",
+      "desc": "",
+      "issued": "2026-09-03T10:42:50+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "TAS_PW001",
+          "description": "Furneaux Islands",
+          "phase": "CAN"
+        },
+        {
+          "aac": "TAS_PW011",
+          "description": "King Island",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -210,7 +224,7 @@
         "type": "Bush Fire",
         "size": "418 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 03 Sep 2026 00:20:41 GMT",
+        "updated": "Thu, 03 Sep 2026 00:48:41 GMT",
         "description": "BILLIRIMBA RD, ROCKY RIVER 2372",
         "council": "Tenterfield",
         "lat": -29.164590812,
@@ -861,7 +875,7 @@
         "type": "Bush Fire",
         "size": "102 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 03 Sep 2026 00:20:41 GMT",
+        "updated": "Thu, 03 Sep 2026 00:48:41 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.94356577,
@@ -972,338 +986,11 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 03 Sep 2026 00:20:41 GMT",
+        "updated": "Thu, 03 Sep 2026 00:48:41 GMT",
         "description": "DUNGAY CREEK RD, WITTITRIN 2440",
         "council": "Kempsey",
         "lat": -31.098985,
         "lng": 152.612685,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "HOGARTH RANGE RD, HOGARTH RANGE",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "25 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Thu, 03 Sep 2026 00:20:41 GMT",
-        "description": "HOGARTH RANGE RD, HOGARTH RANGE 2469",
-        "council": "Richmond Valley",
-        "lat": -28.9054899999999,
-        "lng": 152.852835637,
-        "polys": [
-          [
-            [
-              152.84702,
-              -28.9026000009999
-            ],
-            [
-              152.84707,
-              -28.9025800009999
-            ],
-            [
-              152.847150001,
-              -28.9025800009999
-            ],
-            [
-              152.84722,
-              -28.902550001
-            ],
-            [
-              152.847379999,
-              -28.902550001
-            ],
-            [
-              152.84742,
-              -28.902570001
-            ],
-            [
-              152.84757,
-              -28.9025800009999
-            ],
-            [
-              152.847659999,
-              -28.9026200009999
-            ],
-            [
-              152.84782,
-              -28.902650001
-            ],
-            [
-              152.848,
-              -28.902650001
-            ],
-            [
-              152.84823,
-              -28.9025800009999
-            ],
-            [
-              152.84833,
-              -28.902570001
-            ],
-            [
-              152.84835,
-              -28.902550001
-            ],
-            [
-              152.848550001,
-              -28.902500001
-            ],
-            [
-              152.84866,
-              -28.902450001
-            ],
-            [
-              152.84877,
-              -28.902450001
-            ],
-            [
-              152.84887,
-              -28.902480001
-            ],
-            [
-              152.84909,
-              -28.9025100009999
-            ],
-            [
-              152.84914,
-              -28.9025300009999
-            ],
-            [
-              152.84918,
-              -28.9025800009999
-            ],
-            [
-              152.84918,
-              -28.902610001
-            ],
-            [
-              152.8491,
-              -28.902750001
-            ],
-            [
-              152.849060001,
-              -28.90295
-            ],
-            [
-              152.849060001,
-              -28.903040001
-            ],
-            [
-              152.84892,
-              -28.90343
-            ],
-            [
-              152.84889,
-              -28.903440001
-            ],
-            [
-              152.84889,
-              -28.903470001
-            ],
-            [
-              152.848780001,
-              -28.903650001
-            ],
-            [
-              152.84872,
-              -28.90379
-            ],
-            [
-              152.8486,
-              -28.903960001
-            ],
-            [
-              152.84859,
-              -28.904010001
-            ],
-            [
-              152.84852,
-              -28.90412
-            ],
-            [
-              152.84846,
-              -28.904260001
-            ],
-            [
-              152.84834,
-              -28.9043800009999
-            ],
-            [
-              152.848219999,
-              -28.90455
-            ],
-            [
-              152.84816,
-              -28.904590001
-            ],
-            [
-              152.84806,
-              -28.904700001
-            ],
-            [
-              152.84804,
-              -28.904700001
-            ],
-            [
-              152.847889999,
-              -28.9048299999999
-            ],
-            [
-              152.84749,
-              -28.9050099999999
-            ],
-            [
-              152.84731,
-              -28.90511
-            ],
-            [
-              152.84723,
-              -28.905130001
-            ],
-            [
-              152.84722,
-              -28.905150001
-            ],
-            [
-              152.84696,
-              -28.9052399999999
-            ],
-            [
-              152.8463,
-              -28.9052300009999
-            ],
-            [
-              152.846029999,
-              -28.905150001
-            ],
-            [
-              152.84601,
-              -28.905130001
-            ],
-            [
-              152.8459,
-              -28.9051200009999
-            ],
-            [
-              152.84565,
-              -28.905020001
-            ],
-            [
-              152.845469999,
-              -28.904890001
-            ],
-            [
-              152.84533,
-              -28.9046799999999
-            ],
-            [
-              152.84528,
-              -28.904640001
-            ],
-            [
-              152.84523,
-              -28.90455
-            ],
-            [
-              152.84523,
-              -28.904430001
-            ],
-            [
-              152.84528,
-              -28.9042699999999
-            ],
-            [
-              152.84532,
-              -28.904210001
-            ],
-            [
-              152.84533,
-              -28.904140001
-            ],
-            [
-              152.8455,
-              -28.90394
-            ],
-            [
-              152.84555,
-              -28.903850001
-            ],
-            [
-              152.845570001,
-              -28.9037500009999
-            ],
-            [
-              152.84562,
-              -28.9036800009999
-            ],
-            [
-              152.84572,
-              -28.903580001
-            ],
-            [
-              152.84587,
-              -28.9033700009999
-            ],
-            [
-              152.84612,
-              -28.903130001
-            ],
-            [
-              152.84616,
-              -28.903060001
-            ],
-            [
-              152.8462,
-              -28.903040001
-            ],
-            [
-              152.84637,
-              -28.902830001
-            ],
-            [
-              152.84642,
-              -28.902790001
-            ],
-            [
-              152.846640001,
-              -28.902740001
-            ],
-            [
-              152.8468,
-              -28.902660001
-            ],
-            [
-              152.84694,
-              -28.902650001
-            ],
-            [
-              152.84701,
-              -28.9026200009999
-            ],
-            [
-              152.84702,
-              -28.9026000009999
-            ]
-          ]
-        ],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "INGLEBURN RESERVE INGLEBURN",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Thu, 03 Sep 2026 00:20:41 GMT",
-        "description": "INGLEBURN RESERVE INGLEBURN 2565",
-        "council": "Campbelltown",
-        "lat": -34.007414,
-        "lng": 150.886176,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -1315,7 +1002,7 @@
         "type": "Grass Fire",
         "size": "808 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 03 Sep 2026 00:20:41 GMT",
+        "updated": "Thu, 03 Sep 2026 00:48:41 GMT",
         "description": "JACKYS CREEK RD, CHAMBIGNE 2460",
         "council": "Clarence Valley",
         "lat": -29.70447497,
@@ -1406,7 +1093,7 @@
         "type": "Bush Fire",
         "size": "76 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 03 Sep 2026 00:20:41 GMT",
+        "updated": "Thu, 03 Sep 2026 00:48:41 GMT",
         "description": "MCCOYS CREEK RD, MOPARRABAH 2440",
         "council": "Kempsey",
         "lat": -30.968672,
@@ -1622,6 +1309,21 @@
     ],
     "nt": [
       {
+        "title": "Bushfire - Franklyn street, NHULUNBUY",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-09-03T00:25:00+00:00",
+        "description": "Franklyn street, NHULUNBUY",
+        "lat": -12.1845,
+        "lng": 136.7876,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - FRANKLYN ST, NHULUNBUY",
         "alertLevel": "Advice",
         "status": "active",
@@ -1759,7 +1461,7 @@
     ],
     "act": []
   },
-  "incident_count": 25,
+  "incident_count": 24,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4766,7 +4468,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-09-03T00:00:00Z",
+      "issued_utc": "2026-09-03T00:49:14Z",
       "overview": [],
       "hazards": [
         {
@@ -4825,10 +4527,10 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-09-03T00:00:00Z",
+      "issued_utc": "2026-09-03T00:49:25Z",
       "overview": [
         "Strong Wind Warning for Thursday for Lower South East Coast",
-        "Strong Wind Warning for Friday for Far West Coast, Lower West Coast, Central Coast, South Central Coast and Investigator Strait"
+        "Strong Wind Warning for Friday for Central Coast, Far West Coast, Lower West Coast, Investigator Strait and South Central Coast"
       ],
       "hazards": [
         {
