@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-09-03T02:22:59.252349+00:00",
-  "last_checked_utc": "2026-09-03T02:22:59.252349+00:00",
-  "warning_count": 15,
+  "generated_utc": "2026-09-03T02:53:00.851986+00:00",
+  "last_checked_utc": "2026-09-03T02:53:00.851986+00:00",
+  "warning_count": 16,
   "warnings": [
     {
       "pid": "",
@@ -47,6 +47,15 @@
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Thu, 03 Sep 2026 01:08:38 GMT"
+    },
+    {
+      "pid": "IDV35010",
+      "title": "03/12:41 EST Initial Flood Watch for parts of North and North East Victoria",
+      "type": "flood",
+      "state": "VIC",
+      "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDV35010.html",
+      "desc": "",
+      "issued": "Thu, 03 Sep 2026 02:41:45 GMT"
     },
     {
       "pid": "",
@@ -218,13 +227,45 @@
   "incidents": {
     "nsw": [
       {
+        "title": "Bantry Bay Rd, Frenchs Forest",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Thu, 03 Sep 2026 02:48:41 GMT",
+        "description": "Bantry Bay Rd, Frenchs Forest, NSW 2086",
+        "council": "Northern Beaches",
+        "lat": -33.764015,
+        "lng": 151.232025,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "BIG JACK MOUNTAIN RD, ROCKY HALL",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Thu, 03 Sep 2026 02:48:41 GMT",
+        "description": "BIG JACK MOUNTAIN RD, ROCKY HALL 2550",
+        "council": "Bega Valley",
+        "lat": -36.91004,
+        "lng": 149.481246,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "BILLIRIMBA RD, ROCKY RIVER",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "418 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 03 Sep 2026 02:20:41 GMT",
+        "updated": "Thu, 03 Sep 2026 02:48:41 GMT",
         "description": "BILLIRIMBA RD, ROCKY RIVER 2372",
         "council": "Tenterfield",
         "lat": -29.164590812,
@@ -877,17 +918,17 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
-        "title": "Church St, Maitland",
+        "title": "CLOVER HILL RD, JAMBEROO",
         "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Thu, 03 Sep 2026 02:20:41 GMT",
-        "description": "Church St, Maitland, NSW 2320",
-        "council": "Maitland",
-        "lat": -32.7315389999999,
-        "lng": 151.553635,
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "1 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Thu, 03 Sep 2026 02:48:41 GMT",
+        "description": "CLOVER HILL RD, JAMBEROO 2533",
+        "council": "Kiama",
+        "lat": -34.6839019999999,
+        "lng": 150.782383999,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -899,7 +940,7 @@
         "type": "Bush Fire",
         "size": "102 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 03 Sep 2026 02:20:41 GMT",
+        "updated": "Thu, 03 Sep 2026 02:48:41 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.94356577,
@@ -1038,7 +1079,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 03 Sep 2026 02:20:41 GMT",
+        "updated": "Thu, 03 Sep 2026 02:48:41 GMT",
         "description": "DUNGAY CREEK RD, WITTITRIN 2440",
         "council": "Kempsey",
         "lat": -31.098985,
@@ -1085,7 +1126,7 @@
         "type": "Bush Fire",
         "size": "219 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 03 Sep 2026 02:20:41 GMT",
+        "updated": "Thu, 03 Sep 2026 02:48:41 GMT",
         "description": "FELTERS CREEK FALLS RD, CARRAI 2440",
         "council": "Armidale",
         "lat": -30.8100833889999,
@@ -1314,18 +1355,113 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
+        "title": "Gadu Lane, Shellharbour City Centre",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Thu, 03 Sep 2026 02:48:41 GMT",
+        "description": "Gadu Lane, Shellharbour City Centre, NSW 2529",
+        "council": "Shellharbour",
+        "lat": -34.5651539999999,
+        "lng": 150.835192999,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "HAYDONS WHARF RD, COOPERABUNG",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
-        "size": "0 ha",
+        "size": "3 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 03 Sep 2026 02:20:41 GMT",
+        "updated": "Thu, 03 Sep 2026 02:48:41 GMT",
         "description": "HAYDONS WHARF RD, COOPERABUNG 2441",
         "council": "Port Macquarie-Hastings",
-        "lat": -31.306526,
-        "lng": 152.830675,
-        "polys": [],
+        "lat": -31.30388004,
+        "lng": 152.834425031,
+        "polys": [
+          [
+            [
+              152.834996807,
+              -31.304608021
+            ],
+            [
+              152.835127678,
+              -31.3048221729999
+            ],
+            [
+              152.835091985,
+              -31.3049649399999
+            ],
+            [
+              152.834675579,
+              -31.304953043
+            ],
+            [
+              152.834390044,
+              -31.3048459669999
+            ],
+            [
+              152.833997433,
+              -31.3046199189999
+            ],
+            [
+              152.833640514,
+              -31.304441459
+            ],
+            [
+              152.833295493,
+              -31.3041559229999
+            ],
+            [
+              152.833307389,
+              -31.3039298749999
+            ],
+            [
+              152.83392605,
+              -31.303751416
+            ],
+            [
+              152.833973639,
+              -31.303418291
+            ],
+            [
+              152.833878461,
+              -31.3029542959999
+            ],
+            [
+              152.83392605,
+              -31.3027877339999
+            ],
+            [
+              152.834973012,
+              -31.302633068
+            ],
+            [
+              152.83529424,
+              -31.3025140949999
+            ],
+            [
+              152.835448904,
+              -31.302894809
+            ],
+            [
+              152.83524665,
+              -31.3032041389999
+            ],
+            [
+              152.835270445,
+              -31.303525367
+            ],
+            [
+              152.834996807,
+              -31.304608021
+            ]
+          ]
+        ],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
@@ -1336,7 +1472,7 @@
         "type": "Grass Fire",
         "size": "808 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 03 Sep 2026 02:20:41 GMT",
+        "updated": "Thu, 03 Sep 2026 02:48:41 GMT",
         "description": "JACKYS CREEK RD, CHAMBIGNE 2460",
         "council": "Clarence Valley",
         "lat": -29.70447497,
@@ -1479,7 +1615,7 @@
         "type": "Bush Fire",
         "size": "323 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 03 Sep 2026 02:20:41 GMT",
+        "updated": "Thu, 03 Sep 2026 02:48:41 GMT",
         "description": "LAGOON CREEK RD, LOWER CREEK 2440",
         "council": "Armidale",
         "lat": -30.728212829,
@@ -1554,7 +1690,7 @@
         "type": "Bush Fire",
         "size": "141 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 03 Sep 2026 02:20:41 GMT",
+        "updated": "Thu, 03 Sep 2026 02:48:41 GMT",
         "description": "MCCOYS CREEK RD, MOPARRABAH 2440",
         "council": "Kempsey",
         "lat": -30.968672,
@@ -1751,13 +1887,29 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
+        "title": "MULLIGANS LANE, KUNDIBAKH",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Thu, 03 Sep 2026 02:48:41 GMT",
+        "description": "MULLIGANS LANE, KUNDIBAKH 2429",
+        "council": "Mid-Coast",
+        "lat": -31.970814,
+        "lng": 152.221986,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "Pantons HR",
         "alertLevel": "Advice",
         "status": "Not yet controlled",
         "type": "Bush Fire",
         "size": "2449 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Thu, 03 Sep 2026 02:20:41 GMT",
+        "updated": "Thu, 03 Sep 2026 02:48:41 GMT",
         "description": "Guy Fawkes River NP Pantons Creek",
         "council": "Clarence Valley",
         "lat": -30.282639861,
@@ -2420,6 +2572,212 @@
         ],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "SUNSHINE RD, HILLVILLE",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "1 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Thu, 03 Sep 2026 02:48:41 GMT",
+        "description": "SUNSHINE RD, HILLVILLE 2430",
+        "council": "Mid-Coast",
+        "lat": -31.96806,
+        "lng": 152.351257,
+        "polys": [
+          [
+            [
+              152.350976,
+              -31.968765001
+            ],
+            [
+              152.351012,
+              -31.9687050009999
+            ],
+            [
+              152.351132,
+              -31.968800001
+            ],
+            [
+              152.351171,
+              -31.9688630009999
+            ],
+            [
+              152.351148001,
+              -31.9689320009999
+            ],
+            [
+              152.351034999,
+              -31.969032001
+            ],
+            [
+              152.350753001,
+              -31.9691960009999
+            ],
+            [
+              152.350665,
+              -31.969317001
+            ],
+            [
+              152.350599,
+              -31.969452001
+            ],
+            [
+              152.350665,
+              -31.969661
+            ],
+            [
+              152.350674,
+              -31.9697360009999
+            ],
+            [
+              152.350483,
+              -31.9700570009999
+            ],
+            [
+              152.350428,
+              -31.970112001
+            ],
+            [
+              152.350197,
+              -31.970201001
+            ],
+            [
+              152.350116,
+              -31.970216001
+            ],
+            [
+              152.350038,
+              -31.970184
+            ],
+            [
+              152.350004,
+              -31.970112001
+            ],
+            [
+              152.350064,
+              -31.9698990009999
+            ],
+            [
+              152.350102,
+              -31.969597001
+            ],
+            [
+              152.350079,
+              -31.969293001
+            ],
+            [
+              152.350116,
+              -31.9691500009999
+            ],
+            [
+              152.350201,
+              -31.969023001
+            ],
+            [
+              152.350215,
+              -31.9689470009999
+            ],
+            [
+              152.350257999,
+              -31.9688800009999
+            ],
+            [
+              152.350460001,
+              -31.968754001
+            ],
+            [
+              152.350537999,
+              -31.9687240009999
+            ],
+            [
+              152.35079,
+              -31.968715001
+            ],
+            [
+              152.350976,
+              -31.968765001
+            ]
+          ]
+        ],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "WATAGAN CREEK RD, WATAGAN",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "10 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Thu, 03 Sep 2026 02:48:41 GMT",
+        "description": "WATAGAN CREEK RD, WATAGAN 2325",
+        "council": "Cessnock",
+        "lat": -33.029392242,
+        "lng": 151.262588501,
+        "polys": [
+          [
+            [
+              151.261671017,
+              -33.0298516789999
+            ],
+            [
+              151.262165945,
+              -33.029501898
+            ],
+            [
+              151.262158806,
+              -33.0294947589999
+            ],
+            [
+              151.26271798,
+              -33.029863576
+            ],
+            [
+              151.262789364,
+              -33.030089624
+            ],
+            [
+              151.26271798,
+              -33.03024429
+            ],
+            [
+              151.262706083,
+              -33.0305179269999
+            ],
+            [
+              151.262491931,
+              -33.030636901
+            ],
+            [
+              151.262253984,
+              -33.030732079
+            ],
+            [
+              151.262111217,
+              -33.030636901
+            ],
+            [
+              151.261944655,
+              -33.030529825
+            ],
+            [
+              151.261671017,
+              -33.030315673
+            ],
+            [
+              151.261671017,
+              -33.030149111
+            ],
+            [
+              151.261671017,
+              -33.0298516789999
+            ]
+          ]
+        ],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       }
     ],
     "vic": [],
@@ -2442,21 +2800,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-09-03T01:40:21+00:00",
-        "description": "SORRENTO, CITY OF JOONDALUP",
-        "lat": -31.8202,
-        "lng": 115.7566,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -2732,7 +3075,7 @@
     ],
     "act": []
   },
-  "incident_count": 30,
+  "incident_count": 35,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
