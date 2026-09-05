@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-09-05T00:23:03.813919+00:00",
-  "last_checked_utc": "2026-09-05T00:23:03.813919+00:00",
-  "warning_count": 20,
+  "generated_utc": "2026-09-05T00:53:02.035085+00:00",
+  "last_checked_utc": "2026-09-05T00:53:02.035085+00:00",
+  "warning_count": 19,
   "warnings": [
     {
       "pid": "",
@@ -136,7 +136,7 @@
       "state": "NSW",
       "link": "",
       "desc": "For parts of the BLUE MOUNTAINS, SNOWY MOUNTAINS and southern parts of the ACT: DAMAGING WINDS averaging 60 to 70 km/h with peak gusts around 100 km/h are forecast to develop around sunrise today. For alpine areas above 1900 metres DAMAGING WINDS averaging 80 to 90 km/h are possible from the early morning. For the ILLAWARRA, SOUTH COAST and northern parts of the COASTAL RANGES: Strong winds averaging 50 to 60 km/h with DAMAGING WIND GUSTS around 90 km/h are forecast to develop from the late morn",
-      "issued": "2026-09-05T04:51:46+10:00",
+      "issued": "2026-09-05T10:45:25+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -180,18 +180,28 @@
     },
     {
       "pid": "IDV21037",
-      "title": "Severe Weather Warning for Wimmera, North East, South West, Central, West and South Gippsland, East Gippsland",
+      "title": "Severe Weather Warning for Mallee, Wimmera, North Central, North East, South West, Central, West and South Gippsland, East Gippsland",
       "type": "severe_weather",
       "state": "VIC",
       "link": "",
-      "desc": "For the NORTHEAST RANGES and ALPINE AREAS: DAMAGING NORTHWESTERLY WINDS averaging 65 to 75 km/h with peak gusts up to 110 km/h are likely to develop early this morning and continue through the day, easing during this evening. For parts of the SOUTHWEST: DAMAGING WIND GUSTS with peak gusts in excess of 90 km/h may develop during this morning, most likely in showers and thunderstorms, before conditions ease into this afternoon. For the MACEDON and CENTRAL RANGES: Damaging winds are no longer expec",
-      "issued": "2026-09-05T04:58:37+10:00",
+      "desc": "For the NORTHEAST RANGES and ALPINE AREAS: DAMAGING NORTHWESTERLY WINDS averaging 65 to 75 km/h with peak gusts up to 110 km/h are likely this morning and continue through the day, easing during this evening. For parts of the SOUTHWEST: DAMAGING WIND GUSTS with peak gusts in excess of 90 km/h may develop, most likely in showers and thunderstorms, before conditions ease into this afternoon. Winds are forecast to ease this evening. Locations which may be affected include Horsham, Warrnambool, Ball",
+      "issued": "2026-09-05T10:48:24+10:00",
       "cancelled": false,
       "areas": [
+        {
+          "aac": "VIC_PW001",
+          "description": "Mallee",
+          "phase": "NEW"
+        },
         {
           "aac": "VIC_PW002",
           "description": "Wimmera",
           "phase": "REN"
+        },
+        {
+          "aac": "VIC_PW008",
+          "description": "North Central",
+          "phase": "NEW"
         },
         {
           "aac": "VIC_PW004",
@@ -220,26 +230,7 @@
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "REN"
-    },
-    {
-      "pid": "IDV21037",
-      "title": "Severe Weather Warning for North Central",
-      "type": "severe_weather",
-      "state": "VIC",
-      "link": "",
-      "desc": "",
-      "issued": "2026-09-05T04:58:37+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "VIC_PW008",
-          "description": "North Central",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
+      "hazardPhase": "UPD"
     },
     {
       "pid": "IDS21037",
@@ -334,7 +325,7 @@
         "type": "Bush Fire",
         "size": "24 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 05 Sep 2026 00:20:41 GMT",
+        "updated": "Sat, 05 Sep 2026 00:48:41 GMT",
         "description": "BIG JACK MOUNTAIN RD, ROCKY HALL 2550",
         "council": "Bega Valley",
         "lat": -36.91004,
@@ -713,7 +704,7 @@
         "type": "Bush Fire",
         "size": "1232 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 05 Sep 2026 00:20:41 GMT",
+        "updated": "Sat, 05 Sep 2026 00:48:41 GMT",
         "description": "BILLIRIMBA RD, ROCKY RIVER 2372",
         "council": "Tenterfield",
         "lat": -29.164590812,
@@ -1380,7 +1371,7 @@
         "type": "Bush Fire",
         "size": "6 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 05 Sep 2026 00:20:41 GMT",
+        "updated": "Sat, 05 Sep 2026 00:48:41 GMT",
         "description": "CARRAI",
         "council": "Armidale",
         "lat": -30.8492802709999,
@@ -1471,7 +1462,7 @@
         "type": "Bush Fire",
         "size": "207 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 05 Sep 2026 00:20:41 GMT",
+        "updated": "Sat, 05 Sep 2026 00:48:41 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.94356577,
@@ -1479,388 +1470,148 @@
         "polys": [
           [
             [
-              151.836385372,
-              -28.9375743419999
+              151.844551134,
+              -28.96113809
             ],
             [
-              151.836113122,
-              -28.9369160639999
+              151.845193588,
+              -28.9609001439999
             ],
             [
-              151.835718131,
-              -28.936078494
+              151.845550508,
+              -28.960995323
             ],
             [
-              151.835639608,
-              -28.935688263
+              151.846573676,
+              -28.96144742
             ],
             [
-              151.835676491,
-              -28.935188576
+              151.846311936,
+              -28.9621850519999
             ],
             [
-              151.835989985,
-              -28.9349101789999
+              151.845050821,
+              -28.962827508
             ],
             [
-              151.836460821,
-              -28.934790016
+              151.844622518,
+              -28.9641362099999
             ],
             [
-              151.83695322,
-              -28.934948845
+              151.84483667,
+              -28.9644931299999
             ],
             [
-              151.837646759,
-              -28.935299518
+              151.847668228,
+              -28.965064201
             ],
             [
-              151.837936421,
-              -28.935765148
+              151.848263094,
+              -28.9658256279999
             ],
             [
-              151.838328716,
-              -28.935921822
+              151.848405861,
+              -28.96722951
             ],
             [
-              151.838439203,
-              -28.935571855
+              151.846906801,
+              -28.9675864289999
             ],
             [
-              151.83868294,
-              -28.935355138
+              151.845264973,
+              -28.9675864289999
             ],
             [
-              151.839444367,
-              -28.9346698539999
+              151.844313189,
+              -28.967990938
             ],
             [
-              151.839815564,
-              -28.9343367289999
+              151.84452734,
+              -28.968657187
             ],
             [
-              151.841366972,
-              -28.934203479
+              151.845883632,
+              -28.969299641
             ],
             [
-              151.842689953,
-              -28.9342058569999
+              151.846883006,
+              -28.9698707109999
             ],
             [
-              151.843418067,
-              -28.93424512
+              151.847787202,
+              -28.970679729
             ],
             [
-              151.843917754,
-              -28.9345699159999
+              151.84731131,
+              -28.971583924
             ],
             [
-              151.844322263,
-              -28.9357358519999
+              151.846454703,
+              -28.9718456639999
             ],
             [
-              151.844416929,
-              -28.9360430569999
+              151.844099037,
+              -28.972083611
             ],
             [
-              151.844778097,
-              -28.936293158
+              151.842076496,
+              -28.9720122259999
             ],
             [
-              151.846175864,
-              -28.937432407
+              151.840387078,
+              -28.971893254
             ],
             [
-              151.84697774,
-              -28.938067722
+              151.839435294,
+              -28.971084237
             ],
             [
-              151.846693394,
-              -28.9385281469999
+              151.839482882,
+              -28.9705369599999
             ],
             [
-              151.846541704,
-              -28.938891611
+              151.839530472,
+              -28.969632766
             ],
             [
-              151.846685066,
-              -28.939331216
+              151.839578061,
+              -28.9687285699999
             ],
             [
-              151.846804039,
-              -28.9399165629999
+              151.839839802,
+              -28.967562635
             ],
             [
-              151.846599406,
-              -28.9412062329999
+              151.840077748,
+              -28.9664442879999
             ],
             [
-              151.846242487,
-              -28.9431335959999
+              151.841148505,
+              -28.96599219
             ],
             [
-              151.846144929,
-              -28.9436404209999
+              151.842147879,
+              -28.965444915
             ],
             [
-              151.84614255,
-              -28.9441472459999
+              151.843313815,
+              -28.964516924
             ],
             [
-              151.846263902,
-              -28.9445160619999
+              151.843313815,
+              -28.9641837999999
             ],
             [
-              151.846213934,
-              -28.945065717
+              151.843480377,
+              -28.9633034
             ],
             [
-              151.846190731,
-              -28.945593956
+              151.843884885,
+              -28.9622088469999
             ],
             [
-              151.846483703,
-              -28.946086505
-            ],
-            [
-              151.846649224,
-              -28.946703976
-            ],
-            [
-              151.846738603,
-              -28.947340481
-            ],
-            [
-              151.846968222,
-              -28.947930588
-            ],
-            [
-              151.846750501,
-              -28.9483493729999
-            ],
-            [
-              151.846508392,
-              -28.949063211
-            ],
-            [
-              151.845809423,
-              -28.949891264
-            ],
-            [
-              151.844724389,
-              -28.9504861309999
-            ],
-            [
-              151.843734534,
-              -28.950852567
-            ],
-            [
-              151.842758956,
-              -28.9507835639999
-            ],
-            [
-              151.841954697,
-              -28.950276738
-            ],
-            [
-              151.84115044,
-              -28.949672353
-            ],
-            [
-              151.84071296,
-              -28.9490300109999
-            ],
-            [
-              151.840681688,
-              -28.948946618
-            ],
-            [
-              151.840681688,
-              -28.948756261
-            ],
-            [
-              151.840491331,
-              -28.948756261
-            ],
-            [
-              151.840300974,
-              -28.9486610829999
-            ],
-            [
-              151.840110617,
-              -28.9486610829999
-            ],
-            [
-              151.839825082,
-              -28.948565904
-            ],
-            [
-              151.839634725,
-              -28.948470726
-            ],
-            [
-              151.839444369,
-              -28.948399341
-            ],
-            [
-              151.839254011,
-              -28.9483279579999
-            ],
-            [
-              151.839063654,
-              -28.9481851909999
-            ],
-            [
-              151.838873297,
-              -28.948137602
-            ],
-            [
-              151.83868294,
-              -28.948113807
-            ],
-            [
-              151.838492583,
-              -28.948066217
-            ],
-            [
-              151.838302228,
-              -28.9479948339999
-            ],
-            [
-              151.83811187,
-              -28.9479948339999
-            ],
-            [
-              151.837921513,
-              -28.9479948339999
-            ],
-            [
-              151.837731156,
-              -28.9479948339999
-            ],
-            [
-              151.837540799,
-              -28.947971039
-            ],
-            [
-              151.837350442,
-              -28.947971039
-            ],
-            [
-              151.837160085,
-              -28.9479948339999
-            ],
-            [
-              151.836986723,
-              -28.948081514
-            ],
-            [
-              151.836684193,
-              -28.9482518149999
-            ],
-            [
-              151.836279685,
-              -28.9483374759999
-            ],
-            [
-              151.835760962,
-              -28.947606981
-            ],
-            [
-              151.83546353,
-              -28.9467277699999
-            ],
-            [
-              151.835280312,
-              -28.946191201
-            ],
-            [
-              151.83546591,
-              -28.945751001
-            ],
-            [
-              151.835901351,
-              -28.94527392
-            ],
-            [
-              151.836442678,
-              -28.944911647
-            ],
-            [
-              151.836799002,
-              -28.9441118509999
-            ],
-            [
-              151.837069665,
-              -28.943921196
-            ],
-            [
-              151.83736472,
-              -28.943664214
-            ],
-            [
-              151.837842757,
-              -28.943483116
-            ],
-            [
-              151.838597163,
-              -28.9433916369999
-            ],
-            [
-              151.838993401,
-              -28.9430698799999
-            ],
-            [
-              151.839361085,
-              -28.942919444
-            ],
-            [
-              151.839582376,
-              -28.9425054179999
-            ],
-            [
-              151.839616878,
-              -28.941860584
-            ],
-            [
-              151.839510397,
-              -28.941452507
-            ],
-            [
-              151.839175488,
-              -28.940977803
-            ],
-            [
-              151.838556828,
-              -28.940447185
-            ],
-            [
-              151.837895338,
-              -28.939886821
-            ],
-            [
-              151.837262401,
-              -28.939250316
-            ],
-            [
-              151.836915,
-              -28.938793457
-            ],
-            [
-              151.836719883,
-              -28.938331842
-            ],
-            [
-              151.836502492,
-              -28.9378579999999
-            ],
-            [
-              151.836437385,
-              -28.93765066
-            ],
-            [
-              151.836385372,
-              -28.9375743419999
+              151.844551134,
+              -28.96113809
             ]
           ]
         ],
@@ -1874,7 +1625,7 @@
         "type": "Bush Fire",
         "size": "431 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 05 Sep 2026 00:20:41 GMT",
+        "updated": "Sat, 05 Sep 2026 00:48:41 GMT",
         "description": "FELTERS CREEK FALLS RD, CARRAI 2440",
         "council": "Armidale",
         "lat": -30.798162986,
@@ -2101,7 +1852,7 @@
         "type": "Bush Fire",
         "size": "884 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 05 Sep 2026 00:20:41 GMT",
+        "updated": "Sat, 05 Sep 2026 00:48:41 GMT",
         "description": "LAGOON CREEK RD, LOWER CREEK 2440",
         "council": "Armidale",
         "lat": -30.7192143509999,
@@ -2148,7 +1899,7 @@
         "type": "Bush Fire",
         "size": "509 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 05 Sep 2026 00:20:41 GMT",
+        "updated": "Sat, 05 Sep 2026 00:48:41 GMT",
         "description": "MALARA CREEK FIRETRAIL, ROCKY RIVER 2372",
         "council": "Tenterfield",
         "lat": -29.183009531,
@@ -2791,7 +2542,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sat, 05 Sep 2026 00:20:41 GMT",
+        "updated": "Sat, 05 Sep 2026 00:48:41 GMT",
         "description": "BROWNS CAMP RD, CHAELUNDI 2460",
         "council": "Clarence Valley",
         "lat": -30.0302007679999,
@@ -2882,7 +2633,7 @@
         "type": "Bush Fire",
         "size": "1376 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sat, 05 Sep 2026 00:20:41 GMT",
+        "updated": "Sat, 05 Sep 2026 00:48:41 GMT",
         "description": "Guy Fawkes River NP Pantons Creek",
         "council": "Clarence Valley",
         "lat": -30.282639861,
@@ -3593,7 +3344,7 @@
         "type": "Bush Fire",
         "size": "556 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 05 Sep 2026 00:20:41 GMT",
+        "updated": "Sat, 05 Sep 2026 00:48:41 GMT",
         "description": "ROCKY RIVER RD, ROCKY RIVER 2372",
         "council": "Tenterfield",
         "lat": -29.053828794,
@@ -4024,7 +3775,7 @@
         "type": "Bush Fire",
         "size": "732 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 05 Sep 2026 00:20:41 GMT",
+        "updated": "Sat, 05 Sep 2026 00:48:41 GMT",
         "description": "SHANNONDALE RD, SHANNONDALE 2460",
         "council": "Clarence Valley",
         "lat": -29.789094233,
@@ -4231,7 +3982,7 @@
         "type": "Bush Fire",
         "size": "70 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sat, 05 Sep 2026 00:20:41 GMT",
+        "updated": "Sat, 05 Sep 2026 00:48:41 GMT",
         "description": "TULLOCK RD, YARRANBELLA 2447",
         "council": "Nambucca Valley",
         "lat": -30.70088,
@@ -4266,7 +4017,7 @@
         "type": "Bush Fire",
         "size": "43 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 05 Sep 2026 00:20:41 GMT",
+        "updated": "Sat, 05 Sep 2026 00:48:41 GMT",
         "description": "WATAGAN CREEK RD, WATAGAN 2325",
         "council": "Cessnock",
         "lat": -33.029392242,
@@ -4681,7 +4432,7 @@
         "type": "Bush Fire",
         "size": "289 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sat, 05 Sep 2026 00:20:41 GMT",
+        "updated": "Sat, 05 Sep 2026 00:48:41 GMT",
         "description": "GRANGE STATE FOREST, JACKADGERY",
         "council": "Clarence Valley",
         "lat": -29.402914692,
@@ -4721,16 +4472,16 @@
     "vic": [],
     "qld": [
       {
-        "title": "STAY INFORMED - Paterson - fire as at 4:57pm Friday, 4 September 2026",
+        "title": "STAY INFORMED - Berajondo - fire as at 6:01pm Friday, 4 September 2026",
         "alertLevel": "Advice",
         "status": "",
         "type": "Bush Fire",
         "size": "",
         "agency": "QFD",
         "updated": "",
-        "description": "Between Bauple Woolooga Road and Paterson Road",
-        "lat": -25.878748760128147,
-        "lng": 152.53108966248766,
+        "description": "Between Dawson Road, Lowmead Road and Old Toweran Road",
+        "lat": -24.645788929472836,
+        "lng": 151.7834721779431,
         "state": "QLD",
         "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
       },
@@ -4745,20 +4496,6 @@
         "description": "Between Middle Creek Cooyar Road and Cooyar Rangemore Road",
         "lat": -26.938657355504677,
         "lng": 151.75592432487824,
-        "state": "QLD",
-        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
-      },
-      {
-        "title": "STAY INFORMED - Berajondo - fire as at 6:01pm Friday, 4 September 2026",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "QFD",
-        "updated": "",
-        "description": "Between Dawson Road, Lowmead Road and Old Toweran Road",
-        "lat": -24.645788929472836,
-        "lng": 151.7834721779431,
         "state": "QLD",
         "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
       },
@@ -4786,7 +4523,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-09-05T09:10:13+00:00",
+        "updated": "2026-09-05T10:50:14+00:00",
         "description": "",
         "lat": -41.491470000048245,
         "lng": 147.2974899997547,
@@ -4801,7 +4538,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-09-05T09:10:13+00:00",
+        "updated": "2026-09-05T10:50:14+00:00",
         "description": "",
         "lat": -41.578379999729364,
         "lng": 146.60970000040788,
@@ -4811,6 +4548,21 @@
       }
     ],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-09-05T00:17:27+00:00",
+        "description": "PAPULANKUTJA, SHIRE OF NGAANYATJARRAKU",
+        "lat": -25.9983,
+        "lng": 128.2839,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -4852,21 +4604,6 @@
         "description": "CAMBALLIN, SHIRE OF DERBY/WEST KIMBERLEY",
         "lat": -18.069,
         "lng": 124.121,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-09-04T05:10:22+00:00",
-        "description": "PAPULANKUTJA, SHIRE OF NGAANYATJARRAKU",
-        "lat": -25.9983,
-        "lng": 128.2839,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -4995,7 +4732,7 @@
     "nt": [],
     "act": []
   },
-  "incident_count": 32,
+  "incident_count": 31,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
