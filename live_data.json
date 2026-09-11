@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-09-11T19:23:00.066119+00:00",
-  "last_checked_utc": "2026-09-11T19:23:00.066119+00:00",
+  "generated_utc": "2026-09-11T19:53:01.523997+00:00",
+  "last_checked_utc": "2026-09-11T19:53:01.523997+00:00",
   "warning_count": 7,
   "warnings": [
     {
       "pid": "",
-      "title": "11/16:57 EST Hazardous Surf Warning for New South Wales",
+      "title": "12/05:42 EST Cancellation of Hazardous Surf Warning for New South Wales",
       "type": "other",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/hazardoussurf.shtml",
       "desc": "",
-      "issued": "Fri, 11 Sep 2026 06:57:06 GMT"
+      "issued": "Fri, 11 Sep 2026 19:42:20 GMT"
     },
     {
       "pid": "",
@@ -59,27 +59,32 @@
     },
     {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for Lower West, South West",
+      "title": "Severe Thunderstorm Warning for Lower West, South West, Great Southern",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Bunbury.",
-      "issued": "2026-09-12T03:01:27+08:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Collie, Wannanup and Harvey.",
+      "issued": "2026-09-12T03:36:42+08:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "WA_PW009",
           "description": "Lower West",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "WA_PW010",
           "description": "South West",
+          "phase": "REN"
+        },
+        {
+          "aac": "WA_PW013",
+          "description": "Great Southern",
           "phase": "NEW"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "UPD"
     }
   ],
   "fetch_errors": {},
@@ -92,7 +97,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 11 Sep 2026 19:20:44 GMT",
+        "updated": "Fri, 11 Sep 2026 19:48:44 GMT",
         "description": "AWABA RD, TORONTO 2283",
         "council": "Lake Macquarie",
         "lat": -33.0044,
@@ -108,7 +113,7 @@
         "type": "Bush Fire",
         "size": "3015 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 11 Sep 2026 19:20:44 GMT",
+        "updated": "Fri, 11 Sep 2026 19:48:44 GMT",
         "description": "KOOKABOOKRA RD, KOOKABOOKRA 2370",
         "council": "Armidale",
         "lat": -30.036502379,
@@ -803,7 +808,7 @@
         "type": "Bush Fire",
         "size": "2720 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 11 Sep 2026 19:20:44 GMT",
+        "updated": "Fri, 11 Sep 2026 19:48:44 GMT",
         "description": "BILLIRIMBA RD, ROCKY RIVER 2372",
         "council": "Tenterfield",
         "lat": -29.162064771,
@@ -838,7 +843,7 @@
         "type": "Bush Fire",
         "size": "92 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 11 Sep 2026 19:20:44 GMT",
+        "updated": "Fri, 11 Sep 2026 19:48:44 GMT",
         "description": "CUNGLEBUNG RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.816923134,
@@ -1477,7 +1482,7 @@
         "type": "Bush Fire",
         "size": "500 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 11 Sep 2026 19:20:44 GMT",
+        "updated": "Fri, 11 Sep 2026 19:48:44 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.940981888,
@@ -2092,7 +2097,7 @@
         "type": "Bush Fire",
         "size": "1780 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Fri, 11 Sep 2026 19:20:44 GMT",
+        "updated": "Fri, 11 Sep 2026 19:48:44 GMT",
         "description": "BROWNS CAMP RD, CHAELUNDI 2460",
         "council": "Clarence Valley",
         "lat": -30.0302007679999,
@@ -2647,7 +2652,7 @@
         "type": "Bush Fire",
         "size": "7135 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Fri, 11 Sep 2026 19:20:44 GMT",
+        "updated": "Fri, 11 Sep 2026 19:48:44 GMT",
         "description": "GUY FAWKES RIVER NATIONAL PARK THE GULF 2365",
         "council": "Clarence Valley",
         "lat": -30.197662796,
@@ -2655,20 +2660,20 @@
         "polys": [
           [
             [
-              152.343623244,
-              -30.306106824
+              152.345405552,
+              -30.216187367
             ],
             [
-              152.343486119,
-              -30.306221093
+              152.34535774,
+              -30.2162188529999
             ],
             [
-              152.343486656,
-              -30.3062121089999
+              152.34530716,
+              -30.216067111
             ],
             [
-              152.343623244,
-              -30.306106824
+              152.345405552,
+              -30.216187367
             ]
           ]
         ],
@@ -3639,6 +3644,78 @@
           "fbi": 11,
           "st": "2026-09-15T00:00:00+10:00",
           "et": "2026-09-16T00:00:00+10:00"
+        }
+      },
+      "VIC_FW007": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-09-12T05:42:00+10:00",
+          "et": "2026-09-13T00:00:00+10:00"
+        }
+      },
+      "VIC_FW005": {
+        "1": {
+          "fd": "Moderate",
+          "fbi": 12,
+          "st": "2026-09-12T05:42:00+10:00",
+          "et": "2026-09-13T00:00:00+10:00"
+        }
+      },
+      "VIC_FW001": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-09-12T05:42:00+10:00",
+          "et": "2026-09-13T00:00:00+10:00"
+        }
+      },
+      "VIC_FW008": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-09-12T05:42:00+10:00",
+          "et": "2026-09-13T00:00:00+10:00"
+        }
+      },
+      "VIC_FW004": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 8,
+          "st": "2026-09-12T05:42:00+10:00",
+          "et": "2026-09-13T00:00:00+10:00"
+        }
+      },
+      "VIC_FW003": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 6,
+          "st": "2026-09-12T05:42:00+10:00",
+          "et": "2026-09-13T00:00:00+10:00"
+        }
+      },
+      "VIC_FW009": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-09-12T05:42:00+10:00",
+          "et": "2026-09-13T00:00:00+10:00"
+        }
+      },
+      "VIC_FW006": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 9,
+          "st": "2026-09-12T05:42:00+10:00",
+          "et": "2026-09-13T00:00:00+10:00"
+        }
+      },
+      "VIC_FW002": {
+        "1": {
+          "fd": "No Rating",
+          "fbi": 7,
+          "st": "2026-09-12T05:42:00+10:00",
+          "et": "2026-09-13T00:00:00+10:00"
         }
       },
       "QLD_FW001": {
