@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-12T17:23:01.561578+00:00",
-  "last_checked_utc": "2026-09-12T17:23:01.561578+00:00",
+  "generated_utc": "2026-09-12T17:53:00.083397+00:00",
+  "last_checked_utc": "2026-09-12T17:53:00.083397+00:00",
   "warning_count": 5,
   "warnings": [
     {
@@ -41,27 +41,37 @@
     },
     {
       "pid": "IDS21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for North West Pastoral, West Coast",
+      "title": "Severe Thunderstorm Warning for North West Pastoral, West Coast, Eastern Eyre Peninsula, Lower Eyre Peninsula",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "This warning is now cancelled.",
-      "issued": "2026-09-13T00:40:40+09:30",
-      "cancelled": true,
+      "desc": "Severe thunderstorms are likely in the warning area over the next several hours. Locations which may be affected include Wudinna, Cleve, Cummins, Tumby Bay and Kimba. Wind gust of 45 knots observed at Wudinna Airport at 17:35UTC (3am CST).",
+      "issued": "2026-09-13T03:12:48+09:30",
+      "cancelled": false,
       "areas": [
         {
           "aac": "SA_PW013",
           "description": "North West Pastoral",
-          "phase": "CAN"
+          "phase": "NEW"
         },
         {
           "aac": "SA_PW010",
           "description": "West Coast",
-          "phase": "CAN"
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW011",
+          "description": "Eastern Eyre Peninsula",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW012",
+          "description": "Lower Eyre Peninsula",
+          "phase": "NEW"
         }
       ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -74,7 +84,7 @@
         "type": "Bush Fire",
         "size": "3015 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 12 Sep 2026 17:20:44 GMT",
+        "updated": "Sat, 12 Sep 2026 17:48:57 GMT",
         "description": "KOOKABOOKRA RD, KOOKABOOKRA 2370",
         "council": "Armidale",
         "lat": -30.036502379,
@@ -769,7 +779,7 @@
         "type": "Bush Fire",
         "size": "2778 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 12 Sep 2026 17:20:44 GMT",
+        "updated": "Sat, 12 Sep 2026 17:48:57 GMT",
         "description": "BILLIRIMBA RD, ROCKY RIVER 2372",
         "council": "Tenterfield",
         "lat": -29.162064771,
@@ -808,7 +818,7 @@
         "type": "Bush Fire",
         "size": "92 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 12 Sep 2026 17:20:44 GMT",
+        "updated": "Sat, 12 Sep 2026 17:48:57 GMT",
         "description": "CUNGLEBUNG RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.816923134,
@@ -1447,7 +1457,7 @@
         "type": "Bush Fire",
         "size": "577 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 12 Sep 2026 17:20:44 GMT",
+        "updated": "Sat, 12 Sep 2026 17:48:57 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.940981888,
@@ -2150,7 +2160,7 @@
         "type": "Bush Fire",
         "size": "3 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 12 Sep 2026 17:20:44 GMT",
+        "updated": "Sat, 12 Sep 2026 17:48:57 GMT",
         "description": "GIANTS CREEK RD, GIANTS CREEK 2328",
         "council": "Muswellbrook",
         "lat": -32.3154830939999,
@@ -2285,7 +2295,7 @@
         "type": "Bush Fire",
         "size": "1830 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sat, 12 Sep 2026 17:20:44 GMT",
+        "updated": "Sat, 12 Sep 2026 17:48:57 GMT",
         "description": "BROWNS CAMP RD, CHAELUNDI 2460",
         "council": "Clarence Valley",
         "lat": -30.0302007679999,
@@ -2320,7 +2330,7 @@
         "type": "Bush Fire",
         "size": "7378 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sat, 12 Sep 2026 17:20:44 GMT",
+        "updated": "Sat, 12 Sep 2026 17:48:57 GMT",
         "description": "GUY FAWKES RIVER NATIONAL PARK THE GULF 2365",
         "council": "Clarence Valley",
         "lat": -30.197662796,
@@ -2328,20 +2338,20 @@
         "polys": [
           [
             [
-              152.345405552,
-              -30.216187367
+              152.361881572,
+              -30.342381647
             ],
             [
-              152.34535774,
-              -30.2162188529999
+              152.361757947,
+              -30.342392371
             ],
             [
-              152.34530716,
-              -30.216067111
+              152.361894089,
+              -30.3423679759999
             ],
             [
-              152.345405552,
-              -30.216187367
+              152.361881572,
+              -30.342381647
             ]
           ]
         ],
