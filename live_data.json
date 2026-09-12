@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-12T20:53:03.307071+00:00",
-  "last_checked_utc": "2026-09-12T20:53:03.307071+00:00",
+  "generated_utc": "2026-09-12T21:23:01.518945+00:00",
+  "last_checked_utc": "2026-09-12T21:23:01.518945+00:00",
   "warning_count": 6,
   "warnings": [
     {
@@ -50,27 +50,27 @@
     },
     {
       "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for Mid North, Yorke Peninsula",
+      "title": "Cancellation of Severe Thunderstorm Warning for Mid North, Yorke Peninsula",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Maitland, Port Wakefield, Kadina and Ardrossan.",
-      "issued": "2026-09-13T05:50:18+09:30",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-09-13T06:30:34+09:30",
+      "cancelled": true,
       "areas": [
         {
           "aac": "SA_PW008",
           "description": "Mid North",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "SA_PW002",
           "description": "Yorke Peninsula",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -83,7 +83,7 @@
         "type": "Bush Fire",
         "size": "3015 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 12 Sep 2026 20:48:44 GMT",
+        "updated": "Sat, 12 Sep 2026 21:20:44 GMT",
         "description": "KOOKABOOKRA RD, KOOKABOOKRA 2370",
         "council": "Armidale",
         "lat": -30.036502379,
@@ -778,7 +778,7 @@
         "type": "Bush Fire",
         "size": "2778 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 12 Sep 2026 20:48:44 GMT",
+        "updated": "Sat, 12 Sep 2026 21:20:44 GMT",
         "description": "BILLIRIMBA RD, ROCKY RIVER 2372",
         "council": "Tenterfield",
         "lat": -29.162064771,
@@ -786,20 +786,24 @@
         "polys": [
           [
             [
-              152.159000477,
-              -29.1664396799999
+              152.171605033,
+              -29.199979941
             ],
             [
-              152.158910751,
-              -29.166654587
+              152.171252221,
+              -29.201209923
             ],
             [
-              152.158116435,
-              -29.166530673
+              152.16902219,
+              -29.200131266
             ],
             [
-              152.159000477,
-              -29.1664396799999
+              152.170939287,
+              -29.1974828259999
+            ],
+            [
+              152.171605033,
+              -29.199979941
             ]
           ]
         ],
@@ -813,7 +817,7 @@
         "type": "Bush Fire",
         "size": "92 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 12 Sep 2026 20:48:44 GMT",
+        "updated": "Sat, 12 Sep 2026 21:20:44 GMT",
         "description": "CUNGLEBUNG RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.816923134,
@@ -1452,7 +1456,7 @@
         "type": "Bush Fire",
         "size": "577 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 12 Sep 2026 20:48:44 GMT",
+        "updated": "Sat, 12 Sep 2026 21:20:44 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.940981888,
@@ -2155,7 +2159,7 @@
         "type": "Bush Fire",
         "size": "3 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 12 Sep 2026 20:48:44 GMT",
+        "updated": "Sat, 12 Sep 2026 21:20:44 GMT",
         "description": "GIANTS CREEK RD, GIANTS CREEK 2328",
         "council": "Muswellbrook",
         "lat": -32.3154830939999,
@@ -2290,7 +2294,7 @@
         "type": "Bush Fire",
         "size": "1830 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sat, 12 Sep 2026 20:48:44 GMT",
+        "updated": "Sat, 12 Sep 2026 21:20:44 GMT",
         "description": "BROWNS CAMP RD, CHAELUNDI 2460",
         "council": "Clarence Valley",
         "lat": -30.0302007679999,
@@ -2325,7 +2329,7 @@
         "type": "Bush Fire",
         "size": "7378 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sat, 12 Sep 2026 20:48:44 GMT",
+        "updated": "Sat, 12 Sep 2026 21:20:44 GMT",
         "description": "GUY FAWKES RIVER NATIONAL PARK THE GULF 2365",
         "council": "Clarence Valley",
         "lat": -30.197662796,
@@ -2333,20 +2337,20 @@
         "polys": [
           [
             [
-              152.320777202,
-              -30.269647888
+              152.361881572,
+              -30.342381647
             ],
             [
-              152.320972629,
-              -30.270046507
+              152.361757947,
+              -30.342392371
             ],
             [
-              152.320847726,
-              -30.2698735659999
+              152.361894089,
+              -30.3423679759999
             ],
             [
-              152.320777202,
-              -30.269647888
+              152.361881572,
+              -30.342381647
             ]
           ]
         ],
@@ -2374,6 +2378,21 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-09-12T21:01:29+00:00",
+        "description": "KALGOORLIE, CITY OF KALGOORLIE-BOULDER",
+        "lat": -30.7548,
+        "lng": 121.4692,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -2511,21 +2530,6 @@
       }
     ],
     "nt": [
-      {
-        "title": "Grass and Scrub Fire - ESSINGTON AV, GRAY",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-09-12T20:10:49+00:00",
-        "description": "ESSINGTON AV, GRAY",
-        "lat": -12.4878,
-        "lng": 130.9816,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
       {
         "title": "Bushfire - Girraween Road, GIRRAWEEN",
         "alertLevel": "",
