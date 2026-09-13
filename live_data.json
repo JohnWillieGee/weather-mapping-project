@@ -1,8 +1,26 @@
 {
-  "generated_utc": "2026-09-13T17:53:00.339402+00:00",
-  "last_checked_utc": "2026-09-13T17:53:00.339402+00:00",
-  "warning_count": 3,
+  "generated_utc": "2026-09-13T18:22:59.479590+00:00",
+  "last_checked_utc": "2026-09-13T18:22:59.479590+00:00",
+  "warning_count": 6,
   "warnings": [
+    {
+      "pid": "",
+      "title": "14/04:00 EST Marine Wind Warning Summary for New South Wales",
+      "type": "wind",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Sun, 13 Sep 2026 18:00:13 GMT"
+    },
+    {
+      "pid": "",
+      "title": "14/04:10 EST Marine Wind Warning Summary for Victoria",
+      "type": "wind",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Sun, 13 Sep 2026 18:10:22 GMT"
+    },
     {
       "pid": "",
       "title": "14/03:00 EST Marine Wind Warning Summary for Queensland",
@@ -11,6 +29,15 @@
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Sun, 13 Sep 2026 17:00:14 GMT"
+    },
+    {
+      "pid": "",
+      "title": "14/03:40 CST Marine Wind Warning Summary for South Australia",
+      "type": "wind",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
+      "desc": "",
+      "issued": "Sun, 13 Sep 2026 18:10:10 GMT"
     },
     {
       "pid": "",
@@ -23,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "14/00:47 EST Marine Wind Warning Summary for Tasmania",
+      "title": "14/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 13 Sep 2026 14:47:59 GMT"
+      "issued": "Sun, 13 Sep 2026 18:00:11 GMT"
     }
   ],
   "fetch_errors": {},
@@ -41,7 +68,7 @@
         "type": "Bush Fire",
         "size": "4562 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 13 Sep 2026 17:48:45 GMT",
+        "updated": "Sun, 13 Sep 2026 18:20:44 GMT",
         "description": "KOOKABOOKRA RD, KOOKABOOKRA 2370",
         "council": "Armidale",
         "lat": -30.036502379,
@@ -716,7 +743,7 @@
         "type": "Bush Fire",
         "size": "2804 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sun, 13 Sep 2026 17:48:45 GMT",
+        "updated": "Sun, 13 Sep 2026 18:20:44 GMT",
         "description": "BILLIRIMBA RD, ROCKY RIVER 2372",
         "council": "Tenterfield",
         "lat": -29.162064771,
@@ -2227,7 +2254,7 @@
         "type": "Bush Fire",
         "size": "92 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 13 Sep 2026 17:48:45 GMT",
+        "updated": "Sun, 13 Sep 2026 18:20:44 GMT",
         "description": "CUNGLEBUNG RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.816923134,
@@ -2866,7 +2893,7 @@
         "type": "Bush Fire",
         "size": "577 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 13 Sep 2026 17:48:45 GMT",
+        "updated": "Sun, 13 Sep 2026 18:20:44 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.940981888,
@@ -3569,7 +3596,7 @@
         "type": "Bush Fire",
         "size": "1837 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sun, 13 Sep 2026 17:48:45 GMT",
+        "updated": "Sun, 13 Sep 2026 18:20:44 GMT",
         "description": "BROWNS CAMP RD, CHAELUNDI 2460",
         "council": "Clarence Valley",
         "lat": -30.0302007679999,
@@ -7390,13 +7417,115 @@
         }
       ]
     },
+    "NSW": {
+      "state": "NSW",
+      "product": "IDN20400",
+      "issued_utc": "2026-09-13T18:00:00Z",
+      "overview": [
+        "Gale Warning for Tuesday for Eden Coast",
+        "Strong Wind Warning for Tuesday for Hunter Coast, Sydney Coast, Sydney Enclosed Waters, Illawarra Coast and Batemans Coast"
+      ],
+      "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "Eden Coast: Montague Island to Gabo Island"
+          ],
+          "aac_codes": [
+            "NSW_MW001"
+          ],
+          "summary": "Eden Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Hunter Coast: Seal Rocks to Broken Bay",
+            "Sydney Coast: Broken Bay to Port Hacking",
+            "Sydney Enclosed Waters",
+            "Illawarra Coast: Port Hacking to Ulladulla",
+            "Batemans Coast: Ulladulla to Montague Island"
+          ],
+          "aac_codes": [
+            "NSW_MW005",
+            "NSW_MW004",
+            "NSW_MW009",
+            "NSW_MW003",
+            "NSW_MW002"
+          ],
+          "summary": "Sydney Enclosed Waters, Hunter Coast, Sydney Coast, Illawarra Coast and Batemans Coast"
+        }
+      ]
+    },
+    "VIC": {
+      "state": "VIC",
+      "product": "IDV20600",
+      "issued_utc": "2026-09-13T18:10:00Z",
+      "overview": [
+        "Gale Warning for Tuesday for East Gippsland Coast",
+        "Strong Wind Warning for Tuesday for West Coast, Central Coast, Central Gippsland Coast, Port Phillip and Western Port"
+      ],
+      "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
+          ],
+          "aac_codes": [
+            "VIC_MW004"
+          ],
+          "summary": "East Gippsland Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "West Coast: SA-VIC Border to Cape Otway",
+            "Central Coast: Cape Otway to Wilsons Promontory",
+            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
+            "Port Phillip",
+            "Western Port"
+          ],
+          "aac_codes": [
+            "VIC_MW001",
+            "VIC_MW002",
+            "VIC_MW003",
+            "VIC_MW005",
+            "VIC_MW006"
+          ],
+          "summary": "Port Phillip, Western Port, West Coast, Central Coast and Central Gippsland Coast"
+        }
+      ]
+    },
+    "SA": {
+      "state": "SA",
+      "product": "IDS20201",
+      "issued_utc": "2026-09-13T18:10:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
+          ],
+          "aac_codes": [
+            "SA_MW010"
+          ],
+          "summary": "Lower South East Coast"
+        }
+      ]
+    },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-09-13T14:47:52Z",
+      "issued_utc": "2026-09-13T18:00:00Z",
       "overview": [
         "Gale Warning for Monday for South West Coast",
-        "Strong Wind Warning for Monday for Far North West Coast, Central North Coast, Central West Coast, Upper East Coast, Storm Bay, East of Flinders Island, Banks Strait and Franklin Sound and South East Coast"
+        "Strong Wind Warning for Monday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, South East Coast, Central West Coast and Storm Bay",
+        "Strong Wind Warning for Tuesday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast, South West Coast, Central West Coast, Frederick Henry Bay and Norfolk Bay, Storm Bay and Channel"
       ],
       "hazards": [
         {
