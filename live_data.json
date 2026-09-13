@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-13T14:23:00.429168+00:00",
-  "last_checked_utc": "2026-09-13T14:23:00.429168+00:00",
+  "generated_utc": "2026-09-13T14:53:02.878541+00:00",
+  "last_checked_utc": "2026-09-13T14:53:02.878541+00:00",
   "warning_count": 3,
   "warnings": [
     {
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "13/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "14/00:47 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 13 Sep 2026 12:00:11 GMT"
+      "issued": "Sun, 13 Sep 2026 14:47:59 GMT"
     }
   ],
   "fetch_errors": {},
@@ -41,7 +41,7 @@
         "type": "Bush Fire",
         "size": "4562 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 13 Sep 2026 14:20:44 GMT",
+        "updated": "Sun, 13 Sep 2026 14:48:44 GMT",
         "description": "KOOKABOOKRA RD, KOOKABOOKRA 2370",
         "council": "Armidale",
         "lat": -30.036502379,
@@ -716,7 +716,7 @@
         "type": "Bush Fire",
         "size": "2804 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sun, 13 Sep 2026 14:20:44 GMT",
+        "updated": "Sun, 13 Sep 2026 14:48:44 GMT",
         "description": "BILLIRIMBA RD, ROCKY RIVER 2372",
         "council": "Tenterfield",
         "lat": -29.162064771,
@@ -2227,7 +2227,7 @@
         "type": "Bush Fire",
         "size": "92 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 13 Sep 2026 14:20:44 GMT",
+        "updated": "Sun, 13 Sep 2026 14:48:44 GMT",
         "description": "CUNGLEBUNG RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.816923134,
@@ -2866,7 +2866,7 @@
         "type": "Bush Fire",
         "size": "577 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 13 Sep 2026 14:20:44 GMT",
+        "updated": "Sun, 13 Sep 2026 14:48:44 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.940981888,
@@ -3569,7 +3569,7 @@
         "type": "Bush Fire",
         "size": "1837 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sun, 13 Sep 2026 14:20:44 GMT",
+        "updated": "Sun, 13 Sep 2026 14:48:44 GMT",
         "description": "BROWNS CAMP RD, CHAELUNDI 2460",
         "council": "Clarence Valley",
         "lat": -30.0302007679999,
@@ -7359,25 +7359,47 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-09-13T12:00:00Z",
+      "issued_utc": "2026-09-13T14:47:52Z",
       "overview": [
-        "Strong Wind Warning for Sunday for South West Coast and Central West Coast",
         "Gale Warning for Monday for South West Coast",
-        "Strong Wind Warning for Monday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, South East Coast, Central West Coast and Storm Bay"
+        "Strong Wind Warning for Monday for Far North West Coast, Central North Coast, Central West Coast, Upper East Coast, Storm Bay, East of Flinders Island, Banks Strait and Franklin Sound and South East Coast"
       ],
       "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "South West Coast: South East Cape to Low Rocky Point"
+          ],
+          "aac_codes": [
+            "TAS_MW007"
+          ],
+          "summary": "South West Coast"
+        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "South West Coast: South East Cape to Low Rocky Point",
-            "Central West Coast: Low Rocky Point to Sandy Cape"
+            "Far North West Coast: Sandy Cape to Stanley",
+            "Central North Coast: Stanley to Northern Tip of Flinders Island",
+            "Banks Strait and Franklin Sound",
+            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
+            "Upper East Coast: St Helens Point to Wineglass Bay",
+            "South East Coast: Tasman Island to South East Cape",
+            "Central West Coast: Low Rocky Point to Sandy Cape",
+            "Storm Bay"
           ],
           "aac_codes": [
-            "TAS_MW007",
-            "TAS_MW008"
+            "TAS_MW001",
+            "TAS_MW002",
+            "TAS_MW009",
+            "TAS_MW003",
+            "TAS_MW004",
+            "TAS_MW006",
+            "TAS_MW008",
+            "TAS_MW014"
           ],
-          "summary": "South West Coast and Central West Coast"
+          "summary": "Storm Bay, Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, South East Coast and Central West Coast"
         }
       ]
     }
