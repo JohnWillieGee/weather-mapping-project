@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-14T08:22:56.209869+00:00",
-  "last_checked_utc": "2026-09-14T08:22:56.209869+00:00",
+  "generated_utc": "2026-09-14T08:52:58.654581+00:00",
+  "last_checked_utc": "2026-09-14T08:52:58.654581+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -77,22 +77,22 @@
     },
     {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for South Interior",
+      "title": "Cancellation of Severe Thunderstorm Warning for South Interior",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours.",
-      "issued": "2026-09-14T13:46:19+08:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-09-14T16:42:23+08:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "WA_PW007",
           "description": "South Interior",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDD20320",
@@ -120,17 +120,17 @@
   "incidents": {
     "nsw": [
       {
-        "title": "Amaroo Dr, Moree",
+        "title": "CLEMENTSON DR, ROSSMORE",
         "alertLevel": "Advice",
         "status": "Not yet controlled",
         "type": "Grass Fire",
         "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 14 Sep 2026 08:20:41 GMT",
-        "description": "Amaroo Dr, Moree, NSW 2400",
-        "council": "Moree Plains",
-        "lat": -29.484406,
-        "lng": 149.838801,
+        "agency": "Rural Fire Service",
+        "updated": "Mon, 14 Sep 2026 08:48:41 GMT",
+        "description": "CLEMENTSON DR, ROSSMORE 2557",
+        "council": "Liverpool",
+        "lat": -33.9163859999999,
+        "lng": 150.767776,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -142,7 +142,7 @@
         "type": "Bush Fire",
         "size": "115 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 14 Sep 2026 08:20:41 GMT",
+        "updated": "Mon, 14 Sep 2026 08:48:41 GMT",
         "description": "CUNGLEBUNG RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.816923134,
@@ -417,7 +417,7 @@
         "type": "Bush Fire",
         "size": "577 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 14 Sep 2026 08:20:41 GMT",
+        "updated": "Mon, 14 Sep 2026 08:48:41 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.940981888,
@@ -1068,7 +1068,7 @@
         "type": "Bush Fire",
         "size": "101 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 14 Sep 2026 08:20:41 GMT",
+        "updated": "Mon, 14 Sep 2026 08:48:41 GMT",
         "description": "HEBDEN RD, RAVENSWORTH 2330",
         "council": "Singleton",
         "lat": -32.357270709,
@@ -1287,7 +1287,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 14 Sep 2026 08:20:41 GMT",
+        "updated": "Mon, 14 Sep 2026 08:48:41 GMT",
         "description": "Memphis St, Minto, NSW 2566",
         "council": "Campbelltown",
         "lat": -34.015209,
@@ -1303,7 +1303,7 @@
         "type": "Bush Fire",
         "size": "1967 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Mon, 14 Sep 2026 08:20:41 GMT",
+        "updated": "Mon, 14 Sep 2026 08:48:41 GMT",
         "description": "BROWNS CAMP RD, CHAELUNDI 2460",
         "council": "Clarence Valley",
         "lat": -30.0302007679999,
@@ -1332,29 +1332,13 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
-        "title": "Rockvale Rd, Armidale",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 14 Sep 2026 08:20:41 GMT",
-        "description": "Rockvale Rd, Armidale, NSW 2350",
-        "council": "Armidale",
-        "lat": -30.4952949999999,
-        "lng": 151.68321,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
         "title": "Seery Road",
         "alertLevel": "Advice",
         "status": "Not yet controlled",
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 14 Sep 2026 08:20:41 GMT",
+        "updated": "Mon, 14 Sep 2026 08:48:41 GMT",
         "description": "SEERY RD, KIPPENDUFF 2469",
         "council": "Richmond Valley",
         "lat": -29.1087279999999,
@@ -1367,16 +1351,16 @@
     "vic": [],
     "qld": [
       {
-        "title": "STAY INFORMED - Mount Archer (Rockhampton) - fire as at 3:23pm Sunday, 13 September 2026",
+        "title": "STAY INFORMED - Mount Archer (Rockhampton) - fire as at 6:18pm Monday, 14 September 2026",
         "alertLevel": "Advice",
         "status": "",
         "type": "Bush Fire",
         "size": "",
         "agency": "QFD",
         "updated": "",
-        "description": "Arnold Drive, Mount Archer",
-        "lat": -23.36798527453915,
-        "lng": 150.59668069590555,
+        "description": "Mount Archer, Frenchville and Nerimbera ",
+        "lat": -23.37299357631362,
+        "lng": 150.57836921074372,
         "state": "QLD",
         "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
       }
@@ -1384,6 +1368,36 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire Advice STAY INFORMED - DURACK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-09-14T08:40:11.721+00:00",
+        "description": "",
+        "lat": -16.4001,
+        "lng": 128.2115,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-09-14T08:34:11+00:00",
+        "description": "STIRLING, CITY OF STIRLING",
+        "lat": -31.8751,
+        "lng": 115.8073,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice THREAT IS REDUCED - WATERBANK",
         "alertLevel": "Advice",
@@ -1536,21 +1550,6 @@
       }
     ],
     "nt": [
-      {
-        "title": "Grass and Scrub Fire - Unknown",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-09-14T07:44:55+00:00",
-        "description": "",
-        "lat": -12.3367,
-        "lng": 130.8936,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
       {
         "title": "Bushfire - Girraween Road, GIRRAWEEN",
         "alertLevel": "Advice",
