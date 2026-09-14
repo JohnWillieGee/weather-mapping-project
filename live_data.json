@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-09-14T16:52:55.399632+00:00",
-  "last_checked_utc": "2026-09-14T16:52:55.399632+00:00",
-  "warning_count": 9,
+  "generated_utc": "2026-09-14T17:22:55.004687+00:00",
+  "last_checked_utc": "2026-09-14T17:22:55.004687+00:00",
+  "warning_count": 10,
   "warnings": [
     {
       "pid": "",
@@ -29,6 +29,15 @@
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Mon, 14 Sep 2026 12:00:21 GMT"
+    },
+    {
+      "pid": "",
+      "title": "15/03:00 EST Marine Wind Warning Summary for Queensland",
+      "type": "wind",
+      "state": "QLD",
+      "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Mon, 14 Sep 2026 17:00:14 GMT"
     },
     {
       "pid": "",
@@ -82,17 +91,17 @@
       "state": "NT",
       "link": "",
       "desc": "Extreme Fire Danger",
-      "issued": "2026-09-14T16:04:00+09:30",
+      "issued": "2026-09-15T02:46:13+09:30",
       "cancelled": false,
       "areas": [
         {
           "aac": "NT_FW001",
           "description": "Darwin and Adelaide River",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "EXT",
-      "hazardPhase": "NEW"
+      "hazardPhase": "REN"
     }
   ],
   "fetch_errors": {
@@ -107,7 +116,7 @@
         "type": "Bush Fire",
         "size": "115 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 14 Sep 2026 16:48:41 GMT",
+        "updated": "Mon, 14 Sep 2026 17:20:40 GMT",
         "description": "CUNGLEBUNG RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.816923134,
@@ -382,7 +391,7 @@
         "type": "Bush Fire",
         "size": "745 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 14 Sep 2026 16:48:41 GMT",
+        "updated": "Mon, 14 Sep 2026 17:20:40 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.940981888,
@@ -1033,7 +1042,7 @@
         "type": "Bush Fire",
         "size": "101 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 14 Sep 2026 16:48:41 GMT",
+        "updated": "Mon, 14 Sep 2026 17:20:40 GMT",
         "description": "HEBDEN RD, RAVENSWORTH 2330",
         "council": "Singleton",
         "lat": -32.357270709,
@@ -1252,7 +1261,7 @@
         "type": "Bush Fire",
         "size": "1967 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Mon, 14 Sep 2026 16:48:41 GMT",
+        "updated": "Mon, 14 Sep 2026 17:20:40 GMT",
         "description": "BROWNS CAMP RD, CHAELUNDI 2460",
         "council": "Clarence Valley",
         "lat": -30.0302007679999,
@@ -1287,7 +1296,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 14 Sep 2026 16:48:41 GMT",
+        "updated": "Mon, 14 Sep 2026 17:20:40 GMT",
         "description": "SEERY RD, KIPPENDUFF 2469",
         "council": "Richmond Valley",
         "lat": -29.1087279999999,
@@ -4581,6 +4590,33 @@
     }
   },
   "marine_warnings": {
+    "QLD": {
+      "state": "QLD",
+      "product": "IDQ20085",
+      "issued_utc": "2026-09-14T17:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Capricornia Coast: St Lawrence to Burnett Heads",
+            "K'gari Coast: Sandy Cape to Double Island Point",
+            "Sunshine Coast Waters: Double Island Point to Cape Moreton",
+            "Moreton Bay",
+            "Gold Coast Waters: Cape Moreton to Point Danger"
+          ],
+          "aac_codes": [
+            "QLD_MW009",
+            "QLD_MW011",
+            "QLD_MW012",
+            "QLD_MW013",
+            "QLD_MW014"
+          ],
+          "summary": "Capricornia Coast, K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
+        }
+      ]
+    },
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
