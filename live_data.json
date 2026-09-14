@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-09-14T05:22:55.238065+00:00",
-  "last_checked_utc": "2026-09-14T05:22:55.238065+00:00",
-  "warning_count": 9,
+  "generated_utc": "2026-09-14T05:52:55.801228+00:00",
+  "last_checked_utc": "2026-09-14T05:52:55.801228+00:00",
+  "warning_count": 10,
   "warnings": [
     {
       "pid": "",
@@ -83,6 +83,25 @@
       "link": "http://reg.bom.gov.au/tas/warnings/bushwalker.shtml",
       "desc": "",
       "issued": "Sun, 13 Sep 2026 22:46:36 GMT"
+    },
+    {
+      "pid": "IDW21033",
+      "title": "Severe Thunderstorm Warning for South Interior",
+      "type": "thunderstorm",
+      "state": "WA",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours.",
+      "issued": "2026-09-14T13:46:19+08:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "WA_PW007",
+          "description": "South Interior",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {
@@ -91,37 +110,34 @@
   "incidents": {
     "nsw": [
       {
-        "title": "BILLIRIMBA RD, ROCKY RIVER",
+        "title": "COALDALE RD, FORTIS CREEK",
         "alertLevel": "Advice",
         "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "2806 ha",
-        "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Mon, 14 Sep 2026 05:20:41 GMT",
-        "description": "BILLIRIMBA RD, ROCKY RIVER 2372",
-        "council": "Tenterfield",
-        "lat": -29.162064771,
-        "lng": 152.200456905,
-        "polys": [
-          [
-            [
-              152.143409348,
-              -29.204877385
-            ],
-            [
-              152.143334808,
-              -29.204959913
-            ],
-            [
-              152.143412169,
-              -29.2047903119999
-            ],
-            [
-              152.143409348,
-              -29.204877385
-            ]
-          ]
-        ],
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Mon, 14 Sep 2026 05:48:41 GMT",
+        "description": "COALDALE RD, FORTIS CREEK 2460",
+        "council": "Clarence Valley",
+        "lat": -29.522839,
+        "lng": 152.849221,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Colyer St, Crookwell",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Mon, 14 Sep 2026 05:48:41 GMT",
+        "description": "Colyer St, Crookwell, NSW 2583",
+        "council": "Upper Lachlan",
+        "lat": -34.457703,
+        "lng": 149.474319,
+        "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
@@ -132,7 +148,7 @@
         "type": "Bush Fire",
         "size": "92 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 14 Sep 2026 05:20:41 GMT",
+        "updated": "Mon, 14 Sep 2026 05:48:41 GMT",
         "description": "CUNGLEBUNG RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.816923134,
@@ -407,7 +423,7 @@
         "type": "Bush Fire",
         "size": "577 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 14 Sep 2026 05:20:41 GMT",
+        "updated": "Mon, 14 Sep 2026 05:48:41 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.940981888,
@@ -442,7 +458,7 @@
         "type": "Bush Fire",
         "size": "1967 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Mon, 14 Sep 2026 05:20:41 GMT",
+        "updated": "Mon, 14 Sep 2026 05:48:41 GMT",
         "description": "BROWNS CAMP RD, CHAELUNDI 2460",
         "council": "Clarence Valley",
         "lat": -30.0302007679999,
@@ -1093,7 +1109,7 @@
         "type": "Bush Fire",
         "size": "9 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 14 Sep 2026 05:20:41 GMT",
+        "updated": "Mon, 14 Sep 2026 05:48:41 GMT",
         "description": "NICLINS RD, MANGROVE MOUNTAIN 2250",
         "council": "Central Coast",
         "lat": -33.309085,
@@ -1101,52 +1117,40 @@
         "polys": [
           [
             [
-              151.208568,
-              -33.3083540009999
+              151.209224999,
+              -33.308152
             ],
             [
-              151.208533,
-              -33.3083520009999
+              151.208953,
+              -33.308350001
             ],
             [
-              151.208455,
-              -33.3083819999999
+              151.208674,
+              -33.308395
             ],
             [
-              151.208245,
-              -33.308545001
+              151.208651999,
+              -33.308370001
             ],
             [
-              151.208163,
-              -33.3085810009999
-            ],
-            [
-              151.208063,
-              -33.3085879999999
-            ],
-            [
-              151.208059,
-              -33.3085599999999
-            ],
-            [
-              151.208083,
-              -33.30851
-            ],
-            [
-              151.208247,
-              -33.3084190009999
-            ],
-            [
-              151.208509,
-              -33.3083350009999
-            ],
-            [
-              151.208568,
+              151.20877,
               -33.3083360009999
             ],
             [
-              151.208568,
-              -33.3083540009999
+              151.208908,
+              -33.308252001
+            ],
+            [
+              151.209114,
+              -33.3080440009999
+            ],
+            [
+              151.209155,
+              -33.308026
+            ],
+            [
+              151.209224999,
+              -33.308152
             ]
           ]
         ],
@@ -1156,11 +1160,11 @@
       {
         "title": "Reginald Ward St, South Kempsey",
         "alertLevel": "Advice",
-        "status": "Not yet controlled",
+        "status": "Being controlled",
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 14 Sep 2026 05:20:41 GMT",
+        "updated": "Mon, 14 Sep 2026 05:48:41 GMT",
         "description": "Reginald Ward St, South Kempsey, NSW 2440",
         "council": "Kempsey",
         "lat": -31.0960449999999,
@@ -1190,6 +1194,36 @@
     "sa": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-09-14T05:37:42+00:00",
+        "description": "BOYA, SHIRE OF MUNDARING",
+        "lat": -31.9211,
+        "lng": 116.0586,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-09-14T05:36:37+00:00",
+        "description": "MUNDARING, SHIRE OF MUNDARING",
+        "lat": -31.895,
+        "lng": 116.1731,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - WATERBANK",
         "alertLevel": "Advice",
@@ -1257,21 +1291,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-09-12T08:05:05+00:00",
-        "description": "HALLS CREEK, SHIRE OF HALLS CREEK",
-        "lat": -18.2106,
-        "lng": 127.663,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-09-11T06:17:52+00:00",
         "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -16.916,
@@ -1323,21 +1342,6 @@
         "description": "LEE POINT RD, LEE POINT",
         "lat": -12.3428,
         "lng": 130.8938,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - WHITEGATE -, UNDOOLYA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-09-14T04:47:19+00:00",
-        "description": "WHITEGATE -, UNDOOLYA",
-        "lat": -23.6933,
-        "lng": 133.9147,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -1405,7 +1409,7 @@
     ],
     "act": []
   },
-  "incident_count": 21,
+  "incident_count": 22,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
