@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-15T23:22:55.567292+00:00",
-  "last_checked_utc": "2026-09-15T23:22:55.567292+00:00",
+  "generated_utc": "2026-09-15T23:52:54.299275+00:00",
+  "last_checked_utc": "2026-09-15T23:52:54.299275+00:00",
   "warning_count": 12,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "16/09:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "16/09:50 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 15 Sep 2026 23:00:12 GMT"
+      "issued": "Tue, 15 Sep 2026 23:50:07 GMT"
     },
     {
       "pid": "",
@@ -144,7 +144,7 @@
         "type": "Bush Fire",
         "size": "747 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 15 Sep 2026 23:20:41 GMT",
+        "updated": "Tue, 15 Sep 2026 23:48:40 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.940981888,
@@ -783,7 +783,7 @@
         "type": "Bush Fire",
         "size": "1986 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Tue, 15 Sep 2026 23:20:41 GMT",
+        "updated": "Tue, 15 Sep 2026 23:48:40 GMT",
         "description": "BROWNS CAMP RD, CHAELUNDI 2460",
         "council": "Clarence Valley",
         "lat": -30.0302007679999,
@@ -818,7 +818,7 @@
         "type": "Bush Fire",
         "size": "80 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 15 Sep 2026 23:20:41 GMT",
+        "updated": "Tue, 15 Sep 2026 23:48:40 GMT",
         "description": "PECKHAMS RD, LIONSVILLE 2460",
         "council": "Clarence Valley",
         "lat": -29.142391468,
@@ -937,7 +937,7 @@
         "type": "Bush Fire",
         "size": "156 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 15 Sep 2026 23:20:41 GMT",
+        "updated": "Tue, 15 Sep 2026 23:48:40 GMT",
         "description": "SEERY RD, KIPPENDUFF 2469",
         "council": "Richmond Valley",
         "lat": -29.1176662839999,
@@ -1158,21 +1158,6 @@
     "sa": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Report of Smoke",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-09-15T23:08:10+00:00",
-        "description": "WOODBRIDGE, CITY OF SWAN",
-        "lat": -31.8936,
-        "lng": 115.9978,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1493,7 +1478,7 @@
     ],
     "act": []
   },
-  "incident_count": 27,
+  "incident_count": 26,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4500,10 +4485,10 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-09-15T23:00:00Z",
+      "issued_utc": "2026-09-15T23:49:58Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters",
-        "Strong Wind Warning for Thursday for North East Gulf of Carpentaria, Peninsula Coast, Cooktown Coast, Townsville Coast, Mackay Coast, Capricornia Coast, K'gari Coast, Sunshine Coast Waters and Gold Coast Waters"
+        "Strong Wind Warning for Wednesday for Gold Coast Waters, Moreton Bay, K'gari Coast and Sunshine Coast Waters",
+        "Strong Wind Warning for Thursday for Capricornia Coast, Mackay Coast, Townsville Coast, Peninsula Coast, Cooktown Coast, Sunshine Coast Waters, Gold Coast Waters, North East Gulf of Carpentaria and K'gari Coast"
       ],
       "hazards": [
         {
@@ -4528,10 +4513,10 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-09-15T20:42:50Z",
+      "issued_utc": "2026-09-15T23:49:56Z",
       "overview": [
-        "Gale Warning for Wednesday for Byron Coast, Coffs Coast, Illawarra Coast, Eden Coast and Batemans Coast",
-        "Strong Wind Warning for Wednesday for Macquarie Coast, Sydney Coast, Hunter Coast and Sydney Enclosed Waters",
+        "Gale Warning for Wednesday for Byron Coast, Coffs Coast and Eden Coast",
+        "Strong Wind Warning for Wednesday for Macquarie Coast, Illawarra Coast, Batemans Coast, Sydney Coast, Hunter Coast and Sydney Enclosed Waters",
         "Strong Wind Warning for Thursday for Illawarra Coast, Sydney Coast, Coffs Coast, Byron Coast, Eden Coast, Macquarie Coast, Hunter Coast, Sydney Enclosed Waters and Batemans Coast"
       ],
       "hazards": [
@@ -4541,18 +4526,14 @@
           "zones": [
             "Byron Coast: Point Danger to Wooli",
             "Coffs Coast: Wooli to Smoky Cape",
-            "Illawarra Coast: Port Hacking to Ulladulla",
-            "Batemans Coast: Ulladulla to Montague Island",
             "Eden Coast: Montague Island to Gabo Island"
           ],
           "aac_codes": [
             "NSW_MW008",
             "NSW_MW007",
-            "NSW_MW003",
-            "NSW_MW002",
             "NSW_MW001"
           ],
-          "summary": "Byron Coast, Coffs Coast, Illawarra Coast, Batemans Coast and Eden Coast"
+          "summary": "Byron Coast, Coffs Coast and Eden Coast"
         },
         {
           "level": "Strong Wind Warning",
@@ -4561,39 +4542,41 @@
             "Macquarie Coast: Smoky Cape to Seal Rocks",
             "Hunter Coast: Seal Rocks to Broken Bay",
             "Sydney Coast: Broken Bay to Port Hacking",
-            "Sydney Enclosed Waters"
+            "Sydney Enclosed Waters",
+            "Illawarra Coast: Port Hacking to Ulladulla",
+            "Batemans Coast: Ulladulla to Montague Island"
           ],
           "aac_codes": [
             "NSW_MW006",
             "NSW_MW005",
             "NSW_MW004",
-            "NSW_MW009"
+            "NSW_MW009",
+            "NSW_MW003",
+            "NSW_MW002"
           ],
-          "summary": "Sydney Enclosed Waters, Macquarie Coast, Hunter Coast and Sydney Coast"
+          "summary": "Sydney Enclosed Waters, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast and Batemans Coast"
         }
       ]
     },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-09-15T18:10:00Z",
+      "issued_utc": "2026-09-15T23:49:58Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for Central Gippsland Coast and East Gippsland Coast",
-        "Strong Wind Warning for Thursday for Central Gippsland Coast and East Gippsland Coast"
+        "Strong Wind Warning for Wednesday for East Gippsland Coast",
+        "Strong Wind Warning for Thursday for East Gippsland Coast and Central Gippsland Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
             "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
           ],
           "aac_codes": [
-            "VIC_MW003",
             "VIC_MW004"
           ],
-          "summary": "Central Gippsland Coast and East Gippsland Coast"
+          "summary": "East Gippsland Coast"
         }
       ]
     },
