@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-09-16T11:53:01.272373+00:00",
-  "last_checked_utc": "2026-09-16T11:53:01.272373+00:00",
+  "generated_utc": "2026-09-16T12:22:58.334097+00:00",
+  "last_checked_utc": "2026-09-16T12:22:58.334097+00:00",
   "warning_count": 13,
   "warnings": [
     {
       "pid": "",
-      "title": "16/17:41 EST Marine Wind Warning Summary for New South Wales",
+      "title": "16/22:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 16 Sep 2026 07:41:12 GMT"
+      "issued": "Wed, 16 Sep 2026 12:00:15 GMT"
     },
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "16/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "16/22:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 16 Sep 2026 06:15:19 GMT"
+      "issued": "Wed, 16 Sep 2026 12:00:25 GMT"
     },
     {
       "pid": "",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "16/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "16/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 16 Sep 2026 06:05:12 GMT"
+      "issued": "Wed, 16 Sep 2026 12:00:11 GMT"
     },
     {
       "pid": "IDW30000",
@@ -163,7 +163,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 16 Sep 2026 11:47:35 GMT",
+        "updated": "Wed, 16 Sep 2026 12:19:36 GMT",
         "description": "ARRAWARRA RD, ARRAWARRA HEADLAND 2456",
         "council": "Coffs Harbour",
         "lat": -30.071724,
@@ -179,7 +179,7 @@
         "type": "Bush Fire",
         "size": "166 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 16 Sep 2026 11:47:35 GMT",
+        "updated": "Wed, 16 Sep 2026 12:19:36 GMT",
         "description": "SEERY RD, KIPPENDUFF 2469",
         "council": "Richmond Valley",
         "lat": -29.1176662839999,
@@ -443,16 +443,31 @@
     "tas": [],
     "wa": [
       {
-        "title": "Fire",
+        "title": "Structure Fire",
         "alertLevel": "",
         "status": "active",
-        "type": "Bush Fire",
+        "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-09-16T11:37:22+00:00",
-        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.7872,
-        "lng": 128.7468,
+        "updated": "2026-09-16T12:13:53+00:00",
+        "description": "KEWDALE, CITY OF KALAMUNDA",
+        "lat": -31.9936,
+        "lng": 115.98,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-09-16T12:09:22+00:00",
+        "description": "KEWDALE, CITY OF BELMONT",
+        "lat": -31.976,
+        "lng": 115.9401,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -820,6 +835,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - AMY JOHNSON AV, MARRARA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-09-16T12:14:40+00:00",
+        "description": "AMY JOHNSON AV, MARRARA",
+        "lat": -12.4091,
+        "lng": 130.9148,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Stockwell Road, BLACKMORE",
         "alertLevel": "",
         "status": "active",
@@ -1032,7 +1062,7 @@
     ],
     "act": []
   },
-  "incident_count": 45,
+  "incident_count": 47,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4067,11 +4097,11 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-09-16T07:41:00Z",
+      "issued_utc": "2026-09-16T12:00:00Z",
       "overview": [
-        "Gale Warning for Wednesday for Coffs Coast and Byron Coast",
-        "Strong Wind Warning for Wednesday for Eden Coast, Illawarra Coast, Sydney Coast, Macquarie Coast, Hunter Coast, Sydney Enclosed Waters and Batemans Coast",
-        "Strong Wind Warning for Thursday for Illawarra Coast, Sydney Coast, Coffs Coast, Byron Coast, Macquarie Coast, Hunter Coast, Sydney Enclosed Waters and Batemans Coast"
+        "Gale Warning for Wednesday for Byron Coast and Coffs Coast",
+        "Strong Wind Warning for Wednesday for Macquarie Coast, Hunter Coast, Sydney Coast, Sydney Enclosed Waters, Illawarra Coast, Batemans Coast and Eden Coast",
+        "Strong Wind Warning for Thursday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Sydney Enclosed Waters, Illawarra Coast and Batemans Coast"
       ],
       "hazards": [
         {
@@ -4115,22 +4145,21 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-09-16T06:15:00Z",
-      "overview": [
-        "Strong Wind Warning for Wednesday for East Gippsland Coast",
-        "Strong Wind Warning for Thursday for Central Gippsland Coast and East Gippsland Coast"
-      ],
+      "issued_utc": "2026-09-16T12:00:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
             "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
           ],
           "aac_codes": [
+            "VIC_MW003",
             "VIC_MW004"
           ],
-          "summary": "East Gippsland Coast"
+          "summary": "Central Gippsland Coast and East Gippsland Coast"
         }
       ]
     },
@@ -4156,7 +4185,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-09-16T06:05:00Z",
+      "issued_utc": "2026-09-16T12:00:00Z",
       "overview": [
         "Strong Wind Warning for Wednesday for Lower East Coast, South East Coast and South West Coast",
         "Gale Warning for Thursday for South East Coast and South West Coast",
