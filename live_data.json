@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-17T13:22:57.334686+00:00",
-  "last_checked_utc": "2026-09-17T13:22:57.334686+00:00",
+  "generated_utc": "2026-09-17T13:52:57.096867+00:00",
+  "last_checked_utc": "2026-09-17T13:52:57.096867+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "17/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "17/21:47 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 17 Sep 2026 11:01:14 GMT"
+      "issued": "Thu, 17 Sep 2026 13:47:04 GMT"
     },
     {
       "pid": "",
@@ -203,7 +203,7 @@
         "type": "Bush Fire",
         "size": "160 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 17 Sep 2026 13:19:36 GMT",
+        "updated": "Thu, 17 Sep 2026 13:47:36 GMT",
         "description": "Western end of Ogilvie Drive, TABULAM 2469",
         "council": "Tenterfield",
         "lat": -28.9660939409999,
@@ -590,7 +590,7 @@
         "type": "Bush Fire",
         "size": "5 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 17 Sep 2026 13:19:36 GMT",
+        "updated": "Thu, 17 Sep 2026 13:47:36 GMT",
         "description": "PUTTY 2330",
         "council": "Singleton",
         "lat": -32.79502,
@@ -685,7 +685,7 @@
         "type": "Bush Fire",
         "size": "309 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 17 Sep 2026 13:19:36 GMT",
+        "updated": "Thu, 17 Sep 2026 13:47:36 GMT",
         "description": "SEERY RD, KIPPENDUFF 2469",
         "council": "Richmond Valley",
         "lat": -29.1176662839999,
@@ -1100,7 +1100,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Thu, 17 Sep 2026 13:19:36 GMT",
+        "updated": "Thu, 17 Sep 2026 13:47:36 GMT",
         "description": "Taralga Rd, Goulburn, NSW 2580",
         "council": "Goulburn Mulwaree",
         "lat": -34.716405,
@@ -1348,21 +1348,6 @@
         "description": "DERBY, SHIRE OF DERBY/WEST KIMBERLEY",
         "lat": -17.465,
         "lng": 123.604,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-09-17T06:26:40+00:00",
-        "description": "GINGIN, SHIRE OF GINGIN",
-        "lat": -31.3433,
-        "lng": 115.9087,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1972,7 +1957,7 @@
     ],
     "act": []
   },
-  "incident_count": 61,
+  "incident_count": 60,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5083,27 +5068,41 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-09-17T11:01:00Z",
-      "overview": [],
+      "issued_utc": "2026-09-17T13:46:55Z",
+      "overview": [
+        "Gale Warning for Friday for Bunbury Geographe Coast and Leeuwin Coast",
+        "Strong Wind Warning for Friday for Lancelin Coast, Perth Coast, Esperance Coast and Perth Local Waters"
+      ],
       "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
+            "Leeuwin Coast: Cape Naturaliste to Walpole"
+          ],
+          "aac_codes": [
+            "WA_MW010",
+            "WA_MW011"
+          ],
+          "summary": "Bunbury Geographe Coast and Leeuwin Coast"
+        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
             "Lancelin Coast: Jurien Bay to Two Rocks",
             "Perth Coast: Two Rocks to Dawesville",
-            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
-            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Esperance Coast: Bremer Bay to Israelite Bay",
             "Perth Local Waters"
           ],
           "aac_codes": [
             "WA_MW008",
             "WA_MW009",
-            "WA_MW010",
-            "WA_MW011",
+            "WA_MW013",
             "WA_MW015"
           ],
-          "summary": "Perth Local Waters, Lancelin Coast, Perth Coast, Bunbury Geographe Coast and Leeuwin Coast"
+          "summary": "Perth Local Waters, Lancelin Coast, Perth Coast and Esperance Coast"
         }
       ]
     },
