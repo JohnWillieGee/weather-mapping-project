@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-09-17T11:53:02.639715+00:00",
-  "last_checked_utc": "2026-09-17T11:53:02.639715+00:00",
+  "generated_utc": "2026-09-17T12:22:59.348779+00:00",
+  "last_checked_utc": "2026-09-17T12:22:59.348779+00:00",
   "warning_count": 13,
   "warnings": [
     {
       "pid": "",
-      "title": "17/16:05 EST Marine Wind Warning Summary for New South Wales",
+      "title": "17/22:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 17 Sep 2026 06:05:16 GMT"
+      "issued": "Thu, 17 Sep 2026 12:00:13 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "17/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "17/22:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 17 Sep 2026 06:15:20 GMT"
+      "issued": "Thu, 17 Sep 2026 12:00:18 GMT"
     },
     {
       "pid": "",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "17/15:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "17/21:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Thu, 17 Sep 2026 06:00:12 GMT"
+      "issued": "Thu, 17 Sep 2026 12:00:09 GMT"
     },
     {
       "pid": "",
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "17/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "17/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 17 Sep 2026 06:05:12 GMT"
+      "issued": "Thu, 17 Sep 2026 12:00:11 GMT"
     },
     {
       "pid": "",
@@ -197,14 +197,30 @@
   "incidents": {
     "nsw": [
       {
-        "title": "OGLIVIE RD, TABULAM",
+        "title": "Frome St, Moree",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Thu, 17 Sep 2026 12:19:36 GMT",
+        "description": "Frome St, Moree, NSW 2400",
+        "council": "Moree Plains",
+        "lat": -29.4689339999999,
+        "lng": 149.842305,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "OGILIVIE RD, TABULAM",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "160 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 17 Sep 2026 11:47:37 GMT",
-        "description": "OGILVIE DR, TABULAM 2469",
+        "updated": "Thu, 17 Sep 2026 12:19:36 GMT",
+        "description": "Western end of Ogilvie Drive, TABULAM 2469",
         "council": "Tenterfield",
         "lat": -28.9660939409999,
         "lng": 152.489766491,
@@ -590,7 +606,7 @@
         "type": "Bush Fire",
         "size": "5 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 17 Sep 2026 11:47:37 GMT",
+        "updated": "Thu, 17 Sep 2026 12:19:36 GMT",
         "description": "PUTTY 2330",
         "council": "Singleton",
         "lat": -32.79502,
@@ -685,7 +701,7 @@
         "type": "Bush Fire",
         "size": "309 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 17 Sep 2026 11:47:37 GMT",
+        "updated": "Thu, 17 Sep 2026 12:19:36 GMT",
         "description": "SEERY RD, KIPPENDUFF 2469",
         "council": "Richmond Valley",
         "lat": -29.1176662839999,
@@ -1100,7 +1116,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Thu, 17 Sep 2026 11:47:37 GMT",
+        "updated": "Thu, 17 Sep 2026 12:19:36 GMT",
         "description": "Taralga Rd, Goulburn, NSW 2580",
         "council": "Goulburn Mulwaree",
         "lat": -34.716405,
@@ -1621,6 +1637,21 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-09-11T05:32:12+00:00",
+        "description": "CAMBALLIN, SHIRE OF DERBY/WEST KIMBERLEY",
+        "lat": -17.954,
+        "lng": 123.846,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
       }
     ],
     "nt": [
@@ -1957,7 +1988,7 @@
     ],
     "act": []
   },
-  "incident_count": 60,
+  "incident_count": 62,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5006,30 +5037,26 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-09-17T06:05:00Z",
+      "issued_utc": "2026-09-17T12:00:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Byron Coast: Point Danger to Wooli",
-            "Coffs Coast: Wooli to Smoky Cape",
             "Eden Coast: Montague Island to Gabo Island"
           ],
           "aac_codes": [
-            "NSW_MW008",
-            "NSW_MW007",
             "NSW_MW001"
           ],
-          "summary": "Byron Coast, Coffs Coast and Eden Coast"
+          "summary": "Eden Coast"
         }
       ]
     },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-09-17T06:15:00Z",
+      "issued_utc": "2026-09-17T12:00:00Z",
       "overview": [
         "Strong Wind Warning for Thursday for Central Gippsland Coast and East Gippsland Coast",
         "Strong Wind Warning for Friday for West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast"
@@ -5053,7 +5080,7 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-09-17T06:00:00Z",
+      "issued_utc": "2026-09-17T12:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -5099,12 +5126,12 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-09-17T06:05:00Z",
+      "issued_utc": "2026-09-17T12:00:00Z",
       "overview": [
-        "Gale Warning for Thursday for South West Coast and South East Coast",
-        "Strong Wind Warning for Thursday for Derwent Estuary, Channel, Central West Coast, Lower East Coast, Storm Bay, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island",
-        "Gale Warning for Friday for Upper East Coast, South West Coast, East of Flinders Island and South East Coast",
-        "Strong Wind Warning for Friday for Central West Coast, South West Lakes, Lower East Coast, Channel, Far North West Coast, Banks Strait and Franklin Sound and Central North Coast"
+        "Gale Warning for Thursday for South East Coast and South West Coast",
+        "Strong Wind Warning for Thursday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, Central West Coast, Derwent Estuary, Storm Bay and Channel",
+        "Gale Warning for Friday for Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, South East Coast, South West Coast, Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel, Central Plateau Lakes and South West Lakes",
+        "Strong Wind Warning for Friday for Far North West Coast, Central North Coast, Lower East Coast and Central West Coast"
       ],
       "hazards": [
         {
