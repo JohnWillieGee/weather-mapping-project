@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-09-19T03:52:43.168157+00:00",
-  "last_checked_utc": "2026-09-19T03:52:43.168157+00:00",
-  "warning_count": 7,
+  "generated_utc": "2026-09-19T04:22:41.490108+00:00",
+  "last_checked_utc": "2026-09-19T04:22:41.490108+00:00",
+  "warning_count": 8,
   "warnings": [
     {
       "pid": "",
@@ -56,6 +56,50 @@
       "link": "http://reg.bom.gov.au/nt/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Fri, 18 Sep 2026 23:00:11 GMT"
+    },
+    {
+      "pid": "IDV21037",
+      "title": "Severe Weather Warning for Wimmera, North East, South West, Central, West and South Gippsland, East Gippsland",
+      "type": "severe_weather",
+      "state": "VIC",
+      "link": "",
+      "desc": "For the GRAMPIANS: Strong to DAMAGING WINDS averaging 55 to 65 km/h with peak gusts of around 90 km/h are likely from around sunrise on Sunday to late Sunday afternoon. For the OTWAY RANGES: DAMAGING WIND GUSTS of around 90 km/h are likely from Sunday morning to late Sunday afternoon. For coastal areas, the chance of damaging wind gusts is lower than in the ranges and National Park. For the NORTH-EAST RANGES including ALPINE AREAS: DAMAGING WINDS averaging 65 to 75 km/h with peak gusts of around",
+      "issued": "2026-09-19T14:02:20+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "VIC_PW002",
+          "description": "Wimmera",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW004",
+          "description": "North East",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW009",
+          "description": "South West",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW007",
+          "description": "Central",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW006",
+          "description": "West and South Gippsland",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW005",
+          "description": "East Gippsland",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     },
     {
       "pid": "IDT21037",
@@ -127,12 +171,79 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 19 Sep 2026 03:47:40 GMT",
+        "updated": "Sat, 19 Sep 2026 04:19:40 GMT",
         "description": "ABUNDANCE RD, MEDOWIE 2318",
         "council": "Port Stephens",
-        "lat": -32.7517814629999,
-        "lng": 151.856002808,
-        "polys": [],
+        "lat": -32.758590698,
+        "lng": 151.859176636,
+        "polys": [
+          [
+            [
+              151.859161968,
+              -32.757630889
+            ],
+            [
+              151.860665787,
+              -32.757878353
+            ],
+            [
+              151.860661029,
+              -32.7578688359999
+            ],
+            [
+              151.861232099,
+              -32.7582138569999
+            ],
+            [
+              151.860780002,
+              -32.7597486089999
+            ],
+            [
+              151.86030411,
+              -32.75961774
+            ],
+            [
+              151.859828218,
+              -32.759474971
+            ],
+            [
+              151.859447503,
+              -32.7593559979999
+            ],
+            [
+              151.859185763,
+              -32.7593797929999
+            ],
+            [
+              151.858269671,
+              -32.75961774
+            ],
+            [
+              151.857948443,
+              -32.7595939449999
+            ],
+            [
+              151.858341054,
+              -32.758523187
+            ],
+            [
+              151.858567103,
+              -32.7583209329999
+            ],
+            [
+              151.858781254,
+              -32.757964014
+            ],
+            [
+              151.858864535,
+              -32.7579045269999
+            ],
+            [
+              151.859161968,
+              -32.757630889
+            ]
+          ]
+        ],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
@@ -143,7 +254,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 19 Sep 2026 03:47:40 GMT",
+        "updated": "Sat, 19 Sep 2026 04:19:40 GMT",
         "description": "BLACKCAMP, BLACK CAMP CREEK RD, CAMBRA 2420",
         "council": "Dungog",
         "lat": -32.472394,
@@ -159,7 +270,7 @@
         "type": "Bush Fire",
         "size": "68 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sat, 19 Sep 2026 03:47:40 GMT",
+        "updated": "Sat, 19 Sep 2026 04:19:40 GMT",
         "description": "LIBERATION TRL, DALMORTON 2460",
         "council": "Clarence Valley",
         "lat": -29.850740001,
@@ -360,13 +471,29 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
+        "title": "NX CHICHESTER RD",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Sat, 19 Sep 2026 04:19:40 GMT",
+        "description": "LAT 032.228905 LONG 151.642243 NX CHICHESTER RD, CHICHESTER 2420",
+        "council": "Dungog",
+        "lat": -32.228191376,
+        "lng": 151.642074585,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "OGILIVIE RD, TABULAM",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "347 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 19 Sep 2026 03:47:40 GMT",
+        "updated": "Sat, 19 Sep 2026 04:19:40 GMT",
         "description": "Western end of Ogilvie Drive, TABULAM 2469",
         "council": "Tenterfield",
         "lat": -28.9660939409999,
@@ -1067,13 +1194,29 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
+        "title": "PACIFIC (NORTHBOUND) MTWY",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Sat, 19 Sep 2026 04:19:40 GMT",
+        "description": "NTH BOUND M1 PACIFIC (NORTHBOUND) MTWY, BAR POINT 2083",
+        "council": "Central Coast",
+        "lat": -33.487075806,
+        "lng": 151.184112549,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "PEACOCK CREEK RD, PEACOCK CREEK",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 19 Sep 2026 03:47:40 GMT",
+        "updated": "Sat, 19 Sep 2026 04:19:40 GMT",
         "description": "PEACOCK CREEK RD, PEACOCK CREEK 2469",
         "council": "Kyogle",
         "lat": -28.685394287,
@@ -1089,7 +1232,7 @@
         "type": "Bush Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 19 Sep 2026 03:47:40 GMT",
+        "updated": "Sat, 19 Sep 2026 04:19:40 GMT",
         "description": "RIFLE RANGE RD, INVERELL 2360",
         "council": "Inverell",
         "lat": -29.8259944919999,
@@ -1339,10 +1482,39 @@
         "lng": 152.03715031288394,
         "state": "QLD",
         "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
+      },
+      {
+        "title": "STAY INFORMED - Horse Camp (near Bundaberg) - fire as at 2:05pm Saturday, 19 September 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "Horse Camp",
+        "lat": -25.082841163130578,
+        "lng": 151.8888945303547,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
       }
     ],
     "tas": [],
     "wa": [
+      {
+        "title": "Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-09-19T04:10:54+00:00",
+        "description": "DERBY, SHIRE OF DERBY/WEST KIMBERLEY",
+        "lat": -17.3183,
+        "lng": 123.6354,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1839,31 +2011,31 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - ZIMIN DR, COSSACK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-09-19T04:15:11+00:00",
+        "description": "ZIMIN DR, COSSACK",
+        "lat": -14.4879,
+        "lng": 132.2515,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - STUART HWY, STUART",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-09-19T03:44:00+00:00",
+        "updated": "2026-09-19T03:58:01+00:00",
         "description": "STUART HWY, STUART",
         "lat": -23.6869,
         "lng": 133.8742,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - RIVERBANK DR, KATHERINE SOUTH",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-09-19T03:42:55+00:00",
-        "description": "RIVERBANK DR, KATHERINE SOUTH",
-        "lat": -14.4683,
-        "lng": 132.2564,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -2378,7 +2550,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 36,
+  "incident_count": 40,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
