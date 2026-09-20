@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-20T12:53:01.510726+00:00",
-  "last_checked_utc": "2026-09-20T12:53:01.510726+00:00",
+  "generated_utc": "2026-09-20T13:23:01.178774+00:00",
+  "last_checked_utc": "2026-09-20T13:23:01.178774+00:00",
   "warning_count": 11,
   "warnings": [
     {
@@ -69,22 +69,17 @@
     },
     {
       "pid": "IDV21037",
-      "title": "Severe Weather Warning for North East, West and South Gippsland, East Gippsland",
+      "title": "Severe Weather Warning for North East, East Gippsland",
       "type": "severe_weather",
       "state": "VIC",
       "link": "",
-      "desc": "For the NORTH-EAST RANGES including ALPINE AREAS: DAMAGING NORTHWESTERLY WINDS averaging 65 to 75 km/h with peak gusts of around of 100 km/h are likely, easing by the very early hours of Monday morning. Locations which may be affected include Falls Creek, Mt Hotham and Mt Buller. Severe weather is no longer occurring in the Central and South West districts and the warning for these districts is CANCELLED. 98 km/h wind gust was recorded at Mount Buller at 6:37 pm. 93 km/h wind gust was recorded a",
-      "issued": "2026-09-20T18:46:04+10:00",
+      "desc": "For the NORTH-EAST RANGES including ALPINE AREAS: DAMAGING NORTHWESTERLY WINDS averaging 65 to 75 km/h with peak gusts of around of 100 km/h are likely, easing by the very early hours of Monday morning. Locations which may be affected include Falls Creek and Mt Hotham. Severe weather is no longer occurring in the West and South Gippsland district and the warning for this district is CANCELLED. 106 km/h wind gust was recorded at Mount Hotham at 9:23 pm. 111 km/h wind gust was recorded at Mount Bu",
+      "issued": "2026-09-20T22:57:07+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "VIC_PW004",
           "description": "North East",
-          "phase": "REN"
-        },
-        {
-          "aac": "VIC_PW006",
-          "description": "West and South Gippsland",
           "phase": "REN"
         },
         {
@@ -98,22 +93,17 @@
     },
     {
       "pid": "IDV21037",
-      "title": "Severe Weather Warning for South West, Central",
+      "title": "Severe Weather Warning for West and South Gippsland",
       "type": "severe_weather",
       "state": "VIC",
       "link": "",
       "desc": "",
-      "issued": "2026-09-20T18:46:04+10:00",
+      "issued": "2026-09-20T22:57:07+10:00",
       "cancelled": true,
       "areas": [
         {
-          "aac": "VIC_PW009",
-          "description": "South West",
-          "phase": "CAN"
-        },
-        {
-          "aac": "VIC_PW007",
-          "description": "Central",
+          "aac": "VIC_PW006",
+          "description": "West and South Gippsland",
           "phase": "CAN"
         }
       ],
@@ -218,7 +208,7 @@
         "type": "Bush Fire",
         "size": "111 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 12:47:43 GMT",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
         "description": "ABUNDANCE RD, MEDOWIE 2318",
         "council": "Port Stephens",
         "lat": -32.766563133,
@@ -697,7 +687,7 @@
         "type": "Bush Fire",
         "size": "10 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 12:47:43 GMT",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
         "description": "ARMIDALE RD, CLOUDS CREEK 2453",
         "council": "Clarence Valley",
         "lat": -30.076933797,
@@ -705,36 +695,28 @@
         "polys": [
           [
             [
-              152.637388966,
-              -30.079125706
+              152.63539815,
+              -30.0786438649999
             ],
             [
-              152.636603745,
-              -30.079316063
+              152.635493329,
+              -30.0781798699999
             ],
             [
-              152.635437809,
-              -30.079173296
+              152.636135784,
+              -30.077799156
             ],
             [
-              152.635104684,
-              -30.079054323
+              152.63681393,
+              -30.078322638
             ],
             [
-              152.635532988,
-              -30.0789115539999
+              152.637063773,
+              -30.0786438649999
             ],
             [
-              152.63627062,
-              -30.078626019
-            ],
-            [
-              152.637032048,
-              -30.0787449929999
-            ],
-            [
-              152.637388966,
-              -30.079125706
+              152.63539815,
+              -30.0786438649999
             ]
           ]
         ],
@@ -748,7 +730,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 12:47:43 GMT",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
         "description": "BLACK CAMP RD, CAMBRA 2420",
         "council": "Dungog",
         "lat": -32.4365139999999,
@@ -764,11 +746,59 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 12:47:43 GMT",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
         "description": "CELLS RD, CELLS RIVER 2424",
         "council": "Mid-Coast",
         "lat": -31.554630279,
         "lng": 152.02986145,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Croydon Av, South Tamworth",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
+        "description": "Croydon Av, South Tamworth, NSW 2340",
+        "council": "Tamworth",
+        "lat": -31.1096449999999,
+        "lng": 150.909237,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Greengate Rd, Airds",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
+        "description": "Greengate Rd, Airds, NSW 2560",
+        "council": "Campbelltown",
+        "lat": -34.0884659989999,
+        "lng": 150.830364,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Greenwell Point Rd, Nowra",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
+        "description": "Greenwell Point Rd, Nowra, NSW 2541",
+        "council": "Shoalhaven",
+        "lat": -34.889288999,
+        "lng": 150.618009,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -780,7 +810,7 @@
         "type": "Bush Fire",
         "size": "90 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 12:47:43 GMT",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
         "description": "HOWARTHS RD, FREEMANTLE 2795",
         "council": "Bathurst",
         "lat": -33.2759140009999,
@@ -1119,7 +1149,7 @@
         "type": "Bush Fire",
         "size": "52 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 12:47:43 GMT",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
         "description": "HYNDMANS CREEK RD, BYABARRA 2446",
         "council": "Port Macquarie-Hastings",
         "lat": -31.512512,
@@ -1206,7 +1236,7 @@
         "type": "Bush Fire",
         "size": "182 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sun, 20 Sep 2026 12:47:43 GMT",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
         "description": "LIBERATION TRL, DALMORTON 2460",
         "council": "Clarence Valley",
         "lat": -29.857631125,
@@ -1261,7 +1291,7 @@
         "type": "Bush Fire",
         "size": "230 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 12:47:43 GMT",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
         "description": "TI TREE, MIRANNIE RD, MIRANNIE 2330",
         "council": "Singleton",
         "lat": -32.327873005,
@@ -1270,135 +1300,127 @@
           [
             [
               151.374155105,
-              -32.3111885079999
+              -32.3110933299999
             ],
             [
-              151.375154479,
-              -32.3116644
+              151.379984784,
+              -32.31718475
             ],
             [
-              151.375630371,
-              -32.3117119899999
+              151.373465061,
+              -32.3249417929999
             ],
             [
-              151.376177646,
-              -32.3129968979999
+              151.373131936,
+              -32.325227329
             ],
             [
-              151.37686769,
-              -32.313472791
+              151.373393677,
+              -32.324346928
             ],
             [
-              151.377748091,
-              -32.313710737
+              151.373298499,
+              -32.3237996509999
             ],
             [
-              151.378176393,
-              -32.3133538179999
+              151.372346714,
+              -32.322776483
             ],
             [
-              151.378652286,
-              -32.3129968979999
+              151.371775643,
+              -32.322586127
             ],
             [
-              151.378747465,
-              -32.312473417
+              151.371537698,
+              -32.3223481799999
             ],
             [
-              151.378461929,
-              -32.3122116769999
+              151.371061805,
+              -32.3223243859999
             ],
             [
-              151.378057421,
-              -32.3116881949999
+              151.370704886,
+              -32.322586127
             ],
             [
-              151.378128804,
-              -32.311021946
+              151.367659176,
+              -32.3196118
             ],
             [
-              151.378390545,
-              -32.310522259
+              151.368373014,
+              -32.319421443
             ],
             [
-              151.378557108,
-              -32.3110457409999
+              151.369277209,
+              -32.319326264
             ],
             [
-              151.378866437,
-              -32.311259892
+              151.36922962,
+              -32.3190883189999
             ],
             [
-              151.379318535,
-              -32.311164713
+              151.369776896,
+              -32.3187551939999
             ],
             [
-              151.379485097,
-              -32.311497838
+              151.369967253,
+              -32.3178747929999
             ],
             [
-              151.379485097,
-              -32.311997525
+              151.369753101,
+              -32.316875421
             ],
             [
-              151.379366124,
-              -32.3124020339999
+              151.369253414,
+              -32.3162805549999
             ],
             [
-              151.379318535,
-              -32.3131872559999
-            ],
-            [
-              151.379270945,
-              -32.313615558
-            ],
-            [
-              151.379627865,
-              -32.3141390399999
-            ],
-            [
-              151.379960989,
-              -32.3140200669999
-            ],
-            [
-              151.380365498,
-              -32.313758327
-            ],
-            [
-              151.380746211,
-              -32.313877299
-            ],
-            [
-              151.380817595,
-              -32.3141866289999
-            ],
-            [
-              151.380651033,
-              -32.314591137
-            ],
-            [
-              151.380770006,
-              -32.31537636
-            ],
-            [
-              151.381007952,
+              151.369872075,
               -32.316328144
             ],
             [
-              151.380936568,
-              -32.31656609
+              151.370086226,
+              -32.315852252
             ],
             [
-              151.380079962,
-              -32.3166374739999
+              151.369776896,
+              -32.315043235
             ],
             [
-              151.379960989,
-              -32.317208544
+              151.369396183,
+              -32.3148290839999
+            ],
+            [
+              151.369657923,
+              -32.314424575
+            ],
+            [
+              151.369729307,
+              -32.3138059149999
+            ],
+            [
+              151.370895242,
+              -32.313282434
+            ],
+            [
+              151.371728054,
+              -32.3117119899999
+            ],
+            [
+              151.372061178,
+              -32.311331276
+            ],
+            [
+              151.372703633,
+              -32.311021946
+            ],
+            [
+              151.373227114,
+              -32.3109267679999
             ],
             [
               151.374155105,
-              -32.3111885079999
+              -32.3110933299999
             ]
           ]
         ],
@@ -1412,7 +1434,7 @@
         "type": "Grass Fire",
         "size": "964 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 12:47:43 GMT",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
         "description": "MOUNT LINDESAY RD, LEGUME 2476",
         "council": "Tenterfield",
         "lat": -28.48841257,
@@ -1671,7 +1693,7 @@
         "type": "Grass Fire",
         "size": "27 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 12:47:43 GMT",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
         "description": "NEWLINE RD, RAYMOND TERRACE 2324",
         "council": "Port Stephens",
         "lat": -32.740288092,
@@ -1679,252 +1701,388 @@
         "polys": [
           [
             [
-              151.74786351,
-              -32.743478168
+              151.745150924,
+              -32.737750806
             ],
             [
-              151.747673154,
-              -32.743014172
+              151.745317487,
+              -32.7377032159999
             ],
             [
-              151.747494694,
-              -32.7426572529999
+              151.745436459,
+              -32.7377627029999
             ],
             [
-              151.747328132,
-              -32.742431204
+              151.745555432,
+              -32.737881676
             ],
             [
-              151.747090186,
-              -32.741848236
+              151.745674406,
+              -32.737941162
             ],
             [
-              151.746887931,
-              -32.741467523
+              151.745733892,
+              -32.7381434169999
             ],
             [
-              151.74654291,
-              -32.7409321439999
+              151.745852865,
+              -32.738440849
             ],
             [
-              151.746316861,
-              -32.740349177
+              151.745936146,
+              -32.7385122329999
             ],
             [
-              151.74599311,
-              -32.7395837359999
+              151.746055119,
+              -32.738916742
             ],
             [
-              151.745822044,
-              -32.7390948079999
+              151.74618599,
+              -32.7390357149999
             ],
             [
-              151.745561451,
-              -32.7383279119999
+              151.746221681,
+              -32.7391427909999
             ],
             [
-              151.745507845,
-              -32.7381719689999
+              151.746340655,
+              -32.739333148
             ],
             [
-              151.745555434,
-              -32.7377555639999
+              151.746495319,
+              -32.739499709
             ],
             [
-              151.745710098,
-              -32.737541413
+              151.746733266,
+              -32.739559196
             ],
             [
-              151.745959942,
-              -32.7373629529999
+              151.746899828,
+              -32.7395948879999
             ],
             [
-              151.746007531,
-              -32.737125007
+              151.747078287,
+              -32.7395948879999
             ],
             [
-              151.746293066,
-              -32.7368394709999
+              151.747399515,
+              -32.739523504
             ],
             [
-              151.746590499,
-              -32.7366134219999
+              151.747566077,
+              -32.739642477
             ],
             [
-              151.746923624,
-              -32.736434963
+              151.747768331,
+              -32.7395710929999
             ],
             [
-              151.747375721,
-              -32.736268401
+              151.747899202,
+              -32.739666271
             ],
             [
-              151.747613668,
-              -32.736292196
+              151.747970585,
+              -32.7396781689999
             ],
             [
-              151.74786351,
-              -32.736482553
+              151.748137148,
+              -32.73963058
             ],
             [
-              151.748014935,
-              -32.7366276669999
+              151.748220429,
+              -32.7396186829999
             ],
             [
-              151.748149046,
-              -32.7367561899999
+              151.748410786,
+              -32.7399042179999
             ],
             [
-              151.748401236,
-              -32.7371061699999
+              151.74848217,
+              -32.739975602
             ],
             [
-              151.748616167,
-              -32.737404441
+              151.748624938,
+              -32.7400945749999
             ],
             [
-              151.748732014,
-              -32.737565208
+              151.748696321,
+              -32.7402135479999
             ],
             [
-              151.749005653,
-              -32.737648489
+              151.748767705,
+              -32.740284932
             ],
             [
-              151.749196009,
-              -32.737874537
+              151.748981857,
+              -32.740225444
             ],
             [
-              151.749338777,
-              -32.738112483
+              151.749005651,
+              -32.7403801099999
             ],
             [
-              151.74941016,
-              -32.738290943
+              151.749005651,
+              -32.7404871859999
             ],
             [
-              151.749505338,
-              -32.738540787
+              151.748981857,
+              -32.7406775429999
             ],
             [
-              151.749671902,
-              -32.738540787
+              151.749112727,
+              -32.74064185
             ],
             [
-              151.749957437,
-              -32.738659759
+              151.749291187,
+              -32.740725131
             ],
             [
-              151.749981231,
-              -32.7390047809999
+              151.749398263,
+              -32.740784619
             ],
             [
-              151.749957437,
-              -32.739159446
+              151.749469646,
+              -32.7410463589999
             ],
             [
-              151.75002882,
-              -32.739266522
+              151.749588619,
+              -32.741082051
             ],
             [
-              151.750219177,
-              -32.739385495
+              151.749731387,
+              -32.7409035909999
             ],
             [
-              151.750576096,
-              -32.739421186
+              151.74985036,
+              -32.740725131
             ],
             [
-              151.750873529,
-              -32.739468776
+              151.750064512,
+              -32.7405704669999
             ],
             [
-              151.751357469,
-              -32.739780427
+              151.750171587,
+              -32.7407608239999
             ],
             [
-              151.751527881,
-              -32.740027949
+              151.750183485,
+              -32.740808412
             ],
             [
-              151.751515984,
-              -32.740313484
+              151.750326252,
+              -32.7407727209999
             ],
             [
-              151.75139701,
-              -32.740503841
+              151.75042143,
+              -32.7406775429999
             ],
             [
-              151.751242346,
-              -32.740694198
+              151.75046902,
+              -32.74055857
             ],
             [
-              151.751111475,
-              -32.740884555
+              151.750552301,
+              -32.7405228769999
             ],
             [
-              151.75113527,
-              -32.7410749119999
+              151.750671274,
+              -32.74055857
             ],
             [
-              151.75139701,
-              -32.741372344
+              151.750814041,
+              -32.740665645
             ],
             [
-              151.751634956,
-              -32.7416816739999
+              151.750885425,
+              -32.7407608239999
             ],
             [
-              151.751432703,
-              -32.741860134
+              151.751016296,
+              -32.740844105
             ],
             [
-              151.751170961,
-              -32.7420742849999
+              151.751313728,
+              -32.7409035909999
             ],
             [
-              151.750897324,
-              -32.742217054
+              151.751551674,
+              -32.740951181
             ],
             [
-              151.75072512,
-              -32.7422935879999
+              151.751492188,
+              -32.741165332
             ],
             [
-              151.750528507,
-              -32.742383616
+              151.751432702,
+              -32.74161743
             ],
             [
-              151.750219858,
-              -32.742542111
+              151.751432702,
+              -32.7417483
             ],
             [
-              151.749838463,
-              -32.7427405339999
+              151.751266139,
+              -32.741891067
             ],
             [
-              151.749600517,
-              -32.742930891
+              151.751194755,
+              -32.742117117
             ],
             [
-              151.74914842,
-              -32.74320453
+              151.751075782,
+              -32.7422479869999
             ],
             [
-              151.748767706,
-              -32.743347297
+              151.751028193,
+              -32.742450242
             ],
             [
-              151.748386992,
-              -32.743501962
+              151.750933015,
+              -32.7426287009999
             ],
             [
-              151.748053867,
-              -32.743585244
+              151.750933015,
+              -32.7427119819999
             ],
             [
-              151.74786351,
-              -32.743478168
+              151.750849734,
+              -32.742842853
+            ],
+            [
+              151.750742658,
+              -32.7429975169999
+            ],
+            [
+              151.750635582,
+              -32.7431402839999
+            ],
+            [
+              151.750504711,
+              -32.7432711549999
+            ],
+            [
+              151.750457123,
+              -32.743366333
+            ],
+            [
+              151.750409533,
+              -32.7434734089999
+            ],
+            [
+              151.750326252,
+              -32.743616177
+            ],
+            [
+              151.750242971,
+              -32.7437232519999
+            ],
+            [
+              151.750028819,
+              -32.743818431
+            ],
+            [
+              151.749838462,
+              -32.7438065339999
+            ],
+            [
+              151.749648106,
+              -32.7436875609999
+            ],
+            [
+              151.749338775,
+              -32.743544793
+            ],
+            [
+              151.749207906,
+              -32.743461512
+            ],
+            [
+              151.749077035,
+              -32.7435804849999
+            ],
+            [
+              151.748993754,
+              -32.7436637659999
+            ],
+            [
+              151.748850986,
+              -32.7437470469999
+            ],
+            [
+              151.748732013,
+              -32.7438541229999
+            ],
+            [
+              151.748589245,
+              -32.7438898149999
+            ],
+            [
+              151.74825612,
+              -32.7438065339999
+            ],
+            [
+              151.748196634,
+              -32.7437708419999
+            ],
+            [
+              151.747958688,
+              -32.7435566899999
+            ],
+            [
+              151.747756434,
+              -32.743378231
+            ],
+            [
+              151.74724485,
+              -32.742319371
+            ],
+            [
+              151.747113979,
+              -32.742093322
+            ],
+            [
+              151.746828444,
+              -32.741427073
+            ],
+            [
+              151.746721368,
+              -32.7411772299999
+            ],
+            [
+              151.746602395,
+              -32.740784619
+            ],
+            [
+              151.746542909,
+              -32.7405228769999
+            ],
+            [
+              151.746400141,
+              -32.7402968289999
+            ],
+            [
+              151.74636445,
+              -32.740165958
+            ],
+            [
+              151.746221681,
+              -32.7399874989999
+            ],
+            [
+              151.745995633,
+              -32.7395948879999
+            ],
+            [
+              151.745840968,
+              -32.739333148
+            ],
+            [
+              151.745850485,
+              -32.739333148
+            ],
+            [
+              151.745150924,
+              -32.737750806
             ]
           ]
         ],
@@ -1938,7 +2096,7 @@
         "type": "Bush Fire",
         "size": "228 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 12:47:43 GMT",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
         "description": "LAT 032.228905 LONG 151.642243 NX CHICHESTER RD, CHICHESTER 2420",
         "council": "Dungog",
         "lat": -32.228191376,
@@ -2221,7 +2379,7 @@
         "type": "Bush Fire",
         "size": "1216 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 12:47:43 GMT",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
         "description": "Western end of Ogilvie Drive, TABULAM 2469",
         "council": "Tenterfield",
         "lat": -28.9660939409999,
@@ -2872,7 +3030,7 @@
         "type": "Bush Fire",
         "size": "8 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 12:47:43 GMT",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
         "description": "PACIFIC HWY, URUNGA 2455",
         "council": "Bellingen",
         "lat": -30.524339676,
@@ -2880,68 +3038,40 @@
         "polys": [
           [
             [
-              152.979203691,
-              -30.5245659299999
+              152.982194548,
+              -30.523785341
             ],
             [
-              152.978632621,
-              -30.5242803949999
+              152.982206445,
+              -30.5239875949999
             ],
             [
-              152.978727799,
-              -30.523875887
+              152.981409326,
+              -30.525367683
             ],
             [
-              152.979084718,
-              -30.5237569139999
+              152.980897741,
+              -30.524998866
             ],
             [
-              152.97991753,
-              -30.523328611
+              152.980409952,
+              -30.5248798929999
             ],
             [
-              152.98017927,
-              -30.5229716919999
+              152.979232118,
+              -30.5245943579999
             ],
             [
-              152.980607574,
-              -30.5227813349999
+              152.980302876,
+              -30.5239637999999
             ],
             [
-              152.981297618,
-              -30.5224720049999
+              152.981278455,
+              -30.523559292
             ],
             [
-              152.981654536,
-              -30.522543388
-            ],
-            [
-              152.98198766,
-              -30.522900308
-            ],
-            [
-              152.982201812,
-              -30.5233048159999
-            ],
-            [
-              152.982201812,
-              -30.5237807089999
-            ],
-            [
-              152.981844893,
-              -30.524018654
-            ],
-            [
-              152.980940698,
-              -30.523852092
-            ],
-            [
-              152.980417217,
-              -30.524018654
-            ],
-            [
-              152.979203691,
-              -30.5245659299999
+              152.982194548,
+              -30.523785341
             ]
           ]
         ],
@@ -2955,7 +3085,7 @@
         "type": "Grass Fire",
         "size": "28 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sun, 20 Sep 2026 12:47:43 GMT",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
         "description": "PEACOCK CREEK RD, PEACOCK CREEK 2469",
         "council": "Kyogle",
         "lat": -28.685394287,
@@ -3130,7 +3260,7 @@
         "type": "Bush Fire",
         "size": "985 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 12:47:43 GMT",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
         "description": "RIFLE RANGE RD, INVERELL 2360",
         "council": "Inverell",
         "lat": -29.826126099,
@@ -3138,20 +3268,20 @@
         "polys": [
           [
             [
-              151.193757091,
-              -29.822172638
+              151.191109474,
+              -29.8246093839999
             ],
             [
-              151.193780279,
-              -29.822197645
+              151.191111711,
+              -29.824614977
             ],
             [
-              151.19373269,
-              -29.822221439
+              151.191087916,
+              -29.824614977
             ],
             [
-              151.193757091,
-              -29.822172638
+              151.191109474,
+              -29.8246093839999
             ]
           ]
         ],
@@ -3165,7 +3295,7 @@
         "type": "Grass Fire",
         "size": "151 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 12:47:43 GMT",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
         "description": "SCRUB RD, TENTERFIELD 2372",
         "council": "Tenterfield",
         "lat": -29.169909907,
@@ -3316,7 +3446,7 @@
         "type": "Bush Fire",
         "size": "78 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sun, 20 Sep 2026 12:47:43 GMT",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
         "description": "SEVEN MILE GATE FIRETRAIL, RAMORNIE 2460",
         "council": "Clarence Valley",
         "lat": -29.748711989,
@@ -3355,7 +3485,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 12:47:43 GMT",
+        "updated": "Sun, 20 Sep 2026 13:19:46 GMT",
         "description": "WASHPOOL CREEK RD, BOORAL 2425",
         "council": "Mid-Coast",
         "lat": -32.458831787,
@@ -4090,96 +4220,6 @@
       }
     ],
     "nt": [
-      {
-        "title": "Grass and Scrub Fire - LARAPINTA DR, ARALUEN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-09-20T12:34:17+00:00",
-        "description": "LARAPINTA DR, ARALUEN",
-        "lat": -23.6975,
-        "lng": 133.8409,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - Unknown",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-09-20T12:30:49+00:00",
-        "description": "",
-        "lat": -23.6974,
-        "lng": 133.842,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - LYNDAVALE DR, LARAPINTA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-09-20T12:28:37+00:00",
-        "description": "LYNDAVALE DR, LARAPINTA",
-        "lat": -23.6967,
-        "lng": 133.841,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - LYNDAVALE DR, LARAPINTA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-09-20T12:28:37+00:00",
-        "description": "LYNDAVALE DR, LARAPINTA",
-        "lat": -23.6967,
-        "lng": 133.841,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - LARAPINTA DR, ARALUEN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-09-20T12:28:37+00:00",
-        "description": "LARAPINTA DR, ARALUEN",
-        "lat": -23.6975,
-        "lng": 133.8408,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - LYNDAVALE DR, LARAPINTA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-09-20T12:28:36+00:00",
-        "description": "LYNDAVALE DR, LARAPINTA",
-        "lat": -23.6974,
-        "lng": 133.8406,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
       {
         "title": "Bushfire - Cox Peninsula Road, TUMBLING WATERS",
         "alertLevel": "",
@@ -4982,7 +5022,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 68,
+  "incident_count": 65,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
