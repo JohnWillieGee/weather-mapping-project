@@ -1,43 +1,43 @@
 {
-  "generated_utc": "2026-09-20T11:53:01.336751+00:00",
-  "last_checked_utc": "2026-09-20T11:53:01.336751+00:00",
+  "generated_utc": "2026-09-20T12:23:03.055350+00:00",
+  "last_checked_utc": "2026-09-20T12:23:03.055350+00:00",
   "warning_count": 11,
   "warnings": [
     {
       "pid": "",
-      "title": "20/16:05 EST Marine Wind Warning Summary for New South Wales",
+      "title": "20/22:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 20 Sep 2026 06:05:16 GMT"
+      "issued": "Sun, 20 Sep 2026 12:00:10 GMT"
     },
     {
       "pid": "",
-      "title": "20/16:15 EST Marine Wind Warning Summary for Victoria",
+      "title": "20/22:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 20 Sep 2026 06:15:23 GMT"
+      "issued": "Sun, 20 Sep 2026 12:00:18 GMT"
     },
     {
       "pid": "",
-      "title": "20/15:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "20/21:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sun, 20 Sep 2026 06:00:11 GMT"
+      "issued": "Sun, 20 Sep 2026 12:00:09 GMT"
     },
     {
       "pid": "",
-      "title": "20/17:24 EST Marine Wind Warning Summary for Tasmania",
+      "title": "20/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 20 Sep 2026 07:24:19 GMT"
+      "issued": "Sun, 20 Sep 2026 12:00:14 GMT"
     },
     {
       "pid": "",
@@ -122,19 +122,14 @@
     },
     {
       "pid": "IDT21037",
-      "title": "Severe Weather Warning for Central North, North East, East Coast, Midlands, Upper Derwent Valley, South East, Central Plateau, Western",
+      "title": "Severe Weather Warning for North East, East Coast",
       "type": "severe_weather",
       "state": "TAS",
       "link": "",
-      "desc": "DAMAGING WIND GUSTS in excess of 100 km/h have developed in the warning area, including Hobart, and are expected to continue into this evening. DAMAGING NORTHWESTERLY WINDS averaging 65 to 75 km/h are likely over elevated terrain during these times. Winds have begun to ease from the west and will clear the remainder of the state by early Monday morning. Locations which may be affected include St Helens, Swansea, New Norfolk, Hobart, Oatlands, Bicheno, Orford, Bothwell and Geeveston. Severe weath",
-      "issued": "2026-09-20T16:47:53+10:00",
+      "desc": "DAMAGING WEST TO NORTHWESTERLY WINDS averaging 55 to 65 km/h with gusts in excess of 100 km/h are expected to continue for the next few hours along the east coast and adjacent terrain inland. Winds are expected to ease early on Monday morning. Locations which may be affected include St Helens, Swansea, Bicheno, Orford, Fingal and Scamander. Severe weather is no longer occurring in the Western, Upper Derwent Valley, South East, Central North, Central Plateau and Midlands districts and the warning",
+      "issued": "2026-09-20T22:15:31+10:00",
       "cancelled": false,
       "areas": [
-        {
-          "aac": "TAS_PW004",
-          "description": "Central North",
-          "phase": "REN"
-        },
         {
           "aac": "TAS_PW002",
           "description": "North East",
@@ -144,31 +139,6 @@
           "aac": "TAS_PW003",
           "description": "East Coast",
           "phase": "REN"
-        },
-        {
-          "aac": "TAS_PW005",
-          "description": "Midlands",
-          "phase": "REN"
-        },
-        {
-          "aac": "TAS_PW007",
-          "description": "Upper Derwent Valley",
-          "phase": "REN"
-        },
-        {
-          "aac": "TAS_PW006",
-          "description": "South East",
-          "phase": "REN"
-        },
-        {
-          "aac": "TAS_PW008",
-          "description": "Central Plateau",
-          "phase": "REN"
-        },
-        {
-          "aac": "TAS_PW009",
-          "description": "Western",
-          "phase": "REN"
         }
       ],
       "severityCode": "STD",
@@ -176,17 +146,42 @@
     },
     {
       "pid": "IDT21037",
-      "title": "Severe Weather Warning for North West Coast",
+      "title": "Severe Weather Warning for Central North, Midlands, South East, Upper Derwent Valley, Central Plateau, Western",
       "type": "severe_weather",
       "state": "TAS",
       "link": "",
       "desc": "",
-      "issued": "2026-09-20T16:47:53+10:00",
+      "issued": "2026-09-20T22:15:31+10:00",
       "cancelled": true,
       "areas": [
         {
-          "aac": "TAS_PW010",
-          "description": "North West Coast",
+          "aac": "TAS_PW004",
+          "description": "Central North",
+          "phase": "CAN"
+        },
+        {
+          "aac": "TAS_PW005",
+          "description": "Midlands",
+          "phase": "CAN"
+        },
+        {
+          "aac": "TAS_PW006",
+          "description": "South East",
+          "phase": "CAN"
+        },
+        {
+          "aac": "TAS_PW007",
+          "description": "Upper Derwent Valley",
+          "phase": "CAN"
+        },
+        {
+          "aac": "TAS_PW008",
+          "description": "Central Plateau",
+          "phase": "CAN"
+        },
+        {
+          "aac": "TAS_PW009",
+          "description": "Western",
           "phase": "CAN"
         }
       ],
@@ -223,7 +218,7 @@
         "type": "Bush Fire",
         "size": "111 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 11:47:42 GMT",
+        "updated": "Sun, 20 Sep 2026 12:19:44 GMT",
         "description": "ABUNDANCE RD, MEDOWIE 2318",
         "council": "Port Stephens",
         "lat": -32.766563133,
@@ -702,7 +697,7 @@
         "type": "Bush Fire",
         "size": "10 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 11:47:42 GMT",
+        "updated": "Sun, 20 Sep 2026 12:19:44 GMT",
         "description": "ARMIDALE RD, CLOUDS CREEK 2453",
         "council": "Clarence Valley",
         "lat": -30.076933797,
@@ -753,7 +748,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 11:47:42 GMT",
+        "updated": "Sun, 20 Sep 2026 12:19:44 GMT",
         "description": "BLACK CAMP RD, CAMBRA 2420",
         "council": "Dungog",
         "lat": -32.4365139999999,
@@ -769,7 +764,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 11:47:42 GMT",
+        "updated": "Sun, 20 Sep 2026 12:19:44 GMT",
         "description": "CELLS RD, CELLS RIVER 2424",
         "council": "Mid-Coast",
         "lat": -31.554630279,
@@ -785,7 +780,7 @@
         "type": "Bush Fire",
         "size": "90 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 11:47:42 GMT",
+        "updated": "Sun, 20 Sep 2026 12:19:44 GMT",
         "description": "HOWARTHS RD, FREEMANTLE 2795",
         "council": "Bathurst",
         "lat": -33.2759140009999,
@@ -1124,7 +1119,7 @@
         "type": "Bush Fire",
         "size": "52 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 11:47:42 GMT",
+        "updated": "Sun, 20 Sep 2026 12:19:44 GMT",
         "description": "HYNDMANS CREEK RD, BYABARRA 2446",
         "council": "Port Macquarie-Hastings",
         "lat": -31.512512,
@@ -1439,7 +1434,7 @@
         "type": "Bush Fire",
         "size": "182 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sun, 20 Sep 2026 11:47:42 GMT",
+        "updated": "Sun, 20 Sep 2026 12:19:44 GMT",
         "description": "LIBERATION TRL, DALMORTON 2460",
         "council": "Clarence Valley",
         "lat": -29.857631125,
@@ -1494,7 +1489,7 @@
         "type": "Bush Fire",
         "size": "230 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 11:47:42 GMT",
+        "updated": "Sun, 20 Sep 2026 12:19:44 GMT",
         "description": "TI TREE, MIRANNIE RD, MIRANNIE 2330",
         "council": "Singleton",
         "lat": -32.327873005,
@@ -1717,7 +1712,7 @@
         "type": "Grass Fire",
         "size": "964 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 11:47:42 GMT",
+        "updated": "Sun, 20 Sep 2026 12:19:44 GMT",
         "description": "MOUNT LINDESAY RD, LEGUME 2476",
         "council": "Tenterfield",
         "lat": -28.48841257,
@@ -1974,9 +1969,9 @@
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Grass Fire",
-        "size": "0 ha",
+        "size": "27 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 11:47:42 GMT",
+        "updated": "Sun, 20 Sep 2026 12:19:44 GMT",
         "description": "NEWLINE RD, RAYMOND TERRACE 2324",
         "council": "Port Stephens",
         "lat": -32.740288092,
@@ -2243,7 +2238,7 @@
         "type": "Bush Fire",
         "size": "228 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 11:47:42 GMT",
+        "updated": "Sun, 20 Sep 2026 12:19:44 GMT",
         "description": "LAT 032.228905 LONG 151.642243 NX CHICHESTER RD, CHICHESTER 2420",
         "council": "Dungog",
         "lat": -32.228191376,
@@ -2526,7 +2521,7 @@
         "type": "Bush Fire",
         "size": "1216 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 11:47:42 GMT",
+        "updated": "Sun, 20 Sep 2026 12:19:44 GMT",
         "description": "Western end of Ogilvie Drive, TABULAM 2469",
         "council": "Tenterfield",
         "lat": -28.9660939409999,
@@ -3177,7 +3172,7 @@
         "type": "Bush Fire",
         "size": "8 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 11:47:42 GMT",
+        "updated": "Sun, 20 Sep 2026 12:19:44 GMT",
         "description": "PACIFIC HWY, URUNGA 2455",
         "council": "Bellingen",
         "lat": -30.524339676,
@@ -3260,7 +3255,7 @@
         "type": "Grass Fire",
         "size": "28 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sun, 20 Sep 2026 11:47:42 GMT",
+        "updated": "Sun, 20 Sep 2026 12:19:44 GMT",
         "description": "PEACOCK CREEK RD, PEACOCK CREEK 2469",
         "council": "Kyogle",
         "lat": -28.685394287,
@@ -3435,7 +3430,7 @@
         "type": "Bush Fire",
         "size": "985 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 11:47:42 GMT",
+        "updated": "Sun, 20 Sep 2026 12:19:44 GMT",
         "description": "RIFLE RANGE RD, INVERELL 2360",
         "council": "Inverell",
         "lat": -29.826126099,
@@ -3470,7 +3465,7 @@
         "type": "Grass Fire",
         "size": "151 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 11:47:42 GMT",
+        "updated": "Sun, 20 Sep 2026 12:19:44 GMT",
         "description": "SCRUB RD, TENTERFIELD 2372",
         "council": "Tenterfield",
         "lat": -29.169909907,
@@ -3621,7 +3616,7 @@
         "type": "Bush Fire",
         "size": "78 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sun, 20 Sep 2026 11:47:42 GMT",
+        "updated": "Sun, 20 Sep 2026 12:19:44 GMT",
         "description": "SEVEN MILE GATE FIRETRAIL, RAMORNIE 2460",
         "council": "Clarence Valley",
         "lat": -29.748711989,
@@ -3660,7 +3655,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 20 Sep 2026 11:47:42 GMT",
+        "updated": "Sun, 20 Sep 2026 12:19:44 GMT",
         "description": "WASHPOOL CREEK RD, BOORAL 2425",
         "council": "Mid-Coast",
         "lat": -32.458831787,
@@ -3737,7 +3732,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-09-20T21:32:13+00:00",
+        "updated": "2026-09-20T22:18:13+00:00",
         "description": "",
         "lat": -42.83444000019499,
         "lng": 147.58827000035777,
@@ -3799,7 +3794,22 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-09-20T21:32:13+00:00",
+        "updated": "2026-09-20T22:18:13+00:00",
+        "description": "",
+        "lat": -42.47680999989434,
+        "lng": 147.3306499996226,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=01dbf6d3-4668-4b26-ad21-1b737052838b"
+      },
+      {
+        "title": "Bushfire - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-09-20T22:18:13+00:00",
         "description": "",
         "lat": -42.54451999969793,
         "lng": 147.34433000021502,
@@ -3845,54 +3855,9 @@
         ],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=ef684175-c5de-4c0b-bc51-6a1d833844eb"
-      },
-      {
-        "title": "Bushfire - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-09-20T21:32:13+00:00",
-        "description": "",
-        "lat": -42.47680999989434,
-        "lng": 147.3306499996226,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=01dbf6d3-4668-4b26-ad21-1b737052838b"
       }
     ],
     "wa": [
-      {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-09-20T11:37:26+00:00",
-        "description": "YANCHEP, CITY OF WANNEROO",
-        "lat": -31.6051,
-        "lng": 115.7619,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-09-20T11:36:56+00:00",
-        "description": "DOUBLEVIEW, CITY OF STIRLING",
-        "lat": -31.8969,
-        "lng": 115.784,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Earthquake",
         "alertLevel": "",
@@ -4340,55 +4305,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-09-19T06:35:56+00:00",
-        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.835,
-        "lng": 128.856,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-09-18T07:44:37+00:00",
         "description": "NORTH WALPOLE, SHIRE OF MANJIMUP",
         "lat": -34.8598,
         "lng": 116.7052,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-09-18T01:25:29+00:00",
-        "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
-        "lat": -16.959,
-        "lng": 122.668,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-09-18T01:25:18+00:00",
-        "description": "ORD RIVER, SHIRE OF HALLS CREEK",
-        "lat": -18.424,
-        "lng": 128.272,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -4477,7 +4397,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-09-20T11:46:52+00:00",
+        "updated": "2026-09-20T11:56:56+00:00",
         "description": "CARRUTH RD, GIRRAWEEN",
         "lat": -12.5222,
         "lng": 131.1025,
@@ -4492,7 +4412,22 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-09-20T11:41:20+00:00",
+        "updated": "2026-09-20T11:55:46+00:00",
+        "description": "CARRUTH RD, GIRRAWEEN",
+        "lat": -12.5222,
+        "lng": 131.1025,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - CARRUTH RD, GIRRAWEEN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-09-20T11:55:46+00:00",
         "description": "CARRUTH RD, GIRRAWEEN",
         "lat": -12.5222,
         "lng": 131.1025,
@@ -4535,21 +4470,6 @@
             ]
           ]
         ],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - TINKARLI TOWN CAMP INTERNAL -, TENNANT CREEK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-09-20T10:13:08+00:00",
-        "description": "TINKARLI TOWN CAMP INTERNAL -, TENNANT CREEK",
-        "lat": -19.6372,
-        "lng": 134.2025,
-        "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
@@ -5317,7 +5237,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 70,
+  "incident_count": 65,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -8558,7 +8478,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-09-20T06:05:00Z",
+      "issued_utc": "2026-09-20T12:00:00Z",
       "overview": [
         "Gale Warning for Monday for Eden Coast",
         "Strong Wind Warning for Monday for Hunter Coast, Sydney Coast, Sydney Enclosed Waters, Illawarra Coast and Batemans Coast"
@@ -8599,10 +8519,10 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-09-20T06:15:00Z",
+      "issued_utc": "2026-09-20T12:00:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Gippsland Lakes, Central Coast, East Gippsland Coast, Central Gippsland Coast and West Coast",
-        "Strong Wind Warning for Monday for East Gippsland Coast, Central Coast, West Coast and Central Gippsland Coast"
+        "Strong Wind Warning for Sunday for West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast",
+        "Strong Wind Warning for Monday for West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast"
       ],
       "hazards": [
         {
@@ -8612,52 +8532,46 @@
             "West Coast: SA-VIC Border to Cape Otway",
             "Central Coast: Cape Otway to Wilsons Promontory",
             "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
-            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island",
-            "Gippsland Lakes"
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
           ],
           "aac_codes": [
             "VIC_MW001",
             "VIC_MW002",
             "VIC_MW003",
-            "VIC_MW004",
-            "VIC_MW007"
+            "VIC_MW004"
           ],
-          "summary": "Gippsland Lakes, West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast"
+          "summary": "West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast"
         }
       ]
     },
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-09-20T06:00:00Z",
+      "issued_utc": "2026-09-20T12:00:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "South Central Coast",
-            "Upper South East Coast: Murray Mouth to Cape Jaffa",
             "Lower South East Coast: Cape Jaffa to SA-VIC Border"
           ],
           "aac_codes": [
-            "SA_MW008",
-            "SA_MW009",
             "SA_MW010"
           ],
-          "summary": "South Central Coast, Upper South East Coast and Lower South East Coast"
+          "summary": "Lower South East Coast"
         }
       ]
     },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-09-20T07:24:10Z",
+      "issued_utc": "2026-09-20T12:00:00Z",
       "overview": [
-        "Gale Warning for Sunday for Lower East Coast, Upper East Coast, South West Lakes, South West Coast, East of Flinders Island, Banks Strait and Franklin Sound and South East Coast",
-        "Strong Wind Warning for Sunday for Central West Coast, Channel, Derwent Estuary, Far North West Coast, Storm Bay, Central Plateau Lakes, Central North Coast and Frederick Henry Bay and Norfolk Bay",
-        "Gale Warning for Monday for Lower East Coast, South West Coast, East of Flinders Island, Banks Strait and Franklin Sound and South East Coast",
-        "Strong Wind Warning for Monday for Central West Coast, Upper East Coast, Channel, Far North West Coast, Storm Bay and Central North Coast"
+        "Gale Warning for Sunday for Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, South East Coast and South West Coast",
+        "Strong Wind Warning for Sunday for Far North West Coast, Central North Coast, Upper East Coast, Central West Coast, Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel and South West Lakes",
+        "Gale Warning for Monday for Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, South East Coast and South West Coast",
+        "Strong Wind Warning for Monday for Far North West Coast, Central North Coast, Upper East Coast, Central West Coast, Frederick Henry Bay and Norfolk Bay, Storm Bay and Channel"
       ],
       "hazards": [
         {
@@ -8666,22 +8580,18 @@
           "zones": [
             "Banks Strait and Franklin Sound",
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
-            "Upper East Coast: St Helens Point to Wineglass Bay",
             "Lower East Coast: Wineglass Bay to Tasman Island",
             "South East Coast: Tasman Island to South East Cape",
-            "South West Coast: South East Cape to Low Rocky Point",
-            "South West Lakes"
+            "South West Coast: South East Cape to Low Rocky Point"
           ],
           "aac_codes": [
             "TAS_MW009",
             "TAS_MW003",
-            "TAS_MW004",
             "TAS_MW005",
             "TAS_MW006",
-            "TAS_MW007",
-            "TAS_MW015"
+            "TAS_MW007"
           ],
-          "summary": "South West Lakes, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast and South West Coast"
+          "summary": "Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, South East Coast and South West Coast"
         },
         {
           "level": "Strong Wind Warning",
@@ -8689,24 +8599,26 @@
           "zones": [
             "Far North West Coast: Sandy Cape to Stanley",
             "Central North Coast: Stanley to Northern Tip of Flinders Island",
+            "Upper East Coast: St Helens Point to Wineglass Bay",
             "Central West Coast: Low Rocky Point to Sandy Cape",
             "Derwent Estuary",
             "Frederick Henry Bay and Norfolk Bays",
             "Storm Bay",
             "Channel",
-            "Central Plateau Lakes"
+            "South West Lakes"
           ],
           "aac_codes": [
             "TAS_MW001",
             "TAS_MW002",
+            "TAS_MW004",
             "TAS_MW008",
             "TAS_MW012",
             "TAS_MW013",
             "TAS_MW014",
             "TAS_MW011",
-            "TAS_MW010"
+            "TAS_MW015"
           ],
-          "summary": "Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel, Central Plateau Lakes, Far North West Coast, Central North Coast and Central West Coast"
+          "summary": "Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel, South West Lakes, Far North West Coast, Central North Coast, Upper East Coast and Central West Coast"
         }
       ]
     }
