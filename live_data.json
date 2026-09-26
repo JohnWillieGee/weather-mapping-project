@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-09-26T12:23:11.597551+00:00",
-  "last_checked_utc": "2026-09-26T12:23:11.597551+00:00",
+  "generated_utc": "2026-09-26T12:53:09.886114+00:00",
+  "last_checked_utc": "2026-09-26T12:53:09.886114+00:00",
   "warning_count": 8,
   "warnings": [
     {
       "pid": "",
-      "title": "26/22:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "26/22:35 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 26 Sep 2026 12:00:09 GMT"
+      "issued": "Sat, 26 Sep 2026 12:35:53 GMT"
     },
     {
       "pid": "",
@@ -50,36 +50,36 @@
     },
     {
       "pid": "",
-      "title": "26/16:05 EST Frost Warning\nfor North West Coast, Central North and Midlands forecast districts",
+      "title": "26/22:49 EST Frost Warning\nfor North West Coast, Central North and Midlands forecast districts",
       "type": "other",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/frost.shtml",
       "desc": "",
-      "issued": "Sat, 26 Sep 2026 06:05:49 GMT"
+      "issued": "Sat, 26 Sep 2026 12:49:11 GMT"
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Hunter, Central Tablelands",
+      "title": "Cancellation of Severe Thunderstorm Warning for Hunter, Central Tablelands",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Lithgow, Oberon and Bilpin.",
-      "issued": "2026-09-26T21:22:18+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-09-26T22:31:16+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "NSW_PW003",
           "description": "Hunter",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "NSW_PW008",
           "description": "Central Tablelands",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDW21033",
@@ -126,7 +126,7 @@
         "type": "Grass Fire",
         "size": "54 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 12:19:41 GMT",
+        "updated": "Sat, 26 Sep 2026 12:47:40 GMT",
         "description": "AERODROME ROAD, MINIMBAH 2428",
         "council": "Mid-Coast",
         "lat": -32.189773534,
@@ -443,13 +443,96 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
+        "title": "CASTLEREAGH HWY, MENAH",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Sat, 26 Sep 2026 12:47:40 GMT",
+        "description": "HILLSIDE, CASTLEREAGH HWY, MENAH 2850",
+        "council": "Mid-Western",
+        "lat": -32.5379541689999,
+        "lng": 149.53686578,
+        "polys": [
+          [
+            [
+              149.537022478,
+              -32.5385783359999
+            ],
+            [
+              149.536984863,
+              -32.538603952
+            ],
+            [
+              149.53643884,
+              -32.53749921
+            ],
+            [
+              149.536700314,
+              -32.537491921
+            ],
+            [
+              149.536762338,
+              -32.537530773
+            ],
+            [
+              149.536774916,
+              -32.5376547229999
+            ],
+            [
+              149.536910225,
+              -32.5378105459999
+            ],
+            [
+              149.536991993,
+              -32.537829884
+            ],
+            [
+              149.537045053,
+              -32.537870832
+            ],
+            [
+              149.537090892,
+              -32.538053337
+            ],
+            [
+              149.537175234,
+              -32.5381624349999
+            ],
+            [
+              149.537188314,
+              -32.538225226
+            ],
+            [
+              149.537179542,
+              -32.538470004
+            ],
+            [
+              149.537144948,
+              -32.538522311
+            ],
+            [
+              149.537083134,
+              -32.538569444
+            ],
+            [
+              149.537022478,
+              -32.5385783359999
+            ]
+          ]
+        ],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "CHEVIOT HILLS RD, DRAKE VILLAGE",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "155 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 12:19:41 GMT",
+        "updated": "Sat, 26 Sep 2026 12:47:40 GMT",
         "description": "CHEVIOT HILLS RD, DRAKE VILLAGE 2469",
         "council": "Tenterfield",
         "lat": -28.920610887,
@@ -1140,7 +1223,7 @@
         "type": "Bush Fire",
         "size": "947 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 12:19:41 GMT",
+        "updated": "Sat, 26 Sep 2026 12:47:40 GMT",
         "description": "CUNGLEBUNG RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.8251073279999,
@@ -1747,7 +1830,7 @@
         "type": "Bush Fire",
         "size": "3336 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 12:19:41 GMT",
+        "updated": "Sat, 26 Sep 2026 12:47:40 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.942358734,
@@ -1755,648 +1838,20 @@
         "polys": [
           [
             [
-              151.823170792,
-              -28.888312464
+              151.825104495,
+              -28.888780369
             ],
             [
-              151.823475101,
-              -28.888714841
+              151.824987747,
+              -28.888799827
             ],
             [
-              151.824095603,
-              -28.888266405
+              151.825164404,
+              -28.888752718
             ],
             [
-              151.825310611,
-              -28.888161694
-            ],
-            [
-              151.825655633,
-              -28.888601896
-            ],
-            [
-              151.824413124,
-              -28.889212815
-            ],
-            [
-              151.824544271,
-              -28.894999883
-            ],
-            [
-              151.825764941,
-              -28.895477683
-            ],
-            [
-              151.826641159,
-              -28.894912381
-            ],
-            [
-              151.82722831,
-              -28.895085072
-            ],
-            [
-              151.828049224,
-              -28.896227214
-            ],
-            [
-              151.828251336,
-              -28.8981433829999
-            ],
-            [
-              151.828995737,
-              -28.898908918
-            ],
-            [
-              151.832173224,
-              -28.899459292
-            ],
-            [
-              151.833759928,
-              -28.90083147
-            ],
-            [
-              151.835009147,
-              -28.900545935
-            ],
-            [
-              151.836115597,
-              -28.901224081
-            ],
-            [
-              151.836079903,
-              -28.9035083649999
-            ],
-            [
-              151.838164944,
-              -28.904836471
-            ],
-            [
-              151.837364813,
-              -28.905971106
-            ],
-            [
-              151.837900192,
-              -28.9068634029999
-            ],
-            [
-              151.841826302,
-              -28.9078627769999
-            ],
-            [
-              151.843872928,
-              -28.9117772389999
-            ],
-            [
-              151.84346813,
-              -28.913966095
-            ],
-            [
-              151.841826302,
-              -28.9164645289999
-            ],
-            [
-              151.840791237,
-              -28.919034347
-            ],
-            [
-              151.838078651,
-              -28.91946265
-            ],
-            [
-              151.836761961,
-              -28.919284562
-            ],
-            [
-              151.836413863,
-              -28.921634228
-            ],
-            [
-              151.842339848,
-              -28.924808425
-            ],
-            [
-              151.842672926,
-              -28.9258447349999
-            ],
-            [
-              151.840196834,
-              -28.931074818
-            ],
-            [
-              151.839016634,
-              -28.932170717
-            ],
-            [
-              151.838802483,
-              -28.933955312
-            ],
-            [
-              151.839444938,
-              -28.9345263819999
-            ],
-            [
-              151.841951473,
-              -28.933820291
-            ],
-            [
-              151.845552122,
-              -28.93414781
-            ],
-            [
-              151.845994362,
-              -28.9346883269999
-            ],
-            [
-              151.846868857,
-              -28.9345263819999
-            ],
-            [
-              151.847368544,
-              -28.935454373
-            ],
-            [
-              151.847154392,
-              -28.937381736
-            ],
-            [
-              151.848153766,
-              -28.9390949469999
-            ],
-            [
-              151.847011624,
-              -28.9407367749999
-            ],
-            [
-              151.846758641,
-              -28.942310886
-            ],
-            [
-              151.846440553,
-              -28.950801895
-            ],
-            [
-              151.844655956,
-              -28.952872026
-            ],
-            [
-              151.842968129,
-              -28.9538527449999
-            ],
-            [
-              151.842728593,
-              -28.954870774
-            ],
-            [
-              151.841015381,
-              -28.95537046
-            ],
-            [
-              151.840230159,
-              -28.955227693
-            ],
-            [
-              151.840301544,
-              -28.9498739059999
-            ],
-            [
-              151.840060909,
-              -28.9488151159999
-            ],
-            [
-              151.839361532,
-              -28.9484954
-            ],
-            [
-              151.838733685,
-              -28.9492315099999
-            ],
-            [
-              151.838652086,
-              -28.951794762
-            ],
-            [
-              151.837224008,
-              -28.9544327149999
-            ],
-            [
-              151.834606599,
-              -28.9549086059999
-            ],
-            [
-              151.833202918,
-              -28.95851686
-            ],
-            [
-              151.832306406,
-              -28.959057276
-            ],
-            [
-              151.827496673,
-              -28.959172069
-            ],
-            [
-              151.825698271,
-              -28.960722652
-            ],
-            [
-              151.818953289,
-              -28.9575589029999
-            ],
-            [
-              151.817474481,
-              -28.955979363
-            ],
-            [
-              151.815808659,
-              -28.9549894159999
-            ],
-            [
-              151.813151335,
-              -28.955390703
-            ],
-            [
-              151.812390544,
-              -28.9567736179999
-            ],
-            [
-              151.810362114,
-              -28.95843581
-            ],
-            [
-              151.809772008,
-              -28.958131239
-            ],
-            [
-              151.80843951,
-              -28.958283524
-            ],
-            [
-              151.803709043,
-              -28.9567818579999
-            ],
-            [
-              151.802385209,
-              -28.957643607
-            ],
-            [
-              151.799068569,
-              -28.955545517
-            ],
-            [
-              151.796915683,
-              -28.9564606289999
-            ],
-            [
-              151.79668414,
-              -28.9571792429999
-            ],
-            [
-              151.797884364,
-              -28.957872386
-            ],
-            [
-              151.797173929,
-              -28.9592032369999
-            ],
-            [
-              151.795563891,
-              -28.959437169
-            ],
-            [
-              151.794464838,
-              -28.9570079059999
-            ],
-            [
-              151.793858074,
-              -28.956389246
-            ],
-            [
-              151.792554703,
-              -28.956668051
-            ],
-            [
-              151.791719586,
-              -28.954953635
-            ],
-            [
-              151.791585027,
-              -28.9559192409999
-            ],
-            [
-              151.790043136,
-              -28.955881169
-            ],
-            [
-              151.789643387,
-              -28.954929384
-            ],
-            [
-              151.788084244,
-              -28.954763713
-            ],
-            [
-              151.787894215,
-              -28.953778225
-            ],
-            [
-              151.787294787,
-              -28.953244715
-            ],
-            [
-              151.785381177,
-              -28.953355072
-            ],
-            [
-              151.784786771,
-              -28.952310408
-            ],
-            [
-              151.785638874,
-              -28.948153681
-            ],
-            [
-              151.786742261,
-              -28.9466545069999
-            ],
-            [
-              151.785924971,
-              -28.9441064549999
-            ],
-            [
-              151.787180089,
-              -28.9426277489999
-            ],
-            [
-              151.790415815,
-              -28.941295059
-            ],
-            [
-              151.790058896,
-              -28.940378967
-            ],
-            [
-              151.790832383,
-              -28.9395095419999
-            ],
-            [
-              151.790299045,
-              -28.9383504049999
-            ],
-            [
-              151.790863641,
-              -28.937133161
-            ],
-            [
-              151.79230644,
-              -28.936116104
-            ],
-            [
-              151.792002729,
-              -28.9355754859999
-            ],
-            [
-              151.789837102,
-              -28.9348657579999
-            ],
-            [
-              151.788595528,
-              -28.9330978159999
-            ],
-            [
-              151.789123651,
-              -28.932993842
-            ],
-            [
-              151.789956907,
-              -28.930859633
-            ],
-            [
-              151.791282426,
-              -28.9300138139999
-            ],
-            [
-              151.79160478,
-              -28.927004417
-            ],
-            [
-              151.788237448,
-              -28.9290822909999
-            ],
-            [
-              151.78525631,
-              -28.9288181119999
-            ],
-            [
-              151.784208917,
-              -28.9273950419999
-            ],
-            [
-              151.784301335,
-              -28.926918304
-            ],
-            [
-              151.785766251,
-              -28.926052791
-            ],
-            [
-              151.78802335,
-              -28.926149541
-            ],
-            [
-              151.790671314,
-              -28.9255763539999
-            ],
-            [
-              151.791146637,
-              -28.924387499
-            ],
-            [
-              151.793722425,
-              -28.922536425
-            ],
-            [
-              151.793033708,
-              -28.921714255
-            ],
-            [
-              151.790140285,
-              -28.920153329
-            ],
-            [
-              151.789854749,
-              -28.9195822579999
-            ],
-            [
-              151.790199094,
-              -28.9167667689999
-            ],
-            [
-              151.789220326,
-              -28.916570634
-            ],
-            [
-              151.789406424,
-              -28.915502542
-            ],
-            [
-              151.791217151,
-              -28.9147546899999
-            ],
-            [
-              151.791983662,
-              -28.913898396
-            ],
-            [
-              151.790870115,
-              -28.913565939
-            ],
-            [
-              151.789423403,
-              -28.911452977
-            ],
-            [
-              151.789528099,
-              -28.9105297469999
-            ],
-            [
-              151.791774309,
-              -28.906855859
-            ],
-            [
-              151.792856995,
-              -28.908933535
-            ],
-            [
-              151.794639182,
-              -28.9084643739999
-            ],
-            [
-              151.795895536,
-              -28.907664876
-            ],
-            [
-              151.796458798,
-              -28.906891354
-            ],
-            [
-              151.796630436,
-              -28.90479319
-            ],
-            [
-              151.797905827,
-              -28.903308406
-            ],
-            [
-              151.799213355,
-              -28.9035272789999
-            ],
-            [
-              151.799599793,
-              -28.902588554
-            ],
-            [
-              151.801217825,
-              -28.902457683
-            ],
-            [
-              151.801851358,
-              -28.901259774
-            ],
-            [
-              151.80142008,
-              -28.899304898
-            ],
-            [
-              151.801838283,
-              -28.898725564
-            ],
-            [
-              151.804528252,
-              -28.898689955
-            ],
-            [
-              151.806241464,
-              -28.899296718
-            ],
-            [
-              151.807820036,
-              -28.8979800029999
-            ],
-            [
-              151.808026059,
-              -28.896013062
-            ],
-            [
-              151.809596502,
-              -28.8955490659999
-            ],
-            [
-              151.812380472,
-              -28.895727527
-            ],
-            [
-              151.813058618,
-              -28.8951564559999
-            ],
-            [
-              151.812594623,
-              -28.8918727989999
-            ],
-            [
-              151.813415538,
-              -28.890766351
-            ],
-            [
-              151.815628437,
-              -28.889302981
-            ],
-            [
-              151.816974784,
-              -28.8890831699999
-            ],
-            [
-              151.81762257,
-              -28.889367775
-            ],
-            [
-              151.818598937,
-              -28.8907500249999
-            ],
-            [
-              151.818429395,
-              -28.8934688699999
-            ],
-            [
-              151.819177697,
-              -28.8937472919999
-            ],
-            [
-              151.820427802,
-              -28.892691805
-            ],
-            [
-              151.821617533,
-              -28.892501449
-            ],
-            [
-              151.821855478,
-              -28.891133259
-            ],
-            [
-              151.822446228,
-              -28.8907985019999
-            ],
-            [
-              151.822013588,
-              -28.8889136519999
-            ],
-            [
-              151.822606923,
-              -28.88826933
-            ],
-            [
-              151.823170792,
-              -28.888312464
+              151.825104495,
+              -28.888780369
             ]
           ]
         ],
@@ -2410,7 +1865,7 @@
         "type": "Bush Fire",
         "size": "137 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 12:19:41 GMT",
+        "updated": "Sat, 26 Sep 2026 12:47:40 GMT",
         "description": "HYNDMANS CREEK RD, BYABARRA 2446",
         "council": "Port Macquarie-Hastings",
         "lat": -31.5134479929999,
@@ -2605,7 +2060,7 @@
         "type": "Bush Fire",
         "size": "357 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 12:19:41 GMT",
+        "updated": "Sat, 26 Sep 2026 12:47:40 GMT",
         "description": "LIONSVILLE RD, LIONSVILLE 2460",
         "council": "Clarence Valley",
         "lat": -29.2220498529999,
@@ -3288,7 +2743,7 @@
         "type": "Bush Fire",
         "size": "2994 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 12:19:41 GMT",
+        "updated": "Sat, 26 Sep 2026 12:47:40 GMT",
         "description": "BROWNS CAMP RD, CHAELUNDI 2460",
         "council": "Clarence Valley",
         "lat": -30.084386157,
@@ -3451,7 +2906,7 @@
         "type": "Bush Fire",
         "size": "1973 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 12:19:41 GMT",
+        "updated": "Sat, 26 Sep 2026 12:47:40 GMT",
         "description": "MOUNT LINDESAY RD, LEGUME 2476",
         "council": "Tenterfield",
         "lat": -28.4917623609999,
@@ -4002,7 +3457,7 @@
         "type": "Bush Fire",
         "size": "2230 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 12:19:41 GMT",
+        "updated": "Sat, 26 Sep 2026 12:47:40 GMT",
         "description": "Western end of Ogilvie Drive, TABULAM 2469",
         "council": "Tenterfield",
         "lat": -28.965870867,
@@ -4673,7 +4128,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sat, 26 Sep 2026 12:19:41 GMT",
+        "updated": "Sat, 26 Sep 2026 12:47:40 GMT",
         "description": "Ovens Creek",
         "council": "Singleton",
         "lat": -32.9017084069999,
@@ -4689,7 +4144,7 @@
         "type": "Bush Fire",
         "size": "898 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 12:19:41 GMT",
+        "updated": "Sat, 26 Sep 2026 12:47:40 GMT",
         "description": "SEVEN MILE GATE FIRETRAIL, RAMORNIE 2460",
         "council": "Clarence Valley",
         "lat": -29.751607,
@@ -4760,7 +4215,7 @@
         "type": "Bush Fire",
         "size": "30 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 12:19:41 GMT",
+        "updated": "Sat, 26 Sep 2026 12:47:40 GMT",
         "description": "TILBAROO CROSSING 2429",
         "council": "Port Macquarie-Hastings",
         "lat": -31.5167088699999,
@@ -4863,7 +4318,7 @@
         "type": "Bush Fire",
         "size": "2 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sat, 26 Sep 2026 12:19:41 GMT",
+        "updated": "Sat, 26 Sep 2026 12:47:40 GMT",
         "description": "Vault Creek",
         "council": "Singleton",
         "lat": -32.8122608739999,
@@ -4958,6 +4413,36 @@
     ],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-09-26T12:46:51+00:00",
+        "description": "LOWDEN, SHIRE OF DONNYBROOK-BALINGUP",
+        "lat": -33.5429,
+        "lng": 115.9798,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-09-26T12:22:01+00:00",
+        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.7814,
+        "lng": 128.7459,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -5548,25 +5033,10 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-09-26T12:16:20+00:00",
+        "updated": "2026-09-26T12:28:49+00:00",
         "description": "CASUARINA DR, NIGHTCLIFF",
         "lat": -12.377,
         "lng": 130.8483,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - WUPPA TOWN CAMP INTERNAL -, TENNANT CREEK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-09-26T10:23:14+00:00",
-        "description": "WUPPA TOWN CAMP INTERNAL -, TENNANT CREEK",
-        "lat": -19.637,
-        "lng": 134.1992,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -5741,7 +5211,7 @@
       }
     ]
   },
-  "incident_count": 44,
+  "incident_count": 46,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -9372,11 +8842,11 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-09-26T12:00:00Z",
+      "issued_utc": "2026-09-26T12:35:45Z",
       "overview": [
-        "Gale Warning for Saturday for Sydney Coast and Illawarra Coast",
-        "Strong Wind Warning for Saturday for Hunter Coast, Sydney Enclosed Waters, Batemans Coast and Eden Coast",
-        "Strong Wind Warning for Sunday for Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Sydney Enclosed Waters and Illawarra Coast"
+        "Gale Warning for Saturday for Illawarra Coast and Sydney Coast",
+        "Strong Wind Warning for Saturday for Sydney Enclosed Waters, Eden Coast, Hunter Coast and Batemans Coast",
+        "Strong Wind Warning for Sunday for Illawarra Coast, Sydney Coast, Coffs Coast, Macquarie Coast, Hunter Coast and Sydney Enclosed Waters"
       ],
       "hazards": [
         {
