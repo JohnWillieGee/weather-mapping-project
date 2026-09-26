@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-26T07:23:14.311926+00:00",
-  "last_checked_utc": "2026-09-26T07:23:14.311926+00:00",
+  "generated_utc": "2026-09-26T07:53:13.566191+00:00",
+  "last_checked_utc": "2026-09-26T07:53:13.566191+00:00",
   "warning_count": 7,
   "warnings": [
     {
@@ -59,32 +59,37 @@
     },
     {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for Gascoyne, Goldfields, South Interior",
+      "title": "Severe Thunderstorm Warning for Pilbara, Gascoyne, Goldfields, South Interior",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
       "desc": "Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Laverton, Leinster, Leonora, Menzies and Wiluna. A 90km/h wind gust was recorded at Wiluna Airport at 2:17pm.",
-      "issued": "2026-09-26T14:28:04+08:00",
+      "issued": "2026-09-26T15:49:47+08:00",
       "cancelled": false,
       "areas": [
         {
+          "aac": "WA_PW002",
+          "description": "Pilbara",
+          "phase": "NEW"
+        },
+        {
           "aac": "WA_PW003",
           "description": "Gascoyne",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "WA_PW004",
           "description": "Goldfields",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "WA_PW007",
           "description": "South Interior",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "UPD"
     }
   ],
   "fetch_errors": {},
@@ -97,7 +102,7 @@
         "type": "Grass Fire",
         "size": "54 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 07:19:40 GMT",
+        "updated": "Sat, 26 Sep 2026 07:47:40 GMT",
         "description": "AERODROME ROAD, MINIMBAH 2428",
         "council": "Mid-Coast",
         "lat": -32.189773534,
@@ -420,7 +425,7 @@
         "type": "Bush Fire",
         "size": "858 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 07:19:40 GMT",
+        "updated": "Sat, 26 Sep 2026 07:47:40 GMT",
         "description": "BLACK CAMP RD, WASHPOOL 2425",
         "council": "Mid-Coast",
         "lat": -32.470226752,
@@ -455,7 +460,7 @@
         "type": "Bush Fire",
         "size": "155 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 07:19:40 GMT",
+        "updated": "Sat, 26 Sep 2026 07:47:40 GMT",
         "description": "CHEVIOT HILLS RD, DRAKE VILLAGE 2469",
         "council": "Tenterfield",
         "lat": -28.920610887,
@@ -490,7 +495,7 @@
         "type": "Bush Fire",
         "size": "947 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 07:19:40 GMT",
+        "updated": "Sat, 26 Sep 2026 07:47:40 GMT",
         "description": "CUNGLEBUNG RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.8251073279999,
@@ -1097,7 +1102,7 @@
         "type": "Bush Fire",
         "size": "3336 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 07:19:40 GMT",
+        "updated": "Sat, 26 Sep 2026 07:47:40 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.942358734,
@@ -1132,7 +1137,7 @@
         "type": "Bush Fire",
         "size": "137 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 07:19:40 GMT",
+        "updated": "Sat, 26 Sep 2026 07:47:40 GMT",
         "description": "HYNDMANS CREEK RD, BYABARRA 2446",
         "council": "Port Macquarie-Hastings",
         "lat": -31.5134479929999,
@@ -1325,9 +1330,9 @@
         "alertLevel": "Advice",
         "status": "Not yet controlled",
         "type": "Bush Fire",
-        "size": "0 ha",
+        "size": "357 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 07:19:40 GMT",
+        "updated": "Sat, 26 Sep 2026 07:47:40 GMT",
         "description": "LIONSVILLE RD, LIONSVILLE 2460",
         "council": "Clarence Valley",
         "lat": -29.2220498529999,
@@ -2026,7 +2031,7 @@
         "type": "Bush Fire",
         "size": "57 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sat, 26 Sep 2026 07:19:40 GMT",
+        "updated": "Sat, 26 Sep 2026 07:47:40 GMT",
         "description": "MASONITE RD, TOMAGO 2322",
         "council": "Port Stephens",
         "lat": -32.805690765,
@@ -2034,104 +2039,164 @@
         "polys": [
           [
             [
-              151.77579177,
-              -32.796252642
+              151.762507,
+              -32.80245
             ],
             [
-              151.782130797,
-              -32.8007263059999
+              151.763153,
+              -32.8020789999999
             ],
             [
-              151.779939684,
-              -32.8038517169999
+              151.764466,
+              -32.801237
             ],
             [
-              151.775953906,
-              -32.8061428459999
+              151.766257,
+              -32.800420001
             ],
             [
-              151.768382359,
-              -32.8049435139999
+              151.768162,
+              -32.799400001
             ],
             [
-              151.768412319,
-              -32.804915792
+              151.768883,
+              -32.799087001
             ],
             [
-              151.768008922,
-              -32.8048431779999
+              151.769627,
+              -32.7987039999999
             ],
             [
-              151.768003315,
-              -32.8048433939999
+              151.770143,
+              -32.7985190009999
             ],
             [
-              151.767216751,
-              -32.8047446479999
+              151.770614,
+              -32.7982959999999
             ],
             [
-              151.767167356,
-              -32.804809075
+              151.771077,
+              -32.798187001
             ],
             [
-              151.767204264,
-              -32.804827482
+              151.771145,
+              -32.7983790009999
             ],
             [
-              151.76613355,
-              -32.80627913
+              151.770925,
+              -32.798774001
             ],
             [
-              151.765425195,
-              -32.8057422969999
+              151.770523,
+              -32.799272001
             ],
             [
-              151.763686437,
-              -32.8043654909999
+              151.770432,
+              -32.7994699999999
             ],
             [
-              151.762946431,
-              -32.803346996
+              151.769801999,
+              -32.800465001
             ],
             [
-              151.762696669,
-              -32.8024960609999
+              151.769665,
+              -32.800650001
             ],
             [
-              151.762561327,
-              -32.802400878
+              151.769202,
+              -32.801122001
             ],
             [
-              151.763281513,
-              -32.802004999
+              151.768944,
+              -32.8015120009999
             ],
             [
-              151.763294313,
-              -32.8020173159999
+              151.768868,
+              -32.8017090009999
             ],
             [
-              151.765374688,
-              -32.800828423
+              151.768853,
+              -32.801914
             ],
             [
-              151.767073026,
-              -32.799888032
+              151.768792,
+              -32.8021370009999
             ],
             [
-              151.769416073,
-              -32.798937085
+              151.768519,
+              -32.802762001
             ],
             [
-              151.771673563,
-              -32.797975052
+              151.76738,
+              -32.803981001
             ],
             [
-              151.774132035,
-              -32.7969621839999
+              151.766811,
+              -32.804638
             ],
             [
-              151.77579177,
-              -32.796252642
+              151.766576,
+              -32.8049760009999
+            ],
+            [
+              151.766386,
+              -32.805372001
+            ],
+            [
+              151.766242,
+              -32.8059650009999
+            ],
+            [
+              151.766037,
+              -32.806322
+            ],
+            [
+              151.765824,
+              -32.8063990009999
+            ],
+            [
+              151.765232,
+              -32.805958001
+            ],
+            [
+              151.764891,
+              -32.805620001
+            ],
+            [
+              151.764724,
+              -32.8054030009999
+            ],
+            [
+              151.764602,
+              -32.805212001
+            ],
+            [
+              151.764427999,
+              -32.8047720009999
+            ],
+            [
+              151.764283,
+              -32.804587001
+            ],
+            [
+              151.763426,
+              -32.804134001
+            ],
+            [
+              151.763077,
+              -32.8038280009999
+            ],
+            [
+              151.762879,
+              -32.8034450009999
+            ],
+            [
+              151.762538,
+              -32.8026409999999
+            ],
+            [
+              151.762507,
+              -32.80245
             ]
           ]
         ],
@@ -2145,7 +2210,7 @@
         "type": "Bush Fire",
         "size": "2994 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 07:19:40 GMT",
+        "updated": "Sat, 26 Sep 2026 07:47:40 GMT",
         "description": "BROWNS CAMP RD, CHAELUNDI 2460",
         "council": "Clarence Valley",
         "lat": -30.084386157,
@@ -2308,7 +2373,7 @@
         "type": "Bush Fire",
         "size": "1973 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 07:19:40 GMT",
+        "updated": "Sat, 26 Sep 2026 07:47:40 GMT",
         "description": "MOUNT LINDESAY RD, LEGUME 2476",
         "council": "Tenterfield",
         "lat": -28.4917623609999,
@@ -2859,7 +2924,7 @@
         "type": "Bush Fire",
         "size": "2230 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 07:19:40 GMT",
+        "updated": "Sat, 26 Sep 2026 07:47:40 GMT",
         "description": "Western end of Ogilvie Drive, TABULAM 2469",
         "council": "Tenterfield",
         "lat": -28.965870867,
@@ -2894,11 +2959,27 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sat, 26 Sep 2026 07:19:40 GMT",
+        "updated": "Sat, 26 Sep 2026 07:47:40 GMT",
         "description": "Ovens Creek",
         "council": "Singleton",
         "lat": -32.9017084069999,
         "lng": 150.365529099,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Railway St, Teralba",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sat, 26 Sep 2026 07:47:40 GMT",
+        "description": "Railway St, Teralba, NSW 2284",
+        "council": "Lake Macquarie",
+        "lat": -32.9582629999999,
+        "lng": 151.607277,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -2910,7 +2991,7 @@
         "type": "Bush Fire",
         "size": "898 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 07:19:40 GMT",
+        "updated": "Sat, 26 Sep 2026 07:47:40 GMT",
         "description": "SEVEN MILE GATE FIRETRAIL, RAMORNIE 2460",
         "council": "Clarence Valley",
         "lat": -29.751607,
@@ -2975,13 +3056,29 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
+        "title": "The Parkway Ct, Bradbury",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sat, 26 Sep 2026 07:47:40 GMT",
+        "description": "The Parkway Ct, Bradbury, NSW 2560",
+        "council": "Campbelltown",
+        "lat": -34.0734699999999,
+        "lng": 150.811007,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "TILBAROO CROSSING Rd.",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "30 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 26 Sep 2026 07:19:40 GMT",
+        "updated": "Sat, 26 Sep 2026 07:47:40 GMT",
         "description": "TILBAROO CROSSING 2429",
         "council": "Port Macquarie-Hastings",
         "lat": -31.5167088699999,
@@ -3084,7 +3181,7 @@
         "type": "Bush Fire",
         "size": "2 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sat, 26 Sep 2026 07:19:40 GMT",
+        "updated": "Sat, 26 Sep 2026 07:47:40 GMT",
         "description": "Vault Creek",
         "council": "Singleton",
         "lat": -32.8122608739999,
@@ -3180,16 +3277,16 @@
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire Advice MONITOR CONDITIONS - CAMBALLIN AND GEEGULLY CREEK",
+        "title": "Bushfire Advice MONITOR CONDITIONS - GEEGULLY CREEK",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES-WARN",
-        "updated": "2026-09-26T03:43:41.441+00:00",
+        "updated": "2026-09-26T07:31:41.107+00:00",
         "description": "",
-        "lat": -17.9101,
-        "lng": 123.6853,
+        "lat": -17.9134,
+        "lng": 123.6968,
         "polys": [
           [
             [
@@ -3217,20 +3314,44 @@
               -17.8769
             ],
             [
-              123.7447,
-              -17.9258
+              123.7377,
+              -17.9198
             ],
             [
-              123.7464,
-              -17.9276
+              123.7381,
+              -17.9219
+            ],
+            [
+              123.7394,
+              -17.9237
+            ],
+            [
+              123.7419,
+              -17.9249
+            ],
+            [
+              123.7437,
+              -17.9255
+            ],
+            [
+              123.7459,
+              -17.9275
             ],
             [
               123.7466,
               -17.9293
             ],
             [
-              123.7449,
+              123.7458,
+              -17.9314
+            ],
+            [
+              123.7447,
               -17.9331
+            ],
+            [
+              123.7438,
+              -17.9348
             ],
             [
               123.7436,
@@ -3724,16 +3845,16 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - BRINKIN",
+        "title": "Grass and Scrub Fire - COPRA CR, KARAMA",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-09-26T07:12:42+00:00",
-        "description": "BRINKIN",
-        "lat": -12.3655,
-        "lng": 130.865,
+        "updated": "2026-09-26T07:36:35+00:00",
+        "description": "COPRA CR, KARAMA",
+        "lat": -12.4038,
+        "lng": 130.9158,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -3912,7 +4033,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-09-26T07:20:00+00:00",
+        "updated": "2026-09-26T07:49:00+00:00",
         "description": "RUSSELL",
         "lat": -35.298,
         "lng": 149.1524,
@@ -3938,7 +4059,7 @@
     ],
     "sa": []
   },
-  "incident_count": 46,
+  "incident_count": 48,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
