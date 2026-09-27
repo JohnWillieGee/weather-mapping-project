@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-09-27T11:53:11.324384+00:00",
-  "last_checked_utc": "2026-09-27T11:53:11.324384+00:00",
-  "warning_count": 7,
+  "generated_utc": "2026-09-27T12:23:03.266030+00:00",
+  "last_checked_utc": "2026-09-27T12:23:03.266030+00:00",
+  "warning_count": 8,
   "warnings": [
     {
       "pid": "",
-      "title": "27/16:05 EST Marine Wind Warning Summary for New South Wales",
+      "title": "27/22:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 27 Sep 2026 06:05:12 GMT"
+      "issued": "Sun, 27 Sep 2026 12:00:13 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "27/15:30 CST Marine Wind Warning Summary for South Australia",
+      "title": "27/21:30 CST Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sun, 27 Sep 2026 06:00:09 GMT"
+      "issued": "Sun, 27 Sep 2026 12:00:09 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "27/16:05 EST Marine Wind Warning Summary for Tasmania",
+      "title": "27/22:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 27 Sep 2026 06:05:14 GMT"
+      "issued": "Sun, 27 Sep 2026 12:00:12 GMT"
     },
     {
       "pid": "",
@@ -59,62 +59,76 @@
     },
     {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for Gascoyne, Goldfields, Eucla, South Interior, South West, South Coastal, South East Coastal, Great Southern, Central Wheat Belt",
+      "title": "Severe Thunderstorm Warning for Goldfields, Eucla, South Interior, South West, South Coastal, South East Coastal, Great Southern",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding over the next several hours in the Goldfields and parts of the South Interior, Central Wheat Belt, Gascoyne, Eucla and South East Coastal districts. Locations which may be affected include Kalgoorlie, Norseman, Laverton, Leinster, Leonora and Menzies. Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding over the next several hours in ",
-      "issued": "2026-09-27T18:54:28+08:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding over the next several hours in the Goldfields and parts of the Eucla, South Interior and South East Coastal districts. Locations which may be affected include Kalgoorlie, Norseman, Balladonia, Laverton, Leonora and Menzies. Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding over the next several hours in the South Coastal and parts of the South West ",
+      "issued": "2026-09-27T20:07:08+08:00",
       "cancelled": false,
       "areas": [
         {
-          "aac": "WA_PW003",
-          "description": "Gascoyne",
-          "phase": "REN"
-        },
-        {
           "aac": "WA_PW004",
           "description": "Goldfields",
-          "phase": "REN"
+          "phase": "UPD"
         },
         {
           "aac": "WA_PW005",
           "description": "Eucla",
-          "phase": "NEW"
+          "phase": "UPD"
         },
         {
           "aac": "WA_PW007",
           "description": "South Interior",
-          "phase": "REN"
+          "phase": "UPD"
         },
         {
           "aac": "WA_PW010",
           "description": "South West",
-          "phase": "REN"
+          "phase": "UPD"
         },
         {
           "aac": "WA_PW011",
           "description": "South Coastal",
-          "phase": "REN"
+          "phase": "UPD"
         },
         {
           "aac": "WA_PW012",
           "description": "South East Coastal",
-          "phase": "NEW"
+          "phase": "UPD"
         },
         {
           "aac": "WA_PW013",
           "description": "Great Southern",
-          "phase": "REN"
-        },
-        {
-          "aac": "WA_PW014",
-          "description": "Central Wheat Belt",
-          "phase": "REN"
+          "phase": "UPD"
         }
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDW21033",
+      "title": "Severe Thunderstorm Warning for Central Wheat Belt, Gascoyne",
+      "type": "thunderstorm",
+      "state": "WA",
+      "link": "",
+      "desc": "",
+      "issued": "2026-09-27T20:07:08+08:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "WA_PW014",
+          "description": "Central Wheat Belt",
+          "phase": "CAN"
+        },
+        {
+          "aac": "WA_PW003",
+          "description": "Gascoyne",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -127,7 +141,7 @@
         "type": "Bush Fire",
         "size": "947 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 27 Sep 2026 11:47:41 GMT",
+        "updated": "Sun, 27 Sep 2026 12:19:40 GMT",
         "description": "CUNGLEBUNG RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.8251073279999,
@@ -734,7 +748,7 @@
         "type": "Bush Fire",
         "size": "3387 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 27 Sep 2026 11:47:41 GMT",
+        "updated": "Sun, 27 Sep 2026 12:19:40 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.942358734,
@@ -769,7 +783,7 @@
         "type": "Bush Fire",
         "size": "1775 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 27 Sep 2026 11:47:41 GMT",
+        "updated": "Sun, 27 Sep 2026 12:19:40 GMT",
         "description": "LIONSVILLE RD, LIONSVILLE 2460",
         "council": "Clarence Valley",
         "lat": -29.2220498529999,
@@ -1480,7 +1494,7 @@
         "type": "Bush Fire",
         "size": "2034 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 27 Sep 2026 11:47:41 GMT",
+        "updated": "Sun, 27 Sep 2026 12:19:40 GMT",
         "description": "MOUNT LINDESAY RD, LEGUME 2476",
         "council": "Tenterfield",
         "lat": -28.4917623609999,
@@ -2185,584 +2199,13 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
-        "title": "SCRUBBY CREEK RD, SOUTH KEMPSEY",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Bush Fire",
-        "size": "20 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Sun, 27 Sep 2026 11:47:41 GMT",
-        "description": "SCRUBBY CREEK RD, SOUTH KEMPSEY 2440",
-        "council": "Kempsey",
-        "lat": -31.139084,
-        "lng": 152.822556,
-        "polys": [
-          [
-            [
-              152.810642,
-              -31.139731001
-            ],
-            [
-              152.810594,
-              -31.139776001
-            ],
-            [
-              152.810513001,
-              -31.139845
-            ],
-            [
-              152.810437001,
-              -31.1399040009999
-            ],
-            [
-              152.81042,
-              -31.1399099999999
-            ],
-            [
-              152.81036,
-              -31.13996
-            ],
-            [
-              152.810282,
-              -31.140003001
-            ],
-            [
-              152.810199,
-              -31.140047
-            ],
-            [
-              152.810125,
-              -31.1400820009999
-            ],
-            [
-              152.810055001,
-              -31.1401300009999
-            ],
-            [
-              152.809985,
-              -31.1401729999999
-            ],
-            [
-              152.809907,
-              -31.1402130009999
-            ],
-            [
-              152.809824,
-              -31.140246001
-            ],
-            [
-              152.809746,
-              -31.140272001
-            ],
-            [
-              152.809666,
-              -31.1402440009999
-            ],
-            [
-              152.809639,
-              -31.140273001
-            ],
-            [
-              152.809621001,
-              -31.1403040009999
-            ],
-            [
-              152.809545001,
-              -31.1403320009999
-            ],
-            [
-              152.80946,
-              -31.1403520009999
-            ],
-            [
-              152.809379,
-              -31.140366
-            ],
-            [
-              152.809293,
-              -31.140380001
-            ],
-            [
-              152.809206,
-              -31.140386001
-            ],
-            [
-              152.809114,
-              -31.140386001
-            ],
-            [
-              152.809033,
-              -31.140386001
-            ],
-            [
-              152.80895,
-              -31.140386001
-            ],
-            [
-              152.808869,
-              -31.1403750009999
-            ],
-            [
-              152.808789,
-              -31.140357001
-            ],
-            [
-              152.808706,
-              -31.14034
-            ],
-            [
-              152.808616001,
-              -31.1403260009999
-            ],
-            [
-              152.808535,
-              -31.140301
-            ],
-            [
-              152.80847,
-              -31.1402590009999
-            ],
-            [
-              152.808403,
-              -31.140216
-            ],
-            [
-              152.808339,
-              -31.1401720009999
-            ],
-            [
-              152.808279,
-              -31.140115001
-            ],
-            [
-              152.808241,
-              -31.140053001
-            ],
-            [
-              152.808192,
-              -31.1399910009999
-            ],
-            [
-              152.808149,
-              -31.139931001
-            ],
-            [
-              152.808107999,
-              -31.139869
-            ],
-            [
-              152.80807,
-              -31.139804
-            ],
-            [
-              152.808032,
-              -31.139732
-            ],
-            [
-              152.808003,
-              -31.139664001
-            ],
-            [
-              152.807973,
-              -31.139597001
-            ],
-            [
-              152.80794,
-              -31.139531001
-            ],
-            [
-              152.8079,
-              -31.139466001
-            ],
-            [
-              152.807861,
-              -31.1394030009999
-            ],
-            [
-              152.807823,
-              -31.139333
-            ],
-            [
-              152.807799,
-              -31.139256001
-            ],
-            [
-              152.807796,
-              -31.1391780009999
-            ],
-            [
-              152.807777,
-              -31.139166001
-            ],
-            [
-              152.807767,
-              -31.139150001
-            ],
-            [
-              152.807751,
-              -31.139108001
-            ],
-            [
-              152.807709,
-              -31.1389990009999
-            ],
-            [
-              152.807692,
-              -31.1388249999999
-            ],
-            [
-              152.807692,
-              -31.1386469999999
-            ],
-            [
-              152.807692,
-              -31.138473001
-            ],
-            [
-              152.807751,
-              -31.1384409999999
-            ],
-            [
-              152.807769,
-              -31.138433001
-            ],
-            [
-              152.807775999,
-              -31.138358001
-            ],
-            [
-              152.807808,
-              -31.1382850009999
-            ],
-            [
-              152.807884,
-              -31.138248001
-            ],
-            [
-              152.807971,
-              -31.1382340009999
-            ],
-            [
-              152.808059,
-              -31.138223001
-            ],
-            [
-              152.808147,
-              -31.1382170009999
-            ],
-            [
-              152.808241,
-              -31.1382140009999
-            ],
-            [
-              152.808328,
-              -31.1382140009999
-            ],
-            [
-              152.808416,
-              -31.1382140009999
-            ],
-            [
-              152.808504,
-              -31.138213
-            ],
-            [
-              152.808594,
-              -31.138213
-            ],
-            [
-              152.808683,
-              -31.1382110009999
-            ],
-            [
-              152.808769,
-              -31.138208001
-            ],
-            [
-              152.808863,
-              -31.138199001
-            ],
-            [
-              152.808963,
-              -31.138182001
-            ],
-            [
-              152.809047,
-              -31.1381710009999
-            ],
-            [
-              152.809129,
-              -31.138160001
-            ],
-            [
-              152.80922,
-              -31.1381480009999
-            ],
-            [
-              152.80932,
-              -31.138131001
-            ],
-            [
-              152.809415,
-              -31.138116001
-            ],
-            [
-              152.809502,
-              -31.1381030009999
-            ],
-            [
-              152.809514,
-              -31.1380990009999
-            ],
-            [
-              152.809548,
-              -31.138092001
-            ],
-            [
-              152.80955,
-              -31.1380530009999
-            ],
-            [
-              152.80955,
-              -31.1379630009999
-            ],
-            [
-              152.80955,
-              -31.137868
-            ],
-            [
-              152.809554,
-              -31.137774001
-            ],
-            [
-              152.809566,
-              -31.137658001
-            ],
-            [
-              152.809583999,
-              -31.137572001
-            ],
-            [
-              152.809606,
-              -31.137487001
-            ],
-            [
-              152.80964,
-              -31.137393001
-            ],
-            [
-              152.809662,
-              -31.137298001
-            ],
-            [
-              152.80968,
-              -31.1372059999999
-            ],
-            [
-              152.809705,
-              -31.1371100009999
-            ],
-            [
-              152.809807,
-              -31.1370900009999
-            ],
-            [
-              152.809914001,
-              -31.137083001
-            ],
-            [
-              152.810027,
-              -31.137083001
-            ],
-            [
-              152.810128,
-              -31.1370850009999
-            ],
-            [
-              152.810243,
-              -31.137096001
-            ],
-            [
-              152.810355,
-              -31.137100001
-            ],
-            [
-              152.810468,
-              -31.137100001
-            ],
-            [
-              152.810573,
-              -31.137096001
-            ],
-            [
-              152.810684,
-              -31.137096001
-            ],
-            [
-              152.810792,
-              -31.137096001
-            ],
-            [
-              152.810895001,
-              -31.137106
-            ],
-            [
-              152.811017,
-              -31.137121
-            ],
-            [
-              152.81114,
-              -31.137139001
-            ],
-            [
-              152.811259,
-              -31.1371540009999
-            ],
-            [
-              152.811358,
-              -31.137183001
-            ],
-            [
-              152.811437,
-              -31.1372410009999
-            ],
-            [
-              152.811511,
-              -31.13731
-            ],
-            [
-              152.811581,
-              -31.137385001
-            ],
-            [
-              152.811644,
-              -31.137454001
-            ],
-            [
-              152.811696,
-              -31.1375350009999
-            ],
-            [
-              152.811727,
-              -31.137620001
-            ],
-            [
-              152.811738,
-              -31.137716
-            ],
-            [
-              152.811745,
-              -31.1378100009999
-            ],
-            [
-              152.811745,
-              -31.137903001
-            ],
-            [
-              152.811738,
-              -31.137997001
-            ],
-            [
-              152.811714,
-              -31.138089
-            ],
-            [
-              152.811687,
-              -31.1381759999999
-            ],
-            [
-              152.811669,
-              -31.1382649999999
-            ],
-            [
-              152.811637,
-              -31.138357001
-            ],
-            [
-              152.811608,
-              -31.138446001
-            ],
-            [
-              152.811579,
-              -31.1385339999999
-            ],
-            [
-              152.811527,
-              -31.1386229999999
-            ],
-            [
-              152.811478,
-              -31.138715001
-            ],
-            [
-              152.811428,
-              -31.1388020009999
-            ],
-            [
-              152.811381,
-              -31.138883001
-            ],
-            [
-              152.811331,
-              -31.1389639999999
-            ],
-            [
-              152.81128,
-              -31.139042
-            ],
-            [
-              152.811213999,
-              -31.139123001
-            ],
-            [
-              152.811150999,
-              -31.139195001
-            ],
-            [
-              152.811084,
-              -31.13927
-            ],
-            [
-              152.811014,
-              -31.1393430009999
-            ],
-            [
-              152.810956,
-              -31.139418001
-            ],
-            [
-              152.810895001,
-              -31.1394950009999
-            ],
-            [
-              152.810823,
-              -31.139574001
-            ],
-            [
-              152.810751,
-              -31.1396389999999
-            ],
-            [
-              152.81067,
-              -31.139705001
-            ],
-            [
-              152.810642,
-              -31.139731001
-            ]
-          ]
-        ],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
         "title": "SEVEN MILE GATE FIRETRAIL, RAMORNIE",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "1286 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 27 Sep 2026 11:47:41 GMT",
+        "updated": "Sun, 27 Sep 2026 12:19:40 GMT",
         "description": "SEVEN MILE GATE FIRETRAIL, RAMORNIE 2460",
         "council": "Clarence Valley",
         "lat": -29.751607,
@@ -2833,7 +2276,7 @@
         "type": "Bush Fire",
         "size": "2 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sun, 27 Sep 2026 11:47:41 GMT",
+        "updated": "Sun, 27 Sep 2026 12:19:40 GMT",
         "description": "Vault Creek",
         "council": "Singleton",
         "lat": -32.811541007,
@@ -3138,10 +2581,25 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-09-27T11:35:37+00:00",
-        "description": "RIVERVALE, CITY OF BELMONT",
-        "lat": -31.9645,
-        "lng": 115.9134,
+        "updated": "2026-09-27T12:15:35+00:00",
+        "description": "MARBELUP, CITY OF ALBANY",
+        "lat": -34.9964,
+        "lng": 117.8122,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-09-27T12:07:09+00:00",
+        "description": "ROEBOURNE, CITY OF KARRATHA",
+        "lat": -20.7668,
+        "lng": 117.1454,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -7583,32 +7041,28 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-09-27T06:05:00Z",
+      "issued_utc": "2026-09-27T12:00:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Coffs Coast: Wooli to Smoky Cape",
-            "Macquarie Coast: Smoky Cape to Seal Rocks",
-            "Hunter Coast: Seal Rocks to Broken Bay"
+            "Macquarie Coast: Smoky Cape to Seal Rocks"
           ],
           "aac_codes": [
-            "NSW_MW007",
-            "NSW_MW006",
-            "NSW_MW005"
+            "NSW_MW006"
           ],
-          "summary": "Coffs Coast, Macquarie Coast and Hunter Coast"
+          "summary": "Macquarie Coast"
         }
       ]
     },
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-09-27T06:00:00Z",
+      "issued_utc": "2026-09-27T12:00:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Lower West Coast, Central Coast and South Central Coast",
+        "Strong Wind Warning for Sunday for Lower West Coast",
         "Strong Wind Warning for Monday for Lower West Coast and Central Coast"
       ],
       "hazards": [
@@ -7616,16 +7070,12 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Lower West Coast: Elliston to Cape Carnot",
-            "Central Coast",
-            "South Central Coast"
+            "Lower West Coast: Elliston to Cape Carnot"
           ],
           "aac_codes": [
-            "SA_MW003",
-            "SA_MW004",
-            "SA_MW008"
+            "SA_MW003"
           ],
-          "summary": "Lower West Coast, Central Coast and South Central Coast"
+          "summary": "Lower West Coast"
         }
       ]
     },
@@ -7652,27 +7102,6 @@
             "WA_MW013"
           ],
           "summary": "Leeuwin Coast, Albany Coast and Esperance Coast"
-        }
-      ]
-    },
-    "TAS": {
-      "state": "TAS",
-      "product": "IDT20100",
-      "issued_utc": "2026-09-27T06:05:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Lower East Coast: Wineglass Bay to Tasman Island",
-            "South East Coast: Tasman Island to South East Cape"
-          ],
-          "aac_codes": [
-            "TAS_MW005",
-            "TAS_MW006"
-          ],
-          "summary": "Lower East Coast and South East Coast"
         }
       ]
     }
