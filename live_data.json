@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-27T16:53:04.059296+00:00",
-  "last_checked_utc": "2026-09-27T16:53:04.059296+00:00",
+  "generated_utc": "2026-09-27T17:23:02.491808+00:00",
+  "last_checked_utc": "2026-09-27T17:23:02.491808+00:00",
   "warning_count": 8,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "28/00:28 EST Marine Wind Warning Summary for Queensland",
+      "title": "28/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 27 Sep 2026 14:28:59 GMT"
+      "issued": "Sun, 27 Sep 2026 17:00:13 GMT"
     },
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "27/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "28/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 27 Sep 2026 11:01:49 GMT"
+      "issued": "Sun, 27 Sep 2026 17:01:14 GMT"
     },
     {
       "pid": "",
@@ -131,7 +131,7 @@
         "type": "Bush Fire",
         "size": "947 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 27 Sep 2026 16:47:40 GMT",
+        "updated": "Sun, 27 Sep 2026 17:19:39 GMT",
         "description": "CUNGLEBUNG RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.8251073279999,
@@ -738,7 +738,7 @@
         "type": "Bush Fire",
         "size": "3387 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 27 Sep 2026 16:47:40 GMT",
+        "updated": "Sun, 27 Sep 2026 17:19:39 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.942358734,
@@ -773,7 +773,7 @@
         "type": "Bush Fire",
         "size": "1775 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 27 Sep 2026 16:47:40 GMT",
+        "updated": "Sun, 27 Sep 2026 17:19:39 GMT",
         "description": "LIONSVILLE RD, LIONSVILLE 2460",
         "council": "Clarence Valley",
         "lat": -29.2220498529999,
@@ -1488,7 +1488,7 @@
         "type": "Bush Fire",
         "size": "2034 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 27 Sep 2026 16:47:40 GMT",
+        "updated": "Sun, 27 Sep 2026 17:19:39 GMT",
         "description": "MOUNT LINDESAY RD, LEGUME 2476",
         "council": "Tenterfield",
         "lat": -28.4917623609999,
@@ -2203,7 +2203,7 @@
         "type": "Bush Fire",
         "size": "1286 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 27 Sep 2026 16:47:40 GMT",
+        "updated": "Sun, 27 Sep 2026 17:19:39 GMT",
         "description": "SEVEN MILE GATE FIRETRAIL, RAMORNIE 2460",
         "council": "Clarence Valley",
         "lat": -29.751607,
@@ -2274,7 +2274,7 @@
         "type": "Bush Fire",
         "size": "2 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sun, 27 Sep 2026 16:47:40 GMT",
+        "updated": "Sun, 27 Sep 2026 17:19:39 GMT",
         "description": "Vault Creek",
         "council": "Singleton",
         "lat": -32.811541007,
@@ -7024,8 +7024,11 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-09-27T14:28:51Z",
-      "overview": [],
+      "issued_utc": "2026-09-27T17:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Monday for Peninsula Coast, Cooktown Coast and Gold Coast Waters",
+        "Strong Wind Warning for Tuesday for Peninsula Coast, Cooktown Coast, Cairns Coast and Capricornia Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -7088,10 +7091,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-09-27T11:01:00Z",
+      "issued_utc": "2026-09-27T17:01:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Leeuwin Coast, Albany Coast and Esperance Coast",
-        "Strong Wind Warning for Monday for Leeuwin Coast and Albany Coast"
+        "Strong Wind Warning for Monday for Leeuwin Coast and Albany Coast",
+        "Strong Wind Warning for Tuesday for Albany Coast"
       ],
       "hazards": [
         {
@@ -7099,15 +7102,13 @@
           "severity": "STR",
           "zones": [
             "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay"
+            "Albany Coast: Walpole to Bremer Bay"
           ],
           "aac_codes": [
             "WA_MW011",
-            "WA_MW012",
-            "WA_MW013"
+            "WA_MW012"
           ],
-          "summary": "Leeuwin Coast, Albany Coast and Esperance Coast"
+          "summary": "Leeuwin Coast and Albany Coast"
         }
       ]
     }
