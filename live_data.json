@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-09-27T08:53:05.124177+00:00",
-  "last_checked_utc": "2026-09-27T08:53:05.124177+00:00",
-  "warning_count": 7,
+  "generated_utc": "2026-09-27T09:23:10.972248+00:00",
+  "last_checked_utc": "2026-09-27T09:23:10.972248+00:00",
+  "warning_count": 8,
   "warnings": [
     {
       "pid": "",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for Gascoyne, Goldfields, South Interior, Central West, Central Wheat Belt",
+      "title": "Severe Thunderstorm Warning for Gascoyne, Goldfields, South Interior, Central Wheat Belt",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Meekatharra, Mount Magnet, Cue, Laverton, Leinster and Leonora.",
-      "issued": "2026-09-27T16:13:45+08:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Kalgoorlie, Meekatharra, Mount Magnet, Laverton, Leinster and Leonora. Severe thunderstorms are no longer occurring in the Central West district and the warning for this district is CANCELLED.",
+      "issued": "2026-09-27T17:06:33+08:00",
       "cancelled": false,
       "areas": [
         {
@@ -80,11 +80,6 @@
         {
           "aac": "WA_PW007",
           "description": "South Interior",
-          "phase": "NEW"
-        },
-        {
-          "aac": "WA_PW008",
-          "description": "Central West",
           "phase": "REN"
         },
         {
@@ -94,28 +89,31 @@
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDW21033",
+      "title": "Severe Thunderstorm Warning for Central West",
+      "type": "thunderstorm",
+      "state": "WA",
+      "link": "",
+      "desc": "",
+      "issued": "2026-09-27T17:06:33+08:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "WA_PW008",
+          "description": "Central West",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
   "incidents": {
     "nsw": [
-      {
-        "title": "Amaroo Dr, Moree",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Sun, 27 Sep 2026 08:47:40 GMT",
-        "description": "Amaroo Dr, Moree, NSW 2400",
-        "council": "Moree Plains",
-        "lat": -29.484751,
-        "lng": 149.837276,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
       {
         "title": "CUNGLEBUNG RD, BUCCARUMBI",
         "alertLevel": "Advice",
@@ -123,7 +121,7 @@
         "type": "Bush Fire",
         "size": "947 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 27 Sep 2026 08:47:40 GMT",
+        "updated": "Sun, 27 Sep 2026 09:19:40 GMT",
         "description": "CUNGLEBUNG RD, BUCCARUMBI 2460",
         "council": "Clarence Valley",
         "lat": -29.8251073279999,
@@ -730,7 +728,7 @@
         "type": "Bush Fire",
         "size": "3387 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 27 Sep 2026 08:47:40 GMT",
+        "updated": "Sun, 27 Sep 2026 09:19:40 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.942358734,
@@ -765,7 +763,7 @@
         "type": "Bush Fire",
         "size": "1775 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 27 Sep 2026 08:47:40 GMT",
+        "updated": "Sun, 27 Sep 2026 09:19:40 GMT",
         "description": "LIONSVILLE RD, LIONSVILLE 2460",
         "council": "Clarence Valley",
         "lat": -29.2220498529999,
@@ -1476,7 +1474,7 @@
         "type": "Bush Fire",
         "size": "2034 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 27 Sep 2026 08:47:40 GMT",
+        "updated": "Sun, 27 Sep 2026 09:19:40 GMT",
         "description": "MOUNT LINDESAY RD, LEGUME 2476",
         "council": "Tenterfield",
         "lat": -28.4917623609999,
@@ -2023,11 +2021,11 @@
       {
         "title": "SCRUBBY CREEK RD, SOUTH KEMPSEY",
         "alertLevel": "Advice",
-        "status": "Being controlled",
+        "status": "Not yet controlled",
         "type": "Bush Fire",
-        "size": "0 ha",
+        "size": "20 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 27 Sep 2026 08:47:40 GMT",
+        "updated": "Sun, 27 Sep 2026 09:19:40 GMT",
         "description": "SCRUBBY CREEK RD, SOUTH KEMPSEY 2440",
         "council": "Kempsey",
         "lat": -31.139084,
@@ -2043,7 +2041,7 @@
         "type": "Bush Fire",
         "size": "1286 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 27 Sep 2026 08:47:40 GMT",
+        "updated": "Sun, 27 Sep 2026 09:19:40 GMT",
         "description": "SEVEN MILE GATE FIRETRAIL, RAMORNIE 2460",
         "council": "Clarence Valley",
         "lat": -29.751607,
@@ -2114,7 +2112,7 @@
         "type": "Bush Fire",
         "size": "2 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sun, 27 Sep 2026 08:47:40 GMT",
+        "updated": "Sun, 27 Sep 2026 09:19:40 GMT",
         "description": "Vault Creek",
         "council": "Singleton",
         "lat": -32.811541007,
@@ -2413,31 +2411,16 @@
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-09-27T08:41:08+00:00",
-        "description": "PARKERVILLE, SHIRE OF MUNDARING",
-        "lat": -31.8989,
-        "lng": 116.1403,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Report of Smoke",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-09-27T08:38:12+00:00",
-        "description": "NORTH COOGEE, CITY OF COCKBURN",
-        "lat": -32.0793,
-        "lng": 115.7528,
+        "updated": "2026-09-27T09:05:49+00:00",
+        "description": "ASHENDON, CITY OF ARMADALE",
+        "lat": -32.1997,
+        "lng": 116.2868,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -3049,46 +3032,16 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - BAYVIEW",
+        "title": "Grass and Scrub Fire - STUART",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-09-27T08:46:06+00:00",
-        "description": "BAYVIEW",
-        "lat": -12.4384,
-        "lng": 130.8502,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Structure Fire - ANGLESEY RD, GIRRAWEEN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-09-27T08:42:46+00:00",
-        "description": "ANGLESEY RD, GIRRAWEEN",
-        "lat": -12.5494,
-        "lng": 131.1101,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - SMITH ST, CICCONE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-09-27T08:42:34+00:00",
-        "description": "SMITH ST, CICCONE",
-        "lat": -23.6894,
-        "lng": 133.864,
+        "updated": "2026-09-27T09:10:41+00:00",
+        "description": "STUART",
+        "lat": -23.6748,
+        "lng": 133.8741,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -3285,7 +3238,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 42,
+  "incident_count": 38,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
