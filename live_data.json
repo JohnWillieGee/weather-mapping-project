@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-09-28T14:23:09.824131+00:00",
-  "last_checked_utc": "2026-09-28T14:23:09.824131+00:00",
-  "warning_count": 7,
+  "generated_utc": "2026-09-28T14:53:07.317020+00:00",
+  "last_checked_utc": "2026-09-28T14:53:07.317020+00:00",
+  "warning_count": 6,
   "warnings": [
     {
       "pid": "",
@@ -49,42 +49,33 @@
       "issued": "Mon, 28 Sep 2026 12:00:13 GMT"
     },
     {
-      "pid": "",
-      "title": "28/16:10 EST Frost Warning\nfor Upper Derwent Valley forecast district",
-      "type": "other",
-      "state": "TAS",
-      "link": "http://reg.bom.gov.au/tas/warnings/frost.shtml",
-      "desc": "",
-      "issued": "Mon, 28 Sep 2026 06:10:34 GMT"
-    },
-    {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for Goldfields, Eucla, South Interior",
+      "title": "Cancellation of Severe Thunderstorm Warning for Goldfields, Eucla, South Interior",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Balladonia, Eyre, Rawlinna and Cocklebiddy. 93 km/h wind gust was recorded at Leonora Airport at 5:31 pm.",
-      "issued": "2026-09-28T21:34:17+08:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-09-28T22:46:59+08:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "WA_PW004",
           "description": "Goldfields",
-          "phase": "UPD"
+          "phase": "CAN"
         },
         {
           "aac": "WA_PW005",
           "description": "Eucla",
-          "phase": "UPD"
+          "phase": "CAN"
         },
         {
           "aac": "WA_PW007",
           "description": "South Interior",
-          "phase": "UPD"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -97,7 +88,7 @@
         "type": "Bush Fire",
         "size": "3444 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 28 Sep 2026 14:19:40 GMT",
+        "updated": "Mon, 28 Sep 2026 14:47:40 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.942358734,
@@ -132,7 +123,7 @@
         "type": "Bush Fire",
         "size": "2081 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 28 Sep 2026 14:19:40 GMT",
+        "updated": "Mon, 28 Sep 2026 14:47:40 GMT",
         "description": "MOUNT LINDESAY RD, LEGUME 2476",
         "council": "Tenterfield",
         "lat": -28.4917623609999,
@@ -1635,22 +1626,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-09-28T14:20:00+00:00",
-        "description": "HIGGINS",
-        "lat": -35.2311,
-        "lng": 149.0208,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - HIGGINS",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-09-28T14:20:00+00:00",
+        "updated": "2026-09-28T14:49:00+00:00",
         "description": "HIGGINS",
         "lat": -35.2312,
         "lng": 149.0208,
@@ -1665,24 +1641,9 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "Fire",
-        "updated": "2026-09-28T14:08:16+00:00",
+        "updated": "2026-09-28T14:40:03+00:00",
         "description": "HIGGINS",
         "lat": -35.2312,
-        "lng": 149.0208,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - HIGGINS",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Ambulance",
-        "updated": "2026-09-28T14:07:48+00:00",
-        "description": "HIGGINS",
-        "lat": -35.2311,
         "lng": 149.0208,
         "polys": [],
         "state": "ACT",
@@ -1697,17 +1658,17 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "CFS",
-        "updated": "2026-09-28T14:12:00+00:00",
-        "description": "MORPHETT VALE",
-        "lat": -35.1176,
-        "lng": 138.5373,
+        "updated": "2026-09-28T14:18:00+00:00",
+        "description": "NAIRNE",
+        "lat": -35.0548,
+        "lng": 138.9192,
         "polys": [],
         "state": "SA",
         "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
       }
     ]
   },
-  "incident_count": 36,
+  "incident_count": 34,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
