@@ -1,17 +1,8 @@
 {
-  "generated_utc": "2026-09-28T13:23:05.978744+00:00",
-  "last_checked_utc": "2026-09-28T13:23:05.978744+00:00",
-  "warning_count": 8,
+  "generated_utc": "2026-09-28T13:53:07.075629+00:00",
+  "last_checked_utc": "2026-09-28T13:53:07.075629+00:00",
+  "warning_count": 7,
   "warnings": [
-    {
-      "pid": "",
-      "title": "28/16:05 EST Marine Wind Warning Summary for New South Wales",
-      "type": "wind",
-      "state": "NSW",
-      "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
-      "desc": "",
-      "issued": "Mon, 28 Sep 2026 06:05:15 GMT"
-    },
     {
       "pid": "",
       "title": "28/22:00 EST Marine Wind Warning Summary for Victoria",
@@ -72,28 +63,28 @@
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding over the next several hours in parts of the Goldfields, Eucla and South Interior districts. Locations which may be affected include Eyre, Rawlinna and Cocklebiddy. Severe thunderstorms are likely to produce damaging winds over the next several hours in parts of the Goldfields district. 93 km/h wind gust was recorded at Leonora Airport at 5:31 pm.",
-      "issued": "2026-09-28T19:02:39+08:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Balladonia, Eyre, Rawlinna and Cocklebiddy. 93 km/h wind gust was recorded at Leonora Airport at 5:31 pm.",
+      "issued": "2026-09-28T21:34:17+08:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "WA_PW004",
           "description": "Goldfields",
-          "phase": "REN"
+          "phase": "UPD"
         },
         {
           "aac": "WA_PW005",
           "description": "Eucla",
-          "phase": "REN"
+          "phase": "UPD"
         },
         {
           "aac": "WA_PW007",
           "description": "South Interior",
-          "phase": "REN"
+          "phase": "UPD"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "REN"
+      "hazardPhase": "UPD"
     }
   ],
   "fetch_errors": {},
@@ -106,7 +97,7 @@
         "type": "Bush Fire",
         "size": "3444 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 28 Sep 2026 13:19:41 GMT",
+        "updated": "Mon, 28 Sep 2026 13:47:40 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.942358734,
@@ -141,7 +132,7 @@
         "type": "Bush Fire",
         "size": "2081 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 28 Sep 2026 13:19:41 GMT",
+        "updated": "Mon, 28 Sep 2026 13:47:40 GMT",
         "description": "MOUNT LINDESAY RD, LEGUME 2476",
         "council": "Tenterfield",
         "lat": -28.4917623609999,
@@ -1411,21 +1402,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - WUPPA TOWN CAMP INTERNAL -, TENNANT CREEK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-09-28T13:01:34+00:00",
-        "description": "WUPPA TOWN CAMP INTERNAL -, TENNANT CREEK",
-        "lat": -19.637,
-        "lng": 134.1992,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - ARLTUNGA PARK, HART",
         "alertLevel": "Advice",
         "status": "active",
@@ -1651,10 +1627,71 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [],
+    "act": [
+      {
+        "title": "HOUSE FIRE - HIGGINS",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-09-28T13:48:00+00:00",
+        "description": "HIGGINS",
+        "lat": -35.2311,
+        "lng": 149.0208,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - HIGGINS",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-09-28T13:48:00+00:00",
+        "description": "HIGGINS",
+        "lat": -35.2312,
+        "lng": 149.0208,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - HIGGINS",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Fire",
+        "updated": "2026-09-28T13:47:24+00:00",
+        "description": "HIGGINS",
+        "lat": -35.2312,
+        "lng": 149.0208,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - HIGGINS",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Ambulance",
+        "updated": "2026-09-28T13:47:23+00:00",
+        "description": "HIGGINS",
+        "lat": -35.2311,
+        "lng": 149.0208,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      }
+    ],
     "sa": []
   },
-  "incident_count": 32,
+  "incident_count": 35,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
