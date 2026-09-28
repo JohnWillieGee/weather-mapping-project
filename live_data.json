@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-28T16:53:06.422350+00:00",
-  "last_checked_utc": "2026-09-28T16:53:06.422350+00:00",
+  "generated_utc": "2026-09-28T17:23:12.644202+00:00",
+  "last_checked_utc": "2026-09-28T17:23:12.644202+00:00",
   "warning_count": 6,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "28/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "29/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 28 Sep 2026 11:00:11 GMT"
+      "issued": "Mon, 28 Sep 2026 17:00:15 GMT"
     },
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "28/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "29/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 28 Sep 2026 11:01:14 GMT"
+      "issued": "Mon, 28 Sep 2026 17:01:13 GMT"
     },
     {
       "pid": "",
@@ -88,7 +88,7 @@
         "type": "Bush Fire",
         "size": "3444 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 28 Sep 2026 16:47:41 GMT",
+        "updated": "Mon, 28 Sep 2026 17:19:40 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.942358734,
@@ -123,7 +123,7 @@
         "type": "Bush Fire",
         "size": "2081 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 28 Sep 2026 16:47:41 GMT",
+        "updated": "Mon, 28 Sep 2026 17:19:40 GMT",
         "description": "MOUNT LINDESAY RD, LEGUME 2476",
         "council": "Tenterfield",
         "lat": -28.4917623609999,
@@ -1408,21 +1408,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - ILPARPA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-09-28T16:20:46+00:00",
-        "description": "ILPARPA",
-        "lat": -23.7284,
-        "lng": 133.8642,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - ARLTUNGA PARK, HART",
         "alertLevel": "Advice",
         "status": "active",
@@ -1656,7 +1641,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-09-28T16:49:00+00:00",
+        "updated": "2026-09-28T17:20:00+00:00",
         "description": "HIGGINS",
         "lat": -35.2312,
         "lng": 149.0208,
@@ -1671,7 +1656,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "Fire",
-        "updated": "2026-09-28T16:00:15+00:00",
+        "updated": "2026-09-28T17:19:21+00:00",
         "description": "HIGGINS",
         "lat": -35.2312,
         "lng": 149.0208,
@@ -1698,7 +1683,7 @@
       }
     ]
   },
-  "incident_count": 36,
+  "incident_count": 35,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5329,22 +5314,24 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-09-28T11:00:00Z",
+      "issued_utc": "2026-09-28T17:00:00Z",
       "overview": [
-        "Strong Wind Warning for Monday for Cooktown Coast",
-        "Strong Wind Warning for Tuesday for Peninsula Coast and Cooktown Coast"
+        "Strong Wind Warning for Tuesday for Peninsula Coast and Cooktown Coast",
+        "Strong Wind Warning for Wednesday for Peninsula Coast and Cooktown Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Peninsula Coast: Sharp Point to Cape Melville",
             "Cooktown Coast: Cape Melville to Cape Tribulation"
           ],
           "aac_codes": [
+            "QLD_MW004",
             "QLD_MW005"
           ],
-          "summary": "Cooktown Coast"
+          "summary": "Peninsula Coast and Cooktown Coast"
         }
       ]
     },
@@ -5393,22 +5380,24 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-09-28T11:01:00Z",
+      "issued_utc": "2026-09-28T17:01:00Z",
       "overview": [
-        "Strong Wind Warning for Monday for Albany Coast",
-        "Strong Wind Warning for Tuesday for Leeuwin Coast and Albany Coast"
+        "Strong Wind Warning for Tuesday for Leeuwin Coast and Albany Coast",
+        "Strong Wind Warning for Wednesday for Leeuwin Coast, Albany Coast and Esperance Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
             "Albany Coast: Walpole to Bremer Bay"
           ],
           "aac_codes": [
+            "WA_MW011",
             "WA_MW012"
           ],
-          "summary": "Albany Coast"
+          "summary": "Leeuwin Coast and Albany Coast"
         }
       ]
     },
