@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-09-29T23:53:01.660945+00:00",
-  "last_checked_utc": "2026-09-29T23:53:01.660945+00:00",
+  "generated_utc": "2026-09-30T00:23:05.105830+00:00",
+  "last_checked_utc": "2026-09-30T00:23:05.105830+00:00",
   "warning_count": 5,
   "warnings": [
     {
       "pid": "",
-      "title": "30/04:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "30/10:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 29 Sep 2026 18:00:10 GMT"
+      "issued": "Wed, 30 Sep 2026 00:00:13 GMT"
     },
     {
       "pid": "",
-      "title": "30/04:10 EST Marine Wind Warning Summary for Victoria",
+      "title": "30/10:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 29 Sep 2026 18:10:35 GMT"
+      "issued": "Wed, 30 Sep 2026 00:00:20 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "30/08:50 EST Marine Wind Warning Summary for Tasmania",
+      "title": "30/10:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 29 Sep 2026 22:50:03 GMT"
+      "issued": "Wed, 30 Sep 2026 00:00:14 GMT"
     }
   ],
   "fetch_errors": {},
@@ -59,7 +59,7 @@
         "type": "Bush Fire",
         "size": "3444 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 29 Sep 2026 23:47:41 GMT",
+        "updated": "Wed, 30 Sep 2026 00:19:40 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.942358734,
@@ -94,7 +94,7 @@
         "type": "Bush Fire",
         "size": "2081 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 29 Sep 2026 23:47:41 GMT",
+        "updated": "Wed, 30 Sep 2026 00:19:40 GMT",
         "description": "MOUNT LINDESAY RD, LEGUME 2476",
         "council": "Tenterfield",
         "lat": -28.4917623609999,
@@ -823,6 +823,21 @@
     "tas": [],
     "wa": [
       {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-09-30T00:11:15+00:00",
+        "description": "KARNUP, CITY OF ROCKINGHAM",
+        "lat": -32.4326,
+        "lng": 115.7852,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Bushfire Advice THREAT IS REDUCED - GEEGULLY CREEK",
         "alertLevel": "Advice",
         "status": "active",
@@ -1495,7 +1510,22 @@
         "type": "HazMat",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-09-29T23:50:00+00:00",
+        "updated": "2026-09-30T00:17:00+00:00",
+        "description": "BRADDON",
+        "lat": -35.2614,
+        "lng": 149.1322,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HAZMAT INCIDENT - BRADDON",
+        "alertLevel": "",
+        "status": "active",
+        "type": "HazMat",
+        "size": "",
+        "agency": "Fire - Ambulance",
+        "updated": "2026-09-30T00:12:28+00:00",
         "description": "BRADDON",
         "lat": -35.2614,
         "lng": 149.1322,
@@ -1504,9 +1534,25 @@
         "sourceUrl": "https://esa.act.gov.au/"
       }
     ],
-    "sa": []
+    "sa": [
+      {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-09-29T23:48:00+00:00",
+        "description": "BLACKWOOD",
+        "lat": -35.0304,
+        "lng": 138.6063,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      }
+    ]
   },
-  "incident_count": 28,
+  "incident_count": 31,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5161,7 +5207,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-09-29T18:00:00Z",
+      "issued_utc": "2026-09-30T00:00:00Z",
       "overview": [
         "Strong Wind Warning for Wednesday for Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast",
         "Strong Wind Warning for Thursday for Macquarie Coast, Hunter Coast and Sydney Coast"
@@ -5191,7 +5237,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-09-29T18:10:00Z",
+      "issued_utc": "2026-09-30T00:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -5236,9 +5282,9 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-09-29T22:49:55Z",
+      "issued_utc": "2026-09-30T00:00:00Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for Lower East Coast, Central West Coast, South West Coast and South East Coast",
+        "Strong Wind Warning for Wednesday for South East Coast and South West Coast",
         "Strong Wind Warning for Thursday for South East Coast and South West Coast"
       ],
       "hazards": [
@@ -5246,18 +5292,14 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Lower East Coast: Wineglass Bay to Tasman Island",
             "South East Coast: Tasman Island to South East Cape",
-            "South West Coast: South East Cape to Low Rocky Point",
-            "Central West Coast: Low Rocky Point to Sandy Cape"
+            "South West Coast: South East Cape to Low Rocky Point"
           ],
           "aac_codes": [
-            "TAS_MW005",
             "TAS_MW006",
-            "TAS_MW007",
-            "TAS_MW008"
+            "TAS_MW007"
           ],
-          "summary": "Lower East Coast, South East Coast, South West Coast and Central West Coast"
+          "summary": "South East Coast and South West Coast"
         }
       ]
     }
