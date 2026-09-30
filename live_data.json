@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-09-30T13:23:30.110244+00:00",
-  "last_checked_utc": "2026-09-30T13:23:30.110244+00:00",
-  "warning_count": 9,
+  "generated_utc": "2026-09-30T13:53:06.379649+00:00",
+  "last_checked_utc": "2026-09-30T13:53:06.379649+00:00",
+  "warning_count": 8,
   "warnings": [
     {
       "pid": "",
@@ -11,15 +11,6 @@
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Wed, 30 Sep 2026 12:27:27 GMT"
-    },
-    {
-      "pid": "",
-      "title": "30/16:15 EST Marine Wind Warning Summary for Victoria",
-      "type": "wind",
-      "state": "VIC",
-      "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
-      "desc": "",
-      "issued": "Wed, 30 Sep 2026 06:15:17 GMT"
     },
     {
       "pid": "",
@@ -119,14 +110,14 @@
   "incidents": {
     "nsw": [
       {
-        "title": "COTTONWOOD CR, MACQUARIE FIELDS",
+        "title": "Cottonwood Cr, Macquarie Fields",
         "alertLevel": "Advice",
-        "status": "Not yet controlled",
+        "status": "Being controlled",
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Wed, 30 Sep 2026 13:19:41 GMT",
-        "description": "COTTONWOOD CR, MACQUARIE FIELDS 2564",
+        "updated": "Wed, 30 Sep 2026 13:47:41 GMT",
+        "description": "Cottonwood Cr, Macquarie Fields, NSW 2564",
         "council": "Campbelltown",
         "lat": -33.990280152,
         "lng": 150.90499878,
@@ -141,7 +132,7 @@
         "type": "Bush Fire",
         "size": "3444 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 30 Sep 2026 13:19:41 GMT",
+        "updated": "Wed, 30 Sep 2026 13:47:41 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.942358734,
@@ -176,7 +167,7 @@
         "type": "Grass Fire",
         "size": "1 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 30 Sep 2026 13:19:41 GMT",
+        "updated": "Wed, 30 Sep 2026 13:47:41 GMT",
         "description": "KILTO PL, KURRAJONG 2758",
         "council": "Hawkesbury",
         "lat": -33.505622,
@@ -347,7 +338,7 @@
         "type": "Bush Fire",
         "size": "55 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 30 Sep 2026 13:19:41 GMT",
+        "updated": "Wed, 30 Sep 2026 13:47:41 GMT",
         "description": "MINIMBAH RD, MINIMBAH 2312",
         "council": "Mid-Coast",
         "lat": -32.193870545,
@@ -690,7 +681,22 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-09-30T13:10:09+00:00",
+        "updated": "2026-09-30T13:24:56+00:00",
+        "description": "KINROSS, CITY OF JOONDALUP",
+        "lat": -31.7183,
+        "lng": 115.7412,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-09-30T13:20:09+00:00",
         "description": "EAST VICTORIA PARK, TOWN OF VICTORIA PARK",
         "lat": -31.9908,
         "lng": 115.9101,
@@ -1270,7 +1276,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 30,
+  "incident_count": 31,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4897,6 +4903,107 @@
       "4": "2026-10-04T00:00:00+10:00"
     }
   },
-  "marine_warnings": {},
+  "marine_warnings": {
+    "QLD": {
+      "state": "QLD",
+      "product": "IDQ20085",
+      "issued_utc": "2026-09-30T11:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Wednesday for Peninsula Coast and Cooktown Coast",
+        "Strong Wind Warning for Thursday for Peninsula Coast and Cooktown Coast"
+      ],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Peninsula Coast: Sharp Point to Cape Melville",
+            "Cooktown Coast: Cape Melville to Cape Tribulation"
+          ],
+          "aac_codes": [
+            "QLD_MW004",
+            "QLD_MW005"
+          ],
+          "summary": "Peninsula Coast and Cooktown Coast"
+        }
+      ]
+    },
+    "NSW": {
+      "state": "NSW",
+      "product": "IDN20400",
+      "issued_utc": "2026-09-30T12:27:18Z",
+      "overview": [
+        "Strong Wind Warning for Wednesday for Illawarra Coast, Sydney Coast and Hunter Coast",
+        "Strong Wind Warning for Thursday for Sydney Coast, Macquarie Coast and Hunter Coast"
+      ],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Hunter Coast: Seal Rocks to Broken Bay",
+            "Sydney Coast: Broken Bay to Port Hacking",
+            "Illawarra Coast: Port Hacking to Ulladulla"
+          ],
+          "aac_codes": [
+            "NSW_MW005",
+            "NSW_MW004",
+            "NSW_MW003"
+          ],
+          "summary": "Hunter Coast, Sydney Coast and Illawarra Coast"
+        }
+      ]
+    },
+    "WA": {
+      "state": "WA",
+      "product": "IDW20100",
+      "issued_utc": "2026-09-30T11:01:00Z",
+      "overview": [
+        "Strong Wind Warning for Wednesday for Leeuwin Coast, Albany Coast and Esperance Coast",
+        "Strong Wind Warning for Thursday for Ningaloo Coast, Gascoyne Coast and Geraldton Coast"
+      ],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay"
+          ],
+          "aac_codes": [
+            "WA_MW011",
+            "WA_MW012",
+            "WA_MW013"
+          ],
+          "summary": "Leeuwin Coast, Albany Coast and Esperance Coast"
+        }
+      ]
+    },
+    "TAS": {
+      "state": "TAS",
+      "product": "IDT20100",
+      "issued_utc": "2026-09-30T12:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Wednesday for South East Coast and South West Coast",
+        "Strong Wind Warning for Thursday for South East Coast and South West Coast"
+      ],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "South East Coast: Tasman Island to South East Cape",
+            "South West Coast: South East Cape to Low Rocky Point"
+          ],
+          "aac_codes": [
+            "TAS_MW006",
+            "TAS_MW007"
+          ],
+          "summary": "South East Coast and South West Coast"
+        }
+      ]
+    }
+  },
   "cyclones": []
 }
