@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-30T09:23:16.254522+00:00",
-  "last_checked_utc": "2026-09-30T09:23:16.254522+00:00",
+  "generated_utc": "2026-09-30T09:53:10.247219+00:00",
+  "last_checked_utc": "2026-09-30T09:53:10.247219+00:00",
   "warning_count": 9,
   "warnings": [
     {
@@ -92,27 +92,27 @@
     },
     {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for Eucla, South Interior",
+      "title": "Cancellation of Severe Thunderstorm Warning for Eucla, South Interior",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours.",
-      "issued": "2026-09-30T14:48:55+08:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled. Thunderstorms remain ongoing throughout the South Interior this evening and are not expected to be severe. However, a new Severe Thunderstorm Warning will be issued should severe thunderstorms redevelop.",
+      "issued": "2026-09-30T17:23:01+08:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "WA_PW005",
           "description": "Eucla",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "WA_PW007",
           "description": "South Interior",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -125,7 +125,7 @@
         "type": "Bush Fire",
         "size": "3444 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 30 Sep 2026 09:19:40 GMT",
+        "updated": "Wed, 30 Sep 2026 09:47:40 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.942358734,
@@ -160,7 +160,7 @@
         "type": "Grass Fire",
         "size": "1 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 30 Sep 2026 09:19:40 GMT",
+        "updated": "Wed, 30 Sep 2026 09:47:40 GMT",
         "description": "KILTO PL, KURRAJONG 2758",
         "council": "Hawkesbury",
         "lat": -33.505622,
@@ -331,7 +331,7 @@
         "type": "Bush Fire",
         "size": "55 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 30 Sep 2026 09:19:40 GMT",
+        "updated": "Wed, 30 Sep 2026 09:47:40 GMT",
         "description": "MINIMBAH RD, MINIMBAH 2312",
         "council": "Mid-Coast",
         "lat": -32.193870545,
@@ -668,16 +668,31 @@
     "tas": [],
     "wa": [
       {
-        "title": "Structure Fire",
+        "title": "Report of Smoke",
         "alertLevel": "",
         "status": "active",
-        "type": "Structure Fire",
+        "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-09-30T09:06:30+00:00",
-        "description": "CANNING VALE, CITY OF CANNING",
-        "lat": -32.0636,
-        "lng": 115.9243,
+        "updated": "2026-09-30T09:39:26+00:00",
+        "description": "MIDLAND, CITY OF SWAN",
+        "lat": -31.8964,
+        "lng": 116.0034,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-09-30T09:33:13+00:00",
+        "description": "MAIDA VALE, CITY OF KALAMUNDA",
+        "lat": -31.9618,
+        "lng": 116.0147,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1283,21 +1298,6 @@
     ],
     "act": [],
     "sa": [
-      {
-        "title": "STRUCTURE FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-09-30T09:00:00+00:00",
-        "description": "GAWLER BELT",
-        "lat": -34.5853,
-        "lng": 138.7191,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      },
       {
         "title": "STRUCTURE FIRE",
         "alertLevel": "",
