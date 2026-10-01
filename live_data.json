@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-01T09:23:06.717037+00:00",
-  "last_checked_utc": "2026-10-01T09:23:06.717037+00:00",
+  "generated_utc": "2026-10-01T09:53:05.220024+00:00",
+  "last_checked_utc": "2026-10-01T09:53:05.220024+00:00",
   "warning_count": 12,
   "warnings": [
     {
@@ -106,36 +106,36 @@
       "state": "SA",
       "link": "",
       "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Ernabella and Amata.",
-      "issued": "2026-10-01T17:17:26+09:30",
+      "issued": "2026-10-01T18:54:09+09:30",
       "cancelled": false,
       "areas": [
         {
           "aac": "SA_PW013",
           "description": "North West Pastoral",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "REN"
     },
     {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for South Interior",
+      "title": "Cancellation of Severe Thunderstorm Warning for South Interior",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Giles.",
-      "issued": "2026-10-01T15:47:58+08:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-01T17:22:29+08:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "WA_PW007",
           "description": "South Interior",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDD21033",
@@ -144,17 +144,17 @@
       "state": "NT",
       "link": "",
       "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours.",
-      "issued": "2026-10-01T17:18:38+09:30",
+      "issued": "2026-10-01T18:54:17+09:30",
       "cancelled": false,
       "areas": [
         {
           "aac": "NT_PW008",
           "description": "Lasseter",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "REN"
     }
   ],
   "fetch_errors": {},
@@ -167,7 +167,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 01 Oct 2026 09:19:41 GMT",
+        "updated": "Thu, 01 Oct 2026 09:47:41 GMT",
         "description": "BARNETTS RD, GUMMA 2447",
         "council": "Nambucca Valley",
         "lat": -30.664424896,
@@ -183,7 +183,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Thu, 01 Oct 2026 09:19:41 GMT",
+        "updated": "Thu, 01 Oct 2026 09:47:41 GMT",
         "description": "Bullecourt Cct, Adamstown, NSW 2289",
         "council": "Newcastle",
         "lat": -32.93923,
@@ -199,7 +199,7 @@
         "type": "Bush Fire",
         "size": "3467 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 01 Oct 2026 09:19:41 GMT",
+        "updated": "Thu, 01 Oct 2026 09:47:41 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.942358734,
@@ -234,7 +234,7 @@
         "type": "Bush Fire",
         "size": "174 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 01 Oct 2026 09:19:41 GMT",
+        "updated": "Thu, 01 Oct 2026 09:47:41 GMT",
         "description": "PECKHAMS RD, EWINGAR 2469",
         "council": "Clarence Valley",
         "lat": -29.1166182759999,
@@ -449,12 +449,28 @@
         ],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "SMEETON RD, LONDONDERRY",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Thu, 01 Oct 2026 09:47:41 GMT",
+        "description": "SMEETON RD, LONDONDERRY 2753",
+        "council": "Penrith",
+        "lat": -33.6790046689999,
+        "lng": 150.699523926,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       }
     ],
     "vic": [],
     "qld": [
       {
-        "title": "PREPARE TO LEAVE - Isis Central (near Bundaberg) - fire as at 5:26pm Thursday, 1 October 2026",
+        "title": "PREPARE TO LEAVE - Isis Central (near Bundaberg) - fire as at 7:24pm Thursday, 1 October 2026",
         "alertLevel": "Watch and Act",
         "status": "",
         "type": "Bush Fire",
@@ -532,20 +548,6 @@
         ]
       },
       {
-        "title": "STAY INFORMED - Laura (Cape York) - fire as at 3:24pm Thursday, 1 October 2026",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "QFD",
-        "updated": "",
-        "description": "Laura",
-        "lat": -15.475052182471646,
-        "lng": 144.30226322047943,
-        "state": "QLD",
-        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
-      },
-      {
         "title": "STAY INFORMED - Mount Sylvia (near Toowoomba) - fire as at 1:42pm Thursday, 1 October 2026",
         "alertLevel": "Advice",
         "status": "",
@@ -584,103 +586,45 @@
         ]
       },
       {
-        "title": "STAY INFORMED - Mount Larcom (near Gladstone) - fire as at 2:04pm Thursday, 1 October 2026",
+        "title": "STAY INFORMED - Laura (Cape York) - fire as at 3:24pm Thursday, 1 October 2026",
         "alertLevel": "Advice",
         "status": "",
         "type": "Bush Fire",
         "size": "",
         "agency": "QFD",
         "updated": "",
-        "description": "Mount Larcom",
-        "lat": -23.80241370030315,
-        "lng": 151.00393696884356,
+        "description": "Laura",
+        "lat": -15.475052182471646,
+        "lng": 144.30226322047943,
         "state": "QLD",
-        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
-        "polys": [
-          [
-            [
-              150.9772,
-              -23.8351
-            ],
-            [
-              151.051,
-              -23.8013
-            ],
-            [
-              151.0324,
-              -23.7705
-            ],
-            [
-              150.982,
-              -23.7914
-            ],
-            [
-              150.9571,
-              -23.8023
-            ],
-            [
-              150.9772,
-              -23.8351
-            ]
-          ]
-        ]
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
       }
     ],
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire",
+        "title": "Report of Smoke",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-01T09:05:11+00:00",
-        "description": "IRWIN, SHIRE OF IRWIN",
-        "lat": -29.2142,
-        "lng": 115.0858,
+        "updated": "2026-10-01T09:48:08+00:00",
+        "description": "CLARKSON, CITY OF WANNEROO",
+        "lat": -31.6812,
+        "lng": 115.7152,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-01T08:35:28+00:00",
-        "description": "WONGAN HILLS, SHIRE OF WONGAN-BALLIDU",
-        "lat": -30.9084,
-        "lng": 116.674,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-01T07:01:51+00:00",
-        "description": "TALANDJI, SHIRE OF ASHBURTON",
-        "lat": -21.7052,
-        "lng": 114.9417,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice MONITOR CONDITIONS - FITZROY CROSSING AND ST GEORGE RANGES",
+        "title": "Bushfire Advice THREAT IS REDUCED - FITZROY CROSSING AND ST GEORGE RANGES",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES-WARN",
-        "updated": "2026-10-01T06:24:15.878+00:00",
+        "updated": "2026-10-01T09:15:09.987+00:00",
         "description": "",
         "lat": -18.2436,
         "lng": 125.5902,
@@ -820,6 +764,36 @@
             ]
           ]
         ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-01T09:05:11+00:00",
+        "description": "IRWIN, SHIRE OF IRWIN",
+        "lat": -29.2142,
+        "lng": 115.0858,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-01T07:01:51+00:00",
+        "description": "TALANDJI, SHIRE OF ASHBURTON",
+        "lat": -21.7052,
+        "lng": 114.9417,
+        "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1150,21 +1124,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - COLONEL ROSE DR, CONNELLAN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-01T08:51:38+00:00",
-        "description": "COLONEL ROSE DR, CONNELLAN",
-        "lat": -23.7811,
-        "lng": 133.9108,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Stuart Highway, BURT PLAIN",
         "alertLevel": "Advice",
         "status": "active",
@@ -1257,7 +1216,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-10-01T09:20:00+00:00",
+        "updated": "2026-10-01T09:49:00+00:00",
         "description": "KAMBAH",
         "lat": -35.3979,
         "lng": 149.0634,
@@ -1283,7 +1242,7 @@
     ],
     "sa": []
   },
-  "incident_count": 31,
+  "incident_count": 30,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
