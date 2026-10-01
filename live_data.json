@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-10-01T17:53:06.893316+00:00",
-  "last_checked_utc": "2026-10-01T17:53:06.893316+00:00",
-  "warning_count": 8,
+  "generated_utc": "2026-10-01T18:23:04.758186+00:00",
+  "last_checked_utc": "2026-10-01T18:23:04.758186+00:00",
+  "warning_count": 9,
   "warnings": [
     {
       "pid": "",
-      "title": "01/22:00 EST Marine Wind Warning Summary for New South Wales",
+      "title": "02/04:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 01 Oct 2026 12:00:13 GMT"
+      "issued": "Thu, 01 Oct 2026 18:00:12 GMT"
     },
     {
       "pid": "",
-      "title": "01/22:00 EST Marine Wind Warning Summary for Victoria",
+      "title": "02/04:10 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 01 Oct 2026 12:00:20 GMT"
+      "issued": "Thu, 01 Oct 2026 18:10:25 GMT"
     },
     {
       "pid": "",
@@ -50,6 +50,15 @@
     },
     {
       "pid": "",
+      "title": "02/03:40 CST Marine Wind Warning Summary for South Australia",
+      "type": "wind",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
+      "desc": "",
+      "issued": "Thu, 01 Oct 2026 18:10:15 GMT"
+    },
+    {
+      "pid": "",
       "title": "01/22:37 CST Warning to Sheep Graziers\nfor Mount Lofty Ranges, Kangaroo Island, Murraylands, Upper South East and Lower South East forecast districts",
       "type": "other",
       "state": "SA",
@@ -68,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "01/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "02/04:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 01 Oct 2026 12:00:10 GMT"
+      "issued": "Thu, 01 Oct 2026 18:00:12 GMT"
     }
   ],
   "fetch_errors": {},
@@ -86,7 +95,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Thu, 01 Oct 2026 17:47:40 GMT",
+        "updated": "Thu, 01 Oct 2026 18:19:39 GMT",
         "description": "Bullecourt Cct, Adamstown, NSW 2289",
         "council": "Newcastle",
         "lat": -32.93923,
@@ -102,7 +111,7 @@
         "type": "Bush Fire",
         "size": "3467 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 01 Oct 2026 17:47:40 GMT",
+        "updated": "Thu, 01 Oct 2026 18:19:39 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.942358734,
@@ -137,7 +146,7 @@
         "type": "Bush Fire",
         "size": "174 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 01 Oct 2026 17:47:40 GMT",
+        "updated": "Thu, 01 Oct 2026 18:19:39 GMT",
         "description": "PECKHAMS RD, EWINGAR 2469",
         "council": "Clarence Valley",
         "lat": -29.1166182759999,
@@ -4750,34 +4759,37 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-10-01T12:00:00Z",
+      "issued_utc": "2026-10-01T18:00:00Z",
       "overview": [
-        "Strong Wind Warning for Thursday for Macquarie Coast, Hunter Coast and Sydney Coast",
-        "Strong Wind Warning for Friday for Coffs Coast, Macquarie Coast, Hunter Coast and Sydney Coast"
+        "Strong Wind Warning for Friday for Coffs Coast, Macquarie Coast and Hunter Coast",
+        "Strong Wind Warning for Saturday for Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast and Illawarra Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Coffs Coast: Wooli to Smoky Cape",
             "Macquarie Coast: Smoky Cape to Seal Rocks",
-            "Hunter Coast: Seal Rocks to Broken Bay",
-            "Sydney Coast: Broken Bay to Port Hacking"
+            "Hunter Coast: Seal Rocks to Broken Bay"
           ],
           "aac_codes": [
+            "NSW_MW007",
             "NSW_MW006",
-            "NSW_MW005",
-            "NSW_MW004"
+            "NSW_MW005"
           ],
-          "summary": "Macquarie Coast, Hunter Coast and Sydney Coast"
+          "summary": "Coffs Coast, Macquarie Coast and Hunter Coast"
         }
       ]
     },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-01T12:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-10-01T18:10:00Z",
+      "overview": [
+        "Strong Wind Warning for Friday for West Coast, Central Coast and Central Gippsland Coast",
+        "Strong Wind Warning for Saturday for West Coast, Central Coast, Central Gippsland Coast, East Gippsland Coast, Port Phillip and Western Port"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -4793,6 +4805,27 @@
             "VIC_MW003"
           ],
           "summary": "West Coast, Central Coast and Central Gippsland Coast"
+        }
+      ]
+    },
+    "SA": {
+      "state": "SA",
+      "product": "IDS20201",
+      "issued_utc": "2026-10-01T18:10:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Upper South East Coast: Murray Mouth to Cape Jaffa",
+            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
+          ],
+          "aac_codes": [
+            "SA_MW009",
+            "SA_MW010"
+          ],
+          "summary": "Upper South East Coast and Lower South East Coast"
         }
       ]
     },
@@ -4819,6 +4852,30 @@
             "WA_MW007"
           ],
           "summary": "Ningaloo Coast, Gascoyne Coast and Geraldton Coast"
+        }
+      ]
+    },
+    "TAS": {
+      "state": "TAS",
+      "product": "IDT20100",
+      "issued_utc": "2026-10-01T18:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Friday for Far North West Coast and Central North Coast",
+        "Strong Wind Warning for Saturday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound and East of Flinders Island"
+      ],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Far North West Coast: Sandy Cape to Stanley",
+            "Central North Coast: Stanley to Northern Tip of Flinders Island"
+          ],
+          "aac_codes": [
+            "TAS_MW001",
+            "TAS_MW002"
+          ],
+          "summary": "Far North West Coast and Central North Coast"
         }
       ]
     }
