@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-09-30T23:53:02.070738+00:00",
-  "last_checked_utc": "2026-09-30T23:53:02.070738+00:00",
+  "generated_utc": "2026-10-01T00:23:01.393020+00:00",
+  "last_checked_utc": "2026-10-01T00:23:01.393020+00:00",
   "warning_count": 9,
   "warnings": [
     {
       "pid": "",
-      "title": "01/04:30 EST Marine Wind Warning Summary for New South Wales",
+      "title": "01/10:00 EST Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 30 Sep 2026 18:30:48 GMT"
+      "issued": "Thu, 01 Oct 2026 00:00:13 GMT"
     },
     {
       "pid": "",
-      "title": "01/04:30 EST Marine Wind Warning Summary for Victoria",
+      "title": "01/10:00 EST Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 30 Sep 2026 18:30:54 GMT"
+      "issued": "Thu, 01 Oct 2026 00:00:16 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "01/04:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "01/10:00 EST Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 30 Sep 2026 18:00:13 GMT"
+      "issued": "Thu, 01 Oct 2026 00:00:15 GMT"
     },
     {
       "pid": "IDV21037",
@@ -104,13 +104,29 @@
   "incidents": {
     "nsw": [
       {
+        "title": "HARWARD RD, GRIFFITH",
+        "alertLevel": "Watch and Act",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Thu, 01 Oct 2026 00:19:41 GMT",
+        "description": "HARWARD RD, GRIFFITH 2680",
+        "council": "Griffith",
+        "lat": -34.2803059999999,
+        "lng": 146.021249,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "Bullecourt Cct, Adamstown",
         "alertLevel": "Advice",
         "status": "Not yet controlled",
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Wed, 30 Sep 2026 23:47:41 GMT",
+        "updated": "Thu, 01 Oct 2026 00:19:41 GMT",
         "description": "Bullecourt Cct, Adamstown, NSW 2289",
         "council": "Newcastle",
         "lat": -32.93923,
@@ -126,7 +142,7 @@
         "type": "Bush Fire",
         "size": "3452 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 30 Sep 2026 23:47:41 GMT",
+        "updated": "Thu, 01 Oct 2026 00:19:41 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.942358734,
@@ -799,29 +815,13 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
-        "title": "HARWARD RD, GRIFFITH",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Grass Fire",
-        "size": "2 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Wed, 30 Sep 2026 23:47:41 GMT",
-        "description": "HARWARD RD, GRIFFITH 2680",
-        "council": "Griffith",
-        "lat": -34.2803059999999,
-        "lng": 146.021249,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
         "title": "MINIMBAH RD, MINIMBAH",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "55 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 30 Sep 2026 23:47:41 GMT",
+        "updated": "Thu, 01 Oct 2026 00:19:41 GMT",
         "description": "MINIMBAH RD, MINIMBAH 2312",
         "council": "Mid-Coast",
         "lat": -32.193870545,
@@ -1144,7 +1144,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 30 Sep 2026 23:47:41 GMT",
+        "updated": "Thu, 01 Oct 2026 00:19:41 GMT",
         "description": "Talavera Cl, Raymond Terrace, NSW 2324",
         "council": "Port Stephens",
         "lat": -32.740352631,
@@ -5400,10 +5400,10 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-09-30T18:30:39Z",
+      "issued_utc": "2026-10-01T00:00:00Z",
       "overview": [
-        "Strong Wind Warning for Thursday for Sydney Coast, Macquarie Coast and Hunter Coast",
-        "Strong Wind Warning for Friday for Coffs Coast, Sydney Coast, Macquarie Coast and Hunter Coast"
+        "Strong Wind Warning for Thursday for Macquarie Coast, Hunter Coast and Sydney Coast",
+        "Strong Wind Warning for Friday for Coffs Coast, Macquarie Coast, Hunter Coast and Sydney Coast"
       ],
       "hazards": [
         {
@@ -5426,7 +5426,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-09-30T18:30:41Z",
+      "issued_utc": "2026-10-01T00:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -5471,7 +5471,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-09-30T18:00:00Z",
+      "issued_utc": "2026-10-01T00:00:00Z",
       "overview": [
         "Strong Wind Warning for Thursday for South East Coast and South West Coast",
         "Strong Wind Warning for Friday for Far North West Coast and Central North Coast"
