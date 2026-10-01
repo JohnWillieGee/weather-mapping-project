@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-01T07:23:03.322341+00:00",
-  "last_checked_utc": "2026-10-01T07:23:03.322341+00:00",
-  "warning_count": 9,
+  "generated_utc": "2026-10-01T07:53:05.778134+00:00",
+  "last_checked_utc": "2026-10-01T07:53:05.778134+00:00",
+  "warning_count": 12,
   "warnings": [
     {
       "pid": "",
@@ -98,6 +98,63 @@
       ],
       "severityCode": "CAN",
       "hazardPhase": "CAN"
+    },
+    {
+      "pid": "IDS21033",
+      "title": "Severe Thunderstorm Warning for North West Pastoral",
+      "type": "thunderstorm",
+      "state": "SA",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Ernabella and Amata.",
+      "issued": "2026-10-01T17:17:26+09:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "SA_PW013",
+          "description": "North West Pastoral",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
+    },
+    {
+      "pid": "IDW21033",
+      "title": "Severe Thunderstorm Warning for South Interior",
+      "type": "thunderstorm",
+      "state": "WA",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Giles.",
+      "issued": "2026-10-01T15:47:58+08:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "WA_PW007",
+          "description": "South Interior",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
+    },
+    {
+      "pid": "IDD21033",
+      "title": "Severe Thunderstorm Warning for Lasseter",
+      "type": "thunderstorm",
+      "state": "NT",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours.",
+      "issued": "2026-10-01T17:18:38+09:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NT_PW008",
+          "description": "Lasseter",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -110,7 +167,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Thu, 01 Oct 2026 07:19:40 GMT",
+        "updated": "Thu, 01 Oct 2026 07:47:41 GMT",
         "description": "Bullecourt Cct, Adamstown, NSW 2289",
         "council": "Newcastle",
         "lat": -32.93923,
@@ -126,7 +183,7 @@
         "type": "Bush Fire",
         "size": "1 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 01 Oct 2026 07:19:40 GMT",
+        "updated": "Thu, 01 Oct 2026 07:47:41 GMT",
         "description": "MALABUGILMAH VILLAGE, CLARENCE WAY, MALABUGILMAH 2460",
         "council": "Clarence Valley",
         "lat": -29.1791899999999,
@@ -201,7 +258,7 @@
         "type": "Bush Fire",
         "size": "3467 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 01 Oct 2026 07:19:40 GMT",
+        "updated": "Thu, 01 Oct 2026 07:47:41 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.942358734,
@@ -209,20 +266,20 @@
         "polys": [
           [
             [
-              151.825104495,
-              -28.888780369
+              151.788986926,
+              -28.942004644
             ],
             [
-              151.824987747,
-              -28.888799827
+              151.788981341,
+              -28.9420193079999
             ],
             [
-              151.825164404,
-              -28.888752718
+              151.788982732,
+              -28.942005907
             ],
             [
-              151.825104495,
-              -28.888780369
+              151.788986926,
+              -28.942004644
             ]
           ]
         ],
@@ -236,13 +293,177 @@
         "type": "Bush Fire",
         "size": "174 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 01 Oct 2026 07:19:40 GMT",
+        "updated": "Thu, 01 Oct 2026 07:47:41 GMT",
         "description": "PECKHAMS RD, EWINGAR 2469",
         "council": "Clarence Valley",
         "lat": -29.1166182759999,
         "lng": 152.570261064,
         "polys": [
           [
+            [
+              152.570046274,
+              -29.1220264249999
+            ],
+            [
+              152.568124772,
+              -29.123023228
+            ],
+            [
+              152.568062725,
+              -29.123011844
+            ],
+            [
+              152.56699026,
+              -29.123919933
+            ],
+            [
+              152.566336144,
+              -29.1242521459999
+            ],
+            [
+              152.565410459,
+              -29.124487953
+            ],
+            [
+              152.564484569,
+              -29.1247715129999
+            ],
+            [
+              152.563831447,
+              -29.124864913
+            ],
+            [
+              152.562852972,
+              -29.1247184429999
+            ],
+            [
+              152.562255255,
+              -29.1245732089999
+            ],
+            [
+              152.561496182,
+              -29.123997598
+            ],
+            [
+              152.560628131,
+              -29.1234693869999
+            ],
+            [
+              152.560140631,
+              -29.1229901789999
+            ],
+            [
+              152.559329224,
+              -29.1219367749999
+            ],
+            [
+              152.558952559,
+              -29.120980317
+            ],
+            [
+              152.558848261,
+              -29.119929236
+            ],
+            [
+              152.559123473,
+              -29.119165966
+            ],
+            [
+              152.559617461,
+              -29.1181168489999
+            ],
+            [
+              152.560217981,
+              -29.117593449
+            ],
+            [
+              152.561202464,
+              -29.1163071299999
+            ],
+            [
+              152.562021127,
+              -29.115641152
+            ],
+            [
+              152.562895986,
+              -29.114545505
+            ],
+            [
+              152.563225743,
+              -29.1137346429999
+            ],
+            [
+              152.563228971,
+              -29.112970479
+            ],
+            [
+              152.563013844,
+              -29.112396647
+            ],
+            [
+              152.562744535,
+              -29.111774875
+            ],
+            [
+              152.56242044,
+              -29.111248447
+            ],
+            [
+              152.562096146,
+              -29.110769778
+            ],
+            [
+              152.561557146,
+              -29.1096217539999
+            ],
+            [
+              152.561504786,
+              -29.1091439739999
+            ],
+            [
+              152.561344871,
+              -29.108379274
+            ],
+            [
+              152.561294336,
+              -29.10747165
+            ],
+            [
+              152.561842829,
+              -29.10637494
+            ],
+            [
+              152.562497858,
+              -29.105803947
+            ],
+            [
+              152.563880118,
+              -29.10558788
+            ],
+            [
+              152.563819145,
+              -29.1053009789999
+            ],
+            [
+              152.564839278,
+              -29.1051968309999
+            ],
+            [
+              152.566388893,
+              -29.1052734909999
+            ],
+            [
+              152.567460158,
+              -29.1062866199999
+            ],
+            [
+              152.567623604,
+              -29.106293331
+            ],
+            [
+              152.567783311,
+              -29.1071177229999
+            ],
             [
               152.568796441,
               -29.108697099
@@ -282,249 +503,9 @@
             [
               152.570046274,
               -29.1220264249999
-            ],
-            [
-              152.568124772,
-              -29.123023228
-            ],
-            [
-              152.566534998,
-              -29.122731533
-            ],
-            [
-              152.56635857,
-              -29.1227142079999
-            ],
-            [
-              152.566394773,
-              -29.1233271579999
-            ],
-            [
-              152.566351875,
-              -29.12382851
-            ],
-            [
-              152.56553523,
-              -29.1240049689999
-            ],
-            [
-              152.564228141,
-              -29.124394754
-            ],
-            [
-              152.563780305,
-              -29.1241783729999
-            ],
-            [
-              152.563252244,
-              -29.123639345
-            ],
-            [
-              152.562478817,
-              -29.1232427959999
-            ],
-            [
-              152.561583165,
-              -29.122810021
-            ],
-            [
-              152.560563311,
-              -29.122806683
-            ],
-            [
-              152.559994939,
-              -29.122160046
-            ],
-            [
-              152.559549717,
-              -29.1213347079999
-            ],
-            [
-              152.559513501,
-              -29.120259969
-            ],
-            [
-              152.55968125,
-              -29.1191858999999
-            ],
-            [
-              152.560377469,
-              -29.118543412
-            ],
-            [
-              152.561241101,
-              -29.1168984879999
-            ],
-            [
-              152.562262718,
-              -29.116471979
-            ],
-            [
-              152.562752975,
-              -29.116294474
-            ],
-            [
-              152.562962672,
-              -29.116167388
-            ],
-            [
-              152.563424405,
-              -29.1154856589999
-            ],
-            [
-              152.564038086,
-              -29.115057807
-            ],
-            [
-              152.564955909,
-              -29.115094375
-            ],
-            [
-              152.565124762,
-              -29.114905181
-            ],
-            [
-              152.565371164,
-              -29.1145119509999
-            ],
-            [
-              152.565127925,
-              -29.114152955
-            ],
-            [
-              152.564967023,
-              -29.1136151229999
-            ],
-            [
-              152.565008868,
-              -29.113364512
-            ],
-            [
-              152.565295755,
-              -29.113043057
-            ],
-            [
-              152.565622831,
-              -29.1128650119999
-            ],
-            [
-              152.565338655,
-              -29.112541705
-            ],
-            [
-              152.565707721,
-              -29.1120772309999
-            ],
-            [
-              152.566402652,
-              -29.1117212739999
-            ],
-            [
-              152.566614073,
-              -29.1111105689999
-            ],
-            [
-              152.566584249,
-              -29.110982496
-            ],
-            [
-              152.566017255,
-              -29.110013502
-            ],
-            [
-              152.565411278,
-              -29.1094103579999
-            ],
-            [
-              152.565025741,
-              -29.109352644
-            ],
-            [
-              152.564005416,
-              -29.109492614
-            ],
-            [
-              152.563310342,
-              -29.109884382
-            ],
-            [
-              152.562493803,
-              -29.110060824
-            ],
-            [
-              152.561964455,
-              -29.10984417
-            ],
-            [
-              152.561844667,
-              -29.109234827
-            ],
-            [
-              152.561928521,
-              -29.10869779
-            ],
-            [
-              152.562706381,
-              -29.108019734
-            ],
-            [
-              152.563320625,
-              -29.107448604
-            ],
-            [
-              152.56356883,
-              -29.1066255329999
-            ],
-            [
-              152.563979124,
-              -29.106053736
-            ],
-            [
-              152.563819145,
-              -29.1053009789999
-            ],
-            [
-              152.564839278,
-              -29.1051968309999
-            ],
-            [
-              152.566388893,
-              -29.1052734909999
-            ],
-            [
-              152.567460158,
-              -29.1062866199999
-            ],
-            [
-              152.567623604,
-              -29.106293331
-            ],
-            [
-              152.567783311,
-              -29.1071177229999
-            ],
-            [
-              152.568796441,
-              -29.108697099
             ]
           ]
         ],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "WILTON PARK RD, WILTON",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Thu, 01 Oct 2026 07:19:40 GMT",
-        "description": "WILTON PARK RD, WILTON 2571",
-        "council": "Wollondilly",
-        "lat": -34.2245359999999,
-        "lng": 150.652409,
-        "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       }
@@ -532,53 +513,79 @@
     "vic": [],
     "qld": [
       {
-        "title": "STAY INFORMED - Laura (Cape York) - fire as at 3:24pm Thursday, 1 October 2026",
-        "alertLevel": "Advice",
+        "title": "PREPARE TO LEAVE - Isis Central (near Bundaberg) - fire as at 5:26pm Thursday, 1 October 2026",
+        "alertLevel": "Watch and Act",
         "status": "",
         "type": "Bush Fire",
         "size": "",
         "agency": "QFD",
         "updated": "",
-        "description": "Laura",
-        "lat": -15.475052182471646,
-        "lng": 144.30226322047943,
-        "state": "QLD",
-        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
-      },
-      {
-        "title": "STAY INFORMED - Mount Sylvia (near Toowoomba) - fire as at 1:42pm Thursday, 1 October 2026",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "QFD",
-        "updated": "",
-        "description": "Mount Sylvia",
-        "lat": -27.75930766850075,
-        "lng": 152.2143384411644,
+        "description": "Between Adies Road, Trevors Road and Eureka Station Road",
+        "lat": -25.211487578995257,
+        "lng": 152.16592410579798,
         "state": "QLD",
         "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
         "polys": [
           [
             [
-              152.2416,
-              -27.7948
+              152.1721,
+              -25.2246
             ],
             [
-              152.2586,
-              -27.7258
+              152.1829,
+              -25.2228
             ],
             [
-              152.1966,
-              -27.7197
+              152.1959,
+              -25.2187
             ],
             [
-              152.1637,
-              -27.7922
+              152.1967,
+              -25.2176
             ],
             [
-              152.2416,
-              -27.7948
+              152.1986,
+              -25.2145
+            ],
+            [
+              152.1975,
+              -25.1999
+            ],
+            [
+              152.1831,
+              -25.1978
+            ],
+            [
+              152.148,
+              -25.2027
+            ],
+            [
+              152.1311,
+              -25.203
+            ],
+            [
+              152.1306,
+              -25.2123
+            ],
+            [
+              152.13,
+              -25.2181
+            ],
+            [
+              152.1486,
+              -25.2225
+            ],
+            [
+              152.1537,
+              -25.2242
+            ],
+            [
+              152.1603,
+              -25.2245
+            ],
+            [
+              152.1721,
+              -25.2246
             ]
           ]
         ]
@@ -626,50 +633,75 @@
         ]
       },
       {
-        "title": "STAY INFORMED - Isis Central (Bundaberg) - fire as at 3:37pm Thursday, 1 October 2026",
+        "title": "STAY INFORMED - Mount Sylvia (near Toowoomba) - fire as at 1:42pm Thursday, 1 October 2026",
         "alertLevel": "Advice",
         "status": "",
         "type": "Bush Fire",
         "size": "",
         "agency": "QFD",
         "updated": "",
-        "description": "Isis Central",
-        "lat": -25.221744192206604,
-        "lng": 152.1763395854789,
+        "description": "Mount Sylvia",
+        "lat": -27.75930766850075,
+        "lng": 152.2143384411644,
         "state": "QLD",
         "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
         "polys": [
           [
             [
-              152.1995,
-              -25.2458
+              152.2416,
+              -27.7948
             ],
             [
-              152.2011,
-              -25.2159
+              152.2586,
+              -27.7258
             ],
             [
-              152.2022,
-              -25.1983
+              152.1966,
+              -27.7197
             ],
             [
-              152.1512,
-              -25.1994
+              152.1637,
+              -27.7922
             ],
             [
-              152.1517,
-              -25.2445
-            ],
-            [
-              152.1995,
-              -25.2458
+              152.2416,
+              -27.7948
             ]
           ]
         ]
+      },
+      {
+        "title": "STAY INFORMED - Laura (Cape York) - fire as at 3:24pm Thursday, 1 October 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "Laura",
+        "lat": -15.475052182471646,
+        "lng": 144.30226322047943,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
       }
     ],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-01T07:45:06+00:00",
+        "description": "GRIMWADE, SHIRE OF DONNYBROOK-BALINGUP",
+        "lat": -33.7072,
+        "lng": 115.9883,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1269,7 +1301,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-10-01T07:20:00+00:00",
+        "updated": "2026-10-01T07:50:00+00:00",
         "description": "KAMBAH",
         "lat": -35.3979,
         "lng": 149.0634,
