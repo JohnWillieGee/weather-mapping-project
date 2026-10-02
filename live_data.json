@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-02T09:23:08.906009+00:00",
-  "last_checked_utc": "2026-10-02T09:23:08.906009+00:00",
+  "generated_utc": "2026-10-02T09:53:07.557969+00:00",
+  "last_checked_utc": "2026-10-02T09:53:07.557969+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -149,27 +149,42 @@
     },
     {
       "pid": "IDV21033",
-      "title": "Severe Thunderstorm Warning for Mallee, Wimmera",
+      "title": "Severe Thunderstorm Warning for Mallee, Wimmera, Northern Country, North Central, South West",
       "type": "thunderstorm",
       "state": "VIC",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Warracknabeal and Birchip. 35.2 mm was recorded at Warracknabeal in the 2 hours to 6pm.",
-      "issued": "2026-10-02T18:16:57+10:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Stawell, Ararat and St Arnaud. 35.2 mm was recorded at Warracknabeal in the 2 hours to 6:00 pm.",
+      "issued": "2026-10-02T19:23:32+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "VIC_PW001",
           "description": "Mallee",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "VIC_PW002",
           "description": "Wimmera",
+          "phase": "REN"
+        },
+        {
+          "aac": "VIC_PW003",
+          "description": "Northern Country",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW008",
+          "description": "North Central",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW009",
+          "description": "South West",
           "phase": "NEW"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "UPD"
     },
     {
       "pid": "IDW21033",
@@ -216,7 +231,7 @@
         "type": "Grass Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 02 Oct 2026 09:19:35 GMT",
+        "updated": "Fri, 02 Oct 2026 09:47:35 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
@@ -315,7 +330,7 @@
         "type": "Bush Fire",
         "size": "5 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 02 Oct 2026 09:19:35 GMT",
+        "updated": "Fri, 02 Oct 2026 09:47:35 GMT",
         "description": "JACKADGERY 2460",
         "council": "Clarence Valley",
         "lat": -29.595168728,
@@ -740,6 +755,36 @@
     "tas": [],
     "wa": [
       {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-02T09:38:14+00:00",
+        "description": "WONTHELLA, CITY OF GREATER GERALDTON",
+        "lat": -28.7664,
+        "lng": 114.6301,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-02T09:22:59+00:00",
+        "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.885,
+        "lng": 128.283,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
@@ -935,21 +980,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-02T02:34:53+00:00",
-        "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.885,
-        "lng": 128.283,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Smoke Alert FOR KARRAGULLEN, PICKERING BROOK, ROLEYSTONE AND SURROUNDING AREAS IN THE CITIES OF ARMADALE, KALAMUNDA AND GOSNELLS.",
         "alertLevel": "Advice",
         "status": "active",
@@ -1109,21 +1139,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-09-28T03:08:49+00:00",
-        "description": "WORSLEY, SHIRE OF COLLIE",
-        "lat": -33.3095,
-        "lng": 115.966,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-09-27T06:33:27+00:00",
         "description": "ORD RIVER, SHIRE OF HALLS CREEK",
         "lat": -18.4353,
@@ -1216,7 +1231,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-02T09:08:24+00:00",
+        "updated": "2026-10-02T09:31:33+00:00",
         "description": "CRERAR RD, BERRIMAH",
         "lat": -12.4182,
         "lng": 130.9178,
