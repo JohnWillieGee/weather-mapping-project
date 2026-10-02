@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-02T13:53:05.716164+00:00",
-  "last_checked_utc": "2026-10-02T13:53:05.716164+00:00",
-  "warning_count": 16,
+  "generated_utc": "2026-10-02T14:23:06.420428+00:00",
+  "last_checked_utc": "2026-10-02T14:23:06.420428+00:00",
+  "warning_count": 15,
   "warnings": [
     {
       "pid": "",
@@ -168,55 +168,36 @@
     },
     {
       "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for North West Pastoral",
+      "title": "Cancellation of Severe Thunderstorm Warning for North West Pastoral",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include parts of the Great Victoria Desert.",
-      "issued": "2026-10-02T20:53:38+09:30",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-02T23:29:15+09:30",
+      "cancelled": true,
       "areas": [
         {
           "aac": "SA_PW013",
           "description": "North West Pastoral",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for South Interior",
+      "title": "Cancellation of Severe Thunderstorm Warning for South Interior",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds in the warning area over the next several hours. Locations which may be affected include Giles. Severe thunderstorms are no longer occurring in the North Interior district and the warning for this district is CANCELLED.",
-      "issued": "2026-10-02T20:19:19+08:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-02T22:00:04+08:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "WA_PW007",
           "description": "South Interior",
-          "phase": "REN"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
-    },
-    {
-      "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for North Interior",
-      "type": "thunderstorm",
-      "state": "WA",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-02T20:19:19+08:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "WA_PW006",
-          "description": "North Interior",
           "phase": "CAN"
         }
       ],
@@ -225,22 +206,22 @@
     },
     {
       "pid": "IDD21033",
-      "title": "Severe Thunderstorm Warning for Lasseter",
+      "title": "Cancellation of Severe Thunderstorm Warning for Lasseter",
       "type": "thunderstorm",
       "state": "NT",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours.",
-      "issued": "2026-10-02T21:48:00+09:30",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-02T23:32:14+09:30",
+      "cancelled": true,
       "areas": [
         {
           "aac": "NT_PW008",
           "description": "Lasseter",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -253,7 +234,7 @@
         "type": "Grass Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 02 Oct 2026 13:47:35 GMT",
+        "updated": "Fri, 02 Oct 2026 14:19:35 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
@@ -352,7 +333,7 @@
         "type": "Bush Fire",
         "size": "5 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 02 Oct 2026 13:47:35 GMT",
+        "updated": "Fri, 02 Oct 2026 14:19:35 GMT",
         "description": "JACKADGERY 2460",
         "council": "Clarence Valley",
         "lat": -29.595168728,
@@ -729,21 +710,6 @@
         "description": "WINNEJUP, SHIRE OF BRIDGETOWN-GREENBUSHES",
         "lat": -33.9194,
         "lng": 116.1857,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-02T12:09:04+00:00",
-        "description": "YANGEBUP, CITY OF COCKBURN",
-        "lat": -32.1252,
-        "lng": 115.8135,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1238,7 +1204,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 28,
+  "incident_count": 27,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
