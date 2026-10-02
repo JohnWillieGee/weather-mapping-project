@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-02T11:23:05.871948+00:00",
-  "last_checked_utc": "2026-10-02T11:23:05.871948+00:00",
-  "warning_count": 16,
+  "generated_utc": "2026-10-02T11:53:04.987121+00:00",
+  "last_checked_utc": "2026-10-02T11:53:04.987121+00:00",
+  "warning_count": 17,
   "warnings": [
     {
       "pid": "",
@@ -196,6 +196,25 @@
       "hazardPhase": "CAN"
     },
     {
+      "pid": "IDS21033",
+      "title": "Severe Thunderstorm Warning for North West Pastoral",
+      "type": "thunderstorm",
+      "state": "SA",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include parts of the Great Victoria Desert.",
+      "issued": "2026-10-02T20:53:38+09:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "SA_PW013",
+          "description": "North West Pastoral",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
+    },
+    {
       "pid": "IDW21033",
       "title": "Severe Thunderstorm Warning for North Interior, South Interior",
       "type": "thunderstorm",
@@ -273,7 +292,7 @@
         "type": "Grass Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 02 Oct 2026 11:19:35 GMT",
+        "updated": "Fri, 02 Oct 2026 11:47:35 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
@@ -372,7 +391,7 @@
         "type": "Bush Fire",
         "size": "5 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 02 Oct 2026 11:19:35 GMT",
+        "updated": "Fri, 02 Oct 2026 11:47:35 GMT",
         "description": "JACKADGERY 2460",
         "council": "Clarence Valley",
         "lat": -29.595168728,
@@ -739,46 +758,16 @@
     "tas": [],
     "wa": [
       {
-        "title": "Fuel Leak",
+        "title": "Structure Fire",
         "alertLevel": "",
         "status": "active",
-        "type": "HazMat",
+        "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-02T11:08:36+00:00",
-        "description": "HAMILTON HILL, CITY OF COCKBURN",
-        "lat": -32.0852,
-        "lng": 115.7771,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-02T11:05:48+00:00",
-        "description": "GRACETOWN, SHIRE OF AUGUSTA MARGARET RIVER",
-        "lat": -33.8688,
-        "lng": 114.9893,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-02T11:00:50+00:00",
-        "description": "HAY, SHIRE OF DENMARK",
-        "lat": -34.9646,
-        "lng": 117.4148,
+        "updated": "2026-10-02T11:34:16+00:00",
+        "description": "WILLAGEE, CITY OF MELVILLE",
+        "lat": -32.0507,
+        "lng": 115.8026,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1224,21 +1213,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - MCKEDDIE RD, EMUNGALAN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-02T11:14:15+00:00",
-        "description": "MCKEDDIE RD, EMUNGALAN",
-        "lat": -14.4525,
-        "lng": 132.2619,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Barkly North Complex, CRESWELL",
         "alertLevel": "Advice",
         "status": "active",
@@ -1288,7 +1262,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 30,
+  "incident_count": 27,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
