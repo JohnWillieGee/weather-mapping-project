@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-02T10:53:06.923320+00:00",
-  "last_checked_utc": "2026-10-02T10:53:06.923320+00:00",
-  "warning_count": 14,
+  "generated_utc": "2026-10-02T11:23:05.871948+00:00",
+  "last_checked_utc": "2026-10-02T11:23:05.871948+00:00",
+  "warning_count": 16,
   "warnings": [
     {
       "pid": "",
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "02/16:12 WST Marine Wind Warning Summary for Western Australia",
+      "title": "02/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Fri, 02 Oct 2026 08:12:19 GMT"
+      "issued": "Fri, 02 Oct 2026 11:01:12 GMT"
     },
     {
       "pid": "",
@@ -158,63 +158,53 @@
     },
     {
       "pid": "IDV21033",
-      "title": "Severe Thunderstorm Warning for Mallee, Wimmera, Northern Country, North Central, South West",
+      "title": "Cancellation of Severe Thunderstorm Warning for Mallee, Wimmera, Northern Country, North Central, South West",
       "type": "thunderstorm",
       "state": "VIC",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Stawell, Ararat and St Arnaud. 35.2 mm was recorded at Warracknabeal in the 2 hours to 6:00 pm.",
-      "issued": "2026-10-02T19:23:32+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled. 29.4 mm was recorded at Donald in the 30 minutes to 7:37 pm. 35.2 mm was recorded at Warracknabeal in the 2 hours to 6:00 pm.",
+      "issued": "2026-10-02T21:16:39+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "VIC_PW001",
           "description": "Mallee",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "VIC_PW002",
           "description": "Wimmera",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "VIC_PW003",
           "description": "Northern Country",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "VIC_PW008",
           "description": "North Central",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "VIC_PW009",
           "description": "South West",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for Gascoyne, Goldfields, North Interior, South Interior",
+      "title": "Severe Thunderstorm Warning for North Interior, South Interior",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds in the warning area over the next several hours. Locations which may be affected include Warburton and Wiluna.",
-      "issued": "2026-10-02T17:00:24+08:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds in the warning area over the next several hours. Locations which may be affected include Giles and Warburton.",
+      "issued": "2026-10-02T19:08:28+08:00",
       "cancelled": false,
       "areas": [
-        {
-          "aac": "WA_PW003",
-          "description": "Gascoyne",
-          "phase": "NEW"
-        },
-        {
-          "aac": "WA_PW004",
-          "description": "Goldfields",
-          "phase": "REN"
-        },
         {
           "aac": "WA_PW006",
           "description": "North Interior",
@@ -227,7 +217,50 @@
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDW21033",
+      "title": "Severe Thunderstorm Warning for Gascoyne, Goldfields",
+      "type": "thunderstorm",
+      "state": "WA",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-02T19:08:28+08:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "WA_PW003",
+          "description": "Gascoyne",
+          "phase": "CAN"
+        },
+        {
+          "aac": "WA_PW004",
+          "description": "Goldfields",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
+    },
+    {
+      "pid": "IDD21033",
+      "title": "Severe Thunderstorm Warning for Lasseter",
+      "type": "thunderstorm",
+      "state": "NT",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Kaltukatjara.",
+      "issued": "2026-10-02T20:38:50+09:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NT_PW008",
+          "description": "Lasseter",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -240,7 +273,7 @@
         "type": "Grass Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 02 Oct 2026 10:47:35 GMT",
+        "updated": "Fri, 02 Oct 2026 11:19:35 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
@@ -339,7 +372,7 @@
         "type": "Bush Fire",
         "size": "5 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 02 Oct 2026 10:47:35 GMT",
+        "updated": "Fri, 02 Oct 2026 11:19:35 GMT",
         "description": "JACKADGERY 2460",
         "council": "Clarence Valley",
         "lat": -29.595168728,
@@ -706,6 +739,51 @@
     "tas": [],
     "wa": [
       {
+        "title": "Fuel Leak",
+        "alertLevel": "",
+        "status": "active",
+        "type": "HazMat",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-02T11:08:36+00:00",
+        "description": "HAMILTON HILL, CITY OF COCKBURN",
+        "lat": -32.0852,
+        "lng": 115.7771,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-02T11:05:48+00:00",
+        "description": "GRACETOWN, SHIRE OF AUGUSTA MARGARET RIVER",
+        "lat": -33.8688,
+        "lng": 114.9893,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-02T11:00:50+00:00",
+        "description": "HAY, SHIRE OF DENMARK",
+        "lat": -34.9646,
+        "lng": 117.4148,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
@@ -731,21 +809,6 @@
         "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.885,
         "lng": 128.283,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-02T08:47:53+00:00",
-        "description": "BEAUFORT RIVER, SHIRE OF WOODANILLING",
-        "lat": -33.5211,
-        "lng": 117.0773,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1161,16 +1224,16 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - ELRUNDIE AV, DRIVER",
+        "title": "Grass and Scrub Fire - MCKEDDIE RD, EMUNGALAN",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-02T10:44:33+00:00",
-        "description": "ELRUNDIE AV, DRIVER",
-        "lat": -12.4812,
-        "lng": 130.9701,
+        "updated": "2026-10-02T11:14:15+00:00",
+        "description": "MCKEDDIE RD, EMUNGALAN",
+        "lat": -14.4525,
+        "lng": 132.2619,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -1225,7 +1288,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 28,
+  "incident_count": 30,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4929,24 +4992,22 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-02T08:12:00Z",
+      "issued_utc": "2026-10-02T11:01:00Z",
       "overview": [
-        "Strong Wind Warning for Friday for Gascoyne Coast and Geraldton Coast",
-        "Strong Wind Warning for Saturday for Ningaloo Coast, Geraldton Coast and Gascoyne Coast"
+        "Strong Wind Warning for Friday for Geraldton Coast",
+        "Strong Wind Warning for Saturday for Ningaloo Coast, Gascoyne Coast and Geraldton Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Gascoyne Coast: Cape Cuvier to Kalbarri",
             "Geraldton Coast: Kalbarri to Jurien Bay"
           ],
           "aac_codes": [
-            "WA_MW006",
             "WA_MW007"
           ],
-          "summary": "Gascoyne Coast and Geraldton Coast"
+          "summary": "Geraldton Coast"
         }
       ]
     },
