@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-02T04:53:07.365753+00:00",
-  "last_checked_utc": "2026-10-02T04:53:07.365753+00:00",
-  "warning_count": 11,
+  "generated_utc": "2026-10-02T05:23:06.390970+00:00",
+  "last_checked_utc": "2026-10-02T05:23:06.390970+00:00",
+  "warning_count": 14,
   "warnings": [
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "IDV36330",
-      "title": "02/09:47 EST Initial Minor Flood Warning for the Bunyip River",
+      "title": "02/15:16 EST Minor Flood Warning for the Bunyip River",
       "type": "flood",
       "state": "VIC",
       "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDV36330.html",
       "desc": "",
-      "issued": "Thu, 01 Oct 2026 23:47:46 GMT"
+      "issued": "Fri, 02 Oct 2026 05:16:37 GMT"
     },
     {
       "pid": "",
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "02/07:06 WST Marine Wind Warning Summary for Western Australia",
+      "title": "02/13:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 01 Oct 2026 23:06:33 GMT"
+      "issued": "Fri, 02 Oct 2026 05:01:19 GMT"
     },
     {
       "pid": "",
@@ -126,6 +126,78 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "NEW"
+    },
+    {
+      "pid": "IDN21033",
+      "title": "Severe Thunderstorm Warning for Riverina",
+      "type": "thunderstorm",
+      "state": "NSW",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Albury, Corowa and Jerilderie.",
+      "issued": "2026-10-02T14:57:07+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NSW_PW014",
+          "description": "Riverina",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
+    },
+    {
+      "pid": "IDV21033",
+      "title": "Severe Thunderstorm Warning for Northern Country, North East, East Gippsland",
+      "type": "thunderstorm",
+      "state": "VIC",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Wodonga.",
+      "issued": "2026-10-02T14:58:14+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "VIC_PW003",
+          "description": "Northern Country",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW004",
+          "description": "North East",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW005",
+          "description": "East Gippsland",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
+    },
+    {
+      "pid": "IDW21033",
+      "title": "Severe Thunderstorm Warning for Goldfields, South Interior",
+      "type": "thunderstorm",
+      "state": "WA",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Laverton.",
+      "issued": "2026-10-02T13:17:09+08:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "WA_PW004",
+          "description": "Goldfields",
+          "phase": "NEW"
+        },
+        {
+          "aac": "WA_PW007",
+          "description": "South Interior",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -138,7 +210,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 02 Oct 2026 04:47:39 GMT",
+        "updated": "Fri, 02 Oct 2026 05:19:39 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
@@ -154,7 +226,7 @@
         "type": "Bush Fire",
         "size": "3467 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 02 Oct 2026 04:47:39 GMT",
+        "updated": "Fri, 02 Oct 2026 05:19:39 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.942358734,
@@ -189,7 +261,7 @@
         "type": "Bush Fire",
         "size": "2 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Fri, 02 Oct 2026 04:47:39 GMT",
+        "updated": "Fri, 02 Oct 2026 05:19:39 GMT",
         "description": "STEWARTS RIVER RD, LORNE 2439",
         "council": "Port Macquarie-Hastings",
         "lat": -31.612494012,
@@ -412,25 +484,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-02T04:41:52+00:00",
-        "description": "COLLIE, SHIRE OF COLLIE",
-        "lat": -33.3783,
-        "lng": 116.1343,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-02T04:12:12+00:00",
-        "description": "HILLMAN, CITY OF ROCKINGHAM",
-        "lat": -32.287,
-        "lng": 115.7641,
+        "updated": "2026-10-02T05:07:55+00:00",
+        "description": "TALANDJI, SHIRE OF ASHBURTON",
+        "lat": -21.7052,
+        "lng": 114.9417,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -476,21 +533,6 @@
         "description": "",
         "lat": -31.578,
         "lng": 115.975,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-02T02:39:43+00:00",
-        "description": "TALANDJI, SHIRE OF ASHBURTON",
-        "lat": -21.7052,
-        "lng": 114.9417,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -969,7 +1011,7 @@
         "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
       },
       {
-        "title": "GRASS FIRE",
+        "title": "Grass fire",
         "alertLevel": "",
         "status": "active",
         "type": "Grass Fire",
@@ -985,7 +1027,7 @@
       }
     ]
   },
-  "incident_count": 33,
+  "incident_count": 31,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4689,10 +4731,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-01T23:01:00Z",
+      "issued_utc": "2026-10-02T05:01:00Z",
       "overview": [
         "Strong Wind Warning for Friday for Gascoyne Coast and Geraldton Coast",
-        "Strong Wind Warning for Saturday for Gascoyne Coast"
+        "Strong Wind Warning for Saturday for Ningaloo Coast, Gascoyne Coast and Geraldton Coast"
       ],
       "hazards": [
         {
