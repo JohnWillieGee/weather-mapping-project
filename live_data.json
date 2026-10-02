@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-02T00:53:08.286936+00:00",
-  "last_checked_utc": "2026-10-02T00:53:08.286936+00:00",
-  "warning_count": 10,
+  "generated_utc": "2026-10-02T01:23:02.975754+00:00",
+  "last_checked_utc": "2026-10-02T01:23:02.975754+00:00",
+  "warning_count": 11,
   "warnings": [
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "02/04:44 CST Warning to Sheep Graziers\nfor Mount Lofty Ranges, Kangaroo Island, Murraylands, Upper South East and Lower South East forecast districts",
+      "title": "02/10:32 CST Warning to Sheep Graziers\nfor Mount Lofty Ranges, Murraylands, Upper South East and Lower South East forecast districts",
       "type": "other",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Thu, 01 Oct 2026 19:14:12 GMT"
+      "issued": "Fri, 02 Oct 2026 01:02:39 GMT"
     },
     {
       "pid": "",
@@ -92,6 +92,40 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Fri, 02 Oct 2026 00:00:16 GMT"
+    },
+    {
+      "pid": "IDV21037",
+      "title": "Severe Weather Warning for South West, Central, West and South Gippsland, East Gippsland",
+      "type": "severe_weather",
+      "state": "VIC",
+      "link": "",
+      "desc": "HEAVY RAINFALL which may lead to FLASH FLOODING is forecast to develop from early Saturday morning. Six-hourly rainfall totals between 20 and 35 mm are likely, with isolated totals up to 50 mm possible. 24-hour rainfall totals: For the Otways between 50 and 80 mm are likely, with isolated falls up to 150 mm possible about elevated parts. For Gippsland between 40 and 60 mm are likely, with isolated falls up to 110 mm possible about elevated parts. Conditions are expected to ease during Sunday mor",
+      "issued": "2026-10-02T11:00:02+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "VIC_PW009",
+          "description": "South West",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW007",
+          "description": "Central",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW006",
+          "description": "West and South Gippsland",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW005",
+          "description": "East Gippsland",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -104,7 +138,7 @@
         "type": "Bush Fire",
         "size": "3467 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 02 Oct 2026 00:47:39 GMT",
+        "updated": "Fri, 02 Oct 2026 01:19:40 GMT",
         "description": "DONNYBROOK FIRETRAIL, BACK CREEK 2372",
         "council": "Tenterfield",
         "lat": -28.942358734,
@@ -112,39 +146,23 @@
         "polys": [
           [
             [
-              151.788986926,
-              -28.942004644
+              151.825104495,
+              -28.888780369
             ],
             [
-              151.788981341,
-              -28.9420193079999
+              151.824987747,
+              -28.888799827
             ],
             [
-              151.788982732,
-              -28.942005907
+              151.825164404,
+              -28.888752718
             ],
             [
-              151.788986926,
-              -28.942004644
+              151.825104495,
+              -28.888780369
             ]
           ]
         ],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "Northcote St, Kurri Kurri",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 02 Oct 2026 00:47:39 GMT",
-        "description": "Northcote St, Kurri Kurri, NSW 2327",
-        "council": "Cessnock",
-        "lat": -32.816027999,
-        "lng": 151.468293,
-        "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
@@ -155,7 +173,7 @@
         "type": "Bush Fire",
         "size": "211 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 02 Oct 2026 00:47:39 GMT",
+        "updated": "Fri, 02 Oct 2026 01:19:40 GMT",
         "description": "PECKHAMS RD, EWINGAR 2469",
         "council": "Clarence Valley",
         "lat": -29.1166182759999,
@@ -370,6 +388,22 @@
         ],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "POETS CL, SOMERSBY",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Fri, 02 Oct 2026 01:19:40 GMT",
+        "description": "POETS CL, SOMERSBY 2250",
+        "council": "Central Coast",
+        "lat": -33.3600789999999,
+        "lng": 151.293410001,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       }
     ],
     "vic": [],
@@ -514,7 +548,22 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-02T00:04:43+00:00",
+        "updated": "2026-10-02T00:57:34+00:00",
+        "description": "NATURALISTE, CITY OF BUSSELTON",
+        "lat": -33.6282,
+        "lng": 115.06,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-02T00:57:09+00:00",
         "description": "COLLIE, SHIRE OF COLLIE",
         "lat": -33.374,
         "lng": 116.1037,
@@ -952,7 +1001,7 @@
       }
     ]
   },
-  "incident_count": 24,
+  "incident_count": 25,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
