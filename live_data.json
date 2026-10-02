@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-02T06:53:05.057390+00:00",
-  "last_checked_utc": "2026-10-02T06:53:05.057390+00:00",
+  "generated_utc": "2026-10-02T07:23:05.444115+00:00",
+  "last_checked_utc": "2026-10-02T07:23:05.444115+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -90,33 +90,33 @@
       "type": "severe_weather",
       "state": "VIC",
       "link": "",
-      "desc": "HEAVY RAINFALL which may lead to FLASH FLOODING is forecast to develop from early Saturday morning. Six-hourly rainfall totals between 20 and 35 mm are likely, with isolated totals up to 50 mm possible. 24-hour rainfall totals: For the Otways between 50 and 80 mm are likely, with isolated falls up to 150 mm possible about elevated parts. For Gippsland between 40 and 60 mm are likely, with isolated falls up to 110 mm possible about elevated parts. Conditions are expected to ease during Sunday mor",
-      "issued": "2026-10-02T11:00:02+10:00",
+      "desc": "HEAVY RAINFALL which may lead to FLASH FLOODING is forecast to develop from early Saturday morning. Six-hourly rainfall totals between 20 and 35 mm are likely, with isolated falls up to 50 mm possible. 24-hour rainfall totals: For the Otways between 50 and 80 mm are likely, with isolated falls up to 150 mm possible about elevated parts. For Gippsland between 40 and 60 mm are likely, with isolated falls up to 110 mm possible about elevated parts. Conditions are expected to ease during Sunday morn",
+      "issued": "2026-10-02T16:54:14+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "VIC_PW009",
           "description": "South West",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "VIC_PW007",
           "description": "Central",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "VIC_PW006",
           "description": "West and South Gippsland",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "VIC_PW005",
           "description": "East Gippsland",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "REN"
     },
     {
       "pid": "IDN21033",
@@ -144,56 +144,61 @@
     },
     {
       "pid": "IDV21033",
-      "title": "Severe Thunderstorm Warning for Northern Country, North East, East Gippsland",
+      "title": "Cancellation of Severe Thunderstorm Warning for Northern Country, North East, East Gippsland",
       "type": "thunderstorm",
       "state": "VIC",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Wodonga.",
-      "issued": "2026-10-02T14:58:14+10:00",
-      "cancelled": false,
+      "desc": "Thunderstorms are no longer severe, however redevelopment of severe thunderstorms for the remainder of the day is still possible. This warning is now cancelled.",
+      "issued": "2026-10-02T16:51:21+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "VIC_PW003",
           "description": "Northern Country",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "VIC_PW004",
           "description": "North East",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "VIC_PW005",
           "description": "East Gippsland",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for Goldfields, South Interior",
+      "title": "Severe Thunderstorm Warning for Goldfields, North Interior, South Interior",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Laverton.",
-      "issued": "2026-10-02T13:17:09+08:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds in the warning area over the next several hours. Locations which may be affected include Carnegie and Warburton.",
+      "issued": "2026-10-02T14:52:21+08:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "WA_PW004",
           "description": "Goldfields",
+          "phase": "REN"
+        },
+        {
+          "aac": "WA_PW006",
+          "description": "North Interior",
           "phase": "NEW"
         },
         {
           "aac": "WA_PW007",
           "description": "South Interior",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "UPD"
     }
   ],
   "fetch_errors": {},
@@ -206,11 +211,245 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 02 Oct 2026 06:47:39 GMT",
+        "updated": "Fri, 02 Oct 2026 07:19:39 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
         "lng": 152.218682,
+        "polys": [
+          [
+            [
+              152.21503144,
+              -31.7157066
+            ],
+            [
+              152.21560251,
+              -31.714433588
+            ],
+            [
+              152.216173581,
+              -31.713410419
+            ],
+            [
+              152.217577463,
+              -31.712601403
+            ],
+            [
+              152.218719604,
+              -31.7125181219999
+            ],
+            [
+              152.219397751,
+              -31.7125181219999
+            ],
+            [
+              152.219730876,
+              -31.712875041
+            ],
+            [
+              152.219968821,
+              -31.713089193
+            ],
+            [
+              152.21988554,
+              -31.71358888
+            ],
+            [
+              152.219671388,
+              -31.714255129
+            ],
+            [
+              152.21887427,
+              -31.7151117349999
+            ],
+            [
+              152.218279405,
+              -31.7155876269999
+            ],
+            [
+              152.217494182,
+              -31.7161467999999
+            ],
+            [
+              152.217006393,
+              -31.716551308
+            ],
+            [
+              152.216697063,
+              -31.7168368439999
+            ],
+            [
+              152.216197376,
+              -31.7168368439999
+            ],
+            [
+              152.215435948,
+              -31.716860638
+            ],
+            [
+              152.215257489,
+              -31.716682179
+            ],
+            [
+              152.215268305,
+              -31.716682179
+            ],
+            [
+              152.21503144,
+              -31.7157066
+            ]
+          ]
+        ],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "JACKADGERY",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "5 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Fri, 02 Oct 2026 07:19:39 GMT",
+        "description": "JACKADGERY 2460",
+        "council": "Clarence Valley",
+        "lat": -29.595168728,
+        "lng": 152.51035085,
+        "polys": [
+          [
+            [
+              152.513370946,
+              -29.595771951
+            ],
+            [
+              152.513429773,
+              -29.595946452
+            ],
+            [
+              152.513379458,
+              -29.596072544
+            ],
+            [
+              152.513200395,
+              -29.596092063
+            ],
+            [
+              152.51300629,
+              -29.5960757079999
+            ],
+            [
+              152.512855592,
+              -29.596032032
+            ],
+            [
+              152.512668234,
+              -29.595967544
+            ],
+            [
+              152.512326653,
+              -29.595960808
+            ],
+            [
+              152.511737238,
+              -29.595900813
+            ],
+            [
+              152.51128654,
+              -29.5959525549999
+            ],
+            [
+              152.510656248,
+              -29.595908505
+            ],
+            [
+              152.51039778,
+              -29.595892304
+            ],
+            [
+              152.509932197,
+              -29.595857527
+            ],
+            [
+              152.509615418,
+              -29.595675237
+            ],
+            [
+              152.509488687,
+              -29.595495429
+            ],
+            [
+              152.509318368,
+              -29.595286691
+            ],
+            [
+              152.509272539,
+              -29.5950075109999
+            ],
+            [
+              152.509333983,
+              -29.594745885
+            ],
+            [
+              152.509448155,
+              -29.594611222
+            ],
+            [
+              152.50960136,
+              -29.594536643
+            ],
+            [
+              152.510044447,
+              -29.5944655659999
+            ],
+            [
+              152.510445311,
+              -29.594441444
+            ],
+            [
+              152.511014959,
+              -29.5945473639999
+            ],
+            [
+              152.511821136,
+              -29.594785826
+            ],
+            [
+              152.512347232,
+              -29.5950231469999
+            ],
+            [
+              152.512725327,
+              -29.595154779
+            ],
+            [
+              152.513090933,
+              -29.5953460599999
+            ],
+            [
+              152.513297586,
+              -29.595569994
+            ],
+            [
+              152.513370946,
+              -29.595771951
+            ]
+          ]
+        ],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Quigley Rd, Fennell Bay",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 02 Oct 2026 07:19:39 GMT",
+        "description": "Quigley Rd, Fennell Bay, NSW 2283",
+        "council": "Lake Macquarie",
+        "lat": -32.9938369989999,
+        "lng": 151.604778,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -220,9 +459,9 @@
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
-        "size": "2 ha",
+        "size": "1 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Fri, 02 Oct 2026 06:47:39 GMT",
+        "updated": "Fri, 02 Oct 2026 07:19:39 GMT",
         "description": "STEWARTS RIVER RD, LORNE 2439",
         "council": "Port Macquarie-Hastings",
         "lat": -31.612494012,
@@ -230,60 +469,56 @@
         "polys": [
           [
             [
-              152.613199449,
-              -31.612413959
+              152.617583607,
+              -31.613175283
             ],
             [
-              152.613247038,
-              -31.611914272
+              152.617595504,
+              -31.6131633859999
             ],
             [
-              152.613223244,
-              -31.611521661
+              152.61721479,
+              -31.612961132
             ],
             [
-              152.613425499,
-              -31.611366996
+              152.617179098,
+              -31.61292544
             ],
             [
-              152.613746725,
-              -31.611283715
+              152.617155303,
+              -31.6128302609999
             ],
             [
-              152.614044158,
-              -31.611248024
+              152.617417043,
+              -31.612865954
             ],
             [
-              152.61425831,
-              -31.611366996
+              152.617643093,
+              -31.6129135419999
             ],
             [
-              152.614448666,
-              -31.6114621739999
+              152.617666887,
+              -31.612877851
             ],
             [
-              152.61456764,
-              -31.6116049419999
+              152.617785861,
+              -31.612949235
             ],
             [
-              152.614627126,
-              -31.611783402
+              152.617809655,
+              -31.613151489
             ],
             [
-              152.614650921,
-              -31.611866683
+              152.617726374,
+              -31.613151489
             ],
             [
-              152.613972774,
-              -31.612176013
+              152.617750168,
+              -31.6133299479999
             ],
             [
-              152.61328273,
-              -31.612425856
-            ],
-            [
-              152.613199449,
-              -31.612413959
+              152.617583607,
+              -31.613175283
             ]
           ]
         ],
@@ -946,61 +1181,16 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - DRIVER",
+        "title": "Grass and Scrub Fire - COMMONAGE RD, ILPARPA",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-02T06:45:07+00:00",
-        "description": "DRIVER",
-        "lat": -12.4809,
-        "lng": 130.97,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - ELRUNDIE AV, DRIVER",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-02T06:45:05+00:00",
-        "description": "ELRUNDIE AV, DRIVER",
-        "lat": -12.4842,
-        "lng": 130.9704,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - DRIVER",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-02T06:44:54+00:00",
-        "description": "DRIVER",
-        "lat": -12.4874,
-        "lng": 130.9702,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - STUART HWY, TI TREE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-02T06:44:13+00:00",
-        "description": "STUART HWY, TI TREE",
-        "lat": -22.1314,
-        "lng": 133.417,
+        "updated": "2026-10-02T07:15:09+00:00",
+        "description": "COMMONAGE RD, ILPARPA",
+        "lat": -23.7323,
+        "lng": 133.8605,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -1012,7 +1202,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-02T06:41:21+00:00",
+        "updated": "2026-10-02T06:53:06+00:00",
         "description": "FLOCKHART DR, MARLOW LAGOON",
         "lat": -12.4868,
         "lng": 130.9672,
@@ -1027,7 +1217,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "Bushfires NT",
-        "updated": "2026-09-29T00:50:00+00:00",
+        "updated": "2026-09-29T11:55:00+00:00",
         "description": "Barkly North Complex, CRESWELL",
         "lat": -17.3828,
         "lng": 135.2519,
@@ -1070,7 +1260,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 31,
+  "incident_count": 30,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
