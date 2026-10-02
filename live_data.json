@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-02T08:53:10.102866+00:00",
-  "last_checked_utc": "2026-10-02T08:53:10.102866+00:00",
+  "generated_utc": "2026-10-02T09:23:08.906009+00:00",
+  "last_checked_utc": "2026-10-02T09:23:08.906009+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -120,32 +120,32 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Central West Slopes and Plains, South West Slopes, Riverina",
+      "title": "Cancellation of Severe Thunderstorm Warning for Central West Slopes and Plains, South West Slopes, Riverina",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Wagga Wagga, Griffith, Narrandera, Junee, Holbrook and Lockhart.",
-      "issued": "2026-10-02T17:32:58+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-02T19:08:39+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "NSW_PW012",
           "description": "Central West Slopes and Plains",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "NSW_PW013",
           "description": "South West Slopes",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "NSW_PW014",
           "description": "Riverina",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDV21033",
@@ -173,14 +173,19 @@
     },
     {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for Goldfields, North Interior, South Interior",
+      "title": "Severe Thunderstorm Warning for Gascoyne, Goldfields, North Interior, South Interior",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds in the warning area over the next several hours. Locations which may be affected include Carnegie and Warburton.",
-      "issued": "2026-10-02T14:52:21+08:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds in the warning area over the next several hours. Locations which may be affected include Warburton and Wiluna.",
+      "issued": "2026-10-02T17:00:24+08:00",
       "cancelled": false,
       "areas": [
+        {
+          "aac": "WA_PW003",
+          "description": "Gascoyne",
+          "phase": "NEW"
+        },
         {
           "aac": "WA_PW004",
           "description": "Goldfields",
@@ -189,7 +194,7 @@
         {
           "aac": "WA_PW006",
           "description": "North Interior",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "WA_PW007",
@@ -209,9 +214,9 @@
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Grass Fire",
-        "size": "0 ha",
+        "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 02 Oct 2026 08:47:35 GMT",
+        "updated": "Fri, 02 Oct 2026 09:19:35 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
@@ -310,7 +315,7 @@
         "type": "Bush Fire",
         "size": "5 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 02 Oct 2026 08:47:35 GMT",
+        "updated": "Fri, 02 Oct 2026 09:19:35 GMT",
         "description": "JACKADGERY 2460",
         "council": "Clarence Valley",
         "lat": -29.595168728,
@@ -1205,6 +1210,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - CRERAR RD, BERRIMAH",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-02T09:08:24+00:00",
+        "description": "CRERAR RD, BERRIMAH",
+        "lat": -12.4182,
+        "lng": 130.9178,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Barkly North Complex, CRESWELL",
         "alertLevel": "Advice",
         "status": "active",
@@ -1252,9 +1272,25 @@
       }
     ],
     "act": [],
-    "sa": []
+    "sa": [
+      {
+        "title": "STRUCTURE FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-02T08:56:00+00:00",
+        "description": "MUNNO PARA WEST",
+        "lat": -34.6657,
+        "lng": 138.671,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      }
+    ]
   },
-  "incident_count": 29,
+  "incident_count": 31,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
