@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-03T04:23:04.241431+00:00",
-  "last_checked_utc": "2026-10-03T04:23:04.241431+00:00",
-  "warning_count": 17,
+  "generated_utc": "2026-10-03T04:53:06.049709+00:00",
+  "last_checked_utc": "2026-10-03T04:53:06.049709+00:00",
+  "warning_count": 18,
   "warnings": [
     {
       "pid": "",
@@ -147,27 +147,27 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Sydney Metropolitan, Illawarra, South Coast, Central Tablelands, Southern Tablelands, Central West Slopes and Plains",
+      "title": "Severe Thunderstorm Warning for Sydney Metropolitan, Hunter, Illawarra, Central Tablelands, Southern Tablelands",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Orange, Nowra, Mudgee, Katoomba, Bowral and Bathurst. Severe thunderstorms are no longer occurring in the South West Slopes district and the warning for this district is CANCELLED.",
-      "issued": "2026-10-03T14:00:43+10:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Wollongong, Nowra, Katoomba, Penrith, Parramatta and Bowral. Severe thunderstorms are no longer occurring in the South Coast and Central West Slopes and Plains districts and the warning for these districts is CANCELLED.",
+      "issued": "2026-10-03T14:47:19+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "NSW_PW005",
           "description": "Sydney Metropolitan",
+          "phase": "REN"
+        },
+        {
+          "aac": "NSW_PW003",
+          "description": "Hunter",
           "phase": "NEW"
         },
         {
           "aac": "NSW_PW006",
           "description": "Illawarra",
-          "phase": "REN"
-        },
-        {
-          "aac": "NSW_PW007",
-          "description": "South Coast",
           "phase": "REN"
         },
         {
@@ -179,11 +179,6 @@
           "aac": "NSW_PW009",
           "description": "Southern Tablelands",
           "phase": "REN"
-        },
-        {
-          "aac": "NSW_PW012",
-          "description": "Central West Slopes and Plains",
-          "phase": "REN"
         }
       ],
       "severityCode": "STD",
@@ -191,17 +186,22 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for South West Slopes",
+      "title": "Severe Thunderstorm Warning for Central West Slopes and Plains, South Coast",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
       "desc": "",
-      "issued": "2026-10-03T14:00:43+10:00",
+      "issued": "2026-10-03T14:47:19+10:00",
       "cancelled": true,
       "areas": [
         {
-          "aac": "NSW_PW013",
-          "description": "South West Slopes",
+          "aac": "NSW_PW012",
+          "description": "Central West Slopes and Plains",
+          "phase": "CAN"
+        },
+        {
+          "aac": "NSW_PW007",
+          "description": "South Coast",
           "phase": "CAN"
         }
       ],
@@ -234,32 +234,46 @@
     },
     {
       "pid": "IDV21033",
-      "title": "Severe Thunderstorm Warning for Northern Country, North Central, North East",
+      "title": "Severe Thunderstorm Warning for North East",
       "type": "thunderstorm",
       "state": "VIC",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Wangaratta and Mansfield.",
-      "issued": "2026-10-03T11:57:07+10:00",
+      "desc": "Severe thunderstorms are likely to produce large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Bright. Severe thunderstorms are no longer occurring in the Northern Country and North Central districts and the warning for these districts is CANCELLED.",
+      "issued": "2026-10-03T14:24:08+10:00",
       "cancelled": false,
       "areas": [
         {
-          "aac": "VIC_PW003",
-          "description": "Northern Country",
-          "phase": "NEW"
-        },
-        {
-          "aac": "VIC_PW008",
-          "description": "North Central",
-          "phase": "NEW"
-        },
-        {
           "aac": "VIC_PW004",
           "description": "North East",
-          "phase": "NEW"
+          "phase": "UPD"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDV21033",
+      "title": "Severe Thunderstorm Warning for North Central, Northern Country",
+      "type": "thunderstorm",
+      "state": "VIC",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-03T14:24:08+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "VIC_PW008",
+          "description": "North Central",
+          "phase": "CAN"
+        },
+        {
+          "aac": "VIC_PW003",
+          "description": "Northern Country",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -272,7 +286,7 @@
         "type": "Grass Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 04:19:35 GMT",
+        "updated": "Sat, 03 Oct 2026 04:47:35 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
@@ -371,7 +385,7 @@
         "type": "Bush Fire",
         "size": "8 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 04:19:35 GMT",
+        "updated": "Sat, 03 Oct 2026 04:47:35 GMT",
         "description": "JACKADGERY 2460",
         "council": "Clarence Valley",
         "lat": -29.595168728,
@@ -792,6 +806,44 @@
             [
               146.829,
               -19.4472
+            ]
+          ]
+        ]
+      },
+      {
+        "title": "STAY INFORMED - Booyal - fire as at 2:38pm Saturday, 3 October 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "Booyal",
+        "lat": -25.211599247938814,
+        "lng": 152.1027805888538,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
+        "polys": [
+          [
+            [
+              152.0768,
+              -25.2248
+            ],
+            [
+              152.13,
+              -25.2209
+            ],
+            [
+              152.1308,
+              -25.2007
+            ],
+            [
+              152.0774,
+              -25.1999
+            ],
+            [
+              152.0768,
+              -25.2248
             ]
           ]
         ]
@@ -1423,7 +1475,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-03T04:11:42+00:00",
+        "updated": "2026-10-03T04:31:27+00:00",
         "description": "STUART HWY, LANSDOWNE",
         "lat": -14.4692,
         "lng": 132.3004,
@@ -1479,23 +1531,7 @@
       }
     ],
     "act": [],
-    "sa": [
-      {
-        "title": "STRUCTURE FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-03T03:32:00+00:00",
-        "description": "CLEVE",
-        "lat": -33.6985,
-        "lng": 136.5251,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      }
-    ]
+    "sa": []
   },
   "incident_count": 32,
   "nsw_alert_zones": [],
