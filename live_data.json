@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-03T07:23:02.514105+00:00",
-  "last_checked_utc": "2026-10-03T07:23:02.514105+00:00",
+  "generated_utc": "2026-10-03T07:53:08.384294+00:00",
+  "last_checked_utc": "2026-10-03T07:53:08.384294+00:00",
   "warning_count": 20,
   "warnings": [
     {
@@ -156,27 +156,17 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Sydney Metropolitan, Hunter, Illawarra, Central Tablelands, Central West Slopes and Plains",
+      "title": "Severe Thunderstorm Warning for Sydney Metropolitan, Central Tablelands, Central West Slopes and Plains",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Sydney, Wollongong, Katoomba, Penrith, Parramatta and Bowral. Severe thunderstorms are no longer occurring in the Southern Tablelands district and the warning for this district is CANCELLED.",
-      "issued": "2026-10-03T15:42:08+10:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Sydney, Mudgee, Wellington, Kandos, Parramatta and Capertee. Severe thunderstorms are no longer occurring in the Hunter and Illawarra districts and the warning for these districts is CANCELLED.",
+      "issued": "2026-10-03T17:26:11+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "NSW_PW005",
           "description": "Sydney Metropolitan",
-          "phase": "REN"
-        },
-        {
-          "aac": "NSW_PW003",
-          "description": "Hunter",
-          "phase": "REN"
-        },
-        {
-          "aac": "NSW_PW006",
-          "description": "Illawarra",
           "phase": "REN"
         },
         {
@@ -187,25 +177,30 @@
         {
           "aac": "NSW_PW012",
           "description": "Central West Slopes and Plains",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "hazardPhase": "REN"
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Southern Tablelands",
+      "title": "Severe Thunderstorm Warning for Hunter, Illawarra",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
       "desc": "",
-      "issued": "2026-10-03T15:42:08+10:00",
+      "issued": "2026-10-03T17:26:11+10:00",
       "cancelled": true,
       "areas": [
         {
-          "aac": "NSW_PW009",
-          "description": "Southern Tablelands",
+          "aac": "NSW_PW003",
+          "description": "Hunter",
+          "phase": "CAN"
+        },
+        {
+          "aac": "NSW_PW006",
+          "description": "Illawarra",
           "phase": "CAN"
         }
       ],
@@ -214,19 +209,14 @@
     },
     {
       "pid": "IDN21035",
-      "title": "Detailed Severe Thunderstorm Warning for Blue Mountains/Hawkesbury, Sydney",
+      "title": "Detailed Severe Thunderstorm Warning for Sydney",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 4:35 pm, a severe thunderstorm likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding was detected near Castlereagh. This thunderstorm is moving towards the southeast. It is forecast to affect Penrith, Horsley Park and Riverstone by 5:05 pm and Parramatta, Sydney Olympic Park and Bankstown by 5:35 pm.",
-      "issued": "2026-10-03T16:40:00+10:00",
+      "desc": "The Bureau of Meteorology warns that, at 5:30 pm, a severe thunderstorm likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding was detected near Parramatta and Ryde. This thunderstorm is moving towards the east. It is forecast to affect Sydney City, Sydney Airport, Sydney Olympic Park, the Sydney Harbour Bridge and waters off Bondi Beach by 6:00 pm and waters off Maroubra Beach by 6:30 pm.",
+      "issued": "2026-10-03T17:30:04+10:00",
       "cancelled": false,
       "areas": [
-        {
-          "aac": "NSW_ME014",
-          "description": "Blue Mountains/Hawkesbury",
-          "phase": "REN"
-        },
         {
           "aac": "NSW_ME017",
           "description": "Sydney",
@@ -238,22 +228,17 @@
     },
     {
       "pid": "IDN21035",
-      "title": "Detailed Severe Thunderstorm Warning for Wollondilly/Wingecarribee, Wollongong",
+      "title": "Detailed Severe Thunderstorm Warning for Blue Mountains/Hawkesbury",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
       "desc": "",
-      "issued": "2026-10-03T16:40:00+10:00",
+      "issued": "2026-10-03T17:30:04+10:00",
       "cancelled": true,
       "areas": [
         {
-          "aac": "NSW_ME013",
-          "description": "Wollondilly/Wingecarribee",
-          "phase": "CAN"
-        },
-        {
-          "aac": "NSW_ME018",
-          "description": "Wollongong",
+          "aac": "NSW_ME014",
+          "description": "Blue Mountains/Hawkesbury",
           "phase": "CAN"
         }
       ],
@@ -285,18 +270,18 @@
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Warburton.",
-      "issued": "2026-10-03T14:06:54+08:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours.",
+      "issued": "2026-10-03T15:50:22+08:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "WA_PW007",
           "description": "South Interior",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "REN"
     }
   ],
   "fetch_errors": {},
@@ -309,7 +294,7 @@
         "type": "Grass Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 07:19:35 GMT",
+        "updated": "Sat, 03 Oct 2026 07:47:35 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
@@ -408,7 +393,7 @@
         "type": "Bush Fire",
         "size": "8 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 07:19:35 GMT",
+        "updated": "Sat, 03 Oct 2026 07:47:35 GMT",
         "description": "JACKADGERY 2460",
         "council": "Clarence Valley",
         "lat": -29.595168728,
@@ -853,7 +838,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES-WARN",
-        "updated": "2026-10-03T03:11:03.339+00:00",
+        "updated": "2026-10-03T07:32:56.562+00:00",
         "description": "",
         "lat": -15.9029,
         "lng": 128.2838,
@@ -1464,6 +1449,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - HERBERT HERITAGE DR, STUART",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-03T07:34:49+00:00",
+        "description": "HERBERT HERITAGE DR, STUART",
+        "lat": -23.674,
+        "lng": 133.876,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - STUART HWY, LANSDOWNE",
         "alertLevel": "Advice",
         "status": "active",
@@ -1528,7 +1528,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 32,
+  "incident_count": 33,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
