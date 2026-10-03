@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-03T10:23:02.578612+00:00",
-  "last_checked_utc": "2026-10-03T10:23:02.578612+00:00",
-  "warning_count": 19,
+  "generated_utc": "2026-10-03T10:53:06.524191+00:00",
+  "last_checked_utc": "2026-10-03T10:53:06.524191+00:00",
+  "warning_count": 20,
   "warnings": [
     {
       "pid": "",
@@ -131,24 +131,14 @@
     },
     {
       "pid": "IDV21037",
-      "title": "Severe Weather Warning for South West, Central, West and South Gippsland, East Gippsland",
+      "title": "Severe Weather Warning for West and South Gippsland, East Gippsland",
       "type": "severe_weather",
       "state": "VIC",
       "link": "",
-      "desc": "HEAVY RAINFALL which may lead to FLASH FLOODING is forecast during the remainder of Saturday and into early Sunday. For GEELONG and the OTWAYS: 6-hourly rainfall totals between 35 and 55 mm are likely. Isolated falls up to 70 mm are possible, most likely about the elevated parts. 24-hourly totals between 60 and 90 mm are likely, with isolated falls up to 150 mm possible about elevated parts of the Otways. Conditions are easing and expected to clear off in the early evening. For GIPPSLAND: 6-hour",
-      "issued": "2026-10-03T16:57:49+10:00",
+      "desc": "For parts of GIPPSLAND: HEAVY RAINFALL which may lead to FLASH FLOODING is forecast during the remainder of Saturday and into early Sunday. 6-hour rainfall totals between 35 and 55 mm are likely. Isolated falls up to 70 mm are possible, most likely about the elevated parts. Conditions are expected to ease during Sunday morning. For GEELONG and the OTWAYS: Rainfall has eased over the area and the warning is cancelled. Locations which may be affected include Traralgon, Bairnsdale, Sale, Mt Baw Baw",
+      "issued": "2026-10-03T20:25:49+10:00",
       "cancelled": false,
       "areas": [
-        {
-          "aac": "VIC_PW009",
-          "description": "South West",
-          "phase": "REN"
-        },
-        {
-          "aac": "VIC_PW007",
-          "description": "Central",
-          "phase": "REN"
-        },
         {
           "aac": "VIC_PW006",
           "description": "West and South Gippsland",
@@ -162,6 +152,30 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDV21037",
+      "title": "Severe Weather Warning for South West, Central",
+      "type": "severe_weather",
+      "state": "VIC",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-03T20:25:49+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "VIC_PW009",
+          "description": "South West",
+          "phase": "CAN"
+        },
+        {
+          "aac": "VIC_PW007",
+          "description": "Central",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDN21033",
@@ -255,7 +269,7 @@
         "type": "Grass Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 10:19:35 GMT",
+        "updated": "Sat, 03 Oct 2026 10:47:36 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
@@ -354,7 +368,7 @@
         "type": "Bush Fire",
         "size": "8 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 10:19:35 GMT",
+        "updated": "Sat, 03 Oct 2026 10:47:36 GMT",
         "description": "JACKADGERY 2460",
         "council": "Clarence Valley",
         "lat": -29.595168728,
