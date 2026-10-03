@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-03T11:23:03.156082+00:00",
-  "last_checked_utc": "2026-10-03T11:23:03.156082+00:00",
+  "generated_utc": "2026-10-03T11:53:02.009936+00:00",
+  "last_checked_utc": "2026-10-03T11:53:02.009936+00:00",
   "warning_count": 19,
   "warnings": [
     {
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "03/18:09 EST Moderate Flood Warning for the Thomson River",
+      "title": "03/21:42 EST Moderate Flood Warning for the Thomson River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/thomsonriver.shtml",
       "desc": "",
-      "issued": "Sat, 03 Oct 2026 08:09:42 GMT"
+      "issued": "Sat, 03 Oct 2026 11:42:37 GMT"
     },
     {
       "pid": "IDV36330",
@@ -212,22 +212,22 @@
     },
     {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for South Interior",
+      "title": "Cancellation of Severe Thunderstorm Warning for South Interior",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds in the warning area over the next several hours. Locations which may be affected include Giles.",
-      "issued": "2026-10-03T17:15:24+08:00",
-      "cancelled": false,
+      "desc": "Thunderstorm activity has weakened over eastern WA This warning is now cancelled.",
+      "issued": "2026-10-03T19:39:37+08:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "WA_PW007",
           "description": "South Interior",
-          "phase": "UPD"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -240,7 +240,7 @@
         "type": "Grass Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 11:19:35 GMT",
+        "updated": "Sat, 03 Oct 2026 11:47:37 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
@@ -333,29 +333,13 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
-        "title": "Donnelly St, Armidale",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 03 Oct 2026 11:19:35 GMT",
-        "description": "Donnelly St, Armidale, NSW 2350",
-        "council": "Armidale",
-        "lat": -30.503817,
-        "lng": 151.653299,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
         "title": "JACKADGERY",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "8 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 11:19:35 GMT",
+        "updated": "Sat, 03 Oct 2026 11:47:37 GMT",
         "description": "JACKADGERY 2460",
         "council": "Clarence Valley",
         "lat": -29.595168728,
@@ -800,10 +784,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-03T11:13:55+00:00",
-        "description": "MELALEUCA, CITY OF SWAN",
-        "lat": -31.7403,
-        "lng": 115.8948,
+        "updated": "2026-10-03T11:38:40+00:00",
+        "description": "PINJARRA, SHIRE OF MURRAY",
+        "lat": -32.6421,
+        "lng": 115.8669,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -815,10 +799,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-03T11:12:41+00:00",
-        "description": "SOUTH HEDLAND, TOWN OF PORT HEDLAND",
-        "lat": -20.4074,
-        "lng": 118.5997,
+        "updated": "2026-10-03T11:13:55+00:00",
+        "description": "MELALEUCA, CITY OF SWAN",
+        "lat": -31.7403,
+        "lng": 115.8948,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1427,7 +1411,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 34,
+  "incident_count": 33,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
