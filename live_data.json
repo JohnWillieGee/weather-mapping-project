@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-03T09:53:04.075686+00:00",
-  "last_checked_utc": "2026-10-03T09:53:04.075686+00:00",
-  "warning_count": 21,
+  "generated_utc": "2026-10-03T10:23:02.578612+00:00",
+  "last_checked_utc": "2026-10-03T10:23:02.578612+00:00",
+  "warning_count": 19,
   "warnings": [
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "03/16:24 EST Initial Minor Flood Warning for the Macalister River",
+      "title": "03/20:08 EST Moderate Flood Warning for the Macalister River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/macalisterriver.shtml",
       "desc": "",
-      "issued": "Sat, 03 Oct 2026 06:24:46 GMT"
+      "issued": "Sat, 03 Oct 2026 10:08:40 GMT"
     },
     {
       "pid": "",
@@ -165,70 +165,22 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Southern Tablelands, Australian Capital Territory",
+      "title": "Cancellation of Severe Thunderstorm Warning for Southern Tablelands, Australian Capital Territory",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours.",
-      "issued": "2026-10-03T18:59:05+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-03T19:57:11+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "NSW_PW009",
           "description": "Southern Tablelands",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "NSW_PW017",
           "description": "Australian Capital Territory",
-          "phase": "REN"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
-    },
-    {
-      "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Central Tablelands, Hunter, South West Slopes",
-      "type": "thunderstorm",
-      "state": "NSW",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-03T18:59:05+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "NSW_PW008",
-          "description": "Central Tablelands",
-          "phase": "CAN"
-        },
-        {
-          "aac": "NSW_PW003",
-          "description": "Hunter",
-          "phase": "CAN"
-        },
-        {
-          "aac": "NSW_PW013",
-          "description": "South West Slopes",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
-    },
-    {
-      "pid": "IDN21035",
-      "title": "Cancellation of Detailed Severe Thunderstorm Warning for Sydney",
-      "type": "thunderstorm",
-      "state": "NSW",
-      "link": "",
-      "desc": "Severe thunderstorms are no longer affecting Sydney Newcastle Wollongong and surrounding areas. This warning is now cancelled.",
-      "issued": "2026-10-03T18:09:51+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "NSW_ME017",
-          "description": "Sydney",
           "phase": "CAN"
         }
       ],
@@ -303,7 +255,7 @@
         "type": "Grass Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 09:47:35 GMT",
+        "updated": "Sat, 03 Oct 2026 10:19:35 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
@@ -402,7 +354,7 @@
         "type": "Bush Fire",
         "size": "8 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 09:47:35 GMT",
+        "updated": "Sat, 03 Oct 2026 10:19:35 GMT",
         "description": "JACKADGERY 2460",
         "council": "Clarence Valley",
         "lat": -29.595168728,
@@ -840,6 +792,21 @@
     ],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-03T09:50:09+00:00",
+        "description": "DERBY, SHIRE OF DERBY/WEST KIMBERLEY",
+        "lat": -17.3145,
+        "lng": 123.6449,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1365,16 +1332,16 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - OFERRALS RD, BAYVIEW",
+        "title": "Grass and Scrub Fire - KATHERINE",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-03T09:49:34+00:00",
-        "description": "OFERRALS RD, BAYVIEW",
-        "lat": -12.4397,
-        "lng": 130.8604,
+        "updated": "2026-10-03T10:06:45+00:00",
+        "description": "KATHERINE",
+        "lat": -14.4602,
+        "lng": 132.2782,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -1459,7 +1426,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 32,
+  "incident_count": 33,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
