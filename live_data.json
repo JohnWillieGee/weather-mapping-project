@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-03T03:53:05.904312+00:00",
-  "last_checked_utc": "2026-10-03T03:53:05.904312+00:00",
-  "warning_count": 15,
+  "generated_utc": "2026-10-03T04:23:04.241431+00:00",
+  "last_checked_utc": "2026-10-03T04:23:04.241431+00:00",
+  "warning_count": 17,
   "warnings": [
     {
       "pid": "",
@@ -38,6 +38,15 @@
       "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDV35010.html",
       "desc": "",
       "issued": "Sat, 03 Oct 2026 02:58:37 GMT"
+    },
+    {
+      "pid": "",
+      "title": "03/14:13 EST Initial Minor Flood Warning for the Thomson River",
+      "type": "flood",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/flood/thomsonriver.shtml",
+      "desc": "",
+      "issued": "Sat, 03 Oct 2026 04:13:45 GMT"
     },
     {
       "pid": "IDV36330",
@@ -138,14 +147,19 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Illawarra, South Coast, Central Tablelands, Southern Tablelands, Central West Slopes and Plains, South West Slopes",
+      "title": "Severe Thunderstorm Warning for Sydney Metropolitan, Illawarra, South Coast, Central Tablelands, Southern Tablelands, Central West Slopes and Plains",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Orange, Goulburn, Dubbo, Nowra, Bowral and Bathurst.",
-      "issued": "2026-10-03T13:09:45+10:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Orange, Nowra, Mudgee, Katoomba, Bowral and Bathurst. Severe thunderstorms are no longer occurring in the South West Slopes district and the warning for this district is CANCELLED.",
+      "issued": "2026-10-03T14:00:43+10:00",
       "cancelled": false,
       "areas": [
+        {
+          "aac": "NSW_PW005",
+          "description": "Sydney Metropolitan",
+          "phase": "NEW"
+        },
         {
           "aac": "NSW_PW006",
           "description": "Illawarra",
@@ -154,7 +168,7 @@
         {
           "aac": "NSW_PW007",
           "description": "South Coast",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "NSW_PW008",
@@ -170,34 +184,53 @@
           "aac": "NSW_PW012",
           "description": "Central West Slopes and Plains",
           "phase": "REN"
-        },
-        {
-          "aac": "NSW_PW013",
-          "description": "South West Slopes",
-          "phase": "REN"
         }
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
     },
     {
-      "pid": "IDN21035",
-      "title": "Detailed Severe Thunderstorm Warning for Wollondilly/Wingecarribee",
+      "pid": "IDN21033",
+      "title": "Severe Thunderstorm Warning for South West Slopes",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 1:30 pm, a severe thunderstorm likely to produce damaging winds and heavy rainfall that may lead to flash flooding was detected near Wingello and the area south of the Wombeyan Caves Road. This thunderstorm is moving towards the southeast. It is forecast to affect Bundanoon, the area west of Berrima and the Penrose State Forest by 2:00 pm and Nowra by 2:30 pm.",
-      "issued": "2026-10-03T13:34:35+10:00",
+      "desc": "",
+      "issued": "2026-10-03T14:00:43+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "NSW_PW013",
+          "description": "South West Slopes",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
+    },
+    {
+      "pid": "IDN21035",
+      "title": "Detailed Severe Thunderstorm Warning for Wollondilly/Wingecarribee, Wollongong",
+      "type": "thunderstorm",
+      "state": "NSW",
+      "link": "",
+      "desc": "The Bureau of Meteorology warns that, at 2:05 pm, a severe thunderstorm likely to produce damaging winds and heavy rainfall that may lead to flash flooding was detected near Bundanoon and the area west of Berrima. This thunderstorm is moving towards the southeast. It is forecast to affect Bowral, Nowra and Moss Vale by 2:35 pm and Kiama, Gerringong and Jamberoo by 3:05 pm.",
+      "issued": "2026-10-03T14:07:09+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "NSW_ME013",
           "description": "Wollondilly/Wingecarribee",
+          "phase": "REN"
+        },
+        {
+          "aac": "NSW_ME018",
+          "description": "Wollongong",
           "phase": "NEW"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "UPD"
     },
     {
       "pid": "IDV21033",
@@ -239,7 +272,7 @@
         "type": "Grass Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 03:47:35 GMT",
+        "updated": "Sat, 03 Oct 2026 04:19:35 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
@@ -338,7 +371,7 @@
         "type": "Bush Fire",
         "size": "8 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 03:47:35 GMT",
+        "updated": "Sat, 03 Oct 2026 04:19:35 GMT",
         "description": "JACKADGERY 2460",
         "council": "Clarence Valley",
         "lat": -29.595168728,
@@ -1384,6 +1417,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - STUART HWY, LANSDOWNE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-03T04:11:42+00:00",
+        "description": "STUART HWY, LANSDOWNE",
+        "lat": -14.4692,
+        "lng": 132.3004,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Barkly North Complex, CRESWELL",
         "alertLevel": "Advice",
         "status": "active",
@@ -1449,7 +1497,7 @@
       }
     ]
   },
-  "incident_count": 31,
+  "incident_count": 32,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
