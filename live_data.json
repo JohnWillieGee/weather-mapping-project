@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-03T16:53:02.622654+00:00",
-  "last_checked_utc": "2026-10-03T16:53:02.622654+00:00",
+  "generated_utc": "2026-10-03T17:23:03.174629+00:00",
+  "last_checked_utc": "2026-10-03T17:23:03.174629+00:00",
   "warning_count": 15,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "03/22:00 EST Marine Wind Warning Summary for Victoria",
+      "title": "04/04:10 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 03 Oct 2026 12:00:17 GMT"
+      "issued": "Sat, 03 Oct 2026 17:10:24 GMT"
     },
     {
       "pid": "",
@@ -113,21 +113,21 @@
     },
     {
       "pid": "",
-      "title": "03/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "04/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sat, 03 Oct 2026 11:01:13 GMT"
+      "issued": "Sat, 03 Oct 2026 17:01:16 GMT"
     },
     {
       "pid": "",
-      "title": "03/22:00 EST Marine Wind Warning Summary for Tasmania",
+      "title": "04/04:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 03 Oct 2026 12:00:12 GMT"
+      "issued": "Sat, 03 Oct 2026 17:00:11 GMT"
     },
     {
       "pid": "IDV21037",
@@ -164,7 +164,7 @@
         "type": "Grass Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 16:47:35 GMT",
+        "updated": "Sat, 03 Oct 2026 17:19:35 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
@@ -263,7 +263,7 @@
         "type": "Bush Fire",
         "size": "8 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 16:47:35 GMT",
+        "updated": "Sat, 03 Oct 2026 17:19:35 GMT",
         "description": "JACKADGERY 2460",
         "council": "Clarence Valley",
         "lat": -29.595168728,
@@ -1226,36 +1226,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - BLAIN ST, ARALUEN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-03T16:28:55+00:00",
-        "description": "BLAIN ST, ARALUEN",
-        "lat": -23.7078,
-        "lng": 133.8523,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - BLAIN ST, ARALUEN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-03T16:24:57+00:00",
-        "description": "BLAIN ST, ARALUEN",
-        "lat": -23.7078,
-        "lng": 133.8523,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Barkly North Complex, CRESWELL",
         "alertLevel": "Advice",
         "status": "active",
@@ -1303,9 +1273,25 @@
       }
     ],
     "act": [],
-    "sa": []
+    "sa": [
+      {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-03T16:47:00+00:00",
+        "description": "MYPONGA",
+        "lat": -35.3991,
+        "lng": 138.419,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      }
+    ]
   },
-  "incident_count": 31,
+  "incident_count": 30,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4936,88 +4922,83 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-10-03T12:00:00Z",
+      "issued_utc": "2026-10-03T17:20:20Z",
       "overview": [
-        "Strong Wind Warning for Saturday for Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast and Illawarra Coast",
-        "Strong Wind Warning for Sunday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast and Eden Coast"
+        "Strong Wind Warning for Sunday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast and Eden Coast",
+        "Strong Wind Warning for Monday for Coffs Coast and Macquarie Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Byron Coast: Point Danger to Wooli",
             "Coffs Coast: Wooli to Smoky Cape",
             "Macquarie Coast: Smoky Cape to Seal Rocks",
             "Hunter Coast: Seal Rocks to Broken Bay",
             "Sydney Coast: Broken Bay to Port Hacking",
-            "Illawarra Coast: Port Hacking to Ulladulla"
+            "Eden Coast: Montague Island to Gabo Island"
           ],
           "aac_codes": [
+            "NSW_MW008",
             "NSW_MW007",
             "NSW_MW006",
             "NSW_MW005",
             "NSW_MW004",
-            "NSW_MW003"
+            "NSW_MW001"
           ],
-          "summary": "Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast and Illawarra Coast"
+          "summary": "Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast and Eden Coast"
         }
       ]
     },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-03T12:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Saturday for Central Gippsland Coast and East Gippsland Coast",
-        "Gale Warning for Sunday for East Gippsland Coast"
-      ],
+      "issued_utc": "2026-10-03T17:10:00Z",
+      "overview": [],
       "hazards": [
         {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
+          "level": "Gale Warning",
+          "severity": "GALE",
           "zones": [
-            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
             "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
           ],
           "aac_codes": [
-            "VIC_MW003",
             "VIC_MW004"
           ],
-          "summary": "Central Gippsland Coast and East Gippsland Coast"
+          "summary": "East Gippsland Coast"
         }
       ]
     },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-03T11:01:00Z",
+      "issued_utc": "2026-10-03T17:01:00Z",
       "overview": [
-        "Strong Wind Warning for Saturday for Ningaloo Coast and Gascoyne Coast",
-        "Strong Wind Warning for Sunday for Ningaloo Coast"
+        "Strong Wind Warning for Sunday for Ningaloo Coast",
+        "Strong Wind Warning for Monday for Gascoyne Coast, Leeuwin Coast and Albany Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Ningaloo Coast: North West Cape to Cape Cuvier",
-            "Gascoyne Coast: Cape Cuvier to Kalbarri"
+            "Ningaloo Coast: North West Cape to Cape Cuvier"
           ],
           "aac_codes": [
-            "WA_MW005",
-            "WA_MW006"
+            "WA_MW005"
           ],
-          "summary": "Ningaloo Coast and Gascoyne Coast"
+          "summary": "Ningaloo Coast"
         }
       ]
     },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-03T12:00:00Z",
+      "issued_utc": "2026-10-03T17:00:00Z",
       "overview": [
-        "Strong Wind Warning for Saturday for Banks Strait and Franklin Sound, East of Flinders Island and Upper East Coast",
-        "Strong Wind Warning for Sunday for Banks Strait and Franklin Sound, East of Flinders Island and Upper East Coast"
+        "Strong Wind Warning for Sunday for Banks Strait and Franklin Sound, East of Flinders Island and Upper East Coast",
+        "Strong Wind Warning for Monday for East of Flinders Island, Upper East Coast, South East Coast, South West Coast and Central West Coast"
       ],
       "hazards": [
         {
