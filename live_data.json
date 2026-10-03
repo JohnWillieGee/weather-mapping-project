@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-03T02:23:02.342554+00:00",
-  "last_checked_utc": "2026-10-03T02:23:02.342554+00:00",
-  "warning_count": 15,
+  "generated_utc": "2026-10-03T02:53:01.128867+00:00",
+  "last_checked_utc": "2026-10-03T02:53:01.128867+00:00",
+  "warning_count": 14,
   "warnings": [
     {
       "pid": "",
@@ -142,29 +142,29 @@
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Orange, Parkes, Crookwell, Cowra, Peak Hill, Blayney, Trunkey Creek and Taralga. Severe thunderstorms are no longer occurring in the Snowy Mountains and Australian Capital Territory districts and the warning for these districts is CANCELLED.",
-      "issued": "2026-10-03T11:39:23+10:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Orange, Goulburn, Dubbo, Bathurst, Parkes, Wellington, Oberon, Crookwell and Peak Hill.",
+      "issued": "2026-10-03T12:23:03+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "NSW_PW006",
           "description": "Illawarra",
-          "phase": "NEW"
+          "phase": "UPD"
         },
         {
           "aac": "NSW_PW008",
           "description": "Central Tablelands",
-          "phase": "NEW"
+          "phase": "UPD"
         },
         {
           "aac": "NSW_PW009",
           "description": "Southern Tablelands",
-          "phase": "NEW"
+          "phase": "UPD"
         },
         {
           "aac": "NSW_PW012",
           "description": "Central West Slopes and Plains",
-          "phase": "NEW"
+          "phase": "UPD"
         },
         {
           "aac": "NSW_PW013",
@@ -174,30 +174,6 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
-    },
-    {
-      "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Australian Capital Territory, Snowy Mountains",
-      "type": "thunderstorm",
-      "state": "NSW",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-03T11:39:23+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "NSW_PW017",
-          "description": "Australian Capital Territory",
-          "phase": "CAN"
-        },
-        {
-          "aac": "NSW_PW010",
-          "description": "Snowy Mountains",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
     },
     {
       "pid": "IDV21033",
@@ -239,7 +215,7 @@
         "type": "Grass Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 02:19:35 GMT",
+        "updated": "Sat, 03 Oct 2026 02:47:35 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
@@ -338,7 +314,7 @@
         "type": "Bush Fire",
         "size": "8 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 02:19:35 GMT",
+        "updated": "Sat, 03 Oct 2026 02:47:35 GMT",
         "description": "JACKADGERY 2460",
         "council": "Clarence Valley",
         "lat": -29.595168728,
@@ -455,6 +431,22 @@
             ]
           ]
         ],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Jonson St, Byron Bay",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sat, 03 Oct 2026 02:47:35 GMT",
+        "description": "Jonson St, Byron Bay, NSW 2481",
+        "council": "Byron",
+        "lat": -28.650277999,
+        "lng": 153.613202,
+        "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       }
@@ -1247,23 +1239,7 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [
-      {
-        "title": "HOUSE FIRE - CHIFLEY",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-10-03T02:16:00+00:00",
-        "description": "CHIFLEY",
-        "lat": -35.3494,
-        "lng": 149.0768,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      }
-    ],
+    "act": [],
     "sa": []
   },
   "incident_count": 31,
