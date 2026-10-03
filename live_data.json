@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-03T08:53:10.726371+00:00",
-  "last_checked_utc": "2026-10-03T08:53:10.726371+00:00",
+  "generated_utc": "2026-10-03T09:23:03.931573+00:00",
+  "last_checked_utc": "2026-10-03T09:23:03.931573+00:00",
   "warning_count": 21,
   "warnings": [
     {
@@ -113,12 +113,12 @@
     },
     {
       "pid": "",
-      "title": "03/16:36 WST Marine Wind Warning Summary for Western Australia",
+      "title": "03/16:55 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sat, 03 Oct 2026 08:36:11 GMT"
+      "issued": "Sat, 03 Oct 2026 08:55:35 GMT"
     },
     {
       "pid": "",
@@ -165,61 +165,51 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Hunter, Central Tablelands, Southern Tablelands, South West Slopes, Australian Capital Territory",
+      "title": "Severe Thunderstorm Warning for Southern Tablelands, Australian Capital Territory",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Canberra, Kandos, Glen Davis, Capertee, Hill End and Queanbeyan. Severe thunderstorms are no longer occurring in the Metropolitan and Central West Slopes and Plains districts and the warning for these districts is CANCELLED.",
-      "issued": "2026-10-03T18:09:37+10:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours.",
+      "issued": "2026-10-03T18:59:05+10:00",
       "cancelled": false,
       "areas": [
         {
-          "aac": "NSW_PW003",
-          "description": "Hunter",
-          "phase": "NEW"
-        },
-        {
-          "aac": "NSW_PW008",
-          "description": "Central Tablelands",
-          "phase": "REN"
-        },
-        {
           "aac": "NSW_PW009",
           "description": "Southern Tablelands",
-          "phase": "NEW"
-        },
-        {
-          "aac": "NSW_PW013",
-          "description": "South West Slopes",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "NSW_PW017",
           "description": "Australian Capital Territory",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "hazardPhase": "REN"
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Central West Slopes and Plains, Sydney Metropolitan",
+      "title": "Severe Thunderstorm Warning for Central Tablelands, Hunter, South West Slopes",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
       "desc": "",
-      "issued": "2026-10-03T18:09:37+10:00",
+      "issued": "2026-10-03T18:59:05+10:00",
       "cancelled": true,
       "areas": [
         {
-          "aac": "NSW_PW012",
-          "description": "Central West Slopes and Plains",
+          "aac": "NSW_PW008",
+          "description": "Central Tablelands",
           "phase": "CAN"
         },
         {
-          "aac": "NSW_PW005",
-          "description": "Sydney Metropolitan",
+          "aac": "NSW_PW003",
+          "description": "Hunter",
+          "phase": "CAN"
+        },
+        {
+          "aac": "NSW_PW013",
+          "description": "South West Slopes",
           "phase": "CAN"
         }
       ],
@@ -247,22 +237,22 @@
     },
     {
       "pid": "IDN21036",
-      "title": "Severe Thunderstorm Warning - Canberra for Greater Canberra and Surrounds",
+      "title": "Cancellation of Severe Thunderstorm Warning - Canberra for Greater Canberra and Surrounds",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 6:10 pm, a severe thunderstorm likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding was detected. The thunderstorm is moving towards the east. It is forecast to affect Belconnen, Hall and Gungahlin by 6:40 pm.",
-      "issued": "2026-10-03T18:12:08+10:00",
-      "cancelled": false,
+      "desc": "Severe thunderstorms are no longer affecting Canberra and Queanbeyan. This warning is now cancelled.",
+      "issued": "2026-10-03T19:02:06+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "NSW_ME009",
           "description": "Greater Canberra and Surrounds",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDV21033",
@@ -289,18 +279,18 @@
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours.",
-      "issued": "2026-10-03T15:50:22+08:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds in the warning area over the next several hours. Locations which may be affected include Giles.",
+      "issued": "2026-10-03T17:15:24+08:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "WA_PW007",
           "description": "South Interior",
-          "phase": "REN"
+          "phase": "UPD"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "REN"
+      "hazardPhase": "UPD"
     }
   ],
   "fetch_errors": {},
@@ -313,7 +303,7 @@
         "type": "Grass Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 08:47:35 GMT",
+        "updated": "Sat, 03 Oct 2026 09:19:35 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
@@ -406,29 +396,13 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
-        "title": "Hoxton Park Rd, Cartwright",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 03 Oct 2026 08:47:35 GMT",
-        "description": "Hoxton Park Rd, Cartwright, NSW 2168",
-        "council": "Liverpool",
-        "lat": -33.9271259999999,
-        "lng": 150.878123,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
         "title": "JACKADGERY",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "8 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 08:47:35 GMT",
+        "updated": "Sat, 03 Oct 2026 09:19:35 GMT",
         "description": "JACKADGERY 2460",
         "council": "Clarence Valley",
         "lat": -29.595168728,
@@ -873,25 +847,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-03T08:47:59+00:00",
-        "description": "WOOROLOO, SHIRE OF MUNDARING",
-        "lat": -31.8033,
-        "lng": 116.309,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Fuel Leak",
-        "alertLevel": "",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-03T08:47:04+00:00",
-        "description": "CENTENNIAL PARK, CITY OF ALBANY",
-        "lat": -35.0166,
-        "lng": 117.8846,
+        "updated": "2026-10-03T09:06:09+00:00",
+        "description": "COOLUP, SHIRE OF MURRAY",
+        "lat": -32.7429,
+        "lng": 115.8767,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -922,21 +881,6 @@
         "description": "",
         "lat": -34.978,
         "lng": 116.7323,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-03T08:02:06+00:00",
-        "description": "YARAWINDAH, SHIRE OF VICTORIA PLAINS",
-        "lat": -31.0417,
-        "lng": 116.1742,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1421,31 +1365,31 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - CHAMBERS DR, KATHERINE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-03T08:08:56+00:00",
-        "description": "CHAMBERS DR, KATHERINE",
-        "lat": -14.4614,
-        "lng": 132.2717,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - STUART HWY, LANSDOWNE",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-03T07:50:18+00:00",
+        "updated": "2026-10-03T09:13:25+00:00",
         "description": "STUART HWY, LANSDOWNE",
         "lat": -14.4692,
         "lng": 132.3004,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - CORMACK ST, KATHERINE EAST",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-03T09:05:38+00:00",
+        "description": "CORMACK ST, KATHERINE EAST",
+        "lat": -14.4654,
+        "lng": 132.2977,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -1500,7 +1444,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 34,
+  "incident_count": 31,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5195,7 +5139,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-03T08:36:00Z",
+      "issued_utc": "2026-10-03T08:55:28Z",
       "overview": [
         "Strong Wind Warning for Saturday for Ningaloo Coast and Gascoyne Coast",
         "Strong Wind Warning for Sunday for Ningaloo Coast"
