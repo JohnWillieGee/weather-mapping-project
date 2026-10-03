@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-03T01:53:04.635816+00:00",
-  "last_checked_utc": "2026-10-03T01:53:04.635816+00:00",
-  "warning_count": 13,
+  "generated_utc": "2026-10-03T02:23:02.342554+00:00",
+  "last_checked_utc": "2026-10-03T02:23:02.342554+00:00",
+  "warning_count": 15,
   "warnings": [
     {
       "pid": "",
@@ -47,6 +47,15 @@
       "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDV36330.html",
       "desc": "",
       "issued": "Sat, 03 Oct 2026 00:47:37 GMT"
+    },
+    {
+      "pid": "",
+      "title": "03/11:59 EST Initial Minor Flood Warning for the Werribee River",
+      "type": "flood",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/flood/werribeeriver.shtml",
+      "desc": "",
+      "issued": "Sat, 03 Oct 2026 01:59:45 GMT"
     },
     {
       "pid": "",
@@ -189,6 +198,35 @@
       ],
       "severityCode": "CAN",
       "hazardPhase": "CAN"
+    },
+    {
+      "pid": "IDV21033",
+      "title": "Severe Thunderstorm Warning for Northern Country, North Central, North East",
+      "type": "thunderstorm",
+      "state": "VIC",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Wangaratta and Mansfield.",
+      "issued": "2026-10-03T11:57:07+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "VIC_PW003",
+          "description": "Northern Country",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW008",
+          "description": "North Central",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW004",
+          "description": "North East",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -201,7 +239,7 @@
         "type": "Grass Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 01:47:35 GMT",
+        "updated": "Sat, 03 Oct 2026 02:19:35 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
@@ -300,7 +338,7 @@
         "type": "Bush Fire",
         "size": "8 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 01:47:35 GMT",
+        "updated": "Sat, 03 Oct 2026 02:19:35 GMT",
         "description": "JACKADGERY 2460",
         "council": "Clarence Valley",
         "lat": -29.595168728,
@@ -424,7 +462,7 @@
     "vic": [],
     "qld": [
       {
-        "title": "PREPARE TO LEAVE - Oak Valley - fire as at 10:06am Saturday, 3 October 2026",
+        "title": "PREPARE TO LEAVE - Oak Valley - fire as at 12:07pm Saturday, 3 October 2026",
         "alertLevel": "Watch and Act",
         "status": "",
         "type": "Bush Fire",
@@ -729,6 +767,21 @@
     "tas": [],
     "wa": [
       {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-03T01:44:28+00:00",
+        "description": "TALANDJI, SHIRE OF ASHBURTON",
+        "lat": -21.7052,
+        "lng": 114.9417,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Smoke Alert FOR DWELLINGUP AND SURROUNDING FOREST AREAS INCLUDING LANE POOLE RESERVE IN THE SHIRE OF MURRAY",
         "alertLevel": "Advice",
         "status": "active",
@@ -884,21 +937,6 @@
             ]
           ]
         ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-02T05:07:55+00:00",
-        "description": "TALANDJI, SHIRE OF ASHBURTON",
-        "lat": -21.7052,
-        "lng": 114.9417,
-        "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1217,22 +1255,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-10-03T01:50:00+00:00",
-        "description": "CHIFLEY",
-        "lat": -35.3494,
-        "lng": 149.0768,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - CHIFLEY",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Ambulance",
-        "updated": "2026-10-02T23:06:25+00:00",
+        "updated": "2026-10-03T02:16:00+00:00",
         "description": "CHIFLEY",
         "lat": -35.3494,
         "lng": 149.0768,
@@ -1243,7 +1266,7 @@
     ],
     "sa": []
   },
-  "incident_count": 32,
+  "incident_count": 31,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
