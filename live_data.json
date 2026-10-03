@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-03T12:23:05.541769+00:00",
-  "last_checked_utc": "2026-10-03T12:23:05.541769+00:00",
-  "warning_count": 19,
+  "generated_utc": "2026-10-03T12:53:03.137405+00:00",
+  "last_checked_utc": "2026-10-03T12:53:03.137405+00:00",
+  "warning_count": 18,
   "warnings": [
     {
       "pid": "",
@@ -144,8 +144,8 @@
       "type": "severe_weather",
       "state": "VIC",
       "link": "",
-      "desc": "For parts of GIPPSLAND: HEAVY RAINFALL which may lead to FLASH FLOODING is forecast during the remainder of Saturday and into early Sunday. 6-hour rainfall totals between 35 and 55 mm are likely. Isolated falls up to 70 mm are possible, most likely about the elevated parts. Conditions are expected to ease during Sunday morning. For GEELONG and the OTWAYS: Rainfall has eased over the area and the warning is cancelled. Locations which may be affected include Traralgon, Bairnsdale, Sale, Mt Baw Baw",
-      "issued": "2026-10-03T20:25:49+10:00",
+      "desc": "For GIPPSLAND: HEAVY RAINFALL which may lead to FLASH FLOODING is forecast during the remainder of Saturday and into early Sunday. 6-hour rainfall totals between 35 and 55 mm are likely. Isolated falls up to 70 mm are possible, most likely about the elevated parts. Conditions are expected to ease during Sunday morning. For GEELONG and the OTWAYS: Rainfall has eased over the area and the warning is cancelled. Locations which may be affected include Traralgon, Bairnsdale, Sale, Mt Baw Baw, Morwell",
+      "issued": "2026-10-03T22:47:47+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -161,30 +161,6 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "REN"
-    },
-    {
-      "pid": "IDV21037",
-      "title": "Severe Weather Warning for South West, Central",
-      "type": "severe_weather",
-      "state": "VIC",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-03T20:25:49+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "VIC_PW009",
-          "description": "South West",
-          "phase": "CAN"
-        },
-        {
-          "aac": "VIC_PW007",
-          "description": "Central",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
     },
     {
       "pid": "IDN21033",
@@ -240,7 +216,7 @@
         "type": "Grass Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 12:19:55 GMT",
+        "updated": "Sat, 03 Oct 2026 12:47:36 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
@@ -339,7 +315,7 @@
         "type": "Bush Fire",
         "size": "8 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 12:19:55 GMT",
+        "updated": "Sat, 03 Oct 2026 12:47:36 GMT",
         "description": "JACKADGERY 2460",
         "council": "Clarence Valley",
         "lat": -29.595168728,
@@ -778,15 +754,45 @@
     "tas": [],
     "wa": [
       {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-03T12:33:20+00:00",
+        "description": "DJUGUN, SHIRE OF BROOME",
+        "lat": -17.9431,
+        "lng": 122.2282,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-03T11:13:55+00:00",
+        "updated": "2026-10-03T12:31:09+00:00",
         "description": "MELALEUCA, CITY OF SWAN",
         "lat": -31.7403,
+        "lng": 115.8948,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-03T12:30:44+00:00",
+        "description": "MELALEUCA, CITY OF SWAN",
+        "lat": -31.7401,
         "lng": 115.8948,
         "polys": [],
         "state": "WA",
@@ -1287,6 +1293,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - LEVEY RD, VIRGINIA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-03T12:36:08+00:00",
+        "description": "LEVEY RD, VIRGINIA",
+        "lat": -12.5651,
+        "lng": 131.0325,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - KATHERINE",
         "alertLevel": "Advice",
         "status": "active",
@@ -1381,7 +1402,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 31,
+  "incident_count": 34,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
