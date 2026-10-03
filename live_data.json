@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-03T15:53:04.055675+00:00",
-  "last_checked_utc": "2026-10-03T15:53:04.055675+00:00",
-  "warning_count": 16,
+  "generated_utc": "2026-10-03T16:23:02.758287+00:00",
+  "last_checked_utc": "2026-10-03T16:23:02.758287+00:00",
+  "warning_count": 15,
   "warnings": [
     {
       "pid": "",
@@ -131,41 +131,22 @@
     },
     {
       "pid": "IDV21037",
-      "title": "Severe Weather Warning for West and South Gippsland, East Gippsland",
+      "title": "Cancellation of Severe Weather Warning for West and South Gippsland, East Gippsland",
       "type": "severe_weather",
       "state": "VIC",
       "link": "",
-      "desc": "For GIPPSLAND: HEAVY RAINFALL which may lead to FLASH FLOODING is forecast during the remainder of Saturday and into early Sunday. 6-hour rainfall totals between 35 and 55 mm are likely. Isolated falls up to 70 mm are possible, most likely about the elevated parts. Conditions are expected to ease during Sunday morning. For GEELONG and the OTWAYS: Rainfall has eased over the area and the warning is cancelled. Locations which may be affected include Traralgon, Bairnsdale, Sale, Mt Baw Baw, Morwell",
-      "issued": "2026-10-03T22:47:47+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled. 52 mm of rainfall was recorded at Rosehill in the 6 hours to 10:30 pm. 65 mm of rainfall was recorded at Briagolong in the 6 hours to 8:15 pm. 59 mm of rainfall was recorded at Murderers Hill in the 6 hours to 4:31 pm. 60 mm of rainfall was recorded at Seaton (Glenmaggie Creek at The Gorge) in the 6 hours to 4:26 pm. 73 mm of rainfall was recorded at Lorne (Mt Cowley) in the 6 hours to 1:15 pm. 48 mm of rainfall was recorded at Pollocksford in the 6 hours to 12:36 ",
+      "issued": "2026-10-04T03:19:25+11:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "VIC_PW006",
           "description": "West and South Gippsland",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "VIC_PW005",
           "description": "East Gippsland",
-          "phase": "REN"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
-    },
-    {
-      "pid": "IDW21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for South Interior",
-      "type": "thunderstorm",
-      "state": "WA",
-      "link": "",
-      "desc": "Thunderstorm activity has weakened over eastern WA This warning is now cancelled.",
-      "issued": "2026-10-03T19:39:37+08:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "WA_PW007",
-          "description": "South Interior",
           "phase": "CAN"
         }
       ],
@@ -183,7 +164,7 @@
         "type": "Grass Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 15:47:35 GMT",
+        "updated": "Sat, 03 Oct 2026 16:19:35 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
@@ -282,7 +263,7 @@
         "type": "Bush Fire",
         "size": "8 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 15:47:35 GMT",
+        "updated": "Sat, 03 Oct 2026 16:19:35 GMT",
         "description": "JACKADGERY 2460",
         "council": "Clarence Valley",
         "lat": -29.595168728,
@@ -720,36 +701,6 @@
     ],
     "tas": [],
     "wa": [
-      {
-        "title": "Report of Smoke",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-03T15:44:47+00:00",
-        "description": "SERPENTINE, SHIRE OF SERPENTINE-JARRAHDALE",
-        "lat": -32.3806,
-        "lng": 115.9724,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-03T15:12:14+00:00",
-        "description": "KINGSLEY, CITY OF JOONDALUP",
-        "lat": -31.8169,
-        "lng": 115.8194,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1275,6 +1226,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - ULPAYA RD, STUART",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-03T16:10:30+00:00",
+        "description": "ULPAYA RD, STUART",
+        "lat": -23.6906,
+        "lng": 133.8802,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - LAKESIDE DR, ALAWA",
         "alertLevel": "Advice",
         "status": "active",
@@ -1339,7 +1305,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 32,
+  "incident_count": 31,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
