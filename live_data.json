@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-03T00:23:18.180671+00:00",
-  "last_checked_utc": "2026-10-03T00:23:18.180671+00:00",
-  "warning_count": 11,
+  "generated_utc": "2026-10-03T00:53:08.645981+00:00",
+  "last_checked_utc": "2026-10-03T00:53:08.645981+00:00",
+  "warning_count": 12,
   "warnings": [
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "IDV36330",
-      "title": "02/15:16 EST Minor Flood Warning for the Bunyip River",
+      "title": "03/10:47 EST Minor Flood Warning for the Bunyip River",
       "type": "flood",
       "state": "VIC",
       "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDV36330.html",
       "desc": "",
-      "issued": "Fri, 02 Oct 2026 05:16:37 GMT"
+      "issued": "Sat, 03 Oct 2026 00:47:37 GMT"
     },
     {
       "pid": "",
@@ -126,6 +126,35 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDN21033",
+      "title": "Severe Thunderstorm Warning for South West Slopes, Snowy Mountains, Australian Capital Territory",
+      "type": "thunderstorm",
+      "state": "NSW",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Adaminaby.",
+      "issued": "2026-10-03T10:43:03+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NSW_PW013",
+          "description": "South West Slopes",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_PW010",
+          "description": "Snowy Mountains",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_PW017",
+          "description": "Australian Capital Territory",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -138,7 +167,7 @@
         "type": "Grass Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 00:19:35 GMT",
+        "updated": "Sat, 03 Oct 2026 00:47:35 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
@@ -237,7 +266,7 @@
         "type": "Bush Fire",
         "size": "8 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 00:19:35 GMT",
+        "updated": "Sat, 03 Oct 2026 00:47:35 GMT",
         "description": "JACKADGERY 2460",
         "council": "Clarence Valley",
         "lat": -29.595168728,
@@ -356,6 +385,22 @@
         ],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "WERRIS CREEK RD, QUIPOLLY",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Sat, 03 Oct 2026 00:47:35 GMT",
+        "description": "WERRIS CREEK RD, QUIPOLLY 2343",
+        "council": "Liverpool Plains",
+        "lat": -31.466419999,
+        "lng": 150.65328,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       }
     ],
     "vic": [],
@@ -426,56 +471,6 @@
             [
               146.8375,
               -19.4175
-            ]
-          ]
-        ]
-      },
-      {
-        "title": "STAY INFORMED - Murphys Creek and Fifteen Mile - fire as at 10:08am Saturday, 3 October 2026",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "QFD",
-        "updated": "",
-        "description": "Between White Mountain Road, Penderests Road and Strohfeldt Road",
-        "lat": -27.428673749427603,
-        "lng": 152.07133087450717,
-        "state": "QLD",
-        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
-        "polys": [
-          [
-            [
-              152.1159,
-              -27.4604
-            ],
-            [
-              152.1135,
-              -27.4045
-            ],
-            [
-              152.0701,
-              -27.4015
-            ],
-            [
-              152.0424,
-              -27.403
-            ],
-            [
-              152.0261,
-              -27.4057
-            ],
-            [
-              152.0218,
-              -27.4471
-            ],
-            [
-              152.0706,
-              -27.4533
-            ],
-            [
-              152.1159,
-              -27.4604
             ]
           ]
         ]
@@ -597,6 +592,56 @@
         ]
       },
       {
+        "title": "STAY INFORMED - Murphys Creek and Fifteen Mile - fire as at 10:08am Saturday, 3 October 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "Between White Mountain Road, Penderests Road and Strohfeldt Road",
+        "lat": -27.428673749427603,
+        "lng": 152.07133087450717,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
+        "polys": [
+          [
+            [
+              152.1159,
+              -27.4604
+            ],
+            [
+              152.1135,
+              -27.4045
+            ],
+            [
+              152.0701,
+              -27.4015
+            ],
+            [
+              152.0424,
+              -27.403
+            ],
+            [
+              152.0261,
+              -27.4057
+            ],
+            [
+              152.0218,
+              -27.4471
+            ],
+            [
+              152.0706,
+              -27.4533
+            ],
+            [
+              152.1159,
+              -27.4604
+            ]
+          ]
+        ]
+      },
+      {
         "title": "STAY INFORMED - Brookhill - fire as at 10:14am Saturday, 3 October 2026",
         "alertLevel": "Advice",
         "status": "",
@@ -665,21 +710,6 @@
     ],
     "tas": [],
     "wa": [
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-02T23:17:36+00:00",
-        "description": "SOUTH HEDLAND, TOWN OF PORT HEDLAND",
-        "lat": -20.417,
-        "lng": 118.6084,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1154,7 +1184,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-10-03T00:20:00+00:00",
+        "updated": "2026-10-03T00:49:00+00:00",
         "description": "CHIFLEY",
         "lat": -35.3494,
         "lng": 149.0768,
