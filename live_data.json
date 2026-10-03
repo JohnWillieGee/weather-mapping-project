@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-03T04:53:06.049709+00:00",
-  "last_checked_utc": "2026-10-03T04:53:06.049709+00:00",
+  "generated_utc": "2026-10-03T05:23:04.929915+00:00",
+  "last_checked_utc": "2026-10-03T05:23:04.929915+00:00",
   "warning_count": 18,
   "warnings": [
     {
@@ -95,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "03/07:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "03/13:02 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Fri, 02 Oct 2026 23:01:12 GMT"
+      "issued": "Sat, 03 Oct 2026 05:02:07 GMT"
     },
     {
       "pid": "",
@@ -210,23 +210,33 @@
     },
     {
       "pid": "IDN21035",
-      "title": "Detailed Severe Thunderstorm Warning for Wollondilly/Wingecarribee, Wollongong",
+      "title": "Detailed Severe Thunderstorm Warning for Wollondilly/Wingecarribee, Blue Mountains/Hawkesbury, Sydney, Wollongong",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 2:05 pm, a severe thunderstorm likely to produce damaging winds and heavy rainfall that may lead to flash flooding was detected near Bundanoon and the area west of Berrima. This thunderstorm is moving towards the southeast. It is forecast to affect Bowral, Nowra and Moss Vale by 2:35 pm and Kiama, Gerringong and Jamberoo by 3:05 pm.",
-      "issued": "2026-10-03T14:07:09+10:00",
+      "desc": "The Bureau of Meteorology warns that, at 3:05 pm, severe thunderstorms likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding were detected near Bargo and the northwest parts of the Wollondilly Shire. These thunderstorms are moving towards the southeast. They are forecast to affect Katoomba, Picton and Blackheath by 3:35 pm and Wollongong, Camden, Campbelltown and Penrith by 4:05 pm.",
+      "issued": "2026-10-03T15:11:02+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "NSW_ME013",
           "description": "Wollondilly/Wingecarribee",
-          "phase": "REN"
+          "phase": "UPD"
+        },
+        {
+          "aac": "NSW_ME014",
+          "description": "Blue Mountains/Hawkesbury",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_ME017",
+          "description": "Sydney",
+          "phase": "NEW"
         },
         {
           "aac": "NSW_ME018",
           "description": "Wollongong",
-          "phase": "NEW"
+          "phase": "UPD"
         }
       ],
       "severityCode": "STD",
@@ -286,7 +296,7 @@
         "type": "Grass Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 04:47:35 GMT",
+        "updated": "Sat, 03 Oct 2026 05:19:35 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7113909999999,
@@ -385,7 +395,7 @@
         "type": "Bush Fire",
         "size": "8 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 03 Oct 2026 04:47:35 GMT",
+        "updated": "Sat, 03 Oct 2026 05:19:35 GMT",
         "description": "JACKADGERY 2460",
         "council": "Clarence Valley",
         "lat": -29.595168728,
@@ -579,6 +589,44 @@
         ]
       },
       {
+        "title": "STAY INFORMED - Booyal - fire as at 2:38pm Saturday, 3 October 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "Booyal",
+        "lat": -25.211599247938814,
+        "lng": 152.1027805888538,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
+        "polys": [
+          [
+            [
+              152.0768,
+              -25.2248
+            ],
+            [
+              152.13,
+              -25.2209
+            ],
+            [
+              152.1308,
+              -25.2007
+            ],
+            [
+              152.0774,
+              -25.1999
+            ],
+            [
+              152.0768,
+              -25.2248
+            ]
+          ]
+        ]
+      },
+      {
         "title": "STAY INFORMED - Isis Central (near Bundaberg) - fire as at 8:29pm Thursday, 1 October 2026",
         "alertLevel": "Advice",
         "status": "",
@@ -695,56 +743,6 @@
         ]
       },
       {
-        "title": "STAY INFORMED - Murphys Creek and Fifteen Mile - fire as at 10:08am Saturday, 3 October 2026",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "QFD",
-        "updated": "",
-        "description": "Between White Mountain Road, Penderests Road and Strohfeldt Road",
-        "lat": -27.428673749427603,
-        "lng": 152.07133087450717,
-        "state": "QLD",
-        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
-        "polys": [
-          [
-            [
-              152.1159,
-              -27.4604
-            ],
-            [
-              152.1135,
-              -27.4045
-            ],
-            [
-              152.0701,
-              -27.4015
-            ],
-            [
-              152.0424,
-              -27.403
-            ],
-            [
-              152.0261,
-              -27.4057
-            ],
-            [
-              152.0218,
-              -27.4471
-            ],
-            [
-              152.0706,
-              -27.4533
-            ],
-            [
-              152.1159,
-              -27.4604
-            ]
-          ]
-        ]
-      },
-      {
         "title": "STAY INFORMED - Brookhill - fire as at 10:14am Saturday, 3 October 2026",
         "alertLevel": "Advice",
         "status": "",
@@ -811,39 +809,89 @@
         ]
       },
       {
-        "title": "STAY INFORMED - Booyal - fire as at 2:38pm Saturday, 3 October 2026",
+        "title": "STAY INFORMED - Seventeen Mile (near Toowoomba) - fire as at 2:54pm Saturday, 3 October 2026",
         "alertLevel": "Advice",
         "status": "",
         "type": "Bush Fire",
         "size": "",
         "agency": "QFD",
         "updated": "",
-        "description": "Booyal",
-        "lat": -25.211599247938814,
-        "lng": 152.1027805888538,
+        "description": "Seventeen Mile",
+        "lat": -27.44650652351309,
+        "lng": 152.19184095872987,
         "state": "QLD",
         "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
         "polys": [
           [
             [
-              152.0768,
-              -25.2248
+              152.2398,
+              -27.4841
             ],
             [
-              152.13,
-              -25.2209
+              152.2436,
+              -27.4186
             ],
             [
-              152.1308,
-              -25.2007
+              152.1494,
+              -27.4035
             ],
             [
-              152.0774,
-              -25.1999
+              152.1396,
+              -27.4791
             ],
             [
-              152.0768,
-              -25.2248
+              152.2398,
+              -27.4841
+            ]
+          ]
+        ]
+      },
+      {
+        "title": "STAY INFORMED - Murphys Creek and Fifteen Mile - fire as at 2:58pm Saturday, 3 October 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "Between White Mountain Road, Penderests Road and Strohfeldt Road",
+        "lat": -27.428673749427603,
+        "lng": 152.07133087450717,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
+        "polys": [
+          [
+            [
+              152.1159,
+              -27.4604
+            ],
+            [
+              152.1135,
+              -27.4045
+            ],
+            [
+              152.0701,
+              -27.4015
+            ],
+            [
+              152.0424,
+              -27.403
+            ],
+            [
+              152.0261,
+              -27.4057
+            ],
+            [
+              152.0218,
+              -27.4471
+            ],
+            [
+              152.0706,
+              -27.4533
+            ],
+            [
+              152.1159,
+              -27.4604
             ]
           ]
         ]
@@ -1475,7 +1523,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-03T04:31:27+00:00",
+        "updated": "2026-10-03T04:50:30+00:00",
         "description": "STUART HWY, LANSDOWNE",
         "lat": -14.4692,
         "lng": 132.3004,
@@ -1533,7 +1581,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 32,
+  "incident_count": 33,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5249,7 +5297,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-02T23:01:00Z",
+      "issued_utc": "2026-10-03T05:01:00Z",
       "overview": [
         "Strong Wind Warning for Saturday for Ningaloo Coast and Gascoyne Coast",
         "Strong Wind Warning for Sunday for Ningaloo Coast"
