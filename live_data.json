@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-10-04T16:53:03.336017+00:00",
-  "last_checked_utc": "2026-10-04T16:53:03.336017+00:00",
-  "warning_count": 15,
+  "generated_utc": "2026-10-04T17:23:01.791655+00:00",
+  "last_checked_utc": "2026-10-04T17:23:01.791655+00:00",
+  "warning_count": 16,
   "warnings": [
     {
       "pid": "",
-      "title": "04/22:00 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "05/04:01 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 04 Oct 2026 11:00:10 GMT"
+      "issued": "Sun, 04 Oct 2026 17:01:01 GMT"
     },
     {
       "pid": "",
-      "title": "04/22:00 EDT Marine Wind Warning Summary for Victoria",
+      "title": "05/04:10 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 04 Oct 2026 11:00:15 GMT"
+      "issued": "Sun, 04 Oct 2026 17:10:26 GMT"
     },
     {
       "pid": "",
@@ -122,21 +122,30 @@
     },
     {
       "pid": "",
-      "title": "04/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "05/03:40 CDT Marine Wind Warning Summary for South Australia",
+      "type": "wind",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
+      "desc": "",
+      "issued": "Sun, 04 Oct 2026 17:10:11 GMT"
+    },
+    {
+      "pid": "",
+      "title": "05/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 04 Oct 2026 11:01:11 GMT"
+      "issued": "Sun, 04 Oct 2026 17:01:10 GMT"
     },
     {
       "pid": "",
-      "title": "04/22:00 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "05/04:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 04 Oct 2026 11:00:12 GMT"
+      "issued": "Sun, 04 Oct 2026 17:00:11 GMT"
     }
   ],
   "fetch_errors": {},
@@ -149,7 +158,7 @@
         "type": "Grass Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 04 Oct 2026 16:47:35 GMT",
+        "updated": "Sun, 04 Oct 2026 17:19:35 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7275390619999,
@@ -416,31 +425,31 @@
     "tas": [],
     "wa": [
       {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-04T15:56:04+00:00",
-        "description": "WAIKIKI, CITY OF ROCKINGHAM",
-        "lat": -32.3096,
-        "lng": 115.7518,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-04T15:46:22+00:00",
-        "description": "WELLINGTON FOREST, SHIRE OF DARDANUP",
-        "lat": -33.4201,
-        "lng": 115.9226,
+        "updated": "2026-10-04T17:13:48+00:00",
+        "description": "COLLIE, SHIRE OF COLLIE",
+        "lat": -33.3653,
+        "lng": 116.1543,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Earthquake",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Earthquake",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-04T17:03:38+00:00",
+        "description": "BOODARIE, PORT HEDLAND, TOWN OF",
+        "lat": -20.3288,
+        "lng": 118.5624,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1147,21 +1156,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - EAST SIDE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-04T16:40:19+00:00",
-        "description": "EAST SIDE",
-        "lat": -23.6922,
-        "lng": 133.8861,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - PLENTY HWY, BURT PLAIN",
         "alertLevel": "Advice",
         "status": "active",
@@ -1264,7 +1258,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 36,
+  "incident_count": 35,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4892,78 +4886,107 @@
     }
   },
   "marine_warnings": {
-    "NSW": {
-      "state": "NSW",
-      "product": "IDN20400",
-      "issued_utc": "2026-10-04T11:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Sunday for Byron Coast, Coffs Coast, Macquarie Coast and Eden Coast",
-        "Strong Wind Warning for Monday for Coffs Coast and Macquarie Coast"
-      ],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Byron Coast: Point Danger to Wooli",
-            "Coffs Coast: Wooli to Smoky Cape",
-            "Macquarie Coast: Smoky Cape to Seal Rocks",
-            "Eden Coast: Montague Island to Gabo Island"
-          ],
-          "aac_codes": [
-            "NSW_MW008",
-            "NSW_MW007",
-            "NSW_MW006",
-            "NSW_MW001"
-          ],
-          "summary": "Byron Coast, Coffs Coast, Macquarie Coast and Eden Coast"
-        }
-      ]
-    },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-04T11:00:00Z",
+      "issued_utc": "2026-10-04T17:10:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
+            "West Coast: SA-VIC Border to Cape Otway",
+            "Central Coast: Cape Otway to Wilsons Promontory",
+            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island",
+            "Western Port",
+            "Gippsland Lakes"
           ],
           "aac_codes": [
-            "VIC_MW004"
+            "VIC_MW001",
+            "VIC_MW002",
+            "VIC_MW003",
+            "VIC_MW004",
+            "VIC_MW006",
+            "VIC_MW007"
           ],
-          "summary": "East Gippsland Coast"
+          "summary": "Western Port, Gippsland Lakes, West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast"
+        }
+      ]
+    },
+    "SA": {
+      "state": "SA",
+      "product": "IDS20201",
+      "issued_utc": "2026-10-04T17:10:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Lower South East Coast: Cape Jaffa to SA-VIC Border"
+          ],
+          "aac_codes": [
+            "SA_MW010"
+          ],
+          "summary": "Lower South East Coast"
         }
       ]
     },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-04T11:01:00Z",
+      "issued_utc": "2026-10-04T17:01:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Gascoyne Coast: Cape Cuvier to Kalbarri",
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay"
+          ],
+          "aac_codes": [
+            "WA_MW006",
+            "WA_MW011",
+            "WA_MW012"
+          ],
+          "summary": "Gascoyne Coast, Leeuwin Coast and Albany Coast"
+        }
+      ]
+    },
+    "TAS": {
+      "state": "TAS",
+      "product": "IDT20100",
+      "issued_utc": "2026-10-04T17:00:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Ningaloo Coast, Gascoyne Coast, Leeuwin Coast and Albany Coast",
-        "Strong Wind Warning for Monday for Gascoyne Coast, Leeuwin Coast and Albany Coast"
+        "Strong Wind Warning for Monday for Far North West Coast, East of Flinders Island, Upper East Coast, South East Coast, South West Coast and Central West Coast",
+        "Gale Warning for Tuesday for Lower East Coast, South East Coast and South West Coast",
+        "Strong Wind Warning for Tuesday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Central West Coast, Frederick Henry Bay and Norfolk Bay, Storm Bay and Channel"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Ningaloo Coast: North West Cape to Cape Cuvier",
-            "Gascoyne Coast: Cape Cuvier to Kalbarri",
-            "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay"
+            "Far North West Coast: Sandy Cape to Stanley",
+            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
+            "Upper East Coast: St Helens Point to Wineglass Bay",
+            "South East Coast: Tasman Island to South East Cape",
+            "South West Coast: South East Cape to Low Rocky Point",
+            "Central West Coast: Low Rocky Point to Sandy Cape"
           ],
           "aac_codes": [
-            "WA_MW005",
-            "WA_MW006",
-            "WA_MW011",
-            "WA_MW012"
+            "TAS_MW001",
+            "TAS_MW003",
+            "TAS_MW004",
+            "TAS_MW006",
+            "TAS_MW007",
+            "TAS_MW008"
           ],
-          "summary": "Ningaloo Coast, Gascoyne Coast, Leeuwin Coast and Albany Coast"
+          "summary": "Far North West Coast, East of Flinders Island, Upper East Coast, South East Coast, South West Coast and Central West Coast"
         }
       ]
     }
