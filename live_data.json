@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-04T23:23:01.035543+00:00",
-  "last_checked_utc": "2026-10-04T23:23:01.035543+00:00",
+  "generated_utc": "2026-10-04T23:53:00.780348+00:00",
+  "last_checked_utc": "2026-10-04T23:53:00.780348+00:00",
   "warning_count": 18,
   "warnings": [
     {
@@ -29,15 +29,6 @@
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Sun, 04 Oct 2026 23:00:17 GMT"
-    },
-    {
-      "pid": "",
-      "title": "04/22:16 EDT Cancellation of Warning to Sheep Graziers\nfor East Gippsland forecast district",
-      "type": "other",
-      "state": "VIC",
-      "link": "http://reg.bom.gov.au/vic/warnings/sheep.shtml",
-      "desc": "",
-      "issued": "Sun, 04 Oct 2026 11:16:36 GMT"
     },
     {
       "pid": "IDV35010",
@@ -95,12 +86,12 @@
     },
     {
       "pid": "IDV36330",
-      "title": "04/10:53 EDT Minor Flood Warning for the Bunyip River",
+      "title": "05/10:47 EDT Final Flood Warning for the Bunyip River",
       "type": "flood",
       "state": "VIC",
       "link": "https://reg.bom.gov.au/cgi-bin/wrap_fwo.pl?IDV36330.html",
       "desc": "",
-      "issued": "Sat, 03 Oct 2026 23:53:43 GMT"
+      "issued": "Sun, 04 Oct 2026 23:47:38 GMT"
     },
     {
       "pid": "",
@@ -164,6 +155,15 @@
       "link": "http://reg.bom.gov.au/tas/warnings/sheep.shtml",
       "desc": "",
       "issued": "Sun, 04 Oct 2026 23:03:14 GMT"
+    },
+    {
+      "pid": "",
+      "title": "05/10:42 EDT Bush Walkers Weather Alert\nfor Western forecast district",
+      "type": "other",
+      "state": "TAS",
+      "link": "http://reg.bom.gov.au/tas/warnings/bushwalker.shtml",
+      "desc": "",
+      "issued": "Sun, 04 Oct 2026 23:42:22 GMT"
     }
   ],
   "fetch_errors": {},
@@ -342,6 +342,21 @@
     ],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-04T23:28:47+00:00",
+        "description": "GLENLYNN, SHIRE OF BRIDGETOWN-GREENBUSHES",
+        "lat": -33.9912,
+        "lng": 116.1375,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1074,6 +1089,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - CENTRAL ARNHEM RD, BESWICK CREEK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-04T23:36:38+00:00",
+        "description": "CENTRAL ARNHEM RD, BESWICK CREEK",
+        "lat": -14.6588,
+        "lng": 132.6671,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - PLENTY HWY, BURT PLAIN",
         "alertLevel": "Advice",
         "status": "active",
@@ -1176,7 +1206,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 34,
+  "incident_count": 36,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
