@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-04T16:23:03.808209+00:00",
-  "last_checked_utc": "2026-10-04T16:23:03.808209+00:00",
+  "generated_utc": "2026-10-04T16:53:03.336017+00:00",
+  "last_checked_utc": "2026-10-04T16:53:03.336017+00:00",
   "warning_count": 15,
   "warnings": [
     {
@@ -139,9 +139,7 @@
       "issued": "Sun, 04 Oct 2026 11:00:12 GMT"
     }
   ],
-  "fetch_errors": {
-    "tas": "500 Server Error:  for url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/72/query?where=1%3D1&outFields=*&f=geojson"
-  },
+  "fetch_errors": {},
   "incidents": {
     "nsw": [
       {
@@ -151,7 +149,7 @@
         "type": "Grass Fire",
         "size": "14 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 04 Oct 2026 16:19:35 GMT",
+        "updated": "Sun, 04 Oct 2026 16:47:35 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.7275390619999,
@@ -1149,6 +1147,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - EAST SIDE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-04T16:40:19+00:00",
+        "description": "EAST SIDE",
+        "lat": -23.6922,
+        "lng": 133.8861,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - PLENTY HWY, BURT PLAIN",
         "alertLevel": "Advice",
         "status": "active",
@@ -1251,7 +1264,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 35,
+  "incident_count": 36,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
