@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-05T00:53:01.126622+00:00",
-  "last_checked_utc": "2026-10-05T00:53:01.126622+00:00",
+  "generated_utc": "2026-10-05T01:23:00.332481+00:00",
+  "last_checked_utc": "2026-10-05T01:23:00.332481+00:00",
   "warning_count": 18,
   "warnings": [
     {
@@ -104,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "04/11:41 EDT Minor Flood Warning for the Barwon River",
+      "title": "05/11:50 EDT Minor Flood Warning for the Barwon River",
       "type": "flood",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/flood/barwonriver.shtml",
       "desc": "",
-      "issued": "Sun, 04 Oct 2026 00:41:51 GMT"
+      "issued": "Mon, 05 Oct 2026 00:50:29 GMT"
     },
     {
       "pid": "",
@@ -168,23 +168,42 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Dale Cr, Armidale",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Mon, 05 Oct 2026 01:19:35 GMT",
+        "description": "Dale Cr, Armidale, NSW 2350",
+        "council": "Armidale",
+        "lat": -30.529773712,
+        "lng": 151.671844482,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Tallean Rd, Nelson Bay",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Mon, 05 Oct 2026 01:19:35 GMT",
+        "description": "Tallean Rd, Nelson Bay, NSW 2315",
+        "council": "Port Stephens",
+        "lat": -32.7306649999999,
+        "lng": 152.138773,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [
-      {
-        "title": "STAY INFORMED - Laura (Cape York) - fire as at 3:54pm Sunday, 4 October 2026",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "QFD",
-        "updated": "",
-        "description": "Laura",
-        "lat": -15.419787651275914,
-        "lng": 144.3559320924111,
-        "state": "QLD",
-        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
-      },
       {
         "title": "STAY INFORMED - Murphys Creek and Fifteen Mile - fire as at 12:39pm Sunday, 4 October 2026",
         "alertLevel": "Advice",
@@ -294,6 +313,20 @@
         ]
       },
       {
+        "title": "STAY INFORMED - Laura (Cape York) - fire as at 3:54pm Sunday, 4 October 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "Laura",
+        "lat": -15.419787651275914,
+        "lng": 144.3559320924111,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
+      },
+      {
         "title": "STAY INFORMED - Seventeen Mile (near Toowoomba) - fire as at 5:26pm Sunday, 4 October 2026",
         "alertLevel": "Advice",
         "status": "",
@@ -342,6 +375,21 @@
     ],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-05T01:01:24+00:00",
+        "description": "WAGIN, SHIRE OF WAGIN",
+        "lat": -33.3051,
+        "lng": 117.3368,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1222,7 +1270,7 @@
       }
     ]
   },
-  "incident_count": 37,
+  "incident_count": 40,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
