@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-05T07:23:03.999263+00:00",
-  "last_checked_utc": "2026-10-05T07:23:03.999263+00:00",
+  "generated_utc": "2026-10-05T07:52:59.582558+00:00",
+  "last_checked_utc": "2026-10-05T07:52:59.582558+00:00",
   "warning_count": 17,
   "warnings": [
     {
       "pid": "",
-      "title": "05/16:05 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "05/18:28 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 05 Oct 2026 05:05:11 GMT"
+      "issued": "Mon, 05 Oct 2026 07:28:11 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "05/16:15 EDT Marine Wind Warning Summary for Victoria",
+      "title": "05/18:28 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 05 Oct 2026 05:15:23 GMT"
+      "issued": "Mon, 05 Oct 2026 07:28:16 GMT"
     },
     {
       "pid": "",
@@ -161,86 +161,115 @@
   "incidents": {
     "nsw": [
       {
-        "title": "SUPREME DR, RAYMOND TERRACE",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 05 Oct 2026 07:19:36 GMT",
-        "description": "SUPREME DR, RAYMOND TERRACE 2324",
-        "council": "Port Stephens",
-        "lat": -32.740087,
-        "lng": 151.776927,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
         "title": "TERREEL RD, WARDS RIVER",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 05 Oct 2026 07:19:36 GMT",
+        "updated": "Mon, 05 Oct 2026 07:47:35 GMT",
         "description": "TERREEL RD, WARDS RIVER 2422",
         "council": "Mid-Coast",
         "lat": -32.245429993,
         "lng": 151.998382569,
-        "polys": [],
+        "polys": [
+          [
+            [
+              151.996233,
+              -32.2441250009999
+            ],
+            [
+              151.996584,
+              -32.243902001
+            ],
+            [
+              151.997061,
+              -32.243935
+            ],
+            [
+              151.997313999,
+              -32.244265
+            ],
+            [
+              151.99748,
+              -32.244611001
+            ],
+            [
+              151.997529001,
+              -32.245006001
+            ],
+            [
+              151.997529001,
+              -32.2453849999999
+            ],
+            [
+              151.997490001,
+              -32.245781001
+            ],
+            [
+              151.997490001,
+              -32.2461680009999
+            ],
+            [
+              151.997451,
+              -32.2465550009999
+            ],
+            [
+              151.997392,
+              -32.2469590009999
+            ],
+            [
+              151.997159,
+              -32.247280001
+            ],
+            [
+              151.99672,
+              -32.247346001
+            ],
+            [
+              151.996272,
+              -32.247239001
+            ],
+            [
+              151.995892,
+              -32.247033001
+            ],
+            [
+              151.995609,
+              -32.2467369999999
+            ],
+            [
+              151.995414,
+              -32.246382001
+            ],
+            [
+              151.995395,
+              -32.245599001
+            ],
+            [
+              151.995463,
+              -32.245188001
+            ],
+            [
+              151.995629,
+              -32.244833001
+            ],
+            [
+              151.995834,
+              -32.244495
+            ],
+            [
+              151.996233,
+              -32.2441250009999
+            ]
+          ]
+        ],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       }
     ],
     "vic": [],
     "qld": [
-      {
-        "title": "STAY INFORMED - Seventeen Mile (near Toowoomba) - fire as at 5:26pm Sunday, 4 October 2026",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "QFD",
-        "updated": "",
-        "description": "Seventeen Mile",
-        "lat": -27.44847774052,
-        "lng": 152.17849716457383,
-        "state": "QLD",
-        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
-        "polys": [
-          [
-            [
-              152.1672,
-              -27.4737
-            ],
-            [
-              152.2134,
-              -27.4596
-            ],
-            [
-              152.206,
-              -27.4285
-            ],
-            [
-              152.162,
-              -27.4255
-            ],
-            [
-              152.1477,
-              -27.441
-            ],
-            [
-              152.1489,
-              -27.4664
-            ],
-            [
-              152.1672,
-              -27.4737
-            ]
-          ]
-        ]
-      },
       {
         "title": "STAY INFORMED - Murphys Creek and Fifteen Mile - fire as at 1:43pm Monday, 5 October 2026",
         "alertLevel": "Advice",
@@ -346,6 +375,52 @@
         "lng": 144.3559320924111,
         "state": "QLD",
         "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
+      },
+      {
+        "title": "STAY INFORMED - Seventeen Mile (near Toowoomba) - fire as at 5:25pm Monday, 5 October 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "Seventeen Mile",
+        "lat": -27.44847774052,
+        "lng": 152.17849716457383,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
+        "polys": [
+          [
+            [
+              152.1672,
+              -27.4737
+            ],
+            [
+              152.2134,
+              -27.4596
+            ],
+            [
+              152.206,
+              -27.4285
+            ],
+            [
+              152.162,
+              -27.4255
+            ],
+            [
+              152.1477,
+              -27.441
+            ],
+            [
+              152.1489,
+              -27.4664
+            ],
+            [
+              152.1672,
+              -27.4737
+            ]
+          ]
+        ]
       }
     ],
     "tas": [],
@@ -357,10 +432,25 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-05T07:15:24+00:00",
-        "description": "GLENLYNN, SHIRE OF BRIDGETOWN-GREENBUSHES",
-        "lat": -33.9912,
-        "lng": 116.1375,
+        "updated": "2026-10-05T07:49:12+00:00",
+        "description": "YANCHEP, CITY OF WANNEROO",
+        "lat": -31.5472,
+        "lng": 115.6386,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-05T07:44:32+00:00",
+        "description": "YANCHEP, CITY OF WANNEROO",
+        "lat": -31.5491,
+        "lng": 115.6369,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -372,11 +462,101 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-05T07:12:41+00:00",
+        "updated": "2026-10-05T07:21:19+00:00",
         "description": "WOODBRIDGE, CITY OF SWAN",
         "lat": -31.8932,
         "lng": 115.9871,
         "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - KUNUNURRA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-05T07:16:12.086+00:00",
+        "description": "",
+        "lat": -15.5762,
+        "lng": 128.7209,
+        "polys": [
+          [
+            [
+              128.7078,
+              -15.5697
+            ],
+            [
+              128.7143,
+              -15.5643
+            ],
+            [
+              128.7168,
+              -15.5671
+            ],
+            [
+              128.7185,
+              -15.5682
+            ],
+            [
+              128.7204,
+              -15.5689
+            ],
+            [
+              128.7248,
+              -15.5693
+            ],
+            [
+              128.7425,
+              -15.5711
+            ],
+            [
+              128.7397,
+              -15.578
+            ],
+            [
+              128.7294,
+              -15.5822
+            ],
+            [
+              128.7294,
+              -15.5835
+            ],
+            [
+              128.7188,
+              -15.588
+            ],
+            [
+              128.7185,
+              -15.5867
+            ],
+            [
+              128.7181,
+              -15.5836
+            ],
+            [
+              128.7182,
+              -15.5823
+            ],
+            [
+              128.7189,
+              -15.5806
+            ],
+            [
+              128.7191,
+              -15.5798
+            ],
+            [
+              128.7137,
+              -15.5779
+            ],
+            [
+              128.7078,
+              -15.5697
+            ]
+          ]
+        ],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1509,8 +1689,8 @@
         "status": "active",
         "type": "Structure Fire",
         "size": "",
-        "agency": "Fire - Ambulance",
-        "updated": "2026-10-05T07:20:02+00:00",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-10-05T07:40:35+00:00",
         "description": "GREENWAY",
         "lat": -35.4146,
         "lng": 149.0675,
@@ -1524,8 +1704,8 @@
         "status": "active",
         "type": "Structure Fire",
         "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-10-05T07:19:39+00:00",
+        "agency": "Fire",
+        "updated": "2026-10-05T07:40:35+00:00",
         "description": "GREENWAY",
         "lat": -35.4146,
         "lng": 149.0675,
@@ -1536,7 +1716,7 @@
     ],
     "sa": []
   },
-  "incident_count": 46,
+  "incident_count": 47,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5167,10 +5347,10 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-10-05T05:05:00Z",
+      "issued_utc": "2026-10-05T07:28:03Z",
       "overview": [
         "Gale Warning for Tuesday for Eden Coast",
-        "Strong Wind Warning for Tuesday for Sydney Coast, Sydney Enclosed Waters, Illawarra Coast and Batemans Coast"
+        "Strong Wind Warning for Tuesday for Illawarra Coast, Batemans Coast, Sydney Coast and Sydney Enclosed Waters"
       ],
       "hazards": [
         {
@@ -5206,10 +5386,10 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-05T05:15:00Z",
+      "issued_utc": "2026-10-05T07:28:05Z",
       "overview": [
         "Gale Warning for Tuesday for East Gippsland Coast",
-        "Strong Wind Warning for Tuesday for West Coast, Central Coast, Central Gippsland Coast, Port Phillip, Western Port and Gippsland Lakes"
+        "Strong Wind Warning for Tuesday for Central Coast, Western Port, Gippsland Lakes, West Coast, Port Phillip and Central Gippsland Coast"
       ],
       "hazards": [
         {
