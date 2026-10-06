@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-06T09:53:03.781431+00:00",
-  "last_checked_utc": "2026-10-06T09:53:03.781431+00:00",
+  "generated_utc": "2026-10-06T10:23:04.783835+00:00",
+  "last_checked_utc": "2026-10-06T10:23:04.783835+00:00",
   "warning_count": 16,
   "warnings": [
     {
@@ -131,56 +131,72 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Darling Downs and Granite Belt, Wide Bay and Burnett",
+      "title": "Cancellation of Severe Thunderstorm Warning for Darling Downs and Granite Belt, Wide Bay and Burnett",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Kingaroy.",
-      "issued": "2026-10-06T19:21:25+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-06T20:17:04+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "QLD_PW013",
           "description": "Darling Downs and Granite Belt",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW014",
           "description": "Wide Bay and Burnett",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Dalby, South Burnett",
+      "title": "Cancellation of Severe Thunderstorm Warning - Southeast Queensland for Dalby, South Burnett",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 7:15 pm, a severe thunderstorm likely to produce damaging winds and large hailstones was detected near the ranges north of Jandowae. This thunderstorm is moving towards the northeast. It is forecast to affect the area west of Kingaroy and the area southwest of Kingaroy by 7:45 pm and Kingaroy, the area south of Kingaroy and the area northwest of Kingaroy by 8:15 pm.",
-      "issued": "2026-10-06T19:22:11+10:00",
-      "cancelled": false,
+      "desc": "Severe thunderstorms are no longer affecting the Southeast Queensland area (east of Dalby from Rainbow Beach to Stanthorpe). This warning is now cancelled.",
+      "issued": "2026-10-06T20:17:29+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "QLD_ME008",
           "description": "Dalby",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_ME009",
           "description": "South Burnett",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
   "incidents": {
     "nsw": [
+      {
+        "title": "Borthwick St, Inverell",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Tue, 06 Oct 2026 10:19:35 GMT",
+        "description": "Opp, Borthwick St, Inverell, NSW 2360",
+        "council": "Inverell",
+        "lat": -29.786848,
+        "lng": 151.100916,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
       {
         "title": "BULLEN BULLEN RD, WAUKIVORY",
         "alertLevel": "Advice",
@@ -188,7 +204,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 06 Oct 2026 09:47:36 GMT",
+        "updated": "Tue, 06 Oct 2026 10:19:35 GMT",
         "description": "BULLEN BULLEN RD, WAUKIVORY 2422",
         "council": "Mid-Coast",
         "lat": -32.0941609999999,
@@ -204,7 +220,7 @@
         "type": "Grass Fire",
         "size": "210 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 06 Oct 2026 09:47:36 GMT",
+        "updated": "Tue, 06 Oct 2026 10:19:35 GMT",
         "description": "CAPARRA RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.720249285,
@@ -555,7 +571,7 @@
         "type": "Bush Fire",
         "size": "35 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 06 Oct 2026 09:47:36 GMT",
+        "updated": "Tue, 06 Oct 2026 10:19:35 GMT",
         "description": "TERREEL RD, WARDS RIVER 2422",
         "council": "Mid-Coast",
         "lat": -32.2458738619999,
@@ -863,6 +879,36 @@
     ],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-06T10:00:44+00:00",
+        "description": "KARRATHA, CITY OF KARRATHA",
+        "lat": -20.7384,
+        "lng": 116.8434,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-06T09:56:47+00:00",
+        "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.4653,
+        "lng": 128.1,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1430,21 +1476,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-05T21:18:41+00:00",
-        "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.4653,
-        "lng": 128.1,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Smoke Alert FOR JARRAHWOOD AND SURROUNDING AREAS IN THE CITY OF BUSSELTON AND SHIRE OF AUGUSTA MARGARET RIVER",
         "alertLevel": "Advice",
         "status": "active",
@@ -1893,21 +1924,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - HICKS RD, GIRRAWEEN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-06T08:53:00+00:00",
-        "description": "HICKS RD, GIRRAWEEN",
-        "lat": -12.4999,
-        "lng": 131.0695,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Gallacher Rd, GIRRAWEEN",
         "alertLevel": "Advice",
         "status": "active",
@@ -2234,7 +2250,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 44,
+  "incident_count": 45,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
