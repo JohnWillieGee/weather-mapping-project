@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-06T06:53:03.442528+00:00",
-  "last_checked_utc": "2026-10-06T06:53:03.442528+00:00",
-  "warning_count": 15,
+  "generated_utc": "2026-10-06T07:23:01.990100+00:00",
+  "last_checked_utc": "2026-10-06T07:23:01.990100+00:00",
+  "warning_count": 16,
   "warnings": [
     {
       "pid": "",
@@ -146,37 +146,51 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Capricornia, Central Highlands and Coalfields, Darling Downs and Granite Belt, Wide Bay and Burnett",
+      "title": "Severe Thunderstorm Warning for Capricornia, Central Highlands and Coalfields, Wide Bay and Burnett",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Moura and Theodore.",
-      "issued": "2026-10-06T16:01:58+10:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Biloela, Monto, Eidsvold, Moura, Mundubbera and Theodore. Severe thunderstorms are no longer occurring in the Darling Downs and Granite Belt district and the warning for this district is CANCELLED.",
+      "issued": "2026-10-06T17:08:19+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "QLD_PW007",
           "description": "Capricornia",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "QLD_PW008",
           "description": "Central Highlands and Coalfields",
-          "phase": "NEW"
-        },
-        {
-          "aac": "QLD_PW013",
-          "description": "Darling Downs and Granite Belt",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "QLD_PW014",
           "description": "Wide Bay and Burnett",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDQ21033",
+      "title": "Severe Thunderstorm Warning for Darling Downs and Granite Belt",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-06T17:08:19+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "QLD_PW013",
+          "description": "Darling Downs and Granite Belt",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -189,7 +203,7 @@
         "type": "Bush Fire",
         "size": "26 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 06 Oct 2026 06:47:37 GMT",
+        "updated": "Tue, 06 Oct 2026 07:19:38 GMT",
         "description": "BORA CODRINGTON RD, BORA RIDGE 2471",
         "council": "Richmond Valley",
         "lat": -29.038698197,
@@ -712,12 +726,363 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 06 Oct 2026 06:47:37 GMT",
+        "updated": "Tue, 06 Oct 2026 07:19:38 GMT",
         "description": "BULLEN BULLEN RD, WAUKIVORY 2422",
         "council": "Mid-Coast",
         "lat": -32.0941609999999,
         "lng": 152.021482001,
         "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "CAPARRA RD, CAPARRA",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "210 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Tue, 06 Oct 2026 07:19:38 GMT",
+        "description": "CAPARRA RD, CAPARRA 2429",
+        "council": "Mid-Coast",
+        "lat": -31.720249285,
+        "lng": 152.212244196,
+        "polys": [
+          [
+            [
+              152.213168383,
+              -31.715517927
+            ],
+            [
+              152.213937452,
+              -31.715775144
+            ],
+            [
+              152.214822675,
+              -31.715259158
+            ],
+            [
+              152.215234413,
+              -31.7154136939999
+            ],
+            [
+              152.215291329,
+              -31.715239143
+            ],
+            [
+              152.21551564,
+              -31.7144837069999
+            ],
+            [
+              152.216201901,
+              -31.7135937909999
+            ],
+            [
+              152.216791059,
+              -31.713339127
+            ],
+            [
+              152.217296532,
+              -31.7128011689999
+            ],
+            [
+              152.217895722,
+              -31.712718192
+            ],
+            [
+              152.219231342,
+              -31.712603734
+            ],
+            [
+              152.219730111,
+              -31.7130987739999
+            ],
+            [
+              152.219884097,
+              -31.713436433
+            ],
+            [
+              152.21933512,
+              -31.7143778769999
+            ],
+            [
+              152.218253876,
+              -31.715399439
+            ],
+            [
+              152.216329009,
+              -31.716916021
+            ],
+            [
+              152.215468675,
+              -31.717124891
+            ],
+            [
+              152.215435176,
+              -31.717700056
+            ],
+            [
+              152.215920531,
+              -31.719113662
+            ],
+            [
+              152.216205041,
+              -31.720535847
+            ],
+            [
+              152.216148089,
+              -31.7218578709999
+            ],
+            [
+              152.215927109,
+              -31.722670539
+            ],
+            [
+              152.215193892,
+              -31.7239066999999
+            ],
+            [
+              152.21464297,
+              -31.724765121
+            ],
+            [
+              152.214655194,
+              -31.7248900229999
+            ],
+            [
+              152.214598838,
+              -31.724949351
+            ],
+            [
+              152.214671746,
+              -31.726238796
+            ],
+            [
+              152.214116911,
+              -31.7274527599999
+            ],
+            [
+              152.213353214,
+              -31.7285938219999
+            ],
+            [
+              152.212593131,
+              -31.7293052369999
+            ],
+            [
+              152.212254371,
+              -31.729732809
+            ],
+            [
+              152.211248686,
+              -31.729762395
+            ],
+            [
+              152.21091538,
+              -31.729545499
+            ],
+            [
+              152.209993782,
+              -31.729539791
+            ],
+            [
+              152.207772352,
+              -31.729669224
+            ],
+            [
+              152.205555195,
+              -31.729297372
+            ],
+            [
+              152.204094838,
+              -31.7286079589999
+            ],
+            [
+              152.203397711,
+              -31.7268491409999
+            ],
+            [
+              152.203193165,
+              -31.726274975
+            ],
+            [
+              152.203114596,
+              -31.725665793
+            ],
+            [
+              152.203150794,
+              -31.724699275
+            ],
+            [
+              152.202649767,
+              -31.7245051789999
+            ],
+            [
+              152.202093913,
+              -31.724191388
+            ],
+            [
+              152.202068441,
+              -31.7239047849999
+            ],
+            [
+              152.202186483,
+              -31.723165547
+            ],
+            [
+              152.20227271,
+              -31.7228796429999
+            ],
+            [
+              152.202052786,
+              -31.7224724719999
+            ],
+            [
+              152.201496946,
+              -31.722158678
+            ],
+            [
+              152.200632299,
+              -31.722033907
+            ],
+            [
+              152.200567509,
+              -31.7219572179999
+            ],
+            [
+              152.200204796,
+              -31.721897751
+            ],
+            [
+              152.199898957,
+              -31.721740675
+            ],
+            [
+              152.199675969,
+              -31.7216915339999
+            ],
+            [
+              152.199510266,
+              -31.7214756619999
+            ],
+            [
+              152.199400927,
+              -31.721200467
+            ],
+            [
+              152.19931941,
+              -31.720937383
+            ],
+            [
+              152.199335014,
+              -31.7207465179999
+            ],
+            [
+              152.199472537,
+              -31.720504263
+            ],
+            [
+              152.199472583,
+              -31.7204989329999
+            ],
+            [
+              152.199586127,
+              -31.720284813
+            ],
+            [
+              152.201184776,
+              -31.7194832509999
+            ],
+            [
+              152.202026997,
+              -31.718963381
+            ],
+            [
+              152.203930111,
+              -31.7184740019999
+            ],
+            [
+              152.206111426,
+              -31.71810568
+            ],
+            [
+              152.206354657,
+              -31.718139881
+            ],
+            [
+              152.20621775,
+              -31.7178942579999
+            ],
+            [
+              152.20607781,
+              -31.7162148859999
+            ],
+            [
+              152.205826951,
+              -31.7147912529999
+            ],
+            [
+              152.205772691,
+              -31.7138612539999
+            ],
+            [
+              152.205781144,
+              -31.713287161
+            ],
+            [
+              152.205994639,
+              -31.7126326119999
+            ],
+            [
+              152.206298075,
+              -31.7120818
+            ],
+            [
+              152.206783489,
+              -31.7117742369999
+            ],
+            [
+              152.207360934,
+              -31.711606178
+            ],
+            [
+              152.207994834,
+              -31.711686717
+            ],
+            [
+              152.208467629,
+              -31.7118816989999
+            ],
+            [
+              152.208919464,
+              -31.712436155
+            ],
+            [
+              152.20935251,
+              -31.712668688
+            ],
+            [
+              152.209986419,
+              -31.712749217
+            ],
+            [
+              152.210561709,
+              -31.7132625419999
+            ],
+            [
+              152.211565886,
+              -31.713936853
+            ],
+            [
+              152.212319015,
+              -31.714621871
+            ],
+            [
+              152.213168383,
+              -31.715517927
+            ]
+          ]
+        ],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
@@ -728,7 +1093,7 @@
         "type": "Bush Fire",
         "size": "35 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 06 Oct 2026 06:47:37 GMT",
+        "updated": "Tue, 06 Oct 2026 07:19:38 GMT",
         "description": "TERREEL RD, WARDS RIVER 2422",
         "council": "Mid-Coast",
         "lat": -32.2458738619999,
@@ -1015,54 +1380,28 @@
         ],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "TUNNEL RD, CESSNOCK",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Tue, 06 Oct 2026 07:19:38 GMT",
+        "description": "TUNNEL RD, CESSNOCK 2325",
+        "council": "Cessnock",
+        "lat": -32.8268661499999,
+        "lng": 151.39012146,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       }
     ],
     "vic": [],
     "qld": [
       {
-        "title": "STAY INFORMED - Aurukun (Cape York) - fire as at 2:04pm Tuesday, 6 October 2026",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "QFD",
-        "updated": "",
-        "description": "Aurukun",
-        "lat": -13.35142030425134,
-        "lng": 141.72171689580892,
-        "state": "QLD",
-        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
-        "polys": [
-          [
-            [
-              141.727509,
-              -13.371335
-            ],
-            [
-              141.750255,
-              -13.35764
-            ],
-            [
-              141.748109,
-              -13.337764
-            ],
-            [
-              141.684337,
-              -13.341272
-            ],
-            [
-              141.686311,
-              -13.349039
-            ],
-            [
-              141.727509,
-              -13.371335
-            ]
-          ]
-        ]
-      },
-      {
-        "title": "STAY INFORMED - Laura (Cape York) - fire as at 2:05pm Tuesday, 6 October 2026",
+        "title": "STAY INFORMED - Laura (Cape York) - fire as at 4:52pm Tuesday, 6 October 2026",
         "alertLevel": "Advice",
         "status": "",
         "type": "Bush Fire",
@@ -1070,8 +1409,8 @@
         "agency": "QFD",
         "updated": "",
         "description": "Laura",
-        "lat": -15.419787651275914,
-        "lng": 144.3559320924111,
+        "lat": -15.566137682632633,
+        "lng": 144.39274777113127,
         "state": "QLD",
         "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
       }
@@ -1079,16 +1418,31 @@
     "tas": [],
     "wa": [
       {
-        "title": "Report of Smoke",
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-06T07:14:06+00:00",
+        "description": "WAIKIKI, CITY OF ROCKINGHAM",
+        "lat": -32.3096,
+        "lng": 115.7518,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-06T06:29:23+00:00",
-        "description": "DARLINGTON, SHIRE OF MUNDARING",
-        "lat": -31.9227,
-        "lng": 116.0869,
+        "updated": "2026-10-06T07:02:50+00:00",
+        "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
+        "lat": -16.812,
+        "lng": 122.93,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1119,21 +1473,6 @@
         "description": "CUNDEELEE, KALGOORLIE-BOULDER, CITY OF",
         "lat": -31.1105,
         "lng": 122.834,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-06T05:34:20+00:00",
-        "description": "WICKHAM, CITY OF KARRATHA",
-        "lat": -20.684,
-        "lng": 117.1373,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -2120,33 +2459,49 @@
         "agency": "NTFRS",
         "updated": "2026-10-06T05:05:00+00:00",
         "description": "Gallacher Rd, GIRRAWEEN",
-        "lat": -12.5177,
-        "lng": 131.0774,
+        "lat": -12.5196,
+        "lng": 131.079,
         "polys": [
           [
             [
-              131.075737,
-              -12.519011
+              131.082536,
+              -12.52531
             ],
             [
-              131.078802,
-              -12.518928
+              131.081935,
+              -12.521376
             ],
             [
-              131.078759,
-              -12.517421
+              131.07857,
+              -12.519556
             ],
             [
-              131.079788,
-              -12.515705
+              131.078463,
+              -12.516459
             ],
             [
-              131.07563,
-              -12.515956
+              131.079964,
+              -12.515748
             ],
             [
-              131.075737,
-              -12.519011
+              131.079964,
+              -12.515266
+            ],
+            [
+              131.075463,
+              -12.515413
+            ],
+            [
+              131.075484,
+              -12.516124
+            ],
+            [
+              131.075548,
+              -12.525226
+            ],
+            [
+              131.082536,
+              -12.52531
             ]
           ]
         ],
@@ -2402,7 +2757,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 45,
+  "incident_count": 46,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
