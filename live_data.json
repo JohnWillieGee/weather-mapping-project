@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-06T03:53:01.954125+00:00",
-  "last_checked_utc": "2026-10-06T03:53:01.954125+00:00",
-  "warning_count": 13,
+  "generated_utc": "2026-10-06T04:22:57.554655+00:00",
+  "last_checked_utc": "2026-10-06T04:22:57.554655+00:00",
+  "warning_count": 14,
   "warnings": [
     {
       "pid": "",
@@ -119,11 +119,67 @@
       "link": "http://reg.bom.gov.au/tas/warnings/bushwalker.shtml",
       "desc": "",
       "issued": "Tue, 06 Oct 2026 00:35:11 GMT"
+    },
+    {
+      "pid": "IDN21033",
+      "title": "Severe Thunderstorm Warning for Northern Rivers, Mid North Coast",
+      "type": "thunderstorm",
+      "state": "NSW",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Yamba, Maclean, Iluka, Brooms Head and Wooli.",
+      "issued": "2026-10-06T15:00:17+11:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NSW_PW001",
+          "description": "Northern Rivers",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_PW002",
+          "description": "Mid North Coast",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
   "incidents": {
     "nsw": [
+      {
+        "title": "Benaud Cr, Warilla",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Tue, 06 Oct 2026 04:19:35 GMT",
+        "description": "Benaud Cr, Warilla, NSW 2528",
+        "council": "Shellharbour",
+        "lat": -34.550039,
+        "lng": 150.860125001,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "BORA CODRINGTON RD, BORA RIDGE",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Tue, 06 Oct 2026 04:19:35 GMT",
+        "description": "BORA CODRINGTON RD, BORA RIDGE 2471",
+        "council": "Richmond Valley",
+        "lat": -29.0412178039999,
+        "lng": 153.228515625,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
       {
         "title": "TERREEL RD, WARDS RIVER",
         "alertLevel": "Advice",
@@ -131,7 +187,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 06 Oct 2026 03:47:34 GMT",
+        "updated": "Tue, 06 Oct 2026 04:19:35 GMT",
         "description": "TERREEL RD, WARDS RIVER 2422",
         "council": "Mid-Coast",
         "lat": -32.2458738619999,
@@ -423,7 +479,7 @@
     "vic": [],
     "qld": [
       {
-        "title": "STAY INFORMED - Aurukun (Cape York) - fire as at 3:55pm Monday, 5 October 2026",
+        "title": "STAY INFORMED - Aurukun (Cape York) - fire as at 2:04pm Tuesday, 6 October 2026",
         "alertLevel": "Advice",
         "status": "",
         "type": "Bush Fire",
@@ -465,7 +521,7 @@
         ]
       },
       {
-        "title": "STAY INFORMED - Laura (Cape York) - fire as at 4:49pm Monday, 5 October 2026",
+        "title": "STAY INFORMED - Laura (Cape York) - fire as at 2:05pm Tuesday, 6 October 2026",
         "alertLevel": "Advice",
         "status": "",
         "type": "Bush Fire",
@@ -481,6 +537,21 @@
     ],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-06T04:11:49+00:00",
+        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.571,
+        "lng": 128.722,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Earthquake",
         "alertLevel": "",
@@ -667,21 +738,6 @@
         "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
         "lat": -16.5161,
         "lng": 122.893,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-05T23:24:31+00:00",
-        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.571,
-        "lng": 128.722,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1435,6 +1491,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - NULL",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-06T04:11:45+00:00",
+        "description": "NULL",
+        "lat": -13.9816,
+        "lng": 136.4603,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - SPEEDWAY -, TENNANT CREEK",
         "alertLevel": "Advice",
         "status": "active",
@@ -1475,21 +1546,6 @@
         "description": "WILLOWRA -, ANMATJERE",
         "lat": -21.2916,
         "lng": 132.6631,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Structure Fire - NULL",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-06T02:25:59+00:00",
-        "description": "NULL",
-        "lat": -13.9816,
-        "lng": 136.4603,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -1698,46 +1754,16 @@
     "act": [],
     "sa": [
       {
-        "title": "TREE FIRE",
+        "title": "GRASS FIRE",
         "alertLevel": "",
         "status": "active",
-        "type": "Bush Fire",
+        "type": "Grass Fire",
         "size": "",
         "agency": "CFS",
-        "updated": "2026-10-06T03:12:00+00:00",
-        "description": "BUCKLAND PARK",
-        "lat": -34.6353,
-        "lng": 138.529,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      },
-      {
-        "title": "STRUCTURE FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-06T03:00:00+00:00",
-        "description": "BRIDGEWATER",
-        "lat": -35.0091,
-        "lng": 138.7612,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      },
-      {
-        "title": "STRUCTURE FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-06T01:22:00+00:00",
-        "description": "GLOBE DERBY PARK",
-        "lat": -34.7873,
-        "lng": 138.5853,
+        "updated": "2026-10-06T04:14:00+00:00",
+        "description": "BAUDIN BEACH",
+        "lat": -35.7776,
+        "lng": 137.869,
         "polys": [],
         "state": "SA",
         "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
