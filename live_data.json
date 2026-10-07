@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-07T16:53:06.089829+00:00",
-  "last_checked_utc": "2026-10-07T16:53:06.089829+00:00",
-  "warning_count": 11,
+  "generated_utc": "2026-10-07T17:23:05.840380+00:00",
+  "last_checked_utc": "2026-10-07T17:23:05.840380+00:00",
+  "warning_count": 13,
   "warnings": [
     {
       "pid": "",
-      "title": "07/22:00 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "08/04:00 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 07 Oct 2026 11:00:13 GMT"
+      "issued": "Wed, 07 Oct 2026 17:00:10 GMT"
     },
     {
       "pid": "",
@@ -20,6 +20,15 @@
       "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
       "desc": "",
       "issued": "Wed, 07 Oct 2026 12:24:05 GMT"
+    },
+    {
+      "pid": "",
+      "title": "08/04:10 EDT Marine Wind Warning Summary for Victoria",
+      "type": "wind",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Wed, 07 Oct 2026 17:10:20 GMT"
     },
     {
       "pid": "",
@@ -59,12 +68,21 @@
     },
     {
       "pid": "",
-      "title": "07/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "08/03:40 CDT Marine Wind Warning Summary for South Australia",
+      "type": "wind",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
+      "desc": "",
+      "issued": "Wed, 07 Oct 2026 17:10:19 GMT"
+    },
+    {
+      "pid": "",
+      "title": "08/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Wed, 07 Oct 2026 11:01:14 GMT"
+      "issued": "Wed, 07 Oct 2026 17:01:14 GMT"
     },
     {
       "pid": "",
@@ -77,12 +95,12 @@
     },
     {
       "pid": "",
-      "title": "07/22:00 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "08/04:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 07 Oct 2026 11:00:13 GMT"
+      "issued": "Wed, 07 Oct 2026 17:00:10 GMT"
     },
     {
       "pid": "",
@@ -4740,11 +4758,75 @@
     }
   },
   "marine_warnings": {
+    "NSW": {
+      "state": "NSW",
+      "product": "IDN20400",
+      "issued_utc": "2026-10-07T17:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Byron Coast: Point Danger to Wooli",
+            "Coffs Coast: Wooli to Smoky Cape"
+          ],
+          "aac_codes": [
+            "NSW_MW008",
+            "NSW_MW007"
+          ],
+          "summary": "Byron Coast and Coffs Coast"
+        }
+      ]
+    },
+    "VIC": {
+      "state": "VIC",
+      "product": "IDV20600",
+      "issued_utc": "2026-10-07T17:10:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
+          ],
+          "aac_codes": [
+            "VIC_MW004"
+          ],
+          "summary": "East Gippsland Coast"
+        }
+      ]
+    },
+    "SA": {
+      "state": "SA",
+      "product": "IDS20201",
+      "issued_utc": "2026-10-07T17:10:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Far West Coast: WA-SA Border to Fowlers Bay",
+            "Upper West Coast: Fowlers Bay to Elliston"
+          ],
+          "aac_codes": [
+            "SA_MW001",
+            "SA_MW002"
+          ],
+          "summary": "Far West Coast and Upper West Coast"
+        }
+      ]
+    },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-07T11:01:00Z",
-      "overview": [],
+      "issued_utc": "2026-10-07T17:01:00Z",
+      "overview": [
+        "Strong Wind Warning for Thursday for Ningaloo Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast and Perth Local Waters",
+        "Strong Wind Warning for Friday for Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -4774,8 +4856,11 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-07T11:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-10-07T17:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Thursday for Far North West Coast, Lower East Coast, South East Coast and Central West Coast",
+        "Strong Wind Warning for Friday for Far North West Coast, Upper East Coast, Lower East Coast, South East Coast and Central West Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
