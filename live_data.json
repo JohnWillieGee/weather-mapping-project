@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-07T02:22:59.962988+00:00",
-  "last_checked_utc": "2026-10-07T02:22:59.962988+00:00",
-  "warning_count": 12,
+  "generated_utc": "2026-10-07T02:53:02.493220+00:00",
+  "last_checked_utc": "2026-10-07T02:53:02.493220+00:00",
+  "warning_count": 13,
   "warnings": [
     {
       "pid": "",
@@ -86,6 +86,15 @@
     },
     {
       "pid": "",
+      "title": "07/10:47 WST Warning to Sheep Graziers\nfor South Coastal forecast district",
+      "type": "other",
+      "state": "WA",
+      "link": "http://reg.bom.gov.au/wa/warnings/sheep.shtml",
+      "desc": "",
+      "issued": "Wed, 07 Oct 2026 02:47:58 GMT"
+    },
+    {
+      "pid": "",
       "title": "07/10:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
@@ -122,12 +131,31 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 07 Oct 2026 02:19:35 GMT",
+        "updated": "Wed, 07 Oct 2026 02:47:35 GMT",
         "description": "LES AVERY DR, TABULAM 2469",
         "council": "Tenterfield",
-        "lat": -28.9078292849999,
-        "lng": 152.518127442,
-        "polys": [],
+        "lat": -28.9062377889999,
+        "lng": 152.518580326,
+        "polys": [
+          [
+            [
+              152.515431395,
+              -28.907760191
+            ],
+            [
+              152.515430711,
+              -28.907763153
+            ],
+            [
+              152.515410879,
+              -28.9077499329999
+            ],
+            [
+              152.515431395,
+              -28.907760191
+            ]
+          ]
+        ],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
@@ -138,28 +166,43 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 07 Oct 2026 02:19:35 GMT",
+        "updated": "Wed, 07 Oct 2026 02:47:35 GMT",
         "description": "ROGAN BRIDGE RD, COPMANHURST 2460",
         "council": "Clarence Valley",
-        "lat": -29.595479965,
-        "lng": 152.820831299,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "Woodbury Park Dr, Mardi",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Wed, 07 Oct 2026 02:19:35 GMT",
-        "description": "Woodbury Park Dr, Mardi, NSW 2259",
-        "council": "Central Coast",
-        "lat": -33.3006589999999,
-        "lng": 151.407225,
-        "polys": [],
+        "lat": -29.5882797249999,
+        "lng": 152.801635742,
+        "polys": [
+          [
+            [
+              152.81133,
+              -29.592380001
+            ],
+            [
+              152.81122,
+              -29.5914100009999
+            ],
+            [
+              152.81154,
+              -29.590290001
+            ],
+            [
+              152.81244,
+              -29.5901200009999
+            ],
+            [
+              152.81347,
+              -29.5907
+            ],
+            [
+              152.81414,
+              -29.592570001
+            ],
+            [
+              152.81133,
+              -29.592380001
+            ]
+          ]
+        ],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       }
@@ -183,6 +226,94 @@
     ],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - PARRY LAGOON NATURE RESERVE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-07T02:38:01.798+00:00",
+        "description": "",
+        "lat": -15.5193,
+        "lng": 128.1843,
+        "polys": [
+          [
+            [
+              128.114517,
+              -15.486397
+            ],
+            [
+              128.118296,
+              -15.481055
+            ],
+            [
+              128.152307,
+              -15.496594
+            ],
+            [
+              128.173722,
+              -15.50946
+            ],
+            [
+              128.205969,
+              -15.50679
+            ],
+            [
+              128.284573,
+              -15.507518
+            ],
+            [
+              128.284321,
+              -15.605571
+            ],
+            [
+              128.214283,
+              -15.587857
+            ],
+            [
+              128.18002,
+              -15.524997
+            ],
+            [
+              128.114517,
+              -15.486397
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-07T02:33:47+00:00",
+        "description": "ORELIA, CITY OF KWINANA",
+        "lat": -32.2271,
+        "lng": 115.8263,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Earthquake",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Earthquake",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-07T02:15:42+00:00",
+        "description": "NEEDILUP, JERRAMUNGUP, SHIRE OF",
+        "lat": -33.9628,
+        "lng": 118.6601,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Smoke Alert FOR AREAS BETWEEN DWELLINGUP AND BODDINGTON IN THE SHIRES OF MURRAY, WAROONA AND BODDINGTON",
         "alertLevel": "Advice",
@@ -224,21 +355,6 @@
         "description": "",
         "lat": -31.9019,
         "lng": 116.1664,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-07T01:36:58+00:00",
-        "description": "DUNCRAIG, CITY OF JOONDALUP",
-        "lat": -31.8283,
-        "lng": 115.7687,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -466,21 +582,6 @@
         "description": "BANDYA, LAVERTON, SHIRE OF",
         "lat": -27.8459,
         "lng": 122.2669,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Earthquake",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Earthquake",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-06T02:39:03+00:00",
-        "description": "KIMBOLTON, DERBY/WEST KIMBERLEY, SHIRE OF",
-        "lat": -16.8428,
-        "lng": 124.0358,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -934,6 +1035,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - EDITH FALLS -, NITMILUK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-07T02:22:50+00:00",
+        "description": "EDITH FALLS -, NITMILUK",
+        "lat": -14.1768,
+        "lng": 132.1863,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Gallacher Rd, GIRRAWEEN",
         "alertLevel": "Advice",
         "status": "active",
@@ -1207,7 +1323,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 38,
+  "incident_count": 39,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
