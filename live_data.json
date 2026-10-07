@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-07T12:53:09.743978+00:00",
-  "last_checked_utc": "2026-10-07T12:53:09.743978+00:00",
-  "warning_count": 12,
+  "generated_utc": "2026-10-07T13:23:09.798686+00:00",
+  "last_checked_utc": "2026-10-07T13:23:09.798686+00:00",
+  "warning_count": 11,
   "warnings": [
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "07/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "07/23:05 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 07 Oct 2026 11:00:16 GMT"
+      "issued": "Wed, 07 Oct 2026 13:05:54 GMT"
     },
     {
       "pid": "",
@@ -94,25 +94,6 @@
       "issued": "Wed, 07 Oct 2026 11:53:33 GMT"
     },
     {
-      "pid": "IDQ21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for Capricornia",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "This warning is now cancelled.",
-      "issued": "2026-10-07T19:15:02+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "QLD_PW007",
-          "description": "Capricornia",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
-    },
-    {
       "pid": "IDW30000",
       "title": "Extreme Fire Weather Warning for Burrup",
       "type": "fire_weather",
@@ -139,6 +120,36 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-07T13:13:43+00:00",
+        "description": "ARMADALE, CITY OF ARMADALE",
+        "lat": -32.1533,
+        "lng": 116.0038,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-07T13:07:52+00:00",
+        "description": "STONEVILLE, SHIRE OF MUNDARING",
+        "lat": -31.8494,
+        "lng": 116.1836,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice THREAT IS REDUCED - DAMPIER PENINSULA",
         "alertLevel": "Advice",
@@ -797,36 +808,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - GILRUTH AV, THE GARDENS",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-07T12:43:01+00:00",
-        "description": "GILRUTH AV, THE GARDENS",
-        "lat": -12.4447,
-        "lng": 130.8362,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - BRADSHAW DR, FLYNN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-07T12:38:43+00:00",
-        "description": "BRADSHAW DR, FLYNN",
-        "lat": -23.7215,
-        "lng": 133.8664,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - TILLMOUTH WELL ROADHOUSE DRWY, ANMATJERE",
         "alertLevel": "Advice",
         "status": "active",
@@ -1136,21 +1117,6 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "CFS",
-        "updated": "2026-10-07T12:42:00+00:00",
-        "description": "CEDUNA",
-        "lat": -32.1295,
-        "lng": 133.6837,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      },
-      {
-        "title": "GRASS FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "CFS",
         "updated": "2026-10-07T05:51:00+00:00",
         "description": "ANANGU PITJANTJATJARA YANKUNYTJATJARA",
         "lat": -26.2369,
@@ -1161,7 +1127,7 @@
       }
     ]
   },
-  "incident_count": 33,
+  "incident_count": 32,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4789,25 +4755,6 @@
     }
   },
   "marine_warnings": {
-    "QLD": {
-      "state": "QLD",
-      "product": "IDQ20085",
-      "issued_utc": "2026-10-07T11:00:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Sunshine Coast Waters: Double Island Point to Cape Moreton"
-          ],
-          "aac_codes": [
-            "QLD_MW012"
-          ],
-          "summary": "Sunshine Coast Waters"
-        }
-      ]
-    },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
