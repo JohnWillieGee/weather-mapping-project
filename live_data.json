@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-07T06:53:03.589987+00:00",
-  "last_checked_utc": "2026-10-07T06:53:03.589987+00:00",
-  "warning_count": 13,
+  "generated_utc": "2026-10-07T07:23:10.339218+00:00",
+  "last_checked_utc": "2026-10-07T07:23:10.339218+00:00",
+  "warning_count": 14,
   "warnings": [
     {
       "pid": "",
@@ -159,6 +159,25 @@
       ],
       "severityCode": "CAN",
       "hazardPhase": "CAN"
+    },
+    {
+      "pid": "IDW30000",
+      "title": "Extreme Fire Weather Warning for Burrup",
+      "type": "fire_weather",
+      "state": "WA",
+      "link": "",
+      "desc": "Extreme Fire Danger",
+      "issued": "2026-10-07T14:59:17+08:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "WA_FW045",
+          "description": "Burrup",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "EXT",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -171,7 +190,7 @@
         "type": "Bush Fire",
         "size": "49 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 07 Oct 2026 06:47:34 GMT",
+        "updated": "Wed, 07 Oct 2026 07:19:35 GMT",
         "description": "ROGAN BRIDGE RD, COPMANHURST 2460",
         "council": "Clarence Valley",
         "lat": -29.5887603749999,
@@ -214,11 +233,11 @@
       {
         "title": "Sunninghill Cct, Mount Ousley",
         "alertLevel": "Advice",
-        "status": "Not yet controlled",
+        "status": "Being controlled",
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Wed, 07 Oct 2026 06:47:34 GMT",
+        "updated": "Wed, 07 Oct 2026 07:19:35 GMT",
         "description": "Sunninghill Cct, Mount Ousley, NSW 2519",
         "council": "Wollongong",
         "lat": -34.399717,
@@ -232,6 +251,51 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-07T07:12:56+00:00",
+        "description": "BEDFORDALE, CITY OF ARMADALE",
+        "lat": -32.1881,
+        "lng": 116.0996,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-07T07:00:42+00:00",
+        "description": "BAMBUN, SHIRE OF GINGIN",
+        "lat": -31.4509,
+        "lng": 115.899,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-07T06:59:18+00:00",
+        "description": "COLLIE, SHIRE OF COLLIE",
+        "lat": -33.3548,
+        "lng": 116.1572,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1125,21 +1189,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - DOWLING RD, VIRGINIA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-07T06:36:22+00:00",
-        "description": "DOWLING RD, VIRGINIA",
-        "lat": -12.5486,
-        "lng": 131.0183,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - EDITH FALLS -, NITMILUK",
         "alertLevel": "Advice",
         "status": "active",
@@ -1474,7 +1523,7 @@
       }
     ]
   },
-  "incident_count": 41,
+  "incident_count": 43,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
