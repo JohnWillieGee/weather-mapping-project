@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-07T23:23:02.643086+00:00",
-  "last_checked_utc": "2026-10-07T23:23:02.643086+00:00",
-  "warning_count": 11,
+  "generated_utc": "2026-10-07T23:53:00.701049+00:00",
+  "last_checked_utc": "2026-10-07T23:53:00.701049+00:00",
+  "warning_count": 12,
   "warnings": [
     {
       "pid": "",
@@ -59,21 +59,30 @@
     },
     {
       "pid": "",
-      "title": "08/09:30 CDT Marine Wind Warning Summary for South Australia",
+      "title": "08/09:26 EST Marine Wind Warning Summary for Queensland",
+      "type": "wind",
+      "state": "QLD",
+      "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Wed, 07 Oct 2026 23:26:33 GMT"
+    },
+    {
+      "pid": "",
+      "title": "08/09:56 CDT Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Wed, 07 Oct 2026 23:00:12 GMT"
+      "issued": "Wed, 07 Oct 2026 23:26:27 GMT"
     },
     {
       "pid": "",
-      "title": "08/07:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "08/07:26 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Wed, 07 Oct 2026 23:01:11 GMT"
+      "issued": "Wed, 07 Oct 2026 23:26:35 GMT"
     },
     {
       "pid": "",
@@ -123,7 +132,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 07 Oct 2026 23:19:34 GMT",
+        "updated": "Wed, 07 Oct 2026 23:47:35 GMT",
         "description": "GORDON BROOK RD, PULGANBAR 2460",
         "council": "Clarence Valley",
         "lat": -29.453848464,
@@ -152,13 +161,29 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
+        "title": "Middleton St, South Kempsey",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Wed, 07 Oct 2026 23:47:35 GMT",
+        "description": "Middleton St, South Kempsey, NSW 2440",
+        "council": "Kempsey",
+        "lat": -31.094008,
+        "lng": 152.831767,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "ROGAN BRIDGE RD, COPMANHURST",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "49 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 07 Oct 2026 23:19:34 GMT",
+        "updated": "Wed, 07 Oct 2026 23:47:35 GMT",
         "description": "ROGAN BRIDGE RD, COPMANHURST 2460",
         "council": "Clarence Valley",
         "lat": -29.5887603749999,
@@ -204,40 +229,17 @@
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire Advice THREAT IS REDUCED - DAMPIER PENINSULA",
-        "alertLevel": "Advice",
+        "title": "Bushfire",
+        "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-07T07:46:52.988+00:00",
-        "description": "",
-        "lat": -16.7842,
-        "lng": 122.9371,
-        "polys": [
-          [
-            [
-              122.896816,
-              -16.75743
-            ],
-            [
-              122.892689,
-              -16.823606
-            ],
-            [
-              122.999277,
-              -16.824108
-            ],
-            [
-              123.000029,
-              -16.758578
-            ],
-            [
-              122.896816,
-              -16.75743
-            ]
-          ]
-        ],
+        "agency": "DFES",
+        "updated": "2026-10-07T23:34:32+00:00",
+        "description": "COLLIE, SHIRE OF COLLIE",
+        "lat": -33.3656,
+        "lng": 116.1542,
+        "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -861,16 +863,16 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - Unknown",
+        "title": "Grass and Scrub Fire - PERRY DR, TENNANT CREEK",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-07T23:11:58+00:00",
-        "description": "",
-        "lat": -15.6763,
-        "lng": 130.4851,
+        "updated": "2026-10-07T23:18:41+00:00",
+        "description": "PERRY DR, TENNANT CREEK",
+        "lat": -19.6459,
+        "lng": 134.1976,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -1185,25 +1187,40 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "CFS",
-        "updated": "2026-10-07T22:20:00+00:00",
-        "description": "COOBER PEDY",
-        "lat": -29.0027,
-        "lng": 134.7438,
+        "updated": "2026-10-07T23:46:00+00:00",
+        "description": "HINDMARSH VALLEY",
+        "lat": -35.4676,
+        "lng": 138.574,
         "polys": [],
         "state": "SA",
         "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
       },
       {
-        "title": "Vehicle fuel leak",
+        "title": "GRASS FIRE",
         "alertLevel": "",
         "status": "active",
-        "type": "HazMat",
+        "type": "Grass Fire",
         "size": "",
         "agency": "CFS",
-        "updated": "2026-10-07T21:36:00+00:00",
-        "description": "MAITLAND",
-        "lat": -34.3679,
-        "lng": 137.6716,
+        "updated": "2026-10-07T23:29:00+00:00",
+        "description": "CEDUNA",
+        "lat": -32.118,
+        "lng": 133.6751,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
+      {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-07T22:20:00+00:00",
+        "description": "COOBER PEDY",
+        "lat": -29.0068,
+        "lng": 134.7446,
         "polys": [],
         "state": "SA",
         "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
@@ -1225,7 +1242,7 @@
       }
     ]
   },
-  "incident_count": 35,
+  "incident_count": 37,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4896,7 +4913,7 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-10-07T23:00:00Z",
+      "issued_utc": "2026-10-07T23:26:20Z",
       "overview": [],
       "hazards": [
         {
@@ -4917,10 +4934,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-07T23:01:00Z",
+      "issued_utc": "2026-10-07T23:26:25Z",
       "overview": [
-        "Strong Wind Warning for Thursday for Ningaloo Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast, Esperance Coast and Perth Local Waters",
-        "Strong Wind Warning for Friday for Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
+        "Strong Wind Warning for Thursday for Leeuwin Coast, Albany Coast, Esperance Coast, Ningaloo Coast, Bunbury Geographe Coast, Perth Local Waters and Perth Coast",
+        "Strong Wind Warning for Friday for Albany Coast, Leeuwin Coast, Esperance Coast and Eucla Coast"
       ],
       "hazards": [
         {
