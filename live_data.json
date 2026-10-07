@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-07T10:53:05.337570+00:00",
-  "last_checked_utc": "2026-10-07T10:53:05.337570+00:00",
+  "generated_utc": "2026-10-07T11:23:04.353483+00:00",
+  "last_checked_utc": "2026-10-07T11:23:04.353483+00:00",
   "warning_count": 13,
   "warnings": [
     {
       "pid": "",
-      "title": "07/16:05 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "07/22:00 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 07 Oct 2026 05:05:13 GMT"
+      "issued": "Wed, 07 Oct 2026 11:00:13 GMT"
     },
     {
       "pid": "",
@@ -59,21 +59,21 @@
     },
     {
       "pid": "",
-      "title": "07/15:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "07/21:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 07 Oct 2026 05:00:13 GMT"
+      "issued": "Wed, 07 Oct 2026 11:00:16 GMT"
     },
     {
       "pid": "",
-      "title": "07/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "07/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Wed, 07 Oct 2026 05:01:15 GMT"
+      "issued": "Wed, 07 Oct 2026 11:01:14 GMT"
     },
     {
       "pid": "",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "07/16:05 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "07/22:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 07 Oct 2026 05:05:12 GMT"
+      "issued": "Wed, 07 Oct 2026 11:00:13 GMT"
     },
     {
       "pid": "",
@@ -148,21 +148,6 @@
     "qld": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-07T10:39:29+00:00",
-        "description": "PALMER, SHIRE OF COLLIE",
-        "lat": -33.3106,
-        "lng": 116.2272,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire Advice THREAT IS REDUCED - DAMPIER PENINSULA",
         "alertLevel": "Advice",
@@ -1140,7 +1125,7 @@
       }
     ]
   },
-  "incident_count": 31,
+  "incident_count": 30,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4771,64 +4756,26 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-10-07T05:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Wednesday for Sunshine Coast Waters, Moreton Bay and Gold Coast Waters",
-        "Strong Wind Warning for Thursday for Sunshine Coast Waters"
-      ],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Sunshine Coast Waters: Double Island Point to Cape Moreton",
-            "Moreton Bay",
-            "Gold Coast Waters: Cape Moreton to Point Danger"
-          ],
-          "aac_codes": [
-            "QLD_MW012",
-            "QLD_MW013",
-            "QLD_MW014"
-          ],
-          "summary": "Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
-        }
-      ]
-    },
-    "NSW": {
-      "state": "NSW",
-      "product": "IDN20400",
-      "issued_utc": "2026-10-07T05:05:00Z",
+      "issued_utc": "2026-10-07T11:00:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Byron Coast: Point Danger to Wooli",
-            "Coffs Coast: Wooli to Smoky Cape",
-            "Macquarie Coast: Smoky Cape to Seal Rocks",
-            "Hunter Coast: Seal Rocks to Broken Bay",
-            "Sydney Coast: Broken Bay to Port Hacking",
-            "Sydney Enclosed Waters",
-            "Illawarra Coast: Port Hacking to Ulladulla"
+            "Sunshine Coast Waters: Double Island Point to Cape Moreton"
           ],
           "aac_codes": [
-            "NSW_MW008",
-            "NSW_MW007",
-            "NSW_MW006",
-            "NSW_MW005",
-            "NSW_MW004",
-            "NSW_MW009",
-            "NSW_MW003"
+            "QLD_MW012"
           ],
-          "summary": "Sydney Enclosed Waters, Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast and Illawarra Coast"
+          "summary": "Sunshine Coast Waters"
         }
       ]
     },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-07T05:01:00Z",
+      "issued_utc": "2026-10-07T11:01:00Z",
       "overview": [],
       "hazards": [
         {
@@ -4859,7 +4806,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-07T05:05:00Z",
+      "issued_utc": "2026-10-07T11:00:00Z",
       "overview": [],
       "hazards": [
         {
