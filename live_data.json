@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-07T13:23:09.798686+00:00",
-  "last_checked_utc": "2026-10-07T13:23:09.798686+00:00",
+  "generated_utc": "2026-10-07T13:53:08.851115+00:00",
+  "last_checked_utc": "2026-10-07T13:53:08.851115+00:00",
   "warning_count": 11,
   "warnings": [
     {
@@ -115,11 +115,58 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Hartley Rd, Seven Hills",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Wed, 07 Oct 2026 13:47:35 GMT",
+        "description": "Hartley Rd, Seven Hills, NSW 2147",
+        "council": "Blacktown",
+        "lat": -33.7737119999999,
+        "lng": 150.931955,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-07T13:37:58+00:00",
+        "description": "ROELANDS, SHIRE OF HARVEY",
+        "lat": -33.3111,
+        "lng": 115.8531,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-07T13:32:48+00:00",
+        "description": "MANDURAH, CITY OF MANDURAH",
+        "lat": -32.5281,
+        "lng": 115.728,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Structure Fire",
         "alertLevel": "",
@@ -131,21 +178,6 @@
         "description": "ARMADALE, CITY OF ARMADALE",
         "lat": -32.1533,
         "lng": 116.0038,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-07T13:07:52+00:00",
-        "description": "STONEVILLE, SHIRE OF MUNDARING",
-        "lat": -31.8494,
-        "lng": 116.1836,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1127,7 +1159,7 @@
       }
     ]
   },
-  "incident_count": 32,
+  "incident_count": 34,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
