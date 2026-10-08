@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-08T20:53:08.766846+00:00",
-  "last_checked_utc": "2026-10-08T20:53:08.766846+00:00",
+  "generated_utc": "2026-10-08T21:23:03.858520+00:00",
+  "last_checked_utc": "2026-10-08T21:23:03.858520+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "09/03:40 CDT Marine Wind Warning Summary for South Australia",
+      "title": "09/07:36 CDT Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Thu, 08 Oct 2026 17:10:13 GMT"
+      "issued": "Thu, 08 Oct 2026 21:06:34 GMT"
     },
     {
       "pid": "",
@@ -121,6 +121,21 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Earthquake",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Earthquake",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-08T20:51:44+00:00",
+        "description": "BEACON, MOUNT MARSHALL, SHIRE OF",
+        "lat": -30.4761,
+        "lng": 117.8402,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Earthquake",
         "alertLevel": "",
@@ -922,7 +937,7 @@
       }
     ]
   },
-  "incident_count": 22,
+  "incident_count": 23,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4601,10 +4616,10 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-10-08T17:10:00Z",
+      "issued_utc": "2026-10-08T21:06:16Z",
       "overview": [
-        "Strong Wind Warning for Friday for Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast, Spencer Gulf, Investigator Strait, Upper South East Coast and Lower South East Coast",
-        "Strong Wind Warning for Saturday for Central Coast, South Central Coast, Investigator Strait, Upper South East Coast and Lower South East Coast"
+        "Strong Wind Warning for Friday for Gulf St Vincent, Central Coast, Lower West Coast, Upper South East Coast, Far West Coast, Investigator Strait, Lower South East Coast, Upper West Coast, Spencer Gulf and South Central Coast",
+        "Strong Wind Warning for Saturday for Central Coast, Upper South East Coast, Lower South East Coast, Investigator Strait and South Central Coast"
       ],
       "hazards": [
         {
@@ -4617,6 +4632,7 @@
             "Central Coast",
             "South Central Coast",
             "Spencer Gulf",
+            "Gulf St Vincent",
             "Investigator Strait",
             "Upper South East Coast: Murray Mouth to Cape Jaffa",
             "Lower South East Coast: Cape Jaffa to SA-VIC Border"
@@ -4628,11 +4644,12 @@
             "SA_MW004",
             "SA_MW008",
             "SA_MW005",
+            "SA_MW006",
             "SA_MW007",
             "SA_MW009",
             "SA_MW010"
           ],
-          "summary": "Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast, Spencer Gulf, Investigator Strait, Upper South East Coast and Lower South East Coast"
+          "summary": "Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast, Spencer Gulf, Gulf St Vincent, Investigator Strait, Upper South East Coast and Lower South East Coast"
         }
       ]
     },
