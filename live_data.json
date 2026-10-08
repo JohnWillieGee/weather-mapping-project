@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-10-08T16:53:08.950364+00:00",
-  "last_checked_utc": "2026-10-08T16:53:08.950364+00:00",
+  "generated_utc": "2026-10-08T17:23:05.212660+00:00",
+  "last_checked_utc": "2026-10-08T17:23:05.212660+00:00",
   "warning_count": 10,
   "warnings": [
     {
       "pid": "",
-      "title": "08/22:00 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "09/04:00 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 08 Oct 2026 11:00:10 GMT"
+      "issued": "Thu, 08 Oct 2026 17:00:10 GMT"
     },
     {
       "pid": "",
-      "title": "08/22:00 EDT Marine Wind Warning Summary for Victoria",
+      "title": "09/04:10 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 08 Oct 2026 11:00:16 GMT"
+      "issued": "Thu, 08 Oct 2026 17:10:21 GMT"
     },
     {
       "pid": "",
@@ -41,21 +41,21 @@
     },
     {
       "pid": "",
-      "title": "08/21:30 CDT Marine Wind Warning Summary for South Australia",
+      "title": "09/03:40 CDT Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Thu, 08 Oct 2026 11:00:11 GMT"
+      "issued": "Thu, 08 Oct 2026 17:10:13 GMT"
     },
     {
       "pid": "",
-      "title": "08/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "09/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 08 Oct 2026 11:01:12 GMT"
+      "issued": "Thu, 08 Oct 2026 17:01:12 GMT"
     },
     {
       "pid": "",
@@ -68,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "08/22:00 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "09/04:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 08 Oct 2026 11:00:14 GMT"
+      "issued": "Thu, 08 Oct 2026 17:00:11 GMT"
     },
     {
       "pid": "IDQ20035",
@@ -122,16 +122,31 @@
     "tas": [],
     "wa": [
       {
+        "title": "Earthquake",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Earthquake",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-08T16:55:19+00:00",
+        "description": "BEACON, MOUNT MARSHALL, SHIRE OF",
+        "lat": -30.5096,
+        "lng": 117.8133,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Structure Fire",
         "alertLevel": "",
         "status": "active",
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-08T16:11:28+00:00",
+        "updated": "2026-10-08T16:33:13+00:00",
         "description": "WEST LAMINGTON, CITY OF KALGOORLIE-BOULDER",
-        "lat": -30.7462,
-        "lng": 121.4541,
+        "lat": -30.7463,
+        "lng": 121.4543,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -653,6 +668,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - NTJALKA CCT, ILPARPA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-08T17:10:35+00:00",
+        "description": "NTJALKA CCT, ILPARPA",
+        "lat": -23.7291,
+        "lng": 133.8595,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - ARNHEM HIGHWAY OENPELLI RD, KAKADU",
         "alertLevel": "Advice",
         "status": "active",
@@ -937,7 +967,7 @@
       }
     ]
   },
-  "incident_count": 23,
+  "incident_count": 25,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4568,8 +4598,11 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-10-08T11:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-10-08T17:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Friday for Byron Coast and Coffs Coast",
+        "Strong Wind Warning for Saturday for Byron Coast and Coffs Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -4589,8 +4622,11 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-08T11:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-10-08T17:10:00Z",
+      "overview": [
+        "Strong Wind Warning for Friday for West Coast and East Gippsland Coast",
+        "Strong Wind Warning for Saturday for West Coast, Central Coast and East Gippsland Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -4610,8 +4646,11 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-10-08T11:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-10-08T17:10:00Z",
+      "overview": [
+        "Strong Wind Warning for Friday for Far West Coast, Upper West Coast, Lower West Coast, Central Coast, South Central Coast, Spencer Gulf, Investigator Strait, Upper South East Coast and Lower South East Coast",
+        "Strong Wind Warning for Saturday for Central Coast, South Central Coast, Investigator Strait, Upper South East Coast and Lower South East Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -4645,46 +4684,39 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-08T11:01:00Z",
+      "issued_utc": "2026-10-08T17:01:00Z",
       "overview": [
-        "Gale Warning for Thursday for Esperance Coast",
-        "Strong Wind Warning for Thursday for Leeuwin Coast and Albany Coast",
-        "Strong Wind Warning for Friday for Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
+        "Strong Wind Warning for Friday for Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast",
+        "Strong Wind Warning for Saturday for Leeuwin Coast"
       ],
       "hazards": [
-        {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "Esperance Coast: Bremer Bay to Israelite Bay"
-          ],
-          "aac_codes": [
-            "WA_MW013"
-          ],
-          "summary": "Esperance Coast"
-        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
             "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay"
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay",
+            "Eucla Coast: Israelite Bay to WA-SA Border"
           ],
           "aac_codes": [
             "WA_MW011",
-            "WA_MW012"
+            "WA_MW012",
+            "WA_MW013",
+            "WA_MW014"
           ],
-          "summary": "Leeuwin Coast and Albany Coast"
+          "summary": "Leeuwin Coast, Albany Coast, Esperance Coast and Eucla Coast"
         }
       ]
     },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-08T11:00:00Z",
+      "issued_utc": "2026-10-08T17:00:00Z",
       "overview": [
-        "Strong Wind Warning for Thursday for Far North West Coast, Lower East Coast, South East Coast and Central West Coast",
-        "Strong Wind Warning for Friday for Far North West Coast, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast and Central West Coast"
+        "Strong Wind Warning for Friday for Far North West Coast, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast and Central West Coast",
+        "Gale Warning for Saturday for South East Coast and South West Coast",
+        "Strong Wind Warning for Saturday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, Central West Coast and South West Lakes"
       ],
       "hazards": [
         {
@@ -4692,17 +4724,21 @@
           "severity": "STR",
           "zones": [
             "Far North West Coast: Sandy Cape to Stanley",
+            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
+            "Upper East Coast: St Helens Point to Wineglass Bay",
             "Lower East Coast: Wineglass Bay to Tasman Island",
             "South East Coast: Tasman Island to South East Cape",
             "Central West Coast: Low Rocky Point to Sandy Cape"
           ],
           "aac_codes": [
             "TAS_MW001",
+            "TAS_MW003",
+            "TAS_MW004",
             "TAS_MW005",
             "TAS_MW006",
             "TAS_MW008"
           ],
-          "summary": "Far North West Coast, Lower East Coast, South East Coast and Central West Coast"
+          "summary": "Far North West Coast, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast and Central West Coast"
         }
       ]
     }
