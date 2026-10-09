@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-09T06:53:07.397588+00:00",
-  "last_checked_utc": "2026-10-09T06:53:07.397588+00:00",
-  "warning_count": 9,
+  "generated_utc": "2026-10-09T07:23:06.833434+00:00",
+  "last_checked_utc": "2026-10-09T07:23:06.833434+00:00",
+  "warning_count": 10,
   "warnings": [
     {
       "pid": "",
@@ -59,37 +59,51 @@
     },
     {
       "pid": "IDD21033",
-      "title": "Severe Thunderstorm Warning for Barkly, Simpson, Lasseter, Tanami",
+      "title": "Severe Thunderstorm Warning for Barkly, Simpson, Tanami",
       "type": "thunderstorm",
       "state": "NT",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Alice Springs, Arltunga, Ti Tree, Santa Teresa and Simpson District east of Finke.",
-      "issued": "2026-10-09T15:15:22+09:30",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Arltunga, Ti Tree, Barrow Creek, Santa Teresa and Simpson District east of Finke. Severe thunderstorms are no longer occurring in the Lasseter district and the warning for this district is CANCELLED. 2 cm hailstones reported at Alice Springs around 3:50 pm.",
+      "issued": "2026-10-09T16:43:43+09:30",
       "cancelled": false,
       "areas": [
         {
           "aac": "NT_PW006",
           "description": "Barkly",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "NT_PW007",
           "description": "Simpson",
-          "phase": "NEW"
-        },
-        {
-          "aac": "NT_PW008",
-          "description": "Lasseter",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "NT_PW009",
           "description": "Tanami",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDD21033",
+      "title": "Severe Thunderstorm Warning for Lasseter",
+      "type": "thunderstorm",
+      "state": "NT",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-09T16:43:43+09:30",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "NT_PW008",
+          "description": "Lasseter",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDQ20035",
@@ -140,7 +154,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 09 Oct 2026 06:47:35 GMT",
+        "updated": "Fri, 09 Oct 2026 07:19:36 GMT",
         "description": "BLACK NOB SINGLETON MILITARY AREA 2331",
         "council": "Singleton",
         "lat": -32.715843201,
@@ -271,7 +285,7 @@
         "type": "Grass Fire",
         "size": "42 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 09 Oct 2026 06:47:35 GMT",
+        "updated": "Fri, 09 Oct 2026 07:19:36 GMT",
         "description": "BUSBYS FLAT RD, BUSBYS FLAT 2469",
         "council": "Richmond Valley",
         "lat": -29.042947596,
@@ -519,56 +533,412 @@
               -29.043400001
             ],
             [
-              152.82318,
-              -29.0431100009999
+              152.82317,
+              -29.043210001
+            ],
+            [
+              152.82315,
+              -29.043170001
+            ],
+            [
+              152.82315,
+              -29.043120001
+            ],
+            [
+              152.82316,
+              -29.0430900009999
+            ],
+            [
+              152.82317,
+              -29.0430900009999
+            ],
+            [
+              152.82317,
+              -29.0429999999999
+            ],
+            [
+              152.82315,
+              -29.0429300009999
+            ],
+            [
+              152.82313,
+              -29.0429
+            ],
+            [
+              152.82313,
+              -29.0428199999999
+            ],
+            [
+              152.8231,
+              -29.042760001
+            ],
+            [
+              152.82311,
+              -29.042700001
             ],
             [
               152.82324,
-              -29.043040001
+              -29.042610001
             ],
             [
-              152.82329,
-              -29.0428900009999
+              152.82324,
+              -29.042600001
             ],
             [
-              152.82346,
-              -29.0427500009999
+              152.82327,
+              -29.04259
             ],
             [
-              152.82391,
-              -29.04254
+              152.82327,
+              -29.042580001
             ],
             [
-              152.82417,
+              152.82331,
+              -29.0425700009999
+            ],
+            [
+              152.82331,
+              -29.042560001
+            ],
+            [
+              152.82334,
+              -29.0425500009999
+            ],
+            [
+              152.82336,
+              -29.0425300009999
+            ],
+            [
+              152.82338,
+              -29.0425300009999
+            ],
+            [
+              152.82341,
+              -29.042500001
+            ],
+            [
+              152.82345,
+              -29.0424800009999
+            ],
+            [
+              152.82345,
+              -29.042470001
+            ],
+            [
+              152.82352,
+              -29.042430001
+            ],
+            [
+              152.82353,
+              -29.042410001
+            ],
+            [
+              152.82355,
+              -29.042410001
+            ],
+            [
+              152.82357,
+              -29.04239
+            ],
+            [
+              152.82362,
               -29.0423700009999
             ],
             [
+              152.82362,
+              -29.04236
+            ],
+            [
+              152.82364,
+              -29.04236
+            ],
+            [
+              152.82365,
+              -29.04234
+            ],
+            [
+              152.82369,
+              -29.042320001
+            ],
+            [
+              152.823719999,
+              -29.0422800009999
+            ],
+            [
+              152.82376,
+              -29.0422599999999
+            ],
+            [
+              152.8238,
+              -29.04221
+            ],
+            [
+              152.823820001,
+              -29.04221
+            ],
+            [
+              152.82383,
+              -29.0421900009999
+            ],
+            [
+              152.82384,
+              -29.0421900009999
+            ],
+            [
+              152.82391,
+              -29.0421200009999
+            ],
+            [
+              152.82391,
+              -29.04211
+            ],
+            [
+              152.82396,
+              -29.042070001
+            ],
+            [
+              152.82401,
+              -29.042000001
+            ],
+            [
+              152.824100001,
+              -29.04193
+            ],
+            [
+              152.82413,
+              -29.0419200009999
+            ],
+            [
+              152.82417,
+              -29.0418700009999
+            ],
+            [
+              152.82424,
+              -29.0418299999999
+            ],
+            [
+              152.82425,
+              -29.0418100009999
+            ],
+            [
+              152.82431,
+              -29.041770001
+            ],
+            [
+              152.82432,
+              -29.04175
+            ],
+            [
               152.82443,
-              -29.042090001
+              -29.0416499999999
             ],
             [
-              152.8246,
-              -29.041840001
+              152.82443,
+              -29.041640001
             ],
             [
-              152.8247,
+              152.82445,
+              -29.041640001
+            ],
+            [
+              152.82446,
               -29.041620001
             ],
             [
-              152.82481,
+              152.82449,
+              -29.041610001
+            ],
+            [
+              152.8245,
+              -29.041590001
+            ],
+            [
+              152.82454,
+              -29.041570001
+            ],
+            [
+              152.82457,
+              -29.041530001
+            ],
+            [
+              152.824610001,
               -29.0415100009999
             ],
             [
-              152.825,
+              152.824610001,
+              -29.0414900009999
+            ],
+            [
+              152.82463,
+              -29.0414900009999
+            ],
+            [
+              152.82464,
+              -29.0414699999999
+            ],
+            [
+              152.82471,
               -29.04142
             ],
             [
-              152.82529,
-              -29.04119
+              152.82472,
+              -29.0414000009999
             ],
             [
-              152.82547,
-              -29.040780001
+              152.82474,
+              -29.0414000009999
+            ],
+            [
+              152.82476,
+              -29.04137
+            ],
+            [
+              152.82479,
+              -29.0413600009999
+            ],
+            [
+              152.82481,
+              -29.0413300009999
+            ],
+            [
+              152.82482,
+              -29.0413300009999
+            ],
+            [
+              152.82486,
+              -29.041280001
+            ],
+            [
+              152.82488,
+              -29.0412699999999
+            ],
+            [
+              152.82488,
+              -29.041260001
+            ],
+            [
+              152.824890001,
+              -29.041260001
+            ],
+            [
+              152.82492,
+              -29.0412000009999
+            ],
+            [
+              152.82496,
+              -29.041170001
+            ],
+            [
+              152.82496,
+              -29.0411500009999
+            ],
+            [
+              152.82498,
+              -29.0411300009999
+            ],
+            [
+              152.825,
+              -29.041070001
+            ],
+            [
+              152.82502,
+              -29.04104
+            ],
+            [
+              152.82505,
+              -29.0410200009999
+            ],
+            [
+              152.82513,
+              -29.0408800009999
+            ],
+            [
+              152.825170001,
+              -29.04086
+            ],
+            [
+              152.82519,
+              -29.0408200009999
+            ],
+            [
+              152.82519,
+              -29.0407500009999
+            ],
+            [
+              152.8252,
+              -29.0407299999999
+            ],
+            [
+              152.82522,
+              -29.040720001
+            ],
+            [
+              152.82524,
+              -29.0406600009999
+            ],
+            [
+              152.82525,
+              -29.0406600009999
+            ],
+            [
+              152.82526,
+              -29.0406400009999
+            ],
+            [
+              152.82526,
+              -29.0406100009999
+            ],
+            [
+              152.82527,
+              -29.0406100009999
+            ],
+            [
+              152.82529,
+              -29.0405700009999
+            ],
+            [
+              152.82529,
+              -29.0405500009999
+            ],
+            [
+              152.8253,
+              -29.0405500009999
+            ],
+            [
+              152.82531,
+              -29.040470001
+            ],
+            [
+              152.82538,
+              -29.0403499999999
+            ],
+            [
+              152.82539,
+              -29.0402800009999
+            ],
+            [
+              152.825399999,
+              -29.0402800009999
+            ],
+            [
+              152.825399999,
+              -29.04025
+            ],
+            [
+              152.82541,
+              -29.040220001
+            ],
+            [
+              152.82542,
+              -29.040220001
+            ],
+            [
+              152.82543,
+              -29.0401699999999
+            ],
+            [
+              152.82544,
+              -29.040150001
             ],
             [
               152.82547,
@@ -590,7 +960,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 09 Oct 2026 06:47:35 GMT",
+        "updated": "Fri, 09 Oct 2026 07:19:36 GMT",
         "description": "COMMISSIONERS CREEK RD, COMMISSIONERS CREEK 2484",
         "council": "Tweed",
         "lat": -28.504162305,
@@ -695,17 +1065,17 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
-        "title": "Main Rd, Heddon Greta",
+        "title": "Doyle Street, Brewarrina",
         "alertLevel": "Advice",
         "status": "Being controlled",
-        "type": "Bush Fire",
+        "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 09 Oct 2026 06:47:35 GMT",
-        "description": "Main Rd, Heddon Greta, NSW 2321",
-        "council": "Cessnock",
-        "lat": -32.8087909999999,
-        "lng": 151.499393,
+        "updated": "Fri, 09 Oct 2026 07:19:36 GMT",
+        "description": "Doyle Street, Brewarrina, NSW 2839",
+        "council": "Brewarrina",
+        "lat": -29.9585709999999,
+        "lng": 146.856162,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -717,7 +1087,7 @@
         "type": "Bush Fire",
         "size": "69 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 09 Oct 2026 06:47:35 GMT",
+        "updated": "Fri, 09 Oct 2026 07:19:36 GMT",
         "description": "ROGAN BRIDGE RD, COPMANHURST 2460",
         "council": "Clarence Valley",
         "lat": -29.5760018939999,
@@ -921,21 +1291,6 @@
     ],
     "tas": [],
     "wa": [
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-09T06:11:38+00:00",
-        "description": "AUBIN GROVE, CITY OF COCKBURN",
-        "lat": -32.16,
-        "lng": 115.8662,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1483,13 +1838,43 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - PIONEER DR, HERBERT",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-09T07:17:58+00:00",
+        "description": "PIONEER DR, HERBERT",
+        "lat": -12.5525,
+        "lng": 131.166,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - PANGOLA RD, HUMPTY DOO",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-09T07:17:57+00:00",
+        "description": "PANGOLA RD, HUMPTY DOO",
+        "lat": -12.5549,
+        "lng": 131.169,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - BEDDINGTON RD, HERBERT",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-09T06:47:47+00:00",
+        "updated": "2026-10-09T07:17:47+00:00",
         "description": "BEDDINGTON RD, HERBERT",
         "lat": -12.5503,
         "lng": 131.1691,
@@ -1498,16 +1883,16 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Hazmat Incident - SOUTH TCE, THE GAP",
+        "title": "Power Lines Down - GAP RD, THE GAP",
         "alertLevel": "Advice",
         "status": "active",
-        "type": "HazMat",
+        "type": "Storm",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-09T06:42:34+00:00",
-        "description": "SOUTH TCE, THE GAP",
-        "lat": -23.7213,
-        "lng": 133.8721,
+        "updated": "2026-10-09T06:56:30+00:00",
+        "description": "GAP RD, THE GAP",
+        "lat": -23.7187,
+        "lng": 133.8714,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -1523,21 +1908,6 @@
         "description": "BLOOMFIELD ST, GILLEN",
         "lat": -23.7119,
         "lng": 133.8697,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Power Lines Down - GAP RD, THE GAP",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Storm",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-09T06:37:25+00:00",
-        "description": "GAP RD, THE GAP",
-        "lat": -23.7187,
-        "lng": 133.8714,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -1900,16 +2270,31 @@
     ],
     "act": [
       {
-        "title": "HOUSE FIRE - O'CONNOR",
+        "title": "HOUSE FIRE - DICKSON",
         "alertLevel": "",
         "status": "active",
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-10-09T06:40:51+00:00",
-        "description": "O'CONNOR",
-        "lat": -35.2534,
-        "lng": 149.1207,
+        "updated": "2026-10-09T07:11:46+00:00",
+        "description": "DICKSON",
+        "lat": -35.2575,
+        "lng": 149.1353,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - DICKSON",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Fire - Ambulance",
+        "updated": "2026-10-09T07:11:46+00:00",
+        "description": "DICKSON",
+        "lat": -35.2575,
+        "lng": 149.1353,
         "polys": [],
         "state": "ACT",
         "sourceUrl": "https://esa.act.gov.au/"
@@ -1921,7 +2306,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "Fire - Ambulance",
-        "updated": "2026-10-09T06:40:51+00:00",
+        "updated": "2026-10-09T06:58:23+00:00",
         "description": "O'CONNOR",
         "lat": -35.2534,
         "lng": 149.1207,
@@ -1948,7 +2333,7 @@
       }
     ]
   },
-  "incident_count": 38,
+  "incident_count": 39,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
