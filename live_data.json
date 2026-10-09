@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-09T00:53:08.858283+00:00",
-  "last_checked_utc": "2026-10-09T00:53:08.858283+00:00",
+  "generated_utc": "2026-10-09T01:23:06.136540+00:00",
+  "last_checked_utc": "2026-10-09T01:23:06.136540+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -116,11 +116,146 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "ROGAN BRIDGE RD, COPMANHURST",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "39 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Fri, 09 Oct 2026 01:19:34 GMT",
+        "description": "ROGAN BRIDGE RD, COPMANHURST 2460",
+        "council": "Clarence Valley",
+        "lat": -29.5887603749999,
+        "lng": 152.812744141,
+        "polys": [
+          [
+            [
+              152.80707,
+              -29.591310001
+            ],
+            [
+              152.80648,
+              -29.5907
+            ],
+            [
+              152.80636,
+              -29.5902600009999
+            ],
+            [
+              152.80665,
+              -29.58991
+            ],
+            [
+              152.806680001,
+              -29.5893100009999
+            ],
+            [
+              152.80702,
+              -29.5886800009999
+            ],
+            [
+              152.80757,
+              -29.5879400009999
+            ],
+            [
+              152.8082,
+              -29.587230001
+            ],
+            [
+              152.8087,
+              -29.586760001
+            ],
+            [
+              152.80942,
+              -29.586800001
+            ],
+            [
+              152.81016,
+              -29.58734
+            ],
+            [
+              152.81093,
+              -29.58795
+            ],
+            [
+              152.81164,
+              -29.5888199999999
+            ],
+            [
+              152.812079999,
+              -29.589260001
+            ],
+            [
+              152.81284,
+              -29.589690001
+            ],
+            [
+              152.81345,
+              -29.5902199999999
+            ],
+            [
+              152.81398,
+              -29.590920001
+            ],
+            [
+              152.81405,
+              -29.5915199999999
+            ],
+            [
+              152.81429,
+              -29.592160001
+            ],
+            [
+              152.8144,
+              -29.5927100009999
+            ],
+            [
+              152.81261,
+              -29.59264
+            ],
+            [
+              152.8109,
+              -29.5923599999999
+            ],
+            [
+              152.80874,
+              -29.5918800009999
+            ],
+            [
+              152.80715,
+              -29.5914300009999
+            ],
+            [
+              152.80707,
+              -29.591310001
+            ]
+          ]
+        ],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Hazardous Materials",
+        "alertLevel": "",
+        "status": "active",
+        "type": "HazMat",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-09T01:13:18+00:00",
+        "description": "MEEKATHARRA, SHIRE OF MEEKATHARRA",
+        "lat": -26.6005,
+        "lng": 118.496,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Fuel Leak",
         "alertLevel": "",
@@ -883,7 +1018,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-10-09T00:43:31+00:00",
+        "updated": "2026-10-09T01:12:01+00:00",
         "description": "GREENWAY",
         "lat": -35.4173,
         "lng": 149.0626,
@@ -898,7 +1033,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "Fire",
-        "updated": "2026-10-09T00:43:31+00:00",
+        "updated": "2026-10-09T01:12:01+00:00",
         "description": "GREENWAY",
         "lat": -35.4173,
         "lng": 149.0626,
@@ -912,8 +1047,8 @@
         "status": "active",
         "type": "HazMat",
         "size": "",
-        "agency": "Fire - Ambulance",
-        "updated": "2026-10-09T00:18:19+00:00",
+        "agency": "Ambulance",
+        "updated": "2026-10-08T23:49:33+00:00",
         "description": "URIARRA VILLAGE",
         "lat": -35.2952,
         "lng": 148.9286,
@@ -940,7 +1075,7 @@
       }
     ]
   },
-  "incident_count": 26,
+  "incident_count": 28,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
