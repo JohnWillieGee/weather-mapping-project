@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-10T01:53:10.301992+00:00",
-  "last_checked_utc": "2026-10-10T01:53:10.301992+00:00",
+  "generated_utc": "2026-10-10T02:23:05.152111+00:00",
+  "last_checked_utc": "2026-10-10T02:23:05.152111+00:00",
   "warning_count": 5,
   "warnings": [
     {
@@ -57,9 +57,9 @@
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Grass Fire",
-        "size": "54 ha",
+        "size": "100 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 10 Oct 2026 01:47:35 GMT",
+        "updated": "Sat, 10 Oct 2026 02:19:35 GMT",
         "description": "BUSBYS FLAT RD, BUSBYS FLAT 2469",
         "council": "Richmond Valley",
         "lat": -29.042947596,
@@ -758,7 +758,7 @@
         "type": "Bush Fire",
         "size": "81 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 10 Oct 2026 01:47:35 GMT",
+        "updated": "Sat, 10 Oct 2026 02:19:35 GMT",
         "description": "ROGAN BRIDGE RD, COPMANHURST 2460",
         "council": "Clarence Valley",
         "lat": -29.5760018939999,
@@ -961,17 +961,93 @@
     "tas": [],
     "wa": [
       {
+        "title": "Fuel Leak",
+        "alertLevel": "",
+        "status": "active",
+        "type": "HazMat",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-10T02:12:38+00:00",
+        "description": "SUCCESS, CITY OF COCKBURN",
+        "lat": -32.1513,
+        "lng": 115.8449,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Structure Fire",
         "alertLevel": "",
         "status": "active",
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-10T01:34:08+00:00",
-        "description": "MAYLANDS, CITY OF BAYSWATER",
-        "lat": -31.927,
-        "lng": 115.8911,
+        "updated": "2026-10-10T02:10:29+00:00",
+        "description": "BASSENDEAN, TOWN OF BASSENDEAN",
+        "lat": -31.9008,
+        "lng": 115.9431,
         "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-10T01:51:08+00:00",
+        "description": "ROEBUCK, SHIRE OF BROOME",
+        "lat": -17.824,
+        "lng": 122.632,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - ORD RIVER",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-10T01:41:26.4+00:00",
+        "description": "",
+        "lat": -17.8827,
+        "lng": 127.8301,
+        "polys": [
+          [
+            [
+              127.825551,
+              -17.863874
+            ],
+            [
+              127.828756,
+              -17.863515
+            ],
+            [
+              127.835592,
+              -17.885853
+            ],
+            [
+              127.832998,
+              -17.908146
+            ],
+            [
+              127.829842,
+              -17.90783
+            ],
+            [
+              127.832198,
+              -17.885898
+            ],
+            [
+              127.825551,
+              -17.863874
+            ]
+          ]
+        ],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1406,6 +1482,36 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - Unknown",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-10T02:07:16+00:00",
+        "description": "",
+        "lat": -13.0621,
+        "lng": 130.7101,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - BATCHELOR",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-10T01:53:28+00:00",
+        "description": "BATCHELOR",
+        "lat": -13.0467,
+        "lng": 131.0251,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Pioneer Drive, HERBERT, Beddington Road, HERBERT",
         "alertLevel": "Advice",
         "status": "active",
@@ -1693,7 +1799,7 @@
       }
     ]
   },
-  "incident_count": 27,
+  "incident_count": 32,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
