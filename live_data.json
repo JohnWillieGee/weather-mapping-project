@@ -1,52 +1,52 @@
 {
-  "generated_utc": "2026-10-10T10:53:04.570991+00:00",
-  "last_checked_utc": "2026-10-10T10:53:04.570991+00:00",
+  "generated_utc": "2026-10-10T11:23:05.162312+00:00",
+  "last_checked_utc": "2026-10-10T11:23:05.162312+00:00",
   "warning_count": 5,
   "warnings": [
     {
       "pid": "",
-      "title": "10/16:05 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "10/22:00 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 10 Oct 2026 05:05:12 GMT"
+      "issued": "Sat, 10 Oct 2026 11:00:19 GMT"
     },
     {
       "pid": "",
-      "title": "10/16:15 EDT Marine Wind Warning Summary for Victoria",
+      "title": "10/22:00 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 10 Oct 2026 05:15:21 GMT"
+      "issued": "Sat, 10 Oct 2026 11:00:18 GMT"
     },
     {
       "pid": "",
-      "title": "10/18:25 CDT Marine Wind Warning Summary for South Australia",
+      "title": "10/21:30 CDT Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sat, 10 Oct 2026 07:55:07 GMT"
+      "issued": "Sat, 10 Oct 2026 11:00:11 GMT"
     },
     {
       "pid": "",
-      "title": "10/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "10/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sat, 10 Oct 2026 05:01:11 GMT"
+      "issued": "Sat, 10 Oct 2026 11:01:29 GMT"
     },
     {
       "pid": "",
-      "title": "10/16:05 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "10/22:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 10 Oct 2026 05:05:11 GMT"
+      "issued": "Sat, 10 Oct 2026 11:00:14 GMT"
     }
   ],
   "fetch_errors": {},
@@ -59,7 +59,7 @@
         "type": "Grass Fire",
         "size": "119 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 10 Oct 2026 10:47:35 GMT",
+        "updated": "Sat, 10 Oct 2026 11:19:44 GMT",
         "description": "BUSBYS FLAT RD, BUSBYS FLAT 2469",
         "council": "Richmond Valley",
         "lat": -29.042947596,
@@ -1415,16 +1415,31 @@
     ],
     "nt": [
       {
-        "title": "Structure Fire - LYNDAVALE DR, LARAPINTA",
+        "title": "Grass and Scrub Fire - BEARD RD, HUMPTY DOO",
         "alertLevel": "Advice",
         "status": "active",
-        "type": "Structure Fire",
+        "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-10T09:21:53+00:00",
-        "description": "LYNDAVALE DR, LARAPINTA",
-        "lat": -23.6936,
-        "lng": 133.8344,
+        "updated": "2026-10-10T11:14:01+00:00",
+        "description": "BEARD RD, HUMPTY DOO",
+        "lat": -12.5654,
+        "lng": 131.1028,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - SOUTHPORT RD, TUMBLING WATERS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-10T10:55:10+00:00",
+        "description": "SOUTHPORT RD, TUMBLING WATERS",
+        "lat": -12.7448,
+        "lng": 130.9545,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -1716,7 +1731,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 29,
+  "incident_count": 30,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5344,31 +5359,10 @@
     }
   },
   "marine_warnings": {
-    "VIC": {
-      "state": "VIC",
-      "product": "IDV20600",
-      "issued_utc": "2026-10-10T05:15:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "West Coast: SA-VIC Border to Cape Otway",
-            "Central Coast: Cape Otway to Wilsons Promontory"
-          ],
-          "aac_codes": [
-            "VIC_MW001",
-            "VIC_MW002"
-          ],
-          "summary": "West Coast and Central Coast"
-        }
-      ]
-    },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-10T05:01:00Z",
+      "issued_utc": "2026-10-10T11:01:00Z",
       "overview": [
         "Strong Wind Warning for Saturday for Leeuwin Coast and Albany Coast",
         "Strong Wind Warning for Sunday for Geraldton Coast, Leeuwin Coast, Albany Coast and Esperance Coast"
@@ -5392,10 +5386,10 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-10T05:05:00Z",
+      "issued_utc": "2026-10-10T11:00:00Z",
       "overview": [
         "Gale Warning for Saturday for South East Coast and South West Coast",
-        "Strong Wind Warning for Saturday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Central West Coast, Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel and South West Lakes",
+        "Strong Wind Warning for Saturday for East of Flinders Island and Central West Coast",
         "Gale Warning for Sunday for South West Coast",
         "Strong Wind Warning for Sunday for Upper East Coast, Lower East Coast, South East Coast and Central West Coast"
       ],
@@ -5417,32 +5411,14 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Far North West Coast: Sandy Cape to Stanley",
-            "Central North Coast: Stanley to Northern Tip of Flinders Island",
-            "Banks Strait and Franklin Sound",
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
-            "Upper East Coast: St Helens Point to Wineglass Bay",
-            "Central West Coast: Low Rocky Point to Sandy Cape",
-            "Derwent Estuary",
-            "Frederick Henry Bay and Norfolk Bays",
-            "Storm Bay",
-            "Channel",
-            "South West Lakes"
+            "Central West Coast: Low Rocky Point to Sandy Cape"
           ],
           "aac_codes": [
-            "TAS_MW001",
-            "TAS_MW002",
-            "TAS_MW009",
             "TAS_MW003",
-            "TAS_MW004",
-            "TAS_MW008",
-            "TAS_MW012",
-            "TAS_MW013",
-            "TAS_MW014",
-            "TAS_MW011",
-            "TAS_MW015"
+            "TAS_MW008"
           ],
-          "summary": "Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel, South West Lakes, Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast and Central West Coast"
+          "summary": "East of Flinders Island and Central West Coast"
         }
       ]
     }
