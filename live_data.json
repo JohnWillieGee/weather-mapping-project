@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-11T08:23:04.049895+00:00",
-  "last_checked_utc": "2026-10-11T08:23:04.049895+00:00",
-  "warning_count": 14,
+  "generated_utc": "2026-10-11T08:53:07.800552+00:00",
+  "last_checked_utc": "2026-10-11T08:53:07.800552+00:00",
+  "warning_count": 15,
   "warnings": [
     {
       "pid": "",
@@ -185,37 +185,61 @@
     },
     {
       "pid": "IDS21035",
-      "title": "Severe Thunderstorm Warning - Adelaide Region for Onkaparinga, Yankalilla, Victor Harbour, Western Alexandrina",
+      "title": "Severe Thunderstorm Warning - Adelaide Region for Adelaide, Adelaide Hills, Onkaparinga",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 6:20 pm, a severe thunderstorm likely to produce damaging winds and large hailstones was detected near the Gulf waters off Port Willunga and the Gulf waters off Aldinga. This thunderstorm is moving towards the southeast. It is forecast to affect Mount Compass, Aldinga and Willunga by 6:50 pm and Goolwa, Port Elliot and Middleton by 7:20 pm.",
-      "issued": "2026-10-11T18:17:36+10:30",
+      "desc": "The Bureau of Meteorology warns that, at 7:00 pm, a severe thunderstorm likely to produce damaging winds and large hailstones was detected near Black Point on Yorke Peninsula. This thunderstorm is moving towards the southeast. It is forecast to affect Adelaide City, Glenelg and Henley Beach by 8:00 pm.",
+      "issued": "2026-10-11T18:59:11+10:30",
       "cancelled": false,
       "areas": [
         {
-          "aac": "SA_ME010",
-          "description": "Onkaparinga",
+          "aac": "SA_ME004",
+          "description": "Adelaide",
           "phase": "NEW"
         },
         {
+          "aac": "SA_ME005",
+          "description": "Adelaide Hills",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_ME010",
+          "description": "Onkaparinga",
+          "phase": "REN"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDS21035",
+      "title": "Severe Thunderstorm Warning - Adelaide Region for Yankalilla, Victor Harbour, Western Alexandrina",
+      "type": "thunderstorm",
+      "state": "SA",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-11T18:59:11+10:30",
+      "cancelled": true,
+      "areas": [
+        {
           "aac": "SA_ME011",
           "description": "Yankalilla",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "SA_ME012",
           "description": "Victor Harbour",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "SA_ME013",
           "description": "Western Alexandrina",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDD21033",
@@ -290,7 +314,7 @@
         "type": "Bush Fire",
         "size": "19 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 11 Oct 2026 08:19:35 GMT",
+        "updated": "Sun, 11 Oct 2026 08:47:35 GMT",
         "description": "BRIGGENSHAWS RD, VALERY 2454",
         "council": "Bellingen",
         "lat": -30.405499,
@@ -453,7 +477,7 @@
         "type": "Grass Fire",
         "size": "119 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 11 Oct 2026 08:19:35 GMT",
+        "updated": "Sun, 11 Oct 2026 08:47:35 GMT",
         "description": "BUSBYS FLAT RD, BUSBYS FLAT 2469",
         "council": "Richmond Valley",
         "lat": -29.042947596,
@@ -1172,7 +1196,7 @@
         "type": "Bush Fire",
         "size": "27 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sun, 11 Oct 2026 08:19:35 GMT",
+        "updated": "Sun, 11 Oct 2026 08:47:35 GMT",
         "description": "CHAELUNDI RD, DUNDURRABIN 2453",
         "council": "Clarence Valley",
         "lat": -30.168356127,
@@ -1607,7 +1631,7 @@
         "type": "Bush Fire",
         "size": "4 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sun, 11 Oct 2026 08:19:35 GMT",
+        "updated": "Sun, 11 Oct 2026 08:47:35 GMT",
         "description": "MARENGO STATION, MARENGO RD, MARENGO NSW 2453",
         "council": "Clarence Valley",
         "lat": -30.1909119059999,
@@ -1660,13 +1684,29 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
+        "title": "MEBUL RD, BERYL",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Sun, 11 Oct 2026 08:47:35 GMT",
+        "description": "MEBUL RD, BERYL 2852",
+        "council": "Mid-Western",
+        "lat": -32.3635669999999,
+        "lng": 149.415319,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "OIL RIG RD, GIBBERAGEE",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "45 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sun, 11 Oct 2026 08:19:35 GMT",
+        "updated": "Sun, 11 Oct 2026 08:47:35 GMT",
         "description": "OIL RIG RD, GIBBERAGEE 2469",
         "council": "Richmond Valley",
         "lat": -29.323229,
@@ -1774,47 +1814,113 @@
     "vic": [],
     "qld": [
       {
-        "title": "STAY PREPARED - Deepwater and Rules Beach - fire as at 11:34am Sunday, 11 October 2026",
-        "alertLevel": "Watch and Act",
+        "title": "STAY INFORMED - Deepwater, Baffle Creek and Rules Beach - fire as at 6:22pm Sunday, 11 October 2026",
+        "alertLevel": "Advice",
         "status": "",
         "type": "Bush Fire",
         "size": "",
         "agency": "QFD",
         "updated": "",
-        "description": "Between Fernfield Road, Fingerfield Road and Dale Drive",
-        "lat": -24.450312086769518,
-        "lng": 151.98777054369373,
+        "description": "Deepwater, Baffle Creek and Rules Beach",
+        "lat": -24.477515074609094,
+        "lng": 151.98247838677506,
         "state": "QLD",
         "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
         "polys": [
           [
             [
-              152.019184,
-              -24.46386
+              151.997774,
+              -24.412522
             ],
             [
-              151.998442,
-              -24.42502
+              151.98702,
+              -24.417606
             ],
             [
-              151.977588,
-              -24.4263
+              151.986958,
+              -24.417694
             ],
             [
-              151.967976,
-              -24.443495
+              151.98188,
+              -24.416393
             ],
             [
-              151.961849,
-              -24.467185
+              151.968527,
+              -24.413242
             ],
             [
-              151.995182,
-              -24.471636
+              151.96639,
+              -24.414253
             ],
             [
-              152.019184,
-              -24.46386
+              151.923819,
+              -24.497247
+            ],
+            [
+              151.929264,
+              -24.510164
+            ],
+            [
+              151.960336,
+              -24.51812
+            ],
+            [
+              151.972664,
+              -24.517635
+            ],
+            [
+              152.002117,
+              -24.517792
+            ],
+            [
+              152.028413,
+              -24.511727
+            ],
+            [
+              152.03825,
+              -24.497803
+            ],
+            [
+              151.997774,
+              -24.412522
+            ]
+          ]
+        ]
+      },
+      {
+        "title": "STAY INFORMED - The Old Telegraph Track (Cape York) - fire as at 5:11pm Sunday, 11 October 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "The Old Telegraph Track north of Bramwell Junction",
+        "lat": -11.870178186446676,
+        "lng": 142.50874134357255,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
+        "polys": [
+          [
+            [
+              142.474952,
+              -11.80808
+            ],
+            [
+              142.496705,
+              -11.937631
+            ],
+            [
+              142.548291,
+              -11.936415
+            ],
+            [
+              142.516594,
+              -11.800172
+            ],
+            [
+              142.474952,
+              -11.80808
             ]
           ]
         ]
@@ -1860,118 +1966,25 @@
             ]
           ]
         ]
-      },
-      {
-        "title": "STAY INFORMED - Baffle Creek, Deepwater and Rules Beach - fire as at 11:44am Sunday, 11 October 2026",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "QFD",
-        "updated": "",
-        "description": "Between Mitchell Creek Road and Baffle Creek Transfer Station",
-        "lat": -24.493108966086858,
-        "lng": 151.98250330095846,
-        "state": "QLD",
-        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
-        "polys": [
-          [
-            [
-              152.019513,
-              -24.463841
-            ],
-            [
-              152.015698,
-              -24.466631
-            ],
-            [
-              152.009648,
-              -24.468503
-            ],
-            [
-              151.99578,
-              -24.472794
-            ],
-            [
-              151.961896,
-              -24.468315
-            ],
-            [
-              151.946958,
-              -24.464489
-            ],
-            [
-              151.923819,
-              -24.497247
-            ],
-            [
-              151.929264,
-              -24.510164
-            ],
-            [
-              151.960336,
-              -24.51812
-            ],
-            [
-              151.968455,
-              -24.514284
-            ],
-            [
-              152.028413,
-              -24.511727
-            ],
-            [
-              152.03825,
-              -24.497803
-            ],
-            [
-              152.019513,
-              -24.463841
-            ]
-          ]
-        ]
-      },
-      {
-        "title": "STAY INFORMED - The Old Telegraph Track (Cape York) - fire as at 5:11pm Sunday, 11 October 2026",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "QFD",
-        "updated": "",
-        "description": "The Old Telegraph Track north of Bramwell Junction",
-        "lat": -11.870178186446676,
-        "lng": 142.50874134357255,
-        "state": "QLD",
-        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
-        "polys": [
-          [
-            [
-              142.474952,
-              -11.80808
-            ],
-            [
-              142.496705,
-              -11.937631
-            ],
-            [
-              142.548291,
-              -11.936415
-            ],
-            [
-              142.516594,
-              -11.800172
-            ],
-            [
-              142.474952,
-              -11.80808
-            ]
-          ]
-        ]
       }
     ],
     "tas": [],
     "wa": [
+      {
+        "title": "Report of Smoke",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-11T08:35:16+00:00",
+        "description": "MARDELLA, SHIRE OF SERPENTINE-JARRAHDALE",
+        "lat": -32.3187,
+        "lng": 115.935,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - KUPARTIYA, BOHEMIA DOWNS AND MUELLER RANGES",
         "alertLevel": "Advice",
@@ -2135,21 +2148,6 @@
         "description": "NEWMAN, SHIRE OF EAST PILBARA",
         "lat": -23.4103,
         "lng": 119.7975,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-11T07:04:29+00:00",
-        "description": "BEAUFORT RIVER, SHIRE OF WOODANILLING",
-        "lat": -33.6277,
-        "lng": 117.0259,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -2546,13 +2544,43 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - STUART HWY, BEES CREEK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-11T08:49:31+00:00",
+        "description": "STUART HWY, BEES CREEK",
+        "lat": -12.5734,
+        "lng": 131.0722,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - COX PENINSULA RD, SOUTHPORT",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-11T08:37:11+00:00",
+        "description": "COX PENINSULA RD, SOUTHPORT",
+        "lat": -12.7427,
+        "lng": 130.9647,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - GIRRAWEEN RD, McMINNS LAGOON",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-11T07:45:51+00:00",
+        "updated": "2026-10-11T08:28:19+00:00",
         "description": "GIRRAWEEN RD, McMINNS LAGOON",
         "lat": -12.5255,
         "lng": 131.0756,
@@ -3011,10 +3039,40 @@
         "polys": [],
         "state": "SA",
         "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
+      {
+        "title": "STRUCTURE FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-11T00:35:00+00:00",
+        "description": "EIGHT MILE CREEK",
+        "lat": -38.0398,
+        "lng": 140.8341,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
+      {
+        "title": "Grass fire",
+        "alertLevel": "",
+        "status": "safe",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-11T00:27:00+00:00",
+        "description": "MOCULTA",
+        "lat": -34.4946,
+        "lng": 139.121,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
       }
     ]
   },
-  "incident_count": 44,
+  "incident_count": 48,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
