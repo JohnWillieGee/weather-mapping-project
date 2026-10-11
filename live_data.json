@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-11T03:23:02.620352+00:00",
-  "last_checked_utc": "2026-10-11T03:23:02.620352+00:00",
+  "generated_utc": "2026-10-11T03:53:04.661427+00:00",
+  "last_checked_utc": "2026-10-11T03:53:04.661427+00:00",
   "warning_count": 8,
   "warnings": [
     {
@@ -98,12 +98,12 @@
     },
     {
       "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for North West Pastoral, North East Pastoral, Eastern Eyre Peninsula, Flinders",
+      "title": "Severe Thunderstorm Warning for North West Pastoral, North East Pastoral, Eastern Eyre Peninsula, Flinders, Mid North, Yorke Peninsula",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Port Augusta and Roxby Downs. 98 km/h wind gust was recorded at Woomera Airport at 12:18 pm",
-      "issued": "2026-10-11T13:29:02+10:30",
+      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Whyalla, Port Augusta, Maitland, Hawker, Port Wakefield, Kadina, Melrose, Parachilna, Quorn and Ardrossan. 98 km/h wind gust was recorded at Woomera Airport at 12:18 pm",
+      "issued": "2026-10-11T14:06:29+10:30",
       "cancelled": false,
       "areas": [
         {
@@ -114,7 +114,7 @@
         {
           "aac": "SA_PW014",
           "description": "North East Pastoral",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "SA_PW011",
@@ -125,6 +125,16 @@
           "aac": "SA_PW009",
           "description": "Flinders",
           "phase": "REN"
+        },
+        {
+          "aac": "SA_PW008",
+          "description": "Mid North",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW002",
+          "description": "Yorke Peninsula",
+          "phase": "NEW"
         }
       ],
       "severityCode": "STD",
@@ -141,7 +151,7 @@
         "type": "Grass Fire",
         "size": "119 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 11 Oct 2026 03:19:35 GMT",
+        "updated": "Sun, 11 Oct 2026 03:47:35 GMT",
         "description": "BUSBYS FLAT RD, BUSBYS FLAT 2469",
         "council": "Richmond Valley",
         "lat": -29.042947596,
@@ -860,7 +870,7 @@
         "type": "Bush Fire",
         "size": "34 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sun, 11 Oct 2026 03:19:35 GMT",
+        "updated": "Sun, 11 Oct 2026 03:47:35 GMT",
         "description": "CHAELUNDI RD, DUNDURRABIN 2453",
         "council": "Clarence Valley",
         "lat": -30.168356127,
@@ -1091,7 +1101,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sun, 11 Oct 2026 03:19:35 GMT",
+        "updated": "Sun, 11 Oct 2026 03:47:35 GMT",
         "description": "Industrial Access Rd, Warren, NSW 2824",
         "council": "Warren",
         "lat": -31.694832,
@@ -1107,7 +1117,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sun, 11 Oct 2026 03:19:35 GMT",
+        "updated": "Sun, 11 Oct 2026 03:47:35 GMT",
         "description": "Rosie Rd, Raymond Terrace, NSW 2324",
         "council": "Port Stephens",
         "lat": -32.7408349999999,
@@ -1314,6 +1324,21 @@
     ],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-11T03:25:16+00:00",
+        "description": "COLLIE, SHIRE OF COLLIE",
+        "lat": -33.3656,
+        "lng": 116.1542,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1858,31 +1883,16 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - PIONEER DR, HUMPTY DOO",
+        "title": "Structure Fire - PIONEER DR, HUMPTY DOO",
         "alertLevel": "Advice",
         "status": "active",
-        "type": "Grass Fire",
+        "type": "Structure Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-11T03:17:13+00:00",
+        "updated": "2026-10-11T03:31:35+00:00",
         "description": "PIONEER DR, HUMPTY DOO",
         "lat": -12.5548,
-        "lng": 131.1678,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - Unknown",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-11T03:13:30+00:00",
-        "description": "",
-        "lat": -12.5205,
-        "lng": 131.0753,
+        "lng": 131.1691,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
