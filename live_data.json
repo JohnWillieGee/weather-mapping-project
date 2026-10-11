@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-11T08:53:07.800552+00:00",
-  "last_checked_utc": "2026-10-11T08:53:07.800552+00:00",
+  "generated_utc": "2026-10-11T09:23:06.665716+00:00",
+  "last_checked_utc": "2026-10-11T09:23:06.665716+00:00",
   "warning_count": 15,
   "warnings": [
     {
@@ -106,18 +106,82 @@
       "hazardPhase": "REN"
     },
     {
-      "pid": "IDQ21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for Southeast Coast",
+      "pid": "IDS21033",
+      "title": "Severe Thunderstorm Warning for North East Pastoral, Flinders, Mid North, Yorke Peninsula, Mount Lofty Ranges, Riverland, Murraylands, Upper South East, Adelaide Metropolitan",
       "type": "thunderstorm",
-      "state": "QLD",
+      "state": "SA",
       "link": "",
-      "desc": "This warning is now cancelled.",
-      "issued": "2026-10-11T14:29:01+10:00",
+      "desc": "VERY DANGEROUS THUNDERSTORMS are likely to produce large, possibly giant hailstones and damaging winds over the next several hours in parts of the Adelaide Metropolitan, Mount Lofty Ranges, Murraylands and Upper South East districts. Locations which may be affected include Adelaide. Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding over the next several hours in the Adelaide Metropolitan, Mount Lofty Ranges, Mid North and parts of the Ri",
+      "issued": "2026-10-11T19:50:58+10:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "SA_PW014",
+          "description": "North East Pastoral",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW009",
+          "description": "Flinders",
+          "phase": "UPD"
+        },
+        {
+          "aac": "SA_PW008",
+          "description": "Mid North",
+          "phase": "UPD"
+        },
+        {
+          "aac": "SA_PW002",
+          "description": "Yorke Peninsula",
+          "phase": "UPD"
+        },
+        {
+          "aac": "SA_PW015",
+          "description": "Mount Lofty Ranges",
+          "phase": "UPD"
+        },
+        {
+          "aac": "SA_PW006",
+          "description": "Riverland",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW007",
+          "description": "Murraylands",
+          "phase": "UPD"
+        },
+        {
+          "aac": "SA_PW004",
+          "description": "Upper South East",
+          "phase": "UPD"
+        },
+        {
+          "aac": "SA_PW001",
+          "description": "Adelaide Metropolitan",
+          "phase": "UPD"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDS21033",
+      "title": "Severe Thunderstorm Warning for Eastern Eyre Peninsula, North West Pastoral",
+      "type": "thunderstorm",
+      "state": "SA",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-11T19:50:58+10:30",
       "cancelled": true,
       "areas": [
         {
-          "aac": "QLD_PW015",
-          "description": "Southeast Coast",
+          "aac": "SA_PW011",
+          "description": "Eastern Eyre Peninsula",
+          "phase": "CAN"
+        },
+        {
+          "aac": "SA_PW013",
+          "description": "North West Pastoral",
           "phase": "CAN"
         }
       ],
@@ -125,72 +189,13 @@
       "hazardPhase": "CAN"
     },
     {
-      "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for North West Pastoral, Eastern Eyre Peninsula, Flinders, Mid North, Yorke Peninsula, Mount Lofty Ranges, Murraylands, Upper South East, Adelaide Metropolitan",
-      "type": "thunderstorm",
-      "state": "SA",
-      "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Adelaide, Whyalla, Port Augusta, Port Pirie, Clare, Maitland, Murray Bridge, Port Wakefield, Gawler, Victor Harbor, Meningie and Jamestown. 98 km/h wind gust was recorded at Woomera Airport at 12:18 pm.",
-      "issued": "2026-10-11T18:51:05+10:30",
-      "cancelled": false,
-      "areas": [
-        {
-          "aac": "SA_PW013",
-          "description": "North West Pastoral",
-          "phase": "REN"
-        },
-        {
-          "aac": "SA_PW011",
-          "description": "Eastern Eyre Peninsula",
-          "phase": "REN"
-        },
-        {
-          "aac": "SA_PW009",
-          "description": "Flinders",
-          "phase": "REN"
-        },
-        {
-          "aac": "SA_PW008",
-          "description": "Mid North",
-          "phase": "REN"
-        },
-        {
-          "aac": "SA_PW002",
-          "description": "Yorke Peninsula",
-          "phase": "REN"
-        },
-        {
-          "aac": "SA_PW015",
-          "description": "Mount Lofty Ranges",
-          "phase": "REN"
-        },
-        {
-          "aac": "SA_PW007",
-          "description": "Murraylands",
-          "phase": "REN"
-        },
-        {
-          "aac": "SA_PW004",
-          "description": "Upper South East",
-          "phase": "REN"
-        },
-        {
-          "aac": "SA_PW001",
-          "description": "Adelaide Metropolitan",
-          "phase": "REN"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
-    },
-    {
       "pid": "IDS21035",
-      "title": "Severe Thunderstorm Warning - Adelaide Region for Adelaide, Adelaide Hills, Onkaparinga",
+      "title": "Severe Thunderstorm Warning - Adelaide Region for Adelaide, Adelaide Hills, Playford, Mount Barker, Onkaparinga, Western Alexandrina",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 7:00 pm, a severe thunderstorm likely to produce damaging winds and large hailstones was detected near Black Point on Yorke Peninsula. This thunderstorm is moving towards the southeast. It is forecast to affect Adelaide City, Glenelg and Henley Beach by 8:00 pm.",
-      "issued": "2026-10-11T18:59:11+10:30",
+      "desc": "The Bureau of Meteorology warns that, at 7:45 pm, a VERY DANGEROUS THUNDERSTORM likely to produce large, possibly giant hailstones was detected near the Gulf waters off Brighton. This thunderstorm is moving towards the southeast. It is forecast to affect Glenelg, Strathalbyn and Meadows by 8:15 pm. Another severe thunderstorm likely to produce damaging winds was detected near Salisbury and Parafield. This thunderstorm is moving towards the east. It is forecast to affect Tea Tree Gully, Birdwood ",
+      "issued": "2026-10-11T19:44:10+10:30",
       "cancelled": false,
       "areas": [
         {
@@ -204,9 +209,24 @@
           "phase": "NEW"
         },
         {
+          "aac": "SA_ME006",
+          "description": "Playford",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_ME009",
+          "description": "Mount Barker",
+          "phase": "NEW"
+        },
+        {
           "aac": "SA_ME010",
           "description": "Onkaparinga",
-          "phase": "REN"
+          "phase": "UPD"
+        },
+        {
+          "aac": "SA_ME013",
+          "description": "Western Alexandrina",
+          "phase": "UPD"
         }
       ],
       "severityCode": "STD",
@@ -214,12 +234,12 @@
     },
     {
       "pid": "IDS21035",
-      "title": "Severe Thunderstorm Warning - Adelaide Region for Yankalilla, Victor Harbour, Western Alexandrina",
+      "title": "Severe Thunderstorm Warning - Adelaide Region for Yankalilla, Victor Harbour",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
       "desc": "",
-      "issued": "2026-10-11T18:59:11+10:30",
+      "issued": "2026-10-11T19:44:10+10:30",
       "cancelled": true,
       "areas": [
         {
@@ -231,11 +251,6 @@
           "aac": "SA_ME012",
           "description": "Victor Harbour",
           "phase": "CAN"
-        },
-        {
-          "aac": "SA_ME013",
-          "description": "Western Alexandrina",
-          "phase": "CAN"
         }
       ],
       "severityCode": "CAN",
@@ -243,41 +258,36 @@
     },
     {
       "pid": "IDD21033",
+      "title": "Severe Thunderstorm Warning for Tanami",
+      "type": "thunderstorm",
+      "state": "NT",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area about the southeast Tanami over the next several hours.",
+      "issued": "2026-10-11T18:28:30+09:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NT_PW009",
+          "description": "Tanami",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
+    },
+    {
+      "pid": "IDD21033",
       "title": "Severe Thunderstorm Warning for Simpson",
       "type": "thunderstorm",
       "state": "NT",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Alice Springs. Severe thunderstorms are no longer occurring in the Lasseter and Tanami districts and the warning for these districts is CANCELLED.",
-      "issued": "2026-10-11T17:30:28+09:30",
-      "cancelled": false,
+      "desc": "",
+      "issued": "2026-10-11T18:28:30+09:30",
+      "cancelled": true,
       "areas": [
         {
           "aac": "NT_PW007",
           "description": "Simpson",
-          "phase": "REN"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
-    },
-    {
-      "pid": "IDD21033",
-      "title": "Severe Thunderstorm Warning for Lasseter, Tanami",
-      "type": "thunderstorm",
-      "state": "NT",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-11T17:30:28+09:30",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "NT_PW008",
-          "description": "Lasseter",
-          "phase": "CAN"
-        },
-        {
-          "aac": "NT_PW009",
-          "description": "Tanami",
           "phase": "CAN"
         }
       ],
@@ -314,7 +324,7 @@
         "type": "Bush Fire",
         "size": "19 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 11 Oct 2026 08:47:35 GMT",
+        "updated": "Sun, 11 Oct 2026 09:19:36 GMT",
         "description": "BRIGGENSHAWS RD, VALERY 2454",
         "council": "Bellingen",
         "lat": -30.405499,
@@ -475,9 +485,9 @@
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Grass Fire",
-        "size": "119 ha",
+        "size": "203 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 11 Oct 2026 08:47:35 GMT",
+        "updated": "Sun, 11 Oct 2026 09:19:36 GMT",
         "description": "BUSBYS FLAT RD, BUSBYS FLAT 2469",
         "council": "Richmond Valley",
         "lat": -29.042947596,
@@ -505,10 +515,6 @@
               -29.038460001
             ],
             [
-              152.82633,
-              -29.038310001
-            ],
-            [
               152.82665,
               -29.03811
             ],
@@ -533,10 +539,6 @@
               -29.0383600009999
             ],
             [
-              152.82825,
-              -29.038660001
-            ],
-            [
               152.82855,
               -29.038750001
             ],
@@ -555,10 +557,6 @@
             [
               152.829449999,
               -29.038940001
-            ],
-            [
-              152.8296,
-              -29.0388600009999
             ],
             [
               152.82967,
@@ -585,20 +583,12 @@
               -29.0386100009999
             ],
             [
-              152.83179,
-              -29.0384100009999
-            ],
-            [
               152.83184,
               -29.0382500009999
             ],
             [
               152.83179,
               -29.038190001
-            ],
-            [
-              152.83182,
-              -29.038030001
             ],
             [
               152.83179,
@@ -610,15 +600,7 @@
             ],
             [
               152.83181,
-              -29.03737
-            ],
-            [
-              152.83181,
               -29.036950001
-            ],
-            [
-              152.83188,
-              -29.03648
             ],
             [
               152.83188,
@@ -633,256 +615,332 @@
               -29.035350001
             ],
             [
-              152.8318,
-              -29.0347400009999
-            ],
-            [
-              152.83196,
-              -29.034590001
+              152.83178,
+              -29.0347800009999
             ],
             [
               152.83213,
               -29.034320001
             ],
             [
-              152.83223,
-              -29.034320001
+              152.83221,
+              -29.0343100009999
             ],
             [
-              152.83236,
-              -29.03462
-            ],
-            [
-              152.832480001,
-              -29.035240001
-            ],
-            [
-              152.83256,
-              -29.035380001
+              152.832250001,
+              -29.034370001
             ],
             [
               152.83263,
-              -29.035780001
+              -29.034320001
             ],
             [
-              152.8328,
-              -29.036330001
+              152.83315,
+              -29.034590001
             ],
             [
-              152.83287,
-              -29.036890001
+              152.83335,
+              -29.0347800009999
             ],
             [
-              152.83287,
-              -29.037160001
+              152.83369,
+              -29.0347800009999
             ],
             [
-              152.83277,
+              152.83379,
+              -29.034730001
+            ],
+            [
+              152.8339,
+              -29.0344200009999
+            ],
+            [
+              152.83428,
+              -29.0339900009999
+            ],
+            [
+              152.83443,
+              -29.033710001
+            ],
+            [
+              152.83459,
+              -29.0335900009999
+            ],
+            [
+              152.83482,
+              -29.0337000009999
+            ],
+            [
+              152.8355,
+              -29.033850001
+            ],
+            [
+              152.83693,
+              -29.034030001
+            ],
+            [
+              152.83792,
+              -29.034030001
+            ],
+            [
+              152.83882,
+              -29.0339099999999
+            ],
+            [
+              152.8402,
+              -29.03388
+            ],
+            [
+              152.84092,
+              -29.034360001
+            ],
+            [
+              152.84141,
+              -29.0351200009999
+            ],
+            [
+              152.84141,
+              -29.03531
+            ],
+            [
+              152.84101,
+              -29.03574
+            ],
+            [
+              152.84071,
+              -29.036440001
+            ],
+            [
+              152.8405,
+              -29.0367400009999
+            ],
+            [
+              152.84023,
+              -29.037360001
+            ],
+            [
+              152.8402,
+              -29.0376600009999
+            ],
+            [
+              152.84005,
+              -29.037680001
+            ],
+            [
+              152.839280001,
+              -29.0373500009999
+            ],
+            [
+              152.8389,
+              -29.0373300009999
+            ],
+            [
+              152.83862,
               -29.037380001
             ],
             [
-              152.83273,
-              -29.037740001
+              152.83852,
+              -29.0375300009999
             ],
             [
-              152.83259,
-              -29.0380200009999
+              152.83862,
+              -29.0376499999999
             ],
             [
-              152.83277,
-              -29.0381599999999
+              152.83858,
+              -29.0378700009999
             ],
             [
-              152.83306,
-              -29.0385200009999
+              152.83837,
+              -29.037950001
             ],
             [
-              152.8332,
-              -29.0386100009999
+              152.83819,
+              -29.038220001
             ],
             [
-              152.83336,
-              -29.0386800009999
+              152.83817,
+              -29.038400001
             ],
             [
-              152.833600001,
-              -29.038690001
+              152.83804,
+              -29.03862
             ],
             [
-              152.83427,
-              -29.038910001
+              152.83804,
+              -29.0388800009999
             ],
             [
-              152.83437,
-              -29.039010001
+              152.83813,
+              -29.039090001
             ],
             [
-              152.83448,
-              -29.0390600009999
+              152.83822,
+              -29.039200001
             ],
             [
-              152.83471,
-              -29.039320001
+              152.8384,
+              -29.039270001
             ],
             [
-              152.83469,
-              -29.0394400009999
+              152.8389,
+              -29.0393100009999
             ],
             [
-              152.83477,
-              -29.039680001
+              152.83904,
+              -29.0392400009999
             ],
             [
-              152.83474,
-              -29.039900001
+              152.8393,
+              -29.0388600009999
             ],
             [
-              152.83464,
-              -29.04007
+              152.83925,
+              -29.038660001
             ],
             [
-              152.8345,
-              -29.0401900009999
+              152.83892,
+              -29.038120001
             ],
             [
-              152.83446,
-              -29.040310001
+              152.8389,
+              -29.037850001
             ],
             [
-              152.83401,
-              -29.04063
+              152.83896,
+              -29.0376900009999
             ],
             [
-              152.83364,
-              -29.04081
+              152.83909,
+              -29.037630001
             ],
             [
-              152.833320001,
-              -29.041100001
+              152.83937,
+              -29.0376499999999
             ],
             [
-              152.83312,
-              -29.0411800009999
+              152.83987,
+              -29.038040001
             ],
             [
-              152.8329,
-              -29.041340001
+              152.840069999,
+              -29.038100001
             ],
             [
-              152.832709999,
-              -29.04175
+              152.8399,
+              -29.0388
             ],
             [
-              152.83268,
-              -29.042220001
+              152.83968,
+              -29.039090001
             ],
             [
-              152.83247,
-              -29.042580001
+              152.83944,
+              -29.039660001
             ],
             [
-              152.83249,
-              -29.042650001
+              152.8392,
+              -29.039990001
             ],
             [
-              152.83201,
-              -29.042920001
+              152.83913,
+              -29.04043
             ],
             [
-              152.83166,
-              -29.043190001
+              152.83842,
+              -29.041840001
             ],
             [
-              152.83142,
-              -29.043440001
+              152.8384,
+              -29.04203
             ],
             [
-              152.83119,
-              -29.04356
+              152.837980001,
+              -29.0431
             ],
             [
-              152.83089,
-              -29.0436599999999
+              152.83764,
+              -29.0436300009999
             ],
             [
-              152.83064,
-              -29.0438600009999
+              152.83753,
+              -29.04399
             ],
             [
-              152.83048,
-              -29.044320001
+              152.83723,
+              -29.044110001
             ],
             [
-              152.83076,
-              -29.0445100009999
+              152.83661,
+              -29.0441900009999
             ],
             [
-              152.83083,
-              -29.044610001
+              152.8361,
+              -29.0448500009999
             ],
             [
-              152.83131,
-              -29.044930001
+              152.83606,
+              -29.0450300009999
             ],
             [
-              152.83127,
-              -29.045110001
+              152.83652,
+              -29.04588
             ],
             [
-              152.83094,
-              -29.045130001
+              152.83645,
+              -29.046050001
+            ],
+            [
+              152.8362,
+              -29.046190001
+            ],
+            [
+              152.835689999,
+              -29.0462000009999
+            ],
+            [
+              152.834160001,
+              -29.0464200009999
+            ],
+            [
+              152.83216,
+              -29.0464700009999
+            ],
+            [
+              152.83174,
+              -29.0464200009999
+            ],
+            [
+              152.83151,
+              -29.0463599999999
+            ],
+            [
+              152.83111,
+              -29.0460400009999
+            ],
+            [
+              152.830900001,
+              -29.0453000009999
+            ],
+            [
+              152.83077,
+              -29.045100001
             ],
             [
               152.83056,
               -29.045080001
             ],
             [
-              152.83075,
-              -29.04552
-            ],
-            [
-              152.83092,
-              -29.04621
-            ],
-            [
               152.83105,
               -29.046530001
-            ],
-            [
-              152.83107,
-              -29.04669
-            ],
-            [
-              152.83103,
-              -29.046790001
             ],
             [
               152.83104,
               -29.047
             ],
             [
-              152.83086,
-              -29.047180001
-            ],
-            [
-              152.83077,
-              -29.0471900009999
-            ],
-            [
-              152.83065,
-              -29.047260001
-            ],
-            [
-              152.83061,
-              -29.047350001
-            ],
-            [
               152.83049,
               -29.0474100009999
-            ],
-            [
-              152.83039,
-              -29.04743
             ],
             [
               152.83032,
@@ -913,24 +971,12 @@
               -29.0491099999999
             ],
             [
-              152.82873,
-              -29.0493000009999
-            ],
-            [
               152.82878,
               -29.049490001
             ],
             [
               152.828710001,
-              -29.04975
-            ],
-            [
-              152.828710001,
               -29.0499
-            ],
-            [
-              152.82813,
-              -29.050200001
             ],
             [
               152.828,
@@ -949,28 +995,12 @@
               -29.05031
             ],
             [
-              152.8261,
-              -29.050280001
-            ],
-            [
-              152.825909999,
-              -29.0502099999999
-            ],
-            [
               152.82567,
               -29.050200001
             ],
             [
-              152.82544,
-              -29.0503400009999
-            ],
-            [
               152.82508,
               -29.05049
-            ],
-            [
-              152.82479,
-              -29.050570001
             ],
             [
               152.82448,
@@ -985,16 +1015,8 @@
               -29.0506399999999
             ],
             [
-              152.82406,
-              -29.050390001
-            ],
-            [
               152.82399,
               -29.050060001
-            ],
-            [
-              152.82387,
-              -29.050200001
             ],
             [
               152.8237,
@@ -1013,40 +1035,12 @@
               -29.049940001
             ],
             [
-              152.82259,
-              -29.0498900009999
-            ],
-            [
-              152.82241,
-              -29.049720001
-            ],
-            [
               152.82224,
               -29.0496699999999
             ],
             [
-              152.82218,
-              -29.0496000009999
-            ],
-            [
-              152.82206,
-              -29.0492899999999
-            ],
-            [
               152.821910001,
               -29.049090001
-            ],
-            [
-              152.82159,
-              -29.04883
-            ],
-            [
-              152.82138,
-              -29.0486100009999
-            ],
-            [
-              152.82115,
-              -29.0484499999999
             ],
             [
               152.821019999,
@@ -1093,26 +1087,6 @@
               -29.045460001
             ],
             [
-              152.81966,
-              -29.045220001
-            ],
-            [
-              152.81963,
-              -29.0451600009999
-            ],
-            [
-              152.81965,
-              -29.044970001
-            ],
-            [
-              152.81961,
-              -29.0448700009999
-            ],
-            [
-              152.81961,
-              -29.044650001
-            ],
-            [
               152.81964,
               -29.044540001
             ],
@@ -1141,22 +1115,6 @@
               -29.0434500009999
             ],
             [
-              152.822,
-              -29.043370001
-            ],
-            [
-              152.82215,
-              -29.043260001
-            ],
-            [
-              152.82257,
-              -29.0431
-            ],
-            [
-              152.822700001,
-              -29.0429999999999
-            ],
-            [
               152.82312,
               -29.0428000009999
             ],
@@ -1167,10 +1125,6 @@
             [
               152.82369,
               -29.042320001
-            ],
-            [
-              152.82401,
-              -29.042000001
             ],
             [
               152.824890001,
@@ -1196,7 +1150,7 @@
         "type": "Bush Fire",
         "size": "27 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sun, 11 Oct 2026 08:47:35 GMT",
+        "updated": "Sun, 11 Oct 2026 09:19:36 GMT",
         "description": "CHAELUNDI RD, DUNDURRABIN 2453",
         "council": "Clarence Valley",
         "lat": -30.168356127,
@@ -1631,7 +1585,7 @@
         "type": "Bush Fire",
         "size": "4 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sun, 11 Oct 2026 08:47:35 GMT",
+        "updated": "Sun, 11 Oct 2026 09:19:36 GMT",
         "description": "MARENGO STATION, MARENGO RD, MARENGO NSW 2453",
         "council": "Clarence Valley",
         "lat": -30.1909119059999,
@@ -1690,7 +1644,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 11 Oct 2026 08:47:35 GMT",
+        "updated": "Sun, 11 Oct 2026 09:19:36 GMT",
         "description": "MEBUL RD, BERYL 2852",
         "council": "Mid-Western",
         "lat": -32.3635669999999,
@@ -1706,7 +1660,7 @@
         "type": "Bush Fire",
         "size": "45 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sun, 11 Oct 2026 08:47:35 GMT",
+        "updated": "Sun, 11 Oct 2026 09:19:36 GMT",
         "description": "OIL RIG RD, GIBBERAGEE 2469",
         "council": "Richmond Valley",
         "lat": -29.323229,
@@ -1814,80 +1768,6 @@
     "vic": [],
     "qld": [
       {
-        "title": "STAY INFORMED - Deepwater, Baffle Creek and Rules Beach - fire as at 6:22pm Sunday, 11 October 2026",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "QFD",
-        "updated": "",
-        "description": "Deepwater, Baffle Creek and Rules Beach",
-        "lat": -24.477515074609094,
-        "lng": 151.98247838677506,
-        "state": "QLD",
-        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
-        "polys": [
-          [
-            [
-              151.997774,
-              -24.412522
-            ],
-            [
-              151.98702,
-              -24.417606
-            ],
-            [
-              151.986958,
-              -24.417694
-            ],
-            [
-              151.98188,
-              -24.416393
-            ],
-            [
-              151.968527,
-              -24.413242
-            ],
-            [
-              151.96639,
-              -24.414253
-            ],
-            [
-              151.923819,
-              -24.497247
-            ],
-            [
-              151.929264,
-              -24.510164
-            ],
-            [
-              151.960336,
-              -24.51812
-            ],
-            [
-              151.972664,
-              -24.517635
-            ],
-            [
-              152.002117,
-              -24.517792
-            ],
-            [
-              152.028413,
-              -24.511727
-            ],
-            [
-              152.03825,
-              -24.497803
-            ],
-            [
-              151.997774,
-              -24.412522
-            ]
-          ]
-        ]
-      },
-      {
         "title": "STAY INFORMED - The Old Telegraph Track (Cape York) - fire as at 5:11pm Sunday, 11 October 2026",
         "alertLevel": "Advice",
         "status": "",
@@ -1966,21 +1846,95 @@
             ]
           ]
         ]
+      },
+      {
+        "title": "STAY INFORMED - Deepwater, Baffle Creek and Rules Beach - fire as at 6:22pm Sunday, 11 October 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "Deepwater, Baffle Creek and Rules Beach",
+        "lat": -24.477515074609094,
+        "lng": 151.98247838677506,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
+        "polys": [
+          [
+            [
+              151.997774,
+              -24.412522
+            ],
+            [
+              151.98702,
+              -24.417606
+            ],
+            [
+              151.986958,
+              -24.417694
+            ],
+            [
+              151.98188,
+              -24.416393
+            ],
+            [
+              151.968527,
+              -24.413242
+            ],
+            [
+              151.96639,
+              -24.414253
+            ],
+            [
+              151.923819,
+              -24.497247
+            ],
+            [
+              151.929264,
+              -24.510164
+            ],
+            [
+              151.960336,
+              -24.51812
+            ],
+            [
+              151.972664,
+              -24.517635
+            ],
+            [
+              152.002117,
+              -24.517792
+            ],
+            [
+              152.028413,
+              -24.511727
+            ],
+            [
+              152.03825,
+              -24.497803
+            ],
+            [
+              151.997774,
+              -24.412522
+            ]
+          ]
+        ]
       }
     ],
     "tas": [],
     "wa": [
       {
-        "title": "Report of Smoke",
+        "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-11T08:35:16+00:00",
-        "description": "MARDELLA, SHIRE OF SERPENTINE-JARRAHDALE",
-        "lat": -32.3187,
-        "lng": 115.935,
+        "updated": "2026-10-11T08:47:34+00:00",
+        "description": "GUILDERTON, SHIRE OF GINGIN",
+        "lat": -31.3516,
+        "lng": 115.4985,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -2550,40 +2504,10 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-11T08:49:31+00:00",
+        "updated": "2026-10-11T08:58:22+00:00",
         "description": "STUART HWY, BEES CREEK",
         "lat": -12.5734,
         "lng": 131.0722,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - COX PENINSULA RD, SOUTHPORT",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-11T08:37:11+00:00",
-        "description": "COX PENINSULA RD, SOUTHPORT",
-        "lat": -12.7427,
-        "lng": 130.9647,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - GIRRAWEEN RD, McMINNS LAGOON",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-11T08:28:19+00:00",
-        "description": "GIRRAWEEN RD, McMINNS LAGOON",
-        "lat": -12.5255,
-        "lng": 131.0756,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -3032,6 +2956,21 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "CFS",
+        "updated": "2026-10-11T09:14:00+00:00",
+        "description": "NAPPERBY",
+        "lat": -33.1598,
+        "lng": 138.0679,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
+      {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
         "updated": "2026-10-11T03:01:00+00:00",
         "description": "SENIOR",
         "lat": -36.2526,
@@ -3054,25 +2993,10 @@
         "polys": [],
         "state": "SA",
         "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      },
-      {
-        "title": "Grass fire",
-        "alertLevel": "",
-        "status": "safe",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-11T00:27:00+00:00",
-        "description": "MOCULTA",
-        "lat": -34.4946,
-        "lng": 139.121,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
       }
     ]
   },
-  "incident_count": 48,
+  "incident_count": 46,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
