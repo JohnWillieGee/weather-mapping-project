@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-11T00:23:02.313313+00:00",
-  "last_checked_utc": "2026-10-11T00:23:02.313313+00:00",
+  "generated_utc": "2026-10-11T00:53:02.633437+00:00",
+  "last_checked_utc": "2026-10-11T00:53:02.633437+00:00",
   "warning_count": 5,
   "warnings": [
     {
@@ -59,7 +59,7 @@
         "type": "Grass Fire",
         "size": "119 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 11 Oct 2026 00:19:35 GMT",
+        "updated": "Sun, 11 Oct 2026 00:47:35 GMT",
         "description": "BUSBYS FLAT RD, BUSBYS FLAT 2469",
         "council": "Richmond Valley",
         "lat": -29.042947596,
@@ -778,7 +778,7 @@
         "type": "Bush Fire",
         "size": "34 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sun, 11 Oct 2026 00:19:35 GMT",
+        "updated": "Sun, 11 Oct 2026 00:47:35 GMT",
         "description": "CHAELUNDI RD, DUNDURRABIN 2453",
         "council": "Clarence Valley",
         "lat": -30.168356127,
@@ -1437,11 +1437,27 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sun, 11 Oct 2026 00:19:35 GMT",
+        "updated": "Sun, 11 Oct 2026 00:47:35 GMT",
         "description": "Industrial Access Rd, Warren, NSW 2824",
         "council": "Warren",
         "lat": -31.694832,
         "lng": 147.819399,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Rosie Rd, Raymond Terrace",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 11 Oct 2026 00:47:35 GMT",
+        "description": "Rosie Rd, Raymond Terrace, NSW 2324",
+        "council": "Port Stephens",
+        "lat": -32.7408349999999,
+        "lng": 151.774812,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -1606,6 +1622,48 @@
     ],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - NEWMAN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-11T00:16:25.205+00:00",
+        "description": "",
+        "lat": -23.4091,
+        "lng": 119.7979,
+        "polys": [
+          [
+            [
+              119.805386,
+              -23.427329
+            ],
+            [
+              119.750828,
+              -23.426426
+            ],
+            [
+              119.7534,
+              -23.372247
+            ],
+            [
+              119.836874,
+              -23.373638
+            ],
+            [
+              119.835814,
+              -23.427474
+            ],
+            [
+              119.805386,
+              -23.427329
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -2405,9 +2463,55 @@
       }
     ],
     "act": [],
-    "sa": []
+    "sa": [
+      {
+        "title": "STRUCTURE FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-11T00:35:00+00:00",
+        "description": "EIGHT MILE CREEK",
+        "lat": -38.0398,
+        "lng": 140.8341,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
+      {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-11T00:27:00+00:00",
+        "description": "MOCULTA",
+        "lat": -34.4946,
+        "lng": 139.121,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
+      {
+        "title": "STRUCTURE FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-11T00:22:00+00:00",
+        "description": "CAURNAMONT",
+        "lat": -34.8796,
+        "lng": 139.6391,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      }
+    ]
   },
-  "incident_count": 35,
+  "incident_count": 40,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
