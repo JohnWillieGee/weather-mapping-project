@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-11T03:53:04.661427+00:00",
-  "last_checked_utc": "2026-10-11T03:53:04.661427+00:00",
-  "warning_count": 8,
+  "generated_utc": "2026-10-11T04:23:02.393602+00:00",
+  "last_checked_utc": "2026-10-11T04:23:02.393602+00:00",
+  "warning_count": 11,
   "warnings": [
     {
       "pid": "",
@@ -97,23 +97,56 @@
       "hazardPhase": "NEW"
     },
     {
+      "pid": "IDQ21033",
+      "title": "Severe Thunderstorm Warning for Southeast Coast",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Caboolture and Redcliffe.",
+      "issued": "2026-10-11T14:07:38+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "QLD_PW015",
+          "description": "Southeast Coast",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
+    },
+    {
+      "pid": "IDQ21035",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Moreton Bay",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "The Bureau of Meteorology warns that, at 2:00 pm, a severe thunderstorm likely to produce damaging winds and large hailstones was detected near Lake Samsonvale. This thunderstorm is slow moving. It is forecast to affect Dayboro by 2:30 pm and Kallangur and Narangba by 3:00 pm.",
+      "issued": "2026-10-11T14:09:48+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "QLD_ME020",
+          "description": "Moreton Bay",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
+    },
+    {
       "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for North West Pastoral, North East Pastoral, Eastern Eyre Peninsula, Flinders, Mid North, Yorke Peninsula",
+      "title": "Severe Thunderstorm Warning for North West Pastoral, Eastern Eyre Peninsula, Flinders, Mid North, Yorke Peninsula, Mount Lofty Ranges, Murraylands, Adelaide Metropolitan",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Whyalla, Port Augusta, Maitland, Hawker, Port Wakefield, Kadina, Melrose, Parachilna, Quorn and Ardrossan. 98 km/h wind gust was recorded at Woomera Airport at 12:18 pm",
-      "issued": "2026-10-11T14:06:29+10:30",
+      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Adelaide, Port Augusta, Port Pirie, Maitland, Hawker, Port Wakefield, Gawler, Jamestown, Kadina, Peterborough, Melrose and Parachilna. Severe thunderstorms are no longer occurring in the North East Pastoral district and the warning for this district is CANCELLED. 98 km/h wind gust was recorded at Woomera Airport at 12:18 pm",
+      "issued": "2026-10-11T14:42:39+10:30",
       "cancelled": false,
       "areas": [
         {
           "aac": "SA_PW013",
           "description": "North West Pastoral",
-          "phase": "REN"
-        },
-        {
-          "aac": "SA_PW014",
-          "description": "North East Pastoral",
           "phase": "REN"
         },
         {
@@ -129,16 +162,50 @@
         {
           "aac": "SA_PW008",
           "description": "Mid North",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "SA_PW002",
           "description": "Yorke Peninsula",
+          "phase": "REN"
+        },
+        {
+          "aac": "SA_PW015",
+          "description": "Mount Lofty Ranges",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW007",
+          "description": "Murraylands",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW001",
+          "description": "Adelaide Metropolitan",
           "phase": "NEW"
         }
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDS21033",
+      "title": "Severe Thunderstorm Warning for North East Pastoral",
+      "type": "thunderstorm",
+      "state": "SA",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-11T14:42:39+10:30",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "SA_PW014",
+          "description": "North East Pastoral",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -151,7 +218,7 @@
         "type": "Grass Fire",
         "size": "119 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 11 Oct 2026 03:47:35 GMT",
+        "updated": "Sun, 11 Oct 2026 04:19:35 GMT",
         "description": "BUSBYS FLAT RD, BUSBYS FLAT 2469",
         "council": "Richmond Valley",
         "lat": -29.042947596,
@@ -870,7 +937,7 @@
         "type": "Bush Fire",
         "size": "34 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sun, 11 Oct 2026 03:47:35 GMT",
+        "updated": "Sun, 11 Oct 2026 04:19:35 GMT",
         "description": "CHAELUNDI RD, DUNDURRABIN 2453",
         "council": "Clarence Valley",
         "lat": -30.168356127,
@@ -1095,17 +1162,49 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
+        "title": "CROSS ST, SEAHAM",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Sun, 11 Oct 2026 04:19:35 GMT",
+        "description": "CROSS ST, SEAHAM 2324",
+        "council": "Port Stephens",
+        "lat": -32.663714,
+        "lng": 151.72469,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "Industrial Access Rd, Warren",
         "alertLevel": "Advice",
         "status": "Not yet controlled",
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sun, 11 Oct 2026 03:47:35 GMT",
+        "updated": "Sun, 11 Oct 2026 04:19:35 GMT",
         "description": "Industrial Access Rd, Warren, NSW 2824",
         "council": "Warren",
         "lat": -31.694832,
         "lng": 147.819399,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Malton Rd, Beecroft",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 11 Oct 2026 04:19:35 GMT",
+        "description": "Malton Rd, Beecroft, NSW 2119",
+        "council": "Hornsby",
+        "lat": -33.7472069999999,
+        "lng": 151.069363999,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -1117,7 +1216,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sun, 11 Oct 2026 03:47:35 GMT",
+        "updated": "Sun, 11 Oct 2026 04:19:35 GMT",
         "description": "Rosie Rd, Raymond Terrace, NSW 2324",
         "council": "Port Stephens",
         "lat": -32.7408349999999,
@@ -1883,13 +1982,58 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - COX PENINSULA RD, SOUTHPORT",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-11T04:17:13+00:00",
+        "description": "COX PENINSULA RD, SOUTHPORT",
+        "lat": -12.7427,
+        "lng": 130.9647,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - KATHERINE SOUTH",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-11T04:12:29+00:00",
+        "description": "KATHERINE SOUTH",
+        "lat": -14.4952,
+        "lng": 132.2533,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Structure Fire - MOULDEN TCE, MOULDEN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-11T04:02:54+00:00",
+        "description": "MOULDEN TCE, MOULDEN",
+        "lat": -12.5128,
+        "lng": 130.9756,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Structure Fire - PIONEER DR, HUMPTY DOO",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Structure Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-11T03:31:35+00:00",
+        "updated": "2026-10-11T03:53:34+00:00",
         "description": "PIONEER DR, HUMPTY DOO",
         "lat": -12.5548,
         "lng": 131.1691,
@@ -2351,7 +2495,7 @@
       }
     ]
   },
-  "incident_count": 42,
+  "incident_count": 47,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
