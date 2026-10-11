@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-11T07:23:07.072523+00:00",
-  "last_checked_utc": "2026-10-11T07:23:07.072523+00:00",
-  "warning_count": 12,
+  "generated_utc": "2026-10-11T07:53:06.533984+00:00",
+  "last_checked_utc": "2026-10-11T07:53:06.533984+00:00",
+  "warning_count": 13,
   "warnings": [
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "11/18:02 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "11/18:49 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 11 Oct 2026 07:02:30 GMT"
+      "issued": "Sun, 11 Oct 2026 07:49:22 GMT"
     },
     {
       "pid": "",
@@ -126,22 +126,96 @@
     },
     {
       "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for North West Pastoral",
+      "title": "Severe Thunderstorm Warning for North West Pastoral, Eastern Eyre Peninsula, Flinders, Mid North, Yorke Peninsula, Mount Lofty Ranges, Murraylands, Upper South East, Adelaide Metropolitan",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Tarcoola. 98 km/h wind gust was recorded at Woomera Airport at 12:18 pm",
-      "issued": "2026-10-11T16:41:31+10:30",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Adelaide, Whyalla, Port Pirie, Clare, Maitland, Murray Bridge, Roxby Downs, Port Wakefield, Gawler, Victor Harbor, Woomera and Kadina. 98 km/h wind gust was recorded at Woomera Airport at 12:18 pm.",
+      "issued": "2026-10-11T18:15:33+10:30",
       "cancelled": false,
       "areas": [
         {
           "aac": "SA_PW013",
           "description": "North West Pastoral",
-          "phase": "UPD"
+          "phase": "REN"
+        },
+        {
+          "aac": "SA_PW011",
+          "description": "Eastern Eyre Peninsula",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW009",
+          "description": "Flinders",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW008",
+          "description": "Mid North",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW002",
+          "description": "Yorke Peninsula",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW015",
+          "description": "Mount Lofty Ranges",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW007",
+          "description": "Murraylands",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW004",
+          "description": "Upper South East",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW001",
+          "description": "Adelaide Metropolitan",
+          "phase": "NEW"
         }
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDS21035",
+      "title": "Severe Thunderstorm Warning - Adelaide Region for Onkaparinga, Yankalilla, Victor Harbour, Western Alexandrina",
+      "type": "thunderstorm",
+      "state": "SA",
+      "link": "",
+      "desc": "The Bureau of Meteorology warns that, at 6:20 pm, a severe thunderstorm likely to produce damaging winds and large hailstones was detected near the Gulf waters off Port Willunga and the Gulf waters off Aldinga. This thunderstorm is moving towards the southeast. It is forecast to affect Mount Compass, Aldinga and Willunga by 6:50 pm and Goolwa, Port Elliot and Middleton by 7:20 pm.",
+      "issued": "2026-10-11T18:17:36+10:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "SA_ME010",
+          "description": "Onkaparinga",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_ME011",
+          "description": "Yankalilla",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_ME012",
+          "description": "Victor Harbour",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_ME013",
+          "description": "Western Alexandrina",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     },
     {
       "pid": "IDD21033",
@@ -202,7 +276,7 @@
         "type": "Bush Fire",
         "size": "19 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 11 Oct 2026 07:19:36 GMT",
+        "updated": "Sun, 11 Oct 2026 07:47:35 GMT",
         "description": "BRIGGENSHAWS RD, VALERY 2454",
         "council": "Bellingen",
         "lat": -30.405499,
@@ -365,7 +439,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sun, 11 Oct 2026 07:19:36 GMT",
+        "updated": "Sun, 11 Oct 2026 07:47:35 GMT",
         "description": "Burns Rd, Picnic Point, NSW 2213",
         "council": "Canterbury-Bankstown",
         "lat": -33.9711389999999,
@@ -381,7 +455,7 @@
         "type": "Grass Fire",
         "size": "119 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 11 Oct 2026 07:19:36 GMT",
+        "updated": "Sun, 11 Oct 2026 07:47:35 GMT",
         "description": "BUSBYS FLAT RD, BUSBYS FLAT 2469",
         "council": "Richmond Valley",
         "lat": -29.042947596,
@@ -1100,7 +1174,7 @@
         "type": "Bush Fire",
         "size": "27 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sun, 11 Oct 2026 07:19:36 GMT",
+        "updated": "Sun, 11 Oct 2026 07:47:35 GMT",
         "description": "CHAELUNDI RD, DUNDURRABIN 2453",
         "council": "Clarence Valley",
         "lat": -30.168356127,
@@ -1177,29 +1251,13 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
-        "title": "Junction Rd, Moorebank",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Sun, 11 Oct 2026 07:19:36 GMT",
-        "description": "Junction Rd, Moorebank, NSW 2170",
-        "council": "Liverpool",
-        "lat": -33.935752,
-        "lng": 150.942530001,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
         "title": "Mars Creek",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "4 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sun, 11 Oct 2026 07:19:36 GMT",
+        "updated": "Sun, 11 Oct 2026 07:47:35 GMT",
         "description": "MARENGO STATION, MARENGO RD, MARENGO NSW 2453",
         "council": "Clarence Valley",
         "lat": -30.1909119059999,
@@ -1258,7 +1316,7 @@
         "type": "Bush Fire",
         "size": "45 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sun, 11 Oct 2026 07:19:36 GMT",
+        "updated": "Sun, 11 Oct 2026 07:47:35 GMT",
         "description": "OIL RIG RD, GIBBERAGEE 2469",
         "council": "Richmond Valley",
         "lat": -29.323229,
@@ -1369,7 +1427,7 @@
         "type": "Bush Fire",
         "size": "1 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 11 Oct 2026 07:19:36 GMT",
+        "updated": "Sun, 11 Oct 2026 07:47:35 GMT",
         "description": "SMITHS RD, EMERALD BEACH 2456",
         "council": "Coffs Harbour",
         "lat": -30.1634197239999,
@@ -1483,6 +1541,20 @@
         ]
       },
       {
+        "title": "STAY INFORMED - The Old Telegraph Track (Cape York) - fire as at 5:11pm Sunday, 11 October 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "The Old Telegraph Track north of Bramwell Junction",
+        "lat": -11.870178186446676,
+        "lng": 142.50874134357255,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
+      },
+      {
         "title": "STAY INFORMED - Baffle Creek, Deepwater and Rules Beach - fire as at 11:44am Sunday, 11 October 2026",
         "alertLevel": "Advice",
         "status": "",
@@ -1594,17 +1666,40 @@
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire",
-        "alertLevel": "",
+        "title": "Bushfire Advice THREAT IS REDUCED - MARBLE BAR",
+        "alertLevel": "Advice",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-11T07:09:49+00:00",
-        "description": "OAKFORD, SHIRE OF SERPENTINE-JARRAHDALE",
-        "lat": -32.2168,
-        "lng": 115.8854,
-        "polys": [],
+        "agency": "DFES-WARN",
+        "updated": "2026-10-11T07:30:29.753+00:00",
+        "description": "",
+        "lat": -21.2487,
+        "lng": 118.3286,
+        "polys": [
+          [
+            [
+              118.308144,
+              -21.238558
+            ],
+            [
+              118.359408,
+              -21.238499
+            ],
+            [
+              118.359153,
+              -21.264258
+            ],
+            [
+              118.308026,
+              -21.263749
+            ],
+            [
+              118.308144,
+              -21.238558
+            ]
+          ]
+        ],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1634,21 +1729,6 @@
         "description": "BEAUFORT RIVER, SHIRE OF WOODANILLING",
         "lat": -33.6277,
         "lng": 117.0259,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-11T06:46:25+00:00",
-        "description": "FITZROY CROSSING, SHIRE OF DERBY/WEST KIMBERLEY",
-        "lat": -18.2005,
-        "lng": 125.5662,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1961,44 +2041,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire Advice MONITOR CONDITIONS - MARBLE BAR",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-10T08:37:37.525+00:00",
-        "description": "",
-        "lat": -21.2487,
-        "lng": 118.3286,
-        "polys": [
-          [
-            [
-              118.308144,
-              -21.238558
-            ],
-            [
-              118.359408,
-              -21.238499
-            ],
-            [
-              118.359153,
-              -21.264258
-            ],
-            [
-              118.308026,
-              -21.263749
-            ],
-            [
-              118.308144,
-              -21.238558
-            ]
-          ]
-        ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
@@ -2203,10 +2245,25 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-11T06:24:51+00:00",
+        "updated": "2026-10-11T07:23:22+00:00",
         "description": "GIRRAWEEN RD, McMINNS LAGOON",
         "lat": -12.5255,
         "lng": 131.0756,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - JABIRU DR, JABIRU",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-11T07:19:48+00:00",
+        "description": "JABIRU DR, JABIRU",
+        "lat": -12.6695,
+        "lng": 132.8313,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -2650,7 +2707,7 @@
       }
     ]
   },
-  "incident_count": 47,
+  "incident_count": 46,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -6368,12 +6425,12 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-11T07:02:16Z",
+      "issued_utc": "2026-10-11T07:49:12Z",
       "overview": [
         "Gale Warning for Sunday for South West Coast",
         "Strong Wind Warning for Sunday for Central West Coast, Upper East Coast, South East Coast and Lower East Coast",
-        "Gale Warning for Monday for South East Coast, Central West Coast, South West Coast and Far North West Coast",
-        "Strong Wind Warning for Monday for Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel, Upper East Coast, Lower East Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island"
+        "Gale Warning for Monday for Central West Coast, South West Coast, Far North West Coast and South East Coast",
+        "Strong Wind Warning for Monday for Upper East Coast, Lower East Coast, Channel, Storm Bay, Frederick Henry Bay and Norfolk Bay, East of Flinders Island, Banks Strait and Franklin Sound and Central North Coast"
       ],
       "hazards": [
         {
