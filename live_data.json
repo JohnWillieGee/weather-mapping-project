@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-11T02:53:04.975928+00:00",
-  "last_checked_utc": "2026-10-11T02:53:04.975928+00:00",
+  "generated_utc": "2026-10-11T03:23:02.620352+00:00",
+  "last_checked_utc": "2026-10-11T03:23:02.620352+00:00",
   "warning_count": 8,
   "warnings": [
     {
@@ -98,53 +98,42 @@
     },
     {
       "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for North West Pastoral, Eastern Eyre Peninsula, Flinders",
+      "title": "Severe Thunderstorm Warning for North West Pastoral, North East Pastoral, Eastern Eyre Peninsula, Flinders",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Port Augusta and Quorn.",
-      "issued": "2026-10-11T12:39:31+10:30",
+      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Port Augusta and Roxby Downs. 98 km/h wind gust was recorded at Woomera Airport at 12:18 pm",
+      "issued": "2026-10-11T13:29:02+10:30",
       "cancelled": false,
       "areas": [
         {
           "aac": "SA_PW013",
           "description": "North West Pastoral",
+          "phase": "REN"
+        },
+        {
+          "aac": "SA_PW014",
+          "description": "North East Pastoral",
           "phase": "NEW"
         },
         {
           "aac": "SA_PW011",
           "description": "Eastern Eyre Peninsula",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "SA_PW009",
           "description": "Flinders",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "UPD"
     }
   ],
   "fetch_errors": {},
   "incidents": {
     "nsw": [
-      {
-        "title": "ABBOTSFORD RD, PICTON",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Sun, 11 Oct 2026 02:47:35 GMT",
-        "description": "ABBOTSFORD RD, PICTON 2571",
-        "council": "Wollondilly",
-        "lat": -34.149058,
-        "lng": 150.591823,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
       {
         "title": "BUSBYS FLAT RD, BUSBYS FLAT",
         "alertLevel": "Advice",
@@ -152,7 +141,7 @@
         "type": "Grass Fire",
         "size": "119 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 11 Oct 2026 02:47:35 GMT",
+        "updated": "Sun, 11 Oct 2026 03:19:35 GMT",
         "description": "BUSBYS FLAT RD, BUSBYS FLAT 2469",
         "council": "Richmond Valley",
         "lat": -29.042947596,
@@ -871,7 +860,7 @@
         "type": "Bush Fire",
         "size": "34 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sun, 11 Oct 2026 02:47:35 GMT",
+        "updated": "Sun, 11 Oct 2026 03:19:35 GMT",
         "description": "CHAELUNDI RD, DUNDURRABIN 2453",
         "council": "Clarence Valley",
         "lat": -30.168356127,
@@ -1096,228 +1085,13 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
-        "title": "DOUBLE HEAD TRL, MOPARRABAH",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Sun, 11 Oct 2026 02:47:35 GMT",
-        "description": "DOUBLE HEAD TRL, MOPARRABAH 2440",
-        "council": "Kempsey",
-        "lat": -31.0086231229999,
-        "lng": 152.497406006,
-        "polys": [
-          [
-            [
-              152.472255476,
-              -31.0069204509999
-            ],
-            [
-              152.473730742,
-              -31.009514063
-            ],
-            [
-              152.473802126,
-              -31.0100851349999
-            ],
-            [
-              152.473802126,
-              -31.0104182589999
-            ],
-            [
-              152.474230429,
-              -31.010632411
-            ],
-            [
-              152.475443954,
-              -31.011108303
-            ],
-            [
-              152.475919846,
-              -31.0110607139999
-            ],
-            [
-              152.476348149,
-              -31.011774552
-            ],
-            [
-              152.476205381,
-              -31.012750131
-            ],
-            [
-              152.476324355,
-              -31.0138208879999
-            ],
-            [
-              152.476633685,
-              -31.0147726719999
-            ],
-            [
-              152.476847836,
-              -31.0161051709999
-            ],
-            [
-              152.477038193,
-              -31.016819009
-            ],
-            [
-              152.476538506,
-              -31.0177469989999
-            ],
-            [
-              152.476538506,
-              -31.018127713
-            ],
-            [
-              152.478894173,
-              -31.018508427
-            ],
-            [
-              152.479726984,
-              -31.019745746
-            ],
-            [
-              152.479941135,
-              -31.0205309679999
-            ],
-            [
-              152.478989351,
-              -31.0208640929999
-            ],
-            [
-              152.478085156,
-              -31.020411995
-            ],
-            [
-              152.477371317,
-              -31.0200312809999
-            ],
-            [
-              152.477323728,
-              -31.0210068599999
-            ],
-            [
-              152.477418907,
-              -31.021625521
-            ],
-            [
-              152.476895425,
-              -31.021887261
-            ],
-            [
-              152.4756819,
-              -31.021887261
-            ],
-            [
-              152.475396365,
-              -31.0213399849999
-            ],
-            [
-              152.4748015,
-              -31.0201740489999
-            ],
-            [
-              152.474587348,
-              -31.0198885139999
-            ],
-            [
-              152.472755163,
-              -31.019793336
-            ],
-            [
-              152.471708201,
-              -31.019269854
-            ],
-            [
-              152.47051847,
-              -31.0185322209999
-            ],
-            [
-              152.469661864,
-              -31.0176994089999
-            ],
-            [
-              152.468995615,
-              -31.0170807499999
-            ],
-            [
-              152.468757669,
-              -31.016676242
-            ],
-            [
-              152.468376955,
-              -31.015700663
-            ],
-            [
-              152.46804383,
-              -31.0147726719999
-            ],
-            [
-              152.468210393,
-              -31.0138446829999
-            ],
-            [
-              152.468281777,
-              -31.0129880769999
-            ],
-            [
-              152.467972446,
-              -31.0114890159999
-            ],
-            [
-              152.467187224,
-              -31.010798973
-            ],
-            [
-              152.467377581,
-              -31.009633037
-            ],
-            [
-              152.468495928,
-              -31.0090857609999
-            ],
-            [
-              152.469328739,
-              -31.0084433069999
-            ],
-            [
-              152.470042578,
-              -31.0081101819999
-            ],
-            [
-              152.471041952,
-              -31.0076342899999
-            ],
-            [
-              152.471684406,
-              -31.007229781
-            ],
-            [
-              152.472207888,
-              -31.0069680409999
-            ],
-            [
-              152.472207888,
-              -31.0069442459999
-            ],
-            [
-              152.472255476,
-              -31.0069204509999
-            ]
-          ]
-        ],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
         "title": "Industrial Access Rd, Warren",
         "alertLevel": "Advice",
         "status": "Not yet controlled",
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sun, 11 Oct 2026 02:47:35 GMT",
+        "updated": "Sun, 11 Oct 2026 03:19:35 GMT",
         "description": "Industrial Access Rd, Warren, NSW 2824",
         "council": "Warren",
         "lat": -31.694832,
@@ -1333,7 +1107,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sun, 11 Oct 2026 02:47:35 GMT",
+        "updated": "Sun, 11 Oct 2026 03:19:35 GMT",
         "description": "Rosie Rd, Raymond Terrace, NSW 2324",
         "council": "Port Stephens",
         "lat": -32.7408349999999,
@@ -1540,6 +1314,21 @@
     ],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-11T02:59:38+00:00",
+        "description": "NEWMAN, SHIRE OF EAST PILBARA",
+        "lat": -23.4103,
+        "lng": 119.7975,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - NEWMAN",
         "alertLevel": "Advice",
@@ -1809,21 +1598,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-11T02:19:07+00:00",
-        "description": "NEWMAN, SHIRE OF EAST PILBARA",
-        "lat": -23.4103,
-        "lng": 119.7975,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-11T02:08:01+00:00",
         "description": "STURT CREEK, SHIRE OF HALLS CREEK",
         "lat": -18.74,
@@ -1911,21 +1685,6 @@
         "description": "ORD RIVER, SHIRE OF HALLS CREEK",
         "lat": -17.886,
         "lng": 127.834,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-10T04:15:31+00:00",
-        "description": "ST GEORGE RANGES, SHIRE OF DERBY/WEST KIMBERLEY",
-        "lat": -18.3008,
-        "lng": 125.6122,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -2098,6 +1857,36 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - PIONEER DR, HUMPTY DOO",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-11T03:17:13+00:00",
+        "description": "PIONEER DR, HUMPTY DOO",
+        "lat": -12.5548,
+        "lng": 131.1678,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - Unknown",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-11T03:13:30+00:00",
+        "description": "",
+        "lat": -12.5205,
+        "lng": 131.0753,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Bushfire - Southport Road, TUMBLING WATERS",
         "alertLevel": "Advice",
@@ -2505,6 +2294,21 @@
     ],
     "act": [],
     "sa": [
+      {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-11T03:01:00+00:00",
+        "description": "SENIOR",
+        "lat": -36.2526,
+        "lng": 140.7618,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
       {
         "title": "STRUCTURE FIRE",
         "alertLevel": "",
