@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-11T06:53:04.811365+00:00",
-  "last_checked_utc": "2026-10-11T06:53:04.811365+00:00",
+  "generated_utc": "2026-10-11T07:23:07.072523+00:00",
+  "last_checked_utc": "2026-10-11T07:23:07.072523+00:00",
   "warning_count": 12,
   "warnings": [
     {
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "11/16:43 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "11/18:02 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 11 Oct 2026 05:43:42 GMT"
+      "issued": "Sun, 11 Oct 2026 07:02:30 GMT"
     },
     {
       "pid": "",
@@ -125,25 +125,6 @@
       "hazardPhase": "CAN"
     },
     {
-      "pid": "IDQ21035",
-      "title": "Cancellation of Severe Thunderstorm Warning - Southeast Queensland for Moreton Bay",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "Severe thunderstorms are no longer affecting the Southeast Queensland area (east of Dalby from Rainbow Beach to Stanthorpe). This warning is now cancelled.",
-      "issued": "2026-10-11T14:29:18+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "QLD_ME020",
-          "description": "Moreton Bay",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
-    },
-    {
       "pid": "IDS21033",
       "title": "Severe Thunderstorm Warning for North West Pastoral",
       "type": "thunderstorm",
@@ -161,6 +142,35 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDD21033",
+      "title": "Severe Thunderstorm Warning for Simpson, Lasseter, Tanami",
+      "type": "thunderstorm",
+      "state": "NT",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours for parts of the Simpson, Lasseter and Tanami districts.",
+      "issued": "2026-10-11T16:30:03+09:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NT_PW007",
+          "description": "Simpson",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NT_PW008",
+          "description": "Lasseter",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NT_PW009",
+          "description": "Tanami",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     },
     {
       "pid": "IDN22000",
@@ -192,7 +202,7 @@
         "type": "Bush Fire",
         "size": "19 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 11 Oct 2026 06:47:35 GMT",
+        "updated": "Sun, 11 Oct 2026 07:19:36 GMT",
         "description": "BRIGGENSHAWS RD, VALERY 2454",
         "council": "Bellingen",
         "lat": -30.405499,
@@ -355,7 +365,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sun, 11 Oct 2026 06:47:35 GMT",
+        "updated": "Sun, 11 Oct 2026 07:19:36 GMT",
         "description": "Burns Rd, Picnic Point, NSW 2213",
         "council": "Canterbury-Bankstown",
         "lat": -33.9711389999999,
@@ -371,7 +381,7 @@
         "type": "Grass Fire",
         "size": "119 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 11 Oct 2026 06:47:35 GMT",
+        "updated": "Sun, 11 Oct 2026 07:19:36 GMT",
         "description": "BUSBYS FLAT RD, BUSBYS FLAT 2469",
         "council": "Richmond Valley",
         "lat": -29.042947596,
@@ -1090,7 +1100,7 @@
         "type": "Bush Fire",
         "size": "27 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Sun, 11 Oct 2026 06:47:35 GMT",
+        "updated": "Sun, 11 Oct 2026 07:19:36 GMT",
         "description": "CHAELUNDI RD, DUNDURRABIN 2453",
         "council": "Clarence Valley",
         "lat": -30.168356127,
@@ -1167,13 +1177,29 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
+        "title": "Junction Rd, Moorebank",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 11 Oct 2026 07:19:36 GMT",
+        "description": "Junction Rd, Moorebank, NSW 2170",
+        "council": "Liverpool",
+        "lat": -33.935752,
+        "lng": 150.942530001,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "Mars Creek",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "4 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sun, 11 Oct 2026 06:47:35 GMT",
+        "updated": "Sun, 11 Oct 2026 07:19:36 GMT",
         "description": "MARENGO STATION, MARENGO RD, MARENGO NSW 2453",
         "council": "Clarence Valley",
         "lat": -30.1909119059999,
@@ -1232,7 +1258,7 @@
         "type": "Bush Fire",
         "size": "45 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sun, 11 Oct 2026 06:47:35 GMT",
+        "updated": "Sun, 11 Oct 2026 07:19:36 GMT",
         "description": "OIL RIG RD, GIBBERAGEE 2469",
         "council": "Richmond Valley",
         "lat": -29.323229,
@@ -1337,18 +1363,73 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
-        "title": "PUTTA RD, UPPER LANSDOWNE",
+        "title": "SMITHS RD, EMERALD BEACH",
         "alertLevel": "Advice",
-        "status": "Not yet controlled",
+        "status": "Being controlled",
         "type": "Bush Fire",
-        "size": "0 ha",
+        "size": "1 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 11 Oct 2026 06:47:35 GMT",
-        "description": "PUTTA RD, UPPER LANSDOWNE 2430",
-        "council": "Mid-Coast",
-        "lat": -31.820615769,
-        "lng": 152.506011963,
-        "polys": [],
+        "updated": "Sun, 11 Oct 2026 07:19:36 GMT",
+        "description": "SMITHS RD, EMERALD BEACH 2456",
+        "council": "Coffs Harbour",
+        "lat": -30.1634197239999,
+        "lng": 153.148056031,
+        "polys": [
+          [
+            [
+              153.15005447,
+              -30.163288241
+            ],
+            [
+              153.150268622,
+              -30.1633001389999
+            ],
+            [
+              153.150554157,
+              -30.163347728
+            ],
+            [
+              153.151018152,
+              -30.163347728
+            ],
+            [
+              153.15142266,
+              -30.163371523
+            ],
+            [
+              153.151256097,
+              -30.1636332639999
+            ],
+            [
+              153.150958666,
+              -30.163895004
+            ],
+            [
+              153.15049467,
+              -30.163954491
+            ],
+            [
+              153.149971189,
+              -30.1638236209999
+            ],
+            [
+              153.149031301,
+              -30.163645161
+            ],
+            [
+              153.149031301,
+              -30.163312036
+            ],
+            [
+              153.149257351,
+              -30.1631573719999
+            ],
+            [
+              153.15005447,
+              -30.163288241
+            ]
+          ]
+        ],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       }
@@ -1397,44 +1478,6 @@
             [
               152.019184,
               -24.46386
-            ]
-          ]
-        ]
-      },
-      {
-        "title": "STAY INFORMED - The Old Telegraph Track (Cape York) - fire as at 7:53pm Friday, 9 October 2026",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "QFD",
-        "updated": "",
-        "description": "The Old Telegraph Track north of Bramwell Junction",
-        "lat": -11.870178186446676,
-        "lng": 142.50874134357255,
-        "state": "QLD",
-        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
-        "polys": [
-          [
-            [
-              142.474952,
-              -11.80808
-            ],
-            [
-              142.496705,
-              -11.937631
-            ],
-            [
-              142.548291,
-              -11.936415
-            ],
-            [
-              142.516594,
-              -11.800172
-            ],
-            [
-              142.474952,
-              -11.80808
             ]
           ]
         ]
@@ -1557,10 +1600,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-11T06:24:27+00:00",
-        "description": "ORD RIVER, SHIRE OF HALLS CREEK",
-        "lat": -17.199,
-        "lng": 127.934,
+        "updated": "2026-10-11T07:09:49+00:00",
+        "description": "OAKFORD, SHIRE OF SERPENTINE-JARRAHDALE",
+        "lat": -32.2168,
+        "lng": 115.8854,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1572,10 +1615,55 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-11T02:59:38+00:00",
+        "updated": "2026-10-11T07:08:45+00:00",
         "description": "NEWMAN, SHIRE OF EAST PILBARA",
         "lat": -23.4103,
         "lng": 119.7975,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-11T07:04:29+00:00",
+        "description": "BEAUFORT RIVER, SHIRE OF WOODANILLING",
+        "lat": -33.6277,
+        "lng": 117.0259,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-11T06:46:25+00:00",
+        "description": "FITZROY CROSSING, SHIRE OF DERBY/WEST KIMBERLEY",
+        "lat": -18.2005,
+        "lng": 125.5662,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-11T06:24:27+00:00",
+        "description": "ORD RIVER, SHIRE OF HALLS CREEK",
+        "lat": -17.199,
+        "lng": 127.934,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -2559,25 +2647,10 @@
         "polys": [],
         "state": "SA",
         "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      },
-      {
-        "title": "STRUCTURE FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-11T00:35:00+00:00",
-        "description": "EIGHT MILE CREEK",
-        "lat": -38.0398,
-        "lng": 140.8341,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
       }
     ]
   },
-  "incident_count": 45,
+  "incident_count": 47,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -6295,12 +6368,12 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-11T05:43:35Z",
+      "issued_utc": "2026-10-11T07:02:16Z",
       "overview": [
         "Gale Warning for Sunday for South West Coast",
         "Strong Wind Warning for Sunday for Central West Coast, Upper East Coast, South East Coast and Lower East Coast",
-        "Gale Warning for Monday for Central West Coast, South West Coast, Far North West Coast and South East Coast",
-        "Strong Wind Warning for Monday for Upper East Coast, Lower East Coast, East of Flinders Island, Banks Strait and Franklin Sound and Central North Coast"
+        "Gale Warning for Monday for South East Coast, Central West Coast, South West Coast and Far North West Coast",
+        "Strong Wind Warning for Monday for Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel, Upper East Coast, Lower East Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island"
       ],
       "hazards": [
         {
