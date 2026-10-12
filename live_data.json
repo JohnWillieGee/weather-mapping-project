@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-12T07:23:08.334426+00:00",
-  "last_checked_utc": "2026-10-12T07:23:08.334426+00:00",
-  "warning_count": 16,
+  "generated_utc": "2026-10-12T07:53:10.949643+00:00",
+  "last_checked_utc": "2026-10-12T07:53:10.949643+00:00",
+  "warning_count": 15,
   "warnings": [
     {
       "pid": "",
@@ -153,41 +153,27 @@
     },
     {
       "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for North West Pastoral",
+      "title": "Severe Thunderstorm Warning for North West Pastoral, North East Pastoral",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Ernabella. Severe thunderstorms are no longer occurring in the North East Pastoral district and the warning for this district is CANCELLED.",
-      "issued": "2026-10-12T17:03:27+10:30",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Dalhousie Springs.",
+      "issued": "2026-10-12T18:00:41+10:30",
       "cancelled": false,
       "areas": [
         {
           "aac": "SA_PW013",
           "description": "North West Pastoral",
+          "phase": "REN"
+        },
+        {
+          "aac": "SA_PW014",
+          "description": "North East Pastoral",
           "phase": "NEW"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
-    },
-    {
-      "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for North East Pastoral",
-      "type": "thunderstorm",
-      "state": "SA",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-12T17:03:27+10:30",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "SA_PW014",
-          "description": "North East Pastoral",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
+      "hazardPhase": "UPD"
     },
     {
       "pid": "IDD21033",
@@ -195,8 +181,8 @@
       "type": "thunderstorm",
       "state": "NT",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Arltunga, Finke, Santa Teresa and Simpson District east of Finke. 96km/h wind gust was recorded at Alice Springs at 3:44pm.",
-      "issued": "2026-10-12T16:31:26+09:30",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Arltunga, Jervois, Kulgera, Finke and Simpson District east of Finke. 96km/h wind gust was recorded at Alice Springs at 3:44pm.",
+      "issued": "2026-10-12T16:58:17+09:30",
       "cancelled": false,
       "areas": [
         {
@@ -243,7 +229,7 @@
         "type": "Bush Fire",
         "size": "1 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 12 Oct 2026 07:19:38 GMT",
+        "updated": "Mon, 12 Oct 2026 07:47:38 GMT",
         "description": "BOOROOK RD, SANDY HILL 2372",
         "council": "Tenterfield",
         "lat": -28.8387355799999,
@@ -306,7 +292,7 @@
         "type": "Grass Fire",
         "size": "207 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 12 Oct 2026 07:19:38 GMT",
+        "updated": "Mon, 12 Oct 2026 07:47:38 GMT",
         "description": "BUSBYS FLAT RD, BUSBYS FLAT 2469",
         "council": "Richmond Valley",
         "lat": -29.042947596,
@@ -957,7 +943,7 @@
         "type": "Bush Fire",
         "size": "256 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 12 Oct 2026 07:19:38 GMT",
+        "updated": "Mon, 12 Oct 2026 07:47:38 GMT",
         "description": "DOUBLE HEAD TRL, MOPARRABAH 2440",
         "council": "Kempsey",
         "lat": -31.0086231229999,
@@ -1412,27 +1398,11 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 12 Oct 2026 07:19:38 GMT",
+        "updated": "Mon, 12 Oct 2026 07:47:38 GMT",
         "description": "Endeavour Dr, Wollongong, NSW 2500",
         "council": "Wollongong",
         "lat": -34.421984,
         "lng": 150.908422,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "Golf Av, Goulburn",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 12 Oct 2026 07:19:38 GMT",
-        "description": "Golf Av, Goulburn, NSW 2580",
-        "council": "Goulburn Mulwaree",
-        "lat": -34.7547279999999,
-        "lng": 149.725548,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -1444,7 +1414,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 12 Oct 2026 07:19:38 GMT",
+        "updated": "Mon, 12 Oct 2026 07:47:38 GMT",
         "description": "HARDWAY CREEK RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.723713824,
@@ -1460,7 +1430,7 @@
         "type": "Bush Fire",
         "size": "12 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 12 Oct 2026 07:19:38 GMT",
+        "updated": "Mon, 12 Oct 2026 07:47:38 GMT",
         "description": "KELLERMAN DR, ST HELENS PARK 2560",
         "council": "Campbelltown",
         "lat": -34.108028412,
@@ -1541,29 +1511,13 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
-        "title": "Marine Dr, Wollongong",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 12 Oct 2026 07:19:38 GMT",
-        "description": "Marine Dr, Wollongong, NSW 2500",
-        "council": "Wollongong",
-        "lat": -34.4230289999999,
-        "lng": 150.905838,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
         "title": "Mars Creek",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "8 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Mon, 12 Oct 2026 07:19:38 GMT",
+        "updated": "Mon, 12 Oct 2026 07:47:38 GMT",
         "description": "MARENGO STATION, MARENGO RD, MARENGO NSW 2453",
         "council": "Clarence Valley",
         "lat": -30.1909119059999,
@@ -1614,7 +1568,7 @@
         "type": "Bush Fire",
         "size": "196 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Mon, 12 Oct 2026 07:19:38 GMT",
+        "updated": "Mon, 12 Oct 2026 07:47:38 GMT",
         "description": "OIL RIG RD, GIBBERAGEE 2469",
         "council": "Clarence Valley",
         "lat": -29.3249446579999,
@@ -1622,91 +1576,107 @@
         "polys": [
           [
             [
-              153.072022609,
-              -29.314099902
+              153.072431629,
+              -29.3481615659999
             ],
             [
-              153.074402071,
-              -29.315265838
+              153.072039018,
+              -29.3484946889999
             ],
             [
-              153.075306266,
-              -29.315717935
+              153.071920045,
+              -29.3489705809999
             ],
             [
-              153.075258677,
-              -29.3160272659999
+              153.072050915,
+              -29.3494702679999
             ],
             [
-              153.074782785,
-              -29.316431774
+              153.072491115,
+              -29.350314977
             ],
             [
-              153.074306893,
-              -29.316955256
+              153.072633883,
+              -29.350731383
             ],
             [
-              153.073878589,
-              -29.3173597639999
+              153.07238404,
+              -29.351112096
             ],
             [
-              153.073069573,
-              -29.317788067
+              153.072181786,
+              -29.351576091
             ],
             [
-              153.071903637,
-              -29.318192575
+              153.072407834,
+              -29.3529204869999
             ],
             [
-              153.070975647,
-              -29.318406727
+              153.070920672,
+              -29.3528134119999
             ],
             [
-              153.070594933,
-              -29.318835029
+              153.069861811,
+              -29.352432698
             ],
             [
-              153.070499755,
-              -29.319168154
+              153.069100383,
+              -29.3518378329999
             ],
             [
-              153.070023863,
-              -29.319548868
+              153.068446032,
+              -29.351016918
             ],
             [
-              153.069191051,
-              -29.318573289
+              153.068255675,
+              -29.3497795989999
             ],
             [
-              153.068215472,
-              -29.318026013
+              153.068255675,
+              -29.349030069
             ],
             [
-              153.067644401,
-              -29.317193201
+              153.068576903,
+              -29.3482448459999
             ],
             [
-              153.067287482,
-              -29.316812488
+              153.068838643,
+              -29.347638084
             ],
             [
-              153.067477839,
-              -29.316289007
+              153.069754736,
+              -29.347138397
             ],
             [
-              153.06773958,
-              -29.315456195
+              153.07083739,
+              -29.347138397
             ],
             [
-              153.068453418,
-              -29.314932714
+              153.071527434,
+              -29.347447727
             ],
             [
-              153.072022609,
-              -29.314099902
+              153.072431629,
+              -29.3481615659999
             ]
           ]
         ],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Warral Rd, West Tamworth",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Mon, 12 Oct 2026 07:47:38 GMT",
+        "description": "Warral Rd, West Tamworth, NSW 2340",
+        "council": "Tamworth",
+        "lat": -31.1143759999999,
+        "lng": 150.893435,
+        "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       }
@@ -1863,40 +1833,97 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-12T07:18:48+00:00",
-        "description": "OLDBURY, SHIRE OF SERPENTINE-JARRAHDALE",
-        "lat": -32.245,
-        "lng": 115.8939,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-12T07:10:05+00:00",
-        "description": "COLLIE, SHIRE OF COLLIE",
-        "lat": -33.3665,
-        "lng": 116.1572,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-12T06:52:13+00:00",
+        "updated": "2026-10-12T07:45:44+00:00",
         "description": "BROOKHAMPTON, SHIRE OF DONNYBROOK-BALINGUP",
         "lat": -33.6564,
         "lng": 115.8749,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-12T07:39:41+00:00",
+        "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
+        "lat": -16.853,
+        "lng": 122.909,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-12T07:36:17+00:00",
+        "description": "ORD RIVER, SHIRE OF HALLS CREEK",
+        "lat": -17.219,
+        "lng": 128.056,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - NEWMAN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-12T07:31:40.011+00:00",
+        "description": "",
+        "lat": -23.4091,
+        "lng": 119.7979,
+        "polys": [
+          [
+            [
+              119.805386,
+              -23.427329
+            ],
+            [
+              119.750828,
+              -23.426426
+            ],
+            [
+              119.7534,
+              -23.372247
+            ],
+            [
+              119.836874,
+              -23.373638
+            ],
+            [
+              119.835814,
+              -23.427474
+            ],
+            [
+              119.805386,
+              -23.427329
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-12T07:25:51+00:00",
+        "description": "OLDBURY, SHIRE OF SERPENTINE-JARRAHDALE",
+        "lat": -32.245,
+        "lng": 115.8939,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -2151,48 +2178,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire Advice MONITOR CONDITIONS - NEWMAN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-11T02:35:07.864+00:00",
-        "description": "",
-        "lat": -23.4091,
-        "lng": 119.7979,
-        "polys": [
-          [
-            [
-              119.805386,
-              -23.427329
-            ],
-            [
-              119.750828,
-              -23.426426
-            ],
-            [
-              119.7534,
-              -23.372247
-            ],
-            [
-              119.836874,
-              -23.373638
-            ],
-            [
-              119.835814,
-              -23.427474
-            ],
-            [
-              119.805386,
-              -23.427329
-            ]
-          ]
-        ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire Advice MONITOR CONDITIONS - CAMBALLIN",
         "alertLevel": "Advice",
         "status": "active",
@@ -2335,40 +2320,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-10T08:11:27+00:00",
-        "description": "MARBLE BAR, TOWN OF PORT HEDLAND",
-        "lat": -21.243,
-        "lng": 118.338,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-10T07:16:24+00:00",
         "description": "ORD RIVER, SHIRE OF HALLS CREEK",
         "lat": -17.886,
         "lng": 127.834,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-10T01:51:08+00:00",
-        "description": "ROEBUCK, SHIRE OF BROOME",
-        "lat": -17.824,
-        "lng": 122.632,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -2435,51 +2390,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-09T03:35:06+00:00",
-        "description": "ORD RIVER, SHIRE OF HALLS CREEK",
-        "lat": -18.037,
-        "lng": 128.061,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-09T03:28:40+00:00",
-        "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
-        "lat": -17.074,
-        "lng": 122.851,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-08T02:00:24+00:00",
-        "description": "STURT CREEK, SHIRE OF HALLS CREEK",
-        "lat": -18.39,
-        "lng": 128.841,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Smoke Alert FOR BROOKTON IN THE SHIRE OF BROOKTON",
         "alertLevel": "Advice",
         "status": "active",
@@ -2496,186 +2406,6 @@
       }
     ],
     "nt": [
-      {
-        "title": "Power Lines Down - ALDRIDGE ST, ARALUEN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Storm",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-12T07:17:10+00:00",
-        "description": "ALDRIDGE ST, ARALUEN",
-        "lat": -23.6994,
-        "lng": 133.8633,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Power Lines Down - SOUTH TCE, THE GAP",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Storm",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-12T07:14:47+00:00",
-        "description": "SOUTH TCE, THE GAP",
-        "lat": -23.7168,
-        "lng": 133.8742,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Power Lines Down - BOUCAUT ST, GILLEN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Storm",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-12T06:57:09+00:00",
-        "description": "BOUCAUT ST, GILLEN",
-        "lat": -23.7008,
-        "lng": 133.8672,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Power Lines Down - VAN SENDEN AV, GILLEN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Storm",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-12T06:53:33+00:00",
-        "description": "VAN SENDEN AV, GILLEN",
-        "lat": -23.7055,
-        "lng": 133.8588,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Hazmat Incident - LYNDAVALE DR, LARAPINTA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-12T06:51:48+00:00",
-        "description": "LYNDAVALE DR, LARAPINTA",
-        "lat": -23.6967,
-        "lng": 133.841,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Power Lines Down - MULGA ST, AMOONGUNA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Storm",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-12T06:49:45+00:00",
-        "description": "MULGA ST, AMOONGUNA",
-        "lat": -23.7663,
-        "lng": 133.936,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Power Lines Down - MULGA ST, AMOONGUNA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Storm",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-12T06:33:50+00:00",
-        "description": "MULGA ST, AMOONGUNA",
-        "lat": -23.7663,
-        "lng": 133.936,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Power Lines Down - BLOOMFIELD ST, GILLEN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Storm",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-12T06:31:31+00:00",
-        "description": "BLOOMFIELD ST, GILLEN",
-        "lat": -23.7073,
-        "lng": 133.8722,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Power Lines Down - MULGA ST, AMOONGUNA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Storm",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-12T06:30:51+00:00",
-        "description": "MULGA ST, AMOONGUNA",
-        "lat": -23.7663,
-        "lng": 133.936,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Power Lines Down - Unknown",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Storm",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-12T06:27:14+00:00",
-        "description": "",
-        "lat": -23.7418,
-        "lng": 133.8783,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Power Lines Down - LEN KITTLE DR, ILPARPA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Storm",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-12T06:23:11+00:00",
-        "description": "LEN KITTLE DR, ILPARPA",
-        "lat": -23.7314,
-        "lng": 133.8621,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Power Lines Down - BLOOMFIELD ST, GILLEN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Storm",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-12T06:18:54+00:00",
-        "description": "BLOOMFIELD ST, GILLEN",
-        "lat": -23.7106,
-        "lng": 133.8709,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
       {
         "title": "Bushfire - Hodgson River Road, LIMMEN COMPLEX",
         "alertLevel": "Advice",
@@ -2994,7 +2724,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 57,
+  "incident_count": 40,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
