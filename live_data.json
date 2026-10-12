@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-12T03:23:06.652059+00:00",
-  "last_checked_utc": "2026-10-12T03:23:06.652059+00:00",
-  "warning_count": 12,
+  "generated_utc": "2026-10-12T03:53:08.722931+00:00",
+  "last_checked_utc": "2026-10-12T03:53:08.722931+00:00",
+  "warning_count": 14,
   "warnings": [
     {
       "pid": "",
@@ -133,6 +133,49 @@
       "hazardPhase": "REN"
     },
     {
+      "pid": "IDN21033",
+      "title": "Severe Thunderstorm Warning for Riverina",
+      "type": "thunderstorm",
+      "state": "NSW",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Holbrook.",
+      "issued": "2026-10-12T14:48:05+11:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NSW_PW014",
+          "description": "Riverina",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
+    },
+    {
+      "pid": "IDS21033",
+      "title": "Severe Thunderstorm Warning for North West Pastoral, North East Pastoral",
+      "type": "thunderstorm",
+      "state": "SA",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Oodnadatta.",
+      "issued": "2026-10-12T14:07:20+10:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "SA_PW013",
+          "description": "North West Pastoral",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW014",
+          "description": "North East Pastoral",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
+    },
+    {
       "pid": "IDN22000",
       "title": "Extreme Fire Weather Warning for Greater Sydney Region",
       "type": "fire_weather",
@@ -162,7 +205,7 @@
         "type": "Bush Fire",
         "size": "19 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 12 Oct 2026 03:19:36 GMT",
+        "updated": "Mon, 12 Oct 2026 03:47:36 GMT",
         "description": "BRIGGENSHAWS RD, VALERY 2454",
         "council": "Bellingen",
         "lat": -30.405499,
@@ -325,7 +368,7 @@
         "type": "Grass Fire",
         "size": "207 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 12 Oct 2026 03:19:36 GMT",
+        "updated": "Mon, 12 Oct 2026 03:47:36 GMT",
         "description": "BUSBYS FLAT RD, BUSBYS FLAT 2469",
         "council": "Richmond Valley",
         "lat": -29.042947596,
@@ -996,7 +1039,7 @@
         "type": "Bush Fire",
         "size": "4 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Mon, 12 Oct 2026 03:19:36 GMT",
+        "updated": "Mon, 12 Oct 2026 03:47:36 GMT",
         "description": "MARENGO STATION, MARENGO RD, MARENGO NSW 2453",
         "council": "Clarence Valley",
         "lat": -30.1909119059999,
@@ -1089,29 +1132,13 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
-        "title": "Milperra Rd, Milperra",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 12 Oct 2026 03:19:36 GMT",
-        "description": "Milperra Rd, Milperra, NSW 2214",
-        "council": "Canterbury-Bankstown",
-        "lat": -33.9309309999999,
-        "lng": 150.992554,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
         "title": "OIL RIG RD, GIBBERAGEE",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "196 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Mon, 12 Oct 2026 03:19:36 GMT",
+        "updated": "Mon, 12 Oct 2026 03:47:36 GMT",
         "description": "OIL RIG RD, GIBBERAGEE 2469",
         "council": "Richmond Valley",
         "lat": -29.323229,
@@ -1192,13 +1219,29 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
+        "title": "Old North Road. Access off Sweetwater Rd Pokolbin",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Mon, 12 Oct 2026 03:47:36 GMT",
+        "description": "Old North Road. Access off Sweetwater Rd Pokolbin, POKOLBIN 2320",
+        "council": "Singleton",
+        "lat": -32.694094,
+        "lng": 151.272624,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "The River Rd, Revesby Heights",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 12 Oct 2026 03:19:36 GMT",
+        "updated": "Mon, 12 Oct 2026 03:47:36 GMT",
         "description": "The River Rd, Revesby Heights, NSW 2212",
         "council": "Canterbury-Bankstown",
         "lat": -33.974079,
