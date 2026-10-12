@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-12T03:53:08.722931+00:00",
-  "last_checked_utc": "2026-10-12T03:53:08.722931+00:00",
-  "warning_count": 14,
+  "generated_utc": "2026-10-12T04:23:05.188715+00:00",
+  "last_checked_utc": "2026-10-12T04:23:05.188715+00:00",
+  "warning_count": 15,
   "warnings": [
     {
       "pid": "",
-      "title": "12/12:55 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "12/15:04 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 12 Oct 2026 01:55:00 GMT"
+      "issued": "Mon, 12 Oct 2026 04:04:15 GMT"
     },
     {
       "pid": "",
@@ -176,6 +176,30 @@
       "hazardPhase": "NEW"
     },
     {
+      "pid": "IDD21033",
+      "title": "Severe Thunderstorm Warning for Simpson, Lasseter",
+      "type": "thunderstorm",
+      "state": "NT",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Hermannsburg, Santa Teresa and Titjikala.",
+      "issued": "2026-10-12T13:46:59+09:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NT_PW007",
+          "description": "Simpson",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NT_PW008",
+          "description": "Lasseter",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
+    },
+    {
       "pid": "IDN22000",
       "title": "Extreme Fire Weather Warning for Greater Sydney Region",
       "type": "fire_weather",
@@ -199,13 +223,29 @@
   "incidents": {
     "nsw": [
       {
+        "title": "BOOROOK RD, SANDY HILL",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Mon, 12 Oct 2026 04:19:36 GMT",
+        "description": "BOOROOK RD, SANDY HILL 2372",
+        "council": "Tenterfield",
+        "lat": -28.8387355799999,
+        "lng": 152.285430908,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "BRIGGENSHAWS RD, VALERY",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "19 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 12 Oct 2026 03:47:36 GMT",
+        "updated": "Mon, 12 Oct 2026 04:19:36 GMT",
         "description": "BRIGGENSHAWS RD, VALERY 2454",
         "council": "Bellingen",
         "lat": -30.405499,
@@ -368,7 +408,7 @@
         "type": "Grass Fire",
         "size": "207 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 12 Oct 2026 03:47:36 GMT",
+        "updated": "Mon, 12 Oct 2026 04:19:36 GMT",
         "description": "BUSBYS FLAT RD, BUSBYS FLAT 2469",
         "council": "Richmond Valley",
         "lat": -29.042947596,
@@ -1039,7 +1079,7 @@
         "type": "Bush Fire",
         "size": "4 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Mon, 12 Oct 2026 03:47:36 GMT",
+        "updated": "Mon, 12 Oct 2026 04:19:36 GMT",
         "description": "MARENGO STATION, MARENGO RD, MARENGO NSW 2453",
         "council": "Clarence Valley",
         "lat": -30.1909119059999,
@@ -1138,11 +1178,11 @@
         "type": "Bush Fire",
         "size": "196 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Mon, 12 Oct 2026 03:47:36 GMT",
+        "updated": "Mon, 12 Oct 2026 04:19:36 GMT",
         "description": "OIL RIG RD, GIBBERAGEE 2469",
-        "council": "Richmond Valley",
-        "lat": -29.323229,
-        "lng": 153.068889,
+        "council": "Clarence Valley",
+        "lat": -29.3249446579999,
+        "lng": 153.069037913,
         "polys": [
           [
             [
@@ -1219,29 +1259,13 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
-        "title": "Old North Road. Access off Sweetwater Rd Pokolbin",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Mon, 12 Oct 2026 03:47:36 GMT",
-        "description": "Old North Road. Access off Sweetwater Rd Pokolbin, POKOLBIN 2320",
-        "council": "Singleton",
-        "lat": -32.694094,
-        "lng": 151.272624,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
         "title": "The River Rd, Revesby Heights",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 12 Oct 2026 03:47:36 GMT",
+        "updated": "Mon, 12 Oct 2026 04:19:36 GMT",
         "description": "The River Rd, Revesby Heights, NSW 2212",
         "council": "Canterbury-Bankstown",
         "lat": -33.974079,
@@ -1332,6 +1356,20 @@
             ]
           ]
         ]
+      },
+      {
+        "title": "STAY INFORMED - Watsonville, Kalunga and Irvinebank (near Atherton) - fire as at 2:13pm Monday, 12 October 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "Irvinebank, Kalunga and Irvinebank",
+        "lat": -17.411442427242587,
+        "lng": 145.27584604066644,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
       }
     ],
     "tas": [],
@@ -1932,6 +1970,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - TELEGRAPH TCE, THE GAP",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-12T04:14:19+00:00",
+        "description": "TELEGRAPH TCE, THE GAP",
+        "lat": -23.7137,
+        "lng": 133.8717,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Hodgson River Road, LIMMEN COMPLEX",
         "alertLevel": "Advice",
         "status": "active",
@@ -2249,7 +2302,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 36,
+  "incident_count": 38,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5880,7 +5933,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-10-12T01:54:49Z",
+      "issued_utc": "2026-10-12T04:04:07Z",
       "overview": [
         "Strong Wind Warning for Monday for Batemans Coast and Eden Coast",
         "Strong Wind Warning for Tuesday for Illawarra Coast, Batemans Coast and Eden Coast"
