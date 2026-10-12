@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-12T08:53:06.243685+00:00",
-  "last_checked_utc": "2026-10-12T08:53:06.243685+00:00",
-  "warning_count": 15,
+  "generated_utc": "2026-10-12T09:23:05.791849+00:00",
+  "last_checked_utc": "2026-10-12T09:23:05.791849+00:00",
+  "warning_count": 16,
   "warnings": [
     {
       "pid": "",
@@ -134,22 +134,22 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for Riverina",
+      "title": "Severe Thunderstorm Warning for North West Slopes and Plains",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "This warning is now cancelled.",
-      "issued": "2026-10-12T15:40:49+11:00",
-      "cancelled": true,
+      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Tamworth, Gunnedah, Barraba, Mullaley, Boggabri and Bingara. 94 km/h wind gust was recorded at Narrabri at 7:50 pm.",
+      "issued": "2026-10-12T20:12:21+11:00",
+      "cancelled": false,
       "areas": [
         {
-          "aac": "NSW_PW014",
-          "description": "Riverina",
-          "phase": "CAN"
+          "aac": "NSW_PW011",
+          "description": "North West Slopes and Plains",
+          "phase": "NEW"
         }
       ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     },
     {
       "pid": "IDS21033",
@@ -158,7 +158,7 @@
       "state": "SA",
       "link": "",
       "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Dalhousie Springs.",
-      "issued": "2026-10-12T18:00:41+10:30",
+      "issued": "2026-10-12T19:24:21+10:30",
       "cancelled": false,
       "areas": [
         {
@@ -169,7 +169,31 @@
         {
           "aac": "SA_PW014",
           "description": "North East Pastoral",
+          "phase": "REN"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDD21033",
+      "title": "Severe Thunderstorm Warning for Barkly, Simpson",
+      "type": "thunderstorm",
+      "state": "NT",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Jervois, Finke and Simpson District east of Finke. Severe thunderstorms are no longer occurring in the Lasseter district and the warning for this district is CANCELLED. 96km/h wind gust was recorded at Alice Springs at 3:44pm.",
+      "issued": "2026-10-12T18:23:10+09:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NT_PW006",
+          "description": "Barkly",
           "phase": "NEW"
+        },
+        {
+          "aac": "NT_PW007",
+          "description": "Simpson",
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
@@ -177,27 +201,22 @@
     },
     {
       "pid": "IDD21033",
-      "title": "Severe Thunderstorm Warning for Simpson, Lasseter",
+      "title": "Severe Thunderstorm Warning for Lasseter",
       "type": "thunderstorm",
       "state": "NT",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Arltunga, Jervois, Kulgera, Finke and Simpson District east of Finke. 96km/h wind gust was recorded at Alice Springs at 3:44pm.",
-      "issued": "2026-10-12T16:58:17+09:30",
-      "cancelled": false,
+      "desc": "",
+      "issued": "2026-10-12T18:23:10+09:30",
+      "cancelled": true,
       "areas": [
-        {
-          "aac": "NT_PW007",
-          "description": "Simpson",
-          "phase": "REN"
-        },
         {
           "aac": "NT_PW008",
           "description": "Lasseter",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDN22000",
@@ -229,7 +248,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 12 Oct 2026 08:47:37 GMT",
+        "updated": "Mon, 12 Oct 2026 09:19:37 GMT",
         "description": "BAFFLE RD, DALMORTON 2460",
         "council": "Clarence Valley",
         "lat": -29.6950598029999,
@@ -245,7 +264,7 @@
         "type": "Bush Fire",
         "size": "1 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 12 Oct 2026 08:47:37 GMT",
+        "updated": "Mon, 12 Oct 2026 09:19:37 GMT",
         "description": "BOOROOK RD, SANDY HILL 2372",
         "council": "Tenterfield",
         "lat": -28.8387355799999,
@@ -302,13 +321,29 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
+        "title": "Borthwick St, Inverell",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Mon, 12 Oct 2026 09:19:37 GMT",
+        "description": "Borthwick St, Inverell, NSW 2360",
+        "council": "Inverell",
+        "lat": -29.785142,
+        "lng": 151.100989,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "BUSBYS FLAT RD, BUSBYS FLAT",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Grass Fire",
         "size": "207 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 12 Oct 2026 08:47:37 GMT",
+        "updated": "Mon, 12 Oct 2026 09:19:37 GMT",
         "description": "BUSBYS FLAT RD, BUSBYS FLAT 2469",
         "council": "Richmond Valley",
         "lat": -29.042947596,
@@ -959,7 +994,7 @@
         "type": "Bush Fire",
         "size": "256 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 12 Oct 2026 08:47:37 GMT",
+        "updated": "Mon, 12 Oct 2026 09:19:37 GMT",
         "description": "DOUBLE HEAD TRL, MOPARRABAH 2440",
         "council": "Kempsey",
         "lat": -31.0086231229999,
@@ -1414,7 +1449,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 12 Oct 2026 08:47:37 GMT",
+        "updated": "Mon, 12 Oct 2026 09:19:37 GMT",
         "description": "Endeavour Dr, Wollongong, NSW 2500",
         "council": "Wollongong",
         "lat": -34.421984,
@@ -1430,7 +1465,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 12 Oct 2026 08:47:37 GMT",
+        "updated": "Mon, 12 Oct 2026 09:19:37 GMT",
         "description": "HARDWAY CREEK RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.723713824,
@@ -1446,7 +1481,7 @@
         "type": "Bush Fire",
         "size": "8 ha",
         "agency": "Rural Fire Service",
-        "updated": "Mon, 12 Oct 2026 08:47:37 GMT",
+        "updated": "Mon, 12 Oct 2026 09:19:37 GMT",
         "description": "KELLERMAN DR, ST HELENS PARK 2560",
         "council": "Campbelltown",
         "lat": -34.108028412,
@@ -1533,7 +1568,7 @@
         "type": "Bush Fire",
         "size": "8 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Mon, 12 Oct 2026 08:47:37 GMT",
+        "updated": "Mon, 12 Oct 2026 09:19:37 GMT",
         "description": "MARENGO STATION, MARENGO RD, MARENGO NSW 2453",
         "council": "Clarence Valley",
         "lat": -30.1909119059999,
@@ -1584,7 +1619,7 @@
         "type": "Bush Fire",
         "size": "196 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Mon, 12 Oct 2026 08:47:37 GMT",
+        "updated": "Mon, 12 Oct 2026 09:19:37 GMT",
         "description": "OIL RIG RD, GIBBERAGEE 2469",
         "council": "Clarence Valley",
         "lat": -29.3249446579999,
@@ -1592,199 +1627,40 @@
         "polys": [
           [
             [
-              153.083972015,
-              -29.3149085979999
+              153.076060307,
+              -29.3355742159999
             ],
             [
-              153.08399581,
-              -29.315229824
+              153.077154859,
+              -29.3367163569999
             ],
             [
-              153.083424739,
-              -29.315194133
+              153.076441021,
+              -29.337739526
             ],
             [
-              153.082603824,
-              -29.314801522
+              153.076155486,
+              -29.3376919359999
             ],
             [
-              153.082199317,
-              -29.314480294
+              153.075536826,
+              -29.3375491689999
             ],
             [
-              153.082068446,
-              -29.314218554
+              153.075179907,
+              -29.3370256869999
             ],
             [
-              153.08169963,
-              -29.3139330189999
+              153.075179907,
+              -29.336430822
             ],
             [
-              153.081544964,
-              -29.3137307649999
+              153.075489237,
+              -29.335978725
             ],
             [
-              153.080688359,
-              -29.3132905639999
-            ],
-            [
-              153.080260056,
-              -29.312921747
-            ],
-            [
-              153.080390926,
-              -29.312683802
-            ],
-            [
-              153.081604452,
-              -29.312552931
-            ],
-            [
-              153.082484852,
-              -29.312695698
-            ],
-            [
-              153.08302023,
-              -29.313005028
-            ],
-            [
-              153.083353356,
-              -29.3136474839999
-            ],
-            [
-              153.083972015,
-              -29.3149085979999
-            ]
-          ]
-        ],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "Queensland Rd, Casino",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Mon, 12 Oct 2026 08:47:37 GMT",
-        "description": "Queensland Rd, Casino, NSW 2470",
-        "council": "Richmond Valley",
-        "lat": -28.8451959999999,
-        "lng": 153.043683,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "SUMMERLAND WAY, WHIPORIE",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "4 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Mon, 12 Oct 2026 08:47:37 GMT",
-        "description": "SUMMERLAND WAY, WHIPORIE 2469",
-        "council": "Richmond Valley",
-        "lat": -29.2622316719999,
-        "lng": 152.98786763,
-        "polys": [
-          [
-            [
-              152.987391738,
-              -29.262291158
-            ],
-            [
-              152.987605888,
-              -29.261993725
-            ],
-            [
-              152.987784349,
-              -29.2618152659999
-            ],
-            [
-              152.987998499,
-              -29.2619223419999
-            ],
-            [
-              152.988105575,
-              -29.261767676
-            ],
-            [
-              152.988248344,
-              -29.2618390609999
-            ],
-            [
-              152.988510084,
-              -29.261910444
-            ],
-            [
-              152.988593365,
-              -29.26201752
-            ],
-            [
-              152.988581467,
-              -29.2621721849999
-            ],
-            [
-              152.988629057,
-              -29.2622792609999
-            ],
-            [
-              152.988605262,
-              -29.262445823
-            ],
-            [
-              152.988676646,
-              -29.262600488
-            ],
-            [
-              152.988688543,
-              -29.262707564
-            ],
-            [
-              152.988605262,
-              -29.262826536
-            ],
-            [
-              152.988414905,
-              -29.262909818
-            ],
-            [
-              152.988224549,
-              -29.2629812019999
-            ],
-            [
-              152.988057987,
-              -29.2630049969999
-            ],
-            [
-              152.987879527,
-              -29.2627789479999
-            ],
-            [
-              152.987796245,
-              -29.262576693
-            ],
-            [
-              152.987677273,
-              -29.262529104
-            ],
-            [
-              152.987522607,
-              -29.262517207
-            ],
-            [
-              152.987415532,
-              -29.2624815149999
-            ],
-            [
-              152.987423464,
-              -29.262482507
-            ],
-            [
-              152.987391738,
-              -29.262291158
+              153.076060307,
+              -29.3355742159999
             ]
           ]
         ],
@@ -1916,13 +1792,43 @@
     "tas": [],
     "wa": [
       {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-12T09:14:15+00:00",
+        "description": "GOSNELLS, CITY OF GOSNELLS",
+        "lat": -32.0881,
+        "lng": 115.9906,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Report of Smoke",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-12T09:13:27+00:00",
+        "description": "MOOLIABEENEE, SHIRE OF CHITTERING",
+        "lat": -31.3139,
+        "lng": 116.0854,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-12T08:47:41+00:00",
+        "updated": "2026-10-12T09:09:49+00:00",
         "description": "ORANA, CITY OF ALBANY",
         "lat": -34.9953,
         "lng": 117.8542,
@@ -1956,21 +1862,6 @@
         "description": "STIRLING ESTATE, SHIRE OF CAPEL",
         "lat": -33.5035,
         "lng": 115.5446,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Report of Smoke",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-12T08:35:18+00:00",
-        "description": "MOOLIABEENEE, SHIRE OF CHITTERING",
-        "lat": -31.3139,
-        "lng": 116.0854,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
