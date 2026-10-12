@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-11T23:53:04.348529+00:00",
-  "last_checked_utc": "2026-10-11T23:53:04.348529+00:00",
-  "warning_count": 9,
+  "generated_utc": "2026-10-12T00:23:03.682438+00:00",
+  "last_checked_utc": "2026-10-12T00:23:03.682438+00:00",
+  "warning_count": 12,
   "warnings": [
     {
       "pid": "",
@@ -11,6 +11,15 @@
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Sun, 11 Oct 2026 23:00:39 GMT"
+    },
+    {
+      "pid": "",
+      "title": "12/11:01 EDT Warning to Sheep Graziers\nfor Snowy Mountains forecast district",
+      "type": "other",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
+      "desc": "",
+      "issued": "Mon, 12 Oct 2026 00:01:23 GMT"
     },
     {
       "pid": "",
@@ -32,6 +41,15 @@
     },
     {
       "pid": "",
+      "title": "12/10:36 CDT Warning to Sheep Graziers\nfor North East Pastoral forecast district",
+      "type": "other",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/sheep.shtml",
+      "desc": "",
+      "issued": "Mon, 12 Oct 2026 00:06:08 GMT"
+    },
+    {
+      "pid": "",
       "title": "12/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
@@ -47,6 +65,15 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Sun, 11 Oct 2026 23:01:34 GMT"
+    },
+    {
+      "pid": "",
+      "title": "12/11:01 EDT Warning to Sheep Graziers\nfor North West Coast, Midlands, Upper Derwent Valley and South East forecast districts",
+      "type": "other",
+      "state": "TAS",
+      "link": "http://reg.bom.gov.au/tas/warnings/sheep.shtml",
+      "desc": "",
+      "issued": "Mon, 12 Oct 2026 00:01:45 GMT"
     },
     {
       "pid": "",
@@ -129,29 +156,13 @@
   "incidents": {
     "nsw": [
       {
-        "title": "Becker St, Bourke",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Sun, 11 Oct 2026 23:47:35 GMT",
-        "description": "Becker St, Bourke, NSW 2840",
-        "council": "Bourke",
-        "lat": -30.0883049999999,
-        "lng": 145.95021,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
         "title": "BRIGGENSHAWS RD, VALERY",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "19 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 11 Oct 2026 23:47:35 GMT",
+        "updated": "Mon, 12 Oct 2026 00:19:36 GMT",
         "description": "BRIGGENSHAWS RD, VALERY 2454",
         "council": "Bellingen",
         "lat": -30.405499,
@@ -314,7 +325,7 @@
         "type": "Grass Fire",
         "size": "203 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 11 Oct 2026 23:47:35 GMT",
+        "updated": "Mon, 12 Oct 2026 00:19:36 GMT",
         "description": "BUSBYS FLAT RD, BUSBYS FLAT 2469",
         "council": "Richmond Valley",
         "lat": -29.042947596,
@@ -977,7 +988,7 @@
         "type": "Bush Fire",
         "size": "4 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sun, 11 Oct 2026 23:47:35 GMT",
+        "updated": "Mon, 12 Oct 2026 00:19:36 GMT",
         "description": "MARENGO STATION, MARENGO RD, MARENGO NSW 2453",
         "council": "Clarence Valley",
         "lat": -30.1909119059999,
@@ -1076,7 +1087,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sun, 11 Oct 2026 23:47:35 GMT",
+        "updated": "Mon, 12 Oct 2026 00:19:36 GMT",
         "description": "MEBUL RD, BERYL 2852",
         "council": "Mid-Western",
         "lat": -32.3635669999999,
@@ -1092,7 +1103,7 @@
         "type": "Bush Fire",
         "size": "45 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Sun, 11 Oct 2026 23:47:35 GMT",
+        "updated": "Mon, 12 Oct 2026 00:19:36 GMT",
         "description": "OIL RIG RD, GIBBERAGEE 2469",
         "council": "Richmond Valley",
         "lat": -29.323229,
@@ -1332,6 +1343,21 @@
     ],
     "tas": [],
     "wa": [
+      {
+        "title": "Earthquake",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Earthquake",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-11T23:48:27+00:00",
+        "description": "BEACON, MOUNT MARSHALL, SHIRE OF",
+        "lat": -30.5285,
+        "lng": 117.7939,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Structure Fire",
         "alertLevel": "",
@@ -2213,7 +2239,7 @@
         "type": "HazMat",
         "size": "",
         "agency": "Fire",
-        "updated": "2026-10-11T23:38:22+00:00",
+        "updated": "2026-10-12T00:05:40+00:00",
         "description": "URIARRA VILLAGE",
         "lat": -35.2952,
         "lng": 148.9286,
