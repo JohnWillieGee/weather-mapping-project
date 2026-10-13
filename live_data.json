@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-13T09:23:06.392733+00:00",
-  "last_checked_utc": "2026-10-13T09:23:06.392733+00:00",
+  "generated_utc": "2026-10-13T09:53:04.267683+00:00",
+  "last_checked_utc": "2026-10-13T09:53:04.267683+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -124,12 +124,12 @@
     },
     {
       "pid": "IDD21033",
-      "title": "Severe Thunderstorm Warning for Barkly, Simpson, Tanami",
+      "title": "Severe Thunderstorm Warning for Barkly, Simpson",
       "type": "thunderstorm",
       "state": "NT",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Ali Curung, Ti Tree, Barrow Creek and Ampilatwatja. Severe thunderstorms are no longer occurring in the Lasseter district and the warning for this district is CANCELLED.",
-      "issued": "2026-10-13T17:05:57+09:30",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Ali Curung, Ampilatwatja and Barkly District east of Tennant Creek. Severe thunderstorms are no longer occurring in the Tanami district and the warning for this district is CANCELLED.",
+      "issued": "2026-10-13T19:11:04+09:30",
       "cancelled": false,
       "areas": [
         {
@@ -141,11 +141,6 @@
           "aac": "NT_PW007",
           "description": "Simpson",
           "phase": "REN"
-        },
-        {
-          "aac": "NT_PW009",
-          "description": "Tanami",
-          "phase": "REN"
         }
       ],
       "severityCode": "STD",
@@ -153,17 +148,17 @@
     },
     {
       "pid": "IDD21033",
-      "title": "Severe Thunderstorm Warning for Lasseter",
+      "title": "Severe Thunderstorm Warning for Tanami",
       "type": "thunderstorm",
       "state": "NT",
       "link": "",
       "desc": "",
-      "issued": "2026-10-13T17:05:57+09:30",
+      "issued": "2026-10-13T19:11:04+09:30",
       "cancelled": true,
       "areas": [
         {
-          "aac": "NT_PW008",
-          "description": "Lasseter",
+          "aac": "NT_PW009",
+          "description": "Tanami",
           "phase": "CAN"
         }
       ],
@@ -181,7 +176,7 @@
         "type": "Bush Fire",
         "size": "289 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 13 Oct 2026 09:19:40 GMT",
+        "updated": "Tue, 13 Oct 2026 09:47:40 GMT",
         "description": "BAFFLE RD, DALMORTON 2460",
         "council": "Clarence Valley",
         "lat": -29.6950598029999,
@@ -448,7 +443,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 13 Oct 2026 09:19:40 GMT",
+        "updated": "Tue, 13 Oct 2026 09:47:40 GMT",
         "description": "HARDWAY CREEK RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.723713824,
@@ -464,7 +459,7 @@
         "type": "Bush Fire",
         "size": "674 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Tue, 13 Oct 2026 09:19:40 GMT",
+        "updated": "Tue, 13 Oct 2026 09:47:40 GMT",
         "description": "OIL RIG RD, GIBBERAGEE 2469",
         "council": "Clarence Valley",
         "lat": -29.3249446579999,
@@ -941,16 +936,31 @@
     "tas": [],
     "wa": [
       {
-        "title": "Report of Smoke",
+        "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-13T09:13:53+00:00",
-        "description": "CHAMPION LAKES, CITY OF ARMADALE",
-        "lat": -32.1421,
-        "lng": 115.9746,
+        "updated": "2026-10-13T09:43:55+00:00",
+        "description": "BINDOON TRAINING AREA, SHIRE OF TOODYAY",
+        "lat": -31.3443,
+        "lng": 116.2599,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-13T09:31:38+00:00",
+        "description": "MOGUMBER, SHIRE OF VICTORIA PLAINS",
+        "lat": -31.0017,
+        "lng": 116.0403,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1025,21 +1035,6 @@
             ]
           ]
         ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-13T08:21:52+00:00",
-        "description": "MOGUMBER, SHIRE OF VICTORIA PLAINS",
-        "lat": -31.0017,
-        "lng": 116.0403,
-        "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1597,6 +1592,21 @@
     ],
     "nt": [
       {
+        "title": "Power Lines Down - ACHILPA ST, THE GAP",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Storm",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-13T09:46:31+00:00",
+        "description": "ACHILPA ST, THE GAP",
+        "lat": -23.7155,
+        "lng": 133.8722,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - RIDGEVIEW RD, FLY CREEK",
         "alertLevel": "Advice",
         "status": "active",
@@ -1959,7 +1969,7 @@
       }
     ]
   },
-  "incident_count": 42,
+  "incident_count": 43,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
