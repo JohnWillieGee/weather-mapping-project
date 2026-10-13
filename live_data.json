@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-13T12:53:04.263234+00:00",
-  "last_checked_utc": "2026-10-13T12:53:04.263234+00:00",
+  "generated_utc": "2026-10-13T13:23:03.910339+00:00",
+  "last_checked_utc": "2026-10-13T13:23:03.910339+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -124,27 +124,27 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central West, Maranoa and Warrego",
+      "title": "Cancellation of Severe Thunderstorm Warning for Central West, Maranoa and Warrego",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Tambo.",
-      "issued": "2026-10-13T22:17:08+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-13T23:06:15+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "QLD_PW009",
           "description": "Central West",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW012",
           "description": "Maranoa and Warrego",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDD21033",
@@ -186,7 +186,7 @@
         "type": "Bush Fire",
         "size": "289 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 13 Oct 2026 12:47:39 GMT",
+        "updated": "Tue, 13 Oct 2026 13:19:40 GMT",
         "description": "BAFFLE RD, DALMORTON 2460",
         "council": "Clarence Valley",
         "lat": -29.6950598029999,
@@ -449,11 +449,11 @@
       {
         "title": "Edgecliffe Bvd, Collaroy Plateau",
         "alertLevel": "Advice",
-        "status": "Not yet controlled",
+        "status": "Being controlled",
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Tue, 13 Oct 2026 12:47:39 GMT",
+        "updated": "Tue, 13 Oct 2026 13:19:40 GMT",
         "description": "Edgecliffe Bvd, Collaroy Plateau, NSW 2097",
         "council": "Northern Beaches",
         "lat": -33.7250809999999,
@@ -469,7 +469,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 13 Oct 2026 12:47:39 GMT",
+        "updated": "Tue, 13 Oct 2026 13:19:40 GMT",
         "description": "HARDWAY CREEK RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.723713824,
@@ -485,7 +485,7 @@
         "type": "Bush Fire",
         "size": "674 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Tue, 13 Oct 2026 12:47:39 GMT",
+        "updated": "Tue, 13 Oct 2026 13:19:40 GMT",
         "description": "OIL RIG RD, GIBBERAGEE 2469",
         "council": "Clarence Valley",
         "lat": -29.3249446579999,
@@ -968,21 +968,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-13T12:36:58+00:00",
-        "description": "CABLE BEACH, SHIRE OF BROOME",
-        "lat": -17.9605,
-        "lng": 122.2183,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-13T12:36:55+00:00",
         "description": "BINDOON TRAINING AREA, SHIRE OF TOODYAY",
         "lat": -31.3443,
@@ -998,40 +983,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-13T12:32:34+00:00",
-        "description": "SOUTH BOULDER, CITY OF KALGOORLIE-BOULDER",
-        "lat": -30.7954,
-        "lng": 121.4901,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-13T12:19:29+00:00",
         "description": "FRANKLAND RIVER, SHIRE OF CRANBROOK",
         "lat": -34.4141,
         "lng": 117.2366,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-13T11:29:12+00:00",
-        "description": "HANNANS, CITY OF KALGOORLIE-BOULDER",
-        "lat": -30.7299,
-        "lng": 121.4587,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -2007,25 +1962,9 @@
       }
     ],
     "act": [],
-    "sa": [
-      {
-        "title": "STRUCTURE FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-13T11:47:00+00:00",
-        "description": "MILLICENT",
-        "lat": -37.5871,
-        "lng": 140.326,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      }
-    ]
+    "sa": []
   },
-  "incident_count": 46,
+  "incident_count": 42,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
