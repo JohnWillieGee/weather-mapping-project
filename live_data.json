@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-13T14:53:05.155355+00:00",
-  "last_checked_utc": "2026-10-13T14:53:05.155355+00:00",
-  "warning_count": 13,
+  "generated_utc": "2026-10-13T15:23:02.520014+00:00",
+  "last_checked_utc": "2026-10-13T15:23:02.520014+00:00",
+  "warning_count": 12,
   "warnings": [
     {
       "pid": "",
@@ -85,35 +85,6 @@
       "issued": "Tue, 13 Oct 2026 05:34:23 GMT"
     },
     {
-      "pid": "IDT21037",
-      "title": "Cancellation of Severe Weather Warning for East Coast, South East, Western",
-      "type": "severe_weather",
-      "state": "TAS",
-      "link": "",
-      "desc": "This warning is now cancelled.",
-      "issued": "2026-10-13T16:43:38+11:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "TAS_PW003",
-          "description": "East Coast",
-          "phase": "CAN"
-        },
-        {
-          "aac": "TAS_PW006",
-          "description": "South East",
-          "phase": "CAN"
-        },
-        {
-          "aac": "TAS_PW009",
-          "description": "Western",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
-    },
-    {
       "pid": "IDQ21033",
       "title": "Cancellation of Severe Thunderstorm Warning for Central West, Maranoa and Warrego",
       "type": "thunderstorm",
@@ -191,7 +162,7 @@
         "type": "Bush Fire",
         "size": "289 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 13 Oct 2026 14:47:40 GMT",
+        "updated": "Tue, 13 Oct 2026 15:19:40 GMT",
         "description": "BAFFLE RD, DALMORTON 2460",
         "council": "Clarence Valley",
         "lat": -29.6950598029999,
@@ -458,7 +429,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 13 Oct 2026 14:47:40 GMT",
+        "updated": "Tue, 13 Oct 2026 15:19:40 GMT",
         "description": "HARDWAY CREEK RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.723713824,
@@ -474,7 +445,7 @@
         "type": "Bush Fire",
         "size": "674 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Tue, 13 Oct 2026 14:47:40 GMT",
+        "updated": "Tue, 13 Oct 2026 15:19:40 GMT",
         "description": "OIL RIG RD, GIBBERAGEE 2469",
         "council": "Clarence Valley",
         "lat": -29.3249446579999,
@@ -950,6 +921,36 @@
     ],
     "tas": [],
     "wa": [
+      {
+        "title": "Report of Smoke",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-13T15:09:19+00:00",
+        "description": "EAST VICTORIA PARK, TOWN OF VICTORIA PARK",
+        "lat": -31.989,
+        "lng": 115.9076,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-13T15:00:33+00:00",
+        "description": "KAMBALDA WEST, SHIRE OF COOLGARDIE",
+        "lat": -31.2123,
+        "lng": 121.6214,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1953,7 +1954,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 41,
+  "incident_count": 43,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
