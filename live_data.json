@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-13T11:53:06.801356+00:00",
-  "last_checked_utc": "2026-10-13T11:53:06.801356+00:00",
-  "warning_count": 14,
+  "generated_utc": "2026-10-13T12:23:02.706260+00:00",
+  "last_checked_utc": "2026-10-13T12:23:02.706260+00:00",
+  "warning_count": 13,
   "warnings": [
     {
       "pid": "",
@@ -14,7 +14,7 @@
     },
     {
       "pid": "",
-      "title": "13/22:50 EDT Warning to Sheep Graziers\nfor Central Tablelands, Southern Tablelands, Snowy Mountains and Australian Capital Territory forecast districts",
+      "title": "13/22:50 EDT Warning to Sheep Graziers\nfor Southern Tablelands, Snowy Mountains and Australian Capital Territory forecast districts",
       "type": "other",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
@@ -124,31 +124,36 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for Maranoa and Warrego",
+      "title": "Severe Thunderstorm Warning for Central West, Maranoa and Warrego",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "This warning is now cancelled.",
-      "issued": "2026-10-13T21:48:56+10:00",
-      "cancelled": true,
+      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Tambo.",
+      "issued": "2026-10-13T22:17:08+10:00",
+      "cancelled": false,
       "areas": [
+        {
+          "aac": "QLD_PW009",
+          "description": "Central West",
+          "phase": "NEW"
+        },
         {
           "aac": "QLD_PW012",
           "description": "Maranoa and Warrego",
-          "phase": "CAN"
+          "phase": "REN"
         }
       ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
+      "severityCode": "STD",
+      "hazardPhase": "UPD"
     },
     {
       "pid": "IDD21033",
-      "title": "Severe Thunderstorm Warning for Barkly, Simpson",
+      "title": "Severe Thunderstorm Warning for Barkly, Simpson, Tanami",
       "type": "thunderstorm",
       "state": "NT",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Ali Curung, Ampilatwatja and Barkly District east of Tennant Creek. Severe thunderstorms are no longer occurring in the Tanami district and the warning for this district is CANCELLED.",
-      "issued": "2026-10-13T19:11:04+09:30",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Ali Curung, Barrow Creek, Barkly District west of Tennant Creek and Barkly District east of Tennant Creek.",
+      "issued": "2026-10-13T21:41:34+09:30",
       "cancelled": false,
       "areas": [
         {
@@ -160,29 +165,15 @@
           "aac": "NT_PW007",
           "description": "Simpson",
           "phase": "REN"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
-    },
-    {
-      "pid": "IDD21033",
-      "title": "Severe Thunderstorm Warning for Tanami",
-      "type": "thunderstorm",
-      "state": "NT",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-13T19:11:04+09:30",
-      "cancelled": true,
-      "areas": [
+        },
         {
           "aac": "NT_PW009",
           "description": "Tanami",
-          "phase": "CAN"
+          "phase": "NEW"
         }
       ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
+      "severityCode": "STD",
+      "hazardPhase": "UPD"
     }
   ],
   "fetch_errors": {},
@@ -195,7 +186,7 @@
         "type": "Bush Fire",
         "size": "289 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 13 Oct 2026 11:47:41 GMT",
+        "updated": "Tue, 13 Oct 2026 12:19:39 GMT",
         "description": "BAFFLE RD, DALMORTON 2460",
         "council": "Clarence Valley",
         "lat": -29.6950598029999,
@@ -462,7 +453,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 13 Oct 2026 11:47:41 GMT",
+        "updated": "Tue, 13 Oct 2026 12:19:39 GMT",
         "description": "HARDWAY CREEK RD, CAPARRA 2429",
         "council": "Mid-Coast",
         "lat": -31.723713824,
@@ -478,7 +469,7 @@
         "type": "Bush Fire",
         "size": "674 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Tue, 13 Oct 2026 11:47:41 GMT",
+        "updated": "Tue, 13 Oct 2026 12:19:39 GMT",
         "description": "OIL RIG RD, GIBBERAGEE 2469",
         "council": "Clarence Valley",
         "lat": -29.3249446579999,
@@ -954,6 +945,21 @@
     ],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-13T12:17:17+00:00",
+        "description": "SOUTH BOULDER, CITY OF KALGOORLIE-BOULDER",
+        "lat": -30.7954,
+        "lng": 121.4901,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -2003,7 +2009,7 @@
       }
     ]
   },
-  "incident_count": 44,
+  "incident_count": 45,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
