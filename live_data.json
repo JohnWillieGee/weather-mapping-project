@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-14T19:23:07.321944+00:00",
-  "last_checked_utc": "2026-10-14T19:23:07.321944+00:00",
+  "generated_utc": "2026-10-14T19:53:08.539362+00:00",
+  "last_checked_utc": "2026-10-14T19:53:08.539362+00:00",
   "warning_count": 8,
   "warnings": [
     {
@@ -68,70 +68,37 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields, Central West, Maranoa and Warrego",
+      "title": "Cancellation of Severe Thunderstorm Warning for Central Highlands and Coalfields, Central West, Maranoa and Warrego",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Emerald, Clermont, Moranbah, Carnarvon National Park, Blackwater and Rolleston. 111km/h wind gust was recorded at Long Reach at 22:03pm on Wednesday. 57.2mm rainfall in 30 minutes to 1:49am was recorded at Blackdown Tableland.",
-      "issued": "2026-10-15T04:29:25+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled. 111km/h wind gust was recorded at Long Reach at 22:03pm on Wednesday. 57.2mm rainfall in 30 minutes to 1:49am was recorded at Blackdown Tableland.",
+      "issued": "2026-10-15T05:51:01+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "QLD_PW008",
           "description": "Central Highlands and Coalfields",
-          "phase": "UPD"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW009",
           "description": "Central West",
-          "phase": "UPD"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW012",
           "description": "Maranoa and Warrego",
-          "phase": "UPD"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "CORBIE HILL RD, CORBIE HILL",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Wed, 14 Oct 2026 19:19:39 GMT",
-        "description": "CORBIE HILL RD, CORBIE HILL 2705",
-        "council": "Leeton",
-        "lat": -34.553947449,
-        "lng": 146.450912476,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "WASHINGTON WAY, CECIL PARK",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Wed, 14 Oct 2026 19:19:39 GMT",
-        "description": "WASHINGTON WAY, CECIL PARK 2178",
-        "council": "Fairfield",
-        "lat": -33.867938996,
-        "lng": 150.835128784,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [
       {
@@ -197,21 +164,6 @@
     ],
     "tas": [],
     "wa": [
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-14T18:36:49+00:00",
-        "description": "NEWMAN, SHIRE OF EAST PILBARA",
-        "lat": -23.3689,
-        "lng": 119.728,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Structure Fire",
         "alertLevel": "",
@@ -1327,7 +1279,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 43,
+  "incident_count": 40,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4430,7 +4382,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 18,
-          "st": "2026-10-15T00:00:00+09:30",
+          "st": "2026-10-15T05:19:00+09:30",
           "et": "2026-10-16T00:00:00+09:30"
         },
         "2": {
@@ -4456,7 +4408,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 13,
-          "st": "2026-10-15T00:00:00+09:30",
+          "st": "2026-10-15T05:19:00+09:30",
           "et": "2026-10-16T00:00:00+09:30"
         },
         "2": {
@@ -4480,9 +4432,9 @@
       },
       "NT_FW003": {
         "1": {
-          "fd": "No Rating",
-          "fbi": 11,
-          "st": "2026-10-15T00:00:00+09:30",
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-10-15T05:19:00+09:30",
           "et": "2026-10-16T00:00:00+09:30"
         },
         "2": {
@@ -4508,7 +4460,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 12,
-          "st": "2026-10-15T00:00:00+09:30",
+          "st": "2026-10-15T05:19:00+09:30",
           "et": "2026-10-16T00:00:00+09:30"
         },
         "2": {
@@ -4534,7 +4486,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 15,
-          "st": "2026-10-15T00:00:00+09:30",
+          "st": "2026-10-15T05:19:00+09:30",
           "et": "2026-10-16T00:00:00+09:30"
         },
         "2": {
@@ -4560,7 +4512,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 14,
-          "st": "2026-10-15T00:00:00+09:30",
+          "st": "2026-10-15T05:19:00+09:30",
           "et": "2026-10-16T00:00:00+09:30"
         },
         "2": {
@@ -4585,8 +4537,8 @@
       "NT_FW007": {
         "1": {
           "fd": "Moderate",
-          "fbi": 16,
-          "st": "2026-10-15T00:00:00+09:30",
+          "fbi": 17,
+          "st": "2026-10-15T05:19:00+09:30",
           "et": "2026-10-16T00:00:00+09:30"
         },
         "2": {
@@ -4612,7 +4564,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 12,
-          "st": "2026-10-15T00:00:00+09:30",
+          "st": "2026-10-15T05:19:00+09:30",
           "et": "2026-10-16T00:00:00+09:30"
         },
         "2": {
@@ -4638,7 +4590,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 14,
-          "st": "2026-10-15T00:00:00+09:30",
+          "st": "2026-10-15T05:19:00+09:30",
           "et": "2026-10-16T00:00:00+09:30"
         },
         "2": {
@@ -4663,8 +4615,8 @@
       "NT_FW010": {
         "1": {
           "fd": "Moderate",
-          "fbi": 13,
-          "st": "2026-10-15T00:00:00+09:30",
+          "fbi": 12,
+          "st": "2026-10-15T05:19:00+09:30",
           "et": "2026-10-16T00:00:00+09:30"
         },
         "2": {
@@ -4690,7 +4642,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 14,
-          "st": "2026-10-15T00:00:00+09:30",
+          "st": "2026-10-15T05:19:00+09:30",
           "et": "2026-10-16T00:00:00+09:30"
         },
         "2": {
@@ -4716,7 +4668,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 16,
-          "st": "2026-10-15T00:00:00+09:30",
+          "st": "2026-10-15T05:19:00+09:30",
           "et": "2026-10-16T00:00:00+09:30"
         },
         "2": {
@@ -4742,7 +4694,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 13,
-          "st": "2026-10-15T00:00:00+09:30",
+          "st": "2026-10-15T05:19:00+09:30",
           "et": "2026-10-16T00:00:00+09:30"
         },
         "2": {
@@ -4768,7 +4720,7 @@
         "1": {
           "fd": "No Rating",
           "fbi": 9,
-          "st": "2026-10-15T00:00:00+09:30",
+          "st": "2026-10-15T05:19:00+09:30",
           "et": "2026-10-16T00:00:00+09:30"
         },
         "2": {
@@ -4794,7 +4746,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 12,
-          "st": "2026-10-15T00:00:00+09:30",
+          "st": "2026-10-15T05:19:00+09:30",
           "et": "2026-10-16T00:00:00+09:30"
         },
         "2": {
@@ -4820,7 +4772,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 23,
-          "st": "2026-10-15T00:00:00+09:30",
+          "st": "2026-10-15T05:19:00+09:30",
           "et": "2026-10-16T00:00:00+09:30"
         },
         "2": {
@@ -4846,7 +4798,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 13,
-          "st": "2026-10-15T00:00:00+09:30",
+          "st": "2026-10-15T05:19:00+09:30",
           "et": "2026-10-16T00:00:00+09:30"
         },
         "2": {
@@ -4872,7 +4824,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 12,
-          "st": "2026-10-15T00:00:00+09:30",
+          "st": "2026-10-15T05:19:00+09:30",
           "et": "2026-10-16T00:00:00+09:30"
         },
         "2": {
@@ -4898,7 +4850,7 @@
         "1": {
           "fd": "No Rating",
           "fbi": 0,
-          "st": "2026-10-15T00:00:00+09:30",
+          "st": "2026-10-15T05:19:00+09:30",
           "et": "2026-10-16T00:00:00+09:30"
         },
         "2": {
@@ -4924,7 +4876,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 12,
-          "st": "2026-10-15T00:00:00+09:30",
+          "st": "2026-10-15T05:19:00+09:30",
           "et": "2026-10-16T00:00:00+09:30"
         },
         "2": {
