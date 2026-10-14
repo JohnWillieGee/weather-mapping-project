@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-13T23:53:03.597165+00:00",
-  "last_checked_utc": "2026-10-13T23:53:03.597165+00:00",
-  "warning_count": 9,
+  "generated_utc": "2026-10-14T00:23:04.150933+00:00",
+  "last_checked_utc": "2026-10-14T00:23:04.150933+00:00",
+  "warning_count": 10,
   "warnings": [
     {
       "pid": "",
@@ -32,6 +32,15 @@
     },
     {
       "pid": "",
+      "title": "14/10:55 EDT Frost Warning\nfor East Gippsland forecast district",
+      "type": "other",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/frost.shtml",
+      "desc": "",
+      "issued": "Tue, 13 Oct 2026 23:55:46 GMT"
+    },
+    {
+      "pid": "",
       "title": "14/09:50 EDT Warning to Sheep Graziers\nfor North Central, North East, South West and Central forecast districts",
       "type": "other",
       "state": "VIC",
@@ -41,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "14/09:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "14/09:54 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 13 Oct 2026 23:00:16 GMT"
+      "issued": "Tue, 13 Oct 2026 23:54:37 GMT"
     },
     {
       "pid": "",
@@ -59,12 +68,12 @@
     },
     {
       "pid": "",
-      "title": "14/07:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "14/08:10 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 13 Oct 2026 23:01:15 GMT"
+      "issued": "Wed, 14 Oct 2026 00:10:11 GMT"
     },
     {
       "pid": "",
@@ -95,7 +104,7 @@
         "type": "Bush Fire",
         "size": "289 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 13 Oct 2026 23:47:39 GMT",
+        "updated": "Wed, 14 Oct 2026 00:19:39 GMT",
         "description": "BAFFLE RD, DALMORTON 2460",
         "council": "Clarence Valley",
         "lat": -29.6950598029999,
@@ -362,7 +371,7 @@
         "type": "Bush Fire",
         "size": "1039 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Tue, 13 Oct 2026 23:47:39 GMT",
+        "updated": "Wed, 14 Oct 2026 00:19:39 GMT",
         "description": "OIL RIG RD, GIBBERAGEE 2469",
         "council": "Clarence Valley",
         "lat": -29.3249446579999,
@@ -718,6 +727,44 @@
     "vic": [],
     "qld": [
       {
+        "title": "STAY INFORMED - Valentine Plains (near Biloela) - fire as at 6:20pm Tuesday, 13 October 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "Valentine Plains",
+        "lat": -24.392354524991,
+        "lng": 150.59817408596757,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
+        "polys": [
+          [
+            [
+              150.611133,
+              -24.363626
+            ],
+            [
+              150.58297,
+              -24.374589
+            ],
+            [
+              150.591962,
+              -24.418497
+            ],
+            [
+              150.622477,
+              -24.419019
+            ],
+            [
+              150.611133,
+              -24.363626
+            ]
+          ]
+        ]
+      },
+      {
         "title": "STAY INFORMED - Irvinebank, Watsonville and Silver Valley (near Atherton) - fire as at 2:28pm Tuesday, 13 October 2026",
         "alertLevel": "Advice",
         "status": "",
@@ -796,63 +843,10 @@
             ]
           ]
         ]
-      },
-      {
-        "title": "STAY INFORMED - Valentine Plains (near Biloela) - fire as at 6:20pm Tuesday, 13 October 2026",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "QFD",
-        "updated": "",
-        "description": "Valentine Plains",
-        "lat": -24.392354524991,
-        "lng": 150.59817408596757,
-        "state": "QLD",
-        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
-        "polys": [
-          [
-            [
-              150.611133,
-              -24.363626
-            ],
-            [
-              150.58297,
-              -24.374589
-            ],
-            [
-              150.591962,
-              -24.418497
-            ],
-            [
-              150.622477,
-              -24.419019
-            ],
-            [
-              150.611133,
-              -24.363626
-            ]
-          ]
-        ]
       }
     ],
     "tas": [],
     "wa": [
-      {
-        "title": "Hazardous Materials",
-        "alertLevel": "",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-13T23:39:31+00:00",
-        "description": "FURNISSDALE, SHIRE OF MURRAY",
-        "lat": -32.5584,
-        "lng": 115.7583,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Earthquake",
         "alertLevel": "",
@@ -864,21 +858,6 @@
         "description": "WARDING EAST, CUNDERDIN, SHIRE OF",
         "lat": -31.7009,
         "lng": 117.1009,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-13T23:12:08+00:00",
-        "description": "BALDIVIS, CITY OF ROCKINGHAM",
-        "lat": -32.362,
-        "lng": 115.8171,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1721,7 +1700,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 37,
+  "incident_count": 35,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5352,10 +5331,10 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-10-13T23:00:00Z",
+      "issued_utc": "2026-10-13T23:54:26Z",
       "overview": [
         "Strong Wind Warning for Wednesday for K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters",
-        "Strong Wind Warning for Thursday for Capricornia Coast, K'gari Coast, Sunshine Coast Waters and Gold Coast Waters"
+        "Strong Wind Warning for Thursday for Gold Coast Waters, Capricornia Coast, K'gari Coast and Sunshine Coast Waters"
       ],
       "hazards": [
         {
@@ -5405,7 +5384,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-13T23:01:00Z",
+      "issued_utc": "2026-10-14T00:10:00Z",
       "overview": [
         "Strong Wind Warning for Wednesday for Leeuwin Coast, Albany Coast and Esperance Coast",
         "Strong Wind Warning for Thursday for Esperance Coast and Eucla Coast"
