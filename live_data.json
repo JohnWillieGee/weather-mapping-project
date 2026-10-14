@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-14T04:23:00.906534+00:00",
-  "last_checked_utc": "2026-10-14T04:23:00.906534+00:00",
-  "warning_count": 10,
+  "generated_utc": "2026-10-14T04:53:02.601644+00:00",
+  "last_checked_utc": "2026-10-14T04:53:02.601644+00:00",
+  "warning_count": 11,
   "warnings": [
     {
       "pid": "",
@@ -92,6 +92,30 @@
       "link": "http://reg.bom.gov.au/tas/warnings/sheep.shtml",
       "desc": "",
       "issued": "Tue, 13 Oct 2026 16:34:44 GMT"
+    },
+    {
+      "pid": "IDD21033",
+      "title": "Severe Thunderstorm Warning for Barkly, Tanami",
+      "type": "thunderstorm",
+      "state": "NT",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Yuendumu, Renner Springs, Willowra and south west Tanami District near WA border.",
+      "issued": "2026-10-14T14:10:47+09:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NT_PW006",
+          "description": "Barkly",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NT_PW009",
+          "description": "Tanami",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -104,7 +128,7 @@
         "type": "Bush Fire",
         "size": "289 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 14 Oct 2026 04:19:40 GMT",
+        "updated": "Wed, 14 Oct 2026 04:47:39 GMT",
         "description": "BAFFLE RD, DALMORTON 2460",
         "council": "Clarence Valley",
         "lat": -29.6950598029999,
@@ -365,13 +389,29 @@
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
+        "title": "DANDALOO RD, TRANGIE",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Wed, 14 Oct 2026 04:47:39 GMT",
+        "description": "DANDALOO RD, TRANGIE 2823",
+        "council": "Narromine",
+        "lat": -32.1879,
+        "lng": 147.860004,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
         "title": "OIL RIG RD, GIBBERAGEE",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "1039 ha",
         "agency": "Forestry Corporation of NSW",
-        "updated": "Wed, 14 Oct 2026 04:19:40 GMT",
+        "updated": "Wed, 14 Oct 2026 04:47:39 GMT",
         "description": "OIL RIG RD, GIBBERAGEE 2469",
         "council": "Clarence Valley",
         "lat": -29.3249446579999,
@@ -830,6 +870,66 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
+        "updated": "2026-10-14T04:35:58+00:00",
+        "description": "GILGERING, SHIRE OF YORK",
+        "lat": -32.0552,
+        "lng": 116.7136,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-14T04:25:49+00:00",
+        "description": "BAMBUN, SHIRE OF GINGIN",
+        "lat": -31.4507,
+        "lng": 115.9062,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-14T04:24:36+00:00",
+        "description": "BRIDGETOWN, SHIRE OF BRIDGETOWN-GREENBUSHES",
+        "lat": -33.9453,
+        "lng": 116.1056,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Smoke Alert FOR PARTS OF BROOKTON IN THE SHIRE OF BROOKTON",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-14T04:19:23.354+00:00",
+        "description": "",
+        "lat": -32.3491,
+        "lng": 116.9012,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
         "updated": "2026-10-14T04:14:18+00:00",
         "description": "NARRIKUP, SHIRE OF PLANTAGENET",
         "lat": -34.7915,
@@ -1006,21 +1106,6 @@
         "description": "",
         "lat": -31.1467,
         "lng": 115.5052,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-14T02:53:15+00:00",
-        "description": "BAMBUN, SHIRE OF GINGIN",
-        "lat": -31.4507,
-        "lng": 115.9062,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1827,7 +1912,7 @@
       }
     ]
   },
-  "incident_count": 41,
+  "incident_count": 45,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
