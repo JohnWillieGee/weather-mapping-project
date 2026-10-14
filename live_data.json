@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-14T16:53:06.653078+00:00",
-  "last_checked_utc": "2026-10-14T16:53:06.653078+00:00",
+  "generated_utc": "2026-10-14T17:23:08.415016+00:00",
+  "last_checked_utc": "2026-10-14T17:23:08.415016+00:00",
   "warning_count": 10,
   "warnings": [
     {
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "14/22:00 EDT Marine Wind Warning Summary for Victoria",
+      "title": "15/04:10 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 14 Oct 2026 11:00:21 GMT"
+      "issued": "Wed, 14 Oct 2026 17:10:29 GMT"
     },
     {
       "pid": "",
@@ -50,30 +50,30 @@
     },
     {
       "pid": "",
-      "title": "14/21:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "15/03:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 14 Oct 2026 11:00:13 GMT"
+      "issued": "Wed, 14 Oct 2026 17:00:16 GMT"
     },
     {
       "pid": "",
-      "title": "14/19:05 WST Marine Wind Warning Summary for Western Australia",
+      "title": "15/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Wed, 14 Oct 2026 11:05:32 GMT"
+      "issued": "Wed, 14 Oct 2026 17:01:14 GMT"
     },
     {
       "pid": "",
-      "title": "14/22:00 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "15/04:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 14 Oct 2026 11:00:09 GMT"
+      "issued": "Wed, 14 Oct 2026 17:00:10 GMT"
     },
     {
       "pid": "IDQ21033",
@@ -193,28 +193,13 @@
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-14T16:39:46+00:00",
-        "description": "BENTLEY, CITY OF CANNING",
-        "lat": -32.0127,
-        "lng": 115.9107,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Structure Fire",
         "alertLevel": "",
         "status": "active",
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-14T15:45:47+00:00",
+        "updated": "2026-10-14T17:08:10+00:00",
         "description": "HENTY, SHIRE OF DARDANUP",
         "lat": -33.3791,
         "lng": 115.8077,
@@ -1337,7 +1322,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 42,
+  "incident_count": 41,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4968,34 +4953,32 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-10-14T11:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Wednesday for K'gari Coast, Sunshine Coast Waters and Gold Coast Waters",
-        "Strong Wind Warning for Thursday for Capricornia Coast and K'gari Coast"
-      ],
+      "issued_utc": "2026-10-14T17:00:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "K'gari Coast: Sandy Cape to Double Island Point",
-            "Sunshine Coast Waters: Double Island Point to Cape Moreton",
-            "Gold Coast Waters: Cape Moreton to Point Danger"
+            "Capricornia Coast: St Lawrence to Burnett Heads",
+            "K'gari Coast: Sandy Cape to Double Island Point"
           ],
           "aac_codes": [
-            "QLD_MW011",
-            "QLD_MW012",
-            "QLD_MW014"
+            "QLD_MW009",
+            "QLD_MW011"
           ],
-          "summary": "K'gari Coast, Sunshine Coast Waters and Gold Coast Waters"
+          "summary": "Capricornia Coast and K'gari Coast"
         }
       ]
     },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-14T11:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-10-14T17:10:00Z",
+      "overview": [
+        "Strong Wind Warning for Thursday for Central Coast",
+        "Strong Wind Warning for Friday for East Gippsland Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -5013,34 +4996,32 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-14T11:05:23Z",
-      "overview": [
-        "Strong Wind Warning for Wednesday for Leeuwin Coast, Albany Coast and Esperance Coast",
-        "Strong Wind Warning for Thursday for Leeuwin Coast, Esperance Coast and Eucla Coast"
-      ],
+      "issued_utc": "2026-10-14T17:01:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay"
+            "Esperance Coast: Bremer Bay to Israelite Bay",
+            "Eucla Coast: Israelite Bay to WA-SA Border"
           ],
           "aac_codes": [
-            "WA_MW011",
-            "WA_MW012",
-            "WA_MW013"
+            "WA_MW013",
+            "WA_MW014"
           ],
-          "summary": "Leeuwin Coast, Albany Coast and Esperance Coast"
+          "summary": "Esperance Coast and Eucla Coast"
         }
       ]
     },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-14T11:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-10-14T17:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Thursday for Far North West Coast",
+        "Strong Wind Warning for Friday for Far North West Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
