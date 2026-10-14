@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-14T11:53:04.582353+00:00",
-  "last_checked_utc": "2026-10-14T11:53:04.582353+00:00",
-  "warning_count": 10,
+  "generated_utc": "2026-10-14T12:23:05.203316+00:00",
+  "last_checked_utc": "2026-10-14T12:23:05.203316+00:00",
+  "warning_count": 11,
   "warnings": [
     {
       "pid": "",
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "14/17:02 EDT Warning to Sheep Graziers\nfor Northern Tablelands, Central Tablelands, Southern Tablelands, South West Slopes and Snowy Mountains forecast districts",
+      "title": "14/23:00 EDT Warning to Sheep Graziers\nfor Northern Tablelands, Central Tablelands, Southern Tablelands, South West Slopes and Snowy Mountains forecast districts",
       "type": "other",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Wed, 14 Oct 2026 06:02:05 GMT"
+      "issued": "Wed, 14 Oct 2026 12:00:11 GMT"
     },
     {
       "pid": "",
@@ -83,6 +83,40 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Wed, 14 Oct 2026 11:00:09 GMT"
+    },
+    {
+      "pid": "IDQ21033",
+      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields, Central West, Channel Country, Maranoa and Warrego",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Longreach, Barcaldine, Blackall, Isisford, Tambo and Evesham Station. 111km/h wind gust was recorded at Long Reach at 22:03pm.",
+      "issued": "2026-10-14T22:17:05+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "QLD_PW008",
+          "description": "Central Highlands and Coalfields",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_PW009",
+          "description": "Central West",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_PW011",
+          "description": "Channel Country",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_PW012",
+          "description": "Maranoa and Warrego",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     },
     {
       "pid": "IDD21033",
@@ -184,7 +218,22 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-14T11:32:55+00:00",
+        "updated": "2026-10-14T12:00:28+00:00",
+        "description": "HALLS CREEK, SHIRE OF HALLS CREEK",
+        "lat": -18.2226,
+        "lng": 127.6666,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-14T11:51:11+00:00",
         "description": "MANJIMUP, SHIRE OF MANJIMUP",
         "lat": -34.238,
         "lng": 116.1328,
@@ -355,21 +404,6 @@
         "description": "NARRIKUP, SHIRE OF PLANTAGENET",
         "lat": -34.7915,
         "lng": 117.8648,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-14T07:50:28+00:00",
-        "description": "PALMER, SHIRE OF COLLIE",
-        "lat": -33.2962,
-        "lng": 116.2997,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1141,16 +1175,16 @@
     ],
     "nt": [
       {
-        "title": "Structure Fire - PATERSON ST, TENNANT CREEK",
+        "title": "Hazmat Incident - COBHAM CT, MOULDEN",
         "alertLevel": "Advice",
         "status": "active",
-        "type": "Structure Fire",
+        "type": "HazMat",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-14T11:41:55+00:00",
-        "description": "PATERSON ST, TENNANT CREEK",
-        "lat": -19.644,
-        "lng": 134.1914,
+        "updated": "2026-10-14T12:14:50+00:00",
+        "description": "COBHAM CT, MOULDEN",
+        "lat": -12.5128,
+        "lng": 130.9771,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -1335,25 +1369,9 @@
       }
     ],
     "act": [],
-    "sa": [
-      {
-        "title": "DOMESTIC GAS",
-        "alertLevel": "",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-14T11:00:00+00:00",
-        "description": "NARACOORTE",
-        "lat": -36.9594,
-        "lng": 140.732,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      }
-    ]
+    "sa": []
   },
-  "incident_count": 44,
+  "incident_count": 43,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
