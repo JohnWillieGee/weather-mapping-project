@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-14T10:53:05.872689+00:00",
-  "last_checked_utc": "2026-10-14T10:53:05.872689+00:00",
+  "generated_utc": "2026-10-14T11:23:06.512065+00:00",
+  "last_checked_utc": "2026-10-14T11:23:06.512065+00:00",
   "warning_count": 10,
   "warnings": [
     {
       "pid": "",
-      "title": "14/16:05 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "14/22:00 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 14 Oct 2026 05:05:12 GMT"
+      "issued": "Wed, 14 Oct 2026 11:00:15 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "14/16:15 EDT Marine Wind Warning Summary for Victoria",
+      "title": "14/22:00 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 14 Oct 2026 05:15:20 GMT"
+      "issued": "Wed, 14 Oct 2026 11:00:21 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "14/15:49 EST Marine Wind Warning Summary for Queensland",
+      "title": "14/21:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 14 Oct 2026 05:49:59 GMT"
+      "issued": "Wed, 14 Oct 2026 11:00:13 GMT"
     },
     {
       "pid": "",
@@ -68,45 +68,45 @@
     },
     {
       "pid": "",
-      "title": "14/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "14/19:05 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Wed, 14 Oct 2026 05:01:18 GMT"
+      "issued": "Wed, 14 Oct 2026 11:05:32 GMT"
     },
     {
       "pid": "",
-      "title": "14/16:05 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "14/22:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 14 Oct 2026 05:05:11 GMT"
+      "issued": "Wed, 14 Oct 2026 11:00:09 GMT"
     },
     {
       "pid": "IDD21033",
-      "title": "Severe Thunderstorm Warning for Barkly, Tanami",
+      "title": "Cancellation of Severe Thunderstorm Warning for Barkly, Tanami",
       "type": "thunderstorm",
       "state": "NT",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Rabbit Flat, The Granites and Barkly District west of Tennant Creek.",
-      "issued": "2026-10-14T18:21:59+09:30",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-14T20:32:48+09:30",
+      "cancelled": true,
       "areas": [
         {
           "aac": "NT_PW006",
           "description": "Barkly",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "NT_PW009",
           "description": "Tanami",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -177,21 +177,6 @@
     ],
     "tas": [],
     "wa": [
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-14T09:37:00+00:00",
-        "description": "QUEDJINUP, CITY OF BUSSELTON",
-        "lat": -33.6389,
-        "lng": 115.0684,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1079,21 +1064,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - MALUKA RD, KATHERINE EAST",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-14T10:45:16+00:00",
-        "description": "MALUKA RD, KATHERINE EAST",
-        "lat": -14.4687,
-        "lng": 132.2774,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Hodgson River Road, LIMMEN COMPLEX",
         "alertLevel": "Advice",
         "status": "active",
@@ -1273,9 +1243,25 @@
       }
     ],
     "act": [],
-    "sa": []
+    "sa": [
+      {
+        "title": "DOMESTIC GAS",
+        "alertLevel": "",
+        "status": "active",
+        "type": "HazMat",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-14T11:00:00+00:00",
+        "description": "NARACOORTE",
+        "lat": -36.9594,
+        "lng": 140.732,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      }
+    ]
   },
-  "incident_count": 42,
+  "incident_count": 41,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4906,9 +4892,9 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-10-14T05:49:51Z",
+      "issued_utc": "2026-10-14T11:00:00Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for Gold Coast Waters, Moreton Bay, K'gari Coast and Sunshine Coast Waters",
+        "Strong Wind Warning for Wednesday for K'gari Coast, Sunshine Coast Waters and Gold Coast Waters",
         "Strong Wind Warning for Thursday for Capricornia Coast and K'gari Coast"
       ],
       "hazards": [
@@ -4918,42 +4904,21 @@
           "zones": [
             "K'gari Coast: Sandy Cape to Double Island Point",
             "Sunshine Coast Waters: Double Island Point to Cape Moreton",
-            "Moreton Bay",
             "Gold Coast Waters: Cape Moreton to Point Danger"
           ],
           "aac_codes": [
             "QLD_MW011",
             "QLD_MW012",
-            "QLD_MW013",
             "QLD_MW014"
           ],
-          "summary": "K'gari Coast, Sunshine Coast Waters, Moreton Bay and Gold Coast Waters"
-        }
-      ]
-    },
-    "NSW": {
-      "state": "NSW",
-      "product": "IDN20400",
-      "issued_utc": "2026-10-14T05:05:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Byron Coast: Point Danger to Wooli"
-          ],
-          "aac_codes": [
-            "NSW_MW008"
-          ],
-          "summary": "Byron Coast"
+          "summary": "K'gari Coast, Sunshine Coast Waters and Gold Coast Waters"
         }
       ]
     },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-14T05:15:00Z",
+      "issued_utc": "2026-10-14T11:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -4972,7 +4937,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-14T05:01:00Z",
+      "issued_utc": "2026-10-14T11:05:23Z",
       "overview": [
         "Strong Wind Warning for Wednesday for Leeuwin Coast, Albany Coast and Esperance Coast",
         "Strong Wind Warning for Thursday for Leeuwin Coast, Esperance Coast and Eucla Coast"
@@ -4998,7 +4963,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-14T05:05:00Z",
+      "issued_utc": "2026-10-14T11:00:00Z",
       "overview": [],
       "hazards": [
         {
