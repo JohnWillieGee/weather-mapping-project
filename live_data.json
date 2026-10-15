@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-15T00:23:02.001977+00:00",
-  "last_checked_utc": "2026-10-15T00:23:02.001977+00:00",
-  "warning_count": 6,
+  "generated_utc": "2026-10-15T00:53:03.812936+00:00",
+  "last_checked_utc": "2026-10-15T00:53:03.812936+00:00",
+  "warning_count": 7,
   "warnings": [
     {
       "pid": "",
@@ -32,21 +32,21 @@
     },
     {
       "pid": "",
-      "title": "15/09:12 EST Marine Wind Warning Summary for Queensland",
+      "title": "15/10:35 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 14 Oct 2026 23:12:44 GMT"
+      "issued": "Thu, 15 Oct 2026 00:35:13 GMT"
     },
     {
       "pid": "",
-      "title": "15/07:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "15/08:35 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Wed, 14 Oct 2026 23:01:14 GMT"
+      "issued": "Thu, 15 Oct 2026 00:35:12 GMT"
     },
     {
       "pid": "",
@@ -56,6 +56,35 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Wed, 14 Oct 2026 23:00:12 GMT"
+    },
+    {
+      "pid": "IDQ21033",
+      "title": "Severe Thunderstorm Warning for Central Coast and Whitsundays, Capricornia, Central Highlands and Coalfields",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. 65 mm of rainfall was recorded at Middlemount in the 60 minutes to 10:20 am EST",
+      "issued": "2026-10-15T10:43:07+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "QLD_PW006",
+          "description": "Central Coast and Whitsundays",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_PW007",
+          "description": "Capricornia",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_PW008",
+          "description": "Central Highlands and Coalfields",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -202,21 +231,6 @@
         "description": "BEACON, MOUNT MARSHALL, SHIRE OF",
         "lat": -30.545,
         "lng": 117.7826,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-14T17:08:10+00:00",
-        "description": "HENTY, SHIRE OF DARDANUP",
-        "lat": -33.3791,
-        "lng": 115.8077,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1257,7 +1271,7 @@
       }
     ]
   },
-  "incident_count": 41,
+  "incident_count": 40,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4888,7 +4902,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-10-14T23:12:28Z",
+      "issued_utc": "2026-10-15T00:34:59Z",
       "overview": [],
       "hazards": [
         {
