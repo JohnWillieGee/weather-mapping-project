@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-15T03:22:59.696919+00:00",
-  "last_checked_utc": "2026-10-15T03:22:59.696919+00:00",
+  "generated_utc": "2026-10-15T03:53:03.045258+00:00",
+  "last_checked_utc": "2026-10-15T03:53:03.045258+00:00",
   "warning_count": 7,
   "warnings": [
     {
@@ -59,32 +59,32 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central Coast and Whitsundays, Capricornia, Central Highlands and Coalfields",
+      "title": "Cancellation of Severe Thunderstorm Warning for Central Coast and Whitsundays, Capricornia, Central Highlands and Coalfields",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. 128.2 MM OF RAINFALL WAS RECORDED AT MIDDLEMOUNT IN THE 3 HOURS TO to 12:14 PM",
-      "issued": "2026-10-15T12:59:50+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled. 128.2 MM OF RAINFALL WAS RECORDED AT MIDDLEMOUNT IN THE 3 HOURS TO to 12:14 PM",
+      "issued": "2026-10-15T13:45:29+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "QLD_PW006",
           "description": "Central Coast and Whitsundays",
-          "phase": "UPD"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW007",
           "description": "Capricornia",
-          "phase": "UPD"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW008",
           "description": "Central Highlands and Coalfields",
-          "phase": "UPD"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -1058,9 +1058,25 @@
       }
     ],
     "act": [],
-    "sa": []
+    "sa": [
+      {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-15T03:29:00+00:00",
+        "description": "VISTA",
+        "lat": -34.8375,
+        "lng": 138.7363,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      }
+    ]
   },
-  "incident_count": 32,
+  "incident_count": 33,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
