@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-15T10:53:04.290162+00:00",
-  "last_checked_utc": "2026-10-15T10:53:04.290162+00:00",
+  "generated_utc": "2026-10-15T11:23:08.154459+00:00",
+  "last_checked_utc": "2026-10-15T11:23:08.154459+00:00",
   "warning_count": 9,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "15/16:15 EDT Marine Wind Warning Summary for Victoria",
+      "title": "15/22:00 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 15 Oct 2026 05:15:24 GMT"
+      "issued": "Thu, 15 Oct 2026 11:00:20 GMT"
     },
     {
       "pid": "",
@@ -32,21 +32,21 @@
     },
     {
       "pid": "",
-      "title": "15/15:42 EST Marine Wind Warning Summary for Queensland",
+      "title": "15/21:00 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 15 Oct 2026 05:42:07 GMT"
+      "issued": "Thu, 15 Oct 2026 11:00:13 GMT"
     },
     {
       "pid": "",
-      "title": "15/16:05 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "15/22:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 15 Oct 2026 05:05:13 GMT"
+      "issued": "Thu, 15 Oct 2026 11:00:13 GMT"
     },
     {
       "pid": "IDN21033",
@@ -117,22 +117,22 @@
     },
     {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for South Interior",
+      "title": "Cancellation of Severe Thunderstorm Warning for South Interior",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours.",
-      "issued": "2026-10-15T16:23:26+08:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-15T19:18:34+08:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "WA_PW007",
           "description": "South Interior",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -4574,29 +4574,10 @@
     }
   },
   "marine_warnings": {
-    "QLD": {
-      "state": "QLD",
-      "product": "IDQ20085",
-      "issued_utc": "2026-10-15T05:41:50Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Capricornia Coast: St Lawrence to Burnett Heads"
-          ],
-          "aac_codes": [
-            "QLD_MW009"
-          ],
-          "summary": "Capricornia Coast"
-        }
-      ]
-    },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-15T05:15:00Z",
+      "issued_utc": "2026-10-15T11:00:00Z",
       "overview": [
         "Strong Wind Warning for Thursday for Central Coast",
         "Strong Wind Warning for Friday for Central Gippsland Coast and East Gippsland Coast"
@@ -4618,10 +4599,10 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-15T05:05:00Z",
+      "issued_utc": "2026-10-15T11:00:00Z",
       "overview": [
         "Strong Wind Warning for Thursday for Far North West Coast",
-        "Strong Wind Warning for Friday for Far North West Coast"
+        "Strong Wind Warning for Friday for Far North West Coast and Lower East Coast"
       ],
       "hazards": [
         {
