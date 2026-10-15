@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-15T04:23:03.979579+00:00",
-  "last_checked_utc": "2026-10-15T04:23:03.979579+00:00",
+  "generated_utc": "2026-10-15T04:53:02.673588+00:00",
+  "last_checked_utc": "2026-10-15T04:53:02.673588+00:00",
   "warning_count": 7,
   "warnings": [
     {
@@ -59,32 +59,22 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for Central Coast and Whitsundays, Capricornia, Central Highlands and Coalfields",
+      "title": "Severe Thunderstorm Warning for Central Coast and Whitsundays",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "This warning is now cancelled. 128.2 MM OF RAINFALL WAS RECORDED AT MIDDLEMOUNT IN THE 3 HOURS TO to 12:14 PM",
-      "issued": "2026-10-15T13:45:29+10:00",
-      "cancelled": true,
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Sarina.",
+      "issued": "2026-10-15T14:47:08+10:00",
+      "cancelled": false,
       "areas": [
         {
           "aac": "QLD_PW006",
           "description": "Central Coast and Whitsundays",
-          "phase": "CAN"
-        },
-        {
-          "aac": "QLD_PW007",
-          "description": "Capricornia",
-          "phase": "CAN"
-        },
-        {
-          "aac": "QLD_PW008",
-          "description": "Central Highlands and Coalfields",
-          "phase": "CAN"
+          "phase": "NEW"
         }
       ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -105,21 +95,121 @@
         "lng": 145.1919059234181,
         "state": "QLD",
         "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents"
+      },
+      {
+        "title": "STAY INFORMED - Karawatha, Woodridge and Kuraby - fire as at 2:06pm Thursday, 15 October 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "Karawatha, Woodridge and Kuraby",
+        "lat": -27.634681274666413,
+        "lng": 153.08844164495596,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
+        "polys": [
+          [
+            [
+              153.08751,
+              -27.602844
+            ],
+            [
+              153.080474,
+              -27.604673
+            ],
+            [
+              153.066401,
+              -27.623211
+            ],
+            [
+              153.059083,
+              -27.645569
+            ],
+            [
+              153.072593,
+              -27.65338
+            ],
+            [
+              153.107211,
+              -27.64158
+            ],
+            [
+              153.111527,
+              -27.619803
+            ],
+            [
+              153.08751,
+              -27.602844
+            ]
+          ]
+        ]
+      },
+      {
+        "title": "STAY INFORMED - Karawatha, Woodridge and Kuraby - fire as at 2:40pm Thursday, 15 October 2026",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "QFD",
+        "updated": "",
+        "description": "Karawatha, Woodridge and Kuraby",
+        "lat": -27.630192779493225,
+        "lng": 153.08578343757588,
+        "state": "QLD",
+        "sourceUrl": "https://www.fire.qld.gov.au/Current-Incidents",
+        "polys": [
+          [
+            [
+              153.08751,
+              -27.602844
+            ],
+            [
+              153.080474,
+              -27.604673
+            ],
+            [
+              153.066401,
+              -27.623211
+            ],
+            [
+              153.059083,
+              -27.645569
+            ],
+            [
+              153.072593,
+              -27.65338
+            ],
+            [
+              153.107211,
+              -27.64158
+            ],
+            [
+              153.111527,
+              -27.619803
+            ],
+            [
+              153.08751,
+              -27.602844
+            ]
+          ]
+        ]
       }
     ],
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire",
+        "title": "Structure Fire",
         "alertLevel": "",
         "status": "active",
-        "type": "Bush Fire",
+        "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-15T04:12:07+00:00",
-        "description": "PARKESTON, CITY OF KALGOORLIE-BOULDER",
-        "lat": -30.7133,
-        "lng": 121.5047,
+        "updated": "2026-10-15T04:43:52+00:00",
+        "description": "SUCCESS, CITY OF COCKBURN",
+        "lat": -32.1366,
+        "lng": 115.8584,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -131,7 +221,22 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-15T04:06:37+00:00",
+        "updated": "2026-10-15T04:29:17+00:00",
+        "description": "TANAMI, SHIRE OF HALLS CREEK",
+        "lat": -20.282,
+        "lng": 128.841,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-15T04:27:12+00:00",
         "description": "PARKESTON, CITY OF KALGOORLIE-BOULDER",
         "lat": -30.6787,
         "lng": 121.5384,
@@ -816,21 +921,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-13T05:32:03+00:00",
-        "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
-        "lat": -16.886,
-        "lng": 123.106,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Smoke Alert FOR AREAS BETWEEN COLLIE AND BUNBURY INCLUDING MUMBALLUP, DONNYBROOK AND BOYANUP IN THE SHIRES OF COLLIE, CAPEL, DONNYBROOK-BALINGUP, HARVEY, DARDANUP AND CITY OF BUNBURY",
         "alertLevel": "Advice",
         "status": "active",
@@ -974,7 +1064,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-15T04:15:46+00:00",
+        "updated": "2026-10-15T04:19:17+00:00",
         "description": "HENRY WRIGLEY DR, EATON",
         "lat": -12.4069,
         "lng": 130.876,
@@ -1090,7 +1180,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 34,
+  "incident_count": 36,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
