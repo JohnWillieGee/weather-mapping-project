@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-14T23:53:02.058305+00:00",
-  "last_checked_utc": "2026-10-14T23:53:02.058305+00:00",
-  "warning_count": 7,
+  "generated_utc": "2026-10-15T00:23:02.001977+00:00",
+  "last_checked_utc": "2026-10-15T00:23:02.001977+00:00",
+  "warning_count": 6,
   "warnings": [
     {
       "pid": "",
-      "title": "15/04:59 EDT Warning to Sheep Graziers\nfor Northern Tablelands, Central Tablelands, Southern Tablelands, North West Slopes & Plains, Central West Slopes & Plains, South West Slopes, Upper Western and Snowy Mountains forecast districts",
+      "title": "15/11:04 EDT Warning to Sheep Graziers\nfor Northern Tablelands, North West Slopes & Plains, Central West Slopes & Plains and Upper Western forecast districts",
       "type": "other",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Wed, 14 Oct 2026 17:59:33 GMT"
+      "issued": "Thu, 15 Oct 2026 00:04:57 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "15/05:00 EDT Warning to Sheep Graziers\nfor North Central, North East, South West, Central and East Gippsland forecast districts",
+      "title": "15/11:05 EDT Cancellation of Warning to Sheep Graziers\nfor North Central, South West, Central and East Gippsland forecast districts",
       "type": "other",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Wed, 14 Oct 2026 18:00:16 GMT"
+      "issued": "Thu, 15 Oct 2026 00:05:35 GMT"
     },
     {
       "pid": "",
@@ -56,35 +56,6 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Wed, 14 Oct 2026 23:00:12 GMT"
-    },
-    {
-      "pid": "IDQ21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for Central Highlands and Coalfields, Central West, Maranoa and Warrego",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "This warning is now cancelled. 111km/h wind gust was recorded at Long Reach at 22:03pm on Wednesday. 57.2mm rainfall in 30 minutes to 1:49am was recorded at Blackdown Tableland.",
-      "issued": "2026-10-15T05:51:01+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "QLD_PW008",
-          "description": "Central Highlands and Coalfields",
-          "phase": "CAN"
-        },
-        {
-          "aac": "QLD_PW009",
-          "description": "Central West",
-          "phase": "CAN"
-        },
-        {
-          "aac": "QLD_PW012",
-          "description": "Maranoa and Warrego",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -155,6 +126,56 @@
     ],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire Advice THREAT IS REDUCED - REGANS FORD AND RED GULLY",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-15T00:07:05.006+00:00",
+        "description": "",
+        "lat": -30.9834,
+        "lng": 115.712,
+        "polys": [
+          [
+            [
+              115.718954,
+              -30.980938
+            ],
+            [
+              115.725984,
+              -30.989415
+            ],
+            [
+              115.712674,
+              -30.996176
+            ],
+            [
+              115.710332,
+              -31.00019
+            ],
+            [
+              115.695579,
+              -30.97773
+            ],
+            [
+              115.701876,
+              -30.970571
+            ],
+            [
+              115.711682,
+              -30.971639
+            ],
+            [
+              115.718954,
+              -30.980938
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -517,56 +538,6 @@
         "lat": -34.968,
         "lng": 116.9523,
         "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice STAY INFORMED - REGANS FORD AND RED GULLY",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-14T05:56:01.657+00:00",
-        "description": "",
-        "lat": -30.9834,
-        "lng": 115.712,
-        "polys": [
-          [
-            [
-              115.718954,
-              -30.980938
-            ],
-            [
-              115.725984,
-              -30.989415
-            ],
-            [
-              115.712674,
-              -30.996176
-            ],
-            [
-              115.710332,
-              -31.00019
-            ],
-            [
-              115.695579,
-              -30.97773
-            ],
-            [
-              115.701876,
-              -30.970571
-            ],
-            [
-              115.711682,
-              -30.971639
-            ],
-            [
-              115.718954,
-              -30.980938
-            ]
-          ]
-        ],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
