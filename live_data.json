@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-15T08:23:04.448263+00:00",
-  "last_checked_utc": "2026-10-15T08:23:04.448263+00:00",
-  "warning_count": 9,
+  "generated_utc": "2026-10-15T08:53:11.610750+00:00",
+  "last_checked_utc": "2026-10-15T08:53:11.610750+00:00",
+  "warning_count": 10,
   "warnings": [
     {
       "pid": "",
@@ -38,15 +38,6 @@
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Thu, 15 Oct 2026 05:42:07 GMT"
-    },
-    {
-      "pid": "",
-      "title": "15/08:35 WST Marine Wind Warning Summary for Western Australia",
-      "type": "wind",
-      "state": "WA",
-      "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
-      "desc": "",
-      "issued": "Thu, 15 Oct 2026 00:35:12 GMT"
     },
     {
       "pid": "",
@@ -88,19 +79,14 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central Coast and Whitsundays, Central Highlands and Coalfields, Central West, North West, Maranoa and Warrego",
+      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields, Central West, Maranoa and Warrego",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding over the next several hours in parts of the Central Coast and Whitsundays district. Locations which may be affected include Collinsville and Sarina. Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding over the next several hours in parts of the Central Highlands and Coalfields, Central West and Maranoa and Warrego districts. Location",
-      "issued": "2026-10-15T17:46:32+10:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Thunderstorms are forecast to affect Bollon, Tambo and Mantuan Downs. Severe thunderstorms are no longer occurring in the North West and Central Coast and Whitsundays districts and the warning for these districts is CANCELLED. 82 MM OF RAINFALL RECORDED AT ROCKY CREEK IN THE 1 HOUR TO 6:03 PM 90 km/h wind gust was recorded",
+      "issued": "2026-10-15T18:43:19+10:00",
       "cancelled": false,
       "areas": [
-        {
-          "aac": "QLD_PW006",
-          "description": "Central Coast and Whitsundays",
-          "phase": "REN"
-        },
         {
           "aac": "QLD_PW008",
           "description": "Central Highlands and Coalfields",
@@ -112,18 +98,56 @@
           "phase": "REN"
         },
         {
-          "aac": "QLD_PW010",
-          "description": "North West",
-          "phase": "NEW"
-        },
-        {
           "aac": "QLD_PW012",
           "description": "Maranoa and Warrego",
           "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDQ21033",
+      "title": "Severe Thunderstorm Warning for Central Coast and Whitsundays, North West",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-15T18:43:19+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "QLD_PW006",
+          "description": "Central Coast and Whitsundays",
+          "phase": "CAN"
+        },
+        {
+          "aac": "QLD_PW010",
+          "description": "North West",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
+    },
+    {
+      "pid": "IDS21033",
+      "title": "Severe Thunderstorm Warning for North West Pastoral",
+      "type": "thunderstorm",
+      "state": "SA",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include parts of the Great Victoria Desert.",
+      "issued": "2026-10-15T19:00:17+10:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "SA_PW013",
+          "description": "North West Pastoral",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     },
     {
       "pid": "IDW21033",
@@ -132,22 +156,39 @@
       "state": "WA",
       "link": "",
       "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours.",
-      "issued": "2026-10-15T14:25:55+08:00",
+      "issued": "2026-10-15T16:23:26+08:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "WA_PW007",
           "description": "South Interior",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "REN"
     }
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Freeman Cct, Ingleburn",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Thu, 15 Oct 2026 08:47:40 GMT",
+        "description": "Freeman Cct, Ingleburn, NSW 2565",
+        "council": "Campbelltown",
+        "lat": -34.0083979999999,
+        "lng": 150.853279,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [
       {
@@ -220,7 +261,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-15T07:44:13+00:00",
+        "updated": "2026-10-15T08:34:19+00:00",
         "description": "MARVEL LOCH, SHIRE OF YILGARN",
         "lat": -31.4522,
         "lng": 119.3135,
@@ -1033,7 +1074,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-15T08:00:57+00:00",
+        "updated": "2026-10-15T08:16:25+00:00",
         "description": "FLACK RD, ARCHER",
         "lat": -12.5148,
         "lng": 130.9703,
@@ -1098,7 +1139,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 32,
+  "incident_count": 33,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
