@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-15T16:53:02.180640+00:00",
-  "last_checked_utc": "2026-10-15T16:53:02.180640+00:00",
+  "generated_utc": "2026-10-15T17:23:01.576452+00:00",
+  "last_checked_utc": "2026-10-15T17:23:01.576452+00:00",
   "warning_count": 5,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "15/22:00 EDT Marine Wind Warning Summary for Victoria",
+      "title": "16/04:10 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 15 Oct 2026 11:00:20 GMT"
+      "issued": "Thu, 15 Oct 2026 17:10:22 GMT"
     },
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "15/22:00 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "16/04:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 15 Oct 2026 11:00:13 GMT"
+      "issued": "Thu, 15 Oct 2026 17:00:12 GMT"
     },
     {
       "pid": "IDS21033",
@@ -868,9 +868,25 @@
       }
     ],
     "act": [],
-    "sa": []
+    "sa": [
+      {
+        "title": "STRUCTURE FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-15T16:46:00+00:00",
+        "description": "PINNAROO",
+        "lat": -35.2615,
+        "lng": 140.9063,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      }
+    ]
   },
-  "incident_count": 28,
+  "incident_count": 29,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4501,44 +4517,45 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-15T11:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Thursday for Central Coast",
-        "Strong Wind Warning for Friday for Central Gippsland Coast and East Gippsland Coast"
-      ],
+      "issued_utc": "2026-10-15T17:10:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Central Coast: Cape Otway to Wilsons Promontory"
+            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
           ],
           "aac_codes": [
-            "VIC_MW002"
+            "VIC_MW003",
+            "VIC_MW004"
           ],
-          "summary": "Central Coast"
+          "summary": "Central Gippsland Coast and East Gippsland Coast"
         }
       ]
     },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-15T11:00:00Z",
+      "issued_utc": "2026-10-15T17:00:00Z",
       "overview": [
-        "Strong Wind Warning for Thursday for Far North West Coast",
-        "Strong Wind Warning for Friday for Far North West Coast and Lower East Coast"
+        "Strong Wind Warning for Friday for Far North West Coast and Lower East Coast",
+        "Strong Wind Warning for Saturday for Lower East Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Far North West Coast: Sandy Cape to Stanley"
+            "Far North West Coast: Sandy Cape to Stanley",
+            "Lower East Coast: Wineglass Bay to Tasman Island"
           ],
           "aac_codes": [
-            "TAS_MW001"
+            "TAS_MW001",
+            "TAS_MW005"
           ],
-          "summary": "Far North West Coast"
+          "summary": "Far North West Coast and Lower East Coast"
         }
       ]
     }
