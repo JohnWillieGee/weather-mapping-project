@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-15T10:23:03.068861+00:00",
-  "last_checked_utc": "2026-10-15T10:23:03.068861+00:00",
-  "warning_count": 11,
+  "generated_utc": "2026-10-15T10:53:04.290162+00:00",
+  "last_checked_utc": "2026-10-15T10:53:04.290162+00:00",
+  "warning_count": 9,
   "warnings": [
     {
       "pid": "",
@@ -50,41 +50,22 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Central West Slopes and Plains, Upper Western",
+      "title": "Cancellation of Severe Thunderstorm Warning for Central West Slopes and Plains, Upper Western",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Bourke and Brewarrina. Severe thunderstorms are no longer occurring in the Lower Western district and the warning for this district is CANCELLED.",
-      "issued": "2026-10-15T21:05:42+11:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-15T21:47:42+11:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "NSW_PW012",
           "description": "Central West Slopes and Plains",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "NSW_PW016",
           "description": "Upper Western",
-          "phase": "REN"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
-    },
-    {
-      "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Lower Western",
-      "type": "thunderstorm",
-      "state": "NSW",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-15T21:05:42+11:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "NSW_PW015",
-          "description": "Lower Western",
           "phase": "CAN"
         }
       ],
@@ -93,41 +74,22 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields, Central West",
+      "title": "Cancellation of Severe Thunderstorm Warning for Central Highlands and Coalfields, Central West",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Thunderstorms are forecast to affect Tambo, Carnarvon National Park, Alpha, Bogantungan, Jericho and Mantuan Downs. Severe thunderstorms are no longer occurring in the Maranoa and Warrego district and the warning for this district is CANCELLED. 82 MM OF RAINFALL RECORDED AT ROCKY CREEK IN THE 1 HOUR TO 6:03 PM 90 km/h wind",
-      "issued": "2026-10-15T20:02:25+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled. 82 MM OF RAINFALL RECORDED AT ROCKY CREEK IN THE 1 HOUR TO 6:03 PM 90 km/h wind gust was recorded at Mt Isa Airport at 5:08 pm",
+      "issued": "2026-10-15T20:48:26+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "QLD_PW008",
           "description": "Central Highlands and Coalfields",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW009",
           "description": "Central West",
-          "phase": "REN"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
-    },
-    {
-      "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Maranoa and Warrego",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-15T20:02:25+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "QLD_PW012",
-          "description": "Maranoa and Warrego",
           "phase": "CAN"
         }
       ],
@@ -175,24 +137,7 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Mallinson St, Griffith",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Thu, 15 Oct 2026 10:19:41 GMT",
-        "description": "Mallinson St, Griffith, NSW 2680",
-        "council": "Griffith",
-        "lat": -34.2789519999999,
-        "lng": 146.050526,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [
       {
@@ -1001,7 +946,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 29,
+  "incident_count": 28,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
