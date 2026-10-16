@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-16T10:53:05.328751+00:00",
-  "last_checked_utc": "2026-10-16T10:53:05.328751+00:00",
+  "generated_utc": "2026-10-16T11:23:11.146561+00:00",
+  "last_checked_utc": "2026-10-16T11:23:11.146561+00:00",
   "warning_count": 4,
   "warnings": [
     {
@@ -14,21 +14,21 @@
     },
     {
       "pid": "",
-      "title": "16/16:15 EDT Marine Wind Warning Summary for Victoria",
+      "title": "16/22:00 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 16 Oct 2026 05:15:21 GMT"
+      "issued": "Fri, 16 Oct 2026 11:00:21 GMT"
     },
     {
       "pid": "",
-      "title": "16/16:05 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "16/22:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 16 Oct 2026 05:05:11 GMT"
+      "issued": "Fri, 16 Oct 2026 11:00:12 GMT"
     },
     {
       "pid": "IDQ21033",
@@ -88,16 +88,16 @@
     "tas": [],
     "wa": [
       {
-        "title": "Bushfire",
+        "title": "Structure Fire",
         "alertLevel": "",
         "status": "active",
-        "type": "Bush Fire",
+        "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-16T10:30:16+00:00",
-        "description": "WEST TOODYAY, SHIRE OF TOODYAY",
-        "lat": -31.5265,
-        "lng": 116.3937,
+        "updated": "2026-10-16T11:13:04+00:00",
+        "description": "INNALOO, CITY OF STIRLING",
+        "lat": -31.8842,
+        "lng": 115.792,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -917,6 +917,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - AMY JOHNSON AV, BERRIMAH",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-16T11:13:27+00:00",
+        "description": "AMY JOHNSON AV, BERRIMAH",
+        "lat": -12.4205,
+        "lng": 130.9101,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Eeee Road, FLY CREEK ",
         "alertLevel": "Advice",
         "status": "active",
@@ -974,7 +989,7 @@
       }
     ]
   },
-  "incident_count": 37,
+  "incident_count": 38,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4605,43 +4620,22 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-16T05:15:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
-            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
-          ],
-          "aac_codes": [
-            "VIC_MW003",
-            "VIC_MW004"
-          ],
-          "summary": "Central Gippsland Coast and East Gippsland Coast"
-        }
-      ]
-    },
-    "TAS": {
-      "state": "TAS",
-      "product": "IDT20100",
-      "issued_utc": "2026-10-16T05:05:00Z",
+      "issued_utc": "2026-10-16T11:00:00Z",
       "overview": [
-        "Strong Wind Warning for Friday for Lower East Coast",
-        "Strong Wind Warning for Saturday for Lower East Coast"
+        "Strong Wind Warning for Friday for East Gippsland Coast",
+        "Strong Wind Warning for Saturday for East Gippsland Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Lower East Coast: Wineglass Bay to Tasman Island"
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
           ],
           "aac_codes": [
-            "TAS_MW005"
+            "VIC_MW004"
           ],
-          "summary": "Lower East Coast"
+          "summary": "East Gippsland Coast"
         }
       ]
     }
