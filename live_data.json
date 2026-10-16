@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-16T22:23:07.126834+00:00",
-  "last_checked_utc": "2026-10-16T22:23:07.126834+00:00",
+  "generated_utc": "2026-10-16T22:53:05.517571+00:00",
+  "last_checked_utc": "2026-10-16T22:53:05.517571+00:00",
   "warning_count": 5,
   "warnings": [
     {
@@ -41,32 +41,32 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields, Central West, Maranoa and Warrego",
+      "title": "Cancellation of Severe Thunderstorm Warning for Central Highlands and Coalfields, Central West, Maranoa and Warrego",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Augathella.",
-      "issued": "2026-10-17T07:09:16+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-17T08:26:27+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "QLD_PW008",
           "description": "Central Highlands and Coalfields",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW009",
           "description": "Central West",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW012",
           "description": "Maranoa and Warrego",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -98,22 +98,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-16T22:02:03+00:00",
-        "description": "COOLOONGUP, CITY OF ROCKINGHAM",
-        "lat": -32.2969,
-        "lng": 115.744,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-16T21:59:30+00:00",
+        "updated": "2026-10-16T22:33:08+00:00",
         "description": "HALLS CREEK, SHIRE OF HALLS CREEK",
         "lat": -18.2176,
         "lng": 127.6771,
@@ -936,53 +921,8 @@
         "status": "active",
         "type": "Structure Fire",
         "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-10-16T22:19:41+00:00",
-        "description": "HIGGINS",
-        "lat": -35.2367,
-        "lng": 149.0285,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - HIGGINS",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Ambulance",
-        "updated": "2026-10-16T22:19:41+00:00",
-        "description": "HIGGINS",
-        "lat": -35.2367,
-        "lng": 149.0285,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - HIGGINS",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-10-16T21:55:09+00:00",
-        "description": "HIGGINS",
-        "lat": -35.2367,
-        "lng": 149.0285,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - HIGGINS",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
         "agency": "Fire",
-        "updated": "2026-10-16T21:55:09+00:00",
+        "updated": "2026-10-16T22:47:35+00:00",
         "description": "HIGGINS",
         "lat": -35.2367,
         "lng": 149.0285,
@@ -1009,7 +949,7 @@
       }
     ]
   },
-  "incident_count": 39,
+  "incident_count": 35,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
