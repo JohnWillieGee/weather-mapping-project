@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-16T09:53:07.190009+00:00",
-  "last_checked_utc": "2026-10-16T09:53:07.190009+00:00",
-  "warning_count": 5,
+  "generated_utc": "2026-10-16T10:23:04.334495+00:00",
+  "last_checked_utc": "2026-10-16T10:23:04.334495+00:00",
+  "warning_count": 4,
   "warnings": [
     {
       "pid": "",
@@ -32,56 +32,32 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Gulf Country, Northern Goldfields and Upper Flinders, North West, Maranoa and Warrego",
+      "title": "Cancellation of Severe Thunderstorm Warning for Gulf Country, Northern Goldfields and Upper Flinders, North West, Maranoa and Warrego",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Julia Creek and Kamilaroi Station. 48 mm of rain was recorded at Ravenscourt in the 1 hour to 6:20pm.",
-      "issued": "2026-10-16T18:24:16+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled. 35 mm of rain was recorded at Wellwater in the 30 minutes to 6:43pm. 48 mm of rain was recorded at Ravenscourt in the 1 hour to 6:20pm.",
+      "issued": "2026-10-16T20:18:46+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "QLD_PW002",
           "description": "Gulf Country",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW003",
           "description": "Northern Goldfields and Upper Flinders",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW010",
           "description": "North West",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW012",
           "description": "Maranoa and Warrego",
-          "phase": "NEW"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "UPD"
-    },
-    {
-      "pid": "IDD21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for Simpson, Tanami",
-      "type": "thunderstorm",
-      "state": "NT",
-      "link": "",
-      "desc": "This warning is now cancelled.",
-      "issued": "2026-10-16T14:52:48+09:30",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "NT_PW007",
-          "description": "Simpson",
-          "phase": "CAN"
-        },
-        {
-          "aac": "NT_PW009",
-          "description": "Tanami",
           "phase": "CAN"
         }
       ],
@@ -118,7 +94,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-16T09:44:17+00:00",
+        "updated": "2026-10-16T09:44:27+00:00",
         "description": "HALLS CREEK, SHIRE OF HALLS CREEK",
         "lat": -18.2176,
         "lng": 127.6771,
@@ -268,40 +244,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-16T08:32:18+00:00",
-        "description": "CABLE BEACH, SHIRE OF BROOME",
-        "lat": -17.957,
-        "lng": 122.2171,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-16T08:07:41+00:00",
         "description": "PRINCE REGENT RIVER, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.1977,
         "lng": 125.4874,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-16T07:55:29+00:00",
-        "description": "BOULDER, CITY OF KALGOORLIE-BOULDER",
-        "lat": -30.7793,
-        "lng": 121.4933,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -956,21 +902,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - FARRELL CR, WINNELLIE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-16T09:22:34+00:00",
-        "description": "FARRELL CR, WINNELLIE",
-        "lat": -12.4288,
-        "lng": 130.9017,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Eeee Road, FLY CREEK ",
         "alertLevel": "Advice",
         "status": "active",
@@ -1028,7 +959,7 @@
       }
     ]
   },
-  "incident_count": 39,
+  "incident_count": 36,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
