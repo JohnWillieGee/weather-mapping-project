@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-16T07:23:06.185359+00:00",
-  "last_checked_utc": "2026-10-16T07:23:06.185359+00:00",
-  "warning_count": 6,
+  "generated_utc": "2026-10-16T07:53:05.000551+00:00",
+  "last_checked_utc": "2026-10-16T07:53:05.000551+00:00",
+  "warning_count": 7,
   "warnings": [
     {
       "pid": "",
@@ -41,32 +41,51 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Gulf Country, Central West, North West",
+      "title": "Severe Thunderstorm Warning for Gulf Country, Northern Goldfields and Upper Flinders, North West",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Longreach and Ilfracombe.",
-      "issued": "2026-10-16T15:44:51+10:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Julia Creek and Kamilaroi Station. Severe thunderstorms are no longer occurring in the Central West district and the warning for this district is CANCELLED.",
+      "issued": "2026-10-16T17:39:10+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "QLD_PW002",
           "description": "Gulf Country",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
-          "aac": "QLD_PW009",
-          "description": "Central West",
-          "phase": "UPD"
+          "aac": "QLD_PW003",
+          "description": "Northern Goldfields and Upper Flinders",
+          "phase": "NEW"
         },
         {
           "aac": "QLD_PW010",
           "description": "North West",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDQ21033",
+      "title": "Severe Thunderstorm Warning for Central West",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-16T17:39:10+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "QLD_PW009",
+          "description": "Central West",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDD21033",
@@ -115,6 +134,21 @@
     ],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-16T07:41:23+00:00",
+        "description": "BOULDER, CITY OF KALGOORLIE-BOULDER",
+        "lat": -30.7793,
+        "lng": 121.4933,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -185,21 +219,6 @@
             ]
           ]
         ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-16T07:10:31+00:00",
-        "description": "MOUNT HAWTHORN, CITY OF VINCENT",
-        "lat": -31.9191,
-        "lng": 115.8274,
-        "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -356,21 +375,6 @@
             ]
           ]
         ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-16T06:34:56+00:00",
-        "description": "KATANNING, SHIRE OF KATANNING",
-        "lat": -33.7333,
-        "lng": 117.6238,
-        "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -831,7 +835,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-16T07:06:44+00:00",
+        "updated": "2026-10-16T07:36:27+00:00",
         "description": "SECRETT RD, KNUCKEY LAGOON",
         "lat": -12.4205,
         "lng": 130.9233,
@@ -880,6 +884,21 @@
     ],
     "act": [],
     "sa": [
+      {
+        "title": "STRUCTURE FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-16T07:21:00+00:00",
+        "description": "MENZIES",
+        "lat": -35.6841,
+        "lng": 137.5455,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
       {
         "title": "Grass fire",
         "alertLevel": "",
