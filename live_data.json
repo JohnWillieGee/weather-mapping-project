@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-17T13:53:08.448270+00:00",
-  "last_checked_utc": "2026-10-17T13:53:08.448270+00:00",
+  "generated_utc": "2026-10-17T14:23:04.429657+00:00",
+  "last_checked_utc": "2026-10-17T14:23:04.429657+00:00",
   "warning_count": 4,
   "warnings": [
     {
@@ -32,22 +32,22 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central West",
+      "title": "Cancellation of Severe Thunderstorm Warning for Central West",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Aberfoyle.",
-      "issued": "2026-10-17T22:13:53+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-18T00:16:38+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "QLD_PW009",
           "description": "Central West",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -79,7 +79,22 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-17T13:28:50+00:00",
+        "updated": "2026-10-17T14:10:10+00:00",
+        "description": "STRELLEY, TOWN OF PORT HEDLAND",
+        "lat": -20.3471,
+        "lng": 118.8939,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-17T13:48:25+00:00",
         "description": "OLDBURY, SHIRE OF SERPENTINE-JARRAHDALE",
         "lat": -32.2934,
         "lng": 115.9131,
@@ -113,21 +128,6 @@
         "description": "KATANNING, SHIRE OF KATANNING",
         "lat": -33.6548,
         "lng": 117.5208,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-17T11:03:22+00:00",
-        "description": "STRELLEY, TOWN OF PORT HEDLAND",
-        "lat": -20.3471,
-        "lng": 118.8939,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -658,21 +658,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - VANDERLIN DR, LEANYER",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-17T13:42:14+00:00",
-        "description": "VANDERLIN DR, LEANYER",
-        "lat": -12.3873,
-        "lng": 130.9072,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - BARKLY HWY, TABLELANDS",
         "alertLevel": "Advice",
         "status": "active",
@@ -707,7 +692,7 @@
       }
     ]
   },
-  "incident_count": 38,
+  "incident_count": 37,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
