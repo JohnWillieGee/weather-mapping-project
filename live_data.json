@@ -1,35 +1,16 @@
 {
-  "generated_utc": "2026-10-17T22:53:03.933866+00:00",
-  "last_checked_utc": "2026-10-17T22:53:03.933866+00:00",
-  "warning_count": 2,
+  "generated_utc": "2026-10-17T23:23:02.275929+00:00",
+  "last_checked_utc": "2026-10-17T23:23:02.275929+00:00",
+  "warning_count": 1,
   "warnings": [
     {
       "pid": "",
-      "title": "18/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "18/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sat, 17 Oct 2026 17:01:13 GMT"
-    },
-    {
-      "pid": "IDD21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for Carpentaria",
-      "type": "thunderstorm",
-      "state": "NT",
-      "link": "",
-      "desc": "This warning is now cancelled.",
-      "issued": "2026-10-18T03:59:08+09:30",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "NT_PW004",
-          "description": "Carpentaria",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
+      "issued": "Sat, 17 Oct 2026 23:01:13 GMT"
     }
   ],
   "fetch_errors": {},
@@ -643,6 +624,36 @@
     "act": [],
     "sa": [
       {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-17T22:59:00+00:00",
+        "description": "VERDUN",
+        "lat": -35.0091,
+        "lng": 138.7862,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
+      {
+        "title": "STRUCTURE FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-17T18:55:00+00:00",
+        "description": "BUCKLAND PARK",
+        "lat": -34.6781,
+        "lng": 138.5322,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
+      {
         "title": "Grass fire",
         "alertLevel": "",
         "status": "safe",
@@ -659,7 +670,7 @@
       }
     ]
   },
-  "incident_count": 36,
+  "incident_count": 38,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4290,7 +4301,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-17T17:01:00Z",
+      "issued_utc": "2026-10-17T23:01:00Z",
       "overview": [],
       "hazards": [
         {
