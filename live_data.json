@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-17T17:23:03.517099+00:00",
-  "last_checked_utc": "2026-10-17T17:23:03.517099+00:00",
-  "warning_count": 5,
+  "generated_utc": "2026-10-17T17:53:06.559232+00:00",
+  "last_checked_utc": "2026-10-17T17:53:06.559232+00:00",
+  "warning_count": 6,
   "warnings": [
     {
       "pid": "",
@@ -51,27 +51,41 @@
     },
     {
       "pid": "IDD21033",
-      "title": "Severe Thunderstorm Warning for Arnhem, Carpentaria",
+      "title": "Severe Thunderstorm Warning for Carpentaria",
       "type": "thunderstorm",
       "state": "NT",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours.",
-      "issued": "2026-10-18T01:22:40+09:30",
+      "desc": "Severe thunderstorms are likely to produce large hailstones in the warning area over the next several hours. Locations which may be affected include Katherine. Severe thunderstorms are no longer occurring in the Arnhem district and the warning for this district is CANCELLED.",
+      "issued": "2026-10-18T03:17:07+09:30",
       "cancelled": false,
+      "areas": [
+        {
+          "aac": "NT_PW004",
+          "description": "Carpentaria",
+          "phase": "UPD"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDD21033",
+      "title": "Severe Thunderstorm Warning for Arnhem",
+      "type": "thunderstorm",
+      "state": "NT",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-18T03:17:07+09:30",
+      "cancelled": true,
       "areas": [
         {
           "aac": "NT_PW003",
           "description": "Arnhem",
-          "phase": "NEW"
-        },
-        {
-          "aac": "NT_PW004",
-          "description": "Carpentaria",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -96,36 +110,6 @@
     ],
     "tas": [],
     "wa": [
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-17T16:42:08+00:00",
-        "description": "WONTHELLA, CITY OF GREATER GERALDTON",
-        "lat": -28.7662,
-        "lng": 114.6351,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Fuel Leak",
-        "alertLevel": "",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-17T16:10:50+00:00",
-        "description": "YARAWINDAH, SHIRE OF VICTORIA PLAINS",
-        "lat": -31.0715,
-        "lng": 116.2038,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -719,8 +703,23 @@
         "status": "active",
         "type": "Structure Fire",
         "size": "",
-        "agency": "Fire - Ambulance",
-        "updated": "2026-10-17T16:35:28+00:00",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-10-17T16:36:15+00:00",
+        "description": "ARANDA",
+        "lat": -35.2608,
+        "lng": 149.0799,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - ARANDA",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Ambulance",
+        "updated": "2026-10-17T16:36:15+00:00",
         "description": "ARANDA",
         "lat": -35.2608,
         "lng": 149.0799,
@@ -747,7 +746,7 @@
       }
     ]
   },
-  "incident_count": 39,
+  "incident_count": 38,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
