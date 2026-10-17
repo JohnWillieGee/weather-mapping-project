@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-17T04:23:04.771916+00:00",
-  "last_checked_utc": "2026-10-17T04:23:04.771916+00:00",
+  "generated_utc": "2026-10-17T04:53:05.616566+00:00",
+  "last_checked_utc": "2026-10-17T04:53:05.616566+00:00",
   "warning_count": 4,
   "warnings": [
     {
@@ -83,10 +83,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-17T04:14:12+00:00",
-        "description": "GELORUP, SHIRE OF CAPEL",
-        "lat": -33.4193,
-        "lng": 115.6387,
+        "updated": "2026-10-17T04:32:32+00:00",
+        "description": "OCEAN BEACH, SHIRE OF DENMARK",
+        "lat": -35.0087,
+        "lng": 117.2778,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -98,7 +98,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-17T04:11:02+00:00",
+        "updated": "2026-10-17T04:31:51+00:00",
         "description": "LESCHENAULT, SHIRE OF HARVEY",
         "lat": -33.226,
         "lng": 115.7259,
@@ -113,10 +113,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-17T04:02:59+00:00",
-        "description": "HALLS CREEK, SHIRE OF HALLS CREEK",
-        "lat": -18.2176,
-        "lng": 127.6771,
+        "updated": "2026-10-17T04:14:12+00:00",
+        "description": "GELORUP, SHIRE OF CAPEL",
+        "lat": -33.4193,
+        "lng": 115.6387,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -675,25 +675,55 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       }
     ],
-    "nt": [
+    "nt": [],
+    "act": [
       {
-        "title": "Grass and Scrub Fire - Unknown",
-        "alertLevel": "Advice",
+        "title": "HOUSE FIRE - KAMBAH",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-10-17T04:36:33+00:00",
+        "description": "KAMBAH",
+        "lat": -35.385,
+        "lng": 149.0514,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - KAMBAH",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Fire",
+        "updated": "2026-10-17T04:36:33+00:00",
+        "description": "KAMBAH",
+        "lat": -35.385,
+        "lng": 149.0514,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      }
+    ],
+    "sa": [
+      {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-17T04:13:53+00:00",
-        "description": "",
-        "lat": -23.7496,
-        "lng": 133.8573,
+        "agency": "CFS",
+        "updated": "2026-10-17T04:19:00+00:00",
+        "description": "WOKURNA",
+        "lat": -33.7312,
+        "lng": 138.1121,
         "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      }
-    ],
-    "act": [],
-    "sa": [
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
       {
         "title": "Grass fire",
         "alertLevel": "",
@@ -711,7 +741,7 @@
       }
     ]
   },
-  "incident_count": 39,
+  "incident_count": 41,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
