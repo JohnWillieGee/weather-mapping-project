@@ -1,34 +1,34 @@
 {
-  "generated_utc": "2026-10-17T10:53:08.061955+00:00",
-  "last_checked_utc": "2026-10-17T10:53:08.061955+00:00",
+  "generated_utc": "2026-10-17T11:23:08.607591+00:00",
+  "last_checked_utc": "2026-10-17T11:23:08.607591+00:00",
   "warning_count": 5,
   "warnings": [
     {
       "pid": "",
-      "title": "17/18:40 EDT Marine Wind Warning Summary for Victoria",
+      "title": "17/22:00 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 17 Oct 2026 07:40:43 GMT"
+      "issued": "Sat, 17 Oct 2026 11:00:21 GMT"
     },
     {
       "pid": "",
-      "title": "17/13:14 WST Marine Wind Warning Summary for Western Australia",
+      "title": "17/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sat, 17 Oct 2026 05:14:29 GMT"
+      "issued": "Sat, 17 Oct 2026 11:01:17 GMT"
     },
     {
       "pid": "",
-      "title": "17/16:14 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "17/22:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 17 Oct 2026 05:14:00 GMT"
+      "issued": "Sat, 17 Oct 2026 11:00:11 GMT"
     },
     {
       "pid": "IDQ21033",
@@ -98,10 +98,25 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-17T10:15:38+00:00",
+        "updated": "2026-10-17T11:03:22+00:00",
         "description": "STRELLEY, TOWN OF PORT HEDLAND",
         "lat": -20.3471,
         "lng": 118.8939,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-17T10:56:13+00:00",
+        "description": "DAWESVILLE, CITY OF MANDURAH",
+        "lat": -32.6444,
+        "lng": 115.6174,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -662,23 +677,7 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [
-      {
-        "title": "HOUSE FIRE - DUNLOP",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Fire",
-        "updated": "2026-10-17T10:16:52+00:00",
-        "description": "DUNLOP",
-        "lat": -35.2017,
-        "lng": 149.0187,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      }
-    ],
+    "act": [],
     "sa": [
       {
         "title": "Grass fire",
@@ -4325,62 +4324,26 @@
     }
   },
   "marine_warnings": {
-    "VIC": {
-      "state": "VIC",
-      "product": "IDV20600",
-      "issued_utc": "2026-10-17T07:40:30Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
-          ],
-          "aac_codes": [
-            "VIC_MW004"
-          ],
-          "summary": "East Gippsland Coast"
-        }
-      ]
-    },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-17T05:14:19Z",
+      "issued_utc": "2026-10-17T11:01:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
             "Albany Coast: Walpole to Bremer Bay",
             "Esperance Coast: Bremer Bay to Israelite Bay"
           ],
           "aac_codes": [
+            "WA_MW011",
             "WA_MW012",
             "WA_MW013"
           ],
-          "summary": "Albany Coast and Esperance Coast"
-        }
-      ]
-    },
-    "TAS": {
-      "state": "TAS",
-      "product": "IDT20100",
-      "issued_utc": "2026-10-17T05:13:52Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Lower East Coast: Wineglass Bay to Tasman Island"
-          ],
-          "aac_codes": [
-            "TAS_MW005"
-          ],
-          "summary": "Lower East Coast"
+          "summary": "Leeuwin Coast, Albany Coast and Esperance Coast"
         }
       ]
     }
