@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-18T08:53:58.189431+00:00",
-  "last_checked_utc": "2026-10-18T08:53:58.189431+00:00",
+  "generated_utc": "2026-10-18T09:23:05.263606+00:00",
+  "last_checked_utc": "2026-10-18T09:23:05.263606+00:00",
   "warning_count": 3,
   "warnings": [
     {
@@ -31,15 +31,28 @@
       "issued": "Sun, 18 Oct 2026 07:45:12 GMT"
     }
   ],
-  "fetch_errors": {
-    "QLD": "HTTPSConnectionPool(host='www.bom.gov.au', port=443): Read timed out. (read timeout=15)"
-  },
+  "fetch_errors": {},
   "incidents": {
     "nsw": [],
     "vic": [],
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-18T09:06:14+00:00",
+        "description": "WUNDOWIE, SHIRE OF NORTHAM",
+        "lat": -31.7705,
+        "lng": 116.3797,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -498,6 +511,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - MEMORIAL TCE, ADELAIDE RIVER",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-18T09:07:56+00:00",
+        "description": "MEMORIAL TCE, ADELAIDE RIVER",
+        "lat": -13.2288,
+        "lng": 131.1165,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - KAKADU",
         "alertLevel": "Advice",
         "status": "active",
@@ -562,7 +590,7 @@
       }
     ]
   },
-  "incident_count": 31,
+  "incident_count": 33,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
