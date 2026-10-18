@@ -1,8 +1,17 @@
 {
-  "generated_utc": "2026-10-18T07:23:05.837541+00:00",
-  "last_checked_utc": "2026-10-18T07:23:05.837541+00:00",
+  "generated_utc": "2026-10-18T07:53:19.842631+00:00",
+  "last_checked_utc": "2026-10-18T07:53:19.842631+00:00",
   "warning_count": 2,
   "warnings": [
+    {
+      "pid": "",
+      "title": "18/18:17 CDT Marine Wind Warning Summary for South Australia",
+      "type": "wind",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
+      "desc": "",
+      "issued": "Sun, 18 Oct 2026 07:47:41 GMT"
+    },
     {
       "pid": "",
       "title": "18/13:01 WST Marine Wind Warning Summary for Western Australia",
@@ -11,18 +20,11 @@
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
       "issued": "Sun, 18 Oct 2026 05:01:14 GMT"
-    },
-    {
-      "pid": "",
-      "title": "18/16:05 EDT Marine Wind Warning Summary for Tasmania",
-      "type": "wind",
-      "state": "TAS",
-      "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
-      "desc": "",
-      "issued": "Sun, 18 Oct 2026 05:05:10 GMT"
     }
   ],
-  "fetch_errors": {},
+  "fetch_errors": {
+    "TAS": "HTTPSConnectionPool(host='www.bom.gov.au', port=443): Read timed out. (read timeout=15)"
+  },
   "incidents": {
     "nsw": [],
     "vic": [],
@@ -36,7 +38,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-18T07:09:25+00:00",
+        "updated": "2026-10-18T07:21:47+00:00",
         "description": "PRINCE REGENT RIVER, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.4032,
         "lng": 125.5215,
@@ -222,21 +224,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-18T00:56:22+00:00",
-        "description": "DANDARAGAN, SHIRE OF DANDARAGAN",
-        "lat": -30.73,
-        "lng": 115.7006,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Structure Fire",
         "alertLevel": "",
         "status": "active",
@@ -247,21 +234,6 @@
         "description": "BAMBUN, SHIRE OF GINGIN",
         "lat": -31.4507,
         "lng": 115.9062,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-18T00:46:20+00:00",
-        "description": "REGANS FORD, SHIRE OF DANDARAGAN",
-        "lat": -30.9719,
-        "lng": 115.7016,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -491,21 +463,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-14T08:40:42+00:00",
-        "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
-        "lat": -16.908,
-        "lng": 122.574,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-13T08:59:45+00:00",
         "description": "GIBB, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -16.435,
@@ -656,7 +613,7 @@
       }
     ]
   },
-  "incident_count": 38,
+  "incident_count": 35,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4284,6 +4241,27 @@
     }
   },
   "marine_warnings": {
+    "SA": {
+      "state": "SA",
+      "product": "IDS20201",
+      "issued_utc": "2026-10-18T07:47:27Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Upper West Coast: Fowlers Bay to Elliston",
+            "Lower West Coast: Elliston to Cape Carnot"
+          ],
+          "aac_codes": [
+            "SA_MW002",
+            "SA_MW003"
+          ],
+          "summary": "Upper West Coast and Lower West Coast"
+        }
+      ]
+    },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
@@ -4310,7 +4288,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-18T05:05:00Z",
+      "issued_utc": "2026-10-18T07:45:05Z",
       "overview": [],
       "hazards": [
         {
