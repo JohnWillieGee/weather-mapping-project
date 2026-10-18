@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-18T18:23:01.378122+00:00",
-  "last_checked_utc": "2026-10-18T18:23:01.378122+00:00",
+  "generated_utc": "2026-10-18T18:53:02.184566+00:00",
+  "last_checked_utc": "2026-10-18T18:53:02.184566+00:00",
   "warning_count": 3,
   "warnings": [
     {
@@ -45,7 +45,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-18T18:08:55+00:00",
+        "updated": "2026-10-18T18:34:26+00:00",
         "description": "HALLS CREEK, SHIRE OF HALLS CREEK",
         "lat": -18.2102,
         "lng": 127.656,
@@ -64,21 +64,6 @@
         "description": "BELMONT, CITY OF BELMONT",
         "lat": -31.943,
         "lng": 115.9266,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-18T16:56:05+00:00",
-        "description": "BECKENHAM, CITY OF GOSNELLS",
-        "lat": -32.0299,
-        "lng": 115.9651,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -533,7 +518,7 @@
       }
     ]
   },
-  "incident_count": 31,
+  "incident_count": 30,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -1088,7 +1073,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 16,
-          "st": "2026-10-19T00:00:00+11:00",
+          "st": "2026-10-19T05:54:00+11:00",
           "et": "2026-10-20T00:00:00+11:00"
         },
         "2": {
@@ -1114,7 +1099,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 17,
-          "st": "2026-10-19T00:00:00+11:00",
+          "st": "2026-10-19T05:54:00+11:00",
           "et": "2026-10-20T00:00:00+11:00"
         },
         "2": {
@@ -1140,7 +1125,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 19,
-          "st": "2026-10-19T00:00:00+11:00",
+          "st": "2026-10-19T05:54:00+11:00",
           "et": "2026-10-20T00:00:00+11:00"
         },
         "2": {
@@ -1166,7 +1151,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 15,
-          "st": "2026-10-19T00:00:00+11:00",
+          "st": "2026-10-19T05:54:00+11:00",
           "et": "2026-10-20T00:00:00+11:00"
         },
         "2": {
@@ -1192,7 +1177,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 15,
-          "st": "2026-10-19T00:00:00+11:00",
+          "st": "2026-10-19T05:54:00+11:00",
           "et": "2026-10-20T00:00:00+11:00"
         },
         "2": {
@@ -1217,8 +1202,8 @@
       "VIC_FW003": {
         "1": {
           "fd": "No Rating",
-          "fbi": 9,
-          "st": "2026-10-19T00:00:00+11:00",
+          "fbi": 10,
+          "st": "2026-10-19T05:54:00+11:00",
           "et": "2026-10-20T00:00:00+11:00"
         },
         "2": {
@@ -1244,7 +1229,7 @@
         "1": {
           "fd": "No Rating",
           "fbi": 11,
-          "st": "2026-10-19T00:00:00+11:00",
+          "st": "2026-10-19T05:54:00+11:00",
           "et": "2026-10-20T00:00:00+11:00"
         },
         "2": {
@@ -1270,7 +1255,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 14,
-          "st": "2026-10-19T00:00:00+11:00",
+          "st": "2026-10-19T05:54:00+11:00",
           "et": "2026-10-20T00:00:00+11:00"
         },
         "2": {
@@ -1295,8 +1280,8 @@
       "VIC_FW002": {
         "1": {
           "fd": "Moderate",
-          "fbi": 17,
-          "st": "2026-10-19T00:00:00+11:00",
+          "fbi": 18,
+          "st": "2026-10-19T05:54:00+11:00",
           "et": "2026-10-20T00:00:00+11:00"
         },
         "2": {
@@ -4187,19 +4172,21 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-18T17:01:00Z",
+      "issued_utc": "2026-10-18T18:50:32Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Leeuwin Coast: Cape Naturaliste to Walpole"
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay"
           ],
           "aac_codes": [
-            "WA_MW011"
+            "WA_MW011",
+            "WA_MW012"
           ],
-          "summary": "Leeuwin Coast"
+          "summary": "Leeuwin Coast and Albany Coast"
         }
       ]
     },
