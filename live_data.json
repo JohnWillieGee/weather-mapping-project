@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-18T08:23:14.703902+00:00",
-  "last_checked_utc": "2026-10-18T08:23:14.703902+00:00",
+  "generated_utc": "2026-10-18T08:53:58.189431+00:00",
+  "last_checked_utc": "2026-10-18T08:53:58.189431+00:00",
   "warning_count": 3,
   "warnings": [
     {
@@ -31,7 +31,9 @@
       "issued": "Sun, 18 Oct 2026 07:45:12 GMT"
     }
   ],
-  "fetch_errors": {},
+  "fetch_errors": {
+    "QLD": "HTTPSConnectionPool(host='www.bom.gov.au', port=443): Read timed out. (read timeout=15)"
+  },
   "incidents": {
     "nsw": [],
     "vic": [],
@@ -535,40 +537,10 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "CFS",
-        "updated": "2026-10-18T08:04:00+00:00",
-        "description": "TUMBY BAY",
-        "lat": -34.3536,
-        "lng": 136.087,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      },
-      {
-        "title": "GRASS FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "CFS",
         "updated": "2026-10-18T07:06:00+00:00",
         "description": "CLEVE",
         "lat": -33.7607,
         "lng": 136.5082,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      },
-      {
-        "title": "GRASS FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-18T06:48:00+00:00",
-        "description": "CRYSTAL BROOK",
-        "lat": -33.3782,
-        "lng": 138.1326,
         "polys": [],
         "state": "SA",
         "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
@@ -590,7 +562,7 @@
       }
     ]
   },
-  "incident_count": 33,
+  "incident_count": 31,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
