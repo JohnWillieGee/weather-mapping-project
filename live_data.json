@@ -1,34 +1,34 @@
 {
-  "generated_utc": "2026-10-18T22:53:06.491613+00:00",
-  "last_checked_utc": "2026-10-18T22:53:06.491613+00:00",
+  "generated_utc": "2026-10-18T23:23:05.866170+00:00",
+  "last_checked_utc": "2026-10-18T23:23:05.866170+00:00",
   "warning_count": 3,
   "warnings": [
     {
       "pid": "",
-      "title": "19/03:40 CDT Marine Wind Warning Summary for South Australia",
+      "title": "19/09:30 CDT Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sun, 18 Oct 2026 17:10:10 GMT"
+      "issued": "Sun, 18 Oct 2026 23:00:10 GMT"
     },
     {
       "pid": "",
-      "title": "19/02:50 WST Marine Wind Warning Summary for Western Australia",
+      "title": "19/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 18 Oct 2026 18:50:41 GMT"
+      "issued": "Sun, 18 Oct 2026 23:01:14 GMT"
     },
     {
       "pid": "",
-      "title": "19/04:00 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "19/10:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 18 Oct 2026 17:00:12 GMT"
+      "issued": "Sun, 18 Oct 2026 23:00:12 GMT"
     }
   ],
   "fetch_errors": {},
@@ -38,6 +38,59 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-18T22:56:36+00:00",
+        "description": "LAKE ARGYLE, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -16.688,
+        "lng": 128.937,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - GIBB",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-18T22:50:01.454+00:00",
+        "description": "",
+        "lat": -16.5463,
+        "lng": 126.194,
+        "polys": [
+          [
+            [
+              126.17546,
+              -16.544893
+            ],
+            [
+              126.221615,
+              -16.539085
+            ],
+            [
+              126.221761,
+              -16.548904
+            ],
+            [
+              126.17546,
+              -16.553592
+            ],
+            [
+              126.17546,
+              -16.544893
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - ORD RIVER",
         "alertLevel": "Advice",
@@ -149,59 +202,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire Advice MONITOR CONDITIONS - GIBB",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-18T22:26:36.416+00:00",
-        "description": "",
-        "lat": -16.5463,
-        "lng": 126.194,
-        "polys": [
-          [
-            [
-              126.17546,
-              -16.544893
-            ],
-            [
-              126.221615,
-              -16.539085
-            ],
-            [
-              126.221761,
-              -16.548904
-            ],
-            [
-              126.17546,
-              -16.553592
-            ],
-            [
-              126.17546,
-              -16.544893
-            ]
-          ]
-        ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-18T19:41:35+00:00",
-        "description": "HALLS CREEK, SHIRE OF HALLS CREEK",
-        "lat": -18.2102,
-        "lng": 127.656,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
@@ -272,21 +272,6 @@
         "description": "ORD RIVER, SHIRE OF HALLS CREEK",
         "lat": -17.89,
         "lng": 127.909,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-18T03:32:39+00:00",
-        "description": "MUELLER RANGES, SHIRE OF HALLS CREEK",
-        "lat": -18.463,
-        "lng": 127.5889,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -613,6 +598,36 @@
     ],
     "sa": [
       {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-18T22:59:00+00:00",
+        "description": "SUTTONTOWN",
+        "lat": -37.796,
+        "lng": 140.7477,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
+      {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-18T22:52:00+00:00",
+        "description": "ULYERRA",
+        "lat": -33.3811,
+        "lng": 135.7339,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
+      {
         "title": "Grass fire",
         "alertLevel": "",
         "status": "controlled",
@@ -644,7 +659,7 @@
       }
     ]
   },
-  "incident_count": 35,
+  "incident_count": 36,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4272,33 +4287,10 @@
     }
   },
   "marine_warnings": {
-    "SA": {
-      "state": "SA",
-      "product": "IDS20201",
-      "issued_utc": "2026-10-18T17:10:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Lower West Coast: Elliston to Cape Carnot",
-            "Central Coast",
-            "South Central Coast"
-          ],
-          "aac_codes": [
-            "SA_MW003",
-            "SA_MW004",
-            "SA_MW008"
-          ],
-          "summary": "Lower West Coast, Central Coast and South Central Coast"
-        }
-      ]
-    },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-18T18:50:32Z",
+      "issued_utc": "2026-10-18T23:01:00Z",
       "overview": [],
       "hazards": [
         {
@@ -4319,7 +4311,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-18T17:00:00Z",
+      "issued_utc": "2026-10-18T23:00:00Z",
       "overview": [
         "Strong Wind Warning for Monday for Central West Coast",
         "Strong Wind Warning for Tuesday for South West Coast and Central West Coast"
