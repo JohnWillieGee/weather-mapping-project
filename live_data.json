@@ -1,34 +1,34 @@
 {
-  "generated_utc": "2026-10-18T16:53:03.218459+00:00",
-  "last_checked_utc": "2026-10-18T16:53:03.218459+00:00",
+  "generated_utc": "2026-10-18T17:23:05.367748+00:00",
+  "last_checked_utc": "2026-10-18T17:23:05.367748+00:00",
   "warning_count": 3,
   "warnings": [
     {
       "pid": "",
-      "title": "18/21:30 CDT Marine Wind Warning Summary for South Australia",
+      "title": "19/03:40 CDT Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sun, 18 Oct 2026 11:00:12 GMT"
+      "issued": "Sun, 18 Oct 2026 17:10:10 GMT"
     },
     {
       "pid": "",
-      "title": "18/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "19/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 18 Oct 2026 11:01:17 GMT"
+      "issued": "Sun, 18 Oct 2026 17:01:16 GMT"
     },
     {
       "pid": "",
-      "title": "18/22:00 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "19/04:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 18 Oct 2026 11:00:13 GMT"
+      "issued": "Sun, 18 Oct 2026 17:00:12 GMT"
     }
   ],
   "fetch_errors": {},
@@ -39,16 +39,31 @@
     "tas": [],
     "wa": [
       {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-18T17:12:54+00:00",
+        "description": "MIDVALE, CITY OF SWAN",
+        "lat": -31.881,
+        "lng": 116.0294,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Structure Fire",
         "alertLevel": "",
         "status": "active",
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-18T16:38:40+00:00",
+        "updated": "2026-10-18T16:56:05+00:00",
         "description": "BECKENHAM, CITY OF GOSNELLS",
-        "lat": -32.0295,
-        "lng": 115.9653,
+        "lat": -32.0299,
+        "lng": 115.9651,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -503,7 +518,7 @@
       }
     ]
   },
-  "incident_count": 29,
+  "incident_count": 30,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4134,50 +4149,53 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-10-18T11:00:00Z",
+      "issued_utc": "2026-10-18T17:10:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Upper West Coast: Fowlers Bay to Elliston",
-            "Lower West Coast: Elliston to Cape Carnot"
+            "Lower West Coast: Elliston to Cape Carnot",
+            "Central Coast",
+            "South Central Coast"
           ],
           "aac_codes": [
-            "SA_MW002",
-            "SA_MW003"
+            "SA_MW003",
+            "SA_MW004",
+            "SA_MW008"
           ],
-          "summary": "Upper West Coast and Lower West Coast"
+          "summary": "Lower West Coast, Central Coast and South Central Coast"
         }
       ]
     },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-18T11:01:00Z",
+      "issued_utc": "2026-10-18T17:01:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Albany Coast: Walpole to Bremer Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay"
+            "Leeuwin Coast: Cape Naturaliste to Walpole"
           ],
           "aac_codes": [
-            "WA_MW012",
-            "WA_MW013"
+            "WA_MW011"
           ],
-          "summary": "Albany Coast and Esperance Coast"
+          "summary": "Leeuwin Coast"
         }
       ]
     },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-18T11:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-10-18T17:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Monday for Central West Coast",
+        "Strong Wind Warning for Tuesday for South West Coast and Central West Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
