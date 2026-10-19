@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-19T00:53:04.433812+00:00",
-  "last_checked_utc": "2026-10-19T00:53:04.433812+00:00",
+  "generated_utc": "2026-10-19T01:22:59.873142+00:00",
+  "last_checked_utc": "2026-10-19T01:22:59.873142+00:00",
   "warning_count": 3,
   "warnings": [
     {
@@ -31,13 +31,30 @@
       "issued": "Mon, 19 Oct 2026 00:11:18 GMT"
     }
   ],
-  "fetch_errors": {},
+  "fetch_errors": {
+    "tas": "500 Server Error:  for url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/72/query?where=1%3D1&outFields=*&f=geojson"
+  },
   "incidents": {
     "nsw": [],
     "vic": [],
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-19T00:47:51+00:00",
+        "description": "GIBB, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -16.435,
+        "lng": 126.213,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -493,21 +510,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-13T08:59:45+00:00",
-        "description": "GIBB, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -16.435,
-        "lng": 126.213,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-12T07:36:17+00:00",
         "description": "ORD RIVER, SHIRE OF HALLS CREEK",
         "lat": -17.219,
@@ -597,6 +599,21 @@
     "act": [],
     "sa": [
       {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-19T01:11:00+00:00",
+        "description": "LAMEROO",
+        "lat": -35.4345,
+        "lng": 140.3586,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
+      {
         "title": "TREE FIRE",
         "alertLevel": "",
         "status": "active",
@@ -658,7 +675,7 @@
       }
     ]
   },
-  "incident_count": 36,
+  "incident_count": 37,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
