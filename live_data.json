@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-19T01:22:59.873142+00:00",
-  "last_checked_utc": "2026-10-19T01:22:59.873142+00:00",
+  "generated_utc": "2026-10-19T01:53:00.115567+00:00",
+  "last_checked_utc": "2026-10-19T01:53:00.115567+00:00",
   "warning_count": 3,
   "warnings": [
     {
@@ -23,17 +23,15 @@
     },
     {
       "pid": "",
-      "title": "19/11:11 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "19/12:38 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 19 Oct 2026 00:11:18 GMT"
+      "issued": "Mon, 19 Oct 2026 01:38:49 GMT"
     }
   ],
-  "fetch_errors": {
-    "tas": "500 Server Error:  for url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/72/query?where=1%3D1&outFields=*&f=geojson"
-  },
+  "fetch_errors": {},
   "incidents": {
     "nsw": [],
     "vic": [],
@@ -47,10 +45,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-19T00:47:51+00:00",
-        "description": "GIBB, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -16.435,
-        "lng": 126.213,
+        "updated": "2026-10-19T01:21:36+00:00",
+        "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -16.306,
+        "lng": 128.037,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -62,10 +60,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-19T00:10:16+00:00",
-        "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -16.306,
-        "lng": 128.037,
+        "updated": "2026-10-19T01:19:05+00:00",
+        "description": "GIBB, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -16.435,
+        "lng": 126.213,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -4327,22 +4325,26 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-19T00:11:10Z",
+      "issued_utc": "2026-10-19T01:38:41Z",
       "overview": [
-        "Strong Wind Warning for Monday for Central West Coast",
-        "Strong Wind Warning for Tuesday for Central West Coast and South West Coast"
+        "Strong Wind Warning for Monday for Lower East Coast, South East Coast and Central West Coast",
+        "Strong Wind Warning for Tuesday for South West Coast and Central West Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Lower East Coast: Wineglass Bay to Tasman Island",
+            "South East Coast: Tasman Island to South East Cape",
             "Central West Coast: Low Rocky Point to Sandy Cape"
           ],
           "aac_codes": [
+            "TAS_MW005",
+            "TAS_MW006",
             "TAS_MW008"
           ],
-          "summary": "Central West Coast"
+          "summary": "Lower East Coast, South East Coast and Central West Coast"
         }
       ]
     }
