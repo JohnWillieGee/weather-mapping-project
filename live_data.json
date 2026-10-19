@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-19T22:53:04.232450+00:00",
-  "last_checked_utc": "2026-10-19T22:53:04.232450+00:00",
+  "generated_utc": "2026-10-19T23:23:04.109431+00:00",
+  "last_checked_utc": "2026-10-19T23:23:04.109431+00:00",
   "warning_count": 4,
   "warnings": [
     {
       "pid": "",
-      "title": "20/04:10 EDT Marine Wind Warning Summary for Victoria",
+      "title": "20/10:00 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 19 Oct 2026 17:10:22 GMT"
+      "issued": "Mon, 19 Oct 2026 23:00:16 GMT"
     },
     {
       "pid": "",
@@ -23,26 +23,43 @@
     },
     {
       "pid": "",
-      "title": "20/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "20/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 19 Oct 2026 17:01:12 GMT"
+      "issued": "Mon, 19 Oct 2026 23:01:15 GMT"
     },
     {
       "pid": "",
-      "title": "20/04:00 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "20/10:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 19 Oct 2026 17:00:10 GMT"
+      "issued": "Mon, 19 Oct 2026 23:00:12 GMT"
     }
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Watermain St, Narrandera",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Mon, 19 Oct 2026 23:19:20 GMT",
+        "description": "Watermain St, Narrandera, NSW 2700",
+        "council": "Narrandera",
+        "lat": -34.7368279999999,
+        "lng": 146.549822,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "tas": [
@@ -53,7 +70,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-20T09:22:28+00:00",
+        "updated": "2026-10-20T10:14:13+00:00",
         "description": "",
         "lat": -41.36694999973176,
         "lng": 147.30004999978675,
@@ -223,16 +240,61 @@
     ],
     "wa": [
       {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-19T23:12:22+00:00",
+        "description": "TANAMI, SHIRE OF HALLS CREEK",
+        "lat": -20.903,
+        "lng": 128.566,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Earthquake",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Earthquake",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-19T23:11:54+00:00",
+        "description": "AUGUSTA MARGARET RIVER, SHIRE OF",
+        "lat": -34.2419,
+        "lng": 114.9454,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-19T23:11:39+00:00",
+        "description": "STURT CREEK, SHIRE OF HALLS CREEK",
+        "lat": -20.349,
+        "lng": 127.538,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Hazardous Materials",
         "alertLevel": "",
         "status": "active",
         "type": "HazMat",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-19T22:42:59+00:00",
+        "updated": "2026-10-19T23:05:37+00:00",
         "description": "OAKFORD, SHIRE OF SERPENTINE-JARRAHDALE",
-        "lat": -32.2184,
-        "lng": 115.9039,
+        "lat": -32.2044,
+        "lng": 115.9242,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -362,100 +424,6 @@
         "lat": -17.955,
         "lng": 124.957,
         "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice THREAT IS REDUCED - WYNDHAM",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-19T07:38:04.728+00:00",
-        "description": "",
-        "lat": -15.5121,
-        "lng": 128.1541,
-        "polys": [
-          [
-            [
-              128.157732,
-              -15.529784
-            ],
-            [
-              128.160331,
-              -15.528422
-            ],
-            [
-              128.172274,
-              -15.512652
-            ],
-            [
-              128.168932,
-              -15.510074
-            ],
-            [
-              128.164881,
-              -15.50675
-            ],
-            [
-              128.15847,
-              -15.502227
-            ],
-            [
-              128.156246,
-              -15.500529
-            ],
-            [
-              128.155217,
-              -15.49999
-            ],
-            [
-              128.154083,
-              -15.499621
-            ],
-            [
-              128.150845,
-              -15.498997
-            ],
-            [
-              128.147812,
-              -15.498203
-            ],
-            [
-              128.146717,
-              -15.499464
-            ],
-            [
-              128.145564,
-              -15.501211
-            ],
-            [
-              128.144733,
-              -15.506735
-            ],
-            [
-              128.144143,
-              -15.515769
-            ],
-            [
-              128.14389,
-              -15.524891
-            ],
-            [
-              128.144194,
-              -15.533622
-            ],
-            [
-              128.153919,
-              -15.531581
-            ],
-            [
-              128.157732,
-              -15.529784
-            ]
-          ]
-        ],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -913,6 +881,21 @@
     ],
     "nt": [
       {
+        "title": "Structure Fire - MAUDE ST, ANULA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-19T23:14:23+00:00",
+        "description": "MAUDE ST, ANULA",
+        "lat": -12.3914,
+        "lng": 130.8858,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - STUART HWY, PAMAYU",
         "alertLevel": "Advice",
         "status": "active",
@@ -961,6 +944,36 @@
     "act": [],
     "sa": [
       {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-19T22:53:00+00:00",
+        "description": "CEDUNA",
+        "lat": -32.1245,
+        "lng": 133.683,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
+      {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-19T22:48:00+00:00",
+        "description": "STANLEY FLAT",
+        "lat": -33.8159,
+        "lng": 138.6129,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
+      {
         "title": "STRUCTURE FIRE",
         "alertLevel": "",
         "status": "active",
@@ -989,25 +1002,10 @@
         "polys": [],
         "state": "SA",
         "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      },
-      {
-        "title": "Grass fire",
-        "alertLevel": "",
-        "status": "safe",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-13T00:42:00+00:00",
-        "description": "REEVES PLAINS",
-        "lat": -34.5251,
-        "lng": 138.6098,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
       }
     ]
   },
-  "incident_count": 43,
+  "incident_count": 48,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4635,29 +4633,10 @@
     }
   },
   "marine_warnings": {
-    "VIC": {
-      "state": "VIC",
-      "product": "IDV20600",
-      "issued_utc": "2026-10-19T17:10:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
-          ],
-          "aac_codes": [
-            "VIC_MW004"
-          ],
-          "summary": "East Gippsland Coast"
-        }
-      ]
-    },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-19T17:01:00Z",
+      "issued_utc": "2026-10-19T23:01:00Z",
       "overview": [
         "Strong Wind Warning for Tuesday for Leeuwin Coast and Albany Coast",
         "Strong Wind Warning for Wednesday for Leeuwin Coast and Albany Coast"
@@ -4681,21 +4660,19 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-19T17:00:00Z",
+      "issued_utc": "2026-10-19T23:00:00Z",
       "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "South West Coast: South East Cape to Low Rocky Point",
-            "Central West Coast: Low Rocky Point to Sandy Cape"
+            "South West Coast: South East Cape to Low Rocky Point"
           ],
           "aac_codes": [
-            "TAS_MW007",
-            "TAS_MW008"
+            "TAS_MW007"
           ],
-          "summary": "South West Coast and Central West Coast"
+          "summary": "South West Coast"
         }
       ]
     }
