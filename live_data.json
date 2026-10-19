@@ -1,34 +1,34 @@
 {
-  "generated_utc": "2026-10-19T10:53:03.758473+00:00",
-  "last_checked_utc": "2026-10-19T10:53:03.758473+00:00",
+  "generated_utc": "2026-10-19T11:23:10.413483+00:00",
+  "last_checked_utc": "2026-10-19T11:23:10.413483+00:00",
   "warning_count": 3,
   "warnings": [
     {
       "pid": "",
-      "title": "19/16:15 EDT Marine Wind Warning Summary for Victoria",
+      "title": "19/22:00 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 19 Oct 2026 05:15:20 GMT"
+      "issued": "Mon, 19 Oct 2026 11:00:16 GMT"
     },
     {
       "pid": "",
-      "title": "19/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "19/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 19 Oct 2026 05:01:13 GMT"
+      "issued": "Mon, 19 Oct 2026 11:01:16 GMT"
     },
     {
       "pid": "",
-      "title": "19/16:05 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "19/22:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 19 Oct 2026 05:05:14 GMT"
+      "issued": "Mon, 19 Oct 2026 11:00:12 GMT"
     }
   ],
   "fetch_errors": {},
@@ -44,7 +44,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-19T21:42:16+00:00",
+        "updated": "2026-10-19T21:56:25+00:00",
         "description": "",
         "lat": -41.36694999973176,
         "lng": 147.30004999978675,
@@ -214,16 +214,31 @@
     ],
     "wa": [
       {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-19T10:49:36+00:00",
+        "description": "SOUTH KALGOORLIE, CITY OF KALGOORLIE-BOULDER",
+        "lat": -30.7541,
+        "lng": 121.4816,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-19T10:43:00+00:00",
-        "description": "PIARA WATERS, CITY OF ARMADALE",
-        "lat": -32.127,
-        "lng": 115.9226,
+        "updated": "2026-10-19T10:48:21+00:00",
+        "description": "ELLEKER, CITY OF ALBANY",
+        "lat": -35.0285,
+        "lng": 117.7202,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -254,21 +269,6 @@
         "description": "",
         "lat": -31.9023,
         "lng": 116.1664,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-19T10:21:18+00:00",
-        "description": "SOUTH KALGOORLIE, CITY OF KALGOORLIE-BOULDER",
-        "lat": -30.7534,
-        "lng": 121.4812,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -4546,7 +4546,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-19T05:15:00Z",
+      "issued_utc": "2026-10-19T11:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -4565,7 +4565,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-19T05:01:00Z",
+      "issued_utc": "2026-10-19T11:01:00Z",
       "overview": [],
       "hazards": [
         {
@@ -4586,9 +4586,9 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-19T05:05:00Z",
+      "issued_utc": "2026-10-19T11:00:00Z",
       "overview": [
-        "Strong Wind Warning for Monday for Lower East Coast, South East Coast and Central West Coast",
+        "Strong Wind Warning for Monday for Central West Coast",
         "Strong Wind Warning for Tuesday for South West Coast and Central West Coast"
       ],
       "hazards": [
@@ -4596,16 +4596,12 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Lower East Coast: Wineglass Bay to Tasman Island",
-            "South East Coast: Tasman Island to South East Cape",
             "Central West Coast: Low Rocky Point to Sandy Cape"
           ],
           "aac_codes": [
-            "TAS_MW005",
-            "TAS_MW006",
             "TAS_MW008"
           ],
-          "summary": "Lower East Coast, South East Coast and Central West Coast"
+          "summary": "Central West Coast"
         }
       ]
     }
