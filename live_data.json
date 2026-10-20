@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-20T12:53:06.498120+00:00",
-  "last_checked_utc": "2026-10-20T12:53:06.498120+00:00",
-  "warning_count": 9,
+  "generated_utc": "2026-10-20T13:23:06.351192+00:00",
+  "last_checked_utc": "2026-10-20T13:23:06.351192+00:00",
+  "warning_count": 8,
   "warnings": [
     {
       "pid": "",
@@ -89,51 +89,17 @@
     },
     {
       "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for North East Pastoral",
+      "title": "Cancellation of Severe Thunderstorm Warning for North East Pastoral",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Olary. Severe thunderstorms are no longer occurring in the Flinders, Riverland, Murraylands and Upper South East districts and the warning for these districts is CANCELLED.",
-      "issued": "2026-10-20T21:33:11+10:30",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-20T23:50:11+10:30",
+      "cancelled": true,
       "areas": [
         {
           "aac": "SA_PW014",
           "description": "North East Pastoral",
-          "phase": "REN"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
-    },
-    {
-      "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for Upper South East, Murraylands, Riverland, Flinders",
-      "type": "thunderstorm",
-      "state": "SA",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-20T21:33:11+10:30",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "SA_PW004",
-          "description": "Upper South East",
-          "phase": "CAN"
-        },
-        {
-          "aac": "SA_PW007",
-          "description": "Murraylands",
-          "phase": "CAN"
-        },
-        {
-          "aac": "SA_PW006",
-          "description": "Riverland",
-          "phase": "CAN"
-        },
-        {
-          "aac": "SA_PW009",
-          "description": "Flinders",
           "phase": "CAN"
         }
       ],
@@ -142,27 +108,27 @@
     },
     {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for North Interior, South Interior",
+      "title": "Cancellation of Severe Thunderstorm Warning for North Interior, South Interior",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Kiwirrkurra.",
-      "issued": "2026-10-20T18:43:52+08:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-20T21:17:26+08:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "WA_PW006",
           "description": "North Interior",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "WA_PW007",
           "description": "South Interior",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -183,21 +149,6 @@
         "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.4508,
         "lng": 128.1196,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-20T12:36:14+00:00",
-        "description": "WILYABRUP, CITY OF BUSSELTON",
-        "lat": -33.8126,
-        "lng": 115.0355,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1087,21 +1038,6 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "CFS",
-        "updated": "2026-10-20T12:13:00+00:00",
-        "description": "KAPUNDA",
-        "lat": -34.3392,
-        "lng": 138.8991,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      },
-      {
-        "title": "GRASS FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "CFS",
         "updated": "2026-10-20T02:56:00+00:00",
         "description": "YALATA",
         "lat": -31.461,
@@ -1127,7 +1063,7 @@
       }
     ]
   },
-  "incident_count": 56,
+  "incident_count": 54,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
