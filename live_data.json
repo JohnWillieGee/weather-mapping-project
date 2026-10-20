@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-20T11:23:08.282270+00:00",
-  "last_checked_utc": "2026-10-20T11:23:08.282270+00:00",
-  "warning_count": 10,
+  "generated_utc": "2026-10-20T11:53:06.020651+00:00",
+  "last_checked_utc": "2026-10-20T11:53:06.020651+00:00",
+  "warning_count": 9,
   "warnings": [
     {
       "pid": "",
@@ -65,41 +65,22 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central West, Channel Country",
+      "title": "Cancellation of Severe Thunderstorm Warning for Central West, Channel Country",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce large hailstones, heavy rainfall that may lead to flash flooding and damaging winds in the warning area over the next several hours. Locations which may be affected include Longreach, Barcaldine, Isisford, Aramac and Ilfracombe. Severe thunderstorms are no longer occurring in the Maranoa and Warrego district and the warning for this district is CANCELLED.",
-      "issued": "2026-10-20T18:57:42+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-20T21:29:51+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "QLD_PW009",
           "description": "Central West",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW011",
           "description": "Channel Country",
-          "phase": "REN"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
-    },
-    {
-      "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Maranoa and Warrego",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-20T18:57:42+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "QLD_PW012",
-          "description": "Maranoa and Warrego",
           "phase": "CAN"
         }
       ],
@@ -188,17 +169,17 @@
   "incidents": {
     "nsw": [
       {
-        "title": "Main Rd, Kurri Kurri",
+        "title": "Douglas St, Narrandera",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Tue, 20 Oct 2026 11:19:58 GMT",
-        "description": "Main Rd, Kurri Kurri, NSW 2327",
-        "council": "Cessnock",
-        "lat": -32.8114318849999,
-        "lng": 151.49659729,
+        "updated": "Tue, 20 Oct 2026 11:47:58 GMT",
+        "description": "Douglas St, Narrandera, NSW 2700",
+        "council": "Narrandera",
+        "lat": -34.7436539999999,
+        "lng": 146.542728,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -208,21 +189,6 @@
     "qld": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-20T11:08:44+00:00",
-        "description": "DONNYBROOK, SHIRE OF DONNYBROOK-BALINGUP",
-        "lat": -33.5543,
-        "lng": 115.8151,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - LAKE ARGYLE",
         "alertLevel": "Advice",
@@ -1069,21 +1035,6 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Grass and Scrub Fire - UNDOOLYA RD, UNDOOLYA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-20T10:10:16+00:00",
-        "description": "UNDOOLYA RD, UNDOOLYA",
-        "lat": -23.692,
-        "lng": 133.9277,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - STUART HWY, PAMAYU",
         "alertLevel": "Advice",
         "status": "active",
@@ -1163,7 +1114,7 @@
       }
     ]
   },
-  "incident_count": 57,
+  "incident_count": 55,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
