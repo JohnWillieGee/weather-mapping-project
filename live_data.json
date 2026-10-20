@@ -1,8 +1,17 @@
 {
-  "generated_utc": "2026-10-20T16:53:06.269065+00:00",
-  "last_checked_utc": "2026-10-20T16:53:06.269065+00:00",
+  "generated_utc": "2026-10-20T17:23:04.371065+00:00",
+  "last_checked_utc": "2026-10-20T17:23:04.371065+00:00",
   "warning_count": 5,
   "warnings": [
+    {
+      "pid": "",
+      "title": "21/04:10 EDT Marine Wind Warning Summary for Victoria",
+      "type": "wind",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Tue, 20 Oct 2026 17:10:21 GMT"
+    },
     {
       "pid": "",
       "title": "20/11:36 EST Initial Minor Flood Warning for the Barcoo River",
@@ -14,36 +23,21 @@
     },
     {
       "pid": "",
-      "title": "20/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "21/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 20 Oct 2026 11:01:17 GMT"
+      "issued": "Tue, 20 Oct 2026 17:01:13 GMT"
     },
     {
-      "pid": "IDV21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for Mallee, Wimmera",
-      "type": "thunderstorm",
-      "state": "VIC",
-      "link": "",
-      "desc": "This warning is now cancelled.",
-      "issued": "2026-10-20T23:21:15+11:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "VIC_PW001",
-          "description": "Mallee",
-          "phase": "CAN"
-        },
-        {
-          "aac": "VIC_PW002",
-          "description": "Wimmera",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
+      "pid": "",
+      "title": "21/04:00 EDT Marine Wind Warning Summary for Tasmania",
+      "type": "wind",
+      "state": "TAS",
+      "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Tue, 20 Oct 2026 17:00:12 GMT"
     },
     {
       "pid": "IDS21033",
@@ -58,30 +52,6 @@
         {
           "aac": "SA_PW014",
           "description": "North East Pastoral",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
-    },
-    {
-      "pid": "IDW21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for North Interior, South Interior",
-      "type": "thunderstorm",
-      "state": "WA",
-      "link": "",
-      "desc": "This warning is now cancelled.",
-      "issued": "2026-10-20T21:17:26+08:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "WA_PW006",
-          "description": "North Interior",
-          "phase": "CAN"
-        },
-        {
-          "aac": "WA_PW007",
-          "description": "South Interior",
           "phase": "CAN"
         }
       ],
@@ -4722,6 +4692,71 @@
       "4": "2026-10-24T00:00:00+11:00"
     }
   },
-  "marine_warnings": {},
+  "marine_warnings": {
+    "VIC": {
+      "state": "VIC",
+      "product": "IDV20600",
+      "issued_utc": "2026-10-20T17:10:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
+          ],
+          "aac_codes": [
+            "VIC_MW004"
+          ],
+          "summary": "East Gippsland Coast"
+        }
+      ]
+    },
+    "WA": {
+      "state": "WA",
+      "product": "IDW20100",
+      "issued_utc": "2026-10-20T17:01:00Z",
+      "overview": [
+        "Strong Wind Warning for Wednesday for Leeuwin Coast and Albany Coast",
+        "Strong Wind Warning for Thursday for Ningaloo Coast"
+      ],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay"
+          ],
+          "aac_codes": [
+            "WA_MW011",
+            "WA_MW012"
+          ],
+          "summary": "Leeuwin Coast and Albany Coast"
+        }
+      ]
+    },
+    "TAS": {
+      "state": "TAS",
+      "product": "IDT20100",
+      "issued_utc": "2026-10-20T17:00:00Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Upper East Coast: St Helens Point to Wineglass Bay",
+            "Lower East Coast: Wineglass Bay to Tasman Island"
+          ],
+          "aac_codes": [
+            "TAS_MW004",
+            "TAS_MW005"
+          ],
+          "summary": "Upper East Coast and Lower East Coast"
+        }
+      ]
+    }
+  },
   "cyclones": []
 }
