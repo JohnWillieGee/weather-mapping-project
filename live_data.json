@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-20T11:53:06.020651+00:00",
-  "last_checked_utc": "2026-10-20T11:53:06.020651+00:00",
+  "generated_utc": "2026-10-20T12:23:03.375452+00:00",
+  "last_checked_utc": "2026-10-20T12:23:03.375452+00:00",
   "warning_count": 9,
   "warnings": [
     {
@@ -41,27 +41,27 @@
     },
     {
       "pid": "IDV21033",
-      "title": "Severe Thunderstorm Warning for Mallee, Wimmera",
+      "title": "Cancellation of Severe Thunderstorm Warning for Mallee, Wimmera",
       "type": "thunderstorm",
       "state": "VIC",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Warracknabeal, Murrayville and Rainbow.",
-      "issued": "2026-10-20T22:03:36+11:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-20T23:21:15+11:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "VIC_PW001",
           "description": "Mallee",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "VIC_PW002",
           "description": "Wimmera",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDQ21033",
@@ -175,7 +175,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Tue, 20 Oct 2026 11:47:58 GMT",
+        "updated": "Tue, 20 Oct 2026 12:19:58 GMT",
         "description": "Douglas St, Narrandera, NSW 2700",
         "council": "Narrandera",
         "lat": -34.7436539999999,
@@ -189,6 +189,21 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-20T11:57:23+00:00",
+        "description": "WILYABRUP, CITY OF BUSSELTON",
+        "lat": -33.8126,
+        "lng": 115.0355,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - LAKE ARGYLE",
         "alertLevel": "Advice",
@@ -228,21 +243,6 @@
             ]
           ]
         ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-20T10:16:24+00:00",
-        "description": "WILYABRUP, CITY OF BUSSELTON",
-        "lat": -33.8126,
-        "lng": 115.0355,
-        "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1089,6 +1089,21 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "CFS",
+        "updated": "2026-10-20T12:13:00+00:00",
+        "description": "KAPUNDA",
+        "lat": -34.3392,
+        "lng": 138.8991,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
+      {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
         "updated": "2026-10-20T02:56:00+00:00",
         "description": "YALATA",
         "lat": -31.461,
@@ -1114,7 +1129,7 @@
       }
     ]
   },
-  "incident_count": 55,
+  "incident_count": 56,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
