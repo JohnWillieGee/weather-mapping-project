@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-20T00:53:02.414628+00:00",
-  "last_checked_utc": "2026-10-20T00:53:02.414628+00:00",
-  "warning_count": 4,
+  "generated_utc": "2026-10-20T01:23:01.605456+00:00",
+  "last_checked_utc": "2026-10-20T01:23:01.605456+00:00",
+  "warning_count": 5,
   "warnings": [
     {
       "pid": "",
@@ -38,6 +38,30 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Tue, 20 Oct 2026 00:39:16 GMT"
+    },
+    {
+      "pid": "IDQ21033",
+      "title": "Severe Thunderstorm Warning for Central West, Maranoa and Warrego",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce large hailstones, heavy rainfall that may lead to flash flooding and damaging winds in the warning area over the next several hours. Locations which may be affected include Tambo.",
+      "issued": "2026-10-20T11:12:51+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "QLD_PW009",
+          "description": "Central West",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_PW012",
+          "description": "Maranoa and Warrego",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -53,7 +77,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-20T11:44:21+00:00",
+        "updated": "2026-10-20T12:02:13+00:00",
         "description": "",
         "lat": -41.36694999973176,
         "lng": 147.30004999978675,
@@ -803,21 +827,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-19T10:39:53+00:00",
-        "description": "MORANGUP, SHIRE OF TOODYAY",
-        "lat": -31.6685,
-        "lng": 116.3592,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Smoke Alert FOR MUNDARING, CHIDLOW, BAKERS HILL, NORTHAM AND SURROUNDS IN THE SHIRE OF MUNDARING AND SHIRE OF NORTHAM",
         "alertLevel": "Advice",
         "status": "active",
@@ -1301,6 +1310,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - WURRUMIYANGA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-20T01:15:37+00:00",
+        "description": "WURRUMIYANGA",
+        "lat": -11.7583,
+        "lng": 130.6375,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - STUART HWY, PAMAYU",
         "alertLevel": "Advice",
         "status": "active",
@@ -1349,21 +1373,6 @@
     "act": [],
     "sa": [
       {
-        "title": "GRASS FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-19T22:48:00+00:00",
-        "description": "STANLEY FLAT",
-        "lat": -33.8159,
-        "lng": 138.6129,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      },
-      {
         "title": "STRUCTURE FIRE",
         "alertLevel": "",
         "status": "active",
@@ -1395,7 +1404,7 @@
       }
     ]
   },
-  "incident_count": 48,
+  "incident_count": 47,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
