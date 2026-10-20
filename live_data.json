@@ -1,8 +1,17 @@
 {
-  "generated_utc": "2026-10-20T07:23:10.901681+00:00",
-  "last_checked_utc": "2026-10-20T07:23:10.901681+00:00",
-  "warning_count": 9,
+  "generated_utc": "2026-10-20T07:53:04.755714+00:00",
+  "last_checked_utc": "2026-10-20T07:53:04.755714+00:00",
+  "warning_count": 10,
   "warnings": [
+    {
+      "pid": "",
+      "title": "20/18:27 EDT Marine Wind Warning Summary for Victoria",
+      "type": "wind",
+      "state": "VIC",
+      "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Tue, 20 Oct 2026 07:27:40 GMT"
+    },
     {
       "pid": "",
       "title": "20/11:36 EST Initial Minor Flood Warning for the Barcoo River",
@@ -32,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "20/16:05 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "20/18:27 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 20 Oct 2026 05:05:11 GMT"
+      "issued": "Tue, 20 Oct 2026 07:27:44 GMT"
     },
     {
       "pid": "IDV21033",
@@ -197,7 +206,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Station Street, Rooty Hill",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Tue, 20 Oct 2026 07:47:58 GMT",
+        "description": "Station Street, Rooty Hill, NSW 2766",
+        "council": "Blacktown",
+        "lat": -33.771628,
+        "lng": 150.845185,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "tas": [],
@@ -209,10 +235,25 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-20T07:11:54+00:00",
-        "description": "TELFER, SHIRE OF EAST PILBARA",
-        "lat": -21.9112,
-        "lng": 123.2745,
+        "updated": "2026-10-20T07:42:55+00:00",
+        "description": "CHITTERING, SHIRE OF CHITTERING",
+        "lat": -31.4641,
+        "lng": 116.052,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Report of Smoke",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-20T07:34:03+00:00",
+        "description": "WANDILLUP, SHIRE OF BRIDGETOWN-GREENBUSHES",
+        "lat": -34.0087,
+        "lng": 116.0584,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -224,10 +265,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-20T07:09:50+00:00",
-        "description": "CHITTERING, SHIRE OF CHITTERING",
-        "lat": -31.4641,
-        "lng": 116.052,
+        "updated": "2026-10-20T07:11:54+00:00",
+        "description": "TELFER, SHIRE OF EAST PILBARA",
+        "lat": -21.9112,
+        "lng": 123.2745,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -258,51 +299,6 @@
         "description": "MUELLER RANGES, SHIRE OF HALLS CREEK",
         "lat": -17.889,
         "lng": 127.719,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-20T07:00:16+00:00",
-        "description": "ROLEYSTONE, CITY OF ARMADALE",
-        "lat": -32.1244,
-        "lng": 116.0606,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Report of Smoke",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-20T06:42:14+00:00",
-        "description": "LOWER KING, CITY OF ALBANY",
-        "lat": -34.9388,
-        "lng": 117.9405,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-20T06:39:08+00:00",
-        "description": "KALGAN, CITY OF ALBANY",
-        "lat": -34.8965,
-        "lng": 118.004,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1009,24 +1005,23 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [
+    "act": [],
+    "sa": [
       {
-        "title": "HOUSE FIRE - BANKS",
+        "title": "GRASS FIRE",
         "alertLevel": "",
         "status": "active",
-        "type": "Structure Fire",
+        "type": "Grass Fire",
         "size": "",
-        "agency": "Ambulance",
-        "updated": "2026-10-20T06:41:58+00:00",
-        "description": "BANKS",
-        "lat": -35.4668,
-        "lng": 149.0986,
+        "agency": "CFS",
+        "updated": "2026-10-20T07:41:00+00:00",
+        "description": "HIGHLAND VALLEY",
+        "lat": -35.1465,
+        "lng": 138.9289,
         "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      }
-    ],
-    "sa": [
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
       {
         "title": "GRASS FIRE",
         "alertLevel": "",
@@ -1059,7 +1054,7 @@
       }
     ]
   },
-  "incident_count": 52,
+  "incident_count": 51,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
