@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-20T06:53:12.417789+00:00",
-  "last_checked_utc": "2026-10-20T06:53:12.417789+00:00",
-  "warning_count": 8,
+  "generated_utc": "2026-10-20T07:23:10.901681+00:00",
+  "last_checked_utc": "2026-10-20T07:23:10.901681+00:00",
+  "warning_count": 9,
   "warnings": [
     {
       "pid": "",
@@ -70,28 +70,18 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Northern Goldfields and Upper Flinders, Central West, North West, Channel Country, Maranoa and Warrego",
+      "title": "Severe Thunderstorm Warning for Central West, Channel Country, Maranoa and Warrego",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce large hailstones, heavy rainfall that may lead to flash flooding and damaging winds over the next several hours in parts of the Central West, Maranoa and Warrego and Channel Country districts. Locations which may be affected include Blackall, Isisford, Adavale and Jericho. Severe thunderstorms are likely to produce damaging winds over the next several hours in parts of the North West, Northern Goldfields and Upper Flinders and Central West districts. Lo",
-      "issued": "2026-10-20T15:36:05+10:00",
+      "desc": "Severe thunderstorms are likely to produce large hailstones, heavy rainfall that may lead to flash flooding and damaging winds in the warning area over the next several hours. Locations which may be affected include Barcaldine, Isisford, Adavale and Jericho. Severe thunderstorms are no longer occurring in the Northern Goldfields and Upper Flinders and North West districts and the warning for these districts is CANCELLED.",
+      "issued": "2026-10-20T17:12:39+10:00",
       "cancelled": false,
       "areas": [
-        {
-          "aac": "QLD_PW003",
-          "description": "Northern Goldfields and Upper Flinders",
-          "phase": "NEW"
-        },
         {
           "aac": "QLD_PW009",
           "description": "Central West",
           "phase": "REN"
-        },
-        {
-          "aac": "QLD_PW010",
-          "description": "North West",
-          "phase": "NEW"
         },
         {
           "aac": "QLD_PW011",
@@ -105,7 +95,31 @@
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDQ21033",
+      "title": "Severe Thunderstorm Warning for North West, Northern Goldfields and Upper Flinders",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-20T17:12:39+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "QLD_PW010",
+          "description": "North West",
+          "phase": "CAN"
+        },
+        {
+          "aac": "QLD_PW003",
+          "description": "Northern Goldfields and Upper Flinders",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDS21033",
@@ -188,6 +202,81 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-20T07:11:54+00:00",
+        "description": "TELFER, SHIRE OF EAST PILBARA",
+        "lat": -21.9112,
+        "lng": 123.2745,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-20T07:09:50+00:00",
+        "description": "CHITTERING, SHIRE OF CHITTERING",
+        "lat": -31.4641,
+        "lng": 116.052,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-20T07:00:35+00:00",
+        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.8168,
+        "lng": 128.7888,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-20T07:00:29+00:00",
+        "description": "MUELLER RANGES, SHIRE OF HALLS CREEK",
+        "lat": -17.889,
+        "lng": 127.719,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-20T07:00:16+00:00",
+        "description": "ROLEYSTONE, CITY OF ARMADALE",
+        "lat": -32.1244,
+        "lng": 116.0606,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Report of Smoke",
         "alertLevel": "",
@@ -860,6 +949,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - MANINGRIDA INTERNAL -, MANINGRIDA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-20T06:52:12+00:00",
+        "description": "MANINGRIDA INTERNAL -, MANINGRIDA",
+        "lat": -12.0508,
+        "lng": 134.2236,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - STUART HWY, PAMAYU",
         "alertLevel": "Advice",
         "status": "active",
@@ -912,8 +1016,8 @@
         "status": "active",
         "type": "Structure Fire",
         "size": "",
-        "agency": "Fire - Ambulance",
-        "updated": "2026-10-20T06:11:35+00:00",
+        "agency": "Ambulance",
+        "updated": "2026-10-20T06:41:58+00:00",
         "description": "BANKS",
         "lat": -35.4668,
         "lng": 149.0986,
@@ -923,21 +1027,6 @@
       }
     ],
     "sa": [
-      {
-        "title": "GRASS FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-20T05:28:00+00:00",
-        "description": "MIDDLE BEACH",
-        "lat": -34.5781,
-        "lng": 138.4209,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      },
       {
         "title": "GRASS FIRE",
         "alertLevel": "",
@@ -970,7 +1059,7 @@
       }
     ]
   },
-  "incident_count": 47,
+  "incident_count": 52,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
