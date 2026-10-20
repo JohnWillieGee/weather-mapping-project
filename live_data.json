@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-20T03:53:04.159305+00:00",
-  "last_checked_utc": "2026-10-20T03:53:04.159305+00:00",
-  "warning_count": 6,
+  "generated_utc": "2026-10-20T04:23:03.974685+00:00",
+  "last_checked_utc": "2026-10-20T04:23:03.974685+00:00",
+  "warning_count": 7,
   "warnings": [
     {
       "pid": "",
@@ -76,11 +76,62 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDS21033",
+      "title": "Severe Thunderstorm Warning for North East Pastoral, Flinders, Mid North, Riverland",
+      "type": "thunderstorm",
+      "state": "SA",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds in the warning area over the next several hours.",
+      "issued": "2026-10-20T14:25:58+10:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "SA_PW014",
+          "description": "North East Pastoral",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW009",
+          "description": "Flinders",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW008",
+          "description": "Mid North",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW006",
+          "description": "Riverland",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Earl St, Coffs Harbour",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Tue, 20 Oct 2026 04:19:58 GMT",
+        "description": "Earl St, Coffs Harbour, NSW 2450",
+        "council": "Coffs Harbour",
+        "lat": -30.299137,
+        "lng": 153.118698,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "tas": [
@@ -91,7 +142,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-20T14:50:17+00:00",
+        "updated": "2026-10-20T15:06:25+00:00",
         "description": "",
         "lat": -41.36694999973176,
         "lng": 147.30004999978675,
@@ -652,6 +703,36 @@
       }
     ],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-20T04:12:45+00:00",
+        "description": "COLLIE, SHIRE OF COLLIE",
+        "lat": -33.3599,
+        "lng": 116.1667,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-20T04:08:43+00:00",
+        "description": "FORTESCUE, SHIRE OF ASHBURTON",
+        "lat": -21.6726,
+        "lng": 115.8865,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1324,23 +1405,7 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [
-      {
-        "title": "HOUSE FIRE - MAWSON",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Fire",
-        "updated": "2026-10-20T03:18:05+00:00",
-        "description": "MAWSON",
-        "lat": -35.358,
-        "lng": 149.0951,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      }
-    ],
+    "act": [],
     "sa": [
       {
         "title": "GRASS FIRE",
@@ -1389,7 +1454,7 @@
       }
     ]
   },
-  "incident_count": 45,
+  "incident_count": 47,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
