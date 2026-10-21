@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-21T08:53:02.241002+00:00",
-  "last_checked_utc": "2026-10-21T08:53:02.241002+00:00",
+  "generated_utc": "2026-10-21T09:23:23.377460+00:00",
+  "last_checked_utc": "2026-10-21T09:23:23.377460+00:00",
   "warning_count": 12,
   "warnings": [
     {
@@ -167,7 +167,9 @@
       "hazardPhase": "UPD"
     }
   ],
-  "fetch_errors": {},
+  "fetch_errors": {
+    "tas": "HTTPSConnectionPool(host='services.thelist.tas.gov.au', port=443): Max retries exceeded with url: /arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/72/query?where=1%3D1&outFields=*&f=geojson (Caused by ConnectTimeoutError(<HTTPSConnection(host='services.thelist.tas.gov.au', port=443) at 0x26cff81a990>, 'Connection to services.thelist.tas.gov.au timed out. (connect timeout=20)'))"
+  },
   "incidents": {
     "nsw": [
       {
@@ -177,7 +179,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 21 Oct 2026 08:47:58 GMT",
+        "updated": "Wed, 21 Oct 2026 09:19:43 GMT",
         "description": "COOMA RD, JINDEN 2622",
         "council": "Eurobodalla",
         "lat": -35.920207978,
@@ -191,6 +193,51 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-21T09:10:21+00:00",
+        "description": "MARBELUP, CITY OF ALBANY",
+        "lat": -35.0023,
+        "lng": 117.8017,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-21T08:56:23+00:00",
+        "description": "PRINCE REGENT RIVER, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.3681,
+        "lng": 125.3152,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-21T08:54:38+00:00",
+        "description": "CHICHESTER, SHIRE OF ASHBURTON",
+        "lat": -21.8013,
+        "lng": 117.5424,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -958,21 +1005,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-20T09:14:41+00:00",
-        "description": "CHICHESTER, SHIRE OF ASHBURTON",
-        "lat": -21.8013,
-        "lng": 117.5424,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-20T07:56:36+00:00",
         "description": "WATERBANK, SHIRE OF BROOME",
         "lat": -17.372,
@@ -1343,7 +1375,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-21T08:47:36+00:00",
+        "updated": "2026-10-21T09:07:43+00:00",
         "description": "PHILLIPS ST, PINE CREEK",
         "lat": -13.8219,
         "lng": 131.8311,
@@ -1410,9 +1442,25 @@
       }
     ],
     "act": [],
-    "sa": []
+    "sa": [
+      {
+        "title": "STRUCTURE FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-21T08:57:00+00:00",
+        "description": "HAHNDORF",
+        "lat": -35.0356,
+        "lng": 138.815,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      }
+    ]
   },
-  "incident_count": 58,
+  "incident_count": 61,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
