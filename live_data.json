@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-21T12:53:06.020836+00:00",
-  "last_checked_utc": "2026-10-21T12:53:06.020836+00:00",
-  "warning_count": 10,
+  "generated_utc": "2026-10-21T13:23:06.186684+00:00",
+  "last_checked_utc": "2026-10-21T13:23:06.186684+00:00",
+  "warning_count": 11,
   "warnings": [
     {
       "pid": "",
@@ -68,27 +68,17 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields, Central West, Maranoa and Warrego, Darling Downs and Granite Belt, Wide Bay and Burnett",
+      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields, Darling Downs and Granite Belt, Wide Bay and Burnett",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding over the next several hours in parts of the Central Highlands and Coalfields and Central West districts. Locations which may be affected include Emerald, Clermont, Aberfoyle, Capella, Dysart and Comet. Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding over the next several hours in parts of the Central Highlands and Coalfields, Wide Bay and Burnett,",
-      "issued": "2026-10-21T22:11:25+10:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Woorabinda, Tara and Miles. Severe thunderstorms are no longer occurring in the Central West and Maranoa and Warrego districts and the warning for these districts is CANCELLED. 93 km/h wind gust was recorded at Longreach Airport at 7:47pm 2-3cm hailstones were observed between Barcaldine and Blackall this afternoon. 48m",
+      "issued": "2026-10-21T23:13:52+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "QLD_PW008",
           "description": "Central Highlands and Coalfields",
-          "phase": "UPD"
-        },
-        {
-          "aac": "QLD_PW009",
-          "description": "Central West",
-          "phase": "UPD"
-        },
-        {
-          "aac": "QLD_PW012",
-          "description": "Maranoa and Warrego",
           "phase": "UPD"
         },
         {
@@ -104,6 +94,30 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDQ21033",
+      "title": "Severe Thunderstorm Warning for Maranoa and Warrego, Central West",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-21T23:13:52+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "QLD_PW012",
+          "description": "Maranoa and Warrego",
+          "phase": "CAN"
+        },
+        {
+          "aac": "QLD_PW009",
+          "description": "Central West",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDS21033",
@@ -159,7 +173,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Wed, 21 Oct 2026 12:47:24 GMT",
+        "updated": "Wed, 21 Oct 2026 13:19:24 GMT",
         "description": "COOMA RD, JINDEN 2622",
         "council": "Eurobodalla",
         "lat": -35.920207978,
@@ -180,7 +194,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-21T12:40:43+00:00",
+        "updated": "2026-10-21T12:49:15+00:00",
         "description": "WONTHELLA, CITY OF GREATER GERALDTON",
         "lat": -28.7627,
         "lng": 114.636,
