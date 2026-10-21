@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-21T08:23:07.336020+00:00",
-  "last_checked_utc": "2026-10-21T08:23:07.336020+00:00",
+  "generated_utc": "2026-10-21T08:53:02.241002+00:00",
+  "last_checked_utc": "2026-10-21T08:53:02.241002+00:00",
   "warning_count": 12,
   "warnings": [
     {
@@ -96,12 +96,12 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields, Central West, Maranoa and Warrego",
+      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields, Central West, Maranoa and Warrego, Darling Downs and Granite Belt",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Barcaldine, Tambo, Blackall, Isisford, Mitchell and Bollon. Severe thunderstorms are no longer occurring in the Channel Country district and the warning for this district is CANCELLED. 48mm was recorded at Augathella in the 30 minutes to 4:45pm. 39mm was recorded at Barradeen (northe",
-      "issued": "2026-10-21T17:03:33+10:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Bollon, Jericho, Dirranbandi and Alpha. 2-3cm hailstones were observed between Barcaldine and Blackall this afternoon. 48mm was recorded at Augathella in the 30 minutes to 4:45pm. 39mm was recorded at Barradeen (northeast of Charleville) in the 30 minutes to 3:42pm.",
+      "issued": "2026-10-21T18:35:24+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -118,29 +118,34 @@
           "aac": "QLD_PW012",
           "description": "Maranoa and Warrego",
           "phase": "REN"
+        },
+        {
+          "aac": "QLD_PW013",
+          "description": "Darling Downs and Granite Belt",
+          "phase": "NEW"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "REN"
+      "hazardPhase": "UPD"
     },
     {
-      "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Channel Country",
+      "pid": "IDS21033",
+      "title": "Severe Thunderstorm Warning for North West Pastoral",
       "type": "thunderstorm",
-      "state": "QLD",
+      "state": "SA",
       "link": "",
-      "desc": "",
-      "issued": "2026-10-21T17:03:33+10:00",
-      "cancelled": true,
+      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours.",
+      "issued": "2026-10-21T19:14:55+10:30",
+      "cancelled": false,
       "areas": [
         {
-          "aac": "QLD_PW011",
-          "description": "Channel Country",
-          "phase": "CAN"
+          "aac": "SA_PW013",
+          "description": "North West Pastoral",
+          "phase": "NEW"
         }
       ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     },
     {
       "pid": "IDW21033",
@@ -148,8 +153,8 @@
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Warburton.",
-      "issued": "2026-10-21T14:00:25+08:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours.",
+      "issued": "2026-10-21T16:41:55+08:00",
       "cancelled": false,
       "areas": [
         {
@@ -164,11 +169,43 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "COOMA RD, JINDEN",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Wed, 21 Oct 2026 08:47:58 GMT",
+        "description": "COOMA RD, JINDEN 2622",
+        "council": "Eurobodalla",
+        "lat": -35.920207978,
+        "lng": 149.808105468,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-21T08:31:42+00:00",
+        "description": "KORDABUP, SHIRE OF DENMARK",
+        "lat": -34.898,
+        "lng": 117.1022,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -387,36 +424,6 @@
             ]
           ]
         ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-21T06:40:38+00:00",
-        "description": "OLDBURY, SHIRE OF SERPENTINE-JARRAHDALE",
-        "lat": -32.2413,
-        "lng": 115.9042,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-21T06:31:15+00:00",
-        "description": "KORDABUP, SHIRE OF DENMARK",
-        "lat": -34.898,
-        "lng": 117.1022,
-        "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1330,16 +1337,16 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - BOULTER RD, BERRIMAH",
+        "title": "Grass and Scrub Fire - PHILLIPS ST, PINE CREEK",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-21T07:42:20+00:00",
-        "description": "BOULTER RD, BERRIMAH",
-        "lat": -12.4166,
-        "lng": 130.9123,
+        "updated": "2026-10-21T08:47:36+00:00",
+        "description": "PHILLIPS ST, PINE CREEK",
+        "lat": -13.8219,
+        "lng": 131.8311,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -1402,42 +1409,10 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [
-      {
-        "title": "HOUSE FIRE - CONDER",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Fire",
-        "updated": "2026-10-21T07:28:19+00:00",
-        "description": "CONDER",
-        "lat": -35.4542,
-        "lng": 149.0931,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      }
-    ],
-    "sa": [
-      {
-        "title": "STRUCTURE FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-21T07:48:00+00:00",
-        "description": "RIVERLEA PARK",
-        "lat": -34.6564,
-        "lng": 138.5225,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      }
-    ]
+    "act": [],
+    "sa": []
   },
-  "incident_count": 60,
+  "incident_count": 58,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
