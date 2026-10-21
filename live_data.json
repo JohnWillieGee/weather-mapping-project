@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-21T09:23:23.377460+00:00",
-  "last_checked_utc": "2026-10-21T09:23:23.377460+00:00",
-  "warning_count": 12,
+  "generated_utc": "2026-10-21T09:53:03.335774+00:00",
+  "last_checked_utc": "2026-10-21T09:53:03.335774+00:00",
+  "warning_count": 11,
   "warnings": [
     {
       "pid": "",
@@ -65,15 +65,6 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Wed, 21 Oct 2026 05:05:13 GMT"
-    },
-    {
-      "pid": "",
-      "title": "21/11:53 EDT \n                Cancellation of\n                Road Weather Alert for Tasmania",
-      "type": "other",
-      "state": "TAS",
-      "link": "http://reg.bom.gov.au/tas/warnings/road.shtml",
-      "desc": "",
-      "issued": "Wed, 21 Oct 2026 00:53:49 GMT"
     },
     {
       "pid": "IDV21033",
@@ -167,9 +158,7 @@
       "hazardPhase": "UPD"
     }
   ],
-  "fetch_errors": {
-    "tas": "HTTPSConnectionPool(host='services.thelist.tas.gov.au', port=443): Max retries exceeded with url: /arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/72/query?where=1%3D1&outFields=*&f=geojson (Caused by ConnectTimeoutError(<HTTPSConnection(host='services.thelist.tas.gov.au', port=443) at 0x26cff81a990>, 'Connection to services.thelist.tas.gov.au timed out. (connect timeout=20)'))"
-  },
+  "fetch_errors": {},
   "incidents": {
     "nsw": [
       {
@@ -179,7 +168,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 21 Oct 2026 09:19:43 GMT",
+        "updated": "Wed, 21 Oct 2026 09:47:24 GMT",
         "description": "COOMA RD, JINDEN 2622",
         "council": "Eurobodalla",
         "lat": -35.920207978,
@@ -194,13 +183,123 @@
     "tas": [],
     "wa": [
       {
+        "title": "Bushfire Advice MONITOR CONDITIONS - CHICHESTER AND FORTESCUE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-21T09:36:13.133+00:00",
+        "description": "",
+        "lat": -21.8113,
+        "lng": 117.5606,
+        "polys": [
+          [
+            [
+              117.498837,
+              -21.779727
+            ],
+            [
+              117.549076,
+              -21.820471
+            ],
+            [
+              117.557658,
+              -21.832687
+            ],
+            [
+              117.583518,
+              -21.832368
+            ],
+            [
+              117.596563,
+              -21.837573
+            ],
+            [
+              117.612353,
+              -21.835024
+            ],
+            [
+              117.587689,
+              -21.772807
+            ],
+            [
+              117.498837,
+              -21.779727
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-21T09:10:21+00:00",
+        "updated": "2026-10-21T09:30:03+00:00",
+        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.8168,
+        "lng": 128.7888,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-21T09:26:28+00:00",
+        "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.4508,
+        "lng": 128.1196,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-21T09:23:44+00:00",
+        "description": "KORDABUP, SHIRE OF DENMARK",
+        "lat": -34.898,
+        "lng": 117.1022,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-21T09:20:14+00:00",
+        "description": "TORBAY, CITY OF ALBANY",
+        "lat": -34.9839,
+        "lng": 117.6239,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-21T09:14:58+00:00",
         "description": "MARBELUP, CITY OF ALBANY",
         "lat": -35.0023,
         "lng": 117.8017,
@@ -245,21 +344,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-21T08:31:42+00:00",
-        "description": "KORDABUP, SHIRE OF DENMARK",
-        "lat": -34.898,
-        "lng": 117.1022,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-21T07:56:56+00:00",
         "description": "ORD RIVER, SHIRE OF HALLS CREEK",
         "lat": -18.197,
@@ -279,21 +363,6 @@
         "description": "",
         "lat": -23.778,
         "lng": 122.1967,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-21T07:36:07+00:00",
-        "description": "TORBAY, CITY OF ALBANY",
-        "lat": -34.9839,
-        "lng": 117.6239,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -481,21 +550,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-21T06:12:36+00:00",
-        "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.4508,
-        "lng": 128.1196,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-21T06:04:26+00:00",
         "description": "DRYSDALE RIVER, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.1734,
@@ -575,21 +629,6 @@
         "description": "",
         "lat": -32.8118,
         "lng": 115.9774,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-21T03:49:51+00:00",
-        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.8168,
-        "lng": 128.7888,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1369,16 +1408,16 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - PHILLIPS ST, PINE CREEK",
+        "title": "Grass and Scrub Fire - KARGARU CAMP RD, TENNANT CREEK",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-21T09:07:43+00:00",
-        "description": "PHILLIPS ST, PINE CREEK",
-        "lat": -13.8219,
-        "lng": 131.8311,
+        "updated": "2026-10-21T09:47:07+00:00",
+        "description": "KARGARU CAMP RD, TENNANT CREEK",
+        "lat": -19.6553,
+        "lng": 134.1964,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -1442,23 +1481,7 @@
       }
     ],
     "act": [],
-    "sa": [
-      {
-        "title": "STRUCTURE FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-21T08:57:00+00:00",
-        "description": "HAHNDORF",
-        "lat": -35.0356,
-        "lng": 138.815,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      }
-    ]
+    "sa": []
   },
   "incident_count": 61,
   "nsw_alert_zones": [],
