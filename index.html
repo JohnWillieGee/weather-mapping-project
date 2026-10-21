@@ -5428,7 +5428,6 @@ function computeRisks() {
         var aac = feat.properties.AAC;
         var rating = fdrRatings[aac] && fdrRatings[aac][1]; // period 1 = today
         if (!rating) return;
-        if (!fdrLevelQualifies(rating.FireDanger || '')) return;   // honour Settings > Minimum FDR level
         var fd = (rating.FireDanger || '').toLowerCase();
         var lvl = RISK_LEVEL.NONE;
         if (fd.includes('catastrophic'))      lvl = RISK_LEVEL.DIRECT;
@@ -5843,11 +5842,7 @@ function updateRiskRulesDisplay() {
   if (waEl) waEl.textContent = riskDistanceKm + ' km';
   if (fdrEl) {
     fdrEl.className = 'risk-rule-val' + (riskFDREnabled ? '' : ' off');
-    fdrEl.textContent = riskFDREnabled ? ({
-      veryhigh:     'Very High/Extreme \u2192 Warning \u00B7 Catastrophic \u2192 Direct',
-      extreme:      'Extreme \u2192 Warning \u00B7 Catastrophic \u2192 Direct',
-      catastrophic: 'Catastrophic \u2192 Direct'
-    }[(typeof S !== 'undefined' && S.fdrLevel) || 'extreme'] || 'Extreme \u2192 Warning \u00B7 Catastrophic \u2192 Direct') : 'Disabled';
+    fdrEl.textContent = riskFDREnabled ? 'Extreme/Very High \u2192 Warning \u00B7 Catastrophic \u2192 Direct' : 'Disabled';
   }
   if (cycloneEl) {
     cycloneEl.className = 'risk-rule-val' + (riskCycloneEnabled ? '' : ' off');
