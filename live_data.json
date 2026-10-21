@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-21T10:53:03.058864+00:00",
-  "last_checked_utc": "2026-10-21T10:53:03.058864+00:00",
-  "warning_count": 11,
+  "generated_utc": "2026-10-21T11:23:16.524949+00:00",
+  "last_checked_utc": "2026-10-21T11:23:16.524949+00:00",
+  "warning_count": 10,
   "warnings": [
     {
       "pid": "",
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "21/16:15 EDT Marine Wind Warning Summary for Victoria",
+      "title": "21/22:10 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 21 Oct 2026 05:15:21 GMT"
+      "issued": "Wed, 21 Oct 2026 11:10:59 GMT"
     },
     {
       "pid": "",
@@ -50,49 +50,30 @@
     },
     {
       "pid": "",
-      "title": "21/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "21/19:03 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Wed, 21 Oct 2026 05:01:18 GMT"
+      "issued": "Wed, 21 Oct 2026 11:03:02 GMT"
     },
     {
       "pid": "",
-      "title": "21/16:05 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "21/22:10 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 21 Oct 2026 05:05:13 GMT"
-    },
-    {
-      "pid": "IDV21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for West and South Gippsland",
-      "type": "thunderstorm",
-      "state": "VIC",
-      "link": "",
-      "desc": "This warning is now cancelled. 27.2mm was recorded at Glenmaggie (Blanket Hill) in the 30 minutes to 2:47 pm.",
-      "issued": "2026-10-21T17:37:42+11:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "VIC_PW006",
-          "description": "West and South Gippsland",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
+      "issued": "Wed, 21 Oct 2026 11:10:53 GMT"
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields, Central West, Maranoa and Warrego, Darling Downs and Granite Belt",
+      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields, Central West, Maranoa and Warrego, Darling Downs and Granite Belt, Wide Bay and Burnett",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include St George. 93 km/h wind gust was recorded at Longreach Airport at 7:47pm 2-3cm hailstones were observed between Barcaldine and Blackall this afternoon. 48mm was recorded at Augathella in the 30 minutes to 4:45pm. 39mm was recorded at Barradeen (northeast of Charleville) in the 30 min",
-      "issued": "2026-10-21T19:54:02+10:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding over the next several hours in parts of the Central Highlands and Coalfields and Central West districts. Locations which may be affected include Emerald, Clermont, Barcaldine, Aberfoyle, Springsure and Capella. Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding over the next several hours in parts of the Central Highlands and Coalfi",
+      "issued": "2026-10-21T21:19:19+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -114,10 +95,15 @@
           "aac": "QLD_PW013",
           "description": "Darling Downs and Granite Belt",
           "phase": "REN"
+        },
+        {
+          "aac": "QLD_PW014",
+          "description": "Wide Bay and Burnett",
+          "phase": "NEW"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "REN"
+      "hazardPhase": "UPD"
     },
     {
       "pid": "IDS21033",
@@ -173,7 +159,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Wed, 21 Oct 2026 10:47:25 GMT",
+        "updated": "Wed, 21 Oct 2026 11:19:24 GMT",
         "description": "COOMA RD, JINDEN 2622",
         "council": "Eurobodalla",
         "lat": -35.920207978,
@@ -188,13 +174,43 @@
     "tas": [],
     "wa": [
       {
+        "title": "Smoke Alert FOR THE SOUTHERN PARTS OF MARBELUP IN THE CITY OF ALBANY",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-21T11:05:05.348+00:00",
+        "description": "",
+        "lat": -35.0032,
+        "lng": 117.7951,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-21T10:41:48+00:00",
+        "updated": "2026-10-21T10:53:59+00:00",
+        "description": "ALLANSON, SHIRE OF COLLIE",
+        "lat": -33.342,
+        "lng": 116.1031,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-21T10:49:02+00:00",
         "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.4508,
         "lng": 128.1196,
@@ -1428,28 +1444,13 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - HERBERT HERITAGE DR, STUART",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-21T10:48:26+00:00",
-        "description": "HERBERT HERITAGE DR, STUART",
-        "lat": -23.673,
-        "lng": 133.8755,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - OBRIEN CT, DRIVER",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-21T10:43:59+00:00",
+        "updated": "2026-10-21T10:51:39+00:00",
         "description": "OBRIEN CT, DRIVER",
         "lat": -12.4843,
         "lng": 130.9824,
@@ -1518,7 +1519,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 63,
+  "incident_count": 64,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5149,7 +5150,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-21T05:15:00Z",
+      "issued_utc": "2026-10-21T11:10:42Z",
       "overview": [],
       "hazards": [
         {
@@ -5168,7 +5169,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-21T05:01:00Z",
+      "issued_utc": "2026-10-21T11:02:46Z",
       "overview": [
         "Strong Wind Warning for Wednesday for Leeuwin Coast and Albany Coast",
         "Strong Wind Warning for Thursday for Ningaloo Coast, Leeuwin Coast, Albany Coast and Esperance Coast"
@@ -5192,7 +5193,7 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-21T05:05:00Z",
+      "issued_utc": "2026-10-21T11:10:47Z",
       "overview": [],
       "hazards": [
         {
