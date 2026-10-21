@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-21T04:23:00.247476+00:00",
-  "last_checked_utc": "2026-10-21T04:23:00.247476+00:00",
-  "warning_count": 9,
+  "generated_utc": "2026-10-21T04:53:02.293654+00:00",
+  "last_checked_utc": "2026-10-21T04:53:02.293654+00:00",
+  "warning_count": 10,
   "warnings": [
     {
       "pid": "",
@@ -108,6 +108,25 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDW21033",
+      "title": "Severe Thunderstorm Warning for South Interior",
+      "type": "thunderstorm",
+      "state": "WA",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Warburton.",
+      "issued": "2026-10-21T12:46:43+08:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "WA_PW007",
+          "description": "South Interior",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -116,11 +135,11 @@
       {
         "title": "Costa Av, San Remo",
         "alertLevel": "Advice",
-        "status": "Not yet controlled",
+        "status": "Being controlled",
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Wed, 21 Oct 2026 04:19:58 GMT",
+        "updated": "Wed, 21 Oct 2026 04:47:58 GMT",
         "description": "Costa Av, San Remo, NSW 2262",
         "council": "Central Coast",
         "lat": -33.219027,
@@ -135,16 +154,76 @@
     "tas": [],
     "wa": [
       {
-        "title": "Fuel Leak",
+        "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
-        "type": "HazMat",
+        "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-21T04:07:17+00:00",
-        "description": "PERTH AIRPORT, CITY OF BELMONT",
-        "lat": -31.9711,
-        "lng": 115.9613,
+        "updated": "2026-10-21T04:37:22+00:00",
+        "description": "YARLOOP, SHIRE OF HARVEY",
+        "lat": -32.9673,
+        "lng": 115.9164,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Smoke Alert FOR BULLSBROOK AND SURROUNDS IN THE CITY OF SWAN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-21T04:27:44.39+00:00",
+        "description": "",
+        "lat": -31.6699,
+        "lng": 116.0325,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Smoke Alert FOR MUNDARING, SAWYERS VALLEY AND SURROUNDS IN THE SHIRE OF MUNDARING",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-21T04:23:51.623+00:00",
+        "description": "",
+        "lat": -31.9023,
+        "lng": 116.1664,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Smoke Alert FOR THE EASTERN PARTS OF WAROONA IN THE SHIRE OF WAROONA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-21T04:20:00.45+00:00",
+        "description": "",
+        "lat": -32.8118,
+        "lng": 115.9774,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-21T04:14:36+00:00",
+        "description": "JURIEN BAY, SHIRE OF DANDARAGAN",
+        "lat": -30.1846,
+        "lng": 114.9979,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -161,64 +240,6 @@
         "lat": -15.8168,
         "lng": 128.7888,
         "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Smoke Alert FOR THE TOWN CENTRE AND SOUTH-WESTERN PARTS OF SOUTH HEDLAND AND NEARBY PARTS OF BOODARIE AND PIPPINGARRA IN THE TOWN OF PORT HEDLAND",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-21T03:49:38.17+00:00",
-        "description": "",
-        "lat": -20.4147,
-        "lng": 118.5932,
-        "polys": [
-          [
-            [
-              118.585956,
-              -20.408228
-            ],
-            [
-              118.595608,
-              -20.407883
-            ],
-            [
-              118.603513,
-              -20.409262
-            ],
-            [
-              118.603053,
-              -20.414172
-            ],
-            [
-              118.604708,
-              -20.418135
-            ],
-            [
-              118.604432,
-              -20.427696
-            ],
-            [
-              118.590552,
-              -20.425371
-            ],
-            [
-              118.578511,
-              -20.418221
-            ],
-            [
-              118.579706,
-              -20.409865
-            ],
-            [
-              118.585956,
-              -20.408228
-            ]
-          ]
-        ],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -418,36 +439,6 @@
             ]
           ]
         ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-21T03:38:31+00:00",
-        "description": "JURIEN BAY, SHIRE OF DANDARAGAN",
-        "lat": -30.1846,
-        "lng": 114.9979,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Report of Smoke",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-21T03:34:19+00:00",
-        "description": "DENMARK, SHIRE OF DENMARK",
-        "lat": -34.947,
-        "lng": 117.3433,
-        "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1368,7 +1359,7 @@
       }
     ]
   },
-  "incident_count": 57,
+  "incident_count": 58,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
