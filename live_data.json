@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-21T22:23:04.814598+00:00",
-  "last_checked_utc": "2026-10-21T22:23:04.814598+00:00",
+  "generated_utc": "2026-10-21T22:53:06.082510+00:00",
+  "last_checked_utc": "2026-10-21T22:53:06.082510+00:00",
   "warning_count": 11,
   "warnings": [
     {
@@ -105,18 +105,23 @@
     },
     {
       "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Moreton Bay",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Sunshine Coast, Moreton Bay",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 7:50 am, a VERY DANGEROUS THUNDERSTORM likely to produce heavy, locally intense rainfall that may lead to dangerous and life-threatening flash flooding was detected near Caboolture and Burpengary. This thunderstorm is slow moving. It is forecast to affect Narangba by 8:20 am and Lake Samsonvale by 8:50 am. 154 mm OF RAINFALL WAS RECORDED AT MT RESERVOIR IN THE 3 HOURS TO 7:45 AM. 141 mm OF RAINFALL WAS RECORDED AT BURPENGARY (MATHEW CR) IN 3 HOURS TO 7:45",
-      "issued": "2026-10-22T07:54:52+10:00",
+      "desc": "The Bureau of Meteorology warns that, at 8:40 am, a VERY DANGEROUS THUNDERSTORM likely to produce heavy, locally intense rainfall that may lead to dangerous and life-threatening flash flooding was detected near Caboolture and Burpengary. This thunderstorm is slow moving. It is forecast to affect Narangba by 9:25 am and Lake Samsonvale and Beerburrum by 10:10 am. 163 mm OF RAINFALL WAS RECORDED AT MT RESERVOIR IN THE 3 HOURS TO 8:30 AM. 159 mm OF RAINFALL WAS RECORDED AT ELIMBAH (ROSE CREEK RD) I",
+      "issued": "2026-10-22T08:49:07+10:00",
       "cancelled": false,
       "areas": [
         {
+          "aac": "QLD_ME006",
+          "description": "Sunshine Coast",
+          "phase": "NEW"
+        },
+        {
           "aac": "QLD_ME020",
           "description": "Moreton Bay",
-          "phase": "UPD"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
@@ -133,7 +138,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Wed, 21 Oct 2026 22:19:25 GMT",
+        "updated": "Wed, 21 Oct 2026 22:47:24 GMT",
         "description": "COOMA RD, JINDEN 2622",
         "council": "Eurobodalla",
         "lat": -35.920207978,
@@ -147,6 +152,51 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Earthquake",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Earthquake",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-21T22:41:50+00:00",
+        "description": "HOUTMAN ABROLHOS, GREATER GERALDTON, CITY OF",
+        "lat": -28.5369,
+        "lng": 113.7396,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-21T22:35:10+00:00",
+        "description": "THE VINES, CITY OF SWAN",
+        "lat": -31.7539,
+        "lng": 116.0051,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-21T22:34:12+00:00",
+        "description": "MARIGINIUP, CITY OF WANNEROO",
+        "lat": -31.6961,
+        "lng": 115.8454,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1464,7 +1514,7 @@
       }
     ]
   },
-  "incident_count": 62,
+  "incident_count": 65,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
