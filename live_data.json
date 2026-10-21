@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-21T06:53:04.220273+00:00",
-  "last_checked_utc": "2026-10-21T06:53:04.220273+00:00",
-  "warning_count": 11,
+  "generated_utc": "2026-10-21T07:23:04.268085+00:00",
+  "last_checked_utc": "2026-10-21T07:23:04.268085+00:00",
+  "warning_count": 12,
   "warnings": [
     {
       "pid": "",
@@ -96,12 +96,12 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields, Central West, Channel Country, Maranoa and Warrego",
+      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields, Central West, Maranoa and Warrego",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Barcaldine, Tambo, Blackall, Isisford, Mitchell and Jericho. 39mm was recorded at Barradeen (northeast of Charleville) in the 30 minutes to 3:42pm.",
-      "issued": "2026-10-21T16:23:05+10:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Barcaldine, Tambo, Blackall, Isisford, Mitchell and Bollon. Severe thunderstorms are no longer occurring in the Channel Country district and the warning for this district is CANCELLED. 48mm was recorded at Augathella in the 30 minutes to 4:45pm. 39mm was recorded at Barradeen (northe",
+      "issued": "2026-10-21T17:03:33+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -115,11 +115,6 @@
           "phase": "REN"
         },
         {
-          "aac": "QLD_PW011",
-          "description": "Channel Country",
-          "phase": "REN"
-        },
-        {
           "aac": "QLD_PW012",
           "description": "Maranoa and Warrego",
           "phase": "REN"
@@ -127,6 +122,25 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDQ21033",
+      "title": "Severe Thunderstorm Warning for Channel Country",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-21T17:03:33+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "QLD_PW011",
+          "description": "Channel Country",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDW21033",
@@ -152,17 +166,17 @@
   "incidents": {
     "nsw": [
       {
-        "title": "KENNEDY CREEK WALK APPIN",
+        "title": "MARKET FIRE TRAIL APPIN",
         "alertLevel": "Advice",
         "status": "Not yet controlled",
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 21 Oct 2026 06:47:58 GMT",
-        "description": "KENNEDY CREEK WALK APPIN 2560",
+        "updated": "Wed, 21 Oct 2026 07:19:58 GMT",
+        "description": "MARKET FIRE TRAIL APPIN 2560",
         "council": "Wollondilly",
-        "lat": -34.2028503409999,
-        "lng": 150.791809082,
+        "lat": -34.2041015629999,
+        "lng": 150.797943115,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -173,16 +187,31 @@
     "tas": [],
     "wa": [
       {
-        "title": "Storm",
+        "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
-        "type": "Storm",
+        "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-21T06:49:16.237+00:00",
-        "description": "BEADELL, SHIRE OF LAVERTON",
-        "lat": -26.8392,
-        "lng": 127.1258,
+        "updated": "2026-10-21T07:07:20+00:00",
+        "description": "TORBAY, CITY OF ALBANY",
+        "lat": -34.9839,
+        "lng": 117.6239,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-21T06:48:40+00:00",
+        "description": "MARDIE, CITY OF KARRATHA",
+        "lat": -21.2877,
+        "lng": 116.0324,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -282,21 +311,6 @@
         "description": "OLDBURY, SHIRE OF SERPENTINE-JARRAHDALE",
         "lat": -32.2413,
         "lng": 115.9042,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-21T06:38:00+00:00",
-        "description": "TORBAY, CITY OF ALBANY",
-        "lat": -34.9839,
-        "lng": 117.6239,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -907,21 +921,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-20T08:31:12+00:00",
-        "description": "MARDIE, CITY OF KARRATHA",
-        "lat": -21.3386,
-        "lng": 115.9944,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-20T07:56:36+00:00",
         "description": "WATERBANK, SHIRE OF BROOME",
         "lat": -17.372,
@@ -1062,21 +1061,6 @@
         "description": "STURT CREEK, SHIRE OF HALLS CREEK",
         "lat": -20.349,
         "lng": 127.538,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-19T16:21:34+00:00",
-        "description": "STURT CREEK, SHIRE OF HALLS CREEK",
-        "lat": -18.411,
-        "lng": 128.72,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1343,21 +1327,6 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-12T07:36:17+00:00",
-        "description": "ORD RIVER, SHIRE OF HALLS CREEK",
-        "lat": -17.219,
-        "lng": 128.056,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
       }
     ],
     "nt": [
@@ -1419,7 +1388,38 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [],
+    "act": [
+      {
+        "title": "HOUSE FIRE - CONDER",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-10-21T07:15:33+00:00",
+        "description": "CONDER",
+        "lat": -35.4542,
+        "lng": 149.0931,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - CONDER",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Fire - Ambulance",
+        "updated": "2026-10-21T07:15:33+00:00",
+        "description": "CONDER",
+        "lat": -35.4542,
+        "lng": 149.0931,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      }
+    ],
     "sa": [
       {
         "title": "GRASS FIRE",
@@ -1438,7 +1438,7 @@
       }
     ]
   },
-  "incident_count": 62,
+  "incident_count": 61,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
