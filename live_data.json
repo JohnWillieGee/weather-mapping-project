@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-21T03:22:58.139159+00:00",
-  "last_checked_utc": "2026-10-21T03:22:58.139159+00:00",
+  "generated_utc": "2026-10-21T03:53:00.064888+00:00",
+  "last_checked_utc": "2026-10-21T03:53:00.064888+00:00",
   "warning_count": 9,
   "warnings": [
     {
@@ -77,53 +77,245 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Channel Country, Maranoa and Warrego",
+      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields, Central West, Channel Country, Maranoa and Warrego",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Charleville, Quilpie, Adavale, Eromanga and Wyandra.",
-      "issued": "2026-10-21T12:28:40+10:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Charleville, Quilpie, Windorah, Mt Howitt Station, Injune and Tambo.",
+      "issued": "2026-10-21T13:44:44+10:00",
       "cancelled": false,
       "areas": [
         {
+          "aac": "QLD_PW008",
+          "description": "Central Highlands and Coalfields",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_PW009",
+          "description": "Central West",
+          "phase": "NEW"
+        },
+        {
           "aac": "QLD_PW011",
           "description": "Channel Country",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "QLD_PW012",
           "description": "Maranoa and Warrego",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "UPD"
     }
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Mawson Dr, Cartwright",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Wed, 21 Oct 2026 03:19:58 GMT",
-        "description": "Mawson Dr, Cartwright, NSW 2168",
-        "council": "Liverpool",
-        "lat": -33.925042,
-        "lng": 150.884372,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - WYNDHAM",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-21T03:44:44.027+00:00",
+        "description": "",
+        "lat": -15.4605,
+        "lng": 128.1096,
+        "polys": [
+          [
+            [
+              128.125956,
+              -15.47324
+            ],
+            [
+              128.11437,
+              -15.48316
+            ],
+            [
+              128.107133,
+              -15.485181
+            ],
+            [
+              128.1017,
+              -15.48577
+            ],
+            [
+              128.09711,
+              -15.480658
+            ],
+            [
+              128.096712,
+              -15.476332
+            ],
+            [
+              128.100127,
+              -15.461459
+            ],
+            [
+              128.103616,
+              -15.456984
+            ],
+            [
+              128.105577,
+              -15.453902
+            ],
+            [
+              128.106856,
+              -15.449916
+            ],
+            [
+              128.109032,
+              -15.450368
+            ],
+            [
+              128.110804,
+              -15.450245
+            ],
+            [
+              128.110844,
+              -15.448971
+            ],
+            [
+              128.110144,
+              -15.447635
+            ],
+            [
+              128.110622,
+              -15.446383
+            ],
+            [
+              128.112531,
+              -15.44328
+            ],
+            [
+              128.115168,
+              -15.441801
+            ],
+            [
+              128.117922,
+              -15.441803
+            ],
+            [
+              128.125956,
+              -15.47324
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice STAY INFORMED - SANDY CAPE RECREATION PARK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-21T03:40:32.177+00:00",
+        "description": "",
+        "lat": -30.1748,
+        "lng": 115.0026,
+        "polys": [
+          [
+            [
+              115.004701,
+              -30.15988
+            ],
+            [
+              115.018514,
+              -30.159344
+            ],
+            [
+              115.02246,
+              -30.165632
+            ],
+            [
+              115.022241,
+              -30.18751
+            ],
+            [
+              115.007496,
+              -30.18612
+            ],
+            [
+              114.99275,
+              -30.184729
+            ],
+            [
+              114.991671,
+              -30.184687
+            ],
+            [
+              114.991408,
+              -30.18397
+            ],
+            [
+              114.991935,
+              -30.183232
+            ],
+            [
+              114.993412,
+              -30.182253
+            ],
+            [
+              114.997731,
+              -30.182104
+            ],
+            [
+              114.99946,
+              -30.180327
+            ],
+            [
+              114.999086,
+              -30.174677
+            ],
+            [
+              115.00058,
+              -30.173547
+            ],
+            [
+              115.002261,
+              -30.173305
+            ],
+            [
+              115.0017,
+              -30.16483
+            ],
+            [
+              115.004315,
+              -30.159744
+            ],
+            [
+              115.004701,
+              -30.15988
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-21T03:38:31+00:00",
+        "description": "JURIEN BAY, SHIRE OF DANDARAGAN",
+        "lat": -30.1846,
+        "lng": 114.9979,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Report of Smoke",
         "alertLevel": "",
@@ -131,7 +323,22 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-21T03:12:32+00:00",
+        "updated": "2026-10-21T03:36:54+00:00",
+        "description": "KWINANA BEACH, CITY OF KWINANA",
+        "lat": -32.2431,
+        "lng": 115.7692,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Report of Smoke",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-21T03:34:19+00:00",
         "description": "DENMARK, SHIRE OF DENMARK",
         "lat": -34.947,
         "lng": 117.3433,
@@ -150,21 +357,6 @@
         "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.8168,
         "lng": 128.7888,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-21T03:01:13+00:00",
-        "description": "JURIEN BAY, SHIRE OF DANDARAGAN",
-        "lat": -30.1846,
-        "lng": 114.9979,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -401,80 +593,6 @@
         "lat": -19.419,
         "lng": 127.597,
         "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice MONITOR CONDITIONS - WYNDHAM",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-20T14:21:18.706+00:00",
-        "description": "",
-        "lat": -15.4495,
-        "lng": 128.1127,
-        "polys": [
-          [
-            [
-              128.126438,
-              -15.453409
-            ],
-            [
-              128.111231,
-              -15.457089
-            ],
-            [
-              128.103616,
-              -15.456984
-            ],
-            [
-              128.105577,
-              -15.453902
-            ],
-            [
-              128.106856,
-              -15.449916
-            ],
-            [
-              128.109032,
-              -15.450368
-            ],
-            [
-              128.110804,
-              -15.450245
-            ],
-            [
-              128.110844,
-              -15.448971
-            ],
-            [
-              128.110144,
-              -15.447635
-            ],
-            [
-              128.110622,
-              -15.446383
-            ],
-            [
-              128.112531,
-              -15.44328
-            ],
-            [
-              128.115168,
-              -15.441801
-            ],
-            [
-              128.118295,
-              -15.439439
-            ],
-            [
-              128.126438,
-              -15.453409
-            ]
-          ]
-        ],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1133,7 +1251,7 @@
       }
     ]
   },
-  "incident_count": 53,
+  "incident_count": 54,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
