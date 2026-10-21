@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-21T09:53:03.335774+00:00",
-  "last_checked_utc": "2026-10-21T09:53:03.335774+00:00",
+  "generated_utc": "2026-10-21T10:23:05.529489+00:00",
+  "last_checked_utc": "2026-10-21T10:23:05.529489+00:00",
   "warning_count": 11,
   "warnings": [
     {
@@ -91,8 +91,8 @@
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Bollon, Jericho, Dirranbandi and Alpha. 2-3cm hailstones were observed between Barcaldine and Blackall this afternoon. 48mm was recorded at Augathella in the 30 minutes to 4:45pm. 39mm was recorded at Barradeen (northeast of Charleville) in the 30 minutes to 3:42pm.",
-      "issued": "2026-10-21T18:35:24+10:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include St George. 93 km/h wind gust was recorded at Longreach Airport at 7:47pm 2-3cm hailstones were observed between Barcaldine and Blackall this afternoon. 48mm was recorded at Augathella in the 30 minutes to 4:45pm. 39mm was recorded at Barradeen (northeast of Charleville) in the 30 min",
+      "issued": "2026-10-21T19:54:02+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -113,11 +113,11 @@
         {
           "aac": "QLD_PW013",
           "description": "Darling Downs and Granite Belt",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "hazardPhase": "REN"
     },
     {
       "pid": "IDS21033",
@@ -125,29 +125,34 @@
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours.",
-      "issued": "2026-10-21T19:14:55+10:30",
+      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include parts of the Great Victoria Desert.",
+      "issued": "2026-10-21T20:46:00+10:30",
       "cancelled": false,
       "areas": [
         {
           "aac": "SA_PW013",
           "description": "North West Pastoral",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "REN"
     },
     {
       "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for South Interior",
+      "title": "Severe Thunderstorm Warning for North Interior, South Interior",
       "type": "thunderstorm",
       "state": "WA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours.",
-      "issued": "2026-10-21T16:41:55+08:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Balgo and Giles.",
+      "issued": "2026-10-21T18:11:17+08:00",
       "cancelled": false,
       "areas": [
+        {
+          "aac": "WA_PW006",
+          "description": "North Interior",
+          "phase": "NEW"
+        },
         {
           "aac": "WA_PW007",
           "description": "South Interior",
@@ -167,8 +172,8 @@
         "status": "Not yet controlled",
         "type": "Bush Fire",
         "size": "0 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Wed, 21 Oct 2026 09:47:24 GMT",
+        "agency": "NSW National Parks and Wildlife Service",
+        "updated": "Wed, 21 Oct 2026 10:19:24 GMT",
         "description": "COOMA RD, JINDEN 2622",
         "council": "Eurobodalla",
         "lat": -35.920207978,
@@ -182,6 +187,36 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-21T10:11:44+00:00",
+        "description": "GEEGULLY CREEK, SHIRE OF DERBY/WEST KIMBERLEY",
+        "lat": -18.4611,
+        "lng": 123.4065,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-21T09:54:29+00:00",
+        "description": "MARBELUP, CITY OF ALBANY",
+        "lat": -35.0023,
+        "lng": 117.8017,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - CHICHESTER AND FORTESCUE",
         "alertLevel": "Advice",
@@ -288,21 +323,6 @@
         "description": "TORBAY, CITY OF ALBANY",
         "lat": -34.9839,
         "lng": 117.6239,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-21T09:14:58+00:00",
-        "description": "MARBELUP, CITY OF ALBANY",
-        "lat": -35.0023,
-        "lng": 117.8017,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1408,16 +1428,31 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - KARGARU CAMP RD, TENNANT CREEK",
+        "title": "Grass and Scrub Fire - EMERY AV, GRAY",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-21T09:47:07+00:00",
-        "description": "KARGARU CAMP RD, TENNANT CREEK",
-        "lat": -19.6553,
-        "lng": 134.1964,
+        "updated": "2026-10-21T10:05:50+00:00",
+        "description": "EMERY AV, GRAY",
+        "lat": -12.4952,
+        "lng": 130.9812,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - MCDONALD ST, KATHERINE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-21T10:04:18+00:00",
+        "description": "MCDONALD ST, KATHERINE",
+        "lat": -14.4497,
+        "lng": 132.2714,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -1483,7 +1518,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 61,
+  "incident_count": 63,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
