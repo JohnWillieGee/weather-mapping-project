@@ -1,25 +1,34 @@
 {
-  "generated_utc": "2026-10-21T16:53:03.846502+00:00",
-  "last_checked_utc": "2026-10-21T16:53:03.846502+00:00",
-  "warning_count": 9,
+  "generated_utc": "2026-10-21T17:23:01.106468+00:00",
+  "last_checked_utc": "2026-10-21T17:23:01.106468+00:00",
+  "warning_count": 10,
   "warnings": [
     {
       "pid": "",
-      "title": "21/22:47 EDT Warning to Sheep Graziers\nfor Mid North Coast and Northern Tablelands forecast districts",
+      "title": "22/04:12 EDT Marine Wind Warning Summary for New South Wales",
+      "type": "wind",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
+      "desc": "",
+      "issued": "Wed, 21 Oct 2026 17:12:42 GMT"
+    },
+    {
+      "pid": "",
+      "title": "22/04:08 EDT Warning to Sheep Graziers\nfor Mid North Coast and Northern Tablelands forecast districts",
       "type": "other",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Wed, 21 Oct 2026 11:47:25 GMT"
+      "issued": "Wed, 21 Oct 2026 17:08:12 GMT"
     },
     {
       "pid": "",
-      "title": "21/22:10 EDT Marine Wind Warning Summary for Victoria",
+      "title": "22/04:10 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 21 Oct 2026 11:10:59 GMT"
+      "issued": "Wed, 21 Oct 2026 17:10:20 GMT"
     },
     {
       "pid": "",
@@ -50,21 +59,21 @@
     },
     {
       "pid": "",
-      "title": "21/19:03 WST Marine Wind Warning Summary for Western Australia",
+      "title": "22/01:15 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Wed, 21 Oct 2026 11:03:02 GMT"
+      "issued": "Wed, 21 Oct 2026 17:15:23 GMT"
     },
     {
       "pid": "",
-      "title": "21/22:10 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "22/04:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 21 Oct 2026 11:10:53 GMT"
+      "issued": "Wed, 21 Oct 2026 17:00:12 GMT"
     },
     {
       "pid": "IDQ21033",
@@ -120,7 +129,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Wed, 21 Oct 2026 16:47:24 GMT",
+        "updated": "Wed, 21 Oct 2026 17:19:24 GMT",
         "description": "COOMA RD, JINDEN 2622",
         "council": "Eurobodalla",
         "lat": -35.920207978,
@@ -1439,7 +1448,22 @@
         "status": "active",
         "type": "Structure Fire",
         "size": "",
-        "agency": "Fire - Ambulance",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-10-21T16:07:14+00:00",
+        "description": "BELCONNEN",
+        "lat": -35.2447,
+        "lng": 149.0702,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - BELCONNEN",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Ambulance",
         "updated": "2026-10-21T16:07:14+00:00",
         "description": "BELCONNEN",
         "lat": -35.2447,
@@ -1449,9 +1473,25 @@
         "sourceUrl": "https://esa.act.gov.au/"
       }
     ],
-    "sa": []
+    "sa": [
+      {
+        "title": "STRUCTURE FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-21T16:50:00+00:00",
+        "description": "CLARENDON",
+        "lat": -35.1171,
+        "lng": 138.6004,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      }
+    ]
   },
-  "incident_count": 62,
+  "incident_count": 64,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5079,11 +5119,37 @@
     }
   },
   "marine_warnings": {
+    "NSW": {
+      "state": "NSW",
+      "product": "IDN20400",
+      "issued_utc": "2026-10-21T17:12:27Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Macquarie Coast: Smoky Cape to Seal Rocks",
+            "Hunter Coast: Seal Rocks to Broken Bay",
+            "Batemans Coast: Ulladulla to Montague Island"
+          ],
+          "aac_codes": [
+            "NSW_MW006",
+            "NSW_MW005",
+            "NSW_MW002"
+          ],
+          "summary": "Macquarie Coast, Hunter Coast and Batemans Coast"
+        }
+      ]
+    },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-21T11:10:42Z",
-      "overview": [],
+      "issued_utc": "2026-10-21T17:10:00Z",
+      "overview": [
+        "Strong Wind Warning for Thursday for East Gippsland Coast",
+        "Strong Wind Warning for Friday for East Gippsland Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -5101,32 +5167,39 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-21T11:02:46Z",
+      "issued_utc": "2026-10-21T17:15:13Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for Leeuwin Coast and Albany Coast",
-        "Strong Wind Warning for Thursday for Ningaloo Coast, Leeuwin Coast, Albany Coast and Esperance Coast"
+        "Strong Wind Warning for Thursday for Ningaloo Coast, Leeuwin Coast, Albany Coast and Esperance Coast",
+        "Strong Wind Warning for Friday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast and Geraldton Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Ningaloo Coast: North West Cape to Cape Cuvier",
             "Leeuwin Coast: Cape Naturaliste to Walpole",
-            "Albany Coast: Walpole to Bremer Bay"
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay"
           ],
           "aac_codes": [
+            "WA_MW005",
             "WA_MW011",
-            "WA_MW012"
+            "WA_MW012",
+            "WA_MW013"
           ],
-          "summary": "Leeuwin Coast and Albany Coast"
+          "summary": "Ningaloo Coast, Leeuwin Coast, Albany Coast and Esperance Coast"
         }
       ]
     },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-21T11:10:47Z",
-      "overview": [],
+      "issued_utc": "2026-10-21T17:00:00Z",
+      "overview": [
+        "Strong Wind Warning for Thursday for East of Flinders Island, Upper East Coast, Lower East Coast and South East Coast",
+        "Strong Wind Warning for Friday for East of Flinders Island, Upper East Coast, Lower East Coast and Central West Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
