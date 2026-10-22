@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-22T09:23:09.770741+00:00",
-  "last_checked_utc": "2026-10-22T09:23:09.770741+00:00",
-  "warning_count": 14,
+  "generated_utc": "2026-10-22T09:53:08.433509+00:00",
+  "last_checked_utc": "2026-10-22T09:53:08.433509+00:00",
+  "warning_count": 13,
   "warnings": [
     {
       "pid": "",
@@ -123,41 +123,22 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Darling Downs and Granite Belt, Wide Bay and Burnett",
+      "title": "Cancellation of Severe Thunderstorm Warning for Darling Downs and Granite Belt, Wide Bay and Burnett",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. 54 mm was recorded at Barakula Forest in the 30min to 5:10 pm. 47 mm was recorded at Canaan Creek n the 30min to 5:10 pm.",
-      "issued": "2026-10-22T19:15:07+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled. 54 mm was recorded at Barakula Forest in the 30min to 5:10 pm. 47 mm was recorded at Canaan Creek n the 30min to 5:10 pm.",
+      "issued": "2026-10-22T19:47:39+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "QLD_PW013",
           "description": "Darling Downs and Granite Belt",
-          "phase": "UPD"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW014",
           "description": "Wide Bay and Burnett",
-          "phase": "UPD"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "UPD"
-    },
-    {
-      "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-22T19:15:07+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "QLD_PW008",
-          "description": "Central Highlands and Coalfields",
           "phase": "CAN"
         }
       ],
@@ -303,10 +284,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-22T09:01:34+00:00",
+        "updated": "2026-10-22T09:28:48+00:00",
         "description": "CABLE BEACH, SHIRE OF BROOME",
-        "lat": -17.9621,
-        "lng": 122.2129,
+        "lat": -17.9493,
+        "lng": 122.2109,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -318,10 +299,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-22T09:01:28+00:00",
-        "description": "ORELIA, CITY OF KWINANA",
-        "lat": -32.227,
-        "lng": 115.8265,
+        "updated": "2026-10-22T09:21:02+00:00",
+        "description": "CABLE BEACH, SHIRE OF BROOME",
+        "lat": -17.9621,
+        "lng": 122.2129,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1560,6 +1541,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - DARIBAH RD, TIWI",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-22T09:41:29+00:00",
+        "description": "DARIBAH RD, TIWI",
+        "lat": -12.3621,
+        "lng": 130.8672,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - MANTON DAM RECREATION RES, DARWIN RIVER DAM",
         "alertLevel": "Advice",
         "status": "active",
@@ -1639,23 +1635,8 @@
         "status": "active",
         "type": "Structure Fire",
         "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-10-22T07:50:51+00:00",
-        "description": "GOWRIE",
-        "lat": -35.4155,
-        "lng": 149.107,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "HOUSE FIRE - GOWRIE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
         "agency": "Fire",
-        "updated": "2026-10-22T07:50:51+00:00",
+        "updated": "2026-10-22T09:41:10+00:00",
         "description": "GOWRIE",
         "lat": -35.4155,
         "lng": 149.107,
