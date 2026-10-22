@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-22T02:53:01.493436+00:00",
-  "last_checked_utc": "2026-10-22T02:53:01.493436+00:00",
-  "warning_count": 11,
+  "generated_utc": "2026-10-22T03:23:05.221636+00:00",
+  "last_checked_utc": "2026-10-22T03:23:05.221636+00:00",
+  "warning_count": 13,
   "warnings": [
     {
       "pid": "",
@@ -85,6 +85,25 @@
       "issued": "Wed, 21 Oct 2026 23:00:14 GMT"
     },
     {
+      "pid": "IDN21033",
+      "title": "Severe Thunderstorm Warning for Northern Tablelands",
+      "type": "thunderstorm",
+      "state": "NSW",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Tenterfield, Urbenville, Liston and Drake.",
+      "issued": "2026-10-22T13:55:21+11:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NSW_PW004",
+          "description": "Northern Tablelands",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
+    },
+    {
       "pid": "IDQ21033",
       "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields, Maranoa and Warrego, Darling Downs and Granite Belt, Southeast Coast",
       "type": "thunderstorm",
@@ -120,19 +139,14 @@
     },
     {
       "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Brisbane, Sunshine Coast, Toowoomba, Southern Downs, Scenic Rim, Somerset, Lockyer Valley, Moreton Bay",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Sunshine Coast, Toowoomba, Southern Downs, Scenic Rim, Somerset, Lockyer Valley, Moreton Bay",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 11:40 am, severe thunderstorms likely to produce heavy rainfall that may lead to flash flooding were detected near Cunninghams Gap, Mount Mee and Woodford. These thunderstorms are slow moving. They are forecast to affect Oakington, Moogerah and Maryvale by 12:25 pm and Moogerah Dam, Aratula and the D'Aguilar Ranges by 1:10 pm. 163 mm OF RAINFALL WAS RECORDED AT MT RESERVOIR IN THE 3 HOURS TO 8:30 AM. 159 mm OF RAINFALL WAS RECORDED AT ELIMBAH (ROSE CREEK ",
-      "issued": "2026-10-22T11:53:21+10:00",
+      "desc": "The Bureau of Meteorology warns that, at 1:00 pm, severe thunderstorms likely to produce heavy rainfall that may lead to flash flooding were detected near Cunninghams Gap and Woodford. These thunderstorms are slow moving. They are forecast to affect Moogerah, Mount Mee and Wamuran by 1:45 pm and Oakington and Dayboro by 2:30 pm. 163 mm OF RAINFALL WAS RECORDED AT MT RESERVOIR IN THE 3 HOURS TO 8:30 AM. 159 mm OF RAINFALL WAS RECORDED AT ELIMBAH (ROSE CREEK RD) IN 3 HOURS TO 8:12 AM 141 mm OF RAI",
+      "issued": "2026-10-22T13:08:46+10:00",
       "cancelled": false,
       "areas": [
-        {
-          "aac": "QLD_ME005",
-          "description": "Brisbane",
-          "phase": "NEW"
-        },
         {
           "aac": "QLD_ME006",
           "description": "Sunshine Coast",
@@ -170,7 +184,26 @@
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDQ21035",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Brisbane",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-22T13:08:46+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "QLD_ME005",
+          "description": "Brisbane",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -179,11 +212,11 @@
       {
         "title": "Minuma Range",
         "alertLevel": "Advice",
-        "status": "Not yet controlled",
+        "status": "Being controlled",
         "type": "Bush Fire",
-        "size": "0 ha",
+        "size": "8 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Thu, 22 Oct 2026 02:47:24 GMT",
+        "updated": "Thu, 22 Oct 2026 03:19:24 GMT",
         "description": "COOMA RD, JINDEN 2622",
         "council": "Eurobodalla",
         "lat": -35.867198515,
@@ -305,6 +338,36 @@
     "tas": [],
     "wa": [
       {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-22T03:03:26+00:00",
+        "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.4505,
+        "lng": 128.119,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-22T02:52:31+00:00",
+        "description": "PRINCE REGENT RIVER, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.4032,
+        "lng": 125.5215,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Bushfire Advice MONITOR CONDITIONS - BULARL DI WUNAMI AND MOUNT HARDMAN",
         "alertLevel": "Advice",
         "status": "active",
@@ -418,21 +481,6 @@
         "description": "ALBANY, CITY OF ALBANY",
         "lat": -35.0299,
         "lng": 117.8861,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-22T02:11:25+00:00",
-        "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.4505,
-        "lng": 128.119,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1060,21 +1108,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-21T00:17:02+00:00",
-        "description": "TELFER, SHIRE OF EAST PILBARA",
-        "lat": -22.0778,
-        "lng": 123.0124,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-20T22:14:30+00:00",
         "description": "PRINCE REGENT RIVER, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.1977,
@@ -1199,21 +1232,6 @@
         "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -16.767,
         "lng": 127.472,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-20T00:21:06+00:00",
-        "description": "ORD RIVER, SHIRE OF HALLS CREEK",
-        "lat": -18.5276,
-        "lng": 128.1415,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1390,21 +1408,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-18T07:21:47+00:00",
-        "description": "PRINCE REGENT RIVER, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.4032,
-        "lng": 125.5215,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-18T03:44:08+00:00",
         "description": "BULARL DI WUNAMI, SHIRE OF DERBY/WEST KIMBERLEY",
         "lat": -16.497,
@@ -1461,6 +1464,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - Unknown",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-22T03:15:07+00:00",
+        "description": "",
+        "lat": -23.781,
+        "lng": 133.9352,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Stuart Highway, BANKA BANKA WEST",
         "alertLevel": "Advice",
         "status": "active",
@@ -1503,7 +1521,23 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [],
+    "act": [
+      {
+        "title": "STRUCTURE FIRE - BRADDON",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-10-22T03:18:34+00:00",
+        "description": "BRADDON",
+        "lat": -35.2763,
+        "lng": 149.1409,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      }
+    ],
     "sa": [
       {
         "title": "STRUCTURE FIRE",
