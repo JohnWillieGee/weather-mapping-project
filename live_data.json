@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-22T13:53:40.616274+00:00",
-  "last_checked_utc": "2026-10-22T13:53:40.616274+00:00",
-  "warning_count": 14,
+  "generated_utc": "2026-10-22T14:23:22.873032+00:00",
+  "last_checked_utc": "2026-10-22T14:23:22.873032+00:00",
+  "warning_count": 13,
   "warnings": [
     {
       "pid": "",
@@ -110,30 +110,6 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Thu, 22 Oct 2026 11:00:14 GMT"
-    },
-    {
-      "pid": "IDQ21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for Darling Downs and Granite Belt, Wide Bay and Burnett",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "This warning is now cancelled. 54 mm was recorded at Barakula Forest in the 30min to 5:10 pm. 47 mm was recorded at Canaan Creek n the 30min to 5:10 pm.",
-      "issued": "2026-10-22T19:47:39+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "QLD_PW013",
-          "description": "Darling Downs and Granite Belt",
-          "phase": "CAN"
-        },
-        {
-          "aac": "QLD_PW014",
-          "description": "Wide Bay and Burnett",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
     },
     {
       "pid": "IDD21033",
@@ -291,6 +267,21 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-22T14:17:57+00:00",
+        "description": "BROOME, SHIRE OF BROOME",
+        "lat": -17.9566,
+        "lng": 122.2281,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1523,23 +1514,7 @@
       }
     ],
     "act": [],
-    "sa": [
-      {
-        "title": "GRASS FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-22T12:04:00+00:00",
-        "description": "BUTLER",
-        "lat": -34.0551,
-        "lng": 136.1178,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      }
-    ]
+    "sa": []
   },
   "incident_count": 59,
   "nsw_alert_zones": [],
