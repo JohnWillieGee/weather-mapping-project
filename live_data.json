@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-22T16:53:05.417436+00:00",
-  "last_checked_utc": "2026-10-22T16:53:05.417436+00:00",
+  "generated_utc": "2026-10-22T17:23:02.896007+00:00",
+  "last_checked_utc": "2026-10-22T17:23:02.896007+00:00",
   "warning_count": 13,
   "warnings": [
     {
       "pid": "",
-      "title": "22/22:00 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "23/04:03 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 22 Oct 2026 11:00:13 GMT"
+      "issued": "Thu, 22 Oct 2026 17:03:23 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "22/22:00 EDT Marine Wind Warning Summary for Victoria",
+      "title": "23/04:10 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 22 Oct 2026 11:00:24 GMT"
+      "issued": "Thu, 22 Oct 2026 17:10:23 GMT"
     },
     {
       "pid": "",
@@ -95,21 +95,21 @@
     },
     {
       "pid": "",
-      "title": "22/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "23/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 22 Oct 2026 11:01:18 GMT"
+      "issued": "Thu, 22 Oct 2026 17:01:15 GMT"
     },
     {
       "pid": "",
-      "title": "22/22:00 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "23/04:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 22 Oct 2026 11:00:14 GMT"
+      "issued": "Thu, 22 Oct 2026 17:00:10 GMT"
     },
     {
       "pid": "IDD21033",
@@ -5132,8 +5132,11 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-10-22T11:00:00Z",
-      "overview": [],
+      "issued_utc": "2026-10-22T17:03:14Z",
+      "overview": [
+        "Strong Wind Warning for Friday for Macquarie Coast, Hunter Coast, Batemans Coast and Eden Coast",
+        "Strong Wind Warning for Saturday for Coffs Coast, Macquarie Coast and Hunter Coast"
+      ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
@@ -5157,10 +5160,10 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-22T11:00:00Z",
+      "issued_utc": "2026-10-22T17:10:00Z",
       "overview": [
-        "Strong Wind Warning for Thursday for East Gippsland Coast",
-        "Strong Wind Warning for Friday for East Gippsland Coast"
+        "Strong Wind Warning for Friday for East Gippsland Coast",
+        "Strong Wind Warning for Saturday for East Gippsland Coast"
       ],
       "hazards": [
         {
@@ -5179,48 +5182,57 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-22T11:01:00Z",
+      "issued_utc": "2026-10-22T17:01:00Z",
       "overview": [
-        "Strong Wind Warning for Thursday for Ningaloo Coast and Albany Coast",
-        "Strong Wind Warning for Friday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast and Geraldton Coast"
+        "Strong Wind Warning for Friday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast and Geraldton Coast",
+        "Strong Wind Warning for Saturday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast, Lancelin Coast, Bunbury Geographe Coast and Leeuwin Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Pilbara Coast West: Cape Preston to North West Cape",
             "Ningaloo Coast: North West Cape to Cape Cuvier",
-            "Albany Coast: Walpole to Bremer Bay"
+            "Gascoyne Coast: Cape Cuvier to Kalbarri",
+            "Geraldton Coast: Kalbarri to Jurien Bay"
           ],
           "aac_codes": [
+            "WA_MW004",
             "WA_MW005",
-            "WA_MW012"
+            "WA_MW006",
+            "WA_MW007"
           ],
-          "summary": "Ningaloo Coast and Albany Coast"
+          "summary": "Pilbara Coast West, Ningaloo Coast, Gascoyne Coast and Geraldton Coast"
         }
       ]
     },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-22T11:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Thursday for East of Flinders Island and Lower East Coast",
-        "Strong Wind Warning for Friday for East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast, South West Coast and Central West Coast"
-      ],
+      "issued_utc": "2026-10-22T17:00:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
-            "Lower East Coast: Wineglass Bay to Tasman Island"
+            "Upper East Coast: St Helens Point to Wineglass Bay",
+            "Lower East Coast: Wineglass Bay to Tasman Island",
+            "South East Coast: Tasman Island to South East Cape",
+            "South West Coast: South East Cape to Low Rocky Point",
+            "Central West Coast: Low Rocky Point to Sandy Cape"
           ],
           "aac_codes": [
             "TAS_MW003",
-            "TAS_MW005"
+            "TAS_MW004",
+            "TAS_MW005",
+            "TAS_MW006",
+            "TAS_MW007",
+            "TAS_MW008"
           ],
-          "summary": "East of Flinders Island and Lower East Coast"
+          "summary": "East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast, South West Coast and Central West Coast"
         }
       ]
     }
