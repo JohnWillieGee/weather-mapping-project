@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-22T13:23:07.197308+00:00",
-  "last_checked_utc": "2026-10-22T13:23:07.197308+00:00",
+  "generated_utc": "2026-10-22T13:53:40.616274+00:00",
+  "last_checked_utc": "2026-10-22T13:53:40.616274+00:00",
   "warning_count": 14,
   "warnings": [
     {
@@ -137,27 +137,27 @@
     },
     {
       "pid": "IDD21033",
-      "title": "Severe Thunderstorm Warning for Simpson, Lasseter",
+      "title": "Cancellation of Severe Thunderstorm Warning for Simpson, Lasseter",
       "type": "thunderstorm",
       "state": "NT",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Kulgera, Finke, Santa Teresa, Titjikala and Simpson District east of Finke.",
-      "issued": "2026-10-22T20:35:39+09:30",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-22T23:15:18+09:30",
+      "cancelled": true,
       "areas": [
         {
           "aac": "NT_PW007",
           "description": "Simpson",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "NT_PW008",
           "description": "Lasseter",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -298,40 +298,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-22T12:54:26+00:00",
-        "description": "PINJARRA, SHIRE OF MURRAY",
-        "lat": -32.6058,
-        "lng": 115.8597,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-22T12:06:56+00:00",
         "description": "BURLONG, SHIRE OF NORTHAM",
         "lat": -31.6644,
         "lng": 116.6262,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-22T12:02:09+00:00",
-        "description": "CROSSMAN, SHIRE OF BODDINGTON",
-        "lat": -32.8095,
-        "lng": 116.5904,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1571,7 +1541,7 @@
       }
     ]
   },
-  "incident_count": 61,
+  "incident_count": 59,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
