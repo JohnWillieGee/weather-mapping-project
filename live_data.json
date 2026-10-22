@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-22T21:53:05.138446+00:00",
-  "last_checked_utc": "2026-10-22T21:53:05.138446+00:00",
+  "generated_utc": "2026-10-22T22:23:08.345329+00:00",
+  "last_checked_utc": "2026-10-22T22:23:08.345329+00:00",
   "warning_count": 13,
   "warnings": [
     {
@@ -117,18 +117,18 @@
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Rolleston.",
-      "issued": "2026-10-23T06:12:29+10:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Rolleston. 74.0 mm was recorded at Mt Panorama in the 2 hours to 6:09 am.",
+      "issued": "2026-10-23T08:08:21+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "QLD_PW008",
           "description": "Central Highlands and Coalfields",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "REN"
     }
   ],
   "fetch_errors": {},
@@ -141,7 +141,7 @@
         "type": "Bush Fire",
         "size": "8 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Thu, 22 Oct 2026 21:50:19 GMT",
+        "updated": "Thu, 22 Oct 2026 22:18:19 GMT",
         "description": "COOMA RD, JINDEN 2622",
         "council": "Eurobodalla",
         "lat": -35.867198515,
@@ -262,6 +262,21 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-22T22:01:48+00:00",
+        "description": "PALMER, SHIRE OF COLLIE",
+        "lat": -33.3215,
+        "lng": 116.2307,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1512,7 +1527,7 @@
     ],
     "sa": []
   },
-  "incident_count": 59,
+  "incident_count": 60,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
