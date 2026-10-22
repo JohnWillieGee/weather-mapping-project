@@ -456,6 +456,59 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 .nm-nav-item{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:10px;color:var(--text2);cursor:pointer;}
 .nm-nav-item svg{width:20px;height:20px;}
 .nm-nav-active{color:var(--accent);}
+/* ===== WALL BOARD VIEW ===== */
+#wall-col,#wall-banner,#wall-tag,#wall-age,#wall-inset,#wall-calib{display:none;}
+body.wall-mode{--wall-s:1;--wall-col-w:600px;--u:calc(1px * var(--wall-s));font-family:system-ui,"Segoe UI",Arial,sans-serif;}
+body.wall-mode header,body.wall-mode #settings-panel,body.wall-mode #filter-sidebar,body.wall-mode #weather-panel,body.wall-mode #risk-panel,body.wall-mode #toggle-wp,body.wall-mode #clock-panel,body.wall-mode #legend,body.wall-mode .risk-alert-popup{display:none !important;}
+body.wall-mode .layout{display:block;position:relative;height:100vh;}
+body.wall-mode #map-wrap{position:absolute;left:0;top:0;bottom:0;right:calc(var(--wall-col-w) * var(--wall-s));}
+body.wall-mode #wall-col{display:flex;flex-direction:column;gap:calc(10*var(--u));position:fixed;right:0;top:0;bottom:0;width:calc(var(--wall-col-w) * var(--wall-s));padding:calc(12*var(--u));box-sizing:border-box;background:var(--panel);border-left:3px solid var(--border);z-index:3000;color:var(--text);overflow:hidden;}
+body.wall-mode .wall-counters{display:flex;gap:calc(8*var(--u));}
+body.wall-mode .wall-cnt{flex:1;min-width:0;text-align:center;border-radius:8px;background:var(--panel2);border:2px solid var(--border);padding:calc(2*var(--u)) 0;}
+body.wall-mode .wall-cnt .n{font-size:calc(88*var(--u));font-weight:700;line-height:1;}
+body.wall-mode .wall-cnt .l{font-size:calc(40*var(--u));color:var(--text2);line-height:1.1;letter-spacing:-0.04em;white-space:nowrap;}
+body.wall-mode .wall-cnt.hot{border-color:#ff6b3d;}
+body.wall-mode .wall-cnt.hot .n{color:#ff6b3d;}
+body.wall-mode .wall-risk{flex:1;min-height:0;display:flex;flex-direction:column;gap:calc(8*var(--u));overflow:hidden;}
+body.wall-mode .wall-risk-head{font-size:calc(40*var(--u));color:var(--text2);display:flex;justify-content:space-between;}
+body.wall-mode #wall-rows{display:flex;flex-direction:column;gap:calc(8*var(--u));}
+body.wall-mode .wall-row{border-left:calc(14*var(--u)) solid var(--c);background:var(--panel2);border-radius:8px;padding:calc(6*var(--u)) calc(12*var(--u));}
+body.wall-mode .wall-row .nm{font-size:calc(56*var(--u));font-weight:700;line-height:1.05;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+body.wall-mode .wall-row .mt{font-size:calc(40*var(--u));color:var(--c);font-weight:700;line-height:1.2;}
+body.wall-mode .wall-clear{font-size:calc(80*var(--u));font-weight:700;color:#2ec27e;text-align:center;padding:calc(18*var(--u)) 0;border:2px solid #2ec27e55;border-radius:8px;}
+body.wall-mode #wall-states{font-size:calc(40*var(--u));color:var(--text2);}
+body.wall-mode #wall-warn{font-size:calc(44*var(--u));line-height:1.15;background:rgba(240,165,0,.14);border-left:calc(14*var(--u)) solid #f0a500;border-radius:8px;padding:calc(6*var(--u)) calc(12*var(--u));}
+body.wall-mode #wall-warn.none{background:var(--panel2);border-left-color:var(--border);color:var(--text2);}
+body.wall-mode #wall-warn b{display:block;font-weight:700;}
+body.wall-mode .wall-clock{border-top:2px solid var(--border);padding-top:calc(8*var(--u));}
+body.wall-mode .wall-clock .zl{font-size:calc(40*var(--u));color:var(--text2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+body.wall-mode .wall-clock .big{font-size:calc(100*var(--u));font-weight:700;line-height:1.05;font-variant-numeric:tabular-nums;color:var(--accent);white-space:nowrap;}
+body.wall-mode .wall-zs{display:grid;grid-template-columns:1fr 1fr;gap:calc(2*var(--u)) calc(10*var(--u));font-size:calc(40*var(--u));font-variant-numeric:tabular-nums;color:var(--text);}
+body.wall-mode #wall-banner{position:fixed;left:0;right:calc(var(--wall-col-w) * var(--wall-s));top:0;z-index:3500;padding:calc(10*var(--u)) calc(20*var(--u));text-align:center;background:var(--c,#f0a500);color:#111;}
+body.wall-mode #wall-banner.show{display:block;}
+body.wall-mode #wall-banner .t{font-size:calc(76*var(--u));font-weight:700;line-height:1.05;}
+body.wall-mode #wall-banner .s{font-size:calc(44*var(--u));line-height:1.15;margin-top:calc(4*var(--u));}
+body.wall-mode #wall-banner.wall-new{animation:wallFlash 1s ease-in-out infinite;}
+@keyframes wallFlash{50%{filter:brightness(1.35);}}
+body.wall-mode #wall-tag{display:block;position:fixed;left:calc(12*var(--u));bottom:calc(12*var(--u));z-index:3400;font-size:calc(40*var(--u));background:rgba(0,0,0,.78);color:#fff;padding:calc(4*var(--u)) calc(16*var(--u));border-radius:8px;}
+body.wall-mode #wall-tag.hide{display:none;}
+body.wall-mode #wall-tag.held{background:#b36b00;}
+body.wall-mode #wall-age{display:block;position:fixed;right:calc(var(--wall-col-w) * var(--wall-s) + 12px);bottom:calc(12*var(--u));z-index:3400;font-size:calc(40*var(--u));background:rgba(0,0,0,.78);color:#fff;padding:calc(4*var(--u)) calc(16*var(--u));border-radius:8px;}
+body.wall-mode #wall-age.warn{background:#b36b00;}
+body.wall-mode #wall-age.bad{background:#c62828;font-weight:700;}
+body.wall-mode #wall-inset{display:none;position:fixed;left:calc(12*var(--u));top:calc(130*var(--u));width:calc(260*var(--u));z-index:3300;background:rgba(0,0,0,.72);border:2px solid var(--border);border-radius:8px;padding:calc(6*var(--u));}
+body.wall-mode #wall-inset.show{display:block;}
+body.wall-mode #wall-inset svg{width:100%;display:block;}
+body.wall-mode #map-controls{position:fixed;left:0;bottom:0;top:auto;right:calc(var(--wall-col-w) * var(--wall-s));z-index:3600;background:rgba(13,17,23,.94);padding:calc(14*var(--u));gap:calc(12*var(--u));}
+body.wall-mode .map-btn{font-size:calc(32*var(--u));padding:calc(10*var(--u)) calc(20*var(--u));}
+body.wall-mode.wall-idle #map-controls{display:none;}
+body.wall-mode.wall-idle,body.wall-mode.wall-idle *{cursor:none !important;}
+body.wall-mode .risk-ring{border-width:6px !important;}
+.wall-lbl{font-size:calc(44px * var(--wall-s,1));font-weight:700;color:#fff;white-space:nowrap;text-shadow:0 0 6px #000,0 0 6px #000,0 0 3px #000;}
+#wall-calib{position:fixed;inset:0;z-index:9000;background:#000;color:#fff;padding:30px 50px;overflow:hidden;font-family:system-ui,Segoe UI,Arial,sans-serif;}
+#wall-calib.show{display:block;}
+#wall-calib div{white-space:nowrap;line-height:1.25;}
+#wall-calib .hint{font-size:28px;color:#9aa;margin-bottom:12px;}
 </style>
 </head>
 <body>
@@ -583,6 +636,28 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
               <button class="sp-th-opt" onclick="nearMeSetViewMode('nearme')">Always on</button>
               <button class="sp-th-opt" onclick="nearMeSetViewMode('desktop')">Always off</button>
             </div>
+          </div>
+          <div class="sp-row" style="flex-direction:column;align-items:flex-start;gap:6px;">
+            <div><span class="sp-lbl">Wall board view</span><span class="sp-sub">Big-screen mode for the NOC wall. Keeps your map layers and settings. Esc to leave.</span></div>
+            <button class="wp-toggle" onclick="wallEnter()">&#9974; Enter wall view</button>
+            <span class="sp-lbl" style="margin-top:4px">Text size</span>
+            <div class="sp-theme-seg" style="width:100%;">
+              <button class="sp-th-opt" id="wall-sc-1" onclick="wallSetScale(1)">Large</button>
+              <button class="sp-th-opt" id="wall-sc-1.3" onclick="wallSetScale(1.3)">Extra large</button>
+            </div>
+            <span class="sp-lbl">Tour</span>
+            <div class="sp-theme-seg" style="width:100%;">
+              <button class="sp-th-opt" id="wall-tour-on" onclick="wallSetOpt('wallTour',true)">On</button>
+              <button class="sp-th-opt" id="wall-tour-off" onclick="wallSetOpt('wallTour',false)">Off</button>
+            </div>
+            <span class="sp-lbl">When a site is at risk</span>
+            <div class="sp-theme-seg" style="width:100%;">
+              <button class="sp-th-opt" id="wall-opt-hold" onclick="wallToggleOpt('wallHold')">Hold tour</button>
+              <button class="sp-th-opt" id="wall-opt-zoom" onclick="wallToggleOpt('wallZoom')">Zoom to sites</button>
+            </div>
+            <span class="sp-lbl">Clock zones</span>
+            <div id="wall-zone-chips" style="display:flex;flex-wrap:wrap;gap:4px;"></div>
+            <button class="wp-toggle" onclick="wallCalibrate()">Text calibration screen</button>
           </div>
           <div class="sp-row">
             <div><span class="sp-lbl">Site filters panel</span><span class="sp-sub">Open / close left sidebar</span></div>
@@ -1484,7 +1559,7 @@ function renderSites() {
   BAI_SITES.forEach(function(s) {
     if(!siteMatchesFilter(s)) return;
     count++;
-    var col=modColor(s.sv, fState.mods), r=5;
+    var col=modColor(s.sv, fState.mods), r=(wallOn?Math.round(7*(S.wallScale>1?1.3:1)):5);
     var _theme=document.documentElement.getAttribute('data-theme');
     var _stroke=_theme==='light'?'#ffffff':_theme==='natural'?'#adb3a9':'#0d1117';
     var mk=L.marker([s.lat,s.lon],{icon:L.divIcon({
@@ -1966,6 +2041,7 @@ function initMap(){
   syncSettingsUI();
   applyAllSettings();
   if (typeof nearMeApplyViewMode === 'function') nearMeApplyViewMode();
+  if (typeof wallInit === 'function') wallInit();
 }
 
 // \u2500\u2500 RADAR LAYER (RainViewer) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
@@ -5456,7 +5532,7 @@ function _drawSiteRing(r, col) {
            rs.src.includes('ESA')||rs.src.includes('PFES'));
   });
   var needsPulse = r.level >= RISK_LEVEL.WARNING;
-  var size = [32,32,40,48][r.level-1] || 32;
+  var size = ([32,32,40,48][r.level-1] || 32) * (wallOn ? 2.2 * (S.wallScale > 1 ? 1.3 : 1) : 1);
   var html = '<div class="risk-ring risk-ring-' + r.level + (needsPulse?' risk-pulse':'') + '" ' +
              'style="width:'+size+'px;height:'+size+'px;border-color:'+col+'"></div>';
   var siteName = site.name.replace(/^\d+\s+/, '');
@@ -5832,7 +5908,14 @@ var SETTINGS_DEFAULTS = {
   popupLevel:  'direct',    // warning | direct | impacted
   stormEnabled: true,
   stormDist:   300,          // km — storm district proximity cap
-  legendVisible: true
+  legendVisible: true,
+  wallMode:    false,        // wall board view remembered across restarts
+  wallScale:   1,            // 1 = large, 1.3 = extra large
+  wallTour:    true,
+  wallHold:    true,         // on alert: stop the tour
+  wallZoom:    true,         // on alert: zoom to the sites at risk
+  wallZones:   ['tz-aest','tz-awst','tz-acst','tz-utc'],
+  wallLayers:  null
 };
 
 // Summer preset
@@ -6227,6 +6310,329 @@ function fdrLevelQualifies(fd) {
 
 // End settings engine
 
+
+</script>
+<div id="wall-col">
+  <div class="wall-counters">
+    <div class="wall-cnt" id="wc-warn"><div class="n">-</div><div class="l">Warnings</div></div>
+    <div class="wall-cnt" id="wc-risk"><div class="n">-</div><div class="l">At risk</div></div>
+    <div class="wall-cnt" id="wc-inc"><div class="n">-</div><div class="l">Incidents</div></div>
+  </div>
+  <div class="wall-risk">
+    <div class="wall-risk-head"><span>Sites at risk</span><span id="wall-page"></span></div>
+    <div id="wall-rows"></div>
+    <div id="wall-states"></div>
+  </div>
+  <div id="wall-warn" class="none"></div>
+  <div class="wall-clock" id="wall-clock"></div>
+</div>
+<div id="wall-banner"><div class="t"></div><div class="s"></div></div>
+<div id="wall-tag"></div>
+<div id="wall-age"></div>
+<div id="wall-inset"><svg viewBox="0 0 100 82" xmlns="http://www.w3.org/2000/svg"><g id="wall-inset-states"></g><rect id="wall-inset-view" fill="none" stroke="#ff4d4d" stroke-width="2.5"/></svg></div>
+<div id="wall-calib"></div>
+<script>
+// ===== WALL BOARD VIEW =====
+var wallOn = false;
+var WALL_AU = [[-44.5, 112], [-9, 154.5]];
+var WALL_CODES = {'New South Wales':'NSW','Victoria':'VIC','Queensland':'QLD','South Australia':'SA','Western Australia':'WA','Tasmania':'TAS','Northern Territory':'NT','Australian Capital Territory':'ACT'};
+var WALL_NAMES = {NSW:'New South Wales',VIC:'Victoria',QLD:'Queensland',SA:'South Australia',WA:'Western Australia',TAS:'Tasmania',NT:'Northern Territory',ACT:'ACT'};
+var WALL_ORDER = ['NSW','VIC','QLD','SA','WA','TAS','NT','ACT'];
+var WALL_LAYERS = ['states','labels','sites','fdr','warnings','marine','cyclone','alerts','incidents','radar','bom-radar','lightning','windy'];
+var WALL_TYPE_LABEL = {thunderstorm:'Severe thunderstorm',severe_weather:'Severe weather',fire_weather:'Fire weather',heatwave:'Heatwave',coastal_hazard:'Coastal hazard'};
+var wallBounds = {}, wallLabelLayer = null, wallAlertSites = [], wallAlertKey = '', wallNewUntil = 0;
+var wallLastData = 0, wallPage = 0, wallIdleTimer = null, wallWakeLock = null, wallReloadTimer = null;
+var wallTour = {cur:'national', nextAt:0, manual:false, alertHold:false, resumeAt:0, idx:0};
+var wallTimers = [];
+
+// feed age: remember when live_data.json last loaded successfully
+(function() {
+  var f = window.fetch; if (!f) return;
+  window.fetch = function(u) {
+    var p = f.apply(this, arguments);
+    try { if (String(u).indexOf('live_data.json') > -1) p.then(function(r) { if (r && r.ok) wallLastData = Date.now(); }, function() {}); } catch (e) {}
+    return p;
+  };
+})();
+
+function wallEsc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function(c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+function wallScale() { return Number(S.wallScale) > 1 ? Number(S.wallScale) : 1; }
+function wallRowsPerPage() { return wallScale() > 1 ? 3 : 4; }
+function wallMinLevel() { return RISK_LEVEL[String(S.popupLevel || 'warning').toUpperCase()] || RISK_LEVEL.WARNING; }
+function wallWarnings() { return (bomWarnings || []).filter(function(w) { return !w.cancelled && RELEVANT_WARN_TYPES.indexOf(w.type) !== -1; }); }
+
+// ---- layers: snapshot / restore (so a wall PC comes back with the same map after a restart)
+var WALL_LAYER_VARS = {
+  sites: function() { return sitesVisible; }, fdr: function() { return fdrVisible; }, warnings: function() { return warningsVisible; },
+  marine: function() { return marineVisible; }, cyclone: function() { return cycloneVisible; }, alerts: function() { return alertsVisible; },
+  incidents: function() { return incidentsVisible; }, radar: function() { return radarVisible; }, 'bom-radar': function() { return bomRadarVisible; },
+  lightning: function() { return lightningVisible; }, windy: function() { return windyVisible; }
+};
+function wallLayerOn(id) {
+  if (WALL_LAYER_VARS[id]) return !!WALL_LAYER_VARS[id]();
+  var b = document.getElementById('btn-' + id); return !!(b && b.classList.contains('on'));   // borders and labels
+}
+function wallReadLayers() { var o = {}; WALL_LAYERS.forEach(function(id) { o[id] = wallLayerOn(id); }); return o; }
+function wallRestoreLayers() {
+  var saved = S.wallLayers; if (!saved) return;
+  WALL_LAYERS.forEach(function(id) {
+    var b = document.getElementById('btn-' + id);
+    if (b && typeof saved[id] === 'boolean' && wallLayerOn(id) !== saved[id]) { try { b.click(); } catch (e) {} }
+  });
+}
+function wallSaveLayers() { if (wallOn) { S.wallLayers = wallReadLayers(); saveSettings(); } }
+
+// ---- enter / leave
+function wallEnter() {
+  if (wallOn) return;
+  wallOn = true; S.wallMode = true; S.wallLayers = wallReadLayers(); saveSettings();
+  document.body.classList.add('wall-mode');
+  document.body.style.setProperty('--wall-s', wallScale());
+  if (typeof toggleSettingsPanel === 'function') { var sp = document.getElementById('settings-panel'); if (sp) sp.classList.remove('open'); }
+  try { var fs = document.documentElement.requestFullscreen && document.documentElement.requestFullscreen(); if (fs && fs.catch) fs.catch(function() {}); } catch (e) {}
+  try { if (navigator.wakeLock) navigator.wakeLock.request('screen').then(function(l) { wallWakeLock = l; }, function() {}); } catch (e) {}
+  try { map.options.zoomSnap = 0.25; } catch (e) {}   // lets the national view fill the screen instead of snapping to whole zoom levels
+  wallBuildBounds(); wallBuildInset(); wallClockInit();
+  setTimeout(function() { map.invalidateSize(); renderSites(); computeRisks(); wallRender(); wallGoto({k:'national'}); wallBumpIdle(); }, 150);
+  wallTimers.push(setInterval(wallTick, 1000));
+  wallTimers.push(setInterval(wallRender, 4000));
+  wallTimers.push(setInterval(function() { wallPage++; wallRender(); }, 8000));
+  var d = new Date(); d.setHours(4, 0, 0, 0); if (d <= new Date()) d.setDate(d.getDate() + 1);
+  wallReloadTimer = setTimeout(function() { location.reload(); }, d - new Date());
+}
+function wallExit() {
+  if (!wallOn) return;
+  wallOn = false; S.wallMode = false; saveSettings();
+  document.body.classList.remove('wall-mode', 'wall-idle'); document.body.style.removeProperty('--wall-s');
+  try { map.options.zoomSnap = 1; } catch (e) {}
+  wallTimers.forEach(clearInterval); wallTimers = []; clearTimeout(wallReloadTimer); clearTimeout(wallIdleTimer);
+  if (wallLabelLayer) wallLabelLayer.clearLayers();
+  try { if (document.fullscreenElement) document.exitFullscreen(); } catch (e) {}
+  try { if (wallWakeLock) wallWakeLock.release(); } catch (e) {}
+  setTimeout(function() { map.invalidateSize(); renderSites(); computeRisks(); }, 100);
+}
+function wallBumpIdle() {
+  document.body.classList.remove('wall-idle'); clearTimeout(wallIdleTimer);
+  wallIdleTimer = setTimeout(function() { if (wallOn) document.body.classList.add('wall-idle'); }, 8000);
+}
+
+// ---- settings
+function wallSetScale(v) { S.wallScale = v; saveSettings(); if (wallOn) { document.body.style.setProperty('--wall-s', wallScale()); setTimeout(function() { map.invalidateSize(); renderSites(); wallRender(); }, 100); } wallSyncUI(); }
+function wallSetOpt(k, v) { S[k] = v; saveSettings(); wallSyncUI(); if (wallOn) wallTick(); }
+function wallToggleOpt(k) { wallSetOpt(k, !S[k]); }
+function wallToggleZone(id) {
+  var z = (S.wallZones || []).slice(); var i = z.indexOf(id); if (i > -1) z.splice(i, 1); else z.push(id);
+  S.wallZones = z; saveSettings(); wallSyncUI(); wallClockRender();
+}
+function wallSyncUI() {
+  function on(id, v) { var e = document.getElementById(id); if (e) e.classList.toggle('on', !!v); }
+  on('wall-sc-1', wallScale() === 1); on('wall-sc-1.3', wallScale() > 1);
+  on('wall-tour-on', S.wallTour !== false); on('wall-tour-off', S.wallTour === false);
+  on('wall-opt-hold', S.wallHold); on('wall-opt-zoom', S.wallZoom);
+  var box = document.getElementById('wall-zone-chips'); if (!box) return;
+  if (!box.children.length) CLOCK_ZONES.forEach(function(z) {
+    var b = document.createElement('button'); b.className = 'sp-th-opt'; b.id = 'wall-z-' + z.id; b.style.flex = 'none'; b.style.padding = '3px 8px';
+    b.textContent = ({'tz-awst':'AWST WA','tz-acst':'ACST NT','tz-acst2':'ACST/ACDT SA','tz-aest-qld':'AEST QLD','tz-aest':'AEST/AEDT NSW VIC TAS','tz-utc':'UTC'})[z.id] || z.abbr; b.onclick = function() { wallToggleZone(z.id); }; box.appendChild(b);
+  });
+  CLOCK_ZONES.forEach(function(z) { on('wall-z-' + z.id, (S.wallZones || []).indexOf(z.id) > -1); });
+}
+
+// ---- clock
+function wallClockInit() { wallClockRender(); wallTimers.push(setInterval(wallClockRender, 1000)); }
+function wallClockRender() {
+  var el = document.getElementById('wall-clock'); if (!el) return;
+  var ids = S.wallZones || [], zs = ids.map(function(id) { return CLOCK_ZONES.filter(function(z) { return z.id === id; })[0]; }).filter(Boolean);
+  if (!zs.length) zs = CLOCK_ZONES.filter(function(z) { return z.id === 'tz-aest'; });
+  var now = new Date();
+  function fmt(z, secs) { return new Intl.DateTimeFormat('en-AU', {timeZone:z.iana, hour:'2-digit', minute:'2-digit', second: secs ? '2-digit' : undefined, hourCycle:'h23'}).format(now); }
+  function ab(z) { var p = new Intl.DateTimeFormat('en-AU', {timeZone:z.iana, timeZoneName:'short'}).formatToParts(now).filter(function(x) { return x.type === 'timeZoneName'; })[0]; return p ? p.value : z.abbr; }
+  var a0 = ab(zs[0]), st = (z, a) => (z.dstAbbr && a === z.dstAbbr && z.dstStates) ? z.dstStates : (z.states || '');
+  var h = '<div class="zl">' + wallEsc(a0 + (st(zs[0], a0) ? '  ' + st(zs[0], a0) : '')) + '</div><div class="big">' + fmt(zs[0], true) + '</div>';
+  if (zs.length > 1) h += '<div class="wall-zs">' + zs.slice(1).map(function(z) { return '<div>' + wallEsc(ab(z)) + ' ' + fmt(z, false) + '</div>'; }).join('') + '</div>';
+  el.innerHTML = h;
+}
+
+// ---- map views
+function wallBuildBounds() {
+  if (wallBounds.QLD || typeof STATES_GEO === 'undefined') return;
+  STATES_GEO.features.forEach(function(f) { var c = WALL_CODES[f.properties.STATE_NAME]; if (c) wallBounds[c] = L.geoJSON(f).getBounds(); });
+}
+function wallBuildInset() {
+  var g = document.getElementById('wall-inset-states'); if (!g || g.children.length || typeof STATES_GEO === 'undefined') return;
+  var NS = 'http://www.w3.org/2000/svg';
+  STATES_GEO.features.forEach(function(f) {
+    var polys = f.geometry.type === 'Polygon' ? [f.geometry.coordinates] : f.geometry.coordinates, d = '';
+    polys.forEach(function(p) { p[0].forEach(function(c, i) { d += (i ? 'L' : 'M') + ((c[0] - 112) / 42.5 * 100).toFixed(1) + ' ' + ((-9 - c[1]) / 35.5 * 80).toFixed(1); }); d += 'Z'; });
+    var path = document.createElementNS(NS, 'path'); path.setAttribute('d', d); path.setAttribute('fill', '#2b3440'); path.setAttribute('stroke', '#6b7785'); path.setAttribute('stroke-width', '0.6'); g.appendChild(path);
+  });
+  map.on('moveend', wallUpdateInset);
+}
+function wallUpdateInset() {
+  var inset = document.getElementById('wall-inset'), r = document.getElementById('wall-inset-view'); if (!inset || !wallOn) return;
+  var b = map.getBounds(), zoomed = wallTour.cur !== 'national';
+  inset.classList.toggle('show', zoomed);
+  if (r && b) {
+    var x1 = (b.getWest() - 112) / 42.5 * 100, x2 = (b.getEast() - 112) / 42.5 * 100, y1 = (-9 - b.getNorth()) / 35.5 * 80, y2 = (-9 - b.getSouth()) / 35.5 * 80;
+    r.setAttribute('x', Math.max(0, x1)); r.setAttribute('y', Math.max(0, y1)); r.setAttribute('width', Math.max(2, Math.min(100, x2) - Math.max(0, x1))); r.setAttribute('height', Math.max(2, Math.min(82, y2) - Math.max(0, y1)));
+  }
+}
+function wallFly(bounds, maxZoom) { try { map.flyToBounds(bounds, {padding:[40, 40], maxZoom:maxZoom || 9, duration:1.6}); } catch (e) {} }
+function wallAlertBounds() {
+  var pts = wallAlertSites.map(function(r) { return [r.site.lat, r.site.lon]; });
+  return pts.length ? L.latLngBounds(pts) : null;
+}
+
+// ---- tour
+function wallActiveStates() {
+  var act = {};
+  riskResults.forEach(function(r) { if (r.site.state) act[r.site.state] = 1; });
+  wallWarnings().forEach(function(w) { if (w.state) act[String(w.state).toUpperCase()] = 1; });
+  WALL_ORDER.forEach(function(c) { if ((allIncidents[c.toLowerCase()] || []).filter(isActiveIncident).length) act[c] = 1; });
+  Object.keys(marineWarningsData || {}).forEach(function(k) { if (((marineWarningsData[k] || {}).hazards || []).length) act[String(k).toUpperCase()] = 1; });
+  return WALL_ORDER.filter(function(c) { return act[c]; });
+}
+function wallStops() {
+  var s = [{k:'national'}];
+  if (S.wallZoom && !S.wallHold && wallAlertSites.length) s.push({k:'alert'});
+  wallActiveStates().forEach(function(c) { s.push({k:c}); });
+  return s;
+}
+function wallGoto(stop) {
+  wallTour.cur = stop.k;
+  var now = Date.now();
+  if (stop.k === 'national') { wallFly(WALL_AU, 6); wallTour.nextAt = now + 30000; }
+  else if (stop.k === 'alert') { var b = wallAlertBounds(); if (b) wallFly(b, 9); wallTour.nextAt = now + 20000; }
+  else if (wallBounds[stop.k]) { wallFly(wallBounds[stop.k], 8); wallTour.nextAt = now + 12000; }
+  setTimeout(wallUpdateInset, 1900);
+}
+function wallStep(dir) {
+  var st = wallStops(), i = 0;
+  for (var j = 0; j < st.length; j++) if (st[j].k === wallTour.cur) i = j;
+  wallGoto(st[(i + dir + st.length) % st.length]);
+}
+function wallTourPaused() { return S.wallTour === false || wallTour.manual || wallTour.alertHold; }
+function wallTick() {
+  if (!wallOn) return;
+  var now = Date.now();
+  if (wallTour.alertHold && !wallAlertSites.length && wallTour.resumeAt && now >= wallTour.resumeAt) { wallTour.alertHold = false; wallTour.resumeAt = 0; wallStep(1); }
+  if (!wallTourPaused() && now >= wallTour.nextAt) wallStep(1);
+  var tag = document.getElementById('wall-tag'), t = '';
+  tag.classList.remove('held', 'hide');
+  if (S.wallTour === false) tag.classList.add('hide');
+  else if (wallTour.alertHold) { t = wallAlertSites.length ? 'Tour held: alert active' : 'Tour held: resuming soon'; tag.classList.add('held'); }
+  else if (wallTour.manual) { t = 'Tour paused (Space to resume)'; tag.classList.add('held'); }
+  else t = 'Tour: ' + (wallTour.cur === 'national' ? 'Australia' : wallTour.cur === 'alert' ? 'Alert sites' : WALL_NAMES[wallTour.cur]) + ' - ' + Math.max(0, Math.ceil((wallTour.nextAt - now) / 1000)) + ' s';
+  tag.textContent = t;
+  var age = document.getElementById('wall-age'), mins = wallLastData ? (now - wallLastData) / 60000 : null, every = (typeof AUTO_REFRESH_MINS === 'number' ? AUTO_REFRESH_MINS : 5);
+  age.className = mins == null ? '' : mins > 3 * every ? 'bad' : mins > 2 * every ? 'warn' : '';
+  age.textContent = mins == null ? 'Waiting for data' : (mins > 3 * every ? 'DATA STALE: ' : 'Updated ') + Math.floor(mins) + ' min ago';
+}
+function wallOnAlert(first) {
+  var wantHold = !!S.wallHold, wantZoom = !!S.wallZoom;
+  if (wantHold) { wallTour.alertHold = true; wallTour.resumeAt = 0; }
+  if (wantZoom) { var b = wallAlertBounds(); if (b) { wallTour.cur = 'alert'; wallFly(b, 9); wallTour.nextAt = Date.now() + 20000; setTimeout(wallUpdateInset, 1900); } }
+  else if (wantHold && first) wallGoto({k:'national'});
+}
+function wallOnClear() { if (wallTour.alertHold) wallTour.resumeAt = Date.now() + 120000; }
+
+// ---- render
+function wallRender() {
+  if (!wallOn) return;
+  var warns = wallWarnings(), incTxt = (document.getElementById('h-incidents') || {}).textContent, inc = parseInt(incTxt, 10) || 0;
+  function cnt(id, n, hot) { var e = document.getElementById(id); e.querySelector('.n').textContent = n; e.classList.toggle('hot', !!hot && n > 0); }
+  cnt('wc-warn', warns.length, true); cnt('wc-risk', riskResults.length, true); cnt('wc-inc', inc, true);
+
+  var rows = riskResults, per = wallRowsPerPage(), pages = 1;
+  var box = document.getElementById('wall-rows'), st = document.getElementById('wall-states'), risk = document.querySelector('.wall-risk');
+  function stateLine() {
+    if (rows.length <= per) { st.textContent = ''; return; }
+    var c = {}; rows.forEach(function(r) { c[r.site.state] = (c[r.site.state] || 0) + 1; });
+    st.textContent = Object.keys(c).sort(function(a, b) { return c[b] - c[a]; }).slice(0, 5).map(function(k) { return k + ' ' + c[k]; }).join('   ');
+  }
+  function drawRows() {
+    pages = Math.max(1, Math.ceil(rows.length / per)); if (wallPage >= pages) wallPage = 0; stateLine();
+    var html = '';
+    if (!rows.length) html = '<div class="wall-clear">All clear</div>';
+    else rows.slice(wallPage * per, wallPage * per + per).forEach(function(r) {
+      var col = RISK_COLOR[r.level], nm = r.site.name.replace(/^\d+\s+/, '');
+      html += '<div class="wall-row" style="--c:' + col + '"><div class="nm">' + wallEsc(nm) + (siteHasAM(r.site) ? ' <span style="font-size:.8em;opacity:.85">AM</span>' : '') + '</div><div class="mt">' + wallEsc(RISK_LABEL[r.level]) + ' - ' + wallEsc(r.site.state || '') + '</div></div>';
+    });
+    box.innerHTML = html;
+  }
+  // show only as many rows as really fit in the space left (names can wrap to two lines)
+  for (var guard = 0; guard < 6; guard++) {
+    drawRows();
+    var last = box.lastElementChild, lim = st.textContent ? st.getBoundingClientRect().top : risk.getBoundingClientRect().bottom;
+    if (!last || per <= 1 || last.getBoundingClientRect().bottom <= lim + 1) break;
+    per--;
+  }
+  document.getElementById('wall-page').textContent = pages > 1 ? (wallPage + 1) + ' / ' + pages : '';
+
+  var wb = document.getElementById('wall-warn');
+  if (!warns.length) { wb.className = 'none'; wb.textContent = 'No active weather warnings'; }
+  else {
+    var g = {}; warns.forEach(function(w) { var k = (WALL_TYPE_LABEL[w.type] || w.type) + ' - ' + String(w.state || '').toUpperCase(); g[k] = 1; });
+    var keys = Object.keys(g); wb.className = '';
+    wb.innerHTML = keys.slice(0, 2).map(function(k) { return '<b>' + wallEsc(k) + '</b>'; }).join('') + (keys.length > 2 ? '+' + (keys.length - 2) + ' more' : '');
+  }
+
+  // alert banner (state driven: shown for as long as sites are at risk at the popup trigger level)
+  var min = wallMinLevel(); wallAlertSites = riskResults.filter(function(r) { return r.level >= min; });
+  var key = wallAlertSites.map(function(r) { return r.site.name + ':' + r.level; }).sort().join('|');
+  var ban = document.getElementById('wall-banner');
+  if (wallAlertSites.length) {
+    var top = wallAlertSites[0], n = wallAlertSites.length, d = (top.reasons && top.reasons[0] && top.reasons[0].detail) || '';
+    ban.style.setProperty('--c', RISK_COLOR[top.level]); ban.classList.add('show');
+    ban.querySelector('.t').textContent = RISK_LABEL[top.level] + ': ' + n + ' site' + (n > 1 ? 's' : '') + ' at risk';
+    ban.querySelector('.s').textContent = d.slice(0, 110);
+    if (key !== wallAlertKey) { var first = !wallAlertKey; wallNewUntil = Date.now() + 60000; wallAlertKey = key; wallOnAlert(first); }
+    ban.classList.toggle('wall-new', Date.now() < wallNewUntil);
+  } else { ban.classList.remove('show', 'wall-new'); if (wallAlertKey) { wallAlertKey = ''; wallOnClear(); } }
+
+  // big names on the map for sites at risk only
+  if (!wallLabelLayer) wallLabelLayer = L.layerGroup().addTo(map);
+  wallLabelLayer.clearLayers();
+  rows.filter(function(r) { return r.level >= RISK_LEVEL.WARNING; }).slice(0, 14).forEach(function(r) {
+    L.marker([r.site.lat, r.site.lon], {interactive:false, icon:L.divIcon({className:'wall-lbl', html:wallEsc(r.site.name.replace(/^\d+\s+/, '')), iconSize:null, iconAnchor:[-26 * wallScale(), 20 * wallScale()]})}).addTo(wallLabelLayer);
+  });
+  wallTick();
+}
+
+// ---- calibration screen
+function wallCalibrate() {
+  var el = document.getElementById('wall-calib'), sizes = [32, 40, 48, 56, 64, 80, 96];
+  el.innerHTML = '<div class="hint">Text calibration - stand at the back row and note the smallest size you can read comfortably. Press Esc or click to close.</div>' +
+    sizes.map(function(s) { return '<div style="font-size:' + s + 'px">' + s + ' px   Bald Hills MF   WARNING   14:32</div>'; }).join('');
+  el.classList.add('show'); el.onclick = function() { el.classList.remove('show'); };
+  try { var fs = document.documentElement.requestFullscreen && document.documentElement.requestFullscreen(); if (fs && fs.catch) fs.catch(function() {}); } catch (e) {}
+}
+
+// ---- hooks into the existing page
+(function() {
+  var oShow = showNextRiskAlert;
+  showNextRiskAlert = function() { if (wallOn) { riskAlertQueue.length = 0; riskAlertActive = false; return; } return oShow.apply(this, arguments); };
+  var oRender = renderRiskPanel;
+  renderRiskPanel = function() { var r = oRender.apply(this, arguments); if (wallOn) wallRender(); return r; };
+  var oSync = syncSettingsUI;
+  syncSettingsUI = function() { var r = oSync.apply(this, arguments); wallSyncUI(); return r; };
+})();
+document.addEventListener('mousemove', function() { if (wallOn) wallBumpIdle(); });
+document.addEventListener('keydown', function(e) {
+  if (!wallOn) return;
+  var c = document.getElementById('wall-calib');
+  if (e.key === 'Escape') { if (c && c.classList.contains('show')) c.classList.remove('show'); else wallExit(); return; }
+  wallBumpIdle();
+  if (e.key === ' ') { e.preventDefault(); wallTour.manual = !wallTour.manual; wallTick(); }
+  else if (e.key === 'ArrowRight') { wallStep(1); }
+  else if (e.key === 'ArrowLeft') { wallStep(-1); }
+  else if (e.key === 'n' || e.key === 'N') { wallGoto({k:'national'}); }
+});
+document.addEventListener('visibilitychange', function() { if (wallOn && document.visibilityState === 'visible' && navigator.wakeLock) navigator.wakeLock.request('screen').then(function(l) { wallWakeLock = l; }, function() {}); });
+function wallInit() {
+  wallSyncUI();
+  var mc = document.getElementById('map-controls'); if (mc) mc.addEventListener('click', function() { setTimeout(wallSaveLayers, 80); });
+  if (S.wallMode) { wallRestoreLayers(); setTimeout(wallEnter, 400); }
+}
 
 </script>
 <script src="watchtower_nearme.js"></script>
