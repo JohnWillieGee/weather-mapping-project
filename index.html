@@ -457,7 +457,7 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 .nm-nav-item svg{width:20px;height:20px;}
 .nm-nav-active{color:var(--accent);}
 /* ===== WALL BOARD VIEW ===== */
-#wall-col,#wall-banner,#wall-tag,#wall-age,#wall-inset,#wall-calib{display:none;}
+#wall-col,#wall-banner,#wall-tag,#wall-age,#wall-inset,#wall-calib,#wall-err{display:none;}
 body.wall-mode{--wall-s:1;--wall-col-w:600px;--u:calc(1px * var(--wall-s));font-family:system-ui,"Segoe UI",Arial,sans-serif;}
 body.wall-mode header,body.wall-mode #settings-panel,body.wall-mode #filter-sidebar,body.wall-mode #weather-panel,body.wall-mode #risk-panel,body.wall-mode #toggle-wp,body.wall-mode #clock-panel,body.wall-mode #legend,body.wall-mode .risk-alert-popup{display:none !important;}
 body.wall-mode .layout{display:block;position:relative;height:100vh;}
@@ -511,6 +511,9 @@ body.wall-mode .risk-ring-focus{border-width:11px !important;}
 #wall-calib.show{display:block;}
 #wall-calib div{white-space:nowrap;line-height:1.25;}
 #wall-calib .hint{font-size:28px;color:#9aa;margin-bottom:12px;}
+
+body.wall-mode #wall-err.show{display:block;position:fixed;left:50%;transform:translateX(-50%);bottom:calc(70*var(--u));z-index:3450;font-size:calc(40*var(--u));background:#c62828;color:#fff;padding:calc(4*var(--u)) calc(16*var(--u));border-radius:8px;max-width:60vw;}
+body.wall-mode .risk-tooltip{display:none !important;}
 </style>
 </head>
 <body>
@@ -6331,6 +6334,7 @@ function fdrLevelQualifies(fd) {
 <div id="wall-banner"><div class="t"></div><div class="s"></div></div>
 <div id="wall-tag"></div>
 <div id="wall-age"></div>
+<div id="wall-err"></div>
 <div id="wall-inset"><svg viewBox="0 0 100 82" xmlns="http://www.w3.org/2000/svg"><g id="wall-inset-states"></g><rect id="wall-inset-view" fill="none" stroke="#ff4d4d" stroke-width="2.5"/></svg></div>
 <div id="wall-calib"></div>
 <script>
@@ -6365,6 +6369,7 @@ function wallAuto() { return Math.max(0.4, Math.min(2.5, Math.min(window.innerWi
 function wallScale() { return wallUser() * wallAuto(); }
 function wallApplyScale() { document.body.style.setProperty('--wall-s', wallScale()); }
 function wallRowsPerPage() { return wallUser() > 1 ? 3 : 4; }
+// The wall's alert follows Settings > Popup trigger level (Warning / Direct / Impacted), the same trigger as the normal-view popup.
 function wallMinLevel() { return RISK_LEVEL[String(S.popupLevel || 'warning').toUpperCase()] || RISK_LEVEL.WARNING; }
 function wallWarnings() { return (bomWarnings || []).filter(function(w) { return !w.cancelled && RELEVANT_WARN_TYPES.indexOf(w.type) !== -1; }); }
 
@@ -6633,6 +6638,7 @@ function wallTick() {
   else if (held) { t = wallAlertSites.length ? 'Tour held: alert active' : 'Tour held: resuming soon'; tag.classList.add('held'); }
   else if (wallTour.manual) { t = 'Tour paused (Space to resume)'; tag.classList.add('held'); }
   else t = 'Tour: ' + (wallTour.cur === 'national' ? 'Australia' : wallTour.cur === 'alert' ? 'Alert sites' : WALL_NAMES[wallTour.cur]) + ' - ' + Math.max(0, Math.ceil((wallTour.nextAt - now) / 1000)) + ' s';
+  if (t && wallMinLevel() > RISK_LEVEL.WARNING) t += '  |  alerts at ' + String(S.popupLevel).charAt(0).toUpperCase() + String(S.popupLevel).slice(1);   // so a quiet wall explains itself
   tag.textContent = t;
   var age = document.getElementById('wall-age'), mins = wallLastData ? (now - wallLastData) / 60000 : null, every = (typeof AUTO_REFRESH_MINS === 'number' ? AUTO_REFRESH_MINS : 5);
   age.className = mins == null ? '' : mins > 3 * every ? 'bad' : mins > 2 * every ? 'warn' : '';
@@ -6651,6 +6657,7 @@ function wallOnClear() { wallTour.holdUntil = S.wallHold ? Date.now() + 120000 :
 // ---- render
 function wallRender() {
   if (!wallOn) return;
+  window.__wallErr = null;
   var RR; try { RR = wallEffResults(); } catch (e) { wallErr('results', e); RR = (typeof riskResults !== 'undefined' && riskResults) || []; }
   wallRR = RR;
   var foc = {names:{}, states:[], label:'', reason:'', count:0}, warns = [];
@@ -6696,7 +6703,7 @@ function wallRender() {
       if (!rows.length) html = '<div class="wall-clear">All clear</div>';
       else list.forEach(function(r) {
         var col = RISK_COLOR[r.level], nm = r.site.name.replace(/^\d+\s+/, ''), on = !!foc.names[r.site.name];
-        html += '<div class="wall-row' + (on ? ' focus' : '') + '" style="--c:' + col + '"><div class="nm">' + wallEsc(nm) + (siteHasAM(r.site) ? ' <span style="font-size:.8em;opacity:.85">AM</span>' : '') + '</div><div class="mt">' + wallEsc(RISK_LABEL[r.level]) + ' - ' + wallEsc(r.site.state || '') + '</div></div>';
+        html += '<div class="wall-row' + (on ? ' focus' : '') + '" style="--c:' + col + '"><div class="nm">' + wallEsc(nm) + '</div><div class="mt">' + wallEsc(RISK_LABEL[r.level]) + ' - ' + wallEsc(r.site.state || '') + (siteHasAM(r.site) ? ' - AM' : '') + '</div></div>';
       });
       box.innerHTML = html;
     };
@@ -6728,15 +6735,21 @@ function wallRender() {
     } else { ban.classList.remove('show', 'wall-new'); if (wallAlertKey) { wallAlertKey = ''; wallOnClear(); } }
   } catch (e) { wallErr('banner', e); }
 
-  // big names on the map for sites at risk only
+  // big names on the map: only for the area being shown. Across the whole country they would overlap into an unreadable mess
+  // (the list names every site), so the national view labels at most 3 sites and only when there are 3 or fewer alerts.
   try {
     if (!wallLabelLayer) wallLabelLayer = L.layerGroup().addTo(map);
     wallLabelLayer.clearLayers();
-    RR.filter(function(r) { return r.level >= RISK_LEVEL.WARNING; }).slice(0, 14).forEach(function(r) {
-      L.marker([r.site.lat, r.site.lon], {interactive:false, icon:L.divIcon({className:'wall-lbl', html:wallEsc(r.site.name.replace(/^\d+\s+/, '')), iconSize:null, iconAnchor:[-26 * wallScale(), 20 * wallScale()]})}).addTo(wallLabelLayer);
+    var lab = [];
+    if (wallTour.cur === 'national') lab = wallAlertSites.length <= 3 ? wallAlertSites.slice(0, 3) : [];
+    else lab = RR.filter(function(r) { return foc.names[r.site.name] && r.level >= RISK_LEVEL.WARNING; }).slice(0, 6);
+    lab.forEach(function(r, i) {
+      L.marker([r.site.lat, r.site.lon], {interactive:false, icon:L.divIcon({className:'wall-lbl', html:wallEsc(r.site.name.replace(/^\d+\s+/, '')), iconSize:null, iconAnchor:[-26 * wallScale(), (i % 2 ? -2 : 34) * wallScale()]})}).addTo(wallLabelLayer);
     });
   } catch (e) { wallErr('map labels', e); }
   try { wallTick(); } catch (e) { wallErr('tick', e); }
+  var ee = document.getElementById('wall-err');
+  if (ee) { if (window.__wallErr) { ee.textContent = 'Wall error - ' + String(window.__wallErr).slice(0, 90); ee.classList.add('show'); } else ee.classList.remove('show'); }
 }
 
 // ---- calibration screen
