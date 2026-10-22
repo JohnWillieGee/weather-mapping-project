@@ -475,6 +475,7 @@ body.wall-mode #wall-rows{display:flex;flex-direction:column;gap:calc(8*var(--u)
 body.wall-mode .wall-row{border-left:calc(14*var(--u)) solid var(--c);background:var(--panel2);border-radius:8px;padding:calc(6*var(--u)) calc(12*var(--u));}
 body.wall-mode .wall-row .nm{font-size:calc(56*var(--u));font-weight:700;line-height:1.05;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
 body.wall-mode .wall-row .mt{font-size:calc(40*var(--u));color:var(--c);font-weight:700;line-height:1.2;}
+body.wall-mode .wall-row.focus{border-left-width:calc(34*var(--u));outline:calc(4*var(--u)) solid var(--c);outline-offset:calc(-4*var(--u));background:var(--panel);}
 body.wall-mode .wall-clear{font-size:calc(80*var(--u));font-weight:700;color:#2ec27e;text-align:center;padding:calc(18*var(--u)) 0;border:2px solid #2ec27e55;border-radius:8px;}
 body.wall-mode #wall-states{font-size:calc(40*var(--u));color:var(--text2);}
 body.wall-mode #wall-warn{font-size:calc(44*var(--u));line-height:1.15;background:rgba(240,165,0,.14);border-left:calc(14*var(--u)) solid #f0a500;border-radius:8px;padding:calc(6*var(--u)) calc(12*var(--u));}
@@ -504,6 +505,7 @@ body.wall-mode .map-btn{font-size:calc(32*var(--u));padding:calc(10*var(--u)) ca
 body.wall-mode.wall-idle #map-controls{display:none;}
 body.wall-mode.wall-idle,body.wall-mode.wall-idle *{cursor:none !important;}
 body.wall-mode .risk-ring{border-width:6px !important;}
+body.wall-mode .risk-ring-focus{border-width:11px !important;}
 .wall-lbl{font-size:calc(44px * var(--wall-s,1));font-weight:700;color:#fff;white-space:nowrap;text-shadow:0 0 6px #000,0 0 6px #000,0 0 3px #000;}
 #wall-calib{position:fixed;inset:0;z-index:9000;background:#000;color:#fff;padding:30px 50px;overflow:hidden;font-family:system-ui,Segoe UI,Arial,sans-serif;}
 #wall-calib.show{display:block;}
@@ -5533,7 +5535,7 @@ function _drawSiteRing(r, col) {
   });
   var needsPulse = r.level >= RISK_LEVEL.WARNING;
   var size = ([32,32,40,48][r.level-1] || 32) * (wallOn ? 2.2 * (S.wallScale > 1 ? 1.3 : 1) : 1);
-  var html = '<div class="risk-ring risk-ring-' + r.level + (needsPulse?' risk-pulse':'') + '" ' +
+  var html = '<div class="risk-ring risk-ring-' + r.level + (needsPulse?' risk-pulse':'') + ((typeof wallIsFocus==='function' && wallIsFocus(site))?' risk-ring-focus':'') + '" ' +
              'style="width:'+size+'px;height:'+size+'px;border-color:'+col+'"></div>';
   var siteName = site.name.replace(/^\d+\s+/, '');
   var topReason = r.reasons[0];
@@ -6342,7 +6344,9 @@ var WALL_LAYERS = ['states','labels','sites','fdr','warnings','marine','cyclone'
 var WALL_TYPE_LABEL = {thunderstorm:'Severe thunderstorm',severe_weather:'Severe weather',fire_weather:'Fire weather',heatwave:'Heatwave',coastal_hazard:'Coastal hazard'};
 var wallBounds = {}, wallLabelLayer = null, wallAlertSites = [], wallAlertKey = '', wallNewUntil = 0;
 var wallLastData = 0, wallPage = 0, wallIdleTimer = null, wallWakeLock = null, wallReloadTimer = null;
-var wallTour = {cur:'national', nextAt:0, manual:false, alertHold:false, resumeAt:0, idx:0};
+var wallTour = {cur:'national', ci:0, nextAt:0, manual:false, holdUntil:0, wasHeld:false};
+var wallClusters = [], wallClusterKey = '';
+function wallResetTour() { wallTour = {cur:'national', ci:0, nextAt:0, manual:false, holdUntil:0, wasHeld:false}; wallAlertKey = ''; wallAlertSites = []; wallClusters = []; wallClusterKey = ''; wallPage = 0; }
 var wallTimers = [];
 
 // feed age: remember when live_data.json last loaded successfully
@@ -6385,7 +6389,7 @@ function wallSaveLayers() { if (wallOn) { S.wallLayers = wallReadLayers(); saveS
 // ---- enter / leave
 function wallEnter() {
   if (wallOn) return;
-  wallOn = true; S.wallMode = true; S.wallLayers = wallReadLayers(); saveSettings();
+  wallResetTour(); wallOn = true; S.wallMode = true; S.wallLayers = wallReadLayers(); saveSettings(); wallTrayBuild();
   document.body.classList.add('wall-mode');
   document.body.style.setProperty('--wall-s', wallScale());
   if (typeof toggleSettingsPanel === 'function') { var sp = document.getElementById('settings-panel'); if (sp) sp.classList.remove('open'); }
@@ -6402,7 +6406,7 @@ function wallEnter() {
 }
 function wallExit() {
   if (!wallOn) return;
-  wallOn = false; S.wallMode = false; saveSettings();
+  wallOn = false; S.wallMode = false; saveSettings(); wallTrayRemove(); wallResetTour();
   document.body.classList.remove('wall-mode', 'wall-idle'); document.body.style.removeProperty('--wall-s');
   try { map.options.zoomSnap = 1; } catch (e) {}
   wallTimers.forEach(clearInterval); wallTimers = []; clearTimeout(wallReloadTimer); clearTimeout(wallIdleTimer);
@@ -6418,11 +6422,33 @@ function wallBumpIdle() {
 
 // ---- settings
 function wallSetScale(v) { S.wallScale = v; saveSettings(); if (wallOn) { document.body.style.setProperty('--wall-s', wallScale()); setTimeout(function() { map.invalidateSize(); renderSites(); wallRender(); }, 100); } wallSyncUI(); }
-function wallSetOpt(k, v) { S[k] = v; saveSettings(); wallSyncUI(); if (wallOn) wallTick(); }
+function wallSetOpt(k, v) {
+  S[k] = v; saveSettings();
+  if (wallOn) {
+    if (k === 'wallHold' || k === 'wallZoom') { if (!S.wallHold) wallTour.holdUntil = 0; wallApplyPolicy(); }
+    if (k === 'wallTour' && v) wallTour.nextAt = Date.now() + 1000;
+  }
+  wallSyncUI(); if (wallOn) wallTick();
+}
 function wallToggleOpt(k) { wallSetOpt(k, !S[k]); }
 function wallToggleZone(id) {
   var z = (S.wallZones || []).slice(); var i = z.indexOf(id); if (i > -1) z.splice(i, 1); else z.push(id);
   S.wallZones = z; saveSettings(); wallSyncUI(); wallClockRender();
+}
+function wallTrayBuild() {
+  var mc = document.getElementById('map-controls'); if (!mc || document.getElementById('wall-tray-ctl')) return;
+  var wrap = document.createElement('span'); wrap.id = 'wall-tray-ctl'; wrap.style.display = 'contents';
+  [['wallTour', 'Tour'], ['wallHold', 'Hold on alert'], ['wallZoom', 'Zoom on alert']].forEach(function(o) {
+    var b = document.createElement('button'); b.className = 'map-btn'; b.id = 'wall-tray-' + o[0]; b.textContent = o[1];
+    b.onclick = function(e) { e.stopPropagation(); wallToggleOpt(o[0]); }; wrap.appendChild(b);
+  });
+  var x = document.createElement('button'); x.className = 'map-btn'; x.id = 'wall-tray-exit'; x.textContent = 'Exit wall view'; x.style.borderColor = '#c62828';
+  x.onclick = function(e) { e.stopPropagation(); wallExit(); }; wrap.appendChild(x);
+  mc.appendChild(wrap); wallTraySync();
+}
+function wallTrayRemove() { var e = document.getElementById('wall-tray-ctl'); if (e) e.remove(); }
+function wallTraySync() {
+  ['wallTour', 'wallHold', 'wallZoom'].forEach(function(k) { var b = document.getElementById('wall-tray-' + k); if (b) b.classList.toggle('on', k === 'wallTour' ? S.wallTour !== false : !!S[k]); });
 }
 function wallSyncUI() {
   function on(id, v) { var e = document.getElementById(id); if (e) e.classList.toggle('on', !!v); }
@@ -6435,6 +6461,7 @@ function wallSyncUI() {
     b.textContent = ({'tz-awst':'AWST WA','tz-acst':'ACST NT','tz-acst2':'ACST/ACDT SA','tz-aest-qld':'AEST QLD','tz-aest':'AEST/AEDT NSW VIC TAS','tz-utc':'UTC'})[z.id] || z.abbr; b.onclick = function() { wallToggleZone(z.id); }; box.appendChild(b);
   });
   CLOCK_ZONES.forEach(function(z) { on('wall-z-' + z.id, (S.wallZones || []).indexOf(z.id) > -1); });
+  wallTraySync();
 }
 
 // ---- clock
@@ -6477,10 +6504,49 @@ function wallUpdateInset() {
   }
 }
 function wallFly(bounds, maxZoom) { try { map.flyToBounds(bounds, {padding:[40, 40], maxZoom:maxZoom || 9, duration:1.6}); } catch (e) {} }
-function wallAlertBounds() {
-  var pts = wallAlertSites.map(function(r) { return [r.site.lat, r.site.lon]; });
-  return pts.length ? L.latLngBounds(pts) : null;
+function wallKm(a, b) {
+  var R = 6371, d2r = Math.PI / 180, dLat = (b.lat - a.lat) * d2r, dLon = (b.lon - a.lon) * d2r;
+  var h = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.cos(a.lat * d2r) * Math.cos(b.lat * d2r) * Math.sin(dLon / 2) * Math.sin(dLon / 2);
+  return 2 * R * Math.asin(Math.sqrt(h));
 }
+// Group the sites at risk into areas (single linkage within a radius) so zoom mode can visit each area in turn.
+// If there would be too many stops, the radius is widened until there are 8 or fewer.
+function wallMakeClusters(rs) {
+  var radius = 150, groups;
+  function group(R) {
+    var parent = rs.map(function(_, i) { return i; });
+    function find(i) { while (parent[i] !== i) { parent[i] = parent[parent[i]]; i = parent[i]; } return i; }
+    for (var i = 0; i < rs.length; i++) for (var j = i + 1; j < rs.length; j++) if (wallKm(rs[i].site, rs[j].site) <= R) parent[find(i)] = find(j);
+    var m = {}; rs.forEach(function(r, i) { var k = find(i); (m[k] = m[k] || []).push(r); });
+    return Object.keys(m).map(function(k) { return m[k]; });
+  }
+  groups = group(radius);
+  while (groups.length > 8 && radius < 3000) { radius *= 2; groups = group(radius); }
+  groups.sort(function(a, b) {
+    var la = Math.max.apply(null, a.map(function(r) { return r.level; })), lb = Math.max.apply(null, b.map(function(r) { return r.level; }));
+    return (lb - la) || (b.length - a.length);
+  });
+  return groups.map(function(g) {
+    var names = g.map(function(r) { return r.site.name.replace(/^\d+\s+/, ''); });
+    return {sites:g, bounds:L.latLngBounds(g.map(function(r) { return [r.site.lat, r.site.lon]; })), label:names.slice(0, 2).join(', ') + (names.length > 2 ? ' +' + (names.length - 2) : '')};
+  });
+}
+function wallCycling() { return !!(S.wallZoom && wallAlertSites.length && wallClusters.length > 1); }   // several areas at risk: visit each in turn
+
+// ---- focus: the sites / state the map is currently showing (banner, list and warnings follow it; nothing is hidden)
+function wallReasonOf(r) { return (r && r.reasons && r.reasons[0] && r.reasons[0].detail) || ''; }
+function wallFocusInfo() {
+  var f = {names:{}, states:[], label:'', reason:'', count:0};
+  if (!wallOn) return f;
+  var rs = [];
+  if (wallTour.cur === 'alert' && wallClusters[wallTour.ci]) { var c = wallClusters[wallTour.ci]; rs = riskResults.filter(function(r) { return c.sites.some(function(x) { return x.site.name === r.site.name; }); }); f.label = c.label; }
+  else if (WALL_ORDER.indexOf(wallTour.cur) > -1) { rs = riskResults.filter(function(r) { return r.site.state === wallTour.cur; }); f.label = WALL_NAMES[wallTour.cur]; }
+  rs.forEach(function(r) { f.names[r.site.name] = 1; if (f.states.indexOf(r.site.state) < 0) f.states.push(r.site.state); });
+  f.count = rs.length; f.reason = wallReasonOf(rs[0]);
+  if (wallTour.cur !== 'alert' && WALL_ORDER.indexOf(wallTour.cur) > -1 && !f.count) f.states = [wallTour.cur];   // a state with warnings but no risks still leads the warnings tile
+  return f;
+}
+function wallIsFocus(site) { return wallOn && !!wallFocusInfo().names[site.name]; }
 
 // ---- tour
 function wallActiveStates() {
@@ -6492,34 +6558,51 @@ function wallActiveStates() {
   return WALL_ORDER.filter(function(c) { return act[c]; });
 }
 function wallStops() {
-  var s = [{k:'national'}];
-  if (S.wallZoom && !S.wallHold && wallAlertSites.length) s.push({k:'alert'});
+  var s = [], zoomed = S.wallZoom && wallAlertSites.length && wallClusters.length;
+  if (zoomed && S.wallHold) {                       // hold + zoom: only the areas at risk (plus a national overview if there are several)
+    wallClusters.forEach(function(c, i) { s.push({k:'alert', i:i}); });
+    if (wallClusters.length > 1) s.push({k:'national'});
+    return s;
+  }
+  s.push({k:'national'});
+  if (zoomed) wallClusters.forEach(function(c, i) { s.push({k:'alert', i:i}); });   // zoom only: alert areas join the normal tour
   wallActiveStates().forEach(function(c) { s.push({k:c}); });
   return s;
 }
 function wallGoto(stop) {
   wallTour.cur = stop.k;
   var now = Date.now();
-  if (stop.k === 'national') { wallFly(WALL_AU, 6); wallTour.nextAt = now + 30000; }
-  else if (stop.k === 'alert') { var b = wallAlertBounds(); if (b) wallFly(b, 9); wallTour.nextAt = now + 20000; }
+  if (stop.k === 'national') { wallFly(WALL_AU, 6); wallTour.nextAt = now + (wallCycling() && S.wallHold ? 10000 : 30000); }
+  else if (stop.k === 'alert') { wallTour.ci = stop.i || 0; var c = wallClusters[wallTour.ci]; if (c) wallFly(c.bounds, 9); wallTour.nextAt = now + 15000; }
   else if (wallBounds[stop.k]) { wallFly(wallBounds[stop.k], 8); wallTour.nextAt = now + 12000; }
   setTimeout(wallUpdateInset, 1900);
+  setTimeout(function() { if (!wallOn) return; try { if (typeof updateRiskMapMarkers === 'function') updateRiskMapMarkers(); } catch (e) {} wallPage = 0; wallRender(); }, 0);
 }
 function wallStep(dir) {
   var st = wallStops(), i = 0;
-  for (var j = 0; j < st.length; j++) if (st[j].k === wallTour.cur) i = j;
+  if (!st.length) return;
+  for (var j = 0; j < st.length; j++) if (st[j].k === wallTour.cur && (st[j].k !== 'alert' || st[j].i === wallTour.ci)) i = j;
+  if (st.length === 1 && st[0].k === wallTour.cur) { wallTour.nextAt = Date.now() + 15000; return; }   // a single area: stay put, no re-zoom
   wallGoto(st[(i + dir + st.length) % st.length]);
 }
-function wallTourPaused() { return S.wallTour === false || wallTour.manual || wallTour.alertHold; }
+function wallHeld() { return !!S.wallHold && (wallAlertSites.length > 0 || Date.now() < wallTour.holdUntil); }
+function wallTourPaused() { return S.wallTour === false || wallTour.manual || (wallHeld() && !wallCycling()); }
 function wallTick() {
   if (!wallOn) return;
   var now = Date.now();
-  if (wallTour.alertHold && !wallAlertSites.length && wallTour.resumeAt && now >= wallTour.resumeAt) { wallTour.alertHold = false; wallTour.resumeAt = 0; wallStep(1); }
+  var held = wallHeld();
+  if (wallTour.wasHeld && !held) { wallTour.wasHeld = false; if (!(wallTour.cur === 'alert' && wallAlertSites.length && S.wallZoom)) wallStep(1); }   // hold released (alert cleared + delay, or Hold switched off): carry on touring
+  else wallTour.wasHeld = held;
   if (!wallTourPaused() && now >= wallTour.nextAt) wallStep(1);
   var tag = document.getElementById('wall-tag'), t = '';
   tag.classList.remove('held', 'hide');
   if (S.wallTour === false) tag.classList.add('hide');
-  else if (wallTour.alertHold) { t = wallAlertSites.length ? 'Tour held: alert active' : 'Tour held: resuming soon'; tag.classList.add('held'); }
+  else if (wallCycling() && held) {
+    if (wallTour.cur === 'alert') { var c = wallClusters[wallTour.ci]; t = 'Alert ' + (wallTour.ci + 1) + ' of ' + wallClusters.length + (c ? ': ' + c.label : '') + ' - ' + Math.max(0, Math.ceil((wallTour.nextAt - now) / 1000)) + ' s'; }
+    else t = 'Alert overview - ' + Math.max(0, Math.ceil((wallTour.nextAt - now) / 1000)) + ' s';
+    tag.classList.add('held');
+  }
+  else if (held) { t = wallAlertSites.length ? 'Tour held: alert active' : 'Tour held: resuming soon'; tag.classList.add('held'); }
   else if (wallTour.manual) { t = 'Tour paused (Space to resume)'; tag.classList.add('held'); }
   else t = 'Tour: ' + (wallTour.cur === 'national' ? 'Australia' : wallTour.cur === 'alert' ? 'Alert sites' : WALL_NAMES[wallTour.cur]) + ' - ' + Math.max(0, Math.ceil((wallTour.nextAt - now) / 1000)) + ' s';
   tag.textContent = t;
@@ -6527,13 +6610,15 @@ function wallTick() {
   age.className = mins == null ? '' : mins > 3 * every ? 'bad' : mins > 2 * every ? 'warn' : '';
   age.textContent = mins == null ? 'Waiting for data' : (mins > 3 * every ? 'DATA STALE: ' : 'Updated ') + Math.floor(mins) + ' min ago';
 }
-function wallOnAlert(first) {
-  var wantHold = !!S.wallHold, wantZoom = !!S.wallZoom;
-  if (wantHold) { wallTour.alertHold = true; wallTour.resumeAt = 0; }
-  if (wantZoom) { var b = wallAlertBounds(); if (b) { wallTour.cur = 'alert'; wallFly(b, 9); wallTour.nextAt = Date.now() + 20000; setTimeout(wallUpdateInset, 1900); } }
-  else if (wantHold && first) wallGoto({k:'national'});
+// What the current Hold / Zoom settings mean while an alert is active. Runs when the alert set changes
+// and whenever Hold or Zoom is toggled, so a setting change takes effect straight away.
+function wallApplyPolicy() {
+  if (!wallOn || !wallAlertSites.length) return;
+  if (S.wallZoom && wallClusters.length) wallGoto({k:'alert', i:0});     // highest level area first
+  else if (S.wallHold) wallGoto({k:'national'});
+  else if (wallTour.cur === 'alert') wallGoto({k:'national'});
 }
-function wallOnClear() { if (wallTour.alertHold) wallTour.resumeAt = Date.now() + 120000; }
+function wallOnClear() { wallTour.holdUntil = S.wallHold ? Date.now() + 120000 : 0; }
 
 // ---- render
 function wallRender() {
@@ -6542,20 +6627,37 @@ function wallRender() {
   function cnt(id, n, hot) { var e = document.getElementById(id); e.querySelector('.n').textContent = n; e.classList.toggle('hot', !!hot && n > 0); }
   cnt('wc-warn', warns.length, true); cnt('wc-risk', riskResults.length, true); cnt('wc-inc', inc, true);
 
+  var foc = wallFocusInfo();
+  var wb = document.getElementById('wall-warn');
+  if (!warns.length) { wb.className = 'none'; wb.textContent = 'No active weather warnings'; }
+  else {
+    var g = {}; warns.forEach(function(w) { var k = (WALL_TYPE_LABEL[w.type] || w.type) + ' - ' + String(w.state || '').toUpperCase(); g[k] = 1; });
+    var keys = Object.keys(g).sort(function(x, y) { var fx = foc.states.indexOf(x.split(' - ')[1]) > -1 ? 0 : 1, fy = foc.states.indexOf(y.split(' - ')[1]) > -1 ? 0 : 1; return fx - fy; }); wb.className = '';
+    // two lines at most, so the risk list keeps its room: first warning(s) in bold, then "+N more"
+    wb.innerHTML = keys.length <= 2 ? keys.map(function(k) { return '<b>' + wallEsc(k) + '</b>'; }).join('') : '<b>' + wallEsc(keys[0]) + '</b>+' + (keys.length - 1) + ' more warnings';
+  }
+
   var rows = riskResults, per = wallRowsPerPage(), pages = 1;
+  var fRows = rows.filter(function(r) { return foc.names[r.site.name]; }), oRows = rows.filter(function(r) { return !foc.names[r.site.name]; });
   var box = document.getElementById('wall-rows'), st = document.getElementById('wall-states'), risk = document.querySelector('.wall-risk');
   function stateLine() {
     if (rows.length <= per) { st.textContent = ''; return; }
     var c = {}; rows.forEach(function(r) { c[r.site.state] = (c[r.site.state] || 0) + 1; });
     st.textContent = Object.keys(c).sort(function(a, b) { return c[b] - c[a]; }).slice(0, 5).map(function(k) { return k + ' ' + c[k]; }).join('   ');
   }
+  function pageList() {   // focused sites first and pinned; paging only rotates the rest
+    if (!fRows.length) { pages = Math.max(1, Math.ceil(rows.length / per)); if (wallPage >= pages) wallPage = 0; return rows.slice(wallPage * per, wallPage * per + per); }
+    if (fRows.length >= per) { var all = fRows.concat(oRows); pages = Math.max(1, Math.ceil(all.length / per)); if (wallPage >= pages) wallPage = 0; return all.slice(wallPage * per, wallPage * per + per); }   // focus fills the page: focus first, then everyone else, paged normally
+    var slots = per - fRows.length; pages = Math.max(1, Math.ceil(oRows.length / slots)); if (wallPage >= pages) wallPage = 0;
+    return fRows.concat(oRows.slice(wallPage * slots, wallPage * slots + slots));
+  }
   function drawRows() {
-    pages = Math.max(1, Math.ceil(rows.length / per)); if (wallPage >= pages) wallPage = 0; stateLine();
-    var html = '';
+    stateLine();
+    var html = '', list = pageList();
     if (!rows.length) html = '<div class="wall-clear">All clear</div>';
-    else rows.slice(wallPage * per, wallPage * per + per).forEach(function(r) {
-      var col = RISK_COLOR[r.level], nm = r.site.name.replace(/^\d+\s+/, '');
-      html += '<div class="wall-row" style="--c:' + col + '"><div class="nm">' + wallEsc(nm) + (siteHasAM(r.site) ? ' <span style="font-size:.8em;opacity:.85">AM</span>' : '') + '</div><div class="mt">' + wallEsc(RISK_LABEL[r.level]) + ' - ' + wallEsc(r.site.state || '') + '</div></div>';
+    else list.forEach(function(r) {
+      var col = RISK_COLOR[r.level], nm = r.site.name.replace(/^\d+\s+/, ''), on = !!foc.names[r.site.name];
+      html += '<div class="wall-row' + (on ? ' focus' : '') + '" style="--c:' + col + '"><div class="nm">' + wallEsc(nm) + (siteHasAM(r.site) ? ' <span style="font-size:.8em;opacity:.85">AM</span>' : '') + '</div><div class="mt">' + wallEsc(RISK_LABEL[r.level]) + ' - ' + wallEsc(r.site.state || '') + '</div></div>';
     });
     box.innerHTML = html;
   }
@@ -6568,24 +6670,19 @@ function wallRender() {
   }
   document.getElementById('wall-page').textContent = pages > 1 ? (wallPage + 1) + ' / ' + pages : '';
 
-  var wb = document.getElementById('wall-warn');
-  if (!warns.length) { wb.className = 'none'; wb.textContent = 'No active weather warnings'; }
-  else {
-    var g = {}; warns.forEach(function(w) { var k = (WALL_TYPE_LABEL[w.type] || w.type) + ' - ' + String(w.state || '').toUpperCase(); g[k] = 1; });
-    var keys = Object.keys(g); wb.className = '';
-    wb.innerHTML = keys.slice(0, 2).map(function(k) { return '<b>' + wallEsc(k) + '</b>'; }).join('') + (keys.length > 2 ? '+' + (keys.length - 2) + ' more' : '');
-  }
-
   // alert banner (state driven: shown for as long as sites are at risk at the popup trigger level)
   var min = wallMinLevel(); wallAlertSites = riskResults.filter(function(r) { return r.level >= min; });
+  var ckey = wallAlertSites.map(function(r) { return r.site.name + ':' + r.level; }).sort().join('|');
+  if (ckey !== wallClusterKey) { wallClusterKey = ckey; wallClusters = wallAlertSites.length ? wallMakeClusters(wallAlertSites) : []; if (wallTour.ci >= wallClusters.length) wallTour.ci = 0; }
   var key = wallAlertSites.map(function(r) { return r.site.name + ':' + r.level; }).sort().join('|');
   var ban = document.getElementById('wall-banner');
   if (wallAlertSites.length) {
     var top = wallAlertSites[0], n = wallAlertSites.length, d = (top.reasons && top.reasons[0] && top.reasons[0].detail) || '';
     ban.style.setProperty('--c', RISK_COLOR[top.level]); ban.classList.add('show');
     ban.querySelector('.t').textContent = RISK_LABEL[top.level] + ': ' + n + ' site' + (n > 1 ? 's' : '') + ' at risk';
-    ban.querySelector('.s').textContent = d.slice(0, 110);
-    if (key !== wallAlertKey) { var first = !wallAlertKey; wallNewUntil = Date.now() + 60000; wallAlertKey = key; wallOnAlert(first); }
+    var sub = (foc.count && foc.reason) ? foc.label + ': ' + foc.reason : d;
+    ban.querySelector('.s').textContent = sub.slice(0, 110);
+    if (key !== wallAlertKey) { wallNewUntil = Date.now() + 60000; wallAlertKey = key; wallTour.holdUntil = 0; wallApplyPolicy(); }
     ban.classList.toggle('wall-new', Date.now() < wallNewUntil);
   } else { ban.classList.remove('show', 'wall-new'); if (wallAlertKey) { wallAlertKey = ''; wallOnClear(); } }
 
