@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-22T08:53:03.546972+00:00",
-  "last_checked_utc": "2026-10-22T08:53:03.546972+00:00",
-  "warning_count": 13,
+  "generated_utc": "2026-10-22T09:23:09.770741+00:00",
+  "last_checked_utc": "2026-10-22T09:23:09.770741+00:00",
+  "warning_count": 14,
   "warnings": [
     {
       "pid": "",
@@ -123,19 +123,14 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields, Darling Downs and Granite Belt, Wide Bay and Burnett",
+      "title": "Severe Thunderstorm Warning for Darling Downs and Granite Belt, Wide Bay and Burnett",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "VERY DANGEROUS THUNDERSTORMS are likely to produce large, possibly giant hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. 54 mm was recorded at Barakula Forest in the 30min to 5:10 pm. 47 mm was recorded at Canaan Creek n the 30min to 5:10 pm.",
-      "issued": "2026-10-22T18:33:15+10:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. 54 mm was recorded at Barakula Forest in the 30min to 5:10 pm. 47 mm was recorded at Canaan Creek n the 30min to 5:10 pm.",
+      "issued": "2026-10-22T19:15:07+10:00",
       "cancelled": false,
       "areas": [
-        {
-          "aac": "QLD_PW008",
-          "description": "Central Highlands and Coalfields",
-          "phase": "UPD"
-        },
         {
           "aac": "QLD_PW013",
           "description": "Darling Downs and Granite Belt",
@@ -149,6 +144,25 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDQ21033",
+      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-22T19:15:07+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "QLD_PW008",
+          "description": "Central Highlands and Coalfields",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -282,6 +296,36 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-22T09:01:34+00:00",
+        "description": "CABLE BEACH, SHIRE OF BROOME",
+        "lat": -17.9621,
+        "lng": 122.2129,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-22T09:01:28+00:00",
+        "description": "ORELIA, CITY OF KWINANA",
+        "lat": -32.227,
+        "lng": 115.8265,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1620,25 +1664,9 @@
         "sourceUrl": "https://esa.act.gov.au/"
       }
     ],
-    "sa": [
-      {
-        "title": "STRUCTURE FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-21T16:50:00+00:00",
-        "description": "CLARENDON",
-        "lat": -35.117,
-        "lng": 138.6003,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      }
-    ]
+    "sa": []
   },
-  "incident_count": 61,
+  "incident_count": 62,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
