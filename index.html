@@ -482,8 +482,8 @@ body.wall-mode #wall-warn{font-size:calc(44*var(--u));line-height:1.15;backgroun
 body.wall-mode #wall-warn.none{background:var(--panel2);border-left-color:var(--border);color:var(--text2);}
 body.wall-mode #wall-warn b{display:block;font-weight:700;}
 body.wall-mode .wall-clock{border-top:2px solid var(--border);padding-top:calc(8*var(--u));}
-body.wall-mode .wall-clock .zl{font-size:calc(40*var(--u));color:var(--text2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-body.wall-mode .wall-clock .big{font-size:calc(100*var(--u));font-weight:700;line-height:1.05;font-variant-numeric:tabular-nums;color:var(--accent);white-space:nowrap;}
+body.wall-mode .wall-clock .big{font-size:calc(88*var(--u));font-weight:700;line-height:1.05;font-variant-numeric:tabular-nums;color:var(--accent);white-space:nowrap;}
+body.wall-mode .wall-clock .big small{font-size:calc(40*var(--u));font-weight:400;color:var(--text2);margin-left:calc(10*var(--u));}
 body.wall-mode .wall-zs{display:grid;grid-template-columns:1fr 1fr;gap:calc(2*var(--u)) calc(10*var(--u));font-size:calc(40*var(--u));font-variant-numeric:tabular-nums;color:var(--text);}
 body.wall-mode #wall-banner{position:fixed;left:0;right:calc(var(--wall-col-w) * var(--wall-s));top:0;z-index:3500;padding:calc(10*var(--u)) calc(20*var(--u));text-align:center;background:var(--c,#f0a500);color:#111;}
 body.wall-mode #wall-banner.show{display:block;}
@@ -1561,7 +1561,7 @@ function renderSites() {
   BAI_SITES.forEach(function(s) {
     if(!siteMatchesFilter(s)) return;
     count++;
-    var col=modColor(s.sv, fState.mods), r=(wallOn?Math.round(7*(S.wallScale>1?1.3:1)):5);
+    var col=modColor(s.sv, fState.mods), r=(wallOn?Math.max(4,Math.round(7*wallScale())):5);
     var _theme=document.documentElement.getAttribute('data-theme');
     var _stroke=_theme==='light'?'#ffffff':_theme==='natural'?'#adb3a9':'#0d1117';
     var mk=L.marker([s.lat,s.lon],{icon:L.divIcon({
@@ -5534,7 +5534,7 @@ function _drawSiteRing(r, col) {
            rs.src.includes('ESA')||rs.src.includes('PFES'));
   });
   var needsPulse = r.level >= RISK_LEVEL.WARNING;
-  var size = ([32,32,40,48][r.level-1] || 32) * (wallOn ? 2.2 * (S.wallScale > 1 ? 1.3 : 1) : 1);
+  var size = ([32,32,40,48][r.level-1] || 32) * (wallOn ? Math.max(1, 2.2 * wallScale()) : 1);
   var html = '<div class="risk-ring risk-ring-' + r.level + (needsPulse?' risk-pulse':'') + ((typeof wallIsFocus==='function' && wallIsFocus(site))?' risk-ring-focus':'') + '" ' +
              'style="width:'+size+'px;height:'+size+'px;border-color:'+col+'"></div>';
   var siteName = site.name.replace(/^\d+\s+/, '');
@@ -6341,12 +6341,12 @@ var WALL_CODES = {'New South Wales':'NSW','Victoria':'VIC','Queensland':'QLD','S
 var WALL_NAMES = {NSW:'New South Wales',VIC:'Victoria',QLD:'Queensland',SA:'South Australia',WA:'Western Australia',TAS:'Tasmania',NT:'Northern Territory',ACT:'ACT'};
 var WALL_ORDER = ['NSW','VIC','QLD','SA','WA','TAS','NT','ACT'];
 var WALL_LAYERS = ['states','labels','sites','fdr','warnings','marine','cyclone','alerts','incidents','radar','bom-radar','lightning','windy'];
-var WALL_TYPE_LABEL = {thunderstorm:'Severe thunderstorm',severe_weather:'Severe weather',fire_weather:'Fire weather',heatwave:'Heatwave',coastal_hazard:'Coastal hazard'};
+var WALL_TYPE_LABEL = {thunderstorm:'Thunderstorm',severe_weather:'Severe weather',fire_weather:'Fire weather',heatwave:'Heatwave',coastal_hazard:'Coastal hazard'};
 var wallBounds = {}, wallLabelLayer = null, wallAlertSites = [], wallAlertKey = '', wallNewUntil = 0;
 var wallLastData = 0, wallPage = 0, wallIdleTimer = null, wallWakeLock = null, wallReloadTimer = null;
 var wallTour = {cur:'national', ci:0, nextAt:0, manual:false, holdUntil:0, wasHeld:false};
-var wallClusters = [], wallClusterKey = '';
-function wallResetTour() { wallTour = {cur:'national', ci:0, nextAt:0, manual:false, holdUntil:0, wasHeld:false}; wallAlertKey = ''; wallAlertSites = []; wallClusters = []; wallClusterKey = ''; wallPage = 0; }
+var wallClusters = [], wallClusterKey = '', wallRR = [], wallSnap = {rows:[], t:0, had:false}, WALL_GRACE_MS = 90000;
+function wallResetTour() { wallTour = {cur:'national', ci:0, nextAt:0, manual:false, holdUntil:0, wasHeld:false}; wallAlertKey = ''; wallAlertSites = []; wallClusters = []; wallClusterKey = ''; wallRR = []; wallSnap = {rows:[], t:0, had:false}; wallPage = 0; }
 var wallTimers = [];
 
 // feed age: remember when live_data.json last loaded successfully
@@ -6360,10 +6360,39 @@ var wallTimers = [];
 })();
 
 function wallEsc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function(c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
-function wallScale() { return Number(S.wallScale) > 1 ? Number(S.wallScale) : 1; }
-function wallRowsPerPage() { return wallScale() > 1 ? 3 : 4; }
+function wallUser() { return Number(S.wallScale) > 1 ? 1.3 : 1; }                                   // Settings: Large / Extra large
+function wallAuto() { return Math.max(0.4, Math.min(2.5, Math.min(window.innerWidth / 1920, window.innerHeight / 1080))); }   // the layout is designed for 1920x1080 and scales with the window
+function wallScale() { return wallUser() * wallAuto(); }
+function wallApplyScale() { document.body.style.setProperty('--wall-s', wallScale()); }
+function wallRowsPerPage() { return wallUser() > 1 ? 3 : 4; }
 function wallMinLevel() { return RISK_LEVEL[String(S.popupLevel || 'warning').toUpperCase()] || RISK_LEVEL.WARNING; }
 function wallWarnings() { return (bomWarnings || []).filter(function(w) { return !w.cancelled && RELEVANT_WARN_TYPES.indexOf(w.type) !== -1; }); }
+
+// ---- alerts: which risks raise the banner / zoom, and bridging refresh gaps
+// A site raises the alert if it is at or above the popup trigger level AND at least one reason is an event
+// (storm, incident, cyclone ...), so a day of fire-danger-only sites does not hold the banner up all day.
+function wallWorthy(r, min) { return r.level >= min && (r.reasons || []).some(function(x) { return x.type !== 'fdr'; }); }
+// The page empties its warning/incident inputs at the start of every refresh and recomputes risks as each feed lands, so the
+// results can briefly lose a live alert. Keep the last picture for WALL_GRACE_MS so the banner and the zoom never flicker.
+function wallEffResults() {
+  var now = Date.now(), min = wallMinLevel(), live = riskResults || [];
+  if (live.some(function(r) { return wallWorthy(r, min); })) { wallSnap = {rows:live.slice(), t:now, had:true}; return live; }
+  if (wallSnap.had && now - wallSnap.t < WALL_GRACE_MS) return wallSnap.rows;
+  wallSnap = {rows:[], t:0, had:false}; return live;
+}
+function wallErr(where, e) { window.__wallErr = where + ': ' + ((e && e.message) || e); try { console.error('[wall]', where, e); } catch (x) {} }
+// Console helper: wallDiag() prints why the banner / zoom is or isn't showing.
+function wallDiag() {
+  var min = wallMinLevel(), live = (typeof riskResults !== 'undefined' && riskResults) || [], lv = {};
+  live.forEach(function(r) { lv[r.level] = (lv[r.level] || 0) + 1; });
+  var info = {wallOn:wallOn, viewport:window.innerWidth + 'x' + window.innerHeight, scale:wallScale().toFixed(2), popupLevel:S.popupLevel, minLevelUsed:min,
+    riskResults:live.length, byLevel:JSON.stringify(lv), alertWorthy:live.filter(function(r) { return wallWorthy(r, min); }).length, shownOnWall:wallRR.length,
+    alertSites:wallAlertSites.map(function(r) { return r.site.name; }).join(', '), areas:wallClusters.map(function(c) { return c.label; }).join(' | '),
+    tour:wallTour.cur + ' #' + wallTour.ci, held:wallHeld(), cycling:wallCycling(), paused:wallTourPaused(), hold:!!S.wallHold, zoom:!!S.wallZoom,
+    bannerClass:(document.getElementById('wall-banner') || {}).className, activeWarnings:wallWarnings().length, lastError:window.__wallErr || 'none'};
+  try { console.table(info); } catch (e) {}
+  return info;
+}
 
 // ---- layers: snapshot / restore (so a wall PC comes back with the same map after a restart)
 var WALL_LAYER_VARS = {
@@ -6391,13 +6420,13 @@ function wallEnter() {
   if (wallOn) return;
   wallResetTour(); wallOn = true; S.wallMode = true; S.wallLayers = wallReadLayers(); saveSettings(); wallTrayBuild();
   document.body.classList.add('wall-mode');
-  document.body.style.setProperty('--wall-s', wallScale());
+  wallApplyScale();
   if (typeof toggleSettingsPanel === 'function') { var sp = document.getElementById('settings-panel'); if (sp) sp.classList.remove('open'); }
   try { var fs = document.documentElement.requestFullscreen && document.documentElement.requestFullscreen(); if (fs && fs.catch) fs.catch(function() {}); } catch (e) {}
   try { if (navigator.wakeLock) navigator.wakeLock.request('screen').then(function(l) { wallWakeLock = l; }, function() {}); } catch (e) {}
   try { map.options.zoomSnap = 0.25; } catch (e) {}   // lets the national view fill the screen instead of snapping to whole zoom levels
   wallBuildBounds(); wallBuildInset(); wallClockInit();
-  setTimeout(function() { map.invalidateSize(); renderSites(); computeRisks(); wallRender(); wallGoto({k:'national'}); wallBumpIdle(); }, 150);
+  setTimeout(function() { map.invalidateSize(); renderSites(); computeRisks(); wallRender(); if (!wallAlertSites.length) wallGoto({k:'national'}); wallBumpIdle(); }, 150);
   wallTimers.push(setInterval(wallTick, 1000));
   wallTimers.push(setInterval(wallRender, 4000));
   wallTimers.push(setInterval(function() { wallPage++; wallRender(); }, 8000));
@@ -6421,7 +6450,7 @@ function wallBumpIdle() {
 }
 
 // ---- settings
-function wallSetScale(v) { S.wallScale = v; saveSettings(); if (wallOn) { document.body.style.setProperty('--wall-s', wallScale()); setTimeout(function() { map.invalidateSize(); renderSites(); wallRender(); }, 100); } wallSyncUI(); }
+function wallSetScale(v) { S.wallScale = v; saveSettings(); if (wallOn) { wallApplyScale(); setTimeout(function() { map.invalidateSize(); renderSites(); wallRender(); }, 100); } wallSyncUI(); }
 function wallSetOpt(k, v) {
   S[k] = v; saveSettings();
   if (wallOn) {
@@ -6473,8 +6502,7 @@ function wallClockRender() {
   var now = new Date();
   function fmt(z, secs) { return new Intl.DateTimeFormat('en-AU', {timeZone:z.iana, hour:'2-digit', minute:'2-digit', second: secs ? '2-digit' : undefined, hourCycle:'h23'}).format(now); }
   function ab(z) { var p = new Intl.DateTimeFormat('en-AU', {timeZone:z.iana, timeZoneName:'short'}).formatToParts(now).filter(function(x) { return x.type === 'timeZoneName'; })[0]; return p ? p.value : z.abbr; }
-  var a0 = ab(zs[0]), st = (z, a) => (z.dstAbbr && a === z.dstAbbr && z.dstStates) ? z.dstStates : (z.states || '');
-  var h = '<div class="zl">' + wallEsc(a0 + (st(zs[0], a0) ? '  ' + st(zs[0], a0) : '')) + '</div><div class="big">' + fmt(zs[0], true) + '</div>';
+  var h = '<div class="big">' + fmt(zs[0], true) + '<small>' + wallEsc(ab(zs[0])) + '</small></div>';
   if (zs.length > 1) h += '<div class="wall-zs">' + zs.slice(1).map(function(z) { return '<div>' + wallEsc(ab(z)) + ' ' + fmt(z, false) + '</div>'; }).join('') + '</div>';
   el.innerHTML = h;
 }
@@ -6539,8 +6567,8 @@ function wallFocusInfo() {
   var f = {names:{}, states:[], label:'', reason:'', count:0};
   if (!wallOn) return f;
   var rs = [];
-  if (wallTour.cur === 'alert' && wallClusters[wallTour.ci]) { var c = wallClusters[wallTour.ci]; rs = riskResults.filter(function(r) { return c.sites.some(function(x) { return x.site.name === r.site.name; }); }); f.label = c.label; }
-  else if (WALL_ORDER.indexOf(wallTour.cur) > -1) { rs = riskResults.filter(function(r) { return r.site.state === wallTour.cur; }); f.label = WALL_NAMES[wallTour.cur]; }
+  if (wallTour.cur === 'alert' && wallClusters[wallTour.ci]) { var c = wallClusters[wallTour.ci]; rs = wallRR.filter(function(r) { return c.sites.some(function(x) { return x.site.name === r.site.name; }); }); f.label = c.label; }
+  else if (WALL_ORDER.indexOf(wallTour.cur) > -1) { rs = wallRR.filter(function(r) { return r.site.state === wallTour.cur; }); f.label = WALL_NAMES[wallTour.cur]; }
   rs.forEach(function(r) { f.names[r.site.name] = 1; if (f.states.indexOf(r.site.state) < 0) f.states.push(r.site.state); });
   f.count = rs.length; f.reason = wallReasonOf(rs[0]);
   if (wallTour.cur !== 'alert' && WALL_ORDER.indexOf(wallTour.cur) > -1 && !f.count) f.states = [wallTour.cur];   // a state with warnings but no risks still leads the warnings tile
@@ -6551,7 +6579,7 @@ function wallIsFocus(site) { return wallOn && !!wallFocusInfo().names[site.name]
 // ---- tour
 function wallActiveStates() {
   var act = {};
-  riskResults.forEach(function(r) { if (r.site.state) act[r.site.state] = 1; });
+  wallRR.forEach(function(r) { if (r.site.state) act[r.site.state] = 1; });
   wallWarnings().forEach(function(w) { if (w.state) act[String(w.state).toUpperCase()] = 1; });
   WALL_ORDER.forEach(function(c) { if ((allIncidents[c.toLowerCase()] || []).filter(isActiveIncident).length) act[c] = 1; });
   Object.keys(marineWarningsData || {}).forEach(function(k) { if (((marineWarningsData[k] || {}).hazards || []).length) act[String(k).toUpperCase()] = 1; });
@@ -6623,76 +6651,92 @@ function wallOnClear() { wallTour.holdUntil = S.wallHold ? Date.now() + 120000 :
 // ---- render
 function wallRender() {
   if (!wallOn) return;
-  var warns = wallWarnings(), incTxt = (document.getElementById('h-incidents') || {}).textContent, inc = parseInt(incTxt, 10) || 0;
-  function cnt(id, n, hot) { var e = document.getElementById(id); e.querySelector('.n').textContent = n; e.classList.toggle('hot', !!hot && n > 0); }
-  cnt('wc-warn', warns.length, true); cnt('wc-risk', riskResults.length, true); cnt('wc-inc', inc, true);
+  var RR; try { RR = wallEffResults(); } catch (e) { wallErr('results', e); RR = (typeof riskResults !== 'undefined' && riskResults) || []; }
+  wallRR = RR;
+  var foc = {names:{}, states:[], label:'', reason:'', count:0}, warns = [];
+  try { foc = wallFocusInfo(); } catch (e) { wallErr('focus', e); }
+  try { warns = wallWarnings(); } catch (e) { wallErr('warnings', e); }
 
-  var foc = wallFocusInfo();
-  var wb = document.getElementById('wall-warn');
-  if (!warns.length) { wb.className = 'none'; wb.textContent = 'No active weather warnings'; }
-  else {
-    var g = {}; warns.forEach(function(w) { var k = (WALL_TYPE_LABEL[w.type] || w.type) + ' - ' + String(w.state || '').toUpperCase(); g[k] = 1; });
-    var keys = Object.keys(g).sort(function(x, y) { var fx = foc.states.indexOf(x.split(' - ')[1]) > -1 ? 0 : 1, fy = foc.states.indexOf(y.split(' - ')[1]) > -1 ? 0 : 1; return fx - fy; }); wb.className = '';
-    // two lines at most, so the risk list keeps its room: first warning(s) in bold, then "+N more"
-    wb.innerHTML = keys.length <= 2 ? keys.map(function(k) { return '<b>' + wallEsc(k) + '</b>'; }).join('') : '<b>' + wallEsc(keys[0]) + '</b>+' + (keys.length - 1) + ' more warnings';
-  }
+  // each panel is guarded on its own, so one failing can never take down the banner or the zoom
+  try {
+    var incTxt = (document.getElementById('h-incidents') || {}).textContent, inc = parseInt(incTxt, 10) || 0;
+    var cnt = function(id, n, hot) { var e = document.getElementById(id); e.querySelector('.n').textContent = n; e.classList.toggle('hot', !!hot && n > 0); };
+    cnt('wc-warn', warns.length, true); cnt('wc-risk', RR.length, true); cnt('wc-inc', inc, true);
+  } catch (e) { wallErr('counters', e); }
 
-  var rows = riskResults, per = wallRowsPerPage(), pages = 1;
-  var fRows = rows.filter(function(r) { return foc.names[r.site.name]; }), oRows = rows.filter(function(r) { return !foc.names[r.site.name]; });
-  var box = document.getElementById('wall-rows'), st = document.getElementById('wall-states'), risk = document.querySelector('.wall-risk');
-  function stateLine() {
-    if (rows.length <= per) { st.textContent = ''; return; }
-    var c = {}; rows.forEach(function(r) { c[r.site.state] = (c[r.site.state] || 0) + 1; });
-    st.textContent = Object.keys(c).sort(function(a, b) { return c[b] - c[a]; }).slice(0, 5).map(function(k) { return k + ' ' + c[k]; }).join('   ');
-  }
-  function pageList() {   // focused sites first and pinned; paging only rotates the rest
-    if (!fRows.length) { pages = Math.max(1, Math.ceil(rows.length / per)); if (wallPage >= pages) wallPage = 0; return rows.slice(wallPage * per, wallPage * per + per); }
-    if (fRows.length >= per) { var all = fRows.concat(oRows); pages = Math.max(1, Math.ceil(all.length / per)); if (wallPage >= pages) wallPage = 0; return all.slice(wallPage * per, wallPage * per + per); }   // focus fills the page: focus first, then everyone else, paged normally
-    var slots = per - fRows.length; pages = Math.max(1, Math.ceil(oRows.length / slots)); if (wallPage >= pages) wallPage = 0;
-    return fRows.concat(oRows.slice(wallPage * slots, wallPage * slots + slots));
-  }
-  function drawRows() {
-    stateLine();
-    var html = '', list = pageList();
-    if (!rows.length) html = '<div class="wall-clear">All clear</div>';
-    else list.forEach(function(r) {
-      var col = RISK_COLOR[r.level], nm = r.site.name.replace(/^\d+\s+/, ''), on = !!foc.names[r.site.name];
-      html += '<div class="wall-row' + (on ? ' focus' : '') + '" style="--c:' + col + '"><div class="nm">' + wallEsc(nm) + (siteHasAM(r.site) ? ' <span style="font-size:.8em;opacity:.85">AM</span>' : '') + '</div><div class="mt">' + wallEsc(RISK_LABEL[r.level]) + ' - ' + wallEsc(r.site.state || '') + '</div></div>';
-    });
-    box.innerHTML = html;
-  }
-  // show only as many rows as really fit in the space left (names can wrap to two lines)
-  for (var guard = 0; guard < 6; guard++) {
-    drawRows();
-    var last = box.lastElementChild, lim = st.textContent ? st.getBoundingClientRect().top : risk.getBoundingClientRect().bottom;
-    if (!last || per <= 1 || last.getBoundingClientRect().bottom <= lim + 1) break;
-    per--;
-  }
-  document.getElementById('wall-page').textContent = pages > 1 ? (wallPage + 1) + ' / ' + pages : '';
+  try {
+    var wb = document.getElementById('wall-warn');
+    if (!warns.length) { wb.className = 'none'; wb.textContent = 'No active weather warnings'; }
+    else {
+      var g = {}; warns.forEach(function(w) { var k = (WALL_TYPE_LABEL[w.type] || w.type) + ' - ' + String(w.state || '').toUpperCase(); g[k] = 1; });
+      var keys = Object.keys(g).sort(function(x, y) { var fx = foc.states.indexOf(x.split(' - ')[1]) > -1 ? 0 : 1, fy = foc.states.indexOf(y.split(' - ')[1]) > -1 ? 0 : 1; return fx - fy; }); wb.className = '';
+      // two lines at most, so the risk list keeps its room: first warning(s) in bold, then "+N more"
+      wb.innerHTML = keys.length <= 2 ? keys.map(function(k) { return '<b>' + wallEsc(k) + '</b>'; }).join('') : '<b>' + wallEsc(keys[0]) + '</b>+' + (keys.length - 1) + ' more warnings';
+    }
+  } catch (e) { wallErr('warnings tile', e); }
 
-  // alert banner (state driven: shown for as long as sites are at risk at the popup trigger level)
-  var min = wallMinLevel(); wallAlertSites = riskResults.filter(function(r) { return r.level >= min; });
-  var ckey = wallAlertSites.map(function(r) { return r.site.name + ':' + r.level; }).sort().join('|');
-  if (ckey !== wallClusterKey) { wallClusterKey = ckey; wallClusters = wallAlertSites.length ? wallMakeClusters(wallAlertSites) : []; if (wallTour.ci >= wallClusters.length) wallTour.ci = 0; }
-  var key = wallAlertSites.map(function(r) { return r.site.name + ':' + r.level; }).sort().join('|');
-  var ban = document.getElementById('wall-banner');
-  if (wallAlertSites.length) {
-    var top = wallAlertSites[0], n = wallAlertSites.length, d = (top.reasons && top.reasons[0] && top.reasons[0].detail) || '';
-    ban.style.setProperty('--c', RISK_COLOR[top.level]); ban.classList.add('show');
-    ban.querySelector('.t').textContent = RISK_LABEL[top.level] + ': ' + n + ' site' + (n > 1 ? 's' : '') + ' at risk';
-    var sub = (foc.count && foc.reason) ? foc.label + ': ' + foc.reason : d;
-    ban.querySelector('.s').textContent = sub.slice(0, 110);
-    if (key !== wallAlertKey) { wallNewUntil = Date.now() + 60000; wallAlertKey = key; wallTour.holdUntil = 0; wallApplyPolicy(); }
-    ban.classList.toggle('wall-new', Date.now() < wallNewUntil);
-  } else { ban.classList.remove('show', 'wall-new'); if (wallAlertKey) { wallAlertKey = ''; wallOnClear(); } }
+  try {
+    var rows = RR, per = wallRowsPerPage(), pages = 1;
+    var fRows = rows.filter(function(r) { return foc.names[r.site.name]; }), oRows = rows.filter(function(r) { return !foc.names[r.site.name]; });
+    var box = document.getElementById('wall-rows'), st = document.getElementById('wall-states'), risk = document.querySelector('.wall-risk');
+    var stateLine = function() {
+      if (rows.length <= per) { st.textContent = ''; return; }
+      var c = {}; rows.forEach(function(r) { c[r.site.state] = (c[r.site.state] || 0) + 1; });
+      st.textContent = Object.keys(c).sort(function(a, b) { return c[b] - c[a]; }).slice(0, 5).map(function(k) { return k + ' ' + c[k]; }).join('   ');
+    };
+    var pageList = function() {   // focused sites first and pinned; paging only rotates the rest
+      if (!fRows.length) { pages = Math.max(1, Math.ceil(rows.length / per)); if (wallPage >= pages) wallPage = 0; return rows.slice(wallPage * per, wallPage * per + per); }
+      if (fRows.length >= per) { var all = fRows.concat(oRows); pages = Math.max(1, Math.ceil(all.length / per)); if (wallPage >= pages) wallPage = 0; return all.slice(wallPage * per, wallPage * per + per); }   // focus fills the page: focus first, then everyone else, paged normally
+      var slots = per - fRows.length; pages = Math.max(1, Math.ceil(oRows.length / slots)); if (wallPage >= pages) wallPage = 0;
+      return fRows.concat(oRows.slice(wallPage * slots, wallPage * slots + slots));
+    };
+    var drawRows = function() {
+      stateLine();
+      var html = '', list = pageList();
+      if (!rows.length) html = '<div class="wall-clear">All clear</div>';
+      else list.forEach(function(r) {
+        var col = RISK_COLOR[r.level], nm = r.site.name.replace(/^\d+\s+/, ''), on = !!foc.names[r.site.name];
+        html += '<div class="wall-row' + (on ? ' focus' : '') + '" style="--c:' + col + '"><div class="nm">' + wallEsc(nm) + (siteHasAM(r.site) ? ' <span style="font-size:.8em;opacity:.85">AM</span>' : '') + '</div><div class="mt">' + wallEsc(RISK_LABEL[r.level]) + ' - ' + wallEsc(r.site.state || '') + '</div></div>';
+      });
+      box.innerHTML = html;
+    };
+    // show only as many rows as really fit in the space left (names can wrap to two lines)
+    for (var guard = 0; guard < 6; guard++) {
+      drawRows();
+      var last = box.lastElementChild, lim = risk.getBoundingClientRect().bottom - (st.textContent ? st.getBoundingClientRect().height + 8 : 0);   // the panel's real bottom edge, less the state-totals line
+      if (!last || per <= 1 || last.getBoundingClientRect().bottom <= lim + 1) break;
+      per--;
+    }
+    document.getElementById('wall-page').textContent = pages > 1 ? (wallPage + 1) + ' / ' + pages : '';
+  } catch (e) { wallErr('risk list', e); }
+
+  // alert banner + tour policy (state driven: shown for as long as there is an alert)
+  try {
+    var min = wallMinLevel(); wallAlertSites = RR.filter(function(r) { return wallWorthy(r, min); });
+    var key = wallAlertSites.map(function(r) { return r.site.name + ':' + r.level; }).sort().join('|');
+    if (!wallAlertSites.length) { wallClusters = []; wallClusterKey = ''; wallTour.ci = 0; }
+    else if (key !== wallClusterKey) { wallClusterKey = key; wallClusters = wallMakeClusters(wallAlertSites); if (wallTour.ci >= wallClusters.length) wallTour.ci = 0; }
+    var ban = document.getElementById('wall-banner');
+    if (wallAlertSites.length) {
+      var top = wallAlertSites[0], n = wallAlertSites.length, d = wallReasonOf(top);
+      ban.style.setProperty('--c', RISK_COLOR[top.level]); ban.classList.add('show');
+      ban.querySelector('.t').textContent = RISK_LABEL[top.level] + ': ' + n + ' site' + (n > 1 ? 's' : '') + ' at risk';
+      var sub = (foc.count && foc.reason) ? foc.label + ': ' + foc.reason : d;
+      ban.querySelector('.s').textContent = sub.slice(0, 110);
+      if (key !== wallAlertKey) { wallNewUntil = Date.now() + 60000; wallAlertKey = key; wallTour.holdUntil = 0; wallApplyPolicy(); }
+      ban.classList.toggle('wall-new', Date.now() < wallNewUntil);
+    } else { ban.classList.remove('show', 'wall-new'); if (wallAlertKey) { wallAlertKey = ''; wallOnClear(); } }
+  } catch (e) { wallErr('banner', e); }
 
   // big names on the map for sites at risk only
-  if (!wallLabelLayer) wallLabelLayer = L.layerGroup().addTo(map);
-  wallLabelLayer.clearLayers();
-  rows.filter(function(r) { return r.level >= RISK_LEVEL.WARNING; }).slice(0, 14).forEach(function(r) {
-    L.marker([r.site.lat, r.site.lon], {interactive:false, icon:L.divIcon({className:'wall-lbl', html:wallEsc(r.site.name.replace(/^\d+\s+/, '')), iconSize:null, iconAnchor:[-26 * wallScale(), 20 * wallScale()]})}).addTo(wallLabelLayer);
-  });
-  wallTick();
+  try {
+    if (!wallLabelLayer) wallLabelLayer = L.layerGroup().addTo(map);
+    wallLabelLayer.clearLayers();
+    RR.filter(function(r) { return r.level >= RISK_LEVEL.WARNING; }).slice(0, 14).forEach(function(r) {
+      L.marker([r.site.lat, r.site.lon], {interactive:false, icon:L.divIcon({className:'wall-lbl', html:wallEsc(r.site.name.replace(/^\d+\s+/, '')), iconSize:null, iconAnchor:[-26 * wallScale(), 20 * wallScale()]})}).addTo(wallLabelLayer);
+    });
+  } catch (e) { wallErr('map labels', e); }
+  try { wallTick(); } catch (e) { wallErr('tick', e); }
 }
 
 // ---- calibration screen
@@ -6714,6 +6758,8 @@ function wallCalibrate() {
   syncSettingsUI = function() { var r = oSync.apply(this, arguments); wallSyncUI(); return r; };
 })();
 document.addEventListener('mousemove', function() { if (wallOn) wallBumpIdle(); });
+var wallResizeT = null;
+window.addEventListener('resize', function() { if (!wallOn) return; clearTimeout(wallResizeT); wallResizeT = setTimeout(function() { wallApplyScale(); try { map.invalidateSize(); } catch (e) {} renderSites(); wallRender(); }, 150); });
 document.addEventListener('keydown', function(e) {
   if (!wallOn) return;
   var c = document.getElementById('wall-calib');
