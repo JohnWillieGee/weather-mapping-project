@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-22T10:53:24.015369+00:00",
-  "last_checked_utc": "2026-10-22T10:53:24.015369+00:00",
-  "warning_count": 13,
+  "generated_utc": "2026-10-22T11:23:06.319269+00:00",
+  "last_checked_utc": "2026-10-22T11:23:06.319269+00:00",
+  "warning_count": 14,
   "warnings": [
     {
       "pid": "",
-      "title": "22/17:41 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "22/22:00 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 22 Oct 2026 06:41:04 GMT"
+      "issued": "Thu, 22 Oct 2026 11:00:13 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "22/16:15 EDT Marine Wind Warning Summary for Victoria",
+      "title": "22/22:00 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 22 Oct 2026 05:15:21 GMT"
+      "issued": "Thu, 22 Oct 2026 11:00:24 GMT"
     },
     {
       "pid": "",
@@ -47,6 +47,15 @@
       "link": "http://reg.bom.gov.au/qld/warnings/flood/upper-brisbane-river-basin.shtml",
       "desc": "",
       "issued": "Thu, 22 Oct 2026 05:27:40 GMT"
+    },
+    {
+      "pid": "",
+      "title": "22/20:55 EST Initial Moderate Flood Warning for Warrill Creek and Minor Flood Warning for the Bremer River",
+      "type": "flood",
+      "state": "QLD",
+      "link": "http://reg.bom.gov.au/qld/warnings/flood/bremer-river-and-warrill-creek.shtml",
+      "desc": "",
+      "issued": "Thu, 22 Oct 2026 10:55:42 GMT"
     },
     {
       "pid": "",
@@ -86,40 +95,21 @@
     },
     {
       "pid": "",
-      "title": "22/14:29 WST Marine Wind Warning Summary for Western Australia",
+      "title": "22/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Thu, 22 Oct 2026 06:29:43 GMT"
+      "issued": "Thu, 22 Oct 2026 11:01:18 GMT"
     },
     {
       "pid": "",
-      "title": "22/16:05 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "22/22:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 22 Oct 2026 05:05:10 GMT"
-    },
-    {
-      "pid": "IDN21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for North West Slopes and Plains",
-      "type": "thunderstorm",
-      "state": "NSW",
-      "link": "",
-      "desc": "This warning is now cancelled.",
-      "issued": "2026-10-22T18:00:38+11:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "NSW_PW011",
-          "description": "North West Slopes and Plains",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
+      "issued": "Thu, 22 Oct 2026 11:00:14 GMT"
     },
     {
       "pid": "IDQ21033",
@@ -144,6 +134,30 @@
       ],
       "severityCode": "CAN",
       "hazardPhase": "CAN"
+    },
+    {
+      "pid": "IDD21033",
+      "title": "Severe Thunderstorm Warning for Simpson, Lasseter",
+      "type": "thunderstorm",
+      "state": "NT",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Kulgera, Finke, Santa Teresa, Titjikala and Simpson District east of Finke.",
+      "issued": "2026-10-22T20:35:39+09:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NT_PW007",
+          "description": "Simpson",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NT_PW008",
+          "description": "Lasseter",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -284,7 +298,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-22T10:21:35+00:00",
+        "updated": "2026-10-22T10:57:52+00:00",
         "description": "KAURING, SHIRE OF YORK",
         "lat": -31.944,
         "lng": 117.0411,
@@ -5157,7 +5171,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-10-22T06:40:56Z",
+      "issued_utc": "2026-10-22T11:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -5182,7 +5196,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-22T05:15:00Z",
+      "issued_utc": "2026-10-22T11:00:00Z",
       "overview": [
         "Strong Wind Warning for Thursday for East Gippsland Coast",
         "Strong Wind Warning for Friday for East Gippsland Coast"
@@ -5204,10 +5218,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-22T06:29:33Z",
+      "issued_utc": "2026-10-22T11:01:00Z",
       "overview": [
-        "Strong Wind Warning for Thursday for Ningaloo Coast, Esperance Coast and Albany Coast",
-        "Strong Wind Warning for Friday for Ningaloo Coast, Gascoyne Coast, Geraldton Coast and Pilbara Coast West"
+        "Strong Wind Warning for Thursday for Ningaloo Coast and Albany Coast",
+        "Strong Wind Warning for Friday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast and Geraldton Coast"
       ],
       "hazards": [
         {
@@ -5215,24 +5229,22 @@
           "severity": "STR",
           "zones": [
             "Ningaloo Coast: North West Cape to Cape Cuvier",
-            "Albany Coast: Walpole to Bremer Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay"
+            "Albany Coast: Walpole to Bremer Bay"
           ],
           "aac_codes": [
             "WA_MW005",
-            "WA_MW012",
-            "WA_MW013"
+            "WA_MW012"
           ],
-          "summary": "Ningaloo Coast, Albany Coast and Esperance Coast"
+          "summary": "Ningaloo Coast and Albany Coast"
         }
       ]
     },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-22T05:05:00Z",
+      "issued_utc": "2026-10-22T11:00:00Z",
       "overview": [
-        "Strong Wind Warning for Thursday for East of Flinders Island, Upper East Coast, Lower East Coast and South East Coast",
+        "Strong Wind Warning for Thursday for East of Flinders Island and Lower East Coast",
         "Strong Wind Warning for Friday for East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast, South West Coast and Central West Coast"
       ],
       "hazards": [
@@ -5241,17 +5253,13 @@
           "severity": "STR",
           "zones": [
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
-            "Upper East Coast: St Helens Point to Wineglass Bay",
-            "Lower East Coast: Wineglass Bay to Tasman Island",
-            "South East Coast: Tasman Island to South East Cape"
+            "Lower East Coast: Wineglass Bay to Tasman Island"
           ],
           "aac_codes": [
             "TAS_MW003",
-            "TAS_MW004",
-            "TAS_MW005",
-            "TAS_MW006"
+            "TAS_MW005"
           ],
-          "summary": "East of Flinders Island, Upper East Coast, Lower East Coast and South East Coast"
+          "summary": "East of Flinders Island and Lower East Coast"
         }
       ]
     }
