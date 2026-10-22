@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-22T02:23:03.993203+00:00",
-  "last_checked_utc": "2026-10-22T02:23:03.993203+00:00",
+  "generated_utc": "2026-10-22T02:53:01.493436+00:00",
+  "last_checked_utc": "2026-10-22T02:53:01.493436+00:00",
   "warning_count": 11,
   "warnings": [
     {
@@ -86,23 +86,33 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Darling Downs and Granite Belt, Southeast Coast",
+      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields, Maranoa and Warrego, Darling Downs and Granite Belt, Southeast Coast",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Brisbane, Caboolture, Ipswich, Redcliffe, Nambour and Samford. 163 mm OF RAINFALL WAS RECORDED AT MT RESERVOIR IN THE 3 HOURS TO 8:30 AM. 159 mm OF RAINFALL WAS RECORDED AT ELIMBAH (ROSE CREEK RD) IN 3 HOURS TO 8:12 AM 141 mm OF RAINFALL WAS RECORDED AT BURPENGARY (MATHEW CR) IN 3 HOURS TO 7:45 AM. 168 mm OF RAINFALL WA",
-      "issued": "2026-10-22T10:28:40+10:00",
+      "desc": "Severe showers and thunderstorms moving repeatedly over the same area are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Warwick, Toowoomba, Brisbane, Dalby, Roma, Stanthorpe, Caboolture and Ipswich. 163 mm OF RAINFALL WAS RECORDED AT MT RESERVOIR IN THE 3 HOURS TO 8:30 AM. 159 mm OF RAINFALL WAS RECORDED AT ELIMBAH (ROSE CREEK RD) IN 3 HOURS TO 8:12 AM 141 mm OF RAINFALL WAS RECORDED AT BU",
+      "issued": "2026-10-22T12:43:14+10:00",
       "cancelled": false,
       "areas": [
         {
+          "aac": "QLD_PW008",
+          "description": "Central Highlands and Coalfields",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_PW012",
+          "description": "Maranoa and Warrego",
+          "phase": "NEW"
+        },
+        {
           "aac": "QLD_PW013",
           "description": "Darling Downs and Granite Belt",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "QLD_PW015",
           "description": "Southeast Coast",
-          "phase": "UPD"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
@@ -173,7 +183,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Thu, 22 Oct 2026 02:19:24 GMT",
+        "updated": "Thu, 22 Oct 2026 02:47:24 GMT",
         "description": "COOMA RD, JINDEN 2622",
         "council": "Eurobodalla",
         "lat": -35.867198515,
@@ -294,6 +304,124 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - BULARL DI WUNAMI AND MOUNT HARDMAN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-22T02:44:19.532+00:00",
+        "description": "",
+        "lat": -17.9676,
+        "lng": 125.0039,
+        "polys": [
+          [
+            [
+              125.124896,
+              -17.996057
+            ],
+            [
+              125.131506,
+              -17.935876
+            ],
+            [
+              124.823687,
+              -17.929214
+            ],
+            [
+              124.814333,
+              -17.980666
+            ],
+            [
+              125.124896,
+              -17.996057
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Smoke Alert FOR MUCHEA, GINGIN AND SURROUNDING AREAS IN THE SHIRE OF CHITTERING AND SHIRE OF GINGIN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-22T02:36:00.686+00:00",
+        "description": "",
+        "lat": -31.5786,
+        "lng": 115.975,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - CHICHESTER AND FORTESCUE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-22T02:25:48.758+00:00",
+        "description": "",
+        "lat": -21.8113,
+        "lng": 117.5606,
+        "polys": [
+          [
+            [
+              117.498837,
+              -21.779727
+            ],
+            [
+              117.549076,
+              -21.820471
+            ],
+            [
+              117.557658,
+              -21.832687
+            ],
+            [
+              117.583518,
+              -21.832368
+            ],
+            [
+              117.596563,
+              -21.837573
+            ],
+            [
+              117.612353,
+              -21.835024
+            ],
+            [
+              117.587689,
+              -21.772807
+            ],
+            [
+              117.498837,
+              -21.779727
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-22T02:25:25+00:00",
+        "description": "ALBANY, CITY OF ALBANY",
+        "lat": -35.0299,
+        "lng": 117.8861,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -535,56 +663,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire Advice MONITOR CONDITIONS - CHICHESTER AND FORTESCUE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-21T09:36:13.133+00:00",
-        "description": "",
-        "lat": -21.8113,
-        "lng": 117.5606,
-        "polys": [
-          [
-            [
-              117.498837,
-              -21.779727
-            ],
-            [
-              117.549076,
-              -21.820471
-            ],
-            [
-              117.557658,
-              -21.832687
-            ],
-            [
-              117.583518,
-              -21.832368
-            ],
-            [
-              117.596563,
-              -21.837573
-            ],
-            [
-              117.612353,
-              -21.835024
-            ],
-            [
-              117.587689,
-              -21.772807
-            ],
-            [
-              117.498837,
-              -21.779727
-            ]
-          ]
-        ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
@@ -792,21 +870,6 @@
         "description": "PURNULULU, SHIRE OF HALLS CREEK",
         "lat": -17.487,
         "lng": 128.5751,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Smoke Alert FOR THE EASTERN PARTS OF WAROONA IN THE SHIRE OF WAROONA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-21T04:20:00.45+00:00",
-        "description": "",
-        "lat": -32.8118,
-        "lng": 115.9774,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1201,44 +1264,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire Advice MONITOR CONDITIONS - BULARL DI WUNAMI AND MOUNT HARDMAN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-19T16:12:17.046+00:00",
-        "description": "",
-        "lat": -17.9676,
-        "lng": 125.0039,
-        "polys": [
-          [
-            [
-              125.124896,
-              -17.996057
-            ],
-            [
-              125.131506,
-              -17.935876
-            ],
-            [
-              124.823687,
-              -17.929214
-            ],
-            [
-              124.814333,
-              -17.980666
-            ],
-            [
-              125.124896,
-              -17.996057
-            ]
-          ]
-        ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
@@ -1435,21 +1460,6 @@
       }
     ],
     "nt": [
-      {
-        "title": "Grass and Scrub Fire - HEATH RD, KILGARIFF",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-22T02:18:50+00:00",
-        "description": "HEATH RD, KILGARIFF",
-        "lat": -23.7536,
-        "lng": 133.8764,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
       {
         "title": "Bushfire - Stuart Highway, BANKA BANKA WEST",
         "alertLevel": "Advice",
