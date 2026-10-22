@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-22T00:23:04.161668+00:00",
-  "last_checked_utc": "2026-10-22T00:23:04.161668+00:00",
+  "generated_utc": "2026-10-22T00:53:02.684981+00:00",
+  "last_checked_utc": "2026-10-22T00:53:02.684981+00:00",
   "warning_count": 11,
   "warnings": [
     {
@@ -86,14 +86,19 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Southeast Coast",
+      "title": "Severe Thunderstorm Warning for Darling Downs and Granite Belt, Southeast Coast",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Brisbane, Caboolture, Ipswich, Nambour, Samford and Woodford. 163 mm OF RAINFALL WAS RECORDED AT MT RESERVOIR IN THE 3 HOURS TO 8:30 AM. 159 mm OF RAINFALL WAS RECORDED AT ELIMBAH (ROSE CREEK RD) IN 3 HOURS TO 8:12 AM 141 mm OF RAINFALL WAS RECORDED AT BURPENGARY (MATHEW CR) IN 3 HOURS TO 7:45 AM. 168 mm OF RAINFALL WAS",
-      "issued": "2026-10-22T10:01:25+10:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Brisbane, Caboolture, Ipswich, Redcliffe, Nambour and Samford. 163 mm OF RAINFALL WAS RECORDED AT MT RESERVOIR IN THE 3 HOURS TO 8:30 AM. 159 mm OF RAINFALL WAS RECORDED AT ELIMBAH (ROSE CREEK RD) IN 3 HOURS TO 8:12 AM 141 mm OF RAINFALL WAS RECORDED AT BURPENGARY (MATHEW CR) IN 3 HOURS TO 7:45 AM. 168 mm OF RAINFALL WA",
+      "issued": "2026-10-22T10:28:40+10:00",
       "cancelled": false,
       "areas": [
+        {
+          "aac": "QLD_PW013",
+          "description": "Darling Downs and Granite Belt",
+          "phase": "NEW"
+        },
         {
           "aac": "QLD_PW015",
           "description": "Southeast Coast",
@@ -105,12 +110,12 @@
     },
     {
       "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Sunshine Coast, Somerset, Moreton Bay",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Sunshine Coast, Toowoomba, Southern Downs, Scenic Rim, Somerset, Lockyer Valley, Moreton Bay",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 10:05 am, a severe thunderstorm likely to produce heavy rainfall that may lead to flash flooding was detected near Mount Mee and Wamuran. This thunderstorm is slow moving. It is forecast to affect Dayboro and Woodford by 10:50 am. 163 mm OF RAINFALL WAS RECORDED AT MT RESERVOIR IN THE 3 HOURS TO 8:30 AM. 159 mm OF RAINFALL WAS RECORDED AT ELIMBAH (ROSE CREEK RD) IN 3 HOURS TO 8:12 AM 141 mm OF RAINFALL WAS RECORDED AT BURPENGARY (MATHEW CR) IN 3 HOURS TO ",
-      "issued": "2026-10-22T10:06:34+10:00",
+      "desc": "The Bureau of Meteorology warns that, at 10:35 am, severe thunderstorms likely to produce heavy rainfall that may lead to flash flooding were detected near Cunninghams Gap, Mount Mee and Wamuran. These thunderstorms are slow moving. They are forecast to affect Dayboro and the area south of Cunninghams Gap by 11:20 am and Oakington, Moogerah and Woodford by 12:05 pm. 163 mm OF RAINFALL WAS RECORDED AT MT RESERVOIR IN THE 3 HOURS TO 8:30 AM. 159 mm OF RAINFALL WAS RECORDED AT ELIMBAH (ROSE CREEK R",
+      "issued": "2026-10-22T10:34:45+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -119,8 +124,28 @@
           "phase": "UPD"
         },
         {
+          "aac": "QLD_ME010",
+          "description": "Toowoomba",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_ME011",
+          "description": "Southern Downs",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_ME012",
+          "description": "Scenic Rim",
+          "phase": "NEW"
+        },
+        {
           "aac": "QLD_ME015",
           "description": "Somerset",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_ME016",
+          "description": "Lockyer Valley",
           "phase": "NEW"
         },
         {
@@ -143,7 +168,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "NSW National Parks and Wildlife Service",
-        "updated": "Thu, 22 Oct 2026 00:19:24 GMT",
+        "updated": "Thu, 22 Oct 2026 00:47:24 GMT",
         "description": "COOMA RD, JINDEN 2622",
         "council": "Eurobodalla",
         "lat": -35.867198515,
@@ -271,10 +296,25 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-22T00:08:38+00:00",
-        "description": "BEDFORD, CITY OF BAYSWATER",
-        "lat": -31.9072,
-        "lng": 115.8817,
+        "updated": "2026-10-22T00:43:13+00:00",
+        "description": "CHICHESTER, SHIRE OF ASHBURTON",
+        "lat": -21.8013,
+        "lng": 117.5424,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-22T00:27:09+00:00",
+        "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.4508,
+        "lng": 128.1196,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -406,40 +446,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-21T23:46:36+00:00",
-        "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.4508,
-        "lng": 128.1196,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-21T23:31:38+00:00",
         "description": "PRINCE REGENT RIVER, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.6159,
         "lng": 125.4125,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-21T23:17:22+00:00",
-        "description": "CHICHESTER, SHIRE OF ASHBURTON",
-        "lat": -21.8013,
-        "lng": 117.5424,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1527,7 +1537,7 @@
       }
     ]
   },
-  "incident_count": 62,
+  "incident_count": 61,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
