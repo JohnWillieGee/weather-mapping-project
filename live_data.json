@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-23T10:53:05.602397+00:00",
-  "last_checked_utc": "2026-10-23T10:53:05.602397+00:00",
+  "generated_utc": "2026-10-23T11:23:10.858666+00:00",
+  "last_checked_utc": "2026-10-23T11:23:10.858666+00:00",
   "warning_count": 22,
   "warnings": [
     {
       "pid": "",
-      "title": "23/16:05 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "23/22:00 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 23 Oct 2026 05:05:13 GMT"
+      "issued": "Fri, 23 Oct 2026 11:00:10 GMT"
     },
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "23/16:15 EDT Marine Wind Warning Summary for Victoria",
+      "title": "23/22:00 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 23 Oct 2026 05:15:23 GMT"
+      "issued": "Fri, 23 Oct 2026 11:00:22 GMT"
     },
     {
       "pid": "",
@@ -122,12 +122,12 @@
     },
     {
       "pid": "",
-      "title": "23/15:30 CDT Marine Wind Warning Summary for South Australia",
+      "title": "23/21:30 CDT Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Fri, 23 Oct 2026 05:00:12 GMT"
+      "issued": "Fri, 23 Oct 2026 11:00:11 GMT"
     },
     {
       "pid": "",
@@ -140,12 +140,12 @@
     },
     {
       "pid": "",
-      "title": "23/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "23/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Fri, 23 Oct 2026 05:01:14 GMT"
+      "issued": "Fri, 23 Oct 2026 11:01:17 GMT"
     },
     {
       "pid": "",
@@ -158,12 +158,12 @@
     },
     {
       "pid": "",
-      "title": "23/16:05 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "23/22:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Fri, 23 Oct 2026 05:05:11 GMT"
+      "issued": "Fri, 23 Oct 2026 11:00:16 GMT"
     },
     {
       "pid": "IDQ21033",
@@ -269,7 +269,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Goobang St, Condobolin",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 23 Oct 2026 11:18:04 GMT",
+        "description": "Goobang St, Condobolin, NSW 2877",
+        "council": "Lachlan",
+        "lat": -33.087595,
+        "lng": 147.157363,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "tas": [
@@ -280,7 +297,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-23T21:50:13+00:00",
+        "updated": "2026-10-23T22:16:26+00:00",
         "description": "",
         "lat": -43.00904000023965,
         "lng": 147.03586999958708,
@@ -295,7 +312,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-23T21:50:13+00:00",
+        "updated": "2026-10-23T22:16:26+00:00",
         "description": "",
         "lat": -42.981989999696935,
         "lng": 146.9967700003957,
@@ -1375,9 +1392,40 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       }
     ],
-    "nt": [],
+    "nt": [
+      {
+        "title": "Grass and Scrub Fire - MILNER RD, GILLEN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-23T11:14:04+00:00",
+        "description": "MILNER RD, GILLEN",
+        "lat": -23.7097,
+        "lng": 133.8681,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      }
+    ],
     "act": [],
     "sa": [
+      {
+        "title": "STRUCTURE FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-23T10:43:00+00:00",
+        "description": "HAPPY VALLEY",
+        "lat": -35.0858,
+        "lng": 138.5792,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
       {
         "title": "GRASS FIRE",
         "alertLevel": "",
@@ -1410,7 +1458,7 @@
       }
     ]
   },
-  "incident_count": 52,
+  "incident_count": 55,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5041,9 +5089,9 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-10-23T05:05:00Z",
+      "issued_utc": "2026-10-23T11:00:00Z",
       "overview": [
-        "Strong Wind Warning for Friday for Macquarie Coast, Batemans Coast and Eden Coast",
+        "Strong Wind Warning for Friday for Eden Coast",
         "Strong Wind Warning for Saturday for Coffs Coast, Macquarie Coast and Hunter Coast"
       ],
       "hazards": [
@@ -5051,23 +5099,19 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Macquarie Coast: Smoky Cape to Seal Rocks",
-            "Batemans Coast: Ulladulla to Montague Island",
             "Eden Coast: Montague Island to Gabo Island"
           ],
           "aac_codes": [
-            "NSW_MW006",
-            "NSW_MW002",
             "NSW_MW001"
           ],
-          "summary": "Macquarie Coast, Batemans Coast and Eden Coast"
+          "summary": "Eden Coast"
         }
       ]
     },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-23T05:15:00Z",
+      "issued_utc": "2026-10-23T11:00:00Z",
       "overview": [
         "Strong Wind Warning for Friday for East Gippsland Coast",
         "Strong Wind Warning for Saturday for East Gippsland Coast"
@@ -5089,7 +5133,7 @@
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-10-23T05:00:00Z",
+      "issued_utc": "2026-10-23T11:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -5116,10 +5160,10 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-23T05:01:00Z",
+      "issued_utc": "2026-10-23T11:01:00Z",
       "overview": [
         "Strong Wind Warning for Friday for Ningaloo Coast, Gascoyne Coast and Geraldton Coast",
-        "Strong Wind Warning for Saturday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast, Bunbury Geographe Coast and Leeuwin Coast"
+        "Strong Wind Warning for Saturday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast, Lancelin Coast, Bunbury Geographe Coast and Leeuwin Coast"
       ],
       "hazards": [
         {
@@ -5136,31 +5180,6 @@
             "WA_MW007"
           ],
           "summary": "Ningaloo Coast, Gascoyne Coast and Geraldton Coast"
-        }
-      ]
-    },
-    "TAS": {
-      "state": "TAS",
-      "product": "IDT20100",
-      "issued_utc": "2026-10-23T05:05:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Upper East Coast: St Helens Point to Wineglass Bay",
-            "Lower East Coast: Wineglass Bay to Tasman Island",
-            "South East Coast: Tasman Island to South East Cape",
-            "South West Coast: South East Cape to Low Rocky Point"
-          ],
-          "aac_codes": [
-            "TAS_MW004",
-            "TAS_MW005",
-            "TAS_MW006",
-            "TAS_MW007"
-          ],
-          "summary": "Upper East Coast, Lower East Coast, South East Coast and South West Coast"
         }
       ]
     }
