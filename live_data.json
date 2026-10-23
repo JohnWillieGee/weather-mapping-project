@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-23T08:53:06.873815+00:00",
-  "last_checked_utc": "2026-10-23T08:53:06.873815+00:00",
-  "warning_count": 20,
+  "generated_utc": "2026-10-23T09:23:05.767774+00:00",
+  "last_checked_utc": "2026-10-23T09:23:05.767774+00:00",
+  "warning_count": 21,
   "warnings": [
     {
       "pid": "",
@@ -206,22 +206,41 @@
     },
     {
       "pid": "IDQ21035",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Queensland Anonymous Locale 1",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "Severe thunderstorms in the warning area have temporarily eased. However, the redevelopment of severe thunderstorms remains possible. The situation is being closely monitored and further detailed warnings will be issued as necessary.",
+      "issued": "2026-10-23T19:16:33+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "QLD_SP001",
+          "description": "Queensland Anonymous Locale 1",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
+    },
+    {
+      "pid": "IDQ21035",
       "title": "Severe Thunderstorm Warning - Southeast Queensland for Toowoomba",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 6:30 pm, a severe thunderstorm likely to produce large hailstones, heavy rainfall that may lead to flash flooding and damaging winds was detected north of Millmerran. This thunderstorm is moving slowly towards the northeast.",
-      "issued": "2026-10-23T18:35:40+10:00",
-      "cancelled": false,
+      "desc": "",
+      "issued": "2026-10-23T19:16:33+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "QLD_ME010",
           "description": "Toowoomba",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -237,22 +256,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-23T19:46:13+00:00",
-        "description": "",
-        "lat": -43.00904000023965,
-        "lng": 147.03586999958708,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
-      },
-      {
-        "title": "Bushfire - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-10-23T19:46:13+00:00",
+        "updated": "2026-10-23T20:14:13+00:00",
         "description": "",
         "lat": -42.981989999696935,
         "lng": 146.9967700003957,
@@ -350,20 +354,35 @@
         ],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=b42a5a1e-886a-4cf7-9d33-5f32b36b66aa"
+      },
+      {
+        "title": "Bushfire - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-10-23T20:14:13+00:00",
+        "description": "",
+        "lat": -43.00904000023965,
+        "lng": 147.03586999958708,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
       }
     ],
     "wa": [
       {
-        "title": "Report of Smoke",
+        "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-23T08:44:25+00:00",
-        "description": "BUTLER, CITY OF WANNEROO",
-        "lat": -31.6445,
-        "lng": 115.6941,
+        "updated": "2026-10-23T09:13:26+00:00",
+        "description": "LITTLE SANDY DESERT, SHIRE OF WILUNA",
+        "lat": -23.731,
+        "lng": 122.306,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -592,178 +611,6 @@
         "lat": -15.8168,
         "lng": 128.7888,
         "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice THREAT IS REDUCED - CHICHESTER AND FORTESCUE",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-23T02:42:40.506+00:00",
-        "description": "",
-        "lat": -21.8113,
-        "lng": 117.5606,
-        "polys": [
-          [
-            [
-              117.498837,
-              -21.779727
-            ],
-            [
-              117.549076,
-              -21.820471
-            ],
-            [
-              117.557658,
-              -21.832687
-            ],
-            [
-              117.583518,
-              -21.832368
-            ],
-            [
-              117.596563,
-              -21.837573
-            ],
-            [
-              117.612353,
-              -21.835024
-            ],
-            [
-              117.587689,
-              -21.772807
-            ],
-            [
-              117.498837,
-              -21.779727
-            ]
-          ]
-        ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice THREAT IS REDUCED - BURLONG AND NORTHAM",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-23T02:29:11.978+00:00",
-        "description": "",
-        "lat": -31.6478,
-        "lng": 116.628,
-        "polys": [
-          [
-            [
-              116.62572,
-              -31.665038
-            ],
-            [
-              116.609607,
-              -31.645973
-            ],
-            [
-              116.612839,
-              -31.643428
-            ],
-            [
-              116.616301,
-              -31.64112
-            ],
-            [
-              116.618149,
-              -31.640847
-            ],
-            [
-              116.618951,
-              -31.640815
-            ],
-            [
-              116.619638,
-              -31.640869
-            ],
-            [
-              116.619988,
-              -31.640786
-            ],
-            [
-              116.620293,
-              -31.640851
-            ],
-            [
-              116.62105,
-              -31.641064
-            ],
-            [
-              116.622482,
-              -31.641618
-            ],
-            [
-              116.624737,
-              -31.642542
-            ],
-            [
-              116.627368,
-              -31.642649
-            ],
-            [
-              116.635429,
-              -31.642436
-            ],
-            [
-              116.641067,
-              -31.642329
-            ],
-            [
-              116.640357,
-              -31.643609
-            ],
-            [
-              116.639856,
-              -31.645138
-            ],
-            [
-              116.63948,
-              -31.647093
-            ],
-            [
-              116.639064,
-              -31.649193
-            ],
-            [
-              116.638897,
-              -31.651184
-            ],
-            [
-              116.637978,
-              -31.653317
-            ],
-            [
-              116.636517,
-              -31.65545
-            ],
-            [
-              116.634888,
-              -31.657583
-            ],
-            [
-              116.633259,
-              -31.659183
-            ],
-            [
-              116.628038,
-              -31.663485
-            ],
-            [
-              116.62572,
-              -31.665038
-            ]
-          ]
-        ],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1330,21 +1177,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-20T09:23:20+00:00",
-        "description": "LITTLE SANDY DESERT, SHIRE OF WILUNA",
-        "lat": -23.731,
-        "lng": 122.306,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-20T07:00:29+00:00",
         "description": "MUELLER RANGES, SHIRE OF HALLS CREEK",
         "lat": -17.889,
@@ -1539,7 +1371,7 @@
       }
     ]
   },
-  "incident_count": 54,
+  "incident_count": 51,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
