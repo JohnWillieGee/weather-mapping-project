@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-23T00:23:05.939156+00:00",
-  "last_checked_utc": "2026-10-23T00:23:05.939156+00:00",
+  "generated_utc": "2026-10-23T00:53:00.557075+00:00",
+  "last_checked_utc": "2026-10-23T00:53:00.557075+00:00",
   "warning_count": 14,
   "warnings": [
     {
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "22/15:27 EST Initial Minor Flood Warning for the Stanley River",
+      "title": "23/10:34 EST Minor Flood Warning for the Upper Brisbane River",
       "type": "flood",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/flood/upper-brisbane-river-basin.shtml",
       "desc": "",
-      "issued": "Thu, 22 Oct 2026 05:27:40 GMT"
+      "issued": "Fri, 23 Oct 2026 00:34:42 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "23/04:31 EST Major Flood Warning for Warrill Creek and Minor Flood Warning for the Bremer River",
+      "title": "23/10:32 EST Moderate Flood Warning for Warrill Creek and Minor Flood Warning for the Bremer River",
       "type": "flood",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/flood/bremer-river-and-warrill-creek.shtml",
       "desc": "",
-      "issued": "Thu, 22 Oct 2026 18:31:58 GMT"
+      "issued": "Fri, 23 Oct 2026 00:32:45 GMT"
     },
     {
       "pid": "",
@@ -147,11 +147,43 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "New St E, Balgowlah",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 23 Oct 2026 00:50:19 GMT",
+        "description": "New St E, Balgowlah, NSW 2093",
+        "council": "Northern Beaches",
+        "lat": -33.8010639999999,
+        "lng": 151.266845,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-23T00:34:42+00:00",
+        "description": "JURIEN BAY, SHIRE OF DANDARAGAN",
+        "lat": -30.1846,
+        "lng": 114.9979,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -208,21 +240,6 @@
         "description": "WATERBANK, SHIRE OF BROOME",
         "lat": -17.404,
         "lng": 122.803,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-22T09:56:35+00:00",
-        "description": "JURIEN BAY, SHIRE OF DANDARAGAN",
-        "lat": -30.1846,
-        "lng": 114.9979,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1251,23 +1268,7 @@
     ],
     "nt": [],
     "act": [],
-    "sa": [
-      {
-        "title": "GRASS FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-22T23:24:00+00:00",
-        "description": "BARMERA",
-        "lat": -34.26,
-        "lng": 140.474,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      }
-    ]
+    "sa": []
   },
   "incident_count": 51,
   "nsw_alert_zones": [],
