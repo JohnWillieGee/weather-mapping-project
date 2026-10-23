@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-23T01:23:04.068489+00:00",
-  "last_checked_utc": "2026-10-23T01:23:04.068489+00:00",
-  "warning_count": 14,
+  "generated_utc": "2026-10-23T01:53:04.794134+00:00",
+  "last_checked_utc": "2026-10-23T01:53:04.794134+00:00",
+  "warning_count": 16,
   "warnings": [
     {
       "pid": "",
@@ -11,6 +11,15 @@
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Thu, 22 Oct 2026 23:55:53 GMT"
+    },
+    {
+      "pid": "",
+      "title": "23/12:39 EDT Initial Flood Warning for the Weir River",
+      "type": "flood",
+      "state": "NSW",
+      "link": "http://reg.bom.gov.au/qld/warnings/flood/border-rivers.shtml",
+      "desc": "",
+      "issued": "Fri, 23 Oct 2026 01:39:08 GMT"
     },
     {
       "pid": "",
@@ -41,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "23/05:34 EST Initial Minor Flood Warning for Laidley Creek",
+      "title": "23/11:48 EST Final Flood Warning for Laidley Creek",
       "type": "flood",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/flood/lockyer-and-laidley-creeks.shtml",
       "desc": "",
-      "issued": "Thu, 22 Oct 2026 19:34:48 GMT"
+      "issued": "Fri, 23 Oct 2026 01:48:38 GMT"
     },
     {
       "pid": "",
@@ -68,6 +77,15 @@
     },
     {
       "pid": "",
+      "title": "23/11:39 EST Initial Flood Warning for the Weir River",
+      "type": "flood",
+      "state": "QLD",
+      "link": "http://reg.bom.gov.au/qld/warnings/flood/border-rivers.shtml",
+      "desc": "",
+      "issued": "Fri, 23 Oct 2026 01:39:08 GMT"
+    },
+    {
+      "pid": "",
       "title": "23/09:44 EST Minor Flood Warning for the Warrego River (QLD)",
       "type": "flood",
       "state": "QLD",
@@ -86,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "22/11:13 EST Minor Flood Warning for the Barcoo River",
+      "title": "23/11:32 EST Minor Flood Warning for the Barcoo River",
       "type": "flood",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/flood/thomson-barcoo-cooper.shtml",
       "desc": "",
-      "issued": "Thu, 22 Oct 2026 01:13:12 GMT"
+      "issued": "Fri, 23 Oct 2026 01:32:40 GMT"
     },
     {
       "pid": "",
@@ -147,27 +165,25 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "New St E, Balgowlah",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 23 Oct 2026 01:18:19 GMT",
-        "description": "New St E, Balgowlah, NSW 2093",
-        "council": "Northern Beaches",
-        "lat": -33.8010639999999,
-        "lng": 151.266845,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "tas": [
+      {
+        "title": "Bushfire - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-10-23T12:44:13+00:00",
+        "description": "",
+        "lat": -43.017950000041786,
+        "lng": 147.04136000044534,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
+      },
       {
         "title": "Bushfire - Watch and Act",
         "alertLevel": "Watch and Act",
@@ -175,7 +191,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-23T12:18:13+00:00",
+        "updated": "2026-10-23T12:44:13+00:00",
         "description": "",
         "lat": -42.98266000029896,
         "lng": 146.9969200001835,
@@ -273,21 +289,6 @@
         ],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=b6f6248e-6d49-4417-b3a0-5a8234f24260"
-      },
-      {
-        "title": "Bushfire - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-10-23T12:18:13+00:00",
-        "description": "",
-        "lat": -43.017950000041786,
-        "lng": 147.04136000044534,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
       }
     ],
     "wa": [
@@ -298,10 +299,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-23T00:34:42+00:00",
-        "description": "JURIEN BAY, SHIRE OF DANDARAGAN",
-        "lat": -30.1846,
-        "lng": 114.9979,
+        "updated": "2026-10-23T01:33:38+00:00",
+        "description": "BURLONG, SHIRE OF NORTHAM",
+        "lat": -31.6644,
+        "lng": 116.6262,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -313,10 +314,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-22T19:36:56+00:00",
-        "description": "BURLONG, SHIRE OF NORTHAM",
-        "lat": -31.6644,
-        "lng": 116.6262,
+        "updated": "2026-10-23T00:34:42+00:00",
+        "description": "JURIEN BAY, SHIRE OF DANDARAGAN",
+        "lat": -30.1846,
+        "lng": 114.9979,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1377,7 +1378,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 52,
+  "incident_count": 51,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
