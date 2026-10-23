@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-23T20:53:02.816145+00:00",
-  "last_checked_utc": "2026-10-23T20:53:02.816145+00:00",
-  "warning_count": 22,
+  "generated_utc": "2026-10-23T21:23:01.481622+00:00",
+  "last_checked_utc": "2026-10-23T21:23:01.481622+00:00",
+  "warning_count": 23,
   "warnings": [
     {
       "pid": "",
@@ -176,12 +176,12 @@
     },
     {
       "pid": "",
-      "title": "24/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "24/05:11 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Fri, 23 Oct 2026 17:01:15 GMT"
+      "issued": "Fri, 23 Oct 2026 21:11:39 GMT"
     },
     {
       "pid": "",
@@ -200,6 +200,35 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Fri, 23 Oct 2026 17:00:10 GMT"
+    },
+    {
+      "pid": "IDS21033",
+      "title": "Severe Thunderstorm Warning for North West Pastoral, West Coast, Eastern Eyre Peninsula",
+      "type": "thunderstorm",
+      "state": "SA",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours.",
+      "issued": "2026-10-24T07:35:41+10:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "SA_PW013",
+          "description": "North West Pastoral",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW010",
+          "description": "West Coast",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW011",
+          "description": "Eastern Eyre Peninsula",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -215,7 +244,22 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-24T06:12:13+00:00",
+        "updated": "2026-10-24T08:18:13+00:00",
+        "description": "",
+        "lat": -43.00904000023965,
+        "lng": 147.03586999958708,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
+      },
+      {
+        "title": "Bushfire - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-10-24T08:18:13+00:00",
         "description": "",
         "lat": -42.981989999696935,
         "lng": 146.9967700003957,
@@ -313,21 +357,6 @@
         ],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=b42a5a1e-886a-4cf7-9d33-5f32b36b66aa"
-      },
-      {
-        "title": "Bushfire - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-10-24T06:12:13+00:00",
-        "description": "",
-        "lat": -43.00904000023965,
-        "lng": 147.03586999958708,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
       }
     ],
     "wa": [
@@ -5050,34 +5079,36 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-23T17:01:00Z",
+      "issued_utc": "2026-10-23T21:11:22Z",
       "overview": [
-        "Strong Wind Warning for Saturday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast, Lancelin Coast, Bunbury Geographe Coast and Leeuwin Coast",
-        "Strong Wind Warning for Sunday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast and Geraldton Coast"
+        "Strong Wind Warning for Saturday for Albany Coast, Esperance Coast, Ningaloo Coast, Lancelin Coast, Geraldton Coast, Bunbury Geographe Coast, Gascoyne Coast and Leeuwin Coast",
+        "Strong Wind Warning for Sunday for Ningaloo Coast, Gascoyne Coast, Geraldton Coast and Pilbara Coast West"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Pilbara Coast West: Cape Preston to North West Cape",
             "Ningaloo Coast: North West Cape to Cape Cuvier",
             "Gascoyne Coast: Cape Cuvier to Kalbarri",
             "Geraldton Coast: Kalbarri to Jurien Bay",
             "Lancelin Coast: Jurien Bay to Two Rocks",
             "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
-            "Leeuwin Coast: Cape Naturaliste to Walpole"
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Albany Coast: Walpole to Bremer Bay",
+            "Esperance Coast: Bremer Bay to Israelite Bay"
           ],
           "aac_codes": [
-            "WA_MW004",
             "WA_MW005",
             "WA_MW006",
             "WA_MW007",
             "WA_MW008",
             "WA_MW010",
-            "WA_MW011"
+            "WA_MW011",
+            "WA_MW012",
+            "WA_MW013"
           ],
-          "summary": "Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast, Lancelin Coast, Bunbury Geographe Coast and Leeuwin Coast"
+          "summary": "Ningaloo Coast, Gascoyne Coast, Geraldton Coast, Lancelin Coast, Bunbury Geographe Coast, Leeuwin Coast, Albany Coast and Esperance Coast"
         }
       ]
     },
