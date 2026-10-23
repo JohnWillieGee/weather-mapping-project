@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-22T23:53:06.089697+00:00",
-  "last_checked_utc": "2026-10-22T23:53:06.089697+00:00",
-  "warning_count": 13,
+  "generated_utc": "2026-10-23T00:23:05.939156+00:00",
+  "last_checked_utc": "2026-10-23T00:23:05.939156+00:00",
+  "warning_count": 14,
   "warnings": [
     {
       "pid": "",
-      "title": "23/10:35 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "23/10:55 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 22 Oct 2026 23:35:54 GMT"
+      "issued": "Thu, 22 Oct 2026 23:55:53 GMT"
     },
     {
       "pid": "",
@@ -95,6 +95,15 @@
     },
     {
       "pid": "",
+      "title": "23/10:32 CDT Warning to Sheep Graziers\nfor Lower Eyre Peninsula forecast district",
+      "type": "other",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/sheep.shtml",
+      "desc": "",
+      "issued": "Fri, 23 Oct 2026 00:02:44 GMT"
+    },
+    {
+      "pid": "",
       "title": "23/07:41 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
@@ -113,14 +122,19 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields",
+      "title": "Severe Thunderstorm Warning for Capricornia, Central Highlands and Coalfields",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Rolleston. 74.0 mm was recorded at Mt Panorama in the 2 hours to 6:09 am.",
-      "issued": "2026-10-23T08:08:21+10:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Duaringa and Dingo. 74.0 mm was recorded at Mt Panorama in the 2 hours to 6:09 am.",
+      "issued": "2026-10-23T09:56:49+10:00",
       "cancelled": false,
       "areas": [
+        {
+          "aac": "QLD_PW007",
+          "description": "Capricornia",
+          "phase": "NEW"
+        },
         {
           "aac": "QLD_PW008",
           "description": "Central Highlands and Coalfields",
@@ -128,7 +142,7 @@
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "REN"
+      "hazardPhase": "UPD"
     }
   ],
   "fetch_errors": {},
@@ -527,21 +541,6 @@
             ]
           ]
         ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Earthquake",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Earthquake",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-22T00:08:18+00:00",
-        "description": "",
-        "lat": -18.2373,
-        "lng": 120.1946,
-        "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1250,38 +1249,7 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       }
     ],
-    "nt": [
-      {
-        "title": "Grass and Scrub Fire - MANTON DAM RECREATION RES, DARWIN RIVER DAM",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-22T07:42:03+00:00",
-        "description": "MANTON DAM RECREATION RES, DARWIN RIVER DAM",
-        "lat": -12.8769,
-        "lng": 131.1396,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Grass and Scrub Fire - AIRFIELD ACCS, HART",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-22T06:35:57+00:00",
-        "description": "AIRFIELD ACCS, HART",
-        "lat": -22.9792,
-        "lng": 134.9182,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      }
-    ],
+    "nt": [],
     "act": [],
     "sa": [
       {
@@ -1301,7 +1269,7 @@
       }
     ]
   },
-  "incident_count": 54,
+  "incident_count": 51,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -4932,9 +4900,9 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-10-22T23:35:48Z",
+      "issued_utc": "2026-10-22T23:55:44Z",
       "overview": [
-        "Strong Wind Warning for Friday for Macquarie Coast, Batemans Coast and Eden Coast",
+        "Strong Wind Warning for Friday for Batemans Coast, Eden Coast and Macquarie Coast",
         "Strong Wind Warning for Saturday for Coffs Coast, Macquarie Coast and Hunter Coast"
       ],
       "hazards": [
