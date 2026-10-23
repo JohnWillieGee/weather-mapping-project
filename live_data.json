@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-23T06:53:07.271032+00:00",
-  "last_checked_utc": "2026-10-23T06:53:07.271032+00:00",
+  "generated_utc": "2026-10-23T07:23:05.817043+00:00",
+  "last_checked_utc": "2026-10-23T07:23:05.817043+00:00",
   "warning_count": 21,
   "warnings": [
     {
@@ -167,71 +167,66 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Northern Goldfields and Upper Flinders, Central Highlands and Coalfields, Central West, Maranoa and Warrego, Darling Downs and Granite Belt, Wide Bay and Burnett, Southeast Coast",
+      "title": "Severe Thunderstorm Warning for Northern Goldfields and Upper Flinders, Central Highlands and Coalfields, Central West, Darling Downs and Granite Belt",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds over the next several hours in parts of the Darling Downs and Granite Belt, Wide Bay and Burnett and Southeast Coast districts. Locations which may be affected include Oakey. Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding over the next several hours in parts of the Central Highlands and Coalfields, Central West, Maranoa and Warr",
-      "issued": "2026-10-23T15:41:30+10:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds in the warning area over the next several hours. Locations which may be affected include Emerald, Clermont, Moranbah, Carnarvon National Park, Gregory Springs, Aberfoyle, Blackwater, Rolleston and Springsure. Severe thunderstorms are no longer occurring in the Wide Bay and Burnett, Maranoa and Warrego and Southeast Coast districts and the warning for these districts is C",
+      "issued": "2026-10-23T17:04:00+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "QLD_PW003",
           "description": "Northern Goldfields and Upper Flinders",
-          "phase": "UPD"
+          "phase": "REN"
         },
         {
           "aac": "QLD_PW008",
           "description": "Central Highlands and Coalfields",
-          "phase": "UPD"
+          "phase": "REN"
         },
         {
           "aac": "QLD_PW009",
           "description": "Central West",
-          "phase": "UPD"
-        },
-        {
-          "aac": "QLD_PW012",
-          "description": "Maranoa and Warrego",
-          "phase": "UPD"
+          "phase": "REN"
         },
         {
           "aac": "QLD_PW013",
           "description": "Darling Downs and Granite Belt",
-          "phase": "UPD"
+          "phase": "REN"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDQ21033",
+      "title": "Severe Thunderstorm Warning for Maranoa and Warrego, Wide Bay and Burnett, Southeast Coast",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-23T17:04:00+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "QLD_PW012",
+          "description": "Maranoa and Warrego",
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW014",
           "description": "Wide Bay and Burnett",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW015",
           "description": "Southeast Coast",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "UPD"
-    },
-    {
-      "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Queensland Anonymous Locale 1",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "Severe thunderstorms in the warning area have temporarily eased. However, the redevelopment of severe thunderstorms remains possible. The situation is being closely monitored and further detailed warnings will be issued as necessary.",
-      "issued": "2026-10-23T16:47:53+10:00",
-      "cancelled": false,
-      "areas": [
-        {
-          "aac": "QLD_SP001",
-          "description": "Queensland Anonymous Locale 1",
-          "phase": "NEW"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDQ21035",
@@ -239,131 +234,73 @@
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "",
-      "issued": "2026-10-23T16:47:53+10:00",
-      "cancelled": true,
+      "desc": "The Bureau of Meteorology warns that, at 5:05 pm, a severe thunderstorm likely to produce large hailstones, heavy rainfall that may lead to flash flooding and damaging winds was detected near the area west of Millmerran. This thunderstorm is slow moving. It is forecast to affect the area north of Millmerran by 6:05 pm.",
+      "issued": "2026-10-23T17:12:59+10:00",
+      "cancelled": false,
       "areas": [
         {
           "aac": "QLD_ME010",
           "description": "Toowoomba",
-          "phase": "CAN"
+          "phase": "REN"
         }
       ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
+      "severityCode": "STD",
+      "hazardPhase": "REN"
     }
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Summer Hill Dr, Wangi Wangi",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 23 Oct 2026 07:17:58 GMT",
+        "description": "Summer Hill Dr, Wangi Wangi, NSW 2267",
+        "council": "Lake Macquarie",
+        "lat": -33.0650239999999,
+        "lng": 151.574279,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Tindera St, Cobar",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 23 Oct 2026 07:17:58 GMT",
+        "description": "Tindera St, Cobar, NSW 2835",
+        "council": "Cobar",
+        "lat": -31.509734,
+        "lng": 145.831983001,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "tas": [
       {
-        "title": "Bushfire - Watch and Act",
-        "alertLevel": "Watch and Act",
+        "title": "Bushfire - Advice",
+        "alertLevel": "Advice",
         "status": "",
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-23T17:32:13+00:00",
+        "updated": "2026-10-23T18:06:30+00:00",
         "description": "",
-        "lat": -42.98266000029896,
-        "lng": 146.9969200001835,
-        "polys": [
-          [
-            [
-              146.9807,
-              -42.97015
-            ],
-            [
-              146.98082,
-              -42.970774
-            ],
-            [
-              146.981338,
-              -42.971228
-            ],
-            [
-              146.982078,
-              -42.971598
-            ],
-            [
-              146.982888,
-              -42.971942
-            ],
-            [
-              146.983834,
-              -42.972067
-            ],
-            [
-              146.983921,
-              -42.971852
-            ],
-            [
-              146.984286,
-              -42.971708
-            ],
-            [
-              146.98537,
-              -42.971192
-            ],
-            [
-              146.987222,
-              -42.970409
-            ],
-            [
-              146.98717,
-              -42.969933
-            ],
-            [
-              146.98771,
-              -42.969953
-            ],
-            [
-              146.987948,
-              -42.969711
-            ],
-            [
-              146.987905,
-              -42.969153
-            ],
-            [
-              146.987496,
-              -42.968814
-            ],
-            [
-              146.986323,
-              -42.968556
-            ],
-            [
-              146.984242,
-              -42.968205
-            ],
-            [
-              146.982475,
-              -42.968071
-            ],
-            [
-              146.981907,
-              -42.968402
-            ],
-            [
-              146.981398,
-              -42.968876
-            ],
-            [
-              146.980888,
-              -42.969524
-            ],
-            [
-              146.9807,
-              -42.97015
-            ]
-          ]
-        ],
+        "lat": -43.00904000023965,
+        "lng": 147.03586999958708,
+        "polys": [],
         "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=b6f6248e-6d49-4417-b3a0-5a8234f24260"
+        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
       },
       {
         "title": "Bushfire - Advice",
@@ -372,7 +309,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-23T17:32:13+00:00",
+        "updated": "2026-10-23T18:06:30+00:00",
         "description": "",
         "lat": -42.981989999696935,
         "lng": 146.9967700003957,
@@ -470,65 +407,81 @@
         ],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=b42a5a1e-886a-4cf7-9d33-5f32b36b66aa"
-      },
-      {
-        "title": "Bushfire - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-10-23T17:32:13+00:00",
-        "description": "",
-        "lat": -43.00904000023965,
-        "lng": 147.03586999958708,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
       }
     ],
     "wa": [
       {
-        "title": "Fuel Leak",
-        "alertLevel": "",
-        "status": "active",
-        "type": "HazMat",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-23T06:33:21+00:00",
-        "description": "YANCHEP, CITY OF WANNEROO",
-        "lat": -31.5509,
-        "lng": 115.6387,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-23T05:32:22+00:00",
-        "description": "YALLABATHARRA, SHIRE OF NORTHAMPTON",
-        "lat": -28.2346,
-        "lng": 114.4576,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-23T04:48:47+00:00",
+        "updated": "2026-10-23T07:03:32+00:00",
         "description": "PURNULULU, SHIRE OF HALLS CREEK",
         "lat": -17.3958,
         "lng": 128.5461,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - ORD RIVER",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-23T06:52:30.183+00:00",
+        "description": "",
+        "lat": -17.8305,
+        "lng": 127.8093,
+        "polys": [
+          [
+            [
+              127.778462,
+              -17.79608
+            ],
+            [
+              127.801192,
+              -17.793504
+            ],
+            [
+              127.825915,
+              -17.792017
+            ],
+            [
+              127.854061,
+              -17.873565
+            ],
+            [
+              127.830616,
+              -17.87624
+            ],
+            [
+              127.796443,
+              -17.886197
+            ],
+            [
+              127.778462,
+              -17.79608
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-23T06:49:57+00:00",
+        "description": "YALLABATHARRA, SHIRE OF NORTHAMPTON",
+        "lat": -28.2346,
+        "lng": 114.4576,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1602,10 +1555,25 @@
         "polys": [],
         "state": "SA",
         "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
+      {
+        "title": "Grass fire",
+        "alertLevel": "",
+        "status": "safe",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-23T03:17:00+00:00",
+        "description": "CLEVE",
+        "lat": -33.7608,
+        "lng": 136.5886,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
       }
     ]
   },
-  "incident_count": 54,
+  "incident_count": 56,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
