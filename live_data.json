@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-23T04:23:05.302929+00:00",
-  "last_checked_utc": "2026-10-23T04:23:05.302929+00:00",
-  "warning_count": 18,
+  "generated_utc": "2026-10-23T04:53:03.844421+00:00",
+  "last_checked_utc": "2026-10-23T04:53:03.844421+00:00",
+  "warning_count": 19,
   "warnings": [
     {
       "pid": "",
@@ -189,6 +189,25 @@
       ],
       "severityCode": "CAN",
       "hazardPhase": "CAN"
+    },
+    {
+      "pid": "IDQ21035",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Toowoomba",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "The Bureau of Meteorology warns that, at 2:30 pm, a severe thunderstorm likely to produce large hailstones and heavy rainfall that may lead to flash flooding was detected near the area west of Toowoomba. This thunderstorm is slow moving.",
+      "issued": "2026-10-23T14:33:46+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "QLD_ME010",
+          "description": "Toowoomba",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -302,28 +321,13 @@
     "qld": [],
     "tas": [
       {
-        "title": "Bushfire - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-10-23T15:20:13+00:00",
-        "description": "",
-        "lat": -43.00904000023965,
-        "lng": 147.03586999958708,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
-      },
-      {
         "title": "Bushfire - Watch and Act",
         "alertLevel": "Watch and Act",
         "status": "",
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-23T15:20:13+00:00",
+        "updated": "2026-10-23T15:30:13+00:00",
         "description": "",
         "lat": -42.98266000029896,
         "lng": 146.9969200001835,
@@ -421,6 +425,21 @@
         ],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=b6f6248e-6d49-4417-b3a0-5a8234f24260"
+      },
+      {
+        "title": "Bushfire - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-10-23T15:30:13+00:00",
+        "description": "",
+        "lat": -43.00904000023965,
+        "lng": 147.03586999958708,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
       }
     ],
     "wa": [
@@ -1469,25 +1488,25 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-23T04:12:53+00:00",
+        "updated": "2026-10-23T04:44:34+00:00",
         "description": "ILPARPA RD, ILPARPA",
-        "lat": -23.7458,
-        "lng": 133.8672,
+        "lat": -23.7466,
+        "lng": 133.8658,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       },
       {
-        "title": "Grass and Scrub Fire - KILGARIFF",
+        "title": "Grass and Scrub Fire - ILPARPA RD, ILPARPA",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-23T03:16:25+00:00",
-        "description": "KILGARIFF",
-        "lat": -23.7438,
-        "lng": 133.8697,
+        "updated": "2026-10-23T04:12:53+00:00",
+        "description": "ILPARPA RD, ILPARPA",
+        "lat": -23.7458,
+        "lng": 133.8672,
         "polys": [],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
@@ -1515,7 +1534,7 @@
         "status": "active",
         "type": "Structure Fire",
         "size": "",
-        "agency": "Fire - Ambulance",
+        "agency": "Fire",
         "updated": "2026-10-23T04:09:38+00:00",
         "description": "CONDER",
         "lat": -35.4575,
@@ -1525,25 +1544,9 @@
         "sourceUrl": "https://esa.act.gov.au/"
       }
     ],
-    "sa": [
-      {
-        "title": "GRASS FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-23T03:17:00+00:00",
-        "description": "CLEVE",
-        "lat": -33.7608,
-        "lng": 136.5886,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      }
-    ]
+    "sa": []
   },
-  "incident_count": 54,
+  "incident_count": 53,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
