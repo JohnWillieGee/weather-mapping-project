@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-23T09:53:04.576397+00:00",
-  "last_checked_utc": "2026-10-23T09:53:04.576397+00:00",
-  "warning_count": 21,
+  "generated_utc": "2026-10-23T10:23:08.378818+00:00",
+  "last_checked_utc": "2026-10-23T10:23:08.378818+00:00",
+  "warning_count": 22,
   "warnings": [
     {
       "pid": "",
@@ -167,18 +167,28 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Northern Goldfields and Upper Flinders, Central Highlands and Coalfields, Central West, Maranoa and Warrego, Darling Downs and Granite Belt",
+      "title": "Severe Thunderstorm Warning for Northern Goldfields and Upper Flinders, Herbert and Lower Burdekin, Central Coast and Whitsundays, Central Highlands and Coalfields, Central West, Darling Downs and Granite Belt",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "VERY DANGEROUS THUNDERSTORMS are likely to produce heavy, locally intense rainfall that may lead to dangerous and life-threatening flash flooding, large hailstones and damaging winds over the next several hours in parts of the Central Highlands and Coalfields and Central West districts. Locations which may be affected include Emerald, Clermont, Moranbah, Carnarvon National Park, Blackwater and Springsure. Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, ",
-      "issued": "2026-10-23T18:13:59+10:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding over the next several hours in parts of the Northern Goldfields and Upper Flinders, Herbert and Lower Burdekin, Central Coast and Whitsundays, Central Highlands and Coalfields and Central West districts. Locations which may be affected include Clermont, Barcaldine, Moranbah, Dysart, Jericho and Ilfracombe. Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding and large ha",
+      "issued": "2026-10-23T19:54:52+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "QLD_PW003",
           "description": "Northern Goldfields and Upper Flinders",
           "phase": "UPD"
+        },
+        {
+          "aac": "QLD_PW005",
+          "description": "Herbert and Lower Burdekin",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_PW006",
+          "description": "Central Coast and Whitsundays",
+          "phase": "NEW"
         },
         {
           "aac": "QLD_PW008",
@@ -191,11 +201,6 @@
           "phase": "UPD"
         },
         {
-          "aac": "QLD_PW012",
-          "description": "Maranoa and Warrego",
-          "phase": "NEW"
-        },
-        {
           "aac": "QLD_PW013",
           "description": "Darling Downs and Granite Belt",
           "phase": "UPD"
@@ -205,37 +210,56 @@
       "hazardPhase": "UPD"
     },
     {
-      "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Queensland Anonymous Locale 1",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "Severe thunderstorms in the warning area have temporarily eased. However, the redevelopment of severe thunderstorms remains possible. The situation is being closely monitored and further detailed warnings will be issued as necessary.",
-      "issued": "2026-10-23T19:16:33+10:00",
-      "cancelled": false,
-      "areas": [
-        {
-          "aac": "QLD_SP001",
-          "description": "Queensland Anonymous Locale 1",
-          "phase": "NEW"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
-    },
-    {
-      "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Toowoomba",
+      "pid": "IDQ21033",
+      "title": "Severe Thunderstorm Warning for Maranoa and Warrego",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
       "desc": "",
-      "issued": "2026-10-23T19:16:33+10:00",
+      "issued": "2026-10-23T19:54:52+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "QLD_PW012",
+          "description": "Maranoa and Warrego",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
+    },
+    {
+      "pid": "IDQ21035",
+      "title": "Cancellation of Severe Thunderstorm Warning - Southeast Queensland for Toowoomba",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "Severe thunderstorms are no longer affecting the Southeast Queensland area (east of Dalby from Rainbow Beach to Stanthorpe). This warning is now cancelled.",
+      "issued": "2026-10-23T19:58:04+10:00",
       "cancelled": true,
       "areas": [
         {
           "aac": "QLD_ME010",
           "description": "Toowoomba",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
+    },
+    {
+      "pid": "IDQ21035",
+      "title": "Cancellation of Severe Thunderstorm Warning - Southeast Queensland for Queensland Anonymous Locale 1",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-23T19:58:04+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "QLD_SP001",
+          "description": "Queensland Anonymous Locale 1",
           "phase": "CAN"
         }
       ],
@@ -256,22 +280,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-23T20:48:13+00:00",
-        "description": "",
-        "lat": -43.00904000023965,
-        "lng": 147.03586999958708,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
-      },
-      {
-        "title": "Bushfire - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-10-23T20:48:13+00:00",
+        "updated": "2026-10-23T21:10:13+00:00",
         "description": "",
         "lat": -42.981989999696935,
         "lng": 146.9967700003957,
@@ -369,9 +378,54 @@
         ],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=b42a5a1e-886a-4cf7-9d33-5f32b36b66aa"
+      },
+      {
+        "title": "Bushfire - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-10-23T21:10:13+00:00",
+        "description": "",
+        "lat": -43.00904000023965,
+        "lng": 147.03586999958708,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
       }
     ],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-23T10:10:21+00:00",
+        "description": "CABLE BEACH, SHIRE OF BROOME",
+        "lat": -17.9571,
+        "lng": 122.2156,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-23T10:07:14+00:00",
+        "description": "WATERBANK, SHIRE OF BROOME",
+        "lat": -17.404,
+        "lng": 122.803,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -670,21 +724,6 @@
         "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.4505,
         "lng": 128.119,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-22T10:00:24+00:00",
-        "description": "WATERBANK, SHIRE OF BROOME",
-        "lat": -17.404,
-        "lng": 122.803,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1355,6 +1394,21 @@
     "act": [],
     "sa": [
       {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-23T09:57:00+00:00",
+        "description": "PORT GAWLER",
+        "lat": -34.63,
+        "lng": 138.4915,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
+      {
         "title": "Grass fire",
         "alertLevel": "",
         "status": "safe",
@@ -1371,7 +1425,7 @@
       }
     ]
   },
-  "incident_count": 51,
+  "incident_count": 53,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
