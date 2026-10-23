@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-23T02:53:04.981444+00:00",
-  "last_checked_utc": "2026-10-23T02:53:04.981444+00:00",
+  "generated_utc": "2026-10-23T03:23:02.145044+00:00",
+  "last_checked_utc": "2026-10-23T03:23:02.145044+00:00",
   "warning_count": 17,
   "warnings": [
     {
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "22/14:03 EST Initial Flood Warning for the Maroochy River, Coochin Creek and Mooloolah River",
+      "title": "23/13:00 EST Flood Warning for the Maroochy and Mooloolah River",
       "type": "flood",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/flood/noosa-and-maroochy-river.shtml",
       "desc": "",
-      "issued": "Thu, 22 Oct 2026 04:03:47 GMT"
+      "issued": "Fri, 23 Oct 2026 03:00:46 GMT"
     },
     {
       "pid": "",
@@ -174,25 +174,50 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "OLD GUNDAGAI RD, COOTAMUNDRA",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Fri, 23 Oct 2026 03:18:19 GMT",
+        "description": "OLD GUNDAGAI RD, COOTAMUNDRA 2590",
+        "council": "Cootamundra-Gundagai",
+        "lat": -34.728945542,
+        "lng": 148.103363329,
+        "polys": [
+          [
+            [
+              148.105529999,
+              -34.7296000009999
+            ],
+            [
+              148.10089,
+              -34.729340001
+            ],
+            [
+              148.10096,
+              -34.7284099999999
+            ],
+            [
+              148.105580001,
+              -34.728480001
+            ],
+            [
+              148.105529999,
+              -34.7296000009999
+            ]
+          ]
+        ],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "tas": [
-      {
-        "title": "Bushfire - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-10-23T13:30:13+00:00",
-        "description": "",
-        "lat": -43.017950000041786,
-        "lng": 147.04136000044534,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
-      },
       {
         "title": "Bushfire - Watch and Act",
         "alertLevel": "Watch and Act",
@@ -200,7 +225,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-23T13:30:13+00:00",
+        "updated": "2026-10-23T14:20:13+00:00",
         "description": "",
         "lat": -42.98266000029896,
         "lng": 146.9969200001835,
@@ -298,9 +323,39 @@
         ],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=b6f6248e-6d49-4417-b3a0-5a8234f24260"
+      },
+      {
+        "title": "Bushfire - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-10-23T14:20:13+00:00",
+        "description": "",
+        "lat": -43.017950000041786,
+        "lng": 147.04136000044534,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
       }
     ],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-23T02:55:33+00:00",
+        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.8168,
+        "lng": 128.7888,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice THREAT IS REDUCED - CHICHESTER AND FORTESCUE",
         "alertLevel": "Advice",
@@ -514,21 +569,6 @@
         "description": "JURIEN BAY, SHIRE OF DANDARAGAN",
         "lat": -30.1846,
         "lng": 114.9979,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-22T11:39:00+00:00",
-        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.8168,
-        "lng": 128.7888,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1383,11 +1423,58 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       }
     ],
-    "nt": [],
-    "act": [],
+    "nt": [
+      {
+        "title": "Grass and Scrub Fire - KILGARIFF",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-23T03:11:05+00:00",
+        "description": "KILGARIFF",
+        "lat": -23.7438,
+        "lng": 133.8697,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      }
+    ],
+    "act": [
+      {
+        "title": "HOUSE FIRE - CONDER",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-10-23T03:13:04+00:00",
+        "description": "CONDER",
+        "lat": -35.4575,
+        "lng": 149.0996,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HOUSE FIRE - CONDER",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Fire - Ambulance",
+        "updated": "2026-10-23T03:13:04+00:00",
+        "description": "CONDER",
+        "lat": -35.4575,
+        "lng": 149.0996,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      }
+    ],
     "sa": []
   },
-  "incident_count": 51,
+  "incident_count": 55,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
