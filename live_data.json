@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-24T08:53:09.073173+00:00",
-  "last_checked_utc": "2026-10-24T08:53:09.073173+00:00",
+  "generated_utc": "2026-10-24T09:23:13.002838+00:00",
+  "last_checked_utc": "2026-10-24T09:23:13.002838+00:00",
   "warning_count": 28,
   "warnings": [
     {
@@ -176,12 +176,12 @@
     },
     {
       "pid": "",
-      "title": "24/12:33 CDT Road Weather Alert for Adelaide",
+      "title": "24/19:21 CDT Road Weather Alert for Adelaide",
       "type": "other",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/road.shtml",
       "desc": "",
-      "issued": "Sat, 24 Oct 2026 02:03:43 GMT"
+      "issued": "Sat, 24 Oct 2026 08:51:53 GMT"
     },
     {
       "pid": "",
@@ -221,12 +221,12 @@
     },
     {
       "pid": "IDV21033",
-      "title": "Severe Thunderstorm Warning for South West, Central, West and South Gippsland",
+      "title": "Severe Thunderstorm Warning for South West, Central",
       "type": "thunderstorm",
       "state": "VIC",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce large hailstones, damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Geelong, Bacchus Marsh, Apollo Bay and Tidal River.",
-      "issued": "2026-10-24T19:41:46+11:00",
+      "desc": "Severe thunderstorms are likely to produce large hailstones, damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Geelong, Colac, Rosebud and Apollo Bay. Severe thunderstorms are no longer occurring in the West and South Gippsland district and the warning for this district is CANCELLED.",
+      "issued": "2026-10-24T20:05:43+11:00",
       "cancelled": false,
       "areas": [
         {
@@ -238,11 +238,6 @@
           "aac": "VIC_PW007",
           "description": "Central",
           "phase": "NEW"
-        },
-        {
-          "aac": "VIC_PW006",
-          "description": "West and South Gippsland",
-          "phase": "NEW"
         }
       ],
       "severityCode": "STD",
@@ -250,17 +245,22 @@
     },
     {
       "pid": "IDV21035",
-      "title": "Severe Thunderstorm Warning - Melbourne Area for Geelong and Bellarine Peninsula, Western, Port Phillip",
+      "title": "Severe Thunderstorm Warning - Melbourne Area for Geelong and Bellarine Peninsula, Mornington Peninsula, Western, Port Phillip, Western Port",
       "type": "thunderstorm",
       "state": "VIC",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 7:45 pm, severe thunderstorms likely to produce large hailstones and damaging winds were detected near Laverton, Hoppers Crossing and the area west of Bacchus Marsh. These thunderstorms are moving towards the south. They are forecast to affect Balliang, Balliang East and Point Cook by 8:00 pm and Lara, northern Port Phillip Bay and the area west of Werribee by 8:15 pm.",
-      "issued": "2026-10-24T19:44:37+11:00",
+      "desc": "The Bureau of Meteorology warns that, at 8:10 pm, severe thunderstorms likely to produce large hailstones, damaging winds and heavy rainfall that may lead to flash flooding were detected near the You Yangs. These thunderstorms are moving towards the south to southeast. They are forecast to affect Rosebud, Dromana and the area east of Lara by 8:25 pm and Flinders, Queenscliff and northern parts of the Bellarine Peninsula by 8:40 pm.",
+      "issued": "2026-10-24T20:09:19+11:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "VIC_ME011",
           "description": "Geelong and Bellarine Peninsula",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_ME012",
+          "description": "Mornington Peninsula",
           "phase": "NEW"
         },
         {
@@ -271,6 +271,11 @@
         {
           "aac": "VIC_ME019",
           "description": "Port Phillip",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_ME020",
+          "description": "Western Port",
           "phase": "NEW"
         }
       ],
@@ -344,7 +349,22 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-24T19:28:13+00:00",
+        "updated": "2026-10-24T20:20:13+00:00",
+        "description": "",
+        "lat": -42.97395000003419,
+        "lng": 146.95278000039562,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=72afc617-769e-4ec0-915a-cd5b284980f7"
+      },
+      {
+        "title": "Bushfire - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-10-24T20:20:13+00:00",
         "description": "",
         "lat": -42.981989999696935,
         "lng": 146.9967700003957,
@@ -639,6 +659,10 @@
               -42.971789
             ],
             [
+              146.999486,
+              -42.971732
+            ],
+            [
               146.999358,
               -42.97165
             ],
@@ -830,31 +854,31 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-24T19:28:13+00:00",
+        "updated": "2026-10-24T20:20:13+00:00",
         "description": "",
         "lat": -43.00904000023965,
         "lng": 147.03586999958708,
         "polys": [],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
-      },
-      {
-        "title": "Bushfire - Watch and Act",
-        "alertLevel": "Watch and Act",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-10-24T19:28:13+00:00",
-        "description": "",
-        "lat": -42.97371000002286,
-        "lng": 146.9525300001504,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=668484e9-54ad-4837-97d7-2ba185a33735"
       }
     ],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-24T09:05:19+00:00",
+        "description": "CAMBRIDGE GULF, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -15.217,
+        "lng": 128.621,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - DURACK AND LAKE ARGYLE",
         "alertLevel": "Advice",
@@ -1132,76 +1156,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire Advice THREAT IS REDUCED - TELFER",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-24T02:40:26.111+00:00",
-        "description": "",
-        "lat": -21.6931,
-        "lng": 122.2525,
-        "polys": [
-          [
-            [
-              122.275869,
-              -21.657109
-            ],
-            [
-              122.253355,
-              -21.647343
-            ],
-            [
-              122.215456,
-              -21.628857
-            ],
-            [
-              122.169676,
-              -21.66234
-            ],
-            [
-              122.145661,
-              -21.684657
-            ],
-            [
-              122.149818,
-              -21.693502
-            ],
-            [
-              122.1568,
-              -21.710718
-            ],
-            [
-              122.175597,
-              -21.73267
-            ],
-            [
-              122.23878,
-              -21.778384
-            ],
-            [
-              122.426418,
-              -21.775562
-            ],
-            [
-              122.473175,
-              -21.72754
-            ],
-            [
-              122.325973,
-              -21.654496
-            ],
-            [
-              122.275869,
-              -21.657109
-            ]
-          ]
-        ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire Advice MONITOR CONDITIONS - KUNUNURRA",
         "alertLevel": "Advice",
         "status": "active",
@@ -1253,166 +1207,6 @@
             [
               128.792653,
               -15.746677
-            ]
-          ]
-        ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice THREAT IS REDUCED - KUNUNURRA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-24T01:02:39.98+00:00",
-        "description": "",
-        "lat": -15.7968,
-        "lng": 128.7977,
-        "polys": [
-          [
-            [
-              128.831543,
-              -15.818422
-            ],
-            [
-              128.827282,
-              -15.819443
-            ],
-            [
-              128.81294,
-              -15.819866
-            ],
-            [
-              128.797235,
-              -15.820475
-            ],
-            [
-              128.768887,
-              -15.814679
-            ],
-            [
-              128.742486,
-              -15.786951
-            ],
-            [
-              128.739822,
-              -15.746269
-            ],
-            [
-              128.792786,
-              -15.746678
-            ],
-            [
-              128.794975,
-              -15.761426
-            ],
-            [
-              128.811585,
-              -15.800953
-            ],
-            [
-              128.821242,
-              -15.808015
-            ],
-            [
-              128.831543,
-              -15.818422
-            ]
-          ]
-        ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice THREAT IS REDUCED - WYNDHAM",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-24T00:57:25.77+00:00",
-        "description": "",
-        "lat": -15.4605,
-        "lng": 128.1096,
-        "polys": [
-          [
-            [
-              128.125956,
-              -15.47324
-            ],
-            [
-              128.11437,
-              -15.48316
-            ],
-            [
-              128.107133,
-              -15.485181
-            ],
-            [
-              128.1017,
-              -15.48577
-            ],
-            [
-              128.09711,
-              -15.480658
-            ],
-            [
-              128.096712,
-              -15.476332
-            ],
-            [
-              128.100127,
-              -15.461459
-            ],
-            [
-              128.103616,
-              -15.456984
-            ],
-            [
-              128.105577,
-              -15.453902
-            ],
-            [
-              128.106856,
-              -15.449916
-            ],
-            [
-              128.109032,
-              -15.450368
-            ],
-            [
-              128.110804,
-              -15.450245
-            ],
-            [
-              128.110844,
-              -15.448971
-            ],
-            [
-              128.110144,
-              -15.447635
-            ],
-            [
-              128.110622,
-              -15.446383
-            ],
-            [
-              128.112531,
-              -15.44328
-            ],
-            [
-              128.115168,
-              -15.441801
-            ],
-            [
-              128.117922,
-              -15.441803
-            ],
-            [
-              128.125956,
-              -15.47324
             ]
           ]
         ],
@@ -2055,9 +1849,25 @@
       }
     ],
     "act": [],
-    "sa": []
+    "sa": [
+      {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-24T09:13:00+00:00",
+        "description": "HINDMARSH ISLAND",
+        "lat": -35.5072,
+        "lng": 138.7925,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      }
+    ]
   },
-  "incident_count": 52,
+  "incident_count": 51,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
