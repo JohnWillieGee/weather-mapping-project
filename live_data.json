@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-24T13:53:08.559453+00:00",
-  "last_checked_utc": "2026-10-24T13:53:08.559453+00:00",
+  "generated_utc": "2026-10-24T14:23:05.460224+00:00",
+  "last_checked_utc": "2026-10-24T14:23:05.460224+00:00",
   "warning_count": 29,
   "warnings": [
     {
@@ -229,52 +229,47 @@
       "issued": "Sat, 24 Oct 2026 11:02:23 GMT"
     },
     {
-      "pid": "IDV21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for South West, Central",
-      "type": "thunderstorm",
-      "state": "VIC",
-      "link": "",
-      "desc": "This warning is now cancelled.",
-      "issued": "2026-10-24T21:10:17+11:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "VIC_PW009",
-          "description": "South West",
-          "phase": "CAN"
-        },
-        {
-          "aac": "VIC_PW007",
-          "description": "Central",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
-    },
-    {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields, Channel Country",
+      "title": "Severe Thunderstorm Warning for Channel Country, Wide Bay and Burnett",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding over the next several hours in parts of the Central Highlands and Coalfields district. Locations which may be affected include Capella and Bogantungan. Severe thunderstorms are likely to produce damaging winds over the next several hours in parts of the Channel Country district. Locations which may be affected include Birdsville, Ballera, Orientos, Nappa Merrie and Durrie. Severe thunderstorms are no longer",
-      "issued": "2026-10-24T22:34:54+10:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding over the next several hours in parts of the Wide Bay and Burnett district. Locations which may be affected include Biggenden and the area northwest of Gympie. Severe thunderstorms are likely to produce damaging winds over the next several hours in parts of the Channel Country district. Locations which may be affected include Birdsville, Ballera, Orientos, Nappa Merrie, Mt Howitt Station and Morney. Severe t",
+      "issued": "2026-10-25T00:07:56+10:00",
       "cancelled": false,
       "areas": [
         {
-          "aac": "QLD_PW008",
-          "description": "Central Highlands and Coalfields",
-          "phase": "UPD"
-        },
-        {
           "aac": "QLD_PW011",
           "description": "Channel Country",
+          "phase": "REN"
+        },
+        {
+          "aac": "QLD_PW014",
+          "description": "Wide Bay and Burnett",
           "phase": "NEW"
         }
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDQ21033",
+      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-25T00:07:56+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "QLD_PW008",
+          "description": "Central Highlands and Coalfields",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDS21033",
@@ -343,37 +338,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-25T00:20:13+00:00",
-        "description": "",
-        "lat": -42.97395000003419,
-        "lng": 146.95278000039562,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=72afc617-769e-4ec0-915a-cd5b284980f7"
-      },
-      {
-        "title": "Bushfire - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-10-25T00:20:13+00:00",
-        "description": "",
-        "lat": -43.00904000023965,
-        "lng": 147.03586999958708,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
-      },
-      {
-        "title": "Bushfire - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-10-25T00:20:13+00:00",
+        "updated": "2026-10-25T00:58:13+00:00",
         "description": "",
         "lat": -42.981989999696935,
         "lng": 146.9967700003957,
@@ -859,20 +824,50 @@
         ],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=b42a5a1e-886a-4cf7-9d33-5f32b36b66aa"
+      },
+      {
+        "title": "Bushfire - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-10-25T00:58:13+00:00",
+        "description": "",
+        "lat": -43.00904000023965,
+        "lng": 147.03586999958708,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
+      },
+      {
+        "title": "Bushfire - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-10-25T00:58:13+00:00",
+        "description": "",
+        "lat": -42.97395000003419,
+        "lng": 146.95278000039562,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=72afc617-769e-4ec0-915a-cd5b284980f7"
       }
     ],
     "wa": [
       {
-        "title": "Bushfire",
+        "title": "Structure Fire",
         "alertLevel": "",
         "status": "active",
-        "type": "Bush Fire",
+        "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-24T13:42:11+00:00",
-        "description": "MORGANTOWN, SHIRE OF CARNARVON",
-        "lat": -24.8746,
-        "lng": 113.6579,
+        "updated": "2026-10-24T14:11:24+00:00",
+        "description": "MADDINGTON, CITY OF GOSNELLS",
+        "lat": -32.0471,
+        "lng": 116.0125,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -884,10 +879,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-24T13:34:41+00:00",
-        "description": "WANNANUP, CITY OF MANDURAH",
-        "lat": -32.6002,
-        "lng": 115.6531,
+        "updated": "2026-10-24T13:44:51+00:00",
+        "description": "MORGANTOWN, SHIRE OF CARNARVON",
+        "lat": -24.8746,
+        "lng": 113.6579,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
