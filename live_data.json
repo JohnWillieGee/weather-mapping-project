@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-24T17:23:08.528985+00:00",
-  "last_checked_utc": "2026-10-24T17:23:08.528985+00:00",
-  "warning_count": 29,
+  "generated_utc": "2026-10-24T17:53:07.120375+00:00",
+  "last_checked_utc": "2026-10-24T17:53:07.120375+00:00",
+  "warning_count": 28,
   "warnings": [
     {
       "pid": "",
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "24/22:42 EDT Warning to Sheep Graziers\nfor South Coast and Snowy Mountains forecast districts",
+      "title": "25/04:31 EDT Warning to Sheep Graziers\nfor Northern Tablelands, South Coast, Southern Tablelands, South West Slopes, Riverina and Snowy Mountains forecast districts",
       "type": "other",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Sat, 24 Oct 2026 11:42:52 GMT"
+      "issued": "Sat, 24 Oct 2026 17:31:21 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "24/22:16 EDT Warning to Sheep Graziers\nfor Wimmera, Northern Country, North Central, North East, South West, Central, West and South Gippsland and East Gippsland forecast districts",
+      "title": "25/04:21 EDT Warning to Sheep Graziers\nfor Wimmera, Northern Country, North Central, North East, South West, Central, West and South Gippsland and East Gippsland forecast districts",
       "type": "other",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Sat, 24 Oct 2026 11:16:26 GMT"
+      "issued": "Sat, 24 Oct 2026 17:21:38 GMT"
     },
     {
       "pid": "",
@@ -259,36 +259,17 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Wide Bay and Burnett",
+      "title": "Cancellation of Severe Thunderstorm Warning for Wide Bay and Burnett",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Gympie and Tiaro. Severe thunderstorms are no longer occurring in the Channel Country district and the warning for this district is CANCELLED. 148mm was recorded at Brooweena in the 6 hours to 1:45am. 139mm was recorded at Biggenden Rd (Munna Creek) in the 6 hours to 2:15am. 110mm was recorded at Fairies Knob in the 6 h",
-      "issued": "2026-10-25T02:30:10+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled. 148mm was recorded at Brooweena in the 6 hours to 1:45am. 139mm was recorded at Biggenden Rd (Munna Creek) in the 6 hours to 2:15am. 110mm was recorded at Fairies Knob in the 6 hours to 1:30am. 89mm was recorded at Brooyar in the 2 hours to 2:05am.",
+      "issued": "2026-10-25T03:28:17+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "QLD_PW014",
           "description": "Wide Bay and Burnett",
-          "phase": "UPD"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "UPD"
-    },
-    {
-      "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Channel Country",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-25T02:30:10+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "QLD_PW011",
-          "description": "Channel Country",
           "phase": "CAN"
         }
       ],
@@ -317,7 +298,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Grand Av, Rosehill",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sat, 24 Oct 2026 17:49:58 GMT",
+        "description": "Grand Av, Rosehill, NSW 2142",
+        "council": "City of Parramatta",
+        "lat": -33.820908,
+        "lng": 151.027958,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "tas": [
@@ -328,7 +326,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-25T04:18:13+00:00",
+        "updated": "2026-10-25T04:26:23+00:00",
         "description": "",
         "lat": -42.97395000003419,
         "lng": 146.95278000039562,
@@ -343,22 +341,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-25T04:18:13+00:00",
-        "description": "",
-        "lat": -43.00904000023965,
-        "lng": 147.03586999958708,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
-      },
-      {
-        "title": "Bushfire - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-10-25T04:18:13+00:00",
+        "updated": "2026-10-25T04:26:23+00:00",
         "description": "",
         "lat": -42.981989999696935,
         "lng": 146.9967700003957,
@@ -653,8 +636,8 @@
               -42.971789
             ],
             [
-              146.99957,
-              -42.971786
+              146.999567,
+              -42.971784
             ],
             [
               146.999566,
@@ -856,6 +839,21 @@
         ],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=b42a5a1e-886a-4cf7-9d33-5f32b36b66aa"
+      },
+      {
+        "title": "Bushfire - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-10-25T04:26:23+00:00",
+        "description": "",
+        "lat": -43.00904000023965,
+        "lng": 147.03586999958708,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
       }
     ],
     "wa": [
@@ -2058,7 +2056,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 55,
+  "incident_count": 56,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
