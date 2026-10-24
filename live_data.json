@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-24T22:53:06.292297+00:00",
-  "last_checked_utc": "2026-10-24T22:53:06.292297+00:00",
-  "warning_count": 30,
+  "generated_utc": "2026-10-24T23:23:04.804200+00:00",
+  "last_checked_utc": "2026-10-24T23:23:04.804200+00:00",
+  "warning_count": 31,
   "warnings": [
     {
       "pid": "",
-      "title": "25/04:00 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "25/10:02 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 24 Oct 2026 17:00:12 GMT"
+      "issued": "Sat, 24 Oct 2026 23:02:59 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "25/04:10 EDT Marine Wind Warning Summary for Victoria",
+      "title": "25/10:03 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 24 Oct 2026 17:10:30 GMT"
+      "issued": "Sat, 24 Oct 2026 23:03:16 GMT"
     },
     {
       "pid": "",
@@ -59,12 +59,12 @@
     },
     {
       "pid": "",
-      "title": "25/03:00 EST Marine Wind Warning Summary for Queensland",
+      "title": "25/09:03 EST Marine Wind Warning Summary for Queensland",
       "type": "wind",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 24 Oct 2026 17:00:16 GMT"
+      "issued": "Sat, 24 Oct 2026 23:03:17 GMT"
     },
     {
       "pid": "",
@@ -176,12 +176,12 @@
     },
     {
       "pid": "",
-      "title": "25/03:40 CDT Marine Wind Warning Summary for South Australia",
+      "title": "25/09:32 CDT Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sat, 24 Oct 2026 17:10:12 GMT"
+      "issued": "Sat, 24 Oct 2026 23:02:54 GMT"
     },
     {
       "pid": "",
@@ -203,12 +203,12 @@
     },
     {
       "pid": "",
-      "title": "25/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "25/07:03 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sat, 24 Oct 2026 17:01:11 GMT"
+      "issued": "Sat, 24 Oct 2026 23:03:22 GMT"
     },
     {
       "pid": "",
@@ -221,12 +221,12 @@
     },
     {
       "pid": "",
-      "title": "25/04:08 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "25/10:03 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 24 Oct 2026 17:08:38 GMT"
+      "issued": "Sat, 24 Oct 2026 23:03:00 GMT"
     },
     {
       "pid": "",
@@ -287,17 +287,22 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Central West Slopes and Plains, Riverina, Upper Western, Lower Western",
+      "title": "Severe Thunderstorm Warning for Central West Slopes and Plains, South West Slopes, Riverina, Upper Western, Lower Western, Snowy Mountains",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Cobar, Bourke, Griffith, Nyngan, Ivanhoe and Brewarrina. A 91 km/h wind gust was recorded at Wilcannia Airport at 6:43 am.",
-      "issued": "2026-10-25T08:36:19+11:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Wagga Wagga, Albury, Cobar, Griffith, Nyngan and West Wyalong. A 91 km/h wind gust was recorded at Wilcannia Airport at 6:43 am.",
+      "issued": "2026-10-25T10:15:14+11:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "NSW_PW012",
           "description": "Central West Slopes and Plains",
+          "phase": "REN"
+        },
+        {
+          "aac": "NSW_PW013",
+          "description": "South West Slopes",
           "phase": "NEW"
         },
         {
@@ -314,10 +319,39 @@
           "aac": "NSW_PW015",
           "description": "Lower Western",
           "phase": "REN"
+        },
+        {
+          "aac": "NSW_PW010",
+          "description": "Snowy Mountains",
+          "phase": "NEW"
         }
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDV21033",
+      "title": "Severe Thunderstorm Warning for North East, East Gippsland",
+      "type": "thunderstorm",
+      "state": "VIC",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Wodonga, Corryong, Bright, Falls Creek, Mt Hotham and Omeo.",
+      "issued": "2026-10-25T10:16:10+11:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "VIC_PW004",
+          "description": "North East",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW005",
+          "description": "East Gippsland",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     },
     {
       "pid": "IDQ21033",
@@ -2040,21 +2074,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - STUART HWY, WARUMUNGU",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-24T03:01:50+00:00",
-        "description": "STUART HWY, WARUMUNGU",
-        "lat": -19.3671,
-        "lng": 134.1961,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Stuart Highway, TABLELANDS",
         "alertLevel": "Advice",
         "status": "active",
@@ -2104,7 +2123,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 55,
+  "incident_count": 54,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5735,7 +5754,7 @@
     "QLD": {
       "state": "QLD",
       "product": "IDQ20085",
-      "issued_utc": "2026-10-24T17:00:00Z",
+      "issued_utc": "2026-10-24T23:02:49Z",
       "overview": [],
       "hazards": [
         {
@@ -5754,13 +5773,25 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-10-24T17:00:00Z",
+      "issued_utc": "2026-10-24T23:02:44Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast",
+        "Gale Warning for Sunday for Eden Coast",
+        "Strong Wind Warning for Sunday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast and Batemans Coast",
         "Gale Warning for Monday for Eden Coast",
         "Strong Wind Warning for Monday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Sydney Enclosed Waters, Illawarra Coast and Batemans Coast"
       ],
       "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "Eden Coast: Montague Island to Gabo Island"
+          ],
+          "aac_codes": [
+            "NSW_MW001"
+          ],
+          "summary": "Eden Coast"
+        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
@@ -5771,8 +5802,7 @@
             "Hunter Coast: Seal Rocks to Broken Bay",
             "Sydney Coast: Broken Bay to Port Hacking",
             "Illawarra Coast: Port Hacking to Ulladulla",
-            "Batemans Coast: Ulladulla to Montague Island",
-            "Eden Coast: Montague Island to Gabo Island"
+            "Batemans Coast: Ulladulla to Montague Island"
           ],
           "aac_codes": [
             "NSW_MW008",
@@ -5781,70 +5811,60 @@
             "NSW_MW005",
             "NSW_MW004",
             "NSW_MW003",
-            "NSW_MW002",
-            "NSW_MW001"
+            "NSW_MW002"
           ],
-          "summary": "Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast, Batemans Coast and Eden Coast"
+          "summary": "Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Illawarra Coast and Batemans Coast"
         }
       ]
     },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-24T17:10:00Z",
+      "issued_utc": "2026-10-24T23:02:58Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Central Coast, Central Gippsland Coast, East Gippsland Coast, Port Phillip and Western Port",
+        "Gale Warning for Sunday for East Gippsland Coast",
+        "Strong Wind Warning for Sunday for Central Coast, Central Gippsland Coast, Port Phillip and Western Port",
         "Gale Warning for Monday for East Gippsland Coast",
         "Strong Wind Warning for Monday for Central Coast and Central Gippsland Coast"
       ],
       "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
+          ],
+          "aac_codes": [
+            "VIC_MW004"
+          ],
+          "summary": "East Gippsland Coast"
+        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
             "Central Coast: Cape Otway to Wilsons Promontory",
             "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
-            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island",
             "Port Phillip",
             "Western Port"
           ],
           "aac_codes": [
             "VIC_MW002",
             "VIC_MW003",
-            "VIC_MW004",
             "VIC_MW005",
             "VIC_MW006"
           ],
-          "summary": "Port Phillip, Western Port, Central Coast, Central Gippsland Coast and East Gippsland Coast"
-        }
-      ]
-    },
-    "SA": {
-      "state": "SA",
-      "product": "IDS20201",
-      "issued_utc": "2026-10-24T17:10:00Z",
-      "overview": [],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Spencer Gulf"
-          ],
-          "aac_codes": [
-            "SA_MW005"
-          ],
-          "summary": "Spencer Gulf"
+          "summary": "Port Phillip, Western Port, Central Coast and Central Gippsland Coast"
         }
       ]
     },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-24T17:01:00Z",
+      "issued_utc": "2026-10-24T23:03:05Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast and Geraldton Coast",
-        "Strong Wind Warning for Monday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast and Geraldton Coast"
+        "Strong Wind Warning for Sunday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast and Leeuwin Coast",
+        "Strong Wind Warning for Monday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast, Lancelin Coast, Bunbury Geographe Coast and Leeuwin Coast"
       ],
       "hazards": [
         {
@@ -5854,22 +5874,24 @@
             "Pilbara Coast West: Cape Preston to North West Cape",
             "Ningaloo Coast: North West Cape to Cape Cuvier",
             "Gascoyne Coast: Cape Cuvier to Kalbarri",
-            "Geraldton Coast: Kalbarri to Jurien Bay"
+            "Geraldton Coast: Kalbarri to Jurien Bay",
+            "Leeuwin Coast: Cape Naturaliste to Walpole"
           ],
           "aac_codes": [
             "WA_MW004",
             "WA_MW005",
             "WA_MW006",
-            "WA_MW007"
+            "WA_MW007",
+            "WA_MW011"
           ],
-          "summary": "Pilbara Coast West, Ningaloo Coast, Gascoyne Coast and Geraldton Coast"
+          "summary": "Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast and Leeuwin Coast"
         }
       ]
     },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-24T17:08:29Z",
+      "issued_utc": "2026-10-24T23:02:52Z",
       "overview": [
         "Strong Wind Warning for Sunday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast and Storm Bay",
         "Strong Wind Warning for Monday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound and East of Flinders Island"
