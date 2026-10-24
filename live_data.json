@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-24T07:23:09.600965+00:00",
-  "last_checked_utc": "2026-10-24T07:23:09.600965+00:00",
-  "warning_count": 25,
+  "generated_utc": "2026-10-24T07:53:06.105163+00:00",
+  "last_checked_utc": "2026-10-24T07:53:06.105163+00:00",
+  "warning_count": 27,
   "warnings": [
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "24/16:15 EDT Marine Wind Warning Summary for Victoria",
+      "title": "24/18:26 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sat, 24 Oct 2026 05:15:21 GMT"
+      "issued": "Sat, 24 Oct 2026 07:26:50 GMT"
     },
     {
       "pid": "",
@@ -220,6 +220,64 @@
       "issued": "Sat, 24 Oct 2026 05:05:09 GMT"
     },
     {
+      "pid": "IDV21033",
+      "title": "Severe Thunderstorm Warning for Northern Country, North Central, Central, West and South Gippsland",
+      "type": "thunderstorm",
+      "state": "VIC",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Bacchus Marsh, Daylesford, Castlemaine and Kyneton.",
+      "issued": "2026-10-24T18:49:22+11:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "VIC_PW003",
+          "description": "Northern Country",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW008",
+          "description": "North Central",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW007",
+          "description": "Central",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW006",
+          "description": "West and South Gippsland",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
+    },
+    {
+      "pid": "IDV21035",
+      "title": "Severe Thunderstorm Warning - Melbourne Area for Western, Northern",
+      "type": "thunderstorm",
+      "state": "VIC",
+      "link": "",
+      "desc": "The Bureau of Meteorology warns that, at 6:40 pm, a severe thunderstorm likely to produce large hailstones and heavy rainfall that may lead to flash flooding was detected. The thunderstorm is moving towards the south. It is forecast to affect Gisborne and Mt Aitken by 7:10 pm.",
+      "issued": "2026-10-24T18:44:40+11:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "VIC_ME014",
+          "description": "Western",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_ME015",
+          "description": "Northern",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
+    },
+    {
       "pid": "IDS21033",
       "title": "Severe Thunderstorm Warning for North West Pastoral, North East Pastoral",
       "type": "thunderstorm",
@@ -254,7 +312,7 @@
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 24 Oct 2026 07:17:58 GMT",
+        "updated": "Sat, 24 Oct 2026 07:49:58 GMT",
         "description": "Douglas St, Narrandera, NSW 2700",
         "council": "Narrandera",
         "lat": -34.743325,
@@ -274,7 +332,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-24T18:20:13+00:00",
+        "updated": "2026-10-24T18:46:22+00:00",
         "description": "",
         "lat": -42.981989999696935,
         "lng": 146.9967700003957,
@@ -792,7 +850,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-24T18:20:13+00:00",
+        "updated": "2026-10-24T18:46:22+00:00",
         "description": "",
         "lat": -42.97371000002286,
         "lng": 146.9525300001504,
@@ -807,7 +865,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-24T18:20:13+00:00",
+        "updated": "2026-10-24T18:46:22+00:00",
         "description": "",
         "lat": -43.00904000023965,
         "lng": 147.03586999958708,
@@ -824,10 +882,63 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-24T07:10:12+00:00",
+        "updated": "2026-10-24T07:40:57+00:00",
         "description": "KOJONUP, SHIRE OF KOJONUP",
         "lat": -33.8413,
         "lng": 117.1615,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice THREAT IS REDUCED - BULARL DI WUNAMI AND MOUNT HARDMAN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-24T07:35:46.103+00:00",
+        "description": "",
+        "lat": -17.9676,
+        "lng": 125.0039,
+        "polys": [
+          [
+            [
+              125.124896,
+              -17.996057
+            ],
+            [
+              125.131506,
+              -17.935876
+            ],
+            [
+              124.823687,
+              -17.929214
+            ],
+            [
+              124.814333,
+              -17.980666
+            ],
+            [
+              125.124896,
+              -17.996057
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-24T07:27:12+00:00",
+        "description": "ORD RIVER, SHIRE OF HALLS CREEK",
+        "lat": -18.319,
+        "lng": 127.638,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -858,36 +969,6 @@
         "description": "CARDIFF, SHIRE OF COLLIE",
         "lat": -33.4452,
         "lng": 116.2367,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-24T06:35:26+00:00",
-        "description": "CHICHESTER, SHIRE OF ASHBURTON",
-        "lat": -21.8013,
-        "lng": 117.5424,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-24T06:02:52+00:00",
-        "description": "ORD RIVER, SHIRE OF HALLS CREEK",
-        "lat": -18.36,
-        "lng": 127.628,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1394,44 +1475,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire Advice MONITOR CONDITIONS - BULARL DI WUNAMI AND MOUNT HARDMAN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-23T07:45:44.054+00:00",
-        "description": "",
-        "lat": -17.9676,
-        "lng": 125.0039,
-        "polys": [
-          [
-            [
-              125.124896,
-              -17.996057
-            ],
-            [
-              125.131506,
-              -17.935876
-            ],
-            [
-              124.823687,
-              -17.929214
-            ],
-            [
-              124.814333,
-              -17.980666
-            ],
-            [
-              125.124896,
-              -17.996057
-            ]
-          ]
-        ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
@@ -1859,21 +1902,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-18T22:56:36+00:00",
-        "description": "LAKE ARGYLE, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -16.688,
-        "lng": 128.937,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-18T22:35:40+00:00",
         "description": "MUELLER RANGES, SHIRE OF HALLS CREEK",
         "lat": -17.784,
@@ -2001,7 +2029,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 56,
+  "incident_count": 54,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5677,7 +5705,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-24T05:15:00Z",
+      "issued_utc": "2026-10-24T07:26:38Z",
       "overview": [],
       "hazards": [
         {
@@ -5686,14 +5714,18 @@
           "zones": [
             "Central Coast: Cape Otway to Wilsons Promontory",
             "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
-            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island",
+            "Port Phillip",
+            "Western Port"
           ],
           "aac_codes": [
             "VIC_MW002",
             "VIC_MW003",
-            "VIC_MW004"
+            "VIC_MW004",
+            "VIC_MW005",
+            "VIC_MW006"
           ],
-          "summary": "Central Coast, Central Gippsland Coast and East Gippsland Coast"
+          "summary": "Port Phillip, Western Port, Central Coast, Central Gippsland Coast and East Gippsland Coast"
         }
       ]
     },
