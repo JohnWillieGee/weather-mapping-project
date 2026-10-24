@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-24T19:23:07.452794+00:00",
-  "last_checked_utc": "2026-10-24T19:23:07.452794+00:00",
-  "warning_count": 27,
+  "generated_utc": "2026-10-24T19:53:04.196336+00:00",
+  "last_checked_utc": "2026-10-24T19:53:04.196336+00:00",
+  "warning_count": 28,
   "warnings": [
     {
       "pid": "",
@@ -258,23 +258,62 @@
       "hazardPhase": "NEW"
     },
     {
+      "pid": "IDN21033",
+      "title": "Severe Thunderstorm Warning for Riverina, Upper Western, Lower Western",
+      "type": "thunderstorm",
+      "state": "NSW",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Cobar, Bourke, Wilcannia, White Cliffs, Wanaaring and Ivanhoe.",
+      "issued": "2026-10-25T06:42:50+11:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NSW_PW014",
+          "description": "Riverina",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_PW016",
+          "description": "Upper Western",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_PW015",
+          "description": "Lower Western",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
+    },
+    {
       "pid": "IDQ21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for Wide Bay and Burnett",
+      "title": "Severe Thunderstorm Warning for Central West, Channel Country, Maranoa and Warrego",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "This warning is now cancelled. 148mm was recorded at Brooweena in the 6 hours to 1:45am. 139mm was recorded at Biggenden Rd (Munna Creek) in the 6 hours to 2:15am. 110mm was recorded at Fairies Knob in the 6 hours to 1:30am. 89mm was recorded at Brooyar in the 2 hours to 2:05am.",
-      "issued": "2026-10-25T03:28:17+10:00",
-      "cancelled": true,
+      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Thargomindah, Cunnamulla, Quilpie, Hungerford, Eulo and Adavale.",
+      "issued": "2026-10-25T05:48:37+10:00",
+      "cancelled": false,
       "areas": [
         {
-          "aac": "QLD_PW014",
-          "description": "Wide Bay and Burnett",
-          "phase": "CAN"
+          "aac": "QLD_PW009",
+          "description": "Central West",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_PW011",
+          "description": "Channel Country",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_PW012",
+          "description": "Maranoa and Warrego",
+          "phase": "NEW"
         }
       ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -615,7 +654,7 @@
               -42.971789
             ],
             [
-              146.999567,
+              146.999566,
               -42.971784
             ],
             [
@@ -821,6 +860,21 @@
       }
     ],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-24T19:33:05+00:00",
+        "description": "HALLS HEAD, CITY OF MANDURAH",
+        "lat": -32.5582,
+        "lng": 115.6897,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -2020,7 +2074,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 55,
+  "incident_count": 56,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5122,8 +5176,8 @@
       "NT_FW001": {
         "1": {
           "fd": "Moderate",
-          "fbi": 18,
-          "st": "2026-10-25T00:00:00+09:30",
+          "fbi": 17,
+          "st": "2026-10-25T05:08:00+09:30",
           "et": "2026-10-26T00:00:00+09:30"
         },
         "2": {
@@ -5149,7 +5203,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 12,
-          "st": "2026-10-25T00:00:00+09:30",
+          "st": "2026-10-25T05:08:00+09:30",
           "et": "2026-10-26T00:00:00+09:30"
         },
         "2": {
@@ -5175,7 +5229,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 14,
-          "st": "2026-10-25T00:00:00+09:30",
+          "st": "2026-10-25T05:08:00+09:30",
           "et": "2026-10-26T00:00:00+09:30"
         },
         "2": {
@@ -5201,7 +5255,7 @@
         "1": {
           "fd": "No Rating",
           "fbi": 10,
-          "st": "2026-10-25T00:00:00+09:30",
+          "st": "2026-10-25T05:08:00+09:30",
           "et": "2026-10-26T00:00:00+09:30"
         },
         "2": {
@@ -5226,8 +5280,8 @@
       "NT_FW005": {
         "1": {
           "fd": "Moderate",
-          "fbi": 13,
-          "st": "2026-10-25T00:00:00+09:30",
+          "fbi": 14,
+          "st": "2026-10-25T05:08:00+09:30",
           "et": "2026-10-26T00:00:00+09:30"
         },
         "2": {
@@ -5253,7 +5307,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 14,
-          "st": "2026-10-25T00:00:00+09:30",
+          "st": "2026-10-25T05:08:00+09:30",
           "et": "2026-10-26T00:00:00+09:30"
         },
         "2": {
@@ -5278,8 +5332,8 @@
       "NT_FW007": {
         "1": {
           "fd": "Moderate",
-          "fbi": 14,
-          "st": "2026-10-25T00:00:00+09:30",
+          "fbi": 15,
+          "st": "2026-10-25T05:08:00+09:30",
           "et": "2026-10-26T00:00:00+09:30"
         },
         "2": {
@@ -5305,7 +5359,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 13,
-          "st": "2026-10-25T00:00:00+09:30",
+          "st": "2026-10-25T05:08:00+09:30",
           "et": "2026-10-26T00:00:00+09:30"
         },
         "2": {
@@ -5330,8 +5384,8 @@
       "NT_FW009": {
         "1": {
           "fd": "Moderate",
-          "fbi": 18,
-          "st": "2026-10-25T00:00:00+09:30",
+          "fbi": 17,
+          "st": "2026-10-25T05:08:00+09:30",
           "et": "2026-10-26T00:00:00+09:30"
         },
         "2": {
@@ -5357,7 +5411,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 16,
-          "st": "2026-10-25T00:00:00+09:30",
+          "st": "2026-10-25T05:08:00+09:30",
           "et": "2026-10-26T00:00:00+09:30"
         },
         "2": {
@@ -5383,7 +5437,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 17,
-          "st": "2026-10-25T00:00:00+09:30",
+          "st": "2026-10-25T05:08:00+09:30",
           "et": "2026-10-26T00:00:00+09:30"
         },
         "2": {
@@ -5409,7 +5463,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 20,
-          "st": "2026-10-25T00:00:00+09:30",
+          "st": "2026-10-25T05:08:00+09:30",
           "et": "2026-10-26T00:00:00+09:30"
         },
         "2": {
@@ -5435,7 +5489,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 17,
-          "st": "2026-10-25T00:00:00+09:30",
+          "st": "2026-10-25T05:08:00+09:30",
           "et": "2026-10-26T00:00:00+09:30"
         },
         "2": {
@@ -5461,7 +5515,7 @@
         "1": {
           "fd": "No Rating",
           "fbi": 11,
-          "st": "2026-10-25T00:00:00+09:30",
+          "st": "2026-10-25T05:08:00+09:30",
           "et": "2026-10-26T00:00:00+09:30"
         },
         "2": {
@@ -5487,7 +5541,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 18,
-          "st": "2026-10-25T00:00:00+09:30",
+          "st": "2026-10-25T05:08:00+09:30",
           "et": "2026-10-26T00:00:00+09:30"
         },
         "2": {
@@ -5512,8 +5566,8 @@
       "NT_FW016": {
         "1": {
           "fd": "High",
-          "fbi": 45,
-          "st": "2026-10-25T00:00:00+09:30",
+          "fbi": 47,
+          "st": "2026-10-25T05:08:00+09:30",
           "et": "2026-10-26T00:00:00+09:30"
         },
         "2": {
@@ -5538,8 +5592,8 @@
       "NT_FW017": {
         "1": {
           "fd": "Moderate",
-          "fbi": 15,
-          "st": "2026-10-25T00:00:00+09:30",
+          "fbi": 16,
+          "st": "2026-10-25T05:08:00+09:30",
           "et": "2026-10-26T00:00:00+09:30"
         },
         "2": {
@@ -5565,7 +5619,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 14,
-          "st": "2026-10-25T00:00:00+09:30",
+          "st": "2026-10-25T05:08:00+09:30",
           "et": "2026-10-26T00:00:00+09:30"
         },
         "2": {
@@ -5591,7 +5645,7 @@
         "1": {
           "fd": "No Rating",
           "fbi": 0,
-          "st": "2026-10-25T00:00:00+09:30",
+          "st": "2026-10-25T05:08:00+09:30",
           "et": "2026-10-26T00:00:00+09:30"
         },
         "2": {
@@ -5617,7 +5671,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 13,
-          "st": "2026-10-25T00:00:00+09:30",
+          "st": "2026-10-25T05:08:00+09:30",
           "et": "2026-10-26T00:00:00+09:30"
         },
         "2": {
