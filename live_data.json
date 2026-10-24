@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-24T09:53:12.281180+00:00",
-  "last_checked_utc": "2026-10-24T09:53:12.281180+00:00",
+  "generated_utc": "2026-10-24T10:23:10.479881+00:00",
+  "last_checked_utc": "2026-10-24T10:23:10.479881+00:00",
   "warning_count": 29,
   "warnings": [
     {
@@ -230,61 +230,61 @@
     },
     {
       "pid": "IDV21033",
-      "title": "Severe Thunderstorm Warning for South West, Central",
+      "title": "Cancellation of Severe Thunderstorm Warning for South West, Central",
       "type": "thunderstorm",
       "state": "VIC",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce large hailstones, damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Geelong, Colac, Rosebud and Apollo Bay. Severe thunderstorms are no longer occurring in the West and South Gippsland district and the warning for this district is CANCELLED.",
-      "issued": "2026-10-24T20:05:43+11:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-24T21:10:17+11:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "VIC_PW009",
           "description": "South West",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "VIC_PW007",
           "description": "Central",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDV21035",
-      "title": "Severe Thunderstorm Warning - Melbourne Area for Geelong and Bellarine Peninsula, Mornington Peninsula, Port Phillip, Western Port",
+      "title": "Cancellation of Severe Thunderstorm Warning - Melbourne Area for Geelong and Bellarine Peninsula, Mornington Peninsula, Port Phillip, Western Port",
       "type": "thunderstorm",
       "state": "VIC",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 8:25 pm, severe thunderstorms likely to produce large hailstones, damaging winds and heavy rainfall that may lead to flash flooding were detected near Dromana, waters off Geelong City and the area east of Rosebud. These thunderstorms are moving towards the southeast. They are forecast to affect Flinders, Ocean Grove and Leopold by 8:40 pm and Point Lonsdale, Bass Strait and Phillip Island by 8:55 pm.",
-      "issued": "2026-10-24T20:27:10+11:00",
-      "cancelled": false,
+      "desc": "Severe thunderstorms are no longer affecting the Melbourne Area, though showers and isolated thunderstorms are expected to continue tonight. This warning is now cancelled. 2 cm hailstones were observed near Leongatha around 7:00 pm.",
+      "issued": "2026-10-24T21:12:08+11:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "VIC_ME011",
           "description": "Geelong and Bellarine Peninsula",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "VIC_ME012",
           "description": "Mornington Peninsula",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "VIC_ME019",
           "description": "Port Phillip",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "VIC_ME020",
           "description": "Western Port",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDQ21033",
@@ -347,24 +347,7 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Heath Cr, Griffith",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 24 Oct 2026 09:49:58 GMT",
-        "description": "Heath Cr, Griffith, NSW 2680",
-        "council": "Griffith",
-        "lat": -34.2940879999999,
-        "lng": 146.025863,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "tas": [
@@ -897,10 +880,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-24T09:42:30+00:00",
-        "description": "ST GEORGE RANGES, SHIRE OF DERBY/WEST KIMBERLEY",
-        "lat": -18.835,
-        "lng": 125.158,
+        "updated": "2026-10-24T10:13:01+00:00",
+        "description": "CABLE BEACH, SHIRE OF BROOME",
+        "lat": -17.9617,
+        "lng": 122.2129,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -912,10 +895,40 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-24T09:22:49+00:00",
+        "updated": "2026-10-24T10:06:42+00:00",
         "description": "CABLE BEACH, SHIRE OF BROOME",
-        "lat": -17.9559,
-        "lng": 122.2175,
+        "lat": -17.9656,
+        "lng": 122.2124,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-24T09:49:49+00:00",
+        "description": "HALLS CREEK, SHIRE OF HALLS CREEK",
+        "lat": -18.2337,
+        "lng": 127.681,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-24T09:42:30+00:00",
+        "description": "ST GEORGE RANGES, SHIRE OF DERBY/WEST KIMBERLEY",
+        "lat": -18.835,
+        "lng": 125.158,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1878,6 +1891,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - PATERSON ST, TENNANT CREEK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-24T10:07:58+00:00",
+        "description": "PATERSON ST, TENNANT CREEK",
+        "lat": -19.6383,
+        "lng": 134.193,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - STUART HWY, WARUMUNGU",
         "alertLevel": "Advice",
         "status": "active",
@@ -1932,25 +1960,9 @@
       }
     ],
     "act": [],
-    "sa": [
-      {
-        "title": "GRASS FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-24T09:16:00+00:00",
-        "description": "HAPPY VALLEY",
-        "lat": -35.0906,
-        "lng": 138.5956,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      }
-    ]
+    "sa": []
   },
-  "incident_count": 54,
+  "incident_count": 55,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
