@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-24T23:23:04.804200+00:00",
-  "last_checked_utc": "2026-10-24T23:23:04.804200+00:00",
+  "generated_utc": "2026-10-24T23:53:07.636426+00:00",
+  "last_checked_utc": "2026-10-24T23:53:07.636426+00:00",
   "warning_count": 31,
   "warnings": [
     {
@@ -239,51 +239,51 @@
     },
     {
       "pid": "IDN21037",
-      "title": "Severe Weather Warning for Snowy Mountains",
+      "title": "Cancellation of Severe Weather Warning for Snowy Mountains",
       "type": "severe_weather",
       "state": "NSW",
       "link": "",
-      "desc": "Northwesterly DAMAGING WINDS averaging 80 to 90 km/h with peak gusts up to 120 km/h are likely over alpine areas above 1900 metres during Sunday morning. Conditions are expected to ease by the early afternoon. Locations which may be affected include Thredbo, Perisher Valley and Charlotte Pass. A 117 km/h wind gust was recorded at Thredbo at 6:51 am.",
-      "issued": "2026-10-25T07:31:03+11:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled. A 117 km/h wind gust was recorded at Thredbo at 6:51 am.",
+      "issued": "2026-10-25T10:41:17+11:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "NSW_PW010",
           "description": "Snowy Mountains",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDV21037",
-      "title": "Severe Weather Warning for North East, West and South Gippsland, East Gippsland",
+      "title": "Cancellation of Severe Weather Warning for North East, West and South Gippsland, East Gippsland",
       "type": "severe_weather",
       "state": "VIC",
       "link": "",
-      "desc": "DAMAGING WINDS, averaging 60 to 70 km/h with peak gusts of around 90 km/h are occurring over exposed peaks this morning. Winds are expected to ease during the late morning. Locations which may be affected include Falls Creek, Mt Hotham, Mt Buller and Omeo. 96 km/h wind gust was recorded at Mt Buller at 3:25 am",
-      "issued": "2026-10-25T04:05:01+11:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled. 93 km/h wind gusts was recorded at Falls Creek at 9:29 am. 109 km/h wind gusts was recorded at Mount Hotham at 6:55 am. 96 km/h wind gust was recorded at Mt Buller at 3:25 am.",
+      "issued": "2026-10-25T10:38:15+11:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "VIC_PW004",
           "description": "North East",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "VIC_PW006",
           "description": "West and South Gippsland",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "VIC_PW005",
           "description": "East Gippsland",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDN21033",
@@ -704,6 +704,10 @@
             [
               146.999575,
               -42.971789
+            ],
+            [
+              146.999572,
+              -42.971788
             ],
             [
               146.999568,
@@ -1308,44 +1312,6 @@
         "lat": -32.8313,
         "lng": 115.9704,
         "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice THREAT IS REDUCED - BULARL DI WUNAMI AND MOUNT HARDMAN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-24T07:35:46.103+00:00",
-        "description": "",
-        "lat": -17.9676,
-        "lng": 125.0039,
-        "polys": [
-          [
-            [
-              125.124896,
-              -17.996057
-            ],
-            [
-              125.131506,
-              -17.935876
-            ],
-            [
-              124.823687,
-              -17.929214
-            ],
-            [
-              124.814333,
-              -17.980666
-            ],
-            [
-              125.124896,
-              -17.996057
-            ]
-          ]
-        ],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -2123,7 +2089,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 54,
+  "incident_count": 53,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
