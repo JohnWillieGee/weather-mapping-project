@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-24T21:23:05.979213+00:00",
-  "last_checked_utc": "2026-10-24T21:23:05.979213+00:00",
+  "generated_utc": "2026-10-24T21:53:07.824806+00:00",
+  "last_checked_utc": "2026-10-24T21:53:07.824806+00:00",
   "warning_count": 29,
   "warnings": [
     {
@@ -278,61 +278,66 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Riverina, Upper Western, Lower Western",
+      "title": "Severe Thunderstorm Warning for Central West Slopes and Plains, Riverina, Upper Western, Lower Western",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Cobar, Bourke, Wilcannia, White Cliffs, Wanaaring and Ivanhoe.",
-      "issued": "2026-10-25T06:42:50+11:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Cobar, Bourke, Griffith, Nyngan, Ivanhoe and Brewarrina. A 91 km/h wind gust was recorded at Wilcannia Airport at 6:43 am.",
+      "issued": "2026-10-25T08:36:19+11:00",
       "cancelled": false,
       "areas": [
         {
+          "aac": "NSW_PW012",
+          "description": "Central West Slopes and Plains",
+          "phase": "NEW"
+        },
+        {
           "aac": "NSW_PW014",
           "description": "Riverina",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "NSW_PW016",
           "description": "Upper Western",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "NSW_PW015",
           "description": "Lower Western",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "UPD"
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central West, Channel Country, Maranoa and Warrego",
+      "title": "Cancellation of Severe Thunderstorm Warning for Central West, Channel Country, Maranoa and Warrego",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Thargomindah, Cunnamulla, Quilpie, Hungerford, Eulo and Adavale.",
-      "issued": "2026-10-25T05:48:37+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-25T07:34:48+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "QLD_PW009",
           "description": "Central West",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW011",
           "description": "Channel Country",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW012",
           "description": "Maranoa and Warrego",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -348,7 +353,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-25T08:00:12+00:00",
+        "updated": "2026-10-25T08:50:12+00:00",
         "description": "",
         "lat": -42.981989999696935,
         "lng": 146.9967700003957,
@@ -643,8 +648,8 @@
               -42.971789
             ],
             [
-              146.999572,
-              -42.971787
+              146.999569,
+              -42.971786
             ],
             [
               146.999566,
@@ -858,13 +863,13 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-25T08:00:12+00:00",
+        "updated": "2026-10-25T08:50:12+00:00",
         "description": "",
-        "lat": -43.00904000023965,
-        "lng": 147.03586999958708,
+        "lat": -42.97395000003419,
+        "lng": 146.95278000039562,
         "polys": [],
         "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
+        "sourceUrl": "https://alert.tas.gov.au/?id=72afc617-769e-4ec0-915a-cd5b284980f7"
       },
       {
         "title": "Bushfire - Advice",
@@ -873,13 +878,13 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-25T08:00:12+00:00",
+        "updated": "2026-10-25T08:50:12+00:00",
         "description": "",
-        "lat": -42.97395000003419,
-        "lng": 146.95278000039562,
+        "lat": -43.00904000023965,
+        "lng": 147.03586999958708,
         "polys": [],
         "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=72afc617-769e-4ec0-915a-cd5b284980f7"
+        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
       }
     ],
     "wa": [
