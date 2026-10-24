@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-24T12:23:14.588489+00:00",
-  "last_checked_utc": "2026-10-24T12:23:14.588489+00:00",
-  "warning_count": 28,
+  "generated_utc": "2026-10-24T12:53:10.194749+00:00",
+  "last_checked_utc": "2026-10-24T12:53:10.194749+00:00",
+  "warning_count": 29,
   "warnings": [
     {
       "pid": "",
@@ -254,61 +254,80 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields",
+      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields, Channel Country",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Capella, Bogantungan and Mantuan Downs. 101 mm has been recorded in the 2 hours to 6:41 pm at Theresa Creek Dam.",
-      "issued": "2026-10-24T21:05:51+10:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding over the next several hours in parts of the Central Highlands and Coalfields district. Locations which may be affected include Capella and Bogantungan. Severe thunderstorms are likely to produce damaging winds over the next several hours in parts of the Channel Country district. Locations which may be affected include Birdsville, Ballera, Orientos, Nappa Merrie and Durrie. Severe thunderstorms are no longer",
+      "issued": "2026-10-24T22:34:54+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "QLD_PW008",
           "description": "Central Highlands and Coalfields",
-          "phase": "REN"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
-    },
-    {
-      "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for North West Pastoral, North East Pastoral, Eastern Eyre Peninsula, Flinders, Mid North",
-      "type": "thunderstorm",
-      "state": "SA",
-      "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Port Augusta, Marla, Coober Pedy, Roxby Downs, Leigh Creek and Oodnadatta. A 96 km/h gust was recorded at Oodnadatta at 7:42 pm CDT A 98 km/h gust was recorded at Port Augusta at 7:21 pm CDT A 96 km/h gust was recorded at Cultana at 6:46 pm CDT",
-      "issued": "2026-10-24T20:00:40+10:30",
-      "cancelled": false,
-      "areas": [
-        {
-          "aac": "SA_PW013",
-          "description": "North West Pastoral",
-          "phase": "REN"
+          "phase": "UPD"
         },
         {
-          "aac": "SA_PW014",
-          "description": "North East Pastoral",
-          "phase": "REN"
-        },
-        {
-          "aac": "SA_PW011",
-          "description": "Eastern Eyre Peninsula",
-          "phase": "REN"
-        },
-        {
-          "aac": "SA_PW009",
-          "description": "Flinders",
-          "phase": "REN"
-        },
-        {
-          "aac": "SA_PW008",
-          "description": "Mid North",
+          "aac": "QLD_PW011",
+          "description": "Channel Country",
           "phase": "NEW"
         }
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDS21033",
+      "title": "Severe Thunderstorm Warning for North East Pastoral",
+      "type": "thunderstorm",
+      "state": "SA",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Leigh Creek, Moomba, Marree, Innamincka, Arkaroola and the Simpson Desert Conservation Park. Severe thunderstorms are no longer occurring in the Eastern Eyre Peninsula, Flinders, Mid North and North West Pastoral districts and the warning for these districts is CANCELLED. A 96 km/h gust was recorded at Oodnadatta at 7:42 pm CDT A 98 km/h gust was reco",
+      "issued": "2026-10-24T22:58:44+10:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "SA_PW014",
+          "description": "North East Pastoral",
+          "phase": "UPD"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDS21033",
+      "title": "Severe Thunderstorm Warning for Mid North, Flinders, Eastern Eyre Peninsula, North West Pastoral",
+      "type": "thunderstorm",
+      "state": "SA",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-24T22:58:44+10:30",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "SA_PW008",
+          "description": "Mid North",
+          "phase": "CAN"
+        },
+        {
+          "aac": "SA_PW009",
+          "description": "Flinders",
+          "phase": "CAN"
+        },
+        {
+          "aac": "SA_PW011",
+          "description": "Eastern Eyre Peninsula",
+          "phase": "CAN"
+        },
+        {
+          "aac": "SA_PW013",
+          "description": "North West Pastoral",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -649,8 +668,8 @@
               -42.971789
             ],
             [
-              146.999366,
-              -42.971655
+              146.999364,
+              -42.971653
             ],
             [
               146.999358,
@@ -846,10 +865,25 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-24T12:13:39+00:00",
-        "description": "GERALDTON, CITY OF GREATER GERALDTON",
-        "lat": -28.7751,
-        "lng": 114.6098,
+        "updated": "2026-10-24T12:29:57+00:00",
+        "description": "KURNALPI, CITY OF KALGOORLIE-BOULDER",
+        "lat": -30.5613,
+        "lng": 121.6592,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-24T12:19:22+00:00",
+        "description": "COOYA POOYA, CITY OF KARRATHA",
+        "lat": -21.079,
+        "lng": 117.104,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -933,21 +967,6 @@
             ]
           ]
         ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-24T11:17:14+00:00",
-        "description": "COOYA POOYA, CITY OF KARRATHA",
-        "lat": -21.079,
-        "lng": 117.104,
-        "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
