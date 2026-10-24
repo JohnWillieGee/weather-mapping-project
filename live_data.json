@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-24T00:23:03.154028+00:00",
-  "last_checked_utc": "2026-10-24T00:23:03.154028+00:00",
-  "warning_count": 23,
+  "generated_utc": "2026-10-24T00:53:02.718770+00:00",
+  "last_checked_utc": "2026-10-24T00:53:02.718770+00:00",
+  "warning_count": 24,
   "warnings": [
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "23/17:13 EDT Initial Minor Flood Warning for the Orara River",
+      "title": "24/11:33 EDT Final Flood Warning for the Orara River",
       "type": "flood",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/flood/orarariver.shtml",
       "desc": "",
-      "issued": "Fri, 23 Oct 2026 06:13:38 GMT"
+      "issued": "Sat, 24 Oct 2026 00:33:56 GMT"
     },
     {
       "pid": "",
@@ -128,6 +128,15 @@
       "link": "http://reg.bom.gov.au/qld/warnings/flood/border-rivers.shtml",
       "desc": "",
       "issued": "Fri, 23 Oct 2026 01:39:08 GMT"
+    },
+    {
+      "pid": "",
+      "title": "24/10:32 EST Initial Minor Flood Warning for the Wallam Creek and Flood Warning for the Mungallala Creek",
+      "type": "flood",
+      "state": "QLD",
+      "link": "http://reg.bom.gov.au/qld/warnings/flood/wallam-mungallala-creeks.shtml",
+      "desc": "",
+      "issued": "Sat, 24 Oct 2026 00:32:44 GMT"
     },
     {
       "pid": "",
@@ -233,24 +242,7 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "CONTOUR RD, MURRAMI",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Sat, 24 Oct 2026 00:17:58 GMT",
-        "description": "CONTOUR RD, MURRAMI 2705",
-        "council": "Leeton",
-        "lat": -34.420373,
-        "lng": 146.265316,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "tas": [
@@ -744,6 +736,21 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
+        "updated": "2026-10-24T00:21:02+00:00",
+        "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -16.376,
+        "lng": 128.342,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
         "updated": "2026-10-23T23:52:03+00:00",
         "description": "BURLONG, SHIRE OF NORTHAM",
         "lat": -31.6644,
@@ -976,21 +983,6 @@
             ]
           ]
         ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-23T06:49:57+00:00",
-        "description": "YALLABATHARRA, SHIRE OF NORTHAMPTON",
-        "lat": -28.2346,
-        "lng": 114.4576,
-        "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1688,9 +1680,40 @@
     ],
     "nt": [],
     "act": [],
-    "sa": []
+    "sa": [
+      {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-24T00:36:00+00:00",
+        "description": "KADINA",
+        "lat": -33.936,
+        "lng": 137.7339,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
+      {
+        "title": "STRUCTURE FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-24T00:27:00+00:00",
+        "description": "TUMBY BAY",
+        "lat": -34.451,
+        "lng": 136.0456,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      }
+    ]
   },
-  "incident_count": 49,
+  "incident_count": 50,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
