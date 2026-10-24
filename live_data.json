@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-23T23:53:04.540147+00:00",
-  "last_checked_utc": "2026-10-23T23:53:04.540147+00:00",
+  "generated_utc": "2026-10-24T00:23:03.154028+00:00",
+  "last_checked_utc": "2026-10-24T00:23:03.154028+00:00",
   "warning_count": 23,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "24/06:46 EDT Warning to Sheep Graziers\nfor South Coast and Snowy Mountains forecast districts",
+      "title": "24/10:51 EDT Warning to Sheep Graziers\nfor South Coast and Snowy Mountains forecast districts",
       "type": "other",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Fri, 23 Oct 2026 19:46:15 GMT"
+      "issued": "Fri, 23 Oct 2026 23:51:00 GMT"
     },
     {
       "pid": "",
@@ -50,12 +50,12 @@
     },
     {
       "pid": "",
-      "title": "24/06:43 EDT Warning to Sheep Graziers\nfor Wimmera, Northern Country, North Central, North East, South West, Central, West and South Gippsland and East Gippsland forecast districts",
+      "title": "24/10:50 EDT Warning to Sheep Graziers\nfor Wimmera, Northern Country, North Central, North East, South West, Central, West and South Gippsland and East Gippsland forecast districts",
       "type": "other",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Fri, 23 Oct 2026 19:43:25 GMT"
+      "issued": "Fri, 23 Oct 2026 23:50:25 GMT"
     },
     {
       "pid": "",
@@ -185,12 +185,12 @@
     },
     {
       "pid": "",
-      "title": "24/03:28 WST Warning to Sheep Graziers\nfor South West and South Coastal forecast districts",
+      "title": "24/07:56 WST Cancellation of Warning to Sheep Graziers\nfor South West and South Coastal forecast districts",
       "type": "other",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Fri, 23 Oct 2026 19:28:01 GMT"
+      "issued": "Fri, 23 Oct 2026 23:56:51 GMT"
     },
     {
       "pid": "",
@@ -233,7 +233,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "CONTOUR RD, MURRAMI",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Sat, 24 Oct 2026 00:17:58 GMT",
+        "description": "CONTOUR RD, MURRAMI 2705",
+        "council": "Leeton",
+        "lat": -34.420373,
+        "lng": 146.265316,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "tas": [
@@ -244,22 +261,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-24T10:02:13+00:00",
-        "description": "",
-        "lat": -43.00904000023965,
-        "lng": 147.03586999958708,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
-      },
-      {
-        "title": "Bushfire - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-10-24T10:02:13+00:00",
+        "updated": "2026-10-24T11:16:22+00:00",
         "description": "",
         "lat": -42.981989999696935,
         "lng": 146.9967700003957,
@@ -717,35 +719,35 @@
         ],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=b42a5a1e-886a-4cf7-9d33-5f32b36b66aa"
+      },
+      {
+        "title": "Bushfire - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-10-24T11:16:22+00:00",
+        "description": "",
+        "lat": -43.00904000023965,
+        "lng": 147.03586999958708,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
       }
     ],
     "wa": [
       {
-        "title": "Structure Fire",
+        "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
-        "type": "Structure Fire",
+        "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-23T23:29:42+00:00",
-        "description": "ARMADALE, CITY OF ARMADALE",
-        "lat": -32.1509,
-        "lng": 116.0112,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-23T23:15:24+00:00",
-        "description": "BAYSWATER, CITY OF BAYSWATER",
-        "lat": -31.9094,
-        "lng": 115.9141,
+        "updated": "2026-10-23T23:52:03+00:00",
+        "description": "BURLONG, SHIRE OF NORTHAM",
+        "lat": -31.6644,
+        "lng": 116.6262,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -761,21 +763,6 @@
         "description": "GIDGEGANNUP, CITY OF SWAN",
         "lat": -31.7125,
         "lng": 116.1426,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-23T11:33:16+00:00",
-        "description": "BURLONG, SHIRE OF NORTHAM",
-        "lat": -31.6644,
-        "lng": 116.6262,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1703,7 +1690,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 50,
+  "incident_count": 49,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
