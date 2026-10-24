@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-24T08:23:08.859260+00:00",
-  "last_checked_utc": "2026-10-24T08:23:08.859260+00:00",
+  "generated_utc": "2026-10-24T08:53:09.073173+00:00",
+  "last_checked_utc": "2026-10-24T08:53:09.073173+00:00",
   "warning_count": 28,
   "warnings": [
     {
@@ -225,8 +225,8 @@
       "type": "thunderstorm",
       "state": "VIC",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Bacchus Marsh, Colac, Apollo Bay and Tidal River. Severe thunderstorms are no longer occurring in the Northern Country and North Central districts and the warning for these districts is CANCELLED.",
-      "issued": "2026-10-24T19:18:54+11:00",
+      "desc": "Severe thunderstorms are likely to produce large hailstones, damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Geelong, Bacchus Marsh, Apollo Bay and Tidal River.",
+      "issued": "2026-10-24T19:41:46+11:00",
       "cancelled": false,
       "areas": [
         {
@@ -250,22 +250,27 @@
     },
     {
       "pid": "IDV21035",
-      "title": "Severe Thunderstorm Warning - Melbourne Area for Western, Northern",
+      "title": "Severe Thunderstorm Warning - Melbourne Area for Geelong and Bellarine Peninsula, Western, Port Phillip",
       "type": "thunderstorm",
       "state": "VIC",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 7:05 pm, a severe thunderstorm likely to produce large hailstones and heavy rainfall that may lead to flash flooding was detected near Gisborne. This thunderstorm is moving towards the south. It is forecast to affect the area west of Sunbury and Mt Aitken by 7:20 pm and Melton, Sunbury and Sydenham West by 7:35 pm.",
-      "issued": "2026-10-24T19:07:27+11:00",
+      "desc": "The Bureau of Meteorology warns that, at 7:45 pm, severe thunderstorms likely to produce large hailstones and damaging winds were detected near Laverton, Hoppers Crossing and the area west of Bacchus Marsh. These thunderstorms are moving towards the south. They are forecast to affect Balliang, Balliang East and Point Cook by 8:00 pm and Lara, northern Port Phillip Bay and the area west of Werribee by 8:15 pm.",
+      "issued": "2026-10-24T19:44:37+11:00",
       "cancelled": false,
       "areas": [
+        {
+          "aac": "VIC_ME011",
+          "description": "Geelong and Bellarine Peninsula",
+          "phase": "NEW"
+        },
         {
           "aac": "VIC_ME014",
           "description": "Western",
           "phase": "NEW"
         },
         {
-          "aac": "VIC_ME015",
-          "description": "Northern",
+          "aac": "VIC_ME019",
+          "description": "Port Phillip",
           "phase": "NEW"
         }
       ],
@@ -293,22 +298,32 @@
     },
     {
       "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for North West Pastoral, North East Pastoral",
+      "title": "Severe Thunderstorm Warning for North West Pastoral, North East Pastoral, Eastern Eyre Peninsula, Flinders",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Marla, Coober Pedy and Roxby Downs.",
-      "issued": "2026-10-24T17:13:54+10:30",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Port Augusta, Marla, Coober Pedy, Roxby Downs, Oodnadatta and Woomera. A 96 km/h gust was recorded at Cultana at 6:46 pm CDT",
+      "issued": "2026-10-24T18:55:21+10:30",
       "cancelled": false,
       "areas": [
         {
           "aac": "SA_PW013",
           "description": "North West Pastoral",
-          "phase": "REN"
+          "phase": "UPD"
         },
         {
           "aac": "SA_PW014",
           "description": "North East Pastoral",
+          "phase": "UPD"
+        },
+        {
+          "aac": "SA_PW011",
+          "description": "Eastern Eyre Peninsula",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW009",
+          "description": "Flinders",
           "phase": "NEW"
         }
       ],
@@ -318,137 +333,78 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "Douglas St, Narrandera",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 24 Oct 2026 08:17:58 GMT",
-        "description": "Douglas St, Narrandera, NSW 2700",
-        "council": "Narrandera",
-        "lat": -34.743325,
-        "lng": 146.543829,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "tas": [
       {
-        "title": "Bushfire - Watch and Act",
-        "alertLevel": "Watch and Act",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-10-24T19:20:13+00:00",
-        "description": "",
-        "lat": -42.97371000002286,
-        "lng": 146.9525300001504,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=668484e9-54ad-4837-97d7-2ba185a33735"
-      },
-      {
         "title": "Bushfire - Advice",
         "alertLevel": "Advice",
         "status": "",
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-24T19:20:13+00:00",
-        "description": "",
-        "lat": -43.00904000023965,
-        "lng": 147.03586999958708,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
-      },
-      {
-        "title": "Bushfire - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-10-24T19:20:13+00:00",
+        "updated": "2026-10-24T19:28:13+00:00",
         "description": "",
         "lat": -42.981989999696935,
         "lng": 146.9967700003957,
         "polys": [
           [
             [
-              146.97205,
-              -42.97015
+              146.966391,
+              -42.968499
             ],
             [
-              146.97214,
-              -42.97065
+              146.966904,
+              -42.969871
             ],
             [
-              146.97231,
-              -42.97087
+              146.967604,
+              -42.971346
             ],
             [
-              146.97317,
-              -42.97153
+              146.968631,
+              -42.972066
             ],
             [
-              146.97334,
-              -42.9719
+              146.969798,
+              -42.972753
             ],
             [
-              146.97394,
-              -42.97238
+              146.970452,
+              -42.973439
             ],
             [
-              146.97411,
-              -42.97275
+              146.970966,
+              -42.974125
             ],
             [
-              146.97493,
-              -42.9736
+              146.97232,
+              -42.974503
             ],
             [
-              146.97557,
-              -42.97385
+              146.974235,
+              -42.975121
             ],
             [
-              146.97613,
-              -42.9742
+              146.977038,
+              -42.974675
             ],
             [
-              146.97681,
-              -42.97442
+              146.978579,
+              -42.975224
             ],
             [
-              146.9775,
-              -42.97445
+              146.979466,
+              -42.975876
             ],
             [
-              146.97922,
-              -42.9752
+              146.979653,
+              -42.976597
             ],
             [
-              146.97969,
-              -42.9758
-            ],
-            [
-              146.97982,
-              -42.97643
-            ],
-            [
-              146.98008,
-              -42.9768
-            ],
-            [
-              146.98038,
-              -42.97696
+              146.980448,
+              -42.977019
             ],
             [
               146.98085,
@@ -459,8 +415,16 @@
               -42.97765
             ],
             [
-              146.982576,
-              -42.977817
+              146.981707,
+              -42.977688
+            ],
+            [
+              146.981848,
+              -42.977763
+            ],
+            [
+              146.982578,
+              -42.977826
             ],
             [
               146.98261,
@@ -623,72 +587,76 @@
               -42.97614
             ],
             [
-              147.00771,
-              -42.97589
+              147.007691,
+              -42.97601
             ],
             [
-              147.00806,
-              -42.97542
+              147.008101,
+              -42.975809
             ],
             [
-              147.00806,
-              -42.97495
+              147.008241,
+              -42.975089
             ],
             [
-              147.00819,
-              -42.97448
+              147.008428,
+              -42.974197
             ],
             [
-              147.00819,
-              -42.97388
+              147.008194,
+              -42.973271
             ],
             [
-              147.00801,
-              -42.97351
+              147.00726,
+              -42.972482
             ],
             [
-              147.00728,
-              -42.97278
+              147.005672,
+              -42.972414
             ],
             [
-              147.0066,
-              -42.97253
+              147.005613,
+              -42.972414
             ],
             [
-              147.00595,
-              -42.97244
+              147.002406,
+              -42.972167
             ],
             [
-              147.00102,
-              -42.97206
+              147.002309,
+              -42.972139
             ],
             [
-              146.99982,
-              -42.97187
+              147.000861,
+              -42.971865
             ],
             [
-              146.999408,
-              -42.971734
+              146.999805,
+              -42.971865
+            ],
+            [
+              146.999575,
+              -42.971789
+            ],
+            [
+              146.999358,
+              -42.97165
             ],
             [
               146.99934,
               -42.97162
             ],
             [
-              146.999003,
-              -42.9716
+              146.999309,
+              -42.971618
             ],
             [
-              146.99879,
-              -42.97153
+              146.998572,
+              -42.971145
             ],
             [
-              146.998705,
-              -42.971517
-            ],
-            [
-              146.9984,
-              -42.97134
+              146.997279,
+              -42.971106
             ],
             [
               146.9972,
@@ -760,11 +728,19 @@
             ],
             [
               146.98909,
-              -42.96522
+              -42.965634
             ],
             [
-              146.98892,
-              -42.96446
+              146.989278,
+              -42.965279
+            ],
+            [
+              146.989091,
+              -42.964353
+            ],
+            [
+              146.988716,
+              -42.96427
             ],
             [
               146.98862,
@@ -775,32 +751,28 @@
               -42.96412
             ],
             [
-              146.98737,
-              -42.96418
+              146.988059,
+              -42.964123
             ],
             [
-              146.9869,
-              -42.96459
+              146.98755,
+              -42.96401
             ],
             [
-              146.98656,
-              -42.96468
+              146.986195,
+              -42.964901
             ],
             [
-              146.98634,
-              -42.9649
+              146.984748,
+              -42.965107
             ],
             [
-              146.98604,
-              -42.965
+              146.982973,
+              -42.965141
             ],
             [
-              146.98583,
-              -42.96518
-            ],
-            [
-              146.98368,
-              -42.96525
+              146.982861,
+              -42.965161
             ],
             [
               146.98248,
@@ -811,81 +783,75 @@
               -42.96525
             ],
             [
-              146.98184,
-              -42.9655
+              146.981921,
+              -42.965331
             ],
             [
-              146.98153,
-              -42.96562
+              146.980421,
+              -42.965601
             ],
             [
-              146.97978,
-              -42.96559
+              146.980166,
+              -42.965597
             ],
             [
-              146.97883,
-              -42.96575
+              146.978489,
+              -42.965312
             ],
             [
-              146.9775,
-              -42.96575
+              146.973726,
+              -42.964693
             ],
             [
-              146.9763,
-              -42.96584
+              146.972324,
+              -42.965036
             ],
             [
-              146.97613,
-              -42.96591
+              146.971577,
+              -42.965619
             ],
             [
-              146.97553,
-              -42.9665
+              146.970876,
+              -42.96603
             ],
             [
-              146.97536,
-              -42.96644
-            ],
-            [
-              146.97527,
-              -42.9665
-            ],
-            [
-              146.97467,
-              -42.96748
-            ],
-            [
-              146.97428,
-              -42.96776
-            ],
-            [
-              146.97411,
-              -42.96801
-            ],
-            [
-              146.97398,
-              -42.96839
-            ],
-            [
-              146.97304,
-              -42.96895
-            ],
-            [
-              146.97244,
-              -42.96971
-            ],
-            [
-              146.97218,
-              -42.9699
-            ],
-            [
-              146.97205,
-              -42.97015
+              146.966391,
+              -42.968499
             ]
           ]
         ],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=b42a5a1e-886a-4cf7-9d33-5f32b36b66aa"
+      },
+      {
+        "title": "Bushfire - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-10-24T19:28:13+00:00",
+        "description": "",
+        "lat": -43.00904000023965,
+        "lng": 147.03586999958708,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
+      },
+      {
+        "title": "Bushfire - Watch and Act",
+        "alertLevel": "Watch and Act",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-10-24T19:28:13+00:00",
+        "description": "",
+        "lat": -42.97371000002286,
+        "lng": 146.9525300001504,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=668484e9-54ad-4837-97d7-2ba185a33735"
       }
     ],
     "wa": [
@@ -978,21 +944,6 @@
         "description": "WAROONA, SHIRE OF WAROONA",
         "lat": -32.8313,
         "lng": 115.9704,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-24T07:40:57+00:00",
-        "description": "KOJONUP, SHIRE OF KOJONUP",
-        "lat": -33.8413,
-        "lng": 117.1615,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1904,21 +1855,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-20T21:25:09+00:00",
-        "description": "GINGERAH, SHIRE OF BROOME",
-        "lat": -19.531,
-        "lng": 122.423,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-20T07:00:29+00:00",
         "description": "MUELLER RANGES, SHIRE OF HALLS CREEK",
         "lat": -17.889,
@@ -2119,25 +2055,9 @@
       }
     ],
     "act": [],
-    "sa": [
-      {
-        "title": "STRUCTURE FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-24T07:59:00+00:00",
-        "description": "GLENALTA",
-        "lat": -35.0132,
-        "lng": 138.6333,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      }
-    ]
+    "sa": []
   },
-  "incident_count": 56,
+  "incident_count": 52,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
