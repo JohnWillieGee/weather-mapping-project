@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-24T09:23:13.002838+00:00",
-  "last_checked_utc": "2026-10-24T09:23:13.002838+00:00",
-  "warning_count": 28,
+  "generated_utc": "2026-10-24T09:53:12.281180+00:00",
+  "last_checked_utc": "2026-10-24T09:53:12.281180+00:00",
+  "warning_count": 29,
   "warnings": [
     {
       "pid": "",
@@ -65,6 +65,15 @@
       "link": "http://reg.bom.gov.au/qld/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Sat, 24 Oct 2026 05:00:16 GMT"
+    },
+    {
+      "pid": "",
+      "title": "24/19:22 EST Initial Minor Flood Warning for the Burrum River",
+      "type": "flood",
+      "state": "QLD",
+      "link": "http://reg.bom.gov.au/qld/warnings/flood/burrum-cherwell-river.shtml",
+      "desc": "",
+      "issued": "Sat, 24 Oct 2026 09:22:44 GMT"
     },
     {
       "pid": "",
@@ -245,12 +254,12 @@
     },
     {
       "pid": "IDV21035",
-      "title": "Severe Thunderstorm Warning - Melbourne Area for Geelong and Bellarine Peninsula, Mornington Peninsula, Western, Port Phillip, Western Port",
+      "title": "Severe Thunderstorm Warning - Melbourne Area for Geelong and Bellarine Peninsula, Mornington Peninsula, Port Phillip, Western Port",
       "type": "thunderstorm",
       "state": "VIC",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 8:10 pm, severe thunderstorms likely to produce large hailstones, damaging winds and heavy rainfall that may lead to flash flooding were detected near the You Yangs. These thunderstorms are moving towards the south to southeast. They are forecast to affect Rosebud, Dromana and the area east of Lara by 8:25 pm and Flinders, Queenscliff and northern parts of the Bellarine Peninsula by 8:40 pm.",
-      "issued": "2026-10-24T20:09:19+11:00",
+      "desc": "The Bureau of Meteorology warns that, at 8:25 pm, severe thunderstorms likely to produce large hailstones, damaging winds and heavy rainfall that may lead to flash flooding were detected near Dromana, waters off Geelong City and the area east of Rosebud. These thunderstorms are moving towards the southeast. They are forecast to affect Flinders, Ocean Grove and Leopold by 8:40 pm and Point Lonsdale, Bass Strait and Phillip Island by 8:55 pm.",
+      "issued": "2026-10-24T20:27:10+11:00",
       "cancelled": false,
       "areas": [
         {
@@ -261,11 +270,6 @@
         {
           "aac": "VIC_ME012",
           "description": "Mornington Peninsula",
-          "phase": "NEW"
-        },
-        {
-          "aac": "VIC_ME014",
-          "description": "Western",
           "phase": "NEW"
         },
         {
@@ -303,32 +307,37 @@
     },
     {
       "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for North West Pastoral, North East Pastoral, Eastern Eyre Peninsula, Flinders",
+      "title": "Severe Thunderstorm Warning for North West Pastoral, North East Pastoral, Eastern Eyre Peninsula, Flinders, Mid North",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Port Augusta, Marla, Coober Pedy, Roxby Downs, Oodnadatta and Woomera. A 96 km/h gust was recorded at Cultana at 6:46 pm CDT",
-      "issued": "2026-10-24T18:55:21+10:30",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Port Augusta, Marla, Coober Pedy, Roxby Downs, Leigh Creek and Oodnadatta. A 96 km/h gust was recorded at Oodnadatta at 7:42 pm CDT A 98 km/h gust was recorded at Port Augusta at 7:21 pm CDT A 96 km/h gust was recorded at Cultana at 6:46 pm CDT",
+      "issued": "2026-10-24T20:00:40+10:30",
       "cancelled": false,
       "areas": [
         {
           "aac": "SA_PW013",
           "description": "North West Pastoral",
-          "phase": "UPD"
+          "phase": "REN"
         },
         {
           "aac": "SA_PW014",
           "description": "North East Pastoral",
-          "phase": "UPD"
+          "phase": "REN"
         },
         {
           "aac": "SA_PW011",
           "description": "Eastern Eyre Peninsula",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "SA_PW009",
           "description": "Flinders",
+          "phase": "REN"
+        },
+        {
+          "aac": "SA_PW008",
+          "description": "Mid North",
           "phase": "NEW"
         }
       ],
@@ -338,7 +347,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Heath Cr, Griffith",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sat, 24 Oct 2026 09:49:58 GMT",
+        "description": "Heath Cr, Griffith, NSW 2680",
+        "council": "Griffith",
+        "lat": -34.2940879999999,
+        "lng": 146.025863,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "tas": [
@@ -349,7 +375,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-24T20:20:13+00:00",
+        "updated": "2026-10-24T20:24:13+00:00",
         "description": "",
         "lat": -42.97395000003419,
         "lng": 146.95278000039562,
@@ -364,7 +390,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-24T20:20:13+00:00",
+        "updated": "2026-10-24T20:24:13+00:00",
         "description": "",
         "lat": -42.981989999696935,
         "lng": 146.9967700003957,
@@ -659,8 +685,8 @@
               -42.971789
             ],
             [
-              146.999486,
-              -42.971732
+              146.9994,
+              -42.971677
             ],
             [
               146.999358,
@@ -854,7 +880,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-24T20:20:13+00:00",
+        "updated": "2026-10-24T20:24:13+00:00",
         "description": "",
         "lat": -43.00904000023965,
         "lng": 147.03586999958708,
@@ -864,6 +890,78 @@
       }
     ],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-24T09:42:30+00:00",
+        "description": "ST GEORGE RANGES, SHIRE OF DERBY/WEST KIMBERLEY",
+        "lat": -18.835,
+        "lng": 125.158,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-24T09:22:49+00:00",
+        "description": "CABLE BEACH, SHIRE OF BROOME",
+        "lat": -17.9559,
+        "lng": 122.2175,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice PREPARE NOW - CAMBRIDGE GULF",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-24T09:21:18.834+00:00",
+        "description": "",
+        "lat": -15.2108,
+        "lng": 128.6472,
+        "polys": [
+          [
+            [
+              128.712362,
+              -15.226298
+            ],
+            [
+              128.646962,
+              -15.306059
+            ],
+            [
+              128.559993,
+              -15.203084
+            ],
+            [
+              128.625837,
+              -15.151812
+            ],
+            [
+              128.625699,
+              -15.151545
+            ],
+            [
+              128.712362,
+              -15.226298
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1439,21 +1537,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-23T02:01:07+00:00",
-        "description": "ST GEORGE RANGES, SHIRE OF DERBY/WEST KIMBERLEY",
-        "lat": -18.835,
-        "lng": 125.158,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-23T00:34:42+00:00",
         "description": "JURIEN BAY, SHIRE OF DANDARAGAN",
         "lat": -30.1846,
@@ -1857,17 +1940,17 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "CFS",
-        "updated": "2026-10-24T09:13:00+00:00",
-        "description": "HINDMARSH ISLAND",
-        "lat": -35.5072,
-        "lng": 138.7925,
+        "updated": "2026-10-24T09:16:00+00:00",
+        "description": "HAPPY VALLEY",
+        "lat": -35.0906,
+        "lng": 138.5956,
         "polys": [],
         "state": "SA",
         "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
       }
     ]
   },
-  "incident_count": 51,
+  "incident_count": 54,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
