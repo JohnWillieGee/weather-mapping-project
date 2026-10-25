@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-25T01:53:04.446817+00:00",
-  "last_checked_utc": "2026-10-25T01:53:04.446817+00:00",
-  "warning_count": 30,
+  "generated_utc": "2026-10-25T02:23:02.938495+00:00",
+  "last_checked_utc": "2026-10-25T02:23:02.938495+00:00",
+  "warning_count": 29,
   "warnings": [
     {
       "pid": "",
@@ -358,40 +358,28 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
-    },
-    {
-      "pid": "IDQ21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for Central West, Channel Country, Maranoa and Warrego",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "This warning is now cancelled.",
-      "issued": "2026-10-25T07:34:48+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "QLD_PW009",
-          "description": "Central West",
-          "phase": "CAN"
-        },
-        {
-          "aac": "QLD_PW011",
-          "description": "Channel Country",
-          "phase": "CAN"
-        },
-        {
-          "aac": "QLD_PW012",
-          "description": "Maranoa and Warrego",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "GEORGE BOOTH DR, CAMERON PARK",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 25 Oct 2026 02:17:58 GMT",
+        "description": "GEORGE BOOTH DR, CAMERON PARK 2285",
+        "council": "Lake Macquarie",
+        "lat": -32.90057373,
+        "lng": 151.590881347,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "tas": [],
@@ -403,10 +391,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-25T01:40:12+00:00",
-        "description": "CLARKSON, CITY OF WANNEROO",
-        "lat": -31.6879,
-        "lng": 115.7369,
+        "updated": "2026-10-25T02:02:08+00:00",
+        "description": "MUCHEA, SHIRE OF CHITTERING",
+        "lat": -31.5838,
+        "lng": 115.9596,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -418,7 +406,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-25T01:35:53+00:00",
+        "updated": "2026-10-25T01:59:21+00:00",
         "description": "CABLE BEACH, SHIRE OF BROOME",
         "lat": -17.9617,
         "lng": 122.2129,
@@ -1516,6 +1504,21 @@
     ],
     "nt": [
       {
+        "title": "Structure Fire - HAZELL CT, COCONUT GROVE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-25T02:12:09+00:00",
+        "description": "HAZELL CT, COCONUT GROVE",
+        "lat": -12.3917,
+        "lng": 130.8556,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Stuart Highway, TABLELANDS",
         "alertLevel": "Advice",
         "status": "active",
@@ -1565,7 +1568,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 51,
+  "incident_count": 53,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
