@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-25T15:53:05.820646+00:00",
-  "last_checked_utc": "2026-10-25T15:53:05.820646+00:00",
-  "warning_count": 25,
+  "generated_utc": "2026-10-25T16:23:08.004998+00:00",
+  "last_checked_utc": "2026-10-25T16:23:08.004998+00:00",
+  "warning_count": 26,
   "warnings": [
     {
       "pid": "",
@@ -236,8 +236,8 @@
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding and large hailstones in the warning area over the next several hours. Locations which may be affected include Pittsworth, Millmerran, Clifton and Allora. 51 mm recorded at Torridon (Canal Creek) in the hour to 10:47 pm.",
-      "issued": "2026-10-26T01:12:52+10:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Warwick, Clifton and Allora. 68 mm recorded at Millbrook in the 3 hours to 1:27 am. 65 mm recorded at Talgai in the 3 hours to 1:17 am. 83 mm recorded at Leyburn in the 3 hours to 1:00 am. 51 mm recorded at Torridon (Canal Creek) in the hour to 10:47 pm.",
+      "issued": "2026-10-26T02:13:05+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -256,32 +256,51 @@
     },
     {
       "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Toowoomba, Southern Downs, Lockyer Valley",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Southern Downs, Scenic Rim",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 1:10 am, a severe thunderstorm likely to produce heavy rainfall that may lead to flash flooding and large hailstones was detected near Ellangowan. This thunderstorm is moving towards the east. It is forecast to affect Clifton by 1:55 am. 51 mm recorded at Torridon (Canal Creek) in the hour to 10:47 pm.",
-      "issued": "2026-10-26T01:13:48+10:00",
+      "desc": "The Bureau of Meteorology warns that, at 2:05 am, severe thunderstorms likely to produce heavy rainfall that may lead to flash flooding were detected. Thunderstorms are moving towards the east. They are forecast to affect the area south of Warwick, the area north of Warwick and Dalveen by 2:50 am and Warwick, Allora and the area southeast of Warwick by 3:35 am. 68 mm recorded at Millbrook in the 3 hours to 1:27 am. 65 mm recorded at Talgai in the 3 hours to 1:17 am. 51 mm recorded at Torridon (C",
+      "issued": "2026-10-26T02:15:56+10:00",
       "cancelled": false,
       "areas": [
-        {
-          "aac": "QLD_ME010",
-          "description": "Toowoomba",
-          "phase": "UPD"
-        },
         {
           "aac": "QLD_ME011",
           "description": "Southern Downs",
           "phase": "UPD"
         },
         {
-          "aac": "QLD_ME016",
-          "description": "Lockyer Valley",
-          "phase": "UPD"
+          "aac": "QLD_ME012",
+          "description": "Scenic Rim",
+          "phase": "NEW"
         }
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDQ21035",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Toowoomba, Lockyer Valley",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-26T02:15:56+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "QLD_ME010",
+          "description": "Toowoomba",
+          "phase": "CAN"
+        },
+        {
+          "aac": "QLD_ME016",
+          "description": "Lockyer Valley",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
