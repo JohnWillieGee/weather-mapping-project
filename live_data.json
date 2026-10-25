@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-25T22:53:01.537073+00:00",
-  "last_checked_utc": "2026-10-25T22:53:01.537073+00:00",
+  "generated_utc": "2026-10-25T23:23:04.053123+00:00",
+  "last_checked_utc": "2026-10-25T23:23:04.053123+00:00",
   "warning_count": 23,
   "warnings": [
     {
       "pid": "",
-      "title": "26/04:00 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "26/10:00 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 25 Oct 2026 17:00:13 GMT"
+      "issued": "Sun, 25 Oct 2026 23:00:18 GMT"
     },
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "26/04:10 EDT Marine Wind Warning Summary for Victoria",
+      "title": "26/10:00 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 25 Oct 2026 17:10:28 GMT"
+      "issued": "Sun, 25 Oct 2026 23:00:17 GMT"
     },
     {
       "pid": "",
@@ -86,12 +86,12 @@
     },
     {
       "pid": "",
-      "title": "26/07:35 EST Moderate Flood Warning for the Bremer River and Warrill Creek",
+      "title": "26/09:19 EST Major Flood Warning for Warrill Creek  and Minor flooding warning for the Bremer River",
       "type": "flood",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/flood/bremer-river-and-warrill-creek.shtml",
       "desc": "",
-      "issued": "Sun, 25 Oct 2026 21:35:41 GMT"
+      "issued": "Sun, 25 Oct 2026 23:19:39 GMT"
     },
     {
       "pid": "",
@@ -104,12 +104,12 @@
     },
     {
       "pid": "",
-      "title": "26/04:01 EST Minor Flood Warning for the Upper Condamine River",
+      "title": "26/09:15 EST Major Flood Warning for the Upper Condamine River",
       "type": "flood",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/flood/upper-condamine.shtml",
       "desc": "",
-      "issued": "Sun, 25 Oct 2026 18:01:58 GMT"
+      "issued": "Sun, 25 Oct 2026 23:15:39 GMT"
     },
     {
       "pid": "",
@@ -167,21 +167,21 @@
     },
     {
       "pid": "",
-      "title": "26/05:19 WST Marine Wind Warning Summary for Western Australia",
+      "title": "26/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 25 Oct 2026 21:19:10 GMT"
+      "issued": "Sun, 25 Oct 2026 23:01:15 GMT"
     },
     {
       "pid": "",
-      "title": "26/06:38 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "26/10:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 25 Oct 2026 19:38:34 GMT"
+      "issued": "Sun, 25 Oct 2026 23:00:11 GMT"
     },
     {
       "pid": "IDT20611",
@@ -228,26 +228,28 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Wangi Point Rd, Wangi Wangi",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 25 Oct 2026 23:17:58 GMT",
+        "description": "Wangi Point Rd, Wangi Wangi, NSW 2267",
+        "council": "Lake Macquarie",
+        "lat": -33.0647319999999,
+        "lng": 151.57201,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Structure Fire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-25T22:20:27+00:00",
-        "description": "NEWMAN, SHIRE OF EAST PILBARA",
-        "lat": -23.3605,
-        "lng": 119.7543,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -5127,15 +5129,12 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-10-25T17:00:00Z",
-      "overview": [
-        "Gale Warning for Monday for Batemans Coast and Eden Coast",
-        "Strong Wind Warning for Monday for Byron Coast, Coffs Coast, Hunter Coast, Sydney Coast, Sydney Enclosed Waters and Illawarra Coast"
-      ],
+      "issued_utc": "2026-10-25T23:00:00Z",
+      "overview": [],
       "hazards": [
         {
-          "level": "Gale Warning",
-          "severity": "GALE",
+          "level": "Strong Wind Warning",
+          "severity": "STR",
           "zones": [
             "Batemans Coast: Ulladulla to Montague Island",
             "Eden Coast: Montague Island to Gabo Island"
@@ -5145,73 +5144,40 @@
             "NSW_MW001"
           ],
           "summary": "Batemans Coast and Eden Coast"
-        },
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Byron Coast: Point Danger to Wooli",
-            "Coffs Coast: Wooli to Smoky Cape",
-            "Hunter Coast: Seal Rocks to Broken Bay",
-            "Sydney Coast: Broken Bay to Port Hacking",
-            "Sydney Enclosed Waters",
-            "Illawarra Coast: Port Hacking to Ulladulla"
-          ],
-          "aac_codes": [
-            "NSW_MW008",
-            "NSW_MW007",
-            "NSW_MW005",
-            "NSW_MW004",
-            "NSW_MW009",
-            "NSW_MW003"
-          ],
-          "summary": "Sydney Enclosed Waters, Byron Coast, Coffs Coast, Hunter Coast, Sydney Coast and Illawarra Coast"
         }
       ]
     },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-25T17:10:00Z",
+      "issued_utc": "2026-10-25T23:00:00Z",
       "overview": [
-        "Gale Warning for Monday for East Gippsland Coast",
-        "Strong Wind Warning for Monday for Central Coast and Central Gippsland Coast",
+        "Strong Wind Warning for Monday for Central Gippsland Coast and East Gippsland Coast",
         "Strong Wind Warning for Tuesday for Central Gippsland Coast and East Gippsland Coast"
       ],
       "hazards": [
         {
-          "level": "Gale Warning",
-          "severity": "GALE",
-          "zones": [
-            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
-          ],
-          "aac_codes": [
-            "VIC_MW004"
-          ],
-          "summary": "East Gippsland Coast"
-        },
-        {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Central Coast: Cape Otway to Wilsons Promontory",
-            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance"
+            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
           ],
           "aac_codes": [
-            "VIC_MW002",
-            "VIC_MW003"
+            "VIC_MW003",
+            "VIC_MW004"
           ],
-          "summary": "Central Coast and Central Gippsland Coast"
+          "summary": "Central Gippsland Coast and East Gippsland Coast"
         }
       ]
     },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-25T21:19:00Z",
+      "issued_utc": "2026-10-25T23:01:00Z",
       "overview": [
-        "Strong Wind Warning for Monday for Bunbury Geographe Coast, Pilbara Coast West, Ningaloo Coast, Geraldton Coast, Leeuwin Coast, Gascoyne Coast and Perth Coast",
-        "Strong Wind Warning for Tuesday for Lancelin Coast, Geraldton Coast and Gascoyne Coast"
+        "Strong Wind Warning for Monday for Pilbara Coast West, Ningaloo Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Perth Local Waters",
+        "Strong Wind Warning for Tuesday for Gascoyne Coast, Geraldton Coast and Lancelin Coast"
       ],
       "hazards": [
         {
@@ -5220,31 +5186,29 @@
           "zones": [
             "Pilbara Coast West: Cape Preston to North West Cape",
             "Ningaloo Coast: North West Cape to Cape Cuvier",
-            "Gascoyne Coast: Cape Cuvier to Kalbarri",
-            "Geraldton Coast: Kalbarri to Jurien Bay",
             "Perth Coast: Two Rocks to Dawesville",
             "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
-            "Leeuwin Coast: Cape Naturaliste to Walpole"
+            "Leeuwin Coast: Cape Naturaliste to Walpole",
+            "Perth Local Waters"
           ],
           "aac_codes": [
             "WA_MW004",
             "WA_MW005",
-            "WA_MW006",
-            "WA_MW007",
             "WA_MW009",
             "WA_MW010",
-            "WA_MW011"
+            "WA_MW011",
+            "WA_MW015"
           ],
-          "summary": "Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast, Perth Coast, Bunbury Geographe Coast and Leeuwin Coast"
+          "summary": "Perth Local Waters, Pilbara Coast West, Ningaloo Coast, Perth Coast, Bunbury Geographe Coast and Leeuwin Coast"
         }
       ]
     },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-25T19:38:27Z",
+      "issued_utc": "2026-10-25T23:00:00Z",
       "overview": [
-        "Strong Wind Warning for Monday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, South East Coast and Central West Coast",
+        "Strong Wind Warning for Monday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and South East Coast",
         "Gale Warning for Tuesday for South East Coast and South West Coast",
         "Strong Wind Warning for Tuesday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and Central West Coast"
       ],
@@ -5253,24 +5217,20 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Far North West Coast: Sandy Cape to Stanley",
             "Central North Coast: Stanley to Northern Tip of Flinders Island",
             "Banks Strait and Franklin Sound",
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
             "Lower East Coast: Wineglass Bay to Tasman Island",
-            "South East Coast: Tasman Island to South East Cape",
-            "Central West Coast: Low Rocky Point to Sandy Cape"
+            "South East Coast: Tasman Island to South East Cape"
           ],
           "aac_codes": [
-            "TAS_MW001",
             "TAS_MW002",
             "TAS_MW009",
             "TAS_MW003",
             "TAS_MW005",
-            "TAS_MW006",
-            "TAS_MW008"
+            "TAS_MW006"
           ],
-          "summary": "Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, South East Coast and Central West Coast"
+          "summary": "Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and South East Coast"
         }
       ]
     }
