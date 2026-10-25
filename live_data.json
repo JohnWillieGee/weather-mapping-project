@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-25T08:53:11.562400+00:00",
-  "last_checked_utc": "2026-10-25T08:53:11.562400+00:00",
-  "warning_count": 30,
+  "generated_utc": "2026-10-25T09:23:06.681193+00:00",
+  "last_checked_utc": "2026-10-25T09:23:06.681193+00:00",
+  "warning_count": 27,
   "warnings": [
     {
       "pid": "",
@@ -211,54 +211,6 @@
       "issued": "Sun, 25 Oct 2026 05:05:24 GMT"
     },
     {
-      "pid": "IDN21037",
-      "title": "Cancellation of Severe Weather Warning for Snowy Mountains",
-      "type": "severe_weather",
-      "state": "NSW",
-      "link": "",
-      "desc": "This warning is now cancelled. A 117 km/h wind gust was recorded at Thredbo at 6:51 am.",
-      "issued": "2026-10-25T10:41:17+11:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "NSW_PW010",
-          "description": "Snowy Mountains",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
-    },
-    {
-      "pid": "IDV21037",
-      "title": "Cancellation of Severe Weather Warning for North East, West and South Gippsland, East Gippsland",
-      "type": "severe_weather",
-      "state": "VIC",
-      "link": "",
-      "desc": "This warning is now cancelled. 93 km/h wind gusts was recorded at Falls Creek at 9:29 am. 109 km/h wind gusts was recorded at Mount Hotham at 6:55 am. 96 km/h wind gust was recorded at Mt Buller at 3:25 am.",
-      "issued": "2026-10-25T10:38:15+11:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "VIC_PW004",
-          "description": "North East",
-          "phase": "CAN"
-        },
-        {
-          "aac": "VIC_PW006",
-          "description": "West and South Gippsland",
-          "phase": "CAN"
-        },
-        {
-          "aac": "VIC_PW005",
-          "description": "East Gippsland",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
-    },
-    {
       "pid": "IDN21033",
       "title": "Severe Thunderstorm Warning for Northern Tablelands, South Coast, Central Tablelands, Southern Tablelands, North West Slopes and Plains, Central West Slopes and Plains, South West Slopes, Riverina, Upper Western, Snowy Mountains, Australian Capital Territory",
       "type": "thunderstorm",
@@ -371,30 +323,6 @@
       "hazardPhase": "CAN"
     },
     {
-      "pid": "IDV21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for North East, East Gippsland",
-      "type": "thunderstorm",
-      "state": "VIC",
-      "link": "",
-      "desc": "This warning is now cancelled. The chance of additional severe thunderstorms in Victoria during the rest of today is marginal and will continue to be monitored.",
-      "issued": "2026-10-25T15:20:50+11:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "VIC_PW004",
-          "description": "North East",
-          "phase": "CAN"
-        },
-        {
-          "aac": "VIC_PW005",
-          "description": "East Gippsland",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
-    },
-    {
       "pid": "IDQ21033",
       "title": "Severe Thunderstorm Warning for Central West, Channel Country, Maranoa and Warrego, Darling Downs and Granite Belt",
       "type": "thunderstorm",
@@ -431,24 +359,7 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "WOLLOMBI RD, BISHOPS BRIDGE",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Sun, 25 Oct 2026 08:49:58 GMT",
-        "description": "WOLLOMBI RD, BISHOPS BRIDGE 2326",
-        "council": "Maitland",
-        "lat": -32.74529,
-        "lng": 151.473866,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "tas": [
@@ -470,13 +381,13 @@
     ],
     "wa": [
       {
-        "title": "Report of Smoke",
+        "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-25T08:35:33+00:00",
+        "updated": "2026-10-25T09:13:37+00:00",
         "description": "NARNGULU, CITY OF GREATER GERALDTON",
         "lat": -28.7965,
         "lng": 114.6722,
@@ -491,22 +402,37 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-25T08:29:17+00:00",
-        "description": "BERTRAM, CITY OF KWINANA",
-        "lat": -32.2373,
-        "lng": 115.8477,
+        "updated": "2026-10-25T09:05:23+00:00",
+        "description": "COLD HARBOUR, SHIRE OF YORK",
+        "lat": -31.9039,
+        "lng": 116.7856,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire Watch and Act PREPARE TO LEAVE - HALLS CREEK, MCBEATH AND ORD RIVER",
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-25T09:04:47+00:00",
+        "description": "CABLE BEACH, SHIRE OF BROOME",
+        "lat": -17.9493,
+        "lng": 122.2109,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice STAY INFORMED - HALLS CREEK, MCBEATH AND ORD RIVER",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES-WARN",
-        "updated": "2026-10-25T08:11:07.519+00:00",
+        "updated": "2026-10-25T08:49:25.793+00:00",
         "description": "",
         "lat": -18.2428,
         "lng": 127.6902,
@@ -542,6 +468,21 @@
             ]
           ]
         ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-25T08:29:17+00:00",
+        "description": "BERTRAM, CITY OF KWINANA",
+        "lat": -32.2373,
+        "lng": 115.8477,
+        "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1670,6 +1611,36 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - Unknown",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-25T09:12:46+00:00",
+        "description": "",
+        "lat": -15.7678,
+        "lng": 131.8193,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - STUART",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-25T08:58:13+00:00",
+        "description": "STUART",
+        "lat": -23.6864,
+        "lng": 133.8772,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Duncan Road, DARWIN RIVER",
         "alertLevel": "Advice",
         "status": "active",
@@ -1765,7 +1736,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 56,
+  "incident_count": 59,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
