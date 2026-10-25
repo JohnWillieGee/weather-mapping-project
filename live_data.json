@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-25T11:53:02.861121+00:00",
-  "last_checked_utc": "2026-10-25T11:53:02.861121+00:00",
-  "warning_count": 27,
+  "generated_utc": "2026-10-25T12:23:04.724803+00:00",
+  "last_checked_utc": "2026-10-25T12:23:04.724803+00:00",
+  "warning_count": 28,
   "warnings": [
     {
       "pid": "",
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "25/16:48 EDT Warning to Sheep Graziers\nfor Northern Tablelands, South Coast, Southern Tablelands, South West Slopes, Riverina and Snowy Mountains forecast districts",
+      "title": "25/23:01 EDT Warning to Sheep Graziers\nfor Northern Tablelands, South Coast, Southern Tablelands, South West Slopes, Riverina and Snowy Mountains forecast districts",
       "type": "other",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Sun, 25 Oct 2026 05:48:33 GMT"
+      "issued": "Sun, 25 Oct 2026 12:01:18 GMT"
     },
     {
       "pid": "",
@@ -41,12 +41,12 @@
     },
     {
       "pid": "",
-      "title": "25/16:48 EDT Warning to Sheep Graziers\nfor Northern Country, North Central, North East, South West, Central, West and South Gippsland and East Gippsland forecast districts",
+      "title": "25/23:01 EDT Warning to Sheep Graziers\nfor Northern Country, North Central, North East, South West, Central, West and South Gippsland and East Gippsland forecast districts",
       "type": "other",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Sun, 25 Oct 2026 05:48:41 GMT"
+      "issued": "Sun, 25 Oct 2026 12:01:17 GMT"
     },
     {
       "pid": "",
@@ -319,27 +319,41 @@
     },
     {
       "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Toowoomba, Southern Downs",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Southern Downs",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 9:25 pm, a severe thunderstorm likely to produce damaging winds and heavy rainfall that may lead to flash flooding was detected near Pikedale and the area southwest of Warwick. This thunderstorm is moving towards the east. It is forecast to affect Stanthorpe, Applethorpe and Dalveen by 9:55 pm and Warwick, the area south of Warwick and the area southeast of Warwick by 10:25 pm.",
-      "issued": "2026-10-25T21:28:20+10:00",
+      "desc": "The Bureau of Meteorology warns that, at 9:55 pm, a severe thunderstorm likely to produce damaging winds and heavy rainfall that may lead to flash flooding was detected near Dalveen and the area west of Warwick. This thunderstorm is moving towards the east. It is forecast to affect the area south of Warwick by 10:25 pm and Warwick, the area southeast of Warwick and the area northwest of Warwick by 10:55 pm.",
+      "issued": "2026-10-25T22:01:01+10:00",
       "cancelled": false,
+      "areas": [
+        {
+          "aac": "QLD_ME011",
+          "description": "Southern Downs",
+          "phase": "REN"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDQ21035",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Toowoomba",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-25T22:01:01+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "QLD_ME010",
           "description": "Toowoomba",
-          "phase": "NEW"
-        },
-        {
-          "aac": "QLD_ME011",
-          "description": "Southern Downs",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -355,7 +369,7 @@
         "type": "Flood",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-25T22:02:17+00:00",
+        "updated": "2026-10-25T23:18:18+00:00",
         "description": "",
         "lat": -41.786910000090295,
         "lng": 147.72818999989252,
@@ -365,36 +379,6 @@
       }
     ],
     "wa": [
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-25T11:40:06+00:00",
-        "description": "MINDARIE, CITY OF WANNEROO",
-        "lat": -31.6809,
-        "lng": 115.6991,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-25T11:39:28+00:00",
-        "description": "WILLETTON, CITY OF CANNING",
-        "lat": -32.0515,
-        "lng": 115.8992,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1733,7 +1717,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 58,
+  "incident_count": 56,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
