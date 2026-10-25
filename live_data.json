@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-25T09:53:05.696140+00:00",
-  "last_checked_utc": "2026-10-25T09:53:05.696140+00:00",
+  "generated_utc": "2026-10-25T10:23:05.300145+00:00",
+  "last_checked_utc": "2026-10-25T10:23:05.300145+00:00",
   "warning_count": 27,
   "warnings": [
     {
@@ -212,68 +212,58 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Northern Tablelands, South Coast, Central Tablelands, Southern Tablelands, North West Slopes and Plains, Central West Slopes and Plains, South West Slopes, Riverina, Upper Western, Snowy Mountains, Australian Capital Territory",
+      "title": "Severe Thunderstorm Warning for Northern Tablelands, Illawarra, Central Tablelands, Southern Tablelands, North West Slopes and Plains, Central West Slopes and Plains, South West Slopes, Riverina, Lower Western",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "VERY DANGEROUS THUNDERSTORMS are likely to produce damaging, locally destructive winds and heavy rainfall that may lead to flash flooding over the next several hours in parts of the North West Slopes and Plains and Northern Tablelands districts. Locations which may be affected include Tingha, Bundarra, Barraba and Boggabri. Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding over the next several hours in the Southern Tablelands, South Wes",
-      "issued": "2026-10-25T19:37:06+11:00",
+      "desc": "VERY DANGEROUS THUNDERSTORMS are likely to produce damaging, locally destructive winds and heavy rainfall that may lead to flash flooding over the next several hours in parts of the Northern Tablelands and North West Slopes and Plains districts. Locations which may be affected include Armidale, Glen Innes, Guyra, Walcha and Uralla. Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding over the next several hours in the Northern Tablelands an",
+      "issued": "2026-10-25T21:02:57+11:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "NSW_PW004",
           "description": "Northern Tablelands",
-          "phase": "UPD"
+          "phase": "REN"
         },
         {
-          "aac": "NSW_PW007",
-          "description": "South Coast",
-          "phase": "UPD"
+          "aac": "NSW_PW006",
+          "description": "Illawarra",
+          "phase": "NEW"
         },
         {
           "aac": "NSW_PW008",
           "description": "Central Tablelands",
-          "phase": "UPD"
+          "phase": "REN"
         },
         {
           "aac": "NSW_PW009",
           "description": "Southern Tablelands",
-          "phase": "UPD"
+          "phase": "REN"
         },
         {
           "aac": "NSW_PW011",
           "description": "North West Slopes and Plains",
-          "phase": "UPD"
+          "phase": "REN"
         },
         {
           "aac": "NSW_PW012",
           "description": "Central West Slopes and Plains",
-          "phase": "UPD"
+          "phase": "REN"
         },
         {
           "aac": "NSW_PW013",
           "description": "South West Slopes",
-          "phase": "UPD"
+          "phase": "REN"
         },
         {
           "aac": "NSW_PW014",
           "description": "Riverina",
-          "phase": "UPD"
+          "phase": "REN"
         },
         {
-          "aac": "NSW_PW016",
-          "description": "Upper Western",
-          "phase": "UPD"
-        },
-        {
-          "aac": "NSW_PW010",
-          "description": "Snowy Mountains",
-          "phase": "UPD"
-        },
-        {
-          "aac": "NSW_PW017",
-          "description": "Australian Capital Territory",
-          "phase": "UPD"
+          "aac": "NSW_PW015",
+          "description": "Lower Western",
+          "phase": "NEW"
         }
       ],
       "severityCode": "STD",
@@ -281,41 +271,32 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Lower Western",
+      "title": "Severe Thunderstorm Warning for South Coast, Upper Western, Australian Capital Territory, Snowy Mountains",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
       "desc": "",
-      "issued": "2026-10-25T19:37:06+11:00",
+      "issued": "2026-10-25T21:02:57+11:00",
       "cancelled": true,
       "areas": [
         {
-          "aac": "NSW_PW015",
-          "description": "Lower Western",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
-    },
-    {
-      "pid": "IDN21035",
-      "title": "Cancellation of Detailed Severe Thunderstorm Warning for Sydney, Hunter",
-      "type": "thunderstorm",
-      "state": "NSW",
-      "link": "",
-      "desc": "Severe thunderstorms are no longer affecting Sydney Newcastle Wollongong and surrounding areas. This warning is now cancelled.",
-      "issued": "2026-10-25T19:06:58+11:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "NSW_ME017",
-          "description": "Sydney",
+          "aac": "NSW_PW007",
+          "description": "South Coast",
           "phase": "CAN"
         },
         {
-          "aac": "NSW_ME019",
-          "description": "Hunter",
+          "aac": "NSW_PW016",
+          "description": "Upper Western",
+          "phase": "CAN"
+        },
+        {
+          "aac": "NSW_PW017",
+          "description": "Australian Capital Territory",
+          "phase": "CAN"
+        },
+        {
+          "aac": "NSW_PW010",
+          "description": "Snowy Mountains",
           "phase": "CAN"
         }
       ],
@@ -324,37 +305,51 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central West, Channel Country, Maranoa and Warrego, Darling Downs and Granite Belt",
+      "title": "Severe Thunderstorm Warning for Darling Downs and Granite Belt",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Longreach, Goondiwindi, Barcaldine, Blackall, Isisford and Tambo.",
-      "issued": "2026-10-25T17:43:01+10:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Stanthorpe, Texas, Inglewood, Moonie and Millmerran. Severe thunderstorms are no longer occurring in the Central West, Channel Country and Maranoa and Warrego districts and the warning for these districts is CANCELLED.",
+      "issued": "2026-10-25T20:07:40+10:00",
       "cancelled": false,
       "areas": [
         {
-          "aac": "QLD_PW009",
-          "description": "Central West",
-          "phase": "REN"
-        },
-        {
-          "aac": "QLD_PW011",
-          "description": "Channel Country",
-          "phase": "NEW"
-        },
-        {
-          "aac": "QLD_PW012",
-          "description": "Maranoa and Warrego",
-          "phase": "NEW"
-        },
-        {
           "aac": "QLD_PW013",
           "description": "Darling Downs and Granite Belt",
-          "phase": "NEW"
+          "phase": "UPD"
         }
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDQ21033",
+      "title": "Severe Thunderstorm Warning for Channel Country, Maranoa and Warrego, Central West",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-25T20:07:40+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "QLD_PW011",
+          "description": "Channel Country",
+          "phase": "CAN"
+        },
+        {
+          "aac": "QLD_PW012",
+          "description": "Maranoa and Warrego",
+          "phase": "CAN"
+        },
+        {
+          "aac": "QLD_PW009",
+          "description": "Central West",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -387,7 +382,37 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-25T09:44:32+00:00",
+        "updated": "2026-10-25T10:10:51+00:00",
+        "description": "BOULDER, CITY OF KALGOORLIE-BOULDER",
+        "lat": -30.7858,
+        "lng": 121.4734,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-25T10:07:20+00:00",
+        "description": "LAKE COOGEE, CITY OF COCKBURN",
+        "lat": -32.1274,
+        "lng": 115.7884,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-25T09:45:31+00:00",
         "description": "NARNGULU, CITY OF GREATER GERALDTON",
         "lat": -28.7936,
         "lng": 114.6654,
@@ -1581,6 +1606,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - ZIMIN DR, COSSACK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-25T10:08:49+00:00",
+        "description": "ZIMIN DR, COSSACK",
+        "lat": -14.4818,
+        "lng": 132.2513,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Grass and Scrub Fire - Unknown",
         "alertLevel": "Advice",
         "status": "active",
@@ -1691,7 +1731,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 56,
+  "incident_count": 59,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
