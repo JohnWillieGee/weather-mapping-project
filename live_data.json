@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-25T00:23:10.796837+00:00",
-  "last_checked_utc": "2026-10-25T00:23:10.796837+00:00",
-  "warning_count": 31,
+  "generated_utc": "2026-10-25T00:53:03.389162+00:00",
+  "last_checked_utc": "2026-10-25T00:53:03.389162+00:00",
+  "warning_count": 30,
   "warnings": [
     {
       "pid": "",
@@ -140,12 +140,12 @@
     },
     {
       "pid": "",
-      "title": "24/10:32 EST Initial Minor Flood Warning for the Wallam Creek and Flood Warning for the Mungallala Creek",
+      "title": "25/10:37 EST Minor Flood Warning for Wallam Creek and Flood Warning for Mungallala Creek",
       "type": "flood",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/flood/wallam-mungallala-creeks.shtml",
       "desc": "",
-      "issued": "Sat, 24 Oct 2026 00:32:44 GMT"
+      "issued": "Sun, 25 Oct 2026 00:37:44 GMT"
     },
     {
       "pid": "",
@@ -182,15 +182,6 @@
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
       "issued": "Sat, 24 Oct 2026 23:02:54 GMT"
-    },
-    {
-      "pid": "",
-      "title": "25/02:39 CDT \n                Cancellation of\n                Road Weather Alert for Adelaide",
-      "type": "other",
-      "state": "SA",
-      "link": "http://reg.bom.gov.au/sa/warnings/road.shtml",
-      "desc": "",
-      "issued": "Sat, 24 Oct 2026 16:09:50 GMT"
     },
     {
       "pid": "",
@@ -287,43 +278,58 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Central West Slopes and Plains, South West Slopes, Riverina, Upper Western, Lower Western, Snowy Mountains",
+      "title": "Severe Thunderstorm Warning for Central Tablelands, Southern Tablelands, North West Slopes and Plains, Central West Slopes and Plains, South West Slopes, Riverina, Upper Western, Lower Western, Snowy Mountains",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Wagga Wagga, Albury, Cobar, Griffith, Nyngan and West Wyalong. A 91 km/h wind gust was recorded at Wilcannia Airport at 6:43 am.",
-      "issued": "2026-10-25T10:15:14+11:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Dubbo, Wagga Wagga, Albury, Walgett, Parkes, Coonamble, Nyngan, Young and West Wyalong. 94 km/h wind gust was recorded at Narrandera Airport at 11:39 am. 91 km/h wind gust was recorded at Wilcannia Airport at 6:43 am.",
+      "issued": "2026-10-25T11:50:27+11:00",
       "cancelled": false,
       "areas": [
         {
+          "aac": "NSW_PW008",
+          "description": "Central Tablelands",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_PW009",
+          "description": "Southern Tablelands",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_PW011",
+          "description": "North West Slopes and Plains",
+          "phase": "NEW"
+        },
+        {
           "aac": "NSW_PW012",
           "description": "Central West Slopes and Plains",
-          "phase": "REN"
+          "phase": "UPD"
         },
         {
           "aac": "NSW_PW013",
           "description": "South West Slopes",
-          "phase": "NEW"
+          "phase": "UPD"
         },
         {
           "aac": "NSW_PW014",
           "description": "Riverina",
-          "phase": "REN"
+          "phase": "UPD"
         },
         {
           "aac": "NSW_PW016",
           "description": "Upper Western",
-          "phase": "REN"
+          "phase": "UPD"
         },
         {
           "aac": "NSW_PW015",
           "description": "Lower Western",
-          "phase": "REN"
+          "phase": "UPD"
         },
         {
           "aac": "NSW_PW010",
           "description": "Snowy Mountains",
-          "phase": "NEW"
+          "phase": "UPD"
         }
       ],
       "severityCode": "STD",
@@ -706,8 +712,8 @@
               -42.971789
             ],
             [
-              146.999572,
-              -42.971788
+              146.999571,
+              -42.971787
             ],
             [
               146.999568,
@@ -2102,9 +2108,25 @@
       }
     ],
     "act": [],
-    "sa": []
+    "sa": [
+      {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-25T00:36:00+00:00",
+        "description": "GLENCOE",
+        "lat": -37.6508,
+        "lng": 140.5799,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      }
+    ]
   },
-  "incident_count": 54,
+  "incident_count": 55,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
