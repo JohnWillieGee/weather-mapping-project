@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-25T07:23:07.588397+00:00",
-  "last_checked_utc": "2026-10-25T07:23:07.588397+00:00",
-  "warning_count": 31,
+  "generated_utc": "2026-10-25T07:53:05.260326+00:00",
+  "last_checked_utc": "2026-10-25T07:53:05.260326+00:00",
+  "warning_count": 29,
   "warnings": [
     {
       "pid": "",
@@ -77,21 +77,12 @@
     },
     {
       "pid": "",
-      "title": "25/11:46 EST Major Flood Warning for the Mary River",
+      "title": "25/17:33 EST Major Flood Warning for the Mary River",
       "type": "flood",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/flood/mary-river.shtml",
       "desc": "",
-      "issued": "Sun, 25 Oct 2026 01:46:43 GMT"
-    },
-    {
-      "pid": "",
-      "title": "24/13:28 EST Final Flood Warning for the Maroochy and Mooloolah Rivers",
-      "type": "flood",
-      "state": "QLD",
-      "link": "http://reg.bom.gov.au/qld/warnings/flood/noosa-and-maroochy-river.shtml",
-      "desc": "",
-      "issued": "Sat, 24 Oct 2026 03:28:36 GMT"
+      "issued": "Sun, 25 Oct 2026 07:33:47 GMT"
     },
     {
       "pid": "",
@@ -176,12 +167,12 @@
     },
     {
       "pid": "",
-      "title": "25/13:10 WST Marine Wind Warning Summary for Western Australia",
+      "title": "25/15:19 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 25 Oct 2026 05:10:26 GMT"
+      "issued": "Sun, 25 Oct 2026 07:19:38 GMT"
     },
     {
       "pid": "",
@@ -391,41 +382,37 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central West",
+      "title": "Severe Thunderstorm Warning for Central West, Channel Country, Maranoa and Warrego, Darling Downs and Granite Belt",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Barcaldine and Isisford. Severe thunderstorms are no longer occurring in the North West district and the warning for this district is CANCELLED.",
-      "issued": "2026-10-25T16:50:51+10:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Longreach, Goondiwindi, Barcaldine, Blackall, Isisford and Tambo.",
+      "issued": "2026-10-25T17:43:01+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "QLD_PW009",
           "description": "Central West",
-          "phase": "UPD"
+          "phase": "REN"
+        },
+        {
+          "aac": "QLD_PW011",
+          "description": "Channel Country",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_PW012",
+          "description": "Maranoa and Warrego",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_PW013",
+          "description": "Darling Downs and Granite Belt",
+          "phase": "NEW"
         }
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
-    },
-    {
-      "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for North West",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-25T16:50:51+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "QLD_PW010",
-          "description": "North West",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -458,10 +445,63 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-25T07:11:12+00:00",
-        "description": "BANKSIA GROVE, CITY OF WANNEROO",
-        "lat": -31.6955,
-        "lng": 115.8125,
+        "updated": "2026-10-25T07:43:12+00:00",
+        "description": "CANNINGTON, CITY OF CANNING",
+        "lat": -32.0135,
+        "lng": 115.9445,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice THREAT IS REDUCED - TELFER",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-25T07:37:49.411+00:00",
+        "description": "",
+        "lat": -22.0896,
+        "lng": 123.436,
+        "polys": [
+          [
+            [
+              123.217204,
+              -21.967361
+            ],
+            [
+              123.753693,
+              -22.083218
+            ],
+            [
+              123.773787,
+              -22.273433
+            ],
+            [
+              123.218319,
+              -22.156697
+            ],
+            [
+              123.217204,
+              -21.967361
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-25T07:37:45+00:00",
+        "description": "BERTRAM, CITY OF KWINANA",
+        "lat": -32.2373,
+        "lng": 115.8477,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -473,7 +513,22 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-25T06:55:33+00:00",
+        "updated": "2026-10-25T07:36:54+00:00",
+        "description": "BRIDGETOWN, SHIRE OF BRIDGETOWN-GREENBUSHES",
+        "lat": -33.9763,
+        "lng": 116.1388,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-25T07:34:45+00:00",
         "description": "CABLE BEACH, SHIRE OF BROOME",
         "lat": -17.9617,
         "lng": 122.2129,
@@ -1188,44 +1243,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire Advice MONITOR CONDITIONS - TELFER",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-24T05:35:08.072+00:00",
-        "description": "",
-        "lat": -22.0896,
-        "lng": 123.436,
-        "polys": [
-          [
-            [
-              123.217204,
-              -21.967361
-            ],
-            [
-              123.753693,
-              -22.083218
-            ],
-            [
-              123.773787,
-              -22.273433
-            ],
-            [
-              123.218319,
-              -22.156697
-            ],
-            [
-              123.217204,
-              -21.967361
-            ]
-          ]
-        ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
@@ -1473,21 +1490,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-21T01:45:30+00:00",
-        "description": "TELFER, SHIRE OF EAST PILBARA",
-        "lat": -21.667,
-        "lng": 122.335,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-20T22:14:30+00:00",
         "description": "PRINCE REGENT RIVER, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.1977,
@@ -1664,6 +1666,52 @@
     ],
     "nt": [
       {
+        "title": "Bushfire - Duncan Road, DARWIN RIVER",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-10-25T07:15:00+00:00",
+        "description": "Duncan Road, DARWIN RIVER",
+        "lat": -12.8236,
+        "lng": 130.968,
+        "polys": [
+          [
+            [
+              130.971273,
+              -12.82809
+            ],
+            [
+              130.976503,
+              -12.823994
+            ],
+            [
+              130.967286,
+              -12.81484
+            ],
+            [
+              130.961842,
+              -12.821151
+            ],
+            [
+              130.962057,
+              -12.822949
+            ],
+            [
+              130.966,
+              -12.825958
+            ],
+            [
+              130.971273,
+              -12.82809
+            ]
+          ]
+        ],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Stuart Highway, TABLELANDS",
         "alertLevel": "Advice",
         "status": "active",
@@ -1713,7 +1761,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 54,
+  "incident_count": 56,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
