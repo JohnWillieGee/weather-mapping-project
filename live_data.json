@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-25T12:23:04.724803+00:00",
-  "last_checked_utc": "2026-10-25T12:23:04.724803+00:00",
-  "warning_count": 28,
+  "generated_utc": "2026-10-25T12:53:07.088111+00:00",
+  "last_checked_utc": "2026-10-25T12:53:07.088111+00:00",
+  "warning_count": 27,
   "warnings": [
     {
       "pid": "",
@@ -319,41 +319,37 @@
     },
     {
       "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Southern Downs",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Toowoomba, Southern Downs, Scenic Rim, Lockyer Valley",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 9:55 pm, a severe thunderstorm likely to produce damaging winds and heavy rainfall that may lead to flash flooding was detected near Dalveen and the area west of Warwick. This thunderstorm is moving towards the east. It is forecast to affect the area south of Warwick by 10:25 pm and Warwick, the area southeast of Warwick and the area northwest of Warwick by 10:55 pm.",
-      "issued": "2026-10-25T22:01:01+10:00",
+      "desc": "The Bureau of Meteorology warns that, at 10:20 pm, severe thunderstorms likely to produce damaging winds and heavy rainfall that may lead to flash flooding were detected near Warwick, Millmerran and Leyburn. These thunderstorms are moving towards the east. They are forecast to affect the area east of Warwick, the area northeast of Warwick and Killarney by 10:50 pm and Allora, the area north of Warwick and Oakington by 11:20 pm.",
+      "issued": "2026-10-25T22:26:45+10:00",
       "cancelled": false,
-      "areas": [
-        {
-          "aac": "QLD_ME011",
-          "description": "Southern Downs",
-          "phase": "REN"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
-    },
-    {
-      "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Toowoomba",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-25T22:01:01+10:00",
-      "cancelled": true,
       "areas": [
         {
           "aac": "QLD_ME010",
           "description": "Toowoomba",
-          "phase": "CAN"
+          "phase": "REN"
+        },
+        {
+          "aac": "QLD_ME011",
+          "description": "Southern Downs",
+          "phase": "REN"
+        },
+        {
+          "aac": "QLD_ME012",
+          "description": "Scenic Rim",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_ME016",
+          "description": "Lockyer Valley",
+          "phase": "NEW"
         }
       ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
+      "severityCode": "STD",
+      "hazardPhase": "UPD"
     }
   ],
   "fetch_errors": {},
@@ -379,6 +375,21 @@
       }
     ],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-25T12:43:45+00:00",
+        "description": "WANNEROO, CITY OF WANNEROO",
+        "lat": -31.751,
+        "lng": 115.8043,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1717,7 +1728,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 56,
+  "incident_count": 57,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
