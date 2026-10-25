@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-25T00:53:03.389162+00:00",
-  "last_checked_utc": "2026-10-25T00:53:03.389162+00:00",
+  "generated_utc": "2026-10-25T01:23:09.039905+00:00",
+  "last_checked_utc": "2026-10-25T01:23:09.039905+00:00",
   "warning_count": 30,
   "warnings": [
     {
@@ -341,23 +341,23 @@
       "type": "thunderstorm",
       "state": "VIC",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds in the warning area over the next several hours. Locations which may be affected include Wodonga, Corryong, Bright, Falls Creek, Mt Hotham and Omeo.",
-      "issued": "2026-10-25T10:16:10+11:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Wodonga, Corryong, Falls Creek, Mt Hotham and Omeo.",
+      "issued": "2026-10-25T11:51:50+11:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "VIC_PW004",
           "description": "North East",
-          "phase": "NEW"
+          "phase": "UPD"
         },
         {
           "aac": "VIC_PW005",
           "description": "East Gippsland",
-          "phase": "NEW"
+          "phase": "UPD"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "UPD"
     },
     {
       "pid": "IDQ21033",
@@ -402,7 +402,22 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-25T09:28:12+00:00",
+        "updated": "2026-10-25T12:08:13+00:00",
+        "description": "",
+        "lat": -43.00904000023965,
+        "lng": 147.03586999958708,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
+      },
+      {
+        "title": "Bushfire - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-10-25T12:08:13+00:00",
         "description": "",
         "lat": -42.97395000003419,
         "lng": 146.95278000039562,
@@ -417,7 +432,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "TFS",
-        "updated": "2026-10-25T09:28:12+00:00",
+        "updated": "2026-10-25T12:08:13+00:00",
         "description": "",
         "lat": -42.981989999696935,
         "lng": 146.9967700003957,
@@ -923,21 +938,6 @@
         ],
         "state": "TAS",
         "sourceUrl": "https://alert.tas.gov.au/?id=b42a5a1e-886a-4cf7-9d33-5f32b36b66aa"
-      },
-      {
-        "title": "Bushfire - Advice",
-        "alertLevel": "Advice",
-        "status": "",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "TFS",
-        "updated": "2026-10-25T09:28:12+00:00",
-        "description": "",
-        "lat": -43.00904000023965,
-        "lng": 147.03586999958708,
-        "polys": [],
-        "state": "TAS",
-        "sourceUrl": "https://alert.tas.gov.au/?id=2b093047-fa9a-41ba-8ac2-5f86d22ae30f"
       }
     ],
     "wa": [
@@ -948,7 +948,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-24T23:56:14+00:00",
+        "updated": "2026-10-25T01:13:13+00:00",
         "description": "MARBLE BAR, SHIRE OF EAST PILBARA",
         "lat": -21.401,
         "lng": 120.2004,
@@ -2108,25 +2108,9 @@
       }
     ],
     "act": [],
-    "sa": [
-      {
-        "title": "GRASS FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-25T00:36:00+00:00",
-        "description": "GLENCOE",
-        "lat": -37.6508,
-        "lng": 140.5799,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      }
-    ]
+    "sa": []
   },
-  "incident_count": 55,
+  "incident_count": 54,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
