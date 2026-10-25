@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-25T03:53:10.150522+00:00",
-  "last_checked_utc": "2026-10-25T03:53:10.150522+00:00",
+  "generated_utc": "2026-10-25T04:23:14.383743+00:00",
+  "last_checked_utc": "2026-10-25T04:23:14.383743+00:00",
   "warning_count": 29,
   "warnings": [
     {
@@ -269,14 +269,29 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Central Tablelands, Southern Tablelands, North West Slopes and Plains, Central West Slopes and Plains, South West Slopes, Riverina, Upper Western, Snowy Mountains, Australian Capital Territory",
+      "title": "Severe Thunderstorm Warning for Hunter, Illawarra, South Coast, Central Tablelands, Southern Tablelands, North West Slopes and Plains, Central West Slopes and Plains, South West Slopes, Snowy Mountains, Australian Capital Territory",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Orange, Canberra, Goulburn, Dubbo, Mudgee and Cooma. Severe thunderstorms are no longer occurring in the Lower Western district and the warning for this district is CANCELLED. 100 km/h wind gust was recorded at West Wyalong at 12:31 pm. 94 km/h wind gust was recorded at Narrandera Airport at 11:39 am.",
-      "issued": "2026-10-25T13:31:22+11:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Wollongong, Orange, Canberra, Goulburn, Nowra and Batemans Bay. Severe thunderstorms are no longer occurring in the Riverina and Upper Western districts and the warning for these districts is CANCELLED. 113 km/h wind gust was recorded at Cabramurra at 2:17 pm. 100 km/h wind gust was recorded at West W",
+      "issued": "2026-10-25T15:20:14+11:00",
       "cancelled": false,
       "areas": [
+        {
+          "aac": "NSW_PW003",
+          "description": "Hunter",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_PW006",
+          "description": "Illawarra",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_PW007",
+          "description": "South Coast",
+          "phase": "NEW"
+        },
         {
           "aac": "NSW_PW008",
           "description": "Central Tablelands",
@@ -303,16 +318,6 @@
           "phase": "REN"
         },
         {
-          "aac": "NSW_PW014",
-          "description": "Riverina",
-          "phase": "REN"
-        },
-        {
-          "aac": "NSW_PW016",
-          "description": "Upper Western",
-          "phase": "REN"
-        },
-        {
           "aac": "NSW_PW010",
           "description": "Snowy Mountains",
           "phase": "REN"
@@ -320,7 +325,7 @@
         {
           "aac": "NSW_PW017",
           "description": "Australian Capital Territory",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
@@ -328,17 +333,22 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Lower Western",
+      "title": "Severe Thunderstorm Warning for Upper Western, Riverina",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
       "desc": "",
-      "issued": "2026-10-25T13:31:22+11:00",
+      "issued": "2026-10-25T15:20:14+11:00",
       "cancelled": true,
       "areas": [
         {
-          "aac": "NSW_PW015",
-          "description": "Lower Western",
+          "aac": "NSW_PW016",
+          "description": "Upper Western",
+          "phase": "CAN"
+        },
+        {
+          "aac": "NSW_PW014",
+          "description": "Riverina",
           "phase": "CAN"
         }
       ],
@@ -347,27 +357,27 @@
     },
     {
       "pid": "IDV21033",
-      "title": "Severe Thunderstorm Warning for North East, East Gippsland",
+      "title": "Cancellation of Severe Thunderstorm Warning for North East, East Gippsland",
       "type": "thunderstorm",
       "state": "VIC",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Corryong, Gelantipy and Bonang.",
-      "issued": "2026-10-25T13:32:09+11:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled. The chance of additional severe thunderstorms in Victoria during the rest of today is marginal and will continue to be monitored.",
+      "issued": "2026-10-25T15:20:50+11:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "VIC_PW004",
           "description": "North East",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "VIC_PW005",
           "description": "East Gippsland",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -400,10 +410,70 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-25T03:31:45+00:00",
+        "updated": "2026-10-25T04:04:58+00:00",
+        "description": "MUELLER RANGES, SHIRE OF DERBY/WEST KIMBERLEY",
+        "lat": -17.286,
+        "lng": 126.938,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-25T04:01:00+00:00",
+        "description": "BAKERS HILL, SHIRE OF NORTHAM",
+        "lat": -31.7228,
+        "lng": 116.4827,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-25T04:00:37+00:00",
         "description": "HARRISDALE, CITY OF ARMADALE",
         "lat": -32.1099,
-        "lng": 115.9387,
+        "lng": 115.9388,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-25T03:57:46+00:00",
+        "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -16.376,
+        "lng": 128.342,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-25T03:55:56+00:00",
+        "description": "MUELLER RANGES, SHIRE OF HALLS CREEK",
+        "lat": -17.889,
+        "lng": 127.719,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1072,21 +1142,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-24T00:21:02+00:00",
-        "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -16.376,
-        "lng": 128.342,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-23T10:07:14+00:00",
         "description": "WATERBANK, SHIRE OF BROOME",
         "lat": -17.404,
@@ -1227,21 +1282,6 @@
         "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -16.767,
         "lng": 127.472,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-22T10:06:15+00:00",
-        "description": "WYNDHAM, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.4505,
-        "lng": 128.119,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1403,21 +1443,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-20T07:00:29+00:00",
-        "description": "MUELLER RANGES, SHIRE OF HALLS CREEK",
-        "lat": -17.889,
-        "lng": 127.719,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-19T16:20:58+00:00",
         "description": "ORD RIVER, SHIRE OF HALLS CREEK",
         "lat": -18.604,
@@ -1548,21 +1573,6 @@
       }
     ],
     "nt": [
-      {
-        "title": "Grass and Scrub Fire - MUSGRAVE ST, GILLEN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-25T03:45:36+00:00",
-        "description": "MUSGRAVE ST, GILLEN",
-        "lat": -23.7085,
-        "lng": 133.8707,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
       {
         "title": "Grass and Scrub Fire - NOONAMAH",
         "alertLevel": "Advice",
