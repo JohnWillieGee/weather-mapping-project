@@ -1,25 +1,25 @@
 {
-  "generated_utc": "2026-10-25T16:53:07.605230+00:00",
-  "last_checked_utc": "2026-10-25T16:53:07.605230+00:00",
-  "warning_count": 26,
+  "generated_utc": "2026-10-25T17:23:03.760903+00:00",
+  "last_checked_utc": "2026-10-25T17:23:03.760903+00:00",
+  "warning_count": 25,
   "warnings": [
     {
       "pid": "",
-      "title": "25/22:00 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "26/04:00 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 25 Oct 2026 11:00:13 GMT"
+      "issued": "Sun, 25 Oct 2026 17:00:13 GMT"
     },
     {
       "pid": "",
-      "title": "25/23:01 EDT Warning to Sheep Graziers\nfor Northern Tablelands, South Coast, Southern Tablelands, South West Slopes, Riverina and Snowy Mountains forecast districts",
+      "title": "26/04:17 EDT Warning to Sheep Graziers\nfor Northern Tablelands, Southern Tablelands, South West Slopes and Snowy Mountains forecast districts",
       "type": "other",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Sun, 25 Oct 2026 12:01:18 GMT"
+      "issued": "Sun, 25 Oct 2026 17:17:55 GMT"
     },
     {
       "pid": "",
@@ -32,21 +32,21 @@
     },
     {
       "pid": "",
-      "title": "25/22:00 EDT Marine Wind Warning Summary for Victoria",
+      "title": "26/04:10 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 25 Oct 2026 11:00:24 GMT"
+      "issued": "Sun, 25 Oct 2026 17:10:28 GMT"
     },
     {
       "pid": "",
-      "title": "25/23:01 EDT Warning to Sheep Graziers\nfor Northern Country, North Central, North East, South West, Central, West and South Gippsland and East Gippsland forecast districts",
+      "title": "26/04:17 EDT Warning to Sheep Graziers\nfor East Gippsland forecast district",
       "type": "other",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Sun, 25 Oct 2026 12:01:17 GMT"
+      "issued": "Sun, 25 Oct 2026 17:17:58 GMT"
     },
     {
       "pid": "",
@@ -167,21 +167,21 @@
     },
     {
       "pid": "",
-      "title": "25/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "26/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Sun, 25 Oct 2026 11:01:14 GMT"
+      "issued": "Sun, 25 Oct 2026 17:01:15 GMT"
     },
     {
       "pid": "",
-      "title": "25/22:00 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "26/04:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Sun, 25 Oct 2026 11:00:13 GMT"
+      "issued": "Sun, 25 Oct 2026 17:00:11 GMT"
     },
     {
       "pid": "IDT20611",
@@ -256,51 +256,37 @@
     },
     {
       "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Southern Downs, Scenic Rim",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Toowoomba, Southern Downs, Scenic Rim, Lockyer Valley",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 2:05 am, severe thunderstorms likely to produce heavy rainfall that may lead to flash flooding were detected. Thunderstorms are moving towards the east. They are forecast to affect the area south of Warwick, the area north of Warwick and Dalveen by 2:50 am and Warwick, Allora and the area southeast of Warwick by 3:35 am. 68 mm recorded at Millbrook in the 3 hours to 1:27 am. 65 mm recorded at Talgai in the 3 hours to 1:17 am. 51 mm recorded at Torridon (C",
-      "issued": "2026-10-26T02:15:56+10:00",
+      "desc": "The Bureau of Meteorology warns that, at 2:55 am, severe thunderstorms likely to produce heavy rainfall that may lead to flash flooding were detected near the area west of Warwick. These thunderstorms are moving towards the east to northeast. They are forecast to affect Warwick, the area northwest of Warwick and the area north of Warwick by 3:25 am and Allora, the area northeast of Warwick and Aratula by 3:55 am. 68 mm recorded at Millbrook in the 3 hours to 1:27 am. 65 mm recorded at Talgai in ",
+      "issued": "2026-10-26T02:59:34+10:00",
       "cancelled": false,
       "areas": [
         {
+          "aac": "QLD_ME010",
+          "description": "Toowoomba",
+          "phase": "NEW"
+        },
+        {
           "aac": "QLD_ME011",
           "description": "Southern Downs",
-          "phase": "UPD"
+          "phase": "REN"
         },
         {
           "aac": "QLD_ME012",
           "description": "Scenic Rim",
+          "phase": "REN"
+        },
+        {
+          "aac": "QLD_ME016",
+          "description": "Lockyer Valley",
           "phase": "NEW"
         }
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
-    },
-    {
-      "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Toowoomba, Lockyer Valley",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-26T02:15:56+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "QLD_ME010",
-          "description": "Toowoomba",
-          "phase": "CAN"
-        },
-        {
-          "aac": "QLD_ME016",
-          "description": "Lockyer Valley",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -5314,24 +5300,24 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-10-25T11:00:00Z",
+      "issued_utc": "2026-10-25T17:00:00Z",
       "overview": [
-        "Gale Warning for Sunday for Eden Coast",
-        "Strong Wind Warning for Sunday for Byron Coast, Coffs Coast, Macquarie Coast and Hunter Coast",
         "Gale Warning for Monday for Batemans Coast and Eden Coast",
-        "Strong Wind Warning for Monday for Byron Coast, Coffs Coast, Macquarie Coast, Hunter Coast, Sydney Coast, Sydney Enclosed Waters and Illawarra Coast"
+        "Strong Wind Warning for Monday for Byron Coast, Coffs Coast, Hunter Coast, Sydney Coast, Sydney Enclosed Waters and Illawarra Coast"
       ],
       "hazards": [
         {
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
+            "Batemans Coast: Ulladulla to Montague Island",
             "Eden Coast: Montague Island to Gabo Island"
           ],
           "aac_codes": [
+            "NSW_MW002",
             "NSW_MW001"
           ],
-          "summary": "Eden Coast"
+          "summary": "Batemans Coast and Eden Coast"
         },
         {
           "level": "Strong Wind Warning",
@@ -5339,28 +5325,31 @@
           "zones": [
             "Byron Coast: Point Danger to Wooli",
             "Coffs Coast: Wooli to Smoky Cape",
-            "Macquarie Coast: Smoky Cape to Seal Rocks",
-            "Hunter Coast: Seal Rocks to Broken Bay"
+            "Hunter Coast: Seal Rocks to Broken Bay",
+            "Sydney Coast: Broken Bay to Port Hacking",
+            "Sydney Enclosed Waters",
+            "Illawarra Coast: Port Hacking to Ulladulla"
           ],
           "aac_codes": [
             "NSW_MW008",
             "NSW_MW007",
-            "NSW_MW006",
-            "NSW_MW005"
+            "NSW_MW005",
+            "NSW_MW004",
+            "NSW_MW009",
+            "NSW_MW003"
           ],
-          "summary": "Byron Coast, Coffs Coast, Macquarie Coast and Hunter Coast"
+          "summary": "Sydney Enclosed Waters, Byron Coast, Coffs Coast, Hunter Coast, Sydney Coast and Illawarra Coast"
         }
       ]
     },
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-25T11:00:00Z",
+      "issued_utc": "2026-10-25T17:10:00Z",
       "overview": [
-        "Gale Warning for Sunday for East Gippsland Coast",
-        "Strong Wind Warning for Sunday for Central Gippsland Coast",
         "Gale Warning for Monday for East Gippsland Coast",
-        "Strong Wind Warning for Monday for Central Coast and Central Gippsland Coast"
+        "Strong Wind Warning for Monday for Central Coast and Central Gippsland Coast",
+        "Strong Wind Warning for Tuesday for Central Gippsland Coast and East Gippsland Coast"
       ],
       "hazards": [
         {
@@ -5378,22 +5367,24 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Central Coast: Cape Otway to Wilsons Promontory",
             "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance"
           ],
           "aac_codes": [
+            "VIC_MW002",
             "VIC_MW003"
           ],
-          "summary": "Central Gippsland Coast"
+          "summary": "Central Coast and Central Gippsland Coast"
         }
       ]
     },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-25T11:01:00Z",
+      "issued_utc": "2026-10-25T17:01:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast and Leeuwin Coast",
-        "Strong Wind Warning for Monday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast, Perth Coast, Bunbury Geographe Coast and Leeuwin Coast"
+        "Strong Wind Warning for Monday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast, Perth Coast, Bunbury Geographe Coast and Leeuwin Coast",
+        "Strong Wind Warning for Tuesday for Gascoyne Coast, Geraldton Coast and Lancelin Coast"
       ],
       "hazards": [
         {
@@ -5404,6 +5395,8 @@
             "Ningaloo Coast: North West Cape to Cape Cuvier",
             "Gascoyne Coast: Cape Cuvier to Kalbarri",
             "Geraldton Coast: Kalbarri to Jurien Bay",
+            "Perth Coast: Two Rocks to Dawesville",
+            "Bunbury Geographe Coast: Dawesville to Cape Naturaliste",
             "Leeuwin Coast: Cape Naturaliste to Walpole"
           ],
           "aac_codes": [
@@ -5411,37 +5404,46 @@
             "WA_MW005",
             "WA_MW006",
             "WA_MW007",
+            "WA_MW009",
+            "WA_MW010",
             "WA_MW011"
           ],
-          "summary": "Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast and Leeuwin Coast"
+          "summary": "Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast, Perth Coast, Bunbury Geographe Coast and Leeuwin Coast"
         }
       ]
     },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-25T11:00:00Z",
+      "issued_utc": "2026-10-25T17:00:00Z",
       "overview": [
-        "Strong Wind Warning for Sunday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island and Upper East Coast",
-        "Strong Wind Warning for Monday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, South East Coast and Central West Coast"
+        "Strong Wind Warning for Monday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, South East Coast and Central West Coast",
+        "Gale Warning for Tuesday for South East Coast and South West Coast",
+        "Strong Wind Warning for Tuesday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and Central West Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Far North West Coast: Sandy Cape to Stanley",
             "Central North Coast: Stanley to Northern Tip of Flinders Island",
             "Banks Strait and Franklin Sound",
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
-            "Upper East Coast: St Helens Point to Wineglass Bay"
+            "Lower East Coast: Wineglass Bay to Tasman Island",
+            "South East Coast: Tasman Island to South East Cape",
+            "Central West Coast: Low Rocky Point to Sandy Cape"
           ],
           "aac_codes": [
+            "TAS_MW001",
             "TAS_MW002",
             "TAS_MW009",
             "TAS_MW003",
-            "TAS_MW004"
+            "TAS_MW005",
+            "TAS_MW006",
+            "TAS_MW008"
           ],
-          "summary": "Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island and Upper East Coast"
+          "summary": "Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, South East Coast and Central West Coast"
         }
       ]
     }
