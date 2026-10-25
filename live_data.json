@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-25T02:53:04.273672+00:00",
-  "last_checked_utc": "2026-10-25T02:53:04.273672+00:00",
+  "generated_utc": "2026-10-25T03:23:03.953500+00:00",
+  "last_checked_utc": "2026-10-25T03:23:03.953500+00:00",
   "warning_count": 29,
   "warnings": [
     {
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "24/14:49 EDT Moderate Flood Warning for the Weir River",
+      "title": "25/14:10 EDT Moderate Flood Warning for the Weir River",
       "type": "flood",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/qld/warnings/flood/border-rivers.shtml",
       "desc": "",
-      "issued": "Sat, 24 Oct 2026 03:49:40 GMT"
+      "issued": "Sun, 25 Oct 2026 03:10:43 GMT"
     },
     {
       "pid": "",
@@ -95,21 +95,21 @@
     },
     {
       "pid": "",
-      "title": "24/13:53 EST Minor Flood Warning for the Upper Condamine River",
+      "title": "25/13:18 EST Minor Flood Warning for the Upper Condamine River",
       "type": "flood",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/flood/upper-condamine.shtml",
       "desc": "",
-      "issued": "Sat, 24 Oct 2026 03:53:43 GMT"
+      "issued": "Sun, 25 Oct 2026 03:18:41 GMT"
     },
     {
       "pid": "",
-      "title": "24/13:49 EST Moderate Flood Warning for the Weir River",
+      "title": "25/13:10 EST Moderate Flood Warning for the Weir River",
       "type": "flood",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/flood/border-rivers.shtml",
       "desc": "",
-      "issued": "Sat, 24 Oct 2026 03:49:40 GMT"
+      "issued": "Sun, 25 Oct 2026 03:10:43 GMT"
     },
     {
       "pid": "",
@@ -158,12 +158,12 @@
     },
     {
       "pid": "",
-      "title": "25/09:32 CDT Marine Wind Warning Summary for South Australia",
+      "title": "25/13:46 CDT Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Sat, 24 Oct 2026 23:02:54 GMT"
+      "issued": "Sun, 25 Oct 2026 03:16:02 GMT"
     },
     {
       "pid": "",
@@ -372,10 +372,43 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Muir Rd, Chullora",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Sun, 25 Oct 2026 03:17:58 GMT",
+        "description": "Muir Rd, Chullora, NSW 2190",
+        "council": "Canterbury-Bankstown",
+        "lat": -33.8944509999999,
+        "lng": 151.045683,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
-    "tas": [],
+    "tas": [
+      {
+        "title": "Flood - Advice",
+        "alertLevel": "Advice",
+        "status": "",
+        "type": "Flood",
+        "size": "",
+        "agency": "TFS",
+        "updated": "2026-10-25T14:14:13+00:00",
+        "description": "",
+        "lat": -41.786910000090295,
+        "lng": 147.72818999989252,
+        "polys": [],
+        "state": "TAS",
+        "sourceUrl": "https://alert.tas.gov.au/?id=6005cfa1-ff0b-4b81-8da7-2aabfebe7abf"
+      }
+    ],
     "wa": [
       {
         "title": "Smoke Alert FOR BULLSBROOK AND SURROUNDS IN THE CITY OF SWAN",
@@ -1533,6 +1566,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - NOONAMAH",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-25T03:05:08+00:00",
+        "description": "NOONAMAH",
+        "lat": -12.6134,
+        "lng": 131.1186,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Stuart Highway, TABLELANDS",
         "alertLevel": "Advice",
         "status": "active",
@@ -1580,9 +1628,25 @@
       }
     ],
     "act": [],
-    "sa": []
+    "sa": [
+      {
+        "title": "STRUCTURE FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-25T02:47:00+00:00",
+        "description": "DUCK PONDS",
+        "lat": -34.7436,
+        "lng": 135.8068,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      }
+    ]
   },
-  "incident_count": 51,
+  "incident_count": 55,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5314,6 +5378,25 @@
             "VIC_MW006"
           ],
           "summary": "Port Phillip, Western Port, Central Coast and Central Gippsland Coast"
+        }
+      ]
+    },
+    "SA": {
+      "state": "SA",
+      "product": "IDS20201",
+      "issued_utc": "2026-10-25T03:15:54Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Spencer Gulf"
+          ],
+          "aac_codes": [
+            "SA_MW005"
+          ],
+          "summary": "Spencer Gulf"
         }
       ]
     },
