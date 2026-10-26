@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-26T16:23:04.439612+00:00",
-  "last_checked_utc": "2026-10-26T16:23:04.439612+00:00",
-  "warning_count": 22,
+  "generated_utc": "2026-10-26T16:53:02.076786+00:00",
+  "last_checked_utc": "2026-10-26T16:53:02.076786+00:00",
+  "warning_count": 23,
   "warnings": [
     {
       "pid": "",
@@ -214,18 +214,18 @@
     },
     {
       "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Toowoomba, Southern Downs, Scenic Rim, Lockyer Valley, Ipswich",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Gold Coast, Southern Downs, Scenic Rim, Gympie",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 1:35 am, a severe thunderstorm likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding was detected near the area north of Warwick. This thunderstorm is moving towards the east. It is forecast to affect Oakington, Maryvale and Cunninghams Gap by 2:05 am and Boonah, Moogerah and Moogerah Dam by 2:35 am.",
-      "issued": "2026-10-27T01:46:10+10:00",
+      "desc": "The Bureau of Meteorology warns that, at 2:30 am, severe thunderstorms likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding were detected near Boonah, the area south of Cunninghams Gap and the NSW border. These thunderstorms are moving towards the east to southeast. They are forecast to affect Beaudesert, the area between Boonah and Beaudesert, Mount Barney, Laravale and Kooralbyn by 3:00 am and Border Ranges National Park, the McPherson Range, Sp",
+      "issued": "2026-10-27T02:39:17+10:00",
       "cancelled": false,
       "areas": [
         {
-          "aac": "QLD_ME010",
-          "description": "Toowoomba",
-          "phase": "REN"
+          "aac": "QLD_ME007",
+          "description": "Gold Coast",
+          "phase": "NEW"
         },
         {
           "aac": "QLD_ME011",
@@ -238,18 +238,42 @@
           "phase": "REN"
         },
         {
-          "aac": "QLD_ME016",
-          "description": "Lockyer Valley",
-          "phase": "REN"
-        },
-        {
-          "aac": "QLD_ME017",
-          "description": "Ipswich",
+          "aac": "QLD_ME013",
+          "description": "Gympie",
           "phase": "NEW"
         }
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDQ21035",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Toowoomba, Lockyer Valley, Ipswich",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-27T02:39:17+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "QLD_ME010",
+          "description": "Toowoomba",
+          "phase": "CAN"
+        },
+        {
+          "aac": "QLD_ME016",
+          "description": "Lockyer Valley",
+          "phase": "CAN"
+        },
+        {
+          "aac": "QLD_ME017",
+          "description": "Ipswich",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -259,6 +283,21 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-26T16:31:24+00:00",
+        "description": "LAGRANGE, SHIRE OF BROOME",
+        "lat": -18.739,
+        "lng": 121.671,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -285,21 +324,6 @@
         "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -16.133,
         "lng": 128.38,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-26T11:25:36+00:00",
-        "description": "LAGRANGE, SHIRE OF BROOME",
-        "lat": -18.739,
-        "lng": 121.671,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
