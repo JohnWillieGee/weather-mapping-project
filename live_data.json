@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-26T12:53:01.770006+00:00",
-  "last_checked_utc": "2026-10-26T12:53:01.770006+00:00",
+  "generated_utc": "2026-10-26T13:23:02.430171+00:00",
+  "last_checked_utc": "2026-10-26T13:23:02.430171+00:00",
   "warning_count": 23,
   "warnings": [
     {
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "26/19:48 EST Major Flood Warning for the Bremer River and Warrill Creek",
+      "title": "26/23:17 EST Major Flood Warning for the Bremer River and Warrill Creek",
       "type": "flood",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/flood/bremer-river-and-warrill-creek.shtml",
       "desc": "",
-      "issued": "Mon, 26 Oct 2026 09:48:45 GMT"
+      "issued": "Mon, 26 Oct 2026 13:17:43 GMT"
     },
     {
       "pid": "",
@@ -184,42 +184,13 @@
       "issued": "Mon, 26 Oct 2026 00:11:48 GMT"
     },
     {
-      "pid": "IDN21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for Northern Rivers, Mid North Coast, Northern Tablelands",
-      "type": "thunderstorm",
-      "state": "NSW",
-      "link": "",
-      "desc": "This warning is now cancelled. 3 to 4 cm hailstones were observed at Corindi Beach around 4:00 pm. 4 cm hailstones were observed near Armidale around 3:30 pm.",
-      "issued": "2026-10-26T20:05:09+11:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "NSW_PW001",
-          "description": "Northern Rivers",
-          "phase": "CAN"
-        },
-        {
-          "aac": "NSW_PW002",
-          "description": "Mid North Coast",
-          "phase": "CAN"
-        },
-        {
-          "aac": "NSW_PW004",
-          "description": "Northern Tablelands",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
-    },
-    {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Capricornia, Central Highlands and Coalfields, Darling Downs and Granite Belt, Wide Bay and Burnett",
+      "title": "Severe Thunderstorm Warning for Capricornia, Central Highlands and Coalfields, Darling Downs and Granite Belt, Wide Bay and Burnett, Southeast Coast",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds in the warning area over the next several hours. Locations which may be affected include Taroom, Rolleston, Springsure, Carnarvon National Park, Eidsvold and Theodore. Severe thunderstorms are no longer occurring in the Central West and Maranoa and Warrego districts and the warning for these districts is CANCELLED.",
-      "issued": "2026-10-26T22:46:56+10:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds in the warning area over the next several hours. Locations which may be affected include Taroom, Rolleston, Springsure, Carnarvon National Park, Eidsvold and Theodore.",
+      "issued": "2026-10-26T23:12:03+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -241,10 +212,15 @@
           "aac": "QLD_PW014",
           "description": "Wide Bay and Burnett",
           "phase": "REN"
+        },
+        {
+          "aac": "QLD_PW015",
+          "description": "Southeast Coast",
+          "phase": "NEW"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "REN"
+      "hazardPhase": "UPD"
     },
     {
       "pid": "IDQ21033",
@@ -253,7 +229,7 @@
       "state": "QLD",
       "link": "",
       "desc": "",
-      "issued": "2026-10-26T22:46:56+10:00",
+      "issued": "2026-10-26T23:12:03+10:00",
       "cancelled": true,
       "areas": [
         {
@@ -269,6 +245,35 @@
       ],
       "severityCode": "CAN",
       "hazardPhase": "CAN"
+    },
+    {
+      "pid": "IDQ21035",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Dalby, South Burnett, Toowoomba",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "The Bureau of Meteorology warns that, at 11:10 pm, severe thunderstorms likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding were detected near Lake Boondooma, the area northwest of Lake Boondooma and the area north of Lake Boondooma. These thunderstorms are moving towards the east. They are forecast to affect Proston, Boondooma and the area north of Millmerran by 11:40 pm and Kincora, the area south of Lake Boondooma and the area northwest of Mur",
+      "issued": "2026-10-26T23:17:02+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "QLD_ME008",
+          "description": "Dalby",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_ME009",
+          "description": "South Burnett",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_ME010",
+          "description": "Toowoomba",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
