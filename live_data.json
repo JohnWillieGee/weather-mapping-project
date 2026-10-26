@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-26T07:23:02.603072+00:00",
-  "last_checked_utc": "2026-10-26T07:23:02.603072+00:00",
-  "warning_count": 26,
+  "generated_utc": "2026-10-26T07:53:01.089591+00:00",
+  "last_checked_utc": "2026-10-26T07:53:01.089591+00:00",
+  "warning_count": 27,
   "warnings": [
     {
       "pid": "",
@@ -77,12 +77,12 @@
     },
     {
       "pid": "",
-      "title": "26/11:37 EST Moderate Flood Warning for the Mary River",
+      "title": "26/17:35 EST Moderate Flood Warning for the Mary River",
       "type": "flood",
       "state": "QLD",
       "link": "http://reg.bom.gov.au/qld/warnings/flood/mary-river.shtml",
       "desc": "",
-      "issued": "Mon, 26 Oct 2026 01:37:38 GMT"
+      "issued": "Mon, 26 Oct 2026 07:35:55 GMT"
     },
     {
       "pid": "",
@@ -212,12 +212,12 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Northern Rivers, Mid North Coast, Northern Tablelands, North West Slopes and Plains",
+      "title": "Severe Thunderstorm Warning for Northern Rivers, Mid North Coast, Northern Tablelands",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce large hailstones, damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Armidale, Tamworth, Ebor, Walcha, Woolgoolga and Wooli. 4 cm hailstones were observed near Armidale around 3:30 pm.",
-      "issued": "2026-10-26T17:53:40+11:00",
+      "desc": "Severe thunderstorms are likely to produce large hailstones, damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Grafton, Port Macquarie, Kempsey, Yamba, Jackadgery and Nymboida. Severe thunderstorms are no longer occurring in the North West Slopes and Plains district and the warning for this district is CANCELLED. 4 cm hailstones were observed near Armidale around 3:30 pm.",
+      "issued": "2026-10-26T18:46:55+11:00",
       "cancelled": false,
       "areas": [
         {
@@ -234,15 +234,29 @@
           "aac": "NSW_PW004",
           "description": "Northern Tablelands",
           "phase": "REN"
-        },
-        {
-          "aac": "NSW_PW011",
-          "description": "North West Slopes and Plains",
-          "phase": "NEW"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDN21033",
+      "title": "Severe Thunderstorm Warning for North West Slopes and Plains",
+      "type": "thunderstorm",
+      "state": "NSW",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-26T18:46:55+11:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "NSW_PW011",
+          "description": "North West Slopes and Plains",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDQ21033",
@@ -310,6 +324,106 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - DAMPIER PENINSULA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-26T07:34:10.7+00:00",
+        "description": "",
+        "lat": -16.4406,
+        "lng": 123.0387,
+        "polys": [
+          [
+            [
+              123.023502,
+              -16.430887
+            ],
+            [
+              123.02232,
+              -16.433494
+            ],
+            [
+              123.02427,
+              -16.434684
+            ],
+            [
+              123.05103,
+              -16.452531
+            ],
+            [
+              123.055904,
+              -16.44984
+            ],
+            [
+              123.055225,
+              -16.446298
+            ],
+            [
+              123.046717,
+              -16.445222
+            ],
+            [
+              123.044915,
+              -16.443578
+            ],
+            [
+              123.039374,
+              -16.438736
+            ],
+            [
+              123.023502,
+              -16.430887
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice THREAT IS REDUCED - CAMBRIDGE GULF",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-26T07:30:17.504+00:00",
+        "description": "",
+        "lat": -15.2108,
+        "lng": 128.6472,
+        "polys": [
+          [
+            [
+              128.712362,
+              -15.226298
+            ],
+            [
+              128.646962,
+              -15.306059
+            ],
+            [
+              128.559993,
+              -15.203084
+            ],
+            [
+              128.625837,
+              -15.151812
+            ],
+            [
+              128.625699,
+              -15.151545
+            ],
+            [
+              128.712362,
+              -15.226298
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice MONITOR CONDITIONS - DURACK",
         "alertLevel": "Advice",
@@ -390,64 +504,6 @@
         "lat": -16.016,
         "lng": 128.889,
         "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice MONITOR CONDITIONS - DAMPIER PENINSULA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-26T04:25:17.981+00:00",
-        "description": "",
-        "lat": -16.4406,
-        "lng": 123.0387,
-        "polys": [
-          [
-            [
-              123.023502,
-              -16.430887
-            ],
-            [
-              123.02232,
-              -16.433494
-            ],
-            [
-              123.02427,
-              -16.434684
-            ],
-            [
-              123.05103,
-              -16.452531
-            ],
-            [
-              123.055904,
-              -16.44984
-            ],
-            [
-              123.055225,
-              -16.446298
-            ],
-            [
-              123.046717,
-              -16.445222
-            ],
-            [
-              123.044915,
-              -16.443578
-            ],
-            [
-              123.039374,
-              -16.438736
-            ],
-            [
-              123.023502,
-              -16.430887
-            ]
-          ]
-        ],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1154,48 +1210,6 @@
         "lat": -18.835,
         "lng": 125.158,
         "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice PREPARE NOW - CAMBRIDGE GULF",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-24T09:21:18.834+00:00",
-        "description": "",
-        "lat": -15.2108,
-        "lng": 128.6472,
-        "polys": [
-          [
-            [
-              128.712362,
-              -15.226298
-            ],
-            [
-              128.646962,
-              -15.306059
-            ],
-            [
-              128.559993,
-              -15.203084
-            ],
-            [
-              128.625837,
-              -15.151812
-            ],
-            [
-              128.625699,
-              -15.151545
-            ],
-            [
-              128.712362,
-              -15.226298
-            ]
-          ]
-        ],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
