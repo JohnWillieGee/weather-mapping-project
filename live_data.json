@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-26T08:53:04.905005+00:00",
-  "last_checked_utc": "2026-10-26T08:53:04.905005+00:00",
-  "warning_count": 25,
+  "generated_utc": "2026-10-26T09:23:02.809038+00:00",
+  "last_checked_utc": "2026-10-26T09:23:02.809038+00:00",
+  "warning_count": 23,
   "warnings": [
     {
       "pid": "",
-      "title": "26/19:22 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "26/20:17 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 26 Oct 2026 08:22:05 GMT"
+      "issued": "Mon, 26 Oct 2026 09:17:08 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "26/16:15 EDT Marine Wind Warning Summary for Victoria",
+      "title": "26/19:59 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 26 Oct 2026 05:15:21 GMT"
+      "issued": "Mon, 26 Oct 2026 08:59:58 GMT"
     },
     {
       "pid": "",
@@ -194,46 +194,27 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Northern Rivers, Mid North Coast, Northern Tablelands",
+      "title": "Cancellation of Severe Thunderstorm Warning for Northern Rivers, Mid North Coast, Northern Tablelands",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce large hailstones, damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Grafton, Port Macquarie, Kempsey, Yamba, Jackadgery and Nymboida. Severe thunderstorms are no longer occurring in the North West Slopes and Plains district and the warning for this district is CANCELLED. 4 cm hailstones were observed near Armidale around 3:30 pm.",
-      "issued": "2026-10-26T18:46:55+11:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled. 3 to 4 cm hailstones were observed at Corindi Beach around 4:00 pm. 4 cm hailstones were observed near Armidale around 3:30 pm.",
+      "issued": "2026-10-26T20:05:09+11:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "NSW_PW001",
           "description": "Northern Rivers",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "NSW_PW002",
           "description": "Mid North Coast",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "NSW_PW004",
           "description": "Northern Tablelands",
-          "phase": "REN"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
-    },
-    {
-      "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for North West Slopes and Plains",
-      "type": "thunderstorm",
-      "state": "NSW",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-26T18:46:55+11:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "NSW_PW011",
-          "description": "North West Slopes and Plains",
           "phase": "CAN"
         }
       ],
@@ -278,30 +259,28 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "NEW"
-    },
-    {
-      "pid": "IDQ21035",
-      "title": "Cancellation of Severe Thunderstorm Warning - Southeast Queensland for Brisbane",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "Severe thunderstorms are no longer affecting the Southeast Queensland area (east of Dalby from Rainbow Beach to Stanthorpe). This warning is now cancelled.",
-      "issued": "2026-10-26T16:43:39+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "QLD_ME005",
-          "description": "Brisbane",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Major St, Coogee",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Mon, 26 Oct 2026 09:20:02 GMT",
+        "description": "Major St, Coogee, NSW 2034",
+        "council": "Randwick",
+        "lat": -33.91738,
+        "lng": 151.260929,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "tas": [],
@@ -313,10 +292,194 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-26T07:58:00+00:00",
+        "updated": "2026-10-26T09:10:05+00:00",
         "description": "LAGRANGE, SHIRE OF BROOME",
         "lat": -18.739,
         "lng": 121.671,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-26T09:05:13+00:00",
+        "description": "CHAMPION LAKES, CITY OF ARMADALE",
+        "lat": -32.1152,
+        "lng": 115.9838,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - EIGHTY MILE BEACH AND LAGRANGE",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-26T09:02:44.055+00:00",
+        "description": "",
+        "lat": -18.7705,
+        "lng": 121.7217,
+        "polys": [
+          [
+            [
+              121.886844,
+              -18.698516
+            ],
+            [
+              121.909981,
+              -18.717902
+            ],
+            [
+              121.862741,
+              -18.750804
+            ],
+            [
+              121.838014,
+              -18.787487
+            ],
+            [
+              121.806548,
+              -18.848344
+            ],
+            [
+              121.79741,
+              -18.872875
+            ],
+            [
+              121.782902,
+              -18.911053
+            ],
+            [
+              121.76952,
+              -18.950241
+            ],
+            [
+              121.739369,
+              -19.031483
+            ],
+            [
+              121.653518,
+              -18.993455
+            ],
+            [
+              121.735572,
+              -18.849623
+            ],
+            [
+              121.748795,
+              -18.824984
+            ],
+            [
+              121.64549,
+              -18.793692
+            ],
+            [
+              121.652515,
+              -18.766306
+            ],
+            [
+              121.64673,
+              -18.751047
+            ],
+            [
+              121.63516,
+              -18.742829
+            ],
+            [
+              121.620284,
+              -18.741264
+            ],
+            [
+              121.627722,
+              -18.722089
+            ],
+            [
+              121.631441,
+              -18.719741
+            ],
+            [
+              121.633094,
+              -18.715436
+            ],
+            [
+              121.630614,
+              -18.709173
+            ],
+            [
+              121.644251,
+              -18.70526
+            ],
+            [
+              121.650862,
+              -18.704085
+            ],
+            [
+              121.665325,
+              -18.710739
+            ],
+            [
+              121.666564,
+              -18.717392
+            ],
+            [
+              121.674416,
+              -18.717392
+            ],
+            [
+              121.680201,
+              -18.718175
+            ],
+            [
+              121.682267,
+              -18.712305
+            ],
+            [
+              121.689705,
+              -18.706042
+            ],
+            [
+              121.698796,
+              -18.698997
+            ],
+            [
+              121.738052,
+              -18.717392
+            ],
+            [
+              121.792597,
+              -18.741264
+            ],
+            [
+              121.813258,
+              -18.751438
+            ],
+            [
+              121.886844,
+              -18.698516
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Report of Smoke",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-26T08:52:44+00:00",
+        "description": "LESCHENAULT, SHIRE OF HARVEY",
+        "lat": -33.2653,
+        "lng": 115.7191,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -639,222 +802,6 @@
         "lat": -17.175,
         "lng": 127.88,
         "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice THREAT IS REDUCED - HALLS CREEK",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-26T01:09:20.16+00:00",
-        "description": "",
-        "lat": -18.2331,
-        "lng": 127.6756,
-        "polys": [
-          [
-            [
-              127.678459,
-              -18.23231
-            ],
-            [
-              127.677076,
-              -18.231351
-            ],
-            [
-              127.674863,
-              -18.22849
-            ],
-            [
-              127.668235,
-              -18.235226
-            ],
-            [
-              127.673439,
-              -18.239697
-            ],
-            [
-              127.678467,
-              -18.232315
-            ],
-            [
-              127.678459,
-              -18.23231
-            ]
-          ]
-        ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice THREAT IS REDUCED - HALLS CREEK, MCBEATH AND ORD RIVER",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-26T01:09:20.16+00:00",
-        "description": "",
-        "lat": -18.2428,
-        "lng": 127.6902,
-        "polys": [
-          [
-            [
-              127.692095,
-              -18.239781
-            ],
-            [
-              127.678477,
-              -18.232321
-            ],
-            [
-              127.673438,
-              -18.239699
-            ],
-            [
-              127.693022,
-              -18.255828
-            ],
-            [
-              127.702604,
-              -18.248235
-            ],
-            [
-              127.699347,
-              -18.243709
-            ],
-            [
-              127.692095,
-              -18.239781
-            ]
-          ]
-        ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice THREAT IS REDUCED - CABLE BEACH",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-26T00:40:38.711+00:00",
-        "description": "",
-        "lat": -17.9522,
-        "lng": 122.2086,
-        "polys": [
-          [
-            [
-              122.20976,
-              -17.951917
-            ],
-            [
-              122.206861,
-              -17.950832
-            ],
-            [
-              122.206416,
-              -17.95242
-            ],
-            [
-              122.209399,
-              -17.95331
-            ],
-            [
-              122.209545,
-              -17.952525
-            ],
-            [
-              122.20976,
-              -17.951917
-            ]
-          ]
-        ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice THREAT IS REDUCED - CABLE BEACH",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-26T00:37:52.148+00:00",
-        "description": "",
-        "lat": -17.9635,
-        "lng": 122.2116,
-        "polys": [
-          [
-            [
-              122.212782,
-              -17.961976
-            ],
-            [
-              122.212793,
-              -17.960218
-            ],
-            [
-              122.213986,
-              -17.960208
-            ],
-            [
-              122.213807,
-              -17.959223
-            ],
-            [
-              122.212624,
-              -17.959505
-            ],
-            [
-              122.209097,
-              -17.961521
-            ],
-            [
-              122.207793,
-              -17.961512
-            ],
-            [
-              122.207678,
-              -17.96344
-            ],
-            [
-              122.208994,
-              -17.967409
-            ],
-            [
-              122.209533,
-              -17.968904
-            ],
-            [
-              122.213175,
-              -17.968156
-            ],
-            [
-              122.21238,
-              -17.966728
-            ],
-            [
-              122.212316,
-              -17.96618
-            ],
-            [
-              122.212363,
-              -17.965587
-            ],
-            [
-              122.212818,
-              -17.963024
-            ],
-            [
-              122.212782,
-              -17.961976
-            ]
-          ]
-        ],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1516,21 +1463,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - BARRETT DR, DESERT SPRINGS",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-26T08:34:10+00:00",
-        "description": "BARRETT DR, DESERT SPRINGS",
-        "lat": -23.7186,
-        "lng": 133.8774,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Victoria Highway, BAINES COMPLEX",
         "alertLevel": "Advice",
         "status": "active",
@@ -1621,13 +1553,28 @@
     ],
     "act": [
       {
+        "title": "HOUSE FIRE - MONCRIEFF",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "Fire",
+        "updated": "2026-10-26T09:07:51+00:00",
+        "description": "MONCRIEFF",
+        "lat": -35.1564,
+        "lng": 149.1198,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
         "title": "HOUSE FIRE - OXLEY",
         "alertLevel": "",
         "status": "active",
         "type": "Structure Fire",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-10-26T08:43:55+00:00",
+        "updated": "2026-10-26T09:04:19+00:00",
         "description": "OXLEY",
         "lat": -35.406,
         "lng": 149.0772,
@@ -1642,7 +1589,7 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "Fire - Ambulance",
-        "updated": "2026-10-26T08:43:55+00:00",
+        "updated": "2026-10-26T09:04:19+00:00",
         "description": "OXLEY",
         "lat": -35.406,
         "lng": 149.0772,
@@ -5284,7 +5231,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-10-26T08:21:43Z",
+      "issued_utc": "2026-10-26T09:17:00Z",
       "overview": [],
       "hazards": [
         {
@@ -5303,9 +5250,9 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-26T05:15:00Z",
+      "issued_utc": "2026-10-26T08:59:45Z",
       "overview": [
-        "Strong Wind Warning for Monday for Central Gippsland Coast and East Gippsland Coast",
+        "Strong Wind Warning for Monday for Central Coast, Central Gippsland Coast and East Gippsland Coast",
         "Strong Wind Warning for Tuesday for Central Gippsland Coast and East Gippsland Coast"
       ],
       "hazards": [
@@ -5313,14 +5260,16 @@
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
+            "Central Coast: Cape Otway to Wilsons Promontory",
             "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
             "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
           ],
           "aac_codes": [
+            "VIC_MW002",
             "VIC_MW003",
             "VIC_MW004"
           ],
-          "summary": "Central Gippsland Coast and East Gippsland Coast"
+          "summary": "Central Coast, Central Gippsland Coast and East Gippsland Coast"
         }
       ]
     },
