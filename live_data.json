@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-26T15:23:01.953858+00:00",
-  "last_checked_utc": "2026-10-26T15:23:01.953858+00:00",
-  "warning_count": 24,
+  "generated_utc": "2026-10-26T15:53:08.436556+00:00",
+  "last_checked_utc": "2026-10-26T15:53:08.436556+00:00",
+  "warning_count": 22,
   "warnings": [
     {
       "pid": "",
@@ -190,7 +190,7 @@
       "state": "QLD",
       "link": "",
       "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding and large hailstones over the next several hours in parts of the Wide Bay and Burnett district. Locations which may be affected include Gin Gin. Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds over the next several hours in parts of the Darling Downs and Granite Belt and Southeast Coast districts. Locations which may be affected ",
-      "issued": "2026-10-27T01:03:21+10:00",
+      "issued": "2026-10-27T01:44:46+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -213,37 +213,13 @@
       "hazardPhase": "REN"
     },
     {
-      "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Capricornia, Central Highlands and Coalfields",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-27T01:03:21+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "QLD_PW007",
-          "description": "Capricornia",
-          "phase": "CAN"
-        },
-        {
-          "aac": "QLD_PW008",
-          "description": "Central Highlands and Coalfields",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
-    },
-    {
       "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Toowoomba, Southern Downs, Scenic Rim, Lockyer Valley",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Toowoomba, Southern Downs, Scenic Rim, Lockyer Valley, Ipswich",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 12:50 am, a severe thunderstorm likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding was detected near Ellangowan and Clifton. This thunderstorm is moving towards the east. It is forecast to affect Allora by 1:20 am and the area north of Warwick, Maryvale and Cunninghams Gap by 1:50 am.",
-      "issued": "2026-10-27T00:58:25+10:00",
+      "desc": "The Bureau of Meteorology warns that, at 1:35 am, a severe thunderstorm likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding was detected near the area north of Warwick. This thunderstorm is moving towards the east. It is forecast to affect Oakington, Maryvale and Cunninghams Gap by 2:05 am and Boonah, Moogerah and Moogerah Dam by 2:35 am.",
+      "issued": "2026-10-27T01:46:10+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -259,45 +235,21 @@
         {
           "aac": "QLD_ME012",
           "description": "Scenic Rim",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "QLD_ME016",
           "description": "Lockyer Valley",
+          "phase": "REN"
+        },
+        {
+          "aac": "QLD_ME017",
+          "description": "Ipswich",
           "phase": "NEW"
         }
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
-    },
-    {
-      "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for South Burnett, Gympie, Cherbourg",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-27T00:58:25+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "QLD_ME009",
-          "description": "South Burnett",
-          "phase": "CAN"
-        },
-        {
-          "aac": "QLD_ME013",
-          "description": "Gympie",
-          "phase": "CAN"
-        },
-        {
-          "aac": "QLD_ME014",
-          "description": "Cherbourg",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -307,6 +259,21 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-26T15:36:39+00:00",
+        "description": "NORTHAM, SHIRE OF NORTHAM",
+        "lat": -31.6629,
+        "lng": 116.6754,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -1545,7 +1512,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 50,
+  "incident_count": 51,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
