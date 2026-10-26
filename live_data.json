@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-26T03:52:59.721863+00:00",
-  "last_checked_utc": "2026-10-26T03:52:59.721863+00:00",
-  "warning_count": 24,
+  "generated_utc": "2026-10-26T04:23:01.195297+00:00",
+  "last_checked_utc": "2026-10-26T04:23:01.195297+00:00",
+  "warning_count": 25,
   "warnings": [
     {
       "pid": "",
@@ -212,42 +212,56 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Northern Rivers, Mid North Coast, Hunter, Northern Tablelands, North West Slopes and Plains",
+      "title": "Severe Thunderstorm Warning for Northern Rivers, Mid North Coast, Northern Tablelands, North West Slopes and Plains",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce large hailstones, damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Coffs Harbour, Port Macquarie, Armidale, Kempsey, Nymboida and Bellingen.",
-      "issued": "2026-10-26T13:28:36+11:00",
+      "desc": "Severe thunderstorms are likely to produce large hailstones, damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Grafton, Coffs Harbour, Port Macquarie, Armidale, Kempsey and Yamba. Severe thunderstorms are no longer occurring in the Hunter district and the warning for this district is CANCELLED.",
+      "issued": "2026-10-26T14:52:44+11:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "NSW_PW001",
           "description": "Northern Rivers",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "NSW_PW002",
           "description": "Mid North Coast",
-          "phase": "NEW"
-        },
-        {
-          "aac": "NSW_PW003",
-          "description": "Hunter",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "NSW_PW004",
           "description": "Northern Tablelands",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "NSW_PW011",
           "description": "North West Slopes and Plains",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDN21033",
+      "title": "Severe Thunderstorm Warning for Hunter",
+      "type": "thunderstorm",
+      "state": "NSW",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-26T14:52:44+11:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "NSW_PW003",
+          "description": "Hunter",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -257,6 +271,129 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-26T04:12:57+00:00",
+        "description": "BROKE, SHIRE OF MANJIMUP",
+        "lat": -34.9001,
+        "lng": 116.3084,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-26T04:11:04+00:00",
+        "description": "DAMPIER PENINSULA, SHIRE OF BROOME",
+        "lat": -16.438,
+        "lng": 123.036,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-26T04:04:56+00:00",
+        "description": "NARNGULU, CITY OF GREATER GERALDTON",
+        "lat": -28.7936,
+        "lng": 114.6654,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice THREAT IS REDUCED - KUNUNURRA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-26T04:02:05.696+00:00",
+        "description": "",
+        "lat": -15.758,
+        "lng": 128.8227,
+        "polys": [
+          [
+            [
+              128.78828,
+              -15.7473
+            ],
+            [
+              128.786008,
+              -15.73704
+            ],
+            [
+              128.795794,
+              -15.729472
+            ],
+            [
+              128.81152,
+              -15.718202
+            ],
+            [
+              128.823752,
+              -15.703736
+            ],
+            [
+              128.835809,
+              -15.700708
+            ],
+            [
+              128.851115,
+              -15.722882
+            ],
+            [
+              128.880473,
+              -15.744572
+            ],
+            [
+              128.915239,
+              -15.847904
+            ],
+            [
+              128.831543,
+              -15.818422
+            ],
+            [
+              128.822413,
+              -15.809197
+            ],
+            [
+              128.811226,
+              -15.800098
+            ],
+            [
+              128.803916,
+              -15.782703
+            ],
+            [
+              128.794895,
+              -15.760891
+            ],
+            [
+              128.78828,
+              -15.7473
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Smoke Alert FOR DALYELLUP, USHER AND SURROUNDING AREAS INCLUDING BUNBURY, IN THE SHIRE OF CAPEL AND CITY OF BUNBURY",
         "alertLevel": "Advice",
@@ -395,84 +532,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire Advice THREAT IS REDUCED - KUNUNURRA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-26T00:41:47.256+00:00",
-        "description": "",
-        "lat": -15.758,
-        "lng": 128.8227,
-        "polys": [
-          [
-            [
-              128.78828,
-              -15.7473
-            ],
-            [
-              128.786008,
-              -15.73704
-            ],
-            [
-              128.795794,
-              -15.729472
-            ],
-            [
-              128.81152,
-              -15.718202
-            ],
-            [
-              128.823752,
-              -15.703736
-            ],
-            [
-              128.835809,
-              -15.700708
-            ],
-            [
-              128.851115,
-              -15.722882
-            ],
-            [
-              128.880473,
-              -15.744572
-            ],
-            [
-              128.915239,
-              -15.847904
-            ],
-            [
-              128.831543,
-              -15.818422
-            ],
-            [
-              128.822413,
-              -15.809197
-            ],
-            [
-              128.811226,
-              -15.800098
-            ],
-            [
-              128.803916,
-              -15.782703
-            ],
-            [
-              128.794895,
-              -15.760891
-            ],
-            [
-              128.78828,
-              -15.7473
-            ]
-          ]
-        ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire Advice THREAT IS REDUCED - CABLE BEACH",
         "alertLevel": "Advice",
         "status": "active",
@@ -593,21 +652,6 @@
             ]
           ]
         ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-26T00:33:13+00:00",
-        "description": "NARNGULU, CITY OF GREATER GERALDTON",
-        "lat": -28.7936,
-        "lng": 114.6654,
-        "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1341,6 +1385,21 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - DARWIN MODEL AIRCAFT CLUB -, LEANYER",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-26T04:14:08+00:00",
+        "description": "DARWIN MODEL AIRCAFT CLUB -, LEANYER",
+        "lat": -12.3834,
+        "lng": 130.9105,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Duncan Road, DARWIN RIVER",
         "alertLevel": "Advice",
         "status": "active",
@@ -1436,7 +1495,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 48,
+  "incident_count": 51,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
