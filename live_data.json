@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-26T10:23:01.049748+00:00",
-  "last_checked_utc": "2026-10-26T10:23:01.049748+00:00",
-  "warning_count": 23,
+  "generated_utc": "2026-10-26T10:53:03.171565+00:00",
+  "last_checked_utc": "2026-10-26T10:53:03.171565+00:00",
+  "warning_count": 24,
   "warnings": [
     {
       "pid": "",
@@ -223,14 +223,19 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields, Central West, Channel Country, Maranoa and Warrego, Darling Downs and Granite Belt",
+      "title": "Severe Thunderstorm Warning for Capricornia, Central Highlands and Coalfields, Central West, Maranoa and Warrego, Darling Downs and Granite Belt, Wide Bay and Burnett",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "VERY DANGEROUS THUNDERSTORMS are likely to produce large, possibly giant hailstones, damaging winds and heavy rainfall that may lead to flash flooding over the next several hours in parts of the Central Highlands and Coalfields district. Severe thunderstorms are likely to produce large hailstones, damaging winds and heavy rainfall that may lead to flash flooding over the next several hours in parts of the Central Highlands and Coalfields, Central West, Channel Country, Maranoa and Warrego and Da",
-      "issued": "2026-10-26T19:37:28+10:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds in the warning area over the next several hours. Locations which may be affected include Biloela, Taroom, Monto, Rolleston, Springsure and Carnarvon National Park. Severe thunderstorms are no longer occurring in the Channel Country district and the warning for this district is CANCELLED.",
+      "issued": "2026-10-26T20:35:33+10:00",
       "cancelled": false,
       "areas": [
+        {
+          "aac": "QLD_PW007",
+          "description": "Capricornia",
+          "phase": "NEW"
+        },
         {
           "aac": "QLD_PW008",
           "description": "Central Highlands and Coalfields",
@@ -242,11 +247,6 @@
           "phase": "UPD"
         },
         {
-          "aac": "QLD_PW011",
-          "description": "Channel Country",
-          "phase": "UPD"
-        },
-        {
           "aac": "QLD_PW012",
           "description": "Maranoa and Warrego",
           "phase": "UPD"
@@ -255,10 +255,34 @@
           "aac": "QLD_PW013",
           "description": "Darling Downs and Granite Belt",
           "phase": "UPD"
+        },
+        {
+          "aac": "QLD_PW014",
+          "description": "Wide Bay and Burnett",
+          "phase": "NEW"
         }
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDQ21033",
+      "title": "Severe Thunderstorm Warning for Channel Country",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-26T20:35:33+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "QLD_PW011",
+          "description": "Channel Country",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -269,13 +293,81 @@
     "tas": [],
     "wa": [
       {
+        "title": "Bushfire Advice MONITOR CONDITIONS - DURACK",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-26T10:42:32.115+00:00",
+        "description": "",
+        "lat": -16.132,
+        "lng": 128.381,
+        "polys": [
+          [
+            [
+              128.381564,
+              -16.13021
+            ],
+            [
+              128.383221,
+              -16.133874
+            ],
+            [
+              128.379938,
+              -16.134733
+            ],
+            [
+              128.378521,
+              -16.131206
+            ],
+            [
+              128.381564,
+              -16.13021
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-26T10:39:52+00:00",
+        "description": "CLARKSON, CITY OF WANNEROO",
+        "lat": -31.6931,
+        "lng": 115.7378,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-26T10:23:34+00:00",
+        "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -16.133,
+        "lng": 128.38,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Structure Fire",
         "alertLevel": "",
         "status": "active",
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-26T10:12:24+00:00",
+        "updated": "2026-10-26T10:15:17+00:00",
         "description": "NORTH PERTH, CITY OF VINCENT",
         "lat": -31.9307,
         "lng": 115.8596,
@@ -1338,21 +1430,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - GILLEN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-26T10:17:48+00:00",
-        "description": "GILLEN",
-        "lat": -23.7124,
-        "lng": 133.8581,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Victoria Highway, BAINES COMPLEX",
         "alertLevel": "Advice",
         "status": "active",
@@ -1460,7 +1537,7 @@
     ],
     "sa": []
   },
-  "incident_count": 50,
+  "incident_count": 52,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
