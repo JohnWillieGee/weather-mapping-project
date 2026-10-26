@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-26T13:53:01.772014+00:00",
-  "last_checked_utc": "2026-10-26T13:53:01.772014+00:00",
+  "generated_utc": "2026-10-26T14:23:02.590188+00:00",
+  "last_checked_utc": "2026-10-26T14:23:02.590188+00:00",
   "warning_count": 23,
   "warnings": [
     {
@@ -189,8 +189,8 @@
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds in the warning area over the next several hours. Locations which may be affected include Taroom, Rolleston, Springsure, Carnarvon National Park, Eidsvold and Theodore.",
-      "issued": "2026-10-26T23:12:03+10:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds in the warning area over the next several hours. Locations which may be affected include Biloela, Cherbourg, Eidsvold, Baralaba, Theodore and Moura.",
+      "issued": "2026-10-26T23:57:37+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -216,6 +216,45 @@
         {
           "aac": "QLD_PW015",
           "description": "Southeast Coast",
+          "phase": "REN"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDQ21035",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for South Burnett, Toowoomba, Southern Downs, Gympie, Cherbourg",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "The Bureau of Meteorology warns that, at 11:55 pm, severe thunderstorms likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding were detected near Proston, Wondai, Lake Boondooma, the area south of Lake Boondooma and the area northwest of Murgon. These thunderstorms are moving towards the east. They are forecast to affect Pittsworth, the area northeast of Kingaroy, Ellangowan, Kincora, Felton and Murgon by 12:25 am and the ranges between Gympie and M",
+      "issued": "2026-10-27T00:01:12+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "QLD_ME009",
+          "description": "South Burnett",
+          "phase": "REN"
+        },
+        {
+          "aac": "QLD_ME010",
+          "description": "Toowoomba",
+          "phase": "REN"
+        },
+        {
+          "aac": "QLD_ME011",
+          "description": "Southern Downs",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_ME013",
+          "description": "Gympie",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_ME014",
+          "description": "Cherbourg",
           "phase": "NEW"
         }
       ],
@@ -223,57 +262,23 @@
       "hazardPhase": "UPD"
     },
     {
-      "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Maranoa and Warrego, Central West",
+      "pid": "IDQ21035",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Dalby",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
       "desc": "",
-      "issued": "2026-10-26T23:12:03+10:00",
+      "issued": "2026-10-27T00:01:12+10:00",
       "cancelled": true,
       "areas": [
         {
-          "aac": "QLD_PW012",
-          "description": "Maranoa and Warrego",
-          "phase": "CAN"
-        },
-        {
-          "aac": "QLD_PW009",
-          "description": "Central West",
+          "aac": "QLD_ME008",
+          "description": "Dalby",
           "phase": "CAN"
         }
       ],
       "severityCode": "CAN",
       "hazardPhase": "CAN"
-    },
-    {
-      "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Dalby, South Burnett, Toowoomba",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 11:10 pm, severe thunderstorms likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding were detected near Lake Boondooma, the area northwest of Lake Boondooma and the area north of Lake Boondooma. These thunderstorms are moving towards the east. They are forecast to affect Proston, Boondooma and the area north of Millmerran by 11:40 pm and Kincora, the area south of Lake Boondooma and the area northwest of Mur",
-      "issued": "2026-10-26T23:17:02+10:00",
-      "cancelled": false,
-      "areas": [
-        {
-          "aac": "QLD_ME008",
-          "description": "Dalby",
-          "phase": "NEW"
-        },
-        {
-          "aac": "QLD_ME009",
-          "description": "South Burnett",
-          "phase": "NEW"
-        },
-        {
-          "aac": "QLD_ME010",
-          "description": "Toowoomba",
-          "phase": "NEW"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -290,10 +295,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-26T12:47:41+00:00",
-        "description": "COLLIE, SHIRE OF COLLIE",
-        "lat": -33.3652,
-        "lng": 116.1501,
+        "updated": "2026-10-26T13:46:55+00:00",
+        "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -16.133,
+        "lng": 128.38,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -348,21 +353,6 @@
             ]
           ]
         ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-26T10:23:34+00:00",
-        "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -16.133,
-        "lng": 128.38,
-        "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1521,7 +1511,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 50,
+  "incident_count": 49,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
