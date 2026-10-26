@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-26T10:53:03.171565+00:00",
-  "last_checked_utc": "2026-10-26T10:53:03.171565+00:00",
+  "generated_utc": "2026-10-26T11:23:05.993545+00:00",
+  "last_checked_utc": "2026-10-26T11:23:05.993545+00:00",
   "warning_count": 24,
   "warnings": [
     {
       "pid": "",
-      "title": "26/20:17 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "26/22:00 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 26 Oct 2026 09:17:08 GMT"
+      "issued": "Mon, 26 Oct 2026 11:00:18 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "26/19:59 EDT Marine Wind Warning Summary for Victoria",
+      "title": "26/22:00 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 26 Oct 2026 08:59:58 GMT"
+      "issued": "Mon, 26 Oct 2026 11:00:26 GMT"
     },
     {
       "pid": "",
@@ -167,21 +167,21 @@
     },
     {
       "pid": "",
-      "title": "26/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "26/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Mon, 26 Oct 2026 05:01:15 GMT"
+      "issued": "Mon, 26 Oct 2026 11:01:18 GMT"
     },
     {
       "pid": "",
-      "title": "26/16:05 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "26/22:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 26 Oct 2026 05:05:13 GMT"
+      "issued": "Mon, 26 Oct 2026 11:00:12 GMT"
     },
     {
       "pid": "IDT20611",
@@ -293,6 +293,21 @@
     "tas": [],
     "wa": [
       {
+        "title": "Report of Smoke",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-26T11:07:34+00:00",
+        "description": "COOLOONGUP, CITY OF ROCKINGHAM",
+        "lat": -32.2991,
+        "lng": 115.7468,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Bushfire Advice MONITOR CONDITIONS - DURACK",
         "alertLevel": "Advice",
         "status": "active",
@@ -327,21 +342,6 @@
             ]
           ]
         ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-26T10:39:52+00:00",
-        "description": "CLARKSON, CITY OF WANNEROO",
-        "lat": -31.6931,
-        "lng": 115.7378,
-        "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1430,6 +1430,52 @@
     ],
     "nt": [
       {
+        "title": "Bushfire - Stuart Highway, TABLELANDS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "Bushfires NT",
+        "updated": "2026-10-26T10:30:00+00:00",
+        "description": "Stuart Highway, TABLELANDS",
+        "lat": -18.8842,
+        "lng": 134.1896,
+        "polys": [
+          [
+            [
+              134.13255,
+              -19.032124
+            ],
+            [
+              134.508411,
+              -18.868651
+            ],
+            [
+              134.28893,
+              -18.58154
+            ],
+            [
+              134.047501,
+              -18.82581
+            ],
+            [
+              134.090026,
+              -18.897205
+            ],
+            [
+              134.127063,
+              -18.951705
+            ],
+            [
+              134.13255,
+              -19.032124
+            ]
+          ]
+        ],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Victoria Highway, BAINES COMPLEX",
         "alertLevel": "Advice",
         "status": "active",
@@ -1470,74 +1516,12 @@
         ],
         "state": "NT",
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Bushfire - Stuart Highway, TABLELANDS",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "Bushfires NT",
-        "updated": "2026-10-24T02:00:00+00:00",
-        "description": "Stuart Highway, TABLELANDS",
-        "lat": -18.8842,
-        "lng": 134.1896,
-        "polys": [
-          [
-            [
-              134.13255,
-              -19.032124
-            ],
-            [
-              134.508411,
-              -18.868651
-            ],
-            [
-              134.28893,
-              -18.58154
-            ],
-            [
-              134.047501,
-              -18.82581
-            ],
-            [
-              134.090026,
-              -18.897205
-            ],
-            [
-              134.127063,
-              -18.951705
-            ],
-            [
-              134.13255,
-              -19.032124
-            ]
-          ]
-        ],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [
-      {
-        "title": "HOUSE FIRE - OXLEY",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Fire - Ambulance",
-        "updated": "2026-10-26T09:52:33+00:00",
-        "description": "OXLEY",
-        "lat": -35.406,
-        "lng": 149.0772,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      }
-    ],
+    "act": [],
     "sa": []
   },
-  "incident_count": 52,
+  "incident_count": 51,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5168,7 +5152,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-10-26T09:17:00Z",
+      "issued_utc": "2026-10-26T11:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -5187,7 +5171,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-26T08:59:45Z",
+      "issued_utc": "2026-10-26T11:00:00Z",
       "overview": [
         "Strong Wind Warning for Monday for Central Coast, Central Gippsland Coast and East Gippsland Coast",
         "Strong Wind Warning for Tuesday for Central Gippsland Coast and East Gippsland Coast"
@@ -5213,7 +5197,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-26T05:01:00Z",
+      "issued_utc": "2026-10-26T11:01:00Z",
       "overview": [
         "Strong Wind Warning for Monday for Pilbara Coast West, Ningaloo Coast, Perth Coast, Bunbury Geographe Coast, Leeuwin Coast and Perth Local Waters",
         "Strong Wind Warning for Tuesday for Pilbara Coast West, Ningaloo Coast, Gascoyne Coast, Geraldton Coast, Lancelin Coast and Perth Coast"
@@ -5239,33 +5223,6 @@
             "WA_MW015"
           ],
           "summary": "Perth Local Waters, Pilbara Coast West, Ningaloo Coast, Perth Coast, Bunbury Geographe Coast and Leeuwin Coast"
-        }
-      ]
-    },
-    "TAS": {
-      "state": "TAS",
-      "product": "IDT20100",
-      "issued_utc": "2026-10-26T05:05:00Z",
-      "overview": [
-        "Strong Wind Warning for Monday for Central North Coast, Banks Strait and Franklin Sound and East of Flinders Island",
-        "Gale Warning for Tuesday for South East Coast and South West Coast",
-        "Strong Wind Warning for Tuesday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and Central West Coast"
-      ],
-      "hazards": [
-        {
-          "level": "Strong Wind Warning",
-          "severity": "STR",
-          "zones": [
-            "Central North Coast: Stanley to Northern Tip of Flinders Island",
-            "Banks Strait and Franklin Sound",
-            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point"
-          ],
-          "aac_codes": [
-            "TAS_MW002",
-            "TAS_MW009",
-            "TAS_MW003"
-          ],
-          "summary": "Central North Coast, Banks Strait and Franklin Sound and East of Flinders Island"
         }
       ]
     }
