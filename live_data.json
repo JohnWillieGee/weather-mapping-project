@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-26T16:53:02.076786+00:00",
-  "last_checked_utc": "2026-10-26T16:53:02.076786+00:00",
+  "generated_utc": "2026-10-26T17:23:02.660372+00:00",
+  "last_checked_utc": "2026-10-26T17:23:02.660372+00:00",
   "warning_count": 23,
   "warnings": [
     {
       "pid": "",
-      "title": "26/22:00 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "27/04:00 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 26 Oct 2026 11:00:18 GMT"
+      "issued": "Mon, 26 Oct 2026 17:00:12 GMT"
     },
     {
       "pid": "",
@@ -23,12 +23,12 @@
     },
     {
       "pid": "",
-      "title": "26/22:00 EDT Marine Wind Warning Summary for Victoria",
+      "title": "27/04:10 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 26 Oct 2026 11:00:26 GMT"
+      "issued": "Mon, 26 Oct 2026 17:10:22 GMT"
     },
     {
       "pid": "",
@@ -167,12 +167,12 @@
     },
     {
       "pid": "",
-      "title": "26/22:00 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "27/04:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 26 Oct 2026 11:00:12 GMT"
+      "issued": "Mon, 26 Oct 2026 17:00:12 GMT"
     },
     {
       "pid": "IDT20611",
@@ -185,75 +185,75 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Darling Downs and Granite Belt, Wide Bay and Burnett, Southeast Coast",
+      "title": "Cancellation of Severe Thunderstorm Warning for Darling Downs and Granite Belt, Wide Bay and Burnett, Southeast Coast",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds in the warning area over the next several hours. Locations which may be affected include Maryborough, Boonah, Beaudesert, Rainbow Beach, Tiaro and Springbrook.",
-      "issued": "2026-10-27T02:18:16+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-27T03:07:01+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "QLD_PW013",
           "description": "Darling Downs and Granite Belt",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW014",
           "description": "Wide Bay and Burnett",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW015",
           "description": "Southeast Coast",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Gold Coast, Southern Downs, Scenic Rim, Gympie",
+      "title": "Cancellation of Severe Thunderstorm Warning - Southeast Queensland for Gold Coast, Southern Downs, Scenic Rim, Gympie",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 2:30 am, severe thunderstorms likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding were detected near Boonah, the area south of Cunninghams Gap and the NSW border. These thunderstorms are moving towards the east to southeast. They are forecast to affect Beaudesert, the area between Boonah and Beaudesert, Mount Barney, Laravale and Kooralbyn by 3:00 am and Border Ranges National Park, the McPherson Range, Sp",
-      "issued": "2026-10-27T02:39:17+10:00",
-      "cancelled": false,
+      "desc": "Severe thunderstorms are no longer affecting the Southeast Queensland area (east of Dalby from Rainbow Beach to Stanthorpe). This warning is now cancelled.",
+      "issued": "2026-10-27T03:09:17+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "QLD_ME007",
           "description": "Gold Coast",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_ME011",
           "description": "Southern Downs",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_ME012",
           "description": "Scenic Rim",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_ME013",
           "description": "Gympie",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Toowoomba, Lockyer Valley, Ipswich",
+      "title": "Cancellation of Severe Thunderstorm Warning - Southeast Queensland for Toowoomba, Lockyer Valley, Ipswich",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
       "desc": "",
-      "issued": "2026-10-27T02:39:17+10:00",
+      "issued": "2026-10-27T03:09:17+10:00",
       "cancelled": true,
       "areas": [
         {
@@ -278,7 +278,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "Hoxton Park Rd, Liverpool",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Mon, 26 Oct 2026 17:20:02 GMT",
+        "description": "Hoxton Park Rd, Liverpool, NSW 2170",
+        "council": "Liverpool",
+        "lat": -33.926998139,
+        "lng": 150.904052735,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "tas": [],
@@ -1521,7 +1538,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 50,
+  "incident_count": 51,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5152,7 +5169,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-10-26T11:00:00Z",
+      "issued_utc": "2026-10-26T17:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -5171,26 +5188,24 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-26T11:00:00Z",
+      "issued_utc": "2026-10-26T17:10:00Z",
       "overview": [
-        "Strong Wind Warning for Monday for Central Coast, Central Gippsland Coast and East Gippsland Coast",
-        "Strong Wind Warning for Tuesday for Central Gippsland Coast and East Gippsland Coast"
+        "Strong Wind Warning for Tuesday for Central Gippsland Coast and East Gippsland Coast",
+        "Strong Wind Warning for Wednesday for Central Coast, Central Gippsland Coast and East Gippsland Coast"
       ],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Central Coast: Cape Otway to Wilsons Promontory",
             "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
             "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
           ],
           "aac_codes": [
-            "VIC_MW002",
             "VIC_MW003",
             "VIC_MW004"
           ],
-          "summary": "Central Coast, Central Gippsland Coast and East Gippsland Coast"
+          "summary": "Central Gippsland Coast and East Gippsland Coast"
         }
       ]
     },
@@ -5223,6 +5238,51 @@
             "WA_MW015"
           ],
           "summary": "Perth Local Waters, Pilbara Coast West, Ningaloo Coast, Perth Coast, Bunbury Geographe Coast and Leeuwin Coast"
+        }
+      ]
+    },
+    "TAS": {
+      "state": "TAS",
+      "product": "IDT20100",
+      "issued_utc": "2026-10-26T17:00:00Z",
+      "overview": [
+        "Gale Warning for Tuesday for South East Coast and South West Coast",
+        "Strong Wind Warning for Tuesday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and Central West Coast",
+        "Gale Warning for Wednesday for South East Coast and South West Coast",
+        "Strong Wind Warning for Wednesday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and Central West Coast"
+      ],
+      "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "South East Coast: Tasman Island to South East Cape",
+            "South West Coast: South East Cape to Low Rocky Point"
+          ],
+          "aac_codes": [
+            "TAS_MW006",
+            "TAS_MW007"
+          ],
+          "summary": "South East Coast and South West Coast"
+        },
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Central North Coast: Stanley to Northern Tip of Flinders Island",
+            "Banks Strait and Franklin Sound",
+            "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
+            "Lower East Coast: Wineglass Bay to Tasman Island",
+            "Central West Coast: Low Rocky Point to Sandy Cape"
+          ],
+          "aac_codes": [
+            "TAS_MW002",
+            "TAS_MW009",
+            "TAS_MW003",
+            "TAS_MW005",
+            "TAS_MW008"
+          ],
+          "summary": "Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and Central West Coast"
         }
       ]
     }
