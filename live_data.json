@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-26T14:53:04.279809+00:00",
-  "last_checked_utc": "2026-10-26T14:53:04.279809+00:00",
-  "warning_count": 23,
+  "generated_utc": "2026-10-26T15:23:01.953858+00:00",
+  "last_checked_utc": "2026-10-26T15:23:01.953858+00:00",
+  "warning_count": 24,
   "warnings": [
     {
       "pid": "",
@@ -185,24 +185,14 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Capricornia, Central Highlands and Coalfields, Darling Downs and Granite Belt, Wide Bay and Burnett, Southeast Coast",
+      "title": "Severe Thunderstorm Warning for Darling Downs and Granite Belt, Wide Bay and Burnett, Southeast Coast",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds in the warning area over the next several hours. Locations which may be affected include Biloela, Cherbourg, Eidsvold, Baralaba, Theodore and Moura.",
-      "issued": "2026-10-26T23:57:37+10:00",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding and large hailstones over the next several hours in parts of the Wide Bay and Burnett district. Locations which may be affected include Gin Gin. Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds over the next several hours in parts of the Darling Downs and Granite Belt and Southeast Coast districts. Locations which may be affected ",
+      "issued": "2026-10-27T01:03:21+10:00",
       "cancelled": false,
       "areas": [
-        {
-          "aac": "QLD_PW007",
-          "description": "Capricornia",
-          "phase": "REN"
-        },
-        {
-          "aac": "QLD_PW008",
-          "description": "Central Highlands and Coalfields",
-          "phase": "REN"
-        },
         {
           "aac": "QLD_PW013",
           "description": "Darling Downs and Granite Belt",
@@ -223,20 +213,39 @@
       "hazardPhase": "REN"
     },
     {
-      "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for South Burnett, Toowoomba, Southern Downs, Gympie, Cherbourg",
+      "pid": "IDQ21033",
+      "title": "Severe Thunderstorm Warning for Capricornia, Central Highlands and Coalfields",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 11:55 pm, severe thunderstorms likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding were detected near Proston, Wondai, Lake Boondooma, the area south of Lake Boondooma and the area northwest of Murgon. These thunderstorms are moving towards the east. They are forecast to affect Pittsworth, the area northeast of Kingaroy, Ellangowan, Kincora, Felton and Murgon by 12:25 am and the ranges between Gympie and M",
-      "issued": "2026-10-27T00:01:12+10:00",
-      "cancelled": false,
+      "desc": "",
+      "issued": "2026-10-27T01:03:21+10:00",
+      "cancelled": true,
       "areas": [
         {
-          "aac": "QLD_ME009",
-          "description": "South Burnett",
-          "phase": "REN"
+          "aac": "QLD_PW007",
+          "description": "Capricornia",
+          "phase": "CAN"
         },
+        {
+          "aac": "QLD_PW008",
+          "description": "Central Highlands and Coalfields",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
+    },
+    {
+      "pid": "IDQ21035",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Toowoomba, Southern Downs, Scenic Rim, Lockyer Valley",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "The Bureau of Meteorology warns that, at 12:50 am, a severe thunderstorm likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding was detected near Ellangowan and Clifton. This thunderstorm is moving towards the east. It is forecast to affect Allora by 1:20 am and the area north of Warwick, Maryvale and Cunninghams Gap by 1:50 am.",
+      "issued": "2026-10-27T00:58:25+10:00",
+      "cancelled": false,
+      "areas": [
         {
           "aac": "QLD_ME010",
           "description": "Toowoomba",
@@ -245,16 +254,16 @@
         {
           "aac": "QLD_ME011",
           "description": "Southern Downs",
+          "phase": "REN"
+        },
+        {
+          "aac": "QLD_ME012",
+          "description": "Scenic Rim",
           "phase": "NEW"
         },
         {
-          "aac": "QLD_ME013",
-          "description": "Gympie",
-          "phase": "NEW"
-        },
-        {
-          "aac": "QLD_ME014",
-          "description": "Cherbourg",
+          "aac": "QLD_ME016",
+          "description": "Lockyer Valley",
           "phase": "NEW"
         }
       ],
@@ -263,17 +272,27 @@
     },
     {
       "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Dalby",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for South Burnett, Gympie, Cherbourg",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
       "desc": "",
-      "issued": "2026-10-27T00:01:12+10:00",
+      "issued": "2026-10-27T00:58:25+10:00",
       "cancelled": true,
       "areas": [
         {
-          "aac": "QLD_ME008",
-          "description": "Dalby",
+          "aac": "QLD_ME009",
+          "description": "South Burnett",
+          "phase": "CAN"
+        },
+        {
+          "aac": "QLD_ME013",
+          "description": "Gympie",
+          "phase": "CAN"
+        },
+        {
+          "aac": "QLD_ME014",
+          "description": "Cherbourg",
           "phase": "CAN"
         }
       ],
