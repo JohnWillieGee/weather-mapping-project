@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-27T04:22:54.501999+00:00",
-  "last_checked_utc": "2026-10-27T04:22:54.501999+00:00",
-  "warning_count": 21,
+  "generated_utc": "2026-10-27T04:52:55.222763+00:00",
+  "last_checked_utc": "2026-10-27T04:52:55.222763+00:00",
+  "warning_count": 22,
   "warnings": [
     {
       "pid": "",
@@ -92,6 +92,15 @@
       "link": "http://reg.bom.gov.au/qld/warnings/flood/upper-condamine.shtml",
       "desc": "",
       "issued": "Mon, 26 Oct 2026 23:58:39 GMT"
+    },
+    {
+      "pid": "",
+      "title": "27/14:31 EST Initial Minor Flood Warning for the Lower Condamine River",
+      "type": "flood",
+      "state": "QLD",
+      "link": "http://reg.bom.gov.au/qld/warnings/flood/lower-condamine.shtml",
+      "desc": "",
+      "issued": "Tue, 27 Oct 2026 04:31:47 GMT"
     },
     {
       "pid": "",
@@ -195,32 +204,32 @@
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "VERY DANGEROUS THUNDERSTORMS are likely to produce damaging, locally destructive winds, large, possibly giant hailstones and heavy rainfall that may lead to flash flooding over the next several hours in parts of the Southeast Coast district. Locations which may be affected include Springbrook and Mount Tamborine. Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding over the next several hours in parts of the Wide Bay and B",
-      "issued": "2026-10-27T13:56:21+10:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Gold Coast, Brisbane, Maroochydore, Caboolture, Ipswich and Noosa Heads.",
+      "issued": "2026-10-27T14:44:14+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "QLD_PW014",
           "description": "Wide Bay and Burnett",
-          "phase": "NEW"
+          "phase": "UPD"
         },
         {
           "aac": "QLD_PW015",
           "description": "Southeast Coast",
-          "phase": "NEW"
+          "phase": "UPD"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "UPD"
     },
     {
       "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Sunshine Coast, Gold Coast, Scenic Rim, Gympie, Somerset, Moreton Bay",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Sunshine Coast, Gold Coast, Scenic Rim, Gympie, Somerset, Noosa",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 1:55 pm, a VERY DANGEROUS THUNDERSTORM likely to produce damaging, locally destructive winds, large, possibly giant hailstones and heavy rainfall that may lead to flash flooding was detected near the McPherson Range and Lamington National Park. This thunderstorm is moving towards the northeast. It is forecast to affect Springbrook, Numinbah Valley and the area south of Canungra by 2:10 pm and Little Nerang Dam, Tallebudgera and Mudgeeraba by 2:25 pm. Othe",
-      "issued": "2026-10-27T14:02:42+10:00",
+      "desc": "The Bureau of Meteorology warns that, at 2:40 pm, severe thunderstorms likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding were detected near Miami and Kenilworth. These thunderstorms are moving towards the east to northeast. They are forecast to affect Lamington National Park and the area southwest of Eumundi by 2:55 pm and Springbrook and Eumundi by 3:10 pm.",
+      "issued": "2026-10-27T14:47:14+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -249,8 +258,8 @@
           "phase": "NEW"
         },
         {
-          "aac": "QLD_ME020",
-          "description": "Moreton Bay",
+          "aac": "QLD_ME025",
+          "description": "Noosa",
           "phase": "NEW"
         }
       ],
@@ -264,11 +273,11 @@
       {
         "title": "LACHLAN VALLEY WAY, LAKE BREWSTER",
         "alertLevel": "Advice",
-        "status": "Not yet controlled",
+        "status": "Being controlled",
         "type": "Bush Fire",
         "size": "5 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 27 Oct 2026 04:20:03 GMT",
+        "updated": "Tue, 27 Oct 2026 04:48:07 GMT",
         "description": "LACHLAN VALLEY WAY, LAKE BREWSTER 2675",
         "council": "Carrathool",
         "lat": -33.4078749729999,
@@ -336,11 +345,73 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-27T04:10:00+00:00",
-        "description": "WHITBY, SHIRE OF SERPENTINE-JARRAHDALE",
-        "lat": -32.2778,
-        "lng": 115.9997,
+        "updated": "2026-10-27T04:39:57+00:00",
+        "description": "QUELAGETTING, SHIRE OF CUNDERDIN",
+        "lat": -31.4808,
+        "lng": 117.1278,
         "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice STAY INFORMED - QUELAGETTING",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-27T04:26:13.68+00:00",
+        "description": "",
+        "lat": -31.4966,
+        "lng": 117.099,
+        "polys": [
+          [
+            [
+              117.078192,
+              -31.510063
+            ],
+            [
+              117.057116,
+              -31.502528
+            ],
+            [
+              117.058306,
+              -31.482238
+            ],
+            [
+              117.061063,
+              -31.459584
+            ],
+            [
+              117.126068,
+              -31.461618
+            ],
+            [
+              117.161027,
+              -31.465641
+            ],
+            [
+              117.153192,
+              -31.520716
+            ],
+            [
+              117.125756,
+              -31.521179
+            ],
+            [
+              117.111902,
+              -31.519326
+            ],
+            [
+              117.078192,
+              -31.509628
+            ],
+            [
+              117.078192,
+              -31.510063
+            ]
+          ]
+        ],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -355,21 +426,6 @@
         "description": "LAGRANGE, SHIRE OF BROOME",
         "lat": -18.739,
         "lng": 121.671,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-27T03:51:27+00:00",
-        "description": "QUELAGETTING, SHIRE OF CUNDERDIN",
-        "lat": -31.4808,
-        "lng": 117.1278,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1355,21 +1411,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-23T07:36:53+00:00",
-        "description": "MOUNT HARDMAN, SHIRE OF DERBY/WEST KIMBERLEY",
-        "lat": -18.083,
-        "lng": 124.121,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-21T23:31:38+00:00",
         "description": "PRINCE REGENT RIVER, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -15.6159,
@@ -1434,21 +1475,6 @@
         "description": "GIBB, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -16.435,
         "lng": 126.213,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-18T22:35:40+00:00",
-        "description": "MUELLER RANGES, SHIRE OF HALLS CREEK",
-        "lat": -17.784,
-        "lng": 126.637,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1616,7 +1642,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 55,
+  "incident_count": 53,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
