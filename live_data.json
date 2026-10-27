@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-27T10:53:02.522335+00:00",
-  "last_checked_utc": "2026-10-27T10:53:02.522335+00:00",
+  "generated_utc": "2026-10-27T11:23:06.408455+00:00",
+  "last_checked_utc": "2026-10-27T11:23:06.408455+00:00",
   "warning_count": 24,
   "warnings": [
     {
       "pid": "",
-      "title": "27/19:57 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "27/22:00 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 27 Oct 2026 08:57:32 GMT"
+      "issued": "Tue, 27 Oct 2026 11:00:11 GMT"
     },
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "27/16:15 EDT Marine Wind Warning Summary for Victoria",
+      "title": "27/22:00 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 27 Oct 2026 05:15:21 GMT"
+      "issued": "Tue, 27 Oct 2026 11:00:22 GMT"
     },
     {
       "pid": "IDV36330",
@@ -158,21 +158,21 @@
     },
     {
       "pid": "",
-      "title": "27/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "27/19:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 27 Oct 2026 05:01:16 GMT"
+      "issued": "Tue, 27 Oct 2026 11:01:23 GMT"
     },
     {
       "pid": "",
-      "title": "27/19:04 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "27/22:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 27 Oct 2026 08:04:02 GMT"
+      "issued": "Tue, 27 Oct 2026 11:00:11 GMT"
     },
     {
       "pid": "IDQ21033",
@@ -299,6 +299,21 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-27T11:10:06+00:00",
+        "description": "LAGRANGE, SHIRE OF BROOME",
+        "lat": -18.739,
+        "lng": 121.671,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice THREAT IS REDUCED - DURACK",
         "alertLevel": "Advice",
@@ -483,21 +498,6 @@
         "description": "MCBEATH, SHIRE OF HALLS CREEK",
         "lat": -18.2396,
         "lng": 127.6852,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-27T05:53:47+00:00",
-        "description": "LAGRANGE, SHIRE OF BROOME",
-        "lat": -18.739,
-        "lng": 121.671,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1540,10 +1540,41 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [],
+    "act": [
+      {
+        "title": "HAZMAT INCIDENT - THROSBY",
+        "alertLevel": "",
+        "status": "active",
+        "type": "HazMat",
+        "size": "",
+        "agency": "ESA-CURRENT",
+        "updated": "2026-10-27T11:08:56+00:00",
+        "description": "THROSBY",
+        "lat": -35.1868,
+        "lng": 149.1653,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HAZMAT INCIDENT - THROSBY",
+        "alertLevel": "",
+        "status": "active",
+        "type": "HazMat",
+        "size": "",
+        "agency": "Fire - Ambulance",
+        "updated": "2026-10-27T11:08:56+00:00",
+        "description": "THROSBY",
+        "lat": -35.1868,
+        "lng": 149.1653,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      }
+    ],
     "sa": []
   },
-  "incident_count": 49,
+  "incident_count": 51,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5174,7 +5205,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-10-27T08:57:24Z",
+      "issued_utc": "2026-10-27T11:00:00Z",
       "overview": [],
       "hazards": [
         {
@@ -5193,7 +5224,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-27T05:15:00Z",
+      "issued_utc": "2026-10-27T11:00:00Z",
       "overview": [
         "Strong Wind Warning for Tuesday for Central Gippsland Coast and East Gippsland Coast",
         "Strong Wind Warning for Wednesday for Central Coast, Central Gippsland Coast and East Gippsland Coast"
@@ -5217,7 +5248,7 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-27T05:01:00Z",
+      "issued_utc": "2026-10-27T11:01:00Z",
       "overview": [
         "Strong Wind Warning for Tuesday for Gascoyne Coast and Geraldton Coast",
         "Strong Wind Warning for Wednesday for Gascoyne Coast, Geraldton Coast, Esperance Coast and Eucla Coast"
@@ -5241,12 +5272,12 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-27T08:03:52Z",
+      "issued_utc": "2026-10-27T11:00:00Z",
       "overview": [
-        "Gale Warning for Tuesday for South West Coast and South East Coast",
-        "Strong Wind Warning for Tuesday for Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Central West Coast, Lower East Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island",
-        "Gale Warning for Wednesday for South West Coast and South East Coast",
-        "Strong Wind Warning for Wednesday for Central West Coast, Upper East Coast, Lower East Coast, Channel, Derwent Estuary, Far North West Coast, Storm Bay, Frederick Henry Bay and Norfolk Bay, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island"
+        "Gale Warning for Tuesday for South East Coast and South West Coast",
+        "Strong Wind Warning for Tuesday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, Central West Coast, Derwent Estuary and Frederick Henry Bay and Norfolk Bay",
+        "Gale Warning for Wednesday for South East Coast and South West Coast",
+        "Strong Wind Warning for Wednesday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, Central West Coast, Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay and Channel"
       ],
       "hazards": [
         {
