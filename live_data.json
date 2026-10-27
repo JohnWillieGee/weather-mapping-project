@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-27T06:53:00.611561+00:00",
-  "last_checked_utc": "2026-10-27T06:53:00.611561+00:00",
-  "warning_count": 24,
+  "generated_utc": "2026-10-27T07:23:11.687555+00:00",
+  "last_checked_utc": "2026-10-27T07:23:11.687555+00:00",
+  "warning_count": 23,
   "warnings": [
     {
       "pid": "",
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "27/10:46 EDT Warning to Sheep Graziers\nfor Snowy Mountains and Australian Capital Territory forecast districts",
+      "title": "27/18:14 EDT Warning to Sheep Graziers\nfor Snowy Mountains and Australian Capital Territory forecast districts",
       "type": "other",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/sheep.shtml",
       "desc": "",
-      "issued": "Mon, 26 Oct 2026 23:46:13 GMT"
+      "issued": "Tue, 27 Oct 2026 07:14:50 GMT"
     },
     {
       "pid": "",
@@ -204,56 +204,47 @@
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Gold Coast, Brisbane, Maroochydore, Gympie, Kingaroy and Caboolture. Severe thunderstorms are no longer occurring in the Central Highlands and Coalfields district and the warning for this district is CANCELLED. 7 CM HAIL OBSERVED AT WHITE ROCK AT APPROX 3:40 PM 7 CM HAIL OBSERVED AT ",
-      "issued": "2026-10-27T16:30:31+10:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Gold Coast, Maroochydore, Gympie, Caboolture, Noosa Heads and Cherbourg. 7 CM HAIL OBSERVED AT WHITE ROCK AT APPROX 3:40 PM 7 CM HAIL OBSERVED AT MUDGEERABA AT APPROX 2.30 pm 5 CM HAIL OBSERVED AT RIPLEY AT 3.30 PM 4 cm hail observed at Maclean at approx 4:00 pm 4 cm hail observed at",
+      "issued": "2026-10-27T17:16:16+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "QLD_PW014",
           "description": "Wide Bay and Burnett",
-          "phase": "UPD"
+          "phase": "REN"
         },
         {
           "aac": "QLD_PW015",
           "description": "Southeast Coast",
-          "phase": "UPD"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "UPD"
-    },
-    {
-      "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central Highlands and Coalfields",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-27T16:30:31+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "QLD_PW008",
-          "description": "Central Highlands and Coalfields",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
+      "hazardPhase": "REN"
     },
     {
       "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for South Burnett, Gympie",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Gold Coast, South Burnett, Scenic Rim, Gympie",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 4:30 pm, severe thunderstorms likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding were detected. Thunderstorms are moving towards the east. They are forecast to affect Goomboorian, Toolara Forest and the area northwest of Murgon by 5:00 pm and the area north of Goomeri by 5:30 pm. 7 CM HAIL OBSERVED AT WHITE ROCK AT APPROX 3:40 PM 7 CM HAIL OBSERVED AT MUDGEERABA AT APPROX 2.30 pm 5 CM HAIL OBSERVED AT RIP",
-      "issued": "2026-10-27T16:37:12+10:00",
+      "desc": "The Bureau of Meteorology warns that, at 4:50 pm, severe thunderstorms likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding were detected near Toolara Forest. These thunderstorms are moving towards the east to northeast. They are forecast to affect the McPherson Range, Numinbah Valley and Little Nerang Dam by 5:20 pm and the area north of Goomeri and the area north of Kilkivan by 5:50 pm. 7 CM HAIL OBSERVED AT WHITE ROCK AT APPROX 3:40 PM 7 CM HAI",
+      "issued": "2026-10-27T16:56:08+10:00",
       "cancelled": false,
       "areas": [
         {
+          "aac": "QLD_ME007",
+          "description": "Gold Coast",
+          "phase": "NEW"
+        },
+        {
           "aac": "QLD_ME009",
           "description": "South Burnett",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_ME012",
+          "description": "Scenic Rim",
           "phase": "NEW"
         },
         {
@@ -297,24 +288,7 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [
-      {
-        "title": "HATFIELD PENARIE RD, BALRANALD",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "1 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Tue, 27 Oct 2026 06:48:07 GMT",
-        "description": "HATFIELD PENARIE RD, BALRANALD 2715",
-        "council": "Balranald",
-        "lat": -34.313404083,
-        "lng": 143.585250854,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      }
-    ],
+    "nsw": [],
     "vic": [],
     "qld": [],
     "tas": [],
@@ -326,10 +300,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-27T06:43:57+00:00",
-        "description": "LOWDEN, SHIRE OF DONNYBROOK-BALINGUP",
-        "lat": -33.5368,
-        "lng": 115.9702,
+        "updated": "2026-10-27T06:54:18+00:00",
+        "description": "DERBY, SHIRE OF DERBY/WEST KIMBERLEY",
+        "lat": -17.3555,
+        "lng": 123.7012,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -341,11 +315,69 @@
         "type": "Structure Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-27T06:40:36+00:00",
+        "updated": "2026-10-27T06:53:23+00:00",
         "description": "DONNYBROOK, SHIRE OF DONNYBROOK-BALINGUP",
         "lat": -33.5729,
         "lng": 115.8243,
         "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice THREAT IS REDUCED - DAMPIER PENINSULA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-27T06:50:26.065+00:00",
+        "description": "",
+        "lat": -16.4406,
+        "lng": 123.0387,
+        "polys": [
+          [
+            [
+              123.023502,
+              -16.430887
+            ],
+            [
+              123.02232,
+              -16.433494
+            ],
+            [
+              123.02427,
+              -16.434684
+            ],
+            [
+              123.05103,
+              -16.452531
+            ],
+            [
+              123.055904,
+              -16.44984
+            ],
+            [
+              123.055225,
+              -16.446298
+            ],
+            [
+              123.046717,
+              -16.445222
+            ],
+            [
+              123.044915,
+              -16.443578
+            ],
+            [
+              123.039374,
+              -16.438736
+            ],
+            [
+              123.023502,
+              -16.430887
+            ]
+          ]
+        ],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -356,10 +388,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-27T06:31:51+00:00",
-        "description": "ELLENBROOK, CITY OF SWAN",
-        "lat": -31.7461,
-        "lng": 116.0096,
+        "updated": "2026-10-27T06:45:23+00:00",
+        "description": "OCEAN BEACH, SHIRE OF DENMARK",
+        "lat": -35.0052,
+        "lng": 117.3341,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -371,10 +403,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-27T06:18:18+00:00",
-        "description": "DERBY, SHIRE OF DERBY/WEST KIMBERLEY",
-        "lat": -17.3555,
-        "lng": 123.7012,
+        "updated": "2026-10-27T06:44:16+00:00",
+        "description": "LOWDEN, SHIRE OF DONNYBROOK-BALINGUP",
+        "lat": -33.5368,
+        "lng": 115.9702,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -910,64 +942,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire Advice MONITOR CONDITIONS - DAMPIER PENINSULA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-26T07:34:10.7+00:00",
-        "description": "",
-        "lat": -16.4406,
-        "lng": 123.0387,
-        "polys": [
-          [
-            [
-              123.023502,
-              -16.430887
-            ],
-            [
-              123.02232,
-              -16.433494
-            ],
-            [
-              123.02427,
-              -16.434684
-            ],
-            [
-              123.05103,
-              -16.452531
-            ],
-            [
-              123.055904,
-              -16.44984
-            ],
-            [
-              123.055225,
-              -16.446298
-            ],
-            [
-              123.046717,
-              -16.445222
-            ],
-            [
-              123.044915,
-              -16.443578
-            ],
-            [
-              123.039374,
-              -16.438736
-            ],
-            [
-              123.023502,
-              -16.430887
-            ]
-          ]
-        ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire Advice MONITOR CONDITIONS - DURACK",
         "alertLevel": "Advice",
         "status": "active",
@@ -1437,21 +1411,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-23T10:07:14+00:00",
-        "description": "WATERBANK, SHIRE OF BROOME",
-        "lat": -17.404,
-        "lng": 122.803,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-23T09:38:13+00:00",
         "description": "LAKE ARGYLE, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -16.874,
@@ -1549,24 +1508,24 @@
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-18T03:44:08+00:00",
-        "description": "BULARL DI WUNAMI, SHIRE OF DERBY/WEST KIMBERLEY",
-        "lat": -16.497,
-        "lng": 125.192,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - VICTORIA DR, GRAY",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-27T07:12:24+00:00",
+        "description": "VICTORIA DR, GRAY",
+        "lat": -12.4897,
+        "lng": 130.9802,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - LURITJA RD, PETERMANN",
         "alertLevel": "Advice",
@@ -1717,23 +1676,8 @@
         "status": "active",
         "type": "Structure Fire",
         "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-10-27T06:48:50+00:00",
-        "description": "COOMBS",
-        "lat": -35.3259,
-        "lng": 149.0471,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "STRUCTURE FIRE - COOMBS",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
         "agency": "Fire - Ambulance",
-        "updated": "2026-10-27T06:44:21+00:00",
+        "updated": "2026-10-27T07:02:30+00:00",
         "description": "COOMBS",
         "lat": -35.3259,
         "lng": 149.0471,
@@ -1743,6 +1687,36 @@
       }
     ],
     "sa": [
+      {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-27T07:06:00+00:00",
+        "description": "VIRGINIA",
+        "lat": -34.6505,
+        "lng": 138.54,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
+      {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-27T06:51:00+00:00",
+        "description": "LEWISTON",
+        "lat": -34.5883,
+        "lng": 138.5677,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
       {
         "title": "GRASS FIRE",
         "alertLevel": "",
@@ -1775,7 +1749,7 @@
       }
     ]
   },
-  "incident_count": 63,
+  "incident_count": 62,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
