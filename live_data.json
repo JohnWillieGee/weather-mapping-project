@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-27T03:52:53.818173+00:00",
-  "last_checked_utc": "2026-10-27T03:52:53.818173+00:00",
+  "generated_utc": "2026-10-27T04:22:54.501999+00:00",
+  "last_checked_utc": "2026-10-27T04:22:54.501999+00:00",
   "warning_count": 21,
   "warnings": [
     {
@@ -158,36 +158,36 @@
     },
     {
       "pid": "",
-      "title": "27/10:08 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "27/14:51 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Mon, 26 Oct 2026 23:08:17 GMT"
+      "issued": "Tue, 27 Oct 2026 03:51:44 GMT"
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Northern Rivers, Northern Tablelands",
+      "title": "Cancellation of Severe Thunderstorm Warning for Northern Rivers, Northern Tablelands",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce large hailstones, damaging winds and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Kyogle, Tyalgum, Wiangaree and Nimbin.",
-      "issued": "2026-10-27T14:33:21+11:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-27T15:15:12+11:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "NSW_PW001",
           "description": "Northern Rivers",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "NSW_PW004",
           "description": "Northern Tablelands",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDQ21033",
@@ -195,8 +195,8 @@
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Kilcoy, Springbrook, Nambour, Woodford, Cooroy and Esk.",
-      "issued": "2026-10-27T13:36:11+10:00",
+      "desc": "VERY DANGEROUS THUNDERSTORMS are likely to produce damaging, locally destructive winds, large, possibly giant hailstones and heavy rainfall that may lead to flash flooding over the next several hours in parts of the Southeast Coast district. Locations which may be affected include Springbrook and Mount Tamborine. Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding over the next several hours in parts of the Wide Bay and B",
+      "issued": "2026-10-27T13:56:21+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -215,12 +215,12 @@
     },
     {
       "pid": "IDQ21035",
-      "title": "Severe Thunderstorm Warning - Southeast Queensland for Sunshine Coast, Gold Coast, Scenic Rim, Somerset, Moreton Bay",
+      "title": "Severe Thunderstorm Warning - Southeast Queensland for Sunshine Coast, Gold Coast, Scenic Rim, Gympie, Somerset, Moreton Bay",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 1:35 pm, severe thunderstorms likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding were detected near Toogoolawah, Moore, the NSW border, Mapleton and Linville. These thunderstorms are moving towards the east to northeast. They are forecast to affect the McPherson Range, Springbrook and Lake Somerset by 1:50 pm and Numinbah Valley, Little Nerang Dam and Somerset Dam by 2:05 pm.",
-      "issued": "2026-10-27T13:39:34+10:00",
+      "desc": "The Bureau of Meteorology warns that, at 1:55 pm, a VERY DANGEROUS THUNDERSTORM likely to produce damaging, locally destructive winds, large, possibly giant hailstones and heavy rainfall that may lead to flash flooding was detected near the McPherson Range and Lamington National Park. This thunderstorm is moving towards the northeast. It is forecast to affect Springbrook, Numinbah Valley and the area south of Canungra by 2:10 pm and Little Nerang Dam, Tallebudgera and Mudgeeraba by 2:25 pm. Othe",
+      "issued": "2026-10-27T14:02:42+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -236,6 +236,11 @@
         {
           "aac": "QLD_ME012",
           "description": "Scenic Rim",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_ME013",
+          "description": "Gympie",
           "phase": "NEW"
         },
         {
@@ -257,18 +262,65 @@
   "incidents": {
     "nsw": [
       {
-        "title": "MEREDITH CR, ST HELENS PARK",
+        "title": "LACHLAN VALLEY WAY, LAKE BREWSTER",
         "alertLevel": "Advice",
-        "status": "Being controlled",
+        "status": "Not yet controlled",
         "type": "Bush Fire",
-        "size": "0 ha",
+        "size": "5 ha",
         "agency": "Rural Fire Service",
-        "updated": "Tue, 27 Oct 2026 03:48:03 GMT",
-        "description": "MEREDITH CR, ST HELENS PARK 2560",
-        "council": "Campbelltown",
-        "lat": -34.11240859,
-        "lng": 150.809819698,
-        "polys": [],
+        "updated": "Tue, 27 Oct 2026 04:20:03 GMT",
+        "description": "LACHLAN VALLEY WAY, LAKE BREWSTER 2675",
+        "council": "Carrathool",
+        "lat": -33.4078749729999,
+        "lng": 145.965549947,
+        "polys": [
+          [
+            [
+              145.963598046,
+              -33.4086182409999
+            ],
+            [
+              145.963744779,
+              -33.4075012169999
+            ],
+            [
+              145.963740814,
+              -33.407499894
+            ],
+            [
+              145.963990657,
+              -33.4069526179999
+            ],
+            [
+              145.964918647,
+              -33.4059532439999
+            ],
+            [
+              145.965370744,
+              -33.405822374
+            ],
+            [
+              145.965953712,
+              -33.406262574
+            ],
+            [
+              145.96653668,
+              -33.40685744
+            ],
+            [
+              145.966441502,
+              -33.407154872
+            ],
+            [
+              145.964990031,
+              -33.4084516789999
+            ],
+            [
+              145.963598046,
+              -33.4086182409999
+            ]
+          ]
+        ],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       }
@@ -278,16 +330,46 @@
     "tas": [],
     "wa": [
       {
-        "title": "Structure Fire",
+        "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
-        "type": "Structure Fire",
+        "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-27T03:41:09+00:00",
-        "description": "SOUTH BUNBURY, CITY OF BUNBURY",
-        "lat": -33.3555,
-        "lng": 115.6198,
+        "updated": "2026-10-27T04:10:00+00:00",
+        "description": "WHITBY, SHIRE OF SERPENTINE-JARRAHDALE",
+        "lat": -32.2778,
+        "lng": 115.9997,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-27T04:04:12+00:00",
+        "description": "LAGRANGE, SHIRE OF BROOME",
+        "lat": -18.739,
+        "lng": 121.671,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-27T03:51:27+00:00",
+        "description": "QUELAGETTING, SHIRE OF CUNDERDIN",
+        "lat": -31.4808,
+        "lng": 117.1278,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -474,21 +556,6 @@
         "description": "COLLIE BURN, SHIRE OF COLLIE",
         "lat": -33.3756,
         "lng": 116.22,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-26T16:31:24+00:00",
-        "description": "LAGRANGE, SHIRE OF BROOME",
-        "lat": -18.739,
-        "lng": 121.671,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1333,21 +1400,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-20T21:41:10+00:00",
-        "description": "TELFER, SHIRE OF EAST PILBARA",
-        "lat": -21.9112,
-        "lng": 123.2745,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-19T16:20:58+00:00",
         "description": "ORD RIVER, SHIRE OF HALLS CREEK",
         "lat": -18.604,
@@ -1433,21 +1485,6 @@
       }
     ],
     "nt": [
-      {
-        "title": "Structure Fire - KALYMNOS DR, KARAMA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-27T03:36:56+00:00",
-        "description": "KALYMNOS DR, KARAMA",
-        "lat": -12.4006,
-        "lng": 130.9179,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
       {
         "title": "Grass and Scrub Fire - DARWIN RIVER RD, LITCHFIELD PARK",
         "alertLevel": "Advice",
@@ -1579,7 +1616,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 56,
+  "incident_count": 55,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5277,12 +5314,12 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-26T23:08:10Z",
+      "issued_utc": "2026-10-27T03:51:33Z",
       "overview": [
-        "Gale Warning for Tuesday for South East Coast and South West Coast",
-        "Strong Wind Warning for Tuesday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and Central West Coast",
-        "Gale Warning for Wednesday for South East Coast and South West Coast",
-        "Strong Wind Warning for Wednesday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast and Central West Coast"
+        "Gale Warning for Tuesday for South West Coast and South East Coast",
+        "Strong Wind Warning for Tuesday for Central West Coast, Lower East Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island",
+        "Gale Warning for Wednesday for South West Coast and South East Coast",
+        "Strong Wind Warning for Wednesday for Central West Coast, Lower East Coast, Far North West Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island"
       ],
       "hazards": [
         {
