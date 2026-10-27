@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-27T22:52:58.309457+00:00",
-  "last_checked_utc": "2026-10-27T22:52:58.309457+00:00",
-  "warning_count": 20,
+  "generated_utc": "2026-10-27T23:22:57.132523+00:00",
+  "last_checked_utc": "2026-10-27T23:22:57.132523+00:00",
+  "warning_count": 19,
   "warnings": [
     {
       "pid": "",
-      "title": "28/04:00 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "28/10:00 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 27 Oct 2026 17:00:10 GMT"
+      "issued": "Tue, 27 Oct 2026 23:00:13 GMT"
     },
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "28/04:10 EDT Marine Wind Warning Summary for Victoria",
+      "title": "28/10:00 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 27 Oct 2026 17:10:27 GMT"
+      "issued": "Tue, 27 Oct 2026 23:00:20 GMT"
     },
     {
       "pid": "IDV36330",
@@ -158,40 +158,21 @@
     },
     {
       "pid": "",
-      "title": "28/01:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "28/07:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Tue, 27 Oct 2026 17:01:14 GMT"
+      "issued": "Tue, 27 Oct 2026 23:01:15 GMT"
     },
     {
       "pid": "",
-      "title": "28/04:00 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "28/10:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Tue, 27 Oct 2026 17:00:11 GMT"
-    },
-    {
-      "pid": "IDD21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for Arnhem",
-      "type": "thunderstorm",
-      "state": "NT",
-      "link": "",
-      "desc": "This warning is now cancelled. 50 mm was recorded at Snowdrop Creek in 30 minutes to 1:26 am.",
-      "issued": "2026-10-28T04:16:21+09:30",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "NT_PW003",
-          "description": "Arnhem",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
+      "issued": "Tue, 27 Oct 2026 23:00:14 GMT"
     }
   ],
   "fetch_errors": {},
@@ -1291,21 +1272,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-20T22:14:30+00:00",
-        "description": "PRINCE REGENT RIVER, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.1977,
-        "lng": 125.4874,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-19T16:20:58+00:00",
         "description": "ORD RIVER, SHIRE OF HALLS CREEK",
         "lat": -18.604,
@@ -1507,7 +1473,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 52,
+  "incident_count": 51,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5138,7 +5104,7 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-10-27T17:00:00Z",
+      "issued_utc": "2026-10-27T23:00:00Z",
       "overview": [
         "Strong Wind Warning for Wednesday for Eden Coast",
         "Strong Wind Warning for Thursday for Eden Coast"
@@ -5160,7 +5126,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-27T17:10:00Z",
+      "issued_utc": "2026-10-27T23:00:00Z",
       "overview": [
         "Strong Wind Warning for Wednesday for Central Coast, Central Gippsland Coast and East Gippsland Coast",
         "Strong Wind Warning for Thursday for Central Gippsland Coast and East Gippsland Coast"
@@ -5186,9 +5152,9 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-27T17:01:00Z",
+      "issued_utc": "2026-10-27T23:01:00Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for Gascoyne Coast, Geraldton Coast, Esperance Coast and Eucla Coast",
+        "Strong Wind Warning for Wednesday for Gascoyne Coast, Geraldton Coast and Esperance Coast",
         "Strong Wind Warning for Thursday for Eucla Coast"
       ],
       "hazards": [
@@ -5198,26 +5164,24 @@
           "zones": [
             "Gascoyne Coast: Cape Cuvier to Kalbarri",
             "Geraldton Coast: Kalbarri to Jurien Bay",
-            "Esperance Coast: Bremer Bay to Israelite Bay",
-            "Eucla Coast: Israelite Bay to WA-SA Border"
+            "Esperance Coast: Bremer Bay to Israelite Bay"
           ],
           "aac_codes": [
             "WA_MW006",
             "WA_MW007",
-            "WA_MW013",
-            "WA_MW014"
+            "WA_MW013"
           ],
-          "summary": "Gascoyne Coast, Geraldton Coast, Esperance Coast and Eucla Coast"
+          "summary": "Gascoyne Coast, Geraldton Coast and Esperance Coast"
         }
       ]
     },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-27T17:00:00Z",
+      "issued_utc": "2026-10-27T23:00:00Z",
       "overview": [
-        "Gale Warning for Wednesday for South East Coast and South West Coast",
-        "Strong Wind Warning for Wednesday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, Central West Coast, Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay and Channel",
+        "Gale Warning for Wednesday for South East Coast",
+        "Strong Wind Warning for Wednesday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, South West Coast, Central West Coast, Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay and Channel",
         "Gale Warning for Thursday for South East Coast and South West Coast",
         "Strong Wind Warning for Thursday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island and Lower East Coast"
       ],
@@ -5226,14 +5190,12 @@
           "level": "Gale Warning",
           "severity": "GALE",
           "zones": [
-            "South East Coast: Tasman Island to South East Cape",
-            "South West Coast: South East Cape to Low Rocky Point"
+            "South East Coast: Tasman Island to South East Cape"
           ],
           "aac_codes": [
-            "TAS_MW006",
-            "TAS_MW007"
+            "TAS_MW006"
           ],
-          "summary": "South East Coast and South West Coast"
+          "summary": "South East Coast"
         },
         {
           "level": "Strong Wind Warning",
@@ -5245,6 +5207,7 @@
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
             "Upper East Coast: St Helens Point to Wineglass Bay",
             "Lower East Coast: Wineglass Bay to Tasman Island",
+            "South West Coast: South East Cape to Low Rocky Point",
             "Central West Coast: Low Rocky Point to Sandy Cape",
             "Derwent Estuary",
             "Frederick Henry Bay and Norfolk Bays",
@@ -5258,13 +5221,14 @@
             "TAS_MW003",
             "TAS_MW004",
             "TAS_MW005",
+            "TAS_MW007",
             "TAS_MW008",
             "TAS_MW012",
             "TAS_MW013",
             "TAS_MW014",
             "TAS_MW011"
           ],
-          "summary": "Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel, Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast and Central West Coast"
+          "summary": "Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel, Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, South West Coast and Central West Coast"
         }
       ]
     }
