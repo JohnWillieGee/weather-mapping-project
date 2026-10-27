@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-27T11:23:06.408455+00:00",
-  "last_checked_utc": "2026-10-27T11:23:06.408455+00:00",
+  "generated_utc": "2026-10-27T11:53:05.247740+00:00",
+  "last_checked_utc": "2026-10-27T11:53:05.247740+00:00",
   "warning_count": 24,
   "warnings": [
     {
@@ -233,23 +233,18 @@
     },
     {
       "pid": "IDD21033",
-      "title": "Severe Thunderstorm Warning for Barkly, Simpson",
+      "title": "Severe Thunderstorm Warning for Simpson",
       "type": "thunderstorm",
       "state": "NT",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Arltunga and Simpson District east of Finke. Severe thunderstorms are no longer occurring in the Tanami district and the warning for this district is CANCELLED.",
-      "issued": "2026-10-27T19:20:40+09:30",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Simpson District east of Finke. Severe thunderstorms are no longer occurring in the Barkly district and the warning for this district is CANCELLED.",
+      "issued": "2026-10-27T20:57:28+09:30",
       "cancelled": false,
       "areas": [
         {
-          "aac": "NT_PW006",
-          "description": "Barkly",
-          "phase": "NEW"
-        },
-        {
           "aac": "NT_PW007",
           "description": "Simpson",
-          "phase": "REN"
+          "phase": "UPD"
         }
       ],
       "severityCode": "STD",
@@ -257,17 +252,17 @@
     },
     {
       "pid": "IDD21033",
-      "title": "Severe Thunderstorm Warning for Tanami",
+      "title": "Severe Thunderstorm Warning for Barkly",
       "type": "thunderstorm",
       "state": "NT",
       "link": "",
       "desc": "",
-      "issued": "2026-10-27T19:20:40+09:30",
+      "issued": "2026-10-27T20:57:28+09:30",
       "cancelled": true,
       "areas": [
         {
-          "aac": "NT_PW009",
-          "description": "Tanami",
+          "aac": "NT_PW006",
+          "description": "Barkly",
           "phase": "CAN"
         }
       ],
@@ -1542,16 +1537,31 @@
     ],
     "act": [
       {
-        "title": "HAZMAT INCIDENT - THROSBY",
+        "title": "HAZMAT INCIDENT - THEODORE",
         "alertLevel": "",
         "status": "active",
         "type": "HazMat",
         "size": "",
         "agency": "ESA-CURRENT",
-        "updated": "2026-10-27T11:08:56+00:00",
-        "description": "THROSBY",
-        "lat": -35.1868,
-        "lng": 149.1653,
+        "updated": "2026-10-27T11:38:44+00:00",
+        "description": "THEODORE",
+        "lat": -35.4444,
+        "lng": 149.1188,
+        "polys": [],
+        "state": "ACT",
+        "sourceUrl": "https://esa.act.gov.au/"
+      },
+      {
+        "title": "HAZMAT INCIDENT - THEODORE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "HazMat",
+        "size": "",
+        "agency": "Fire",
+        "updated": "2026-10-27T11:38:44+00:00",
+        "description": "THEODORE",
+        "lat": -35.4444,
+        "lng": 149.1188,
         "polys": [],
         "state": "ACT",
         "sourceUrl": "https://esa.act.gov.au/"
@@ -1563,7 +1573,7 @@
         "type": "HazMat",
         "size": "",
         "agency": "Fire - Ambulance",
-        "updated": "2026-10-27T11:08:56+00:00",
+        "updated": "2026-10-27T11:29:02+00:00",
         "description": "THROSBY",
         "lat": -35.1868,
         "lng": 149.1653,
@@ -1574,7 +1584,7 @@
     ],
     "sa": []
   },
-  "incident_count": 51,
+  "incident_count": 52,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
