@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-27T08:23:04.736374+00:00",
-  "last_checked_utc": "2026-10-27T08:23:04.736374+00:00",
-  "warning_count": 22,
+  "generated_utc": "2026-10-27T08:53:02.718303+00:00",
+  "last_checked_utc": "2026-10-27T08:53:02.718303+00:00",
+  "warning_count": 24,
   "warnings": [
     {
       "pid": "",
@@ -176,22 +176,17 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Wide Bay and Burnett, Southeast Coast",
+      "title": "Severe Thunderstorm Warning for Wide Bay and Burnett",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Gold Coast, Maroochydore, Gympie, Caboolture, Noosa Heads and Cherbourg. 7 CM HAIL OBSERVED AT WHITE ROCK AT APPROX 3:40 PM 7 CM HAIL OBSERVED AT MUDGEERABA AT APPROX 2.30 pm 5 CM HAIL OBSERVED AT RIPLEY AT 3.30 PM 4 cm hail observed at Maclean at approx 4:00 pm 4 cm hail observed at",
-      "issued": "2026-10-27T17:35:33+10:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Tiaro and Childers. Severe thunderstorms are no longer occurring in the Southeast Coast district and the warning for this district is CANCELLED. 7 CM HAIL OBSERVED AT WHITE ROCK AT APPROX 3:40 PM 7 CM HAIL OBSERVED AT MUDGEERABA AT APPROX 2.30 pm 5 CM HAIL OBSERVED AT RIPLEY AT 3.30 ",
+      "issued": "2026-10-27T18:25:20+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "QLD_PW014",
           "description": "Wide Bay and Burnett",
-          "phase": "REN"
-        },
-        {
-          "aac": "QLD_PW015",
-          "description": "Southeast Coast",
           "phase": "REN"
         }
       ],
@@ -199,13 +194,32 @@
       "hazardPhase": "REN"
     },
     {
+      "pid": "IDQ21033",
+      "title": "Severe Thunderstorm Warning for Southeast Coast",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-27T18:25:20+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "QLD_PW015",
+          "description": "Southeast Coast",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
+    },
+    {
       "pid": "IDQ21035",
       "title": "Severe Thunderstorm Warning - Southeast Queensland for Gympie",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "The Bureau of Meteorology warns that, at 6:00 pm, severe thunderstorms likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding were detected near Mt Joseph. These thunderstorms are moving towards the northeast. They are forecast to affect Goomboorian and Toolara Forest by 6:30 pm. 7 CM HAIL OBSERVED AT WHITE ROCK AT APPROX 3:40 PM 7 CM HAIL OBSERVED AT MUDGEERABA AT APPROX 2.30 pm 5 CM HAIL OBSERVED AT RIPLEY AT 3.30 PM 4 cm hail observed at Maclean ",
-      "issued": "2026-10-27T18:09:30+10:00",
+      "desc": "The Bureau of Meteorology warns that, at 6:00 pm, a severe thunderstorm likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding was detected. The thunderstorm is moving towards the northeast. It is forecast to affect Goomboorian and Toolara Forest by 6:30 pm. 7 CM HAIL OBSERVED AT WHITE ROCK AT APPROX 3:40 PM 7 CM HAIL OBSERVED AT MUDGEERABA AT APPROX 2.30 pm 5 CM HAIL OBSERVED AT RIPLEY AT 3.30 PM 4 cm hail observed at Maclean at approx 4:00 pm 4 cm",
+      "issued": "2026-10-27T18:27:51+10:00",
       "cancelled": false,
       "areas": [
         {
@@ -219,22 +233,17 @@
     },
     {
       "pid": "IDD21033",
-      "title": "Severe Thunderstorm Warning for Simpson, Lasseter, Tanami",
+      "title": "Severe Thunderstorm Warning for Simpson, Tanami",
       "type": "thunderstorm",
       "state": "NT",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Alice Springs, Hermannsburg and Santa Teresa.",
-      "issued": "2026-10-27T16:57:00+09:30",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Alice Springs, Arltunga, Ti Tree and Santa Teresa. Severe thunderstorms are no longer occurring in the Lasseter district and the warning for this district is CANCELLED.",
+      "issued": "2026-10-27T18:13:58+09:30",
       "cancelled": false,
       "areas": [
         {
           "aac": "NT_PW007",
           "description": "Simpson",
-          "phase": "REN"
-        },
-        {
-          "aac": "NT_PW008",
-          "description": "Lasseter",
           "phase": "REN"
         },
         {
@@ -245,15 +254,97 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDD21033",
+      "title": "Severe Thunderstorm Warning for Lasseter",
+      "type": "thunderstorm",
+      "state": "NT",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-27T18:13:58+09:30",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "NT_PW008",
+          "description": "Lasseter",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "RIVAL PL, SHALVEY",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Tue, 27 Oct 2026 08:48:07 GMT",
+        "description": "RIVAL PL, SHALVEY 2770",
+        "council": "Blacktown",
+        "lat": -33.7220802309999,
+        "lng": 150.804321289,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Sterling Way, Hamlyn Terrace",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Tue, 27 Oct 2026 08:48:07 GMT",
+        "description": "Sterling Way, Hamlyn Terrace, NSW 2259",
+        "council": "Central Coast",
+        "lat": -33.2491449999999,
+        "lng": 151.475068,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-27T08:32:10+00:00",
+        "description": "HULONGINE, SHIRE OF GOOMALLING",
+        "lat": -31.3432,
+        "lng": 116.8286,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Report of Smoke",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-27T08:30:48+00:00",
+        "description": "GIDGEGANNUP, CITY OF SWAN",
+        "lat": -31.7488,
+        "lng": 116.2673,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice THREAT IS REDUCED - DURACK",
         "alertLevel": "Advice",
@@ -483,21 +574,6 @@
         "description": "",
         "lat": -33.3339,
         "lng": 115.6457,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-27T04:56:58+00:00",
-        "description": "QUELAGETTING, SHIRE OF CUNDERDIN",
-        "lat": -31.4808,
-        "lng": 117.1278,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -921,21 +997,6 @@
         "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -16.571,
         "lng": 128.206,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-26T05:24:56+00:00",
-        "description": "THOMSON BROOK, SHIRE OF DONNYBROOK-BALINGUP",
-        "lat": -33.5861,
-        "lng": 115.9744,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1428,21 +1489,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - VICTORIA DR, GRAY",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-27T08:11:17+00:00",
-        "description": "VICTORIA DR, GRAY",
-        "lat": -12.4897,
-        "lng": 130.9802,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Grass and Scrub Fire - LURITJA RD, PETERMANN",
         "alertLevel": "Advice",
         "status": "active",
@@ -1585,54 +1631,8 @@
         "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
       }
     ],
-    "act": [
-      {
-        "title": "STRUCTURE FIRE - COOMBS",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "ESA-CURRENT",
-        "updated": "2026-10-27T07:02:30+00:00",
-        "description": "COOMBS",
-        "lat": -35.3259,
-        "lng": 149.0471,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      },
-      {
-        "title": "STRUCTURE FIRE - COOMBS",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "Ambulance",
-        "updated": "2026-10-27T07:02:30+00:00",
-        "description": "COOMBS",
-        "lat": -35.3259,
-        "lng": 149.0471,
-        "polys": [],
-        "state": "ACT",
-        "sourceUrl": "https://esa.act.gov.au/"
-      }
-    ],
+    "act": [],
     "sa": [
-      {
-        "title": "TREE FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-27T08:15:00+00:00",
-        "description": "PARINGA",
-        "lat": -34.1804,
-        "lng": 140.7774,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      },
       {
         "title": "STRUCTURE FIRE",
         "alertLevel": "",
@@ -1650,7 +1650,7 @@
       }
     ]
   },
-  "incident_count": 58,
+  "incident_count": 56,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
