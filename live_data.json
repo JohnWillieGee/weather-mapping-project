@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-27T09:23:04.339631+00:00",
-  "last_checked_utc": "2026-10-27T09:23:04.339631+00:00",
+  "generated_utc": "2026-10-27T09:53:02.305834+00:00",
+  "last_checked_utc": "2026-10-27T09:53:02.305834+00:00",
   "warning_count": 24,
   "warnings": [
     {
@@ -233,41 +233,41 @@
     },
     {
       "pid": "IDD21033",
-      "title": "Severe Thunderstorm Warning for Simpson, Tanami",
+      "title": "Severe Thunderstorm Warning for Barkly, Simpson",
       "type": "thunderstorm",
       "state": "NT",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Alice Springs, Arltunga, Ti Tree and Santa Teresa. Severe thunderstorms are no longer occurring in the Lasseter district and the warning for this district is CANCELLED.",
-      "issued": "2026-10-27T18:13:58+09:30",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Arltunga and Simpson District east of Finke. Severe thunderstorms are no longer occurring in the Tanami district and the warning for this district is CANCELLED.",
+      "issued": "2026-10-27T19:20:40+09:30",
       "cancelled": false,
       "areas": [
+        {
+          "aac": "NT_PW006",
+          "description": "Barkly",
+          "phase": "NEW"
+        },
         {
           "aac": "NT_PW007",
           "description": "Simpson",
           "phase": "REN"
-        },
-        {
-          "aac": "NT_PW009",
-          "description": "Tanami",
-          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "REN"
+      "hazardPhase": "UPD"
     },
     {
       "pid": "IDD21033",
-      "title": "Severe Thunderstorm Warning for Lasseter",
+      "title": "Severe Thunderstorm Warning for Tanami",
       "type": "thunderstorm",
       "state": "NT",
       "link": "",
       "desc": "",
-      "issued": "2026-10-27T18:13:58+09:30",
+      "issued": "2026-10-27T19:20:40+09:30",
       "cancelled": true,
       "areas": [
         {
-          "aac": "NT_PW008",
-          "description": "Lasseter",
+          "aac": "NT_PW009",
+          "description": "Tanami",
           "phase": "CAN"
         }
       ],
@@ -299,21 +299,6 @@
     "qld": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-27T08:32:10+00:00",
-        "description": "HULONGINE, SHIRE OF GOOMALLING",
-        "lat": -31.3432,
-        "lng": 116.8286,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Bushfire Advice THREAT IS REDUCED - DURACK",
         "alertLevel": "Advice",
@@ -1204,21 +1189,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-24T15:15:57+00:00",
-        "description": "KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -15.8168,
-        "lng": 128.7888,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-24T09:42:30+00:00",
         "description": "ST GEORGE RANGES, SHIRE OF DERBY/WEST KIMBERLEY",
         "lat": -18.835,
@@ -1427,6 +1397,36 @@
       }
     ],
     "nt": [
+      {
+        "title": "Grass and Scrub Fire - RIEFF CT, SADADEEN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-27T09:45:25+00:00",
+        "description": "RIEFF CT, SADADEEN",
+        "lat": -23.6991,
+        "lng": 133.9034,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - RIEFF CT, SADADEEN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-27T09:22:06+00:00",
+        "description": "RIEFF CT, SADADEEN",
+        "lat": -23.6991,
+        "lng": 133.9034,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
       {
         "title": "Grass and Scrub Fire - LURITJA RD, PETERMANN",
         "alertLevel": "Advice",
