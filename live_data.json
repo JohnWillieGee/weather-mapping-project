@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-27T01:22:54.868779+00:00",
-  "last_checked_utc": "2026-10-27T01:22:54.868779+00:00",
-  "warning_count": 21,
+  "generated_utc": "2026-10-27T01:52:54.266614+00:00",
+  "last_checked_utc": "2026-10-27T01:52:54.266614+00:00",
+  "warning_count": 20,
   "warnings": [
     {
       "pid": "",
@@ -38,15 +38,6 @@
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Mon, 26 Oct 2026 23:08:23 GMT"
-    },
-    {
-      "pid": "",
-      "title": "26/08:37 EDT Final Flood Warning for the Lower Yarra River - downstream of Warrandyte",
-      "type": "flood",
-      "state": "VIC",
-      "link": "http://reg.bom.gov.au/vic/warnings/flood/yarrariverdownstreamofwarrandyte.shtml",
-      "desc": "",
-      "issued": "Sun, 25 Oct 2026 21:37:46 GMT"
     },
     {
       "pid": "IDV36330",
@@ -195,7 +186,24 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "New St E, Balgowlah",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Tue, 27 Oct 2026 01:48:09 GMT",
+        "description": "New St E, Balgowlah, NSW 2093",
+        "council": "Northern Beaches",
+        "lat": -33.8010639999999,
+        "lng": 151.266845,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "tas": [],
@@ -604,21 +612,6 @@
         "description": "LAKE ARGYLE, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -16.016,
         "lng": 128.889,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-26T04:12:57+00:00",
-        "description": "BROKE, SHIRE OF MANJIMUP",
-        "lat": -34.9001,
-        "lng": 116.3084,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1105,21 +1098,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-23T09:15:20+00:00",
-        "description": "LITTLE SANDY DESERT, SHIRE OF WILUNA",
-        "lat": -23.731,
-        "lng": 122.306,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-23T07:36:53+00:00",
         "description": "MOUNT HARDMAN, SHIRE OF DERBY/WEST KIMBERLEY",
         "lat": -18.083,
@@ -1411,7 +1389,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 50,
+  "incident_count": 49,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
