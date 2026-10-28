@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-28T03:53:04.411830+00:00",
-  "last_checked_utc": "2026-10-28T03:53:04.411830+00:00",
-  "warning_count": 19,
+  "generated_utc": "2026-10-28T04:22:57.642990+00:00",
+  "last_checked_utc": "2026-10-28T04:22:57.642990+00:00",
+  "warning_count": 20,
   "warnings": [
     {
       "pid": "",
@@ -167,22 +167,66 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Wide Bay and Burnett, Southeast Coast",
+      "title": "Severe Thunderstorm Warning for Capricornia, Central Highlands and Coalfields, Central West, Wide Bay and Burnett, Southeast Coast",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Maroochydore, Gympie, Bundaberg, Noosa Heads, Maryborough and Hervey Bay.",
-      "issued": "2026-10-28T12:25:12+10:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Gympie, Bundaberg, Hervey Bay, Biloela, Carnarvon National Park, Woorabinda, Gayndah, Aberfoyle and Rainbow Beach.",
+      "issued": "2026-10-28T13:53:03+10:00",
       "cancelled": false,
       "areas": [
         {
+          "aac": "QLD_PW007",
+          "description": "Capricornia",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_PW008",
+          "description": "Central Highlands and Coalfields",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_PW009",
+          "description": "Central West",
+          "phase": "NEW"
+        },
+        {
           "aac": "QLD_PW014",
           "description": "Wide Bay and Burnett",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "QLD_PW015",
           "description": "Southeast Coast",
+          "phase": "REN"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "UPD"
+    },
+    {
+      "pid": "IDD21033",
+      "title": "Severe Thunderstorm Warning for Simpson, Lasseter, Tanami",
+      "type": "thunderstorm",
+      "state": "NT",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Yuendumu, Papunya, Hermannsburg, Watarrka and south west Tanami District near WA border.",
+      "issued": "2026-10-28T13:41:38+09:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NT_PW007",
+          "description": "Simpson",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NT_PW008",
+          "description": "Lasseter",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NT_PW009",
+          "description": "Tanami",
           "phase": "NEW"
         }
       ],
@@ -214,6 +258,98 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire Advice THREAT IS REDUCED - ST GEORGE RANGES",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-28T03:54:11.859+00:00",
+        "description": "",
+        "lat": -18.9199,
+        "lng": 125.4597,
+        "polys": [
+          [
+            [
+              125.441308,
+              -18.826979
+            ],
+            [
+              125.579195,
+              -18.916399
+            ],
+            [
+              125.497376,
+              -19.063692
+            ],
+            [
+              125.339397,
+              -18.965339
+            ],
+            [
+              125.441308,
+              -18.826979
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - ST GEORGE RANGES",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-28T03:54:11.859+00:00",
+        "description": "",
+        "lat": -18.7778,
+        "lng": 125.4895,
+        "polys": [
+          [
+            [
+              125.64365,
+              -18.746314
+            ],
+            [
+              125.491066,
+              -18.760075
+            ],
+            [
+              125.301592,
+              -18.651852
+            ],
+            [
+              125.256659,
+              -18.688492
+            ],
+            [
+              125.40487,
+              -18.803841
+            ],
+            [
+              125.475191,
+              -18.848492
+            ],
+            [
+              125.578843,
+              -18.916171
+            ],
+            [
+              125.610313,
+              -18.838517
+            ],
+            [
+              125.64365,
+              -18.746314
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice THREAT IS REDUCED - GIBB",
         "alertLevel": "Advice",
@@ -935,68 +1071,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire Advice MONITOR CONDITIONS - ST GEORGE RANGES",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-25T02:30:08.136+00:00",
-        "description": "",
-        "lat": -18.8428,
-        "lng": 125.4582,
-        "polys": [
-          [
-            [
-              125.590744,
-              -18.812168
-            ],
-            [
-              125.589512,
-              -18.811508
-            ],
-            [
-              125.325261,
-              -18.666996
-            ],
-            [
-              125.286005,
-              -18.731024
-            ],
-            [
-              125.40487,
-              -18.803841
-            ],
-            [
-              125.372101,
-              -18.896873
-            ],
-            [
-              125.354491,
-              -18.95716
-            ],
-            [
-              125.397201,
-              -18.967652
-            ],
-            [
-              125.532756,
-              -18.996349
-            ],
-            [
-              125.596103,
-              -18.814774
-            ],
-            [
-              125.590744,
-              -18.812168
-            ]
-          ]
-        ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
@@ -1365,23 +1439,7 @@
       }
     ],
     "act": [],
-    "sa": [
-      {
-        "title": "GRASS FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-28T02:45:00+00:00",
-        "description": "HANSON",
-        "lat": -33.7495,
-        "lng": 138.841,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      }
-    ]
+    "sa": []
   },
   "incident_count": 47,
   "nsw_alert_zones": [],
