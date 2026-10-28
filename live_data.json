@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-28T07:22:56.853252+00:00",
-  "last_checked_utc": "2026-10-28T07:22:56.853252+00:00",
-  "warning_count": 22,
+  "generated_utc": "2026-10-28T07:52:57.935266+00:00",
+  "last_checked_utc": "2026-10-28T07:52:57.935266+00:00",
+  "warning_count": 23,
   "warnings": [
     {
       "pid": "",
@@ -158,21 +158,30 @@
     },
     {
       "pid": "",
-      "title": "28/13:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "28/18:11 CDT Marine Wind Warning Summary for South Australia",
+      "type": "wind",
+      "state": "SA",
+      "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
+      "desc": "",
+      "issued": "Wed, 28 Oct 2026 07:41:48 GMT"
+    },
+    {
+      "pid": "",
+      "title": "28/15:41 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Wed, 28 Oct 2026 05:01:13 GMT"
+      "issued": "Wed, 28 Oct 2026 07:41:54 GMT"
     },
     {
       "pid": "",
-      "title": "28/16:05 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "28/18:41 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 28 Oct 2026 05:05:13 GMT"
+      "issued": "Wed, 28 Oct 2026 07:41:49 GMT"
     },
     {
       "pid": "IDQ21033",
@@ -261,68 +270,13 @@
   "incidents": {
     "nsw": [
       {
-        "title": "AUBURN-MOMALONG RD, SAVERNAKE",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "2 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Wed, 28 Oct 2026 07:21:06 GMT",
-        "description": "AUBURN, AUBURN MOMALONG RD, SAVERNAKE 2646",
-        "council": "Berrigan",
-        "lat": -35.6786335319999,
-        "lng": 145.977736475,
-        "polys": [
-          [
-            [
-              145.978463154,
-              -35.678705361
-            ],
-            [
-              145.978237106,
-              -35.680061655
-            ],
-            [
-              145.97689271,
-              -35.680097346
-            ],
-            [
-              145.976571484,
-              -35.6800021679999
-            ],
-            [
-              145.976428715,
-              -35.679847503
-            ],
-            [
-              145.977142554,
-              -35.679704735
-            ],
-            [
-              145.977499473,
-              -35.67862208
-            ],
-            [
-              145.978058646,
-              -35.678277059
-            ],
-            [
-              145.978463154,
-              -35.678705361
-            ]
-          ]
-        ],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
         "title": "BIG BLACK JACK MOUNTAIN FIRE, MIRANNIE",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "15 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 28 Oct 2026 07:21:06 GMT",
+        "updated": "Wed, 28 Oct 2026 07:49:02 GMT",
         "description": "BIG BLACK JACK MOUNTAIN FIRE, MIRANNIE RD, MIRANNIE 2330",
         "council": "Singleton",
         "lat": -32.3147591599999,
@@ -480,13 +434,98 @@
     "tas": [],
     "wa": [
       {
+        "title": "Smoke Alert FOR COASTAL AREAS BETWEEN LAKE CLIFTON AND AUGUSTA AND INLAND THROUGH TO WAROONA, HARVEY, BRUNSWICK JUNCTION AND COLLIE IN THE SOUTH WEST REGION",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-28T07:46:44.263+00:00",
+        "description": "",
+        "lat": -33.3339,
+        "lng": 115.6457,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Watch and Act BE AWARE OF EMBER ATTACK - BOWELLING AND MUJA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-28T07:44:17.766+00:00",
+        "description": "",
+        "lat": -33.4249,
+        "lng": 116.3575,
+        "polys": [
+          [
+            [
+              116.328105,
+              -33.404205
+            ],
+            [
+              116.328029,
+              -33.420412
+            ],
+            [
+              116.330911,
+              -33.440286
+            ],
+            [
+              116.334319,
+              -33.447762
+            ],
+            [
+              116.359953,
+              -33.445737
+            ],
+            [
+              116.409933,
+              -33.444724
+            ],
+            [
+              116.402501,
+              -33.438205
+            ],
+            [
+              116.396812,
+              -33.433649
+            ],
+            [
+              116.384526,
+              -33.423458
+            ],
+            [
+              116.360341,
+              -33.408752
+            ],
+            [
+              116.34415,
+              -33.406653
+            ],
+            [
+              116.339296,
+              -33.405323
+            ],
+            [
+              116.328105,
+              -33.404205
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-28T06:27:40+00:00",
+        "updated": "2026-10-28T07:32:33+00:00",
         "description": "MUJA, SHIRE OF COLLIE",
         "lat": -33.436,
         "lng": 116.3603,
@@ -501,25 +540,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-28T05:54:56+00:00",
-        "description": "NEWMAN, SHIRE OF EAST PILBARA",
-        "lat": -23.4162,
-        "lng": 119.8019,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-28T04:47:15+00:00",
-        "description": "WOOTTATING, SHIRE OF NORTHAM",
-        "lat": -31.8852,
-        "lng": 116.3963,
+        "updated": "2026-10-28T07:11:31+00:00",
+        "description": "NORTHCLIFFE, SHIRE OF MANJIMUP",
+        "lat": -34.6324,
+        "lng": 116.1184,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -725,21 +749,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-28T02:11:26+00:00",
-        "description": "BADGINGARRA, SHIRE OF DALWALLINU",
-        "lat": -30.4979,
-        "lng": 115.479,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Smoke Alert FOR DALYELLUP, USHER AND SURROUNDING AREAS INCLUDING BUNBURY, IN THE SHIRE OF CAPEL AND CITY OF BUNBURY",
         "alertLevel": "Advice",
         "status": "active",
@@ -893,21 +902,6 @@
         "description": "LAGRANGE, SHIRE OF BROOME",
         "lat": -18.739,
         "lng": 121.671,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Smoke Alert FOR COASTAL AREAS BETWEEN LAKE CLIFTON AND AUGUSTA AND INLAND THROUGH TO WAROONA, HARVEY, BRUNSWICK JUNCTION AND COLLIE IN THE SOUTH WEST REGION",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-27T05:25:37.457+00:00",
-        "description": "",
-        "lat": -33.3339,
-        "lng": 115.6457,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1617,7 +1611,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 45,
+  "incident_count": 43,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5293,10 +5287,29 @@
         }
       ]
     },
+    "SA": {
+      "state": "SA",
+      "product": "IDS20201",
+      "issued_utc": "2026-10-28T07:41:36Z",
+      "overview": [],
+      "hazards": [
+        {
+          "level": "Strong Wind Warning",
+          "severity": "STR",
+          "zones": [
+            "Far West Coast: WA-SA Border to Fowlers Bay"
+          ],
+          "aac_codes": [
+            "SA_MW001"
+          ],
+          "summary": "Far West Coast"
+        }
+      ]
+    },
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-28T05:01:00Z",
+      "issued_utc": "2026-10-28T07:41:37Z",
       "overview": [
         "Strong Wind Warning for Wednesday for Esperance Coast",
         "Strong Wind Warning for Thursday for Eucla Coast"
@@ -5318,12 +5331,12 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-28T05:05:00Z",
+      "issued_utc": "2026-10-28T07:41:36Z",
       "overview": [
         "Gale Warning for Wednesday for South East Coast",
-        "Strong Wind Warning for Wednesday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, South West Coast, Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay and Channel",
-        "Gale Warning for Thursday for South East Coast and South West Coast",
-        "Strong Wind Warning for Thursday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island and Lower East Coast"
+        "Strong Wind Warning for Wednesday for Storm Bay, Upper East Coast, Lower East Coast, South West Coast, Channel, Derwent Estuary, Far North West Coast, Frederick Henry Bay and Norfolk Bay, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island",
+        "Gale Warning for Thursday for South West Coast and South East Coast",
+        "Strong Wind Warning for Thursday for Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel, Lower East Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island"
       ],
       "hazards": [
         {
