@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-28T16:52:56.991011+00:00",
-  "last_checked_utc": "2026-10-28T16:52:56.991011+00:00",
+  "generated_utc": "2026-10-28T17:22:55.545697+00:00",
+  "last_checked_utc": "2026-10-28T17:22:55.545697+00:00",
   "warning_count": 20,
   "warnings": [
     {
       "pid": "",
-      "title": "28/22:00 EDT Marine Wind Warning Summary for New South Wales",
+      "title": "29/04:00 EDT Marine Wind Warning Summary for New South Wales",
       "type": "wind",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 28 Oct 2026 11:00:13 GMT"
+      "issued": "Wed, 28 Oct 2026 17:00:10 GMT"
     },
     {
       "pid": "",
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "28/22:00 EDT Marine Wind Warning Summary for Victoria",
+      "title": "29/04:10 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 28 Oct 2026 11:00:22 GMT"
+      "issued": "Wed, 28 Oct 2026 17:10:24 GMT"
     },
     {
       "pid": "",
@@ -149,30 +149,30 @@
     },
     {
       "pid": "",
-      "title": "28/21:30 CDT Marine Wind Warning Summary for South Australia",
+      "title": "29/03:40 CDT Marine Wind Warning Summary for South Australia",
       "type": "wind",
       "state": "SA",
       "link": "http://reg.bom.gov.au/sa/warnings/marine-wind.shtml",
       "desc": "",
-      "issued": "Wed, 28 Oct 2026 11:00:09 GMT"
+      "issued": "Wed, 28 Oct 2026 17:10:12 GMT"
     },
     {
       "pid": "",
-      "title": "28/19:01 WST Marine Wind Warning Summary for Western Australia",
+      "title": "29/01:01 WST Marine Wind Warning Summary for Western Australia",
       "type": "wind",
       "state": "WA",
       "link": "http://reg.bom.gov.au/wa/warnings/marine.shtml",
       "desc": "",
-      "issued": "Wed, 28 Oct 2026 11:01:15 GMT"
+      "issued": "Wed, 28 Oct 2026 17:01:13 GMT"
     },
     {
       "pid": "",
-      "title": "28/22:00 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "29/04:00 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Wed, 28 Oct 2026 11:00:15 GMT"
+      "issued": "Wed, 28 Oct 2026 17:00:11 GMT"
     },
     {
       "pid": "IDD21033",
@@ -214,7 +214,7 @@
         "type": "Bush Fire",
         "size": "15 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 28 Oct 2026 16:49:07 GMT",
+        "updated": "Wed, 28 Oct 2026 17:21:07 GMT",
         "description": "BIG BLACK JACK MOUNTAIN FIRE, MIRANNIE RD, MIRANNIE 2330",
         "council": "Singleton",
         "lat": -32.3147591599999,
@@ -363,6 +363,22 @@
             ]
           ]
         ],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Burrows Rd, St Peters",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Wed, 28 Oct 2026 17:21:07 GMT",
+        "description": "Burrows Rd, St Peters, NSW 2044",
+        "council": "Sydney",
+        "lat": -33.91857636,
+        "lng": 151.179233911,
+        "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       }
@@ -1406,7 +1422,7 @@
     "act": [],
     "sa": []
   },
-  "incident_count": 37,
+  "incident_count": 38,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -5037,10 +5053,10 @@
     "NSW": {
       "state": "NSW",
       "product": "IDN20400",
-      "issued_utc": "2026-10-28T11:00:00Z",
+      "issued_utc": "2026-10-28T17:00:00Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for Eden Coast",
-        "Strong Wind Warning for Thursday for Eden Coast"
+        "Strong Wind Warning for Thursday for Eden Coast",
+        "Strong Wind Warning for Friday for Illawarra Coast, Batemans Coast and Eden Coast"
       ],
       "hazards": [
         {
@@ -5059,33 +5075,26 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-28T11:00:00Z",
-      "overview": [
-        "Strong Wind Warning for Wednesday for Central Coast, Central Gippsland Coast and East Gippsland Coast",
-        "Strong Wind Warning for Thursday for Central Gippsland Coast and East Gippsland Coast"
-      ],
+      "issued_utc": "2026-10-28T17:10:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Central Coast: Cape Otway to Wilsons Promontory",
-            "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
             "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
           ],
           "aac_codes": [
-            "VIC_MW002",
-            "VIC_MW003",
             "VIC_MW004"
           ],
-          "summary": "Central Coast, Central Gippsland Coast and East Gippsland Coast"
+          "summary": "East Gippsland Coast"
         }
       ]
     },
     "SA": {
       "state": "SA",
       "product": "IDS20201",
-      "issued_utc": "2026-10-28T11:00:00Z",
+      "issued_utc": "2026-10-28T17:10:00Z",
       "overview": [],
       "hazards": [
         {
@@ -5104,53 +5113,69 @@
     "WA": {
       "state": "WA",
       "product": "IDW20100",
-      "issued_utc": "2026-10-28T11:01:00Z",
-      "overview": [
-        "Strong Wind Warning for Wednesday for Esperance Coast",
-        "Strong Wind Warning for Thursday for Eucla Coast"
-      ],
+      "issued_utc": "2026-10-28T17:01:00Z",
+      "overview": [],
       "hazards": [
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
-            "Esperance Coast: Bremer Bay to Israelite Bay"
+            "Eucla Coast: Israelite Bay to WA-SA Border"
           ],
           "aac_codes": [
-            "WA_MW013"
+            "WA_MW014"
           ],
-          "summary": "Esperance Coast"
+          "summary": "Eucla Coast"
         }
       ]
     },
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-28T11:00:00Z",
+      "issued_utc": "2026-10-28T17:00:00Z",
       "overview": [
-        "Strong Wind Warning for Wednesday for Central North Coast, East of Flinders Island, Lower East Coast, South East Coast and South West Coast",
         "Gale Warning for Thursday for South East Coast and South West Coast",
-        "Strong Wind Warning for Thursday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay and Channel"
+        "Strong Wind Warning for Thursday for Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Lower East Coast, Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay and Channel",
+        "Strong Wind Warning for Friday for South East Coast and South West Coast"
       ],
       "hazards": [
+        {
+          "level": "Gale Warning",
+          "severity": "GALE",
+          "zones": [
+            "South East Coast: Tasman Island to South East Cape",
+            "South West Coast: South East Cape to Low Rocky Point"
+          ],
+          "aac_codes": [
+            "TAS_MW006",
+            "TAS_MW007"
+          ],
+          "summary": "South East Coast and South West Coast"
+        },
         {
           "level": "Strong Wind Warning",
           "severity": "STR",
           "zones": [
             "Central North Coast: Stanley to Northern Tip of Flinders Island",
+            "Banks Strait and Franklin Sound",
             "East of Flinders Island: Northern Tip of Flinders Island to St Helens Point",
             "Lower East Coast: Wineglass Bay to Tasman Island",
-            "South East Coast: Tasman Island to South East Cape",
-            "South West Coast: South East Cape to Low Rocky Point"
+            "Derwent Estuary",
+            "Frederick Henry Bay and Norfolk Bays",
+            "Storm Bay",
+            "Channel"
           ],
           "aac_codes": [
             "TAS_MW002",
+            "TAS_MW009",
             "TAS_MW003",
             "TAS_MW005",
-            "TAS_MW006",
-            "TAS_MW007"
+            "TAS_MW012",
+            "TAS_MW013",
+            "TAS_MW014",
+            "TAS_MW011"
           ],
-          "summary": "Central North Coast, East of Flinders Island, Lower East Coast, South East Coast and South West Coast"
+          "summary": "Derwent Estuary, Frederick Henry Bay and Norfolk Bay, Storm Bay, Channel, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island and Lower East Coast"
         }
       ]
     }
