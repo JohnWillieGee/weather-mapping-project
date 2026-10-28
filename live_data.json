@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-28T11:52:59.291975+00:00",
-  "last_checked_utc": "2026-10-28T11:52:59.291975+00:00",
+  "generated_utc": "2026-10-28T12:22:58.970789+00:00",
+  "last_checked_utc": "2026-10-28T12:22:58.970789+00:00",
   "warning_count": 23,
   "warnings": [
     {
@@ -176,46 +176,27 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Central Coast and Whitsundays, Capricornia, Central Highlands and Coalfields",
+      "title": "Cancellation of Severe Thunderstorm Warning for Central Coast and Whitsundays, Capricornia, Central Highlands and Coalfields",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding and damaging winds in the warning area over the next several hours. Locations which may be affected include St Lawrence, Marlborough and Nebo. Severe thunderstorms are no longer occurring in the Wide Bay and Burnett district and the warning for this district is CANCELLED. 124.0 MM WAS RECORDED AT MILTON IN THE 3 HOURS TO 5:46 PM. 76.0 mm was recorded at Marlua in the 2 hours to 5:07 pm. 101.4 mm was recorde",
-      "issued": "2026-10-28T19:45:52+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled. 124.0 MM WAS RECORDED AT MILTON IN THE 3 HOURS TO 5:46 PM. 70.4 mm was recorded at Pink Lagoon in the 1 hour to 8:00 pm. 76.0 mm was recorded at Marlua in the 2 hours to 5:07 pm. 101.4 mm was recorded at Double Island Point in the 2 hours to 4:00 pm. 55.0 mm was recorded at Mimdale in the 30 minutes to 3:30 pm.",
+      "issued": "2026-10-28T22:14:47+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "QLD_PW006",
           "description": "Central Coast and Whitsundays",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW007",
           "description": "Capricornia",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW008",
           "description": "Central Highlands and Coalfields",
-          "phase": "REN"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
-    },
-    {
-      "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Wide Bay and Burnett",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-28T19:45:52+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "QLD_PW014",
-          "description": "Wide Bay and Burnett",
           "phase": "CAN"
         }
       ],
@@ -253,27 +234,22 @@
     },
     {
       "pid": "IDD21033",
-      "title": "Severe Thunderstorm Warning for Barkly, Simpson, Lasseter, Tanami",
+      "title": "Severe Thunderstorm Warning for Barkly, Simpson, Tanami",
       "type": "thunderstorm",
       "state": "NT",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Yuendumu, Ti Tree and Ampilatwatja. 102 km/h wind gust recorded at Alice Springs Airport at 4:36pm, with 3cm hailstones observed nearby.",
-      "issued": "2026-10-28T19:08:54+09:30",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, large hailstones and damaging winds in the warning area over the next several hours. Locations which may be affected include Yuendumu, Ti Tree, Barrow Creek, Ampilatwatja, Willowra and south west Tanami District near WA border. Severe thunderstorms are no longer occurring in the Lasseter district and the warning for this district is CANCELLED. 102 km/h wind gust recorded at Alice Springs Airport at 4:36pm,",
+      "issued": "2026-10-28T21:37:36+09:30",
       "cancelled": false,
       "areas": [
         {
           "aac": "NT_PW006",
           "description": "Barkly",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "NT_PW007",
           "description": "Simpson",
-          "phase": "REN"
-        },
-        {
-          "aac": "NT_PW008",
-          "description": "Lasseter",
           "phase": "REN"
         },
         {
@@ -283,7 +259,26 @@
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDD21033",
+      "title": "Severe Thunderstorm Warning for Lasseter",
+      "type": "thunderstorm",
+      "state": "NT",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-28T21:37:36+09:30",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "NT_PW008",
+          "description": "Lasseter",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -296,7 +291,7 @@
         "type": "Bush Fire",
         "size": "15 ha",
         "agency": "Rural Fire Service",
-        "updated": "Wed, 28 Oct 2026 11:49:02 GMT",
+        "updated": "Wed, 28 Oct 2026 12:21:11 GMT",
         "description": "BIG BLACK JACK MOUNTAIN FIRE, MIRANNIE RD, MIRANNIE 2330",
         "council": "Singleton",
         "lat": -32.3147591599999,
