@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-29T10:23:03.612568+00:00",
-  "last_checked_utc": "2026-10-29T10:23:03.612568+00:00",
+  "generated_utc": "2026-10-29T10:53:02.288012+00:00",
+  "last_checked_utc": "2026-10-29T10:53:02.288012+00:00",
   "warning_count": 19,
   "warnings": [
     {
@@ -149,27 +149,27 @@
     },
     {
       "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for North West Pastoral, West Coast",
+      "title": "Cancellation of Severe Thunderstorm Warning for North West Pastoral, West Coast",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Nullarbor, Ernabella, Amata, Maralinga, Oak Valley and Cook.",
-      "issued": "2026-10-29T18:24:13+10:30",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-29T20:52:24+10:30",
+      "cancelled": true,
       "areas": [
         {
           "aac": "SA_PW013",
           "description": "North West Pastoral",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "SA_PW010",
           "description": "West Coast",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDW21033",
@@ -202,27 +202,27 @@
     },
     {
       "pid": "IDD21033",
-      "title": "Severe Thunderstorm Warning for Lasseter, Tanami",
+      "title": "Cancellation of Severe Thunderstorm Warning for Lasseter, Tanami",
       "type": "thunderstorm",
       "state": "NT",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Yulara, Yuendumu, Wulungurru, Papunya, Curtin Springs and Watarrka. 93 km/h wind gust observed at Wulungurru at 4:43 pm.",
-      "issued": "2026-10-29T17:26:31+09:30",
-      "cancelled": false,
+      "desc": "This warning is now cancelled. 93 km/h wind gust observed at Wulungurru at 4:43 pm.",
+      "issued": "2026-10-29T19:52:05+09:30",
+      "cancelled": true,
       "areas": [
         {
           "aac": "NT_PW008",
           "description": "Lasseter",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "NT_PW009",
           "description": "Tanami",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "REN"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -235,7 +235,7 @@
         "type": "Bush Fire",
         "size": "50 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 29 Oct 2026 10:20:40 GMT",
+        "updated": "Thu, 29 Oct 2026 10:48:45 GMT",
         "description": "BROOKS RD, BINNAWAY 2395",
         "council": "Warrumbungle",
         "lat": -31.480443051,
@@ -344,21 +344,6 @@
     "qld": [],
     "tas": [],
     "wa": [
-      {
-        "title": "Report of Smoke",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-29T10:09:49+00:00",
-        "description": "CLARKSON, CITY OF WANNEROO",
-        "lat": -31.6731,
-        "lng": 115.7191,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
       {
         "title": "Structure Fire",
         "alertLevel": "",
@@ -487,21 +472,6 @@
             ]
           ]
         ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-29T08:30:45+00:00",
-        "description": "GREENMOUNT, SHIRE OF MUNDARING",
-        "lat": -31.9148,
-        "lng": 116.0621,
-        "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1794,7 +1764,7 @@
       }
     ]
   },
-  "incident_count": 48,
+  "incident_count": 46,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
