@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-29T23:22:58.308667+00:00",
-  "last_checked_utc": "2026-10-29T23:22:58.308667+00:00",
-  "warning_count": 16,
+  "generated_utc": "2026-10-29T23:52:58.967887+00:00",
+  "last_checked_utc": "2026-10-29T23:52:58.967887+00:00",
+  "warning_count": 18,
   "warnings": [
     {
       "pid": "",
@@ -146,6 +146,54 @@
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
       "issued": "Thu, 29 Oct 2026 23:00:13 GMT"
+    },
+    {
+      "pid": "IDN21037",
+      "title": "Severe Weather Warning for Snowy Mountains",
+      "type": "severe_weather",
+      "state": "NSW",
+      "link": "",
+      "desc": "DAMAGING WINDS averaging 80 to 90 km/h with peak gusts up to 110 km/h are possible over alpine areas above 1900 metres from Saturday morning, easing by the evening. Locations which may be affected include Thredbo Top Station.",
+      "issued": "2026-10-30T10:32:04+11:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NSW_PW010",
+          "description": "Snowy Mountains",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
+    },
+    {
+      "pid": "IDV21037",
+      "title": "Severe Weather Warning for North East, West and South Gippsland, East Gippsland",
+      "type": "severe_weather",
+      "state": "VIC",
+      "link": "",
+      "desc": "DAMAGING WINDS averaging 60 to 70 km/h with peak gusts of around 100 km/h are possible over the eastern ranges above 1200 metres from Saturday morning, easing by the evening. Locations which may be affected include Falls Creek, Mt Hotham and Mt Buller.",
+      "issued": "2026-10-30T10:31:40+11:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "VIC_PW004",
+          "description": "North East",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW006",
+          "description": "West and South Gippsland",
+          "phase": "NEW"
+        },
+        {
+          "aac": "VIC_PW005",
+          "description": "East Gippsland",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
@@ -1288,21 +1336,6 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "CFS",
-        "updated": "2026-10-29T05:50:00+00:00",
-        "description": "MINNIPA",
-        "lat": -32.8937,
-        "lng": 135.1905,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      },
-      {
-        "title": "GRASS FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "CFS",
         "updated": "2026-10-29T02:54:00+00:00",
         "description": "HANSON",
         "lat": -33.7334,
@@ -1328,7 +1361,7 @@
       }
     ]
   },
-  "incident_count": 43,
+  "incident_count": 42,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
