@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-29T05:53:02.903108+00:00",
-  "last_checked_utc": "2026-10-29T05:53:02.903108+00:00",
+  "generated_utc": "2026-10-29T06:23:07.165247+00:00",
+  "last_checked_utc": "2026-10-29T06:23:07.165247+00:00",
   "warning_count": 19,
   "warnings": [
     {
@@ -14,12 +14,12 @@
     },
     {
       "pid": "",
-      "title": "29/04:37 EDT Hazardous Surf Warning for New South Wales",
+      "title": "29/16:55 EDT Hazardous Surf Warning for New South Wales",
       "type": "other",
       "state": "NSW",
       "link": "http://reg.bom.gov.au/nsw/warnings/hazardoussurf.shtml",
       "desc": "",
-      "issued": "Wed, 28 Oct 2026 17:37:38 GMT"
+      "issued": "Thu, 29 Oct 2026 05:55:14 GMT"
     },
     {
       "pid": "",
@@ -149,46 +149,56 @@
     },
     {
       "pid": "IDS21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for North West Pastoral",
+      "title": "Severe Thunderstorm Warning for North West Pastoral, West Coast",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "This warning is now cancelled. Further warnings may be issued about the far west and northwest of the state later today.",
-      "issued": "2026-10-29T14:15:26+10:30",
-      "cancelled": true,
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Ernabella, Amata, Cook and parts of the Great Victoria Desert.",
+      "issued": "2026-10-29T16:33:48+10:30",
+      "cancelled": false,
       "areas": [
         {
           "aac": "SA_PW013",
           "description": "North West Pastoral",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
-    },
-    {
-      "pid": "IDW21033",
-      "title": "Severe Thunderstorm Warning for North Interior, South Interior",
-      "type": "thunderstorm",
-      "state": "WA",
-      "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Giles.",
-      "issued": "2026-10-29T12:55:42+08:00",
-      "cancelled": false,
-      "areas": [
-        {
-          "aac": "WA_PW006",
-          "description": "North Interior",
           "phase": "NEW"
         },
         {
-          "aac": "WA_PW007",
-          "description": "South Interior",
+          "aac": "SA_PW010",
+          "description": "West Coast",
           "phase": "NEW"
         }
       ],
       "severityCode": "STD",
       "hazardPhase": "NEW"
+    },
+    {
+      "pid": "IDW21033",
+      "title": "Severe Thunderstorm Warning for Eucla, North Interior, South Interior",
+      "type": "thunderstorm",
+      "state": "WA",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Eucla, Forrest and Giles.",
+      "issued": "2026-10-29T14:02:41+08:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "WA_PW005",
+          "description": "Eucla",
+          "phase": "NEW"
+        },
+        {
+          "aac": "WA_PW006",
+          "description": "North Interior",
+          "phase": "REN"
+        },
+        {
+          "aac": "WA_PW007",
+          "description": "South Interior",
+          "phase": "REN"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "UPD"
     },
     {
       "pid": "IDD21033",
@@ -197,22 +207,22 @@
       "state": "NT",
       "link": "",
       "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Yulara, Kaltukatjara, Walungurru, Curtin Springs and Uluru.",
-      "issued": "2026-10-29T14:27:27+09:30",
+      "issued": "2026-10-29T15:34:20+09:30",
       "cancelled": false,
       "areas": [
         {
           "aac": "NT_PW008",
           "description": "Lasseter",
-          "phase": "NEW"
+          "phase": "REN"
         },
         {
           "aac": "NT_PW009",
           "description": "Tanami",
-          "phase": "NEW"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "hazardPhase": "REN"
     }
   ],
   "fetch_errors": {},
@@ -225,7 +235,7 @@
         "type": "Bush Fire",
         "size": "11 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 29 Oct 2026 05:48:40 GMT",
+        "updated": "Thu, 29 Oct 2026 06:20:40 GMT",
         "description": "BROOKS RD, BINNAWAY 2395",
         "council": "Warrumbungle",
         "lat": -31.480443051,
@@ -336,28 +346,75 @@
         "type": "Grass Fire",
         "size": "10 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 29 Oct 2026 05:48:40 GMT",
+        "updated": "Thu, 29 Oct 2026 06:20:40 GMT",
         "description": "BUNGARIE RD, TERIDGERIE 2829",
         "council": "Coonamble",
         "lat": -30.8497739759999,
         "lng": 148.830757142,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "Pittwater Rd, Dee Why",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Bush Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Thu, 29 Oct 2026 05:48:40 GMT",
-        "description": "Pittwater Rd, Dee Why, NSW 2099",
-        "council": "Northern Beaches",
-        "lat": -33.752243,
-        "lng": 151.296743,
-        "polys": [],
+        "polys": [
+          [
+            [
+              148.82821,
+              -30.850880001
+            ],
+            [
+              148.82851,
+              -30.8509100009999
+            ],
+            [
+              148.82904,
+              -30.851150001
+            ],
+            [
+              148.82935,
+              -30.85079
+            ],
+            [
+              148.829729999,
+              -30.8506400009999
+            ],
+            [
+              148.83137,
+              -30.8508399999999
+            ],
+            [
+              148.83285,
+              -30.8511300009999
+            ],
+            [
+              148.83294,
+              -30.8517400009999
+            ],
+            [
+              148.83207,
+              -30.8525500009999
+            ],
+            [
+              148.83127,
+              -30.8528200009999
+            ],
+            [
+              148.83051,
+              -30.8528700009999
+            ],
+            [
+              148.82948,
+              -30.852860001
+            ],
+            [
+              148.82874,
+              -30.85247
+            ],
+            [
+              148.82814,
+              -30.851510001
+            ],
+            [
+              148.82821,
+              -30.850880001
+            ]
+          ]
+        ],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
@@ -368,7 +425,7 @@
         "type": "Grass Fire",
         "size": "66 ha",
         "agency": "Rural Fire Service",
-        "updated": "Thu, 29 Oct 2026 05:48:40 GMT",
+        "updated": "Thu, 29 Oct 2026 06:20:40 GMT",
         "description": "WIRE LANE, MUSWELLBROOK 2333",
         "council": "Muswellbrook",
         "lat": -32.3278799999999,
@@ -376,360 +433,20 @@
         "polys": [
           [
             [
-              150.900564283,
-              -32.318211334
+              150.900410281,
+              -32.3246485929999
             ],
             [
-              150.900611872,
-              -32.318282718
+              150.900450771,
+              -32.3246467929999
             ],
             [
-              150.900635667,
-              -32.318282718
+              150.900500038,
+              -32.324664432
             ],
             [
-              150.901135354,
-              -32.3181875399999
-            ],
-            [
-              150.901420889,
-              -32.317925798
-            ],
-            [
-              150.901682629,
-              -32.3178544149999
-            ],
-            [
-              150.901920576,
-              -32.317307139
-            ],
-            [
-              150.90230129,
-              -32.3170453979999
-            ],
-            [
-              150.90261062,
-              -32.316759862
-            ],
-            [
-              150.902848565,
-              -32.3163553539999
-            ],
-            [
-              150.902967539,
-              -32.3160460249999
-            ],
-            [
-              150.903300662,
-              -32.3159032569999
-            ],
-            [
-              150.903491019,
-              -32.315617721
-            ],
-            [
-              150.903514814,
-              -32.3155225429999
-            ],
-            [
-              150.903800349,
-              -32.3154035699999
-            ],
-            [
-              150.903824144,
-              -32.3152608029999
-            ],
-            [
-              150.904276241,
-              -32.315118035
-            ],
-            [
-              150.904514188,
-              -32.3150466509999
-            ],
-            [
-              150.904871107,
-              -32.3152845979999
-            ],
-            [
-              150.905061464,
-              -32.315474954
-            ],
-            [
-              150.905228027,
-              -32.315641516
-            ],
-            [
-              150.905394589,
-              -32.3158794619999
-            ],
-            [
-              150.905561151,
-              -32.316117408
-            ],
-            [
-              150.905799097,
-              -32.31633156
-            ],
-            [
-              150.906203606,
-              -32.316593301
-            ],
-            [
-              150.906727087,
-              -32.316783657
-            ],
-            [
-              150.907012622,
-              -32.317069193
-            ],
-            [
-              150.907250568,
-              -32.317259549
-            ],
-            [
-              150.907774049,
-              -32.317783031
-            ],
-            [
-              150.907916817,
-              -32.3183303069999
-            ],
-            [
-              150.907940612,
-              -32.3188775839999
-            ],
-            [
-              150.907774049,
-              -32.3193296809999
-            ],
-            [
-              150.907655077,
-              -32.3198055729999
-            ],
-            [
-              150.907512309,
-              -32.320067313
-            ],
-            [
-              150.907512309,
-              -32.3203290549999
-            ],
-            [
-              150.907655077,
-              -32.3207335619999
-            ],
-            [
-              150.907916817,
-              -32.321066687
-            ],
-            [
-              150.907869228,
-              -32.3214711959999
-            ],
-            [
-              150.907821639,
-              -32.3215663739999
-            ],
-            [
-              150.907583692,
-              -32.32180432
-            ],
-            [
-              150.907345747,
-              -32.322018471
-            ],
-            [
-              150.906893648,
-              -32.322137445
-            ],
-            [
-              150.906512935,
-              -32.322327802
-            ],
-            [
-              150.906156016,
-              -32.322327802
-            ],
-            [
-              150.905941864,
-              -32.3224467749999
-            ],
-            [
-              150.905632534,
-              -32.3229226669999
-            ],
-            [
-              150.905442177,
-              -32.3231844069999
-            ],
-            [
-              150.90529941,
-              -32.3235651209999
-            ],
-            [
-              150.905180437,
-              -32.3240410129999
-            ],
-            [
-              150.904966285,
-              -32.3242075759999
-            ],
-            [
-              150.904609366,
-              -32.324778647
-            ],
-            [
-              150.904323831,
-              -32.3246834679999
-            ],
-            [
-              150.904133474,
-              -32.3247072629999
-            ],
-            [
-              150.904014501,
-              -32.324635878
-            ],
-            [
-              150.903847939,
-              -32.324445522
-            ],
-            [
-              150.903681377,
-              -32.32427896
-            ],
-            [
-              150.903514814,
-              -32.323993424
-            ],
-            [
-              150.903205484,
-              -32.3240648079999
-            ],
-            [
-              150.902800977,
-              -32.324159986
-            ],
-            [
-              150.902348878,
-              -32.3243265479999
-            ],
-            [
-              150.901587451,
-              -32.3243979329999
-            ],
-            [
-              150.90070705,
-              -32.324612085
-            ],
-            [
-              150.900254953,
-              -32.324635878
-            ],
-            [
-              150.899755266,
-              -32.324445522
-            ],
-            [
-              150.899469731,
-              -32.324302755
-            ],
-            [
-              150.899612498,
-              -32.323945835
-            ],
-            [
-              150.899541114,
-              -32.3233985589999
-            ],
-            [
-              150.899422141,
-              -32.322541953
-            ],
-            [
-              150.899089017,
-              -32.3212808389999
-            ],
-            [
-              150.89889866,
-              -32.3204480269999
-            ],
-            [
-              150.898708304,
-              -32.319424859
-            ],
-            [
-              150.898470357,
-              -32.318925172
-            ],
-            [
-              150.898494152,
-              -32.318568254
-            ],
-            [
-              150.898161027,
-              -32.3181399499999
-            ],
-            [
-              150.897875492,
-              -32.317759236
-            ],
-            [
-              150.897685135,
-              -32.3173309329999
-            ],
-            [
-              150.897542368,
-              -32.316926426
-            ],
-            [
-              150.897613751,
-              -32.316807452
-            ],
-            [
-              150.897732724,
-              -32.316498122
-            ],
-            [
-              150.897804108,
-              -32.3164029439999
-            ],
-            [
-              150.897946876,
-              -32.3162363819999
-            ],
-            [
-              150.898089643,
-              -32.3164029439999
-            ],
-            [
-              150.89828,
-              -32.316617095
-            ],
-            [
-              150.898517947,
-              -32.316974014
-            ],
-            [
-              150.89889866,
-              -32.3173785229999
-            ],
-            [
-              150.899350758,
-              -32.3177116479999
-            ],
-            [
-              150.899707676,
-              -32.317783031
-            ],
-            [
-              150.900040801,
-              -32.3179971829999
-            ],
-            [
-              150.900564283,
-              -32.318211334
+              150.900410281,
+              -32.3246485929999
             ]
           ]
         ],
@@ -821,37 +538,7 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-29T05:43:46+00:00",
-        "description": "VASSE, CITY OF BUSSELTON",
-        "lat": -33.6893,
-        "lng": 115.2774,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-29T05:39:33+00:00",
-        "description": "DRYSDALE RIVER, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -14.6788,
-        "lng": 127.0855,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-29T05:37:18+00:00",
+        "updated": "2026-10-29T06:11:17+00:00",
         "description": "FORRESTFIELD, CITY OF KALAMUNDA",
         "lat": -31.9773,
         "lng": 116.0274,
@@ -860,28 +547,13 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-29T04:44:21+00:00",
-        "description": "MUJA, SHIRE OF COLLIE",
-        "lat": -33.436,
-        "lng": 116.3603,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire Advice MONITOR CONDITIONS - BOWELLING AND MUJA",
+        "title": "Bushfire Advice PREPARE NOW - BOWELLING AND MUJA",
         "alertLevel": "Advice",
         "status": "active",
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES-WARN",
-        "updated": "2026-10-29T02:48:22.186+00:00",
+        "updated": "2026-10-29T06:04:54.714+00:00",
         "description": "",
         "lat": -33.424,
         "lng": 116.3543,
@@ -965,6 +637,66 @@
             ]
           ]
         ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-29T05:53:20+00:00",
+        "description": "ROLEYSTONE, CITY OF ARMADALE",
+        "lat": -32.1431,
+        "lng": 116.0714,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-29T05:53:05+00:00",
+        "description": "MUJA, SHIRE OF COLLIE",
+        "lat": -33.436,
+        "lng": 116.3603,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-29T05:43:46+00:00",
+        "description": "VASSE, CITY OF BUSSELTON",
+        "lat": -33.6893,
+        "lng": 115.2774,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-29T05:39:33+00:00",
+        "description": "DRYSDALE RIVER, SHIRE OF WYNDHAM-EAST KIMBERLEY",
+        "lat": -14.6788,
+        "lng": 127.0855,
+        "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1201,21 +933,6 @@
             ]
           ]
         ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-28T00:32:15+00:00",
-        "description": "ROLEYSTONE, CITY OF ARMADALE",
-        "lat": -32.1431,
-        "lng": 116.0714,
-        "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
@@ -1855,10 +1572,10 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "CFS",
-        "updated": "2026-10-29T05:34:00+00:00",
-        "description": "PYGERY",
-        "lat": -33.0189,
-        "lng": 135.4097,
+        "updated": "2026-10-29T05:50:00+00:00",
+        "description": "MINNIPA",
+        "lat": -32.8937,
+        "lng": 135.1905,
         "polys": [],
         "state": "SA",
         "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
@@ -1874,21 +1591,6 @@
         "description": "KONGORONG",
         "lat": -37.9164,
         "lng": 140.5764,
-        "polys": [],
-        "state": "SA",
-        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
-      },
-      {
-        "title": "GRASS FIRE",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "CFS",
-        "updated": "2026-10-29T05:01:00+00:00",
-        "description": "COLEBATCH",
-        "lat": -35.9161,
-        "lng": 139.82,
         "polys": [],
         "state": "SA",
         "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
@@ -1925,7 +1627,7 @@
       }
     ]
   },
-  "incident_count": 47,
+  "incident_count": 45,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -2714,364 +2416,364 @@
         "1": {
           "fd": "Moderate",
           "fbi": 12,
-          "st": "2026-10-29T00:00:00+10:00",
-          "et": "2026-10-30T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "Moderate",
-          "fbi": 12,
           "st": "2026-10-30T00:00:00+10:00",
           "et": "2026-10-31T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "No Rating",
-          "fbi": 10,
+          "fbi": 11,
           "st": "2026-10-31T00:00:00+10:00",
           "et": "2026-11-01T00:00:00+10:00"
+        },
+        "3": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-11-01T00:00:00+10:00",
+          "et": "2026-11-02T00:00:00+10:00"
         },
         "4": {
           "fd": "No Rating",
           "fbi": 10,
-          "st": "2026-11-01T00:00:00+10:00",
-          "et": "2026-11-02T00:00:00+10:00"
+          "st": "2026-11-02T00:00:00+10:00",
+          "et": "2026-11-03T00:00:00+10:00"
         }
       },
       "QLD_FW002": {
         "1": {
           "fd": "Moderate",
-          "fbi": 21,
-          "st": "2026-10-29T00:00:00+10:00",
-          "et": "2026-10-30T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "Moderate",
-          "fbi": 21,
+          "fbi": 20,
           "st": "2026-10-30T00:00:00+10:00",
           "et": "2026-10-31T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "Moderate",
           "fbi": 17,
           "st": "2026-10-31T00:00:00+10:00",
           "et": "2026-11-01T00:00:00+10:00"
         },
-        "4": {
+        "3": {
           "fd": "Moderate",
           "fbi": 19,
           "st": "2026-11-01T00:00:00+10:00",
           "et": "2026-11-02T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 20,
+          "st": "2026-11-02T00:00:00+10:00",
+          "et": "2026-11-03T00:00:00+10:00"
         }
       },
       "QLD_FW003": {
         "1": {
           "fd": "Moderate",
-          "fbi": 23,
-          "st": "2026-10-29T00:00:00+10:00",
-          "et": "2026-10-30T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "Moderate",
-          "fbi": 21,
+          "fbi": 20,
           "st": "2026-10-30T00:00:00+10:00",
           "et": "2026-10-31T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "Moderate",
           "fbi": 18,
           "st": "2026-10-31T00:00:00+10:00",
           "et": "2026-11-01T00:00:00+10:00"
         },
-        "4": {
+        "3": {
           "fd": "Moderate",
-          "fbi": 22,
+          "fbi": 19,
           "st": "2026-11-01T00:00:00+10:00",
           "et": "2026-11-02T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 23,
+          "st": "2026-11-02T00:00:00+10:00",
+          "et": "2026-11-03T00:00:00+10:00"
         }
       },
       "QLD_FW004": {
         "1": {
           "fd": "Moderate",
           "fbi": 14,
-          "st": "2026-10-29T00:00:00+10:00",
-          "et": "2026-10-30T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "Moderate",
-          "fbi": 14,
           "st": "2026-10-30T00:00:00+10:00",
           "et": "2026-10-31T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "Moderate",
-          "fbi": 12,
+          "fbi": 13,
           "st": "2026-10-31T00:00:00+10:00",
           "et": "2026-11-01T00:00:00+10:00"
         },
-        "4": {
+        "3": {
           "fd": "Moderate",
           "fbi": 13,
           "st": "2026-11-01T00:00:00+10:00",
           "et": "2026-11-02T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 13,
+          "st": "2026-11-02T00:00:00+10:00",
+          "et": "2026-11-03T00:00:00+10:00"
         }
       },
       "QLD_FW006": {
         "1": {
           "fd": "Moderate",
           "fbi": 14,
-          "st": "2026-10-29T00:00:00+10:00",
-          "et": "2026-10-30T00:00:00+10:00"
+          "st": "2026-10-30T00:00:00+10:00",
+          "et": "2026-10-31T00:00:00+10:00"
         },
         "2": {
           "fd": "Moderate",
-          "fbi": 14,
-          "st": "2026-10-30T00:00:00+10:00",
-          "et": "2026-10-31T00:00:00+10:00"
+          "fbi": 13,
+          "st": "2026-10-31T00:00:00+10:00",
+          "et": "2026-11-01T00:00:00+10:00"
         },
         "3": {
           "fd": "Moderate",
           "fbi": 14,
-          "st": "2026-10-31T00:00:00+10:00",
-          "et": "2026-11-01T00:00:00+10:00"
+          "st": "2026-11-01T00:00:00+10:00",
+          "et": "2026-11-02T00:00:00+10:00"
         },
         "4": {
           "fd": "Moderate",
-          "fbi": 13,
-          "st": "2026-11-01T00:00:00+10:00",
-          "et": "2026-11-02T00:00:00+10:00"
+          "fbi": 15,
+          "st": "2026-11-02T00:00:00+10:00",
+          "et": "2026-11-03T00:00:00+10:00"
         }
       },
       "QLD_FW007": {
         "1": {
-          "fd": "No Rating",
-          "fbi": 11,
-          "st": "2026-10-29T00:00:00+10:00",
-          "et": "2026-10-30T00:00:00+10:00"
-        },
-        "2": {
           "fd": "Moderate",
-          "fbi": 14,
+          "fbi": 13,
           "st": "2026-10-30T00:00:00+10:00",
           "et": "2026-10-31T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-10-31T00:00:00+10:00",
+          "et": "2026-11-01T00:00:00+10:00"
         },
         "3": {
           "fd": "Moderate",
           "fbi": 12,
-          "st": "2026-10-31T00:00:00+10:00",
-          "et": "2026-11-01T00:00:00+10:00"
+          "st": "2026-11-01T00:00:00+10:00",
+          "et": "2026-11-02T00:00:00+10:00"
         },
         "4": {
           "fd": "Moderate",
           "fbi": 12,
-          "st": "2026-11-01T00:00:00+10:00",
-          "et": "2026-11-02T00:00:00+10:00"
+          "st": "2026-11-02T00:00:00+10:00",
+          "et": "2026-11-03T00:00:00+10:00"
         }
       },
       "QLD_FW008": {
         "1": {
           "fd": "Moderate",
-          "fbi": 15,
-          "st": "2026-10-29T00:00:00+10:00",
-          "et": "2026-10-30T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "Moderate",
           "fbi": 14,
           "st": "2026-10-30T00:00:00+10:00",
           "et": "2026-10-31T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "Moderate",
           "fbi": 13,
           "st": "2026-10-31T00:00:00+10:00",
           "et": "2026-11-01T00:00:00+10:00"
         },
-        "4": {
+        "3": {
           "fd": "Moderate",
           "fbi": 13,
           "st": "2026-11-01T00:00:00+10:00",
           "et": "2026-11-02T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-11-02T00:00:00+10:00",
+          "et": "2026-11-03T00:00:00+10:00"
         }
       },
       "QLD_FW009": {
         "1": {
           "fd": "Moderate",
-          "fbi": 20,
-          "st": "2026-10-29T00:00:00+10:00",
-          "et": "2026-10-30T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "Moderate",
           "fbi": 19,
           "st": "2026-10-30T00:00:00+10:00",
           "et": "2026-10-31T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "Moderate",
           "fbi": 16,
           "st": "2026-10-31T00:00:00+10:00",
           "et": "2026-11-01T00:00:00+10:00"
         },
+        "3": {
+          "fd": "Moderate",
+          "fbi": 17,
+          "st": "2026-11-01T00:00:00+10:00",
+          "et": "2026-11-02T00:00:00+10:00"
+        },
         "4": {
           "fd": "Moderate",
           "fbi": 20,
-          "st": "2026-11-01T00:00:00+10:00",
-          "et": "2026-11-02T00:00:00+10:00"
+          "st": "2026-11-02T00:00:00+10:00",
+          "et": "2026-11-03T00:00:00+10:00"
         }
       },
       "QLD_FW010": {
         "1": {
           "fd": "Moderate",
-          "fbi": 23,
-          "st": "2026-10-29T00:00:00+10:00",
-          "et": "2026-10-30T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "Moderate",
-          "fbi": 22,
+          "fbi": 20,
           "st": "2026-10-30T00:00:00+10:00",
           "et": "2026-10-31T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "Moderate",
           "fbi": 18,
           "st": "2026-10-31T00:00:00+10:00",
           "et": "2026-11-01T00:00:00+10:00"
         },
-        "4": {
+        "3": {
           "fd": "Moderate",
-          "fbi": 23,
+          "fbi": 20,
           "st": "2026-11-01T00:00:00+10:00",
           "et": "2026-11-02T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 22,
+          "st": "2026-11-02T00:00:00+10:00",
+          "et": "2026-11-03T00:00:00+10:00"
         }
       },
       "QLD_FW011": {
         "1": {
           "fd": "Moderate",
-          "fbi": 18,
-          "st": "2026-10-29T00:00:00+10:00",
-          "et": "2026-10-30T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "Moderate",
           "fbi": 17,
           "st": "2026-10-30T00:00:00+10:00",
           "et": "2026-10-31T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "Moderate",
           "fbi": 17,
           "st": "2026-10-31T00:00:00+10:00",
           "et": "2026-11-01T00:00:00+10:00"
         },
-        "4": {
+        "3": {
           "fd": "Moderate",
           "fbi": 15,
           "st": "2026-11-01T00:00:00+10:00",
           "et": "2026-11-02T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 18,
+          "st": "2026-11-02T00:00:00+10:00",
+          "et": "2026-11-03T00:00:00+10:00"
         }
       },
       "QLD_FW012": {
         "1": {
           "fd": "Moderate",
-          "fbi": 13,
-          "st": "2026-10-29T00:00:00+10:00",
-          "et": "2026-10-30T00:00:00+10:00"
+          "fbi": 15,
+          "st": "2026-10-30T00:00:00+10:00",
+          "et": "2026-10-31T00:00:00+10:00"
         },
         "2": {
           "fd": "Moderate",
           "fbi": 14,
-          "st": "2026-10-30T00:00:00+10:00",
-          "et": "2026-10-31T00:00:00+10:00"
-        },
-        "3": {
-          "fd": "Moderate",
-          "fbi": 13,
           "st": "2026-10-31T00:00:00+10:00",
           "et": "2026-11-01T00:00:00+10:00"
         },
-        "4": {
+        "3": {
           "fd": "Moderate",
-          "fbi": 13,
+          "fbi": 12,
           "st": "2026-11-01T00:00:00+10:00",
           "et": "2026-11-02T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "Moderate",
+          "fbi": 14,
+          "st": "2026-11-02T00:00:00+10:00",
+          "et": "2026-11-03T00:00:00+10:00"
         }
       },
       "QLD_FW013": {
         "1": {
           "fd": "Moderate",
-          "fbi": 20,
-          "st": "2026-10-29T00:00:00+10:00",
-          "et": "2026-10-30T00:00:00+10:00"
+          "fbi": 18,
+          "st": "2026-10-30T00:00:00+10:00",
+          "et": "2026-10-31T00:00:00+10:00"
         },
         "2": {
           "fd": "Moderate",
           "fbi": 17,
-          "st": "2026-10-30T00:00:00+10:00",
-          "et": "2026-10-31T00:00:00+10:00"
+          "st": "2026-10-31T00:00:00+10:00",
+          "et": "2026-11-01T00:00:00+10:00"
         },
         "3": {
           "fd": "Moderate",
           "fbi": 18,
-          "st": "2026-10-31T00:00:00+10:00",
-          "et": "2026-11-01T00:00:00+10:00"
+          "st": "2026-11-01T00:00:00+10:00",
+          "et": "2026-11-02T00:00:00+10:00"
         },
         "4": {
           "fd": "Moderate",
-          "fbi": 19,
-          "st": "2026-11-01T00:00:00+10:00",
-          "et": "2026-11-02T00:00:00+10:00"
+          "fbi": 17,
+          "st": "2026-11-02T00:00:00+10:00",
+          "et": "2026-11-03T00:00:00+10:00"
         }
       },
       "QLD_FW014": {
         "1": {
           "fd": "No Rating",
           "fbi": 10,
-          "st": "2026-10-29T00:00:00+10:00",
-          "et": "2026-10-30T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "No Rating",
-          "fbi": 9,
           "st": "2026-10-30T00:00:00+10:00",
           "et": "2026-10-31T00:00:00+10:00"
         },
-        "3": {
+        "2": {
           "fd": "No Rating",
           "fbi": 9,
           "st": "2026-10-31T00:00:00+10:00",
           "et": "2026-11-01T00:00:00+10:00"
         },
-        "4": {
+        "3": {
           "fd": "No Rating",
           "fbi": 9,
           "st": "2026-11-01T00:00:00+10:00",
           "et": "2026-11-02T00:00:00+10:00"
+        },
+        "4": {
+          "fd": "No Rating",
+          "fbi": 10,
+          "st": "2026-11-02T00:00:00+10:00",
+          "et": "2026-11-03T00:00:00+10:00"
         }
       },
       "QLD_FW015": {
         "1": {
           "fd": "Moderate",
           "fbi": 13,
-          "st": "2026-10-29T00:00:00+10:00",
-          "et": "2026-10-30T00:00:00+10:00"
-        },
-        "2": {
-          "fd": "Moderate",
-          "fbi": 12,
           "st": "2026-10-30T00:00:00+10:00",
           "et": "2026-10-31T00:00:00+10:00"
+        },
+        "2": {
+          "fd": "No Rating",
+          "fbi": 11,
+          "st": "2026-10-31T00:00:00+10:00",
+          "et": "2026-11-01T00:00:00+10:00"
         },
         "3": {
           "fd": "Moderate",
           "fbi": 12,
-          "st": "2026-10-31T00:00:00+10:00",
-          "et": "2026-11-01T00:00:00+10:00"
+          "st": "2026-11-01T00:00:00+10:00",
+          "et": "2026-11-02T00:00:00+10:00"
         },
         "4": {
           "fd": "Moderate",
           "fbi": 12,
-          "st": "2026-11-01T00:00:00+10:00",
-          "et": "2026-11-02T00:00:00+10:00"
+          "st": "2026-11-02T00:00:00+10:00",
+          "et": "2026-11-03T00:00:00+10:00"
         }
       },
       "SA_FW013": {
