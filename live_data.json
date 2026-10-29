@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-29T19:52:59.902590+00:00",
-  "last_checked_utc": "2026-10-29T19:52:59.902590+00:00",
+  "generated_utc": "2026-10-29T20:22:59.205711+00:00",
+  "last_checked_utc": "2026-10-29T20:22:59.205711+00:00",
   "warning_count": 15,
   "warnings": [
     {
@@ -32,12 +32,12 @@
     },
     {
       "pid": "",
-      "title": "30/04:10 EDT Marine Wind Warning Summary for Victoria",
+      "title": "30/06:52 EDT Marine Wind Warning Summary for Victoria",
       "type": "wind",
       "state": "VIC",
       "link": "http://reg.bom.gov.au/vic/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 29 Oct 2026 17:10:22 GMT"
+      "issued": "Thu, 29 Oct 2026 19:52:35 GMT"
     },
     {
       "pid": "",
@@ -131,12 +131,12 @@
     },
     {
       "pid": "",
-      "title": "30/04:00 EDT Marine Wind Warning Summary for Tasmania",
+      "title": "30/06:52 EDT Marine Wind Warning Summary for Tasmania",
       "type": "wind",
       "state": "TAS",
       "link": "http://reg.bom.gov.au/tas/warnings/marinewind.shtml",
       "desc": "",
-      "issued": "Thu, 29 Oct 2026 17:00:11 GMT"
+      "issued": "Thu, 29 Oct 2026 19:52:25 GMT"
     }
   ],
   "fetch_errors": {},
@@ -5140,7 +5140,7 @@
     "VIC": {
       "state": "VIC",
       "product": "IDV20600",
-      "issued_utc": "2026-10-29T17:10:00Z",
+      "issued_utc": "2026-10-29T19:52:20Z",
       "overview": [],
       "hazards": [
         {
@@ -5150,15 +5150,19 @@
             "West Coast: SA-VIC Border to Cape Otway",
             "Central Coast: Cape Otway to Wilsons Promontory",
             "Central Gippsland Coast: Wilsons Promontory to Lakes Entrance",
-            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island"
+            "East Gippsland Coast: Lakes Entrance to 60nm east of Gabo Island",
+            "Port Phillip",
+            "Western Port"
           ],
           "aac_codes": [
             "VIC_MW001",
             "VIC_MW002",
             "VIC_MW003",
-            "VIC_MW004"
+            "VIC_MW004",
+            "VIC_MW005",
+            "VIC_MW006"
           ],
-          "summary": "West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast"
+          "summary": "Port Phillip, Western Port, West Coast, Central Coast, Central Gippsland Coast and East Gippsland Coast"
         }
       ]
     },
@@ -5188,10 +5192,11 @@
     "TAS": {
       "state": "TAS",
       "product": "IDT20100",
-      "issued_utc": "2026-10-29T17:00:00Z",
+      "issued_utc": "2026-10-29T19:52:16Z",
       "overview": [
         "Strong Wind Warning for Friday for Upper East Coast and South East Coast",
-        "Strong Wind Warning for Saturday for Far North West Coast, Central North Coast, Banks Strait and Franklin Sound, East of Flinders Island, Upper East Coast, Lower East Coast, South East Coast, South West Coast and Central West Coast"
+        "Gale Warning for Saturday for South East Coast",
+        "Strong Wind Warning for Saturday for Central West Coast, Upper East Coast, Lower East Coast, South West Coast, Far North West Coast, Banks Strait and Franklin Sound, Central North Coast and East of Flinders Island"
       ],
       "hazards": [
         {
