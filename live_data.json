@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-30T02:52:57.545449+00:00",
-  "last_checked_utc": "2026-10-30T02:52:57.545449+00:00",
+  "generated_utc": "2026-10-30T03:23:00.277322+00:00",
+  "last_checked_utc": "2026-10-30T03:23:00.277322+00:00",
   "warning_count": 18,
   "warnings": [
     {
@@ -198,11 +198,59 @@
   ],
   "fetch_errors": {},
   "incidents": {
-    "nsw": [],
+    "nsw": [
+      {
+        "title": "LACHLAN VALLEY WAY, COWRA",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Fri, 30 Oct 2026 03:20:40 GMT",
+        "description": "LACHLAN VALLEY WAY, COWRA 2794",
+        "council": "Cowra",
+        "lat": -33.706794739,
+        "lng": 148.545089721,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Lancelot Street, Belmont South",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 30 Oct 2026 03:20:40 GMT",
+        "description": "Lancelot Street, Belmont South, NSW 2280",
+        "council": "Lake Macquarie",
+        "lat": -33.051791,
+        "lng": 151.659428,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      }
+    ],
     "vic": [],
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-30T02:59:02+00:00",
+        "description": "KUKERIN, SHIRE OF DUMBLEYUNG",
+        "lat": -33.1892,
+        "lng": 118.0822,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice THREAT IS REDUCED - EIGHTY MILE BEACH AND LAGRANGE",
         "alertLevel": "Advice",
@@ -1029,21 +1077,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-26T00:24:27+00:00",
-        "description": "TANAMI, SHIRE OF HALLS CREEK",
-        "lat": -19.458,
-        "lng": 128.098,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-25T04:04:58+00:00",
         "description": "MUELLER RANGES, SHIRE OF DERBY/WEST KIMBERLEY",
         "lat": -17.286,
@@ -1059,40 +1092,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-25T03:57:46+00:00",
-        "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -16.376,
-        "lng": 128.342,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-24T09:42:30+00:00",
         "description": "ST GEORGE RANGES, SHIRE OF DERBY/WEST KIMBERLEY",
         "lat": -18.835,
         "lng": 125.158,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-23T09:38:13+00:00",
-        "description": "LAKE ARGYLE, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -16.874,
-        "lng": 128.348,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1306,6 +1309,21 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "CFS",
+        "updated": "2026-10-30T03:07:00+00:00",
+        "description": "SUNLANDS",
+        "lat": -34.1385,
+        "lng": 139.8704,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
+      {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
         "updated": "2026-10-30T00:40:00+00:00",
         "description": "SANDERSTON",
         "lat": -34.7555,
@@ -1361,7 +1379,7 @@
       }
     ]
   },
-  "incident_count": 42,
+  "incident_count": 43,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
