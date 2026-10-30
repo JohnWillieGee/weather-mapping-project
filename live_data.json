@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-30T17:53:04.556242+00:00",
-  "last_checked_utc": "2026-10-30T17:53:04.556242+00:00",
-  "warning_count": 18,
+  "generated_utc": "2026-10-30T18:23:06.915653+00:00",
+  "last_checked_utc": "2026-10-30T18:23:06.915653+00:00",
+  "warning_count": 17,
   "warnings": [
     {
       "pid": "",
@@ -145,7 +145,7 @@
       "state": "NSW",
       "link": "",
       "desc": "DAMAGING WINDS averaging 80 to 90 km/h with peak gusts up to 110 km/h are possible over alpine areas above 1900 metres from Saturday morning, easing by the evening. Locations which may be affected include Thredbo Top Station.",
-      "issued": "2026-10-30T22:12:12+11:00",
+      "issued": "2026-10-31T05:03:08+11:00",
       "cancelled": false,
       "areas": [
         {
@@ -164,7 +164,7 @@
       "state": "VIC",
       "link": "",
       "desc": "DAMAGING WINDS averaging 60 to 70 km/h with peak gusts of around 100 km/h are possible over the eastern ranges above 1200 metres from Saturday morning, easing by the evening. Locations which may be affected include Falls Creek, Mt Hotham and Mt Buller.",
-      "issued": "2026-10-30T22:36:55+11:00",
+      "issued": "2026-10-31T05:03:39+11:00",
       "cancelled": false,
       "areas": [
         {
@@ -185,66 +185,11 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "REN"
-    },
-    {
-      "pid": "IDQ21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for Northern Goldfields and Upper Flinders, Herbert and Lower Burdekin, Central Coast and Whitsundays, Central Highlands and Coalfields, Central West",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "This warning is now cancelled.",
-      "issued": "2026-10-31T00:16:33+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "QLD_PW003",
-          "description": "Northern Goldfields and Upper Flinders",
-          "phase": "CAN"
-        },
-        {
-          "aac": "QLD_PW005",
-          "description": "Herbert and Lower Burdekin",
-          "phase": "CAN"
-        },
-        {
-          "aac": "QLD_PW006",
-          "description": "Central Coast and Whitsundays",
-          "phase": "CAN"
-        },
-        {
-          "aac": "QLD_PW008",
-          "description": "Central Highlands and Coalfields",
-          "phase": "CAN"
-        },
-        {
-          "aac": "QLD_PW009",
-          "description": "Central West",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
   "incidents": {
     "nsw": [
-      {
-        "title": "Cawood Av, Little Bay",
-        "alertLevel": "Advice",
-        "status": "Not yet controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 30 Oct 2026 17:48:45 GMT",
-        "description": "Cawood Av, Little Bay, NSW 2036",
-        "council": "Randwick",
-        "lat": -33.974658999,
-        "lng": 151.243836,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
       {
         "title": "Lawson Cr, Griffith",
         "alertLevel": "Advice",
@@ -252,7 +197,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 30 Oct 2026 17:48:45 GMT",
+        "updated": "Fri, 30 Oct 2026 18:20:45 GMT",
         "description": "Lawson Cr, Griffith, NSW 2680",
         "council": "Griffith",
         "lat": -34.2790229999999,
@@ -268,7 +213,7 @@
         "type": "Bush Fire",
         "size": "9 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 30 Oct 2026 17:48:45 GMT",
+        "updated": "Fri, 30 Oct 2026 18:20:45 GMT",
         "description": "THE WOOL RD, VINCENTIA 2540",
         "council": "Shoalhaven",
         "lat": -35.071014405,
@@ -448,7 +393,37 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-30T17:19:35+00:00",
+        "updated": "2026-10-30T17:58:19+00:00",
+        "description": "FORRESTFIELD, CITY OF KALAMUNDA",
+        "lat": -31.9781,
+        "lng": 116.0281,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-30T17:48:42+00:00",
+        "description": "STAKE HILL, SHIRE OF MURRAY",
+        "lat": -32.4612,
+        "lng": 115.7889,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-30T17:44:42+00:00",
         "description": "MARDIE, CITY OF KARRATHA",
         "lat": -21.1374,
         "lng": 116.235,
@@ -467,36 +442,6 @@
         "description": "WEDGECARRUP, SHIRE OF WAGIN",
         "lat": -33.4021,
         "lng": 117.2341,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-30T14:38:47+00:00",
-        "description": "FORRESTFIELD, CITY OF KALAMUNDA",
-        "lat": -31.9781,
-        "lng": 116.0281,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-30T12:35:48+00:00",
-        "description": "KARAWARA, CITY OF SOUTH PERTH",
-        "lat": -32.0087,
-        "lng": 115.883,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1137,7 +1082,7 @@
       }
     ]
   },
-  "incident_count": 38,
+  "incident_count": 37,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
@@ -1146,7 +1091,7 @@
         "1": {
           "fd": "No Rating",
           "fbi": 11,
-          "st": "2026-10-31T00:00:00+11:00",
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -1172,7 +1117,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 13,
-          "st": "2026-10-31T00:00:00+11:00",
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -1198,7 +1143,7 @@
         "1": {
           "fd": "High",
           "fbi": 27,
-          "st": "2026-10-31T00:00:00+11:00",
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -1223,8 +1168,8 @@
       "NSW_FW004": {
         "1": {
           "fd": "Moderate",
-          "fbi": 19,
-          "st": "2026-10-31T00:00:00+11:00",
+          "fbi": 21,
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -1249,8 +1194,8 @@
       "NSW_FW005": {
         "1": {
           "fd": "Moderate",
-          "fbi": 18,
-          "st": "2026-10-31T00:00:00+11:00",
+          "fbi": 19,
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -1275,8 +1220,8 @@
       "NSW_FW006": {
         "1": {
           "fd": "Moderate",
-          "fbi": 20,
-          "st": "2026-10-31T00:00:00+11:00",
+          "fbi": 19,
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -1302,7 +1247,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 22,
-          "st": "2026-10-31T00:00:00+11:00",
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -1327,8 +1272,8 @@
       "NSW_FW008": {
         "1": {
           "fd": "Moderate",
-          "fbi": 17,
-          "st": "2026-10-31T00:00:00+11:00",
+          "fbi": 16,
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -1354,7 +1299,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 19,
-          "st": "2026-10-31T00:00:00+11:00",
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -1380,7 +1325,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 17,
-          "st": "2026-10-31T00:00:00+11:00",
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -1406,7 +1351,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 13,
-          "st": "2026-10-31T00:00:00+11:00",
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -1432,7 +1377,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 16,
-          "st": "2026-10-31T00:00:00+11:00",
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -1458,7 +1403,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 19,
-          "st": "2026-10-31T00:00:00+11:00",
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -1484,7 +1429,7 @@
         "1": {
           "fd": "High",
           "fbi": 24,
-          "st": "2026-10-31T00:00:00+11:00",
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -1509,8 +1454,8 @@
       "NSW_FW015": {
         "1": {
           "fd": "High",
-          "fbi": 25,
-          "st": "2026-10-31T00:00:00+11:00",
+          "fbi": 24,
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -1535,8 +1480,8 @@
       "NSW_FW016": {
         "1": {
           "fd": "No Rating",
-          "fbi": 11,
-          "st": "2026-10-31T00:00:00+11:00",
+          "fbi": 10,
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -1562,7 +1507,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 13,
-          "st": "2026-10-31T00:00:00+11:00",
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -1587,8 +1532,8 @@
       "NSW_FW018": {
         "1": {
           "fd": "High",
-          "fbi": 30,
-          "st": "2026-10-31T00:00:00+11:00",
+          "fbi": 29,
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -1613,8 +1558,8 @@
       "NSW_FW019": {
         "1": {
           "fd": "High",
-          "fbi": 36,
-          "st": "2026-10-31T00:00:00+11:00",
+          "fbi": 35,
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -1640,7 +1585,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 17,
-          "st": "2026-10-31T00:00:00+11:00",
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -1666,7 +1611,7 @@
         "1": {
           "fd": "Moderate",
           "fbi": 15,
-          "st": "2026-10-31T00:00:00+11:00",
+          "st": "2026-10-31T05:12:00+11:00",
           "et": "2026-11-01T00:00:00+11:00"
         },
         "2": {
@@ -4758,7 +4703,7 @@
       }
     },
     "times": {
-      "1": "2026-10-31T00:00:00+11:00",
+      "1": "2026-10-31T05:12:00+11:00",
       "2": "2026-11-01T00:00:00+11:00",
       "3": "2026-11-02T00:00:00+11:00",
       "4": "2026-11-03T00:00:00+11:00"
