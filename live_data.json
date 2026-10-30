@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-30T08:23:01.433473+00:00",
-  "last_checked_utc": "2026-10-30T08:23:01.433473+00:00",
-  "warning_count": 19,
+  "generated_utc": "2026-10-30T08:53:05.550999+00:00",
+  "last_checked_utc": "2026-10-30T08:53:05.550999+00:00",
+  "warning_count": 20,
   "warnings": [
     {
       "pid": "",
@@ -238,23 +238,63 @@
       ],
       "severityCode": "CAN",
       "hazardPhase": "CAN"
+    },
+    {
+      "pid": "IDS21033",
+      "title": "Severe Thunderstorm Warning for North West Pastoral, North East Pastoral",
+      "type": "thunderstorm",
+      "state": "SA",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours.",
+      "issued": "2026-10-30T19:08:20+10:30",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "SA_PW013",
+          "description": "North West Pastoral",
+          "phase": "NEW"
+        },
+        {
+          "aac": "SA_PW014",
+          "description": "North East Pastoral",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
   "incidents": {
     "nsw": [
       {
-        "title": "Old Wallgrove Rd, Eastern Creek",
+        "title": "Bullecourt Rd, Corowa",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 30 Oct 2026 08:20:46 GMT",
-        "description": "Old Wallgrove Rd, Eastern Creek, NSW 2766",
-        "council": "Blacktown",
-        "lat": -33.811212,
-        "lng": 150.846354,
+        "updated": "Fri, 30 Oct 2026 08:48:40 GMT",
+        "description": "Bullecourt Rd, Corowa, NSW 2646",
+        "council": "Federation",
+        "lat": -35.9775959999999,
+        "lng": 146.390025,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "Lawson Cr, Griffith",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 30 Oct 2026 08:48:40 GMT",
+        "description": "Lawson Cr, Griffith, NSW 2680",
+        "council": "Griffith",
+        "lat": -34.2790229999999,
+        "lng": 146.032143,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -266,7 +306,7 @@
         "type": "Bush Fire",
         "size": "3 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 30 Oct 2026 08:20:46 GMT",
+        "updated": "Fri, 30 Oct 2026 08:48:40 GMT",
         "description": "THE WOOL RD, VINCENTIA 2540",
         "council": "Shoalhaven",
         "lat": -35.071014405,
@@ -323,6 +363,51 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-30T08:40:19+00:00",
+        "description": "WOOTTATING, SHIRE OF NORTHAM",
+        "lat": -31.8852,
+        "lng": 116.3963,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-30T08:37:37+00:00",
+        "description": "DERBY, SHIRE OF DERBY/WEST KIMBERLEY",
+        "lat": -17.3077,
+        "lng": 123.6472,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-30T08:37:31+00:00",
+        "description": "MUCHEA, SHIRE OF CHITTERING",
+        "lat": -31.5855,
+        "lng": 115.9574,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice PREPARE NOW - ST GEORGE RANGES",
         "alertLevel": "Advice",
@@ -1321,7 +1406,7 @@
       }
     ]
   },
-  "incident_count": 37,
+  "incident_count": 41,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
