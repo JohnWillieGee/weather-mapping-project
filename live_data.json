@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-30T03:23:00.277322+00:00",
-  "last_checked_utc": "2026-10-30T03:23:00.277322+00:00",
-  "warning_count": 18,
+  "generated_utc": "2026-10-30T03:53:00.922791+00:00",
+  "last_checked_utc": "2026-10-30T03:53:00.922791+00:00",
+  "warning_count": 19,
   "warnings": [
     {
       "pid": "",
@@ -194,40 +194,136 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "NEW"
+    },
+    {
+      "pid": "IDQ21033",
+      "title": "Severe Thunderstorm Warning for Central West, Channel Country, Maranoa and Warrego",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding, damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Longreach, Blackall, Isisford, Evesham Station and Ilfracombe.",
+      "issued": "2026-10-30T13:30:21+10:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "QLD_PW009",
+          "description": "Central West",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_PW011",
+          "description": "Channel Country",
+          "phase": "NEW"
+        },
+        {
+          "aac": "QLD_PW012",
+          "description": "Maranoa and Warrego",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
   "incidents": {
     "nsw": [
       {
-        "title": "LACHLAN VALLEY WAY, COWRA",
+        "title": "BELMONT SOUTH",
         "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
         "size": "0 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Fri, 30 Oct 2026 03:20:40 GMT",
-        "description": "LACHLAN VALLEY WAY, COWRA 2794",
-        "council": "Cowra",
-        "lat": -33.706794739,
-        "lng": 148.545089721,
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 30 Oct 2026 03:48:45 GMT",
+        "description": "BELMONT SOUTH 2280",
+        "council": "Lake Macquarie",
+        "lat": -33.051790001,
+        "lng": 151.659420001,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
       {
-        "title": "Lancelot Street, Belmont South",
+        "title": "OCEAN PARK RD, BELMONT SOUTH NSW",
         "alertLevel": "Advice",
         "status": "Being controlled",
         "type": "Bush Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 30 Oct 2026 03:20:40 GMT",
-        "description": "Lancelot Street, Belmont South, NSW 2280",
+        "updated": "Fri, 30 Oct 2026 03:48:45 GMT",
+        "description": "OCEAN PARK RD, BELMONT SOUTH NSW 2280",
         "council": "Lake Macquarie",
-        "lat": -33.051791,
-        "lng": 151.659428,
+        "lat": -33.043293433,
+        "lng": 151.670392353,
         "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "THE WOOL RD, VINCENTIA",
+        "alertLevel": "Advice",
+        "status": "Not yet controlled",
+        "type": "Bush Fire",
+        "size": "0 ha",
+        "agency": "Rural Fire Service",
+        "updated": "Fri, 30 Oct 2026 03:48:45 GMT",
+        "description": "THE WOOL RD, VINCENTIA 2540",
+        "council": "Shoalhaven",
+        "lat": -35.071014405,
+        "lng": 150.67111206,
+        "polys": [
+          [
+            [
+              150.66904954,
+              -35.070381375
+            ],
+            [
+              150.669477844,
+              -35.070143429
+            ],
+            [
+              150.669703892,
+              -35.0704170669999
+            ],
+            [
+              150.669763379,
+              -35.07084537
+            ],
+            [
+              150.6696682,
+              -35.0708929589999
+            ],
+            [
+              150.669561125,
+              -35.070952446
+            ],
+            [
+              150.669430254,
+              -35.070857267
+            ],
+            [
+              150.669299384,
+              -35.07079778
+            ],
+            [
+              150.669204206,
+              -35.070821575
+            ],
+            [
+              150.669192308,
+              -35.0708334719999
+            ],
+            [
+              150.669192308,
+              -35.070838231
+            ],
+            [
+              150.66904954,
+              -35.070381375
+            ]
+          ]
+        ],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       }
@@ -236,6 +332,115 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-30T03:37:42+00:00",
+        "description": "WILLAGEE, CITY OF MELVILLE",
+        "lat": -32.0535,
+        "lng": 115.7966,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice THREAT IS REDUCED - BOWELLING AND MUJA",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-30T03:24:40.736+00:00",
+        "description": "",
+        "lat": -33.424,
+        "lng": 116.3543,
+        "polys": [
+          [
+            [
+              116.328105,
+              -33.404205
+            ],
+            [
+              116.328029,
+              -33.420412
+            ],
+            [
+              116.330911,
+              -33.440286
+            ],
+            [
+              116.329874,
+              -33.441289
+            ],
+            [
+              116.331082,
+              -33.442095
+            ],
+            [
+              116.334319,
+              -33.447762
+            ],
+            [
+              116.359953,
+              -33.445737
+            ],
+            [
+              116.409933,
+              -33.444724
+            ],
+            [
+              116.402501,
+              -33.438205
+            ],
+            [
+              116.396812,
+              -33.433649
+            ],
+            [
+              116.384526,
+              -33.423458
+            ],
+            [
+              116.380888,
+              -33.420774
+            ],
+            [
+              116.372736,
+              -33.415834
+            ],
+            [
+              116.360341,
+              -33.408752
+            ],
+            [
+              116.34415,
+              -33.406653
+            ],
+            [
+              116.339296,
+              -33.405323
+            ],
+            [
+              116.336987,
+              -33.406559
+            ],
+            [
+              116.334028,
+              -33.405854
+            ],
+            [
+              116.328105,
+              -33.404205
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Structure Fire",
         "alertLevel": "",
@@ -743,100 +948,6 @@
         "sourceUrl": "https://www.emergency.wa.gov.au/"
       },
       {
-        "title": "Bushfire Advice MONITOR CONDITIONS - BOWELLING AND MUJA",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES-WARN",
-        "updated": "2026-10-29T07:09:19.623+00:00",
-        "description": "",
-        "lat": -33.424,
-        "lng": 116.3543,
-        "polys": [
-          [
-            [
-              116.328105,
-              -33.404205
-            ],
-            [
-              116.328029,
-              -33.420412
-            ],
-            [
-              116.330911,
-              -33.440286
-            ],
-            [
-              116.329874,
-              -33.441289
-            ],
-            [
-              116.331082,
-              -33.442095
-            ],
-            [
-              116.334319,
-              -33.447762
-            ],
-            [
-              116.359953,
-              -33.445737
-            ],
-            [
-              116.409933,
-              -33.444724
-            ],
-            [
-              116.402501,
-              -33.438205
-            ],
-            [
-              116.396812,
-              -33.433649
-            ],
-            [
-              116.384526,
-              -33.423458
-            ],
-            [
-              116.380888,
-              -33.420774
-            ],
-            [
-              116.372736,
-              -33.415834
-            ],
-            [
-              116.360341,
-              -33.408752
-            ],
-            [
-              116.34415,
-              -33.406653
-            ],
-            [
-              116.339296,
-              -33.405323
-            ],
-            [
-              116.336987,
-              -33.406559
-            ],
-            [
-              116.334028,
-              -33.405854
-            ],
-            [
-              116.328105,
-              -33.404205
-            ]
-          ]
-        ],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
         "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
@@ -1017,21 +1128,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-26T06:20:09+00:00",
-        "description": "DURACK, SHIRE OF WYNDHAM-EAST KIMBERLEY",
-        "lat": -16.571,
-        "lng": 128.206,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-26T04:37:47+00:00",
         "description": "LAKE ARGYLE, SHIRE OF WYNDHAM-EAST KIMBERLEY",
         "lat": -16.016,
@@ -1047,40 +1143,10 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-26T01:28:07+00:00",
-        "description": "ORD RIVER, SHIRE OF HALLS CREEK",
-        "lat": -17.175,
-        "lng": 127.88,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-26T00:29:31+00:00",
         "description": "GEEGULLY CREEK, SHIRE OF DERBY/WEST KIMBERLEY",
         "lat": -18.4611,
         "lng": 123.4065,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-25T04:04:58+00:00",
-        "description": "MUELLER RANGES, SHIRE OF DERBY/WEST KIMBERLEY",
-        "lat": -17.286,
-        "lng": 126.938,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1379,7 +1445,7 @@
       }
     ]
   },
-  "incident_count": 43,
+  "incident_count": 42,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
