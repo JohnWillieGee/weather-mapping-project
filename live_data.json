@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-30T09:53:04.311092+00:00",
-  "last_checked_utc": "2026-10-30T09:53:04.311092+00:00",
+  "generated_utc": "2026-10-30T10:23:02.898402+00:00",
+  "last_checked_utc": "2026-10-30T10:23:02.898402+00:00",
   "warning_count": 19,
   "warnings": [
     {
@@ -222,27 +222,27 @@
     },
     {
       "pid": "IDS21033",
-      "title": "Severe Thunderstorm Warning for North West Pastoral, North East Pastoral",
+      "title": "Cancellation of Severe Thunderstorm Warning for North West Pastoral, North East Pastoral",
       "type": "thunderstorm",
       "state": "SA",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours.",
-      "issued": "2026-10-30T19:08:20+10:30",
-      "cancelled": false,
+      "desc": "This warning is now cancelled. Thunderstorms are likely to persist for the next couple of hours but are no longer expected to be severe.",
+      "issued": "2026-10-30T20:22:18+10:30",
+      "cancelled": true,
       "areas": [
         {
           "aac": "SA_PW013",
           "description": "North West Pastoral",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "SA_PW014",
           "description": "North East Pastoral",
-          "phase": "NEW"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "NEW"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -255,11 +255,27 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 30 Oct 2026 09:49:00 GMT",
+        "updated": "Fri, 30 Oct 2026 10:20:57 GMT",
         "description": "Lawson Cr, Griffith, NSW 2680",
         "council": "Griffith",
         "lat": -34.2790229999999,
         "lng": 146.032143,
+        "polys": [],
+        "state": "NSW",
+        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
+      },
+      {
+        "title": "North St, West Kempsey",
+        "alertLevel": "Advice",
+        "status": "Being controlled",
+        "type": "Grass Fire",
+        "size": "0 ha",
+        "agency": "Fire and Rescue NSW",
+        "updated": "Fri, 30 Oct 2026 10:20:57 GMT",
+        "description": "North St, West Kempsey, NSW 2440",
+        "council": "Kempsey",
+        "lat": -31.0595739999999,
+        "lng": 152.823852,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -271,7 +287,7 @@
         "type": "Bush Fire",
         "size": "3 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 30 Oct 2026 09:49:00 GMT",
+        "updated": "Fri, 30 Oct 2026 10:20:57 GMT",
         "description": "THE WOOL RD, VINCENTIA 2540",
         "council": "Shoalhaven",
         "lat": -35.071014405,
@@ -279,44 +295,160 @@
         "polys": [
           [
             [
-              150.669629515,
-              -35.071680311
+              150.667325007,
+              -35.0727367919999
             ],
             [
-              150.668891882,
-              -35.070823705
+              150.6664684,
+              -35.073414938
             ],
             [
-              150.669510542,
-              -35.07053817
+              150.665790254,
+              -35.0739384189999
             ],
             [
-              150.669700899,
-              -35.070478684
+              150.665564206,
+              -35.074212057
             ],
             [
-              150.669879358,
-              -35.07053817
+              150.665171595,
+              -35.0748069219999
             ],
             [
-              150.67004592,
-              -35.0707166289999
+              150.664755189,
+              -35.0753304039999
             ],
             [
-              150.670152996,
-              -35.0708593969999
+              150.664291194,
+              -35.075794399
             ],
             [
-              150.670224381,
-              -35.0710735489999
+              150.663839096,
+              -35.076091832
             ],
             [
-              150.670212483,
-              -35.071370981
+              150.663494074,
+              -35.0762464969999
             ],
             [
-              150.669629515,
-              -35.071680311
+              150.663232334,
+              -35.0762464969999
+            ],
+            [
+              150.663065771,
+              -35.0761989069999
+            ],
+            [
+              150.66298249,
+              -35.0759966529999
+            ],
+            [
+              150.663101463,
+              -35.075770604
+            ],
+            [
+              150.663375101,
+              -35.075568351
+            ],
+            [
+              150.663660636,
+              -35.075342302
+            ],
+            [
+              150.663791507,
+              -35.075151945
+            ],
+            [
+              150.663886686,
+              -35.074890204
+            ],
+            [
+              150.663815302,
+              -35.074699847
+            ],
+            [
+              150.663672534,
+              -35.074485696
+            ],
+            [
+              150.663553561,
+              -35.074319133
+            ],
+            [
+              150.663613048,
+              -35.0742239539999
+            ],
+            [
+              150.663767712,
+              -35.0741644679999
+            ],
+            [
+              150.664196016,
+              -35.0741644679999
+            ],
+            [
+              150.66439827,
+              -35.0739146249999
+            ],
+            [
+              150.664493448,
+              -35.0735458079999
+            ],
+            [
+              150.664517242,
+              -35.073343554
+            ],
+            [
+              150.664457756,
+              -35.0731056079999
+            ],
+            [
+              150.664564832,
+              -35.07301043
+            ],
+            [
+              150.66466001,
+              -35.0729985319999
+            ],
+            [
+              150.664767086,
+              -35.072974738
+            ],
+            [
+              150.665052621,
+              -35.073034225
+            ],
+            [
+              150.665564206,
+              -35.0730461209999
+            ],
+            [
+              150.665742665,
+              -35.072950943
+            ],
+            [
+              150.665980611,
+              -35.072784381
+            ],
+            [
+              150.666397017,
+              -35.0726297159999
+            ],
+            [
+              150.666694449,
+              -35.072617819
+            ],
+            [
+              150.667075163,
+              -35.072724895
+            ],
+            [
+              150.667087061,
+              -35.072724895
+            ],
+            [
+              150.667325007,
+              -35.0727367919999
             ]
           ]
         ],
@@ -328,6 +460,71 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-30T10:18:15+00:00",
+        "description": "NORTH WEST CAPE, SHIRE OF EXMOUTH",
+        "lat": -22.0411,
+        "lng": 114.091,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire Advice MONITOR CONDITIONS - DERBY",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES-WARN",
+        "updated": "2026-10-30T09:47:47.806+00:00",
+        "description": "",
+        "lat": -17.307,
+        "lng": 123.6466,
+        "polys": [
+          [
+            [
+              123.649638,
+              -17.307664
+            ],
+            [
+              123.649638,
+              -17.307644
+            ],
+            [
+              123.649741,
+              -17.307127
+            ],
+            [
+              123.649301,
+              -17.306412
+            ],
+            [
+              123.645127,
+              -17.30602
+            ],
+            [
+              123.640017,
+              -17.305312
+            ],
+            [
+              123.640079,
+              -17.307793
+            ],
+            [
+              123.649638,
+              -17.307664
+            ]
+          ]
+        ],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice STAY INFORMED - WEDGECARRUP",
         "alertLevel": "Advice",
@@ -959,7 +1156,7 @@
       }
     ]
   },
-  "incident_count": 35,
+  "incident_count": 38,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
