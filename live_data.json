@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-30T13:53:08.154538+00:00",
-  "last_checked_utc": "2026-10-30T13:53:08.154538+00:00",
-  "warning_count": 20,
+  "generated_utc": "2026-10-30T14:23:04.498753+00:00",
+  "last_checked_utc": "2026-10-30T14:23:04.498753+00:00",
+  "warning_count": 18,
   "warnings": [
     {
       "pid": "",
@@ -188,80 +188,37 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Northern Goldfields and Upper Flinders, Herbert and Lower Burdekin, Central Coast and Whitsundays, Central Highlands and Coalfields, Central West",
+      "title": "Cancellation of Severe Thunderstorm Warning for Northern Goldfields and Upper Flinders, Herbert and Lower Burdekin, Central Coast and Whitsundays, Central Highlands and Coalfields, Central West",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Charters Towers, Pentland, Elgin Downs, Aberfoyle, Torrens Creek and Natal Downs. Severe thunderstorms are no longer occurring in the Maranoa and Warrego district and the warning for this district is CANCELLED. Heavy to locally intense rainfall has been reported east of Charleville this afternoon. 65 mm recorded at Joyl",
-      "issued": "2026-10-30T22:34:02+10:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-10-31T00:16:33+10:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "QLD_PW003",
           "description": "Northern Goldfields and Upper Flinders",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW005",
           "description": "Herbert and Lower Burdekin",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW006",
           "description": "Central Coast and Whitsundays",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW008",
           "description": "Central Highlands and Coalfields",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "QLD_PW009",
           "description": "Central West",
-          "phase": "REN"
-        }
-      ],
-      "severityCode": "STD",
-      "hazardPhase": "UPD"
-    },
-    {
-      "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Maranoa and Warrego",
-      "type": "thunderstorm",
-      "state": "QLD",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-30T22:34:02+10:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "QLD_PW012",
-          "description": "Maranoa and Warrego",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
-    },
-    {
-      "pid": "IDS21033",
-      "title": "Cancellation of Severe Thunderstorm Warning for North West Pastoral, North East Pastoral",
-      "type": "thunderstorm",
-      "state": "SA",
-      "link": "",
-      "desc": "This warning is now cancelled. Thunderstorms are likely to persist for the next couple of hours but are no longer expected to be severe.",
-      "issued": "2026-10-30T20:22:18+10:30",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "SA_PW013",
-          "description": "North West Pastoral",
-          "phase": "CAN"
-        },
-        {
-          "aac": "SA_PW014",
-          "description": "North East Pastoral",
           "phase": "CAN"
         }
       ],
@@ -273,29 +230,13 @@
   "incidents": {
     "nsw": [
       {
-        "title": "COOLAMON RD, THE GAP",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Rural Fire Service",
-        "updated": "Fri, 30 Oct 2026 13:48:45 GMT",
-        "description": "COOLAMON RD, THE GAP 2650",
-        "council": "Wagga Wagga",
-        "lat": -34.931079864,
-        "lng": 147.296066284,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
         "title": "Lawson Cr, Griffith",
         "alertLevel": "Advice",
         "status": "Not yet controlled",
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Fri, 30 Oct 2026 13:48:45 GMT",
+        "updated": "Fri, 30 Oct 2026 14:20:44 GMT",
         "description": "Lawson Cr, Griffith, NSW 2680",
         "council": "Griffith",
         "lat": -34.2790229999999,
@@ -311,7 +252,7 @@
         "type": "Bush Fire",
         "size": "9 ha",
         "agency": "Rural Fire Service",
-        "updated": "Fri, 30 Oct 2026 13:48:45 GMT",
+        "updated": "Fri, 30 Oct 2026 14:20:44 GMT",
         "description": "THE WOOL RD, VINCENTIA 2540",
         "council": "Shoalhaven",
         "lat": -35.071014405,
@@ -485,16 +426,46 @@
     "tas": [],
     "wa": [
       {
-        "title": "Structure Fire",
+        "title": "Bushfire",
         "alertLevel": "",
         "status": "active",
-        "type": "Structure Fire",
+        "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-30T13:19:55+00:00",
-        "description": "BRABHAM, CITY OF SWAN",
-        "lat": -31.826,
-        "lng": 115.9806,
+        "updated": "2026-10-30T14:13:52+00:00",
+        "description": "GERALDTON, CITY OF GREATER GERALDTON",
+        "lat": -28.7703,
+        "lng": 114.621,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-30T14:05:45+00:00",
+        "description": "FORRESTFIELD, CITY OF KALAMUNDA",
+        "lat": -31.9781,
+        "lng": 116.0281,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-30T14:00:12+00:00",
+        "description": "COLLIE, SHIRE OF COLLIE",
+        "lat": -33.3656,
+        "lng": 116.1542,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -697,21 +668,6 @@
         "description": "MARBLE BAR, SHIRE OF EAST PILBARA",
         "lat": -20.911,
         "lng": 119.902,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-30T06:43:13+00:00",
-        "description": "FORRESTFIELD, CITY OF KALAMUNDA",
-        "lat": -31.9781,
-        "lng": 116.0281,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -1055,7 +1011,7 @@
         "type": "Grass Fire",
         "size": "",
         "agency": "NTFRS",
-        "updated": "2026-10-30T11:43:19+00:00",
+        "updated": "2026-10-30T14:06:45+00:00",
         "description": "PATERSON ST, TENNANT CREEK",
         "lat": -19.6473,
         "lng": 134.1899,
