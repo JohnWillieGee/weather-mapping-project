@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-31T13:53:04.596123+00:00",
-  "last_checked_utc": "2026-10-31T13:53:04.596123+00:00",
+  "generated_utc": "2026-10-31T14:23:02.799401+00:00",
+  "last_checked_utc": "2026-10-31T14:23:02.799401+00:00",
   "warning_count": 18,
   "warnings": [
     {
@@ -179,37 +179,37 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Hunter, Central Tablelands, North West Slopes and Plains, Central West Slopes and Plains",
+      "title": "Cancellation of Severe Thunderstorm Warning for Hunter, Central Tablelands, North West Slopes and Plains, Central West Slopes and Plains",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Merriwa, Dunedoo and Gulgong.",
-      "issued": "2026-10-31T22:40:42+11:00",
-      "cancelled": false,
+      "desc": "This warning is now cancelled.",
+      "issued": "2026-11-01T01:05:16+11:00",
+      "cancelled": true,
       "areas": [
         {
           "aac": "NSW_PW003",
           "description": "Hunter",
-          "phase": "NEW"
+          "phase": "CAN"
         },
         {
           "aac": "NSW_PW008",
           "description": "Central Tablelands",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "NSW_PW011",
           "description": "North West Slopes and Plains",
-          "phase": "REN"
+          "phase": "CAN"
         },
         {
           "aac": "NSW_PW012",
           "description": "Central West Slopes and Plains",
-          "phase": "REN"
+          "phase": "CAN"
         }
       ],
-      "severityCode": "STD",
-      "hazardPhase": "UPD"
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     },
     {
       "pid": "IDQ21033",
@@ -241,7 +241,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 31 Oct 2026 13:48:55 GMT",
+        "updated": "Sat, 31 Oct 2026 14:20:40 GMT",
         "description": "Green St, Belmont South, NSW 2280",
         "council": "Lake Macquarie",
         "lat": -33.0463066099999,
@@ -306,6 +306,21 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-31T14:12:31+00:00",
+        "description": "BOULDER, CITY OF KALGOORLIE-BOULDER",
+        "lat": -30.7737,
+        "lng": 121.4851,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire",
         "alertLevel": "",
@@ -686,36 +701,6 @@
     ],
     "nt": [
       {
-        "title": "Grass and Scrub Fire - TRACK -, BELYUEN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Grass Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-31T11:45:52+00:00",
-        "description": "TRACK -, BELYUEN",
-        "lat": -12.5412,
-        "lng": 130.6754,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
-        "title": "Structure Fire - TRACK -, BELYUEN",
-        "alertLevel": "Advice",
-        "status": "active",
-        "type": "Structure Fire",
-        "size": "",
-        "agency": "NTFRS",
-        "updated": "2026-10-31T11:31:06+00:00",
-        "description": "TRACK -, BELYUEN",
-        "lat": -12.5412,
-        "lng": 130.6754,
-        "polys": [],
-        "state": "NT",
-        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
-      },
-      {
         "title": "Bushfire - Victoria Highway, BAINES COMPLEX",
         "alertLevel": "Advice",
         "status": "active",
@@ -817,7 +802,7 @@
       }
     ]
   },
-  "incident_count": 26,
+  "incident_count": 25,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
