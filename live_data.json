@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-31T09:53:08.260852+00:00",
-  "last_checked_utc": "2026-10-31T09:53:08.260852+00:00",
-  "warning_count": 20,
+  "generated_utc": "2026-10-31T10:23:03.351590+00:00",
+  "last_checked_utc": "2026-10-31T10:23:03.351590+00:00",
+  "warning_count": 21,
   "warnings": [
     {
       "pid": "",
@@ -188,12 +188,12 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Central Tablelands, North West Slopes and Plains, Central West Slopes and Plains, Upper Western",
+      "title": "Severe Thunderstorm Warning for Central Tablelands, North West Slopes and Plains, Central West Slopes and Plains",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Dubbo, Walgett, Parkes, Mungindi, Coonabarabran and Coonamble. Severe thunderstorms are no longer occurring in the Illawarra, South Coast, Southern Tablelands, South West Slopes, Riverina, Snowy Mountains and Australian Capital Territory districts and the warning for these districts is CANCELLED.",
-      "issued": "2026-10-31T18:52:02+11:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Dubbo, Coonabarabran, Coonamble, Wellington, Baradine and Dunedoo. Severe thunderstorms are no longer occurring in the Upper Western district and the warning for this district is CANCELLED.",
+      "issued": "2026-10-31T21:03:04+11:00",
       "cancelled": false,
       "areas": [
         {
@@ -210,11 +210,6 @@
           "aac": "NSW_PW012",
           "description": "Central West Slopes and Plains",
           "phase": "UPD"
-        },
-        {
-          "aac": "NSW_PW016",
-          "description": "Upper Western",
-          "phase": "UPD"
         }
       ],
       "severityCode": "STD",
@@ -222,47 +217,17 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Illawarra, South Coast, South West Slopes, Riverina, Southern Tablelands, Australian Capital Territory, Snowy Mountains",
+      "title": "Severe Thunderstorm Warning for Upper Western",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
       "desc": "",
-      "issued": "2026-10-31T18:52:02+11:00",
+      "issued": "2026-10-31T21:03:04+11:00",
       "cancelled": true,
       "areas": [
         {
-          "aac": "NSW_PW006",
-          "description": "Illawarra",
-          "phase": "CAN"
-        },
-        {
-          "aac": "NSW_PW007",
-          "description": "South Coast",
-          "phase": "CAN"
-        },
-        {
-          "aac": "NSW_PW013",
-          "description": "South West Slopes",
-          "phase": "CAN"
-        },
-        {
-          "aac": "NSW_PW014",
-          "description": "Riverina",
-          "phase": "CAN"
-        },
-        {
-          "aac": "NSW_PW009",
-          "description": "Southern Tablelands",
-          "phase": "CAN"
-        },
-        {
-          "aac": "NSW_PW017",
-          "description": "Australian Capital Territory",
-          "phase": "CAN"
-        },
-        {
-          "aac": "NSW_PW010",
-          "description": "Snowy Mountains",
+          "aac": "NSW_PW016",
+          "description": "Upper Western",
           "phase": "CAN"
         }
       ],
@@ -271,27 +236,41 @@
     },
     {
       "pid": "IDQ21033",
-      "title": "Severe Thunderstorm Warning for Maranoa and Warrego, Darling Downs and Granite Belt",
+      "title": "Severe Thunderstorm Warning for Maranoa and Warrego",
       "type": "thunderstorm",
       "state": "QLD",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Hebel, Bollon and Dirranbandi.",
-      "issued": "2026-10-31T18:40:39+10:00",
+      "desc": "Severe thunderstorms are likely to produce large hailstones, heavy rainfall that may lead to flash flooding and damaging winds in the warning area over the next several hours. Locations which may be affected include Mitchell and Bollon. Severe thunderstorms are no longer occurring in the Darling Downs and Granite Belt district and the warning for this district is CANCELLED.",
+      "issued": "2026-10-31T20:00:03+10:00",
       "cancelled": false,
       "areas": [
         {
           "aac": "QLD_PW012",
           "description": "Maranoa and Warrego",
           "phase": "REN"
-        },
-        {
-          "aac": "QLD_PW013",
-          "description": "Darling Downs and Granite Belt",
-          "phase": "REN"
         }
       ],
       "severityCode": "STD",
       "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDQ21033",
+      "title": "Severe Thunderstorm Warning for Darling Downs and Granite Belt",
+      "type": "thunderstorm",
+      "state": "QLD",
+      "link": "",
+      "desc": "",
+      "issued": "2026-10-31T20:00:03+10:00",
+      "cancelled": true,
+      "areas": [
+        {
+          "aac": "QLD_PW013",
+          "description": "Darling Downs and Granite Belt",
+          "phase": "CAN"
+        }
+      ],
+      "severityCode": "CAN",
+      "hazardPhase": "CAN"
     }
   ],
   "fetch_errors": {},
@@ -304,7 +283,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 31 Oct 2026 09:48:40 GMT",
+        "updated": "Sat, 31 Oct 2026 10:20:40 GMT",
         "description": "Banna Av, Griffith, NSW 2680",
         "council": "Griffith",
         "lat": -34.2889069999999,
@@ -320,7 +299,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 31 Oct 2026 09:48:40 GMT",
+        "updated": "Sat, 31 Oct 2026 10:20:40 GMT",
         "description": "Captain Cook Dr, Willmot, NSW 2770",
         "council": "Blacktown",
         "lat": -33.7207769999999,
@@ -336,7 +315,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 31 Oct 2026 09:48:40 GMT",
+        "updated": "Sat, 31 Oct 2026 10:20:40 GMT",
         "description": "Green St, Belmont South, NSW 2280",
         "council": "Lake Macquarie",
         "lat": -33.0463066099999,
@@ -357,7 +336,37 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-31T08:54:44+00:00",
+        "updated": "2026-10-31T10:09:26+00:00",
+        "description": "SOUTH KALGOORLIE, CITY OF KALGOORLIE-BOULDER",
+        "lat": -30.7734,
+        "lng": 121.4782,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Structure Fire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-31T10:07:04+00:00",
+        "description": "ROCKINGHAM, CITY OF ROCKINGHAM",
+        "lat": -32.2735,
+        "lng": 115.7509,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-31T09:46:45+00:00",
         "description": "PURNULULU, SHIRE OF HALLS CREEK",
         "lat": -17.3079,
         "lng": 128.7434,
@@ -573,21 +582,6 @@
         "description": "LITTLE SANDY DESERT, SHIRE OF WILUNA",
         "lat": -25.3639,
         "lng": 124.6597,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
-        "updated": "2026-10-29T12:26:24+00:00",
-        "description": "BANNISTER, SHIRE OF WANDERING",
-        "lat": -32.6803,
-        "lng": 116.5366,
         "polys": [],
         "state": "WA",
         "sourceUrl": "https://www.emergency.wa.gov.au/"
@@ -846,7 +840,7 @@
       }
     ]
   },
-  "incident_count": 27,
+  "incident_count": 28,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
