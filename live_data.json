@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-31T11:23:05.270934+00:00",
-  "last_checked_utc": "2026-10-31T11:23:05.270934+00:00",
-  "warning_count": 21,
+  "generated_utc": "2026-10-31T11:53:06.142444+00:00",
+  "last_checked_utc": "2026-10-31T11:53:06.142444+00:00",
+  "warning_count": 20,
   "warnings": [
     {
       "pid": "",
@@ -188,51 +188,37 @@
     },
     {
       "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Central Tablelands, North West Slopes and Plains, Central West Slopes and Plains",
+      "title": "Severe Thunderstorm Warning for Hunter, Central Tablelands, North West Slopes and Plains, Central West Slopes and Plains",
       "type": "thunderstorm",
       "state": "NSW",
       "link": "",
-      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Dubbo, Coonabarabran, Coonamble, Wellington, Baradine and Dunedoo. Severe thunderstorms are no longer occurring in the Upper Western district and the warning for this district is CANCELLED.",
-      "issued": "2026-10-31T21:03:04+11:00",
+      "desc": "Severe thunderstorms are likely to produce damaging winds, large hailstones and heavy rainfall that may lead to flash flooding in the warning area over the next several hours. Locations which may be affected include Merriwa, Dunedoo and Gulgong.",
+      "issued": "2026-10-31T22:40:42+11:00",
       "cancelled": false,
       "areas": [
         {
+          "aac": "NSW_PW003",
+          "description": "Hunter",
+          "phase": "NEW"
+        },
+        {
           "aac": "NSW_PW008",
           "description": "Central Tablelands",
-          "phase": "UPD"
+          "phase": "REN"
         },
         {
           "aac": "NSW_PW011",
           "description": "North West Slopes and Plains",
-          "phase": "UPD"
+          "phase": "REN"
         },
         {
           "aac": "NSW_PW012",
           "description": "Central West Slopes and Plains",
-          "phase": "UPD"
+          "phase": "REN"
         }
       ],
       "severityCode": "STD",
       "hazardPhase": "UPD"
-    },
-    {
-      "pid": "IDN21033",
-      "title": "Severe Thunderstorm Warning for Upper Western",
-      "type": "thunderstorm",
-      "state": "NSW",
-      "link": "",
-      "desc": "",
-      "issued": "2026-10-31T21:03:04+11:00",
-      "cancelled": true,
-      "areas": [
-        {
-          "aac": "NSW_PW016",
-          "description": "Upper Western",
-          "phase": "CAN"
-        }
-      ],
-      "severityCode": "CAN",
-      "hazardPhase": "CAN"
     },
     {
       "pid": "IDQ21033",
@@ -283,7 +269,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 31 Oct 2026 11:20:55 GMT",
+        "updated": "Sat, 31 Oct 2026 11:48:40 GMT",
         "description": "Banna Av, Griffith, NSW 2680",
         "council": "Griffith",
         "lat": -34.2889069999999,
@@ -299,7 +285,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 31 Oct 2026 11:20:55 GMT",
+        "updated": "Sat, 31 Oct 2026 11:48:40 GMT",
         "description": "Captain Cook Dr, Willmot, NSW 2770",
         "council": "Blacktown",
         "lat": -33.7207769999999,
@@ -315,7 +301,7 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 31 Oct 2026 11:20:55 GMT",
+        "updated": "Sat, 31 Oct 2026 11:48:40 GMT",
         "description": "Green St, Belmont South, NSW 2280",
         "council": "Lake Macquarie",
         "lat": -33.0463066099999,
@@ -380,6 +366,21 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Bushfire",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Bush Fire",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-31T11:33:28+00:00",
+        "description": "KENWICK, CITY OF GOSNELLS",
+        "lat": -32.0278,
+        "lng": 115.9821,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Structure Fire",
         "alertLevel": "",
@@ -775,6 +776,51 @@
     ],
     "nt": [
       {
+        "title": "Grass and Scrub Fire - TRACK -, BELYUEN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-31T11:45:52+00:00",
+        "description": "TRACK -, BELYUEN",
+        "lat": -12.5412,
+        "lng": 130.6754,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Grass and Scrub Fire - GOLDING RD, ACACIA HILLS",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-31T11:41:36+00:00",
+        "description": "GOLDING RD, ACACIA HILLS",
+        "lat": -12.7517,
+        "lng": 131.1666,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
+        "title": "Structure Fire - TRACK -, BELYUEN",
+        "alertLevel": "Advice",
+        "status": "active",
+        "type": "Structure Fire",
+        "size": "",
+        "agency": "NTFRS",
+        "updated": "2026-10-31T11:31:06+00:00",
+        "description": "TRACK -, BELYUEN",
+        "lat": -12.5412,
+        "lng": 130.6754,
+        "polys": [],
+        "state": "NT",
+        "sourceUrl": "https://pfes.nt.gov.au/fire-and-rescue"
+      },
+      {
         "title": "Bushfire - Victoria Highway, BAINES COMPLEX",
         "alertLevel": "Advice",
         "status": "active",
@@ -876,7 +922,7 @@
       }
     ]
   },
-  "incident_count": 27,
+  "incident_count": 31,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
