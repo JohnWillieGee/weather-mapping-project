@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-31T03:53:08.073201+00:00",
-  "last_checked_utc": "2026-10-31T03:53:08.073201+00:00",
-  "warning_count": 18,
+  "generated_utc": "2026-10-31T04:23:03.091919+00:00",
+  "last_checked_utc": "2026-10-31T04:23:03.091919+00:00",
+  "warning_count": 19,
   "warnings": [
     {
       "pid": "",
@@ -194,23 +194,92 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "REN"
+    },
+    {
+      "pid": "IDN21033",
+      "title": "Severe Thunderstorm Warning for South Coast, Central Tablelands, Southern Tablelands, North West Slopes and Plains, Central West Slopes and Plains, South West Slopes, Riverina, Upper Western, Lower Western, Snowy Mountains, Australian Capital Territory",
+      "type": "thunderstorm",
+      "state": "NSW",
+      "link": "",
+      "desc": "Severe thunderstorms are likely to produce damaging winds and large hailstones in the warning area over the next several hours. Locations which may be affected include Canberra, Dubbo, Bourke, Yass, Walgett, Parkes, Coonamble, Nyngan, Young, Tumbarumba, Lightning Ridge and Braidwood.",
+      "issued": "2026-10-31T15:19:02+11:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NSW_PW007",
+          "description": "South Coast",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_PW008",
+          "description": "Central Tablelands",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_PW009",
+          "description": "Southern Tablelands",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_PW011",
+          "description": "North West Slopes and Plains",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_PW012",
+          "description": "Central West Slopes and Plains",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_PW013",
+          "description": "South West Slopes",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_PW014",
+          "description": "Riverina",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_PW016",
+          "description": "Upper Western",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_PW015",
+          "description": "Lower Western",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_PW010",
+          "description": "Snowy Mountains",
+          "phase": "NEW"
+        },
+        {
+          "aac": "NSW_PW017",
+          "description": "Australian Capital Territory",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
   "incidents": {
     "nsw": [
       {
-        "title": "Pacific Hwy, Little Pelican",
+        "title": "Lachlan St, South Kempsey",
         "alertLevel": "Advice",
         "status": "Being controlled",
-        "type": "Bush Fire",
+        "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 31 Oct 2026 03:48:40 GMT",
-        "description": "Pacific Hwy, Little Pelican, NSW 2281",
-        "council": "Lake Macquarie",
-        "lat": -33.08217,
-        "lng": 151.644531,
+        "updated": "Sat, 31 Oct 2026 04:20:40 GMT",
+        "description": "Lachlan St, South Kempsey, NSW 2440",
+        "council": "Kempsey",
+        "lat": -31.0992409999999,
+        "lng": 152.836954,
         "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
@@ -222,12 +291,55 @@
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 31 Oct 2026 03:48:40 GMT",
+        "updated": "Sat, 31 Oct 2026 04:20:40 GMT",
         "description": "RICHARDS RD, GOOLGOWI 2652",
         "council": "Carrathool",
         "lat": -33.826190949,
         "lng": 145.951248169,
-        "polys": [],
+        "polys": [
+          [
+            [
+              145.934968191,
+              -33.82329879
+            ],
+            [
+              145.947757795,
+              -33.8204434359999
+            ],
+            [
+              145.95418234,
+              -33.8371591499999
+            ],
+            [
+              145.958286909,
+              -33.838229907
+            ],
+            [
+              145.959595613,
+              -33.8401334759999
+            ],
+            [
+              145.959714586,
+              -33.8406093679999
+            ],
+            [
+              145.944664496,
+              -33.835493527
+            ],
+            [
+              145.934730246,
+              -33.824072115
+            ],
+            [
+              145.934849218,
+              -33.823239303
+            ],
+            [
+              145.934968191,
+              -33.82329879
+            ]
+          ]
+        ],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
@@ -238,7 +350,7 @@
         "type": "Bush Fire",
         "size": "9 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 31 Oct 2026 03:48:40 GMT",
+        "updated": "Sat, 31 Oct 2026 04:20:40 GMT",
         "description": "THE WOOL RD, VINCENTIA 2540",
         "council": "Shoalhaven",
         "lat": -35.071014405,
@@ -852,6 +964,21 @@
     "act": [],
     "sa": [
       {
+        "title": "GRASS FIRE",
+        "alertLevel": "",
+        "status": "active",
+        "type": "Grass Fire",
+        "size": "",
+        "agency": "CFS",
+        "updated": "2026-10-31T03:23:00+00:00",
+        "description": "128 PAECH RD, MT BARKER",
+        "lat": -35.0987,
+        "lng": 138.8871,
+        "polys": [],
+        "state": "SA",
+        "sourceUrl": "https://www.cfs.sa.gov.au/home/warnings-and-incidents/"
+      },
+      {
         "title": "STRUCTURE FIRE",
         "alertLevel": "",
         "status": "active",
@@ -868,7 +995,7 @@
       }
     ]
   },
-  "incident_count": 29,
+  "incident_count": 30,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
