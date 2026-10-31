@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-31T04:23:03.091919+00:00",
-  "last_checked_utc": "2026-10-31T04:23:03.091919+00:00",
-  "warning_count": 19,
+  "generated_utc": "2026-10-31T04:53:02.538338+00:00",
+  "last_checked_utc": "2026-10-31T04:53:02.538338+00:00",
+  "warning_count": 20,
   "warnings": [
     {
       "pid": "",
@@ -263,83 +263,43 @@
       ],
       "severityCode": "STD",
       "hazardPhase": "NEW"
+    },
+    {
+      "pid": "IDN21036",
+      "title": "Severe Thunderstorm Warning - Canberra for Greater Canberra and Surrounds",
+      "type": "thunderstorm",
+      "state": "NSW",
+      "link": "",
+      "desc": "The Bureau of Meteorology warns that, at 3:30 pm, a severe thunderstorm likely to produce damaging winds and large hailstones was detected near Adjungbilly, Burrinjuck, Wee Jasper and the area between Tumut and Wee Jasper. This thunderstorm is moving towards the east. It is forecast to affect Belconnen, Canberra Civic, Queanbeyan, Hall, Gungahlin, Canberra Airport, Woden Valley, South Canberra and Weston Creek by 4:30 pm.",
+      "issued": "2026-10-31T15:29:49+11:00",
+      "cancelled": false,
+      "areas": [
+        {
+          "aac": "NSW_ME009",
+          "description": "Greater Canberra and Surrounds",
+          "phase": "NEW"
+        }
+      ],
+      "severityCode": "STD",
+      "hazardPhase": "NEW"
     }
   ],
   "fetch_errors": {},
   "incidents": {
     "nsw": [
       {
-        "title": "Lachlan St, South Kempsey",
-        "alertLevel": "Advice",
-        "status": "Being controlled",
-        "type": "Grass Fire",
-        "size": "0 ha",
-        "agency": "Fire and Rescue NSW",
-        "updated": "Sat, 31 Oct 2026 04:20:40 GMT",
-        "description": "Lachlan St, South Kempsey, NSW 2440",
-        "council": "Kempsey",
-        "lat": -31.0992409999999,
-        "lng": 152.836954,
-        "polys": [],
-        "state": "NSW",
-        "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
-      },
-      {
-        "title": "RICHARDS RD, GOOLGOWI",
+        "title": "CRAWFORD RD, HANWOOD",
         "alertLevel": "Advice",
         "status": "Not yet controlled",
         "type": "Grass Fire",
         "size": "0 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 31 Oct 2026 04:20:40 GMT",
-        "description": "RICHARDS RD, GOOLGOWI 2652",
-        "council": "Carrathool",
-        "lat": -33.826190949,
-        "lng": 145.951248169,
-        "polys": [
-          [
-            [
-              145.934968191,
-              -33.82329879
-            ],
-            [
-              145.947757795,
-              -33.8204434359999
-            ],
-            [
-              145.95418234,
-              -33.8371591499999
-            ],
-            [
-              145.958286909,
-              -33.838229907
-            ],
-            [
-              145.959595613,
-              -33.8401334759999
-            ],
-            [
-              145.959714586,
-              -33.8406093679999
-            ],
-            [
-              145.944664496,
-              -33.835493527
-            ],
-            [
-              145.934730246,
-              -33.824072115
-            ],
-            [
-              145.934849218,
-              -33.823239303
-            ],
-            [
-              145.934968191,
-              -33.82329879
-            ]
-          ]
-        ],
+        "updated": "Sat, 31 Oct 2026 04:48:45 GMT",
+        "description": "CRAWFORD RD, HANWOOD 2680",
+        "council": "Griffith",
+        "lat": -34.3810234069999,
+        "lng": 146.02835083,
+        "polys": [],
         "state": "NSW",
         "sourceUrl": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me"
       },
@@ -350,7 +310,7 @@
         "type": "Bush Fire",
         "size": "9 ha",
         "agency": "Rural Fire Service",
-        "updated": "Sat, 31 Oct 2026 04:20:40 GMT",
+        "updated": "Sat, 31 Oct 2026 04:48:45 GMT",
         "description": "THE WOOL RD, VINCENTIA 2540",
         "council": "Shoalhaven",
         "lat": -35.071014405,
@@ -419,6 +379,21 @@
     "qld": [],
     "tas": [],
     "wa": [
+      {
+        "title": "Fuel Leak",
+        "alertLevel": "",
+        "status": "active",
+        "type": "HazMat",
+        "size": "",
+        "agency": "DFES",
+        "updated": "2026-10-31T04:39:06+00:00",
+        "description": "KWINANA TOWN CENTRE, CITY OF KWINANA",
+        "lat": -32.2441,
+        "lng": 115.8121,
+        "polys": [],
+        "state": "WA",
+        "sourceUrl": "https://www.emergency.wa.gov.au/"
+      },
       {
         "title": "Bushfire Advice STAY INFORMED - WEDGECARRUP",
         "alertLevel": "Advice",
@@ -733,21 +708,6 @@
         "type": "Bush Fire",
         "size": "",
         "agency": "DFES",
-        "updated": "2026-10-29T05:53:20+00:00",
-        "description": "ROLEYSTONE, CITY OF ARMADALE",
-        "lat": -32.1431,
-        "lng": 116.0714,
-        "polys": [],
-        "state": "WA",
-        "sourceUrl": "https://www.emergency.wa.gov.au/"
-      },
-      {
-        "title": "Bushfire",
-        "alertLevel": "",
-        "status": "active",
-        "type": "Bush Fire",
-        "size": "",
-        "agency": "DFES",
         "updated": "2026-10-28T09:04:22+00:00",
         "description": "NEALE, SHIRE OF LAVERTON",
         "lat": -28.7431,
@@ -995,7 +955,7 @@
       }
     ]
   },
-  "incident_count": 30,
+  "incident_count": 29,
   "nsw_alert_zones": [],
   "wa_feed_method": "emergencyapi",
   "fdr": {
