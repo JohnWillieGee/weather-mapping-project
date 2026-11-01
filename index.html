@@ -1232,7 +1232,10 @@ body.wall-mode .risk-tooltip{display:none !important;}
 <script>
 
 // \u2500\u2500 ABC LR ALERT SYSTEM \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
-var ABC_ALERTS_URL = 'https://raw.githubusercontent.com/JohnWillieGee/weather-mapping-project/main/manual_alerts.json';
+// All live data, radar images, sites and manual alerts are read from this ONE place. To move the data repository,
+// change this line (the repository must be public; the address must end with a slash).
+var DATA_BASE = 'https://raw.githubusercontent.com/JohnWillieGee/weather-data/main/';
+var ABC_ALERTS_URL = DATA_BASE + 'manual_alerts.json';
 var abcAlerts = [];          // parsed alert objects from JSON
 var abcLayer = null;         // L.layerGroup for rings + labels
 var abcRingVisible = {};     // { reasonKey: true/false } per reason group
@@ -1475,7 +1478,7 @@ function renderAbcPanel() {
 }
 // \u2500\u2500 END ABC LR ALERT SYSTEM \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 var BAI_SITES = [];   // loaded at start-up from SITES_URL (see loadSites)
-var SITES_URL = 'https://raw.githubusercontent.com/JohnWillieGee/weather-mapping-project/main/sites.json';
+var SITES_URL = DATA_BASE + 'sites.json';
 var sitesLoaded = false;
 function normaliseSite(s) {
   s.sv = s.sv || []; s.broadcasters = s.broadcasters || []; s.bai_svc_names = s.bai_svc_names || [];
@@ -1692,7 +1695,7 @@ function runDiagnostics(){
   el.innerHTML = '&#8635; Testing live_data.json...';
 
   var start = Date.now();
-  fetch('https://raw.githubusercontent.com/JohnWillieGee/weather-mapping-project/main/live_data.json?t=' + Date.now())
+  fetch(DATA_BASE + 'live_data.json?t=' + Date.now())
     .then(function(r){
       if(!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
@@ -2227,12 +2230,12 @@ function refreshRadarLayers(){
 }
 
 
-// \u2500\u2500 BOM RADAR LAYER (GitHub Pages \u2014 weather-mapping-project) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+// \u2500\u2500 BOM RADAR LAYER (images served from the data repository) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 // radar_meta.json structure:
 //   { "products": { "IDR00004": { "name":..., "bounds":[S,W,N,E], "frames":[{"file":"radar/IDRxxx_NN.png","utc":"ISO"},...] }, ... } }
 // Files are served from repo root: base URL + frame.file (which already includes "radar/" prefix)
-var BOM_RADAR_META_URL = 'https://raw.githubusercontent.com/JohnWillieGee/weather-mapping-project/main/radar/radar_meta.json';
-var BOM_RADAR_REPO_URL = 'https://raw.githubusercontent.com/JohnWillieGee/weather-mapping-project/main/';
+var BOM_RADAR_META_URL = DATA_BASE + 'radar/radar_meta.json';
+var BOM_RADAR_REPO_URL = DATA_BASE;
 var BOM_RADAR_OPACITY  = 0.75;
 
 var bomRadarVisible    = false;
@@ -2753,7 +2756,7 @@ function fetchFDR(){
 
   // Try live_data.json first \u2014 the Python script now includes an "fdr" key
   // populated from the repo CSV via GitHub Actions.
-  fetch('https://raw.githubusercontent.com/JohnWillieGee/weather-mapping-project/main/live_data.json?t=' + Date.now())
+  fetch(DATA_BASE + 'live_data.json?t=' + Date.now())
     .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
     .then(function(data){
       if(data.fdr && data.fdr.ratings && Object.keys(data.fdr.ratings).length > 0){
@@ -3291,7 +3294,7 @@ function fetchBOMWarnings() {
 
   // Read from live_data.json \u2014 written every 15 min by GitHub Action (no CORS issues)
   // Also loads QLD and SA incident data from the same file (server-side fetched)
-  var liveUrl = 'https://raw.githubusercontent.com/JohnWillieGee/weather-mapping-project/main/live_data.json?t=' + Date.now(); // cache-bust
+  var liveUrl = DATA_BASE + 'live_data.json?t=' + Date.now(); // cache-bust
   fetch(liveUrl)
     .then(function(r){
       if(!r.ok) throw new Error('HTTP ' + r.status);
