@@ -228,6 +228,27 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 /* bom radar */
 #bom-radar-controls{position:absolute;bottom:70px;left:50%;transform:translateX(-50%);z-index:1000;background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:6px 10px;display:flex;align-items:center;gap:8px;box-shadow:0 2px 12px var(--shadow);font-size:10px;color:var(--text2);white-space:nowrap;}
 #bom-radar-controls.hidden{display:none;}
+#radarcov-panel{position:absolute;bottom:112px;right:12px;max-height:calc(100% - 200px);overflow-y:auto;z-index:1000;width:300px;background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:8px 10px;box-shadow:0 2px 12px var(--shadow);font-size:10px;color:var(--text2);}
+#radarcov-panel.hidden{display:none;}
+#radarcov-panel .rc-title{font-weight:700;color:var(--text);margin-bottom:6px;font-size:11px;}
+#radarcov-panel .rc-row{display:flex;align-items:center;gap:6px;margin-bottom:5px;}
+#radarcov-panel .rc-row > span{width:50px;flex-shrink:0;color:var(--text3);}
+#radarcov-panel .rc-row .sp-theme-seg{flex:1;}
+#rc-stats{line-height:1.5;color:var(--text);margin:6px 0 4px;}
+#rc-note{font-size:9px;color:var(--text3);line-height:1.4;margin-bottom:6px;}
+#rc-listbtn{background:var(--panel2);border:1px solid var(--border);color:var(--text2);border-radius:4px;padding:3px 8px;cursor:pointer;font-size:10px;}
+#rc-list{max-height:170px;overflow-y:auto;margin-top:6px;}
+.rc-item{display:flex;justify-content:space-between;gap:8px;padding:3px 4px;border-bottom:1px solid var(--border);cursor:pointer;}
+.rc-item:hover{background:var(--panel2);} .rc-item i{color:var(--text3);font-style:normal;margin-left:3px;}
+.map-btn.radarcov-on{background:#4c6ef5;border-color:#4c6ef5;color:#fff;font-weight:500;}
+body.wall-mode #radarcov-panel{display:none !important;}
+@media (max-width:700px){#radarcov-panel{width:calc(100vw - 24px);}}
+.rdr-opacity{display:flex;align-items:center;gap:5px;color:var(--text3);font-size:9px;}
+.rdr-opacity input[type=range]{width:70px;height:4px;accent-color:#0099ff;cursor:pointer;}
+.rdr-opacity span:last-child{font-family:monospace;color:#0099ff;min-width:28px;text-align:right;}
+#bom-radar-controls,#radar-controls{max-width:calc(100vw - 12px);}
+@media (max-width:700px){#bom-radar-product-label,#bom-radar-age-label,#radar-age-label,.rdr-opacity > span:first-child{display:none;}
+#bom-radar-controls,#radar-controls{flex-wrap:wrap;justify-content:center;white-space:normal;width:max-content;}}
 #bom-radar-play-btn{background:#0077cc;border:none;color:#fff;border-radius:4px;width:24px;height:24px;cursor:pointer;font-size:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 #bom-radar-product-label{font-size:9px;color:#0099ff;font-weight:700;min-width:60px;}
 #bom-radar-timeline{display:flex;align-items:center;gap:3px;}
@@ -884,23 +905,36 @@ body.wall-mode .risk-tooltip{display:none !important;}
       <button class="map-btn" id="btn-incidents" onclick="toggleIncidentsLayer()">&#9888; Incidents</button>
       <button class="map-btn" id="btn-radar" onclick="toggleRadarLayer()">&#127783; Radar</button>
       <button class="map-btn" id="btn-bom-radar" onclick="toggleBomRadarLayer()">&#127783; BOM Radar</button>
+      <button class="map-btn" id="btn-radarcov" onclick="toggleRadarCoverage()" title="Where BOM radars can see rain, and which sites are outside that">&#9678; Radar Coverage</button>
       <button class="map-btn" id="btn-lightning" onclick="toggleLightning()">&#9889; Lightning</button>
       <button class="map-btn" id="btn-windy" onclick="toggleWindy()">&#127788; Wind</button>
       <button class="map-btn" id="btn-ducting" onclick="openDucting()">&#128225; Ducting</button>
     </div>
     <div id="map"></div>
+    <div id="radarcov-panel" class="hidden">
+      <div class="rc-title">Radar coverage</div>
+      <div class="rc-row"><span>Range</span><div class="sp-theme-seg"><button class="sp-th-opt" id="rc-r64" onclick="radarCovSet('range',64)">64 km</button><button class="sp-th-opt" id="rc-r128" onclick="radarCovSet('range',128)">128</button><button class="sp-th-opt" id="rc-r256" onclick="radarCovSet('range',256)">256</button><button class="sp-th-opt" id="rc-r512" onclick="radarCovSet('range',512)">512</button></div></div>
+      <div class="rc-row"><span>Radars</span><div class="sp-theme-seg"><button class="sp-th-opt" id="rc-s-wt" onclick="radarCovSet('src','wt')">WatchTower</button><button class="sp-th-opt" id="rc-s-all" onclick="radarCovSet('src','all')">+ BOM-only</button></div></div>
+      <div class="rc-row"><span>Highlight</span><div class="sp-theme-seg"><button class="sp-th-opt" id="rc-h-gaps" onclick="radarCovSet('hi','gaps')">No radar</button><button class="sp-th-opt" id="rc-h-single" onclick="radarCovSet('hi','single')">One radar</button><button class="sp-th-opt" id="rc-h-off" onclick="radarCovSet('hi','off')">Off</button></div></div>
+      <div id="rc-stats">Loading radar list...</div>
+      <div id="rc-note"></div>
+      <button id="rc-listbtn" onclick="radarCovToggleList()">Show list</button>
+      <div id="rc-list"></div>
+    </div>
     <div id="bom-radar-controls" class="hidden">
       <button id="bom-radar-play-btn" onclick="toggleBomRadarPlay()" title="Play/Pause">&#9654;</button>
       <span id="bom-radar-product-label">BOM</span>
       <div id="bom-radar-timeline"></div>
       <span id="bom-radar-time-label">--:--</span>
       <span id="bom-radar-age-label">BOM Radar</span>
+      <label class="rdr-opacity" title="Radar opacity"><span>Opacity</span><input type="range" id="bom-radar-opacity" min="10" max="100" step="5" value="75" oninput="setBomRadarOpacity(this.value)" aria-label="BOM radar opacity"><span id="bom-radar-opacity-val">75%</span></label>
     </div>
     <div id="radar-controls" class="hidden">
       <button id="radar-play-btn" onclick="toggleRadarPlay()" title="Play/Pause">&#9654;</button>
       <div id="radar-timeline"></div>
       <span id="radar-time-label">--:--</span>
       <span id="radar-age-label">BOM Radar</span>
+      <label class="rdr-opacity" title="Radar opacity"><span>Opacity</span><input type="range" id="radar-opacity" min="10" max="100" step="5" value="70" oninput="setRadarOpacity(this.value)" aria-label="Radar opacity"><span id="radar-opacity-val">70%</span></label>
     </div>
     <div id="lightning-panel">
       <div id="lightning-panel-head" onmousedown="startDragLightning(event)">
@@ -1488,6 +1522,139 @@ function normaliseSite(s) {
   s.sv.forEach(function(v) { v.mod = v.mod || ''; v.freq = v.freq || ''; v.licensee = v.licensee || ''; v.callsign = v.callsign || ''; });
   return s;
 }
+// ---- Radar coverage layer ---------------------------------------------------------------------------------------------
+// Where BOM's radars can see rain, and which of your sites sit outside that. Radar positions come from radar_meta.json (each
+// radar's image extent is stored there), so there is no extra data feed. Rings show range in principle only: hills blocking the
+// beam and the beam rising with distance are not modelled.
+var RADARCOV_STALE_MIN = 25;     // a radar whose newest frame is this far behind the freshest radar is treated as not reporting
+// Real BOM radars that WatchTower's radar layer does not download (positions from BOM's site database). Shown dashed.
+var RADARCOV_EXTRA = [
+  {id:'IDR22', name:'Mackay',    lat:-21.117,  lon:149.217}, {id:'IDR24', name:'Bowen',     lat:-19.886, lon:148.075},
+  {id:'IDR23', name:'Gladstone', lat:-23.855,  lon:151.263}, {id:'IDR29', name:'Learmonth', lat:-22.103, lon:113.999},
+  {id:'IDR05', name:'Carnarvon', lat:-24.8878, lon:113.669}
+];
+var radarCov = {visible:false, range:256, src:'wt', hi:'gaps', radars:[], generated:'', layer:null, hiLayer:null, loading:false, error:'', res:null, list:false};
+
+function radarCovKm(a, b) {
+  var p = Math.PI / 180, dl = (b[0] - a[0]) * p, dn = (b[1] - a[1]) * p;
+  var h = Math.sin(dl / 2) * Math.sin(dl / 2) + Math.cos(a[0] * p) * Math.cos(b[0] * p) * Math.sin(dn / 2) * Math.sin(dn / 2);
+  return 12742 * Math.asin(Math.sqrt(h));
+}
+function radarCovBuild(meta) {
+  var P = (meta && meta.products) || {}, rows = [], newest = 0;
+  Object.keys(P).forEach(function(id) {
+    if (id === 'composite') return;
+    var p = P[id]; if (!p || !p.bounds || p.bounds.length < 4) return;
+    var s = p.bounds[0], w = p.bounds[1], n = p.bounds[2], e = p.bounds[3], last = 0;
+    (p.frames || []).forEach(function(f) { var t = Date.parse(f.utc || ''); if (t > last) last = t; });
+    if (last > newest) newest = last;
+    rows.push({id:id, name:p.name || id, lat:(s + n) / 2, lon:(w + e) / 2, imageKm:Math.round((n - s) / 2 * 111.195), last:last, kind:'wt'});
+  });
+  rows.forEach(function(r) { r.lagMin = r.last ? Math.round((newest - r.last) / 60000) : null; r.stale = r.last === 0 || (newest - r.last) / 60000 > RADARCOV_STALE_MIN; });
+  RADARCOV_EXTRA.forEach(function(x) { rows.push({id:x.id, name:x.name, lat:x.lat, lon:x.lon, imageKm:0, last:0, lagMin:null, stale:false, kind:'extra'}); });
+  radarCov.radars = rows; radarCov.generated = (meta && meta.generated_utc) || '';
+}
+function radarCovLoad(done) {
+  if (radarCov.loading) return;
+  radarCov.loading = true; radarCov.error = '';
+  fetch(BOM_RADAR_META_URL + '?t=' + Date.now())
+    .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(function(meta) { radarCovBuild(meta); radarCov.loading = false; if (done) done(); })
+    .catch(function(e) { radarCov.loading = false; radarCov.error = e.message; if (done) done(); });
+}
+function radarCovEnsure() { if (!radarCov.radars.length && !radarCov.loading) radarCovLoad(function() { if (radarCov.visible) radarCovRefresh(); }); }
+function radarCovActive() {   // radars that count towards coverage: those with current data, and (if chosen) the BOM-only ones
+  return radarCov.radars.filter(function(r) { return !r.stale && (r.kind === 'wt' || radarCov.src === 'all'); });
+}
+function radarCovInfo(s, rng) {
+  var act = radarCovActive(), within = 0, best = null;
+  act.forEach(function(r) {
+    var d = radarCovKm([s.lat, s.lon], [r.lat, r.lon]);
+    if (d <= rng) within++;
+    if (!best || d < best.km) best = {name:r.name, km:d, extra:r.kind === 'extra'};
+  });
+  return {n:within, nearest:best};
+}
+function radarCovCompute() {
+  var rng = radarCov.range, rows = [], gaps = [], single = [];
+  BAI_SITES.forEach(function(s) {
+    if (typeof siteMatchesFilter === 'function' && !siteMatchesFilter(s)) return;
+    var info = radarCovInfo(s, rng); rows.push({site:s, n:info.n, nearest:info.nearest});
+    if (info.n === 0) gaps.push({site:s, nearest:info.nearest}); else if (info.n === 1) single.push({site:s, nearest:info.nearest});
+  });
+  var byDist = function(a, b) { return (b.nearest ? b.nearest.km : 1e9) - (a.nearest ? a.nearest.km : 1e9); };
+  gaps.sort(byDist); single.sort(byDist);
+  radarCov.res = {total:rows.length, gaps:gaps, single:single, stale:radarCov.radars.filter(function(r) { return r.stale; })};
+}
+function radarCovPopupRow(s) {
+  if (!radarCov.radars.length) return '';
+  var info = radarCovInfo(s, radarCov.range);
+  if (!info.nearest) return '';
+  var txt = info.n > 0 ? esc_(info.nearest.name) + ' ' + Math.round(info.nearest.km) + ' km &bull; ' + info.n + ' radar' + (info.n > 1 ? 's' : '') + ' within ' + radarCov.range + ' km'
+                       : '<span style="color:#ff922b">No radar within ' + radarCov.range + ' km</span> (nearest ' + esc_(info.nearest.name) + ', ' + Math.round(info.nearest.km) + ' km)';
+  return "<div class='pu-row'><span class='pu-key'>Radar</span><span class='pu-val'>" + txt + "</span></div>";
+}
+function esc_(x) { return String(x == null ? '' : x).replace(/[&<>"]/g, function(c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+
+function radarCovDraw() {
+  if (!radarCov.layer) radarCov.layer = L.layerGroup();
+  if (!radarCov.hiLayer) radarCov.hiLayer = L.layerGroup();
+  radarCov.layer.clearLayers(); radarCov.hiLayer.clearLayers();
+  if (!radarCov.visible) { try { map.removeLayer(radarCov.layer); map.removeLayer(radarCov.hiLayer); } catch (e) {} return; }
+  radarCov.radars.forEach(function(r) {
+    if (r.kind === 'extra' && radarCov.src !== 'all') return;
+    var col = r.stale ? '#ff6b6b' : (r.kind === 'extra' ? '#b197fc' : '#4dabf7'), dash = (r.kind === 'extra' || r.stale) ? '6 6' : null;
+    L.circle([r.lat, r.lon], {radius:radarCov.range * 1000, color:col, weight:1.2, fillColor:col, fillOpacity:r.stale ? 0 : 0.05, dashArray:dash, interactive:false}).addTo(radarCov.layer);
+    var tip = '<b>' + esc_(r.name) + '</b>' + (r.kind === 'extra' ? '<br>BOM radar not in the WatchTower radar layer' : '') + (r.stale ? '<br>No recent data (' + (r.lagMin == null ? 'no frames' : r.lagMin + ' min behind') + ')' : '');
+    L.circleMarker([r.lat, r.lon], {radius:4, color:col, weight:2, fillColor:'#0d1117', fillOpacity:1}).bindTooltip(tip, {direction:'top'}).addTo(radarCov.layer);
+  });
+  var list = radarCov.hi === 'gaps' ? radarCov.res.gaps : radarCov.hi === 'single' ? radarCov.res.single : [];
+  list.forEach(function(g) {
+    var col = radarCov.hi === 'gaps' ? '#ff922b' : '#ffd43b';
+    var tip = '<b>' + esc_(g.site.name.replace(/^\d+\s+/, '')) + '</b><br>' + (g.nearest ? 'nearest radar ' + esc_(g.nearest.name) + ', ' + Math.round(g.nearest.km) + ' km' : '');
+    L.circleMarker([g.site.lat, g.site.lon], {radius:10, color:col, weight:3, fill:false}).bindTooltip(tip, {direction:'top'}).addTo(radarCov.hiLayer);
+  });
+  radarCov.layer.addTo(map); radarCov.hiLayer.addTo(map);
+}
+function radarCovPanel() {
+  var el = document.getElementById('radarcov-panel'); if (!el) return;
+  ['64', '128', '256', '512'].forEach(function(k) { var b = document.getElementById('rc-r' + k); if (b) b.classList.toggle('on', radarCov.range === +k); });
+  [['wt', 'rc-s-wt'], ['all', 'rc-s-all']].forEach(function(p) { var b = document.getElementById(p[1]); if (b) b.classList.toggle('on', radarCov.src === p[0]); });
+  [['gaps', 'rc-h-gaps'], ['single', 'rc-h-single'], ['off', 'rc-h-off']].forEach(function(p) { var b = document.getElementById(p[1]); if (b) b.classList.toggle('on', radarCov.hi === p[0]); });
+  var st = document.getElementById('rc-stats'), note = document.getElementById('rc-note'), list = document.getElementById('rc-list');
+  if (!radarCov.res) { st.textContent = radarCov.error ? 'Radar list unavailable (' + radarCov.error + ')' : 'Loading radar list...'; note.textContent = ''; list.innerHTML = ''; return; }
+  var r = radarCov.res, pc = function(n) { return r.total ? Math.round(n * 100 / r.total) : 0; }, act = radarCovActive().length;
+  st.innerHTML = '<b>' + r.gaps.length + '</b> of ' + r.total + ' sites (' + pc(r.gaps.length) + '%) have no radar within ' + radarCov.range + ' km<br>' +
+                 '<b>' + r.single.length + '</b> have only one radar in range<br>' + act + ' radars counted' + (r.stale.length ? ', <span style="color:#ff6b6b">' + r.stale.length + ' not reporting: ' + esc_(r.stale.map(function(x) { return x.name; }).join(', ')) + '</span>' : '');
+  var extras = radarCov.radars.filter(function(x) { return x.kind === 'extra'; }).length;
+  note.innerHTML = radarCov.src === 'all' ? 'Dashed purple rings are BOM radars that the WatchTower radar layer does not show, so rain there will not appear on the radar images.'
+                                          : 'Counting only the radars WatchTower displays. ' + extras + ' more BOM radars exist (switch on "+ BOM-only" to see their effect).';
+  var items = radarCov.hi === 'single' ? r.single : r.gaps;
+  list.innerHTML = radarCov.list ? items.map(function(g, i) {
+    return '<div class="rc-item" onclick="radarCovFly(' + i + ')"><span>' + esc_(g.site.name.replace(/^\d+\s+/, '')) + ' <i>' + esc_(g.site.state || '') + '</i></span><span>' + (g.nearest ? esc_(g.nearest.name) + ' ' + Math.round(g.nearest.km) + ' km' : '') + '</span></div>';
+  }).join('') || '<div class="rc-item"><span>None</span></div>' : '';
+  var lb = document.getElementById('rc-listbtn'); if (lb) lb.textContent = radarCov.list ? 'Hide list' : 'Show list (' + items.length + ')';
+}
+function radarCovFly(i) {
+  var items = radarCov.hi === 'single' ? radarCov.res.single : radarCov.res.gaps, g = items[i]; if (!g) return;
+  try { map.flyTo([g.site.lat, g.site.lon], 8, {duration:1.2}); } catch (e) {}
+}
+function radarCovRefresh() { if (!radarCov.radars.length) return; radarCovCompute(); radarCovDraw(); radarCovPanel(); }
+function radarCovSet(k, v) { radarCov[k] = v; if (k === 'hi' && v === 'off') { /* keep list state */ } radarCovRefresh(); }
+function radarCovToggleList() { radarCov.list = !radarCov.list; radarCovPanel(); }
+function toggleRadarCoverage() {
+  radarCov.visible = !radarCov.visible;
+  var btn = document.getElementById('btn-radarcov'), panel = document.getElementById('radarcov-panel');
+  if (btn) btn.classList.toggle('radarcov-on', radarCov.visible);
+  if (panel) panel.classList.toggle('hidden', !radarCov.visible);
+  if (radarCov.visible) { if (radarCov.radars.length) radarCovRefresh(); else { radarCovPanel(); radarCovLoad(radarCovRefresh); } }
+  else radarCovDraw();
+}
+(function() {   // keep the figures in step with the site filters, and the radar list fresh while the layer is on
+  var rs = renderSites; renderSites = function() { var r = rs.apply(this, arguments); if (radarCov.visible && radarCov.res) { try { radarCovCompute(); radarCovPanel(); radarCovDraw(); } catch (e) {} } return r; };
+  setInterval(function() { if (radarCov.visible) radarCovLoad(radarCovRefresh); }, 10 * 60 * 1000);
+})();
+
 // ---- Near Me / full view switch ------------------------------------------------------------------------
 // nearMeSetViewMode() (watchtower_nearme.js) stores the choice and shows/hides the two views. While Near Me is up the whole
 // normal page, including its Settings panel, is hidden, so Near Me needs its own way out: the "Full view" button.
@@ -1551,6 +1718,7 @@ function buildSitePopup(s) {
   var h = "<div class='pu-title' style='color:"+col+"'>"+s.name+"</div>";
   h += "<div class='pu-sub'>"+(s.state||'')+(s.town?' &bull; '+s.town:'')+(s.height_m?' &bull; '+s.height_m+' elev':'')+"</div>";
   if(s.carriers) h += "<div class='pu-row'><span class='pu-key'>Carriers</span><span class='pu-val'>"+s.carriers+"</span></div>";
+  h += radarCovPopupRow(s);
   if(s.sv.length) {
     h += "<div style='margin-top:8px;border-top:1px solid var(--border);padding-top:6px'>";
     h += "<table class='sv-table'><tr><th>Callsign</th><th>Freq</th><th>Mod</th><th>Licensee</th></tr>";
@@ -1594,7 +1762,7 @@ function renderSites() {
       html:"<svg xmlns='http://www.w3.org/2000/svg' width='"+(r*2+4)+"' height='"+(r*2+4)+"'><circle cx='"+(r+2)+"' cy='"+(r+2)+"' r='"+r+"' fill='"+col+"' fill-opacity='.85' stroke='"+_stroke+"' stroke-width='1.5'/></svg>",
       className:"",iconSize:[r*2+4,r*2+4],iconAnchor:[r+2,r+2],popupAnchor:[0,-(r+4)],tooltipAnchor:[r+3,0]
     })});
-    mk.bindPopup(buildSitePopup(s),{className:"ba-popup",maxWidth:480});
+    mk.bindPopup(function(){ return buildSitePopup(s); },{className:"ba-popup",maxWidth:480});
     mk.bindTooltip(s.name,{permanent:false,direction:'right',offset:[r+3,0]});
     if(sitesVisible) mk.addTo(sitesLayer);
     siteMarkers.push(mk);
@@ -1819,7 +1987,7 @@ setTimeout(function(){
   loadScript("https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",function(){
     setStatus("Loading sites...");
     loadSites().catch(function(e){ setStatus("Site list unavailable ("+e.message+") - continuing without sites"); })
-      .then(function(){ setTimeout(function(){try{initMap();startFetching();fetchAbcAlerts();scheduleNextRefresh();if(!sitesLoaded) retrySitesLoad(1);}catch(e){setStatus("Error: "+e.message);}},20); });
+      .then(function(){ setTimeout(function(){try{initMap();startFetching();fetchAbcAlerts();scheduleNextRefresh();radarCovEnsure();if(!sitesLoaded) retrySitesLoad(1);}catch(e){setStatus("Error: "+e.message);}},20); });
   });
 },50);
 
@@ -2083,7 +2251,7 @@ var radarPlayTimer = null;
 var radarLoaded = false;
 var radarLastLoaded = 0;   // timestamp of last successful frame load
 var RADAR_HOST = '';         // set from API response
-var RADAR_OPACITY = 0.7;
+var RADAR_OPACITY = (function(){ var v = parseFloat(localStorage.getItem('wt_radar_opacity')); return (v >= 0.1 && v <= 1) ? v : 0.7; })();   // set by the slider, remembered
 var RADAR_COLOR = 6;         // 6 = original reflectivity dBZ colour scheme
 var RADAR_SMOOTH = 0;        // 0 = sharp (meteorologists prefer this)
 var RADAR_SNOW = 0;
@@ -2256,7 +2424,7 @@ function refreshRadarLayers(){
 // Files are served from repo root: base URL + frame.file (which already includes "radar/" prefix)
 var BOM_RADAR_META_URL = DATA_BASE + 'radar/radar_meta.json';
 var BOM_RADAR_REPO_URL = DATA_BASE;
-var BOM_RADAR_OPACITY  = 0.75;
+var BOM_RADAR_OPACITY  = (function(){ var v = parseFloat(localStorage.getItem('wt_bomradar_opacity')); return (v >= 0.1 && v <= 1) ? v : 0.75; })();   // set by the slider, remembered
 
 var bomRadarVisible    = false;
 var bomRadarLoaded     = false;
@@ -2269,6 +2437,26 @@ var bomRadarPlaying    = false;
 var bomRadarPlayTimer  = null;
 var bomRadarProductIdx = 0;      // which product is currently displayed (0 = national mosaic)
 
+function setBomRadarOpacity(pct){
+  BOM_RADAR_OPACITY = Math.max(0.1, Math.min(1, parseFloat(pct) / 100));
+  try { localStorage.setItem('wt_bomradar_opacity', BOM_RADAR_OPACITY); } catch (e) {}
+  var lab = document.getElementById('bom-radar-opacity-val'); if (lab) lab.textContent = Math.round(BOM_RADAR_OPACITY * 100) + '%';
+  var l = bomRadarLayers[bomRadarCurrentIdx];                       // only the frame on screen is visible; the others stay at 0
+  if (bomRadarVisible && l && map.hasLayer(l)) l.setOpacity(BOM_RADAR_OPACITY);
+}
+function setRadarOpacity(pct){
+  RADAR_OPACITY = Math.max(0.1, Math.min(1, parseFloat(pct) / 100));
+  try { localStorage.setItem('wt_radar_opacity', RADAR_OPACITY); } catch (e) {}
+  var lab = document.getElementById('radar-opacity-val'); if (lab) lab.textContent = Math.round(RADAR_OPACITY * 100) + '%';
+  var l = radarLayers[radarCurrentIdx];
+  if (radarVisible && l && map.hasLayer(l)) l.setOpacity(RADAR_OPACITY);
+}
+(function(){   // show the remembered values on the sliders
+  [['bom-radar-opacity', BOM_RADAR_OPACITY], ['radar-opacity', RADAR_OPACITY]].forEach(function(p){
+    var s = document.getElementById(p[0]), v = document.getElementById(p[0] + '-val');
+    if (s) s.value = Math.round(p[1] * 100); if (v) v.textContent = Math.round(p[1] * 100) + '%';
+  });
+})();
 function toggleBomRadarLayer(){
   bomRadarVisible = !bomRadarVisible;
   var btn = document.getElementById('btn-bom-radar');
@@ -6367,7 +6555,7 @@ var WALL_AU = [[-44.5, 112], [-9, 154.5]];
 var WALL_CODES = {'New South Wales':'NSW','Victoria':'VIC','Queensland':'QLD','South Australia':'SA','Western Australia':'WA','Tasmania':'TAS','Northern Territory':'NT','Australian Capital Territory':'ACT'};
 var WALL_NAMES = {NSW:'New South Wales',VIC:'Victoria',QLD:'Queensland',SA:'South Australia',WA:'Western Australia',TAS:'Tasmania',NT:'Northern Territory',ACT:'ACT'};
 var WALL_ORDER = ['NSW','VIC','QLD','SA','WA','TAS','NT','ACT'];
-var WALL_LAYERS = ['states','labels','sites','fdr','warnings','marine','cyclone','alerts','incidents','radar','bom-radar','lightning','windy'];
+var WALL_LAYERS = ['states','labels','sites','fdr','warnings','marine','cyclone','alerts','incidents','radar','bom-radar','radarcov','lightning','windy'];
 var WALL_TYPE_LABEL = {thunderstorm:'Thunderstorm',severe_weather:'Severe weather',fire_weather:'Fire weather',heatwave:'Heatwave',coastal_hazard:'Coastal hazard'};
 var wallBounds = {}, wallLabelLayer = null, wallAlertSites = [], wallAlertKey = '', wallNewUntil = 0;
 var wallLastData = 0, wallPage = 0, wallIdleTimer = null, wallWakeLock = null, wallReloadTimer = null;
@@ -6426,7 +6614,7 @@ function wallDiag() {
 var WALL_LAYER_VARS = {
   sites: function() { return sitesVisible; }, fdr: function() { return fdrVisible; }, warnings: function() { return warningsVisible; },
   marine: function() { return marineVisible; }, cyclone: function() { return cycloneVisible; }, alerts: function() { return alertsVisible; },
-  incidents: function() { return incidentsVisible; }, radar: function() { return radarVisible; }, 'bom-radar': function() { return bomRadarVisible; },
+  incidents: function() { return incidentsVisible; }, radar: function() { return radarVisible; }, 'bom-radar': function() { return bomRadarVisible; }, radarcov: function() { return radarCov.visible; },
   lightning: function() { return lightningVisible; }, windy: function() { return windyVisible; }
 };
 function wallLayerOn(id) {
