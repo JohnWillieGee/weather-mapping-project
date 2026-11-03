@@ -394,6 +394,8 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 .nm-subtitle{font-size:12px;color:var(--text2);margin-top:2px;}
 .nm-refresh{background:var(--panel2);border:1px solid var(--border);color:var(--text2);width:32px;height:32px;border-radius:var(--radius);cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;}
 .nm-topbar-actions{display:flex;gap:6px;flex-shrink:0;}
+.nm-exit{width:auto;padding:0 10px;gap:5px;font-size:12px;white-space:nowrap;color:var(--text);border-color:var(--accent);}
+.nm-exit:hover{background:var(--accent);color:#000;}
 
 #nearme-map{flex:2 1 0;min-height:110px;background:var(--panel2);transition:height .25s ease;z-index:0;}
 .leaflet-div-icon.nm-map-marker{background:transparent;border:none;}
@@ -525,6 +527,7 @@ body.wall-mode .risk-tooltip{display:none !important;}
       <div class="nm-subtitle" id="nearme-subtitle">Waiting for location&hellip;</div>
     </div>
     <div class="nm-topbar-actions">
+      <button class="nm-refresh nm-exit" onclick="wtExitNearMe()" title="Leave Near Me and show the full map view" aria-label="Leave Near Me and show the full map view">&#9974; Full view</button>
       <button class="nm-refresh" onclick="nearMeShareLocation()" title="Share my location" aria-label="Share my location">
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="10.6" x2="15.4" y2="6.4"/><line x1="8.6" y1="13.4" x2="15.4" y2="17.6"/></svg>
       </button>
@@ -637,9 +640,9 @@ body.wall-mode .risk-tooltip{display:none !important;}
           <div class="sp-row" style="flex-direction:column;align-items:flex-start;gap:5px;">
             <span class="sp-lbl">Near Me view</span>
             <div class="sp-theme-seg" style="width:100%;">
-              <button class="sp-th-opt" onclick="nearMeSetViewMode('auto')">Auto</button>
-              <button class="sp-th-opt" onclick="nearMeSetViewMode('nearme')">Always on</button>
-              <button class="sp-th-opt" onclick="nearMeSetViewMode('desktop')">Always off</button>
+              <button class="sp-th-opt" id="nm-vm-auto" onclick="wtSetViewMode('auto')">Auto</button>
+              <button class="sp-th-opt" id="nm-vm-nearme" onclick="wtSetViewMode('nearme')">Always on</button>
+              <button class="sp-th-opt" id="nm-vm-desktop" onclick="wtSetViewMode('desktop')">Always off</button>
             </div>
           </div>
           <div class="sp-row" style="flex-direction:column;align-items:flex-start;gap:6px;">
@@ -1485,6 +1488,23 @@ function normaliseSite(s) {
   s.sv.forEach(function(v) { v.mod = v.mod || ''; v.freq = v.freq || ''; v.licensee = v.licensee || ''; v.callsign = v.callsign || ''; });
   return s;
 }
+// ---- Near Me / full view switch ------------------------------------------------------------------------
+// nearMeSetViewMode() (watchtower_nearme.js) stores the choice and shows/hides the two views. While Near Me is up the whole
+// normal page, including its Settings panel, is hidden, so Near Me needs its own way out: the "Full view" button.
+function wtSyncViewModeUI() {
+  var m = localStorage.getItem('wt_view_mode') || 'auto';
+  [['auto', 'nm-vm-auto'], ['nearme', 'nm-vm-nearme'], ['desktop', 'nm-vm-desktop']].forEach(function(p) {
+    var b = document.getElementById(p[1]); if (b) b.classList.toggle('on', m === p[0]);
+  });
+}
+function wtSetViewMode(mode) {
+  nearMeSetViewMode(mode);
+  // the normal map was sized while its page was hidden, so give it a nudge when it comes back
+  if (!(mode === 'nearme' || (mode === 'auto' && window.innerWidth <= 768))) setTimeout(function() { try { map.invalidateSize(); } catch (e) {} }, 60);
+  wtSyncViewModeUI();
+}
+function wtExitNearMe() { wtSetViewMode('desktop'); }
+
 function loadSites() {
   return fetch(SITES_URL, {cache: 'no-cache'})
     .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
@@ -6789,6 +6809,7 @@ document.addEventListener('keydown', function(e) {
 document.addEventListener('visibilitychange', function() { if (wallOn && document.visibilityState === 'visible' && navigator.wakeLock) navigator.wakeLock.request('screen').then(function(l) { wallWakeLock = l; }, function() {}); });
 function wallInit() {
   wallSyncUI();
+  try { wtSyncViewModeUI(); } catch (e) {}
   var mc = document.getElementById('map-controls'); if (mc) mc.addEventListener('click', function() { setTimeout(wallSaveLayers, 80); });
   if (S.wallMode) { wallRestoreLayers(); setTimeout(wallEnter, 400); }
 }
