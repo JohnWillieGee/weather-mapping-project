@@ -329,9 +329,11 @@ body.wall-mode #radarcov-panel{display:none !important;}
 .panel-overlay #windy-panel-head{cursor:default !important;border-radius:0;}
 #lightning-blend-btn{display:none;}
 .panel-overlay.lightning-follow #lightning-blend-btn{display:inline-block;}
-#lightning-panel.lt-fade1,#lightning-panel.lt-fade2{mix-blend-mode:screen;}
+#lightning-panel.lt-fade1{mix-blend-mode:screen;}
+#lightning-panel.lt-fade2{mix-blend-mode:lighten;}   /* strikes only: show the lightning map only where it is brighter than yours, so no tint is added to your map */
+body.lt-faded .hstat{visibility:hidden;}           /* the header counters would otherwise show through the panel's own header */
 #lightning-panel.lt-fade1 #lightning-iframe{filter:brightness(0.769) contrast(1.857);}   /* = levels: black below 30% */
-#lightning-panel.lt-fade2 #lightning-iframe{filter:brightness(0.714) contrast(2.333);}   /* = levels: black below 40%; used with Blitzortung's plain map style 1 */
+#lightning-panel.lt-fade2 #lightning-iframe{filter:brightness(0.667) contrast(3);}   /* = levels: black below 50%; used with Blitzortung's plain map style 1 */
 .panel-overlay.lightning-follow{pointer-events:none;}
 .panel-overlay.lightning-follow #lightning-panel-head{pointer-events:auto;}
 .panel-overlay.lightning-follow #lightning-iframe{pointer-events:none;}
@@ -4869,6 +4871,7 @@ function lightningApplyFade(){
   var on = !!_fitState.lightning && isDark;
   p.classList.toggle('lt-fade1', on && _ltFade === 1);
   p.classList.toggle('lt-fade2', on && _ltFade === 2);
+  document.body.classList.toggle('lt-faded', on && _ltFade > 0);
   lightningRefreshStyle();
   if(b){ b.textContent = ['\u25A6 Map', '\u25A6 Faded', '\u25A6 Strikes'][_ltFade]; b.classList.toggle('active', _ltFade > 0); b.title = isDark ? 'Map behind the strikes: normal / faded / strikes only' : 'Fading the map needs the dark theme'; }
 }
