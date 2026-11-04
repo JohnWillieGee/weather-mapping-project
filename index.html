@@ -331,7 +331,7 @@ body.wall-mode #radarcov-panel{display:none !important;}
 .panel-overlay.lightning-follow #lightning-blend-btn{display:inline-block;}
 #lightning-panel.lt-fade1,#lightning-panel.lt-fade2{mix-blend-mode:screen;}
 #lightning-panel.lt-fade1 #lightning-iframe{filter:brightness(0.769) contrast(1.857);}   /* = levels: black below 30% */
-#lightning-panel.lt-fade2 #lightning-iframe{filter:brightness(0.690) contrast(2.636);}   /* = levels: black below 45% */
+#lightning-panel.lt-fade2 #lightning-iframe{filter:brightness(0.714) contrast(2.333);}   /* = levels: black below 40%; used with Blitzortung's plain map style 1 */
 .panel-overlay.lightning-follow{pointer-events:none;}
 .panel-overlay.lightning-follow #lightning-panel-head{pointer-events:auto;}
 .panel-overlay.lightning-follow #lightning-iframe{pointer-events:none;}
@@ -4863,12 +4863,20 @@ var _ltBase = null, _ltTimer = null, _ltLast = 0, _ltFade = 0;
 try { _ltFade = parseInt(localStorage.getItem('wt_lt_fade') || '0', 10) || 0; if (_ltFade < 0 || _ltFade > 2) _ltFade = 0; } catch (e) {}
 // "Map" button: 0 = normal, 1 = faded, 2 = strikes only. The lightning map is laid over yours with a screen blend, so its dark background
 // lets your own map show through while the bright strikes stay on top. Needs the dark theme (a dark map under a dark lightning map).
+// Strikes only also switches Blitzortung to its plain map style 1 (flat land and sea colours, easy to remove); normal and faded keep the satellite style.
 function lightningApplyFade(){
   var p = document.getElementById('lightning-panel'), b = document.getElementById('lightning-blend-btn'); if(!p) return;
   var on = !!_fitState.lightning && isDark;
   p.classList.toggle('lt-fade1', on && _ltFade === 1);
   p.classList.toggle('lt-fade2', on && _ltFade === 2);
+  lightningRefreshStyle();
   if(b){ b.textContent = ['\u25A6 Map', '\u25A6 Faded', '\u25A6 Strikes'][_ltFade]; b.classList.toggle('active', _ltFade > 0); b.title = isDark ? 'Map behind the strikes: normal / faded / strikes only' : 'Fading the map needs the dark theme'; }
+}
+function lightningRefreshStyle(){     // reload the lightning map only when its map style has to change (satellite <-> plain)
+  var f = document.getElementById('lightning-iframe');
+  if(!f || !lightningVisible || !f.getAttribute('src') || f.getAttribute('src') === 'about:blank') return;
+  var nb = lightningBaseUrl();
+  if(nb !== _ltBase){ _ltBase = nb; f.src = nb + lightningViewHash(); }
 }
 function lightningCycleFade(){
   if(!isDark) return;
@@ -4901,8 +4909,9 @@ function lightningFollowMap(on){
 }
 
 function getLightningUrl(){
-  // MapStyle: 0 = dark, 2 = light (confirmed by testing)
-  var style = isDark ? '0' : '2';
+  // MapStyle: 0 = dark satellite, 2 = light (confirmed by testing); 1 = plain flat colours, used by the Map button's strikes-only level
+  var plain = isDark && typeof _fitState !== 'undefined' && _fitState.lightning && _ltFade === 2;
+  var style = isDark ? (plain ? '1' : '0') : '2';
   var iframe = document.getElementById('lightning-iframe');
   return iframe.getAttribute('data-src').replace('STYLE_TOKEN', style);
 }
@@ -4933,6 +4942,7 @@ function updateLightningTheme(){
     _ltBase = lightningBaseUrl();
     iframe.src = _ltBase + lightningViewHash();
   }
+  lightningApplyFade();
 }
 (function(){   // after a reload (theme change) put a fitted panel back on the map's view
   var f = document.getElementById('lightning-iframe');
