@@ -230,6 +230,14 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 #bom-radar-controls.hidden{display:none;}
 #radarcov-panel{position:absolute;bottom:112px;right:12px;max-height:calc(100% - 200px);overflow-y:auto;z-index:1000;width:300px;background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:8px 10px;box-shadow:0 2px 12px var(--shadow);font-size:10px;color:var(--text2);}
 #radarcov-panel.hidden{display:none;}
+#xl-panel{position:absolute;top:116px;right:12px;z-index:1000;width:300px;background:var(--panel);border:1px solid #9775fa;border-radius:8px;padding:8px 10px;box-shadow:0 2px 12px var(--shadow);font-size:10px;color:var(--text2);line-height:1.45;}
+#xl-panel.hidden{display:none;}
+#xl-panel .xl-title{font-weight:700;color:var(--text);font-size:11px;margin-bottom:3px;} #xl-panel .xl-title span{font-weight:400;color:var(--text3);}
+#xl-panel .xl-demo{background:#7a1f1f;color:#fff;font-weight:700;padding:2px 6px;border-radius:4px;margin:3px 0;}
+#xl-panel .xl-line{color:var(--text);margin:3px 0;} #xl-panel .xl-ok{color:#51cf66;font-weight:700;} #xl-panel .xl-amber{color:#ffa94d;font-weight:700;} #xl-panel .xl-red{color:#ff6b6b;font-weight:700;}
+#xl-panel .xl-warn{color:#ffa94d;margin:3px 0;} #xl-panel .xl-small{font-size:9px;color:var(--text3);margin-top:3px;}
+#xl-panel .xl-key{margin:5px 0;font-size:9px;color:var(--text2);} #xl-panel .xl-key i{display:inline-block;width:9px;height:9px;border-radius:50%;margin:0 2px 0 6px;vertical-align:-1px;}
+body.wall-mode #xl-panel{display:none !important;}
 #radarcov-panel .rc-title{font-weight:700;color:var(--text);margin-bottom:6px;font-size:11px;}
 #radarcov-panel .rc-row{display:flex;align-items:center;gap:6px;margin-bottom:5px;}
 #radarcov-panel .rc-row > span{width:50px;flex-shrink:0;color:var(--text3);}
@@ -319,6 +327,9 @@ body.wall-mode #radarcov-panel{display:none !important;}
 .panel-overlay{position:fixed !important;border-radius:0 !important;box-shadow:none !important;transition:opacity .2s;}
 .panel-overlay #lightning-panel-head,
 .panel-overlay #windy-panel-head{cursor:default !important;border-radius:0;}
+.panel-overlay.lightning-follow{pointer-events:none;}
+.panel-overlay.lightning-follow #lightning-panel-head{pointer-events:auto;}
+.panel-overlay.lightning-follow #lightning-iframe{pointer-events:none;}
 .panel-overlay #lightning-resize,
 .panel-overlay #windy-resize{display:none;}
 
@@ -907,10 +918,12 @@ body.wall-mode .risk-tooltip{display:none !important;}
       <button class="map-btn" id="btn-bom-radar" onclick="toggleBomRadarLayer()">&#127783; BOM Radar</button>
       <button class="map-btn" id="btn-radarcov" onclick="toggleRadarCoverage()" title="Where BOM radars can see rain, and which sites are outside that">&#9678; Radar Coverage</button>
       <button class="map-btn" id="btn-lightning" onclick="toggleLightning()">&#9889; Lightning</button>
+      <button class="map-btn" id="btn-xlightning" onclick="toggleXLightning()" style="display:none" title="TEST: lightning strikes from lightning.json (Xweather), written by lightning_poller.py. Only shown when this page is served from this PC.">&#9889; Lightning (test)</button>
       <button class="map-btn" id="btn-windy" onclick="toggleWindy()">&#127788; Wind</button>
       <button class="map-btn" id="btn-ducting" onclick="openDucting()">&#128225; Ducting</button>
     </div>
     <div id="map"></div>
+    <div id="xl-panel" class="hidden"></div>
     <div id="radarcov-panel" class="hidden">
       <div class="rc-title">Radar coverage</div>
       <div class="rc-row"><span>Range</span><div class="sp-theme-seg"><button class="sp-th-opt" id="rc-r64" onclick="radarCovSet('range',64)">64 km</button><button class="sp-th-opt" id="rc-r128" onclick="radarCovSet('range',128)">128</button><button class="sp-th-opt" id="rc-r256" onclick="radarCovSet('range',256)">256</button><button class="sp-th-opt" id="rc-r512" onclick="radarCovSet('range',512)">512</button></div></div>
@@ -946,7 +959,8 @@ body.wall-mode .risk-tooltip{display:none !important;}
               oninput="onOpacityChange('lightning')" onmousedown="event.stopPropagation()"
               style="width:50px;accent-color:#9775fa;cursor:pointer;vertical-align:middle;">
           </label>
-          <button class="fit-map-btn" id="lightning-fit-btn" onclick="toggleFitToMap('lightning')" title="Fit to map / restore">&#11020; Fit</button>
+          <button class="fit-map-btn" id="lightning-sync-btn" onclick="lightningSyncView()" title="Move the lightning map to the view your map is showing now">&#8982; Sync</button>
+          <button class="fit-map-btn" id="lightning-fit-btn" onclick="toggleFitToMap('lightning')" title="Lay the lightning map over your map. It then follows every pan and zoom, and clicks pass through to your map">&#11020; Fit</button>
           <button id="lightning-close" onclick="toggleLightning()" title="Close">&#10005;</button>
         </div>
       </div>
@@ -1623,7 +1637,7 @@ function radarCovPanel() {
   [['gaps', 'rc-h-gaps'], ['single', 'rc-h-single'], ['off', 'rc-h-off']].forEach(function(p) { var b = document.getElementById(p[1]); if (b) b.classList.toggle('on', radarCov.hi === p[0]); });
   var st = document.getElementById('rc-stats'), note = document.getElementById('rc-note'), list = document.getElementById('rc-list');
   if (!radarCov.res) { st.textContent = radarCov.error ? 'Radar list unavailable (' + radarCov.error + ')' : 'Loading radar list...'; note.textContent = ''; list.innerHTML = ''; return; }
-  var r = radarCov.res, pc = function(n) { return r.total ? Math.round(n * 100 / r.total) : 0; }, act = radarCovActive().length;
+  var r = radarCov.res, pc = function(n) { var v = r.total ? n * 100 / r.total : 0; return (n > 0 && v < 1) ? '<1' : Math.round(v); }, act = radarCovActive().length;
   st.innerHTML = '<b>' + r.gaps.length + '</b> of ' + r.total + ' sites (' + pc(r.gaps.length) + '%) have no radar within ' + radarCov.range + ' km<br>' +
                  '<b>' + r.single.length + '</b> have only one radar in range<br>' + act + ' radars counted' + (r.stale.length ? ', <span style="color:#ff6b6b">' + r.stale.length + ' not reporting: ' + esc_(r.stale.map(function(x) { return x.name; }).join(', ')) + '</span>' : '');
   var extras = radarCov.radars.filter(function(x) { return x.kind === 'extra'; }).length;
@@ -1654,6 +1668,92 @@ function toggleRadarCoverage() {
   var rs = renderSites; renderSites = function() { var r = rs.apply(this, arguments); if (radarCov.visible && radarCov.res) { try { radarCovCompute(); radarCovPanel(); radarCovDraw(); } catch (e) {} } return r; };
   setInterval(function() { if (radarCov.visible) radarCovLoad(radarCovRefresh); }, 10 * 60 * 1000);
 })();
+
+// ---- Lightning layer (Xweather test) -----------------------------------------------------------------------------------
+// TEST ONLY. A separate program (lightning_poller.py) calls the Xweather API and writes lightning.json next to this page; the page
+// only reads that file, so the number of people looking never changes API usage. The layer appears only when the page is served
+// from this PC (localhost). It draws the last hour of strikes by age, ringed monitored areas, and adds a Lightning line to site popups.
+var XL_URL = (location.hostname === 'localhost' || location.hostname === '127.0.0.1') ? 'lightning.json' : null;
+var xl = {on:false, data:null, layer:null, err:'', timer:null, tick:null};
+function xlInit() { var b = document.getElementById('btn-xlightning'); if (b) b.style.display = XL_URL ? '' : 'none'; }
+function xlColor(ageS) { return ageS < 300 ? '#ffe600' : ageS < 900 ? '#ffa94d' : ageS < 1800 ? '#ff6b6b' : '#868e96'; }
+function xlAgeText(s) { s = Math.max(0, Math.round(s)); return s < 90 ? s + ' s' : Math.round(s / 60) + ' min'; }
+function xlNowS() { return Date.now() / 1000; }
+function xlFetch(done) {
+  fetch(XL_URL + '?t=' + Date.now()).then(function(r) { if (!r.ok) throw new Error(r.status === 404 ? 'lightning.json not found next to the page' : 'HTTP ' + r.status); return r.json(); })
+    .then(function(d) { xl.data = d; xl.err = ''; if (done) done(); }).catch(function(e) { xl.err = e.message; if (done) done(); });
+}
+function xlFreshness() {   // fresh / amber / red, judged against how often the poller is meant to run
+  var d = xl.data; if (!d) return {cls:'red', text:xl.err || 'loading'};
+  var ageMin = (xlNowS() - (d.generated_ts || 0)) / 60, every = Math.max(1, (d.interval_s || 300) / 60);
+  var st = d.status || {}, cls = ageMin <= every * 2 ? 'ok' : ageMin <= every * 4 ? 'amber' : 'red';
+  if (st.ok === false || st.stopped) cls = 'red';
+  return {cls:cls, ageMin:ageMin, text:'updated ' + xlAgeText(ageMin * 60) + ' ago'};
+}
+function xlRender() {
+  var el = document.getElementById('xl-panel'); if (!el || !xl.on) return;
+  var d = xl.data, fr = xlFreshness(), st = (d && d.status) || {};
+  var nStr = d ? d.strikes.filter(function(s) { return xlNowS() - s[0] <= 3600; }).length : 0;
+  var head = '<div class="xl-title">&#9889; Lightning <span>(Xweather test)</span></div>';
+  if (d && d.demo) head += '<div class="xl-demo">DEMO DATA: synthetic strikes, not real lightning</div>';
+  var line = d ? '<span class="xl-' + fr.cls + '">' + fr.text + '</span> &middot; ' + nStr + ' strikes in the last hour &middot; ' + (d.circles || []).length + ' area' + ((d.circles || []).length === 1 ? '' : 's') + ' polled' : '<span class="xl-red">' + esc_(fr.text) + '</span>';
+  var warn = '';
+  if (xl.err && d) warn = '<div class="xl-warn">Could not refresh: ' + esc_(xl.err) + '</div>';
+  if (st.stopped) warn += '<div class="xl-warn">Poller stopped: ' + esc_(st.stopped) + '</div>';
+  else if (st.ok === false && st.message) warn += '<div class="xl-warn">' + esc_(st.message) + '</div>';
+  var use = d && st.daily_cap ? '<div class="xl-small">API calls today ' + st.calls_today + ' of ' + st.daily_cap + (st.remaining_period != null ? ' &middot; plan has ' + st.remaining_period + ' accesses left' : '') + '</div>' : '';
+  var key = '<div class="xl-key"><i style="background:#ffe600"></i>&lt;5 min <i style="background:#ffa94d"></i>5-15 <i style="background:#ff6b6b"></i>15-30 <i style="background:#868e96"></i>30-60 &nbsp; &#9679; cloud-to-ground &nbsp; &#9675; in-cloud</div>';
+  el.innerHTML = head + '<div class="xl-line">' + line + '</div>' + warn + use + key + '<div class="xl-small">Dashed rings = areas being polled. Outside them, no lightning data. Lightning data &copy; Vaisala Xweather.</div>';
+}
+function xlDraw() {
+  if (!xl.layer) xl.layer = L.layerGroup();
+  xl.layer.clearLayers();
+  if (!xl.on || !xl.data) { try { map.removeLayer(xl.layer); } catch (e) {} return; }
+  var d = xl.data, now = xlNowS();
+  (d.circles || []).forEach(function(c) { L.circle([c.lat, c.lon], {radius:(d.radius_km || 100) * 1000, color:'#9775fa', weight:1, dashArray:'4 6', fill:false, interactive:false}).addTo(xl.layer); });
+  d.strikes.forEach(function(s) {
+    var age = now - s[0]; if (age > 3600 || age < -60) return;
+    var col = xlColor(age), cg = s[3] === 0;
+    L.circleMarker([s[1], s[2]], {radius:cg ? 5 : 3, color:col, weight:1.5, fillColor:col, fillOpacity:cg ? 0.85 : 0, interactive:false}).addTo(xl.layer);
+  });
+  xl.layer.addTo(map);
+}
+function xlRefresh() { xlDraw(); xlRender(); }
+function xlSiteInfo(s) {   // what the strikes say about one site; null if the site is outside every polled area
+  var d = xl.data; if (!d) return null;
+  var mon = (d.circles || []).some(function(c) { return radarCovKm([s.lat, s.lon], [c.lat, c.lon]) <= (d.radius_km || 100); });
+  if (!mon) return {monitored:false};
+  var now = xlNowS(), n10 = 0, n25 = 0, nearest = null;
+  d.strikes.forEach(function(k) {
+    var age = now - k[0]; if (age > 3600 || age < -60) return;
+    var dist = radarCovKm([s.lat, s.lon], [k[1], k[2]]);
+    if (age <= 900 && dist <= 10) n10++;
+    if (age <= 900 && dist <= 25) n25++;
+    if (dist <= 50 && (!nearest || dist < nearest.km)) nearest = {km:dist, age:age};
+  });
+  return {monitored:true, n10:n10, n25:n25, nearest:nearest};
+}
+function xlPopupRow(s) {
+  if (!xl.data) return '';
+  var i = xlSiteInfo(s), fr = xlFreshness(), stale = fr.cls !== 'ok' ? ' <span style="color:#ff922b">(data ' + xlAgeText(fr.ageMin * 60) + ' old)</span>' : '', t;
+  if (!i.monitored) t = '<span style="color:#868e96">not in an area being polled (no lightning data here)</span>';
+  else if (i.n25 > 0) t = '<b>' + i.n25 + '</b> within 25 km in the last 15 min (' + i.n10 + ' within 10 km); nearest ' + i.nearest.km.toFixed(1) + ' km, ' + xlAgeText(i.nearest.age) + ' ago';
+  else if (i.nearest) t = 'none within 25 km in the last 15 min; nearest in the last hour ' + i.nearest.km.toFixed(1) + ' km, ' + xlAgeText(i.nearest.age) + ' ago';
+  else t = 'none within 50 km in the last hour';
+  return "<div class='pu-row'><span class='pu-key'>Lightning</span><span class='pu-val'>" + t + stale + "</span></div>";
+}
+function toggleXLightning() {
+  xl.on = !xl.on;
+  var btn = document.getElementById('btn-xlightning'), panel = document.getElementById('xl-panel');
+  if (btn) btn.classList.toggle('on', xl.on);
+  if (panel) panel.classList.toggle('hidden', !xl.on);
+  clearInterval(xl.timer); clearInterval(xl.tick);
+  if (xl.on) {
+    xlRender(); xlFetch(xlRefresh);
+    xl.timer = setInterval(function() { xlFetch(xlRefresh); }, 60000);   // re-read the file every minute
+    xl.tick = setInterval(xlRender, 15000);                               // keep "updated N min ago" honest between reads
+  } else xlDraw();
+}
 
 // ---- Near Me / full view switch ------------------------------------------------------------------------
 // nearMeSetViewMode() (watchtower_nearme.js) stores the choice and shows/hides the two views. While Near Me is up the whole
@@ -1719,6 +1819,7 @@ function buildSitePopup(s) {
   h += "<div class='pu-sub'>"+(s.state||'')+(s.town?' &bull; '+s.town:'')+(s.height_m?' &bull; '+s.height_m+' elev':'')+"</div>";
   if(s.carriers) h += "<div class='pu-row'><span class='pu-key'>Carriers</span><span class='pu-val'>"+s.carriers+"</span></div>";
   h += radarCovPopupRow(s);
+  h += xlPopupRow(s);
   if(s.sv.length) {
     h += "<div style='margin-top:8px;border-top:1px solid var(--border);padding-top:6px'>";
     h += "<table class='sv-table'><tr><th>Callsign</th><th>Freq</th><th>Mod</th><th>Licensee</th></tr>";
@@ -1987,7 +2088,7 @@ setTimeout(function(){
   loadScript("https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",function(){
     setStatus("Loading sites...");
     loadSites().catch(function(e){ setStatus("Site list unavailable ("+e.message+") - continuing without sites"); })
-      .then(function(){ setTimeout(function(){try{initMap();startFetching();fetchAbcAlerts();scheduleNextRefresh();radarCovEnsure();if(!sitesLoaded) retrySitesLoad(1);}catch(e){setStatus("Error: "+e.message);}},20); });
+      .then(function(){ setTimeout(function(){try{initMap();startFetching();fetchAbcAlerts();scheduleNextRefresh();radarCovEnsure();xlInit();if(!sitesLoaded) retrySitesLoad(1);}catch(e){setStatus("Error: "+e.message);}},20); });
   });
 },50);
 
@@ -4748,6 +4849,35 @@ function toggleTheme(){isDark=!isDark;document.documentElement.setAttribute("dat
 // \u2500\u2500 LIGHTNING PANEL (Blitzortung iframe) \u2500\u2500
 var lightningVisible = false;
 
+// ---- the lightning map follows your map -------------------------------------------------------------------
+// map.blitzortung.org takes its view from the address fragment (#zoom/lat/lon) and moves when the fragment changes, without
+// reloading. Its zoom numbers sit one below Leaflet's for the same scale (confirmed from a screenshot: its 6 is Leaflet's 7),
+// so lightning zoom = Leaflet zoom - 1. When the panel is laid over the map ("Fit") the two views therefore match exactly.
+var _ltBase = null, _ltTimer = null, _ltLast = 0;
+function lightningViewHash(){
+  if(typeof map === 'undefined' || !map || typeof map.getCenter !== 'function') return '#3/-27/134';
+  var c = map.getCenter(), z = Math.max(0, Math.round((map.getZoom() - 1) * 100) / 100);
+  return '#' + z + '/' + c.lat.toFixed(4) + '/' + c.lng.toFixed(4);
+}
+function lightningBaseUrl(){ return getLightningUrl().replace(/#.*$/, ''); }
+function lightningSyncView(){
+  var f = document.getElementById('lightning-iframe');
+  if(!f || !lightningVisible || !f.getAttribute('src') || f.getAttribute('src') === 'about:blank') return;
+  var u = (_ltBase || lightningBaseUrl()) + lightningViewHash();
+  if(f.getAttribute('src') !== u) f.src = u;      // only the fragment differs, so the page inside does not reload
+}
+function lightningOnMapMove(){                     // leading and trailing update, so a drag follows smoothly without flooding it
+  var now = Date.now();
+  if(now - _ltLast >= 150){ _ltLast = now; lightningSyncView(); }
+  clearTimeout(_ltTimer);
+  _ltTimer = setTimeout(function(){ _ltLast = Date.now(); lightningSyncView(); }, 160);
+}
+function lightningFollowMap(on){
+  if(typeof map === 'undefined' || !map || typeof map.on !== 'function') return;
+  map.off('move', lightningOnMapMove); map.off('moveend', lightningOnMapMove);
+  if(on){ map.on('move', lightningOnMapMove); map.on('moveend', lightningOnMapMove); }
+}
+
 function getLightningUrl(){
   // MapStyle: 0 = dark, 2 = light (confirmed by testing)
   var style = isDark ? '0' : '2';
@@ -4765,30 +4895,45 @@ function toggleLightning(){
   if(lightningVisible){
     var iframe = document.getElementById('lightning-iframe');
     if(iframe.src === '' || iframe.src === 'about:blank'){
-      iframe.src = getLightningUrl();
+      _ltBase = lightningBaseUrl();
+      iframe.src = _ltBase + lightningViewHash();
+    } else {
+      lightningSyncView();                          // reopened: catch up with wherever the map has moved to
     }
   }
+  lightningFollowMap(lightningVisible && _fitState.lightning);
 }
 
 function updateLightningTheme(){
   // If panel is open, reload iframe with the correct map style for the new theme
   if(lightningVisible){
     var iframe = document.getElementById('lightning-iframe');
-    iframe.src = getLightningUrl();
+    _ltBase = lightningBaseUrl();
+    iframe.src = _ltBase + lightningViewHash();
   }
 }
+(function(){   // after a reload (theme change) put a fitted panel back on the map's view
+  var f = document.getElementById('lightning-iframe');
+  if(f) f.addEventListener('load', function(){ if(lightningVisible && _fitState.lightning) setTimeout(lightningSyncView, 60); });
+})();
 
 // Drag support for the lightning panel
 var _dragEl=null,_dragOX=0,_dragOY=0;
+// Switch a panel from right-anchored to left-anchored for free dragging. left/top are relative to the map area (the panel's
+// offset parent), not the window: using window coordinates made the panel jump sideways by the width of the open sidebar on
+// the first mouse-down, which also swallowed the click on its Fit / Close buttons.
+function wtAnchorPanelLeft(panel){
+  if(panel.style.left!=='') return;
+  var r=panel.getBoundingClientRect(), o=panel.offsetParent ? panel.offsetParent.getBoundingClientRect() : {left:0, top:0};
+  panel.style.left=(r.left-o.left)+'px';
+  panel.style.top=(r.top-o.top)+'px';
+  panel.style.right='auto';
+}
+function wtIsControl(e){ return !!(e && e.target && e.target.closest && e.target.closest('button,input,label,a,select')); }   // a click on a control is not a drag
 function startDragLightning(e){
+  if(wtIsControl(e)) return;
   var panel=document.getElementById('lightning-panel');
-  // Switch from right-anchored to left-anchored for free dragging
-  if(panel.style.left===''){
-    var r=panel.getBoundingClientRect();
-    panel.style.left=r.left+'px';
-    panel.style.right='auto';
-    panel.style.top=r.top+'px';
-  }
+  wtAnchorPanelLeft(panel);
   _dragEl=panel;_dragOX=e.clientX-panel.offsetLeft;_dragOY=e.clientY-panel.offsetTop;
   document.addEventListener('mousemove',onDragLightning);
   document.addEventListener('mouseup',stopDragLightning);
@@ -4978,6 +5123,14 @@ function applyFitToMap(which){
     }
   }
 
+  // Lightning: lay over the map and follow it (clicks pass through to the map). Windy keeps the snap-back below.
+  if(which === 'lightning'){
+    panel.classList.add('lightning-follow');
+    lightningFollowMap(true);
+    lightningSyncView();
+    return;
+  }
+
   // Snap back if user pans or zooms the main map
   if(map){
     map.once('movestart', function(){ if(_fitState[which]) restoreFromFit(which); });
@@ -4999,6 +5152,7 @@ function restoreFromFit(which){
   panel.style.opacity  = '1';
   panel.style.zIndex   = '1002';
   panel.classList.remove('panel-overlay');
+  if(which === 'lightning'){ panel.classList.remove('lightning-follow'); lightningFollowMap(false); }
   btn.classList.remove('active');
   btn.textContent = '\u2922 Fit';
   _fitState[which] = false;
@@ -5164,8 +5318,9 @@ function onClockOpacity() {
 // Drag
 var _drgClk=null,_drgClkOX=0,_drgClkOY=0;
 function startDragClock(e) {
+  if(wtIsControl(e)) return;
   var p = document.getElementById('clock-panel');
-  if(p.style.left===''){var r=p.getBoundingClientRect();p.style.left=r.left+'px';p.style.right='auto';p.style.top=r.top+'px';}
+  wtAnchorPanelLeft(p);
   _drgClk=p;_drgClkOX=e.clientX-p.offsetLeft;_drgClkOY=e.clientY-p.offsetTop;
   document.addEventListener('mousemove',onDragClock);document.addEventListener('mouseup',stopDragClock);
   e.preventDefault();
