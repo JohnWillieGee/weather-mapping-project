@@ -327,6 +327,11 @@ body.wall-mode #radarcov-panel{display:none !important;}
 .panel-overlay{position:fixed !important;border-radius:0 !important;box-shadow:none !important;transition:opacity .2s;}
 .panel-overlay #lightning-panel-head,
 .panel-overlay #windy-panel-head{cursor:default !important;border-radius:0;}
+#lightning-blend-btn{display:none;}
+.panel-overlay.lightning-follow #lightning-blend-btn{display:inline-block;}
+#lightning-panel.lt-fade1,#lightning-panel.lt-fade2{mix-blend-mode:screen;}
+#lightning-panel.lt-fade1 #lightning-iframe{filter:brightness(0.769) contrast(1.857);}   /* = levels: black below 30% */
+#lightning-panel.lt-fade2 #lightning-iframe{filter:brightness(0.690) contrast(2.636);}   /* = levels: black below 45% */
 .panel-overlay.lightning-follow{pointer-events:none;}
 .panel-overlay.lightning-follow #lightning-panel-head{pointer-events:auto;}
 .panel-overlay.lightning-follow #lightning-iframe{pointer-events:none;}
@@ -959,6 +964,7 @@ body.wall-mode .risk-tooltip{display:none !important;}
               oninput="onOpacityChange('lightning')" onmousedown="event.stopPropagation()"
               style="width:50px;accent-color:#9775fa;cursor:pointer;vertical-align:middle;">
           </label>
+          <button class="fit-map-btn" id="lightning-blend-btn" onclick="lightningCycleFade()" title="Map behind the strikes: normal / faded / strikes only">&#9638; Map</button>
           <button class="fit-map-btn" id="lightning-sync-btn" onclick="lightningSyncView()" title="Move the lightning map to the view your map is showing now">&#8982; Sync</button>
           <button class="fit-map-btn" id="lightning-fit-btn" onclick="toggleFitToMap('lightning')" title="Lay the lightning map over your map. It then follows every pan and zoom, and clicks pass through to your map">&#11020; Fit</button>
           <button id="lightning-close" onclick="toggleLightning()" title="Close">&#10005;</button>
@@ -4853,7 +4859,23 @@ var lightningVisible = false;
 // map.blitzortung.org takes its view from the address fragment (#zoom/lat/lon) and moves when the fragment changes, without
 // reloading. Its zoom numbers sit one below Leaflet's for the same scale (confirmed from a screenshot: its 6 is Leaflet's 7),
 // so lightning zoom = Leaflet zoom - 1. When the panel is laid over the map ("Fit") the two views therefore match exactly.
-var _ltBase = null, _ltTimer = null, _ltLast = 0;
+var _ltBase = null, _ltTimer = null, _ltLast = 0, _ltFade = 0;
+try { _ltFade = parseInt(localStorage.getItem('wt_lt_fade') || '0', 10) || 0; if (_ltFade < 0 || _ltFade > 2) _ltFade = 0; } catch (e) {}
+// "Map" button: 0 = normal, 1 = faded, 2 = strikes only. The lightning map is laid over yours with a screen blend, so its dark background
+// lets your own map show through while the bright strikes stay on top. Needs the dark theme (a dark map under a dark lightning map).
+function lightningApplyFade(){
+  var p = document.getElementById('lightning-panel'), b = document.getElementById('lightning-blend-btn'); if(!p) return;
+  var on = !!_fitState.lightning && isDark;
+  p.classList.toggle('lt-fade1', on && _ltFade === 1);
+  p.classList.toggle('lt-fade2', on && _ltFade === 2);
+  if(b){ b.textContent = ['\u25A6 Map', '\u25A6 Faded', '\u25A6 Strikes'][_ltFade]; b.classList.toggle('active', _ltFade > 0); b.title = isDark ? 'Map behind the strikes: normal / faded / strikes only' : 'Fading the map needs the dark theme'; }
+}
+function lightningCycleFade(){
+  if(!isDark) return;
+  _ltFade = (_ltFade + 1) % 3;
+  try { localStorage.setItem('wt_lt_fade', String(_ltFade)); } catch (e) {}
+  lightningApplyFade();
+}
 function lightningViewHash(){
   if(typeof map === 'undefined' || !map || typeof map.getCenter !== 'function') return '#3/-27/134';
   var c = map.getCenter(), z = Math.max(0, Math.round((map.getZoom() - 1) * 100) / 100);
@@ -5128,6 +5150,7 @@ function applyFitToMap(which){
     panel.classList.add('lightning-follow');
     lightningFollowMap(true);
     lightningSyncView();
+    lightningApplyFade();
     return;
   }
 
@@ -5156,6 +5179,7 @@ function restoreFromFit(which){
   btn.classList.remove('active');
   btn.textContent = '\u2922 Fit';
   _fitState[which] = false;
+  if(which === 'lightning') lightningApplyFade();
 }
 
 function onOpacityChange(which){
