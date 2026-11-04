@@ -333,6 +333,7 @@ body.wall-mode #radarcov-panel{display:none !important;}
 #lightning-panel.lt-fade2{mix-blend-mode:lighten;}   /* strikes only: show the lightning map only where it is brighter than yours, so no tint is added to your map */
 body.lt-faded .hstat{visibility:hidden;}
 body.lt-layer #lightning-panel{border:0 !important;box-shadow:none !important;}
+body.lt-layer .leaflet-tile-pane{filter:none !important;}   /* natural theme dims its tiles with a filter; the layer swaps in dark tiles and wants them as they are */
 body.lt-layer #lightning-panel-head,body.lt-layer #lightning-blend-btn{display:none !important;}           /* the header counters would otherwise show through the panel's own header */
 #lightning-panel.lt-fade1 #lightning-iframe{filter:brightness(0.769) contrast(1.857);}   /* = levels: black below 30% */
 #lightning-panel.lt-fade2 #lightning-iframe{filter:brightness(0.667) contrast(3);}   /* = levels: black below 50%; used with Blitzortung's plain map style 1 */
@@ -927,7 +928,7 @@ body.wall-mode .risk-tooltip{display:none !important;}
       <button class="map-btn" id="btn-bom-radar" onclick="toggleBomRadarLayer()">&#127783; BOM Radar</button>
       <button class="map-btn" id="btn-radarcov" onclick="toggleRadarCoverage()" title="Where BOM radars can see rain, and which sites are outside that">&#9678; Radar Coverage</button>
       <button class="map-btn" id="btn-lightning" onclick="toggleLightning()">&#9889; Lightning</button>
-      <button class="map-btn" id="btn-lightning-layer" onclick="toggleLightningLayer()" title="Lightning strikes laid straight over the map (no window, no controls). Needs the dark theme. Use the Lightning button for the full panel.">&#9889; Lightning Layer</button>
+      <button class="map-btn" id="btn-lightning-layer" onclick="toggleLightningLayer()" title="Lightning strikes laid straight over the map (no window, no controls). In the light and natural colour modes the map turns dark while the layer is on. Use the Lightning button for the full panel.">&#9889; Lightning Layer</button>
       <button class="map-btn" id="btn-xlightning" onclick="toggleXLightning()" style="display:none" title="TEST: lightning strikes from lightning.json (Xweather), written by lightning_poller.py. Only shown when this page is served from this PC.">&#9889; Lightning (test)</button>
       <button class="map-btn" id="btn-windy" onclick="toggleWindy()">&#127788; Wind</button>
       <button class="map-btn" id="btn-ducting" onclick="openDucting()">&#128225; Ducting</button>
@@ -4869,10 +4870,20 @@ try { _ltFade = parseInt(localStorage.getItem('wt_lt_fade') || '0', 10) || 0; if
 // "Map" button: 0 = normal, 1 = faded, 2 = strikes only. The lightning map is laid over yours with a screen blend, so its dark background
 // lets your own map show through while the bright strikes stay on top. Needs the dark theme (a dark map under a dark lightning map).
 // Strikes only also switches Blitzortung to its plain map style 1 (flat land and sea colours, easy to remove); normal and faded keep the satellite style.
-function lightningLevel(){ return _ltLayer ? 2 : _ltFade; }     // the Lightning Layer button always uses the strikes-only level
+function lightningLevel(){ return _ltLayer ? 2 : _ltFade; }
+function lightningDark(){ return isDark || _ltLayer; }      // the layer always runs on a dark map, whatever the colour mode
+// Light and natural modes: swap in the dark map tiles while the layer is on, and put the mode's own tiles back when it is off.
+function lightningRetile(){
+  if(isDark || !tileLayer || !map) return;
+  var th = document.documentElement.getAttribute('data-theme'), carto = {attribution: ATTR, subdomains:'abcd', maxZoom:19}, url, opts;
+  if(_ltLayer){ url = DARK_TILE; opts = carto; }
+  else if(th === 'natural'){ url = NATURAL_TILE; opts = {attribution: ATTR + ' \u00a9 <a href="https://www.esri.com/">Esri</a>', maxZoom:19}; }
+  else { url = LIGHT_TILE; opts = carto; }
+  map.removeLayer(tileLayer); tileLayer = L.tileLayer(url, opts).addTo(map);
+}     // the Lightning Layer button always uses the strikes-only level
 function lightningApplyFade(){
   var p = document.getElementById('lightning-panel'), b = document.getElementById('lightning-blend-btn'); if(!p) return;
-  var on = !!_fitState.lightning && isDark, lvl = lightningLevel();
+  var on = !!_fitState.lightning && lightningDark(), lvl = lightningLevel();
   p.classList.toggle('lt-fade1', on && lvl === 1);
   p.classList.toggle('lt-fade2', on && lvl === 2);
   document.body.classList.toggle('lt-faded', on && lvl > 0 && !_ltLayer);
@@ -4889,9 +4900,8 @@ function lightningRefreshStyle(){     // reload the lightning map only when its 
 // The Lightning button is still the full panel. Turning the layer off puts the panel back the way it was.
 function toggleLightningLayer(){
   if(_ltLayer){ lightningLayerOff(true); return; }
-  if(!isDark){ if(typeof setStatus === 'function') setStatus('The lightning layer needs the dark theme'); return; }
   _ltLayerPrev = {visible: lightningVisible, fitted: !!_fitState.lightning};
-  _ltLayer = true; _ltEntering = true; document.body.classList.add('lt-layer');   // _ltEntering: opening the panel below must not read as a press of the Lightning button
+  _ltLayer = true; _ltEntering = true; document.body.classList.add('lt-layer'); lightningRetile();   // _ltEntering: opening the panel below must not read as a press of the Lightning button
   try {
     if(!lightningVisible) toggleLightning();
     if(!_fitState.lightning) toggleFitToMap('lightning');
@@ -4904,7 +4914,7 @@ function toggleLightningLayer(){
 function lightningLayerOff(closeIt){
   if(!_ltLayer) return;
   var prev = _ltLayerPrev || {visible: false, fitted: false};
-  _ltLayer = false; document.body.classList.remove('lt-layer');
+  _ltLayer = false; document.body.classList.remove('lt-layer'); lightningRetile();
   var lb = document.getElementById('btn-lightning-layer'); if(lb) lb.classList.remove('on');
   if(!prev.fitted && _fitState.lightning) toggleFitToMap('lightning');        // back to the floating window
   if(closeIt && !prev.visible && lightningVisible){
@@ -4945,8 +4955,8 @@ function lightningFollowMap(on){
 
 function getLightningUrl(){
   // MapStyle: 0 = dark satellite, 2 = light (confirmed by testing); 1 = plain flat colours, used by the Map button's strikes-only level
-  var plain = isDark && typeof _fitState !== 'undefined' && _fitState.lightning && lightningLevel() === 2;
-  var style = isDark ? (plain ? '1' : '0') : '2';
+  var plain = lightningDark() && typeof _fitState !== 'undefined' && _fitState.lightning && lightningLevel() === 2;
+  var style = lightningDark() ? (plain ? '1' : '0') : '2';
   var iframe = document.getElementById('lightning-iframe');
   var url = iframe.getAttribute('data-src').replace('STYLE_TOKEN', style);
   if(_ltLayer) url = url.replace('NavigationControl=1', 'NavigationControl=0');   // the layer has no controls, so drop Blitzortung's zoom buttons too
@@ -4974,7 +4984,6 @@ function toggleLightning(){
 }
 
 function updateLightningTheme(){
-  if(_ltLayer && !isDark) lightningLayerOff(false);     // the layer needs the dark theme
   // If panel is open, reload iframe with the correct map style for the new theme
   if(lightningVisible){
     var iframe = document.getElementById('lightning-iframe');
@@ -6519,6 +6528,7 @@ function setTheme(theme) {
   if      (theme === 'natural')  { tileUrl = NATURAL_TILE;  tileOpts = esriOpts; }
   else if (theme === 'light')    { tileUrl = LIGHT_TILE;    tileOpts = cartoOpts; }
   else                           { tileUrl = DARK_TILE;     tileOpts = cartoOpts; }
+  if (_ltLayer)                  { tileUrl = DARK_TILE;     tileOpts = cartoOpts; }   // the lightning layer needs a dark map under it
   if (tileLayer && map) { map.removeLayer(tileLayer); tileLayer = L.tileLayer(tileUrl, tileOpts).addTo(map); }
   var _bc = theme==='natural'?'#4a6a30':theme==='light'?'#c07800':'#f0a500';
   var _bo = (theme==='light'||theme==='natural') ? 0.65 : 0.35;
