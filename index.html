@@ -166,6 +166,17 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 .pu-title{font-weight:800;font-size:13px;margin-bottom:3px;line-height:1.3;}
 .pu-sub{font-size:10px;color:var(--text3);margin-bottom:8px;}
 .pu-row{display:flex;gap:8px;font-size:11px;margin-bottom:3px;}
+/* cyclone display */
+.cyc-dot-wrap,.cyc-label-wrap,.cyc-arrow-wrap{background:none !important;border:0 !important;}
+.cyc-dot{display:flex;align-items:center;justify-content:center;box-sizing:border-box;border-radius:50%;color:#fff;font-weight:700;font-size:11px;line-height:1;border:1.5px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.45);}
+.cyc-dot.cyc-obs{width:18px;height:18px;}
+.cyc-dot.cyc-cur{width:24px;height:24px;font-size:13px;border:2.5px solid #4dabf7;}
+.cyc-dot.cyc-fc{width:18px;height:18px;opacity:.78;border-style:dashed;}
+.cyc-label{white-space:nowrap;font-weight:600;font-size:10.5px;line-height:1;pointer-events:none;text-shadow:0 0 3px var(--panel),0 0 3px var(--panel),0 0 2px var(--panel);}
+.cyc-label.cyc-obs{color:var(--text);} .cyc-label.cyc-cur{color:#4dabf7;font-weight:800;} .cyc-label.cyc-fc{color:var(--text2);}
+[data-theme="light"] .cyc-label.cyc-cur,[data-theme="natural"] .cyc-label.cyc-cur{color:#1864ab;}   /* the bright blue is hard to read on the paler maps */
+.cyc-arrow{font-size:11px;line-height:12px;height:12px;text-align:center;color:#ff4757;pointer-events:none;text-shadow:0 0 2px rgba(0,0,0,.7);}
+.cyc-key{font-size:9px;line-height:1.5;color:var(--text3);margin-top:8px;} .cyc-key a{color:var(--accent,#4dabf7);}
 .pu-key{color:var(--text3);min-width:70px;flex-shrink:0;}.pu-val{color:var(--text2);}
 .pu-badge{display:inline-block;font-size:9px;padding:2px 6px;border-radius:3px;font-weight:600;margin-right:4px;margin-bottom:6px;}
 .pu-links{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px;border-top:1px solid var(--border);padding-top:6px;}
@@ -2341,6 +2352,8 @@ function initMap(){
   alertsLayer=L.layerGroup();
   marineLayer=L.layerGroup();
   cycloneLayer=L.layerGroup();
+  cycloneLabelLayer=L.layerGroup();
+  map.on("zoomend", function(){ try{ cycloneUpdateLabels(); }catch(e){} });   // time labels thin out or fill in as you zoom
   sitesLayer = L.layerGroup().addTo(map);
   renderSites();
   var _tt=document.getElementById("theme-toggle");if(_tt)_tt.textContent=isDark?"\u2600":"\u263D";
@@ -4101,6 +4114,7 @@ function toggleCycloneLayer(){
   if(cycloneVisible){
     renderCycloneMap();
     cycloneLayer.addTo(map);
+    cycloneUpdateLabels();
     if(btn) btn.classList.add("cyclone-on");
     if(tog) tog.classList.add("on");
   } else {
@@ -4128,65 +4142,165 @@ function cxmlLatestFix(system){
   return zero || system.cxml.fixes[0];
 }
 
-function cyclonePopupHtml(system){
-  var fix = cxmlLatestFix(system);
-  var color = fix && fix.category ? cycloneCatColor(fix.category) : '#ff4757';
-  var catLabel = fix && fix.category ? ('Category ' + fix.category) : 'Tropical Low';
-  var html = '<div>' +
-    '<div class="pu-title" style="color:'+color+'">&#127300; ' + (system.distName || 'Tropical Cyclone') + '</div>' +
-    '<span class="pu-badge" style="background:'+color+';color:#fff">' + catLabel + '</span>' +
-    '<span class="pu-badge" style="background:#333;color:#ccc">' + (system.region||'') + '</span>' +
+// ---- Cyclone display (phase 1): BOM-style symbols, local-time labels, areas and arrowheads ------------------------------------
+// Uses only what the fetcher already stores. Times are shown in the issuing region's local time, as BOM does (WA AWST, NT ACST,
+// QLD AEST; none of the three observes daylight saving, so fixed offsets are correct all year).
+var CYC_TZ = {WA:{off:480, ab:'AWST'}, NT:{off:570, ab:'ACST'}, QLD:{off:600, ab:'AEST'}};
+var CYC_MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'], CYC_DAYS = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+var CYC_LABEL_GAP_PX = 48;    // time labels are thinned so none sits closer than this on screen; zooming in brings more of them
+var CYC_LABEL_MIN_ZOOM = 5;   // zoomed out further than this, only the current position is labelled
+var CYC_DOT_HOURS = 72;       // BOM draws the forecast to 72 h; later points are small plain dots
+var cycloneLabelLayer = null;
+function cycloneTz(region){ return CYC_TZ[region] || {off:0, ab:'UTC'}; }
+function cycloneLocal(iso, region){
+  var tz = cycloneTz(region), ms = Date.parse(iso); if(isNaN(ms)) return null;
+  var d = new Date(ms + tz.off * 60000), h = d.getUTCHours(), m = d.getUTCMinutes();
+  var clock = (h % 12 || 12) + (m ? ':' + (m < 10 ? '0' : '') + m : '') + ' ' + (h < 12 ? 'am' : 'pm');
+  var mon = CYC_MONTHS[d.getUTCMonth()];
+  return {short: clock + ' ' + mon + ' ' + d.getUTCDate(), long: CYC_DAYS[d.getUTCDay()] + ' ' + d.getUTCDate() + ' ' + mon + ', ' + clock + ' ' + tz.ab, ab: tz.ab};
+}
+function cycloneFixKind(f){ return f.fixType === 'Current' ? 'cur' : f.fixType === 'Forecast' ? 'fc' : 'obs'; }
+function cycloneFixHours(f, system){
+  var h = parseInt(f.timeOffset, 10); if(!isNaN(h)) return h;
+  var cur = (system.fixes || []).filter(function(x){ return x.fixType === 'Current'; })[0];
+  return cur ? Math.round((Date.parse(f.fixTime) - Date.parse(cur.fixTime)) / 3600000) : null;
+}
+function cycloneFixLetter(f){     // BOM's own symbols: L for a tropical low, the category number (1-5) for a cyclone
+  var c = parseInt(f.category, 10); if(c >= 1 && c <= 5) return String(c);
+  var s = f.symbol || '', m = /cat\w*\s*([1-5])/i.exec(s); if(m) return m[1];
+  if(!f.category || /low/i.test(s)) return 'L';
+  return '';
+}
+function cycloneIntensityLabel(f){ var l = f ? cycloneFixLetter(f) : ''; return l === 'L' ? 'Tropical low' : l ? 'Category ' + l : ''; }
+function cycloneCurrentFix(system){ return (system.fixes || []).filter(function(x){ return x.fixType === 'Current'; })[0] || null; }
+function cycloneTitle(system){
+  var id = (system.distId || '').split('_').pop(), nm = system.cxml && system.cxml.cycloneName ? system.cxml.cycloneName : '', base = system.distName || 'Tropical Cyclone';
+  if(nm && base.indexOf(nm) < 0) base += ' ' + nm;
+  return base + (id ? (nm ? ' (' + id + ')' : ' ' + id) : '');
+}
+function cycloneLatLon(lat, lon){ return Math.abs(lat).toFixed(1) + '\u00B0' + (lat < 0 ? 'S' : 'N') + ' ' + Math.abs(lon).toFixed(1) + '\u00B0' + (lon < 0 ? 'W' : 'E'); }
+function cycMerc(lat){ var s = Math.sin(lat * Math.PI / 180); return Math.log((1 + s) / (1 - s)) / 2; }
+function cycloneBearing(a, b){    // compass bearing a -> b as drawn on the Mercator map, so arrowheads point the way the line runs
+  return (Math.atan2((b[1] - a[1]) * Math.PI / 180, cycMerc(b[0]) - cycMerc(a[0])) * 180 / Math.PI + 360) % 360;
+}
+function cycloneXY(lat, lon, z){ var n = 256 * Math.pow(2, z); return [(lon + 180) / 360 * n, (0.5 - cycMerc(lat) / (2 * Math.PI)) * n]; }
+function cycNearestIdx(pts, lat, lon){ var best = 0, bd = Infinity; for(var i = 0; i < pts.length; i++){ var d = Math.pow(pts[i][0] - lat, 2) + Math.pow(pts[i][1] - lon, 2); if(d < bd){ bd = d; best = i; } } return best; }
+function cycloneSortedFixes(system){ return (system.fixes || []).slice().sort(function(a, b){ return Date.parse(a.fixTime) - Date.parse(b.fixTime); }); }
+
+// Which fixes get a time label at this zoom: the current position always; from CYC_LABEL_MIN_ZOOM up, the others in order of closeness in time
+// to it, each only if it is at least CYC_LABEL_GAP_PX from every label already chosen. Forecast points beyond 72 h are never labelled.
+function cycloneLabelPlan(system, zoom){
+  var cand = cycloneSortedFixes(system).filter(function(f){ var k = cycloneFixKind(f), h = cycloneFixHours(f, system); return k !== 'fc' || (h != null && h <= CYC_DOT_HOURS); });
+  cand.sort(function(a, b){ var ha = Math.abs(cycloneFixHours(a, system) || 0), hb = Math.abs(cycloneFixHours(b, system) || 0); return (cycloneFixKind(a) === 'cur' ? -1 : 0) - (cycloneFixKind(b) === 'cur' ? -1 : 0) || ha - hb; });
+  var chosen = [], xy = [];
+  cand.forEach(function(f){
+    if(zoom < CYC_LABEL_MIN_ZOOM && cycloneFixKind(f) !== 'cur') return;
+    var p = cycloneXY(f.lat, f.lon, zoom), ok = cycloneFixKind(f) === 'cur' || xy.every(function(q){ return Math.hypot(p[0] - q[0], p[1] - q[1]) >= CYC_LABEL_GAP_PX; });
+    if(ok){ chosen.push(f); xy.push(p); }
+  });
+  return chosen;
+}
+function cycloneUpdateLabels(){
+  if(!cycloneLabelLayer || typeof map === 'undefined') return;
+  cycloneLabelLayer.clearLayers();
+  var z = map.getZoom();
+  (cycloneSystems || []).forEach(function(system){
+    cycloneLabelPlan(system, z).forEach(function(f){
+      var kind = cycloneFixKind(f), t = cycloneLocal(f.fixTime, system.region); if(!t) return;
+      L.marker([f.lat, f.lon], {icon: L.divIcon({className:'cyc-label-wrap', html:'<div class="cyc-label cyc-' + kind + '">' + t.short + '</div>', iconSize:[0, 0], iconAnchor:[kind === 'cur' ? -17 : -14, 7]}),
+        interactive:false, keyboard:false, zIndexOffset: kind === 'cur' ? 900 : 0}).addTo(cycloneLabelLayer);
+    });
+  });
+}
+// Arrowheads: one between each pair of consecutive fixes, sitting on the track line and pointing the way it runs.
+function cycloneArrows(system){
+  var fixes = cycloneSortedFixes(system), tracks = system.tracks || [], out = [];
+  var obs = tracks.filter(function(t){ return t.trackType === 'Observed'; })[0], fc = tracks.filter(function(t){ return t.trackType === 'Forecast'; })[0];
+  for(var i = 0; i + 1 < fixes.length; i++){
+    var A = fixes[i], B = fixes[i + 1], tr = cycloneFixKind(B) === 'fc' ? fc : obs, pts = tr && tr.points, pos, deg;
+    if(pts && pts.length > 2){
+      var ia = cycNearestIdx(pts, A.lat, A.lon), ib = cycNearestIdx(pts, B.lat, B.lon);
+      if(ib - ia >= 2){ var mid = Math.floor((ia + ib) / 2); pos = pts[mid]; deg = cycloneBearing(pts[mid - 1], pts[mid + 1]); }
+    }
+    if(!pos){ pos = [(A.lat + B.lat) / 2, (A.lon + B.lon) / 2]; deg = cycloneBearing([A.lat, A.lon], [B.lat, B.lon]); }
+    out.push({lat: pos[0], lon: pos[1], deg: deg, forecast: cycloneFixKind(B) === 'fc'});
+  }
+  return out;
+}
+function cycloneAreaBox(poly){ var la = poly.map(function(p){ return p[0]; }), lo = poly.map(function(p){ return p[1]; }); return (Math.max.apply(null, la) - Math.min.apply(null, la)) * (Math.max.apply(null, lo) - Math.min.apply(null, lo)); }
+
+function cyclonePopupHtml(system, fix){
+  var cur = cxmlLatestFix(system) || cycloneCurrentFix(system), color = cycloneCatColor(cur ? (cycloneFixLetter(cur) === 'L' ? '' : cycloneFixLetter(cur)) : '');
+  var inten = cur ? cycloneIntensityLabel(cur) : '', zones = system.areas || {}, issued = cycloneLocal(system.issueTime, system.region);
+  var html = '<div><div class="pu-title" style="color:' + color + '">&#127300; ' + cycloneTitle(system) + '</div>' +
+    (inten ? '<span class="pu-badge" style="background:' + color + ';color:#fff">' + inten + '</span>' : '') +
+    '<span class="pu-badge" style="background:#333;color:#ccc">' + (system.region || '') + '</span>' +
     '<div style="border-top:1px solid var(--border);margin:8px 0"></div>';
   if(fix){
-    html += (fix.pressureHPa ? '<div class="pu-row"><span class="pu-key">Central pressure</span><span class="pu-val">'+fix.pressureHPa+' hPa</span></div>' : '') +
-      (fix.windSpeedKt ? '<div class="pu-row"><span class="pu-key">Max wind</span><span class="pu-val">'+fix.windSpeedKt+' kt'+(fix.windGustsKt?(' gusting '+fix.windGustsKt+' kt'):'')+'</span></div>' : '') +
-      (fix.motionSpeedKt!=null ? '<div class="pu-row"><span class="pu-key">Motion</span><span class="pu-val">'+fix.motionSpeedKt+' kt @ '+(fix.motionDirDeg!=null?fix.motionDirDeg+'\u00B0':'?')+'</span></div>' : '');
+    var k = cycloneFixKind(fix), h = cycloneFixHours(fix, system), t = cycloneLocal(fix.fixTime, system.region);
+    var kindTxt = k === 'cur' ? 'Current position' : k === 'fc' ? 'Forecast' + (h != null ? ' +' + h + ' h' : '') : 'Observed' + (h != null ? ' ' + h + ' h' : '');
+    html += '<div class="pu-row"><span class="pu-key">Position</span><span class="pu-val">' + kindTxt + '</span></div>' +
+      (t ? '<div class="pu-row"><span class="pu-key">Time</span><span class="pu-val">' + t.long + '</span></div>' : '') +
+      '<div class="pu-row"><span class="pu-key">Location</span><span class="pu-val">' + cycloneLatLon(fix.lat, fix.lon) + '</span></div>' +
+      (cycloneIntensityLabel(fix) ? '<div class="pu-row"><span class="pu-key">Intensity</span><span class="pu-val">' + cycloneIntensityLabel(fix) + '</span></div>' : '');
   }
-  html += (system.issueTime ? '<div class="pu-row"><span class="pu-key">Issued</span><span class="pu-val">'+system.issueTime+'</span></div>' : '') +
-    '</div>';
+  var cx = system.cxml && system.cxml.fixes && system.cxml.fixes.length ? cxmlLatestFix(system) : null;
+  if(cx){
+    html += (cx.pressureHPa ? '<div class="pu-row"><span class="pu-key">Central pressure</span><span class="pu-val">' + cx.pressureHPa + ' hPa</span></div>' : '') +
+      (cx.windSpeedKt ? '<div class="pu-row"><span class="pu-key">Max wind</span><span class="pu-val">' + cx.windSpeedKt + ' kt' + (cx.windGustsKt ? (' gusting ' + cx.windGustsKt + ' kt') : '') + '</span></div>' : '') +
+      (cx.motionSpeedKt != null ? '<div class="pu-row"><span class="pu-key">Motion</span><span class="pu-val">' + cx.motionSpeedKt + ' kt @ ' + (cx.motionDirDeg != null ? cx.motionDirDeg + '\u00B0' : '?') + '</span></div>' : '');
+  }
+  var nW = (zones.warning || []).length, nA = (zones.watch || []).length;
+  html += '<div class="pu-row"><span class="pu-key">Zones</span><span class="pu-val">' + (nW || nA ? (nW ? 'Warning zone issued' : '') + (nW && nA ? '; ' : '') + (nA ? 'Watch zone issued' : '') : 'No warning or watch zones issued') + '</span></div>' +
+    (issued ? '<div class="pu-row"><span class="pu-key">Issued</span><span class="pu-val">' + issued.long + '</span></div>' : '') + '</div>';
   return html;
 }
 
 function renderCycloneMap(){
   cycloneLayer.clearLayers();
+  if(!cycloneLabelLayer) cycloneLabelLayer = L.layerGroup();
   cycloneSystems.forEach(function(system){
-    var popHtml = cyclonePopupHtml(system);
+    var popHtml = cyclonePopupHtml(system), popOpts = {className:'ba-popup', maxWidth:320};
 
-    // Threat-area polygons \u2014 Warning tier uses the DIRECT risk colour, Watch
-    // tier uses the WARNING risk colour, keeping this visually consistent with
-    // the rest of the app's risk vocabulary (matches the confirmed tier mapping:
-    // Warning polygon -> DIRECT, Watch polygon -> WARNING).
+    // Areas, underneath everything. BOM's grey band is the "Likely Tracks Area": the GML labels two of them (up to 72 h and up to 120 h);
+    // the fetcher does not keep that label yet (phase 2), so the smaller polygon is taken as the 72 h one and any larger as the longer range.
+    var fa = (system.areas && system.areas.forecast || []).slice().sort(function(a, b){ return cycloneAreaBox(a) - cycloneAreaBox(b); });
+    fa.forEach(function(poly, i){
+      L.polygon(poly, i === 0 ? {color:'#9aa0a6', weight:1.2, opacity:0.75, fillColor:'#9aa0a6', fillOpacity:0.22, interactive:false}
+                              : {color:'#9aa0a6', weight:1, opacity:0.6, dashArray:'4 6', fill:false, interactive:false}).addTo(cycloneLayer);
+    });
+    (system.areas && system.areas.wind || []).forEach(function(poly){
+      L.polygon(poly, {color:'#e8909a', weight:2, opacity:0.9, fillColor:'#e8909a', fillOpacity:0.08, interactive:false}).addTo(cycloneLayer);
+    });
+    // Threat-area polygons: Warning tier uses the DIRECT risk colour, Watch tier the WARNING risk colour (the confirmed tier mapping)
     (system.areas && system.areas.warning || []).forEach(function(poly){
-      L.polygon(poly, {
-        color: RISK_COLOR[3], weight: 1.5, opacity: 0.8,
-        fillColor: RISK_COLOR[3], fillOpacity: 0.12
-      }).bindPopup(popHtml, {className:'ba-popup', maxWidth:320}).addTo(cycloneLayer);
+      L.polygon(poly, {color: RISK_COLOR[3], weight:1.5, opacity:0.8, fillColor: RISK_COLOR[3], fillOpacity:0.12}).bindPopup(popHtml, popOpts).addTo(cycloneLayer);
     });
     (system.areas && system.areas.watch || []).forEach(function(poly){
-      L.polygon(poly, {
-        color: RISK_COLOR[2], weight: 1.5, opacity: 0.7,
-        fillColor: RISK_COLOR[2], fillOpacity: 0.08
-      }).bindPopup(popHtml, {className:'ba-popup', maxWidth:320}).addTo(cycloneLayer);
+      L.polygon(poly, {color: RISK_COLOR[2], weight:1.5, opacity:0.7, fillColor: RISK_COLOR[2], fillOpacity:0.08}).bindPopup(popHtml, popOpts).addTo(cycloneLayer);
     });
-
-    // Track lines \u2014 solid for Observed, dashed for Forecast (matches BOM's own
-    // two-tone track convention, confirmed against the real reference graphic).
+    // Track lines: solid for observed, dashed for forecast (BOM's own convention)
     (system.tracks || []).forEach(function(track){
-      L.polyline(track.points, {
-        color: '#ff4757', weight: track.trackType === 'Forecast' ? 2 : 2.5,
-        opacity: 0.9, dashArray: track.trackType === 'Forecast' ? '6 5' : null
-      }).addTo(cycloneLayer);
+      L.polyline(track.points, {color:'#ff4757', weight: track.trackType === 'Forecast' ? 2 : 2.5, opacity:0.9, dashArray: track.trackType === 'Forecast' ? '6 5' : null}).addTo(cycloneLayer);
     });
-
-    // Fix markers along the track, coloured by category
-    (system.fixes || []).forEach(function(fix){
-      var color = cycloneCatColor(fix.category);
-      L.circleMarker([fix.lat, fix.lon], {
-        radius: fix.fixType === 'Forecast' ? 4 : 5,
-        color: '#fff', weight: 1, fillColor: color, fillOpacity: 0.9
-      }).bindPopup(popHtml, {className:'ba-popup', maxWidth:320}).addTo(cycloneLayer);
+    // Arrowheads showing the direction of movement
+    cycloneArrows(system).forEach(function(a){
+      L.marker([a.lat, a.lon], {icon: L.divIcon({className:'cyc-arrow-wrap', html:'<div class="cyc-arrow" style="transform:rotate(' + a.deg.toFixed(0) + 'deg);opacity:' + (a.forecast ? 0.75 : 1) + '">&#9650;</div>', iconSize:[12, 12], iconAnchor:[6, 6]}), interactive:false, keyboard:false}).addTo(cycloneLayer);
+    });
+    // Fix markers: a lettered dot (L for a low, 1-5 for a cyclone) to 72 h, a small plain dot beyond
+    cycloneSortedFixes(system).forEach(function(fix){
+      var kind = cycloneFixKind(fix), h = cycloneFixHours(fix, system), letter = cycloneFixLetter(fix), color = cycloneCatColor(letter === 'L' ? '' : letter);
+      var popup = cyclonePopupHtml(system, fix);
+      if(kind === 'fc' && h != null && h > CYC_DOT_HOURS){
+        L.circleMarker([fix.lat, fix.lon], {radius:3.5, color:'#fff', weight:1, fillColor: color, fillOpacity:0.7}).bindPopup(popup, popOpts).addTo(cycloneLayer);
+      } else {
+        L.marker([fix.lat, fix.lon], {icon: L.divIcon({className:'cyc-dot-wrap', html:'<div class="cyc-dot cyc-' + kind + '" style="background:' + color + '">' + letter + '</div>', iconSize: kind === 'cur' ? [24, 24] : [18, 18], iconAnchor: kind === 'cur' ? [12, 12] : [9, 9]}),
+          zIndexOffset: kind === 'cur' ? 1000 : 0}).bindPopup(popup, popOpts).addTo(cycloneLayer);
+      }
     });
   });
+  cycloneLayer.addLayer(cycloneLabelLayer);
+  cycloneUpdateLabels();
 }
 
 function renderCyclonePanel(){
@@ -4198,15 +4312,18 @@ function renderCyclonePanel(){
   }
   var html = '';
   cycloneSystems.forEach(function(system, i){
-    var fix = cxmlLatestFix(system);
-    var color = fix && fix.category ? cycloneCatColor(fix.category) : '#ff4757';
-    var catLabel = fix && fix.category ? ('Category ' + fix.category) : 'Tropical Low';
-    var rowId = 'cyclone-row-' + i;
-    html += '<div class="warn-row" style="cursor:pointer" id="'+rowId+'">' +
-      '<div class="warn-title" style="color:'+color+'">&#127300; ' + (system.distName||'Unnamed System') + ' \u2014 ' + catLabel + '</div>' +
-      '<div style="font-size:9px;color:var(--text3);margin-top:2px">' + (system.region||'') + '</div>' +
+    var cur = cxmlLatestFix(system) || cycloneCurrentFix(system), l = cur ? cycloneFixLetter(cur) : '', color = cycloneCatColor(l === 'L' ? '' : l);
+    var inten = cur ? cycloneIntensityLabel(cur) : '', zones = system.areas || {}, issued = cycloneLocal(system.issueTime, system.region);
+    var nW = (zones.warning || []).length, nA = (zones.watch || []).length;
+    html += '<div class="warn-row" style="cursor:pointer" id="cyclone-row-' + i + '">' +
+      '<div class="warn-title" style="color:' + color + '">&#127300; ' + cycloneTitle(system) + (inten && !/low/i.test(inten) ? ' \u2014 ' + inten : '') + '</div>' +
+      '<div style="font-size:9px;color:var(--text3);margin-top:2px">' + (system.region || '') + (issued ? ' \u00B7 issued ' + issued.long : '') + '</div>' +
+      '<div style="font-size:10px;color:var(--text2);margin-top:3px">' + (nW || nA ? (nW ? 'Warning zone issued' : '') + (nW && nA ? '; ' : '') + (nA ? 'Watch zone issued' : '') : 'No warning or watch zones issued') + '</div>' +
       '</div>';
   });
+  html += '<div class="cyc-key"><b>Key:</b> L = tropical low, 1\u20135 = cyclone category. Ringed dot = current position; lighter dots = forecast every 12 h to 72 h, small dots beyond. ' +
+    'Grey band = range of likely tracks (72 h), dashed outline = to 5 days. Pink ring = forecast wind boundary. Arrows show the direction of movement. Times are BOM local time. ' +
+    '<a href="https://www.bom.gov.au/weather-and-climate/specialised-forecasts-and-observations/tropical-cyclone" target="_blank" rel="noopener">BOM tropical cyclone page</a></div>';
   el.innerHTML = html;
 
   cycloneSystems.forEach(function(system, i){
@@ -4214,7 +4331,7 @@ function renderCyclonePanel(){
     if(row) row.addEventListener('click', (function(sys){
       return function(){
         if(!cycloneVisible) toggleCycloneLayer();
-        var fix = cxmlLatestFix(sys);
+        var fix = cycloneCurrentFix(sys) || cxmlLatestFix(sys);
         if(fix) map.setView([fix.lat, fix.lon], 6);
       };
     })(system));
