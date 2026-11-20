@@ -236,6 +236,10 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:0 1
 .radar-tick:hover{background:var(--accent2);}
 #radar-time-label{font-family:monospace;font-size:10px;color:var(--accent);min-width:40px;text-align:center;}
 #radar-age-label{font-size:9px;color:var(--text3);}
+#radar-legend{display:inline-flex;align-items:center;gap:5px;}
+.rl{display:inline-flex;align-items:center;gap:2px;font-size:9px;color:var(--text3);}
+.rl i{width:9px;height:9px;border-radius:2px;display:inline-block;}
+.rl-u{font-size:9px;color:var(--text3);}
 /* bom radar */
 #bom-radar-controls{position:absolute;bottom:70px;left:50%;transform:translateX(-50%);z-index:1000;background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:6px 10px;display:flex;align-items:center;gap:8px;box-shadow:0 2px 12px var(--shadow);font-size:10px;color:var(--text2);white-space:nowrap;}
 #bom-radar-controls.hidden{display:none;}
@@ -266,7 +270,7 @@ body.wall-mode #radarcov-panel{display:none !important;}
 .rdr-opacity input[type=range]{width:70px;height:4px;accent-color:#0099ff;cursor:pointer;}
 .rdr-opacity span:last-child{font-family:monospace;color:#0099ff;min-width:28px;text-align:right;}
 #bom-radar-controls,#radar-controls{max-width:calc(100vw - 12px);}
-@media (max-width:700px){#bom-radar-product-label,#bom-radar-age-label,#radar-age-label,.rdr-opacity > span:first-child{display:none;}
+@media (max-width:700px){#radar-legend,#bom-radar-product-label,#bom-radar-age-label,#radar-age-label,.rdr-opacity > span:first-child{display:none;}
 #bom-radar-controls,#radar-controls{flex-wrap:wrap;justify-content:center;white-space:normal;width:max-content;}}
 #bom-radar-play-btn{background:#0077cc;border:none;color:#fff;border-radius:4px;width:24px;height:24px;cursor:pointer;font-size:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 #bom-radar-product-label{font-size:9px;color:#0099ff;font-weight:700;min-width:60px;}
@@ -968,7 +972,8 @@ body.wall-mode .risk-tooltip{display:none !important;}
       <button id="radar-play-btn" onclick="toggleRadarPlay()" title="Play/Pause">&#9654;</button>
       <div id="radar-timeline"></div>
       <span id="radar-time-label">--:--</span>
-      <span id="radar-age-label">BOM Radar</span>
+      <span id="radar-age-label">RainViewer</span>
+      <span id="radar-legend" title="Radar reflectivity in dBZ (RainViewer Universal Blue colours). Higher dBZ means heavier rain; 35 dBZ and above is heavy, 55 and above is extreme and can include hail."><span class="rl"><i style="background:#ded097"></i>&lt;15</span><span class="rl"><i style="background:#88ddee"></i>15</span><span class="rl"><i style="background:#0077aa"></i>25</span><span class="rl"><i style="background:#ffee00"></i>35</span><span class="rl"><i style="background:#ffaa00"></i>40</span><span class="rl"><i style="background:#ff4400"></i>45</span><span class="rl"><i style="background:#c10000"></i>50</span><span class="rl"><i style="background:#ffaaff"></i>55</span><span class="rl-u">dBZ</span></span>
       <label class="rdr-opacity" title="Radar opacity"><span>Opacity</span><input type="range" id="radar-opacity" min="10" max="100" step="5" value="70" oninput="setRadarOpacity(this.value)" aria-label="Radar opacity"><span id="radar-opacity-val">70%</span></label>
     </div>
     <div id="lightning-panel">
@@ -2378,7 +2383,9 @@ var radarLoaded = false;
 var radarLastLoaded = 0;   // timestamp of last successful frame load
 var RADAR_HOST = '';         // set from API response
 var RADAR_OPACITY = (function(){ var v = parseFloat(localStorage.getItem('wt_radar_opacity')); return (v >= 0.1 && v <= 1) ? v : 0.7; })();   // set by the slider, remembered
-var RADAR_COLOR = 6;         // 6 = original reflectivity dBZ colour scheme
+var RADAR_COLOR = 2;         // 2 = Universal Blue: the only scheme RainViewer still serves (the rest were retired 1 Jan 2026; asking for 6 was silently answered with 2)
+var RADAR_MAX_NATIVE = 8;    // map zoom 8 = tile zoom 7 at 512 px (zoomOffset -1), RainViewer's finest; above this the tiles are stretched
+var radarLayerByPath = {};   // host+path -> tile layer. Kept between refreshes so frames already on the map are not requested again
 var RADAR_SMOOTH = 0;        // 0 = sharp (meteorologists prefer this)
 var RADAR_SNOW = 0;
 
@@ -2390,8 +2397,7 @@ function toggleRadarLayer(){
     document.getElementById('radar-controls').classList.remove('hidden');
     var stale = (Date.now() - radarLastLoaded) > 5 * 60 * 1000;
     if(!radarLoaded || stale){
-      radarLayers.forEach(function(l){ if(map.hasLayer(l)) map.removeLayer(l); });
-      radarLayers = []; radarFramesReady = []; radarLoaded = false;
+      radarLoaded = false;          // frames still on the map are reused; only new ones are requested
       loadRadarFrames();
     } else {
       showRadarFrame(radarCurrentIdx);
@@ -2405,56 +2411,70 @@ function toggleRadarLayer(){
   }
 }
 
+function radarMakeLayer(f){
+  var url = RADAR_HOST + f.path + '/512/{z}/{x}/{y}/' + RADAR_COLOR + '/' + RADAR_SMOOTH + '_' + RADAR_SNOW + '.png';
+  var layer = L.tileLayer(url, {
+    opacity: 0,
+    zIndex: 300,
+    tileSize: 512,
+    zoomOffset: -1,
+    maxNativeZoom: RADAR_MAX_NATIVE,
+    attribution: 'Radar &copy; <a href="https://www.bom.gov.au" target="_blank">BOM</a> via <a href="https://www.rainviewer.com/" target="_blank">RainViewer</a>'
+  });
+  layer._wtReady = false;
+  layer.on('load', function(){
+    if(!layer._wtReady){ layer._wtReady = true; radarCheckReady(); }
+  });
+  layer.addTo(map);   // all frames sit on the map at opacity 0 so their tiles pre-load
+  return layer;
+}
+
+// Called whenever a frame finishes loading, and once after the frame list is built (reused frames never fire 'load' again).
+function radarCheckReady(){
+  var total = radarLayers.length;
+  if(!total || radarLoaded) return;
+  var n = 0;
+  radarLayers.forEach(function(l){ if(l._wtReady) n++; });
+  if(n < total){
+    document.getElementById('radar-age-label').textContent = 'Loading ' + Math.round(n / total * 100) + '%';
+    return;
+  }
+  radarLoaded = true;
+  radarLastLoaded = Date.now();
+  buildRadarTimeline();
+  radarCurrentIdx = total - 1;
+  showRadarFrame(radarCurrentIdx);
+  startRadarPlay();
+}
+
 function loadRadarFrames(){
   document.getElementById('radar-age-label').textContent = 'Loading...';
   fetch('https://api.rainviewer.com/public/weather-maps.json')
     .then(function(r){ return r.json(); })
     .then(function(data){
       RADAR_HOST = data.host;
-      radarFrames = data.radar.past || [];
-      if(!radarFrames.length){
+      var frames = (data.radar && data.radar.past) || [];
+      if(!frames.length){
         document.getElementById('radar-age-label').textContent = 'No data';
         return;
       }
-
-      var totalFrames = radarFrames.length;
-      var loadedCount = 0;
-      radarFramesReady = new Array(totalFrames).fill(false);
-
-      // Add ALL layers to map at opacity 0 immediately to trigger tile pre-loading
-      radarLayers = radarFrames.map(function(f, i){
-        var url = RADAR_HOST + f.path + '/512/{z}/{x}/{y}/' + RADAR_COLOR + '/' + RADAR_SMOOTH + '_' + RADAR_SNOW + '.png';
-        var layer = L.tileLayer(url, {
-          opacity: 0,
-          zIndex: 300,
-          tileSize: 512,
-          zoomOffset: -1,
-          maxNativeZoom: 6,
-          attribution: 'Radar &copy; <a href="https://www.bom.gov.au" target="_blank">BOM</a> via RainViewer'
-        });
-
-        layer.on('load', (function(idx){
-          return function(){
-            if(!radarFramesReady[idx]){
-              radarFramesReady[idx] = true;
-              loadedCount++;
-              var pct = Math.round(loadedCount / totalFrames * 100);
-              document.getElementById('radar-age-label').textContent = 'Loading ' + pct + '%';
-              if(loadedCount === totalFrames && !radarLoaded){
-                radarLoaded = true;
-                radarLastLoaded = Date.now();
-                buildRadarTimeline();
-                radarCurrentIdx = totalFrames - 1;
-                showRadarFrame(radarCurrentIdx);
-                startRadarPlay();
-              }
-            }
-          };
-        })(i));
-
-        layer.addTo(map);
-        return layer;
+      // Drop frames that have aged out of RainViewer's 2 hour window; keep the rest.
+      var keep = {};
+      frames.forEach(function(f){ keep[RADAR_HOST + f.path] = true; });
+      Object.keys(radarLayerByPath).forEach(function(k){
+        if(!keep[k]){
+          var old = radarLayerByPath[k];
+          if(map.hasLayer(old)) map.removeLayer(old);
+          delete radarLayerByPath[k];
+        }
       });
+      radarFrames = frames;
+      radarLayers = frames.map(function(f){
+        var key = RADAR_HOST + f.path;
+        if(!radarLayerByPath[key]) radarLayerByPath[key] = radarMakeLayer(f);
+        return radarLayerByPath[key];
+      });
+      radarCheckReady();
     })
     .catch(function(e){
       document.getElementById('radar-age-label').textContent = 'Failed to load';
@@ -2489,9 +2509,9 @@ function showRadarFrame(idx){
     document.getElementById('radar-time-label').textContent = formatRadarTime(radarFrames[idx].time);
     if(idx === radarFrames.length - 1){
       var ageMin = Math.round((Date.now() / 1000 - radarFrames[idx].time) / 60);
-      document.getElementById('radar-age-label').textContent = 'BOM \u00B7 ' + ageMin + 'm ago';
+      var _al = document.getElementById('radar-age-label'); _al.textContent = 'RainViewer \u00B7 ' + ageMin + 'm ago'; _al.title = 'Time since this frame was generated. RainViewer does not publish when the underlying radar data was captured.';
     } else {
-      document.getElementById('radar-age-label').textContent = 'BOM Radar';
+      document.getElementById('radar-age-label').textContent = 'RainViewer';
     }
   }
 }
@@ -2535,10 +2555,7 @@ function toggleRadarPlay(){
 function refreshRadarLayers(){
   if(radarVisible && radarLoaded){
     stopRadarPlay();
-    radarLayers.forEach(function(l){ if(map.hasLayer(l)) map.removeLayer(l); });
-    radarLayers = [];
-    radarFramesReady = [];
-    radarLoaded = false;
+    radarLoaded = false;   // frames still current are reused; only new ones are requested
     loadRadarFrames();
   }
 }
