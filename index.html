@@ -2395,21 +2395,29 @@ function toggleRadarLayer(){
   if(radarVisible){
     btn.classList.add('on');
     document.getElementById('radar-controls').classList.remove('hidden');
-    var stale = (Date.now() - radarLastLoaded) > 5 * 60 * 1000;
-    if(!radarLoaded || stale){
-      radarLoaded = false;          // frames still on the map are reused; only new ones are requested
-      loadRadarFrames();
+    radarLoaded = false;
+    var fresh = (Date.now() - radarLastLoaded) <= 5 * 60 * 1000;
+    if(radarFramesAll.length && fresh){
+      radarSelectActive(radarFramesAll);   // frames already known: put them back on the map, no new frame list needed
     } else {
-      showRadarFrame(radarCurrentIdx);
+      loadRadarFrames();
     }
   } else {
     btn.classList.remove('on');
     document.getElementById('radar-controls').classList.add('hidden');
-    // Set all layers to invisible rather than removing \u2014 avoids reload next time
-    radarLayers.forEach(function(l){ l.setOpacity(0); });
     stopRadarPlay();
+    // Take every frame off the map while the layer is hidden, so panning and zooming make no radar requests.
+    Object.keys(radarLayerByPath).forEach(function(k){
+      var l = radarLayerByPath[k];
+      if(map.hasLayer(l)) map.removeLayer(l);
+    });
   }
 }
+
+var radarFramesAll = [];       // every frame RainViewer lists; radarFrames / radarLayers hold the ones currently on the map
+var radarZoomHooked = false;
+var radarRebalanceTimer = null;
+var RADAR_TILE_BUDGET = 70;     // tile requests allowed for one full set of frames. RainViewer limits an address to 100 a minute, and panning and the BOM layer share it
 
 function radarMakeLayer(f){
   var url = RADAR_HOST + f.path + '/512/{z}/{x}/{y}/' + RADAR_COLOR + '/' + RADAR_SMOOTH + '_' + RADAR_SNOW + '.png';
@@ -2425,11 +2433,57 @@ function radarMakeLayer(f){
   layer.on('load', function(){
     if(!layer._wtReady){ layer._wtReady = true; radarCheckReady(); }
   });
-  layer.addTo(map);   // all frames sit on the map at opacity 0 so their tiles pre-load
-  return layer;
+  return layer;   // added to the map by radarSelectActive
 }
 
-// Called whenever a frame finishes loading, and once after the frame list is built (reused frames never fire 'load' again).
+// How many frames to keep on the map at the current zoom. Up to map zoom 6 every frame is used, as before. Above that each zoom level
+// needs a fresh set of tiles for every frame, so the number of frames is cut to stay inside the tile budget.
+function radarFrameLimit(total){
+  var z = map.getZoom();
+  if(z <= 6) return total;
+  var sz = map.getSize(), ts = 512 * Math.pow(2, Math.max(0, z - RADAR_MAX_NATIVE));
+  var n = (Math.ceil(sz.x / ts) + 1) * (Math.ceil(sz.y / ts) + 1);   // tiles per frame for this window
+  return Math.max(2, Math.min(total, Math.floor(RADAR_TILE_BUDGET / n)));
+}
+
+// Put the newest frames on the map (as many as the limit allows) and take the rest off.
+function radarSelectActive(all){
+  radarFramesAll = all;
+  if(!radarZoomHooked){
+    radarZoomHooked = true;
+    map.on('zoomend resize', function(){
+      clearTimeout(radarRebalanceTimer);
+      radarRebalanceTimer = setTimeout(radarRebalance, 700);
+    });
+  }
+  var active = all.slice(all.length - radarFrameLimit(all.length));
+  var keep = {};
+  active.forEach(function(f){ keep[RADAR_HOST + f.path] = true; });
+  Object.keys(radarLayerByPath).forEach(function(k){
+    var l = radarLayerByPath[k];
+    if(keep[k]){ if(!map.hasLayer(l)) l.addTo(map); }
+    else if(map.hasLayer(l)) map.removeLayer(l);
+  });
+  radarFrames = active;
+  radarLayers = active.map(function(f){ return radarLayerByPath[RADAR_HOST + f.path]; });
+  if(radarLoaded){            // re-selecting after a zoom: restart the animation on the frames now in use
+    buildRadarTimeline();
+    radarCurrentIdx = radarLayers.length - 1;
+    showRadarFrame(radarCurrentIdx);
+    startRadarPlay();
+  } else {
+    radarCheckReady();
+  }
+}
+
+function radarRebalance(){
+  if(!radarVisible || !radarFramesAll.length) return;
+  if(radarFrameLimit(radarFramesAll.length) === radarFrames.length) return;
+  stopRadarPlay();
+  radarSelectActive(radarFramesAll);
+}
+
+// Called whenever a frame finishes loading, and once after the frame list is set (reused frames never fire 'load' again).
 function radarCheckReady(){
   var total = radarLayers.length;
   if(!total || radarLoaded) return;
@@ -2458,23 +2512,22 @@ function loadRadarFrames(){
         document.getElementById('radar-age-label').textContent = 'No data';
         return;
       }
-      // Drop frames that have aged out of RainViewer's 2 hour window; keep the rest.
-      var keep = {};
-      frames.forEach(function(f){ keep[RADAR_HOST + f.path] = true; });
+      // Forget frames that have aged out of RainViewer's 2 hour window; keep the rest.
+      var keepAll = {};
+      frames.forEach(function(f){ keepAll[RADAR_HOST + f.path] = true; });
       Object.keys(radarLayerByPath).forEach(function(k){
-        if(!keep[k]){
+        if(!keepAll[k]){
           var old = radarLayerByPath[k];
           if(map.hasLayer(old)) map.removeLayer(old);
           delete radarLayerByPath[k];
         }
       });
-      radarFrames = frames;
-      radarLayers = frames.map(function(f){
+      frames.forEach(function(f){
         var key = RADAR_HOST + f.path;
         if(!radarLayerByPath[key]) radarLayerByPath[key] = radarMakeLayer(f);
-        return radarLayerByPath[key];
       });
-      radarCheckReady();
+      radarLoaded = false;
+      radarSelectActive(frames);
     })
     .catch(function(e){
       document.getElementById('radar-age-label').textContent = 'Failed to load';
