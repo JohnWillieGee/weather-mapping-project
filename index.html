@@ -286,6 +286,7 @@ body.wall-mode #radarcov-panel{display:none !important;}
 #bom-radar-legend{font-size:9px;color:var(--text3);white-space:nowrap;}
 .bom-lg-sw{display:inline-block;width:9px;height:9px;border-radius:2px;vertical-align:middle;margin-right:2px;}
 .bom-lg-bar{display:inline-block;width:70px;height:8px;border-radius:2px;vertical-align:middle;}
+.bom-lg-blk{display:inline-block;width:8px;height:9px;vertical-align:middle;}
 /* lightning */
 #lightning-panel{position:absolute;top:50px;right:50px;z-index:1002;width:480px;height:380px;border-radius:var(--radius);overflow:hidden;border:1px solid #9775fa;box-shadow:0 4px 20px rgba(0,0,0,0.7);display:none;flex-direction:column;}
 #lightning-panel.visible{display:flex;}
@@ -2671,7 +2672,11 @@ var BOM_TILE_GRIDS = {
 var BOM_LAYERS = [
   {id: 'atm_surf_air_precip_reflectivity_dbz',                 label: 'Radar (reflectivity)',                grid: 'main', kind: '5min', legend: 'radar'},
   {id: 'atm_surf_air_weather_icon_thunderstorm_code_3hourly',  label: 'Thunderstorms (forecast, 3-hourly)',  grid: 'adfd', kind: '3h',    legend: 'storm'},
-  {id: 'atm_surf_air_temp_heatwave_severity_code_daily',       label: 'Heatwave severity (forecast, daily)', grid: 'adfd', kind: 'daily', anchorH: 0, legend: 'heat'}
+  {id: 'atm_surf_air_temp_heatwave_severity_code_daily',       label: 'Heatwave severity (forecast, daily)', grid: 'adfd', kind: 'daily', anchorH: 0, legend: 'heat'},
+  {id: 'atm_surf_air_precip_any_probability_percent_3hourly',  label: 'Chance of rain, at least 0.2 mm (forecast, 3-hourly)', grid: 'adfd', kind: '3h', legend: 'chance'},
+  {id: 'atm_surf_air_temp_apparent_cel_3hourly',               label: 'Feels-like temperature (forecast, 3-hourly)', grid: 'adfd', kind: '3h', legend: 'feels'},
+  // wind is two layers drawn together, as on BOM's map: speed as colour, direction as arrows (overlay)
+  {id: 'atm_surf_air_wind_speed_10m_avg_kmh_3hourly',          label: 'Wind speed and direction (forecast, 3-hourly)', grid: 'adfd', kind: '3h', legend: 'wind', overlay: 'atm_surf_air_wind_dirn_10m_deg_t_3hourly'}
 ];
 var BOM_TILE_MAXZ     = 8;       // finest zoom the service has
 var BOM_RADAR_FRAMES  = 9;       // BOM lists 9 radar frames, 5 minutes apart (45 minutes)
@@ -2690,8 +2695,8 @@ function bomTStamp(ms){                                         // "2026-11-20T2
   var d = new Date(ms), p = function(n){ return (n < 10 ? '0' : '') + n; };
   return d.getUTCFullYear() + '-' + p(d.getUTCMonth() + 1) + '-' + p(d.getUTCDate()) + 'T' + p(d.getUTCHours()) + ':' + p(d.getUTCMinutes()) + 'Z';
 }
-function bomTUrl(def, stamp, z, row, col){
-  return BOM_TILE_BASE + '/' + def.id + '/default/' + stamp + '/' + BOM_TILE_GRIDS[def.grid].set + '/' + z + '/' + row + '/' + col + '.png';
+function bomTUrl(def, stamp, z, row, col, layerId){
+  return BOM_TILE_BASE + '/' + (layerId || def.id) + '/default/' + stamp + '/' + BOM_TILE_GRIDS[def.grid].set + '/' + z + '/' + row + '/' + col + '.png';
 }
 // Forecast times to offer, earliest first: 3-hourly layers from the slot containing now, daily layers from the latest anchor time at or before now.
 function bomTLayerTimes(def, nowMs){
@@ -2712,7 +2717,7 @@ function bomTSources(gridName, z, x, y){
   }
   return out;
 }
-function bomTileLayerNew(def, stamp){                           // a Leaflet grid layer for one frame (defined on first use so load order does not matter)
+function bomTileLayerNew(def, stamp, layerId){                           // a Leaflet grid layer for one frame (defined on first use so load order does not matter)
   if (!bomTileLayerCls) {
     bomTileLayerCls = L.GridLayer.extend({
       createTile: function(coords, done){
@@ -2725,13 +2730,13 @@ function bomTileLayerNew(def, stamp){                           // a Leaflet gri
           var img = new Image();                                  // no crossOrigin: BOM's headers only allow its own site to read pixels, and we never need to
           img.onload  = function(){ ctx.drawImage(img, Math.round(s.dx), Math.round(s.dy)); finish(true); };
           img.onerror = function(){ finish(false); };
-          img.src = bomTUrl(self.options.def, self.options.stamp, coords.z, s.row, s.col);
+          img.src = bomTUrl(self.options.def, self.options.stamp, coords.z, s.row, s.col, self.options.layerId);
         });
         return canvas;
       }
     });
   }
-  return new bomTileLayerCls({def: def, stamp: stamp, tileSize: 256, opacity: 0, zIndex: 310, maxNativeZoom: BOM_TILE_MAXZ, className: 'wt-bomtile',
+  return new bomTileLayerCls({def: def, stamp: stamp, layerId: layerId || def.id, tileSize: 256, opacity: 0, zIndex: layerId && layerId !== def.id ? 311 : 310, maxNativeZoom: BOM_TILE_MAXZ, className: 'wt-bomtile',
     attribution: 'Radar and forecasts &copy; <a href="https://www.bom.gov.au" target="_blank">Bureau of Meteorology</a>'});
 }
 function bomTProbe(url, ms){
@@ -2777,12 +2782,19 @@ function bomRadarCurrentLayer(){
 
 // ---- legends (colours are the ones BOM draws; names follow BOM's own wording) ----
 var BOM_RADAR_PALETTE = ['#f5f5ff', '#b4b4ff', '#7878ff', '#1414ff', '#00d8c3', '#009690', '#006666', '#ffff00', '#ffc800', '#ff9600', '#ff6400', '#ff0000', '#c80000', '#780000'];
+// Colour bins copied from BOM's own legends (sampled from its map page on 21 Nov 2026), lowest first.
+var BOM_BINS = {
+  chance: {lo: '0', hi: '90+ %', cols: ['#e5f2fa', '#cce6f7', '#99ceee', '#67b5e6', '#349ddd', '#0184d5'], names: ['0 to 10', '10 to 25', '25 to 50', '50 to 75', '75 to 90', '90 to 100']},
+  feels:  {lo: '< 0', hi: '45+ \u00B0C', cols: ['#103d62', '#0e7692', '#2eaca5', '#6dcca6', '#afefaf', '#eefeb5', '#f4e170', '#eabb47', '#cb7422', '#ad4703', '#711904'], names: ['< 0', '0 to 5', '5 to 10', '10 to 15', '15 to 20', '20 to 25', '25 to 30', '30 to 35', '35 to 40', '40 to 45', '45+']},
+  wind:   {lo: '0', hi: '90+ km/h', cols: ['#f0e1fe', '#e8c9f7', '#dcadf3', '#c58ae2', '#d6733d', '#ce5b1c', '#b7480c', '#933103', '#601f01', '#361a00'], names: ['0 to 10', '10 to 20', '20 to 30', '30 to 40', '40 to 50', '50 to 60', '60 to 70', '70 to 80', '80 to 90', '90+'], arrows: true}
+};
 function bomLegendHtml(kind){
   var sw = function(c, t){ return '<span class="bom-lg-sw" style="background:' + c + '"></span>' + t + ' '; };
   if (kind === 'radar') return 'Light <span class="bom-lg-bar" style="background:linear-gradient(to right,' + BOM_RADAR_PALETTE.join(',') + ')"></span> Heavy';
   if (kind === 'storm') return sw('#f19a9a', 'Thunderstorms forecast');
   if (kind === 'heat')  return sw('#f8cf00', 'Low-intensity') + sw('#f48000', 'Severe');
-  return '';
+  var b = BOM_BINS[kind]; if (!b) return '';
+  return b.lo + ' ' + b.cols.map(function(c, i){ return '<span class="bom-lg-blk" title="' + b.names[i] + '" style="background:' + c + '"></span>'; }).join('') + ' ' + b.hi + (b.arrows ? ' &#8595; direction' : '');
 }
 function bomLayerUi(){                                          // fill the drop-down once, show the chosen layer and its colour key
   var sel = document.getElementById('bom-layer-select');
@@ -2885,13 +2897,15 @@ function bomFcLabel(ms, def){
 }
 function bomFcShow(i){
   var def = bomCur(), all = bomRadarFramesAll, ms = all[i]; if (ms === undefined) return;
-  bomRadarCurrentIdx = i; var need = {}; need[ms] = true; if (all[i + 1] !== undefined) need[all[i + 1]] = true;
+  bomRadarCurrentIdx = i;
+  var need = {};                                                // keys: the time for the layer, time + '|o' for its overlay (wind arrows)
+  [ms, all[i + 1]].forEach(function(t){ if (t === undefined) return; need[t] = {t: t, id: def.id, cur: t === ms}; if (def.overlay) need[t + '|o'] = {t: t, id: def.overlay, cur: t === ms}; });
   Object.keys(bomRadarLayerByStamp).forEach(function(k){ var l = bomRadarLayerByStamp[k]; if (!need[k] && map.hasLayer(l)) map.removeLayer(l); });
   Object.keys(need).forEach(function(k){
-    var l = bomRadarLayerByStamp[k];
-    if (!l) { l = bomTileLayerNew(def, bomTStamp(+k)); l.on('load', function(){ if (bomRadarVisible && bomIsFc() && bomTileStat.err >= 4 && bomTileStat.ok === 0) bomForecastFail('tiles are failing to load'); }); bomRadarLayerByStamp[k] = l; }
+    var n = need[k], l = bomRadarLayerByStamp[k];
+    if (!l) { l = bomTileLayerNew(def, bomTStamp(n.t), n.id); l.on('load', function(){ if (bomRadarVisible && bomIsFc() && bomTileStat.err >= 4 && bomTileStat.ok === 0) bomForecastFail('tiles are failing to load'); }); bomRadarLayerByStamp[k] = l; }
     if (!map.hasLayer(l)) l.addTo(map);
-    l.setOpacity(+k === ms ? BOM_RADAR_OPACITY : 0);
+    l.setOpacity(n.cur ? (n.id === def.id ? BOM_RADAR_OPACITY : 1) : 0);
   });
   var sl = document.getElementById('bom-fc-slider'); if (sl) sl.value = i;
   document.getElementById('bom-radar-time-label').textContent = bomFcLabel(ms, def);
