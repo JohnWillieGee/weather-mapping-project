@@ -2484,7 +2484,7 @@ function toggleRadarLayer(){
 var radarFramesAll = [];       // every frame RainViewer lists; radarFrames / radarLayers hold the ones currently on the map
 var radarZoomHooked = false;
 var radarRebalanceTimer = null;
-var RADAR_TILE_BUDGET = 70;     // tile requests allowed for one full set of frames. RainViewer limits an address to 100 a minute, and panning and the BOM layer share it
+var RADAR_TILE_BUDGET = 80;     // tile requests allowed for one full set of frames. RainViewer limits an address to about 100 a minute, and panning shares it
 
 function radarMakeLayer(f){
   var url = RADAR_HOST + f.path + '/512/{z}/{x}/{y}/' + RADAR_COLOR + '/' + RADAR_SMOOTH + '_' + RADAR_SNOW + '.png';
@@ -2503,12 +2503,11 @@ function radarMakeLayer(f){
   return layer;   // added to the map by radarSelectActive
 }
 
-// How many frames to keep on the map at the current zoom. Up to map zoom 6 every frame is used, as before. Above that each zoom level
-// needs a fresh set of tiles for every frame, so the number of frames is cut to stay inside the tile budget.
+// How many RainViewer frames to keep on the map. Each frame needs about (tiles across x tiles down) requests and RainViewer allows an address roughly
+// 100 a minute, so the number of frames is cut to stay inside the tile budget at every zoom. (A full set of 13 frames at national zoom needs over 150
+// requests and was answered with HTTP 429.) Fewer frames on big or high-resolution windows means a shorter loop, not a broken one.
 function radarFrameLimit(total){
-  var z = map.getZoom();
-  if(z <= 6) return total;
-  var sz = map.getSize(), ts = 512 * Math.pow(2, Math.max(0, z - RADAR_MAX_NATIVE));
+  var z = map.getZoom(), sz = map.getSize(), ts = 512 * Math.pow(2, Math.max(0, z - RADAR_MAX_NATIVE));
   var n = (Math.ceil(sz.x / ts) + 1) * (Math.ceil(sz.y / ts) + 1);   // tiles per frame for this window
   return Math.max(2, Math.min(total, Math.floor(RADAR_TILE_BUDGET / n)));
 }
@@ -2788,10 +2787,17 @@ function bomTileLayerNew(def, stamp, layerId){                           // a Le
         function finish(okk){ if (okk) bomTileStat.ok++; else bomTileStat.err++; if (--pending === 0) done(null, canvas); }
         if (!pending) { setTimeout(function(){ done(null, canvas); }, 0); return canvas; }
         src.forEach(function(s){
-          var img = new Image();                                  // no crossOrigin: BOM's headers only allow its own site to read pixels, and we never need to
-          img.onload  = function(){ ctx.drawImage(img, Math.round(s.dx), Math.round(s.dy)); finish(true); };
-          img.onerror = function(){ finish(false); };
-          img.src = bomTUrl(self.options.def, self.options.stamp, coords.z, s.row, s.col, self.options.layerId);
+          var url = bomTUrl(self.options.def, self.options.stamp, coords.z, s.row, s.col, self.options.layerId);
+          function attempt(retried){
+            var img = new Image();                                // no crossOrigin: BOM's headers only allow its own site to read pixels, and we never need to
+            img.onload  = function(){ ctx.drawImage(img, Math.round(s.dx), Math.round(s.dy)); finish(true); };
+            img.onerror = function(){
+              if (retried) { finish(false); return; }
+              fetch(url, {mode: 'no-cors', cache: 'reload'}).catch(function(){}).then(function(){ attempt(true); });   // replace a 404 kept by the browser, then ask once more
+            };
+            img.src = url;
+          }
+          attempt(false);
         });
         return canvas;
       }
@@ -2810,15 +2816,25 @@ function bomTProbe(url, ms){
 }
 function bomProbeUrl(def, ms){ var p = BOM_TILE_GRIDS[def.grid].probe; return bomTUrl(def, bomTStamp(ms), p[0], p[1], p[2]); }
 // The newest radar frame BOM lists can run ahead of what is published, so test a real tile from the newest slot backwards.
+// BOM publishes a frame about 4 to 7 minutes after its stamp. A 404 for a younger slot is normal (but the browser may keep it); a 404 for a slot older than
+// 7 minutes is almost certainly such a kept answer, so it is replaced with a cache-bypassing request and the slot is asked about once more.
 function bomRadarFindNewest(def){
-  var base = Math.floor(Date.now() / 300000) * 300000, k = 0;
+  var base = Math.floor((Date.now() - 4 * 60000) / 300000) * 300000, k = 0;
+  function check(ms){
+    var url = bomProbeUrl(def, ms);
+    return bomTProbe(url, 8000).then(function(ok){
+      if (ok || (Date.now() - ms) < 7 * 60000) return ok;
+      return fetch(url, {mode: 'no-cors', cache: 'reload'}).catch(function(){}).then(function(){ return bomTProbe(url, 8000); });
+    });
+  }
   function next(){
     if (k > 9) return Promise.resolve(null);
     var ms = base - k * 300000; k++;
-    return bomTProbe(bomProbeUrl(def, ms), 8000).then(function(ok){ return ok ? ms : next(); });
+    return check(ms).then(function(ok){ return ok ? ms : next(); });
   }
   return next();
 }
+
 function bomFcFindStart(def, times){                            // first of the first few forecast times that answers (-1 if none)
   var i = 0;
   function next(){
