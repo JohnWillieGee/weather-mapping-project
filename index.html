@@ -880,7 +880,7 @@ body.wall-mode .risk-tooltip{display:none !important;}
 
       <div style="padding:10px 14px 12px;border-top:1px solid var(--border);margin-top:auto;">
         <div style="font-family:monospace;font-size:9px;color:var(--text3);letter-spacing:.5px;">
-          <span style="color:var(--text2);font-weight:700;">WatchTower</span> &nbsp;v5
+          <span style="color:var(--text2);font-weight:700;">WatchTower</span> &nbsp;v4.1
           <span style="float:right;opacity:0.6;">John Willie Gee</span>
         </div>
       </div>
@@ -958,8 +958,7 @@ body.wall-mode .risk-tooltip{display:none !important;}
     <div id="xl-panel" class="hidden"></div>
     <div id="radarcov-panel" class="hidden">
       <div class="rc-title">Radar coverage</div>
-      <div class="rc-row"><span>Range</span><div class="sp-theme-seg"><button class="sp-th-opt" id="rc-r64" onclick="radarCovSet('range',64)">64 km</button><button class="sp-th-opt" id="rc-r128" onclick="radarCovSet('range',128)">128</button><button class="sp-th-opt" id="rc-r256" onclick="radarCovSet('range',256)">256</button><button class="sp-th-opt" id="rc-r512" onclick="radarCovSet('range',512)">512</button></div></div>
-      <div class="rc-row"><span>Radars</span><div class="sp-theme-seg"><button class="sp-th-opt" id="rc-s-wt" onclick="radarCovSet('src','wt')">WatchTower</button><button class="sp-th-opt" id="rc-s-all" onclick="radarCovSet('src','all')">+ BOM-only</button></div></div>
+      <div class="rc-row"><span>Range</span><div class="sp-theme-seg"><button class="sp-th-opt" id="rc-r64" onclick="radarCovSet('range',64)">64 km</button><button class="sp-th-opt" id="rc-r128" onclick="radarCovSet('range',128)">128</button><button class="sp-th-opt" id="rc-r200" onclick="radarCovSet('range',200)">200</button><button class="sp-th-opt" id="rc-r256" onclick="radarCovSet('range',256)">256</button><button class="sp-th-opt" id="rc-r512" onclick="radarCovSet('range',512)">512</button></div></div>
       <div class="rc-row"><span>Highlight</span><div class="sp-theme-seg"><button class="sp-th-opt" id="rc-h-gaps" onclick="radarCovSet('hi','gaps')">No radar</button><button class="sp-th-opt" id="rc-h-single" onclick="radarCovSet('hi','single')">One radar</button><button class="sp-th-opt" id="rc-h-off" onclick="radarCovSet('hi','off')">Off</button></div></div>
       <div id="rc-stats">Loading radar list...</div>
       <div id="rc-note"></div>
@@ -1572,17 +1571,77 @@ function normaliseSite(s) {
   return s;
 }
 // ---- Radar coverage layer ---------------------------------------------------------------------------------------------
-// Where BOM's radars can see rain, and which of your sites sit outside that. Radar positions come from radar_meta.json (each
-// radar's image extent is stored there), so there is no extra data feed. Rings show range in principle only: hills blocking the
-// beam and the beam rising with distance are not modelled.
-var RADARCOV_STALE_MIN = 25;     // a radar whose newest frame is this far behind the freshest radar is treated as not reporting
-// Real BOM radars that WatchTower's radar layer does not download (positions from BOM's site database). Shown dashed.
-var RADARCOV_EXTRA = [
-  {id:'IDR22', name:'Mackay',    lat:-21.117,  lon:149.217}, {id:'IDR24', name:'Bowen',     lat:-19.886, lon:148.075},
-  {id:'IDR23', name:'Gladstone', lat:-23.855,  lon:151.263}, {id:'IDR29', name:'Learmonth', lat:-22.103, lon:113.999},
-  {id:'IDR114', name:'Carnarvon', lat:-24.8878, lon:113.669}
+// Where BOM's radars can see rain, and which of your sites sit outside that. Radar positions are BOM's own (its radar_sites service, 63 radars,
+// read on 21 Nov 2026), so the list does not depend on which radars the fetcher downloads. Rings show range in principle only: hills blocking the
+// beam and the beam rising with distance are not modelled (BOM's own coverage shading is for rain about 3 km up, with useful range about 200 km).
+var RADARCOV_STALE_MIN = 25;     // a radar the fetcher downloads whose newest frame is this far behind the freshest radar is treated as not reporting
+// ty: D = Doppler, W = standard weather watch radar
+var RADARCOV_BOM = [
+  {id:2, name:'Melbourne (Laverton)', lat:-37.85524, lon:144.75545, st:'VIC', ty:'D'},
+  {id:3, name:'Wollongong (Appin)', lat:-34.26238, lon:150.87515, st:'NSW', ty:'D'},
+  {id:4, name:'Newcastle', lat:-32.7298, lon:152.02537, st:'NSW', ty:'D'},
+  {id:6, name:'Geraldton', lat:-28.80467, lon:114.69735, st:'WA', ty:'D'},
+  {id:7, name:'Wyndham', lat:-15.4517, lon:128.12086, st:'WA', ty:'W'},
+  {id:8, name:'Gympie (Mount Kanigan)', lat:-25.95733, lon:152.57692, st:'QLD', ty:'D'},
+  {id:14, name:'Mount Gambier', lat:-37.74771, lon:140.77463, st:'SA', ty:'W'},
+  {id:16, name:'Port Hedland', lat:-20.37184, lon:118.63166, st:'WA', ty:'W'},
+  {id:17, name:'Broome', lat:-17.94826, lon:122.23532, st:'WA', ty:'D'},
+  {id:19, name:'Cairns', lat:-16.81817, lon:145.66303, st:'QLD', ty:'D'},
+  {id:22, name:'Mackay', lat:-21.11725, lon:149.21728, st:'QLD', ty:'D'},
+  {id:23, name:'Gladstone', lat:-23.85507, lon:151.26252, st:'QLD', ty:'W'},
+  {id:24, name:'Bowen', lat:-19.88577, lon:148.07568, st:'QLD', ty:'W'},
+  {id:25, name:'Alice Springs', lat:-23.79505, lon:133.88894, st:'NT', ty:'W'},
+  {id:27, name:'Woomera', lat:-31.15581, lon:136.8044, st:'SA', ty:'W'},
+  {id:28, name:'Grafton', lat:-29.62066, lon:152.96333, st:'NSW', ty:'W'},
+  {id:29, name:'Learmonth', lat:-22.10319, lon:113.99967, st:'WA', ty:'W'},
+  {id:31, name:'Albany', lat:-34.94176, lon:117.81635, st:'WA', ty:'D'},
+  {id:32, name:'Esperance', lat:-33.8302, lon:121.89173, st:'WA', ty:'D'},
+  {id:33, name:'Ceduna', lat:-32.12984, lon:133.69636, st:'SA', ty:'D'},
+  {id:36, name:'Mornington Island (Gulf of Carpentaria)', lat:-16.66409, lon:139.18124, st:'QLD', ty:'W'},
+  {id:38, name:'Newdegate', lat:-33.09695, lon:119.0088, st:'WA', ty:'D'},
+  {id:39, name:'Halls Creek', lat:-18.22894, lon:127.66283, st:'WA', ty:'W'},
+  {id:40, name:'Canberra (Captains Flat)', lat:-35.6614, lon:149.51225, st:'NSW', ty:'D'},
+  {id:41, name:'Willis Island', lat:-16.28738, lon:149.96463, st:'QLD', ty:'D'},
+  {id:42, name:'Katherine (Tindal)', lat:-14.51091, lon:132.44703, st:'NT', ty:'W'},
+  {id:44, name:'Giles', lat:-25.03323, lon:128.30174, st:'WA', ty:'W'},
+  {id:46, name:'Adelaide (Sellicks Hill)', lat:-35.32955, lon:138.50248, st:'SA', ty:'W'},
+  {id:48, name:'Kalgoorlie', lat:-30.78422, lon:121.45483, st:'WA', ty:'D'},
+  {id:49, name:'Yarrawonga', lat:-36.02962, lon:146.02275, st:'VIC', ty:'D'},
+  {id:50, name:'Brisbane (Marburg)', lat:-27.60634, lon:152.54004, st:'QLD', ty:'D'},
+  {id:52, name:'NW Tasmania (West Takone)', lat:-41.17916, lon:145.58, st:'TAS', ty:'D'},
+  {id:53, name:'Moree', lat:-29.49029, lon:149.84619, st:'NSW', ty:'W'},
+  {id:55, name:'Wagga Wagga', lat:-35.15815, lon:147.45631, st:'NSW', ty:'W'},
+  {id:56, name:'Longreach', lat:-23.43979, lon:144.28226, st:'QLD', ty:'W'},
+  {id:58, name:'South Doodlakine', lat:-31.77778, lon:117.95279, st:'WA', ty:'D'},
+  {id:63, name:'Darwin (Berrimah)', lat:-12.45591, lon:130.92656, st:'NT', ty:'D'},
+  {id:64, name:'Adelaide (Buckland Park)', lat:-34.61701, lon:138.46877, st:'SA', ty:'D'},
+  {id:66, name:'Brisbane (Mt Stapylton)', lat:-27.71773, lon:153.24, st:'QLD', ty:'D'},
+  {id:67, name:'Warrego', lat:-26.44018, lon:147.34913, st:'QLD', ty:'W'},
+  {id:68, name:'Bairnsdale', lat:-37.88754, lon:147.5755, st:'VIC', ty:'D'},
+  {id:69, name:'Namoi (Blackjack Mountain)', lat:-31.02422, lon:150.19197, st:'NSW', ty:'D'},
+  {id:70, name:'Perth (Serpentine)', lat:-32.39176, lon:115.86696, st:'WA', ty:'D'},
+  {id:71, name:'Sydney (Terrey Hills)', lat:-33.70078, lon:151.20948, st:'NSW', ty:'D'},
+  {id:72, name:'Emerald', lat:-23.54959, lon:148.23919, st:'QLD', ty:'D'},
+  {id:74, name:'Greenvale', lat:-18.99765, lon:144.99586, st:'QLD', ty:'D'},
+  {id:75, name:'Mount Isa', lat:-20.71121, lon:139.55529, st:'QLD', ty:'D'},
+  {id:76, name:'Hobart (Mt Koonya)', lat:-43.1126, lon:147.80522, st:'TAS', ty:'D'},
+  {id:77, name:'Warruwi', lat:-11.64848, lon:133.37997, st:'NT', ty:'D'},
+  {id:78, name:'Weipa', lat:-12.66644, lon:141.92461, st:'QLD', ty:'D'},
+  {id:79, name:'Watheroo', lat:-30.36021, lon:116.28972, st:'WA', ty:'D'},
+  {id:93, name:'Brewarrina', lat:-29.97079, lon:146.81358, st:'NSW', ty:'D'},
+  {id:94, name:'Hillston', lat:-33.55221, lon:145.52863, st:'NSW', ty:'D'},
+  {id:95, name:'Rainbow (Wimmera)', lat:-35.99756, lon:142.01332, st:'VIC', ty:'D'},
+  {id:96, name:'Yeoval', lat:-32.74447, lon:148.70809, st:'NSW', ty:'D'},
+  {id:97, name:'Mildura', lat:-34.28712, lon:141.59821, st:'VIC', ty:'D'},
+  {id:98, name:'Taroom', lat:-25.69617, lon:149.89817, st:'QLD', ty:'D'},
+  {id:106, name:'Townsville', lat:-19.41978, lon:146.55096, st:'QLD', ty:'D'},
+  {id:107, name:'Richmond', lat:-20.75177, lon:143.14144, st:'QLD', ty:'D'},
+  {id:108, name:'Toowoomba', lat:-27.27406, lon:151.993, st:'QLD', ty:'D'},
+  {id:111, name:'Karratha', lat:-20.99244, lon:116.8758, st:'WA', ty:'D'},
+  {id:112, name:'Gove', lat:-12.26897, lon:136.82044, st:'NT', ty:'D'},
+  {id:114, name:'Carnarvon', lat:-24.88827, lon:113.66941, st:'WA', ty:'D'}
 ];
-var radarCov = {visible:false, range:256, src:'wt', hi:'gaps', radars:[], generated:'', layer:null, hiLayer:null, loading:false, error:'', res:null, list:false};
+var radarCov = {visible:false, range:256, hi:'gaps', radars:[], generated:'', layer:null, hiLayer:null, loading:false, error:'', res:null, list:false};
 
 function radarCovKm(a, b) {
   var p = Math.PI / 180, dl = (b[0] - a[0]) * p, dn = (b[1] - a[1]) * p;
@@ -1590,17 +1649,20 @@ function radarCovKm(a, b) {
   return 12742 * Math.asin(Math.sqrt(h));
 }
 function radarCovBuild(meta) {
-  var P = (meta && meta.products) || {}, rows = [], newest = 0;
-  Object.keys(P).forEach(function(id) {
+  var P = (meta && meta.products) || {}, lastById = {}, newest = 0;
+  Object.keys(P).forEach(function(id) {                          // radar_meta.json products are named like IDR711 (radar 71, product 1)
     if (id === 'composite') return;
-    var p = P[id]; if (!p || !p.bounds || p.bounds.length < 4) return;
-    var s = p.bounds[0], w = p.bounds[1], n = p.bounds[2], e = p.bounds[3], last = 0;
+    var p = P[id]; if (!p) return;
+    var rid = parseInt(String(id).replace(/^IDR/, '').slice(0, -1), 10), last = 0;
     (p.frames || []).forEach(function(f) { var t = Date.parse(f.utc || ''); if (t > last) last = t; });
-    if (last > newest) newest = last;
-    rows.push({id:id, name:p.name || id, lat:(s + n) / 2, lon:(w + e) / 2, imageKm:Math.round((n - s) / 2 * 111.195), last:last, kind:'wt'});
+    lastById[rid] = last; if (last > newest) newest = last;
   });
-  rows.forEach(function(r) { r.lagMin = r.last ? Math.round((newest - r.last) / 60000) : null; r.stale = r.last === 0 || (newest - r.last) / 60000 > RADARCOV_STALE_MIN; });
-  RADARCOV_EXTRA.forEach(function(x) { rows.push({id:x.id, name:x.name, lat:x.lat, lon:x.lon, imageKm:0, last:0, lagMin:null, stale:false, kind:'extra'}); });
+  var rows = RADARCOV_BOM.map(function(b) {
+    var known = Object.prototype.hasOwnProperty.call(lastById, b.id), last = known ? lastById[b.id] : 0;
+    return {id:'IDR' + b.id, name:b.name, state:b.st, type:b.ty, lat:b.lat, lon:b.lon, last:last, known:known,
+            lagMin:(known && last) ? Math.round((newest - last) / 60000) : null,
+            stale:known && (last === 0 || (newest - last) / 60000 > RADARCOV_STALE_MIN)};
+  });
   radarCov.radars = rows; radarCov.generated = (meta && meta.generated_utc) || '';
 }
 function radarCovLoad(done) {
@@ -1612,15 +1674,15 @@ function radarCovLoad(done) {
     .catch(function(e) { radarCov.loading = false; radarCov.error = e.message; if (done) done(); });
 }
 function radarCovEnsure() { if (!radarCov.radars.length && !radarCov.loading) radarCovLoad(function() { if (radarCov.visible) radarCovRefresh(); }); }
-function radarCovActive() {   // radars that count towards coverage: those with current data, and (if chosen) the BOM-only ones
-  return radarCov.radars.filter(function(r) { return !r.stale && (r.kind === 'wt' || radarCov.src === 'all'); });
+function radarCovActive() {   // every BOM radar counts, except one the fetcher watches that has stopped sending frames
+  return radarCov.radars.filter(function(r) { return !r.stale; });
 }
 function radarCovInfo(s, rng) {
   var act = radarCovActive(), within = 0, best = null;
   act.forEach(function(r) {
     var d = radarCovKm([s.lat, s.lon], [r.lat, r.lon]);
     if (d <= rng) within++;
-    if (!best || d < best.km) best = {name:r.name, km:d, extra:r.kind === 'extra'};
+    if (!best || d < best.km) best = {name:r.name, km:d};
   });
   return {n:within, nearest:best};
 }
@@ -1651,10 +1713,10 @@ function radarCovDraw() {
   radarCov.layer.clearLayers(); radarCov.hiLayer.clearLayers();
   if (!radarCov.visible) { try { map.removeLayer(radarCov.layer); map.removeLayer(radarCov.hiLayer); } catch (e) {} return; }
   radarCov.radars.forEach(function(r) {
-    if (r.kind === 'extra' && radarCov.src !== 'all') return;
-    var col = r.stale ? '#ff6b6b' : (r.kind === 'extra' ? '#b197fc' : '#4dabf7'), dash = (r.kind === 'extra' || r.stale) ? '6 6' : null;
+    var col = r.stale ? '#ff6b6b' : '#4dabf7', dash = r.stale ? '6 6' : null;
     L.circle([r.lat, r.lon], {radius:radarCov.range * 1000, color:col, weight:1.2, fillColor:col, fillOpacity:r.stale ? 0 : 0.05, dashArray:dash, interactive:false}).addTo(radarCov.layer);
-    var tip = '<b>' + esc_(r.name) + '</b>' + (r.kind === 'extra' ? '<br>BOM radar not in the WatchTower radar layer' : '') + (r.stale ? '<br>No recent data (' + (r.lagMin == null ? 'no frames' : r.lagMin + ' min behind') + ')' : '');
+    var tip = '<b>' + esc_(r.name) + '</b><br>' + esc_(r.state) + ', ' + (r.type === 'D' ? 'Doppler' : 'standard weather watch') + (r.known ? '' : '<br>Not monitored for outages') +
+              (r.stale ? '<br>No recent data (' + (r.lagMin == null ? 'no frames' : r.lagMin + ' min behind') + ')' : '');
     L.circleMarker([r.lat, r.lon], {radius:4, color:col, weight:2, fillColor:'#0d1117', fillOpacity:1}).bindTooltip(tip, {direction:'top'}).addTo(radarCov.layer);
   });
   var list = radarCov.hi === 'gaps' ? radarCov.res.gaps : radarCov.hi === 'single' ? radarCov.res.single : [];
@@ -1667,17 +1729,15 @@ function radarCovDraw() {
 }
 function radarCovPanel() {
   var el = document.getElementById('radarcov-panel'); if (!el) return;
-  ['64', '128', '256', '512'].forEach(function(k) { var b = document.getElementById('rc-r' + k); if (b) b.classList.toggle('on', radarCov.range === +k); });
-  [['wt', 'rc-s-wt'], ['all', 'rc-s-all']].forEach(function(p) { var b = document.getElementById(p[1]); if (b) b.classList.toggle('on', radarCov.src === p[0]); });
+  ['64', '128', '200', '256', '512'].forEach(function(k) { var b = document.getElementById('rc-r' + k); if (b) b.classList.toggle('on', radarCov.range === +k); });
   [['gaps', 'rc-h-gaps'], ['single', 'rc-h-single'], ['off', 'rc-h-off']].forEach(function(p) { var b = document.getElementById(p[1]); if (b) b.classList.toggle('on', radarCov.hi === p[0]); });
   var st = document.getElementById('rc-stats'), note = document.getElementById('rc-note'), list = document.getElementById('rc-list');
   if (!radarCov.res) { st.textContent = radarCov.error ? 'Radar list unavailable (' + radarCov.error + ')' : 'Loading radar list...'; note.textContent = ''; list.innerHTML = ''; return; }
   var r = radarCov.res, pc = function(n) { var v = r.total ? n * 100 / r.total : 0; return (n > 0 && v < 1) ? '<1' : Math.round(v); }, act = radarCovActive().length;
   st.innerHTML = '<b>' + r.gaps.length + '</b> of ' + r.total + ' sites (' + pc(r.gaps.length) + '%) have no radar within ' + radarCov.range + ' km<br>' +
                  '<b>' + r.single.length + '</b> have only one radar in range<br>' + act + ' radars counted' + (r.stale.length ? ', <span style="color:#ff6b6b">' + r.stale.length + ' not reporting: ' + esc_(r.stale.map(function(x) { return x.name; }).join(', ')) + '</span>' : '');
-  var extras = radarCov.radars.filter(function(x) { return x.kind === 'extra'; }).length;
-  note.innerHTML = radarCov.src === 'all' ? 'Dashed purple rings are BOM radars that the WatchTower radar layer does not show, so rain there will not appear on the radar images.'
-                                          : 'Counting only the radars WatchTower displays. ' + extras + ' more BOM radars exist (switch on "+ BOM-only" to see their effect).';
+  var mon = radarCov.radars.filter(function(x) { return x.known; }).length;
+  note.innerHTML = 'All ' + radarCov.radars.length + ' BOM radars are counted, at the positions BOM publishes. ' + mon + ' are watched for outages; the other ' + (radarCov.radars.length - mon) + ' are assumed to be reporting.';
   var items = radarCov.hi === 'single' ? r.single : r.gaps;
   list.innerHTML = radarCov.list ? items.map(function(g, i) {
     return '<div class="rc-item" onclick="radarCovFly(' + i + ')"><span>' + esc_(g.site.name.replace(/^\d+\s+/, '')) + ' <i>' + esc_(g.site.state || '') + '</i></span><span>' + (g.nearest ? esc_(g.nearest.name) + ' ' + Math.round(g.nearest.km) + ' km' : '') + '</span></div>';
